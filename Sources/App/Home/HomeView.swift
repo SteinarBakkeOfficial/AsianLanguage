@@ -6,15 +6,17 @@ struct HomeView: View {
     let dependencies: AppDependencies
 
     var body: some View {
+        let featured = dependencies.nextFeaturedSharedCharacter
+
         NavigationStack {
             List {
                 Section {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("New Symbol")
+                        Text(featured.actionTitle)
                             .font(.headline)
-                        Text("木")
+                        Text(featured.displayForm)
                             .font(.system(size: 56, weight: .regular, design: .serif))
-                        Text("Tree / wood")
+                        Text(featured.primaryGloss)
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                     }

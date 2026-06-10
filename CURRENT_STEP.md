@@ -50,15 +50,20 @@ Create the initial SwiftUI app shell for an offline-first iPhone app.
 - Initial implementation-facing architecture doc created in `docs/architecture/v1-foundation.md`
 - Initial Shared Character schema doc created in `docs/content/shared-character-schema.md`
 - Draft sample Shared Character content record created in `content/shared-characters/tree.json`
+- SwiftUI app entry point and root tab shell created
+- Placeholder Home, Search, Browse, Collections, and Settings screens created
+- Lesson-step route primitives created
+- Minimal `AsianLanguage.xcodeproj` and shared scheme created for macOS/Xcode verification
+- Home shell now reads from a draft featured Shared Character summary
 
 ## Next Concrete Output
 
-Produce the first SwiftUI app-shell code for:
+Produce the first app-shell verification and corpus connection slice:
 
-- app entry point
-- root tab navigation
-- placeholder Home, Search, Browse, Collections, and Settings views
-- lesson-step route primitives
+- compile the Xcode project on macOS/Xcode
+- add the first decoded read-only corpus model
+- load the bundled draft `tree` record into the Home featured card
+- keep user-state persistence deferred until the local data layer slice
 
 ## V1 to VNext Tracking
 
