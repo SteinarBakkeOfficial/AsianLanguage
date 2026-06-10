@@ -20,6 +20,9 @@
 		8B000001000000000000000B /* LessonStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000B /* LessonStep.swift */; };
 		8B000001000000000000000C /* LessonRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000C /* LessonRoute.swift */; };
 		8B000001000000000000000D /* PlaceholderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000D /* PlaceholderScreen.swift */; };
+		8B000001000000000000000E /* tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000E /* tree.json */; };
+		8B000001000000000000000F /* SharedCharacterRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000F /* SharedCharacterRecord.swift */; };
+		8B0000010000000000000010 /* BundleCorpusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000010 /* BundleCorpusRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		8B000101000000000000000B /* LessonStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonStep.swift; sourceTree = "<group>"; };
 		8B000101000000000000000C /* LessonRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonRoute.swift; sourceTree = "<group>"; };
 		8B000101000000000000000D /* PlaceholderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderScreen.swift; sourceTree = "<group>"; };
+		8B000101000000000000000E /* tree.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tree.json; sourceTree = "<group>"; };
+		8B000101000000000000000F /* SharedCharacterRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCharacterRecord.swift; sourceTree = "<group>"; };
+		8B0001010000000000000010 /* BundleCorpusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleCorpusRepository.swift; sourceTree = "<group>"; };
 		8B0002010000000000000001 /* AsianLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsianLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				8B0004010000000000000002 /* Sources */,
+				8B0004010000000000000010 /* Resources */,
 				8B000401000000000000000F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -158,6 +165,24 @@
 			path = SharedUI;
 			sourceTree = "<group>";
 		};
+		8B0004010000000000000010 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B0004010000000000000011 /* Corpus */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B0004010000000000000011 /* Corpus */ = {
+			isa = PBXGroup;
+			children = (
+				8B000101000000000000000F /* SharedCharacterRecord.swift */,
+				8B0001010000000000000010 /* BundleCorpusRepository.swift */,
+				8B000101000000000000000E /* tree.json */,
+			);
+			path = Corpus;
+			sourceTree = "<group>";
+		};
 		8B000401000000000000000F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B000001000000000000000E /* tree.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +273,8 @@
 				8B000001000000000000000B /* LessonStep.swift in Sources */,
 				8B000001000000000000000C /* LessonRoute.swift in Sources */,
 				8B000001000000000000000D /* PlaceholderScreen.swift in Sources */,
+				8B000001000000000000000F /* SharedCharacterRecord.swift in Sources */,
+				8B0000010000000000000010 /* BundleCorpusRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,227 @@
+{
+  "id": "tree",
+  "version": 1,
+  "coreCharacter": "木",
+  "coreSharedMeaning": "tree; wood",
+  "recognitionTakeaway": "The shared character keeps a recognizable tree or wood meaning across modern Chinese, Japanese, and Korean usage, even when readings and compounds differ.",
+  "publicationStatus": "draft",
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "木",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "mu4"
+        }
+      ],
+      "glosses": [
+        "tree",
+        "wood"
+      ],
+      "examples": [
+        {
+          "text": "木头",
+          "reading": "mu4tou",
+          "translation": "wood",
+          "showsCoreMeaning": true
+        },
+        {
+          "text": "树木",
+          "reading": "shu4mu4",
+          "translation": "trees",
+          "showsCoreMeaning": true
+        }
+      ]
+    },
+    "traditionalChinese": {
+      "form": "木",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "mu4"
+        }
+      ],
+      "glosses": [
+        "tree",
+        "wood"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "木頭",
+          "reading": "mu4tou",
+          "translation": "wood",
+          "showsCoreMeaning": true
+        },
+        {
+          "text": "樹木",
+          "reading": "shu4mu4",
+          "translation": "trees",
+          "showsCoreMeaning": true
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "木頭",
+          "reading": "muk6 tau4",
+          "translation": "wood",
+          "showsCoreMeaning": true
+        },
+        {
+          "text": "樹木",
+          "reading": "syu6 muk6",
+          "translation": "trees",
+          "showsCoreMeaning": true
+        }
+      ]
+    },
+    "japanese": {
+      "form": "木",
+      "readings": [
+        {
+          "system": "on",
+          "value": "moku"
+        },
+        {
+          "system": "kun",
+          "value": "ki"
+        }
+      ],
+      "glosses": [
+        "tree",
+        "wood"
+      ],
+      "examples": [
+        {
+          "text": "木",
+          "reading": "ki",
+          "translation": "tree; wood",
+          "showsCoreMeaning": true
+        },
+        {
+          "text": "木材",
+          "reading": "mokuzai",
+          "translation": "lumber; timber",
+          "showsCoreMeaning": true
+        }
+      ]
+    },
+    "korean": {
+      "form": "木",
+      "readings": [
+        {
+          "system": "hangul",
+          "value": "목"
+        },
+        {
+          "system": "rr",
+          "value": "mok"
+        }
+      ],
+      "glosses": [
+        "tree",
+        "wood"
+      ],
+      "examples": [
+        {
+          "text": "목재",
+          "reading": "mokjae",
+          "translation": "timber; lumber",
+          "showsCoreMeaning": true
+        },
+        {
+          "text": "수목",
+          "reading": "sumok",
+          "translation": "trees and shrubs",
+          "showsCoreMeaning": true
+        }
+      ]
+    }
+  },
+  "history": {
+    "originAnchor": "A pictorial tree form that stabilizes into the regular character 木.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone",
+        "form": null,
+        "assetRef": "assets/history/tree/oracle-bone.svg",
+        "changeNoteFromPrevious": null,
+        "certainty": "high",
+        "sourceIds": [
+          "source-shuowen",
+          "source-chinese-characters"
+        ],
+        "historicalSound": null
+      },
+      {
+        "stage": "seal",
+        "label": "Seal Script",
+        "form": null,
+        "assetRef": "assets/history/tree/seal.svg",
+        "changeNoteFromPrevious": "The trunk and branching shape become more balanced and script-like.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-chinese-characters"
+        ],
+        "historicalSound": null
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "木",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The pictorial branches settle into the four-stroke regular form used by modern standards.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-unihan"
+        ],
+        "historicalSound": null
+      }
+    ]
+  },
+  "structure": {
+    "summary": "木 functions as a standalone character for tree or wood and also appears as a component in many characters related to trees, wood, materials, or objects made from wood.",
+    "components": [
+      {
+        "label": "木",
+        "role": "semantic base",
+        "meaningHint": "tree or wood"
+      }
+    ],
+    "certainty": "high",
+    "caveat": null,
+    "sourceIds": [
+      "source-unihan"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Modern usage across the required focus tracks preserves the core idea of tree or wood.",
+    "notes": [
+      "This draft uses common examples for schema testing. Production publication still requires full editorial source review."
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-unihan",
+      "label": "Unicode Unihan Database",
+      "type": "database",
+      "citation": "Used for modern character metadata and readings during editorial review."
+    },
+    {
+      "id": "source-shuowen",
+      "label": "Shuowen Jiezi tradition",
+      "type": "historical-reference",
+      "citation": "Used as a historical reference tradition, not as sole proof for every visual claim."
+    },
+    {
+      "id": "source-chinese-characters",
+      "label": "Editorial historical-form source placeholder",
+      "type": "visual-source",
+      "citation": "Replace with the selected authoritative visual-form source before publication."
+    }
+  ],
+  "notes": [
+    "Draft record for app and schema scaffolding only.",
+    "Historical assets referenced here are placeholders and are not production assets yet."
+  ]
+}

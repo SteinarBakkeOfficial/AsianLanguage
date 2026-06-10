@@ -57,13 +57,17 @@ Create the initial SwiftUI app shell for an offline-first iPhone app.
 - Home shell now reads from a draft featured Shared Character summary
 - Windows-runnable corpus validator created in `Tools/Validate-Corpus.ps1`
 - Corpus validation tests created in `Tests/CorpusValidation.Tests.ps1`
+- Bundled runtime corpus copy added at `Resources/Corpus/tree.json`
+- First read-only Swift corpus model and bundle repository added
+- App dependencies now load the bundled draft `tree` record for the Home featured card when available
 
 ## Next Concrete Output
 
-Produce the first app-shell corpus connection slice:
+Produce the next Windows-testable corpus connection slice:
 
-- add the first decoded read-only corpus model
-- load the bundled draft `tree` record into the Home featured card
+- add a corpus sync script so `content/shared-characters` can regenerate `Resources/Corpus`
+- add validator coverage for direct core-meaning examples and source references
+- prepare Swift model tests for macOS/Xcode once CI is available
 - keep user-state persistence deferred until the local data layer slice
 - keep Swift/Xcode compile verification deferred until macOS/Xcode or macOS CI is available
 

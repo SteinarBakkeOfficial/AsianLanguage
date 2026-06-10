@@ -5,7 +5,7 @@ import SwiftUI
 @main
 struct AsianLanguageApp: App {
     /// Shared app dependencies injected into the SwiftUI environment.
-    private let dependencies = AppDependencies.preview
+    private let dependencies = AppDependencies.live
 
     var body: some Scene {
         WindowGroup {

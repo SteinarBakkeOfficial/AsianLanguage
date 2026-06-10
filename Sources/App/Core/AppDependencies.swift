@@ -3,6 +3,9 @@ import Foundation
 /// Container for app-wide services that need to be shared across SwiftUI screens.
 /// Add concrete corpus and user-state stores here when Phase 3 begins.
 struct AppDependencies {
+    /// Read-only repository for bundled Shared Character records.
+    let corpusRepository: BundleCorpusRepository
+
     /// Human-readable corpus label used by the shell before runtime corpus metadata exists.
     let installedCorpusName: String
 
@@ -12,8 +15,30 @@ struct AppDependencies {
     /// First featured Shared Character shown on Home until editorial sequencing is implemented.
     let nextFeaturedSharedCharacter: FeaturedSharedCharacterSummary
 
+    /// Runtime dependency set used by the app shell.
+    static let live: AppDependencies = {
+        let repository = BundleCorpusRepository()
+        let fallbackSummary = FeaturedSharedCharacterSummary(
+            id: "tree",
+            displayForm: "木",
+            primaryGloss: "Tree / wood",
+            actionTitle: "New Symbol"
+        )
+
+        // Replace this hard-coded featured id when editorial sequencing exists.
+        let featuredSummary = (try? repository.sharedCharacter(id: "tree").featuredSummary) ?? fallbackSummary
+
+        return AppDependencies(
+            corpusRepository: repository,
+            installedCorpusName: "Draft V1 Corpus",
+            installedSharedCharacterCount: 1,
+            nextFeaturedSharedCharacter: featuredSummary
+        )
+    }()
+
     /// Lightweight dependency set used by previews and the first app shell.
     static let preview = AppDependencies(
+        corpusRepository: BundleCorpusRepository(),
         installedCorpusName: "Draft V1 Corpus",
         installedSharedCharacterCount: 1,
         nextFeaturedSharedCharacter: FeaturedSharedCharacterSummary(
