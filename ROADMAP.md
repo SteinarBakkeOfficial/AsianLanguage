@@ -1,0 +1,84 @@
+# ROADMAP
+
+## Product Direction
+
+Build an offline-first iPhone app that teaches shared Chinese-character heritage across Mandarin, Traditional Chinese usage communities, Japanese, and Korean through guided `Shared Character` lessons.
+
+## Phase 1. Product Foundation
+
+- Turn the resolved product model into stable project documentation
+- Finalize V1 lesson contract, progress model, and navigation model
+- Define the initial local content schema and app architecture direction
+
+## Phase 2. App Skeleton
+
+- Create the SwiftUI app shell
+- Establish navigation structure for Home, Search, Browse, Collections, and utility/info areas
+- Implement light/dark mode intentionally from the start
+
+## Phase 3. Local Data Layer
+
+- Design the bundled read-only corpus model for Shared Characters
+- Design separate local writable user-state storage
+- Support progress, favorites, review-later, preferences, and installed corpus metadata
+
+## Phase 4. Lesson Experience
+
+- Implement the six-step guided lesson shell
+- Build the tappable progress bar with current, visited, and unvisited states
+- Support resume, restart lesson, Mark as Learned, and step-controlled visuals
+
+## Phase 5. Discovery
+
+- Implement Search with exact and partial matching
+- Implement Browse and system/editorial Collections
+- Support filters, sorting, and compact list items with status indicators
+
+## Phase 6. Content Tooling and Corpus Format
+
+- Define the publishable Shared Character content format
+- Support certainty notes, sources, editorial callouts, historical stage metadata, focus-track examples, and recognition takeaway fields
+- Prepare the first production-ready corpus pipeline for lesson entry
+
+## Phase 7. Visual Content System
+
+- Establish vector or structured asset handling for origin, character, and stroke-order visuals
+- Support step-controlled viewing with optional auto-play
+- Define the reusable visual treatment for the canonical history spine, then transition into Modern Forms
+- Keep stroke order view-only for modern focus-track forms where authoritative data is available
+
+## Phase 8. Initial Corpus
+
+- Produce the first launch-quality Shared Characters
+- Validate publication gate, notes quality, and example consistency
+- Reach the first meaningful launch corpus target
+
+## Phase 9. Polish and QA
+
+- Refine onboarding, About/Method, and empty states
+- Validate offline behavior and local reset flow
+- Test lesson UX, search tolerance, and collection behavior
+
+## Phase 10. V1 Release
+
+- Ship the first iPhone version
+- Bundle the installed corpus with the app release
+- Keep the product focused on shared characters and modern usage only
+
+## V1 to VNext Carryover Register
+
+- Grammar comparison is intentionally deferred beyond V1
+- Rule-based common-denominator lessons are intentionally deferred beyond V1
+- Voice/audio is intentionally deferred beyond V1
+- Android support is intentionally deferred beyond V1
+- Sync/account systems are intentionally deferred beyond V1
+- Account page is intentionally deferred beyond V1
+- Ads/monetization are intentionally deferred beyond V1
+- Handwriting/tracing interaction is intentionally deferred beyond V1
+- Richer historical transformation animation may begin simple in V1 and deepen later
+- Expanded corpus beyond the first launch set is intentionally deferred beyond V1
+
+## Launch Target
+
+- Product vision corpus: `500-1000` Shared Characters
+- First credible V1 launch target: about `100` high-quality Shared Characters
