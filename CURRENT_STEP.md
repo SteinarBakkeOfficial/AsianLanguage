@@ -55,15 +55,17 @@ Create the initial SwiftUI app shell for an offline-first iPhone app.
 - Lesson-step route primitives created
 - Minimal `AsianLanguage.xcodeproj` and shared scheme created for macOS/Xcode verification
 - Home shell now reads from a draft featured Shared Character summary
+- Windows-runnable corpus validator created in `Tools/Validate-Corpus.ps1`
+- Corpus validation tests created in `Tests/CorpusValidation.Tests.ps1`
 
 ## Next Concrete Output
 
-Produce the first app-shell verification and corpus connection slice:
+Produce the first app-shell corpus connection slice:
 
-- compile the Xcode project on macOS/Xcode
 - add the first decoded read-only corpus model
 - load the bundled draft `tree` record into the Home featured card
 - keep user-state persistence deferred until the local data layer slice
+- keep Swift/Xcode compile verification deferred until macOS/Xcode or macOS CI is available
 
 ## V1 to VNext Tracking
 
