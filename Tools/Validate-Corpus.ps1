@@ -78,6 +78,22 @@ function Get-Count {
   return 1
 }
 
+function Test-HasCoreMeaningExample {
+  param($Examples)
+
+  if ($null -eq $Examples) {
+    return $false
+  }
+
+  foreach ($example in @($Examples)) {
+    if ($example.showsCoreMeaning -eq $true) {
+      return $true
+    }
+  }
+
+  return $false
+}
+
 function Assert-ExampleCoverage {
   param(
     [Parameter(Mandatory = $true)]
@@ -96,6 +112,9 @@ function Assert-ExampleCoverage {
     if ($null -ne $coverage -and (Get-Count $coverage.examples) -lt 2) {
       Add-Issue -Path $RecordPath -Message "Focus track '$track' must include at least two examples."
     }
+    if ($null -ne $coverage -and -not (Test-HasCoreMeaningExample $coverage.examples)) {
+      Add-Issue -Path $RecordPath -Message "Focus track '$track' must include at least one direct core-meaning example."
+    }
   }
 
   $traditional = $Record.focusCoverage.traditionalChinese
@@ -105,6 +124,12 @@ function Assert-ExampleCoverage {
     }
     if ((Get-Count $traditional.hongKongExamples) -lt 2) {
       Add-Issue -Path $RecordPath -Message "Focus track 'traditionalChinese' must include at least two Hong Kong examples."
+    }
+    if (-not (Test-HasCoreMeaningExample $traditional.taiwanExamples)) {
+      Add-Issue -Path $RecordPath -Message "Focus track 'traditionalChinese' must include at least one direct core-meaning Taiwan example."
+    }
+    if (-not (Test-HasCoreMeaningExample $traditional.hongKongExamples)) {
+      Add-Issue -Path $RecordPath -Message "Focus track 'traditionalChinese' must include at least one direct core-meaning Hong Kong example."
     }
   }
 }
@@ -131,6 +156,46 @@ function Assert-HistoryCoverage {
     $stage = $Record.history.stages[$index]
     if (-not (Test-HasText $stage.changeNoteFromPrevious)) {
       Add-Issue -Path $RecordPath -Message "Historical stage at index $index must include changeNoteFromPrevious."
+    }
+  }
+}
+
+function Assert-SourceReferences {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$RecordPath,
+    [Parameter(Mandatory = $true)]
+    $Record
+  )
+
+  if ((Get-Count $Record.sources) -lt 1) {
+    Add-Issue -Path $RecordPath -Message "Record must include at least one source."
+    return
+  }
+
+  $knownSourceIds = New-Object System.Collections.Generic.HashSet[string]
+  foreach ($source in @($Record.sources)) {
+    if (Test-HasText $source.id) {
+      $knownSourceIds.Add($source.id) | Out-Null
+    }
+  }
+
+  if ($knownSourceIds.Count -eq 0) {
+    Add-Issue -Path $RecordPath -Message "Record sources must include stable ids."
+    return
+  }
+
+  foreach ($stage in @($Record.history.stages)) {
+    foreach ($sourceId in @($stage.sourceIds)) {
+      if ((Test-HasText $sourceId) -and -not $knownSourceIds.Contains($sourceId)) {
+        Add-Issue -Path $RecordPath -Message "Unknown source reference '$sourceId'."
+      }
+    }
+  }
+
+  foreach ($sourceId in @($Record.structure.sourceIds)) {
+    if ((Test-HasText $sourceId) -and -not $knownSourceIds.Contains($sourceId)) {
+      Add-Issue -Path $RecordPath -Message "Unknown source reference '$sourceId'."
     }
   }
 }
@@ -164,6 +229,7 @@ foreach ($file in $jsonFiles) {
   Assert-FocusCoverage -RecordPath $recordPath -Record $record
   Assert-ExampleCoverage -RecordPath $recordPath -Record $record
   Assert-HistoryCoverage -RecordPath $recordPath -Record $record
+  Assert-SourceReferences -RecordPath $recordPath -Record $record
 }
 
 if ($issues.Count -gt 0) {
