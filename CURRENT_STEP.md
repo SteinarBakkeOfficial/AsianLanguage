@@ -2,22 +2,23 @@
 
 ## Goal
 
-Turn the resolved product model into a buildable V1 foundation for an offline-first SwiftUI iPhone app.
+Create the initial SwiftUI app shell for an offline-first iPhone app.
 
 ## Focus
 
-- Freeze the product definition in project docs
-- Convert the lesson model into a concrete app/content/data architecture
+- Establish the Home, Search, Browse, Collections, and Settings navigation shell
+- Keep the first app surface aligned to the resolved V1 lesson model
+- Prepare shell routes for the six-step Shared Character lesson flow
 - Keep scope tightly on V1 Shared Character lessons
 
 ## Current Priorities
 
-1. Define the initial SwiftUI app structure and navigation shell.
-2. Define the read-only Shared Character corpus schema and separate local user-state schema.
-3. Define the lesson-view model for the six-step guided flow.
-4. Define the focus-language model, system collections, sorting, filtering, and search expectations in code-facing terms.
-5. Define the first content-entry format for publishable lessons.
-6. Define historical stage metadata for visual form, change note, optional sound reconstruction, certainty, and sources.
+1. Create the SwiftUI root app entry and tab shell.
+2. Add placeholder screens for Home, Search, Browse, Collections, and Settings.
+3. Add code-facing enums for app tabs and lesson steps.
+4. Add the first app-level dependency container placeholder.
+5. Keep the shell ready for local corpus loading and local user state without implementing those systems yet.
+6. Verify layout and any available Swift tooling locally.
 
 ## In Scope
 
@@ -45,15 +46,19 @@ Turn the resolved product model into a buildable V1 foundation for an offline-fi
 - Initial glossary created in `CONTEXT.md`
 - Core product decisions resolved through grilling
 - V1 lesson/publication/progress/navigation model agreed
+- V1 foundation layout created for `ios-swiftui`
+- Initial implementation-facing architecture doc created in `docs/architecture/v1-foundation.md`
+- Initial Shared Character schema doc created in `docs/content/shared-character-schema.md`
+- Draft sample Shared Character content record created in `content/shared-characters/tree.json`
 
 ## Next Concrete Output
 
-Produce the first implementation-facing documents or code scaffolding for:
+Produce the first SwiftUI app-shell code for:
 
-- app navigation
-- local data schema
-- lesson state model
-- initial sample Shared Character content record
+- app entry point
+- root tab navigation
+- placeholder Home, Search, Browse, Collections, and Settings views
+- lesson-step route primitives
 
 ## V1 to VNext Tracking
 
