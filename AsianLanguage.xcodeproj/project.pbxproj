@@ -23,7 +23,35 @@
 		8B000001000000000000000E /* tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000E /* tree.json */; };
 		8B000001000000000000000F /* SharedCharacterRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000F /* SharedCharacterRecord.swift */; };
 		8B0000010000000000000010 /* BundleCorpusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000010 /* BundleCorpusRepository.swift */; };
+		8B0000010000000000000012 /* LessonRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000012 /* LessonRouteTests.swift */; };
+		8B0000010000000000000013 /* SharedCharacterRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000013 /* SharedCharacterRecordTests.swift */; };
+		8B0000010000000000000014 /* tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000E /* tree.json */; };
+		8B0000010000000000000015 /* AppUserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000015 /* AppUserState.swift */; };
+		8B0000010000000000000016 /* LocalUserStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000016 /* LocalUserStateStore.swift */; };
+		8B0000010000000000000017 /* UserStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000017 /* UserStateTests.swift */; };
+		8B0000010000000000000018 /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000018 /* LessonView.swift */; };
+		8B0000010000000000000019 /* SharedCharacterSearchIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000019 /* SharedCharacterSearchIndex.swift */; };
+		8B000001000000000000001A /* DiscoveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001A /* DiscoveryTests.swift */; };
+		8B000001000000000000001B /* CharacterEvolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001B /* CharacterEvolutionView.swift */; };
+		8B000001000000000000001C /* ModernFormsComparisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001C /* ModernFormsComparisonView.swift */; };
+		8B000001000000000000001D /* AboutMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001D /* AboutMethodView.swift */; };
+		8B000001000000000000001E /* PrototypeCorpusManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001E /* PrototypeCorpusManifest.swift */; };
+		8B000001000000000000001F /* Corpus in Resources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001F /* Corpus */; };
+		8B0000010000000000000020 /* PrototypeVisuals in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000020 /* PrototypeVisuals */; };
+		8B0000010000000000000021 /* Corpus in Resources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001F /* Corpus */; };
+		8B0000010000000000000022 /* PrototypeVisuals in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000020 /* PrototypeVisuals */; };
+		8B0000010000000000000023 /* UsageExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000023 /* UsageExamplesView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B000A010000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B0008010000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B0005010000000000000001;
+			remoteInfo = AsianLanguage;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8B0001010000000000000001 /* AsianLanguageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsianLanguageApp.swift; sourceTree = "<group>"; };
@@ -42,11 +70,34 @@
 		8B000101000000000000000E /* tree.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tree.json; sourceTree = "<group>"; };
 		8B000101000000000000000F /* SharedCharacterRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCharacterRecord.swift; sourceTree = "<group>"; };
 		8B0001010000000000000010 /* BundleCorpusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleCorpusRepository.swift; sourceTree = "<group>"; };
+		8B0001010000000000000012 /* LessonRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonRouteTests.swift; sourceTree = "<group>"; };
+		8B0001010000000000000013 /* SharedCharacterRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCharacterRecordTests.swift; sourceTree = "<group>"; };
+		8B0001010000000000000015 /* AppUserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserState.swift; sourceTree = "<group>"; };
+		8B0001010000000000000016 /* LocalUserStateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUserStateStore.swift; sourceTree = "<group>"; };
+		8B0001010000000000000017 /* UserStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateTests.swift; sourceTree = "<group>"; };
+		8B0001010000000000000018 /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
+		8B0001010000000000000019 /* SharedCharacterSearchIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCharacterSearchIndex.swift; sourceTree = "<group>"; };
+		8B000101000000000000001A /* DiscoveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryTests.swift; sourceTree = "<group>"; };
+		8B000101000000000000001B /* CharacterEvolutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEvolutionView.swift; sourceTree = "<group>"; };
+		8B000101000000000000001C /* ModernFormsComparisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernFormsComparisonView.swift; sourceTree = "<group>"; };
+		8B000101000000000000001D /* AboutMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMethodView.swift; sourceTree = "<group>"; };
+		8B000101000000000000001E /* PrototypeCorpusManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeCorpusManifest.swift; sourceTree = "<group>"; };
+		8B000101000000000000001F /* Corpus */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Corpus; sourceTree = "<group>"; };
+		8B0001010000000000000020 /* PrototypeVisuals */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/PrototypeVisuals; sourceTree = "<group>"; };
+		8B0001010000000000000023 /* UsageExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageExamplesView.swift; sourceTree = "<group>"; };
 		8B0002010000000000000001 /* AsianLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsianLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0002010000000000000002 /* AsianLanguageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsianLanguageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8B0003010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0003010000000000000002 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				8B0004010000000000000002 /* Sources */,
+				8B0004010000000000000012 /* Tests */,
 				8B0004010000000000000010 /* Resources */,
 				8B000401000000000000000F /* Products */,
 			);
@@ -77,13 +129,16 @@
 			isa = PBXGroup;
 			children = (
 				8B0004010000000000000004 /* Core */,
+				8B0004010000000000000016 /* Corpus */,
 				8B0004010000000000000005 /* Navigation */,
 				8B0004010000000000000006 /* Home */,
 				8B0004010000000000000007 /* Search */,
 				8B0004010000000000000008 /* Browse */,
+				8B0004010000000000000015 /* Discovery */,
 				8B0004010000000000000009 /* Collections */,
 				8B000401000000000000000A /* Settings */,
 				8B000401000000000000000B /* Lesson */,
+				8B0004010000000000000014 /* UserState */,
 				8B000401000000000000000C /* SharedUI */,
 			);
 			path = App;
@@ -106,6 +161,16 @@
 				8B0001010000000000000005 /* RootTabView.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		8B0004010000000000000016 /* Corpus */ = {
+			isa = PBXGroup;
+			children = (
+				8B000101000000000000000F /* SharedCharacterRecord.swift */,
+				8B0001010000000000000010 /* BundleCorpusRepository.swift */,
+				8B000101000000000000001E /* PrototypeCorpusManifest.swift */,
+			);
+			path = Corpus;
 			sourceTree = "<group>";
 		};
 		8B0004010000000000000006 /* Home */ = {
@@ -132,6 +197,14 @@
 			path = Browse;
 			sourceTree = "<group>";
 		};
+		8B0004010000000000000015 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				8B0001010000000000000019 /* SharedCharacterSearchIndex.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
 		8B0004010000000000000009 /* Collections */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				8B000101000000000000000A /* SettingsView.swift */,
+				8B000101000000000000001D /* AboutMethodView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -153,6 +227,10 @@
 			children = (
 				8B000101000000000000000B /* LessonStep.swift */,
 				8B000101000000000000000C /* LessonRoute.swift */,
+				8B0001010000000000000018 /* LessonView.swift */,
+				8B0001010000000000000023 /* UsageExamplesView.swift */,
+				8B000101000000000000001B /* CharacterEvolutionView.swift */,
+				8B000101000000000000001C /* ModernFormsComparisonView.swift */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -165,19 +243,47 @@
 			path = SharedUI;
 			sourceTree = "<group>";
 		};
+		8B0004010000000000000014 /* UserState */ = {
+			isa = PBXGroup;
+			children = (
+				8B0001010000000000000015 /* AppUserState.swift */,
+				8B0001010000000000000016 /* LocalUserStateStore.swift */,
+			);
+			path = UserState;
+			sourceTree = "<group>";
+		};
 		8B0004010000000000000010 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				8B0004010000000000000011 /* Corpus */,
+				8B000101000000000000001F /* Corpus */,
+				8B0001010000000000000020 /* PrototypeVisuals */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B0004010000000000000012 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8B0004010000000000000013 /* AsianLanguageTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		8B0004010000000000000013 /* AsianLanguageTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B0001010000000000000012 /* LessonRouteTests.swift */,
+				8B0001010000000000000013 /* SharedCharacterRecordTests.swift */,
+				8B0001010000000000000017 /* UserStateTests.swift */,
+				8B000101000000000000001A /* DiscoveryTests.swift */,
+			);
+			path = AsianLanguageTests;
 			sourceTree = "<group>";
 		};
 		8B0004010000000000000011 /* Corpus */ = {
 			isa = PBXGroup;
 			children = (
-				8B000101000000000000000F /* SharedCharacterRecord.swift */,
-				8B0001010000000000000010 /* BundleCorpusRepository.swift */,
 				8B000101000000000000000E /* tree.json */,
 			);
 			path = Corpus;
@@ -187,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				8B0002010000000000000001 /* AsianLanguage.app */,
+				8B0002010000000000000002 /* AsianLanguageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,6 +317,24 @@
 			productName = AsianLanguage;
 			productReference = 8B0002010000000000000001 /* AsianLanguage.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8B0005010000000000000002 /* AsianLanguageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B0007010000000000000003 /* Build configuration list for PBXNativeTarget "AsianLanguageTests" */;
+			buildPhases = (
+				8B0006010000000000000003 /* Sources */,
+				8B0003010000000000000002 /* Frameworks */,
+				8B0006010000000000000004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B000B010000000000000001 /* PBXTargetDependency */,
+			);
+			name = AsianLanguageTests;
+			productName = AsianLanguageTests;
+			productReference = 8B0002010000000000000002 /* AsianLanguageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -240,6 +365,7 @@
 			projectRoot = "";
 			targets = (
 				8B0005010000000000000001 /* AsianLanguage */,
+				8B0005010000000000000002 /* AsianLanguageTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +376,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B000001000000000000000E /* tree.json in Resources */,
+				8B000001000000000000001F /* Corpus in Resources */,
+				8B0000010000000000000020 /* PrototypeVisuals in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0006010000000000000004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0000010000000000000014 /* tree.json in Resources */,
+				8B0000010000000000000021 /* Corpus in Resources */,
+				8B0000010000000000000022 /* PrototypeVisuals in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +413,38 @@
 				8B000001000000000000000D /* PlaceholderScreen.swift in Sources */,
 				8B000001000000000000000F /* SharedCharacterRecord.swift in Sources */,
 				8B0000010000000000000010 /* BundleCorpusRepository.swift in Sources */,
+				8B0000010000000000000015 /* AppUserState.swift in Sources */,
+				8B0000010000000000000016 /* LocalUserStateStore.swift in Sources */,
+				8B0000010000000000000018 /* LessonView.swift in Sources */,
+				8B0000010000000000000019 /* SharedCharacterSearchIndex.swift in Sources */,
+				8B000001000000000000001B /* CharacterEvolutionView.swift in Sources */,
+				8B000001000000000000001C /* ModernFormsComparisonView.swift in Sources */,
+				8B000001000000000000001D /* AboutMethodView.swift in Sources */,
+				8B000001000000000000001E /* PrototypeCorpusManifest.swift in Sources */,
+				8B0000010000000000000023 /* UsageExamplesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0006010000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0000010000000000000012 /* LessonRouteTests.swift in Sources */,
+				8B0000010000000000000013 /* SharedCharacterRecordTests.swift in Sources */,
+				8B0000010000000000000017 /* UserStateTests.swift in Sources */,
+				8B000001000000000000001A /* DiscoveryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B000B010000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B0005010000000000000001 /* AsianLanguage */;
+			targetProxy = 8B000A010000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8B0009010000000000000001 /* Debug */ = {
@@ -450,6 +616,57 @@
 			};
 			name = Release;
 		};
+		8B0009010000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steinarbakke.asianlanguage.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsianLanguage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AsianLanguage";
+			};
+			name = Debug;
+		};
+		8B0009010000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steinarbakke.asianlanguage.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsianLanguage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AsianLanguage";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -467,6 +684,15 @@
 			buildConfigurations = (
 				8B0009010000000000000003 /* Debug */,
 				8B0009010000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B0007010000000000000003 /* Build configuration list for PBXNativeTarget "AsianLanguageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0009010000000000000005 /* Debug */,
+				8B0009010000000000000006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

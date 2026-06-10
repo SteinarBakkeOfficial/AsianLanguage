@@ -1,10 +1,15 @@
 import Foundation
 
 /// Container for app-wide services that need to be shared across SwiftUI screens.
-/// Add concrete corpus and user-state stores here when Phase 3 begins.
 struct AppDependencies {
     /// Read-only repository for bundled Shared Character records.
     let corpusRepository: BundleCorpusRepository
+
+    /// Local writable store for progress and preferences.
+    let userStateStore: LocalUserStateStore
+
+    /// Bundled Shared Character records available to discovery surfaces.
+    let sharedCharacters: [SharedCharacterRecord]
 
     /// Human-readable corpus label used by the shell before runtime corpus metadata exists.
     let installedCorpusName: String
@@ -25,13 +30,16 @@ struct AppDependencies {
             actionTitle: "New Symbol"
         )
 
-        // Replace this hard-coded featured id when editorial sequencing exists.
-        let featuredSummary = (try? repository.sharedCharacter(id: "tree").featuredSummary) ?? fallbackSummary
+        let sharedCharacters = repository.sharedCharacters(ids: PrototypeCorpusManifest.recordIDs)
+        let featuredRecord = sharedCharacters.first
+        let featuredSummary = featuredRecord?.featuredSummary ?? fallbackSummary
 
         return AppDependencies(
             corpusRepository: repository,
+            userStateStore: LocalUserStateStore.live(),
+            sharedCharacters: sharedCharacters,
             installedCorpusName: "Draft V1 Corpus",
-            installedSharedCharacterCount: 1,
+            installedSharedCharacterCount: sharedCharacters.count,
             nextFeaturedSharedCharacter: featuredSummary
         )
     }()
@@ -39,6 +47,8 @@ struct AppDependencies {
     /// Lightweight dependency set used by previews and the first app shell.
     static let preview = AppDependencies(
         corpusRepository: BundleCorpusRepository(),
+        userStateStore: LocalUserStateStore.preview(),
+        sharedCharacters: [],
         installedCorpusName: "Draft V1 Corpus",
         installedSharedCharacterCount: 1,
         nextFeaturedSharedCharacter: FeaturedSharedCharacterSummary(
@@ -51,7 +61,6 @@ struct AppDependencies {
 }
 
 /// Lightweight Home card summary for the next featured Shared Character.
-/// Replace this with decoded corpus metadata when the local data layer is implemented.
 struct FeaturedSharedCharacterSummary: Hashable {
     /// Stable corpus identifier used by lesson routes.
     let id: String

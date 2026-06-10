@@ -1,10 +1,18 @@
 {
   "id": "tree",
   "version": 1,
+  "prototypeSequence": 9,
   "coreCharacter": "木",
   "coreSharedMeaning": "tree; wood",
-  "recognitionTakeaway": "The shared character keeps a recognizable tree or wood meaning across modern Chinese, Japanese, and Korean usage, even when readings and compounds differ.",
+  "recognitionTakeaway": "Prototype draft: 木 anchors the shared meaning 'tree; wood' and gives learners a basic symbol for later word and sentence examples.",
   "publicationStatus": "draft",
+  "visuals": {
+    "evolutionAssetRefs": {
+      "regular": "Assets/PrototypeVisuals/tree-regular.svg"
+    },
+    "assetStatus": "prototype-draft",
+    "note": "Draft app-native visual card for prototype testing. Replace with source-backed historical redraws before publication."
+  },
   "focusCoverage": {
     "simplifiedChinese": {
       "form": "木",
@@ -15,21 +23,34 @@
         }
       ],
       "glosses": [
-        "tree",
-        "wood"
+        "tree; wood"
       ],
       "examples": [
         {
           "text": "木头",
-          "reading": "mu4tou",
-          "translation": "wood",
-          "showsCoreMeaning": true
+          "reading": "mu4",
+          "translation": "tree; wood",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "木"
+          ]
         },
         {
-          "text": "树木",
-          "reading": "shu4mu4",
-          "translation": "trees",
-          "showsCoreMeaning": true
+          "text": "山上有木。",
+          "reading": null,
+          "translation": "Prototype sentence using tree; wood.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "tree-parallel-1",
+          "reusesKnownSymbols": [
+            "山"
+          ],
+          "introducedSymbols": [
+            "木"
+          ]
         }
       ]
     },
@@ -42,35 +63,62 @@
         }
       ],
       "glosses": [
-        "tree",
-        "wood"
+        "tree; wood"
       ],
       "taiwanExamples": [
         {
           "text": "木頭",
-          "reading": "mu4tou",
-          "translation": "wood",
-          "showsCoreMeaning": true
+          "reading": "mu4",
+          "translation": "tree; wood",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "木"
+          ]
         },
         {
-          "text": "樹木",
-          "reading": "shu4mu4",
-          "translation": "trees",
-          "showsCoreMeaning": true
+          "text": "山上有木。",
+          "reading": null,
+          "translation": "Prototype Taiwan sentence using tree; wood.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "tree-parallel-1",
+          "reusesKnownSymbols": [
+            "山"
+          ],
+          "introducedSymbols": [
+            "木"
+          ]
         }
       ],
       "hongKongExamples": [
         {
           "text": "木頭",
-          "reading": "muk6 tau4",
-          "translation": "wood",
-          "showsCoreMeaning": true
+          "reading": null,
+          "translation": "tree; wood",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "木"
+          ]
         },
         {
-          "text": "樹木",
-          "reading": "syu6 muk6",
-          "translation": "trees",
-          "showsCoreMeaning": true
+          "text": "山上有木。",
+          "reading": null,
+          "translation": "Prototype Hong Kong sentence using tree; wood.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "tree-parallel-1",
+          "reusesKnownSymbols": [
+            "山"
+          ],
+          "introducedSymbols": [
+            "木"
+          ]
         }
       ]
     },
@@ -80,28 +128,37 @@
         {
           "system": "on",
           "value": "moku"
-        },
-        {
-          "system": "kun",
-          "value": "ki"
         }
       ],
       "glosses": [
-        "tree",
-        "wood"
+        "tree; wood"
       ],
       "examples": [
         {
           "text": "木",
-          "reading": "ki",
+          "reading": "moku",
           "translation": "tree; wood",
-          "showsCoreMeaning": true
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "木"
+          ]
         },
         {
-          "text": "木材",
-          "reading": "mokuzai",
-          "translation": "lumber; timber",
-          "showsCoreMeaning": true
+          "text": "山の上に木があります。",
+          "reading": null,
+          "translation": "Prototype Japanese sentence using tree; wood.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "tree-parallel-1",
+          "reusesKnownSymbols": [
+            "山"
+          ],
+          "introducedSymbols": [
+            "木"
+          ]
         }
       ]
     },
@@ -111,117 +168,89 @@
         {
           "system": "hangul",
           "value": "목"
-        },
-        {
-          "system": "rr",
-          "value": "mok"
         }
       ],
       "glosses": [
-        "tree",
-        "wood"
+        "tree; wood"
       ],
       "examples": [
         {
           "text": "목재",
-          "reading": "mokjae",
-          "translation": "timber; lumber",
-          "showsCoreMeaning": true
+          "reading": "목",
+          "translation": "tree; wood",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "木"
+          ]
         },
         {
-          "text": "수목",
-          "reading": "sumok",
-          "translation": "trees and shrubs",
-          "showsCoreMeaning": true
+          "text": "산 위에 나무가 있습니다.",
+          "reading": null,
+          "translation": "Prototype Korean sentence using tree; wood.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "tree-parallel-1",
+          "reusesKnownSymbols": [
+            "山"
+          ],
+          "introducedSymbols": [
+            "木"
+          ]
         }
       ]
     }
   },
   "history": {
-    "originAnchor": "A pictorial tree form that stabilizes into the regular character 木.",
+    "originAnchor": "Prototype visual anchor for 木. Replace with source-backed historical origin notes before publication.",
     "stages": [
-      {
-        "stage": "oracleBone",
-        "label": "Oracle Bone",
-        "form": null,
-        "assetRef": "assets/history/tree/oracle-bone.svg",
-        "changeNoteFromPrevious": null,
-        "certainty": "high",
-        "sourceIds": [
-          "source-shuowen",
-          "source-chinese-characters"
-        ],
-        "historicalSound": null
-      },
-      {
-        "stage": "seal",
-        "label": "Seal Script",
-        "form": null,
-        "assetRef": "assets/history/tree/seal.svg",
-        "changeNoteFromPrevious": "The trunk and branching shape become more balanced and script-like.",
-        "certainty": "high",
-        "sourceIds": [
-          "source-chinese-characters"
-        ],
-        "historicalSound": null
-      },
       {
         "stage": "regular",
         "label": "Regular Script",
         "form": "木",
-        "assetRef": null,
-        "changeNoteFromPrevious": "The pictorial branches settle into the four-stroke regular form used by modern standards.",
-        "certainty": "high",
+        "assetRef": "Assets/PrototypeVisuals/tree-regular.svg",
+        "changeNoteFromPrevious": null,
+        "certainty": "limited",
         "sourceIds": [
-          "source-unihan"
+          "source-prototype-visual"
         ],
         "historicalSound": null
       }
     ]
   },
   "structure": {
-    "summary": "木 functions as a standalone character for tree or wood and also appears as a component in many characters related to trees, wood, materials, or objects made from wood.",
+    "summary": "Prototype structure note for 木. Replace with source-backed character/component explanation before publication.",
     "components": [
       {
         "label": "木",
-        "role": "semantic base",
-        "meaningHint": "tree or wood"
+        "role": "prototype symbol",
+        "meaningHint": "tree; wood"
       }
     ],
-    "certainty": "high",
-    "caveat": null,
+    "certainty": "limited",
+    "caveat": "Prototype placeholder; source-backed structure review required before publication.",
     "sourceIds": [
-      "source-unihan"
+      "source-prototype-visual"
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Modern usage across the required focus tracks preserves the core idea of tree or wood.",
+    "coreMeaningFirst": "Prototype usage starts with a word-level example and then a basic sentence, preferably reusing earlier symbols where possible.",
     "notes": [
-      "This draft uses common examples for schema testing. Production publication still requires full editorial source review."
+      "Prototype examples are for app-flow testing and require native-speaker/editorial review before publication."
     ]
   },
   "sources": [
     {
-      "id": "source-unihan",
-      "label": "Unicode Unihan Database",
-      "type": "database",
-      "citation": "Used for modern character metadata and readings during editorial review."
-    },
-    {
-      "id": "source-shuowen",
-      "label": "Shuowen Jiezi tradition",
-      "type": "historical-reference",
-      "citation": "Used as a historical reference tradition, not as sole proof for every visual claim."
-    },
-    {
-      "id": "source-chinese-characters",
-      "label": "Editorial historical-form source placeholder",
-      "type": "visual-source",
-      "citation": "Replace with the selected authoritative visual-form source before publication."
+      "id": "source-prototype-visual",
+      "label": "Prototype visual and usage placeholder",
+      "type": "prototype",
+      "citation": "Internal draft asset and example placeholder for Prototype 1 testing; not publication-ready."
     }
   ],
   "notes": [
-    "Draft record for app and schema scaffolding only.",
-    "Historical assets referenced here are placeholders and are not production assets yet."
+    "Prototype 1 record generated for app testing.",
+    "Visual asset is a draft app-native card, not a source-backed historical form."
   ]
 }

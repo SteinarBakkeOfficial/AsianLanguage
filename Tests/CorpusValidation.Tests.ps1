@@ -76,7 +76,7 @@ try {
 
   $syncResult = Invoke-Sync -SourcePath $fixtureCorpus -DestinationPath $syncDestination
   Assert-Equal -Actual $syncResult.ExitCode -Expected 0 -Message "Corpus sync should succeed."
-  Assert-Contains -Text $syncResult.Output -ExpectedSubstring "OK: synced 1 corpus record(s)." -Message "Corpus sync should report copied record count."
+  Assert-Contains -Text $syncResult.Output -ExpectedSubstring "OK: synced 11 corpus record(s)." -Message "Corpus sync should report copied record count."
   Assert-Equal -Actual (Test-Path (Join-Path $syncDestination "stale.json")) -Expected $false -Message "Corpus sync should remove stale bundled records."
 
   $sourceRecord = Get-Content -Raw (Join-Path $fixtureCorpus "tree.json") | ConvertFrom-Json
@@ -107,7 +107,10 @@ try {
   $missingChangeNoteCorpus = Join-Path $tempRoot "missing-change-note"
   New-Item -ItemType Directory -Path $missingChangeNoteCorpus | Out-Null
   $record = Get-Content -Raw (Join-Path $fixtureCorpus "tree.json") | ConvertFrom-Json
-  $record.history.stages[1].changeNoteFromPrevious = $null
+  $extraStage = $record.history.stages[0].PSObject.Copy()
+  $extraStage.label = "Modern"
+  $extraStage.changeNoteFromPrevious = $null
+  $record.history.stages = @($record.history.stages[0], $extraStage)
   $record | ConvertTo-Json -Depth 20 | Set-Content -Path (Join-Path $missingChangeNoteCorpus "tree.json") -Encoding utf8
 
   $missingChangeNoteResult = Invoke-Validator -CorpusPath $missingChangeNoteCorpus

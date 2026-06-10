@@ -17,19 +17,19 @@ struct RootTabView: View {
                 }
                 .tag(AppTab.home)
 
-            SearchView()
+            SearchView(dependencies: dependencies)
                 .tabItem {
                     Label(AppTab.search.title, systemImage: AppTab.search.systemImageName)
                 }
                 .tag(AppTab.search)
 
-            BrowseView()
+            BrowseView(dependencies: dependencies)
                 .tabItem {
                     Label(AppTab.browse.title, systemImage: AppTab.browse.systemImageName)
                 }
                 .tag(AppTab.browse)
 
-            CollectionsView()
+            CollectionsView(dependencies: dependencies)
                 .tabItem {
                     Label(AppTab.collections.title, systemImage: AppTab.collections.systemImageName)
                 }

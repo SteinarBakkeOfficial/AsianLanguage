@@ -22,7 +22,9 @@ The `id` is stable, lowercase ASCII, and should not encode app ordering. Editori
 - `coreSharedMeaning`: one teachable overlapping meaning across all required focus tracks
 - `recognitionTakeaway`: editorial summary shown in `Summary`
 - `publicationStatus`: `draft`, `review`, or `published`
+- `prototypeSequence`: early teaching order for prototype and editorial sequencing
 - `focusCoverage`: required modern coverage for all focus tracks
+- `visuals`: app-facing visual asset metadata
 - `history`: historical origin and displayed script stages
 - `structure`: component or character-structure analysis
 - `usage`: modern examples grouped by focus track
@@ -39,6 +41,29 @@ Each record must include:
 - Korean Hanja form, Korean readings, glosses, and examples
 
 Each language needs at least two examples. At least one example per language must directly show the core shared meaning.
+
+Each example includes:
+
+- `text`: modern example text
+- `reading`: optional learner-support reading
+- `translation`: English translation
+- `showsCoreMeaning`: whether the example directly shows the lesson meaning
+- `exampleLevel`: `word`, `phrase`, or `sentence`
+- `parallelExampleGroupID`: optional id for examples that should be compared across focus tracks
+- `reusesKnownSymbols`: previously introduced symbols reused by the example
+- `introducedSymbols`: symbols introduced or emphasized by the example
+
+Prototype 1 sequencing starts with very basic symbols that carry their own meaning, then uses examples that increasingly reuse previously learned symbols. Prefer shared words or compounds across languages when possible, then add basic sentence examples. Parallel sentence examples across focus tracks are preferred when they are natural modern usage.
+
+## Visuals
+
+`visuals` records app-facing asset metadata:
+
+- `evolutionAssetRefs`: asset references keyed by stage or role
+- `assetStatus`: `prototype-draft`, `source-backed-draft`, or `publication-ready`
+- `note`: editorial note about provenance and replacement needs
+
+Prototype visual cards may be app-native draft assets for testing. Publication visuals must be source-backed redraws or licensed/source-backed assets; reference pictures are design inspiration only unless licensing and source quality are explicitly resolved.
 
 ## Historical Stages
 
@@ -106,6 +131,8 @@ A record cannot be `published` until it has:
 - responsible history, structure, usage, and summary sections
 - at least two examples per language
 - at least one direct core-meaning example per language
+- at least one word-level example and one sentence-level example
+- progressive example metadata for known-symbol reuse and introduced symbols
 - source support for editorial claims
 - app-ready asset references or clear placeholders for required visuals
 

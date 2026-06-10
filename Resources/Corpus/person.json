@@ -1,0 +1,256 @@
+{
+  "id": "person",
+  "version": 1,
+  "prototypeSequence": 3,
+  "coreCharacter": "人",
+  "coreSharedMeaning": "person",
+  "recognitionTakeaway": "Prototype draft: 人 anchors the shared meaning 'person' and gives learners a basic symbol for later word and sentence examples.",
+  "publicationStatus": "draft",
+  "visuals": {
+    "evolutionAssetRefs": {
+      "regular": "Assets/PrototypeVisuals/person-regular.svg"
+    },
+    "assetStatus": "prototype-draft",
+    "note": "Draft app-native visual card for prototype testing. Replace with source-backed historical redraws before publication."
+  },
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "人",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "ren2"
+        }
+      ],
+      "glosses": [
+        "person"
+      ],
+      "examples": [
+        {
+          "text": "人",
+          "reading": "ren2",
+          "translation": "person",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        },
+        {
+          "text": "这个人很好。",
+          "reading": null,
+          "translation": "Prototype sentence using person.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "person-parallel-1",
+          "reusesKnownSymbols": [
+            "日"
+          ],
+          "introducedSymbols": [
+            "人"
+          ]
+        }
+      ]
+    },
+    "traditionalChinese": {
+      "form": "人",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "ren2"
+        }
+      ],
+      "glosses": [
+        "person"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "人",
+          "reading": "ren2",
+          "translation": "person",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        },
+        {
+          "text": "這個人很好。",
+          "reading": null,
+          "translation": "Prototype Taiwan sentence using person.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "person-parallel-1",
+          "reusesKnownSymbols": [
+            "日"
+          ],
+          "introducedSymbols": [
+            "人"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "人",
+          "reading": null,
+          "translation": "person",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        },
+        {
+          "text": "呢個人好好。",
+          "reading": null,
+          "translation": "Prototype Hong Kong sentence using person.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "person-parallel-1",
+          "reusesKnownSymbols": [
+            "日"
+          ],
+          "introducedSymbols": [
+            "人"
+          ]
+        }
+      ]
+    },
+    "japanese": {
+      "form": "人",
+      "readings": [
+        {
+          "system": "on",
+          "value": "jin"
+        }
+      ],
+      "glosses": [
+        "person"
+      ],
+      "examples": [
+        {
+          "text": "人",
+          "reading": "jin",
+          "translation": "person",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        },
+        {
+          "text": "この人はよい人です。",
+          "reading": null,
+          "translation": "Prototype Japanese sentence using person.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "person-parallel-1",
+          "reusesKnownSymbols": [
+            "日"
+          ],
+          "introducedSymbols": [
+            "人"
+          ]
+        }
+      ]
+    },
+    "korean": {
+      "form": "人",
+      "readings": [
+        {
+          "system": "hangul",
+          "value": "인"
+        }
+      ],
+      "glosses": [
+        "person"
+      ],
+      "examples": [
+        {
+          "text": "인",
+          "reading": "인",
+          "translation": "person",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        },
+        {
+          "text": "이 사람은 좋은 사람입니다.",
+          "reading": null,
+          "translation": "Prototype Korean sentence using person.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "person-parallel-1",
+          "reusesKnownSymbols": [
+            "日"
+          ],
+          "introducedSymbols": [
+            "人"
+          ]
+        }
+      ]
+    }
+  },
+  "history": {
+    "originAnchor": "Prototype visual anchor for 人. Replace with source-backed historical origin notes before publication.",
+    "stages": [
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "人",
+        "assetRef": "Assets/PrototypeVisuals/person-regular.svg",
+        "changeNoteFromPrevious": null,
+        "certainty": "limited",
+        "sourceIds": [
+          "source-prototype-visual"
+        ],
+        "historicalSound": null
+      }
+    ]
+  },
+  "structure": {
+    "summary": "Prototype structure note for 人. Replace with source-backed character/component explanation before publication.",
+    "components": [
+      {
+        "label": "人",
+        "role": "prototype symbol",
+        "meaningHint": "person"
+      }
+    ],
+    "certainty": "limited",
+    "caveat": "Prototype placeholder; source-backed structure review required before publication.",
+    "sourceIds": [
+      "source-prototype-visual"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Prototype usage starts with a word-level example and then a basic sentence, preferably reusing earlier symbols where possible.",
+    "notes": [
+      "Prototype examples are for app-flow testing and require native-speaker/editorial review before publication."
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-prototype-visual",
+      "label": "Prototype visual and usage placeholder",
+      "type": "prototype",
+      "citation": "Internal draft asset and example placeholder for Prototype 1 testing; not publication-ready."
+    }
+  ],
+  "notes": [
+    "Prototype 1 record generated for app testing.",
+    "Visual asset is a draft app-native card, not a source-backed historical form."
+  ]
+}

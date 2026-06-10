@@ -1,0 +1,246 @@
+{
+  "id": "day",
+  "version": 1,
+  "prototypeSequence": 1,
+  "coreCharacter": "日",
+  "coreSharedMeaning": "sun; day",
+  "recognitionTakeaway": "Prototype draft: 日 anchors the shared meaning 'sun; day' and gives learners a basic symbol for later word and sentence examples.",
+  "publicationStatus": "draft",
+  "visuals": {
+    "evolutionAssetRefs": {
+      "regular": "Assets/PrototypeVisuals/day-regular.svg"
+    },
+    "assetStatus": "prototype-draft",
+    "note": "Draft app-native visual card for prototype testing. Replace with source-backed historical redraws before publication."
+  },
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "日",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "ri4"
+        }
+      ],
+      "glosses": [
+        "sun; day"
+      ],
+      "examples": [
+        {
+          "text": "日子",
+          "reading": "ri4",
+          "translation": "sun; day",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "日"
+          ]
+        },
+        {
+          "text": "今天是好日子。",
+          "reading": null,
+          "translation": "Prototype sentence using sun; day.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "day-parallel-1",
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "日"
+          ]
+        }
+      ]
+    },
+    "traditionalChinese": {
+      "form": "日",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "ri4"
+        }
+      ],
+      "glosses": [
+        "sun; day"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "日子",
+          "reading": "ri4",
+          "translation": "sun; day",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "日"
+          ]
+        },
+        {
+          "text": "今天是好日子。",
+          "reading": null,
+          "translation": "Prototype Taiwan sentence using sun; day.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "day-parallel-1",
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "日"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "日子",
+          "reading": null,
+          "translation": "sun; day",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "日"
+          ]
+        },
+        {
+          "text": "今日係好日子。",
+          "reading": null,
+          "translation": "Prototype Hong Kong sentence using sun; day.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "day-parallel-1",
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "日"
+          ]
+        }
+      ]
+    },
+    "japanese": {
+      "form": "日",
+      "readings": [
+        {
+          "system": "on",
+          "value": "nichi"
+        }
+      ],
+      "glosses": [
+        "sun; day"
+      ],
+      "examples": [
+        {
+          "text": "日",
+          "reading": "nichi",
+          "translation": "sun; day",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "日"
+          ]
+        },
+        {
+          "text": "今日はよい日です。",
+          "reading": null,
+          "translation": "Prototype Japanese sentence using sun; day.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "day-parallel-1",
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "日"
+          ]
+        }
+      ]
+    },
+    "korean": {
+      "form": "日",
+      "readings": [
+        {
+          "system": "hangul",
+          "value": "일"
+        }
+      ],
+      "glosses": [
+        "sun; day"
+      ],
+      "examples": [
+        {
+          "text": "일",
+          "reading": "일",
+          "translation": "sun; day",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "日"
+          ]
+        },
+        {
+          "text": "오늘은 좋은 날입니다.",
+          "reading": null,
+          "translation": "Prototype Korean sentence using sun; day.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "day-parallel-1",
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "日"
+          ]
+        }
+      ]
+    }
+  },
+  "history": {
+    "originAnchor": "Prototype visual anchor for 日. Replace with source-backed historical origin notes before publication.",
+    "stages": [
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "日",
+        "assetRef": "Assets/PrototypeVisuals/day-regular.svg",
+        "changeNoteFromPrevious": null,
+        "certainty": "limited",
+        "sourceIds": [
+          "source-prototype-visual"
+        ],
+        "historicalSound": null
+      }
+    ]
+  },
+  "structure": {
+    "summary": "Prototype structure note for 日. Replace with source-backed character/component explanation before publication.",
+    "components": [
+      {
+        "label": "日",
+        "role": "prototype symbol",
+        "meaningHint": "sun; day"
+      }
+    ],
+    "certainty": "limited",
+    "caveat": "Prototype placeholder; source-backed structure review required before publication.",
+    "sourceIds": [
+      "source-prototype-visual"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Prototype usage starts with a word-level example and then a basic sentence, preferably reusing earlier symbols where possible.",
+    "notes": [
+      "Prototype examples are for app-flow testing and require native-speaker/editorial review before publication."
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-prototype-visual",
+      "label": "Prototype visual and usage placeholder",
+      "type": "prototype",
+      "citation": "Internal draft asset and example placeholder for Prototype 1 testing; not publication-ready."
+    }
+  ],
+  "notes": [
+    "Prototype 1 record generated for app testing.",
+    "Visual asset is a draft app-native card, not a source-backed historical form."
+  ]
+}

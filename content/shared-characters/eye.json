@@ -1,0 +1,256 @@
+{
+  "id": "eye",
+  "version": 1,
+  "prototypeSequence": 11,
+  "coreCharacter": "目",
+  "coreSharedMeaning": "eye",
+  "recognitionTakeaway": "Prototype draft: 目 anchors the shared meaning 'eye' and gives learners a basic symbol for later word and sentence examples.",
+  "publicationStatus": "draft",
+  "visuals": {
+    "evolutionAssetRefs": {
+      "regular": "Assets/PrototypeVisuals/eye-regular.svg"
+    },
+    "assetStatus": "prototype-draft",
+    "note": "Draft app-native visual card for prototype testing. Replace with source-backed historical redraws before publication."
+  },
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "目",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "mu4"
+        }
+      ],
+      "glosses": [
+        "eye"
+      ],
+      "examples": [
+        {
+          "text": "目光",
+          "reading": "mu4",
+          "translation": "eye",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "目"
+          ]
+        },
+        {
+          "text": "人有目。",
+          "reading": null,
+          "translation": "Prototype sentence using eye.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "eye-parallel-1",
+          "reusesKnownSymbols": [
+            "人"
+          ],
+          "introducedSymbols": [
+            "目"
+          ]
+        }
+      ]
+    },
+    "traditionalChinese": {
+      "form": "目",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "mu4"
+        }
+      ],
+      "glosses": [
+        "eye"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "目光",
+          "reading": "mu4",
+          "translation": "eye",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "目"
+          ]
+        },
+        {
+          "text": "人有目。",
+          "reading": null,
+          "translation": "Prototype Taiwan sentence using eye.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "eye-parallel-1",
+          "reusesKnownSymbols": [
+            "人"
+          ],
+          "introducedSymbols": [
+            "目"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "目光",
+          "reading": null,
+          "translation": "eye",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "目"
+          ]
+        },
+        {
+          "text": "人有目。",
+          "reading": null,
+          "translation": "Prototype Hong Kong sentence using eye.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "eye-parallel-1",
+          "reusesKnownSymbols": [
+            "人"
+          ],
+          "introducedSymbols": [
+            "目"
+          ]
+        }
+      ]
+    },
+    "japanese": {
+      "form": "目",
+      "readings": [
+        {
+          "system": "on",
+          "value": "moku"
+        }
+      ],
+      "glosses": [
+        "eye"
+      ],
+      "examples": [
+        {
+          "text": "目",
+          "reading": "moku",
+          "translation": "eye",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "目"
+          ]
+        },
+        {
+          "text": "人には目があります。",
+          "reading": null,
+          "translation": "Prototype Japanese sentence using eye.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "eye-parallel-1",
+          "reusesKnownSymbols": [
+            "人"
+          ],
+          "introducedSymbols": [
+            "目"
+          ]
+        }
+      ]
+    },
+    "korean": {
+      "form": "目",
+      "readings": [
+        {
+          "system": "hangul",
+          "value": "목"
+        }
+      ],
+      "glosses": [
+        "eye"
+      ],
+      "examples": [
+        {
+          "text": "목",
+          "reading": "목",
+          "translation": "eye",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "目"
+          ]
+        },
+        {
+          "text": "사람에게는 눈이 있습니다.",
+          "reading": null,
+          "translation": "Prototype Korean sentence using eye.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "eye-parallel-1",
+          "reusesKnownSymbols": [
+            "人"
+          ],
+          "introducedSymbols": [
+            "目"
+          ]
+        }
+      ]
+    }
+  },
+  "history": {
+    "originAnchor": "Prototype visual anchor for 目. Replace with source-backed historical origin notes before publication.",
+    "stages": [
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "目",
+        "assetRef": "Assets/PrototypeVisuals/eye-regular.svg",
+        "changeNoteFromPrevious": null,
+        "certainty": "limited",
+        "sourceIds": [
+          "source-prototype-visual"
+        ],
+        "historicalSound": null
+      }
+    ]
+  },
+  "structure": {
+    "summary": "Prototype structure note for 目. Replace with source-backed character/component explanation before publication.",
+    "components": [
+      {
+        "label": "目",
+        "role": "prototype symbol",
+        "meaningHint": "eye"
+      }
+    ],
+    "certainty": "limited",
+    "caveat": "Prototype placeholder; source-backed structure review required before publication.",
+    "sourceIds": [
+      "source-prototype-visual"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Prototype usage starts with a word-level example and then a basic sentence, preferably reusing earlier symbols where possible.",
+    "notes": [
+      "Prototype examples are for app-flow testing and require native-speaker/editorial review before publication."
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-prototype-visual",
+      "label": "Prototype visual and usage placeholder",
+      "type": "prototype",
+      "citation": "Internal draft asset and example placeholder for Prototype 1 testing; not publication-ready."
+    }
+  ],
+  "notes": [
+    "Prototype 1 record generated for app testing.",
+    "Visual asset is a draft app-native card, not a source-backed historical form."
+  ]
+}

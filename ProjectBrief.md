@@ -63,7 +63,18 @@ Examples of Symbols and the "New Symbol" order -> Our main focus and page.
  - See examples of app design - KakaoTalk_20260610_144125411.jpg, and KakaoTalk_20260610_144125411_01.jpg
 
  Additional Information ProjectBrief3:
- - Every part of the family tree should have (If possible to find)
+ - Every part of the family tree (Every screen as we go through the symmbol) should have (If possible to find)
  1. Sound - (not actually an audio file ) - But how it sounded
  2. Historical change in text(Oracle Bone will obviously compare to real image)
  3. Comparison potentially with the previous family tree. 
+
+Additional Information ProjectBrief4:
+Once the word/symbol has been determined, the example usage in the languages should include:
+1. Shared word across languages if possible with that symbol.
+2. Sentence use of that symbol (Could be very basic)
+- Preferably with use of previously learned symbols.
+
+- It's therefore important to start with very basic symbols that hold their own meaning, and as the user learn more and more, preferably use previously learned symbols to make sentences that are in use today.
+
+3. Basically as the "Viewer/user" improves their vocabulary, it should naturally lead from simple words to sentences, using existing vocabulary if possible.
+4. As for examples throughout the focus languages, if we can have the same sentences in the different languages that would be preferred. But definitely show examples that does not "just" include the meaning of the symbol, but also how it is used. 

@@ -43,6 +43,8 @@ Assert-Equal -Actual $bundledJson.recognitionTakeaway -Expected $sourceJson.reco
 
 $projectText = Get-Content -Raw $projectFile
 Assert-True -Condition $projectText.Contains("tree.json") -Message "Xcode project should include the bundled tree corpus resource."
+Assert-True -Condition $projectText.Contains("AsianLanguageTests") -Message "Xcode project should include the Swift unit test target."
+Assert-True -Condition $projectText.Contains("tree.json in Resources") -Message "Swift unit tests should have access to the bundled tree corpus fixture."
 
 $swiftFiles = Get-ChildItem -Path (Join-Path $repoRoot "Sources/App") -Filter "*.swift" -Recurse |
   ForEach-Object { $_.Name } |
@@ -51,5 +53,25 @@ $swiftFiles = Get-ChildItem -Path (Join-Path $repoRoot "Sources/App") -Filter "*
 foreach ($swiftFile in $swiftFiles) {
   Assert-True -Condition $projectText.Contains($swiftFile) -Message "Xcode project should reference Swift source '$swiftFile'."
 }
+
+$swiftTestFiles = Get-ChildItem -Path (Join-Path $repoRoot "Tests/AsianLanguageTests") -Filter "*.swift" -Recurse |
+  ForEach-Object { $_.Name } |
+  Sort-Object
+
+foreach ($swiftTestFile in $swiftTestFiles) {
+  Assert-True -Condition $projectText.Contains($swiftTestFile) -Message "Xcode project should reference Swift test source '$swiftTestFile'."
+}
+
+$schemeText = Get-Content -Raw (Join-Path $repoRoot "AsianLanguage.xcodeproj/xcshareddata/xcschemes/AsianLanguage.xcscheme")
+Assert-True -Condition $schemeText.Contains("AsianLanguageTests.xctest") -Message "Shared Xcode scheme should include the Swift unit test bundle."
+
+$homeViewText = Get-Content -Raw (Join-Path $repoRoot "Sources/App/Home/HomeView.swift")
+Assert-True -Condition $homeViewText.Contains("NavigationLink(value: route)") -Message "Home should route through its selected lesson route."
+Assert-True -Condition $homeViewText.Contains("homeLessonRoute") -Message "Home should choose between resume and featured lesson routes."
+Assert-True -Condition $homeViewText.Contains("navigationDestination(for: LessonRoute.self)") -Message "Home should register a LessonRoute navigation destination."
+
+$lessonViewText = Get-Content -Raw (Join-Path $repoRoot "Sources/App/Lesson/LessonView.swift")
+Assert-True -Condition $lessonViewText.Contains("route.sharedCharacterID") -Message "Lesson view should resolve the route by Shared Character id."
+Assert-True -Condition $lessonViewText.Contains("LessonStep.allCases") -Message "Lesson view should expose the six-step lesson flow."
 
 Write-Output "OK: project wiring tests passed"

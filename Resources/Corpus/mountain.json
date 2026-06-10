@@ -1,0 +1,256 @@
+{
+  "id": "mountain",
+  "version": 1,
+  "prototypeSequence": 6,
+  "coreCharacter": "山",
+  "coreSharedMeaning": "mountain",
+  "recognitionTakeaway": "Prototype draft: 山 anchors the shared meaning 'mountain' and gives learners a basic symbol for later word and sentence examples.",
+  "publicationStatus": "draft",
+  "visuals": {
+    "evolutionAssetRefs": {
+      "regular": "Assets/PrototypeVisuals/mountain-regular.svg"
+    },
+    "assetStatus": "prototype-draft",
+    "note": "Draft app-native visual card for prototype testing. Replace with source-backed historical redraws before publication."
+  },
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "山",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "shan1"
+        }
+      ],
+      "glosses": [
+        "mountain"
+      ],
+      "examples": [
+        {
+          "text": "山",
+          "reading": "shan1",
+          "translation": "mountain",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "山"
+          ]
+        },
+        {
+          "text": "山上有木。",
+          "reading": null,
+          "translation": "Prototype sentence using mountain.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "mountain-parallel-1",
+          "reusesKnownSymbols": [
+            "木"
+          ],
+          "introducedSymbols": [
+            "山"
+          ]
+        }
+      ]
+    },
+    "traditionalChinese": {
+      "form": "山",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "shan1"
+        }
+      ],
+      "glosses": [
+        "mountain"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "山",
+          "reading": "shan1",
+          "translation": "mountain",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "山"
+          ]
+        },
+        {
+          "text": "山上有木。",
+          "reading": null,
+          "translation": "Prototype Taiwan sentence using mountain.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "mountain-parallel-1",
+          "reusesKnownSymbols": [
+            "木"
+          ],
+          "introducedSymbols": [
+            "山"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "山",
+          "reading": null,
+          "translation": "mountain",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "山"
+          ]
+        },
+        {
+          "text": "山上有木。",
+          "reading": null,
+          "translation": "Prototype Hong Kong sentence using mountain.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "mountain-parallel-1",
+          "reusesKnownSymbols": [
+            "木"
+          ],
+          "introducedSymbols": [
+            "山"
+          ]
+        }
+      ]
+    },
+    "japanese": {
+      "form": "山",
+      "readings": [
+        {
+          "system": "on",
+          "value": "san"
+        }
+      ],
+      "glosses": [
+        "mountain"
+      ],
+      "examples": [
+        {
+          "text": "山",
+          "reading": "san",
+          "translation": "mountain",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "山"
+          ]
+        },
+        {
+          "text": "山の上に木があります。",
+          "reading": null,
+          "translation": "Prototype Japanese sentence using mountain.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "mountain-parallel-1",
+          "reusesKnownSymbols": [
+            "木"
+          ],
+          "introducedSymbols": [
+            "山"
+          ]
+        }
+      ]
+    },
+    "korean": {
+      "form": "山",
+      "readings": [
+        {
+          "system": "hangul",
+          "value": "산"
+        }
+      ],
+      "glosses": [
+        "mountain"
+      ],
+      "examples": [
+        {
+          "text": "산",
+          "reading": "산",
+          "translation": "mountain",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "山"
+          ]
+        },
+        {
+          "text": "산 위에 나무가 있습니다.",
+          "reading": null,
+          "translation": "Prototype Korean sentence using mountain.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "mountain-parallel-1",
+          "reusesKnownSymbols": [
+            "木"
+          ],
+          "introducedSymbols": [
+            "山"
+          ]
+        }
+      ]
+    }
+  },
+  "history": {
+    "originAnchor": "Prototype visual anchor for 山. Replace with source-backed historical origin notes before publication.",
+    "stages": [
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "山",
+        "assetRef": "Assets/PrototypeVisuals/mountain-regular.svg",
+        "changeNoteFromPrevious": null,
+        "certainty": "limited",
+        "sourceIds": [
+          "source-prototype-visual"
+        ],
+        "historicalSound": null
+      }
+    ]
+  },
+  "structure": {
+    "summary": "Prototype structure note for 山. Replace with source-backed character/component explanation before publication.",
+    "components": [
+      {
+        "label": "山",
+        "role": "prototype symbol",
+        "meaningHint": "mountain"
+      }
+    ],
+    "certainty": "limited",
+    "caveat": "Prototype placeholder; source-backed structure review required before publication.",
+    "sourceIds": [
+      "source-prototype-visual"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Prototype usage starts with a word-level example and then a basic sentence, preferably reusing earlier symbols where possible.",
+    "notes": [
+      "Prototype examples are for app-flow testing and require native-speaker/editorial review before publication."
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-prototype-visual",
+      "label": "Prototype visual and usage placeholder",
+      "type": "prototype",
+      "citation": "Internal draft asset and example placeholder for Prototype 1 testing; not publication-ready."
+    }
+  ],
+  "notes": [
+    "Prototype 1 record generated for app testing.",
+    "Visual asset is a draft app-native card, not a source-backed historical form."
+  ]
+}

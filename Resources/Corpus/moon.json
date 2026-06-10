@@ -1,0 +1,246 @@
+{
+  "id": "moon",
+  "version": 1,
+  "prototypeSequence": 2,
+  "coreCharacter": "月",
+  "coreSharedMeaning": "moon; month",
+  "recognitionTakeaway": "Prototype draft: 月 anchors the shared meaning 'moon; month' and gives learners a basic symbol for later word and sentence examples.",
+  "publicationStatus": "draft",
+  "visuals": {
+    "evolutionAssetRefs": {
+      "regular": "Assets/PrototypeVisuals/moon-regular.svg"
+    },
+    "assetStatus": "prototype-draft",
+    "note": "Draft app-native visual card for prototype testing. Replace with source-backed historical redraws before publication."
+  },
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "月",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "yue4"
+        }
+      ],
+      "glosses": [
+        "moon; month"
+      ],
+      "examples": [
+        {
+          "text": "月亮",
+          "reading": "yue4",
+          "translation": "moon; month",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
+        },
+        {
+          "text": "月亮很明亮。",
+          "reading": null,
+          "translation": "Prototype sentence using moon; month.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "moon-parallel-1",
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
+        }
+      ]
+    },
+    "traditionalChinese": {
+      "form": "月",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "yue4"
+        }
+      ],
+      "glosses": [
+        "moon; month"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "月亮",
+          "reading": "yue4",
+          "translation": "moon; month",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
+        },
+        {
+          "text": "月亮很明亮。",
+          "reading": null,
+          "translation": "Prototype Taiwan sentence using moon; month.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "moon-parallel-1",
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "月亮",
+          "reading": null,
+          "translation": "moon; month",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
+        },
+        {
+          "text": "月亮好光。",
+          "reading": null,
+          "translation": "Prototype Hong Kong sentence using moon; month.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "moon-parallel-1",
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
+        }
+      ]
+    },
+    "japanese": {
+      "form": "月",
+      "readings": [
+        {
+          "system": "on",
+          "value": "getsu"
+        }
+      ],
+      "glosses": [
+        "moon; month"
+      ],
+      "examples": [
+        {
+          "text": "月",
+          "reading": "getsu",
+          "translation": "moon; month",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
+        },
+        {
+          "text": "月が明るいです。",
+          "reading": null,
+          "translation": "Prototype Japanese sentence using moon; month.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "moon-parallel-1",
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
+        }
+      ]
+    },
+    "korean": {
+      "form": "月",
+      "readings": [
+        {
+          "system": "hangul",
+          "value": "월"
+        }
+      ],
+      "glosses": [
+        "moon; month"
+      ],
+      "examples": [
+        {
+          "text": "월",
+          "reading": "월",
+          "translation": "moon; month",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
+        },
+        {
+          "text": "달이 밝습니다.",
+          "reading": null,
+          "translation": "Prototype Korean sentence using moon; month.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "moon-parallel-1",
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
+        }
+      ]
+    }
+  },
+  "history": {
+    "originAnchor": "Prototype visual anchor for 月. Replace with source-backed historical origin notes before publication.",
+    "stages": [
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "月",
+        "assetRef": "Assets/PrototypeVisuals/moon-regular.svg",
+        "changeNoteFromPrevious": null,
+        "certainty": "limited",
+        "sourceIds": [
+          "source-prototype-visual"
+        ],
+        "historicalSound": null
+      }
+    ]
+  },
+  "structure": {
+    "summary": "Prototype structure note for 月. Replace with source-backed character/component explanation before publication.",
+    "components": [
+      {
+        "label": "月",
+        "role": "prototype symbol",
+        "meaningHint": "moon; month"
+      }
+    ],
+    "certainty": "limited",
+    "caveat": "Prototype placeholder; source-backed structure review required before publication.",
+    "sourceIds": [
+      "source-prototype-visual"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Prototype usage starts with a word-level example and then a basic sentence, preferably reusing earlier symbols where possible.",
+    "notes": [
+      "Prototype examples are for app-flow testing and require native-speaker/editorial review before publication."
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-prototype-visual",
+      "label": "Prototype visual and usage placeholder",
+      "type": "prototype",
+      "citation": "Internal draft asset and example placeholder for Prototype 1 testing; not publication-ready."
+    }
+  ],
+  "notes": [
+    "Prototype 1 record generated for app testing.",
+    "Visual asset is a draft app-native card, not a source-backed historical form."
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "id": "fire",
+  "version": 1,
+  "prototypeSequence": 8,
+  "coreCharacter": "火",
+  "coreSharedMeaning": "fire",
+  "recognitionTakeaway": "Prototype draft: 火 anchors the shared meaning 'fire' and gives learners a basic symbol for later word and sentence examples.",
+  "publicationStatus": "draft",
+  "visuals": {
+    "evolutionAssetRefs": {
+      "regular": "Assets/PrototypeVisuals/fire-regular.svg"
+    },
+    "assetStatus": "prototype-draft",
+    "note": "Draft app-native visual card for prototype testing. Replace with source-backed historical redraws before publication."
+  },
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "火",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "huo3"
+        }
+      ],
+      "glosses": [
+        "fire"
+      ],
+      "examples": [
+        {
+          "text": "火",
+          "reading": "huo3",
+          "translation": "fire",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "火"
+          ]
+        },
+        {
+          "text": "火很大。",
+          "reading": null,
+          "translation": "Prototype sentence using fire.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "fire-parallel-1",
+          "reusesKnownSymbols": [
+            "大"
+          ],
+          "introducedSymbols": [
+            "火"
+          ]
+        }
+      ]
+    },
+    "traditionalChinese": {
+      "form": "火",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "huo3"
+        }
+      ],
+      "glosses": [
+        "fire"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "火",
+          "reading": "huo3",
+          "translation": "fire",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "火"
+          ]
+        },
+        {
+          "text": "火很大。",
+          "reading": null,
+          "translation": "Prototype Taiwan sentence using fire.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "fire-parallel-1",
+          "reusesKnownSymbols": [
+            "大"
+          ],
+          "introducedSymbols": [
+            "火"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "火",
+          "reading": null,
+          "translation": "fire",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "火"
+          ]
+        },
+        {
+          "text": "火好大。",
+          "reading": null,
+          "translation": "Prototype Hong Kong sentence using fire.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "fire-parallel-1",
+          "reusesKnownSymbols": [
+            "大"
+          ],
+          "introducedSymbols": [
+            "火"
+          ]
+        }
+      ]
+    },
+    "japanese": {
+      "form": "火",
+      "readings": [
+        {
+          "system": "on",
+          "value": "ka"
+        }
+      ],
+      "glosses": [
+        "fire"
+      ],
+      "examples": [
+        {
+          "text": "火",
+          "reading": "ka",
+          "translation": "fire",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "火"
+          ]
+        },
+        {
+          "text": "火が大きいです。",
+          "reading": null,
+          "translation": "Prototype Japanese sentence using fire.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "fire-parallel-1",
+          "reusesKnownSymbols": [
+            "大"
+          ],
+          "introducedSymbols": [
+            "火"
+          ]
+        }
+      ]
+    },
+    "korean": {
+      "form": "火",
+      "readings": [
+        {
+          "system": "hangul",
+          "value": "화"
+        }
+      ],
+      "glosses": [
+        "fire"
+      ],
+      "examples": [
+        {
+          "text": "화",
+          "reading": "화",
+          "translation": "fire",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "火"
+          ]
+        },
+        {
+          "text": "불이 큽니다.",
+          "reading": null,
+          "translation": "Prototype Korean sentence using fire.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "fire-parallel-1",
+          "reusesKnownSymbols": [
+            "大"
+          ],
+          "introducedSymbols": [
+            "火"
+          ]
+        }
+      ]
+    }
+  },
+  "history": {
+    "originAnchor": "Prototype visual anchor for 火. Replace with source-backed historical origin notes before publication.",
+    "stages": [
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "火",
+        "assetRef": "Assets/PrototypeVisuals/fire-regular.svg",
+        "changeNoteFromPrevious": null,
+        "certainty": "limited",
+        "sourceIds": [
+          "source-prototype-visual"
+        ],
+        "historicalSound": null
+      }
+    ]
+  },
+  "structure": {
+    "summary": "Prototype structure note for 火. Replace with source-backed character/component explanation before publication.",
+    "components": [
+      {
+        "label": "火",
+        "role": "prototype symbol",
+        "meaningHint": "fire"
+      }
+    ],
+    "certainty": "limited",
+    "caveat": "Prototype placeholder; source-backed structure review required before publication.",
+    "sourceIds": [
+      "source-prototype-visual"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Prototype usage starts with a word-level example and then a basic sentence, preferably reusing earlier symbols where possible.",
+    "notes": [
+      "Prototype examples are for app-flow testing and require native-speaker/editorial review before publication."
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-prototype-visual",
+      "label": "Prototype visual and usage placeholder",
+      "type": "prototype",
+      "citation": "Internal draft asset and example placeholder for Prototype 1 testing; not publication-ready."
+    }
+  ],
+  "notes": [
+    "Prototype 1 record generated for app testing.",
+    "Visual asset is a draft app-native card, not a source-backed historical form."
+  ]
+}

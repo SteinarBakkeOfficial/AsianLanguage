@@ -65,6 +65,19 @@ Build an offline-first iPhone app that teaches shared Chinese-character heritage
 - Bundle the installed corpus with the app release
 - Keep the product focused on shared characters and modern usage only
 
+## Implementation Status
+
+- Phase 1 Product Foundation: implemented in project docs
+- Phase 2 App Skeleton: implemented with SwiftUI shell and Xcode project scaffold
+- Phase 3 Local Data Layer: implemented locally for user state and bundled corpus access
+- Phase 4 Lesson Experience: implemented as a six-step guided lesson shell
+- Phase 5 Discovery: implemented for local Search, Browse, and Collections over bundled records
+- Phase 6 Content Tooling and Corpus Format: implemented for validation, draft creation, sync, and readiness reporting
+- Phase 7 Visual Content System: implemented as structured SwiftUI history spine and modern-form comparison views
+- Phase 8 Initial Corpus: Prototype 1 has 11 draft basic-symbol records and readiness tooling; launch-quality breadth remains blocked on source-backed editorial work
+- Phase 9 Polish and QA: partially implemented for reset confirmation, About / Method, empty states, and Windows checks
+- Phase 10 V1 Release: blocked until macOS/Xcode signing, simulator/device verification, and App Store/TestFlight access are available
+
 ## V1 to VNext Carryover Register
 
 - Grammar comparison is intentionally deferred beyond V1

@@ -141,4 +141,28 @@ Notes:
 
 ## Current State
 
-The repo currently contains the product brief and glossary foundation. The next work is to turn the agreed product definition into an initial app architecture, local content schema, and SwiftUI shell.
+The repo now contains the V1 product foundation, SwiftUI app shell, local user-state layer, guided lesson shell, offline discovery surfaces, corpus tooling, and Windows-runnable verification scripts.
+
+Implemented locally:
+
+- SwiftUI tab shell for Home, Search, Browse, Collections, and Settings
+- bundled read-only Prototype 1 draft corpus with 11 basic Shared Characters
+- local JSON-backed user-state store for focus language, lesson progress, favorites, and review-later
+- six-step guided `Shared Character` lesson shell
+- local search, browse, and collection entry points
+- reusable history spine and modern-forms comparison views
+- corpus validator, draft-record generator, corpus readiness report, and release readiness check
+- future XCTest target scaffold for macOS/Xcode verification
+
+Windows verification:
+
+```powershell
+& .\Tools\Run-Checks.ps1
+```
+
+Remaining blockers:
+
+- real SwiftUI compile, simulator, and device testing require macOS/Xcode
+- production launch corpus requires source-backed editorial work beyond the current 11 draft prototype records
+- prototype visual cards are included for testing, but publication visuals still need source-backed redraws or licensed/source-backed assets
+- TestFlight/App Store release requires Apple signing and upload tooling

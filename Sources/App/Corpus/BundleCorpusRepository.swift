@@ -16,12 +16,21 @@ struct BundleCorpusRepository {
 
     /// Decodes one bundled Shared Character record by stable corpus identifier.
     func sharedCharacter(id: String) throws -> SharedCharacterRecord {
-        guard let url = bundle.url(forResource: id, withExtension: "json") else {
+        let url = bundle.url(forResource: id, withExtension: "json", subdirectory: "Corpus") ??
+            bundle.url(forResource: id, withExtension: "json")
+
+        guard let url else {
             throw CorpusRepositoryError.missingBundledRecord(id: id)
         }
 
         let data = try Data(contentsOf: url)
         return try decoder.decode(SharedCharacterRecord.self, from: data)
+    }
+
+    /// Decodes multiple bundled Shared Character records in manifest order.
+    func sharedCharacters(ids: [String]) -> [SharedCharacterRecord] {
+        ids.compactMap { try? sharedCharacter(id: $0) }
+            .sorted { $0.prototypeSequence < $1.prototypeSequence }
     }
 }
 

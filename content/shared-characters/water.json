@@ -1,0 +1,256 @@
+{
+  "id": "water",
+  "version": 1,
+  "prototypeSequence": 7,
+  "coreCharacter": "水",
+  "coreSharedMeaning": "water",
+  "recognitionTakeaway": "Prototype draft: 水 anchors the shared meaning 'water' and gives learners a basic symbol for later word and sentence examples.",
+  "publicationStatus": "draft",
+  "visuals": {
+    "evolutionAssetRefs": {
+      "regular": "Assets/PrototypeVisuals/water-regular.svg"
+    },
+    "assetStatus": "prototype-draft",
+    "note": "Draft app-native visual card for prototype testing. Replace with source-backed historical redraws before publication."
+  },
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "水",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "shui3"
+        }
+      ],
+      "glosses": [
+        "water"
+      ],
+      "examples": [
+        {
+          "text": "水",
+          "reading": "shui3",
+          "translation": "water",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "水"
+          ]
+        },
+        {
+          "text": "水在山下。",
+          "reading": null,
+          "translation": "Prototype sentence using water.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "water-parallel-1",
+          "reusesKnownSymbols": [
+            "山"
+          ],
+          "introducedSymbols": [
+            "水"
+          ]
+        }
+      ]
+    },
+    "traditionalChinese": {
+      "form": "水",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "shui3"
+        }
+      ],
+      "glosses": [
+        "water"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "水",
+          "reading": "shui3",
+          "translation": "water",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "水"
+          ]
+        },
+        {
+          "text": "水在山下。",
+          "reading": null,
+          "translation": "Prototype Taiwan sentence using water.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "water-parallel-1",
+          "reusesKnownSymbols": [
+            "山"
+          ],
+          "introducedSymbols": [
+            "水"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "水",
+          "reading": null,
+          "translation": "water",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "水"
+          ]
+        },
+        {
+          "text": "水喺山下。",
+          "reading": null,
+          "translation": "Prototype Hong Kong sentence using water.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "water-parallel-1",
+          "reusesKnownSymbols": [
+            "山"
+          ],
+          "introducedSymbols": [
+            "水"
+          ]
+        }
+      ]
+    },
+    "japanese": {
+      "form": "水",
+      "readings": [
+        {
+          "system": "on",
+          "value": "sui"
+        }
+      ],
+      "glosses": [
+        "water"
+      ],
+      "examples": [
+        {
+          "text": "水",
+          "reading": "sui",
+          "translation": "water",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "水"
+          ]
+        },
+        {
+          "text": "水は山の下にあります。",
+          "reading": null,
+          "translation": "Prototype Japanese sentence using water.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "water-parallel-1",
+          "reusesKnownSymbols": [
+            "山"
+          ],
+          "introducedSymbols": [
+            "水"
+          ]
+        }
+      ]
+    },
+    "korean": {
+      "form": "水",
+      "readings": [
+        {
+          "system": "hangul",
+          "value": "수"
+        }
+      ],
+      "glosses": [
+        "water"
+      ],
+      "examples": [
+        {
+          "text": "수",
+          "reading": "수",
+          "translation": "water",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "水"
+          ]
+        },
+        {
+          "text": "물은 산 아래에 있습니다.",
+          "reading": null,
+          "translation": "Prototype Korean sentence using water.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "water-parallel-1",
+          "reusesKnownSymbols": [
+            "山"
+          ],
+          "introducedSymbols": [
+            "水"
+          ]
+        }
+      ]
+    }
+  },
+  "history": {
+    "originAnchor": "Prototype visual anchor for 水. Replace with source-backed historical origin notes before publication.",
+    "stages": [
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "水",
+        "assetRef": "Assets/PrototypeVisuals/water-regular.svg",
+        "changeNoteFromPrevious": null,
+        "certainty": "limited",
+        "sourceIds": [
+          "source-prototype-visual"
+        ],
+        "historicalSound": null
+      }
+    ]
+  },
+  "structure": {
+    "summary": "Prototype structure note for 水. Replace with source-backed character/component explanation before publication.",
+    "components": [
+      {
+        "label": "水",
+        "role": "prototype symbol",
+        "meaningHint": "water"
+      }
+    ],
+    "certainty": "limited",
+    "caveat": "Prototype placeholder; source-backed structure review required before publication.",
+    "sourceIds": [
+      "source-prototype-visual"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Prototype usage starts with a word-level example and then a basic sentence, preferably reusing earlier symbols where possible.",
+    "notes": [
+      "Prototype examples are for app-flow testing and require native-speaker/editorial review before publication."
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-prototype-visual",
+      "label": "Prototype visual and usage placeholder",
+      "type": "prototype",
+      "citation": "Internal draft asset and example placeholder for Prototype 1 testing; not publication-ready."
+    }
+  ],
+  "notes": [
+    "Prototype 1 record generated for app testing.",
+    "Visual asset is a draft app-native card, not a source-backed historical form."
+  ]
+}

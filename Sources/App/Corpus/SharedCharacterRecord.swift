@@ -20,8 +20,14 @@ struct SharedCharacterRecord: Decodable, Identifiable, Hashable {
     /// Draft/review/published state used by validation and content tooling.
     let publicationStatus: String
 
+    /// Prototype teaching order; low values are shown earlier.
+    let prototypeSequence: Int
+
     /// Required modern coverage across Simplified Chinese, Traditional Chinese, Japanese, and Korean.
     let focusCoverage: FocusCoverage
+
+    /// Visual assets used by history and lesson presentation.
+    let visuals: SharedCharacterVisuals
 
     /// Historical origin anchor and displayed script stages.
     let history: CharacterHistory
@@ -119,6 +125,37 @@ struct UsageExample: Decodable, Hashable {
 
     /// Whether this example directly shows the core shared meaning.
     let showsCoreMeaning: Bool
+
+    /// Learning level for progressive examples: word, phrase, or sentence.
+    let exampleLevel: UsageExampleLevel
+
+    /// Optional group id linking parallel examples across focus tracks.
+    let parallelExampleGroupID: String?
+
+    /// Previously learned symbols reused by this example.
+    let reusesKnownSymbols: [String]
+
+    /// Symbols introduced by this example.
+    let introducedSymbols: [String]
+}
+
+/// Progressive example level for prototype sequencing and lesson usage display.
+enum UsageExampleLevel: String, Decodable, Hashable {
+    case word
+    case phrase
+    case sentence
+}
+
+/// Visual asset metadata for one Shared Character.
+struct SharedCharacterVisuals: Decodable, Hashable {
+    /// Draft or source-backed asset references keyed by displayed stage.
+    let evolutionAssetRefs: [String: String]
+
+    /// Whether the current assets are prototype placeholders or publication-ready.
+    let assetStatus: String
+
+    /// Editorial note describing visual provenance and replacement needs.
+    let note: String
 }
 
 /// Historical origin anchor and displayed stages.

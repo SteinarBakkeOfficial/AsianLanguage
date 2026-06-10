@@ -1,0 +1,256 @@
+{
+  "id": "small",
+  "version": 1,
+  "prototypeSequence": 5,
+  "coreCharacter": "小",
+  "coreSharedMeaning": "small",
+  "recognitionTakeaway": "Prototype draft: 小 anchors the shared meaning 'small' and gives learners a basic symbol for later word and sentence examples.",
+  "publicationStatus": "draft",
+  "visuals": {
+    "evolutionAssetRefs": {
+      "regular": "Assets/PrototypeVisuals/small-regular.svg"
+    },
+    "assetStatus": "prototype-draft",
+    "note": "Draft app-native visual card for prototype testing. Replace with source-backed historical redraws before publication."
+  },
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "小",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "xiao3"
+        }
+      ],
+      "glosses": [
+        "small"
+      ],
+      "examples": [
+        {
+          "text": "小人",
+          "reading": "xiao3",
+          "translation": "small",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "小"
+          ]
+        },
+        {
+          "text": "小人也在这里。",
+          "reading": null,
+          "translation": "Prototype sentence using small.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "small-parallel-1",
+          "reusesKnownSymbols": [
+            "人"
+          ],
+          "introducedSymbols": [
+            "小"
+          ]
+        }
+      ]
+    },
+    "traditionalChinese": {
+      "form": "小",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "xiao3"
+        }
+      ],
+      "glosses": [
+        "small"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "小人",
+          "reading": "xiao3",
+          "translation": "small",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "小"
+          ]
+        },
+        {
+          "text": "小人也在這裡。",
+          "reading": null,
+          "translation": "Prototype Taiwan sentence using small.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "small-parallel-1",
+          "reusesKnownSymbols": [
+            "人"
+          ],
+          "introducedSymbols": [
+            "小"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "小人",
+          "reading": null,
+          "translation": "small",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "小"
+          ]
+        },
+        {
+          "text": "小人都喺呢度。",
+          "reading": null,
+          "translation": "Prototype Hong Kong sentence using small.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "small-parallel-1",
+          "reusesKnownSymbols": [
+            "人"
+          ],
+          "introducedSymbols": [
+            "小"
+          ]
+        }
+      ]
+    },
+    "japanese": {
+      "form": "小",
+      "readings": [
+        {
+          "system": "on",
+          "value": "shou"
+        }
+      ],
+      "glosses": [
+        "small"
+      ],
+      "examples": [
+        {
+          "text": "小さい人",
+          "reading": "shou",
+          "translation": "small",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "小"
+          ]
+        },
+        {
+          "text": "小さい人もここにいます。",
+          "reading": null,
+          "translation": "Prototype Japanese sentence using small.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "small-parallel-1",
+          "reusesKnownSymbols": [
+            "人"
+          ],
+          "introducedSymbols": [
+            "小"
+          ]
+        }
+      ]
+    },
+    "korean": {
+      "form": "小",
+      "readings": [
+        {
+          "system": "hangul",
+          "value": "소"
+        }
+      ],
+      "glosses": [
+        "small"
+      ],
+      "examples": [
+        {
+          "text": "소인",
+          "reading": "소",
+          "translation": "small",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "小"
+          ]
+        },
+        {
+          "text": "작은 사람도 여기 있습니다.",
+          "reading": null,
+          "translation": "Prototype Korean sentence using small.",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": "small-parallel-1",
+          "reusesKnownSymbols": [
+            "人"
+          ],
+          "introducedSymbols": [
+            "小"
+          ]
+        }
+      ]
+    }
+  },
+  "history": {
+    "originAnchor": "Prototype visual anchor for 小. Replace with source-backed historical origin notes before publication.",
+    "stages": [
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "小",
+        "assetRef": "Assets/PrototypeVisuals/small-regular.svg",
+        "changeNoteFromPrevious": null,
+        "certainty": "limited",
+        "sourceIds": [
+          "source-prototype-visual"
+        ],
+        "historicalSound": null
+      }
+    ]
+  },
+  "structure": {
+    "summary": "Prototype structure note for 小. Replace with source-backed character/component explanation before publication.",
+    "components": [
+      {
+        "label": "小",
+        "role": "prototype symbol",
+        "meaningHint": "small"
+      }
+    ],
+    "certainty": "limited",
+    "caveat": "Prototype placeholder; source-backed structure review required before publication.",
+    "sourceIds": [
+      "source-prototype-visual"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Prototype usage starts with a word-level example and then a basic sentence, preferably reusing earlier symbols where possible.",
+    "notes": [
+      "Prototype examples are for app-flow testing and require native-speaker/editorial review before publication."
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-prototype-visual",
+      "label": "Prototype visual and usage placeholder",
+      "type": "prototype",
+      "citation": "Internal draft asset and example placeholder for Prototype 1 testing; not publication-ready."
+    }
+  ],
+  "notes": [
+    "Prototype 1 record generated for app testing.",
+    "Visual asset is a draft app-native card, not a source-backed historical form."
+  ]
+}

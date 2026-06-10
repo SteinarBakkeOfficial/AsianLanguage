@@ -65,6 +65,46 @@ function Assert-FocusCoverage {
   }
 }
 
+function Assert-PrototypeMetadata {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$RecordPath,
+    [Parameter(Mandatory = $true)]
+    $Record
+  )
+
+  if ($null -eq $Record.prototypeSequence -or -not ($Record.prototypeSequence -is [ValueType])) {
+    Add-Issue -Path $RecordPath -Message "Missing required integer field 'prototypeSequence'."
+  }
+
+  if ($null -eq $Record.visuals) {
+    Add-Issue -Path $RecordPath -Message "Missing required object 'visuals'."
+    return
+  }
+
+  if ($null -eq $Record.visuals.evolutionAssetRefs) {
+    Add-Issue -Path $RecordPath -Message "Missing required object 'visuals.evolutionAssetRefs'."
+  }
+
+  if (-not (Test-HasText $Record.visuals.assetStatus)) {
+    Add-Issue -Path $RecordPath -Message "Missing required text field 'visuals.assetStatus'."
+  }
+}
+
+function Assert-PublicationStatus {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$RecordPath,
+    [Parameter(Mandatory = $true)]
+    $Record
+  )
+
+  $allowedStatuses = @("draft", "review", "published")
+  if ((Test-HasText $Record.publicationStatus) -and $allowedStatuses -notcontains $Record.publicationStatus) {
+    Add-Issue -Path $RecordPath -Message "Invalid publicationStatus '$($Record.publicationStatus)'."
+  }
+}
+
 function Get-Count {
   param($Value)
   if ($null -eq $Value) {
@@ -94,6 +134,30 @@ function Test-HasCoreMeaningExample {
   return $false
 }
 
+function Assert-UsageExampleMetadata {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$RecordPath,
+    [Parameter(Mandatory = $true)]
+    [string]$TrackName,
+    [Parameter(Mandatory = $true)]
+    $Examples
+  )
+
+  $allowedLevels = @("word", "phrase", "sentence")
+  foreach ($example in @($Examples)) {
+    if (-not (Test-HasText $example.exampleLevel) -or $allowedLevels -notcontains $example.exampleLevel) {
+      Add-Issue -Path $RecordPath -Message "Focus track '$TrackName' example must include exampleLevel word, phrase, or sentence."
+    }
+    if ($null -eq $example.reusesKnownSymbols) {
+      Add-Issue -Path $RecordPath -Message "Focus track '$TrackName' example must include reusesKnownSymbols."
+    }
+    if ($null -eq $example.introducedSymbols) {
+      Add-Issue -Path $RecordPath -Message "Focus track '$TrackName' example must include introducedSymbols."
+    }
+  }
+}
+
 function Assert-ExampleCoverage {
   param(
     [Parameter(Mandatory = $true)]
@@ -115,6 +179,9 @@ function Assert-ExampleCoverage {
     if ($null -ne $coverage -and -not (Test-HasCoreMeaningExample $coverage.examples)) {
       Add-Issue -Path $RecordPath -Message "Focus track '$track' must include at least one direct core-meaning example."
     }
+    if ($null -ne $coverage) {
+      Assert-UsageExampleMetadata -RecordPath $RecordPath -TrackName $track -Examples $coverage.examples
+    }
   }
 
   $traditional = $Record.focusCoverage.traditionalChinese
@@ -131,6 +198,8 @@ function Assert-ExampleCoverage {
     if (-not (Test-HasCoreMeaningExample $traditional.hongKongExamples)) {
       Add-Issue -Path $RecordPath -Message "Focus track 'traditionalChinese' must include at least one direct core-meaning Hong Kong example."
     }
+    Assert-UsageExampleMetadata -RecordPath $RecordPath -TrackName "traditionalChinese.taiwan" -Examples $traditional.taiwanExamples
+    Assert-UsageExampleMetadata -RecordPath $RecordPath -TrackName "traditionalChinese.hongKong" -Examples $traditional.hongKongExamples
   }
 }
 
@@ -200,6 +269,25 @@ function Assert-SourceReferences {
   }
 }
 
+function Assert-StructureCertainty {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$RecordPath,
+    [Parameter(Mandatory = $true)]
+    $Record
+  )
+
+  if ($null -eq $Record.structure) {
+    return
+  }
+
+  if ((Test-HasText $Record.structure.certainty) -and
+      $Record.structure.certainty -ne "high" -and
+      -not (Test-HasText $Record.structure.caveat)) {
+    Add-Issue -Path $RecordPath -Message "Limited-certainty structure must include a caveat."
+  }
+}
+
 if (-not (Test-Path $CorpusPath)) {
   Write-Error "Corpus path not found: $CorpusPath"
   exit 2
@@ -226,10 +314,13 @@ foreach ($file in $jsonFiles) {
   Assert-TextField -RecordPath $recordPath -Record $record -FieldName "coreSharedMeaning"
   Assert-TextField -RecordPath $recordPath -Record $record -FieldName "recognitionTakeaway"
   Assert-TextField -RecordPath $recordPath -Record $record -FieldName "publicationStatus"
+  Assert-PrototypeMetadata -RecordPath $recordPath -Record $record
+  Assert-PublicationStatus -RecordPath $recordPath -Record $record
   Assert-FocusCoverage -RecordPath $recordPath -Record $record
   Assert-ExampleCoverage -RecordPath $recordPath -Record $record
   Assert-HistoryCoverage -RecordPath $recordPath -Record $record
   Assert-SourceReferences -RecordPath $recordPath -Record $record
+  Assert-StructureCertainty -RecordPath $recordPath -Record $record
 }
 
 if ($issues.Count -gt 0) {
