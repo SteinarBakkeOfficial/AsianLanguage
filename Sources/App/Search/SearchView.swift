@@ -29,14 +29,22 @@ struct SearchView: View {
 
     var body: some View {
         NavigationStack {
-            List {
-                Section("Results") {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 14) {
+                    Text("Search")
+                        .font(.largeTitle.weight(.bold))
+                    Text("Find a symbol by form, meaning, or sound, then open its evolution board.")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+
                     if searchResults.isEmpty {
                         ContentUnavailableView(
                             query.isEmpty ? "Search Shared Characters" : "No results",
                             systemImage: "magnifyingglass",
                             description: Text("Search by character form, English meaning, or Mandarin, Japanese, and Korean readings.")
                         )
+                        .frame(maxWidth: .infinity)
+                        .padding(.top, 40)
                     } else {
                         ForEach(searchResults) { record in
                             NavigationLink(value: LessonRoute(sharedCharacterID: record.id, startingStep: .origin)) {
@@ -45,9 +53,11 @@ struct SearchView: View {
                         }
                     }
                 }
+                .padding()
             }
             .searchable(text: $query, prompt: "Character, gloss, or reading")
             .navigationTitle("Search")
+            .navigationBarTitleDisplayMode(.inline)
             .navigationDestination(for: LessonRoute.self) { route in
                 LessonView(route: route, dependencies: dependencies)
             }
@@ -56,23 +66,35 @@ struct SearchView: View {
 
     /// Search result row with enough context to avoid a raw catalog feel.
     private func resultRow(_ record: SharedCharacterRecord) -> some View {
-        HStack(alignment: .top, spacing: 12) {
-            Text(record.coreCharacter)
-                .font(.system(size: 36, weight: .regular, design: .serif))
-                .frame(width: 48)
+        HStack(alignment: .center, spacing: 12) {
+            SymbolPictogramView(recordID: record.id, fallbackCharacter: record.coreCharacter)
+                .frame(width: 82, height: 82)
 
             VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    Text(record.coreCharacter)
+                        .font(.system(size: 40, weight: .regular, design: .serif))
+                    Text(statusTitle(for: record))
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(Color.green)
+                }
                 Text(record.coreSharedMeaning.capitalized)
                     .font(.headline)
                 Text(readingSummary(for: record))
                     .font(.caption)
                     .foregroundStyle(.secondary)
-                Text(statusTitle(for: record))
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
             }
+            Spacer()
+            Image(systemName: "arrow.right.circle.fill")
+                .foregroundStyle(Color.green)
         }
-        .padding(.vertical, 4)
+        .padding(12)
+        .background(Color(.secondarySystemBackground))
+        .overlay(
+            RoundedRectangle(cornerRadius: 8)
+                .stroke(Color.green.opacity(0.22), lineWidth: 1)
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
     /// Compact reading summary for quick recognition while browsing results.

@@ -78,6 +78,9 @@ Correct the runnable iPhone prototype so it matches the agreed V1 app structure,
 - Concrete six-step `LessonView` added with step progress, restart, and Mark as Learned
 - Search, Browse, and Collections now use the bundled offline corpus and route into lessons
 - Reusable history spine and modern forms comparison views added for lesson visuals
+- Reference-led `EvolutionBoardView` added so the Origin step shows original picture idea, staged glyph evolution, modern descendants, and a mini timeline together
+- Draft `SymbolPictogramView` and historical glyph sketches added so missing final assets no longer collapse into repeated modern characters
+- Home, Browse, and Search now use symbol-first framed cards instead of plain default list rows
 - Prototype visual SVG cards added under `Resources/Assets/PrototypeVisuals`
 - Historical glyph asset downloader added for available Wikimedia Commons SVGs under `Resources/Assets/HistoricalGlyphs`
 - Progressive word/sentence example metadata added for seed records
@@ -90,6 +93,7 @@ Correct the runnable iPhone prototype so it matches the agreed V1 app structure,
 
 - Lesson is visually centered on the historical evolution of one symbol, not a generic list of sections.
 - The main lesson surface follows the reference pictures: origin idea, staged evolution, stage explanations/sound notes, modern descendants, examples, and summary.
+- The first lesson screen shows visible draft evolution drawings even when final source-backed glyph redraws are unavailable.
 - Missing historical drawings or source-backed stage content are visibly marked as content gaps, not hidden.
 - Available source-backed historical SVGs are bundled and attached to matching stages; unavailable stages remain visible as content gaps.
 - Home shows the agreed primary action: Resume current lesson when one exists, otherwise New Symbol / Next Symbol for the next featured Shared Character.

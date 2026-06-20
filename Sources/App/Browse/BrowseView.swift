@@ -24,24 +24,30 @@ struct BrowseView: View {
                         description: Text("The bundled corpus is empty.")
                     )
                 } else {
-                    List {
-                        Section("Featured Path") {
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 14) {
+                            Text("Browse")
+                                .font(.largeTitle.weight(.bold))
+                            Text("Choose a symbol and follow it from picture idea to modern forms.")
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
+
                             ForEach(dependencies.sharedCharacters) { record in
                                 NavigationLink(value: LessonRoute(sharedCharacterID: record.id, startingStep: .origin)) {
                                     browseRow(record)
                                 }
                             }
-                        }
 
-                        Section("Browse Method") {
                             Text("Browse is intentionally shallow in V1: it follows the editorial teaching sequence and opens directly into Shared Character lessons.")
-                                .font(.subheadline)
+                                .font(.caption)
                                 .foregroundStyle(.secondary)
                         }
+                        .padding()
                     }
                 }
             }
             .navigationTitle("Browse")
+            .navigationBarTitleDisplayMode(.inline)
             .navigationDestination(for: LessonRoute.self) { route in
                 LessonView(route: route, dependencies: dependencies)
             }
@@ -50,24 +56,36 @@ struct BrowseView: View {
 
     /// Curated browse row with progress and recognition context.
     private func browseRow(_ record: SharedCharacterRecord) -> some View {
-        HStack(alignment: .top, spacing: 12) {
-            Text(record.coreCharacter)
-                .font(.system(size: 34, weight: .regular, design: .serif))
-                .frame(width: 48)
+        HStack(alignment: .center, spacing: 12) {
+            SymbolPictogramView(recordID: record.id, fallbackCharacter: record.coreCharacter)
+                .frame(width: 88, height: 88)
 
             VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    Text(record.coreCharacter)
+                        .font(.system(size: 42, weight: .regular, design: .serif))
+                    Text(statusTitle(for: record))
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(Color.green)
+                }
                 Text(record.coreSharedMeaning.capitalized)
                     .font(.headline)
                 Text(record.recognitionTakeaway)
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .lineLimit(2)
-                Text(statusTitle(for: record))
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
             }
+            Spacer()
+            Image(systemName: "arrow.right.circle.fill")
+                .foregroundStyle(Color.green)
         }
-        .padding(.vertical, 4)
+        .padding(12)
+        .background(Color(red: 0.99, green: 0.96, blue: 0.88))
+        .overlay(
+            RoundedRectangle(cornerRadius: 8)
+                .stroke(Color.brown.opacity(0.25), lineWidth: 1)
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
     /// Local progress label for a record.

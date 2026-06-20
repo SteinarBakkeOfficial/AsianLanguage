@@ -35,23 +35,17 @@ struct RootTabView: View {
                 }
                 .tag(AppTab.savedArchive)
 
-            SettingsView(dependencies: dependencies, initialSection: .focusLanguage)
-            .tabItem {
-                Label(AppTab.languages.title, systemImage: AppTab.languages.systemImageName)
-            }
-            .tag(AppTab.languages)
+            LanguagesView(dependencies: dependencies)
+                .tabItem {
+                    Label(AppTab.languages.title, systemImage: AppTab.languages.systemImageName)
+                }
+                .tag(AppTab.languages)
 
-            NavigationStack {
-                PlaceholderScreen(
-                    title: "Account",
-                    message: "Account is reserved for public testing features such as profiles, sync, and release access. It is intentionally shallow while symbol recognition is being tested.",
-                    systemImageName: "person.crop.circle"
-                )
-            }
-            .tabItem {
-                Label(AppTab.account.title, systemImage: AppTab.account.systemImageName)
-            }
-            .tag(AppTab.account)
+            AccountView(dependencies: dependencies)
+                .tabItem {
+                    Label(AppTab.account.title, systemImage: AppTab.account.systemImageName)
+                }
+                .tag(AppTab.account)
 
             SettingsView(dependencies: dependencies)
                 .tabItem {

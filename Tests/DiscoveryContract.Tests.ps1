@@ -53,6 +53,8 @@ $rootText = Get-Text "Sources/App/Navigation/RootTabView.swift"
 Assert-Contains -Text $rootText -ExpectedSubstring "SearchView(dependencies: dependencies)" -Message "Root tabs should inject dependencies into Search."
 Assert-Contains -Text $rootText -ExpectedSubstring "BrowseView(dependencies: dependencies)" -Message "Root tabs should inject dependencies into Browse."
 Assert-Contains -Text $rootText -ExpectedSubstring "CollectionsView(dependencies: dependencies)" -Message "Root tabs should inject dependencies into Collections."
+Assert-Contains -Text $rootText -ExpectedSubstring "LanguagesView(dependencies: dependencies)" -Message "Root tabs should use a dedicated Languages screen."
+Assert-Contains -Text $rootText -ExpectedSubstring "AccountView(dependencies: dependencies)" -Message "Root tabs should use a concrete Account screen."
 
 $searchText = Get-Text "Sources/App/Search/SearchView.swift"
 Assert-Contains -Text $searchText -ExpectedSubstring "SharedCharacterSearchIndex" -Message "Search view should use the local search index."
@@ -68,5 +70,13 @@ Assert-Contains -Text $collectionsText -ExpectedSubstring "Source-Backed Seed Pa
 Assert-Contains -Text $collectionsText -ExpectedSubstring "Pictographic Starters" -Message "Collections should expose a starter editorial collection."
 Assert-Contains -Text $collectionsText -ExpectedSubstring "Review later" -Message "Collections should keep Review later."
 Assert-Contains -Text $collectionsText -ExpectedSubstring "Favorites" -Message "Collections should keep Favorites."
+
+$languagesText = Get-Text "Sources/App/Languages/LanguagesView.swift"
+Assert-Contains -Text $languagesText -ExpectedSubstring "struct LanguagesView: View" -Message "Languages should be a concrete screen."
+Assert-Contains -Text $languagesText -ExpectedSubstring "ForEach(FocusTrack.allCases)" -Message "Languages should expose all focus tracks."
+
+$accountText = Get-Text "Sources/App/Account/AccountView.swift"
+Assert-Contains -Text $accountText -ExpectedSubstring "struct AccountView: View" -Message "Account should be a concrete screen."
+Assert-Contains -Text $accountText -ExpectedSubstring "Local Tester" -Message "Account should expose local tester identity."
 
 Write-Output "OK: discovery contract tests passed"

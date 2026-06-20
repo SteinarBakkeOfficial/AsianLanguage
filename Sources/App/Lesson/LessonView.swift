@@ -299,7 +299,7 @@ struct LessonView: View {
         switch selectedStep {
         case .origin:
             if let record {
-                CharacterEvolutionView(history: record.history, fallbackForm: record.coreCharacter)
+                EvolutionBoardView(record: record, focusSelection: userStateStore.state.focusSelection)
             } else {
                 Text("Origin notes will appear here.")
             }

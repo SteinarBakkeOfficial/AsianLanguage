@@ -19,7 +19,6 @@
 		8B000001000000000000000A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000A /* SettingsView.swift */; };
 		8B000001000000000000000B /* LessonStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000B /* LessonStep.swift */; };
 		8B000001000000000000000C /* LessonRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000C /* LessonRoute.swift */; };
-		8B000001000000000000000D /* PlaceholderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000D /* PlaceholderScreen.swift */; };
 		8B000001000000000000000E /* tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000E /* tree.json */; };
 		8B000001000000000000000F /* SharedCharacterRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000000F /* SharedCharacterRecord.swift */; };
 		8B0000010000000000000010 /* BundleCorpusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000010 /* BundleCorpusRepository.swift */; };
@@ -43,6 +42,10 @@
 		8B0000010000000000000023 /* UsageExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000023 /* UsageExamplesView.swift */; };
 		8B0000010000000000000024 /* HistoricalGlyphs in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000024 /* HistoricalGlyphs */; };
 		8B0000010000000000000025 /* HistoricalGlyphs in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000024 /* HistoricalGlyphs */; };
+		8B0000010000000000000026 /* EvolutionBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000026 /* EvolutionBoardView.swift */; };
+		8B0000010000000000000027 /* SymbolPictogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000027 /* SymbolPictogramView.swift */; };
+		8B0000010000000000000028 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000028 /* AccountView.swift */; };
+		8B0000010000000000000029 /* LanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000029 /* LanguagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +71,6 @@
 		8B000101000000000000000A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8B000101000000000000000B /* LessonStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonStep.swift; sourceTree = "<group>"; };
 		8B000101000000000000000C /* LessonRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonRoute.swift; sourceTree = "<group>"; };
-		8B000101000000000000000D /* PlaceholderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderScreen.swift; sourceTree = "<group>"; };
 		8B000101000000000000000E /* tree.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tree.json; sourceTree = "<group>"; };
 		8B000101000000000000000F /* SharedCharacterRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCharacterRecord.swift; sourceTree = "<group>"; };
 		8B0001010000000000000010 /* BundleCorpusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleCorpusRepository.swift; sourceTree = "<group>"; };
@@ -88,6 +90,10 @@
 		8B0001010000000000000020 /* PrototypeVisuals */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/PrototypeVisuals; sourceTree = "<group>"; };
 		8B0001010000000000000023 /* UsageExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageExamplesView.swift; sourceTree = "<group>"; };
 		8B0001010000000000000024 /* HistoricalGlyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/HistoricalGlyphs; sourceTree = "<group>"; };
+		8B0001010000000000000026 /* EvolutionBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionBoardView.swift; sourceTree = "<group>"; };
+		8B0001010000000000000027 /* SymbolPictogramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolPictogramView.swift; sourceTree = "<group>"; };
+		8B0001010000000000000028 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		8B0001010000000000000029 /* LanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesView.swift; sourceTree = "<group>"; };
 		8B0002010000000000000001 /* AsianLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsianLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0002010000000000000002 /* AsianLanguageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsianLanguageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -139,6 +145,8 @@
 				8B0004010000000000000008 /* Browse */,
 				8B0004010000000000000015 /* Discovery */,
 				8B0004010000000000000009 /* Collections */,
+				8B0004010000000000000017 /* Languages */,
+				8B0004010000000000000018 /* Account */,
 				8B000401000000000000000A /* Settings */,
 				8B000401000000000000000B /* Lesson */,
 				8B0004010000000000000014 /* UserState */,
@@ -225,12 +233,30 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		8B0004010000000000000017 /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				8B0001010000000000000029 /* LanguagesView.swift */,
+			);
+			path = Languages;
+			sourceTree = "<group>";
+		};
+		8B0004010000000000000018 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				8B0001010000000000000028 /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		8B000401000000000000000B /* Lesson */ = {
 			isa = PBXGroup;
 			children = (
 				8B000101000000000000000B /* LessonStep.swift */,
 				8B000101000000000000000C /* LessonRoute.swift */,
 				8B0001010000000000000018 /* LessonView.swift */,
+				8B0001010000000000000026 /* EvolutionBoardView.swift */,
+				8B0001010000000000000027 /* SymbolPictogramView.swift */,
 				8B0001010000000000000023 /* UsageExamplesView.swift */,
 				8B000101000000000000001B /* CharacterEvolutionView.swift */,
 				8B000101000000000000001C /* ModernFormsComparisonView.swift */,
@@ -241,7 +267,6 @@
 		8B000401000000000000000C /* SharedUI */ = {
 			isa = PBXGroup;
 			children = (
-				8B000101000000000000000D /* PlaceholderScreen.swift */,
 			);
 			path = SharedUI;
 			sourceTree = "<group>";
@@ -416,7 +441,6 @@
 				8B000001000000000000000A /* SettingsView.swift in Sources */,
 				8B000001000000000000000B /* LessonStep.swift in Sources */,
 				8B000001000000000000000C /* LessonRoute.swift in Sources */,
-				8B000001000000000000000D /* PlaceholderScreen.swift in Sources */,
 				8B000001000000000000000F /* SharedCharacterRecord.swift in Sources */,
 				8B0000010000000000000010 /* BundleCorpusRepository.swift in Sources */,
 				8B0000010000000000000015 /* AppUserState.swift in Sources */,
@@ -428,6 +452,10 @@
 				8B000001000000000000001D /* AboutMethodView.swift in Sources */,
 				8B000001000000000000001E /* SeedCorpusManifest.swift in Sources */,
 				8B0000010000000000000023 /* UsageExamplesView.swift in Sources */,
+				8B0000010000000000000026 /* EvolutionBoardView.swift in Sources */,
+				8B0000010000000000000027 /* SymbolPictogramView.swift in Sources */,
+				8B0000010000000000000028 /* AccountView.swift in Sources */,
+				8B0000010000000000000029 /* LanguagesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

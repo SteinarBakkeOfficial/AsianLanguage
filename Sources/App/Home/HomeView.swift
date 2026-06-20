@@ -20,49 +20,101 @@ struct HomeView: View {
         let actionTitle = homeActionTitle
 
         NavigationStack {
-            List {
-                Section {
-                    NavigationLink(value: route) {
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text(actionTitle)
-                                .font(.headline)
-                            Text(featured.displayForm)
-                                .font(.system(size: 56, weight: .regular, design: .serif))
-                            Text(featured.primaryGloss)
-                                .font(.subheadline)
-                                .foregroundStyle(.secondary)
-                            if let whyThisNow = whyThisNow {
-                                Text(whyThisNow)
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
-                        }
-                        .padding(.vertical, 4)
-                    }
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    featuredSymbolCard(route: route, featured: featured, actionTitle: actionTitle)
+                    dashboardCard
+                    focusAndCorpusCard
                 }
-
-                Section("Study Progress") {
-                    LabeledContent("Learned", value: "\(learnedCount) / \(dependencies.installedSharedCharacterCount)")
-                    LabeledContent("Review later", value: "\(reviewLaterCount)")
-                    LabeledContent("Favorites", value: "\(favoriteCount)")
-                }
-
-                Section("Focus Tracks") {
-                    Text(selectedFocusTrackTitles)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                }
-
-                Section("Corpus") {
-                    LabeledContent("Installed", value: dependencies.installedCorpusName)
-                    LabeledContent("Shared Characters", value: "\(dependencies.installedSharedCharacterCount)")
-                }
+                .padding()
             }
             .navigationTitle("Home")
             .navigationDestination(for: LessonRoute.self) { route in
                 LessonView(route: route, dependencies: dependencies)
             }
         }
+    }
+
+    /// Symbol-first Home card based on the app-structure reference sketch.
+    private func featuredSymbolCard(
+        route: LessonRoute,
+        featured: FeaturedSharedCharacterSummary,
+        actionTitle: String
+    ) -> some View {
+        NavigationLink(value: route) {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(alignment: .center, spacing: 12) {
+                    if let record = nextUnlearnedRecord {
+                        SymbolPictogramView(recordID: record.id, fallbackCharacter: record.coreCharacter)
+                            .frame(width: 128, height: 116)
+                    }
+
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text(actionTitle)
+                            .font(.caption.weight(.bold))
+                            .foregroundStyle(Color.green)
+                        Text(featured.displayForm)
+                            .font(.system(size: 72, weight: .regular, design: .serif))
+                            .foregroundStyle(.primary)
+                        Text(featured.primaryGloss)
+                            .font(.title3.weight(.semibold))
+                            .foregroundStyle(.primary)
+                    }
+                }
+
+                if let whyThisNow {
+                    Text(whyThisNow)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+
+                Text("Start with the picture idea, then follow the symbol through Oracle Bone, Bronze, Seal, Clerical, Regular, and modern forms.")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(Color.brown)
+            }
+            .padding(14)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Color(red: 0.99, green: 0.96, blue: 0.88))
+            .overlay(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(Color.brown.opacity(0.28), lineWidth: 1)
+            )
+            .clipShape(RoundedRectangle(cornerRadius: 8))
+        }
+        .buttonStyle(.plain)
+    }
+
+    /// Compact progress card.
+    private var dashboardCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Study Progress")
+                .font(.headline)
+            LabeledContent("Learned", value: "\(learnedCount) / \(dependencies.installedSharedCharacterCount)")
+            LabeledContent("Review later", value: "\(reviewLaterCount)")
+            LabeledContent("Favorites", value: "\(favoriteCount)")
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(.secondarySystemBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
+    }
+
+    /// Focus and corpus card.
+    private var focusAndCorpusCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Focus Tracks")
+                .font(.headline)
+            Text(selectedFocusTrackTitles)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+            Divider()
+            LabeledContent("Installed", value: dependencies.installedCorpusName)
+            LabeledContent("Shared Characters", value: "\(dependencies.installedSharedCharacterCount)")
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(.secondarySystemBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
     /// Chooses resume when local state has an in-progress lesson; otherwise opens the featured record.

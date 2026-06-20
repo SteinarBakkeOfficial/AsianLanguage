@@ -53,7 +53,11 @@ Assert-Contains -Text $formsViewText -ExpectedSubstring "Japanese" -Message "Mod
 Assert-Contains -Text $formsViewText -ExpectedSubstring "Korean" -Message "Modern forms should include Korean."
 
 $lessonText = Get-Text "Sources/App/Lesson/LessonView.swift"
-Assert-Contains -Text $lessonText -ExpectedSubstring "CharacterEvolutionView(history:" -Message "Origin step should use the history spine visual."
+Assert-Contains -Text $lessonText -ExpectedSubstring "EvolutionBoardView(record:" -Message "Origin step should use the reference-led evolution board."
 Assert-Contains -Text $lessonText -ExpectedSubstring "ModernFormsComparisonView(record: record, focusSelection:" -Message "Modern Forms step should use the focus-filtered comparison visual."
+
+$pictogramText = Get-Text "Sources/App/Lesson/SymbolPictogramView.swift"
+Assert-Contains -Text $pictogramText -ExpectedSubstring "struct SymbolPictogramView: View" -Message "Visual system should include draft original-picture drawings."
+Assert-Contains -Text $pictogramText -ExpectedSubstring 'case "tree"' -Message "Original-picture drawings should cover the tree reference path."
 
 Write-Output "OK: visual content contract tests passed"

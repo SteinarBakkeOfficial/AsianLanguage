@@ -48,6 +48,7 @@ Assert-Contains -Text $lessonViewText -ExpectedSubstring "Next Symbol" -Message 
 Assert-Contains -Text $lessonViewText -ExpectedSubstring "startLessonIfNeeded()" -Message "LessonView should avoid overwriting learned state on appear."
 Assert-Contains -Text $lessonViewText -ExpectedSubstring "restartLesson()" -Message "LessonView should support restarting at Origin."
 Assert-Contains -Text $lessonViewText -ExpectedSubstring "stepContent" -Message "LessonView should render step-specific content."
+Assert-Contains -Text $lessonViewText -ExpectedSubstring "EvolutionBoardView(record: record" -Message "Origin should open with the visual evolution board."
 Assert-Contains -Text $lessonViewText -ExpectedSubstring "UsageExamplesView(record: record, focusSelection:" -Message "LessonView should show focus-filtered progressive cross-language usage examples."
 Assert-Contains -Text $lessonViewText -ExpectedSubstring "sourceRow(_ source: CorpusSource)" -Message "LessonView should expose source-note rendering."
 Assert-Contains -Text $lessonViewText -ExpectedSubstring "Link(source.label, destination: url)" -Message "Lesson source notes should link URL-backed sources."
@@ -57,8 +58,16 @@ Assert-Contains -Text $usageViewText -ExpectedSubstring "struct UsageExamplesVie
 Assert-Contains -Text $usageViewText -ExpectedSubstring "example.exampleLevel.rawValue" -Message "Usage examples should show word/sentence level."
 Assert-Contains -Text $usageViewText -ExpectedSubstring "reusesKnownSymbols" -Message "Usage examples should show reused known symbols."
 
+$evolutionBoardText = Get-Text "Sources/App/Lesson/EvolutionBoardView.swift"
+Assert-Contains -Text $evolutionBoardText -ExpectedSubstring "struct EvolutionBoardView: View" -Message "Lesson should include a reference-led evolution board."
+Assert-Contains -Text $evolutionBoardText -ExpectedSubstring "Original picture idea" -Message "Evolution board should show the original picture idea."
+Assert-Contains -Text $evolutionBoardText -ExpectedSubstring "DraftEvolutionGlyphView" -Message "Evolution board should show draft historical glyphs when final assets are missing."
+Assert-Contains -Text $evolutionBoardText -ExpectedSubstring "ModernFormsComparisonView" -Message "Evolution board should include modern descendants."
+Assert-Contains -Text $evolutionBoardText -ExpectedSubstring "timelineStrip" -Message "Evolution board should include a mini timeline."
+
 $homeText = Get-Text "Sources/App/Home/HomeView.swift"
 Assert-Contains -Text $homeText -ExpectedSubstring "LessonView(route: route, dependencies: dependencies)" -Message "Home should open the concrete guided lesson view."
+Assert-Contains -Text $homeText -ExpectedSubstring "SymbolPictogramView" -Message "Home should show a symbol-first picture card."
 
 $projectText = Get-Content -Raw (Join-Path $repoRoot "AsianLanguage.xcodeproj/project.pbxproj")
 Assert-Contains -Text $projectText -ExpectedSubstring "LessonView.swift" -Message "Xcode project should include LessonView.swift."
