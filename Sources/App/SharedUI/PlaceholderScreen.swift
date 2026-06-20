@@ -8,10 +8,13 @@ struct PlaceholderScreen: View {
     /// Short implementation note for the current placeholder state.
     let message: String
 
+    /// SF Symbol used to identify the reserved app concept.
+    var systemImageName: String = "rectangle.and.pencil.and.ellipsis"
+
     var body: some View {
         ContentUnavailableView(
             title,
-            systemImage: "rectangle.and.pencil.and.ellipsis",
+            systemImage: systemImageName,
             description: Text(message)
         )
     }

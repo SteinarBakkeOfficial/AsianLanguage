@@ -5,7 +5,9 @@ enum AppTab: Hashable, CaseIterable, Identifiable {
     case home
     case search
     case browse
-    case collections
+    case savedArchive
+    case languages
+    case account
     case settings
 
     /// Stable identifier for SwiftUI tab selection and future persistence.
@@ -20,8 +22,12 @@ enum AppTab: Hashable, CaseIterable, Identifiable {
             return "Search"
         case .browse:
             return "Browse"
-        case .collections:
-            return "Collections"
+        case .savedArchive:
+            return "Saved"
+        case .languages:
+            return "Languages"
+        case .account:
+            return "Account"
         case .settings:
             return "Settings"
         }
@@ -36,8 +42,12 @@ enum AppTab: Hashable, CaseIterable, Identifiable {
             return "magnifyingglass"
         case .browse:
             return "square.grid.2x2"
-        case .collections:
+        case .savedArchive:
             return "bookmark"
+        case .languages:
+            return "character.book.closed"
+        case .account:
+            return "person.crop.circle"
         case .settings:
             return "gearshape"
         }

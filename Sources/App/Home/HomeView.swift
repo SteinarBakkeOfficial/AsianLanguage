@@ -15,9 +15,9 @@ struct HomeView: View {
     }
 
     var body: some View {
-        let featured = dependencies.nextFeaturedSharedCharacter
         let route = homeLessonRoute
-        let actionTitle = userStateStore.state.resumeLessonRoute == nil ? featured.actionTitle : "Resume current lesson"
+        let featured = featuredSummary
+        let actionTitle = homeActionTitle
 
         NavigationStack {
             List {
@@ -31,9 +31,26 @@ struct HomeView: View {
                             Text(featured.primaryGloss)
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
+                            if let whyThisNow = whyThisNow {
+                                Text(whyThisNow)
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                            }
                         }
                         .padding(.vertical, 4)
                     }
+                }
+
+                Section("Study Progress") {
+                    LabeledContent("Learned", value: "\(learnedCount) / \(dependencies.installedSharedCharacterCount)")
+                    LabeledContent("Review later", value: "\(reviewLaterCount)")
+                    LabeledContent("Favorites", value: "\(favoriteCount)")
+                }
+
+                Section("Focus Tracks") {
+                    Text(selectedFocusTrackTitles)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
                 }
 
                 Section("Corpus") {
@@ -51,8 +68,65 @@ struct HomeView: View {
     /// Chooses resume when local state has an in-progress lesson; otherwise opens the featured record.
     private var homeLessonRoute: LessonRoute {
         userStateStore.state.resumeLessonRoute ?? LessonRoute(
-            sharedCharacterID: dependencies.nextFeaturedSharedCharacter.id,
+            sharedCharacterID: nextUnlearnedRecord?.id ?? dependencies.nextFeaturedSharedCharacter.id,
             startingStep: .origin
         )
+    }
+
+    /// Chooses the next unlearned Shared Character before falling back to the dependency default.
+    private var featuredSummary: FeaturedSharedCharacterSummary {
+        nextUnlearnedRecord?.featuredSummary ?? dependencies.nextFeaturedSharedCharacter
+    }
+
+    /// Home action copy follows resume first, then next-symbol after any learned progress.
+    private var homeActionTitle: String {
+        if userStateStore.state.resumeLessonRoute != nil {
+            return "Resume current lesson"
+        }
+        return learnedCount == 0 ? "New Symbol" : "Next Symbol"
+    }
+
+    /// First record in teaching order that has not been learned yet.
+    private var nextUnlearnedRecord: SharedCharacterRecord? {
+        dependencies.sharedCharacters.first { record in
+            userStateStore.state.lessonStates[record.id]?.progressStatus != .learned
+        }
+    }
+
+    /// Number of bundled lessons marked learned in local state.
+    private var learnedCount: Int {
+        dependencies.sharedCharacters.filter { record in
+            userStateStore.state.lessonStates[record.id]?.progressStatus == .learned
+        }.count
+    }
+
+    /// Number of bundled lessons saved for later review.
+    private var reviewLaterCount: Int {
+        dependencies.sharedCharacters.filter { record in
+            userStateStore.state.lessonStates[record.id]?.isReviewLater == true
+        }.count
+    }
+
+    /// Number of bundled lessons marked as favorites.
+    private var favoriteCount: Int {
+        dependencies.sharedCharacters.filter { record in
+            userStateStore.state.lessonStates[record.id]?.isStarred == true
+        }.count
+    }
+
+    /// Human-readable summary of enabled focus tracks.
+    private var selectedFocusTrackTitles: String {
+        userStateStore.state.focusSelection.selectedTracks
+            .map(\.title)
+            .joined(separator: ", ")
+    }
+
+    /// Editorial reason for the featured lesson placement.
+    private var whyThisNow: String? {
+        guard let record = nextUnlearnedRecord else {
+            return "You have reached the end of the bundled seed corpus."
+        }
+
+        return "Why this now: \(record.recognitionTakeaway)"
     }
 }

@@ -140,9 +140,10 @@ A V1 lesson is publishable only if it has:
 
 - `About / Method` exists in a lightweight utility/info area.
 - It should explain scope, method, and corpus size.
-- V1 has no `Account` page.
-- `Saved/Archive` maps to `Collections` in V1.
-- `Languages` maps to `Focus language` inside `Settings` in V1.
+- `Account` is an agreed app concept, but it can remain shallow/deferred while the core symbol-recognition experience is being tested.
+- `Saved/Archive` is an agreed app concept; V1 may implement it through lightweight saved collections until the public-testing account/storage model is needed.
+- `Languages` is an agreed app concept; V1 may implement it through focus-language controls until a separate public-facing language page is needed.
+- Deferred app concepts should keep a visible or documented place in the product model; they should not be silently removed or replaced with unrelated pages.
 - `Settings` handles local preferences, focus language, offline/app information, and reset.
 - `Reset app progress` is app-wide, not per lesson.
 - Reset uses a normal explicit confirmation flow.
@@ -150,5 +151,5 @@ A V1 lesson is publishable only if it has:
 ## Monetization and Expansion
 
 - V1 excludes ads.
-- V1 excludes voice, tracing, grammar comparison, rule-based common-denominator lessons, Android, account pages, sync, and roadmap teasers in-product.
-- These remain valid later opportunities, but are intentionally out of current scope.
+- V1 excludes deep implementation of voice, tracing, grammar comparison, rule-based common-denominator lessons, Android, account systems, sync, ads, and roadmap teasers in-product.
+- Deferred agreed features remain part of the product direction and should be preserved as carryover or shallow placeholders when they affect navigation or public-testing readiness.

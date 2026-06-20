@@ -53,7 +53,6 @@ foreach ($case in $expectedLessonCases) {
 
 $focusTrackText = Get-Text "Sources/App/Core/FocusTrack.swift"
 $expectedFocusCases = @(
-  "case all",
   "case simplifiedChinese",
   "case traditionalChinese",
   "case japanese",
@@ -63,6 +62,8 @@ $expectedFocusCases = @(
 foreach ($case in $expectedFocusCases) {
   Assert-Contains -Text $focusTrackText -ExpectedSubstring $case -Message "FocusTrack should preserve required V1 focus lanes."
 }
+Assert-Contains -Text $focusTrackText -ExpectedSubstring "struct FocusTrackSelection" -Message "Focus model should support multi-select focus tracks."
+Assert-Contains -Text $focusTrackText -ExpectedSubstring "static let all = FocusTrackSelection" -Message "Focus selection should default all required tracks on."
 
 $lessonRouteText = Get-Text "Sources/App/Lesson/LessonRoute.swift"
 Assert-Contains -Text $lessonRouteText -ExpectedSubstring "let sharedCharacterID: String" -Message "LessonRoute should be keyed by Shared Character id."
@@ -71,7 +72,7 @@ Assert-Contains -Text $lessonRouteText -ExpectedSubstring "let startingStep: Les
 $recordText = Get-Text "Sources/App/Corpus/SharedCharacterRecord.swift"
 $requiredRecordFields = @(
   "let id: String",
-  "let prototypeSequence: Int",
+  "let teachingSequence: Int",
   "let coreCharacter: String",
   "let coreSharedMeaning: String",
   "let recognitionTakeaway: String",
@@ -81,6 +82,7 @@ $requiredRecordFields = @(
   "let structure: CharacterStructure",
   "let usage: UsageSummary",
   "let sources: [CorpusSource]"
+  "let url: String?"
 )
 
 foreach ($field in $requiredRecordFields) {
@@ -98,7 +100,7 @@ Assert-Contains -Text $recordText -ExpectedSubstring "let introducedSymbols: [St
 
 $homeText = Get-Text "Sources/App/Home/HomeView.swift"
 Assert-Contains -Text $homeText -ExpectedSubstring "homeLessonRoute" -Message "Home should route through its selected lesson route."
-Assert-Contains -Text $homeText -ExpectedSubstring "sharedCharacterID: dependencies.nextFeaturedSharedCharacter.id" -Message "Home should fall back to the featured Shared Character at Origin."
+Assert-Contains -Text $homeText -ExpectedSubstring "nextUnlearnedRecord?.id ?? dependencies.nextFeaturedSharedCharacter.id" -Message "Home should route to the next unlearned Shared Character before falling back to the dependency default."
 
 $lessonViewText = Get-Text "Sources/App/Lesson/LessonView.swift"
 Assert-Contains -Text $lessonViewText -ExpectedSubstring "dependencies.corpusRepository.sharedCharacter(id: route.sharedCharacterID)" -Message "Lesson view should resolve its routed corpus record."

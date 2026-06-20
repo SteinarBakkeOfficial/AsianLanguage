@@ -39,7 +39,9 @@ function Get-Text {
 
 $historyViewText = Get-Text "Sources/App/Lesson/CharacterEvolutionView.swift"
 Assert-Contains -Text $historyViewText -ExpectedSubstring "struct CharacterEvolutionView: View" -Message "Visual system should expose a history spine view."
-Assert-Contains -Text $historyViewText -ExpectedSubstring "ForEach(history.stages" -Message "History spine should render all displayed stages."
+Assert-Contains -Text $historyViewText -ExpectedSubstring "canonicalStages" -Message "History spine should preserve the agreed canonical evolution path."
+Assert-Contains -Text $historyViewText -ExpectedSubstring "Source-backed historical drawing and explanation needed" -Message "History spine should visibly mark missing stage content."
+Assert-Contains -Text $historyViewText -ExpectedSubstring "This draft gap keeps the agreed evolution path visible" -Message "History spine should avoid hiding missing final redraws."
 Assert-Contains -Text $historyViewText -ExpectedSubstring "changeNoteFromPrevious" -Message "History spine should show stage-to-stage change notes."
 Assert-Contains -Text $historyViewText -ExpectedSubstring "assetRef" -Message "History spine should preserve asset reference display points."
 
@@ -52,6 +54,6 @@ Assert-Contains -Text $formsViewText -ExpectedSubstring "Korean" -Message "Moder
 
 $lessonText = Get-Text "Sources/App/Lesson/LessonView.swift"
 Assert-Contains -Text $lessonText -ExpectedSubstring "CharacterEvolutionView(history:" -Message "Origin step should use the history spine visual."
-Assert-Contains -Text $lessonText -ExpectedSubstring "ModernFormsComparisonView(record:" -Message "Modern Forms step should use the comparison visual."
+Assert-Contains -Text $lessonText -ExpectedSubstring "ModernFormsComparisonView(record: record, focusSelection:" -Message "Modern Forms step should use the focus-filtered comparison visual."
 
 Write-Output "OK: visual content contract tests passed"

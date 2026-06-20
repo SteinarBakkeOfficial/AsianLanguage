@@ -1,8 +1,8 @@
 import Foundation
 
-/// Prototype corpus manifest used until bundled metadata is generated.
-enum PrototypeCorpusManifest {
-    /// Shared Character records bundled for Prototype 1 in teaching order.
+/// Seed corpus manifest used until bundled metadata is generated.
+enum SeedCorpusManifest {
+    /// Source-backed seed Shared Character records bundled in teaching order.
     static let recordIDs = [
         "day",
         "moon",

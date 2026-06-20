@@ -73,8 +73,8 @@ function Assert-PrototypeMetadata {
     $Record
   )
 
-  if ($null -eq $Record.prototypeSequence -or -not ($Record.prototypeSequence -is [ValueType])) {
-    Add-Issue -Path $RecordPath -Message "Missing required integer field 'prototypeSequence'."
+  if ($null -eq $Record.teachingSequence -or -not ($Record.teachingSequence -is [ValueType])) {
+    Add-Issue -Path $RecordPath -Message "Missing required integer field 'teachingSequence'."
   }
 
   if ($null -eq $Record.visuals) {
@@ -246,6 +246,12 @@ function Assert-SourceReferences {
   foreach ($source in @($Record.sources)) {
     if (Test-HasText $source.id) {
       $knownSourceIds.Add($source.id) | Out-Null
+    }
+    if (-not (Test-HasText $source.citation)) {
+      Add-Issue -Path $RecordPath -Message "Source '$($source.id)' must include a citation."
+    }
+    if ($source.type -ne "prototype" -and -not (Test-HasText $source.url)) {
+      Add-Issue -Path $RecordPath -Message "Source '$($source.id)' must include a URL."
     }
   }
 

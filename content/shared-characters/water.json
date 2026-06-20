@@ -1,17 +1,17 @@
 {
   "id": "water",
-  "version": 1,
-  "prototypeSequence": 7,
+  "version": 2,
+  "teachingSequence": 7,
   "coreCharacter": "水",
   "coreSharedMeaning": "water",
-  "recognitionTakeaway": "Prototype draft: 水 anchors the shared meaning 'water' and gives learners a basic symbol for later word and sentence examples.",
+  "recognitionTakeaway": "水 links the idea 'water' from an ancient graphic origin through regular script into modern Chinese, Japanese Kanji, and Korean Hanja usage.",
   "publicationStatus": "draft",
   "visuals": {
     "evolutionAssetRefs": {
       "regular": "Assets/PrototypeVisuals/water-regular.svg"
     },
-    "assetStatus": "prototype-draft",
-    "note": "Draft app-native visual card for prototype testing. Replace with source-backed historical redraws before publication."
+    "assetStatus": "source-backed-draft",
+    "note": "Regular-script prototype card exists. Historical Oracle/Bronze/Seal assets are attached when source-backed Wikimedia Commons SVGs are available; final publication still needs licensing review and specialist redraw approval."
   },
   "focusCoverage": {
     "simplifiedChinese": {
@@ -19,7 +19,7 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "shui3"
+          "value": "shui3 / shuǐ"
         }
       ],
       "glosses": [
@@ -28,7 +28,7 @@
       "examples": [
         {
           "text": "水",
-          "reading": "shui3",
+          "reading": "shui3 / shuǐ",
           "translation": "water",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -41,7 +41,7 @@
         {
           "text": "水在山下。",
           "reading": null,
-          "translation": "Prototype sentence using water.",
+          "translation": "Basic sentence using water.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "water-parallel-1",
@@ -59,7 +59,7 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "shui3"
+          "value": "shui3 / shuǐ"
         }
       ],
       "glosses": [
@@ -68,7 +68,7 @@
       "taiwanExamples": [
         {
           "text": "水",
-          "reading": "shui3",
+          "reading": "shui3 / shuǐ",
           "translation": "water",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -81,7 +81,7 @@
         {
           "text": "水在山下。",
           "reading": null,
-          "translation": "Prototype Taiwan sentence using water.",
+          "translation": "Basic Taiwan sentence using water.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "water-parallel-1",
@@ -109,7 +109,7 @@
         {
           "text": "水喺山下。",
           "reading": null,
-          "translation": "Prototype Hong Kong sentence using water.",
+          "translation": "Basic Hong Kong sentence using water.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "water-parallel-1",
@@ -128,6 +128,10 @@
         {
           "system": "on",
           "value": "sui"
+        },
+        {
+          "system": "kun",
+          "value": "mizu"
         }
       ],
       "glosses": [
@@ -136,7 +140,7 @@
       "examples": [
         {
           "text": "水",
-          "reading": "sui",
+          "reading": "mizu",
           "translation": "water",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -149,7 +153,7 @@
         {
           "text": "水は山の下にあります。",
           "reading": null,
-          "translation": "Prototype Japanese sentence using water.",
+          "translation": "Basic Japanese sentence using water.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "water-parallel-1",
@@ -166,8 +170,12 @@
       "form": "水",
       "readings": [
         {
-          "system": "hangul",
-          "value": "수"
+          "system": "hanja",
+          "value": "수 / su"
+        },
+        {
+          "system": "native Korean",
+          "value": "물 / mul"
         }
       ],
       "glosses": [
@@ -176,7 +184,7 @@
       "examples": [
         {
           "text": "수",
-          "reading": "수",
+          "reading": "수 / su",
           "translation": "water",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -189,7 +197,7 @@
         {
           "text": "물은 산 아래에 있습니다.",
           "reading": null,
-          "translation": "Prototype Korean sentence using water.",
+          "translation": "Basic Korean sentence using water.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "water-parallel-1",
@@ -204,53 +212,156 @@
     }
   },
   "history": {
-    "originAnchor": "Prototype visual anchor for 水. Replace with source-backed historical origin notes before publication.",
+    "originAnchor": "水 is taught here from its original idea: flowing water lines, later standardized as 水.",
     "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone Script",
+        "form": null,
+        "assetRef": null,
+        "changeNoteFromPrevious": null,
+        "certainty": "medium",
+        "sourceIds": [
+          "source-oracle-bone-script",
+          "source-character-classification",
+          "source-evobc",
+          "source-radical-85"
+        ],
+        "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review."
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze Script",
+        "form": null,
+        "assetRef": null,
+        "changeNoteFromPrevious": "Bronze inscriptions continue the ancient graph tradition after the oracle-bone period; final 水-specific redraw still required.",
+        "certainty": "medium",
+        "sourceIds": [
+          "source-evobc",
+          "source-radical-85"
+        ],
+        "historicalSound": "Not shown in this seed record."
+      },
+      {
+        "stage": "seal",
+        "label": "Seal Script",
+        "form": null,
+        "assetRef": null,
+        "changeNoteFromPrevious": "Seal script formalizes earlier graph traditions into a more standardized archaic written style.",
+        "certainty": "medium",
+        "sourceIds": [
+          "source-seal-script",
+          "source-evobc",
+          "source-radical-85"
+        ],
+        "historicalSound": "Not shown in this seed record."
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical Script",
+        "form": null,
+        "assetRef": null,
+        "changeNoteFromPrevious": "Clerical script flattens and regularizes earlier forms before later regular-script writing.",
+        "certainty": "medium",
+        "sourceIds": [
+          "source-clerical-script",
+          "source-evobc",
+          "source-radical-85"
+        ],
+        "historicalSound": "Not shown in this seed record."
+      },
       {
         "stage": "regular",
         "label": "Regular Script",
         "form": "水",
         "assetRef": "Assets/PrototypeVisuals/water-regular.svg",
-        "changeNoteFromPrevious": null,
-        "certainty": "limited",
+        "changeNoteFromPrevious": "The regular form stabilizes as 水, still recognizable in modern focus-track usage.",
+        "certainty": "high",
         "sourceIds": [
-          "source-prototype-visual"
+          "source-radical-85",
+          "source-prototype-redraw"
         ],
         "historicalSound": null
       }
     ]
   },
   "structure": {
-    "summary": "Prototype structure note for 水. Replace with source-backed character/component explanation before publication.",
+    "summary": "水 is handled as a basic graph/radical for 'water'. It can appear as a standalone character and as a component in related characters.",
     "components": [
       {
         "label": "水",
-        "role": "prototype symbol",
+        "role": "basic graph / radical",
         "meaningHint": "water"
       }
     ],
-    "certainty": "limited",
-    "caveat": "Prototype placeholder; source-backed structure review required before publication.",
+    "certainty": "medium",
+    "caveat": "Seed record uses public reference sources; publication requires specialist paleography review and final source-backed glyph redraws.",
     "sourceIds": [
-      "source-prototype-visual"
+      "source-radical-85",
+      "source-character-classification"
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Prototype usage starts with a word-level example and then a basic sentence, preferably reusing earlier symbols where possible.",
+    "coreMeaningFirst": "Start with 'water', then compare how 水 is read and used across Mandarin, Traditional Chinese usage communities, Japanese, and Korean.",
     "notes": [
-      "Prototype examples are for app-flow testing and require native-speaker/editorial review before publication."
+      "Japanese often has separate Sino-Japanese on readings and native kun readings.",
+      "Korean examples separate the Hanja reading from the native Korean everyday word when they differ.",
+      "Modern examples are seed content and still need native-speaker review before publication."
     ]
   },
   "sources": [
     {
-      "id": "source-prototype-visual",
-      "label": "Prototype visual and usage placeholder",
+      "id": "source-character-classification",
+      "label": "Chinese character classification reference",
+      "type": "reference",
+      "citation": "Chinese character classification explains the pictographic origin of many early Chinese characters and includes examples such as sun, moon, mountain, water, and wood/tree.",
+      "url": "https://en.wikipedia.org/wiki/Chinese_character_classification"
+    },
+    {
+      "id": "source-oracle-bone-script",
+      "label": "Oracle bone script reference",
+      "type": "reference",
+      "citation": "Oracle bone script is the oldest attested substantial Chinese writing corpus and an ancestor of later Chinese-family scripts.",
+      "url": "https://en.wikipedia.org/wiki/Oracle_bone_script"
+    },
+    {
+      "id": "source-seal-script",
+      "label": "Seal script reference",
+      "type": "reference",
+      "citation": "Seal script developed from earlier bronze/large-seal traditions and was standardized in Qin usage.",
+      "url": "https://en.wikipedia.org/wiki/Seal_script"
+    },
+    {
+      "id": "source-clerical-script",
+      "label": "Clerical script reference",
+      "type": "reference",
+      "citation": "Clerical script matured and became dominant during the Han dynasty, flattening and regularizing earlier forms.",
+      "url": "https://en.wikipedia.org/wiki/Clerical_script"
+    },
+    {
+      "id": "source-evobc",
+      "label": "EVOBC dataset paper",
+      "type": "research-paper",
+      "citation": "Guan et al., 'An open dataset for the evolution of oracle bone characters: EVOBC', documents ancient-character evolution categories including oracle bone, bronze, seal, and clerical stages.",
+      "url": "https://arxiv.org/abs/2401.12467"
+    },
+    {
+      "id": "source-prototype-redraw",
+      "label": "Internal app-native prototype redraw",
       "type": "prototype",
-      "citation": "Internal draft asset and example placeholder for Prototype 1 testing; not publication-ready."
+      "citation": "Internal schematic redraw used only for prototype testing; specialist review and source-backed final redraws are still required."
+    },
+    {
+      "id": "source-radical-85",
+      "label": "Radical 85 / 水 reference",
+      "type": "reference",
+      "citation": "Radical 85 lists 水 as the water radical with Mandarin shuǐ, Japanese sui/mizu, and Korean 수 su / 물 mul.",
+      "url": "https://en.wikipedia.org/wiki/Radical_85"
     }
   ],
   "notes": [
-    "Prototype 1 record generated for app testing.",
-    "Visual asset is a draft app-native card, not a source-backed historical form."
+    "Source-backed seed pass generated from public radical/script references.",
+    "Historical stage explanations are sourced, but final stage glyphs still require licensed/source-backed redraws.",
+    "Modern examples need native-speaker/editorial review before publication."
   ]
 }

@@ -29,7 +29,7 @@ if ($outputDirectory -and -not (Test-Path $outputDirectory)) {
 $record = [ordered]@{
   id = $Id
   version = 1
-  prototypeSequence = 999
+  teachingSequence = 999
   coreCharacter = $CoreCharacter
   coreSharedMeaning = $CoreSharedMeaning
   recognitionTakeaway = "Draft recognition takeaway for $CoreCharacter. Replace with source-backed editorial copy before publication."

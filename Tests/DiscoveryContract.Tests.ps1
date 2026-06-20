@@ -47,7 +47,7 @@ Assert-Contains -Text $searchIndexText -ExpectedSubstring "readings" -Message "S
 
 $dependenciesText = Get-Text "Sources/App/Core/AppDependencies.swift"
 Assert-Contains -Text $dependenciesText -ExpectedSubstring "let sharedCharacters: [SharedCharacterRecord]" -Message "App dependencies should expose bundled corpus records for discovery."
-Assert-Contains -Text $dependenciesText -ExpectedSubstring "PrototypeCorpusManifest.recordIDs" -Message "App dependencies should load all prototype manifest records."
+Assert-Contains -Text $dependenciesText -ExpectedSubstring "SeedCorpusManifest.recordIDs" -Message "App dependencies should load all seed manifest records."
 
 $rootText = Get-Text "Sources/App/Navigation/RootTabView.swift"
 Assert-Contains -Text $rootText -ExpectedSubstring "SearchView(dependencies: dependencies)" -Message "Root tabs should inject dependencies into Search."
@@ -64,7 +64,8 @@ Assert-Contains -Text $browseText -ExpectedSubstring "ForEach(dependencies.share
 Assert-Contains -Text $browseText -ExpectedSubstring "NavigationLink(value: LessonRoute" -Message "Browse rows should route to lessons."
 
 $collectionsText = Get-Text "Sources/App/Collections/CollectionsView.swift"
-Assert-Contains -Text $collectionsText -ExpectedSubstring "ForEach(dependencies.sharedCharacters)" -Message "Collections should expose an editorial bundled set."
+Assert-Contains -Text $collectionsText -ExpectedSubstring "Source-Backed Seed Path" -Message "Collections should expose an editorial bundled path."
+Assert-Contains -Text $collectionsText -ExpectedSubstring "Pictographic Starters" -Message "Collections should expose a starter editorial collection."
 Assert-Contains -Text $collectionsText -ExpectedSubstring "Review later" -Message "Collections should keep Review later."
 Assert-Contains -Text $collectionsText -ExpectedSubstring "Favorites" -Message "Collections should keep Favorites."
 

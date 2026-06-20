@@ -20,6 +20,20 @@ struct AppDependencies {
     /// First featured Shared Character shown on Home until editorial sequencing is implemented.
     let nextFeaturedSharedCharacter: FeaturedSharedCharacterSummary
 
+    /// Returns the next Shared Character after the current lesson in editorial teaching order.
+    func nextSharedCharacter(after sharedCharacterID: String) -> SharedCharacterRecord? {
+        guard let currentIndex = sharedCharacters.firstIndex(where: { $0.id == sharedCharacterID }) else {
+            return sharedCharacters.first
+        }
+
+        let nextIndex = sharedCharacters.index(after: currentIndex)
+        guard nextIndex < sharedCharacters.endIndex else {
+            return nil
+        }
+
+        return sharedCharacters[nextIndex]
+    }
+
     /// Runtime dependency set used by the app shell.
     static let live: AppDependencies = {
         let repository = BundleCorpusRepository()
@@ -30,7 +44,7 @@ struct AppDependencies {
             actionTitle: "New Symbol"
         )
 
-        let sharedCharacters = repository.sharedCharacters(ids: PrototypeCorpusManifest.recordIDs)
+        let sharedCharacters = repository.sharedCharacters(ids: SeedCorpusManifest.recordIDs)
         let featuredRecord = sharedCharacters.first
         let featuredSummary = featuredRecord?.featuredSummary ?? fallbackSummary
 

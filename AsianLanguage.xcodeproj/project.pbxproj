@@ -35,12 +35,14 @@
 		8B000001000000000000001B /* CharacterEvolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001B /* CharacterEvolutionView.swift */; };
 		8B000001000000000000001C /* ModernFormsComparisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001C /* ModernFormsComparisonView.swift */; };
 		8B000001000000000000001D /* AboutMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001D /* AboutMethodView.swift */; };
-		8B000001000000000000001E /* PrototypeCorpusManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001E /* PrototypeCorpusManifest.swift */; };
+		8B000001000000000000001E /* SeedCorpusManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001E /* SeedCorpusManifest.swift */; };
 		8B000001000000000000001F /* Corpus in Resources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001F /* Corpus */; };
 		8B0000010000000000000020 /* PrototypeVisuals in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000020 /* PrototypeVisuals */; };
 		8B0000010000000000000021 /* Corpus in Resources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001F /* Corpus */; };
 		8B0000010000000000000022 /* PrototypeVisuals in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000020 /* PrototypeVisuals */; };
 		8B0000010000000000000023 /* UsageExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000023 /* UsageExamplesView.swift */; };
+		8B0000010000000000000024 /* HistoricalGlyphs in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000024 /* HistoricalGlyphs */; };
+		8B0000010000000000000025 /* HistoricalGlyphs in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000024 /* HistoricalGlyphs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,10 +83,11 @@
 		8B000101000000000000001B /* CharacterEvolutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEvolutionView.swift; sourceTree = "<group>"; };
 		8B000101000000000000001C /* ModernFormsComparisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernFormsComparisonView.swift; sourceTree = "<group>"; };
 		8B000101000000000000001D /* AboutMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMethodView.swift; sourceTree = "<group>"; };
-		8B000101000000000000001E /* PrototypeCorpusManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeCorpusManifest.swift; sourceTree = "<group>"; };
+		8B000101000000000000001E /* SeedCorpusManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedCorpusManifest.swift; sourceTree = "<group>"; };
 		8B000101000000000000001F /* Corpus */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Corpus; sourceTree = "<group>"; };
 		8B0001010000000000000020 /* PrototypeVisuals */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/PrototypeVisuals; sourceTree = "<group>"; };
 		8B0001010000000000000023 /* UsageExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageExamplesView.swift; sourceTree = "<group>"; };
+		8B0001010000000000000024 /* HistoricalGlyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/HistoricalGlyphs; sourceTree = "<group>"; };
 		8B0002010000000000000001 /* AsianLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsianLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0002010000000000000002 /* AsianLanguageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsianLanguageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -168,7 +171,7 @@
 			children = (
 				8B000101000000000000000F /* SharedCharacterRecord.swift */,
 				8B0001010000000000000010 /* BundleCorpusRepository.swift */,
-				8B000101000000000000001E /* PrototypeCorpusManifest.swift */,
+				8B000101000000000000001E /* SeedCorpusManifest.swift */,
 			);
 			path = Corpus;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				8B0004010000000000000011 /* Corpus */,
 				8B000101000000000000001F /* Corpus */,
 				8B0001010000000000000020 /* PrototypeVisuals */,
+				8B0001010000000000000024 /* HistoricalGlyphs */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -378,6 +382,7 @@
 				8B000001000000000000000E /* tree.json in Resources */,
 				8B000001000000000000001F /* Corpus in Resources */,
 				8B0000010000000000000020 /* PrototypeVisuals in Resources */,
+				8B0000010000000000000024 /* HistoricalGlyphs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +393,7 @@
 				8B0000010000000000000014 /* tree.json in Resources */,
 				8B0000010000000000000021 /* Corpus in Resources */,
 				8B0000010000000000000022 /* PrototypeVisuals in Resources */,
+				8B0000010000000000000025 /* HistoricalGlyphs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +426,7 @@
 				8B000001000000000000001B /* CharacterEvolutionView.swift in Sources */,
 				8B000001000000000000001C /* ModernFormsComparisonView.swift in Sources */,
 				8B000001000000000000001D /* AboutMethodView.swift in Sources */,
-				8B000001000000000000001E /* PrototypeCorpusManifest.swift in Sources */,
+				8B000001000000000000001E /* SeedCorpusManifest.swift in Sources */,
 				8B0000010000000000000023 /* UsageExamplesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

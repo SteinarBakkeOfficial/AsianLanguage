@@ -5,16 +5,27 @@ struct UsageExamplesView: View {
     /// Bundled record for the current lesson.
     let record: SharedCharacterRecord
 
+    /// Focus tracks currently enabled by the learner.
+    let focusSelection: FocusTrackSelection
+
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text(record.usage.coreMeaningFirst)
                 .font(.subheadline)
 
-            exampleGroup("Simplified Chinese", examples: record.focusCoverage.simplifiedChinese.examples)
-            exampleGroup("Traditional Chinese - Taiwan", examples: record.focusCoverage.traditionalChinese.taiwanExamples)
-            exampleGroup("Traditional Chinese - Hong Kong", examples: record.focusCoverage.traditionalChinese.hongKongExamples)
-            exampleGroup("Japanese", examples: record.focusCoverage.japanese.examples)
-            exampleGroup("Korean", examples: record.focusCoverage.korean.examples)
+            if focusSelection.contains(.simplifiedChinese) {
+                exampleGroup("Simplified Chinese", examples: record.focusCoverage.simplifiedChinese.examples)
+            }
+            if focusSelection.contains(.traditionalChinese) {
+                exampleGroup("Traditional Chinese - Taiwan", examples: record.focusCoverage.traditionalChinese.taiwanExamples)
+                exampleGroup("Traditional Chinese - Hong Kong", examples: record.focusCoverage.traditionalChinese.hongKongExamples)
+            }
+            if focusSelection.contains(.japanese) {
+                exampleGroup("Japanese", examples: record.focusCoverage.japanese.examples)
+            }
+            if focusSelection.contains(.korean) {
+                exampleGroup("Korean", examples: record.focusCoverage.korean.examples)
+            }
         }
     }
 

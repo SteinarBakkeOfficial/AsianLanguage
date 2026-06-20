@@ -82,3 +82,16 @@ Do not paste the full Xcode log unless the first error is unclear.
 - A standalone iOS executable cannot be copied to an iPhone and run directly.
 - A signed `.ipa` can be distributed through TestFlight or other Apple-supported signing flows, but creating that package still requires macOS/Xcode or Apple build infrastructure.
 - Development remains Windows-first; macOS is only required for iOS build, signing, simulator, and device testing.
+
+
+
+# Notes from Testing
+# Prototype 1 - First test
+- App is working on iphone, no errors.
+- Some of the functionality is there.
+- The app does go through the different progress (Although visually and text wise very wrong). But it's not possible to continue to next symbol. "Mark as Learned" is not possible, and the app does not automatically bring up the next symbol once done.
+- As mentioned, some of the functionality is here. but this is incredibly far from what we've agreed on, and what I believed was done at this point.
+- The visuals are very far from the examples listed and included in the project brief (Reference pictures).
+- Bugs : 1. When selecting a "Focus Language", it only allows "All", or "1 specific langauge". It should allow multiple (Such as - Korean & Japanese). You don't even need an "All" button. Once all are selected, that does the same thing. It should allow for multiple selections, with all selection being "on" as default. Remove the "all" option. 2. Visuals are completely off. 3. Lesson : "Restart Lesson" and "Mark as Learned" are not working.
+- The text included, and the pictures for the symbols, this is far from complete.
+- The other pages other than Home are very different than what we initially agreed on, and what is in the Project Brief. Why?

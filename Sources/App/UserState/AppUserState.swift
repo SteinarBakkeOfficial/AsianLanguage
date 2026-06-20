@@ -79,8 +79,8 @@ struct LessonUserState: Codable, Hashable {
 
 /// Root local-only user state persisted on device.
 struct AppUserState: Codable, Equatable {
-    /// Preferred focus lane for lesson examples and settings.
-    var focusTrack: FocusTrack
+    /// Preferred focus lanes for lesson examples and settings.
+    var focusSelection: FocusTrackSelection
 
     /// Per-lesson local state keyed by Shared Character corpus id.
     var lessonStates: [String: LessonUserState]
@@ -90,10 +90,68 @@ struct AppUserState: Codable, Equatable {
 
     /// Empty default state for first launch and reset.
     static let empty = AppUserState(
-        focusTrack: .all,
+        focusSelection: .all,
         lessonStates: [:],
         installedCorpusName: "Draft V1 Corpus"
     )
+
+    /// Compatibility keys for migrating earlier single-focus local state.
+    private enum CodingKeys: String, CodingKey {
+        case focusSelection
+        case focusTrack
+        case lessonStates
+        case installedCorpusName
+    }
+
+    /// Legacy single-focus values previously stored before multi-select focus tracks.
+    private enum LegacyFocusTrack: String, Codable {
+        case all
+        case simplifiedChinese
+        case traditionalChinese
+        case japanese
+        case korean
+
+        /// Converts old single-focus state to the current multi-select model.
+        var migratedSelection: FocusTrackSelection {
+            switch self {
+            case .all:
+                return .all
+            case .simplifiedChinese:
+                return FocusTrackSelection(selectedTracks: [.simplifiedChinese])
+            case .traditionalChinese:
+                return FocusTrackSelection(selectedTracks: [.traditionalChinese])
+            case .japanese:
+                return FocusTrackSelection(selectedTracks: [.japanese])
+            case .korean:
+                return FocusTrackSelection(selectedTracks: [.korean])
+            }
+        }
+    }
+
+    /// Decodes current state and migrates old single-focus preferences when present.
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        if let focusSelection = try container.decodeIfPresent(FocusTrackSelection.self, forKey: .focusSelection) {
+            self.focusSelection = focusSelection
+        } else if let legacyFocusTrack = try container.decodeIfPresent(LegacyFocusTrack.self, forKey: .focusTrack) {
+            self.focusSelection = legacyFocusTrack.migratedSelection
+        } else {
+            self.focusSelection = .all
+        }
+        self.lessonStates = try container.decodeIfPresent([String: LessonUserState].self, forKey: .lessonStates) ?? [:]
+        self.installedCorpusName = try container.decodeIfPresent(String.self, forKey: .installedCorpusName) ?? "Draft V1 Corpus"
+    }
+
+    /// Creates app state for tests and previews.
+    init(
+        focusSelection: FocusTrackSelection,
+        lessonStates: [String: LessonUserState],
+        installedCorpusName: String
+    ) {
+        self.focusSelection = focusSelection
+        self.lessonStates = lessonStates
+        self.installedCorpusName = installedCorpusName
+    }
 
     /// Most recently updated in-progress route, if one exists.
     var resumeLessonRoute: LessonRoute? {

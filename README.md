@@ -41,7 +41,7 @@ Excluded from V1:
 - Handwriting or tracing interaction
 - Android launch target
 - Sync/accounts
-- Account page
+- Deep account implementation
 - Ads/monetization
 
 ## Shared Character Lesson Model
@@ -96,6 +96,12 @@ Collections:
 - `Favorites`
 - `Explore Collections`
 
+Deferred but preserved app concepts:
+
+- `Account` remains an agreed app concept for public testing, but it can stay shallow while the core symbol-recognition experience is being tested
+- `Saved/Archive` can initially use lightweight saved collections
+- `Languages` can initially use focus-track controls
+
 Settings:
 
 - `Focus language`
@@ -145,12 +151,13 @@ The repo now contains the V1 product foundation, SwiftUI app shell, local user-s
 
 Implemented locally:
 
-- SwiftUI tab shell for Home, Search, Browse, Collections, and Settings
-- bundled read-only Prototype 1 draft corpus with 11 basic Shared Characters
+- SwiftUI tab shell for Home, Search, Browse, Saved, Languages, Account, and Settings
+- bundled read-only source-backed seed corpus with 11 basic Shared Characters
 - local JSON-backed user-state store for focus language, lesson progress, favorites, and review-later
 - six-step guided `Shared Character` lesson shell
 - local search, browse, and collection entry points
 - reusable history spine and modern-forms comparison views
+- source-backed seed corpus generator with optional Wikimedia Commons historical glyph asset intake
 - corpus validator, draft-record generator, corpus readiness report, and release readiness check
 - future XCTest target scaffold for macOS/Xcode verification
 
@@ -163,6 +170,6 @@ Windows verification:
 Remaining blockers:
 
 - real SwiftUI compile, simulator, and device testing require macOS/Xcode
-- production launch corpus requires source-backed editorial work beyond the current 11 draft prototype records
-- prototype visual cards are included for testing, but publication visuals still need source-backed redraws or licensed/source-backed assets
+- production launch corpus requires deeper editorial work beyond the current 11 source-backed draft seed records
+- prototype regular-script visual cards and a small set of source-backed historical SVGs are included for testing, but publication visuals still need licensing review, broader historical coverage, and specialist redraw approval
 - TestFlight/App Store release requires Apple signing and upload tooling

@@ -22,7 +22,7 @@ The `id` is stable, lowercase ASCII, and should not encode app ordering. Editori
 - `coreSharedMeaning`: one teachable overlapping meaning across all required focus tracks
 - `recognitionTakeaway`: editorial summary shown in `Summary`
 - `publicationStatus`: `draft`, `review`, or `published`
-- `prototypeSequence`: early teaching order for prototype and editorial sequencing
+- `teachingSequence`: early editorial teaching order for seed and launch sequencing
 - `focusCoverage`: required modern coverage for all focus tracks
 - `visuals`: app-facing visual asset metadata
 - `history`: historical origin and displayed script stages
@@ -53,7 +53,7 @@ Each example includes:
 - `reusesKnownSymbols`: previously introduced symbols reused by the example
 - `introducedSymbols`: symbols introduced or emphasized by the example
 
-Prototype 1 sequencing starts with very basic symbols that carry their own meaning, then uses examples that increasingly reuse previously learned symbols. Prefer shared words or compounds across languages when possible, then add basic sentence examples. Parallel sentence examples across focus tracks are preferred when they are natural modern usage.
+Seed sequencing starts with very basic symbols that carry their own meaning, then uses examples that increasingly reuse previously learned symbols. Prefer shared words or compounds across languages when possible, then add basic sentence examples. Parallel sentence examples across focus tracks are preferred when they are natural modern usage.
 
 ## Visuals
 
@@ -135,6 +135,16 @@ A record cannot be `published` until it has:
 - progressive example metadata for known-symbol reuse and introduced symbols
 - source support for editorial claims
 - app-ready asset references or clear placeholders for required visuals
+
+## Sources
+
+Each source entry includes:
+
+- `id`: stable id referenced by historical stages or structure notes
+- `label`: short readable source label
+- `type`: source category, such as `reference`, `research-paper`, or `prototype`
+- `citation`: short editorial citation or replacement note
+- `url`: required for non-internal source-backed records; internal prototype/redraw notes may omit this
 
 ## V1 to VNext Tracking
 

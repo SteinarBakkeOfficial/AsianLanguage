@@ -38,9 +38,15 @@ final class LocalUserStateStore: ObservableObject {
         LocalUserStateStore(fileURL: nil, initialState: initialState)
     }
 
-    /// Persists a focus-track preference change.
-    func setFocusTrack(_ focusTrack: FocusTrack) {
-        state.focusTrack = focusTrack
+    /// Persists a full focus-track selection change.
+    func setFocusSelection(_ focusSelection: FocusTrackSelection) {
+        state.focusSelection = focusSelection
+        save()
+    }
+
+    /// Persists one focus-track toggle while keeping at least one track selected.
+    func setFocusTrack(_ focusTrack: FocusTrack, isSelected: Bool) {
+        state.focusSelection.set(focusTrack, isSelected: isSelected)
         save()
     }
 

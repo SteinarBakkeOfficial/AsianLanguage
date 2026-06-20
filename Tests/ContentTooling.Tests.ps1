@@ -66,6 +66,7 @@ try {
   Assert-Equal -Actual $draft.id -Expected "sun" -Message "Draft id should match input."
   Assert-Equal -Actual $draft.coreCharacter -Expected "日" -Message "Draft core character should match input."
   Assert-Equal -Actual $draft.coreSharedMeaning -Expected "sun; day" -Message "Draft core meaning should match input."
+  Assert-Equal -Actual $draft.teachingSequence -Expected 999 -Message "Draft teaching sequence should default to the end of the seed path."
   Assert-Equal -Actual $draft.publicationStatus -Expected "draft" -Message "New records should start as draft."
 
   $invalidStatusCorpus = Join-Path $tempRoot "invalid-status"

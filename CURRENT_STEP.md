@@ -2,36 +2,39 @@
 
 ## Goal
 
-Complete the Windows-implementable V1 implementation pass for the offline-first iPhone app.
+Correct the runnable iPhone prototype so it matches the agreed V1 app structure, page behavior, lesson flow, focus-track model, and visual direction before release-candidate hardening.
 
 ## Focus
 
+- Treat the macOS/iPhone test feedback in `MAC_TESTING.md` as the active correction input
 - Keep the app aligned to the resolved V1 Shared Character lesson model
 - Preserve local/offline behavior for corpus, progress, preferences, and discovery
+- Bring Home, Search, Browse, Collections, Settings, and Lesson back to the agreed structure and content intent
+- Replace the single focus-language picker with multi-select focus tracks defaulting all tracks on
+- Move the visual treatment closer to the reference-led product direction while clearly marking draft/source-backed asset limits
+- Preserve agreed-but-deferred app concepts as shallow placeholders or carryover, not as erased scope
 - Provide Windows-runnable verification for every implementable slice
-- Clearly mark blockers that require macOS/Xcode, source-backed corpus work, or Apple release access
+- Clearly mark blockers that require macOS/Xcode, source-backed corpus work, licensed/source-backed visuals, or Apple release access
 
 ## Current Priorities
 
-1. Create the SwiftUI root app entry and tab shell.
-2. Add placeholder screens for Home, Search, Browse, Collections, and Settings.
-3. Add code-facing enums for app tabs and lesson steps.
-4. Add the first app-level dependency container placeholder.
-5. Keep the shell ready for local corpus loading and local user state without implementing those systems yet.
-6. Verify layout and any available Swift tooling locally.
-7. Add local user-state storage for progress and preferences.
-8. Implement the six-step guided lesson shell.
-9. Implement local Search, Browse, and Collections over the bundled corpus.
-10. Add content tooling, visual treatment, polish, and release-readiness checks.
+1. Fix tested lesson behavior: Restart Lesson, Mark as Learned, Continue, resume, and Next Symbol progression.
+2. Replace the single focus-language model with multi-select Mandarin, Traditional Chinese, Japanese, and Korean tracks.
+3. Rebuild Home around the agreed resume/new-symbol/next-symbol hierarchy and progress context.
+4. Rework Lesson so each of the six steps presents the agreed information, not just placeholder text.
+5. Rework Search, Browse, Collections, and Settings so their page contents match the project brief and decisions.
+6. Improve prototype visuals toward the reference direction while keeping source-backed publication visuals as a known blocker.
+7. Keep Windows checks green and produce a focused Mac retest checklist after each correction pass.
 
 ## In Scope
 
 - iPhone-first architecture
 - SwiftUI shell planning
 - local/offline data model
-- focus-language selection for Simplified Chinese, Traditional Chinese, Japanese, Korean, or All
+- focus-language selection for Simplified Chinese, Traditional Chinese, Japanese, and Korean
 - lesson UX structure
 - V1 Shared Character content model
+- shallow placeholders or documented carryover for agreed pages that are not yet central to testing
 
 ## Out of Scope
 
@@ -40,8 +43,7 @@ Complete the Windows-implementable V1 implementation pass for the offline-first 
 - rule-based common-denominator lessons
 - voice/audio
 - tracing/handwriting
-- sync/accounts
-- account page
+- deep sync/account implementation
 - monetization
 
 ## Done
@@ -53,9 +55,9 @@ Complete the Windows-implementable V1 implementation pass for the offline-first 
 - V1 foundation layout created for `ios-swiftui`
 - Initial implementation-facing architecture doc created in `docs/architecture/v1-foundation.md`
 - Initial Shared Character schema doc created in `docs/content/shared-character-schema.md`
-- Prototype 1 draft Shared Character corpus created with 11 basic symbols
+- Source-backed seed Shared Character corpus created with 11 basic symbols
 - SwiftUI app entry point and root tab shell created
-- Placeholder Home, Search, Browse, Collections, and Settings screens created
+- Placeholder Home, Search, Browse, Saved/Archive, Languages, Account, and Settings screens created
 - Lesson-step route primitives created
 - Minimal `AsianLanguage.xcodeproj` and shared scheme created for macOS/Xcode verification
 - Home shell now reads from a draft featured Shared Character summary
@@ -63,11 +65,11 @@ Complete the Windows-implementable V1 implementation pass for the offline-first 
 - Corpus validation tests created in `Tests/CorpusValidation.Tests.ps1`
 - Bundled runtime corpus copies added under `Resources/Corpus`
 - First read-only Swift corpus model and bundle repository added
-- App dependencies now load the bundled Prototype 1 manifest records for Home and discovery
+- App dependencies now load the bundled source-backed seed manifest records for Home and discovery
 - Corpus sync script created in `Tools/Sync-Corpus.ps1`
 - Validator now checks direct core-meaning examples and source references
 - Windows one-command local check runner added at `Tools/Run-Checks.ps1`
-- First Home-to-lesson route added for the featured bundled prototype record
+- First Home-to-lesson route added for the featured bundled seed record
 - Swift XCTest target scaffold and initial model tests prepared for future macOS/Xcode verification
 - Windows-runnable Swift model contract tests added for route, focus-track, lesson-step, and corpus model source contracts
 - Local JSON-backed user-state store added for focus track, progress, favorites, and review-later
@@ -77,15 +79,35 @@ Complete the Windows-implementable V1 implementation pass for the offline-first 
 - Search, Browse, and Collections now use the bundled offline corpus and route into lessons
 - Reusable history spine and modern forms comparison views added for lesson visuals
 - Prototype visual SVG cards added under `Resources/Assets/PrototypeVisuals`
-- Progressive word/sentence example metadata added for prototype records
+- Historical glyph asset downloader added for available Wikimedia Commons SVGs under `Resources/Assets/HistoricalGlyphs`
+- Progressive word/sentence example metadata added for seed records
 - Draft Shared Character authoring script added at `Tools/New-SharedCharacterDraft.ps1`
 - Corpus readiness report added at `Tools/Report-CorpusReadiness.ps1`
 - Release readiness check added at `Tools/Check-ReleaseReadiness.ps1`
 - About / Method screen and empty-state polish added
 
+## Prototype 2 Acceptance Checklist
+
+- Lesson is visually centered on the historical evolution of one symbol, not a generic list of sections.
+- The main lesson surface follows the reference pictures: origin idea, staged evolution, stage explanations/sound notes, modern descendants, examples, and summary.
+- Missing historical drawings or source-backed stage content are visibly marked as content gaps, not hidden.
+- Available source-backed historical SVGs are bundled and attached to matching stages; unavailable stages remain visible as content gaps.
+- Home shows the agreed primary action: Resume current lesson when one exists, otherwise New Symbol / Next Symbol for the next featured Shared Character.
+- Lesson supports the six agreed steps: Origin, Character, Modern Forms, Structure, Usage, and Summary.
+- Lesson controls work on-device: Continue, Restart Lesson, Mark as Learned, and Next Symbol after completion.
+- Learned lessons are not accidentally converted back to in-progress when reopened.
+- Focus tracks are multi-select: Simplified Chinese, Traditional Chinese, Japanese, and Korean are all on by default; there is no separate All option.
+- Modern Forms and Usage respect the selected focus tracks.
+- Search supports character, English gloss, and readings with offline local results.
+- Browse stays shallow and curated, with status context rather than a generic raw list.
+- Collections includes Your Collections, Review later, Favorites, and Explore Collections.
+- Settings includes focus tracks, display preferences, offline/app information, About / Method, and reset.
+- Account, Saved/Archive, and Languages remain visible/deferred app concepts where appropriate, even when shallow.
+- Visual treatment is recognizable as the agreed Shared Character product direction, even while prototype assets remain marked as draft.
+
 ## Next Concrete Output
 
-The Windows-implementable V1 implementation pass is complete up to the known blockers.
+Deliver a corrected Prototype 2 pass that is product-faithful enough for another iPhone test round.
 
 - keep Swift/Xcode compile execution deferred until macOS/Xcode or macOS CI is available
 - keep production corpus expansion and publication status blocked until source-backed editorial content is available
@@ -94,4 +116,4 @@ The Windows-implementable V1 implementation pass is complete up to the known blo
 
 ## V1 to VNext Tracking
 
-V1 intentionally covers Shared Character symbol-lineage lessons only. `Structure` means character/component structure, not grammar or sentence structure. Traditional Chinese is included as a modern focus track with separate Taiwan/Hong Kong usage examples when that focus is selected or when all tracks are selected. Account pages, grammar comparison, rule-based common-denominator lessons, broader cross-language structure teaching, voice, Android, sync, and monetization remain deferred and should not be silently pulled into the current step.
+V1 intentionally prioritizes Shared Character symbol-lineage lessons. `Structure` means character/component structure, not grammar or sentence structure. Traditional Chinese is included as a modern focus track with separate Taiwan/Hong Kong usage examples when that focus is selected or when all tracks are selected. Account pages, grammar comparison, rule-based common-denominator lessons, broader cross-language structure teaching, voice, Android, sync, and monetization remain deferred for depth of implementation, but agreed app concepts should not be erased or replaced.

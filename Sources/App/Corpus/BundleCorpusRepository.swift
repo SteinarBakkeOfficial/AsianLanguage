@@ -30,7 +30,7 @@ struct BundleCorpusRepository {
     /// Decodes multiple bundled Shared Character records in manifest order.
     func sharedCharacters(ids: [String]) -> [SharedCharacterRecord] {
         ids.compactMap { try? sharedCharacter(id: $0) }
-            .sorted { $0.prototypeSequence < $1.prototypeSequence }
+            .sorted { $0.teachingSequence < $1.teachingSequence }
     }
 }
 

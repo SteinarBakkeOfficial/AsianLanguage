@@ -31,14 +31,19 @@ struct CollectionsView: View {
                 }
 
                 Section("Explore Collections") {
-                    ForEach(dependencies.sharedCharacters) { record in
-                        NavigationLink(value: LessonRoute(sharedCharacterID: record.id, startingStep: .origin)) {
-                            Label(record.coreCharacter, systemImage: "sparkles")
-                        }
+                    NavigationLink {
+                        editorialCollection(title: "Source-Backed Seed Path", records: dependencies.sharedCharacters)
+                    } label: {
+                        Label("Source-Backed Seed Path", systemImage: "sparkles")
+                    }
+                    NavigationLink {
+                        editorialCollection(title: "Pictographic Starters", records: dependencies.sharedCharacters.prefix(6).map { $0 })
+                    } label: {
+                        Label("Pictographic Starters", systemImage: "leaf")
                     }
                 }
             }
-            .navigationTitle("Collections")
+            .navigationTitle("Saved / Archive")
             .navigationDestination(for: LessonRoute.self) { route in
                 LessonView(route: route, dependencies: dependencies)
             }
@@ -73,8 +78,40 @@ struct CollectionsView: View {
         } else {
             ForEach(records) { record in
                 NavigationLink(value: LessonRoute(sharedCharacterID: record.id, startingStep: .origin)) {
-                    Text(record.coreCharacter)
+                    collectionRecordRow(record)
                 }
+            }
+        }
+    }
+
+    /// Editorial collection detail page for curated lesson sets.
+    private func editorialCollection(title: String, records: [SharedCharacterRecord]) -> some View {
+        List {
+            Section(title) {
+                ForEach(records) { record in
+                    NavigationLink(value: LessonRoute(sharedCharacterID: record.id, startingStep: .origin)) {
+                        collectionRecordRow(record)
+                    }
+                }
+            }
+        }
+        .navigationTitle(title)
+        .navigationDestination(for: LessonRoute.self) { route in
+            LessonView(route: route, dependencies: dependencies)
+        }
+    }
+
+    /// Shared collection row with symbol and meaning context.
+    private func collectionRecordRow(_ record: SharedCharacterRecord) -> some View {
+        HStack {
+            Text(record.coreCharacter)
+                .font(.system(size: 28, weight: .regular, design: .serif))
+                .frame(width: 40)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(record.coreSharedMeaning.capitalized)
+                Text(userStateStore.state.lessonStates[record.id]?.progressStatus.rawValue ?? LessonProgressStatus.unseen.rawValue)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
             }
         }
     }

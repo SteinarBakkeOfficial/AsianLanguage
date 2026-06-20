@@ -3,13 +3,14 @@ import XCTest
 
 /// Tests for local-only progress and preference state.
 final class UserStateTests: XCTestCase {
-    /// Verifies focus language changes survive through the public store interface.
-    func testStorePersistsFocusTrackPreferenceInMemory() {
+    /// Verifies focus language toggles survive through the public store interface.
+    func testStorePersistsFocusTrackSelectionInMemory() {
         let store = LocalUserStateStore.preview()
 
-        store.setFocusTrack(.traditionalChinese)
+        store.setFocusTrack(.traditionalChinese, isSelected: false)
 
-        XCTAssertEqual(store.state.focusTrack, .traditionalChinese)
+        XCTAssertFalse(store.state.focusSelection.contains(.traditionalChinese))
+        XCTAssertTrue(store.state.focusSelection.contains(.japanese))
     }
 
     /// Ensures Home can resume the most recently updated in-progress lesson.

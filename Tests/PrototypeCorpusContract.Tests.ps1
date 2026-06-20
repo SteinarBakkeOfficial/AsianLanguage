@@ -32,11 +32,11 @@ function Assert-Contains {
 $records = Get-ChildItem -Path $corpusPath -Filter "*.json" -File |
   ForEach-Object { Get-Content -Raw $_.FullName | ConvertFrom-Json }
 
-Assert-True -Condition (@($records).Count -ge 10) -Message "Prototype 1 should include at least 10 draft Shared Character records."
+Assert-True -Condition (@($records).Count -ge 10) -Message "Source-backed seed corpus should include at least 10 draft Shared Character records."
 
-$sequenceValues = @($records | ForEach-Object { $_.prototypeSequence })
-Assert-True -Condition ($sequenceValues -notcontains $null) -Message "Every prototype record should include prototypeSequence."
-Assert-True -Condition (@($sequenceValues | Sort-Object -Unique).Count -eq @($records).Count) -Message "Prototype sequence values should be unique."
+$sequenceValues = @($records | ForEach-Object { $_.teachingSequence })
+Assert-True -Condition ($sequenceValues -notcontains $null) -Message "Every seed record should include teachingSequence."
+Assert-True -Condition (@($sequenceValues | Sort-Object -Unique).Count -eq @($records).Count) -Message "Teaching sequence values should be unique."
 
 foreach ($record in $records) {
   Assert-True -Condition ($null -ne $record.visuals) -Message "Record '$($record.id)' should include visual asset metadata."
@@ -59,14 +59,24 @@ foreach ($record in $records) {
   Assert-True -Condition (@($allExamples | Where-Object { $null -ne $_.introducedSymbols }).Count -ge 1) -Message "Record '$($record.id)' should identify introduced symbols in examples."
 }
 
+$historicalAssetRefs = @(
+  $records |
+    ForEach-Object { $_.visuals.evolutionAssetRefs.PSObject.Properties.Value } |
+    Where-Object { $_ -like "Assets/HistoricalGlyphs/*" }
+)
+Assert-True -Condition (@($historicalAssetRefs).Count -ge 1) -Message "Seed corpus should include at least one bundled source-backed historical glyph asset."
+
 $modelText = Get-Content -Raw (Join-Path $repoRoot "Sources/App/Corpus/SharedCharacterRecord.swift")
-Assert-Contains -Text $modelText -ExpectedSubstring "let prototypeSequence: Int" -Message "Swift corpus model should expose prototype sequencing."
+Assert-Contains -Text $modelText -ExpectedSubstring "let teachingSequence: Int" -Message "Swift corpus model should expose teaching sequencing."
 Assert-Contains -Text $modelText -ExpectedSubstring "let visuals: SharedCharacterVisuals" -Message "Swift corpus model should expose visual metadata."
 Assert-Contains -Text $modelText -ExpectedSubstring "let exampleLevel: UsageExampleLevel" -Message "Swift usage examples should expose example level."
 Assert-Contains -Text $modelText -ExpectedSubstring "let parallelExampleGroupID: String?" -Message "Swift usage examples should expose parallel example grouping."
 Assert-Contains -Text $modelText -ExpectedSubstring "let introducedSymbols: [String]" -Message "Swift usage examples should expose introduced symbols."
 
 $dependenciesText = Get-Content -Raw (Join-Path $repoRoot "Sources/App/Core/AppDependencies.swift")
-Assert-Contains -Text $dependenciesText -ExpectedSubstring "PrototypeCorpusManifest.recordIDs" -Message "App dependencies should load all prototype manifest records."
+Assert-Contains -Text $dependenciesText -ExpectedSubstring "SeedCorpusManifest.recordIDs" -Message "App dependencies should load all seed manifest records."
+
+$projectText = Get-Content -Raw (Join-Path $repoRoot "AsianLanguage.xcodeproj/project.pbxproj")
+Assert-Contains -Text $projectText -ExpectedSubstring "HistoricalGlyphs in Resources" -Message "Xcode project should bundle historical glyph assets."
 
 Write-Output "OK: prototype corpus contract tests passed"

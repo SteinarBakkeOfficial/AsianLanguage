@@ -20,8 +20,8 @@ struct SharedCharacterRecord: Decodable, Identifiable, Hashable {
     /// Draft/review/published state used by validation and content tooling.
     let publicationStatus: String
 
-    /// Prototype teaching order; low values are shown earlier.
-    let prototypeSequence: Int
+    /// Editorial teaching order; low values are shown earlier.
+    let teachingSequence: Int
 
     /// Required modern coverage across Simplified Chinese, Traditional Chinese, Japanese, and Korean.
     let focusCoverage: FocusCoverage
@@ -96,10 +96,10 @@ struct TraditionalChineseCoverage: Decodable, Hashable {
     /// English glosses for this focus track.
     let glosses: [String]
 
-    /// Taiwan usage examples shown for Traditional Chinese or All focus.
+    /// Taiwan usage examples shown when Traditional Chinese is selected.
     let taiwanExamples: [UsageExample]
 
-    /// Hong Kong usage examples shown for Traditional Chinese or All focus.
+    /// Hong Kong usage examples shown when Traditional Chinese is selected.
     let hongKongExamples: [UsageExample]
 }
 
@@ -139,7 +139,7 @@ struct UsageExample: Decodable, Hashable {
     let introducedSymbols: [String]
 }
 
-/// Progressive example level for prototype sequencing and lesson usage display.
+/// Progressive example level for teaching sequence and lesson usage display.
 enum UsageExampleLevel: String, Decodable, Hashable {
     case word
     case phrase
@@ -151,7 +151,7 @@ struct SharedCharacterVisuals: Decodable, Hashable {
     /// Draft or source-backed asset references keyed by displayed stage.
     let evolutionAssetRefs: [String: String]
 
-    /// Whether the current assets are prototype placeholders or publication-ready.
+    /// Whether the current assets are draft or publication-ready.
     let assetStatus: String
 
     /// Editorial note describing visual provenance and replacement needs.
@@ -246,4 +246,7 @@ struct CorpusSource: Decodable, Hashable {
 
     /// Citation or editorial replacement note.
     let citation: String
+
+    /// Optional web URL for source-backed records; internal prototype sources may omit it.
+    let url: String?
 }
