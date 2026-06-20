@@ -45,6 +45,8 @@ Assert-Contains -Text $userStateText -ExpectedSubstring "case learned" -Message 
 Assert-Contains -Text $userStateText -ExpectedSubstring "var isReviewLater: Bool" -Message "Lesson state should track review-later separately."
 Assert-Contains -Text $userStateText -ExpectedSubstring "var isStarred: Bool" -Message "Lesson state should track favorites separately."
 Assert-Contains -Text $userStateText -ExpectedSubstring "var focusSelection: FocusTrackSelection" -Message "App user state should persist multi-select focus-track preferences."
+Assert-Contains -Text $userStateText -ExpectedSubstring "func encode(to encoder: Encoder) throws" -Message "App user state should manually encode after adding migration decoding."
+Assert-Contains -Text $userStateText -ExpectedSubstring "decode-only for legacy migration" -Message "App user state should not write legacy focusTrack keys."
 Assert-Contains -Text $userStateText -ExpectedSubstring "mutating func markLearned" -Message "User state should expose a learned transition."
 Assert-Contains -Text $userStateText -ExpectedSubstring "isReviewLater = false" -Message "Marking learned should clear review-later."
 

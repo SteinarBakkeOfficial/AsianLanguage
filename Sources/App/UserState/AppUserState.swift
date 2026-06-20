@@ -142,6 +142,14 @@ struct AppUserState: Codable, Equatable {
         self.installedCorpusName = try container.decodeIfPresent(String.self, forKey: .installedCorpusName) ?? "Draft V1 Corpus"
     }
 
+    /// Encodes only the current schema; `focusTrack` is decode-only for legacy migration.
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(focusSelection, forKey: .focusSelection)
+        try container.encode(lessonStates, forKey: .lessonStates)
+        try container.encode(installedCorpusName, forKey: .installedCorpusName)
+    }
+
     /// Creates app state for tests and previews.
     init(
         focusSelection: FocusTrackSelection,
