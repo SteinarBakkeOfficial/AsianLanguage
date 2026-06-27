@@ -9,7 +9,7 @@ Correct the runnable iPhone prototype so it matches the agreed V1 app structure,
 - Treat the macOS/iPhone test feedback in `MAC_TESTING.md` as the active correction input
 - Keep the app aligned to the resolved V1 Shared Character lesson model
 - Preserve local/offline behavior for corpus, progress, preferences, and discovery
-- Bring Home, Search, Browse, Collections, Settings, and Lesson back to the agreed structure and content intent
+- Bring Home, Symbol, History, Browse, More / Settings, and Lesson back to the agreed structure and content intent
 - Replace the single focus-language picker with multi-select focus tracks defaulting all tracks on
 - Rebuild the visual treatment against the reference character-evolution product target while clearly marking draft/source-backed asset limits
 - Preserve agreed-but-deferred app concepts as shallow placeholders or carryover, not as erased scope
@@ -22,10 +22,12 @@ Correct the runnable iPhone prototype so it matches the agreed V1 app structure,
 2. Replace the single focus-language model with multi-select Mandarin, Traditional Chinese, Japanese, and Korean tracks.
 3. Rebuild Home around the agreed resume/new-symbol/next-symbol hierarchy and progress context.
 4. Rework Lesson so each of the six steps presents the agreed information, not just placeholder text.
-5. Rework Search, Browse, Collections, and Settings so their page contents match the project brief and decisions.
-6. Rebuild prototype visuals to match the reference-led evolution direction while keeping source-backed publication visuals as a known blocker.
-7. Wait for the Figma-first symbol evolution design handoff in `docs/content/symbol-evolution-design-handoff.md`, then prove the source-backed JSON/content format with 3-5 pilot symbols before expanding to the reordered first 50.
-8. Keep Windows checks green and produce a focused Mac retest checklist after each correction pass.
+5. Rework the primary shell to Home, Symbol / New Symbol, History, Browse, and More / Settings.
+6. Rework Browse so it contains Search, Saved, Favorites, Review later, and collections.
+7. Rework More / Settings so it contains Languages, Account, Settings, About / Method, reset, and utility pages.
+8. Rebuild prototype visuals to match the reference-led evolution direction while keeping source-backed publication visuals as a known blocker.
+9. Wait for the Figma-first symbol evolution design handoff in `docs/content/symbol-evolution-design-handoff.md`, then prove the source-backed JSON/content format with 3-5 pilot symbols before expanding to the reordered first 50.
+10. Keep Windows checks green and produce a focused Mac retest checklist after each correction pass.
 
 ## In Scope
 
@@ -91,6 +93,7 @@ Correct the runnable iPhone prototype so it matches the agreed V1 app structure,
 - About / Method screen and empty-state polish added
 - Symbol source strategy, first-50 proof set, and broader candidate pool captured in `docs/content/symbol-source-plan.md`
 - Next approach captured in `docs/content/symbol-evolution-design-handoff.md`: user designs first, implementation pilots 3-5 visual symbols, then expands to the reordered first 50
+- Target shell updated to Home, Symbol / New Symbol, History, Browse, and More / Settings; current prototype shell still needs implementation alignment
 
 ## Prototype 2 Acceptance Checklist
 
@@ -106,15 +109,18 @@ Correct the runnable iPhone prototype so it matches the agreed V1 app structure,
 - Missing historical drawings or source-backed stage content are visibly marked as content gaps, not hidden.
 - Available source-backed historical SVGs are bundled and attached to matching stages; unavailable stages remain visible as content gaps.
 - Home shows the agreed primary action: Resume current lesson when one exists, otherwise New Symbol / Next Symbol for the next featured Shared Character.
+- Primary shell uses Home, Symbol / New Symbol, History, Browse, and More / Settings.
+- Browse includes Search, Saved, Favorites, Review later, and collections.
+- More / Settings includes Languages, Account, Settings, About / Method, reset, and utility pages.
 - Lesson supports the six agreed steps: Origin, Character, Modern Forms, Structure, Usage, and Summary.
 - Lesson controls work on-device: Continue, Restart Lesson, Mark as Learned, and Next Symbol after completion.
 - Learned lessons are not accidentally converted back to in-progress when reopened.
 - Focus tracks are multi-select: Simplified Chinese, Traditional Chinese, Japanese, and Korean are all on by default; there is no separate All option.
 - Modern Forms and Usage respect the selected focus tracks.
-- Search supports character, English gloss, and readings with offline local results.
+- Search supports character, English gloss, and readings with offline local results inside Browse.
 - Browse stays shallow and curated, with status context rather than a generic raw list.
-- Collections includes Your Collections, Review later, Favorites, and Explore Collections.
-- Settings includes focus tracks, display preferences, offline/app information, About / Method, and reset.
+- Collections inside Browse include Your Collections, Review later, Favorites, and Explore Collections.
+- More / Settings includes focus tracks, display preferences, offline/app information, About / Method, Account, Languages, and reset.
 - Account, Saved/Archive, and Languages remain visible/deferred app concepts where appropriate, even when shallow.
 - Visual treatment matches the agreed Shared Character product direction closely enough that the reference character-evolution target is recognizable in layout, hierarchy, and navigation, even while prototype assets remain marked as draft.
 

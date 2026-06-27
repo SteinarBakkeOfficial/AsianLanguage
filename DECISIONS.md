@@ -84,7 +84,8 @@ A V1 lesson is publishable only if it has:
 
 ## Search and Discovery
 
-- Search, Browse, and Collections are all in scope for V1.
+- Search, Browse, Saved/Favorites/Review later, and Collections are all in scope for V1.
+- `Browse` is the primary discovery hub and includes Search, Saved, Favorites, Review later, and collections.
 - Search supports character, English gloss, and language readings.
 - Search uses exact and partial matching with practical normalization.
 - Browse stays shallow and curated.
@@ -111,12 +112,15 @@ A V1 lesson is publishable only if it has:
 
 ## Home and Navigation
 
-- The shell page label remains `Home`.
-- `New Symbol` / `Next Symbol` is the primary Home action, not the page name.
+- The target primary shell is `Home`, `Symbol` / `New Symbol`, `History`, `Browse`, and `More` / `Settings`.
+- Names may still change during design, but the functional grouping is stable.
+- `New Symbol` / `Next Symbol` is represented by the `Symbol` shell area and may also appear as the primary Home action.
+- `History` is a primary shell area for generic script-period explanations.
+- `More` / `Settings` contains Languages, Account, Settings, About / Method, reset, and other utility pages.
 - Home prioritizes:
   - `Resume current lesson` when applicable
   - otherwise the `next featured Shared Character`
-- Search, Browse, and Collections are secondary to the featured lesson.
+- Browse and More / Settings are secondary to the Home/Symbol learning flow.
 - Home reflects the evolution framework rather than behaving like a generic catalog.
 - `Why this now` may appear on the featured lesson card.
 
@@ -144,15 +148,15 @@ A V1 lesson is publishable only if it has:
 - Step-controlled viewing is primary; auto-play is secondary.
 - Evolution visuals should show editorially chosen key stages only, but every displayed stage must be visually represented by its own asset or a clearly labeled gap.
 - Prefer Wikimedia Commons Ancient Chinese Characters SVGs for bundled historical glyphs when available, with Dong Chinese used for origin/component analysis, stage discovery, and source cross-checking.
-- Generic explanations of Oracle Bone, Bronze, Seal, Clerical, and Regular periods belong in a separate History or Method / History page, not repeated inside each symbol page.
+- Generic explanations of Oracle Bone, Bronze, Seal, Clerical, and Regular periods belong in the primary-shell `History` area, not repeated inside each symbol page.
 
 ## Utility and Reset
 
-- `About / Method` exists in a lightweight utility/info area.
+- `About / Method` exists in `More` / `Settings`.
 - It should explain scope, method, and corpus size.
 - `Account` is an agreed app concept, but it can remain shallow/deferred while the core symbol-recognition experience is being tested.
-- `Saved/Archive` is an agreed app concept; V1 may implement it through lightweight saved collections until the public-testing account/storage model is needed.
-- `Languages` is an agreed app concept; V1 may implement it through focus-language controls until a separate public-facing language page is needed.
+- `Saved/Archive` is an agreed app concept; V1 may implement it inside `Browse` through lightweight saved collections until the public-testing account/storage model is needed.
+- `Languages` is an agreed app concept; V1 may implement it inside `More` / `Settings` through focus-language controls until a separate public-facing language page is needed.
 - Deferred app concepts should keep a visible or documented place in the product model; they should not be silently removed or replaced with unrelated pages.
 - `Settings` handles local preferences, focus language, offline/app information, and reset.
 - `Reset app progress` is app-wide, not per lesson.

@@ -84,11 +84,21 @@ The reference `Evolution of the Horse Character` and related character-evolution
 
 ## User Experience
 
+Primary shell layout:
+
+1. `Home`
+2. `Symbol` / `New Symbol`
+3. `History`
+4. `Browse`
+5. `More` / `Settings`
+
+Names may still change during design, but the functional grouping is stable. `Browse` includes discovery functions such as Search, Saved, Favorites, Review later, and collections. `More` / `Settings` includes Languages, Account, Settings, About / Method, reset, and other utility pages.
+
 Home behavior:
 
 - If a lesson is in progress, show `Resume current lesson`
 - Otherwise show the `New Symbol` / `Next Symbol` primary action for the next featured Shared Character
-- Keep `Search`, `Browse`, and `Collections` secondary
+- Keep `Symbol`, `History`, `Browse`, and `More` / `Settings` available from the primary shell
 - Keep the shell page label as `Home`
 
 Collections:
@@ -101,8 +111,8 @@ Collections:
 Deferred but preserved app concepts:
 
 - `Account` remains an agreed app concept for public testing, but it can stay shallow while the core symbol-recognition experience is being tested
-- `Saved/Archive` can initially use lightweight saved collections
-- `Languages` can initially use focus-track controls
+- `Saved/Archive` can initially live inside `Browse` as lightweight saved collections
+- `Languages` can initially live inside `More` / `Settings` as focus-track controls
 
 Settings:
 
@@ -155,7 +165,7 @@ The repo now contains the V1 product foundation, SwiftUI app shell, local user-s
 
 Implemented locally:
 
-- SwiftUI tab shell for Home, Search, Browse, Saved, Languages, Account, and Settings
+- SwiftUI tab shell currently exists for Home, Search, Browse, Saved, Languages, Account, and Settings; target shell is now Home, Symbol, History, Browse, and More / Settings
 - bundled read-only source-backed seed corpus with 11 basic Shared Characters
 - local JSON-backed user-state store for focus language, lesson progress, favorites, and review-later
 - six-step guided `Shared Character` lesson shell

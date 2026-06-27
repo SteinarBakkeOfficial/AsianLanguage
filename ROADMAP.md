@@ -13,7 +13,7 @@ Build an offline-first iPhone app that teaches shared Chinese-character heritage
 ## Phase 2. App Skeleton
 
 - Create the SwiftUI app shell
-- Establish navigation structure for Home, Search, Browse, Collections, and utility/info areas
+- Establish navigation structure for Home, Symbol / New Symbol, History, Browse, and More / Settings
 - Implement light/dark mode intentionally from the start
 
 ## Phase 3. Local Data Layer
@@ -30,8 +30,8 @@ Build an offline-first iPhone app that teaches shared Chinese-character heritage
 
 ## Phase 5. Discovery
 
-- Implement Search with exact and partial matching
-- Implement Browse and system/editorial Collections
+- Implement Browse as the discovery hub
+- Include Search, Saved/Favorites/Review later, and system/editorial Collections inside Browse
 - Support filters, sorting, and compact list items with status indicators
 
 ## Phase 6. Content Tooling and Corpus Format
@@ -57,7 +57,7 @@ Build an offline-first iPhone app that teaches shared Chinese-character heritage
 ## Phase 9. Polish and QA
 
 - Refine onboarding, About/Method, and empty states
-- Add a History or Method / History explainer for Oracle Bone, Bronze, Seal, Clerical, and Regular periods outside individual symbol pages
+- Add a primary-shell History explainer for Oracle Bone, Bronze, Seal, Clerical, and Regular periods outside individual symbol pages
 - Validate offline behavior and local reset flow
 - Test lesson UX, search tolerance, and collection behavior
 
@@ -70,7 +70,7 @@ Build an offline-first iPhone app that teaches shared Chinese-character heritage
 ## Implementation Status
 
 - Phase 1 Product Foundation: implemented in project docs
-- Phase 2 App Skeleton: implemented with SwiftUI shell and Xcode project scaffold
+- Phase 2 App Skeleton: implemented with SwiftUI shell and Xcode project scaffold; target shell has been updated to Home, Symbol, History, Browse, and More / Settings
 - Phase 3 Local Data Layer: implemented locally for user state and bundled corpus access
 - Phase 4 Lesson Experience: implemented as a six-step guided lesson shell
 - Phase 5 Discovery: implemented for local Search, Browse, and Collections over bundled records

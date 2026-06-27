@@ -32,12 +32,12 @@ Start with explicit folders rather than package-level extraction. Promote module
 V1 uses a shallow tab structure:
 
 - `Home`
-- `Search`
+- `Symbol` / `New Symbol`
+- `History`
 - `Browse`
-- `Collections`
-- `Settings`
+- `More` / `Settings`
 
-`Home` remains the shell label. `New Symbol` and `Next Symbol` are primary actions inside Home, not page names.
+Names may still change during design, but the functional grouping is stable. `Symbol` / `New Symbol` owns the primary symbol-learning entry. `History` owns generic script-period explanations. `Browse` contains Search, Saved, Favorites, Review later, and collections. `More` / `Settings` contains Languages, Account, Settings, About / Method, reset, and utility pages.
 
 ## Home Routing
 
@@ -45,7 +45,7 @@ Home chooses its primary action from local state:
 
 1. If any lesson is `inProgress`, show `Resume current lesson`.
 2. Otherwise show `New Symbol` or `Next Symbol` for the next featured Shared Character.
-3. Keep Search, Browse, and Collections secondary.
+3. Keep Symbol, History, Browse, and More / Settings available from the primary shell.
 
 The first implementation should support only one active in-progress lesson. If multiple records exist after future migrations, choose the most recently updated one.
 
@@ -118,7 +118,7 @@ Local writable state is separate from the corpus and keyed by corpus IDs:
 
 ## Search and Discovery
 
-Search should index:
+Search lives inside Browse and should index:
 
 - modern forms
 - English glosses
@@ -129,6 +129,8 @@ Search should index:
 - example text and translations only after the primary fields work well
 
 Search can start with exact and case-insensitive partial matching over a normalized in-memory index. Ranking can stay simple in V1: exact form matches first, then readings, then glosses.
+
+Browse also contains Saved, Favorites, Review later, and editorial/system collections.
 
 ## V1 to VNext Tracking
 
