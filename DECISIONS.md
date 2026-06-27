@@ -53,11 +53,14 @@
 - Pronunciation and exact modern form may differ.
 - Historical evolution can be limited-certainty when uncertainty is explicit.
 - Intermediate historical script stages are included only when they improve recognition or clarify the lineage.
+- Displayed Origin, Oracle Bone, Bronze, Seal, Clerical, and Regular stages require dedicated image assets or explicit missing-asset placeholders; the modern regular character must not be reused as a false substitute for older stages.
 - Every displayed historical stage after the first requires a short change note from the previous shown stage.
 - Richer side-by-side stage comparison is optional and used only when the visual change is important or confusing.
 - Historical sound information is included only when accurate enough to source and label responsibly.
 - Historical sound information is not required for every stage and is not a publication blocker when unavailable or too uncertain.
 - Character/component structure can be limited-certainty when uncertainty is explicit.
+- Components should be shown at the stage where they first appear or become meaningful in the symbol evolution.
+- One-component symbols still identify that single component; multi-component symbols explain each component with role, depiction, and source support.
 - Unsupported mnemonic folklore must not be presented as fact.
 - Phonetic resemblance is optional editorial enrichment, not a required lesson pillar.
 
@@ -124,17 +127,24 @@ A V1 lesson is publishable only if it has:
 - No sync or account system in V1.
 - No remote content dependency for the core experience.
 - Progress is measured against the currently installed corpus.
+- Symbol source strategy, the first-50 proof set, and the broader candidate pool live in `docs/content/symbol-source-plan.md`.
+- The next approach is design first, preferably in Figma, captured in `docs/content/symbol-evolution-design-handoff.md`.
 
 ## Visual Content
 
-- Reference pictures are design inspiration only, not production app assets.
-- Production visuals should be app-native assets or source-backed content assets.
-- Prefer vector or structured drawing assets.
+- The character-evolution reference pictures are product targets for the evolution experience, not loose design inspiration.
+- The app adapts the reference from one poster into horizontal full-page stage views on iPhone.
+- The bottom evolution strip is the pressable stage navigation for each symbol: origin picture, Oracle Bone, Bronze, Seal, Clerical, Regular, and Modern Forms.
+- Bottom stage navigation remains fixed or floating near the bottom while stage content may scroll vertically if needed.
+- Production visuals should be app-native, licensed, or source-backed content assets.
+- Prefer source-backed image assets or specialist redraws for historical forms; vector assets are welcome when they preserve the required visual target.
 - Stroke order is view-only in V1.
 - Stroke order applies to modern focus-track forms where authoritative data is available.
 - Historical transformation drawing and modern stroke order are separate concepts.
 - Step-controlled viewing is primary; auto-play is secondary.
-- Evolution visuals should show editorially chosen key stages only.
+- Evolution visuals should show editorially chosen key stages only, but every displayed stage must be visually represented by its own asset or a clearly labeled gap.
+- Prefer Wikimedia Commons Ancient Chinese Characters SVGs for bundled historical glyphs when available, with Dong Chinese used for origin/component analysis, stage discovery, and source cross-checking.
+- Generic explanations of Oracle Bone, Bronze, Seal, Clerical, and Regular periods belong in a separate History or Method / History page, not repeated inside each symbol page.
 
 ## Utility and Reset
 

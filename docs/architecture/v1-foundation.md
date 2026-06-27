@@ -71,6 +71,24 @@ The guided flow uses a closed enum:
 
 The progress bar is tappable only for steps that are current or already visited in the current lesson session. Future changes can loosen this after the lesson-state rules are proven.
 
+## Symbol Evolution Experience
+
+The `Origin` and `Character` lesson steps share the main reference-led evolution experience. The character-evolution reference images are product targets for layout, hierarchy, and stage navigation, adapted from one poster into iPhone-sized horizontal stage pages.
+
+The stage sequence is:
+
+1. origin picture
+2. Oracle Bone
+3. Bronze
+4. Seal
+5. Clerical
+6. Regular
+7. Modern Forms
+
+Each stage owns a full-page horizontal swipe view. Stage content should normally fit in one screen; when text overflows, only the stage content scrolls vertically. The bottom evolution strip remains fixed or floating near the bottom and acts as pressable navigation between stages.
+
+Every displayed Origin, Oracle Bone, Bronze, Seal, Clerical, and Regular stage needs its own image asset or an explicit missing-asset placeholder. Modern regular text must not be reused as a fake historical visual.
+
 ## Focus Tracks
 
 The focus-track enum is:

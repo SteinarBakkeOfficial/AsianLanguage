@@ -42,20 +42,22 @@ Build an offline-first iPhone app that teaches shared Chinese-character heritage
 
 ## Phase 7. Visual Content System
 
-- Establish vector or structured asset handling for origin, character, and stroke-order visuals
-- Support step-controlled viewing with optional auto-play
-- Define the reusable visual treatment for the canonical history spine, then transition into Modern Forms
+- Establish image-backed asset handling for origin, Oracle Bone, Bronze, Seal, Clerical, Regular, and stroke-order visuals
+- Support horizontal stage-by-stage viewing with pressable bottom evolution navigation and optional auto-play later
+- Define the reusable visual treatment from the character-evolution reference target, then transition into Modern Forms
 - Keep stroke order view-only for modern focus-track forms where authoritative data is available
 
 ## Phase 8. Initial Corpus
 
 - Produce the first launch-quality Shared Characters
+- Use `docs/content/symbol-source-plan.md` as the source strategy and first-50 proof-set plan
 - Validate publication gate, notes quality, and example consistency
 - Reach the first meaningful launch corpus target
 
 ## Phase 9. Polish and QA
 
 - Refine onboarding, About/Method, and empty states
+- Add a History or Method / History explainer for Oracle Bone, Bronze, Seal, Clerical, and Regular periods outside individual symbol pages
 - Validate offline behavior and local reset flow
 - Test lesson UX, search tolerance, and collection behavior
 
@@ -73,7 +75,7 @@ Build an offline-first iPhone app that teaches shared Chinese-character heritage
 - Phase 4 Lesson Experience: implemented as a six-step guided lesson shell
 - Phase 5 Discovery: implemented for local Search, Browse, and Collections over bundled records
 - Phase 6 Content Tooling and Corpus Format: implemented for validation, draft creation, sync, and readiness reporting
-- Phase 7 Visual Content System: implemented as structured SwiftUI history spine, modern-form comparison views, prototype regular-script cards, and partial source-backed historical SVG intake
+- Phase 7 Visual Content System: partially implemented as structured SwiftUI history spine, modern-form comparison views, prototype regular-script cards, and partial source-backed historical SVG intake; it must be reworked so the reference character-evolution layout is treated as the product target, with horizontal full-page stage views and fixed bottom evolution navigation
 - Phase 8 Initial Corpus: source-backed seed corpus has 11 draft basic-symbol records and readiness tooling; launch-quality breadth remains blocked on deeper editorial work, broader historical visual coverage, and specialist review
 - Phase 9 Polish and QA: partially implemented for reset confirmation, About / Method, empty states, and Windows checks
 - Phase 10 V1 Release: blocked until macOS/Xcode signing, simulator/device verification, and App Store/TestFlight access are available

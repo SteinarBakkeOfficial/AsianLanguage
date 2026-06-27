@@ -74,11 +74,13 @@ The guided lesson flow is:
 The lesson framework is:
 
 1. historical origin anchor
-2. optional intermediate script stages when they add recognition value
-3. characterized or regular-script form
+2. image-backed intermediate script stages when they add recognition value
+3. image-backed characterized or regular-script form
 4. modern Simplified Chinese, Traditional Chinese, Japanese Kanji, and Korean Hanja forms
 
 The canonical history spine is Oracle Bone, Bronze, Seal, Clerical, Regular, then modern focus-track forms. Not every lesson must show every stage; incomplete or disputed paths must be marked with certainty notes.
+
+The reference `Evolution of the Horse Character` and related character-evolution mockups are product targets for the evolution experience, not loose inspiration. The app adapts that reference from one poster into a horizontal, stage-by-stage iPhone lesson: each origin or script stage owns the page, the user swipes left/right between stages, and the bottom evolution strip acts as persistent stage navigation.
 
 ## User Experience
 
@@ -140,7 +142,9 @@ Notes:
 - Use richer side-by-side stage comparison only when the visual change is important or confusing
 - Keep historical transformation and modern stroke order separate
 - Include historical sound information only when accurate enough to source and label responsibly
-- Treat reference screenshots as design inspiration, not production app assets
+- Treat character-evolution reference screenshots as the product target for composition, hierarchy, and stage navigation, while replacing screenshot content with app-native, licensed, or source-backed assets
+- Use image assets for Origin, Oracle Bone, Bronze, Seal, Clerical, and Regular visuals; do not reuse the modern regular character as a stand-in for missing historical stages
+- Present evolution stages as horizontal full-page pages with fixed bottom stage navigation; allow vertical scrolling only inside a page when a stage needs more text than fits
 - Avoid speculative mnemonic claims presented as fact
 - Keep source transparency available through lightweight `Sources/Notes`
 - Use editorially written recognition takeaways
