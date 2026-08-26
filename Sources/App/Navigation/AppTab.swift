@@ -3,12 +3,10 @@ import SwiftUI
 /// Top-level destinations available from the V1 tab shell.
 enum AppTab: Hashable, CaseIterable, Identifiable {
     case home
-    case search
+    case symbol
+    case history
     case browse
-    case savedArchive
-    case languages
-    case account
-    case settings
+    case more
 
     /// Stable identifier for SwiftUI tab selection and future persistence.
     var id: Self { self }
@@ -18,18 +16,14 @@ enum AppTab: Hashable, CaseIterable, Identifiable {
         switch self {
         case .home:
             return "Home"
-        case .search:
-            return "Search"
+        case .symbol:
+            return "Symbol"
+        case .history:
+            return "History"
         case .browse:
             return "Browse"
-        case .savedArchive:
-            return "Saved"
-        case .languages:
-            return "Languages"
-        case .account:
-            return "Account"
-        case .settings:
-            return "Settings"
+        case .more:
+            return "More"
         }
     }
 
@@ -38,18 +32,14 @@ enum AppTab: Hashable, CaseIterable, Identifiable {
         switch self {
         case .home:
             return "house"
-        case .search:
-            return "magnifyingglass"
+        case .symbol:
+            return "character"
+        case .history:
+            return "clock.arrow.circlepath"
         case .browse:
             return "square.grid.2x2"
-        case .savedArchive:
-            return "bookmark"
-        case .languages:
-            return "character.book.closed"
-        case .account:
-            return "person.crop.circle"
-        case .settings:
-            return "gearshape"
+        case .more:
+            return "ellipsis.circle"
         }
     }
 }

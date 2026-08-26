@@ -15,8 +15,7 @@ struct LanguagesView: View {
     }
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
+        ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
                     headerCard
                     ForEach(FocusTrack.allCases) { track in
@@ -25,8 +24,7 @@ struct LanguagesView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Languages")
-        }
+        .navigationTitle("Languages")
     }
 
     /// Intro card explaining multi-select focus behavior.

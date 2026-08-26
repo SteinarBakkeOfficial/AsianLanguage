@@ -32,10 +32,19 @@ struct BrowseView: View {
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
 
+                            NavigationLink("Search") { SearchView(dependencies: dependencies) }
+                            NavigationLink("Collections") { CollectionsView(dependencies: dependencies) }
+                            NavigationLink("In Progress") { BrowseStatusView(title: "In Progress", records: inProgressRecords, dependencies: dependencies) }
+                            NavigationLink("Learned") { BrowseStatusView(title: "Learned", records: learnedRecords, dependencies: dependencies) }
                             ForEach(dependencies.sharedCharacters) { record in
-                                NavigationLink(value: LessonRoute(sharedCharacterID: record.id, startingStep: .origin)) {
+                                Button {
+                                    dependencies.navigationState.openSymbol(
+                                        LessonRoute(sharedCharacterID: record.id, startingPosition: nil)
+                                    )
+                                } label: {
                                     browseRow(record)
                                 }
+                                .buttonStyle(.plain)
                             }
 
                             Text("Browse is intentionally shallow in V1: it follows the editorial teaching sequence and opens directly into Shared Character lessons.")
@@ -48,9 +57,6 @@ struct BrowseView: View {
             }
             .navigationTitle("Browse")
             .navigationBarTitleDisplayMode(.inline)
-            .navigationDestination(for: LessonRoute.self) { route in
-                LessonView(route: route, dependencies: dependencies)
-            }
         }
     }
 
@@ -91,5 +97,37 @@ struct BrowseView: View {
     /// Local progress label for a record.
     private func statusTitle(for record: SharedCharacterRecord) -> String {
         userStateStore.state.lessonStates[record.id]?.progressStatus.rawValue ?? LessonProgressStatus.unseen.rawValue
+    }
+
+    private var inProgressRecords: [SharedCharacterRecord] {
+        dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.progressStatus == .inProgress }
+    }
+
+    private var learnedRecords: [SharedCharacterRecord] {
+        dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.progressStatus == .learned }
+    }
+}
+
+/// Shared structural list for Browse status collections.
+struct BrowseStatusView: View {
+    let title: String
+    let records: [SharedCharacterRecord]
+    let dependencies: AppDependencies
+
+    var body: some View {
+        List {
+            if records.isEmpty {
+                ContentUnavailableView("Nothing here yet", systemImage: "tray", description: Text("No Shared Characters match this collection."))
+            } else {
+                ForEach(records) { record in
+                    Button {
+                        dependencies.navigationState.openSymbol(LessonRoute(sharedCharacterID: record.id, startingPosition: nil))
+                    } label: {
+                        Label("\(record.coreCharacter)  \(record.coreSharedMeaning)", systemImage: "character")
+                    }
+                }
+            }
+        }
+        .navigationTitle(title)
     }
 }

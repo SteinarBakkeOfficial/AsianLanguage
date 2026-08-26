@@ -1,23 +1,21 @@
 import XCTest
 @testable import AsianLanguage
 
-/// Tests for stable lesson routing contracts used by Home and future discovery surfaces.
+/// Tests for exact Symbol Journey routing.
 final class LessonRouteTests: XCTestCase {
-    /// Keeps the default Home route pinned to the first guided lesson step.
-    func testFeaturedLessonRouteStartsAtOrigin() {
-        let route = LessonRoute(sharedCharacterID: "tree", startingStep: .origin)
+    func testRouteCarriesExactEvolutionStage() {
+        let route = LessonRoute(
+            sharedCharacterID: "fire",
+            startingPosition: SymbolJourneyPosition(section: .evolution, stageID: "bronze")
+        )
 
-        XCTAssertEqual(route.sharedCharacterID, "tree")
-        XCTAssertEqual(route.startingStep, .origin)
+        XCTAssertEqual(route.sharedCharacterID, "fire")
+        XCTAssertEqual(route.startingPosition?.stageID, "bronze")
     }
 
-    /// Guards the persisted lesson-step order used by progress UI and future resume state.
-    func testLessonStepOrderMatchesGuidedFlow() {
-        let titles = LessonStep.allCases.map(\.title)
+    func testLegacyLessonStepMapsToCurrentPosition() {
+        let route = LessonRoute(sharedCharacterID: "tree", startingStep: .usage)
 
-        XCTAssertEqual(
-            titles,
-            ["Origin", "Character", "Modern Forms", "Structure", "Usage", "Summary"]
-        )
+        XCTAssertEqual(route.startingPosition?.section, .usage)
     }
 }

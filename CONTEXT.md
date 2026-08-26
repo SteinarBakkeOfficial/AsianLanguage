@@ -61,7 +61,7 @@ The primary user-facing content object representing one cross-language character
 _Avoid_: Generic lesson item, dictionary entry only
 
 **Focus track**:
-A selectable modern display and usage lane for Simplified Chinese, Traditional Chinese, Japanese, Korean, or all tracks.
+A selectable modern display and usage lane for Simplified Chinese, Traditional Chinese, Japanese, or Korean. A \`FocusTrackSelection\` contains one or more of these four values; there is no separate all-track enum value.
 _Avoid_: Treating every writing standard as a separate spoken language
 
 **Traditional Chinese focus**:
@@ -116,6 +116,30 @@ _Avoid_: User tracing, handwriting assessment, historical transformation path
 External screenshots or examples used to guide design direction and lesson flow.
 _Avoid_: Treating screenshots as production app assets
 
+**Symbol Journey**:
+The complete learner experience for one Shared Character from a recognizable origin through historical evolution into modern cross-language recognition.
+_Avoid_: Treating the old six content phases as the primary user-facing navigator
+
+**Evolution Stage**:
+One historical page/state in the Symbol Journey, such as Origin, Oracle Bone, Bronze, Seal, Clerical, or Regular.
+_Avoid_: Fabricated stages added only to complete a sequence
+
+**Today / Modern Endpoint**:
+The point where historical evolution transitions into selected modern focus-track forms, readings, variants, and usage.
+_Avoid_: A separate lesson unrelated to the historical journey
+
+**Content Phase**:
+An internal or editorial grouping such as Character structure, Modern usage, or Summary. A Content Phase is not necessarily a visible navigation control.
+_Avoid_: Six equally prominent navigation buttons competing with the Evolution Stage navigator
+
+**Historical Asset**:
+A source-backed or licensed representation of a specific historical form, with bundled renderable metadata and provenance.
+_Avoid_: A Unicode or ASCII approximation presented as historical evidence
+
+**Missing Historical Asset**:
+An explicit content gap shown when a defensible or source-backed historical visual is not yet bundled.
+_Avoid_: Replacing it with a fabricated glyph or modern regular form
+
 ## Relationships
 
 - A **Shared character lesson** is centered on exactly one **Underlying character record**
@@ -124,7 +148,7 @@ _Avoid_: Treating screenshots as production app assets
 - A **Shared character lesson** exists to produce **Cross-language recognition**
 - This project presents **Shared Chinese-character heritage** through **Shared character lessons**
 - A **Shared Character** is taught through a guided lesson
-- A **Shared Character** can be viewed through one **Focus track** or all focus tracks
+- A **Shared Character** can be viewed through one or more **Focus tracks**, with all four selected by default
 - A **Traditional Chinese focus** includes separate Taiwan/Hong Kong usage examples
 - A **Shared character lesson** follows an **Evolution framework**
 - An **Evolution framework** uses the **Canonical history spine** without requiring every lesson to include every stage
@@ -132,7 +156,7 @@ _Avoid_: Treating screenshots as production app assets
 - Shown stages in an **Evolution framework** use **Historical stage metadata**
 - Every displayed historical stage after the first has a **Stage-to-stage change note**
 - A **Shared character lesson** ends in **Modern usage** across Mandarin, Traditional Chinese usage communities, Japanese, and Korean
-- A **Shared Character** can be marked **Learned** or **Review later**, but not both at once
+- A **Shared Character** can be **Learned**, in **Review later**, and in **Favorites** independently
 - A **Shared Character** can belong to **Favorites** regardless of whether it is **Learned** or **Review later**
 - **Collections** includes **Review later** and **Favorites**
 - **Settings** contains **Focus track** selection
@@ -159,7 +183,7 @@ _Avoid_: Treating screenshots as production app assets
 > **Domain expert:** "No. It is about **Shared Chinese-character heritage**, taught through shared characters and their **Modern usage**."
 >
 > **Dev:** "If I finish reading a lesson, is it automatically done forever?"
-> **Domain expert:** "No. The user decides whether the **Shared Character** is **Learned** or should be kept in **Review later**. **Favorites** is separate."
+> **Domain expert:** "No. Learned records completion, Review later is a separate user intent, and Favorites is independent."
 
 ## Flagged ambiguities
 
@@ -174,7 +198,8 @@ _Avoid_: Treating screenshots as production app assets
 - "Asian languages" was too vague for the product promise — resolved: use **Shared Chinese-character heritage** in public-facing description
 - "completed" was too weak and misleading for retention — resolved: use **Learned** and **Review later** as user-controlled states
 - "Traditional Chinese" could imply a separate language or the ancestor of Kanji/Hanja — resolved: use **Traditional Chinese focus** as a modern written-form track with Taiwan/Hong Kong usage examples
-- "Account" could imply login or sync — resolved: V1 has no account page; local preferences live in **Settings**
+- "Account" could imply login or sync — resolved: V1 has a clearly deferred placeholder under **More**; local preferences live in **Settings**
 - "stroke patterns" could imply tracing or historical transformation — resolved: V1 uses view-only **Modern stroke order** for modern focus-track forms when authoritative data is available
 - "Start Page - New Symbol" could imply replacing Home as the shell page — resolved: keep **Home** as the shell label and use **New Symbol** as the primary action
+- The old six content phases were mistaken for primary navigation — resolved: the **Symbol Journey** and its **Evolution Stages** are the primary user-facing navigation
 - "Reference Pictures" could imply production-ready assets — resolved: use **Reference pictures** as design inspiration only

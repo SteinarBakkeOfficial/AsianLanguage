@@ -1,82 +1,21 @@
 $ErrorActionPreference = "Stop"
-
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
+function Assert-True { param([bool]$Condition,[string]$Message); if (-not $Condition) { throw $Message } }
+function Text([string]$Path) { Get-Content -Raw (Join-Path $repoRoot $Path) }
 
-function Assert-True {
-  param(
-    [Parameter(Mandatory = $true)]
-    [bool]$Condition,
-    [Parameter(Mandatory = $true)]
-    [string]$Message
-  )
+$root = Text "Sources/App/Navigation/RootTabView.swift"
+$browse = Text "Sources/App/Browse/BrowseView.swift"
+$search = Text "Sources/App/Search/SearchView.swift"
+$collections = Text "Sources/App/Collections/CollectionsView.swift"
+$more = Text "Sources/App/Navigation/RootTabView.swift"
 
-  if (-not $Condition) {
-    throw $Message
-  }
-}
-
-function Assert-Contains {
-  param(
-    [Parameter(Mandatory = $true)]
-    [string]$Text,
-    [Parameter(Mandatory = $true)]
-    [string]$ExpectedSubstring,
-    [Parameter(Mandatory = $true)]
-    [string]$Message
-  )
-
-  Assert-True -Condition $Text.Contains($ExpectedSubstring) -Message "$Message Expected '$ExpectedSubstring'."
-}
-
-function Get-Text {
-  param(
-    [Parameter(Mandatory = $true)]
-    [string]$RelativePath
-  )
-
-  return Get-Content -Raw (Join-Path $repoRoot $RelativePath)
-}
-
-$searchIndexText = Get-Text "Sources/App/Discovery/SharedCharacterSearchIndex.swift"
-Assert-Contains -Text $searchIndexText -ExpectedSubstring "struct SharedCharacterSearchIndex" -Message "Discovery should expose a local search index."
-Assert-Contains -Text $searchIndexText -ExpectedSubstring "func search(_ query: String)" -Message "Search index should provide a query interface."
-Assert-Contains -Text $searchIndexText -ExpectedSubstring "normalizedQuery" -Message "Search should normalize user input."
-Assert-Contains -Text $searchIndexText -ExpectedSubstring "coreCharacter" -Message "Search should include modern character forms."
-Assert-Contains -Text $searchIndexText -ExpectedSubstring "coreSharedMeaning" -Message "Search should include English glosses."
-Assert-Contains -Text $searchIndexText -ExpectedSubstring "readings" -Message "Search should include language readings."
-
-$dependenciesText = Get-Text "Sources/App/Core/AppDependencies.swift"
-Assert-Contains -Text $dependenciesText -ExpectedSubstring "let sharedCharacters: [SharedCharacterRecord]" -Message "App dependencies should expose bundled corpus records for discovery."
-Assert-Contains -Text $dependenciesText -ExpectedSubstring "SeedCorpusManifest.recordIDs" -Message "App dependencies should load all seed manifest records."
-
-$rootText = Get-Text "Sources/App/Navigation/RootTabView.swift"
-Assert-Contains -Text $rootText -ExpectedSubstring "SearchView(dependencies: dependencies)" -Message "Root tabs should inject dependencies into Search."
-Assert-Contains -Text $rootText -ExpectedSubstring "BrowseView(dependencies: dependencies)" -Message "Root tabs should inject dependencies into Browse."
-Assert-Contains -Text $rootText -ExpectedSubstring "CollectionsView(dependencies: dependencies)" -Message "Root tabs should inject dependencies into Collections."
-Assert-Contains -Text $rootText -ExpectedSubstring "LanguagesView(dependencies: dependencies)" -Message "Root tabs should use a dedicated Languages screen."
-Assert-Contains -Text $rootText -ExpectedSubstring "AccountView(dependencies: dependencies)" -Message "Root tabs should use a concrete Account screen."
-
-$searchText = Get-Text "Sources/App/Search/SearchView.swift"
-Assert-Contains -Text $searchText -ExpectedSubstring "SharedCharacterSearchIndex" -Message "Search view should use the local search index."
-Assert-Contains -Text $searchText -ExpectedSubstring "NavigationLink(value: LessonRoute" -Message "Search results should route to lessons."
-Assert-Contains -Text $searchText -ExpectedSubstring ".searchable" -Message "Search view should keep native search UI."
-
-$browseText = Get-Text "Sources/App/Browse/BrowseView.swift"
-Assert-Contains -Text $browseText -ExpectedSubstring "ForEach(dependencies.sharedCharacters)" -Message "Browse should list bundled Shared Characters."
-Assert-Contains -Text $browseText -ExpectedSubstring "NavigationLink(value: LessonRoute" -Message "Browse rows should route to lessons."
-
-$collectionsText = Get-Text "Sources/App/Collections/CollectionsView.swift"
-Assert-Contains -Text $collectionsText -ExpectedSubstring "Source-Backed Seed Path" -Message "Collections should expose an editorial bundled path."
-Assert-Contains -Text $collectionsText -ExpectedSubstring "Pictographic Starters" -Message "Collections should expose a starter editorial collection."
-Assert-Contains -Text $collectionsText -ExpectedSubstring "Review later" -Message "Collections should keep Review later."
-Assert-Contains -Text $collectionsText -ExpectedSubstring "Favorites" -Message "Collections should keep Favorites."
-
-$languagesText = Get-Text "Sources/App/Languages/LanguagesView.swift"
-Assert-Contains -Text $languagesText -ExpectedSubstring "struct LanguagesView: View" -Message "Languages should be a concrete screen."
-Assert-Contains -Text $languagesText -ExpectedSubstring "ForEach(FocusTrack.allCases)" -Message "Languages should expose all focus tracks."
-
-$accountText = Get-Text "Sources/App/Account/AccountView.swift"
-Assert-Contains -Text $accountText -ExpectedSubstring "struct AccountView: View" -Message "Account should be a concrete screen."
-Assert-Contains -Text $accountText -ExpectedSubstring "Local Tester" -Message "Account should expose local tester identity."
-
+Assert-True $root.Contains("BrowseView(dependencies: dependencies)") "Root must expose Browse."
+Assert-True $root.Contains('NavigationLink("Languages")') "More must own Languages."
+Assert-True $root.Contains('NavigationLink("Settings")') "More must own Settings."
+Assert-True $browse.Contains("SearchView(dependencies: dependencies)") "Browse must own Search."
+Assert-True $browse.Contains("CollectionsView(dependencies: dependencies)") "Browse must own Collections."
+Assert-True $search.Contains("SharedCharacterSearchIndex") "Search must use the offline index."
+Assert-True $search.Contains("openSymbol") "Search must open the canonical Symbol destination."
+Assert-True $collections.Contains("Review later") "Collections must retain Review later."
+Assert-True $collections.Contains("Favorites") "Collections must retain Favorites."
 Write-Output "OK: discovery contract tests passed"

@@ -14,6 +14,22 @@ This is a single-context repo.
 - `CURRENT_STEP.md` for the active scope and next concrete output.
 - `docs/adr/` for architectural decision records when it exists.
 
+## Normative hierarchy
+
+When documents disagree, use this order:
+
+1. `DECISIONS.md`
+2. `ProjectBrief.md`
+3. `CONTEXT.md`
+4. `docs/architecture/v1-foundation.md`
+5. `docs/design/PRODUCT_DESIGN_DIRECTION.md`
+6. `docs/content/shared-character-schema.md`
+7. approved screen-specific design specs and references
+8. `ROADMAP.md`
+9. `CURRENT_STEP.md`
+
+Archived briefs and prototype feedback preserve history only and do not override normative documents.
+
 If any optional file or folder does not exist, proceed silently. Do not suggest creating it upfront; producer workflows create docs lazily when terms or decisions are resolved.
 
 ## Use the glossary's vocabulary

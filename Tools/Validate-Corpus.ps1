@@ -82,10 +82,6 @@ function Assert-PrototypeMetadata {
     return
   }
 
-  if ($null -eq $Record.visuals.evolutionAssetRefs) {
-    Add-Issue -Path $RecordPath -Message "Missing required object 'visuals.evolutionAssetRefs'."
-  }
-
   if (-not (Test-HasText $Record.visuals.assetStatus)) {
     Add-Issue -Path $RecordPath -Message "Missing required text field 'visuals.assetStatus'."
   }
@@ -225,6 +221,13 @@ function Assert-HistoryCoverage {
     $stage = $Record.history.stages[$index]
     if (-not (Test-HasText $stage.changeNoteFromPrevious)) {
       Add-Issue -Path $RecordPath -Message "Historical stage at index $index must include changeNoteFromPrevious."
+    }
+  }
+
+  $allowedStageIDs = @("oracleBone", "bronze", "seal", "clerical", "regular")
+  foreach ($stage in @($Record.history.stages)) {
+    if (-not (Test-HasText $stage.stage) -or $allowedStageIDs -notcontains $stage.stage) {
+      Add-Issue -Path $RecordPath -Message "History stage '$($stage.stage)' must use a canonical stage id."
     }
   }
 }

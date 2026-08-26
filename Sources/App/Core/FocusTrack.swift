@@ -1,7 +1,7 @@
 import Foundation
 
 /// Modern display and usage lane that can be enabled by the learner.
-enum FocusTrack: String, CaseIterable, Identifiable, Codable {
+enum FocusTrack: String, CaseIterable, Identifiable, Codable, Hashable {
     case simplifiedChinese
     case traditionalChinese
     case japanese

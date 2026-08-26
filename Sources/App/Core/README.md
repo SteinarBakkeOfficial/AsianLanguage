@@ -1,3 +1,3 @@
 # Core
 
-Shared app-level types and dependency setup for the future SwiftUI target.
+Shared app-level types, dependency setup, and root navigation state for the SwiftUI Symbol Journey target.

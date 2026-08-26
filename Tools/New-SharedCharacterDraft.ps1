@@ -35,7 +35,6 @@ $record = [ordered]@{
   recognitionTakeaway = "Draft recognition takeaway for $CoreCharacter. Replace with source-backed editorial copy before publication."
   publicationStatus = "draft"
   visuals = [ordered]@{
-    evolutionAssetRefs = [ordered]@{}
     assetStatus = "prototype-draft"
     note = "Add source-backed or app-native visual assets before prototype review."
   }
@@ -43,6 +42,7 @@ $record = [ordered]@{
     simplifiedChinese = [ordered]@{
       form = $CoreCharacter
       readings = @([ordered]@{ system = "pinyin"; value = "TODO" })
+      variants = @()
       glosses = @($CoreSharedMeaning)
       examples = @(
         [ordered]@{ text = "TODO"; reading = "TODO"; translation = $CoreSharedMeaning; showsCoreMeaning = $true; exampleLevel = "word"; parallelExampleGroupID = $null; reusesKnownSymbols = @(); introducedSymbols = @($CoreCharacter) },
@@ -52,6 +52,9 @@ $record = [ordered]@{
     traditionalChinese = [ordered]@{
       form = $CoreCharacter
       readings = @([ordered]@{ system = "pinyin"; value = "TODO" })
+      taiwanReadings = @()
+      hongKongReadings = @()
+      variants = @()
       glosses = @($CoreSharedMeaning)
       taiwanExamples = @(
         [ordered]@{ text = "TODO"; reading = "TODO"; translation = $CoreSharedMeaning; showsCoreMeaning = $true; exampleLevel = "word"; parallelExampleGroupID = $null; reusesKnownSymbols = @(); introducedSymbols = @($CoreCharacter) },
@@ -83,6 +86,12 @@ $record = [ordered]@{
   }
   history = [ordered]@{
     originAnchor = "TODO: source-backed origin anchor."
+    origin = [ordered]@{
+      concept = "TODO"
+      explanation = "TODO: source-backed origin explanation."
+      asset = $null
+      sourceIds = @()
+    }
     stages = @(
       [ordered]@{
         stage = "regular"
@@ -93,13 +102,16 @@ $record = [ordered]@{
         certainty = "limited"
         sourceIds = @("source-editorial-placeholder")
         historicalSound = $null
+        assetMetadata = $null
+        introducedComponentIds = @()
+        stageExplanation = $null
       }
     )
   }
   structure = [ordered]@{
     summary = "TODO: source-backed character/component structure."
     components = @(
-      [ordered]@{ label = $CoreCharacter; role = "TODO"; meaningHint = $CoreSharedMeaning }
+      [ordered]@{ id = $null; label = $CoreCharacter; form = $CoreCharacter; role = "TODO"; depicts = $null; meaningHint = $CoreSharedMeaning; introducedAtStage = "regular"; explanation = $null; sourceIds = @() }
     )
     certainty = "limited"
     caveat = "Draft placeholder; replace with source-backed certainty note before publication."
@@ -113,7 +125,7 @@ $record = [ordered]@{
     [ordered]@{
       id = "source-editorial-placeholder"
       label = "Editorial source placeholder"
-      type = "placeholder"
+      type = "prototype"
       citation = "Replace with source-backed references before publication."
     }
   )

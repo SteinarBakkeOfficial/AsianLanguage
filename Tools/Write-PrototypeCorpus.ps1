@@ -123,6 +123,18 @@ function New-Stage {
     certainty = $(if ($Stage -eq "regular") { "high" } else { "medium" })
     sourceIds = @($SourceIds)
     historicalSound = $Sound
+    assetMetadata = $(if ($null -ne $historicalAssetRef) {
+      [ordered]@{
+        assetRef = $historicalAssetRef
+        assetKind = "svg-source"
+        provenance = "Wikimedia Commons"
+        licenseStatus = "review-required"
+        accessibilityDescription = "$Label visual"
+        readiness = "source-backed-draft"
+      }
+    } else { $null })
+    introducedComponentIds = @()
+    stageExplanation = $ChangeNote
   }
 }
 
@@ -151,18 +163,23 @@ function Write-RegularVisual {
   Set-Content -Path $path -Value $svg -Encoding utf8
 }
 
+$remainingSequence = 5
 foreach ($record in $records) {
+  # Keep generated fixtures aligned with the resolved pilot order without inventing Horse content.
+  $pilotSequence = @{
+    fire = 1
+    water = 2
+    mountain = 3
+    tree = 4
+  }
+  if ($pilotSequence.ContainsKey($record.id)) {
+    $record.sequence = $pilotSequence[$record.id]
+  } else {
+    $record.sequence = $remainingSequence
+    $remainingSequence++
+  }
   Write-RegularVisual -Record $record
   $group = "$($record.id)-parallel-1"
-  $evolutionAssetRefs = [ordered]@{
-    regular = "Assets/PrototypeVisuals/$($record.id)-regular.svg"
-  }
-  foreach ($assetStage in @("oracle", "bronze", "seal")) {
-    $assetFileName = "$($record.id)-$assetStage.svg"
-    if (Test-Path (Join-Path $historicalGlyphRoot $assetFileName)) {
-      $evolutionAssetRefs[$assetStage] = "Assets/HistoricalGlyphs/$assetFileName"
-    }
-  }
   $sources = @($sharedSources)
   $sources += [ordered]@{
     id = $record.radicalSource
@@ -181,7 +198,6 @@ foreach ($record in $records) {
     recognitionTakeaway = "$($record.char) links the idea '$($record.meaning)' from an ancient graphic origin through regular script into modern Chinese, Japanese Kanji, and Korean Hanja usage."
     publicationStatus = "draft"
     visuals = [ordered]@{
-      evolutionAssetRefs = $evolutionAssetRefs
       assetStatus = "source-backed-draft"
       note = "Regular-script prototype card exists. Historical Oracle/Bronze/Seal assets are attached when source-backed Wikimedia Commons SVGs are available; final publication still needs licensing review and specialist redraw approval."
     }
@@ -189,6 +205,7 @@ foreach ($record in $records) {
       simplifiedChinese = [ordered]@{
         form = $record.char
         readings = @([ordered]@{ system = "pinyin"; value = $record.pinyin })
+        variants = @()
         glosses = @($record.meaning)
         examples = @(
           (New-Example $record.wordSc $record.pinyin $record.meaning "word" $null @() @($record.char)),
@@ -198,6 +215,9 @@ foreach ($record in $records) {
       traditionalChinese = [ordered]@{
         form = $record.char
         readings = @([ordered]@{ system = "pinyin"; value = $record.pinyin })
+        taiwanReadings = @()
+        hongKongReadings = @()
+        variants = @()
         glosses = @($record.meaning)
         taiwanExamples = @(
           (New-Example $record.wordTc $record.pinyin $record.meaning "word" $null @() @($record.char)),
@@ -215,6 +235,7 @@ foreach ($record in $records) {
           [ordered]@{ system = "kun"; value = $record.jpKun }
         )
         glosses = @($record.meaning)
+        variants = @()
         examples = @(
           (New-Example $record.wordJp $record.jpKun $record.meaning "word" $null @() @($record.char)),
           (New-Example $record.sentenceJp $null "Basic Japanese sentence using $($record.meaning)." "sentence" $group $record.reuse $record.intro)
@@ -227,6 +248,7 @@ foreach ($record in $records) {
           [ordered]@{ system = "native Korean"; value = $record.krNative }
         )
         glosses = @($record.meaning)
+        variants = @()
         examples = @(
           (New-Example $record.wordKr $record.krHanja $record.meaning "word" $null @() @($record.char)),
           (New-Example $record.sentenceKr $null "Basic Korean sentence using $($record.meaning)." "sentence" $group $record.reuse $record.intro)
@@ -235,6 +257,12 @@ foreach ($record in $records) {
     }
     history = [ordered]@{
       originAnchor = "$($record.char) is taught here from its original idea: $($record.original)."
+      origin = [ordered]@{
+        concept = $record.meaning
+        explanation = $record.original
+        asset = $null
+        sourceIds = @($record.radicalSource)
+      }
       stages = @(
         (New-Stage $record "oracleBone" "Oracle Bone Script" $null @("source-oracle-bone-script", "source-character-classification", "source-evobc", $record.radicalSource) "Old Chinese sound not shown yet; add only after dedicated reconstruction review."),
         (New-Stage $record "bronze" "Bronze Script" "Bronze inscriptions continue the ancient graph tradition after the oracle-bone period; final $($record.char)-specific redraw still required." @("source-evobc", $record.radicalSource) "Not shown in this seed record."),
@@ -245,7 +273,7 @@ foreach ($record in $records) {
     }
     structure = [ordered]@{
       summary = "$($record.char) is handled as a basic graph/radical for '$($record.meaning)'. It can appear as a standalone character and as a component in related characters."
-      components = @([ordered]@{ label = $record.char; role = "basic graph / radical"; meaningHint = $record.meaning })
+      components = @([ordered]@{ id = $record.id; label = $record.char; form = $record.char; role = "basic graph / radical"; depicts = $record.meaning; meaningHint = $record.meaning; introducedAtStage = "regular"; explanation = $null; sourceIds = @($record.radicalSource) })
       certainty = "medium"
       caveat = "Seed record uses public reference sources; publication requires specialist paleography review and final source-backed glyph redraws."
       sourceIds = @($record.radicalSource, "source-character-classification")

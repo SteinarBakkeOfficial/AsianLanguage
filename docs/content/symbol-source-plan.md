@@ -160,7 +160,7 @@ Each symbol record should be readable and easy to adjust manually.
 Recommended source-related fields:
 
 - stable source ids for Dong Chinese, Commons files, and modern dictionaries
-- stage-level `assetRef`
+- stage-level canonical `assetRef` owned by the historical stage
 - stage-level `sourceUrl`
 - optional `artifactAssetRef` for bones, vessels, rubbings, or inscriptions
 - component entries with role labels such as `iconic`, `meaning`, `sound`, or `remnant`
@@ -191,6 +191,7 @@ Recommended asset decision:
 - prefer Commons SVGs for bundled historical glyph assets when available
 - use Dong Chinese as a reference and fallback for stage discovery
 - mark missing assets visibly; never reuse modern regular script as a fake older stage
+- keep global asset readiness in `visuals`, but never duplicate the per-stage asset map there
 
 ## Sequencing Recommendation
 

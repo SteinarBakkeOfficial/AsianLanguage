@@ -1,3 +1,4 @@
+import Combine
 import Foundation
 
 /// Container for app-wide services that need to be shared across SwiftUI screens.
@@ -8,8 +9,14 @@ struct AppDependencies {
     /// Local writable store for progress and preferences.
     let userStateStore: LocalUserStateStore
 
+    /// Shared root navigation state so every entry point opens the canonical Symbol destination.
+    let navigationState: AppNavigationState
+
     /// Bundled Shared Character records available to discovery surfaces.
     let sharedCharacters: [SharedCharacterRecord]
+
+    /// Human-readable corpus loading failure shown instead of silently dropping records.
+    let corpusLoadError: String?
 
     /// Human-readable corpus label used by the shell before runtime corpus metadata exists.
     let installedCorpusName: String
@@ -23,35 +30,44 @@ struct AppDependencies {
     /// Returns the next Shared Character after the current lesson in editorial teaching order.
     func nextSharedCharacter(after sharedCharacterID: String) -> SharedCharacterRecord? {
         guard let currentIndex = sharedCharacters.firstIndex(where: { $0.id == sharedCharacterID }) else {
-            return sharedCharacters.first
+            return sharedCharacters.first {
+                userStateStore.state.lessonStates[$0.id]?.progressStatus != .learned
+            }
         }
 
-        let nextIndex = sharedCharacters.index(after: currentIndex)
-        guard nextIndex < sharedCharacters.endIndex else {
-            return nil
+        return sharedCharacters[(currentIndex + 1)...].first { record in
+            userStateStore.state.lessonStates[record.id]?.progressStatus != .learned
         }
-
-        return sharedCharacters[nextIndex]
     }
 
     /// Runtime dependency set used by the app shell.
     static let live: AppDependencies = {
         let repository = BundleCorpusRepository()
         let fallbackSummary = FeaturedSharedCharacterSummary(
-            id: "tree",
-            displayForm: "木",
-            primaryGloss: "Tree / wood",
+            id: "fire",
+            displayForm: "火",
+            primaryGloss: "Fire",
             actionTitle: "New Symbol"
         )
 
-        let sharedCharacters = repository.sharedCharacters(ids: SeedCorpusManifest.recordIDs)
+        let sharedCharacters: [SharedCharacterRecord]
+        let corpusLoadError: String?
+        do {
+            sharedCharacters = try repository.sharedCharacters(ids: SeedCorpusManifest.recordIDs)
+            corpusLoadError = nil
+        } catch {
+            sharedCharacters = []
+            corpusLoadError = "The bundled corpus could not be loaded: \(error.localizedDescription)"
+        }
         let featuredRecord = sharedCharacters.first
         let featuredSummary = featuredRecord?.featuredSummary ?? fallbackSummary
 
         return AppDependencies(
             corpusRepository: repository,
             userStateStore: LocalUserStateStore.live(),
+            navigationState: AppNavigationState(),
             sharedCharacters: sharedCharacters,
+            corpusLoadError: corpusLoadError,
             installedCorpusName: "Draft V1 Corpus",
             installedSharedCharacterCount: sharedCharacters.count,
             nextFeaturedSharedCharacter: featuredSummary
@@ -62,16 +78,30 @@ struct AppDependencies {
     static let preview = AppDependencies(
         corpusRepository: BundleCorpusRepository(),
         userStateStore: LocalUserStateStore.preview(),
+        navigationState: AppNavigationState(),
         sharedCharacters: [],
+        corpusLoadError: nil,
         installedCorpusName: "Draft V1 Corpus",
         installedSharedCharacterCount: 1,
         nextFeaturedSharedCharacter: FeaturedSharedCharacterSummary(
-            id: "tree",
-            displayForm: "木",
-            primaryGloss: "Tree / wood",
+            id: "fire",
+            displayForm: "火",
+            primaryGloss: "Fire",
             actionTitle: "New Symbol"
         )
     )
+}
+
+/// Shared root navigation state used by Home, Browse, Search, and Collections.
+final class AppNavigationState: ObservableObject {
+    @Published var selectedTab: AppTab = .home
+    @Published var symbolRoute: LessonRoute?
+
+    /// Opens the canonical Symbol destination from any discovery surface.
+    func openSymbol(_ route: LessonRoute) {
+        symbolRoute = route
+        selectedTab = .symbol
+    }
 }
 
 /// Lightweight Home card summary for the next featured Shared Character.

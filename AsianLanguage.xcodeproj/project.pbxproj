@@ -42,7 +42,6 @@
 		8B0000010000000000000023 /* UsageExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000023 /* UsageExamplesView.swift */; };
 		8B0000010000000000000024 /* HistoricalGlyphs in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000024 /* HistoricalGlyphs */; };
 		8B0000010000000000000025 /* HistoricalGlyphs in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000024 /* HistoricalGlyphs */; };
-		8B0000010000000000000026 /* EvolutionBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000026 /* EvolutionBoardView.swift */; };
 		8B0000010000000000000027 /* SymbolPictogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000027 /* SymbolPictogramView.swift */; };
 		8B0000010000000000000028 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000028 /* AccountView.swift */; };
 		8B0000010000000000000029 /* LanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000029 /* LanguagesView.swift */; };
@@ -90,7 +89,6 @@
 		8B0001010000000000000020 /* PrototypeVisuals */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/PrototypeVisuals; sourceTree = "<group>"; };
 		8B0001010000000000000023 /* UsageExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageExamplesView.swift; sourceTree = "<group>"; };
 		8B0001010000000000000024 /* HistoricalGlyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/HistoricalGlyphs; sourceTree = "<group>"; };
-		8B0001010000000000000026 /* EvolutionBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionBoardView.swift; sourceTree = "<group>"; };
 		8B0001010000000000000027 /* SymbolPictogramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolPictogramView.swift; sourceTree = "<group>"; };
 		8B0001010000000000000028 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		8B0001010000000000000029 /* LanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesView.swift; sourceTree = "<group>"; };
@@ -255,7 +253,6 @@
 				8B000101000000000000000B /* LessonStep.swift */,
 				8B000101000000000000000C /* LessonRoute.swift */,
 				8B0001010000000000000018 /* LessonView.swift */,
-				8B0001010000000000000026 /* EvolutionBoardView.swift */,
 				8B0001010000000000000027 /* SymbolPictogramView.swift */,
 				8B0001010000000000000023 /* UsageExamplesView.swift */,
 				8B000101000000000000001B /* CharacterEvolutionView.swift */,
@@ -452,7 +449,6 @@
 				8B000001000000000000001D /* AboutMethodView.swift in Sources */,
 				8B000001000000000000001E /* SeedCorpusManifest.swift in Sources */,
 				8B0000010000000000000023 /* UsageExamplesView.swift in Sources */,
-				8B0000010000000000000026 /* EvolutionBoardView.swift in Sources */,
 				8B0000010000000000000027 /* SymbolPictogramView.swift in Sources */,
 				8B0000010000000000000028 /* AccountView.swift in Sources */,
 				8B0000010000000000000029 /* LanguagesView.swift in Sources */,

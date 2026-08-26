@@ -1,3 +1,3 @@
 # UserState
 
-Local writable progress, review-later, favorites, focus-track, and preference storage.
+Local writable progress, exact SymbolJourneyPosition resume state, independent Review later/Favorites, current-character selection, focus-track and appearance preferences, onboarding state, and migration-aware storage.

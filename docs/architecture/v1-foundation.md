@@ -1,137 +1,59 @@
-# V1 App Foundation
+# V1 Architecture
 
-## Goal
+## Product architecture
 
-Define the first buildable shape for an offline-first SwiftUI iPhone app centered on guided `Shared Character` lessons.
+The app is an offline-first SwiftUI iPhone application centered on one \`Shared Character\` and its \`Symbol Journey\`: origin, historical Evolution Stages, Today / Modern Endpoint, and supporting Content Phases.
 
-## App Target
+The corpus is read-only bundled JSON. User state is separate, local, writable JSON. No cloud account or runtime content dependency exists in V1.
 
-- Platform: iPhone first
-- UI framework: SwiftUI
-- Data posture: bundled read-only corpus plus local writable user state
-- Network posture: no remote dependency for the core V1 study flow
-- Visual mode: light and dark mode are first-class from the first app shell
+## Root navigation
 
-## Module Shape
+The root shell has five areas:
 
-The initial app can stay in one SwiftUI target while keeping boundaries clear:
+- Home
+- Symbol
+- History
+- Browse
+- More
 
-- `App`: app entry point, dependency setup, root scene
-- `Navigation`: tab shell, route definitions, deep links within the app
-- `Home`: resume state, next featured Shared Character, primary lesson entry
-- `Lesson`: six-step guided lesson flow and lesson-specific view state
-- `Discovery`: search, browse, filters, sorting, and collection entry points
-- `Corpus`: bundled Shared Character models, loading, validation helpers
-- `UserState`: local progress, favorites, review-later, focus track, preferences
-- `SharedUI`: reusable typography, status indicators, focus-track chips, empty states
+Symbol is the canonical owner of the active Shared Character journey. Home, Search, Browse, and Collections request an \`open Shared Character\` action through shared navigation state rather than creating competing lesson owners.
 
-Start with explicit folders rather than package-level extraction. Promote modules into Swift packages only when tests or reuse pressure make that valuable.
+Browse contains Search, Browse All, Learned, Review later, Favorites, Saved, and editorial collections. More contains Languages, Settings, About / Method, Account, reset, and offline information. History contains generic script-period explanations.
 
-## Navigation Shell
+Use one NavigationStack per root area where practical. Child screens must not introduce duplicate root stacks.
 
-V1 uses a shallow tab structure:
+## Symbol Journey position
 
-- `Home`
-- `Symbol` / `New Symbol`
-- `History`
-- `Browse`
-- `More` / `Settings`
+The saved position is:
 
-Names may still change during design, but the functional grouping is stable. `Symbol` / `New Symbol` owns the primary symbol-learning entry. `History` owns generic script-period explanations. `Browse` contains Search, Saved, Favorites, Review later, and collections. `More` / `Settings` contains Languages, Account, Settings, About / Method, reset, and utility pages.
+\`SymbolJourneyPosition(section, stageID?)\`
 
-## Home Routing
+Sections are \`evolution\`, \`today\`, \`structure\`, \`usage\`, and \`summary\`. Historical stages save their exact canonical ID. Legacy \`LessonStep\` values decode through an explicit migration and are not the permanent primary navigation model.
 
-Home chooses its primary action from local state:
+The Evolution Stage sequence is data-driven:
 
-1. If any lesson is `inProgress`, show `Resume current lesson`.
-2. Otherwise show `New Symbol` or `Next Symbol` for the next featured Shared Character.
-3. Keep Symbol, History, Browse, and More / Settings available from the primary shell.
+\`origin\`, selected historical stages, \`modernForms\`
 
-The first implementation should support only one active in-progress lesson. If multiple records exist after future migrations, choose the most recently updated one.
+Relevant unavailable stages may remain as explicit Missing Historical Asset states. Uncertain or pedagogically unhelpful stages are omitted.
 
-## Lesson Route
+## Content and asset seams
 
-A lesson route needs two stable inputs:
+The Shared Character content module owns origin content, stage metadata, modern focus-track variants, Character structure, Modern usage, sources, and publication status.
 
-- `sharedCharacterID`
-- optional starting `lessonStep`
+Presentation-facing models distinguish historical confidence from missing content. Readings may carry optional future audio references, but no audio playback system is part of V1.
 
-The route resolves the corpus record from read-only bundled data and overlays local user state. Learned lessons reopen at `Origin` by default. In-progress lessons resume at the saved step.
+Each historical stage owns its canonical asset reference and structured asset metadata. Global visual metadata may describe overall readiness but must not duplicate the stage map.
 
-## Lesson Steps
+The asset-rendering module resolves bundled renderable assets. Source URLs are provenance only. SVG source files require an approved compiled iOS representation before they are treated as renderable. Missing or unsupported assets produce explicit content gaps; modern characters and fabricated glyph sketches are never fallbacks.
 
-The guided flow uses a closed enum:
+## User state
 
-1. `origin`
-2. `character`
-3. `modernForms`
-4. `structure`
-5. `usage`
-6. `summary`
+Lesson progression is centralized through explicit state transitions. Ordinary navigation cannot downgrade Learned. Restart is explicit and clears progress position while preserving Favorites and Review later. Learned, Favorite, and Review later are independent relationships. Home resumes the explicitly stored current character, with a deterministic recent in-progress fallback.
 
-The progress bar is tappable only for steps that are current or already visited in the current lesson session. Future changes can loosen this after the lesson-state rules are proven.
+Local state also carries onboarding completion, appearance preference, and separate reset semantics. Reset Learning Progress does not delete corpus data or preferences; Reset All Preferences restores the local defaults.
 
-## Symbol Evolution Experience
+Existing local state migrates from the former \`LessonStep\` and single-focus representations without deleting user data.
 
-The `Origin` and `Character` lesson steps share the main reference-led evolution experience. The character-evolution reference images are product targets for layout, hierarchy, and stage navigation, adapted from one poster into iPhone-sized horizontal stage pages.
+## Testing seams
 
-The stage sequence is:
-
-1. origin picture
-2. Oracle Bone
-3. Bronze
-4. Seal
-5. Clerical
-6. Regular
-7. Modern Forms
-
-Each stage owns a full-page horizontal swipe view. Stage content should normally fit in one screen; when text overflows, only the stage content scrolls vertically. The bottom evolution strip remains fixed or floating near the bottom and acts as pressable navigation between stages.
-
-Every displayed Origin, Oracle Bone, Bronze, Seal, Clerical, and Regular stage needs its own image asset or an explicit missing-asset placeholder. Modern regular text must not be reused as a fake historical visual.
-
-## Focus Tracks
-
-The focus-track enum is:
-
-- `all`
-- `simplifiedChinese`
-- `traditionalChinese`
-- `japanese`
-- `korean`
-
-`traditionalChinese` is a modern written-form track. It includes separate Taiwan and Hong Kong usage examples when selected, and both are also visible when `all` is selected.
-
-## Local State
-
-Local writable state is separate from the corpus and keyed by corpus IDs:
-
-- progress status
-- last visited lesson step
-- visited steps for the current session
-- starred flag
-- review-later flag
-- focus-track preference
-- display preferences
-- installed corpus metadata
-
-`learned` and `reviewLater` are mutually exclusive. `starred` is independent.
-
-## Search and Discovery
-
-Search lives inside Browse and should index:
-
-- modern forms
-- English glosses
-- Mandarin readings
-- Traditional Chinese readings when they differ
-- Japanese readings
-- Korean readings
-- example text and translations only after the primary fields work well
-
-Search can start with exact and case-insensitive partial matching over a normalized in-memory index. Ranking can stay simple in V1: exact form matches first, then readings, then glosses.
-
-Browse also contains Saved, Favorites, Review later, and editorial/system collections.
-
-## V1 to VNext Tracking
-
-This foundation intentionally excludes grammar lessons, rule-based common-denominator lessons, audio, tracing, sync, accounts, ads, Android, and user-created collection folders. Those are valid later directions but should not alter the V1 app shell or schemas unless the roadmap is updated first.
+Pure content, state, route, and selection rules remain Windows-testable. macOS/Xcode CI is required for actual SwiftUI compilation and XCTest execution. A physical iPhone remains the final check for touch, gesture, safe-area, asset rendering, and device behavior.

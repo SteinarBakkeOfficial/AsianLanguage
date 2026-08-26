@@ -50,6 +50,24 @@ final class LocalUserStateStore: ObservableObject {
         save()
     }
 
+    /// Persists the character Home and Symbol should resume by default.
+    func setCurrentCharacter(_ sharedCharacterID: String?) {
+        state.currentCharacterID = sharedCharacterID
+        save()
+    }
+
+    /// Persists a display preference without affecting learning state.
+    func setAppearancePreference(_ preference: AppearancePreference) {
+        state.appearancePreference = preference
+        save()
+    }
+
+    /// Marks the minimal onboarding gate complete without requiring an account.
+    func completeOnboarding() {
+        state.hasCompletedOnboarding = true
+        save()
+    }
+
     /// Updates one lesson state through a mutation closure and persists the snapshot.
     func updateLessonState(
         sharedCharacterID: String,
@@ -61,10 +79,22 @@ final class LocalUserStateStore: ObservableObject {
         save()
     }
 
-    /// Clears all local progress and preferences.
-    func reset() {
+    /// Clears learning progress while retaining preferences and onboarding state.
+    func resetLearningProgress() {
+        state.lessonStates = [:]
+        state.currentCharacterID = nil
+        save()
+    }
+
+    /// Clears all locally persisted state, including preferences.
+    func resetAllPreferences() {
         state = .empty
         save()
+    }
+
+    /// Legacy API retained for migration callers; new UI uses explicit reset methods.
+    func reset() {
+        resetAllPreferences()
     }
 
     /// Returns the persisted local state file path for app runs.

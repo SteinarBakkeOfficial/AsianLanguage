@@ -17,8 +17,10 @@ struct SettingsView: View {
     /// Local state store used for focus language and reset controls.
     @ObservedObject private var userStateStore: LocalUserStateStore
 
-    /// Controls the destructive reset confirmation.
+    /// Controls the destructive learning-progress reset confirmation.
     @State private var isShowingResetConfirmation = false
+    /// Controls the separate all-preferences reset confirmation.
+    @State private var isShowingPreferencesResetConfirmation = false
 
     /// Creates Settings with observed access to local user state.
     init(dependencies: AppDependencies, initialSection: InitialSection = .standard) {
@@ -28,49 +30,60 @@ struct SettingsView: View {
     }
 
     var body: some View {
-        NavigationStack {
-            Form {
-                Section("Focus language") {
-                    ForEach(FocusTrack.allCases) { track in
-                        Toggle(track.title, isOn: focusTrackBinding(for: track))
-                    }
-                    Text("All tracks are enabled by default. Turn off tracks you do not want to study right now.")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
+        Form {
+            Section("Focus tracks") {
+                ForEach(FocusTrack.allCases) { track in
+                    Toggle(track.title, isOn: focusTrackBinding(for: track))
                 }
+                Text("All four focus tracks are enabled by default.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
 
-                Section("Display preferences") {
-                    Picker("Script detail", selection: .constant("Guided")) {
-                        Text("Guided").tag("Guided")
-                    }
-                    Text("More display controls will be added here when the visual system moves beyond the current prototype assets.")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-
-                Section("Offline corpus") {
-                    LabeledContent("Installed", value: dependencies.installedCorpusName)
-                    LabeledContent("Shared Characters", value: "\(dependencies.installedSharedCharacterCount)")
-                    NavigationLink("About / Method") {
-                        AboutMethodView(corpusCount: dependencies.installedSharedCharacterCount)
+            Section("Display preferences") {
+                Picker("Appearance", selection: appearanceBinding) {
+                    ForEach(AppearancePreference.allCases) { preference in
+                        Text(preference.rawValue.capitalized).tag(preference)
                     }
                 }
+                Text("Final display controls will follow the approved Fire design.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
 
-                Section("Reset") {
-                    Button("Reset app progress", role: .destructive) {
-                        isShowingResetConfirmation = true
-                    }
+            Section("Offline corpus") {
+                LabeledContent("Installed", value: dependencies.installedCorpusName)
+                LabeledContent("Shared Characters", value: "\(dependencies.installedSharedCharacterCount)")
+                NavigationLink("About / Method") {
+                    AboutMethodView(corpusCount: dependencies.installedSharedCharacterCount)
                 }
             }
-            .navigationTitle(initialSection == .focusLanguage ? "Languages" : "Settings")
-            .alert("Reset app progress?", isPresented: $isShowingResetConfirmation) {
-                Button("Reset", role: .destructive) {
-                    userStateStore.reset()
+
+            Section("Reset") {
+                Button("Reset learning progress", role: .destructive) {
+                    isShowingResetConfirmation = true
                 }
-                Button("Cancel", role: .cancel) {}
-            } message: {
-                Text("This clears local progress, favorites, review-later state, and preferences on this device.")
+                Button("Reset all preferences", role: .destructive) {
+                    isShowingPreferencesResetConfirmation = true
+                }
             }
+        }
+        .navigationTitle(initialSection == .focusLanguage ? "Languages" : "Settings")
+        .alert("Reset app progress?", isPresented: $isShowingResetConfirmation) {
+            Button("Reset", role: .destructive) {
+                userStateStore.resetLearningProgress()
+            }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("This clears local progress, favorites, and review-later state on this device. It keeps display and focus preferences.")
+        }
+        .alert("Reset all preferences?", isPresented: $isShowingPreferencesResetConfirmation) {
+            Button("Reset All", role: .destructive) {
+                userStateStore.resetAllPreferences()
+            }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("This resets learning progress and preferences, but does not delete the bundled corpus.")
         }
     }
 
@@ -79,6 +92,14 @@ struct SettingsView: View {
         Binding(
             get: { userStateStore.state.focusSelection.contains(track) },
             set: { userStateStore.setFocusTrack(track, isSelected: $0) }
+        )
+    }
+
+    /// Binding for the small, intentionally limited appearance preference model.
+    private var appearanceBinding: Binding<AppearancePreference> {
+        Binding(
+            get: { userStateStore.state.appearancePreference },
+            set: { userStateStore.setAppearancePreference($0) }
         )
     }
 }

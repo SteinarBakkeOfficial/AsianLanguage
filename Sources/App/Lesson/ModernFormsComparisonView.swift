@@ -21,6 +21,7 @@ struct ModernFormsComparisonView: View {
                     glosses: record.focusCoverage.simplifiedChinese.glosses,
                     accent: .orange
                 )
+                variantCards(record.focusCoverage.simplifiedChinese.variants, accent: .orange)
             }
             if focusSelection.contains(.traditionalChinese) {
                 formCard(
@@ -30,6 +31,7 @@ struct ModernFormsComparisonView: View {
                     glosses: record.focusCoverage.traditionalChinese.glosses,
                     accent: .red
                 )
+                variantCards(record.focusCoverage.traditionalChinese.variants, accent: .red)
             }
             if focusSelection.contains(.japanese) {
                 formCard(
@@ -39,6 +41,7 @@ struct ModernFormsComparisonView: View {
                     glosses: record.focusCoverage.japanese.glosses,
                     accent: .purple
                 )
+                variantCards(record.focusCoverage.japanese.variants, accent: .purple)
             }
             if focusSelection.contains(.korean) {
                 formCard(
@@ -48,7 +51,22 @@ struct ModernFormsComparisonView: View {
                     glosses: record.focusCoverage.korean.glosses,
                     accent: .blue
                 )
+                variantCards(record.focusCoverage.korean.variants, accent: .blue)
             }
+        }
+    }
+
+    /// Displays explicit modern writing-system alternatives without a nested carousel.
+    @ViewBuilder
+    private func variantCards(_ variants: [ModernFormVariant], accent: Color) -> some View {
+        ForEach(variants, id: .id) { variant in
+            formCard(
+                title: variant.writingSystem ?? "Alternative form",
+                form: variant.form,
+                readings: variant.readings,
+                glosses: variant.notes,
+                accent: accent
+            )
         }
     }
 

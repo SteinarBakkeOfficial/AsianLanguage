@@ -9,7 +9,23 @@ struct AsianLanguageApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootTabView(dependencies: dependencies)
+            Group {
+                if dependencies.userStateStore.state.hasCompletedOnboarding {
+                    RootTabView(dependencies: dependencies)
+                } else {
+                    OnboardingView(dependencies: dependencies)
+                }
+            }
+            .preferredColorScheme(colorScheme)
+        }
+    }
+
+    /// Maps the persisted neutral preference to the native SwiftUI appearance API.
+    private var colorScheme: ColorScheme? {
+        switch dependencies.userStateStore.state.appearancePreference {
+        case .system: return nil
+        case .light: return .light
+        case .dark: return .dark
         }
     }
 }

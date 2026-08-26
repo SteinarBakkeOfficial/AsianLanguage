@@ -28,8 +28,7 @@ struct SearchView: View {
     }
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
+        ScrollView {
                 VStack(alignment: .leading, spacing: 14) {
                     Text("Search")
                         .font(.largeTitle.weight(.bold))
@@ -47,9 +46,14 @@ struct SearchView: View {
                         .padding(.top, 40)
                     } else {
                         ForEach(searchResults) { record in
-                            NavigationLink(value: LessonRoute(sharedCharacterID: record.id, startingStep: .origin)) {
+                            Button {
+                                dependencies.navigationState.openSymbol(
+                                    LessonRoute(sharedCharacterID: record.id, startingPosition: nil)
+                                )
+                            } label: {
                                 resultRow(record)
                             }
+                            .buttonStyle(.plain)
                         }
                     }
                 }
@@ -58,10 +62,6 @@ struct SearchView: View {
             .searchable(text: $query, prompt: "Character, gloss, or reading")
             .navigationTitle("Search")
             .navigationBarTitleDisplayMode(.inline)
-            .navigationDestination(for: LessonRoute.self) { route in
-                LessonView(route: route, dependencies: dependencies)
-            }
-        }
     }
 
     /// Search result row with enough context to avoid a raw catalog feel.

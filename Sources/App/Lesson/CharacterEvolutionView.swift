@@ -1,103 +1,154 @@
 import SwiftUI
+import UIKit
 
-/// Reusable visual treatment for the selected historical evolution stages.
+/// Data-driven horizontal Evolution Stage navigation for one Symbol Journey.
 struct CharacterEvolutionView: View {
-    /// Source-backed history data from the bundled Shared Character record.
-    let history: CharacterHistory
+    let record: SharedCharacterRecord
+    let focusSelection: FocusTrackSelection
+    @Binding var selectedStageID: String
 
-    /// Regular modern character used when a stage has no source-backed drawing yet.
-    let fallbackForm: String
-
-    /// Canonical script path agreed for symbol evolution lessons.
-    private let canonicalStages: [(id: String, title: String, subtitle: String)] = [
-        ("oracleBone", "Oracle Bone Script", "甲骨文"),
-        ("bronze", "Bronze Script", "金文"),
-        ("seal", "Seal Script", "篆書"),
-        ("clerical", "Clerical Script", "隸書"),
-        ("regular", "Regular Script", "楷書")
-    ]
+    private var stages: [HistoricalStage] { record.history.stages }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Text(history.originAnchor)
-                .font(.subheadline)
+        VStack(alignment: .leading, spacing: 12) {
+            TabView(selection: $selectedStageID) {
+                originPage.tag("origin")
+                ForEach(stages, id: \.stage) { stage in
+                    historicalPage(stage).tag(stage.stage)
+                }
+            }
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            .frame(minHeight: 360)
 
-            ForEach(canonicalStages.indices, id: \.self) { index in
-                let canonicalStage = canonicalStages[index]
-                let stage = history.stages.first { $0.stage == canonicalStage.id }
-                stageCard(
-                    stage: stage,
-                    stageNumber: index + 1,
-                    title: canonicalStage.title,
-                    subtitle: canonicalStage.subtitle,
-                    isFirst: index == canonicalStages.startIndex
-                )
+            stageNavigator
+        }
+        .onChange(of: selectedStageID) { _, newValue in
+            guard !newValue.isEmpty else { return }
+        }
+    }
+
+    /// First page for the real-world idea and earliest defensible origin content.
+    private var originPage: some View {
+        stagePage(title: "Origin", subtitle: record.history.origin?.concept ?? record.coreSharedMeaning.capitalized) {
+            if let originAsset = record.history.origin?.asset {
+                HistoricalAssetView(metadata: originAsset)
+            } else {
+                missingAssetView("Origin visual not yet sourced")
+            }
+            Text(record.history.origin?.explanation ?? record.history.originAnchor)
+                .font(.subheadline)
+            Text("The origin visual and explanation are draft content until source-backed editorial material is approved.")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+        }
+    }
+
+    /// One historical stage page with only the content attached to that exact stage.
+    private func historicalPage(_ stage: HistoricalStage) -> some View {
+        stagePage(title: stage.label, subtitle: stage.stage) {
+            if let metadata = stage.assetMetadata {
+                HistoricalAssetView(metadata: metadata)
+            } else if let assetRef = stage.assetRef {
+                HistoricalAssetView(assetRef: assetRef)
+            } else {
+                missingAssetView("Historical visual not yet sourced")
+            }
+            Text(stage.stageExplanation ?? stage.changeNoteFromPrevious ?? "No stage-specific explanation is available yet.")
+                .font(.subheadline)
+            Text("Certainty: \(stage.certainty.capitalized)")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+            if let sound = stage.historicalSound {
+                Text(sound).font(.caption).foregroundStyle(.secondary)
             }
         }
     }
 
-    /// Visual stage card for the editorial history spine.
-    private func stageCard(
-        stage: HistoricalStage?,
-        stageNumber: Int,
-        title: String,
-        subtitle: String,
-        isFirst: Bool
-    ) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(alignment: .top, spacing: 12) {
-                Text("\(stageNumber)")
-                    .font(.headline)
-                    .foregroundStyle(.white)
-                    .frame(width: 34, height: 34)
-                    .background(Circle().fill(Color.accentColor))
+    private func stagePage<Content: View>(title: String, subtitle: String, @ViewBuilder content: () -> Content) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(title).font(.title3.weight(.semibold))
+            Text(subtitle).font(.caption).foregroundStyle(.secondary)
+            content()
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
 
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(title)
-                        .font(.headline)
-                    Text(subtitle)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+    /// Fixed/floating stage controls; final visual treatment comes from the Fire design.
+    private var stageNavigator: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                stageButton(id: "origin", title: "Origin")
+                ForEach(stages, id: \.stage) { stage in
+                    stageButton(id: stage.stage, title: stage.label)
                 }
-            }
-
-            HStack(alignment: .top, spacing: 12) {
-                Text(stage?.form ?? (title == "Regular Script" ? fallbackForm : ""))
-                    .font(.system(size: 48, weight: .regular, design: .serif))
-                    .frame(width: 86, height: 86)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 8)
-                            .stroke(Color.secondary.opacity(0.35), lineWidth: 1)
-                    )
-
-                VStack(alignment: .leading, spacing: 6) {
-                    if let stage {
-                        Text(stage.changeNoteFromPrevious ?? "First available historical anchor for this source-backed seed record.")
-                            .font(.subheadline)
-                        Text(stage.historicalSound ?? "Sound: source-backed historical sound not added yet.")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                        Text("Certainty: \(stage.certainty.capitalized)")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                    } else {
-                        Text("Source-backed historical drawing and explanation needed for this stage.")
-                            .font(.subheadline)
-                        Text("This draft gap keeps the agreed evolution path visible while final redraws are sourced.")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                    }
-                }
-            }
-
-            if let assetRef = stage?.assetRef {
-                Text("Draft visual reference: \(assetRef)")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
             }
         }
-        .padding(12)
-        .background(Color(.secondarySystemBackground))
-        .clipShape(RoundedRectangle(cornerRadius: 8))
+    }
+
+    private func stageButton(id: String, title: String) -> some View {
+        Button(title) { selectedStageID = id }
+            .buttonStyle(.bordered)
+            .tint(selectedStageID == id ? .accentColor : .secondary)
+    }
+
+    private func missingAssetView(_ message: String) -> some View {
+        ContentUnavailableView(message, systemImage: "photo")
+            .frame(maxWidth: .infinity, minHeight: 150)
+    }
+}
+
+/// Resolution result for a bundled asset reference.
+enum HistoricalAssetResolution: Equatable {
+    case bundledImage(URL)
+    case unavailable(String)
+}
+
+/// Resolves only actually renderable bundled images; source SVGs need compiled display assets.
+struct BundledHistoricalAssetResolver {
+    let bundle: Bundle
+
+    func resolve(_ assetRef: String?) -> HistoricalAssetResolution {
+        guard let assetRef, !assetRef.isEmpty else { return .unavailable("No bundled asset reference") }
+        let relativePath = assetRef.replacingOccurrences(of: "Assets/", with: "")
+        let pathExtension = URL(fileURLWithPath: relativePath).pathExtension.lowercased()
+        guard ["png", "jpg", "jpeg", "heic"].contains(pathExtension) else {
+            return .unavailable("Asset requires a compiled iOS image representation")
+        }
+        let path = relativePath.dropLast(pathExtension.count + 1)
+        guard let url = bundle.url(forResource: String(path), withExtension: pathExtension) else {
+            return .unavailable("Bundled asset not found")
+        }
+        return .bundledImage(url)
+    }
+}
+
+/// Renders a source-backed compiled image or an explicit missing-asset state.
+struct HistoricalAssetView: View {
+    let resolution: HistoricalAssetResolution
+
+    init(metadata: HistoricalAssetMetadata) {
+        self.resolution = BundledHistoricalAssetResolver(bundle: .main).resolve(metadata.assetRef)
+    }
+
+    init(assetRef: String) {
+        self.resolution = BundledHistoricalAssetResolver(bundle: .main).resolve(assetRef)
+    }
+
+    var body: some View {
+        switch resolution {
+        case .bundledImage(let url):
+            if let image = UIImage(contentsOfFile: url.path) {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxWidth: .infinity, minHeight: 150)
+            } else {
+                ContentUnavailableView("Historical visual unavailable", systemImage: "photo.badge.exclamationmark")
+                    .frame(maxWidth: .infinity, minHeight: 150)
+            }
+        case .unavailable(let reason):
+            ContentUnavailableView("Historical visual unavailable", systemImage: "photo.badge.exclamationmark", description: Text(reason))
+                .frame(maxWidth: .infinity, minHeight: 150)
+        }
     }
 }

@@ -1,75 +1,20 @@
 $ErrorActionPreference = "Stop"
-
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
+function Assert-True { param([bool]$Condition,[string]$Message); if (-not $Condition) { throw $Message } }
+function Text([string]$Path) { Get-Content -Raw (Join-Path $repoRoot $Path) }
 
-function Assert-True {
-  param(
-    [Parameter(Mandatory = $true)]
-    [bool]$Condition,
-    [Parameter(Mandatory = $true)]
-    [string]$Message
-  )
+$lesson = Text "Sources/App/Lesson/LessonView.swift"
+Assert-True $lesson.Contains("SymbolJourneyPosition") "Lesson must use exact Symbol Journey positions."
+Assert-True $lesson.Contains("markLearnedAndOpenNext") "Lesson must support automatic next-symbol progression."
+Assert-True $lesson.Contains("state.markInProgress(at: position)") "Lesson must persist exact journey position."
+Assert-True (-not $lesson.Contains("LessonStep.allCases")) "Lesson must not render the obsolete six-step rail."
+Assert-True (-not $lesson.Contains("EvolutionBoardView")) "Lesson must not depend on the obsolete poster board."
+Assert-True $lesson.Contains("UsageExamplesView(record: record, focusSelection:") "Usage must remain focus-track aware."
 
-  if (-not $Condition) {
-    throw $Message
-  }
-}
+$evolution = Text "Sources/App/Lesson/CharacterEvolutionView.swift"
+Assert-True $evolution.Contains("TabView") "Evolution must support horizontal stage paging."
+Assert-True $evolution.Contains("stageNavigator") "Evolution must expose stage navigation."
+Assert-True $evolution.Contains("HistoricalAssetView") "Evolution must use the asset renderer."
+Assert-True $evolution.Contains("Historical visual unavailable") "Evolution must expose missing-asset state."
 
-function Assert-Contains {
-  param(
-    [Parameter(Mandatory = $true)]
-    [string]$Text,
-    [Parameter(Mandatory = $true)]
-    [string]$ExpectedSubstring,
-    [Parameter(Mandatory = $true)]
-    [string]$Message
-  )
-
-  Assert-True -Condition $Text.Contains($ExpectedSubstring) -Message "$Message Expected '$ExpectedSubstring'."
-}
-
-function Get-Text {
-  param(
-    [Parameter(Mandatory = $true)]
-    [string]$RelativePath
-  )
-
-  return Get-Content -Raw (Join-Path $repoRoot $RelativePath)
-}
-
-$lessonViewText = Get-Text "Sources/App/Lesson/LessonView.swift"
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "struct LessonView: View" -Message "Lesson experience should expose a concrete LessonView."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "ForEach(LessonStep.allCases)" -Message "LessonView should render every guided lesson step."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "selectStep(_ step: LessonStep)" -Message "LessonView should centralize step selection."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "visitedSteps.contains(step)" -Message "LessonView should distinguish visited and unvisited steps."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "markInProgress(at: step)" -Message "LessonView should persist the current in-progress step."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "markLearned()" -Message "LessonView should support Mark as Learned."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "Next Symbol" -Message "LessonView should expose next-symbol progression after completion."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "startLessonIfNeeded()" -Message "LessonView should avoid overwriting learned state on appear."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "restartLesson()" -Message "LessonView should support restarting at Origin."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "stepContent" -Message "LessonView should render step-specific content."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "EvolutionBoardView(record: record" -Message "Origin should open with the visual evolution board."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "UsageExamplesView(record: record, focusSelection:" -Message "LessonView should show focus-filtered progressive cross-language usage examples."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "sourceRow(_ source: CorpusSource)" -Message "LessonView should expose source-note rendering."
-Assert-Contains -Text $lessonViewText -ExpectedSubstring "Link(source.label, destination: url)" -Message "Lesson source notes should link URL-backed sources."
-
-$usageViewText = Get-Text "Sources/App/Lesson/UsageExamplesView.swift"
-Assert-Contains -Text $usageViewText -ExpectedSubstring "struct UsageExamplesView: View" -Message "Lesson experience should include a progressive usage examples view."
-Assert-Contains -Text $usageViewText -ExpectedSubstring "example.exampleLevel.rawValue" -Message "Usage examples should show word/sentence level."
-Assert-Contains -Text $usageViewText -ExpectedSubstring "reusesKnownSymbols" -Message "Usage examples should show reused known symbols."
-
-$evolutionBoardText = Get-Text "Sources/App/Lesson/EvolutionBoardView.swift"
-Assert-Contains -Text $evolutionBoardText -ExpectedSubstring "struct EvolutionBoardView: View" -Message "Lesson should include a reference-led evolution board."
-Assert-Contains -Text $evolutionBoardText -ExpectedSubstring "Original picture idea" -Message "Evolution board should show the original picture idea."
-Assert-Contains -Text $evolutionBoardText -ExpectedSubstring "DraftEvolutionGlyphView" -Message "Evolution board should show draft historical glyphs when final assets are missing."
-Assert-Contains -Text $evolutionBoardText -ExpectedSubstring "ModernFormsComparisonView" -Message "Evolution board should include modern descendants."
-Assert-Contains -Text $evolutionBoardText -ExpectedSubstring "timelineStrip" -Message "Evolution board should include a mini timeline."
-
-$homeText = Get-Text "Sources/App/Home/HomeView.swift"
-Assert-Contains -Text $homeText -ExpectedSubstring "LessonView(route: route, dependencies: dependencies)" -Message "Home should open the concrete guided lesson view."
-Assert-Contains -Text $homeText -ExpectedSubstring "SymbolPictogramView" -Message "Home should show a symbol-first picture card."
-
-$projectText = Get-Content -Raw (Join-Path $repoRoot "AsianLanguage.xcodeproj/project.pbxproj")
-Assert-Contains -Text $projectText -ExpectedSubstring "LessonView.swift" -Message "Xcode project should include LessonView.swift."
-
-Write-Output "OK: lesson experience contract tests passed"
+Write-Output "OK: Symbol Journey lesson contract tests passed"

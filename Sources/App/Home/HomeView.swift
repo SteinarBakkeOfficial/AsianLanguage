@@ -15,48 +15,47 @@ struct HomeView: View {
     }
 
     var body: some View {
-        let route = homeLessonRoute
-        let featured = featuredSummary
-        let actionTitle = homeActionTitle
-
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    featuredSymbolCard(route: route, featured: featured, actionTitle: actionTitle)
+                    if let route = homeLessonRoute, let record = homeRecord {
+                        featuredSymbolCard(route: route, record: record, actionTitle: homeActionTitle)
+                    } else {
+                        corpusCompleteCard
+                    }
                     dashboardCard
                     focusAndCorpusCard
                 }
                 .padding()
             }
             .navigationTitle("Home")
-            .navigationDestination(for: LessonRoute.self) { route in
-                LessonView(route: route, dependencies: dependencies)
-            }
         }
     }
 
     /// Symbol-first Home card based on the app-structure reference sketch.
     private func featuredSymbolCard(
         route: LessonRoute,
-        featured: FeaturedSharedCharacterSummary,
+        record: SharedCharacterRecord,
         actionTitle: String
     ) -> some View {
-        NavigationLink(value: route) {
+        Button {
+            dependencies.navigationState.openSymbol(route)
+        } label: {
             VStack(alignment: .leading, spacing: 12) {
                 HStack(alignment: .center, spacing: 12) {
-                    if let record = nextUnlearnedRecord {
-                        SymbolPictogramView(recordID: record.id, fallbackCharacter: record.coreCharacter)
-                            .frame(width: 128, height: 116)
-                    }
+                    Text(record.history.originAnchor)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(4)
 
                     VStack(alignment: .leading, spacing: 6) {
                         Text(actionTitle)
                             .font(.caption.weight(.bold))
                             .foregroundStyle(Color.green)
-                        Text(featured.displayForm)
+                        Text(record.coreCharacter)
                             .font(.system(size: 72, weight: .regular, design: .serif))
                             .foregroundStyle(.primary)
-                        Text(featured.primaryGloss)
+                        Text(record.coreSharedMeaning.capitalized)
                             .font(.title3.weight(.semibold))
                             .foregroundStyle(.primary)
                     }
@@ -68,7 +67,7 @@ struct HomeView: View {
                         .foregroundStyle(.secondary)
                 }
 
-                Text("Start with the picture idea, then follow the symbol through Oracle Bone, Bronze, Seal, Clerical, Regular, and modern forms.")
+                Text("Start with the picture idea, then follow the symbol through the historical journey into Today.")
                     .font(.caption.weight(.semibold))
                     .foregroundStyle(Color.brown)
             }
@@ -82,6 +81,19 @@ struct HomeView: View {
             .clipShape(RoundedRectangle(cornerRadius: 8))
         }
         .buttonStyle(.plain)
+    }
+
+    /// Completion state shown when every installed record is learned.
+    private var corpusCompleteCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Corpus complete").font(.title2.weight(.bold))
+            Text("You have marked every installed Shared Character as Learned. Review a saved symbol or return when new content is installed.")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(.secondarySystemBackground))
     }
 
     /// Compact progress card.
@@ -118,16 +130,18 @@ struct HomeView: View {
     }
 
     /// Chooses resume when local state has an in-progress lesson; otherwise opens the featured record.
-    private var homeLessonRoute: LessonRoute {
-        userStateStore.state.resumeLessonRoute ?? LessonRoute(
-            sharedCharacterID: nextUnlearnedRecord?.id ?? dependencies.nextFeaturedSharedCharacter.id,
-            startingStep: .origin
-        )
+    private var homeLessonRoute: LessonRoute? {
+        if let resumeRoute = userStateStore.state.resumeLessonRoute {
+            return resumeRoute
+        }
+        guard let next = nextUnlearnedRecord else { return nil }
+        return LessonRoute(sharedCharacterID: next.id, startingPosition: .origin)
     }
 
-    /// Chooses the next unlearned Shared Character before falling back to the dependency default.
-    private var featuredSummary: FeaturedSharedCharacterSummary {
-        nextUnlearnedRecord?.featuredSummary ?? dependencies.nextFeaturedSharedCharacter
+    /// Resolves the same record that Home will open, preventing resume/display mismatches.
+    private var homeRecord: SharedCharacterRecord? {
+        guard let route = homeLessonRoute else { return nil }
+        return dependencies.sharedCharacters.first { $0.id == route.sharedCharacterID }
     }
 
     /// Home action copy follows resume first, then next-symbol after any learned progress.
@@ -175,7 +189,7 @@ struct HomeView: View {
 
     /// Editorial reason for the featured lesson placement.
     private var whyThisNow: String? {
-        guard let record = nextUnlearnedRecord else {
+        guard let record = homeRecord else {
             return "You have reached the end of the bundled seed corpus."
         }
 

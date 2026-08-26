@@ -1,3 +1,3 @@
 # Home
 
-Home screen implementation for resume state and next featured Shared Character entry.
+Home screen implementation for the exact resumable or next featured Shared Character and its Symbol Journey entry.

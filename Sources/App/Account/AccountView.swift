@@ -15,17 +15,15 @@ struct AccountView: View {
     }
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
+        ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
                     profileCard
                     progressCard
-                    testingAccessCard
+                    deferredAccountCard
                 }
                 .padding()
             }
-            .navigationTitle("Account")
-        }
+        .navigationTitle("Account")
     }
 
     /// Local tester identity card; real sign-in remains a future implementation.
@@ -71,12 +69,12 @@ struct AccountView: View {
         .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
-    /// Public-testing account features reserved without pretending sync exists.
-    private var testingAccessCard: some View {
+    /// Keeps the deferred account surface explicit without presenting fake account functionality.
+    private var deferredAccountCard: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Public Testing Account")
+            Text("Account features deferred")
                 .font(.headline)
-            Text("Real sign-in, sync, tester invitations, and release access are reserved for the public-testing build. This screen keeps the agreed account page visible without inventing a backend.")
+            Text("Sign-in, cloud sync, social profiles, and public account features are not part of V1. Progress remains local to this device.")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
         }

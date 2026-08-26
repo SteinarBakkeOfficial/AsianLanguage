@@ -8,7 +8,7 @@ struct AboutMethodView: View {
     var body: some View {
         List {
             Section("Method") {
-                Text("Asian Language teaches one Shared Character at a time through origin, character structure, modern forms, usage, and summary.")
+                Text("AsianLanguage teaches one Shared Character at a time through a Symbol Journey from recognizable origin and historical Evolution Stages into Today and modern usage.")
                 Text("The app is English-first and focuses on cross-language recognition, not grammar lessons.")
             }
 

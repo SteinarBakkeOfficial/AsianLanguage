@@ -1,3 +1,3 @@
 # Settings
 
-Focus language, display preferences, offline information, and reset app progress.
+More-owned focus tracks, native appearance preference, offline information, About / Method, and separate learning/preference reset actions.

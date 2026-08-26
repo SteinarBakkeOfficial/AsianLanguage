@@ -1,6 +1,21 @@
 import SwiftUI
 
-/// Collections entry point for Review later, Favorites, and editorial sets.
+/// Structural collection model; progress is always derived from local user state.
+struct SharedCharacterCollection: Identifiable, Hashable {
+    enum CollectionType: String, Hashable {
+        case editorial
+        case system
+    }
+
+    let id: String
+    let title: String
+    let description: String?
+    let sharedCharacterIDs: [String]
+    let type: CollectionType
+    let sourceIDs: [String]
+}
+
+/// Collections entry point for Browse-owned status lists and editorial sets.
 struct CollectionsView: View {
     /// Shared app dependencies used for corpus and user-state collections.
     let dependencies: AppDependencies
@@ -15,7 +30,6 @@ struct CollectionsView: View {
     }
 
     var body: some View {
-        NavigationStack {
             List {
                 Section("Your Collections") {
                     collectionRows(
@@ -31,23 +45,16 @@ struct CollectionsView: View {
                 }
 
                 Section("Explore Collections") {
-                    NavigationLink {
-                        editorialCollection(title: "Source-Backed Seed Path", records: dependencies.sharedCharacters)
-                    } label: {
-                        Label("Source-Backed Seed Path", systemImage: "sparkles")
-                    }
-                    NavigationLink {
-                        editorialCollection(title: "Pictographic Starters", records: dependencies.sharedCharacters.prefix(6).map { $0 })
-                    } label: {
-                        Label("Pictographic Starters", systemImage: "leaf")
+                    ForEach(editorialCollections) { collection in
+                        NavigationLink {
+                            editorialCollection(collection)
+                        } label: {
+                            Label(collection.title, systemImage: "square.grid.2x2")
+                        }
                     }
                 }
             }
-            .navigationTitle("Saved / Archive")
-            .navigationDestination(for: LessonRoute.self) { route in
-                LessonView(route: route, dependencies: dependencies)
-            }
-        }
+        .navigationTitle("Saved / Archive")
     }
 
     /// Records currently marked review-later.
@@ -64,6 +71,13 @@ struct CollectionsView: View {
         }
     }
 
+    private var editorialCollections: [SharedCharacterCollection] {
+        [
+            SharedCharacterCollection(id: "seed-path", title: "Source-Backed Seed Path", description: nil, sharedCharacterIDs: dependencies.sharedCharacters.map(\.id), type: .editorial, sourceIDs: []),
+            SharedCharacterCollection(id: "pictographic-starters", title: "Pictographic Starters", description: nil, sharedCharacterIDs: dependencies.sharedCharacters.prefix(6).map(\.id), type: .editorial, sourceIDs: [])
+        ]
+    }
+
     /// Renders a system collection header plus any records in that collection.
     @ViewBuilder
     private func collectionRows(
@@ -77,28 +91,40 @@ struct CollectionsView: View {
                 .foregroundStyle(.secondary)
         } else {
             ForEach(records) { record in
-                NavigationLink(value: LessonRoute(sharedCharacterID: record.id, startingStep: .origin)) {
+                Button {
+                    dependencies.navigationState.openSymbol(
+                        LessonRoute(sharedCharacterID: record.id, startingPosition: nil)
+                    )
+                } label: {
                     collectionRecordRow(record)
                 }
+                .buttonStyle(.plain)
             }
         }
     }
 
     /// Editorial collection detail page for curated lesson sets.
-    private func editorialCollection(title: String, records: [SharedCharacterRecord]) -> some View {
+    private func editorialCollection(_ collection: SharedCharacterCollection) -> some View {
+        let records = collection.sharedCharacterIDs.compactMap { id in dependencies.sharedCharacters.first { $0.id == id } }
         List {
-            Section(title) {
+            Section(collection.title) {
+                if records.isEmpty {
+                    Text("No Shared Characters are available in this collection.")
+                        .foregroundStyle(.secondary)
+                }
                 ForEach(records) { record in
-                    NavigationLink(value: LessonRoute(sharedCharacterID: record.id, startingStep: .origin)) {
+                    Button {
+                        dependencies.navigationState.openSymbol(
+                            LessonRoute(sharedCharacterID: record.id, startingPosition: nil)
+                        )
+                    } label: {
                         collectionRecordRow(record)
                     }
+                    .buttonStyle(.plain)
                 }
             }
         }
-        .navigationTitle(title)
-        .navigationDestination(for: LessonRoute.self) { route in
-            LessonView(route: route, dependencies: dependencies)
-        }
+        .navigationTitle(collection.title)
     }
 
     /// Shared collection row with symbol and meaning context.
