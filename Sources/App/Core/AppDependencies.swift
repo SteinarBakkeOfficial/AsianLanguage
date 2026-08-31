@@ -132,12 +132,13 @@ enum SymbolOpenIntent: Hashable {
     case resume
     case view
     case review
+    case reviewFromBrowse
     case stage(String)
 
     var startingPosition: SymbolJourneyPosition? {
         switch self {
         case .start: return .origin
-        case .resume, .review: return nil
+        case .resume, .review, .reviewFromBrowse: return nil
         case .view: return .origin
         case .stage(let stageID): return SymbolJourneyPosition(section: .evolution, stageID: stageID)
         }

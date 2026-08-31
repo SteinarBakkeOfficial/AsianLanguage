@@ -99,10 +99,14 @@ struct CollectionsView: View {
                 CharacterTile(
                     record: record,
                     userState: userStateStore.state.lessonStates[record.id],
-                    action: { dependencies.navigationState.openSymbol(record.id, intent: .view) }
+                    action: { dependencies.navigationState.openSymbol(record.id, intent: symbolIntent(for: title)) }
                 )
             }
         }
+    }
+
+    private func symbolIntent(for collectionTitle: String) -> SymbolOpenIntent {
+        collectionTitle == "Learned" ? .reviewFromBrowse : .view
     }
 
     /// Editorial collection detail page for curated lesson sets.

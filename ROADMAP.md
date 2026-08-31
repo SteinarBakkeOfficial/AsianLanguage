@@ -21,7 +21,7 @@ The official product-facing name is Script Roots. AsianLanguage remains the inte
 
 ## Current status
 
-Phases 1–3 are complete. Phase 4 is active: the former six-step lesson and poster-like EvolutionBoardView are no longer on the production path, and the canonical Symbol Journey now has a data-driven horizontal pager, vertical stage scrolling, persistent stage navigation, Today routing, and exact-position persistence. The first shared visual foundation and Fire stage composition are now in the repository.
+Phases 1–3 are complete. Phase 4 is active: the former six-step lesson and poster-like EvolutionBoardView are no longer on the production path, and the canonical Symbol Journey now has data-driven horizontal swipe pages, persistent stage navigation, Today routing, and exact-position persistence. The first shared visual foundation and Fire stage composition are now in the repository.
 
 Discovery and content-contract foundations are also present, including Browse-owned Search/Collections/status lists, four focus tracks, regional Traditional Chinese coverage, stage-owned asset metadata, migration support, and release/readiness checks. The current 11 records remain draft fixtures.
 
@@ -67,7 +67,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 
 - Fire Origin now renders an educational reconstruction in the content package; it remains a draft asset and requires editorial review.
 - Fire Oracle Bone, Bronze, Seal, and Clerical stages have no approved renderable assets; only a prototype Regular asset reference exists. Local SVG rendering is now implemented but still requires macOS/Xcode verification.
-- The continuous Today and word-context composition still needs simulator comparison and interaction polish.
+- The horizontal Today and word-context composition still needs simulator comparison and interaction polish.
 - Completion, Revisit, and Quick Review have initial behavior and structure but still need simulator visual QA and final interaction polish.
 - Shared components are available; History and More still need final simulator visual polish and any future approved representative content.
 - Historical asset provenance, renderability, and specialist confidence review remain required before publication; the availability/confidence contract itself is now aligned.

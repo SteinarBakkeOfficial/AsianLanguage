@@ -38,7 +38,7 @@ Implement the approved Fire Symbol Journey visual foundation while preserving th
 - Add semantic light/dark AppColors, AppTypography, AppSpacing, AppRadius, and AppMotion tokens.
 - Add reusable PrimaryActionButton, SecondaryActionButton, IconActionButton, GroupedSurface, ArtifactField, HistoricalMissingState, LineagePreview, CharacterTile, AppSearchField, and SettingsRow foundations.
 - Wire the shared design foundation into the Xcode project and preserve transitional ShellStyle aliases for screens not yet migrated.
-- Replace the generic Evolution stage cards with open exhibit-style pages, vertical stage scrolling, horizontal paging, and a content-driven current/next stage rail.
+- Replace the generic Evolution stage cards with open exhibit-style pages, horizontal swipe paging, and a content-driven current/next stage rail.
 - Keep Today as the final journey endpoint while routing it through the canonical host section.
 - Add the Symbol About sheet for character context, sources, and a quiet learning action.
 - Ensure direct view/stage entry does not create progress; meaningful start/resume and in-journey navigation still persist exact position.
@@ -46,6 +46,7 @@ Implement the approved Fire Symbol Journey visual foundation while preserving th
 - Rework Today into a vertical, selected-track-aware presentation without arbitrary language colors; keep it in the same scroll as the historical spine.
 - Add a dedicated learned Revisit entry that does not restart or downgrade progress.
 - Add a lightweight Quick Review recognition state that uses only an available corpus form and always links back to the full journey.
+- Complete the horizontal Symbol Journey with an automatic learned transition and Next Symbol action.
 - Add the final-record Completion state with Return Home and Revisit actions.
 - Apply CharacterTile to Browse-owned in-progress and status collections.
 - Move structure and source detail behind the character `…` menu so they do not interrupt the museum flow.

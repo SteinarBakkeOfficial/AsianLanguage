@@ -311,9 +311,11 @@ struct CharacterTile: View {
                         .font(AppTypography.body.weight(.semibold))
                         .foregroundStyle(AppColors.textPrimary)
                     HStack(spacing: AppSpacing.spaceSm) {
-                        Text(progressLabel)
-                            .font(AppTypography.metadata)
-                            .foregroundStyle(userState?.progressStatus == .learned ? AppColors.learned : AppColors.textSecondary)
+                        if let progressLabel {
+                            Text(progressLabel)
+                                .font(AppTypography.metadata)
+                                .foregroundStyle(AppColors.learned)
+                        }
                         if userState?.isStarred == true {
                             Image(systemName: "heart.fill")
                                 .accessibilityLabel("Favorite")
@@ -334,15 +336,21 @@ struct CharacterTile: View {
         }
         .buttonStyle(.plain)
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(record.coreCharacter), \(record.coreSharedMeaning), \(progressLabel)")
+        .accessibilityLabel(accessibilityDescription)
     }
 
-    private var progressLabel: String {
+    private var progressLabel: String? {
         switch userState?.progressStatus {
         case .learned: return "Learned"
-        case .inProgress: return "In progress"
-        default: return "Not started"
+        default: return nil
         }
+    }
+
+    private var accessibilityDescription: String {
+        guard let progressLabel else {
+            return "\(record.coreCharacter), \(record.coreSharedMeaning)"
+        }
+        return "\(record.coreCharacter), \(record.coreSharedMeaning), \(progressLabel)"
     }
 }
 

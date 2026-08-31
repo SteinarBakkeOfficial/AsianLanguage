@@ -105,6 +105,11 @@ struct UsageExamplesView: View {
                         Text(nativeReading ?? "Everyday Korean")
                             .font(AppTypography.body.weight(.semibold))
                             .foregroundStyle(AppColors.textPrimary)
+                        if let hanjaReading {
+                            Text("Hanja: \(hanjaReading)")
+                                .font(AppTypography.metadata)
+                                .foregroundStyle(AppColors.textSecondary)
+                        }
                         Text(coverage.glosses.joined(separator: ", "))
                             .font(AppTypography.body)
                             .foregroundStyle(AppColors.textSecondary)

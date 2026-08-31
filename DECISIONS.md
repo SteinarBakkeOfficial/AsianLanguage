@@ -23,7 +23,7 @@
 - Evolution Stages are data-driven and may be omitted when uncertain or not useful.
 - Canonical IDs are origin, oracleBone, bronze, seal, clerical, regular, and modernForms/today.
 - Today / Modern Endpoint is the final room in the same continuous Symbol Journey, containing selected focus-track forms and word-level context.
-- Historical stages and Today scroll as one exhibit; a quiet stage rail may provide direct access without inserting Continue gates between concepts.
+- Historical stages and Today are horizontally swiped exhibit pages; page-local overflow may scroll, but there is no single vertical journey scroll or Continue gate between historical concepts.
 - Exact SymbolJourneyPosition, including stage ID, is persisted for resume.
 
 ## Content and assets
@@ -43,7 +43,7 @@
 - Learned, Review later, and Favorites are independent relationships; ordinary navigation does not change any of them.
 - Ordinary navigation through Learned content cannot downgrade it.
 - Restart explicitly clears Learned and resets the position while preserving Favorites and Review later.
-- Mark Learned is explicit, can occur from any journey position, preserves Review later/Favorite, and opens the next non-Learned record. The final record shows corpus completion.
+- Completing Today is an explicit Next Symbol / Complete Symbol action that marks the current Symbol learned, preserves Review later/Favorite, and opens the next non-Learned record. The final record shows corpus completion; the character menu remains available for independent library actions.
 - A learned Symbol opened through ordinary view entry uses a dedicated Revisit state with Revisit Journey, Quick Review, and View Usage actions; it does not restart or replay first-completion behavior.
 - Quick Review is recognition-oriented, contains no XP/score/timer mechanics, uses only approved available content, and can always open the complete Symbol Journey.
 - The final installed record presents a calm Completion state with Return Home and Revisit actions; it does not use confetti, XP, streaks, or scoring.
@@ -60,7 +60,7 @@
 - Open editorial composition is the default for Symbol stages; grouped surfaces are reserved for denser Today, settings, and utility content.
 - HistoricalMissingState is the only acceptable visual response to an unavailable approved asset; modern glyphs and generated ancient-looking substitutes are prohibited.
 - LineagePreview is data-driven and may render only forms present in the approved corpus.
-- The first visual slice uses a restrained current/next rail and vertically scrollable stage pages inside a horizontal stage pager.
+- The first visual slice uses a restrained current/next rail and horizontally swiped stage pages.
 - Today is the final room in the continuous journey, with one section per selected modern language track and word-level context only; when no tracks are selected it presents an explicit museum-only state; language identity is not communicated by arbitrary color.
 - Structure is a vertical recap, not a second navigation rail; it may show only stage forms and component insights supported by the record.
 - Usage context is a vertical list of selected-track character words, prioritizing the written character, reading, and meaning over unexplained sentences.

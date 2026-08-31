@@ -12,8 +12,9 @@ Assert-True (-not $lesson.Contains("EvolutionBoardView")) "Lesson must not depen
 Assert-True $lesson.Contains("UsageExamplesView(record: record, focusSelection:") "Usage must remain focus-track aware."
 
 $evolution = Text "Sources/App/Lesson/CharacterEvolutionView.swift"
-Assert-True $evolution.Contains("ScrollViewReader") "Evolution must support one continuous scrollable journey."
-Assert-True (-not $evolution.Contains("TabView")) "Evolution must not split history and Today into paged lesson concepts."
+Assert-True $evolution.Contains('TabView(selection: $selectedStageID)') "Evolution must support horizontal stage paging."
+Assert-True $evolution.Contains(".tabViewStyle(.page(indexDisplayMode: .never))") "Evolution must expose swipeable pages without a second page-dot control."
+Assert-True $evolution.Contains("PrimaryActionButton(completionTitle, action: onComplete)") "Today must offer a completion action that advances the Symbol Journey."
 Assert-True $evolution.Contains("stageNavigator") "Evolution must expose stage navigation."
 Assert-True $evolution.Contains("HistoricalAssetView") "Evolution must use the asset renderer."
 Assert-True $evolution.Contains("Historical visual unavailable") "Evolution must expose missing-asset state."
@@ -23,5 +24,8 @@ Assert-True (-not $lesson.Contains("Continue to Structure")) "The primary journe
 Assert-True (-not $lesson.Contains("Link(")) "The primary journey must not open online source links."
 Assert-True $lesson.Contains("setStarred") "Character detail must expose independent Favorite state."
 Assert-True $lesson.Contains("setReviewLater") "Character detail must expose independent Review Later state."
+Assert-True $lesson.Contains("QuickReviewQuestion") "Quick Review must use small recognition prompts."
+Assert-True $lesson.Contains("Next Question") "Quick Review must support more than one prompt without reopening the journey."
+Assert-True $lesson.Contains("Finish Review") "Quick Review must finish without forcing a journey replay."
 
 Write-Output "OK: Symbol Journey lesson contract tests passed"

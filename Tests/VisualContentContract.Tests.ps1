@@ -15,6 +15,13 @@ $lesson = Text "Sources/App/Lesson/LessonView.swift"
 Assert-True $lesson.Contains("CharacterEvolutionView(") "Lesson must use the Symbol Journey renderer."
 Assert-True (-not $lesson.Contains("EvolutionBoardView")) "The obsolete board must not be on the production path."
 
+$modern = Text "Sources/App/Lesson/ModernFormsComparisonView.swift"
+Assert-True $modern.Contains('Hanja: \(hanjaReading)') "Korean modern forms must show the Hanja reading alongside native Korean."
+Assert-True (-not $modern.Contains("Hanja 火")) "Korean modern forms must not hardcode the Fire character."
+
+$tile = Text "Sources/App/SharedUI/DesignSystem.swift"
+Assert-True (-not $tile.Contains('case .inProgress: return "In progress"')) "Browse character tiles should not label every non-learned record as in progress."
+
 $pictogram = Text "Sources/App/Lesson/SymbolPictogramView.swift"
 Assert-True $pictogram.Contains("Origin visual unavailable") "List surfaces must use an explicit origin gap."
 Assert-True (-not $pictogram.Contains('case "tree"')) "Origin visuals must not be hardcoded by record id."

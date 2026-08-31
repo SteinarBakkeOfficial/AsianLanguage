@@ -8,7 +8,6 @@ struct LessonView: View {
     private let openingIntent: SymbolOpenIntent
     @State private var position: SymbolJourneyPosition
     @State private var entryMode: SymbolEntryMode
-    @State private var showingReviewAnswer = false
     @State private var showingAbout = false
     @State private var showingCorpusComplete = false
 
@@ -35,7 +34,7 @@ struct LessonView: View {
         }
         _position = State(initialValue: normalizedPosition)
         let mode: SymbolEntryMode
-        if dependencies.navigationState.symbolOpenIntent == .review {
+        if dependencies.navigationState.symbolOpenIntent == .review || dependencies.navigationState.symbolOpenIntent == .reviewFromBrowse {
             mode = .review
         } else {
             mode = .journey
@@ -74,7 +73,6 @@ struct LessonView: View {
                             entryMode = .journey
                         },
                         onReview: {
-                            showingReviewAnswer = false
                             entryMode = .review
                         },
                         onUsage: {
@@ -84,18 +82,16 @@ struct LessonView: View {
                 case .review:
                     QuickReviewView(
                         record: record,
-                        isAnswerVisible: $showingReviewAnswer,
                         onOpenJourney: {
                             position = .origin
                             entryMode = .journey
                         },
-                        onContinue: {
-                            showingReviewAnswer = false
+                        onFinish: {
                             if let next = dependencies.nextReviewLater(after: route.sharedCharacterID) {
-                                dependencies.navigationState.openSymbol(next.id, intent: .review)
+                                let nextIntent: SymbolOpenIntent = openingIntent == .reviewFromBrowse ? .reviewFromBrowse : .review
+                                dependencies.navigationState.openSymbol(next.id, intent: nextIntent)
                             } else {
-                                position = .origin
-                                entryMode = .journey
+                                dependencies.navigationState.selectedTab = openingIntent == .reviewFromBrowse ? .browse : .home
                             }
                         }
                     )
@@ -115,6 +111,16 @@ struct LessonView: View {
         .background(AppColors.appBackground.ignoresSafeArea())
         .tint(AppColors.accentPrimary)
         .toolbar {
+            if openingIntent == .view || openingIntent == .reviewFromBrowse {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        dependencies.navigationState.selectedTab = .browse
+                    } label: {
+                        Label("Browse", systemImage: "chevron.left")
+                    }
+                    .accessibilityLabel("Back to Browse")
+                }
+            }
             ToolbarItem(placement: .topBarTrailing) {
                 IconActionButton(systemName: "ellipsis", accessibilityLabel: "About this character") {
                     showingAbout = true
@@ -143,11 +149,13 @@ struct LessonView: View {
         }
     }
 
-    /// The historical spine and Today endpoint share one continuous museum scroll.
+    /// The historical spine and Today endpoint share one horizontally swipeable museum pager.
     private func journeyContent(record: SharedCharacterRecord) -> some View {
         CharacterEvolutionView(
             record: record,
             focusSelection: userStateStore.state.focusSelection,
+            completionTitle: dependencies.nextSharedCharacter(after: record.id) == nil ? "Complete Symbol" : "Next Symbol",
+            onComplete: markLearnedAndOpenNext,
             selectedStageID: Binding(
                 get: { position.section == .today ? "today" : (position.stageID ?? "origin") },
                 set: { stageID in
@@ -307,15 +315,46 @@ private struct RevisitEntryView: View {
 /// Recognition-oriented review stays lightweight and always offers the complete journey as an escape hatch.
 private struct QuickReviewView: View {
     let record: SharedCharacterRecord
-    @Binding var isAnswerVisible: Bool
     let onOpenJourney: () -> Void
-    let onContinue: () -> Void
+    let onFinish: () -> Void
+    @State private var questionIndex = 0
+    @State private var isAnswerVisible = false
 
-    private var reviewStage: HistoricalStage? {
-        record.history.stages.first { stage in
-            guard let form = stage.form else { return false }
-            return !form.isEmpty
+    private var questions: [QuickReviewQuestion] {
+        var result: [QuickReviewQuestion] = []
+        if let reviewStage = record.history.stages.first(where: { $0.form?.isEmpty == false }), let form = reviewStage.form {
+            result.append(
+                QuickReviewQuestion(
+                    id: "historical-form",
+                    question: "What character connects to this form?",
+                    prompt: form,
+                    answer: "\(record.coreCharacter) · \(record.coreSharedMeaning.capitalized)"
+                )
+            )
         }
+        result.append(
+            QuickReviewQuestion(
+                id: "meaning",
+                question: "What idea does this character carry?",
+                prompt: record.coreCharacter,
+                answer: record.coreSharedMeaning.capitalized
+            )
+        )
+        if let reading = record.focusCoverage.simplifiedChinese.readings.first?.value {
+            result.append(
+                QuickReviewQuestion(
+                    id: "mandarin-reading",
+                    question: "How is it read in Mandarin?",
+                    prompt: record.coreCharacter,
+                    answer: reading
+                )
+            )
+        }
+        return Array(result.prefix(3))
+    }
+
+    private var currentQuestion: QuickReviewQuestion {
+        questions[min(questionIndex, questions.count - 1)]
     }
 
     var body: some View {
@@ -325,37 +364,33 @@ private struct QuickReviewView: View {
                     .font(AppTypography.conceptLabel)
                     .tracking(1.4)
                     .foregroundStyle(AppColors.textSecondary)
-                Text("What character connects to this form?")
+                Text("QUESTION \(questionIndex + 1) OF \(questions.count)")
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+                Text(currentQuestion.question)
                     .font(AppTypography.stageTitle)
                     .foregroundStyle(AppColors.textPrimary)
                     .multilineTextAlignment(.center)
-                if let reviewStage, let form = reviewStage.form {
-                    ArtifactField {
-                        Text(form)
-                            .font(.system(size: 112, design: .serif))
-                            .foregroundStyle(AppColors.artifactInk)
-                            .frame(maxWidth: .infinity, minHeight: 190)
-                            .accessibilityLabel("\(reviewStage.label) form")
-                    }
-                } else {
-                    ArtifactField {
-                        HistoricalMissingState(
-                            title: "Review artwork not yet included",
-                            detail: "An approved historical form is required for this recognition prompt."
-                        )
-                    }
+                ArtifactField {
+                    Text(currentQuestion.prompt)
+                        .font(.system(size: 112, design: .serif))
+                        .foregroundStyle(AppColors.artifactInk)
+                        .frame(maxWidth: .infinity, minHeight: 190)
                 }
                 if isAnswerVisible {
                     GroupedSurface {
-                        VStack(spacing: AppSpacing.space2xs) {
-                            Text(record.coreCharacter)
-                                .font(.system(size: 48, design: .serif))
-                            Text(record.coreSharedMeaning.capitalized)
-                                .font(AppTypography.body.weight(.semibold))
-                        }
-                        .frame(maxWidth: .infinity)
+                        Text(currentQuestion.answer)
+                            .font(AppTypography.body.weight(.semibold))
+                            .frame(maxWidth: .infinity)
                     }
-                    PrimaryActionButton("Continue Review", action: onContinue)
+                    PrimaryActionButton(questionIndex + 1 < questions.count ? "Next Question" : "Finish Review") {
+                        if questionIndex + 1 < questions.count {
+                            questionIndex += 1
+                            isAnswerVisible = false
+                        } else {
+                            onFinish()
+                        }
+                    }
                 } else {
                     SecondaryActionButton("Tap to Reveal") {
                         isAnswerVisible = true
@@ -371,6 +406,14 @@ private struct QuickReviewView: View {
         }
         .scrollIndicators(.hidden)
     }
+}
+
+/// One small recognition prompt keeps Quick Review useful without reopening the full museum journey.
+private struct QuickReviewQuestion: Identifiable {
+    let id: String
+    let question: String
+    let prompt: String
+    let answer: String
 }
 
 /// Secondary information sheet keeps sources, provenance, and quiet actions out of the exhibit chrome.

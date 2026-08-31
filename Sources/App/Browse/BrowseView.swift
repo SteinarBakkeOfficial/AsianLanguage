@@ -4,14 +4,17 @@ import SwiftUI
 struct BrowseView: View {
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
+    @ObservedObject private var navigationState: AppNavigationState
+    @State private var navigationPath = NavigationPath()
 
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
         _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
+        _navigationState = ObservedObject(wrappedValue: dependencies.navigationState)
     }
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $navigationPath) {
             List {
                 Section {
                     NavigationLink { SearchView(dependencies: dependencies) } label: {
@@ -42,6 +45,12 @@ struct BrowseView: View {
                 }
             }
             .navigationTitle("Browse")
+        }
+        .onChange(of: navigationState.selectedTab) { _, selectedTab in
+            if selectedTab != .browse {
+                // Browse is a fresh discovery surface each time it is revisited.
+                navigationPath = NavigationPath()
+            }
         }
         .scrollContentBackground(.hidden)
         .background(ShellStyle.paper.ignoresSafeArea())
@@ -93,7 +102,7 @@ struct BrowseStatusView: View {
                     CharacterTile(
                         record: record,
                         userState: dependencies.userStateStore.state.lessonStates[record.id],
-                        action: { dependencies.navigationState.openSymbol(record.id, intent: .view) }
+                        action: { dependencies.navigationState.openSymbol(record.id, intent: symbolIntent) }
                     )
                 }
             }
@@ -102,5 +111,9 @@ struct BrowseStatusView: View {
         .scrollContentBackground(.hidden)
         .background(ShellStyle.paper.ignoresSafeArea())
         .tint(ShellStyle.cinnabar)
+    }
+
+    private var symbolIntent: SymbolOpenIntent {
+        title == "Learned" ? .reviewFromBrowse : .view
     }
 }

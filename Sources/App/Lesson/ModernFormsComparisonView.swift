@@ -96,13 +96,18 @@ struct ModernFormsComparisonView: View {
                         Text(nativeReading ?? "Everyday Korean")
                             .font(AppTypography.body.weight(.semibold))
                             .foregroundStyle(AppColors.textPrimary)
+                        if let hanjaReading {
+                            Text("Hanja: \(hanjaReading)")
+                                .font(AppTypography.metadata)
+                                .foregroundStyle(AppColors.textSecondary)
+                        }
                         Text("Everyday Korean in Hangul")
                             .font(AppTypography.metadata)
                             .foregroundStyle(AppColors.textSecondary)
                     }
                 }
                 if let hanjaReading {
-                    Text("Hanja 火: (hanjaReading)")
+                    Text("Shared character \(coverage.form) · Hanja reading \(hanjaReading)")
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
                 }
