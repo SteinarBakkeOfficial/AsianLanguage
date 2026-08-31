@@ -180,7 +180,7 @@ struct CharacterEvolutionView: View {
                         if index < journeyIDs.count - 1 {
                             Rectangle()
                                 .fill(AppColors.separator)
-                                .frame(minWidth: 20, maxWidth: 52, height: 1)
+                                .frame(minWidth: 20, maxWidth: 52, minHeight: 1, maxHeight: 1)
                                 .accessibilityHidden(true)
                         }
                     }
