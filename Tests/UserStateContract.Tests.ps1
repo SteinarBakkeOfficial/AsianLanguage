@@ -76,6 +76,11 @@ Assert-Contains -Text $settingsText -ExpectedSubstring "userStateStore.setFocusT
 Assert-Contains -Text $settingsText -ExpectedSubstring "userStateStore.resetLearningProgress()" -Message "Settings should expose a learning-only reset."
 Assert-Contains -Text $settingsText -ExpectedSubstring "userStateStore.resetAllPreferences()" -Message "Settings should expose a separate preference reset."
 
+$appText = Get-Text "Sources/App/Core/AsianLanguageApp.swift"
+Assert-Contains -Text $appText -ExpectedSubstring "@StateObject private var userStateStore: LocalUserStateStore" -Message "The app entry point should observe the shared local user-state store."
+Assert-Contains -Text $appText -ExpectedSubstring "_userStateStore = StateObject(wrappedValue: liveDependencies.userStateStore)" -Message "The app entry point should observe the same store used by Settings."
+Assert-Contains -Text $appText -ExpectedSubstring "switch userStateStore.state.appearancePreference" -Message "The app appearance should derive from the observed preference."
+
 $homeText = Get-Text "Sources/App/Home/HomeView.swift"
 Assert-Contains -Text $homeText -ExpectedSubstring "@ObservedObject private var userStateStore: LocalUserStateStore" -Message "Home should observe local user state."
 Assert-Contains -Text $homeText -ExpectedSubstring "homeLessonRoute" -Message "Home should choose between resume and featured lesson routes."
