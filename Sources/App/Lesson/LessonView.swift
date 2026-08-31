@@ -250,7 +250,7 @@ struct LessonView: View {
             Text("Sources / Notes")
                 .font(AppTypography.sectionHeading)
             ForEach(record.notes, id: \.self) { Text($0).font(AppTypography.caption).foregroundStyle(AppColors.textSecondary) }
-            ForEach(record.sources) { source in
+            ForEach(record.sources, id: \.id) { source in
                 if let urlString = source.url, let url = URL(string: urlString) {
                     Link(source.label, destination: url)
                 } else {
@@ -516,7 +516,7 @@ private struct CharacterAboutSheet: View {
                     Text(record.visuals.note).font(AppTypography.caption).foregroundStyle(AppColors.textSecondary)
                 }
                 Section("Sources") {
-                    ForEach(record.sources) { source in
+                    ForEach(record.sources, id: \.id) { source in
                         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                             Text(source.label)
                             Text(source.citation).font(AppTypography.caption).foregroundStyle(AppColors.textSecondary)
