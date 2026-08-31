@@ -9,9 +9,16 @@ struct UsageExamplesView: View {
     let focusSelection: FocusTrackSelection
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
+            Text("USAGE")
+                .font(AppTypography.conceptLabel)
+                .tracking(1.4)
+                .foregroundStyle(AppColors.textSecondary)
+            Text("Where the character lives today")
+                .font(AppTypography.exhibitHeading)
+                .foregroundStyle(AppColors.textPrimary)
             Text(record.usage.coreMeaningFirst)
-                .font(.subheadline)
+                .font(AppTypography.body)
 
             if focusSelection.contains(.simplifiedChinese) {
                 exampleGroup("Simplified Chinese", examples: record.focusCoverage.simplifiedChinese.examples)
@@ -33,24 +40,42 @@ struct UsageExamplesView: View {
     private func exampleGroup(_ title: String, examples: [UsageExample]) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(title)
-                .font(.headline)
+                .font(AppTypography.sectionHeading)
+                .foregroundStyle(AppColors.textPrimary)
 
-            ForEach(examples, id: \.self) { example in
+            GroupedSurface {
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(example.text)
-                    Text(example.exampleLevel.rawValue.capitalized)
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                    Text(example.translation)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                    if !example.reusesKnownSymbols.isEmpty {
-                        Text("Reuses: \(example.reusesKnownSymbols.joined(separator: ", "))")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
+                    ForEach(Array(examples.enumerated()), id: \.offset) { index, example in
+                        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                            HStack(alignment: .firstTextBaseline) {
+                                Text(example.text)
+                                    .font(.system(size: 24, design: .serif))
+                                    .foregroundStyle(AppColors.textPrimary)
+                                Spacer()
+                                Text(example.exampleLevel.rawValue.capitalized)
+                                    .font(AppTypography.caption)
+                                    .foregroundStyle(AppColors.textSecondary)
+                            }
+                            if let reading = example.reading, !reading.isEmpty {
+                                Text(reading)
+                                    .font(AppTypography.metadata)
+                                    .foregroundStyle(AppColors.textSecondary)
+                            }
+                            Text(example.translation)
+                                .font(AppTypography.body)
+                                .foregroundStyle(AppColors.textSecondary)
+                            if !example.reusesKnownSymbols.isEmpty {
+                                Text("Reuses: \(example.reusesKnownSymbols.joined(separator: ", "))")
+                                    .font(AppTypography.caption)
+                                    .foregroundStyle(AppColors.textSecondary)
+                            }
+                        }
+                        .padding(.vertical, AppSpacing.spaceXs)
+                        if index < examples.count - 1 {
+                            Divider().overlay(AppColors.separator)
+                        }
                     }
                 }
-                .padding(.vertical, 2)
             }
         }
     }

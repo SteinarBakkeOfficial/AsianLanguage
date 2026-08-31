@@ -1,0 +1,71 @@
+[
+  {
+    "stage": "oracleBone",
+    "availabilityState": "available",
+    "contentClass": "historicalEvidence",
+    "sourceIds": [
+      "source-oracle-bone-script",
+      "source-character-classification",
+      "source-evobc",
+      "source-radical-72"
+    ],
+    "originalAssetPath": "content/symbols/day-u65E5/historical/oracle/original/source-asset.svg",
+    "appAssetPath": "content/symbols/day-u65E5/historical/oracle/app/glyph.svg",
+    "runtimeAssetRef": "Assets/HistoricalGlyphs/day-oracle.svg",
+    "localAssetExists": true
+  },
+  {
+    "stage": "bronze",
+    "availabilityState": "available",
+    "contentClass": "historicalEvidence",
+    "sourceIds": [
+      "source-evobc",
+      "source-radical-72"
+    ],
+    "originalAssetPath": "content/symbols/day-u65E5/historical/bronze/original/source-asset.svg",
+    "appAssetPath": "content/symbols/day-u65E5/historical/bronze/app/glyph.svg",
+    "runtimeAssetRef": "Assets/HistoricalGlyphs/day-bronze.svg",
+    "localAssetExists": true
+  },
+  {
+    "stage": "seal",
+    "availabilityState": "unavailableAsset",
+    "contentClass": null,
+    "sourceIds": [
+      "source-seal-script",
+      "source-evobc",
+      "source-radical-72"
+    ],
+    "originalAssetPath": null,
+    "appAssetPath": null,
+    "runtimeAssetRef": null,
+    "localAssetExists": false
+  },
+  {
+    "stage": "clerical",
+    "availabilityState": "unavailableAsset",
+    "contentClass": null,
+    "sourceIds": [
+      "source-clerical-script",
+      "source-evobc",
+      "source-radical-72"
+    ],
+    "originalAssetPath": null,
+    "appAssetPath": null,
+    "runtimeAssetRef": null,
+    "localAssetExists": false
+  },
+  {
+    "stage": "regular",
+    "availabilityState": "available",
+    "contentClass": "educationalReconstruction",
+    "sourceIds": [
+      "source-radical-72",
+      "source-prototype-redraw"
+    ],
+    "originalAssetPath": "content/symbols/day-u65E5/historical/regular/original/source-asset.svg",
+    "appAssetPath": "content/symbols/day-u65E5/historical/regular/app/glyph.svg",
+    "runtimeAssetRef": "Assets/PrototypeVisuals/day-regular.svg",
+    "localAssetExists": true
+  }
+]

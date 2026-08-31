@@ -136,16 +136,26 @@ struct AppUserState: Codable, Equatable {
     var lessonStates: [String: LessonUserState]
     var installedCorpusName: String
     var currentCharacterID: String?
+    /// The unfinished journey Home should resume; this is distinct from the last selected Symbol.
+    var activeJourneySymbolID: String?
     var appearancePreference: AppearancePreference
     var hasCompletedOnboarding: Bool
+    /// Onboarding milestones allow interrupted first-launch flows to resume safely.
+    var hasSeenIntro: Bool
+    var hasChosenFocusLanguages: Bool
+    var hasStartedFirstSymbol: Bool
 
     static let empty = AppUserState(
         focusSelection: .all,
         lessonStates: [:],
         installedCorpusName: "Draft V1 Corpus",
         currentCharacterID: nil,
+        activeJourneySymbolID: nil,
         appearancePreference: .system,
-        hasCompletedOnboarding: false
+        hasCompletedOnboarding: false,
+        hasSeenIntro: false,
+        hasChosenFocusLanguages: false,
+        hasStartedFirstSymbol: false
     )
 
     private enum CodingKeys: String, CodingKey {
@@ -154,8 +164,12 @@ struct AppUserState: Codable, Equatable {
         case lessonStates
         case installedCorpusName
         case currentCharacterID
+        case activeJourneySymbolID
         case appearancePreference
         case hasCompletedOnboarding
+        case hasSeenIntro
+        case hasChosenFocusLanguages
+        case hasStartedFirstSymbol
     }
 
     private enum LegacyFocusTrack: String, Codable {
@@ -188,8 +202,12 @@ struct AppUserState: Codable, Equatable {
         self.lessonStates = try container.decodeIfPresent([String: LessonUserState].self, forKey: .lessonStates) ?? [:]
         self.installedCorpusName = try container.decodeIfPresent(String.self, forKey: .installedCorpusName) ?? "Draft V1 Corpus"
         self.currentCharacterID = try container.decodeIfPresent(String.self, forKey: .currentCharacterID)
+        self.activeJourneySymbolID = try container.decodeIfPresent(String.self, forKey: .activeJourneySymbolID) ?? self.currentCharacterID
         self.appearancePreference = try container.decodeIfPresent(AppearancePreference.self, forKey: .appearancePreference) ?? .system
         self.hasCompletedOnboarding = try container.decodeIfPresent(Bool.self, forKey: .hasCompletedOnboarding) ?? false
+        self.hasSeenIntro = try container.decodeIfPresent(Bool.self, forKey: .hasSeenIntro) ?? self.hasCompletedOnboarding
+        self.hasChosenFocusLanguages = try container.decodeIfPresent(Bool.self, forKey: .hasChosenFocusLanguages) ?? self.hasCompletedOnboarding
+        self.hasStartedFirstSymbol = try container.decodeIfPresent(Bool.self, forKey: .hasStartedFirstSymbol) ?? false
     }
 
     func encode(to encoder: Encoder) throws {
@@ -198,8 +216,12 @@ struct AppUserState: Codable, Equatable {
         try container.encode(lessonStates, forKey: .lessonStates)
         try container.encode(installedCorpusName, forKey: .installedCorpusName)
         try container.encodeIfPresent(currentCharacterID, forKey: .currentCharacterID)
+        try container.encodeIfPresent(activeJourneySymbolID, forKey: .activeJourneySymbolID)
         try container.encode(appearancePreference, forKey: .appearancePreference)
         try container.encode(hasCompletedOnboarding, forKey: .hasCompletedOnboarding)
+        try container.encode(hasSeenIntro, forKey: .hasSeenIntro)
+        try container.encode(hasChosenFocusLanguages, forKey: .hasChosenFocusLanguages)
+        try container.encode(hasStartedFirstSymbol, forKey: .hasStartedFirstSymbol)
     }
 
     init(
@@ -207,21 +229,29 @@ struct AppUserState: Codable, Equatable {
         lessonStates: [String: LessonUserState],
         installedCorpusName: String,
         currentCharacterID: String? = nil,
+        activeJourneySymbolID: String? = nil,
         appearancePreference: AppearancePreference = .system,
-        hasCompletedOnboarding: Bool = false
+        hasCompletedOnboarding: Bool = false,
+        hasSeenIntro: Bool = false,
+        hasChosenFocusLanguages: Bool = false,
+        hasStartedFirstSymbol: Bool = false
     ) {
         self.focusSelection = focusSelection
         self.lessonStates = lessonStates
         self.installedCorpusName = installedCorpusName
         self.currentCharacterID = currentCharacterID
+        self.activeJourneySymbolID = activeJourneySymbolID ?? currentCharacterID
         self.appearancePreference = appearancePreference
         self.hasCompletedOnboarding = hasCompletedOnboarding
+        self.hasSeenIntro = hasSeenIntro || hasCompletedOnboarding
+        self.hasChosenFocusLanguages = hasChosenFocusLanguages || hasCompletedOnboarding
+        self.hasStartedFirstSymbol = hasStartedFirstSymbol
     }
 
     /// Most recently updated in-progress route, if one exists.
     var resumeLessonRoute: LessonRoute? {
-        if let currentCharacterID,
-           let current = lessonStates[currentCharacterID],
+        if let activeJourneySymbolID,
+           let current = lessonStates[activeJourneySymbolID],
            current.progressStatus == .inProgress {
             return LessonRoute(sharedCharacterID: current.sharedCharacterID, startingPosition: current.lastPosition ?? .origin)
         }

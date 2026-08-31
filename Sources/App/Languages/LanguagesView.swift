@@ -16,51 +16,50 @@ struct LanguagesView: View {
 
     var body: some View {
         ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-                    headerCard
-                    ForEach(FocusTrack.allCases) { track in
-                        languageCard(for: track)
-                    }
+            VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
+                headerCard
+                ForEach(FocusTrack.allCases) { track in
+                    languageCard(for: track)
                 }
-                .padding()
             }
+            .padding(AppSpacing.spacePage)
+        }
+        .scrollIndicators(.hidden)
         .navigationTitle("Languages")
+        .background(AppColors.appBackground.ignoresSafeArea())
+        .tint(AppColors.accentPrimary)
     }
 
     /// Intro card explaining multi-select focus behavior.
     private var headerCard: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Choose Focus Tracks")
-                .font(.title2.weight(.bold))
+                .font(AppTypography.exhibitHeading)
+                .foregroundStyle(AppColors.textPrimary)
             Text("All tracks are enabled by default. Turn tracks off only when you want lessons, modern forms, and examples narrowed for a test session.")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .font(AppTypography.body)
+                .foregroundStyle(AppColors.textSecondary)
         }
-        .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(red: 0.99, green: 0.96, blue: 0.88))
-        .overlay(
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(Color.brown.opacity(0.25), lineWidth: 1)
-        )
-        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
     /// One focus-track card with visible enabled state.
     private func languageCard(for track: FocusTrack) -> some View {
-        Toggle(isOn: focusTrackBinding(for: track)) {
-            VStack(alignment: .leading, spacing: 5) {
-                Text(track.title)
-                    .font(.headline)
-                Text(description(for: track))
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+        GroupedSurface {
+            Toggle(isOn: focusTrackBinding(for: track)) {
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text(track.title)
+                        .font(AppTypography.body.weight(.semibold))
+                        .foregroundStyle(AppColors.textPrimary)
+                    Text(description(for: track))
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
             }
+            .toggleStyle(.switch)
+            .frame(minHeight: 52)
         }
-        .toggleStyle(.switch)
-        .padding(14)
-        .background(Color(.secondarySystemBackground))
-        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
     /// Short learner-facing track description.

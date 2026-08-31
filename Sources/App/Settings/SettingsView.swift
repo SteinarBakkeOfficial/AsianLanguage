@@ -36,8 +36,8 @@ struct SettingsView: View {
                     Toggle(track.title, isOn: focusTrackBinding(for: track))
                 }
                 Text("All four focus tracks are enabled by default.")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
             }
 
             Section("Display preferences") {
@@ -46,9 +46,9 @@ struct SettingsView: View {
                         Text(preference.rawValue.capitalized).tag(preference)
                     }
                 }
-                Text("Final display controls will follow the approved Fire design.")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                Text("Choose System, Light, or Dark appearance for the gallery shell.")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
             }
 
             Section("Offline corpus") {
@@ -69,6 +69,9 @@ struct SettingsView: View {
             }
         }
         .navigationTitle(initialSection == .focusLanguage ? "Languages" : "Settings")
+        .scrollContentBackground(.hidden)
+        .background(AppColors.appBackground.ignoresSafeArea())
+        .tint(AppColors.accentPrimary)
         .alert("Reset app progress?", isPresented: $isShowingResetConfirmation) {
             Button("Reset", role: .destructive) {
                 userStateStore.resetLearningProgress()

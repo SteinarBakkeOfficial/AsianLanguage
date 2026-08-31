@@ -1,14 +1,10 @@
 import SwiftUI
 
-/// Browse entry point for shallow curated discovery.
+/// Editorial discovery library; retrieval states live here rather than in root navigation.
 struct BrowseView: View {
-    /// Shared app dependencies used for bundled corpus browsing.
     let dependencies: AppDependencies
-
-    /// Local state store used for progress labels in Browse.
     @ObservedObject private var userStateStore: LocalUserStateStore
 
-    /// Creates Browse with observed access to local user state.
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
         _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
@@ -16,95 +12,69 @@ struct BrowseView: View {
 
     var body: some View {
         NavigationStack {
-            Group {
-                if dependencies.sharedCharacters.isEmpty {
-                    ContentUnavailableView(
-                        "No Shared Characters",
-                        systemImage: "square.grid.2x2",
-                        description: Text("The bundled corpus is empty.")
-                    )
-                } else {
-                    ScrollView {
-                        VStack(alignment: .leading, spacing: 14) {
-                            Text("Browse")
-                                .font(.largeTitle.weight(.bold))
-                            Text("Choose a symbol and follow it from picture idea to modern forms.")
-                                .font(.subheadline)
-                                .foregroundStyle(.secondary)
-
-                            NavigationLink("Search") { SearchView(dependencies: dependencies) }
-                            NavigationLink("Collections") { CollectionsView(dependencies: dependencies) }
-                            NavigationLink("In Progress") { BrowseStatusView(title: "In Progress", records: inProgressRecords, dependencies: dependencies) }
-                            NavigationLink("Learned") { BrowseStatusView(title: "Learned", records: learnedRecords, dependencies: dependencies) }
-                            ForEach(dependencies.sharedCharacters) { record in
-                                Button {
-                                    dependencies.navigationState.openSymbol(
-                                        LessonRoute(sharedCharacterID: record.id, startingPosition: nil)
-                                    )
-                                } label: {
-                                    browseRow(record)
-                                }
-                                .buttonStyle(.plain)
-                            }
-
-                            Text("Browse is intentionally shallow in V1: it follows the editorial teaching sequence and opens directly into Shared Character lessons.")
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                        }
-                        .padding()
+            List {
+                Section {
+                    NavigationLink { SearchView(dependencies: dependencies) } label: {
+                        Label("Search characters, meanings, readings…", systemImage: "magnifyingglass")
                     }
+                }
+
+                if !inProgressRecords.isEmpty {
+                    Section("In Progress") {
+                        ForEach(inProgressRecords) { record in characterRow(record, position: true) }
+                    }
+                }
+
+                Section("Collections") {
+                    NavigationLink { CollectionsView(dependencies: dependencies) } label: {
+                        Label("Explore Collections", systemImage: "square.grid.2x2")
+                    }
+                }
+
+                Section("Browse All Symbols") {
+                    ForEach(dependencies.sharedCharacters) { record in characterRow(record) }
+                }
+
+                Section("Your Library") {
+                    NavigationLink { BrowseStatusView(title: "Learned", records: learnedRecords, dependencies: dependencies) } label: { Label("Learned", systemImage: "checkmark.circle") }
+                    NavigationLink { BrowseStatusView(title: "Favorites", records: favoriteRecords, dependencies: dependencies) } label: { Label("Favorites", systemImage: "star") }
+                    NavigationLink { BrowseStatusView(title: "Review Later", records: reviewLaterRecords, dependencies: dependencies) } label: { Label("Review Later", systemImage: "clock") }
                 }
             }
             .navigationTitle("Browse")
-            .navigationBarTitleDisplayMode(.inline)
         }
+        .scrollContentBackground(.hidden)
+        .background(ShellStyle.paper.ignoresSafeArea())
+        .tint(ShellStyle.cinnabar)
     }
 
-    /// Curated browse row with progress and recognition context.
-    private func browseRow(_ record: SharedCharacterRecord) -> some View {
-        HStack(alignment: .center, spacing: 12) {
-            SymbolPictogramView(recordID: record.id, fallbackCharacter: record.coreCharacter)
-                .frame(width: 88, height: 88)
-
-            VStack(alignment: .leading, spacing: 4) {
-                HStack {
-                    Text(record.coreCharacter)
-                        .font(.system(size: 42, weight: .regular, design: .serif))
-                    Text(statusTitle(for: record))
-                        .font(.caption.weight(.semibold))
-                        .foregroundStyle(Color.green)
+    /// Character selections always switch to the canonical Symbol root.
+    @ViewBuilder
+    private func characterRow(_ record: SharedCharacterRecord, position: Bool = false) -> some View {
+        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+            CharacterTile(
+                record: record,
+                userState: userStateStore.state.lessonStates[record.id],
+                action: {
+                    dependencies.navigationState.openSymbol(record.id, intent: position ? .resume : .view)
                 }
-                Text(record.coreSharedMeaning.capitalized)
-                    .font(.headline)
-                Text(record.recognitionTakeaway)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                    .lineLimit(2)
+            )
+            if position, let saved = userStateStore.state.lessonStates[record.id]?.lastPosition {
+                Text("Resume at \(saved.stageID ?? saved.section.rawValue)")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+                    .padding(.leading, AppSpacing.spaceMd)
             }
-            Spacer()
-            Image(systemName: "arrow.right.circle.fill")
-                .foregroundStyle(Color.green)
         }
-        .padding(12)
-        .background(Color(red: 0.99, green: 0.96, blue: 0.88))
-        .overlay(
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(Color.brown.opacity(0.25), lineWidth: 1)
-        )
-        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
-    /// Local progress label for a record.
-    private func statusTitle(for record: SharedCharacterRecord) -> String {
-        userStateStore.state.lessonStates[record.id]?.progressStatus.rawValue ?? LessonProgressStatus.unseen.rawValue
-    }
+    private var inProgressRecords: [SharedCharacterRecord] { records(with: .inProgress) }
+    private var learnedRecords: [SharedCharacterRecord] { records(with: .learned) }
+    private var favoriteRecords: [SharedCharacterRecord] { dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.isStarred == true } }
+    private var reviewLaterRecords: [SharedCharacterRecord] { dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.isReviewLater == true } }
 
-    private var inProgressRecords: [SharedCharacterRecord] {
-        dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.progressStatus == .inProgress }
-    }
-
-    private var learnedRecords: [SharedCharacterRecord] {
-        dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.progressStatus == .learned }
+    private func records(with status: LessonProgressStatus) -> [SharedCharacterRecord] {
+        dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.progressStatus == status }
     }
 }
 
@@ -120,14 +90,17 @@ struct BrowseStatusView: View {
                 ContentUnavailableView("Nothing here yet", systemImage: "tray", description: Text("No Shared Characters match this collection."))
             } else {
                 ForEach(records) { record in
-                    Button {
-                        dependencies.navigationState.openSymbol(LessonRoute(sharedCharacterID: record.id, startingPosition: nil))
-                    } label: {
-                        Label("\(record.coreCharacter)  \(record.coreSharedMeaning)", systemImage: "character")
-                    }
+                    CharacterTile(
+                        record: record,
+                        userState: dependencies.userStateStore.state.lessonStates[record.id],
+                        action: { dependencies.navigationState.openSymbol(record.id, intent: .view) }
+                    )
                 }
             }
         }
         .navigationTitle(title)
+        .scrollContentBackground(.hidden)
+        .background(ShellStyle.paper.ignoresSafeArea())
+        .tint(ShellStyle.cinnabar)
     }
 }

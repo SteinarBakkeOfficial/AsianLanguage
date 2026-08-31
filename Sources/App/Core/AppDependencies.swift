@@ -95,12 +95,43 @@ struct AppDependencies {
 /// Shared root navigation state used by Home, Browse, Search, and Collections.
 final class AppNavigationState: ObservableObject {
     @Published var selectedTab: AppTab = .home
+    /// The Symbol currently selected by the learner, which may differ from Home's active journey.
+    @Published var selectedSymbolID: String?
+    /// Explicit opening intent consumed by the canonical Symbol root.
+    @Published var symbolOpenIntent: SymbolOpenIntent?
     @Published var symbolRoute: LessonRoute?
 
-    /// Opens the canonical Symbol destination from any discovery surface.
+    /// Opens every Shared Character through the one canonical Symbol root.
+    func openSymbol(_ symbolID: String, intent: SymbolOpenIntent = .view) {
+        selectedSymbolID = symbolID
+        symbolOpenIntent = intent
+        symbolRoute = LessonRoute(sharedCharacterID: symbolID, startingPosition: intent.startingPosition)
+        selectedTab = .symbol
+    }
+
+    /// Compatibility adapter for existing callers while routes migrate to the shared router API.
     func openSymbol(_ route: LessonRoute) {
+        selectedSymbolID = route.sharedCharacterID
+        symbolOpenIntent = route.startingPosition.map { .stage($0.stageID ?? "origin") } ?? .view
         symbolRoute = route
         selectedTab = .symbol
+    }
+}
+
+/// Semantic reason a discovery surface opened a Shared Character.
+enum SymbolOpenIntent: Hashable {
+    case start
+    case resume
+    case view
+    case review
+    case stage(String)
+
+    var startingPosition: SymbolJourneyPosition? {
+        switch self {
+        case .start: return .origin
+        case .resume, .view, .review: return nil
+        case .stage(let stageID): return SymbolJourneyPosition(section: .evolution, stageID: stageID)
+        }
     }
 }
 

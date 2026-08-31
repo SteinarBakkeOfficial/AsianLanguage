@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Educational reconstruction of a central flame rising outward">
+  <defs>
+    <radialGradient id="field" cx="50%" cy="44%" r="70%">
+      <stop offset="0%" stop-color="#FFF8ED"/>
+      <stop offset="100%" stop-color="#EADBC7"/>
+    </radialGradient>
+    <linearGradient id="flame" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#963825"/>
+      <stop offset="55%" stop-color="#B34732"/>
+      <stop offset="100%" stop-color="#D88458"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="48" fill="url(#field)"/>
+  <path d="M256 422 C198 394 168 349 181 301 C190 267 219 251 226 209 C265 237 276 272 267 306 C290 288 302 263 298 231 C343 273 364 321 344 363 C329 395 296 415 256 422Z" fill="url(#flame)"/>
+  <path d="M256 386 C229 369 218 344 226 320 C233 299 250 288 255 263 C279 289 286 316 278 341 C293 330 300 316 299 299 C319 326 321 353 308 371 C296 388 278 394 256 386Z" fill="#F5D5A0"/>
+  <path d="M177 370 C151 348 145 321 155 294 C164 271 184 257 190 230 C211 259 213 285 202 309 C216 302 226 290 230 275 C242 306 234 335 214 354 C204 364 192 369 177 370Z" fill="#C25C3E" opacity=".72"/>
+  <path d="M335 370 C361 348 367 321 357 294 C348 271 328 257 322 230 C301 259 299 285 310 309 C296 302 286 290 282 275 C270 306 278 335 298 354 C308 364 320 369 335 370Z" fill="#C25C3E" opacity=".72"/>
+  <path d="M144 431 C192 411 320 411 368 431" fill="none" stroke="#8F735A" stroke-width="6" stroke-linecap="round" opacity=".65"/>
+</svg>

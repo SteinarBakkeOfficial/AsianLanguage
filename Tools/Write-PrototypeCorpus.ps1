@@ -119,6 +119,7 @@ function New-Stage {
     label = $Label
     form = $(if ($Stage -eq "regular") { $Record.char } else { $null })
     assetRef = $(if ($Stage -eq "regular") { "Assets/PrototypeVisuals/$($Record.id)-regular.svg" } else { $historicalAssetRef })
+    availabilityState = $(if ($Stage -eq "regular" -or $null -ne $historicalAssetRef) { "available" } else { "unavailableAsset" })
     changeNoteFromPrevious = $ChangeNote
     certainty = $(if ($Stage -eq "regular") { "high" } else { "medium" })
     sourceIds = @($SourceIds)

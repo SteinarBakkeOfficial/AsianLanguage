@@ -1,109 +1,247 @@
 import SwiftUI
 import UIKit
+import WebKit
 
 /// Data-driven horizontal Evolution Stage navigation for one Symbol Journey.
 struct CharacterEvolutionView: View {
     let record: SharedCharacterRecord
     let focusSelection: FocusTrackSelection
+    let onAdvance: () -> Void
     @Binding var selectedStageID: String
 
-    private var stages: [HistoricalStage] { record.history.stages }
+    /// Keeps explicit editorial omissions out of the primary journey while preserving asset gaps as visible states.
+    private var stages: [HistoricalStage] {
+        record.history.stages.filter {
+            $0.availabilityState != .unsupportedStage && $0.availabilityState != .intentionallyOmitted
+        }
+    }
+
+    /// Origin plus only the stages supplied by the record; no stage slots are invented here.
+    private var journeyIDs: [String] {
+        var ids = ["origin"]
+        ids.append(contentsOf: stages.map(\.stage).filter { $0 != "origin" && $0 != "modernForms" && $0 != "today" })
+        ids.append("today")
+        return ids.enumerated().reduce(into: [String]()) { result, item in
+            if !result.contains(item.element) { result.append(item.element) }
+        }
+    }
+
+    private var currentIndex: Int {
+        journeyIDs.firstIndex(of: selectedStageID) ?? 0
+    }
+
+    private var currentLabel: String {
+        if selectedStageID == "origin" { return "Origin" }
+        if selectedStageID == "today" { return "Today" }
+        return stages.first(where: { $0.stage == selectedStageID })?.label ?? selectedStageID
+    }
+
+    private var nextLabel: String? {
+        guard currentIndex + 1 < journeyIDs.count else { return nil }
+        let nextID = journeyIDs[currentIndex + 1]
+        if nextID == "today" { return "Today" }
+        return stages.first(where: { $0.stage == nextID })?.label ?? nextID
+    }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(spacing: AppSpacing.spaceMd) {
             TabView(selection: $selectedStageID) {
                 originPage.tag("origin")
                 ForEach(stages, id: \.stage) { stage in
                     historicalPage(stage).tag(stage.stage)
                 }
+                todayPlaceholder.tag("today")
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
-            .frame(minHeight: 360)
+            .frame(maxHeight: .infinity)
 
             stageNavigator
         }
-        .onChange(of: selectedStageID) { _, newValue in
-            guard !newValue.isEmpty else { return }
-        }
+        .tint(AppColors.accentPrimary)
+        .accessibilityElement(children: .contain)
+        .accessibilityLabel("Historical journey for \(record.coreSharedMeaning)")
     }
 
-    /// First page for the real-world idea and earliest defensible origin content.
+    /// First page begins with the real-world concept and deliberately does not reveal a modern glyph.
     private var originPage: some View {
-        stagePage(title: "Origin", subtitle: record.history.origin?.concept ?? record.coreSharedMeaning.capitalized) {
-            if let originAsset = record.history.origin?.asset {
-                HistoricalAssetView(metadata: originAsset)
-            } else {
-                missingAssetView("Origin visual not yet sourced")
+        journeyPage {
+            stageHeader(overline: "ORIGIN", title: record.history.origin?.concept ?? record.coreSharedMeaning.capitalized, subtitle: nil)
+            ArtifactField {
+                if let originAsset = record.history.origin?.asset {
+                    HistoricalAssetView(metadata: originAsset)
+                } else {
+                    HistoricalMissingState(
+                        title: "Origin visual not yet included",
+                        detail: "This concept visual is not currently available in the approved historical corpus."
+                    )
+                }
             }
             Text(record.history.origin?.explanation ?? record.history.originAnchor)
-                .font(.subheadline)
-            Text("The origin visual and explanation are draft content until source-backed editorial material is approved.")
-                .font(.caption)
-                .foregroundStyle(.secondary)
+                .font(AppTypography.body)
+                .foregroundStyle(AppColors.textPrimary)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: 320)
         }
     }
 
-    /// One historical stage page with only the content attached to that exact stage.
+    /// One historical page shows only the evidence and explanation attached to that stage.
     private func historicalPage(_ stage: HistoricalStage) -> some View {
-        stagePage(title: stage.label, subtitle: stage.stage) {
-            if let metadata = stage.assetMetadata {
-                HistoricalAssetView(metadata: metadata)
-            } else if let assetRef = stage.assetRef {
-                HistoricalAssetView(assetRef: assetRef)
-            } else {
-                missingAssetView("Historical visual not yet sourced")
+        journeyPage {
+            stageHeader(
+                overline: stage.label.uppercased(),
+                title: stage.label,
+                subtitle: stage.editorialConfidence.displayName
+            )
+            ArtifactField {
+                if stage.availabilityState == .unavailableAsset {
+                    HistoricalMissingState()
+                } else if let metadata = stage.assetMetadata {
+                    HistoricalAssetView(metadata: metadata)
+                } else if let assetRef = stage.assetRef {
+                    HistoricalAssetView(assetRef: assetRef)
+                } else {
+                    // Historical visual unavailable is an intentional editorial state, never a modern fallback.
+                    HistoricalMissingState()
+                }
             }
-            Text(stage.stageExplanation ?? stage.changeNoteFromPrevious ?? "No stage-specific explanation is available yet.")
-                .font(.subheadline)
-            Text("Certainty: \(stage.certainty.capitalized)")
-                .font(.caption)
-                .foregroundStyle(.secondary)
+            Text(stage.stageExplanation ?? stage.changeNoteFromPrevious ?? "Stage-specific explanation is pending editorial review.")
+                .font(AppTypography.body)
+                .foregroundStyle(AppColors.textPrimary)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: 320)
             if let sound = stage.historicalSound {
-                Text(sound).font(.caption).foregroundStyle(.secondary)
+                Text(sound)
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
             }
         }
     }
 
-    private func stagePage<Content: View>(title: String, subtitle: String, @ViewBuilder content: () -> Content) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(title).font(.title3.weight(.semibold))
-            Text(subtitle).font(.caption).foregroundStyle(.secondary)
-            content()
+    /// Today is owned by the same horizontal journey and is rendered by the canonical host.
+    private var todayPlaceholder: some View {
+        journeyPage {
+            stageHeader(overline: "TODAY", title: record.coreCharacter, subtitle: "Modern forms")
+            Text("Continue to Today to see how this Shared Character connects across your selected language tracks.")
+                .font(AppTypography.body)
+                .foregroundStyle(AppColors.textSecondary)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: 320)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
-    /// Fixed/floating stage controls; final visual treatment comes from the Fire design.
+    private func journeyPage<Content: View>(@ViewBuilder content: () -> Content) -> some View {
+        ScrollView {
+            VStack(spacing: AppSpacing.spaceLg) {
+                content()
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.horizontal, AppSpacing.spacePage)
+            .padding(.vertical, AppSpacing.spaceLg)
+        }
+        .scrollIndicators(.hidden)
+    }
+
+    private func stageHeader(overline: String, title: String, subtitle: String?) -> some View {
+        VStack(spacing: AppSpacing.spaceXs) {
+            Text(overline)
+                .font(AppTypography.conceptLabel)
+                .tracking(1.4)
+                .foregroundStyle(AppColors.textSecondary)
+            Text(title)
+                .font(AppTypography.exhibitHeading)
+                .foregroundStyle(AppColors.textPrimary)
+                .multilineTextAlignment(.center)
+            if let subtitle {
+                Text(subtitle)
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
+        }
+    }
+
+    /// The rail exposes position, direct access, and the next stage without becoming a segmented control.
     private var stageNavigator: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 8) {
-                stageButton(id: "origin", title: "Origin")
-                ForEach(stages, id: \.stage) { stage in
-                    stageButton(id: stage.stage, title: stage.label)
+        VStack(spacing: AppSpacing.spaceXs) {
+            HStack {
+                Text(currentLabel)
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textPrimary)
+                Spacer()
+                Text("\(currentIndex + 1) of \(journeyIDs.count)")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 0) {
+                    ForEach(Array(journeyIDs.enumerated()), id: \.element) { index, id in
+                        Button {
+                            selectedStageID = id
+                        } label: {
+                            Circle()
+                                .fill(index == currentIndex ? AppColors.accentPrimary : AppColors.separator)
+                                .frame(width: index == currentIndex ? 10 : 8, height: index == currentIndex ? 10 : 8)
+                                .frame(width: 44, height: 44)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("\(label(for: id)), stage \(index + 1) of \(journeyIDs.count)")
+                        .accessibilityAddTraits(index == currentIndex ? [.isSelected] : [])
+
+                        if index < journeyIDs.count - 1 {
+                            Rectangle()
+                                .fill(AppColors.separator)
+                                .frame(minWidth: 20, maxWidth: 52, height: 1)
+                                .accessibilityHidden(true)
+                        }
+                    }
+                }
+                .frame(maxWidth: .infinity)
+            }
+
+            HStack {
+                if let nextLabel {
+                    Text("Next: \(nextLabel)")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                    Spacer()
+                    Button("Next") { onAdvance() }
+                        .font(AppTypography.metadata.weight(.semibold))
+                        .foregroundStyle(AppColors.accentPrimary)
+                        .frame(minWidth: 44, minHeight: 44)
+                } else {
+                    Text("Journey endpoint")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                    Spacer()
+                    Button("Continue") { onAdvance() }
+                        .font(AppTypography.metadata.weight(.semibold))
+                        .foregroundStyle(AppColors.accentPrimary)
+                        .frame(minWidth: 44, minHeight: 44)
                 }
             }
         }
+        .padding(.horizontal, AppSpacing.spacePage)
+        .padding(.bottom, AppSpacing.spaceXs)
+        .background(AppColors.appBackground)
+        .accessibilityElement(children: .contain)
+        .accessibilityLabel("\(currentLabel), stage \(currentIndex + 1) of \(journeyIDs.count)")
     }
 
-    private func stageButton(id: String, title: String) -> some View {
-        Button(title) { selectedStageID = id }
-            .buttonStyle(.bordered)
-            .tint(selectedStageID == id ? .accentColor : .secondary)
-    }
-
-    private func missingAssetView(_ message: String) -> some View {
-        ContentUnavailableView(message, systemImage: "photo")
-            .frame(maxWidth: .infinity, minHeight: 150)
+    private func label(for id: String) -> String {
+        if id == "origin" { return "Origin" }
+        if id == "today" { return "Today" }
+        return stages.first(where: { $0.stage == id })?.label ?? id
     }
 }
 
 /// Resolution result for a bundled asset reference.
 enum HistoricalAssetResolution: Equatable {
     case bundledImage(URL)
+    case bundledSVG(URL)
     case unavailable(String)
 }
 
-/// Resolves only actually renderable bundled images; source SVGs need compiled display assets.
+/// Resolves local raster and SVG assets; remote URLs are never accepted for lesson rendering.
 struct BundledHistoricalAssetResolver {
     let bundle: Bundle
 
@@ -111,12 +249,15 @@ struct BundledHistoricalAssetResolver {
         guard let assetRef, !assetRef.isEmpty else { return .unavailable("No bundled asset reference") }
         let relativePath = assetRef.replacingOccurrences(of: "Assets/", with: "")
         let pathExtension = URL(fileURLWithPath: relativePath).pathExtension.lowercased()
-        guard ["png", "jpg", "jpeg", "heic"].contains(pathExtension) else {
+        guard ["png", "jpg", "jpeg", "heic", "svg"].contains(pathExtension) else {
             return .unavailable("Asset requires a compiled iOS image representation")
         }
         let path = relativePath.dropLast(pathExtension.count + 1)
         guard let url = bundle.url(forResource: String(path), withExtension: pathExtension) else {
             return .unavailable("Bundled asset not found")
+        }
+        if pathExtension == "svg" {
+            return .bundledSVG(url)
         }
         return .bundledImage(url)
     }
@@ -125,13 +266,16 @@ struct BundledHistoricalAssetResolver {
 /// Renders a source-backed compiled image or an explicit missing-asset state.
 struct HistoricalAssetView: View {
     let resolution: HistoricalAssetResolution
+    let accessibilityDescription: String
 
     init(metadata: HistoricalAssetMetadata) {
         self.resolution = BundledHistoricalAssetResolver(bundle: .main).resolve(metadata.assetRef)
+        self.accessibilityDescription = metadata.accessibilityDescription ?? "Historical character artwork"
     }
 
     init(assetRef: String) {
         self.resolution = BundledHistoricalAssetResolver(bundle: .main).resolve(assetRef)
+        self.accessibilityDescription = "Historical character artwork"
     }
 
     var body: some View {
@@ -141,14 +285,36 @@ struct HistoricalAssetView: View {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
-                    .frame(maxWidth: .infinity, minHeight: 150)
+                    .frame(maxWidth: .infinity, minHeight: 220)
+                    .accessibilityLabel(accessibilityDescription)
             } else {
-                ContentUnavailableView("Historical visual unavailable", systemImage: "photo.badge.exclamationmark")
-                    .frame(maxWidth: .infinity, minHeight: 150)
+                HistoricalMissingState(title: "Historical visual unavailable")
             }
-        case .unavailable(let reason):
-            ContentUnavailableView("Historical visual unavailable", systemImage: "photo.badge.exclamationmark", description: Text(reason))
-                .frame(maxWidth: .infinity, minHeight: 150)
+        case .bundledSVG(let url):
+            BundledSVGView(url: url)
+                .frame(maxWidth: .infinity, minHeight: 220)
+                .accessibilityLabel(accessibilityDescription)
+        case .unavailable:
+            HistoricalMissingState(title: "Historical visual unavailable")
         }
+    }
+}
+
+/// Displays a local SVG without allowing it to become a runtime network dependency.
+private struct BundledSVGView: UIViewRepresentable {
+    let url: URL
+
+    func makeUIView(context: Context) -> WKWebView {
+        let webView = WKWebView(frame: .zero)
+        webView.isOpaque = false
+        webView.backgroundColor = .clear
+        webView.scrollView.isScrollEnabled = false
+        webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+        return webView
+    }
+
+    func updateUIView(_ webView: WKWebView, context: Context) {
+        guard webView.url != url else { return }
+        webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
     }
 }

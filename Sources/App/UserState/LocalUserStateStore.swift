@@ -64,6 +64,27 @@ final class LocalUserStateStore: ObservableObject {
 
     /// Marks the minimal onboarding gate complete without requiring an account.
     func completeOnboarding() {
+        state.hasSeenIntro = true
+        state.hasChosenFocusLanguages = true
+        state.hasCompletedOnboarding = true
+        save()
+    }
+
+    /// Records that the learner has seen the visual premise without completing setup.
+    func markIntroSeen() {
+        state.hasSeenIntro = true
+        save()
+    }
+
+    /// Persists onboarding focus setup while retaining all four tracks by default.
+    func markFocusLanguagesChosen() {
+        state.hasChosenFocusLanguages = true
+        save()
+    }
+
+    /// Marks the first canonical Symbol as started and completes onboarding.
+    func markFirstSymbolStarted() {
+        state.hasStartedFirstSymbol = true
         state.hasCompletedOnboarding = true
         save()
     }
@@ -76,6 +97,12 @@ final class LocalUserStateStore: ObservableObject {
         var lessonState = state.lessonStates[sharedCharacterID] ?? LessonUserState(sharedCharacterID: sharedCharacterID)
         mutate(&lessonState)
         state.lessonStates[sharedCharacterID] = lessonState
+        if lessonState.progressStatus == .inProgress {
+            state.activeJourneySymbolID = sharedCharacterID
+        } else if lessonState.progressStatus == .learned,
+                  state.activeJourneySymbolID == sharedCharacterID {
+            state.activeJourneySymbolID = nil
+        }
         save()
     }
 
@@ -83,6 +110,7 @@ final class LocalUserStateStore: ObservableObject {
     func resetLearningProgress() {
         state.lessonStates = [:]
         state.currentCharacterID = nil
+        state.activeJourneySymbolID = nil
         save()
     }
 

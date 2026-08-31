@@ -10,8 +10,8 @@ struct SearchView: View {
 
     /// Search text entered by the learner.
     @State private var query = ""
+    @Environment(\.dismiss) private var dismiss
 
-    /// Creates Search with observed access to local progress badges.
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
         _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
@@ -29,72 +29,77 @@ struct SearchView: View {
 
     var body: some View {
         ScrollView {
-                VStack(alignment: .leading, spacing: 14) {
-                    Text("Search")
-                        .font(.largeTitle.weight(.bold))
-                    Text("Find a symbol by form, meaning, or sound, then open its evolution board.")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+            VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
+                AppSearchField(
+                    text: $query,
+                    prompt: "Character, meaning, or reading",
+                    onCancel: { dismiss() }
+                )
 
-                    if searchResults.isEmpty {
-                        ContentUnavailableView(
-                            query.isEmpty ? "Search Shared Characters" : "No results",
-                            systemImage: "magnifyingglass",
-                            description: Text("Search by character form, English meaning, or Mandarin, Japanese, and Korean readings.")
-                        )
-                        .frame(maxWidth: .infinity)
-                        .padding(.top, 40)
-                    } else {
-                        ForEach(searchResults) { record in
-                            Button {
-                                dependencies.navigationState.openSymbol(
-                                    LessonRoute(sharedCharacterID: record.id, startingPosition: nil)
-                                )
-                            } label: {
-                                resultRow(record)
-                            }
-                            .buttonStyle(.plain)
+                if searchResults.isEmpty {
+                    VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                        Text(query.isEmpty ? "Search Shared Characters" : "No characters found")
+                            .font(AppTypography.exhibitHeading)
+                            .foregroundStyle(AppColors.textPrimary)
+                        Text("Try another character, English meaning, reading, or romanization.")
+                            .font(AppTypography.body)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.vertical, AppSpacing.spaceSection)
+                } else {
+                    ForEach(searchResults) { record in
+                        Button {
+                            dependencies.navigationState.openSymbol(
+                                LessonRoute(sharedCharacterID: record.id, startingPosition: nil)
+                            )
+                        } label: {
+                            resultRow(record)
                         }
+                        .buttonStyle(.plain)
                     }
                 }
-                .padding()
             }
-            .searchable(text: $query, prompt: "Character, gloss, or reading")
-            .navigationTitle("Search")
-            .navigationBarTitleDisplayMode(.inline)
+            .padding(AppSpacing.spacePage)
+        }
+        .scrollIndicators(.hidden)
+        .navigationTitle("Search")
+        .navigationBarTitleDisplayMode(.inline)
+        .background(AppColors.appBackground.ignoresSafeArea())
+        .tint(AppColors.accentPrimary)
     }
 
-    /// Search result row with enough context to avoid a raw catalog feel.
+    /// Text-first result hierarchy keeps the character prominent without a fake historical thumbnail.
     private func resultRow(_ record: SharedCharacterRecord) -> some View {
-        HStack(alignment: .center, spacing: 12) {
-            SymbolPictogramView(recordID: record.id, fallbackCharacter: record.coreCharacter)
-                .frame(width: 82, height: 82)
-
-            VStack(alignment: .leading, spacing: 4) {
-                HStack {
-                    Text(record.coreCharacter)
-                        .font(.system(size: 40, weight: .regular, design: .serif))
-                    Text(statusTitle(for: record))
-                        .font(.caption.weight(.semibold))
-                        .foregroundStyle(Color.green)
-                }
+        VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
+            HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
+                Text(record.coreCharacter)
+                    .font(.system(size: 44, weight: .regular, design: .serif))
+                    .foregroundStyle(AppColors.textPrimary)
                 Text(record.coreSharedMeaning.capitalized)
-                    .font(.headline)
-                Text(readingSummary(for: record))
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .font(AppTypography.body.weight(.semibold))
+                    .foregroundStyle(AppColors.textPrimary)
+                Spacer(minLength: 0)
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(AppColors.textTertiary)
+                    .accessibilityHidden(true)
             }
-            Spacer()
-            Image(systemName: "arrow.right.circle.fill")
-                .foregroundStyle(Color.green)
+            if let matchDescription = matchDescription(for: record) {
+                Text(matchDescription)
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
+            Text(statusTitle(for: record))
+                .font(AppTypography.caption)
+                .foregroundStyle(statusColor(for: record))
         }
-        .padding(12)
-        .background(Color(.secondarySystemBackground))
-        .overlay(
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(Color.green.opacity(0.22), lineWidth: 1)
-        )
-        .clipShape(RoundedRectangle(cornerRadius: 8))
+        .padding(.vertical, AppSpacing.spaceSm)
+        .overlay(alignment: .bottom) {
+            Divider().overlay(AppColors.separator)
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("\(record.coreCharacter), \(record.coreSharedMeaning), \(matchDescription(for: record) ?? ""), \(statusTitle(for: record))")
     }
 
     /// Compact reading summary for quick recognition while browsing results.
@@ -105,8 +110,31 @@ struct SearchView: View {
         return [mandarin, japanese, korean].compactMap { $0 }.joined(separator: " / ")
     }
 
-    /// Local progress label for a record.
+    /// Explains a reading match only when the query is more useful than the plain gloss result.
+    private func matchDescription(for record: SharedCharacterRecord) -> String? {
+        let normalized = query.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        guard !normalized.isEmpty else { return readingSummary(for: record).isEmpty ? nil : readingSummary(for: record) }
+        let matches: [(String, [CharacterReading])] = [
+            ("Mandarin", record.focusCoverage.simplifiedChinese.readings),
+            ("Traditional Chinese", record.focusCoverage.traditionalChinese.readings),
+            ("Japanese", record.focusCoverage.japanese.readings),
+            ("Korean", record.focusCoverage.korean.readings)
+        ]
+        for (label, readings) in matches where readings.contains(where: { $0.value.localizedCaseInsensitiveContains(normalized) }) {
+            return "\(label) · \(readings.first?.value ?? "")"
+        }
+        return readingSummary(for: record).isEmpty ? nil : readingSummary(for: record)
+    }
+
     private func statusTitle(for record: SharedCharacterRecord) -> String {
-        userStateStore.state.lessonStates[record.id]?.progressStatus.rawValue ?? LessonProgressStatus.unseen.rawValue
+        switch userStateStore.state.lessonStates[record.id]?.progressStatus {
+        case .learned: return "Learned"
+        case .inProgress: return "In progress"
+        default: return "Not started"
+        }
+    }
+
+    private func statusColor(for record: SharedCharacterRecord) -> Color {
+        userStateStore.state.lessonStates[record.id]?.progressStatus == .learned ? AppColors.learned : AppColors.textSecondary
     }
 }

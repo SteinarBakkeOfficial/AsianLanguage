@@ -1,0 +1,71 @@
+[
+  {
+    "stage": "oracleBone",
+    "availabilityState": "unavailableAsset",
+    "contentClass": null,
+    "sourceIds": [
+      "source-oracle-bone-script",
+      "source-character-classification",
+      "source-evobc",
+      "source-radical-42"
+    ],
+    "originalAssetPath": null,
+    "appAssetPath": null,
+    "runtimeAssetRef": null,
+    "localAssetExists": false
+  },
+  {
+    "stage": "bronze",
+    "availabilityState": "unavailableAsset",
+    "contentClass": null,
+    "sourceIds": [
+      "source-evobc",
+      "source-radical-42"
+    ],
+    "originalAssetPath": null,
+    "appAssetPath": null,
+    "runtimeAssetRef": null,
+    "localAssetExists": false
+  },
+  {
+    "stage": "seal",
+    "availabilityState": "unavailableAsset",
+    "contentClass": null,
+    "sourceIds": [
+      "source-seal-script",
+      "source-evobc",
+      "source-radical-42"
+    ],
+    "originalAssetPath": null,
+    "appAssetPath": null,
+    "runtimeAssetRef": null,
+    "localAssetExists": false
+  },
+  {
+    "stage": "clerical",
+    "availabilityState": "unavailableAsset",
+    "contentClass": null,
+    "sourceIds": [
+      "source-clerical-script",
+      "source-evobc",
+      "source-radical-42"
+    ],
+    "originalAssetPath": null,
+    "appAssetPath": null,
+    "runtimeAssetRef": null,
+    "localAssetExists": false
+  },
+  {
+    "stage": "regular",
+    "availabilityState": "available",
+    "contentClass": "educationalReconstruction",
+    "sourceIds": [
+      "source-radical-42",
+      "source-prototype-redraw"
+    ],
+    "originalAssetPath": "content/symbols/small-u5C0F/historical/regular/original/source-asset.svg",
+    "appAssetPath": "content/symbols/small-u5C0F/historical/regular/app/glyph.svg",
+    "runtimeAssetRef": "Assets/PrototypeVisuals/small-regular.svg",
+    "localAssetExists": true
+  }
+]

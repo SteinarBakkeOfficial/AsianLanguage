@@ -20,6 +20,32 @@ struct SharedCharacterRecord: Decodable, Identifiable, Hashable {
     /// Draft/review/published state used by validation and content tooling.
     let publicationStatus: String
 
+    /// Optional editorial metadata kept alongside the lesson record for human review.
+    let unicodeCodePoint: String?
+
+    /// Optional alternate modern forms used by editorial and packaging tools.
+    let simplifiedForm: String?
+    let traditionalForm: String?
+    let additionalMeanings: [String]?
+
+    /// Optional pedagogical classification; absence means the formation is not yet classified.
+    let formationType: SymbolFormationType?
+
+    /// Editable image-composition guidance for educational reconstructions.
+    let visualTeachingNotes: [String]?
+
+    /// Stable references back to the human-editable content folder and documents.
+    let contentFolder: String?
+    let learnerCopyPath: String?
+    let researchNotesPath: String?
+    let reviewPath: String?
+
+    /// Source conflicts remain explicit so generation cannot silently approve disagreement.
+    let sourceConflicts: [SymbolSourceConflict]?
+
+    /// Normalized editorial state; legacy publicationStatus remains source-compatible.
+    let editorialStatus: SymbolEditorialStatus?
+
     /// Editorial teaching order; low values are shown earlier.
     let teachingSequence: Int
 
@@ -53,6 +79,67 @@ struct SharedCharacterRecord: Decodable, Identifiable, Hashable {
             actionTitle: "New Symbol"
         )
     }
+
+    /// Maps legacy publication values into the content workflow vocabulary.
+    var normalizedEditorialStatus: SymbolEditorialStatus {
+        editorialStatus ?? SymbolEditorialStatus.fromLegacy(publicationStatus)
+    }
+}
+
+/// Pedagogical formation modes supported by the Symbol content workflow.
+enum SymbolFormationType: String, Codable, Hashable {
+    case pictograph
+    case simpleIdeograph
+    case compoundIdeograph
+    case phonoSemantic
+    case phoneticLoan
+    case laterFormation
+    case uncertain
+}
+
+/// Human review state for a Symbol record; generated content never defaults to approved.
+enum SymbolEditorialStatus: String, Codable, Hashable {
+    case draft
+    case needsReview
+    case approved
+    case rejected
+    case needsSources
+    case needsArtwork
+    case needsCopyEdit
+
+    /// Keeps existing draft/review/published records readable during migration.
+    static func fromLegacy(_ value: String) -> SymbolEditorialStatus {
+        switch value.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() {
+        case "review", "needsreview": return .needsReview
+        case "published", "approved": return .approved
+        case "rejected": return .rejected
+        default: return .draft
+        }
+    }
+}
+
+/// A documented disagreement between source-backed claims.
+struct SymbolSourceConflict: Decodable, Hashable {
+    let topic: String
+    let claims: [SourceConflictClaim]
+    let requiresHumanReview: Bool
+}
+
+/// One source's claim within an explicit Symbol conflict.
+struct SourceConflictClaim: Decodable, Hashable {
+    let sourceID: String
+    let claim: String
+
+    private enum CodingKeys: String, CodingKey {
+        case sourceID = "source"
+        case claim
+    }
+}
+
+/// Distinguishes evidence from educational reconstruction in asset metadata.
+enum HistoricalAssetContentClass: String, Codable, Hashable {
+    case historicalEvidence
+    case educationalReconstruction
 }
 
 /// Required modern focus-track coverage for a Shared Character record.
@@ -176,11 +263,40 @@ struct CharacterReading: Decodable, Hashable {
     }
 }
 
-/// Small editorial confidence vocabulary; missing assets remain a separate availability concern.
+/// Editorial confidence vocabulary; missing assets remain a separate availability concern.
 enum EditorialConfidence: String, Codable, Hashable {
     case supported
     case qualified
     case disputed
+    case missing
+
+    /// Maps legacy draft certainty labels into the published confidence vocabulary.
+    static func fromLegacy(_ value: String) -> EditorialConfidence {
+        switch value.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() {
+        case "high", "supported", "strongly supported": return .supported
+        case "disputed": return .disputed
+        case "missing": return .missing
+        default: return .qualified
+        }
+    }
+
+    /// Human-readable label for calm scholarly metadata, not a warning badge.
+    var displayName: String {
+        switch self {
+        case .supported: return "Strongly supported"
+        case .qualified: return "Qualified interpretation"
+        case .disputed: return "Disputed interpretation"
+        case .missing: return "Evidence incomplete"
+        }
+    }
+}
+
+/// Separates a stage's editorial inclusion decision from its scholarly confidence.
+enum HistoricalAvailabilityState: String, Codable, Hashable {
+    case available
+    case unavailableAsset
+    case unsupportedStage
+    case intentionallyOmitted
 }
 
 /// Presentation-facing reasons for content being unavailable or intentionally absent.
@@ -297,10 +413,53 @@ struct HistoricalStage: Decodable, Hashable {
 
     /// Symbol-specific explanation for this stage.
     let stageExplanation: String?
+
+    /// Explicit content availability; legacy records infer this from their asset reference.
+    let availabilityState: HistoricalAvailabilityState
+
+    /// Normalized confidence used by UI without changing legacy JSON certainty values.
+    var editorialConfidence: EditorialConfidence {
+        EditorialConfidence.fromLegacy(certainty)
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case stage, label, form, assetRef, changeNoteFromPrevious, certainty, sourceIds
+        case historicalSound, assetMetadata, introducedComponentIds, stageExplanation
+        case availabilityState
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        stage = try container.decode(String.self, forKey: .stage)
+        label = try container.decode(String.self, forKey: .label)
+        form = try container.decodeIfPresent(String.self, forKey: .form)
+        assetRef = try container.decodeIfPresent(String.self, forKey: .assetRef)
+        changeNoteFromPrevious = try container.decodeIfPresent(String.self, forKey: .changeNoteFromPrevious)
+        certainty = try container.decode(String.self, forKey: .certainty)
+        sourceIds = try container.decode([String].self, forKey: .sourceIds)
+        historicalSound = try container.decodeIfPresent(String.self, forKey: .historicalSound)
+        assetMetadata = try container.decodeIfPresent(HistoricalAssetMetadata.self, forKey: .assetMetadata)
+        introducedComponentIds = try container.decodeIfPresent([String].self, forKey: .introducedComponentIds)
+        stageExplanation = try container.decodeIfPresent(String.self, forKey: .stageExplanation)
+        availabilityState = try container.decodeIfPresent(HistoricalAvailabilityState.self, forKey: .availabilityState)
+            ?? ((assetRef == nil && assetMetadata == nil) ? .unavailableAsset : .available)
+    }
 }
 
 /// Provenance and renderability metadata for a bundled historical or origin visual.
 struct HistoricalAssetMetadata: Decodable, Hashable {
+    /// Optional identity fields retained for source and review reports.
+    let characterID: String?
+    let historicalStage: String?
+    let approximatePeriod: String?
+    let sourceInstitution: String?
+    let sourcePageURL: String?
+    let sourceAssetURL: String?
+    let catalogueReference: String?
+    let sourceDescription: String?
+    let retrievedAt: String?
+    let contentClass: HistoricalAssetContentClass?
+
     let assetRef: String
     let artifactAssetRef: String?
     let assetKind: String
@@ -310,11 +469,24 @@ struct HistoricalAssetMetadata: Decodable, Hashable {
     let readiness: String
 
     private enum CodingKeys: String, CodingKey {
+        case characterID, historicalStage, approximatePeriod, sourceInstitution
+        case sourcePageURL, sourceAssetURL, catalogueReference, sourceDescription
+        case retrievedAt, contentClass
         case assetRef, artifactAssetRef, assetKind, provenance, licenseStatus, accessibilityDescription, readiness
     }
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+        characterID = try container.decodeIfPresent(String.self, forKey: .characterID)
+        historicalStage = try container.decodeIfPresent(String.self, forKey: .historicalStage)
+        approximatePeriod = try container.decodeIfPresent(String.self, forKey: .approximatePeriod)
+        sourceInstitution = try container.decodeIfPresent(String.self, forKey: .sourceInstitution)
+        sourcePageURL = try container.decodeIfPresent(String.self, forKey: .sourcePageURL)
+        sourceAssetURL = try container.decodeIfPresent(String.self, forKey: .sourceAssetURL)
+        catalogueReference = try container.decodeIfPresent(String.self, forKey: .catalogueReference)
+        sourceDescription = try container.decodeIfPresent(String.self, forKey: .sourceDescription)
+        retrievedAt = try container.decodeIfPresent(String.self, forKey: .retrievedAt)
+        contentClass = try container.decodeIfPresent(HistoricalAssetContentClass.self, forKey: .contentClass)
         assetRef = try container.decode(String.self, forKey: .assetRef)
         artifactAssetRef = try container.decodeIfPresent(String.self, forKey: .artifactAssetRef)
         assetKind = try container.decode(String.self, forKey: .assetKind)

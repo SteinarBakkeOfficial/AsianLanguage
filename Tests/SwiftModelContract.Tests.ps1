@@ -21,6 +21,9 @@ $record = Text "Sources/App/Corpus/SharedCharacterRecord.swift"
 foreach ($field in @("let assetMetadata: HistoricalAssetMetadata?","let introducedComponentIds: [String]?","let stageExplanation: String?","let introducedAtStage: String?","let taiwanReadings: [CharacterReading]","let hongKongReadings: [CharacterReading]","let variants: [ModernFormVariant]")) {
   Assert-True $record.Contains($field) "Corpus model is missing $field."
 }
+Assert-True $record.Contains("enum HistoricalAvailabilityState") "Historical availability must be modeled separately from confidence."
+Assert-True $record.Contains("let availabilityState: HistoricalAvailabilityState") "Historical stages must expose explicit availability."
+Assert-True $record.Contains("var editorialConfidence: EditorialConfidence") "Historical confidence must be normalized for presentation."
 
 $homeText = Text "Sources/App/Home/HomeView.swift"
 Assert-True $homeText.Contains("homeRecord") "Home must resolve its display record from its route."

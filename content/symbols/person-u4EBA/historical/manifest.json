@@ -1,0 +1,71 @@
+[
+  {
+    "stage": "oracleBone",
+    "availabilityState": "available",
+    "contentClass": "historicalEvidence",
+    "sourceIds": [
+      "source-oracle-bone-script",
+      "source-character-classification",
+      "source-evobc",
+      "source-radical-9"
+    ],
+    "originalAssetPath": "content/symbols/person-u4EBA/historical/oracle/original/source-asset.svg",
+    "appAssetPath": "content/symbols/person-u4EBA/historical/oracle/app/glyph.svg",
+    "runtimeAssetRef": "Assets/HistoricalGlyphs/person-oracle.svg",
+    "localAssetExists": true
+  },
+  {
+    "stage": "bronze",
+    "availabilityState": "unavailableAsset",
+    "contentClass": null,
+    "sourceIds": [
+      "source-evobc",
+      "source-radical-9"
+    ],
+    "originalAssetPath": null,
+    "appAssetPath": null,
+    "runtimeAssetRef": null,
+    "localAssetExists": false
+  },
+  {
+    "stage": "seal",
+    "availabilityState": "available",
+    "contentClass": "historicalEvidence",
+    "sourceIds": [
+      "source-seal-script",
+      "source-evobc",
+      "source-radical-9"
+    ],
+    "originalAssetPath": "content/symbols/person-u4EBA/historical/seal/original/source-asset.svg",
+    "appAssetPath": "content/symbols/person-u4EBA/historical/seal/app/glyph.svg",
+    "runtimeAssetRef": "Assets/HistoricalGlyphs/person-seal.svg",
+    "localAssetExists": true
+  },
+  {
+    "stage": "clerical",
+    "availabilityState": "unavailableAsset",
+    "contentClass": null,
+    "sourceIds": [
+      "source-clerical-script",
+      "source-evobc",
+      "source-radical-9"
+    ],
+    "originalAssetPath": null,
+    "appAssetPath": null,
+    "runtimeAssetRef": null,
+    "localAssetExists": false
+  },
+  {
+    "stage": "regular",
+    "availabilityState": "available",
+    "contentClass": "educationalReconstruction",
+    "sourceIds": [
+      "source-radical-9",
+      "source-prototype-redraw"
+    ],
+    "originalAssetPath": "content/symbols/person-u4EBA/historical/regular/original/source-asset.svg",
+    "appAssetPath": "content/symbols/person-u4EBA/historical/regular/app/glyph.svg",
+    "runtimeAssetRef": "Assets/PrototypeVisuals/person-regular.svg",
+    "localAssetExists": true
+  }
+]

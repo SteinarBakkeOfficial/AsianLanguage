@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="paper" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#fff8ec"/>
+      <stop offset="100%" stop-color="#e8dcc8"/>
+    </radialGradient>
+    <linearGradient id="ink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#17110c"/>
+      <stop offset="100%" stop-color="#5c4632"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="48" fill="url(#paper)"/>
+  <circle cx="256" cy="238" r="158" fill="#f5ead6" stroke="#c7aa7a" stroke-width="6"/>
+  <path d="M104 418 C166 388, 344 388, 408 418" fill="none" stroke="#b89862" stroke-width="8" stroke-linecap="round"/>
+  <text x="256" y="292" text-anchor="middle" font-family="KaiTi, STKaiti, YuMincho, serif" font-size="210" font-weight="700" fill="url(#ink)">大</text>
+  <text x="256" y="462" text-anchor="middle" font-family="Avenir, Arial, sans-serif" font-size="24" fill="#6c5842">big; great</text>
+</svg>

@@ -1,5 +1,33 @@
 import SwiftUI
 
+/// Shared visual language extracted from the approved app-shell reference.
+enum ShellStyle {
+    // Compatibility aliases let transitional screens adopt semantic tokens incrementally.
+    static let paper = AppColors.appBackground
+    static let clay = AppColors.separator
+    static let ink = AppColors.textPrimary
+    static let jade = AppColors.learned
+    static let cinnabar = AppColors.accentPrimary
+    static let softSurface = AppColors.surfaceSubtle
+
+    /// Editorial serif reserved for characters, history, and exhibit headings.
+    static let editorialFont = Font.system(.title2, design: .serif)
+}
+
+/// Restrained surface treatment shared by shell cards and content rows.
+struct ShellSurface: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .background(ShellStyle.softSurface)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
+            .overlay(RoundedRectangle(cornerRadius: AppRadius.surface).stroke(AppColors.separator, lineWidth: 1))
+    }
+}
+
+extension View {
+    func shellSurface() -> some View { modifier(ShellSurface()) }
+}
+
 /// Top-level destinations available from the V1 tab shell.
 enum AppTab: Hashable, CaseIterable, Identifiable {
     case home

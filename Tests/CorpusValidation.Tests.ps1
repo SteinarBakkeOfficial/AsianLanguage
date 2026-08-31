@@ -117,6 +117,28 @@ try {
   Assert-Equal -Actual $missingChangeNoteResult.ExitCode -Expected 1 -Message "Historical stages after the first without change notes should fail validation."
   Assert-Contains -Text $missingChangeNoteResult.Output -ExpectedSubstring "Historical stage at index 1 must include changeNoteFromPrevious." -Message "Missing change-note error should be readable."
 
+  $invalidAvailabilityCorpus = Join-Path $tempRoot "invalid-availability"
+  New-Item -ItemType Directory -Path $invalidAvailabilityCorpus | Out-Null
+  $record = Get-Content -Raw (Join-Path $fixtureCorpus "tree.json") | ConvertFrom-Json
+  $record.history.stages[0] | Add-Member -NotePropertyName availabilityState -NotePropertyValue "invented" -Force
+  $record | ConvertTo-Json -Depth 20 | Set-Content -Path (Join-Path $invalidAvailabilityCorpus "tree.json") -Encoding utf8
+
+  $invalidAvailabilityResult = Invoke-Validator -CorpusPath $invalidAvailabilityCorpus
+  Assert-Equal -Actual $invalidAvailabilityResult.ExitCode -Expected 1 -Message "Unknown historical availability should fail validation."
+  Assert-Contains -Text $invalidAvailabilityResult.Output -ExpectedSubstring "has unsupported availabilityState 'invented'." -Message "Unknown availability error should be readable."
+
+  $availableWithoutAssetCorpus = Join-Path $tempRoot "available-without-asset"
+  New-Item -ItemType Directory -Path $availableWithoutAssetCorpus | Out-Null
+  $record = Get-Content -Raw (Join-Path $fixtureCorpus "tree.json") | ConvertFrom-Json
+  $record.history.stages[0] | Add-Member -NotePropertyName availabilityState -NotePropertyValue "available" -Force
+  $record.history.stages[0].assetRef = $null
+  $record.history.stages[0] | Add-Member -NotePropertyName assetMetadata -NotePropertyValue $null -Force
+  $record | ConvertTo-Json -Depth 20 | Set-Content -Path (Join-Path $availableWithoutAssetCorpus "tree.json") -Encoding utf8
+
+  $availableWithoutAssetResult = Invoke-Validator -CorpusPath $availableWithoutAssetCorpus
+  Assert-Equal -Actual $availableWithoutAssetResult.ExitCode -Expected 1 -Message "Available historical stages without assets should fail validation."
+  Assert-Contains -Text $availableWithoutAssetResult.Output -ExpectedSubstring "marked available must include assetRef or assetMetadata." -Message "Missing-asset availability error should be readable."
+
   $missingCoreExampleCorpus = Join-Path $tempRoot "missing-core-example"
   New-Item -ItemType Directory -Path $missingCoreExampleCorpus | Out-Null
   $record = Get-Content -Raw (Join-Path $fixtureCorpus "tree.json") | ConvertFrom-Json

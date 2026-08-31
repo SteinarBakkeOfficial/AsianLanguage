@@ -5,6 +5,8 @@ function Text([string]$Path) { Get-Content -Raw (Join-Path $repoRoot $Path) }
 
 $evolution = Text "Sources/App/Lesson/CharacterEvolutionView.swift"
 Assert-True $evolution.Contains("struct BundledHistoricalAssetResolver") "A centralized asset resolver must exist."
+Assert-True $evolution.Contains("case bundledSVG(URL)") "Bundled SVG assets must have an explicit local rendering path."
+Assert-True $evolution.Contains("import WebKit") "Local SVG rendering must use an iOS-native view integration."
 Assert-True $evolution.Contains("Asset requires a compiled iOS image representation") "Unsupported source assets must remain explicit."
 Assert-True $evolution.Contains("Historical visual unavailable") "Missing Historical Assets must be visible."
 Assert-True (-not $evolution.Contains("fallbackForm")) "Historical rendering must not use a modern fallback form."

@@ -98,6 +98,7 @@ $record = [ordered]@{
         label = "Regular Script"
         form = $CoreCharacter
         assetRef = $null
+        availabilityState = "unavailableAsset"
         changeNoteFromPrevious = $null
         certainty = "limited"
         sourceIds = @("source-editorial-placeholder")

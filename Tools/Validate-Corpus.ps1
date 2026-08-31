@@ -225,9 +225,27 @@ function Assert-HistoryCoverage {
   }
 
   $allowedStageIDs = @("oracleBone", "bronze", "seal", "clerical", "regular")
+  $allowedAvailabilityStates = @("available", "unavailableAsset", "unsupportedStage", "intentionallyOmitted")
+  $allowedCertaintyValues = @("high", "medium", "limited", "supported", "qualified", "disputed", "missing")
   foreach ($stage in @($Record.history.stages)) {
     if (-not (Test-HasText $stage.stage) -or $allowedStageIDs -notcontains $stage.stage) {
       Add-Issue -Path $RecordPath -Message "History stage '$($stage.stage)' must use a canonical stage id."
+    }
+
+    if ((Test-HasText $stage.certainty) -and $allowedCertaintyValues -notcontains $stage.certainty) {
+      Add-Issue -Path $RecordPath -Message "Historical stage '$($stage.stage)' has unsupported certainty '$($stage.certainty)'."
+    }
+
+    $availabilityState = $stage.availabilityState
+    if (-not (Test-HasText $availabilityState)) {
+      $availabilityState = if ($null -ne $stage.assetRef -or $null -ne $stage.assetMetadata) { "available" } else { "unavailableAsset" }
+    }
+    if ($allowedAvailabilityStates -notcontains $availabilityState) {
+      Add-Issue -Path $RecordPath -Message "Historical stage '$($stage.stage)' has unsupported availabilityState '$availabilityState'."
+    } elseif ($availabilityState -eq "available" -and $null -eq $stage.assetRef -and $null -eq $stage.assetMetadata) {
+      Add-Issue -Path $RecordPath -Message "Historical stage '$($stage.stage)' marked available must include assetRef or assetMetadata."
+    } elseif ($availabilityState -eq "unsupportedStage" -or $availabilityState -eq "intentionallyOmitted") {
+      Add-Issue -Path $RecordPath -Message "Historical stage '$($stage.stage)' marked $availabilityState must be omitted from history.stages."
     }
   }
 }
@@ -302,9 +320,10 @@ if (-not (Test-Path $CorpusPath)) {
   exit 2
 }
 
-$jsonFiles = Get-ChildItem -Path $CorpusPath -Filter "*.json" -File
+$symbolFiles = @(Get-ChildItem -Path $CorpusPath -Recurse -Filter "symbol.json" -File)
+$jsonFiles = if ($symbolFiles.Count -gt 0) { $symbolFiles } else { @(Get-ChildItem -Path $CorpusPath -Filter "*.json" -File) }
 if ($jsonFiles.Count -eq 0) {
-  Write-Error "No corpus JSON files found: $CorpusPath"
+  Write-Error "No corpus JSON files or Symbol folders found: $CorpusPath"
   exit 2
 }
 

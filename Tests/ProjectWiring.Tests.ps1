@@ -15,6 +15,7 @@ Assert-True $rootText.Contains("HistoryRootView") "History must be a root destin
 Assert-True $rootText.Contains("MoreRootView") "More must be a root destination."
 Assert-True $rootText.Contains("SymbolRootView") "Symbol must be the canonical journey owner."
 Assert-True $projectText.Contains("LessonView.swift") "Xcode project must include LessonView.swift."
+Assert-True $projectText.Contains("Symbols in Resources") "Xcode project must bundle prepared Symbol app assets."
 
 foreach ($file in (Get-ChildItem (Join-Path $repoRoot "Sources/App") -Filter "*.swift" -Recurse)) {
   Assert-True $projectText.Contains($file.Name) "Xcode project must reference $($file.Name)."

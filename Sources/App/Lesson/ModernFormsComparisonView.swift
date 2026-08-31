@@ -1,113 +1,83 @@
 import SwiftUI
 
-/// Reusable comparison of the modern focus-track forms for one Shared Character.
+/// Today endpoint showing one Shared Character across the learner's selected modern tracks.
 struct ModernFormsComparisonView: View {
-    /// Bundled Shared Character record being studied.
     let record: SharedCharacterRecord
-
-    /// Focus tracks currently enabled by the learner.
     let focusSelection: FocusTrackSelection
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Modern Descendants")
-                .font(.title3.weight(.semibold))
-
-            if focusSelection.contains(.simplifiedChinese) {
-                formCard(
-                    title: "Simplified Chinese",
-                    form: record.focusCoverage.simplifiedChinese.form,
-                    readings: record.focusCoverage.simplifiedChinese.readings,
-                    glosses: record.focusCoverage.simplifiedChinese.glosses,
-                    accent: .orange
-                )
-                variantCards(record.focusCoverage.simplifiedChinese.variants, accent: .orange)
+        VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
+            VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
+                Text("TODAY")
+                    .font(AppTypography.conceptLabel)
+                    .tracking(1.4)
+                    .foregroundStyle(AppColors.textSecondary)
+                Text(record.coreCharacter)
+                    .font(AppTypography.exhibitHeading)
+                    .foregroundStyle(AppColors.textPrimary)
+                Text("One lineage, connected across your selected language tracks.")
+                    .font(AppTypography.body)
+                    .foregroundStyle(AppColors.textSecondary)
             }
-            if focusSelection.contains(.traditionalChinese) {
-                formCard(
-                    title: "Traditional Chinese",
-                    form: record.focusCoverage.traditionalChinese.form,
-                    readings: record.focusCoverage.traditionalChinese.readings,
-                    glosses: record.focusCoverage.traditionalChinese.glosses,
-                    accent: .red
-                )
-                variantCards(record.focusCoverage.traditionalChinese.variants, accent: .red)
-            }
-            if focusSelection.contains(.japanese) {
-                formCard(
-                    title: "Japanese Kanji",
-                    form: record.focusCoverage.japanese.form,
-                    readings: record.focusCoverage.japanese.readings,
-                    glosses: record.focusCoverage.japanese.glosses,
-                    accent: .purple
-                )
-                variantCards(record.focusCoverage.japanese.variants, accent: .purple)
-            }
-            if focusSelection.contains(.korean) {
-                formCard(
-                    title: "Korean Hanja",
-                    form: record.focusCoverage.korean.form,
-                    readings: record.focusCoverage.korean.readings,
-                    glosses: record.focusCoverage.korean.glosses,
-                    accent: .blue
-                )
-                variantCards(record.focusCoverage.korean.variants, accent: .blue)
-            }
-        }
-    }
 
-    /// Displays explicit modern writing-system alternatives without a nested carousel.
-    @ViewBuilder
-    private func variantCards(_ variants: [ModernFormVariant], accent: Color) -> some View {
-        ForEach(variants, id: .id) { variant in
-            formCard(
-                title: variant.writingSystem ?? "Alternative form",
-                form: variant.form,
-                readings: variant.readings,
-                glosses: variant.notes,
-                accent: accent
-            )
-        }
-    }
-
-    /// One modern descendant card with form, sound, and gloss context.
-    private func formCard(
-        title: String,
-        form: String,
-        readings: [CharacterReading],
-        glosses: [String],
-        accent: Color
-    ) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(title)
-                .font(.headline)
-                .padding(.horizontal, 8)
-                .padding(.vertical, 4)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .background(accent.opacity(0.16))
-
-            HStack(alignment: .center, spacing: 12) {
-                Text(form)
-                    .font(.system(size: 48, weight: .regular, design: .serif))
-                    .frame(width: 74, height: 74)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 8)
-                            .stroke(accent.opacity(0.45), lineWidth: 1)
-                    )
-
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("Sound: \(readings.map { $0.value }.joined(separator: " / "))")
-                        .font(.subheadline.weight(.semibold))
-                    Text("Meaning: \(glosses.joined(separator: ", "))")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+            VStack(spacing: AppSpacing.spaceSm) {
+                if focusSelection.contains(.simplifiedChinese) {
+                    modernSection(title: "Simplified Chinese", coverage: record.focusCoverage.simplifiedChinese, examples: record.focusCoverage.simplifiedChinese.examples)
+                }
+                if focusSelection.contains(.traditionalChinese) {
+                    modernSection(title: "Traditional Chinese", coverage: record.focusCoverage.traditionalChinese, examples: record.focusCoverage.traditionalChinese.taiwanExamples)
+                }
+                if focusSelection.contains(.japanese) {
+                    modernSection(title: "Japanese", coverage: record.focusCoverage.japanese, examples: record.focusCoverage.japanese.examples)
+                }
+                if focusSelection.contains(.korean) {
+                    modernSection(title: "Korean (Hanja)", coverage: record.focusCoverage.korean, examples: record.focusCoverage.korean.examples)
                 }
             }
         }
-        .padding(10)
-        .overlay(
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(accent.opacity(0.35), lineWidth: 1)
-        )
+    }
+
+    /// The shared section shape keeps Today dense enough for four tracks without language color coding.
+    private func modernSection<Coverage: ModernCoverageDisplay>(title: String, coverage: Coverage, examples: [UsageExample]) -> some View {
+        GroupedSurface {
+            VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                Text(title)
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+                HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceMd) {
+                    Text(coverage.form)
+                        .font(.system(size: 52, design: .serif))
+                        .foregroundStyle(AppColors.textPrimary)
+                    VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                        Text(coverage.readingSummary)
+                            .font(AppTypography.body.weight(.semibold))
+                            .foregroundStyle(AppColors.textPrimary)
+                        Text(coverage.glossSummary)
+                            .font(AppTypography.metadata)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+                }
+                if let example = examples.first {
+                    Text("Example: \(example.text)\(example.reading.map { " · \($0)" } ?? "") — \(example.translation)")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+            }
+        }
     }
 }
+
+/// Small adapter protocol keeps the Today view shared by standard and regional coverage models.
+private protocol ModernCoverageDisplay {
+    var form: String { get }
+    var readings: [CharacterReading] { get }
+    var glosses: [String] { get }
+}
+
+private extension ModernCoverageDisplay {
+    var readingSummary: String { readings.map(\.value).joined(separator: " / ") }
+    var glossSummary: String { glosses.joined(separator: ", ") }
+}
+
+extension StandardFocusCoverage: ModernCoverageDisplay {}
+extension TraditionalChineseCoverage: ModernCoverageDisplay {}

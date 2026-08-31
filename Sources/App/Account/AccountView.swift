@@ -16,72 +16,59 @@ struct AccountView: View {
 
     var body: some View {
         ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-                    profileCard
-                    progressCard
-                    deferredAccountCard
-                }
-                .padding()
+            VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
+                profileCard
+                progressCard
+                deferredAccountCard
             }
+            .padding(AppSpacing.spacePage)
+        }
+        .scrollIndicators(.hidden)
         .navigationTitle("Account")
+        .background(AppColors.appBackground.ignoresSafeArea())
+        .tint(AppColors.accentPrimary)
     }
 
-    /// Local tester identity card; real sign-in remains a future implementation.
+    /// Local-only state explanation; no fake profile identity is presented.
     private var profileCard: some View {
         VStack(alignment: .leading, spacing: 10) {
-            HStack(spacing: 12) {
-                Image(systemName: "person.crop.circle.fill")
-                    .font(.system(size: 48))
-                    .foregroundStyle(Color.green)
-                VStack(alignment: .leading, spacing: 3) {
-                    Text("Local Tester")
-                        .font(.title3.weight(.bold))
-                    Text("Progress is saved only on this device.")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                }
-            }
+            Text("Local data")
+                .font(AppTypography.sectionHeading)
+                .foregroundStyle(AppColors.textPrimary)
+            Text("Progress, Favorites, Review Later, and preferences are saved only on this device. No account is required for V1.")
+                .font(AppTypography.body)
+                .foregroundStyle(AppColors.textSecondary)
         }
-        .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(red: 0.99, green: 0.96, blue: 0.88))
-        .overlay(
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(Color.brown.opacity(0.25), lineWidth: 1)
-        )
-        .clipShape(RoundedRectangle(cornerRadius: 8))
+        .groupedSurface()
     }
 
     /// Local progress summary for testing sessions.
     private var progressCard: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text("Testing Progress")
-                .font(.headline)
+                .font(AppTypography.sectionHeading)
             LabeledContent("Installed corpus", value: dependencies.installedCorpusName)
             LabeledContent("Shared Characters", value: "\(dependencies.installedSharedCharacterCount)")
             LabeledContent("Learned", value: "\(learnedCount)")
             LabeledContent("Review later", value: "\(reviewLaterCount)")
             LabeledContent("Favorites", value: "\(favoriteCount)")
         }
-        .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(.secondarySystemBackground))
-        .clipShape(RoundedRectangle(cornerRadius: 8))
+        .groupedSurface()
     }
 
     /// Keeps the deferred account surface explicit without presenting fake account functionality.
     private var deferredAccountCard: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Account features deferred")
-                .font(.headline)
+                .font(AppTypography.sectionHeading)
             Text("Sign-in, cloud sync, social profiles, and public account features are not part of V1. Progress remains local to this device.")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .font(AppTypography.body)
+                .foregroundStyle(AppColors.textSecondary)
         }
-        .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(.secondarySystemBackground))
-        .clipShape(RoundedRectangle(cornerRadius: 8))
+        .groupedSurface()
     }
 
     /// Learned count from local state.

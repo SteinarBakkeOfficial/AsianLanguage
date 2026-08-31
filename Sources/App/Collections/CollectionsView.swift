@@ -17,6 +17,7 @@ struct SharedCharacterCollection: Identifiable, Hashable {
 
 /// Collections entry point for Browse-owned status lists and editorial sets.
 struct CollectionsView: View {
+    // Compatibility vocabulary: the product state remains known as Review later internally.
     /// Shared app dependencies used for corpus and user-state collections.
     let dependencies: AppDependencies
 
@@ -30,31 +31,28 @@ struct CollectionsView: View {
     }
 
     var body: some View {
-            List {
-                Section("Your Collections") {
-                    collectionRows(
-                        title: "Review later",
-                        systemImage: "clock",
-                        records: reviewLaterRecords
-                    )
-                    collectionRows(
-                        title: "Favorites",
-                        systemImage: "star",
-                        records: favoriteRecords
-                    )
-                }
+        List {
+            Section("Your Library") {
+                collectionRows(title: "Learned", systemImage: "checkmark.circle", records: learnedRecords)
+                collectionRows(title: "Favorites", systemImage: "star", records: favoriteRecords)
+                collectionRows(title: "Review Later", systemImage: "clock", records: reviewLaterRecords)
+            }
 
-                Section("Explore Collections") {
-                    ForEach(editorialCollections) { collection in
-                        NavigationLink {
-                            editorialCollection(collection)
-                        } label: {
-                            Label(collection.title, systemImage: "square.grid.2x2")
-                        }
+            Section("Explore Collections") {
+                ForEach(editorialCollections) { collection in
+                    NavigationLink {
+                        editorialCollection(collection)
+                    } label: {
+                        Label(collection.title, systemImage: "square.grid.2x2")
                     }
                 }
             }
-        .navigationTitle("Saved / Archive")
+        }
+        .navigationTitle("Collections")
+        .listStyle(.insetGrouped)
+        .scrollContentBackground(.hidden)
+        .background(AppColors.appBackground.ignoresSafeArea())
+        .tint(AppColors.accentPrimary)
     }
 
     /// Records currently marked review-later.
@@ -68,6 +66,12 @@ struct CollectionsView: View {
     private var favoriteRecords: [SharedCharacterRecord] {
         dependencies.sharedCharacters.filter { record in
             userStateStore.state.lessonStates[record.id]?.isStarred == true
+        }
+    }
+
+    private var learnedRecords: [SharedCharacterRecord] {
+        dependencies.sharedCharacters.filter { record in
+            userStateStore.state.lessonStates[record.id]?.progressStatus == .learned
         }
     }
 
@@ -88,17 +92,15 @@ struct CollectionsView: View {
         Label(title, systemImage: systemImage)
         if records.isEmpty {
             Text("No saved Shared Characters")
-                .foregroundStyle(.secondary)
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textSecondary)
         } else {
             ForEach(records) { record in
-                Button {
-                    dependencies.navigationState.openSymbol(
-                        LessonRoute(sharedCharacterID: record.id, startingPosition: nil)
-                    )
-                } label: {
-                    collectionRecordRow(record)
-                }
-                .buttonStyle(.plain)
+                CharacterTile(
+                    record: record,
+                    userState: userStateStore.state.lessonStates[record.id],
+                    action: { dependencies.navigationState.openSymbol(record.id, intent: .view) }
+                )
             }
         }
     }
@@ -110,35 +112,22 @@ struct CollectionsView: View {
             Section(collection.title) {
                 if records.isEmpty {
                     Text("No Shared Characters are available in this collection.")
-                        .foregroundStyle(.secondary)
+                        .font(AppTypography.body)
+                        .foregroundStyle(AppColors.textSecondary)
                 }
                 ForEach(records) { record in
-                    Button {
-                        dependencies.navigationState.openSymbol(
-                            LessonRoute(sharedCharacterID: record.id, startingPosition: nil)
-                        )
-                    } label: {
-                        collectionRecordRow(record)
-                    }
-                    .buttonStyle(.plain)
+                    CharacterTile(
+                        record: record,
+                        userState: userStateStore.state.lessonStates[record.id],
+                        action: { dependencies.navigationState.openSymbol(record.id, intent: .view) }
+                    )
                 }
             }
         }
         .navigationTitle(collection.title)
+        .listStyle(.insetGrouped)
+        .scrollContentBackground(.hidden)
+        .background(AppColors.appBackground.ignoresSafeArea())
     }
 
-    /// Shared collection row with symbol and meaning context.
-    private func collectionRecordRow(_ record: SharedCharacterRecord) -> some View {
-        HStack {
-            Text(record.coreCharacter)
-                .font(.system(size: 28, weight: .regular, design: .serif))
-                .frame(width: 40)
-            VStack(alignment: .leading, spacing: 2) {
-                Text(record.coreSharedMeaning.capitalized)
-                Text(userStateStore.state.lessonStates[record.id]?.progressStatus.rawValue ?? LessonProgressStatus.unseen.rawValue)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-            }
-        }
-    }
 }
