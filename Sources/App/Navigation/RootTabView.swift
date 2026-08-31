@@ -11,33 +11,35 @@ struct RootTabView: View {
     }
 
     var body: some View {
-        if let corpusLoadError = dependencies.corpusLoadError {
-            ContentUnavailableView("Corpus unavailable", systemImage: "exclamationmark.triangle", description: Text(corpusLoadError))
-        } else {
-            TabView(selection: $navigationState.selectedTab) {
-            HomeView(dependencies: dependencies)
-                .tabItem { Label("Home", systemImage: AppTab.home.systemImageName) }
-                .tag(AppTab.home)
+        Group {
+            if let corpusLoadError = dependencies.corpusLoadError {
+                ContentUnavailableView("Corpus unavailable", systemImage: "exclamationmark.triangle", description: Text(corpusLoadError))
+            } else {
+                TabView(selection: $navigationState.selectedTab) {
+                    HomeView(dependencies: dependencies)
+                        .tabItem { Label("Home", systemImage: AppTab.home.systemImageName) }
+                        .tag(AppTab.home)
 
-            SymbolRootView(dependencies: dependencies)
-                .tabItem { Label("Symbol", systemImage: AppTab.symbol.systemImageName) }
-                .tag(AppTab.symbol)
+                    SymbolRootView(dependencies: dependencies)
+                        .tabItem { Label("Symbol", systemImage: AppTab.symbol.systemImageName) }
+                        .tag(AppTab.symbol)
 
-            HistoryRootView(dependencies: dependencies)
-                .tabItem { Label("History", systemImage: AppTab.history.systemImageName) }
-                .tag(AppTab.history)
+                    HistoryRootView(dependencies: dependencies)
+                        .tabItem { Label("History", systemImage: AppTab.history.systemImageName) }
+                        .tag(AppTab.history)
 
-            BrowseView(dependencies: dependencies)
-                .tabItem { Label("Browse", systemImage: AppTab.browse.systemImageName) }
-                .tag(AppTab.browse)
+                    BrowseView(dependencies: dependencies)
+                        .tabItem { Label("Browse", systemImage: AppTab.browse.systemImageName) }
+                        .tag(AppTab.browse)
 
-            MoreRootView(dependencies: dependencies)
-                .tabItem { Label("More", systemImage: AppTab.more.systemImageName) }
-                .tag(AppTab.more)
+                    MoreRootView(dependencies: dependencies)
+                        .tabItem { Label("More", systemImage: AppTab.more.systemImageName) }
+                        .tag(AppTab.more)
+                }
+                .tint(AppColors.accentPrimary)
+                .toolbarBackground(AppColors.appBackground, for: .tabBar)
+                .toolbarBackground(.visible, for: .tabBar)
             }
-            .tint(AppColors.accentPrimary)
-            .toolbarBackground(AppColors.appBackground, for: .tabBar)
-            .toolbarBackground(.visible, for: .tabBar)
         }
         .background(AppColors.appBackground.ignoresSafeArea())
     }
