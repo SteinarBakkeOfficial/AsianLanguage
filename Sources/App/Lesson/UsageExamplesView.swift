@@ -80,7 +80,7 @@ struct UsageExamplesView: View {
                     }
                 }
                 Divider().overlay(AppColors.separator)
-                Text("Character focus: (form) · (glosses.joined(separator: ", "))")
+                Text("Character focus: \(form) · \(glosses.joined(separator: ", "))")
                     .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textSecondary)
             }
@@ -111,11 +111,11 @@ struct UsageExamplesView: View {
                     }
                 }
                 Divider().overlay(AppColors.separator)
-                Text("Everyday word: (nativeWord) · (coverage.glosses.joined(separator: ", "))")
+                Text("Everyday word: \(nativeWord) · \(coverage.glosses.joined(separator: ", "))")
                     .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textSecondary)
                 if let hanjaReading {
-                    Text("Shared character (coverage.form) · Hanja reading (hanjaReading)")
+                    Text("Shared character \(coverage.form) · Hanja reading \(hanjaReading)")
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textTertiary)
                 }
