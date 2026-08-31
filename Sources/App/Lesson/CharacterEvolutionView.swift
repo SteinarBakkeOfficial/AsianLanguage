@@ -74,6 +74,7 @@ struct CharacterEvolutionView: View {
                     )
                 }
             }
+            .frame(minHeight: 300)
             Text(record.history.origin?.explanation ?? record.history.originAnchor)
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textPrimary)
@@ -102,6 +103,7 @@ struct CharacterEvolutionView: View {
                     HistoricalMissingState()
                 }
             }
+            .frame(minHeight: 300)
             Text(stage.stageExplanation ?? stage.changeNoteFromPrevious ?? "Stage-specific explanation is pending editorial review.")
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textPrimary)
@@ -126,12 +128,13 @@ struct CharacterEvolutionView: View {
 
     private func journeyPage<Content: View>(@ViewBuilder content: () -> Content) -> some View {
         ScrollView(.vertical) {
-            VStack(spacing: AppSpacing.spaceLg) {
+            VStack(spacing: AppSpacing.spaceXl) {
                 content()
             }
             .frame(maxWidth: .infinity)
             .padding(.horizontal, AppSpacing.spacePage)
-            .padding(.vertical, AppSpacing.spaceLg)
+            .padding(.top, AppSpacing.spaceMd)
+            .padding(.bottom, AppSpacing.spaceLg)
         }
         .scrollIndicators(.hidden)
     }
@@ -158,13 +161,13 @@ struct CharacterEvolutionView: View {
     private var stageNavigator: some View {
         VStack(spacing: AppSpacing.spaceXs) {
             HStack {
-                Text(currentLabel)
-                    .font(AppTypography.metadata)
+                Text("Origin")
+                    .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textPrimary)
                 Spacer()
-                Text("\(currentIndex + 1) of \(journeyIDs.count)")
+                Text("Today")
                     .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textSecondary)
+                    .foregroundStyle(AppColors.textPrimary)
             }
 
             ScrollView(.horizontal, showsIndicators: false) {
@@ -174,20 +177,26 @@ struct CharacterEvolutionView: View {
 
                         if index < journeyIDs.count - 1 {
                             Rectangle()
-                                .fill(AppColors.separator)
-                                .frame(minWidth: 20, maxWidth: 52, minHeight: 1, maxHeight: 1)
+                                .fill(index < currentIndex ? AppColors.accentPrimary : AppColors.separator)
+                                .frame(minWidth: 16, maxWidth: 52, minHeight: 1, maxHeight: 1)
                                 .accessibilityHidden(true)
                         }
                     }
                 }
                 .frame(maxWidth: .infinity)
             }
-            Text("Swipe through the exhibit")
+            Text(currentLabel)
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
         }
         .padding(.horizontal, AppSpacing.spacePage)
-        .padding(.bottom, AppSpacing.spaceXs)
+        .padding(.bottom, AppSpacing.spaceSm)
+        .padding(.top, AppSpacing.space2xs)
+        .overlay(alignment: .top) {
+            Rectangle()
+                .fill(AppColors.separator)
+                .frame(height: 1)
+        }
         .background(AppColors.appBackground)
         .accessibilityElement(children: .contain)
         .accessibilityLabel("\(currentLabel), stage \(currentIndex + 1) of \(journeyIDs.count)")
@@ -200,8 +209,8 @@ struct CharacterEvolutionView: View {
             selectedStageID = id
         } label: {
             Circle()
-                .fill(isCurrent ? AppColors.accentPrimary : AppColors.separator)
-                .frame(width: isCurrent ? 10 : 8, height: isCurrent ? 10 : 8)
+                .fill(index <= currentIndex ? AppColors.accentPrimary : AppColors.separator)
+                .frame(width: isCurrent ? 9 : 7, height: isCurrent ? 9 : 7)
                 .frame(width: 44, height: 44)
         }
         .buttonStyle(.plain)
@@ -267,14 +276,14 @@ struct HistoricalAssetView: View {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
-                    .frame(maxWidth: .infinity, minHeight: 220)
+                    .frame(maxWidth: .infinity, minHeight: 260)
                     .accessibilityLabel(accessibilityDescription)
             } else {
                 HistoricalMissingState(title: "Historical visual unavailable")
             }
         case .bundledSVG(let url):
             BundledSVGView(url: url)
-                .frame(maxWidth: .infinity, minHeight: 220)
+                .frame(maxWidth: .infinity, minHeight: 260)
                 .accessibilityLabel(accessibilityDescription)
         case .unavailable:
             HistoricalMissingState(title: "Historical visual unavailable")

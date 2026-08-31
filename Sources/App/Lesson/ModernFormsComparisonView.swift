@@ -34,7 +34,7 @@ struct ModernFormsComparisonView: View {
                     }
                 }
             } else {
-                VStack(spacing: AppSpacing.spaceSm) {
+                VStack(spacing: AppSpacing.spaceXs) {
                     if focusSelection.contains(.simplifiedChinese) {
                         modernSection(title: "Simplified Chinese", coverage: record.focusCoverage.simplifiedChinese)
                     }
@@ -52,30 +52,45 @@ struct ModernFormsComparisonView: View {
         }
     }
 
-    /// The shared section shape keeps the four writing-system comparisons compact and readable.
+    /// The language card follows the reference proportions: metadata header, red shared glyph,
+    /// then reading and meaning on one calm elevated surface.
     private func modernSection<Coverage: ModernCoverageDisplay>(title: String, coverage: Coverage) -> some View {
-        GroupedSurface {
-            VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+            HStack {
                 Text(title)
                     .font(AppTypography.metadata)
                     .foregroundStyle(AppColors.textSecondary)
-                HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceMd) {
-                    Text(coverage.form)
-                        .font(.system(size: 52, design: .serif))
-                        .foregroundStyle(AppColors.textPrimary)
-                    VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                        Text(coverage.readings.map(\.value).joined(separator: " · "))
-                            .font(AppTypography.body.weight(.semibold))
-                            .foregroundStyle(AppColors.textPrimary)
-                        Text(coverage.glosses.joined(separator: ", "))
-                            .font(AppTypography.metadata)
-                            .foregroundStyle(AppColors.textSecondary)
-                    }
-                }
-                Text("Character form and reading")
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textTertiary)
+                Spacer()
+                Image(systemName: "speaker.wave.2")
+                    .font(.system(size: 13, weight: .medium))
+                    .foregroundStyle(AppColors.textSecondary)
+                    .accessibilityLabel("Play pronunciation")
             }
+            HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceMd) {
+                Text(coverage.form)
+                    .font(.system(size: 48, design: .serif))
+                    .foregroundStyle(AppColors.accentPrimary)
+                    .frame(width: 44, alignment: .leading)
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text(coverage.readings.map(\.value).joined(separator: " · "))
+                        .font(AppTypography.body.weight(.semibold))
+                        .foregroundStyle(AppColors.textPrimary)
+                    Text(coverage.glosses.joined(separator: ", "))
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+                Spacer(minLength: 0)
+            }
+            Text("Shared character form and reading")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textTertiary)
+        }
+        .padding(AppSpacing.spaceMd)
+        .background(AppColors.surfaceElevated)
+        .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
+        .overlay {
+            RoundedRectangle(cornerRadius: AppRadius.surface)
+                .stroke(AppColors.separator, lineWidth: 1)
         }
     }
 
@@ -83,38 +98,47 @@ struct ModernFormsComparisonView: View {
     private func koreanSection(_ coverage: StandardFocusCoverage) -> some View {
         let hanjaReading = coverage.readings.first(where: { $0.system == "hanja" })?.value
         let nativeReading = coverage.readings.first(where: { $0.system == "native Korean" })?.value
-        return GroupedSurface {
-            VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+        return VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+            HStack {
                 Text("Korean")
                     .font(AppTypography.metadata)
                     .foregroundStyle(AppColors.textSecondary)
-                HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceMd) {
-                    Text(nativeReading?.split(separator: "/").first.map(String.init) ?? coverage.form)
-                        .font(.system(size: 42, design: .serif))
+                Spacer()
+                Image(systemName: "speaker.wave.2")
+                    .font(.system(size: 13, weight: .medium))
+                    .foregroundStyle(AppColors.textSecondary)
+                    .accessibilityLabel("Play pronunciation")
+            }
+            HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceMd) {
+                Text(coverage.form)
+                    .font(.system(size: 48, design: .serif))
+                    .foregroundStyle(AppColors.accentPrimary)
+                    .frame(width: 44, alignment: .leading)
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text(nativeReading ?? "Everyday Korean")
+                        .font(AppTypography.body.weight(.semibold))
                         .foregroundStyle(AppColors.textPrimary)
-                    VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                        Text(nativeReading ?? "Everyday Korean")
-                            .font(AppTypography.body.weight(.semibold))
-                            .foregroundStyle(AppColors.textPrimary)
-                        if let hanjaReading {
-                            Text("Hanja: \(hanjaReading)")
-                                .font(AppTypography.metadata)
-                                .foregroundStyle(AppColors.textSecondary)
-                        }
-                        Text("Everyday Korean in Hangul")
+                    if let hanjaReading {
+                        Text("Hanja: \(hanjaReading)")
                             .font(AppTypography.metadata)
                             .foregroundStyle(AppColors.textSecondary)
                     }
-                }
-                if let hanjaReading {
-                    Text("Shared character \(coverage.form) · Hanja reading \(hanjaReading)")
-                        .font(AppTypography.caption)
+                    Text(coverage.glosses.joined(separator: ", "))
+                        .font(AppTypography.metadata)
                         .foregroundStyle(AppColors.textSecondary)
                 }
-                Text("The shared character is a recognition bridge; everyday Korean words are written in Hangul.")
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textTertiary)
+                Spacer(minLength: 0)
             }
+            Text("Everyday Korean is written in Hangul; Hanja remains the recognition bridge.")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textTertiary)
+        }
+        .padding(AppSpacing.spaceMd)
+        .background(AppColors.surfaceElevated)
+        .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
+        .overlay {
+            RoundedRectangle(cornerRadius: AppRadius.surface)
+                .stroke(AppColors.separator, lineWidth: 1)
         }
     }
 }

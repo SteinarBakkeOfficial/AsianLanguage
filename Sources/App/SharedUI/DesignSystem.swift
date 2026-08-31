@@ -3,20 +3,23 @@ import UIKit
 
 /// Semantic colors for the contemporary gallery shell and historical artifact fields.
 enum AppColors {
-    static let appBackground = adaptive(light: (247, 242, 234), dark: (20, 18, 16))
-    static let surfaceSubtle = adaptive(light: (241, 235, 227), dark: (27, 24, 21))
-    static let surfaceStrong = adaptive(light: (233, 222, 208), dark: (36, 32, 28))
-    static let textPrimary = adaptive(light: (30, 27, 24), dark: (243, 238, 231))
-    static let textSecondary = adaptive(light: (111, 103, 94), dark: (197, 188, 178))
-    static let textTertiary = adaptive(light: (138, 129, 120), dark: (147, 138, 129))
-    static let separator = adaptive(light: (209, 198, 184), dark: (60, 53, 47))
-    static let accentPrimary = adaptive(light: (179, 71, 50), dark: (212, 106, 82))
-    static let accentPressed = adaptive(light: (150, 56, 37), dark: (182, 76, 56))
-    static let accentSubtle = adaptive(light: (243, 228, 223), dark: (45, 27, 23))
-    static let learned = adaptive(light: (46, 107, 88), dark: (116, 178, 157))
+    // These values mirror the approved Fire handoff. Keep the light palette stable because
+    // the reference screenshots are composed on this warm gallery field.
+    static let appBackground = adaptive(light: (250, 247, 242), dark: (18, 18, 15))
+    static let surfaceSubtle = adaptive(light: (242, 238, 232), dark: (28, 27, 24))
+    static let surfaceElevated = adaptive(light: (255, 255, 255), dark: (31, 30, 26))
+    static let surfaceStrong = adaptive(light: (247, 245, 240), dark: (38, 35, 32))
+    static let textPrimary = adaptive(light: (17, 17, 17), dark: (245, 245, 242))
+    static let textSecondary = adaptive(light: (106, 106, 106), dark: (134, 132, 140))
+    static let textTertiary = adaptive(light: (183, 176, 166), dark: (143, 140, 132))
+    static let separator = adaptive(light: (230, 225, 217), dark: (47, 45, 40))
+    static let accentPrimary = adaptive(light: (200, 56, 47), dark: (226, 92, 74))
+    static let accentPressed = adaptive(light: (165, 32, 34), dark: (191, 66, 47))
+    static let accentSubtle = adaptive(light: (248, 233, 230), dark: (58, 29, 24))
+    static let learned = adaptive(light: (31, 143, 104), dark: (51, 196, 157))
     static let warning = adaptive(light: (149, 104, 32), dark: (224, 174, 86))
     static let error = adaptive(light: (178, 55, 53), dark: (239, 113, 107))
-    static let artifactField = adaptive(light: (238, 226, 211), dark: (42, 33, 25))
+    static let artifactField = adaptive(light: (247, 241, 229), dark: (42, 37, 28))
     static let artifactInk = adaptive(light: (53, 43, 36), dark: (228, 216, 200))
 
     private static func adaptive(light: (CGFloat, CGFloat, CGFloat), dark: (CGFloat, CGFloat, CGFloat)) -> Color {
@@ -29,15 +32,15 @@ enum AppColors {
 
 /// Shared typography keeps editorial serif moments distinct from utility UI.
 enum AppTypography {
-    static let pageTitle = Font.system(size: 34, weight: .bold, design: .default)
-    static let exhibitHeading = Font.system(size: 30, weight: .semibold, design: .serif)
-    static let conceptLabel = Font.system(size: 13, weight: .semibold, design: .default)
-    static let stageTitle = Font.system(size: 22, weight: .semibold, design: .serif)
-    static let sectionHeading = Font.system(size: 20, weight: .semibold, design: .default)
-    static let body = Font.system(size: 17, weight: .regular, design: .default)
-    static let metadata = Font.system(size: 13, weight: .medium, design: .default)
-    static let caption = Font.system(size: 12, weight: .regular, design: .default)
-    static let tabLabel = Font.system(size: 10, weight: .medium, design: .default)
+    static let pageTitle = Font.system(size: 17, weight: .semibold, design: .default)
+    static let exhibitHeading = Font.system(size: 28, weight: .semibold, design: .serif)
+    static let conceptLabel = Font.system(size: 15, weight: .semibold, design: .default)
+    static let stageTitle = Font.system(size: 15, weight: .semibold, design: .default)
+    static let sectionHeading = Font.system(size: 18, weight: .semibold, design: .default)
+    static let body = Font.system(size: 16, weight: .regular, design: .default)
+    static let metadata = Font.system(size: 13, weight: .regular, design: .default)
+    static let caption = Font.system(size: 11, weight: .regular, design: .default)
+    static let tabLabel = Font.system(size: 11, weight: .medium, design: .default)
 }
 
 /// Small spacing vocabulary used by both shell and Symbol compositions.
@@ -46,7 +49,7 @@ enum AppSpacing {
     static let spaceXs: CGFloat = 8
     static let spaceSm: CGFloat = 12
     static let spaceMd: CGFloat = 16
-    static let spacePage: CGFloat = 20
+    static let spacePage: CGFloat = 16
     static let spaceLg: CGFloat = 24
     static let spaceXl: CGFloat = 32
     static let spaceExhibit: CGFloat = 40
@@ -55,8 +58,10 @@ enum AppSpacing {
 }
 
 enum AppRadius {
-    static let control: CGFloat = 10
-    static let surface: CGFloat = 14
+    static let small: CGFloat = 4
+    static let control: CGFloat = 12
+    static let surface: CGFloat = 12
+    static let card: CGFloat = 16
 }
 
 enum AppMotion {
@@ -87,7 +92,7 @@ struct PrimaryActionButton: View {
                 }
             }
             .font(AppTypography.body.weight(.semibold))
-            .frame(maxWidth: .infinity, minHeight: 52)
+            .frame(maxWidth: .infinity, minHeight: 44)
         }
         .buttonStyle(PrimaryButtonStyle())
         .disabled(isLoading)
