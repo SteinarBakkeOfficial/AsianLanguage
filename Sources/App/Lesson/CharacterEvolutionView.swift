@@ -175,17 +175,7 @@ struct CharacterEvolutionView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 0) {
                     ForEach(Array(journeyIDs.enumerated()), id: \.element) { index, id in
-                        Button {
-                            selectedStageID = id
-                        } label: {
-                            Circle()
-                                .fill(index == currentIndex ? AppColors.accentPrimary : AppColors.separator)
-                                .frame(width: index == currentIndex ? 10 : 8, height: index == currentIndex ? 10 : 8)
-                                .frame(width: 44, height: 44)
-                        }
-                        .buttonStyle(.plain)
-                        .accessibilityLabel("\(label(for: id)), stage \(index + 1) of \(journeyIDs.count)")
-                        .accessibilityAddTraits(index == currentIndex ? [.isSelected] : [])
+                        stageMarker(index: index, id: id)
 
                         if index < journeyIDs.count - 1 {
                             Rectangle()
@@ -225,6 +215,22 @@ struct CharacterEvolutionView: View {
         .background(AppColors.appBackground)
         .accessibilityElement(children: .contain)
         .accessibilityLabel("\(currentLabel), stage \(currentIndex + 1) of \(journeyIDs.count)")
+    }
+
+    /// Keeps each stage marker's conditional styling out of the larger navigation builder.
+    private func stageMarker(index: Int, id: String) -> some View {
+        let isCurrent = index == currentIndex
+        return Button {
+            selectedStageID = id
+        } label: {
+            Circle()
+                .fill(isCurrent ? AppColors.accentPrimary : AppColors.separator)
+                .frame(width: isCurrent ? 10 : 8, height: isCurrent ? 10 : 8)
+                .frame(width: 44, height: 44)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("\(label(for: id)), stage \(index + 1) of \(journeyIDs.count)")
+        .accessibilityAddTraits(isCurrent ? .isSelected : [])
     }
 
     private func label(for id: String) -> String {
