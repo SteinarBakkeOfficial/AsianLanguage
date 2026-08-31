@@ -38,7 +38,7 @@ struct FocusTrackSelection: Codable, Equatable {
         selectedTracks.contains(track)
     }
 
-    /// Stable membership toggle that keeps at least one focus track selected.
+    /// Stable membership toggle that also permits a museum-only journey with no modern tracks.
     mutating func set(_ track: FocusTrack, isSelected: Bool) {
         if isSelected {
             if !selectedTracks.contains(track) {
@@ -48,9 +48,6 @@ struct FocusTrackSelection: Codable, Equatable {
             return
         }
 
-        let remainingTracks = selectedTracks.filter { $0 != track }
-        if !remainingTracks.isEmpty {
-            selectedTracks = remainingTracks
-        }
+        selectedTracks = selectedTracks.filter { $0 != track }
     }
 }

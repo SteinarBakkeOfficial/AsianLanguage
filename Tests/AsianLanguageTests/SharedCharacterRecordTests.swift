@@ -27,4 +27,13 @@ final class SharedCharacterRecordTests: XCTestCase {
         XCTAssertEqual(record.focusCoverage.japanese.form, "木")
         XCTAssertEqual(record.focusCoverage.korean.form, "木")
     }
+
+    /// Decodes every installed record so a schema-shape mismatch cannot reach the app launch path.
+    func testEverySeedCorpusRecordDecodes() throws {
+        let repository = BundleCorpusRepository(bundle: Bundle(for: Self.self))
+
+        for id in SeedCorpusManifest.recordIDs {
+            _ = try repository.sharedCharacter(id: id)
+        }
+    }
 }

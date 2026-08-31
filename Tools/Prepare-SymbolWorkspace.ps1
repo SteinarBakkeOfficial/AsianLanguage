@@ -161,7 +161,8 @@ foreach ($record in $records) {
   New-Item -ItemType Directory -Path $educationalAppRoot -Force | Out-Null
   New-Item -ItemType Directory -Path $componentsReferenceRoot -Force | Out-Null
 
-  $visualNotes = Get-VisualTeachingNotes -ID $record.id
+  # Force single-note fallback values to remain JSON arrays for the Swift [String]? model.
+  $visualNotes = @(Get-VisualTeachingNotes -ID $record.id)
   foreach ($stage in @($record.history.stages)) {
     if ($null -eq $stage.availabilityState) {
       $stage | Add-Member -NotePropertyName availabilityState -NotePropertyValue (Get-StageAvailability -Stage $stage) -Force

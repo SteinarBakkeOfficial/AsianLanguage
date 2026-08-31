@@ -45,18 +45,18 @@ struct RootTabView: View {
     }
 }
 
-/// First-launch sequence: encounter Fire, configure optional focus emphasis, then enter Symbol.
+/// First-launch sequence: enter the Fire exhibit before offering optional modern-language preferences.
 struct OnboardingView: View {
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
     @State private var step: Step
 
-    private enum Step { case intro, connection, focus }
+    private enum Step { case intro, connection }
 
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
         _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
-        _step = State(initialValue: dependencies.userStateStore.state.hasSeenIntro ? .focus : .intro)
+        _step = State(initialValue: dependencies.userStateStore.state.hasSeenIntro ? .connection : .intro)
     }
 
     var body: some View {
@@ -82,10 +82,10 @@ struct OnboardingView: View {
                         step = .connection
                     }
                 case .connection:
-                    Text("One Shared Character")
+                    Text("Enter the Fire exhibit")
                         .font(AppTypography.exhibitHeading)
                         .foregroundStyle(AppColors.textPrimary)
-                    Text("火 still connects languages across East Asia today.")
+                    Text("Begin with 火 as a museum object: its origin, historical forms, and the path into today.")
                         .font(AppTypography.body)
                         .foregroundStyle(AppColors.textSecondary)
                     Text("火")
@@ -93,25 +93,10 @@ struct OnboardingView: View {
                         .foregroundStyle(AppColors.textPrimary)
                         .frame(maxWidth: .infinity)
                         .accessibilityLabel("Shared Character Fire")
-                    PrimaryActionButton("Continue") { step = .focus }
-                case .focus:
-                    Text("Which connections do you want to follow?")
-                        .font(AppTypography.exhibitHeading)
-                        .foregroundStyle(AppColors.textPrimary)
-                    Text("All four are selected by default. You can change this anytime.")
+                    Text("All four modern language tracks are available later. The exhibit comes first.")
                         .font(AppTypography.body)
                         .foregroundStyle(AppColors.textSecondary)
-                    GroupedSurface {
-                        VStack(spacing: 0) {
-                            ForEach(FocusTrack.allCases) { track in
-                                Toggle(track.title, isOn: focusBinding(for: track))
-                                    .font(AppTypography.body)
-                                    .frame(minHeight: 52)
-                            }
-                        }
-                    }
-                    PrimaryActionButton("Continue with Fire") {
-                        userStateStore.markFocusLanguagesChosen()
+                    PrimaryActionButton("Enter Fire") {
                         userStateStore.markFirstSymbolStarted()
                         dependencies.navigationState.openSymbol("fire", intent: .start)
                     }
@@ -124,13 +109,6 @@ struct OnboardingView: View {
         .tint(AppColors.accentPrimary)
     }
 
-    /// Keeps all four focus tracks selected by default while allowing multi-select preference changes.
-    private func focusBinding(for track: FocusTrack) -> Binding<Bool> {
-        Binding(
-            get: { userStateStore.state.focusSelection.contains(track) },
-            set: { userStateStore.setFocusTrack(track, isSelected: $0) }
-        )
-    }
 }
 
 /// Canonical owner of the active Shared Character journey.

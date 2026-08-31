@@ -7,6 +7,16 @@ final class UserStateTests: XCTestCase {
         XCTAssertEqual(Set(FocusTrackSelection.all.selectedTracks), Set(FocusTrack.allCases))
     }
 
+    func testFocusTracksCanAllBeDisabledForMuseumOnlyMode() {
+        var selection = FocusTrackSelection.all
+
+        for track in FocusTrack.allCases {
+            selection.set(track, isSelected: false)
+        }
+
+        XCTAssertTrue(selection.selectedTracks.isEmpty)
+    }
+
     func testResumeRouteUsesExactJourneyPosition() {
         let store = LocalUserStateStore.preview()
         let position = SymbolJourneyPosition(section: .evolution, stageID: "bronze")

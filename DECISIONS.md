@@ -33,7 +33,7 @@
 - Missing Historical Assets are explicit content gaps. Fabricated glyphs and modern-form historical fallbacks are prohibited.
 - Each stage owns its canonical asset reference; visuals must not duplicate a stage map.
 - Character structure is stage-aware. Components have stable identities and a first-meaningful stage.
-- Modern focus tracks are four values: Simplified Chinese, Traditional Chinese, Japanese, and Korean. All are selected by default; there is no All enum case.
+- Modern focus tracks are four values: Simplified Chinese, Traditional Chinese, Japanese, and Korean. All are selected by default; users may turn off any or all tracks; there is no All enum case.
 - Taiwan and Hong Kong readings may be represented independently.
 - Publication status is draft, review, or published. Release content must pass the publication gate.
 
@@ -61,7 +61,7 @@
 - HistoricalMissingState is the only acceptable visual response to an unavailable approved asset; modern glyphs and generated ancient-looking substitutes are prohibited.
 - LineagePreview is data-driven and may render only forms present in the approved corpus.
 - The first visual slice uses a restrained current/next rail and vertically scrollable stage pages inside a horizontal stage pager.
-- Today is a vertical endpoint with one section per selected modern language track; language identity is not communicated by arbitrary color.
+- Today is a vertical endpoint with one section per selected modern language track; when no tracks are selected it presents an explicit museum-only state; language identity is not communicated by arbitrary color.
 - Structure is a vertical recap, not a second navigation rail; it may show only stage forms and component insights supported by the record.
 - Usage is a vertical list of selected-track examples, prioritizing readable high-value examples over dictionary completeness.
 - Summary/Recall uses recognition and reveal interactions without XP, lives, timers, scoring, or punitive feedback.
@@ -77,7 +77,7 @@
 - Educational reconstructions are classified separately from historical evidence. Fire's Origin visual is an authored educational reconstruction and must never be presented as an ancient artifact.
 - Offline packaging copies only local app derivatives into the bundle asset area and emits a manifest declaring that runtime networking is not required.
 - The initial preparation experiment covers the existing 11 draft records; generated records remain `needsReview` and require human approval.
-- Onboarding uses the same semantic design system as the main shell and routes directly into the canonical Fire Symbol Journey after focus selection.
+- Onboarding uses the same semantic design system as the main shell and routes directly into the canonical Fire Symbol Journey before optional language preferences; More → Languages owns those preferences.
 - Account V1 describes local device state only; it must not imply a real identity, profile, sync account, or cloud capability.
 - Final visual QA requires macOS/Xcode simulator screenshots against the Fire reference before screen-level geometry is considered complete.
 

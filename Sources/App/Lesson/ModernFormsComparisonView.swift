@@ -21,17 +21,30 @@ struct ModernFormsComparisonView: View {
             }
 
             VStack(spacing: AppSpacing.spaceSm) {
-                if focusSelection.contains(.simplifiedChinese) {
-                    modernSection(title: "Simplified Chinese", coverage: record.focusCoverage.simplifiedChinese, examples: record.focusCoverage.simplifiedChinese.examples)
-                }
-                if focusSelection.contains(.traditionalChinese) {
-                    modernSection(title: "Traditional Chinese", coverage: record.focusCoverage.traditionalChinese, examples: record.focusCoverage.traditionalChinese.taiwanExamples)
-                }
-                if focusSelection.contains(.japanese) {
-                    modernSection(title: "Japanese", coverage: record.focusCoverage.japanese, examples: record.focusCoverage.japanese.examples)
-                }
-                if focusSelection.contains(.korean) {
-                    modernSection(title: "Korean (Hanja)", coverage: record.focusCoverage.korean, examples: record.focusCoverage.korean.examples)
+                if focusSelection.selectedTracks.isEmpty {
+                    GroupedSurface {
+                        VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
+                            Text("Museum view")
+                                .font(AppTypography.sectionHeading)
+                                .foregroundStyle(AppColors.textPrimary)
+                            Text("Modern language examples are turned off. You can enable any tracks later in More → Languages.")
+                                .font(AppTypography.body)
+                                .foregroundStyle(AppColors.textSecondary)
+                        }
+                    }
+                } else {
+                    if focusSelection.contains(.simplifiedChinese) {
+                        modernSection(title: "Simplified Chinese", coverage: record.focusCoverage.simplifiedChinese, examples: record.focusCoverage.simplifiedChinese.examples)
+                    }
+                    if focusSelection.contains(.traditionalChinese) {
+                        modernSection(title: "Traditional Chinese", coverage: record.focusCoverage.traditionalChinese, examples: record.focusCoverage.traditionalChinese.taiwanExamples)
+                    }
+                    if focusSelection.contains(.japanese) {
+                        modernSection(title: "Japanese", coverage: record.focusCoverage.japanese, examples: record.focusCoverage.japanese.examples)
+                    }
+                    if focusSelection.contains(.korean) {
+                        modernSection(title: "Korean (Hanja)", coverage: record.focusCoverage.korean, examples: record.focusCoverage.korean.examples)
+                    }
                 }
             }
         }

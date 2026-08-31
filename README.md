@@ -10,7 +10,7 @@ The app has five root areas: Home, Symbol, History, Browse, and More. Search and
 
 ## V1
 
-V1 is local and offline. The bundled corpus is read-only; progress, Favorites, Review later, and focus-track selection are local user state. All four focus tracks are enabled by default; there is no separate All enum value.
+V1 is local and offline. The bundled corpus is read-only; progress, Favorites, Review later, and focus-track selection are local user state. All four focus tracks are enabled by default, but users may disable every track for a museum-only Symbol Journey; there is no separate All enum value. Language controls live in More rather than blocking the first exhibit.
 
 The current 11 records are draft prototype fixtures. Fire is the first design and schema pilot, followed by Water, Mountain, Tree, and eventually Horse when sourced.
 

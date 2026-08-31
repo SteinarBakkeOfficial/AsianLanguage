@@ -94,6 +94,16 @@ try {
   Assert-Equal -Actual $missingFocusResult.ExitCode -Expected 1 -Message "Missing required focus track should fail validation."
   Assert-Contains -Text $missingFocusResult.Output -ExpectedSubstring "Missing required focus track 'japanese'." -Message "Missing focus-track error should be readable."
 
+  $invalidVisualNotesCorpus = Join-Path $tempRoot "invalid-visual-notes"
+  New-Item -ItemType Directory -Path $invalidVisualNotesCorpus | Out-Null
+  $record = Get-Content -Raw (Join-Path $fixtureCorpus "tree.json") | ConvertFrom-Json
+  $record | Add-Member -NotePropertyName visualTeachingNotes -NotePropertyValue "This must be an array." -Force
+  $record | ConvertTo-Json -Depth 20 | Set-Content -Path (Join-Path $invalidVisualNotesCorpus "tree.json") -Encoding utf8
+
+  $invalidVisualNotesResult = Invoke-Validator -CorpusPath $invalidVisualNotesCorpus
+  Assert-Equal -Actual $invalidVisualNotesResult.ExitCode -Expected 1 -Message "Scalar visual teaching notes should fail validation."
+  Assert-Contains -Text $invalidVisualNotesResult.Output -ExpectedSubstring "visualTeachingNotes must be an array of strings." -Message "Visual teaching-notes error should be readable."
+
   $tooFewExamplesCorpus = Join-Path $tempRoot "too-few-examples"
   New-Item -ItemType Directory -Path $tooFewExamplesCorpus | Out-Null
   $record = Get-Content -Raw (Join-Path $fixtureCorpus "tree.json") | ConvertFrom-Json

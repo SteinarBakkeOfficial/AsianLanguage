@@ -224,7 +224,9 @@ struct LessonView: View {
             Text("What do you recognize?")
                 .font(AppTypography.exhibitHeading)
                 .foregroundStyle(AppColors.textPrimary)
-            Text("From the original idea to the modern form, what character is at the center of this journey?")
+            Text(userStateStore.state.focusSelection.selectedTracks.isEmpty
+                ? "From the original idea through its historical forms, what character is at the center of this journey?"
+                : "From the original idea to the modern form, what character is at the center of this journey?")
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textSecondary)
                 .fixedSize(horizontal: false, vertical: true)
@@ -241,7 +243,7 @@ struct LessonView: View {
                     .frame(maxWidth: .infinity)
                 }
             } else {
-                SecondaryActionButton("Reveal Modern Form") {
+                SecondaryActionButton(userStateStore.state.focusSelection.selectedTracks.isEmpty ? "Reveal Character" : "Reveal Modern Form") {
                     showingSummaryAnswer = true
                 }
             }

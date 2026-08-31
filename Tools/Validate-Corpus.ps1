@@ -85,6 +85,13 @@ function Assert-PrototypeMetadata {
   if (-not (Test-HasText $Record.visuals.assetStatus)) {
     Add-Issue -Path $RecordPath -Message "Missing required text field 'visuals.assetStatus'."
   }
+
+  if ($null -ne $Record.visualTeachingNotes) {
+    if ($Record.visualTeachingNotes -isnot [array] -or
+        (@($Record.visualTeachingNotes) | Where-Object { $_ -isnot [string] }).Count -gt 0) {
+      Add-Issue -Path $RecordPath -Message "visualTeachingNotes must be an array of strings."
+    }
+  }
 }
 
 function Assert-PublicationStatus {

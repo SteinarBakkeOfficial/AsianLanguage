@@ -20,18 +20,24 @@ struct UsageExamplesView: View {
             Text(record.usage.coreMeaningFirst)
                 .font(AppTypography.body)
 
-            if focusSelection.contains(.simplifiedChinese) {
-                exampleGroup("Simplified Chinese", examples: record.focusCoverage.simplifiedChinese.examples)
-            }
-            if focusSelection.contains(.traditionalChinese) {
-                exampleGroup("Traditional Chinese - Taiwan", examples: record.focusCoverage.traditionalChinese.taiwanExamples)
-                exampleGroup("Traditional Chinese - Hong Kong", examples: record.focusCoverage.traditionalChinese.hongKongExamples)
-            }
-            if focusSelection.contains(.japanese) {
-                exampleGroup("Japanese", examples: record.focusCoverage.japanese.examples)
-            }
-            if focusSelection.contains(.korean) {
-                exampleGroup("Korean", examples: record.focusCoverage.korean.examples)
+            if focusSelection.selectedTracks.isEmpty {
+                Text("Language examples are turned off. You can enable tracks later in More → Languages.")
+                    .font(AppTypography.body)
+                    .foregroundStyle(AppColors.textSecondary)
+            } else {
+                if focusSelection.contains(.simplifiedChinese) {
+                    exampleGroup("Simplified Chinese", examples: record.focusCoverage.simplifiedChinese.examples)
+                }
+                if focusSelection.contains(.traditionalChinese) {
+                    exampleGroup("Traditional Chinese - Taiwan", examples: record.focusCoverage.traditionalChinese.taiwanExamples)
+                    exampleGroup("Traditional Chinese - Hong Kong", examples: record.focusCoverage.traditionalChinese.hongKongExamples)
+                }
+                if focusSelection.contains(.japanese) {
+                    exampleGroup("Japanese", examples: record.focusCoverage.japanese.examples)
+                }
+                if focusSelection.contains(.korean) {
+                    exampleGroup("Korean", examples: record.focusCoverage.korean.examples)
+                }
             }
         }
     }

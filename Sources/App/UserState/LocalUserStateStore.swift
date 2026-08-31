@@ -44,7 +44,7 @@ final class LocalUserStateStore: ObservableObject {
         save()
     }
 
-    /// Persists one focus-track toggle while keeping at least one track selected.
+    /// Persists one focus-track toggle, including the museum-only state with no tracks selected.
     func setFocusTrack(_ focusTrack: FocusTrack, isSelected: Bool) {
         state.focusSelection.set(focusTrack, isSelected: isSelected)
         save()

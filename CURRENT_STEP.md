@@ -55,7 +55,7 @@ Implement the approved Fire Symbol Journey visual foundation while preserving th
 - Apply semantic design tokens to the Settings background, tint, and supporting copy while retaining native controls.
 - Migrate Home to shared page/title/action hierarchy while keeping the Symbol Journey as the dominant content.
 - Migrate Collections and More utility surfaces to semantic backgrounds, native navigation, and CharacterTile records.
-- Migrate onboarding to the shared editorial hierarchy, primary actions, grouped focus controls, and semantic surfaces.
+- Migrate onboarding to the shared editorial hierarchy, primary actions, and semantic surfaces; enter the Fire exhibit before optional language controls.
 - Migrate Languages, Account, and About/Method; remove the fake profile identity card and keep local-only account scope explicit.
 - Migrate History detail to open editorial context with deliberate missing-content treatment; migrate More utility/source rows to quiet semantic presentation while retaining native navigation.
 - Align historical availability and confidence semantics across the runtime model, draft tooling, validator, and contract tests; preserve backwards compatibility for existing draft records.
@@ -90,6 +90,7 @@ The design freeze is active: neutral structural surfaces may be exercised, but a
 - Fire has a local educational Origin reconstruction; Oracle Bone, Bronze, Seal, and Clerical remain explicit unavailable-asset stages, while the Regular prototype remains a draft educational reconstruction.
 - The current package contains local SVG derivatives, but iOS rendering and screenshot comparison require macOS/Xcode verification.
 - The generated review report makes each Symbol folder and its remaining editorial actions directly locatable.
+- Onboarding now prioritizes the Fire museum journey; all four language tracks remain enabled by default and may later be adjusted in More → Languages, including turning all tracks off.
 
 ## Repository/layout note
 
