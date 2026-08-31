@@ -22,7 +22,7 @@ Streaks, XP, and gamification must remain subordinate to recognition and underst
 
 ## Interaction
 
-The Symbol Journey moves horizontally through Evolution Stages. Stage content may scroll vertically. A fixed or floating stage navigator remains reachable. Today presents selected focus-track content vertically and avoids nested swipe conflicts.
+The Symbol Journey moves horizontally through Evolution Stages. Stage content may scroll vertically. A fixed or floating stage navigator remains reachable. Today continues horizontally as one exhibit page per selected focus track; each page may scroll vertically for its own word context.
 
 Simple pictographs should not receive redundant panels. Character structure appears when it becomes historically meaningful and may be recapped later.
 

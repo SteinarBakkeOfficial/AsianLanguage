@@ -33,19 +33,19 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Shared `openSymbol` routing with start, resume, view, review, and direct-stage foundations.
 - Separate `selectedSymbolID` and `activeJourneySymbolID` concepts.
 - Local JSON user state with independent progress, Favorite, Review Later, focus-language, appearance, onboarding, and reset behavior.
-- Data-driven Origin, historical stages, Today, and word-level modern context in one continuous scroll.
+- Data-driven Origin, historical stages, and Today language pages in one continuous horizontal journey; each page owns its own vertical content.
 - A quiet stage rail with content-driven stage nodes and direct scroll-to-stage access.
 - Semantic design tokens for light/dark colors, typography, spacing, radii, and motion.
 - Reusable foundation components for primary/secondary actions, icon actions, grouped surfaces, artifact fields, missing historical content, lineage previews, character tiles, search fields, and settings rows.
 - Home lineage preview now uses actual available corpus forms only.
-- Today now presents selected language tracks as one vertical cross-language relationship without language-specific color coding.
+- Today now presents one horizontal exhibit page per selected language track, without language-specific color coding.
 - Ordinary Symbol viewing no longer records progress merely because a Browse/Search result was opened.
 - Learned Symbols now have a dedicated revisit entry with Revisit Journey, Quick Review, and View Usage actions.
 - Quick Review is a lightweight recognition surface with a complete-journey escape hatch and no scoring or gamification.
 - The final installed record now has a calm Completion state with Return Home and Revisit actions.
 - Browse status and in-progress records now use the shared CharacterTile primitive.
 - Structure and source detail now live behind the character `…` menu rather than interrupting the museum flow.
-- Usage now presents selected-track word context in restrained vertical groups.
+- Usage now presents one restrained word-context panel on each selected-track Today page.
 - Summary is not part of the primary museum journey.
 - Search now uses the shared native-feeling search field, explicit Cancel behavior, text-first results, and semantic status labels.
 - Settings now uses semantic app background, tint, and explanatory typography while retaining native Form controls.
@@ -67,7 +67,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 
 - Fire Origin now renders an educational reconstruction in the content package; it remains a draft asset and requires editorial review.
 - Fire Oracle Bone, Bronze, Seal, and Clerical stages have no approved renderable assets; only a prototype Regular asset reference exists. Local SVG rendering is now implemented but still requires macOS/Xcode verification.
-- The horizontal Today and word-context composition still needs simulator comparison and interaction polish.
+- The horizontal Today pages and word-context composition still need simulator comparison and interaction polish.
 - Completion, Revisit, and Quick Review have initial behavior and structure but still need simulator visual QA and final interaction polish.
 - Shared components are available; History and More still need final simulator visual polish and any future approved representative content.
 - Historical asset provenance, renderability, and specialist confidence review remain required before publication; the availability/confidence contract itself is now aligned.

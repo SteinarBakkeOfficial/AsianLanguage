@@ -161,6 +161,36 @@
             "火"
           ]
         }
+      ],
+      "variants": [
+        {
+          "id": "native-japanese",
+          "form": "ひ",
+          "writingSystem": "Japanese kana",
+          "readings": [
+            {
+              "system": "kana",
+              "value": "hi"
+            }
+          ],
+          "notes": [
+            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
+          ],
+          "examples": [
+            {
+              "text": "ひ",
+              "reading": "hi",
+              "translation": "fire",
+              "showsCoreMeaning": true,
+              "exampleLevel": "word",
+              "parallelExampleGroupID": null,
+              "reusesKnownSymbols": [],
+              "introducedSymbols": [
+                "火"
+              ]
+            }
+          ]
+        }
       ]
     },
     "korean": {
@@ -205,6 +235,36 @@
             "火"
           ]
         }
+      ],
+      "variants": [
+        {
+          "id": "native-korean",
+          "form": "불",
+          "writingSystem": "Hangul",
+          "readings": [
+            {
+              "system": "native Korean",
+              "value": "bul"
+            }
+          ],
+          "notes": [
+            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
+          ],
+          "examples": [
+            {
+              "text": "불",
+              "reading": "bul",
+              "translation": "fire",
+              "showsCoreMeaning": true,
+              "exampleLevel": "word",
+              "parallelExampleGroupID": null,
+              "reusesKnownSymbols": [],
+              "introducedSymbols": [
+                "火"
+              ]
+            }
+          ]
+        }
       ]
     }
   },
@@ -241,46 +301,106 @@
         "stage": "oracleBone",
         "label": "Oracle Bone Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/fire-u706B/historical/oracle/app/glyph.png",
         "changeNoteFromPrevious": null,
         "certainty": "medium",
         "sourceIds": [
           "source-oracle-bone-script",
           "source-character-classification",
           "source-evobc",
-          "source-radical-86"
+          "source-radical-86",
+          "source-sinica-fire-oracleBone"
         ],
         "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review.",
-        "availabilityState": "unavailableAsset"
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "fire",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=43.E50B",
+          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EE%94%8B&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E7%94%B2%E9%AA%A8%E6%96%87%E9%87%8D%E6%96%87%E4%B8%89&size=300&style=regular&color=%23000000&resolution=96",
+          "catalogueReference": "甲1074 | 合9104",
+          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
+          "retrievedAt": "2026-08-31T18:52:36.3778808Z",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/fire-u706B/historical/oracle/app/glyph.png",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "火 in oracleBone historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "bronze",
         "label": "Bronze Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/fire-u706B/historical/bronze/app/glyph.svg",
         "changeNoteFromPrevious": "Bronze inscriptions continue the ancient graph tradition after the oracle-bone period; final 火-specific redraw still required.",
         "certainty": "medium",
         "sourceIds": [
           "source-evobc",
-          "source-radical-86"
+          "source-radical-86",
+          "source-commons-fire-bronze"
         ],
         "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset"
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "fire",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "Wikimedia Commons",
+          "sourcePageURL": "https://commons.wikimedia.org/wiki/File:%E7%81%AB-bronze.svg",
+          "sourceAssetURL": "https://upload.wikimedia.org/wikipedia/commons/9/96/%E7%81%AB-bronze.svg",
+          "catalogueReference": "火-bronze",
+          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
+          "retrievedAt": "2026-08-31T18:52:36.9882575Z",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/fire-u706B/historical/bronze/app/glyph.svg",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Wikimedia Commons / Ancient Chinese characters project",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "火 in bronze historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "seal",
         "label": "Seal Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/fire-u706B/historical/seal/app/glyph.png",
         "changeNoteFromPrevious": "Seal script formalizes earlier graph traditions into a more standardized archaic written style.",
         "certainty": "medium",
         "sourceIds": [
           "source-seal-script",
           "source-evobc",
-          "source-radical-86"
+          "source-radical-86",
+          "source-sinica-fire-seal"
         ],
         "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset"
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "fire",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=27.706B",
+          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%E7%81%AB&font=%E5%8C%97%E5%B8%AB%E5%A4%A7%E8%AA%AA%E6%96%87%E5%B0%8F%E7%AF%86&size=300&style=regular&color=%23000000&resolution=96",
+          "catalogueReference": "說文‧火部",
+          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
+          "retrievedAt": "2026-08-31T18:52:37.5294837Z",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/fire-u706B/historical/seal/app/glyph.png",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "火 in seal historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "clerical",

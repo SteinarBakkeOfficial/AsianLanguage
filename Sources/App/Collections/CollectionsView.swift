@@ -77,8 +77,9 @@ struct CollectionsView: View {
 
     private var editorialCollections: [SharedCharacterCollection] {
         [
-            SharedCharacterCollection(id: "seed-path", title: "Source-Backed Seed Path", description: nil, sharedCharacterIDs: dependencies.sharedCharacters.map(\.id), type: .editorial, sourceIDs: []),
-            SharedCharacterCollection(id: "pictographic-starters", title: "Pictographic Starters", description: nil, sharedCharacterIDs: dependencies.sharedCharacters.prefix(6).map(\.id), type: .editorial, sourceIDs: [])
+            SharedCharacterCollection(id: "nature", title: "Nature", description: "Symbols rooted in the natural world.", sharedCharacterIDs: ["fire", "water", "mountain", "tree", "day", "moon"], type: .editorial, sourceIDs: []),
+            SharedCharacterCollection(id: "pictographs", title: "Pictographs", description: "Early images carried into written form.", sharedCharacterIDs: dependencies.sharedCharacters.map(\.id), type: .editorial, sourceIDs: []),
+            SharedCharacterCollection(id: "dramatic-changes", title: "Dramatic Changes", description: "Journeys where the written form changes visibly over time.", sharedCharacterIDs: dependencies.sharedCharacters.map(\.id), type: .editorial, sourceIDs: [])
         ]
     }
 

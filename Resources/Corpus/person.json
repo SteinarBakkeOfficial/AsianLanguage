@@ -161,6 +161,36 @@
             "人"
           ]
         }
+      ],
+      "variants": [
+        {
+          "id": "native-japanese",
+          "form": "ひと",
+          "writingSystem": "Japanese kana",
+          "readings": [
+            {
+              "system": "kana",
+              "value": "hito"
+            }
+          ],
+          "notes": [
+            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
+          ],
+          "examples": [
+            {
+              "text": "ひと",
+              "reading": "hito",
+              "translation": "person",
+              "showsCoreMeaning": true,
+              "exampleLevel": "word",
+              "parallelExampleGroupID": null,
+              "reusesKnownSymbols": [],
+              "introducedSymbols": [
+                "人"
+              ]
+            }
+          ]
+        }
       ]
     },
     "korean": {
@@ -205,6 +235,36 @@
             "人"
           ]
         }
+      ],
+      "variants": [
+        {
+          "id": "native-korean",
+          "form": "사람",
+          "writingSystem": "Hangul",
+          "readings": [
+            {
+              "system": "native Korean",
+              "value": "saram"
+            }
+          ],
+          "notes": [
+            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
+          ],
+          "examples": [
+            {
+              "text": "사람",
+              "reading": "saram",
+              "translation": "person",
+              "showsCoreMeaning": true,
+              "exampleLevel": "word",
+              "parallelExampleGroupID": null,
+              "reusesKnownSymbols": [],
+              "introducedSymbols": [
+                "人"
+              ]
+            }
+          ]
+        }
       ]
     }
   },
@@ -215,46 +275,106 @@
         "stage": "oracleBone",
         "label": "Oracle Bone Script",
         "form": null,
-        "assetRef": "Assets/HistoricalGlyphs/person-oracle.svg",
+        "assetRef": "Assets/Symbols/person-u4EBA/historical/oracle/app/glyph.png",
         "changeNoteFromPrevious": null,
         "certainty": "medium",
         "sourceIds": [
           "source-oracle-bone-script",
           "source-character-classification",
           "source-evobc",
-          "source-radical-9"
+          "source-radical-9",
+          "source-sinica-person-oracleBone"
         ],
         "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review.",
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "person",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=42.F47A",
+          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EF%91%BA&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E7%94%B2%E9%AA%A8%E6%96%87%E9%87%8D%E6%96%87%E4%BA%8C&size=300&style=regular&color=%23000000&resolution=96",
+          "catalogueReference": "甲792 | 合27018",
+          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
+          "retrievedAt": "2026-08-31T18:52:21.9350485Z",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/person-u4EBA/historical/oracle/app/glyph.png",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "人 in oracleBone historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "bronze",
         "label": "Bronze Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/person-u4EBA/historical/bronze/app/glyph.png",
         "changeNoteFromPrevious": "Bronze inscriptions continue the ancient graph tradition after the oracle-bone period; final 人-specific redraw still required.",
         "certainty": "medium",
         "sourceIds": [
           "source-evobc",
-          "source-radical-9"
+          "source-radical-9",
+          "source-sinica-person-bronze"
         ],
         "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset"
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "person",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=32.F71B",
+          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EF%9C%9B&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E9%87%91%E6%96%87%E9%87%8D%E6%96%87%E4%BA%8C&size=300&style=regular&color=%23000000&resolution=96",
+          "catalogueReference": "作冊般甗 | 商代晚期 | 集成944",
+          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
+          "retrievedAt": "2026-08-31T18:52:22.5691502Z",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/person-u4EBA/historical/bronze/app/glyph.png",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "人 in bronze historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "seal",
         "label": "Seal Script",
         "form": null,
-        "assetRef": "Assets/HistoricalGlyphs/person-seal.svg",
+        "assetRef": "Assets/Symbols/person-u4EBA/historical/seal/app/glyph.png",
         "changeNoteFromPrevious": "Seal script formalizes earlier graph traditions into a more standardized archaic written style.",
         "certainty": "medium",
         "sourceIds": [
           "source-seal-script",
           "source-evobc",
-          "source-radical-9"
+          "source-radical-9",
+          "source-sinica-person-seal"
         ],
         "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "person",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=27.4EBA",
+          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%E4%BA%BA&font=%E5%8C%97%E5%B8%AB%E5%A4%A7%E8%AA%AA%E6%96%87%E5%B0%8F%E7%AF%86&size=300&style=regular&color=%23000000&resolution=96",
+          "catalogueReference": "說文‧人部",
+          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
+          "retrievedAt": "2026-08-31T18:52:23.1782999Z",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/person-u4EBA/historical/seal/app/glyph.png",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "人 in seal historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "clerical",

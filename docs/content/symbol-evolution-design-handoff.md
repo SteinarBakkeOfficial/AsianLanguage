@@ -30,7 +30,7 @@ Provide approved Figma frames or exported images plus a concise behavioral speci
 
 ## Interaction rules
 
-The Symbol Journey is horizontal across Evolution Stages. Stage content may scroll vertically. Today should present selected focus tracks vertically and should not introduce nested horizontal carousels inside the main horizontal journey.
+The Symbol Journey is horizontal across Evolution Stages. Stage content may scroll vertically. Today should present one page per selected focus track inside the main horizontal journey; each page may use vertical overflow for its own word-level context, but there is no nested horizontal carousel.
 
 The historical glyph or origin visual is the hero. Surrounding app chrome remains contemporary. Do not make every screen a parchment-themed surface.
 

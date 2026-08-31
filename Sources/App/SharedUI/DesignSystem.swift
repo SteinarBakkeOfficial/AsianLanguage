@@ -221,7 +221,7 @@ struct HistoricalMissingState: View {
 
 /// Shared lineage preview for Home, compact discovery rows, and contextual history surfaces.
 struct LineagePreview: View {
-    enum Variant {
+    enum Variant: Equatable {
         case hero
         case compact
         case contextual
@@ -265,6 +265,23 @@ struct LineagePreview: View {
                     detail: "Approved historical forms will appear here when bundled."
                 )
                 .frame(minHeight: variant == .compact ? 100 : 160)
+            } else if variant == .hero {
+                VStack(spacing: AppSpacing.space2xs) {
+                    ForEach(Array(availableForms.enumerated()), id: \.offset) { index, item in
+                        Text(item.form)
+                            .font(.system(size: variant.glyphSize, design: .serif))
+                            .foregroundStyle(item.historical ? AppColors.artifactInk : AppColors.textPrimary)
+                            .frame(minWidth: 72, minHeight: 64)
+                            .accessibilityLabel("\(item.label) form of \(record.coreSharedMeaning)")
+                        if index < availableForms.count - 1 {
+                            Image(systemName: "arrow.down")
+                                .font(.system(size: 12, weight: .medium))
+                                .foregroundStyle(AppColors.textSecondary)
+                                .accessibilityHidden(true)
+                        }
+                    }
+                }
+                .frame(maxWidth: .infinity)
             } else {
                 HStack(spacing: 0) {
                     ForEach(Array(availableForms.enumerated()), id: \.offset) { index, item in

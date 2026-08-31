@@ -4,6 +4,18 @@ import SwiftUI
 struct ModernFormsComparisonView: View {
     let record: SharedCharacterRecord
     let focusSelection: FocusTrackSelection
+    let track: FocusTrack?
+
+    init(record: SharedCharacterRecord, focusSelection: FocusTrackSelection, track: FocusTrack? = nil) {
+        self.record = record
+        self.focusSelection = focusSelection
+        self.track = track
+    }
+
+    private var visibleTracks: [FocusTrack] {
+        if let track { return [track] }
+        return focusSelection.selectedTracks
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
@@ -35,16 +47,16 @@ struct ModernFormsComparisonView: View {
                 }
             } else {
                 VStack(spacing: AppSpacing.spaceXs) {
-                    if focusSelection.contains(.simplifiedChinese) {
+                    if visibleTracks.contains(.simplifiedChinese) {
                         modernSection(title: "Simplified Chinese", coverage: record.focusCoverage.simplifiedChinese)
                     }
-                    if focusSelection.contains(.traditionalChinese) {
+                    if visibleTracks.contains(.traditionalChinese) {
                         modernSection(title: "Traditional Chinese", coverage: record.focusCoverage.traditionalChinese)
                     }
-                    if focusSelection.contains(.japanese) {
+                    if visibleTracks.contains(.japanese) {
                         modernSection(title: "Japanese Kanji", coverage: record.focusCoverage.japanese)
                     }
-                    if focusSelection.contains(.korean) {
+                    if visibleTracks.contains(.korean) {
                         koreanSection(record.focusCoverage.korean)
                     }
                 }
@@ -80,6 +92,9 @@ struct ModernFormsComparisonView: View {
                         .foregroundStyle(AppColors.textSecondary)
                 }
                 Spacer(minLength: 0)
+            }
+            ForEach(coverage.variants, id: \.id) { variant in
+                variantRow(variant)
             }
             Text("Shared character form and reading")
                 .font(AppTypography.caption)
@@ -129,6 +144,9 @@ struct ModernFormsComparisonView: View {
                 }
                 Spacer(minLength: 0)
             }
+            ForEach(coverage.variants, id: \.id) { variant in
+                variantRow(variant)
+            }
             Text("Everyday Korean is written in Hangul; Hanja remains the recognition bridge.")
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textTertiary)
@@ -141,6 +159,27 @@ struct ModernFormsComparisonView: View {
                 .stroke(AppColors.separator, lineWidth: 1)
         }
     }
+
+    private func variantRow(_ variant: ModernFormVariant) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
+            Text("Also written")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textTertiary)
+            Text(variant.form)
+                .font(AppTypography.body.weight(.semibold))
+                .foregroundStyle(AppColors.textPrimary)
+            if let writingSystem = variant.writingSystem {
+                Text("· \(writingSystem)")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
+            if !variant.readings.isEmpty {
+                Text(variant.readings.map(\.value).joined(separator: " · "))
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
+        }
+    }
 }
 
 /// Small adapter keeps Today shared by standard and regional coverage models.
@@ -148,6 +187,7 @@ private protocol ModernCoverageDisplay {
     var form: String { get }
     var readings: [CharacterReading] { get }
     var glosses: [String] { get }
+    var variants: [ModernFormVariant] { get }
 }
 
 extension StandardFocusCoverage: ModernCoverageDisplay {}

@@ -157,12 +157,12 @@ struct LessonView: View {
             completionTitle: dependencies.nextSharedCharacter(after: record.id) == nil ? "Complete Symbol" : "Next Symbol",
             onComplete: markLearnedAndOpenNext,
             selectedStageID: Binding(
-                get: { position.section == .today ? "today" : (position.stageID ?? "origin") },
+                get: { position.section == .today ? (position.stageID ?? "today") : (position.stageID ?? "origin") },
                 set: { stageID in
                     if openingIntent == .view {
                         // Browse/search inspection may scroll freely without creating progress.
-                        position = stageID == "today"
-                            ? SymbolJourneyPosition(section: .today)
+                        position = stageID == "today" || stageID.hasPrefix("today-")
+                            ? SymbolJourneyPosition(section: .today, stageID: stageID)
                             : SymbolJourneyPosition(section: .evolution, stageID: stageID)
                     } else {
                         selectStage(stageID)
@@ -173,8 +173,8 @@ struct LessonView: View {
     }
 
     private func selectStage(_ stageID: String) {
-        if stageID == "today" {
-            position = SymbolJourneyPosition(section: .today)
+        if stageID == "today" || stageID.hasPrefix("today-") {
+            position = SymbolJourneyPosition(section: .today, stageID: stageID)
             persistPositionIfNeeded()
             return
         }

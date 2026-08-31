@@ -161,6 +161,36 @@
             "木"
           ]
         }
+      ],
+      "variants": [
+        {
+          "id": "native-japanese",
+          "form": "き",
+          "writingSystem": "Japanese kana",
+          "readings": [
+            {
+              "system": "kana",
+              "value": "ki"
+            }
+          ],
+          "notes": [
+            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
+          ],
+          "examples": [
+            {
+              "text": "き",
+              "reading": "ki",
+              "translation": "tree",
+              "showsCoreMeaning": true,
+              "exampleLevel": "word",
+              "parallelExampleGroupID": null,
+              "reusesKnownSymbols": [],
+              "introducedSymbols": [
+                "木"
+              ]
+            }
+          ]
+        }
       ]
     },
     "korean": {
@@ -205,6 +235,36 @@
             "木"
           ]
         }
+      ],
+      "variants": [
+        {
+          "id": "native-korean",
+          "form": "나무",
+          "writingSystem": "Hangul",
+          "readings": [
+            {
+              "system": "native Korean",
+              "value": "namu"
+            }
+          ],
+          "notes": [
+            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
+          ],
+          "examples": [
+            {
+              "text": "나무",
+              "reading": "namu",
+              "translation": "tree",
+              "showsCoreMeaning": true,
+              "exampleLevel": "word",
+              "parallelExampleGroupID": null,
+              "reusesKnownSymbols": [],
+              "introducedSymbols": [
+                "木"
+              ]
+            }
+          ]
+        }
       ]
     }
   },
@@ -215,46 +275,106 @@
         "stage": "oracleBone",
         "label": "Oracle Bone Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/tree-u6728/historical/oracle/app/glyph.png",
         "changeNoteFromPrevious": null,
         "certainty": "medium",
         "sourceIds": [
           "source-oracle-bone-script",
           "source-character-classification",
           "source-evobc",
-          "source-radical-75"
+          "source-radical-75",
+          "source-sinica-tree-oracleBone"
         ],
         "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review.",
-        "availabilityState": "unavailableAsset"
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "tree",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=42.EA66",
+          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EE%A9%A6&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E7%94%B2%E9%AA%A8%E6%96%87%E9%87%8D%E6%96%87%E4%BA%8C&size=300&style=regular&color=%23000000&resolution=96",
+          "catalogueReference": "甲600 | 合33193 | 歷組",
+          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
+          "retrievedAt": "2026-08-31T18:52:38.2127617Z",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/tree-u6728/historical/oracle/app/glyph.png",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "木 in oracleBone historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "bronze",
         "label": "Bronze Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/tree-u6728/historical/bronze/app/glyph.png",
         "changeNoteFromPrevious": "Bronze inscriptions continue the ancient graph tradition after the oracle-bone period; final 木-specific redraw still required.",
         "certainty": "medium",
         "sourceIds": [
           "source-evobc",
-          "source-radical-75"
+          "source-radical-75",
+          "source-sinica-tree-bronze"
         ],
         "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset"
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "tree",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=36.EE0A",
+          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EE%B8%8A&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E9%87%91%E6%96%87%E9%87%8D%E6%96%87%E5%85%AD&size=300&style=regular&color=%23000000&resolution=96",
+          "catalogueReference": "木甗 | 商代晚期 | 集成781",
+          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
+          "retrievedAt": "2026-08-31T18:52:38.9157955Z",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/tree-u6728/historical/bronze/app/glyph.png",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "木 in bronze historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "seal",
         "label": "Seal Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/tree-u6728/historical/seal/app/glyph.png",
         "changeNoteFromPrevious": "Seal script formalizes earlier graph traditions into a more standardized archaic written style.",
         "certainty": "medium",
         "sourceIds": [
           "source-seal-script",
           "source-evobc",
-          "source-radical-75"
+          "source-radical-75",
+          "source-sinica-tree-seal"
         ],
         "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset"
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "tree",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=27.6728",
+          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%E6%9C%A8&font=%E5%8C%97%E5%B8%AB%E5%A4%A7%E8%AA%AA%E6%96%87%E5%B0%8F%E7%AF%86&size=300&style=regular&color=%23000000&resolution=96",
+          "catalogueReference": "說文‧木部",
+          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
+          "retrievedAt": "2026-08-31T18:52:39.4575350Z",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/tree-u6728/historical/seal/app/glyph.png",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "木 in seal historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "clerical",

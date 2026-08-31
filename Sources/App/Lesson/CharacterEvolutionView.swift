@@ -21,7 +21,11 @@ struct CharacterEvolutionView: View {
     private var journeyIDs: [String] {
         var ids = ["origin"]
         ids.append(contentsOf: stages.map(\.stage).filter { $0 != "origin" && $0 != "modernForms" && $0 != "today" })
-        ids.append("today")
+        if focusSelection.selectedTracks.isEmpty {
+            ids.append("today")
+        } else {
+            ids.append(contentsOf: focusSelection.selectedTracks.map { "today-\($0.rawValue)" })
+        }
         return ids.enumerated().reduce(into: [String]()) { result, item in
             if !result.contains(item.element) { result.append(item.element) }
         }
@@ -34,7 +38,17 @@ struct CharacterEvolutionView: View {
     private var currentLabel: String {
         if selectedStageID == "origin" { return "Origin" }
         if selectedStageID == "today" { return "Today" }
+        if selectedStageID.hasPrefix("today-"),
+           let track = FocusTrack(rawValue: String(selectedStageID.dropFirst("today-".count))) {
+            return "Today · \(track.title)"
+        }
         return stages.first(where: { $0.stage == selectedStageID })?.label ?? selectedStageID
+    }
+
+    /// The reference shows a quiet next-stage cue at the foot of every exhibit; paging remains gesture-led.
+    private var nextStageCue: String? {
+        guard currentIndex + 1 < journeyIDs.count else { return nil }
+        return "Next: \(label(for: journeyIDs[currentIndex + 1])) →"
     }
 
     var body: some View {
@@ -46,8 +60,15 @@ struct CharacterEvolutionView: View {
                     historicalPage(stage)
                         .tag(stage.stage)
                 }
-                todayPage
-                    .tag("today")
+                if focusSelection.selectedTracks.isEmpty {
+                    todayPage(track: nil, isFinal: true)
+                        .tag("today")
+                } else {
+                    ForEach(Array(focusSelection.selectedTracks.enumerated()), id: \.element) { index, track in
+                        todayPage(track: track, isFinal: index == focusSelection.selectedTracks.count - 1)
+                            .tag("today-\(track.rawValue)")
+                    }
+                }
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -74,12 +95,20 @@ struct CharacterEvolutionView: View {
                     )
                 }
             }
-            .frame(minHeight: 300)
+            .frame(minHeight: 360)
+            Text(record.history.origin?.concept ?? record.coreSharedMeaning.capitalized)
+                .font(AppTypography.stageTitle)
+                .foregroundStyle(AppColors.textPrimary)
             Text(record.history.origin?.explanation ?? record.history.originAnchor)
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textPrimary)
                 .multilineTextAlignment(.center)
                 .frame(maxWidth: 320)
+            if let nextStageCue {
+                Text(nextStageCue)
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textPrimary)
+            }
         }
     }
 
@@ -103,12 +132,17 @@ struct CharacterEvolutionView: View {
                     HistoricalMissingState()
                 }
             }
-            .frame(minHeight: 300)
+            .frame(minHeight: 360)
             Text(stage.stageExplanation ?? stage.changeNoteFromPrevious ?? "Stage-specific explanation is pending editorial review.")
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textPrimary)
                 .multilineTextAlignment(.center)
                 .frame(maxWidth: 320)
+            if let nextStageCue {
+                Text(nextStageCue)
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textPrimary)
+            }
             if let sound = stage.historicalSound {
                 Text(sound)
                     .font(AppTypography.metadata)
@@ -117,12 +151,14 @@ struct CharacterEvolutionView: View {
         }
     }
 
-    /// Today is the final exhibit room in the same continuous journey, not a separate lesson concept.
-    private var todayPage: some View {
+    /// Each selected language gets a horizontal Today exhibit page with its own word context.
+    private func todayPage(track: FocusTrack?, isFinal: Bool) -> some View {
         journeyPage {
-            ModernFormsComparisonView(record: record, focusSelection: focusSelection)
-            UsageExamplesView(record: record, focusSelection: focusSelection)
-            PrimaryActionButton(completionTitle, action: onComplete)
+            ModernFormsComparisonView(record: record, focusSelection: focusSelection, track: track)
+            UsageExamplesView(record: record, focusSelection: focusSelection, track: track)
+            if isFinal {
+                PrimaryActionButton(completionTitle, action: onComplete)
+            }
         }
     }
 
@@ -221,6 +257,10 @@ struct CharacterEvolutionView: View {
     private func label(for id: String) -> String {
         if id == "origin" { return "Origin" }
         if id == "today" { return "Today" }
+        if id.hasPrefix("today-"),
+           let track = FocusTrack(rawValue: String(id.dropFirst("today-".count))) {
+            return track.title
+        }
         return stages.first(where: { $0.stage == id })?.label ?? id
     }
 }
@@ -276,14 +316,14 @@ struct HistoricalAssetView: View {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
-                    .frame(maxWidth: .infinity, minHeight: 260)
+                    .frame(maxWidth: .infinity, minHeight: 320)
                     .accessibilityLabel(accessibilityDescription)
             } else {
                 HistoricalMissingState(title: "Historical visual unavailable")
             }
         case .bundledSVG(let url):
             BundledSVGView(url: url)
-                .frame(maxWidth: .infinity, minHeight: 260)
+                .frame(maxWidth: .infinity, minHeight: 320)
                 .accessibilityLabel(accessibilityDescription)
         case .unavailable:
             HistoricalMissingState(title: "Historical visual unavailable")

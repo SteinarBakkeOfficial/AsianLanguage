@@ -161,6 +161,36 @@
             "水"
           ]
         }
+      ],
+      "variants": [
+        {
+          "id": "native-japanese",
+          "form": "みず",
+          "writingSystem": "Japanese kana",
+          "readings": [
+            {
+              "system": "kana",
+              "value": "mizu"
+            }
+          ],
+          "notes": [
+            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
+          ],
+          "examples": [
+            {
+              "text": "みず",
+              "reading": "mizu",
+              "translation": "water",
+              "showsCoreMeaning": true,
+              "exampleLevel": "word",
+              "parallelExampleGroupID": null,
+              "reusesKnownSymbols": [],
+              "introducedSymbols": [
+                "水"
+              ]
+            }
+          ]
+        }
       ]
     },
     "korean": {
@@ -205,6 +235,36 @@
             "水"
           ]
         }
+      ],
+      "variants": [
+        {
+          "id": "native-korean",
+          "form": "물",
+          "writingSystem": "Hangul",
+          "readings": [
+            {
+              "system": "native Korean",
+              "value": "mul"
+            }
+          ],
+          "notes": [
+            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
+          ],
+          "examples": [
+            {
+              "text": "물",
+              "reading": "mul",
+              "translation": "water",
+              "showsCoreMeaning": true,
+              "exampleLevel": "word",
+              "parallelExampleGroupID": null,
+              "reusesKnownSymbols": [],
+              "introducedSymbols": [
+                "水"
+              ]
+            }
+          ]
+        }
       ]
     }
   },
@@ -215,46 +275,106 @@
         "stage": "oracleBone",
         "label": "Oracle Bone Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/water-u6C34/historical/oracle/app/glyph.png",
         "changeNoteFromPrevious": null,
         "certainty": "medium",
         "sourceIds": [
           "source-oracle-bone-script",
           "source-character-classification",
           "source-evobc",
-          "source-radical-85"
+          "source-radical-85",
+          "source-sinica-water-oracleBone"
         ],
         "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review.",
-        "availabilityState": "unavailableAsset"
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "water",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=43.E7BE",
+          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EE%9E%BE&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E7%94%B2%E9%AA%A8%E6%96%87%E9%87%8D%E6%96%87%E4%B8%89&size=300&style=regular&color=%23000000&resolution=96",
+          "catalogueReference": "甲903 | 合34165 | 歷組",
+          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
+          "retrievedAt": "2026-08-31T18:52:29.1721202Z",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/water-u6C34/historical/oracle/app/glyph.png",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "水 in oracleBone historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "bronze",
         "label": "Bronze Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/water-u6C34/historical/bronze/app/glyph.png",
         "changeNoteFromPrevious": "Bronze inscriptions continue the ancient graph tradition after the oracle-bone period; final 水-specific redraw still required.",
         "certainty": "medium",
         "sourceIds": [
           "source-evobc",
-          "source-radical-85"
+          "source-radical-85",
+          "source-sinica-water-bronze"
         ],
         "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset"
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "water",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=33.EBE9",
+          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EE%AF%A9&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E9%87%91%E6%96%87%E9%87%8D%E6%96%87%E4%B8%89&size=300&style=regular&color=%23000000&resolution=96",
+          "catalogueReference": "沈子它簋蓋 | 西周早期 | 集成4330",
+          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
+          "retrievedAt": "2026-08-31T18:52:29.7353546Z",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/water-u6C34/historical/bronze/app/glyph.png",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "水 in bronze historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "seal",
         "label": "Seal Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/water-u6C34/historical/seal/app/glyph.png",
         "changeNoteFromPrevious": "Seal script formalizes earlier graph traditions into a more standardized archaic written style.",
         "certainty": "medium",
         "sourceIds": [
           "source-seal-script",
           "source-evobc",
-          "source-radical-85"
+          "source-radical-85",
+          "source-sinica-water-seal"
         ],
         "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset"
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "water",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=27.6C34",
+          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%E6%B0%B4&font=%E5%8C%97%E5%B8%AB%E5%A4%A7%E8%AA%AA%E6%96%87%E5%B0%8F%E7%AF%86&size=300&style=regular&color=%23000000&resolution=96",
+          "catalogueReference": "說文‧水部",
+          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
+          "retrievedAt": "2026-08-31T18:52:35.7167897Z",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/water-u6C34/historical/seal/app/glyph.png",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "水 in seal historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "clerical",

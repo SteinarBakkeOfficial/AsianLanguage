@@ -28,6 +28,42 @@ extension View {
     func shellSurface() -> some View { modifier(ShellSurface()) }
 }
 
+/// Floating five-destination bar from the approved app-shell reference.
+struct AppTabBar: View {
+    @Binding var selectedTab: AppTab
+
+    var body: some View {
+        HStack(spacing: AppSpacing.space2xs) {
+            ForEach(AppTab.allCases) { tab in
+                Button {
+                    selectedTab = tab
+                } label: {
+                    VStack(spacing: AppSpacing.space2xs) {
+                        Image(systemName: tab.systemImageName)
+                            .font(.system(size: 20, weight: .medium))
+                        Text(tab.title)
+                            .font(AppTypography.tabLabel)
+                    }
+                    .foregroundStyle(selectedTab == tab ? AppColors.accentPrimary : AppColors.textPrimary)
+                    .frame(maxWidth: .infinity, minHeight: 62)
+                    .background(selectedTab == tab ? AppColors.surfaceStrong : Color.clear)
+                    .clipShape(Capsule())
+                }
+                .buttonStyle(.plain)
+                .accessibilityAddTraits(selectedTab == tab ? .isSelected : [])
+            }
+        }
+        .padding(AppSpacing.space2xs)
+        .background(AppColors.surfaceStrong)
+        .clipShape(Capsule())
+        .overlay {
+            Capsule().stroke(AppColors.separator, lineWidth: 1)
+        }
+        .padding(.horizontal, AppSpacing.spacePage)
+        .padding(.bottom, AppSpacing.spaceXs)
+    }
+}
+
 /// Top-level destinations available from the V1 tab shell.
 enum AppTab: Hashable, CaseIterable, Identifiable {
     case home

@@ -16,7 +16,8 @@ Assert-True ($symbolFiles.Count -eq 11) "The prepared pilot workspace should con
 $fire = Get-Content -Raw -LiteralPath (Join-Path $symbolsPath "fire-u706B/symbol.json") | ConvertFrom-Json
 Assert-True ($fire.editorialStatus -eq "needsReview") "Prepared Fire content must remain needsReview."
 Assert-True ($fire.history.origin.asset.contentClass -eq "educationalReconstruction") "Fire Origin must be classified as educational reconstruction."
-Assert-True ($fire.history.stages[0].assetRef -eq $null) "Fire must not invent an early historical asset reference."
+Assert-True ($fire.history.stages[0].assetMetadata.contentClass -eq "historicalEvidence") "Fire's early historical asset must be classified as historical evidence."
+Assert-True ($fire.history.stages[0].assetRef -like "Assets/Symbols/fire-u706B/historical/oracle/app/*") "Fire's early historical asset must point to its bundled Oracle Bone asset."
 
 $assetManifest = Get-Content -Raw -LiteralPath (Join-Path $repoRoot "Resources/Assets/Symbols/manifest.json") | ConvertFrom-Json
 Assert-True ($assetManifest.runtimeNetworkRequired -eq $false) "Offline asset manifest must prohibit runtime network requirements."

@@ -15,33 +15,30 @@ struct RootTabView: View {
             if let corpusLoadError = dependencies.corpusLoadError {
                 ContentUnavailableView("Corpus unavailable", systemImage: "exclamationmark.triangle", description: Text(corpusLoadError))
             } else {
-                TabView(selection: $navigationState.selectedTab) {
-                    HomeView(dependencies: dependencies)
-                        .tabItem { Label("Home", systemImage: AppTab.home.systemImageName) }
-                        .tag(AppTab.home)
-
-                    SymbolRootView(dependencies: dependencies)
-                        .tabItem { Label("Symbol", systemImage: AppTab.symbol.systemImageName) }
-                        .tag(AppTab.symbol)
-
-                    HistoryRootView(dependencies: dependencies)
-                        .tabItem { Label("History", systemImage: AppTab.history.systemImageName) }
-                        .tag(AppTab.history)
-
-                    BrowseView(dependencies: dependencies)
-                        .tabItem { Label("Browse", systemImage: AppTab.browse.systemImageName) }
-                        .tag(AppTab.browse)
-
-                    MoreRootView(dependencies: dependencies)
-                        .tabItem { Label("More", systemImage: AppTab.more.systemImageName) }
-                        .tag(AppTab.more)
+                VStack(spacing: 0) {
+                    rootContent
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    AppTabBar(selectedTab: $navigationState.selectedTab)
                 }
-                .tint(AppColors.accentPrimary)
-                .toolbarBackground(AppColors.appBackground, for: .tabBar)
-                .toolbarBackground(.visible, for: .tabBar)
             }
         }
         .background(AppColors.appBackground.ignoresSafeArea())
+    }
+
+    @ViewBuilder
+    private var rootContent: some View {
+        switch navigationState.selectedTab {
+        case .home:
+            HomeView(dependencies: dependencies)
+        case .symbol:
+            SymbolRootView(dependencies: dependencies)
+        case .history:
+            HistoryRootView(dependencies: dependencies)
+        case .browse:
+            BrowseView(dependencies: dependencies)
+        case .more:
+            MoreRootView(dependencies: dependencies)
+        }
     }
 }
 
@@ -147,20 +144,69 @@ private struct HistoryRootView: View {
 
     var body: some View {
         NavigationStack {
-            List(periods) { period in
-                SettingsRow(
-                    period.displayName,
-                    destination: HistoryPeriodView(period: period, dependencies: dependencies)
-                )
-                .listRowBackground(Color.clear)
+            ScrollView {
+                VStack(alignment: .leading, spacing: AppSpacing.spaceSection) {
+                    Text("History")
+                        .font(AppTypography.pageTitle)
+                        .foregroundStyle(AppColors.textPrimary)
+
+                    if let fire = dependencies.sharedCharacters.first(where: { $0.id == "fire" }),
+                       let oracle = fire.history.stages.first(where: { $0.stage == "oracleBone" }),
+                       let metadata = oracle.assetMetadata {
+                        ArtifactField {
+                            HistoricalAssetView(metadata: metadata)
+                        }
+                        .frame(minHeight: 280)
+                        Text(oracle.label)
+                            .font(AppTypography.exhibitHeading)
+                            .foregroundStyle(AppColors.textPrimary)
+                        Text("A source-backed view into the earliest available Fire form.")
+                            .font(AppTypography.body)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+
+                    VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                        Text("Script periods")
+                            .font(AppTypography.sectionHeading)
+                            .foregroundStyle(AppColors.textPrimary)
+                        ForEach(periods) { period in
+                            historyRow(period)
+                        }
+                    }
+                }
+                .padding(.horizontal, AppSpacing.spacePage)
+                .padding(.top, AppSpacing.spaceMd)
+                .padding(.bottom, AppSpacing.spaceSection)
             }
-            .listStyle(.insetGrouped)
-            .navigationTitle("History")
-            .scrollContentBackground(.hidden)
-            .background(AppColors.appBackground.ignoresSafeArea())
+            .navigationBarTitleDisplayMode(.inline)
             .tint(AppColors.accentPrimary)
         }
-        .background(ShellStyle.paper.ignoresSafeArea())
+        .background(AppColors.appBackground.ignoresSafeArea())
+    }
+
+    /// Period navigation uses the same elevated surface language as the app-shell reference.
+    private func historyRow(_ period: HistoryPeriod) -> some View {
+        NavigationLink {
+            HistoryPeriodView(period: period, dependencies: dependencies)
+        } label: {
+            HStack {
+                Text(period.displayName)
+                    .font(AppTypography.body.weight(.semibold))
+                    .foregroundStyle(AppColors.textPrimary)
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundStyle(AppColors.textTertiary)
+            }
+            .padding(AppSpacing.spaceMd)
+            .background(AppColors.surfaceElevated)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+            .overlay {
+                RoundedRectangle(cornerRadius: AppRadius.card)
+                    .stroke(AppColors.separator, lineWidth: 1)
+            }
+        }
+        .buttonStyle(.plain)
     }
 }
 
@@ -241,28 +287,91 @@ private struct MoreRootView: View {
 
     var body: some View {
         NavigationStack {
-            List {
-                NavigationLink("Languages") { LanguagesView(dependencies: dependencies) }
-                    .listRowBackground(Color.clear)
-                SettingsRow("Account", destination: AccountView(dependencies: dependencies))
-                    .listRowBackground(Color.clear)
-                NavigationLink("Settings") { SettingsView(dependencies: dependencies) }
-                    .listRowBackground(Color.clear)
-                SettingsRow(
-                    "About / Method",
-                    destination: AboutMethodView(corpusCount: dependencies.installedSharedCharacterCount)
-                )
-                .listRowBackground(Color.clear)
-                SettingsRow("Sources / Licenses", destination: SourcesLicensesView(dependencies: dependencies))
-                    .listRowBackground(Color.clear)
+            ScrollView {
+                VStack(alignment: .leading, spacing: AppSpacing.spaceSection) {
+                    Text("More")
+                        .font(AppTypography.pageTitle)
+                        .foregroundStyle(AppColors.textPrimary)
+
+                    utilitySection("Learning") {
+                        utilityLink("Languages", detail: "Choose which modern tracks appear in Today", systemImage: "character.book.closed") {
+                            LanguagesView(dependencies: dependencies)
+                        }
+                        utilityLink("Settings", detail: "Appearance and local app controls", systemImage: "gearshape") {
+                            SettingsView(dependencies: dependencies)
+                        }
+                    }
+
+                    utilitySection("About") {
+                        utilityLink("Account", detail: "Local-only learner profile", systemImage: "person") {
+                            AccountView(dependencies: dependencies)
+                        }
+                        utilityLink("About / Method", detail: "How Script Roots teaches characters", systemImage: "info.circle") {
+                            AboutMethodView(corpusCount: dependencies.installedSharedCharacterCount)
+                        }
+                        utilityLink("Sources / Licenses", detail: "Evidence and attribution", systemImage: "doc.text.magnifyingglass") {
+                            SourcesLicensesView(dependencies: dependencies)
+                        }
+                    }
+                }
+                .padding(.horizontal, AppSpacing.spacePage)
+                .padding(.top, AppSpacing.spaceMd)
+                .padding(.bottom, AppSpacing.spaceSection)
             }
-            .listStyle(.insetGrouped)
-            .navigationTitle("More")
-            .scrollContentBackground(.hidden)
-            .background(AppColors.appBackground.ignoresSafeArea())
+            .navigationBarTitleDisplayMode(.inline)
             .tint(AppColors.accentPrimary)
         }
         .background(AppColors.appBackground.ignoresSafeArea())
+    }
+
+    /// Groups utility destinations into the same quiet editorial sections as the reference shell.
+    @ViewBuilder
+    private func utilitySection<Content: View>(_ title: String, @ViewBuilder content: () -> Content) -> some View {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+            Text(title.uppercased())
+                .font(AppTypography.conceptLabel)
+                .tracking(1.2)
+                .foregroundStyle(AppColors.textSecondary)
+            content()
+        }
+    }
+
+    /// Utility rows expose their purpose in secondary copy without adding another navigation layer.
+    private func utilityLink<Destination: View>(
+        _ title: String,
+        detail: String,
+        systemImage: String,
+        @ViewBuilder destination: () -> Destination
+    ) -> some View {
+        NavigationLink {
+            destination()
+        } label: {
+            HStack(spacing: AppSpacing.spaceSm) {
+                Image(systemName: systemImage)
+                    .foregroundStyle(AppColors.accentPrimary)
+                    .frame(width: 24)
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text(title)
+                        .font(AppTypography.body.weight(.semibold))
+                        .foregroundStyle(AppColors.textPrimary)
+                    Text(detail)
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+                Spacer(minLength: 0)
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundStyle(AppColors.textTertiary)
+            }
+            .padding(AppSpacing.spaceMd)
+            .background(AppColors.surfaceElevated)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+            .overlay {
+                RoundedRectangle(cornerRadius: AppRadius.card)
+                    .stroke(AppColors.separator, lineWidth: 1)
+            }
+        }
+        .buttonStyle(.plain)
     }
 }
 

@@ -43,14 +43,14 @@ Implement the approved Fire Symbol Journey visual foundation while preserving th
 - Add the Symbol About sheet for character context, sources, and a quiet learning action.
 - Ensure direct view/stage entry does not create progress; meaningful start/resume and in-journey navigation still persist exact position.
 - Replace Home's Fire-shaped hardcoded lineage preview with a reusable data-driven LineagePreview that only shows actual available corpus forms.
-- Rework Today into a vertical, selected-track-aware presentation without arbitrary language colors; keep it in the same scroll as the historical spine.
+- Rework Today into one horizontal exhibit page per selected language track, without arbitrary language colors; keep every page in the same swipeable historical spine.
 - Add a dedicated learned Revisit entry that does not restart or downgrade progress.
 - Add a lightweight Quick Review recognition state that uses only an available corpus form and always links back to the full journey.
 - Complete the horizontal Symbol Journey with an automatic learned transition and Next Symbol action.
 - Add the final-record Completion state with Return Home and Revisit actions.
 - Apply CharacterTile to Browse-owned in-progress and status collections.
 - Move structure and source detail behind the character `…` menu so they do not interrupt the museum flow.
-- Rework Usage into selected-track vertical word context with readable readings and translations; do not teach unexplained sentences.
+- Rework Usage into one selected-track word-context panel per Today page with readable readings and translations; do not teach unexplained sentences.
 - Remove the Summary/Recall page from the primary Symbol Journey.
 - Migrate Search to AppSearchField with explicit Cancel behavior and text-first result rows.
 - Apply semantic design tokens to the Settings background, tint, and supporting copy while retaining native controls.
@@ -89,7 +89,7 @@ The design freeze is active: neutral structural surfaces may be exercised, but a
 
 - The folder workflow successfully prepared and packaged all 11 existing draft records.
 - Fire has a local educational Origin reconstruction; Oracle Bone, Bronze, Seal, and Clerical remain explicit unavailable-asset stages, while the Regular prototype remains a draft educational reconstruction.
-- The current package contains local SVG derivatives, but iOS rendering and screenshot comparison require macOS/Xcode verification.
+- The current package contains source-backed local raster glyphs for the 11-record pilot, plus explicit missing-stage states where no approved file was acquired; iOS rendering and screenshot comparison require macOS/Xcode verification.
 - The generated review report makes each Symbol folder and its remaining editorial actions directly locatable.
 - Onboarding now prioritizes the Fire museum journey; all four language tracks remain enabled by default and may later be adjusted in More → Languages, including turning all tracks off.
 

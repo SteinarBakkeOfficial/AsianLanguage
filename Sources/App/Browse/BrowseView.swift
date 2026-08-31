@@ -15,36 +15,53 @@ struct BrowseView: View {
 
     var body: some View {
         NavigationStack(path: $navigationPath) {
-            List {
-                Section {
-                    NavigationLink { SearchView(dependencies: dependencies) } label: {
-                        Label("Search characters, meanings, readings…", systemImage: "magnifyingglass")
+            ScrollView {
+                VStack(alignment: .leading, spacing: AppSpacing.spaceSection) {
+                    Text("Browse")
+                        .font(AppTypography.pageTitle)
+                        .foregroundStyle(AppColors.textPrimary)
+
+                    browseLink(title: "Search", detail: "Search characters, meanings, readings…", systemImage: "magnifyingglass") {
+                        SearchView(dependencies: dependencies)
+                    }
+
+                    if !inProgressRecords.isEmpty {
+                        browseSection("In Progress") {
+                            ForEach(inProgressRecords) { record in
+                                characterRow(record, position: true)
+                            }
+                        }
+                    }
+
+                    browseSection("Collections") {
+                        browseLink(title: "Explore Collections", detail: "Nature · Pictographs · Dramatic Changes", systemImage: "square.grid.2x2") {
+                            CollectionsView(dependencies: dependencies)
+                        }
+                    }
+
+                    browseSection("Browse All Symbols") {
+                        ForEach(dependencies.sharedCharacters) { record in
+                            characterRow(record)
+                        }
+                    }
+
+                    browseSection("Your Library") {
+                        browseLink(title: "Learned", detail: "Review completed symbols", systemImage: "checkmark.circle") {
+                            BrowseStatusView(title: "Learned", records: learnedRecords, dependencies: dependencies)
+                        }
+                        browseLink(title: "Favorites", detail: "Saved for easy return", systemImage: "star") {
+                            BrowseStatusView(title: "Favorites", records: favoriteRecords, dependencies: dependencies)
+                        }
+                        browseLink(title: "Review Later", detail: "Symbols you marked to revisit", systemImage: "clock") {
+                            BrowseStatusView(title: "Review Later", records: reviewLaterRecords, dependencies: dependencies)
+                        }
                     }
                 }
-
-                if !inProgressRecords.isEmpty {
-                    Section("In Progress") {
-                        ForEach(inProgressRecords) { record in characterRow(record, position: true) }
-                    }
-                }
-
-                Section("Collections") {
-                    NavigationLink { CollectionsView(dependencies: dependencies) } label: {
-                        Label("Explore Collections", systemImage: "square.grid.2x2")
-                    }
-                }
-
-                Section("Browse All Symbols") {
-                    ForEach(dependencies.sharedCharacters) { record in characterRow(record) }
-                }
-
-                Section("Your Library") {
-                    NavigationLink { BrowseStatusView(title: "Learned", records: learnedRecords, dependencies: dependencies) } label: { Label("Learned", systemImage: "checkmark.circle") }
-                    NavigationLink { BrowseStatusView(title: "Favorites", records: favoriteRecords, dependencies: dependencies) } label: { Label("Favorites", systemImage: "star") }
-                    NavigationLink { BrowseStatusView(title: "Review Later", records: reviewLaterRecords, dependencies: dependencies) } label: { Label("Review Later", systemImage: "clock") }
-                }
+                .padding(.horizontal, AppSpacing.spacePage)
+                .padding(.top, AppSpacing.spaceMd)
+                .padding(.bottom, AppSpacing.spaceSection)
             }
-            .navigationTitle("Browse")
+            .navigationBarTitleDisplayMode(.inline)
         }
         .onChange(of: navigationState.selectedTab) { _, selectedTab in
             if selectedTab != .browse {
@@ -55,6 +72,55 @@ struct BrowseView: View {
         .scrollContentBackground(.hidden)
         .background(ShellStyle.paper.ignoresSafeArea())
         .tint(ShellStyle.cinnabar)
+    }
+
+    /// Section headings mirror the approved shell while leaving each group open and scannable.
+    @ViewBuilder
+    private func browseSection<Content: View>(_ title: String, @ViewBuilder content: () -> Content) -> some View {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+            Text(title)
+                .font(AppTypography.sectionHeading)
+                .foregroundStyle(AppColors.textPrimary)
+            content()
+        }
+    }
+
+    /// Search and library destinations use one calm row treatment instead of native list chrome.
+    private func browseLink<Destination: View>(
+        title: String,
+        detail: String,
+        systemImage: String,
+        @ViewBuilder destination: () -> Destination
+    ) -> some View {
+        NavigationLink {
+            destination()
+        } label: {
+            HStack(spacing: AppSpacing.spaceSm) {
+                Image(systemName: systemImage)
+                    .foregroundStyle(AppColors.accentPrimary)
+                    .frame(width: 24)
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text(title)
+                        .font(AppTypography.body.weight(.semibold))
+                        .foregroundStyle(AppColors.textPrimary)
+                    Text(detail)
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+                Spacer(minLength: 0)
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundStyle(AppColors.textTertiary)
+            }
+            .padding(AppSpacing.spaceMd)
+            .background(AppColors.surfaceElevated)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+            .overlay {
+                RoundedRectangle(cornerRadius: AppRadius.card)
+                    .stroke(AppColors.separator, lineWidth: 1)
+            }
+        }
+        .buttonStyle(.plain)
     }
 
     /// Character selections always switch to the canonical Symbol root.
