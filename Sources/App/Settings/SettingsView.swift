@@ -35,7 +35,7 @@ struct SettingsView: View {
                 ForEach(FocusTrack.allCases) { track in
                     Toggle(track.title, isOn: focusTrackBinding(for: track))
                 }
-                Text("All four focus tracks are enabled by default.")
+                Text("All four focus tracks are enabled by default. Turning them all off keeps the Symbol Journey museum-only.")
                     .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textSecondary)
             }

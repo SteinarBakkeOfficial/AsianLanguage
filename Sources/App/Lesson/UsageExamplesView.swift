@@ -1,86 +1,123 @@
 import SwiftUI
 
-/// Progressive word and sentence examples across the required focus tracks.
+/// Word-level modern context for the Symbol Journey; sentence lessons are intentionally out of scope.
 struct UsageExamplesView: View {
-    /// Bundled record for the current lesson.
     let record: SharedCharacterRecord
-
-    /// Focus tracks currently enabled by the learner.
     let focusSelection: FocusTrackSelection
 
     var body: some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
-            Text("USAGE")
+            Text("WORD CONTEXT")
                 .font(AppTypography.conceptLabel)
                 .tracking(1.4)
                 .foregroundStyle(AppColors.textSecondary)
-            Text("Where the character lives today")
+            Text("Start with the character")
                 .font(AppTypography.exhibitHeading)
                 .foregroundStyle(AppColors.textPrimary)
-            Text(record.usage.coreMeaningFirst)
+            Text("Each language keeps the lesson at word level: the written form, its reading, and what the character contributes to the word. Sentence study is not part of this museum journey.")
                 .font(AppTypography.body)
+                .foregroundStyle(AppColors.textSecondary)
 
             if focusSelection.selectedTracks.isEmpty {
-                Text("Language examples are turned off. You can enable tracks later in More → Languages.")
+                Text("Modern word context is turned off. You can enable tracks later in More → Languages.")
                     .font(AppTypography.body)
                     .foregroundStyle(AppColors.textSecondary)
             } else {
                 if focusSelection.contains(.simplifiedChinese) {
-                    exampleGroup("Simplified Chinese", examples: record.focusCoverage.simplifiedChinese.examples)
+                    wordSection(
+                        title: "Simplified Chinese",
+                        form: record.focusCoverage.simplifiedChinese.form,
+                        readings: record.focusCoverage.simplifiedChinese.readings,
+                        glosses: record.focusCoverage.simplifiedChinese.glosses
+                    )
                 }
                 if focusSelection.contains(.traditionalChinese) {
-                    exampleGroup("Traditional Chinese - Taiwan", examples: record.focusCoverage.traditionalChinese.taiwanExamples)
-                    exampleGroup("Traditional Chinese - Hong Kong", examples: record.focusCoverage.traditionalChinese.hongKongExamples)
+                    wordSection(
+                        title: "Traditional Chinese · Taiwan / Hong Kong",
+                        form: record.focusCoverage.traditionalChinese.form,
+                        readings: record.focusCoverage.traditionalChinese.readings,
+                        glosses: record.focusCoverage.traditionalChinese.glosses
+                    )
                 }
                 if focusSelection.contains(.japanese) {
-                    exampleGroup("Japanese", examples: record.focusCoverage.japanese.examples)
+                    wordSection(
+                        title: "Japanese Kanji",
+                        form: record.focusCoverage.japanese.form,
+                        readings: record.focusCoverage.japanese.readings,
+                        glosses: record.focusCoverage.japanese.glosses
+                    )
                 }
                 if focusSelection.contains(.korean) {
-                    exampleGroup("Korean", examples: record.focusCoverage.korean.examples)
+                    koreanWordSection(record.focusCoverage.korean)
                 }
             }
         }
     }
 
-    /// One focus-track example group, ordered from word to sentence.
-    private func exampleGroup(_ title: String, examples: [UsageExample]) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(title)
-                .font(AppTypography.sectionHeading)
-                .foregroundStyle(AppColors.textPrimary)
-
-            GroupedSurface {
-                VStack(alignment: .leading, spacing: 2) {
-                    ForEach(Array(examples.enumerated()), id: \.offset) { index, example in
-                        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                            HStack(alignment: .firstTextBaseline) {
-                                Text(example.text)
-                                    .font(.system(size: 24, design: .serif))
-                                    .foregroundStyle(AppColors.textPrimary)
-                                Spacer()
-                                Text(example.exampleLevel.rawValue.capitalized)
-                                    .font(AppTypography.caption)
-                                    .foregroundStyle(AppColors.textSecondary)
-                            }
-                            if let reading = example.reading, !reading.isEmpty {
-                                Text(reading)
-                                    .font(AppTypography.metadata)
-                                    .foregroundStyle(AppColors.textSecondary)
-                            }
-                            Text(example.translation)
-                                .font(AppTypography.body)
-                                .foregroundStyle(AppColors.textSecondary)
-                            if !example.reusesKnownSymbols.isEmpty {
-                                Text("Reuses: \(example.reusesKnownSymbols.joined(separator: ", "))")
-                                    .font(AppTypography.caption)
-                                    .foregroundStyle(AppColors.textSecondary)
-                            }
-                        }
-                        .padding(.vertical, AppSpacing.spaceXs)
-                        if index < examples.count - 1 {
-                            Divider().overlay(AppColors.separator)
-                        }
+    /// Shows one focused character word rather than an unexplained full sentence.
+    private func wordSection(
+        title: String,
+        form: String,
+        readings: [CharacterReading],
+        glosses: [String]
+    ) -> some View {
+        GroupedSurface {
+            VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                Text(title)
+                    .font(AppTypography.sectionHeading)
+                    .foregroundStyle(AppColors.textPrimary)
+                HStack(alignment: .top, spacing: AppSpacing.spaceMd) {
+                    Text(form)
+                        .font(.system(size: 48, design: .serif))
+                        .foregroundStyle(AppColors.textPrimary)
+                    VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                        Text(readings.map(\.value).joined(separator: " · "))
+                            .font(AppTypography.body.weight(.semibold))
+                            .foregroundStyle(AppColors.textPrimary)
+                        Text(glosses.joined(separator: ", "))
+                            .font(AppTypography.body)
+                            .foregroundStyle(AppColors.textSecondary)
                     }
+                }
+                Divider().overlay(AppColors.separator)
+                Text("Character focus: (form) · (glosses.joined(separator: ", "))")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
+        }
+    }
+
+    /// Korean uses native Hangul for everyday vocabulary while retaining the Hanja bridge as context.
+    private func koreanWordSection(_ coverage: StandardFocusCoverage) -> some View {
+        let hanjaReading = coverage.readings.first(where: { $0.system == "hanja" })?.value
+        let nativeReading = coverage.readings.first(where: { $0.system == "native Korean" })?.value
+        let nativeWord = nativeReading?.split(separator: "/").first.map(String.init) ?? coverage.form
+        return GroupedSurface {
+            VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                Text("Korean")
+                    .font(AppTypography.sectionHeading)
+                    .foregroundStyle(AppColors.textPrimary)
+                HStack(alignment: .top, spacing: AppSpacing.spaceMd) {
+                    Text(nativeWord)
+                        .font(.system(size: 42, design: .serif))
+                        .foregroundStyle(AppColors.textPrimary)
+                    VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                        Text(nativeReading ?? "Everyday Korean")
+                            .font(AppTypography.body.weight(.semibold))
+                            .foregroundStyle(AppColors.textPrimary)
+                        Text(coverage.glosses.joined(separator: ", "))
+                            .font(AppTypography.body)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+                }
+                Divider().overlay(AppColors.separator)
+                Text("Everyday word: (nativeWord) · (coverage.glosses.joined(separator: ", "))")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+                if let hanjaReading {
+                    Text("Shared character (coverage.form) · Hanja reading (hanjaReading)")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textTertiary)
                 }
             }
         }

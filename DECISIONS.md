@@ -22,8 +22,8 @@
 
 - Evolution Stages are data-driven and may be omitted when uncertain or not useful.
 - Canonical IDs are origin, oracleBone, bronze, seal, clerical, regular, and modernForms/today.
-- Today / Modern Endpoint is one final journey destination containing selected focus-track content.
-- Horizontal swipe and fixed/floating stage navigation are the intended interaction model; stage content may scroll vertically.
+- Today / Modern Endpoint is the final room in the same continuous Symbol Journey, containing selected focus-track forms and word-level context.
+- Historical stages and Today scroll as one exhibit; a quiet stage rail may provide direct access without inserting Continue gates between concepts.
 - Exact SymbolJourneyPosition, including stage ID, is persisted for resume.
 
 ## Content and assets
@@ -61,10 +61,10 @@
 - HistoricalMissingState is the only acceptable visual response to an unavailable approved asset; modern glyphs and generated ancient-looking substitutes are prohibited.
 - LineagePreview is data-driven and may render only forms present in the approved corpus.
 - The first visual slice uses a restrained current/next rail and vertically scrollable stage pages inside a horizontal stage pager.
-- Today is a vertical endpoint with one section per selected modern language track; when no tracks are selected it presents an explicit museum-only state; language identity is not communicated by arbitrary color.
+- Today is the final room in the continuous journey, with one section per selected modern language track and word-level context only; when no tracks are selected it presents an explicit museum-only state; language identity is not communicated by arbitrary color.
 - Structure is a vertical recap, not a second navigation rail; it may show only stage forms and component insights supported by the record.
-- Usage is a vertical list of selected-track examples, prioritizing readable high-value examples over dictionary completeness.
-- Summary/Recall uses recognition and reveal interactions without XP, lives, timers, scoring, or punitive feedback.
+- Usage context is a vertical list of selected-track character words, prioritizing the written character, reading, and meaning over unexplained sentences.
+- There is no Summary/Recall screen in the primary museum flow; character recognition, structure, and source detail live behind the `…` character menu.
 - Search remains Browse-owned, uses a native-feeling field with explicit Cancel, and presents text-first results without fabricated historical thumbnails.
 - Settings retains native SwiftUI controls while adopting semantic app surfaces and typography.
 - Home uses one dominant primary Symbol action and open lineage artwork; supporting review and collection modules remain subordinate grouped surfaces.

@@ -13,7 +13,7 @@ Implement the approved Fire Symbol Journey visual foundation while preserving th
 ## Current product truth
 
 - The core object is Shared Character.
-- The hero experience is one Symbol Journey through time into Today / Modern Forms.
+- The hero experience is one continuous Symbol Journey through time into Today and word-level modern context.
 - Root areas are Home, Symbol, History, Browse, and More.
 - Search and Collections belong in Browse; Languages, Settings, Account, About / Method, and reset belong in More.
 - Focus tracks are four multi-select values, all enabled by default.
@@ -43,14 +43,14 @@ Implement the approved Fire Symbol Journey visual foundation while preserving th
 - Add the Symbol About sheet for character context, sources, and a quiet learning action.
 - Ensure direct view/stage entry does not create progress; meaningful start/resume and in-journey navigation still persist exact position.
 - Replace Home's Fire-shaped hardcoded lineage preview with a reusable data-driven LineagePreview that only shows actual available corpus forms.
-- Rework Today into a vertical, selected-track-aware presentation without arbitrary language colors.
+- Rework Today into a vertical, selected-track-aware presentation without arbitrary language colors; keep it in the same scroll as the historical spine.
 - Add a dedicated learned Revisit entry that does not restart or downgrade progress.
 - Add a lightweight Quick Review recognition state that uses only an available corpus form and always links back to the full journey.
 - Add the final-record Completion state with Return Home and Revisit actions.
 - Apply CharacterTile to Browse-owned in-progress and status collections.
-- Rework Structure into a stage-aware vertical recap using available lineage forms and component metadata.
-- Rework Usage into selected-track vertical example groups with readable readings and translations.
-- Add a Summary/Recall modern-form reveal without scoring or gamification.
+- Move structure and source detail behind the character `…` menu so they do not interrupt the museum flow.
+- Rework Usage into selected-track vertical word context with readable readings and translations; do not teach unexplained sentences.
+- Remove the Summary/Recall page from the primary Symbol Journey.
 - Migrate Search to AppSearchField with explicit Cancel behavior and text-first result rows.
 - Apply semantic design tokens to the Settings background, tint, and supporting copy while retaining native controls.
 - Migrate Home to shared page/title/action hierarchy while keeping the Symbol Journey as the dominant content.

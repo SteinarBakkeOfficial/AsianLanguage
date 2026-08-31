@@ -14,7 +14,7 @@ struct SharedCharacterRecord: Decodable, Identifiable, Hashable {
     /// One teachable overlapping meaning across all required focus tracks.
     let coreSharedMeaning: String
 
-    /// Editorial recognition takeaway shown in lesson summary and Home previews.
+    /// Editorial recognition takeaway shown in character detail and Home previews.
     let recognitionTakeaway: String
 
     /// Draft/review/published state used by validation and content tooling.
@@ -312,7 +312,7 @@ struct MissingContentState: Hashable {
     let message: String
 }
 
-/// Modern usage example shown in the Usage lesson step.
+/// Editorial modern usage example retained for future word-level content review.
 struct UsageExample: Decodable, Hashable {
     /// Example text in the relevant writing system.
     let text: String

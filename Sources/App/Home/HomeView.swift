@@ -87,17 +87,24 @@ struct HomeView: View {
     }
 
     private var collectionModule: some View {
-        GroupedSurface {
-            VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
-            Text("Continue Collection").font(AppTypography.sectionHeading)
-            Text("Nature").font(AppTypography.body.weight(.semibold))
-            Text(incompleteCollectionRecords.map(\.coreCharacter).joined(separator: "  "))
-                .font(.system(size: 25, design: .serif))
-            Text("Explore a curated set of Shared Characters")
-                .font(AppTypography.caption)
-                .foregroundStyle(AppColors.textSecondary)
+        Button {
+            guard let nextRecord = incompleteCollectionRecords.first else { return }
+            dependencies.navigationState.openSymbol(nextRecord.id, intent: .start)
+        } label: {
+            GroupedSurface {
+                VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
+                    Text("Continue Collection").font(AppTypography.sectionHeading)
+                    Text("Nature").font(AppTypography.body.weight(.semibold))
+                    Text(incompleteCollectionRecords.map(\.coreCharacter).joined(separator: "  "))
+                        .font(.system(size: 25, design: .serif))
+                    Text("Explore a curated set of Shared Characters")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
             }
         }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Continue Nature collection")
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 

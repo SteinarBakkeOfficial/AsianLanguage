@@ -9,7 +9,6 @@ struct LessonView: View {
     @State private var position: SymbolJourneyPosition
     @State private var entryMode: SymbolEntryMode
     @State private var showingReviewAnswer = false
-    @State private var showingSummaryAnswer = false
     @State private var showingAbout = false
     @State private var showingCorpusComplete = false
 
@@ -20,16 +19,24 @@ struct LessonView: View {
         openingIntent = dependencies.navigationState.symbolOpenIntent ?? .view
         let savedState = dependencies.userStateStore.state.lessonStates[route.sharedCharacterID]
         let savedPosition = savedState?.lastPosition
-        let requestedPosition = route.startingPosition ?? savedPosition ?? .origin
-        // Today is a host section, even when a direct route names it as a journey endpoint.
-        _position = State(initialValue: requestedPosition.stageID == "today" ? SymbolJourneyPosition(section: .today) : requestedPosition)
+        // Browse/search entries are fresh museum visits; only an explicit resume may use saved progress.
+        let requestedPosition: SymbolJourneyPosition = openingIntent == .view
+            ? .origin
+            : (route.startingPosition ?? savedPosition ?? .origin)
+        // Legacy supporting sections are no longer part of the primary flow; resume them at Today.
+        let normalizedPosition: SymbolJourneyPosition
+        switch requestedPosition.section {
+        case .structure, .summary, .usage:
+            normalizedPosition = SymbolJourneyPosition(section: .today)
+        case .evolution, .today:
+            normalizedPosition = requestedPosition.stageID == "today"
+                ? SymbolJourneyPosition(section: .today)
+                : requestedPosition
+        }
+        _position = State(initialValue: normalizedPosition)
         let mode: SymbolEntryMode
         if dependencies.navigationState.symbolOpenIntent == .review {
             mode = .review
-        } else if dependencies.navigationState.symbolOpenIntent == .view,
-                  route.startingPosition == nil,
-                  savedState?.progressStatus == .learned {
-            mode = .revisit
         } else {
             mode = .journey
         }
@@ -57,11 +64,7 @@ struct LessonView: View {
             } else if let record = sharedCharacter {
                 switch entryMode {
                 case .journey:
-                    if position.section == .evolution {
-                        journeyContent(record: record)
-                    } else {
-                        supportingJourneyContent(record: record)
-                    }
+                    journeyContent(record: record)
                 case .revisit:
                     RevisitEntryView(
                         record: record,
@@ -75,8 +78,7 @@ struct LessonView: View {
                             entryMode = .review
                         },
                         onUsage: {
-                            position = SymbolJourneyPosition(section: .usage)
-                            entryMode = .journey
+                            entryMode = .usage
                         }
                     )
                 case .review:
@@ -89,8 +91,20 @@ struct LessonView: View {
                         },
                         onContinue: {
                             showingReviewAnswer = false
+                            if let next = dependencies.nextReviewLater(after: route.sharedCharacterID) {
+                                dependencies.navigationState.openSymbol(next.id, intent: .review)
+                            } else {
+                                position = .origin
+                                entryMode = .journey
+                            }
                         }
                     )
+                case .usage:
+                    ScrollView {
+                        UsageExamplesView(record: record, focusSelection: userStateStore.state.focusSelection)
+                            .padding(AppSpacing.spacePage)
+                    }
+                    .scrollIndicators(.hidden)
                 }
             } else {
                 ContentUnavailableView("Symbol Unavailable", systemImage: "exclamationmark.triangle")
@@ -109,7 +123,11 @@ struct LessonView: View {
         }
         .sheet(isPresented: $showingAbout) {
             if let record = sharedCharacter {
-                CharacterAboutSheet(record: record, onMarkLearned: markLearnedAndOpenNext)
+                CharacterAboutSheet(
+                    record: record,
+                    userStateStore: userStateStore,
+                    onMarkLearned: markLearnedAndOpenNext
+                )
             }
         }
         .alert("Journey complete", isPresented: $showingCorpusComplete) {
@@ -125,148 +143,25 @@ struct LessonView: View {
         }
     }
 
-    /// Supporting sections use their own vertical scroll container and no second stage rail.
-    private func supportingJourneyContent(record: SharedCharacterRecord) -> some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
-                journeyContent(record: record)
-                journeyControls(record: record)
-            }
-            .padding(AppSpacing.spacePage)
-        }
-        .scrollIndicators(.hidden)
-    }
-
-    /// Evolution owns the horizontal pager; supporting sections use the same record without another progress rail.
-    @ViewBuilder
+    /// The historical spine and Today endpoint share one continuous museum scroll.
     private func journeyContent(record: SharedCharacterRecord) -> some View {
-        switch position.section {
-        case .evolution:
-            CharacterEvolutionView(
-                record: record,
-                focusSelection: userStateStore.state.focusSelection,
-                onAdvance: { advance(record: record) },
-                selectedStageID: Binding(
-                    get: { position.stageID ?? "origin" },
-                    set: { selectStage($0) }
-                )
+        CharacterEvolutionView(
+            record: record,
+            focusSelection: userStateStore.state.focusSelection,
+            selectedStageID: Binding(
+                get: { position.section == .today ? "today" : (position.stageID ?? "origin") },
+                set: { stageID in
+                    if openingIntent == .view {
+                        // Browse/search inspection may scroll freely without creating progress.
+                        position = stageID == "today"
+                            ? SymbolJourneyPosition(section: .today)
+                            : SymbolJourneyPosition(section: .evolution, stageID: stageID)
+                    } else {
+                        selectStage(stageID)
+                    }
+                }
             )
-        case .today:
-            ModernFormsComparisonView(record: record, focusSelection: userStateStore.state.focusSelection)
-        case .structure:
-            structureContent(record: record)
-        case .usage:
-            UsageExamplesView(record: record, focusSelection: userStateStore.state.focusSelection)
-        case .summary:
-            summaryContent(record: record)
-        }
-    }
-
-    /// Structure is a vertical recap of real stage forms and stage-aware component notes.
-    private func structureContent(record: SharedCharacterRecord) -> some View {
-        VStack(alignment: .leading, spacing: AppSpacing.spaceMd) {
-            Text("STRUCTURE")
-                .font(AppTypography.conceptLabel)
-                .tracking(1.4)
-                .foregroundStyle(AppColors.textSecondary)
-            Text("How the form settles")
-                .font(AppTypography.exhibitHeading)
-                .foregroundStyle(AppColors.textPrimary)
-            Text(record.structure.summary)
-                .font(AppTypography.body)
-
-            LineagePreview(record: record, variant: .contextual)
-
-            if !record.structure.components.isEmpty {
-                VStack(alignment: .leading, spacing: 0) {
-                    ForEach(Array(record.structure.components.enumerated()), id: \.offset) { index, component in
-                        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                            HStack(alignment: .firstTextBaseline) {
-                                Text(component.label)
-                                    .font(AppTypography.sectionHeading)
-                                    .foregroundStyle(AppColors.textPrimary)
-                                Spacer()
-                                if let introducedAtStage = component.introducedAtStage {
-                                    Text(introducedAtStage)
-                                        .font(AppTypography.caption)
-                                        .foregroundStyle(AppColors.textSecondary)
-                                }
-                            }
-                            Text("\(component.role): \(component.meaningHint)")
-                                .font(AppTypography.body)
-                                .foregroundStyle(AppColors.textSecondary)
-                            if let explanation = component.explanation {
-                                Text(explanation)
-                                    .font(AppTypography.caption)
-                                    .foregroundStyle(AppColors.textSecondary)
-                            }
-                        }
-                        .padding(.vertical, AppSpacing.spaceMd)
-                        if index < record.structure.components.count - 1 {
-                            Divider().overlay(AppColors.separator)
-                        }
-                    }
-                }
-            }
-            if let caveat = record.structure.caveat {
-                Text(caveat).font(AppTypography.caption).foregroundStyle(AppColors.textSecondary)
-            }
-        }
-    }
-
-    /// Summary is a recognition recap with one calm reveal interaction and no scoring.
-    private func summaryContent(record: SharedCharacterRecord) -> some View {
-        VStack(alignment: .leading, spacing: AppSpacing.spaceMd) {
-            Text("SUMMARY")
-                .font(AppTypography.conceptLabel)
-                .tracking(1.4)
-                .foregroundStyle(AppColors.textSecondary)
-            Text("What do you recognize?")
-                .font(AppTypography.exhibitHeading)
-                .foregroundStyle(AppColors.textPrimary)
-            Text(userStateStore.state.focusSelection.selectedTracks.isEmpty
-                ? "From the original idea through its historical forms, what character is at the center of this journey?"
-                : "From the original idea to the modern form, what character is at the center of this journey?")
-                .font(AppTypography.body)
-                .foregroundStyle(AppColors.textSecondary)
-                .fixedSize(horizontal: false, vertical: true)
-            if showingSummaryAnswer {
-                GroupedSurface {
-                    VStack(spacing: AppSpacing.space2xs) {
-                        Text(record.coreCharacter)
-                            .font(.system(size: 72, design: .serif))
-                            .foregroundStyle(AppColors.textPrimary)
-                        Text(record.coreSharedMeaning.capitalized)
-                            .font(AppTypography.body.weight(.semibold))
-                            .foregroundStyle(AppColors.textPrimary)
-                    }
-                    .frame(maxWidth: .infinity)
-                }
-            } else {
-                SecondaryActionButton(userStateStore.state.focusSelection.selectedTracks.isEmpty ? "Reveal Character" : "Reveal Modern Form") {
-                    showingSummaryAnswer = true
-                }
-            }
-            Text(record.recognitionTakeaway)
-                .font(AppTypography.body)
-            Text("Sources / Notes")
-                .font(AppTypography.sectionHeading)
-            ForEach(record.notes, id: \.self) { Text($0).font(AppTypography.caption).foregroundStyle(AppColors.textSecondary) }
-            ForEach(record.sources, id: \.id) { source in
-                if let urlString = source.url, let url = URL(string: urlString) {
-                    Link(source.label, destination: url)
-                } else {
-                    Text(source.label).font(AppTypography.caption).foregroundStyle(AppColors.textSecondary)
-                }
-            }
-        }
-    }
-
-    /// Supporting content advances after Today; Evolution uses its own persistent navigator.
-    private func journeyControls(record: SharedCharacterRecord) -> some View {
-        PrimaryActionButton(position.section == .today ? "Continue to Structure" : "Continue") {
-            advance(record: record)
-        }
+        )
     }
 
     private func selectStage(_ stageID: String) {
@@ -277,33 +172,6 @@ struct LessonView: View {
         }
         position = SymbolJourneyPosition(section: .evolution, stageID: stageID)
         persistPositionIfNeeded()
-    }
-
-    private func advance(record: SharedCharacterRecord) {
-        if position.section == .evolution {
-            let stageIDs = journeyStageIDs(record: record)
-            if let stageIndex = stageIDs.firstIndex(of: position.stageID ?? "origin"), stageIndex + 1 < stageIDs.count {
-                selectStage(stageIDs[stageIndex + 1])
-            } else {
-                position = SymbolJourneyPosition(section: .today)
-                persistPositionIfNeeded()
-            }
-            return
-        }
-
-        guard let sectionIndex = SymbolJourneySection.allCases.firstIndex(of: position.section),
-              sectionIndex + 1 < SymbolJourneySection.allCases.count else { return }
-        position = SymbolJourneyPosition(section: SymbolJourneySection.allCases[sectionIndex + 1])
-        persistPositionIfNeeded()
-    }
-
-    private func journeyStageIDs(record: SharedCharacterRecord) -> [String] {
-        var ids = ["origin"]
-        ids.append(contentsOf: record.history.stages.map(\.stage).filter { $0 != "origin" && $0 != "modernForms" && $0 != "today" })
-        ids.append("today")
-        return ids.enumerated().reduce(into: [String]()) { result, item in
-            if !result.contains(item.element) { result.append(item.element) }
-        }
     }
 
     private func persistPositionIfNeeded() {
@@ -385,6 +253,7 @@ private enum SymbolEntryMode {
     case journey
     case revisit
     case review
+    case usage
 }
 
 /// Learned entry surface for a collected Symbol; it does not mutate progress on display.
@@ -507,6 +376,7 @@ private struct QuickReviewView: View {
 /// Secondary information sheet keeps sources, provenance, and quiet actions out of the exhibit chrome.
 private struct CharacterAboutSheet: View {
     let record: SharedCharacterRecord
+    @ObservedObject var userStateStore: LocalUserStateStore
     let onMarkLearned: () -> Void
     @Environment(\.dismiss) private var dismiss
 
@@ -517,11 +387,32 @@ private struct CharacterAboutSheet: View {
                     Text(record.recognitionTakeaway)
                     Text(record.visuals.note).font(AppTypography.caption).foregroundStyle(AppColors.textSecondary)
                 }
+                Section("Character structure") {
+                    Text(record.structure.summary)
+                        .font(AppTypography.body)
+                    if let caveat = record.structure.caveat {
+                        Text(caveat)
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+                }
                 Section("Sources") {
                     ForEach(record.sources, id: \.id) { source in
                         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                             Text(source.label)
                             Text(source.citation).font(AppTypography.caption).foregroundStyle(AppColors.textSecondary)
+                        }
+                    }
+                }
+                Section("Library") {
+                    Button(isFavorite ? "Remove from Favorites" : "Add to Favorites") {
+                        userStateStore.updateLessonState(sharedCharacterID: record.id) { state in
+                            state.setStarred(!isFavorite)
+                        }
+                    }
+                    Button(isReviewLater ? "Remove from Review Later" : "Save for Review Later") {
+                        userStateStore.updateLessonState(sharedCharacterID: record.id) { state in
+                            state.setReviewLater(!isReviewLater)
                         }
                     }
                 }
@@ -538,5 +429,13 @@ private struct CharacterAboutSheet: View {
             }
         }
         .tint(AppColors.accentPrimary)
+    }
+
+    private var isFavorite: Bool {
+        userStateStore.state.lessonStates[record.id]?.isStarred == true
+    }
+
+    private var isReviewLater: Bool {
+        userStateStore.state.lessonStates[record.id]?.isReviewLater == true
     }
 }

@@ -33,8 +33,8 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Shared `openSymbol` routing with start, resume, view, review, and direct-stage foundations.
 - Separate `selectedSymbolID` and `activeJourneySymbolID` concepts.
 - Local JSON user state with independent progress, Favorite, Review Later, focus-language, appearance, onboarding, and reset behavior.
-- Data-driven Origin, historical stages, Today, Structure, Usage, and Summary sections.
-- Horizontal historical paging with content-driven stage nodes and vertically scrollable stage pages.
+- Data-driven Origin, historical stages, Today, and word-level modern context in one continuous scroll.
+- A quiet stage rail with content-driven stage nodes and direct scroll-to-stage access.
 - Semantic design tokens for light/dark colors, typography, spacing, radii, and motion.
 - Reusable foundation components for primary/secondary actions, icon actions, grouped surfaces, artifact fields, missing historical content, lineage previews, character tiles, search fields, and settings rows.
 - Home lineage preview now uses actual available corpus forms only.
@@ -44,9 +44,9 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Quick Review is a lightweight recognition surface with a complete-journey escape hatch and no scoring or gamification.
 - The final installed record now has a calm Completion state with Return Home and Revisit actions.
 - Browse status and in-progress records now use the shared CharacterTile primitive.
-- Structure now presents a stage-aware recap with available lineage forms and component notes.
-- Usage now presents selected-track examples in restrained vertical groups.
-- Summary now provides a calm modern-form recognition reveal without scoring.
+- Structure and source detail now live behind the character `…` menu rather than interrupting the museum flow.
+- Usage now presents selected-track word context in restrained vertical groups.
+- Summary is not part of the primary museum journey.
 - Search now uses the shared native-feeling search field, explicit Cancel behavior, text-first results, and semantic status labels.
 - Settings now uses semantic app background, tint, and explanatory typography while retaining native Form controls.
 - Home now uses the shared page hierarchy, data-driven lineage preview, primary action, and restrained grouped support modules.
@@ -67,7 +67,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 
 - Fire Origin now renders an educational reconstruction in the content package; it remains a draft asset and requires editorial review.
 - Fire Oracle Bone, Bronze, Seal, and Clerical stages have no approved renderable assets; only a prototype Regular asset reference exists. Local SVG rendering is now implemented but still requires macOS/Xcode verification.
-- Today, Structure, Usage, and Summary have initial dedicated compositions but still need simulator comparison and interaction polish.
+- The continuous Today and word-context composition still needs simulator comparison and interaction polish.
 - Completion, Revisit, and Quick Review have initial behavior and structure but still need simulator visual QA and final interaction polish.
 - Shared components are available; History and More still need final simulator visual polish and any future approved representative content.
 - Historical asset provenance, renderability, and specialist confidence review remain required before publication; the availability/confidence contract itself is now aligned.
@@ -77,7 +77,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 
 1. Complete the Fire Origin and earliest-supported-stage content/asset review.
 2. Port approved Fire historical evidence and any context/isolated derivatives into the Fire folder without fabricating unavailable stages.
-3. Run the dedicated Today, Structure, Usage, and Summary visual comparison targets.
+3. Run the dedicated continuous Today and word-context visual comparison targets.
 4. Run macOS/Xcode simulator screenshot comparison, then physical iPhone checks.
 
 ## V1 to VNext Carryover Register

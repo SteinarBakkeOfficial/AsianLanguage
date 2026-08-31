@@ -36,7 +36,7 @@ struct LanguagesView: View {
             Text("Choose Focus Tracks")
                 .font(AppTypography.exhibitHeading)
                 .foregroundStyle(AppColors.textPrimary)
-            Text("All tracks are enabled by default. Turn tracks off only when you want lessons, modern forms, and examples narrowed for a test session.")
+            Text("All tracks are enabled by default. Turn tracks off when you want a narrower comparison, or turn them all off for a museum-only journey.")
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textSecondary)
         }

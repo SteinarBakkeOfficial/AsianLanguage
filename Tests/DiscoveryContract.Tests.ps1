@@ -16,6 +16,8 @@ Assert-True $browse.Contains("SearchView(dependencies: dependencies)") "Browse m
 Assert-True $browse.Contains("CollectionsView(dependencies: dependencies)") "Browse must own Collections."
 Assert-True $search.Contains("SharedCharacterSearchIndex") "Search must use the offline index."
 Assert-True $search.Contains("openSymbol") "Search must open the canonical Symbol destination."
+Assert-True $browse.Contains("openSymbol(record.id, intent: .view)") "Every Browse symbol entry must open at Origin."
+Assert-True (-not $browse.Contains("intent: position ? .resume : .view")) "Browse must not resume a saved position when opening a symbol."
 Assert-True $collections.Contains("Review later") "Collections must retain Review later."
 Assert-True $collections.Contains("Favorites") "Collections must retain Favorites."
 Write-Output "OK: discovery contract tests passed"

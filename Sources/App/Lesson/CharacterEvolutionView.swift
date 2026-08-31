@@ -2,12 +2,12 @@ import SwiftUI
 import UIKit
 import WebKit
 
-/// Data-driven horizontal Evolution Stage navigation for one Symbol Journey.
+/// One continuous, scrollable Symbol Journey from origin through history into Today.
 struct CharacterEvolutionView: View {
     let record: SharedCharacterRecord
     let focusSelection: FocusTrackSelection
-    let onAdvance: () -> Void
     @Binding var selectedStageID: String
+    @State private var hasRestoredInitialPosition = false
 
     /// Keeps explicit editorial omissions out of the primary journey while preserving asset gaps as visible states.
     private var stages: [HistoricalStage] {
@@ -36,26 +36,41 @@ struct CharacterEvolutionView: View {
         return stages.first(where: { $0.stage == selectedStageID })?.label ?? selectedStageID
     }
 
-    private var nextLabel: String? {
-        guard currentIndex + 1 < journeyIDs.count else { return nil }
-        let nextID = journeyIDs[currentIndex + 1]
-        if nextID == "today" { return "Today" }
-        return stages.first(where: { $0.stage == nextID })?.label ?? nextID
-    }
-
     var body: some View {
-        VStack(spacing: AppSpacing.spaceMd) {
-            TabView(selection: $selectedStageID) {
-                originPage.tag("origin")
-                ForEach(stages, id: \.stage) { stage in
-                    historicalPage(stage).tag(stage.stage)
+        ScrollViewReader { proxy in
+            ScrollView {
+                LazyVStack(spacing: AppSpacing.spaceXl) {
+                    originPage
+                        .id("origin")
+                        .background(stageAnchor("origin"))
+                    ForEach(stages, id: \.stage) { stage in
+                        historicalPage(stage)
+                            .id(stage.stage)
+                            .background(stageAnchor(stage.stage))
+                    }
+                    todayPage
+                        .id("today")
+                        .background(stageAnchor("today"))
                 }
-                todayPlaceholder.tag("today")
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, AppSpacing.spacePage)
+                .padding(.vertical, AppSpacing.spaceLg)
             }
-            .tabViewStyle(.page(indexDisplayMode: .never))
-            .frame(maxHeight: .infinity)
-
-            stageNavigator
+            .scrollIndicators(.hidden)
+            .coordinateSpace(name: "journeyScroll")
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                stageNavigator(proxy: proxy)
+            }
+            .onAppear {
+                let initialStageID = selectedStageID
+                DispatchQueue.main.async {
+                    proxy.scrollTo(initialStageID, anchor: .top)
+                    hasRestoredInitialPosition = true
+                }
+            }
+            .onPreferenceChange(StageOffsetPreferenceKey.self) { offsets in
+                updateSelectedStage(from: offsets)
+            }
         }
         .tint(AppColors.accentPrimary)
         .accessibilityElement(children: .contain)
@@ -117,28 +132,19 @@ struct CharacterEvolutionView: View {
         }
     }
 
-    /// Today is owned by the same horizontal journey and is rendered by the canonical host.
-    private var todayPlaceholder: some View {
+    /// Today is the final exhibit room in the same continuous journey, not a separate lesson concept.
+    private var todayPage: some View {
         journeyPage {
-            stageHeader(overline: "TODAY", title: record.coreCharacter, subtitle: "Modern forms")
-            Text("Continue to Today to see how this Shared Character connects across your selected language tracks.")
-                .font(AppTypography.body)
-                .foregroundStyle(AppColors.textSecondary)
-                .multilineTextAlignment(.center)
-                .frame(maxWidth: 320)
+            ModernFormsComparisonView(record: record, focusSelection: focusSelection)
+            UsageExamplesView(record: record, focusSelection: focusSelection)
         }
     }
 
     private func journeyPage<Content: View>(@ViewBuilder content: () -> Content) -> some View {
-        ScrollView {
-            VStack(spacing: AppSpacing.spaceLg) {
-                content()
-            }
-            .frame(maxWidth: .infinity)
-            .padding(.horizontal, AppSpacing.spacePage)
-            .padding(.vertical, AppSpacing.spaceLg)
+        VStack(spacing: AppSpacing.spaceLg) {
+            content()
         }
-        .scrollIndicators(.hidden)
+        .frame(maxWidth: .infinity)
     }
 
     private func stageHeader(overline: String, title: String, subtitle: String?) -> some View {
@@ -159,8 +165,8 @@ struct CharacterEvolutionView: View {
         }
     }
 
-    /// The rail exposes position, direct access, and the next stage without becoming a segmented control.
-    private var stageNavigator: some View {
+    /// The rail exposes position and direct access while leaving the exhibit itself scrollable.
+    private func stageNavigator(proxy: ScrollViewProxy) -> some View {
         VStack(spacing: AppSpacing.spaceXs) {
             HStack {
                 Text(currentLabel)
@@ -175,7 +181,7 @@ struct CharacterEvolutionView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 0) {
                     ForEach(Array(journeyIDs.enumerated()), id: \.element) { index, id in
-                        stageMarker(index: index, id: id)
+                        stageMarker(index: index, id: id, proxy: proxy)
 
                         if index < journeyIDs.count - 1 {
                             Rectangle()
@@ -187,28 +193,9 @@ struct CharacterEvolutionView: View {
                 }
                 .frame(maxWidth: .infinity)
             }
-
-            HStack {
-                if let nextLabel {
-                    Text("Next: \(nextLabel)")
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
-                    Spacer()
-                    Button("Next") { onAdvance() }
-                        .font(AppTypography.metadata.weight(.semibold))
-                        .foregroundStyle(AppColors.accentPrimary)
-                        .frame(minWidth: 44, minHeight: 44)
-                } else {
-                    Text("Journey endpoint")
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
-                    Spacer()
-                    Button("Continue") { onAdvance() }
-                        .font(AppTypography.metadata.weight(.semibold))
-                        .foregroundStyle(AppColors.accentPrimary)
-                        .frame(minWidth: 44, minHeight: 44)
-                }
-            }
+            Text("Scroll through the exhibit")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textSecondary)
         }
         .padding(.horizontal, AppSpacing.spacePage)
         .padding(.bottom, AppSpacing.spaceXs)
@@ -217,11 +204,34 @@ struct CharacterEvolutionView: View {
         .accessibilityLabel("\(currentLabel), stage \(currentIndex + 1) of \(journeyIDs.count)")
     }
 
+    /// Tracks the exhibit room nearest the top edge so scrolling also updates exact resume state.
+    private func updateSelectedStage(from offsets: [String: CGFloat]) {
+        guard hasRestoredInitialPosition else { return }
+        let visibleStages = offsets.filter { $0.value <= 120 }
+        let currentID = visibleStages.max(by: { $0.value < $1.value })?.key
+            ?? offsets.min(by: { $0.value < $1.value })?.key
+        guard let currentID, currentID != selectedStageID else { return }
+        selectedStageID = currentID
+    }
+
+    /// Zero-size geometry anchor used to identify the room currently being viewed.
+    private func stageAnchor(_ id: String) -> some View {
+        GeometryReader { geometry in
+            Color.clear.preference(
+                key: StageOffsetPreferenceKey.self,
+                value: [id: geometry.frame(in: .named("journeyScroll")).minY]
+            )
+        }
+    }
+
     /// Keeps each stage marker's conditional styling out of the larger navigation builder.
-    private func stageMarker(index: Int, id: String) -> some View {
+    private func stageMarker(index: Int, id: String, proxy: ScrollViewProxy) -> some View {
         let isCurrent = index == currentIndex
         return Button {
             selectedStageID = id
+            withAnimation(.easeInOut(duration: AppMotion.standard)) {
+                proxy.scrollTo(id, anchor: .top)
+            }
         } label: {
             Circle()
                 .fill(isCurrent ? AppColors.accentPrimary : AppColors.separator)
@@ -237,6 +247,14 @@ struct CharacterEvolutionView: View {
         if id == "origin" { return "Origin" }
         if id == "today" { return "Today" }
         return stages.first(where: { $0.stage == id })?.label ?? id
+    }
+}
+
+private struct StageOffsetPreferenceKey: PreferenceKey {
+    static let defaultValue: [String: CGFloat] = [:]
+
+    static func reduce(value: inout [String: CGFloat], nextValue: () -> [String: CGFloat]) {
+        value.merge(nextValue(), uniquingKeysWith: { _, new in new })
     }
 }
 

@@ -56,11 +56,11 @@ struct BrowseView: View {
                 record: record,
                 userState: userStateStore.state.lessonStates[record.id],
                 action: {
-                    dependencies.navigationState.openSymbol(record.id, intent: position ? .resume : .view)
+                    dependencies.navigationState.openSymbol(record.id, intent: .view)
                 }
             )
-            if position, let saved = userStateStore.state.lessonStates[record.id]?.lastPosition {
-                Text("Resume at \(saved.stageID ?? saved.section.rawValue)")
+            if position {
+                Text("Opens at Origin")
                     .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textSecondary)
                     .padding(.leading, AppSpacing.spaceMd)

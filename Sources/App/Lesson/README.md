@@ -1,3 +1,3 @@
 # Lesson
 
-Owns the structural Symbol Journey host, data-driven Evolution Stages, Today / Modern Endpoint, supporting Content Phases, exact journey position, and explicit progress actions. Final visual composition follows the approved Fire design.
+Owns the continuous museum Symbol Journey host, data-driven Evolution Stages, Today / word-level modern context, exact journey position, and explicit progress actions. Structure and source detail live behind the character's `…` menu rather than interrupting the museum flow. Final visual composition follows the approved Fire design.

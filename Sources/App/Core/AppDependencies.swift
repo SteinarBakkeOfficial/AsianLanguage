@@ -40,6 +40,14 @@ struct AppDependencies {
         }
     }
 
+    /// Returns the next locally saved review item without making the corpus depend on user state.
+    func nextReviewLater(after sharedCharacterID: String) -> SharedCharacterRecord? {
+        sharedCharacters.first { record in
+            record.id != sharedCharacterID
+                && userStateStore.state.lessonStates[record.id]?.isReviewLater == true
+        }
+    }
+
     /// Runtime dependency set used by the app shell.
     static let live: AppDependencies = {
         let repository = BundleCorpusRepository()
@@ -129,7 +137,8 @@ enum SymbolOpenIntent: Hashable {
     var startingPosition: SymbolJourneyPosition? {
         switch self {
         case .start: return .origin
-        case .resume, .view, .review: return nil
+        case .resume, .review: return nil
+        case .view: return .origin
         case .stage(let stageID): return SymbolJourneyPosition(section: .evolution, stageID: stageID)
         }
     }
