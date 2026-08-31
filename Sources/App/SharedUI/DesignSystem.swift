@@ -242,12 +242,12 @@ struct LineagePreview: View {
     let variant: Variant
 
     private var availableForms: [(label: String, form: String, historical: Bool)] {
-        var result = record.history.stages.compactMap { stage -> (String, String, Bool)? in
+        var result = record.history.stages.compactMap { stage -> (label: String, form: String, historical: Bool)? in
             guard let form = stage.form, !form.isEmpty else { return nil }
-            return (stage.label, form, true)
+            return (label: stage.label, form: form, historical: true)
         }
         if result.last?.form != record.coreCharacter {
-            result.append(("Today", record.coreCharacter, false))
+            result.append((label: "Today", form: record.coreCharacter, historical: false))
         }
         return Array(result.prefix(variant.maximumStages))
     }

@@ -108,7 +108,7 @@ struct CollectionsView: View {
     /// Editorial collection detail page for curated lesson sets.
     private func editorialCollection(_ collection: SharedCharacterCollection) -> some View {
         let records = collection.sharedCharacterIDs.compactMap { id in dependencies.sharedCharacters.first { $0.id == id } }
-        List {
+        return List {
             Section(collection.title) {
                 if records.isEmpty {
                     Text("No Shared Characters are available in this collection.")
