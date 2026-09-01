@@ -83,8 +83,8 @@ struct CharacterEvolutionView: View {
 
     /// First page begins with the real-world concept and deliberately does not reveal a modern glyph.
     private var originPage: some View {
-        journeyPage {
-            stageHeader(overline: "ORIGIN", title: record.history.origin?.concept ?? record.coreSharedMeaning.capitalized, subtitle: nil)
+        journeyPage(allowsVerticalScroll: true) {
+            stageHeader(overline: "ORIGIN", title: nil, subtitle: nil)
             ArtifactField {
                 if let originAsset = record.history.origin?.asset {
                     HistoricalAssetView(metadata: originAsset)
@@ -95,29 +95,25 @@ struct CharacterEvolutionView: View {
                     )
                 }
             }
-            .frame(minHeight: 360)
+            .frame(height: 304)
             Text(record.history.origin?.concept ?? record.coreSharedMeaning.capitalized)
-                .font(AppTypography.stageTitle)
+                .font(AppTypography.exhibitHeading)
                 .foregroundStyle(AppColors.textPrimary)
+                .padding(.top, AppSpacing.spaceMd)
             Text(record.history.origin?.explanation ?? record.history.originAnchor)
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textPrimary)
                 .multilineTextAlignment(.center)
                 .frame(maxWidth: 320)
-            if let nextStageCue {
-                Text(nextStageCue)
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textPrimary)
-            }
         }
     }
 
     /// One historical page shows only the evidence and explanation attached to that stage.
     private func historicalPage(_ stage: HistoricalStage) -> some View {
-        journeyPage {
+        journeyPage(allowsVerticalScroll: true) {
             stageHeader(
                 overline: stage.label.uppercased(),
-                title: stage.label,
+                title: stage.assetMetadata?.approximatePeriod,
                 subtitle: stage.editorialConfidence.displayName
             )
             ArtifactField {
@@ -132,17 +128,12 @@ struct CharacterEvolutionView: View {
                     HistoricalMissingState()
                 }
             }
-            .frame(minHeight: 360)
+            .frame(height: 304)
             Text(stage.stageExplanation ?? stage.changeNoteFromPrevious ?? "Stage-specific explanation is pending editorial review.")
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textPrimary)
                 .multilineTextAlignment(.center)
                 .frame(maxWidth: 320)
-            if let nextStageCue {
-                Text(nextStageCue)
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textPrimary)
-            }
             if let sound = stage.historicalSound {
                 Text(sound)
                     .font(AppTypography.metadata)
@@ -153,7 +144,7 @@ struct CharacterEvolutionView: View {
 
     /// Each selected language gets a horizontal Today exhibit page with its own word context.
     private func todayPage(track: FocusTrack?, isFinal: Bool) -> some View {
-        journeyPage {
+        journeyPage(allowsVerticalScroll: true) {
             ModernFormsComparisonView(record: record, focusSelection: focusSelection, track: track)
             UsageExamplesView(record: record, focusSelection: focusSelection, track: track)
             if isFinal {
@@ -162,29 +153,43 @@ struct CharacterEvolutionView: View {
         }
     }
 
-    private func journeyPage<Content: View>(@ViewBuilder content: () -> Content) -> some View {
-        ScrollView(.vertical) {
-            VStack(spacing: AppSpacing.spaceXl) {
-                content()
+    /// Normal exhibits fit the reference frame; overflow is opt-in for future long-form editorial copy.
+    @ViewBuilder
+    private func journeyPage<Content: View>(allowsVerticalScroll: Bool = false, @ViewBuilder content: () -> Content) -> some View {
+        if allowsVerticalScroll {
+            ScrollView(.vertical) {
+                journeyContent(content: content)
             }
-            .frame(maxWidth: .infinity)
-            .padding(.horizontal, AppSpacing.spacePage)
-            .padding(.top, AppSpacing.spaceMd)
-            .padding(.bottom, AppSpacing.spaceLg)
+            .scrollIndicators(.hidden)
+        } else {
+            journeyContent(content: content)
+                .frame(maxHeight: .infinity, alignment: .top)
         }
-        .scrollIndicators(.hidden)
     }
 
-    private func stageHeader(overline: String, title: String, subtitle: String?) -> some View {
-        VStack(spacing: AppSpacing.spaceXs) {
+    /// Shared fixed-frame wrapper keeps the artifact, text, and rail in the same vertical composition.
+    private func journeyContent<Content: View>(@ViewBuilder content: () -> Content) -> some View {
+        VStack(spacing: AppSpacing.spaceMd) {
+            content()
+        }
+        .frame(maxWidth: .infinity, alignment: .top)
+        .padding(.horizontal, AppSpacing.spacePage)
+        .padding(.top, AppSpacing.spaceSm)
+        .padding(.bottom, AppSpacing.spaceMd)
+    }
+
+    private func stageHeader(overline: String, title: String?, subtitle: String?) -> some View {
+        VStack(spacing: AppSpacing.space2xs) {
             Text(overline)
                 .font(AppTypography.conceptLabel)
-                .tracking(1.4)
+                .tracking(1.6)
                 .foregroundStyle(AppColors.textSecondary)
-            Text(title)
-                .font(AppTypography.exhibitHeading)
-                .foregroundStyle(AppColors.textPrimary)
-                .multilineTextAlignment(.center)
+            if let title {
+                Text(title)
+                    .font(AppTypography.stageTitle)
+                    .foregroundStyle(AppColors.textPrimary)
+                    .multilineTextAlignment(.center)
+            }
             if let subtitle {
                 Text(subtitle)
                     .font(AppTypography.metadata)
@@ -195,7 +200,7 @@ struct CharacterEvolutionView: View {
 
     /// The rail exposes position and direct access while the exhibit remains horizontally swipeable.
     private var stageNavigator: some View {
-        VStack(spacing: AppSpacing.spaceXs) {
+        VStack(spacing: AppSpacing.space2xs) {
             HStack {
                 Text("Origin")
                     .font(AppTypography.caption)
@@ -221,13 +226,24 @@ struct CharacterEvolutionView: View {
                 }
                 .frame(maxWidth: .infinity)
             }
-            Text(currentLabel)
-                .font(AppTypography.caption)
-                .foregroundStyle(AppColors.textSecondary)
+            HStack(alignment: .firstTextBaseline) {
+                Text(currentLabel)
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+                Spacer()
+                if let nextStageCue, currentIndex + 1 < journeyIDs.count {
+                    Button(nextStageCue) {
+                        selectedStageID = journeyIDs[currentIndex + 1]
+                    }
+                    .font(AppTypography.caption.weight(.semibold))
+                    .foregroundStyle(AppColors.textPrimary)
+                    .buttonStyle(.plain)
+                }
+            }
         }
         .padding(.horizontal, AppSpacing.spacePage)
-        .padding(.bottom, AppSpacing.spaceSm)
-        .padding(.top, AppSpacing.space2xs)
+        .padding(.bottom, AppSpacing.space2xs)
+        .padding(.top, AppSpacing.spaceXs)
         .overlay(alignment: .top) {
             Rectangle()
                 .fill(AppColors.separator)
@@ -298,15 +314,19 @@ struct BundledHistoricalAssetResolver {
 struct HistoricalAssetView: View {
     let resolution: HistoricalAssetResolution
     let accessibilityDescription: String
+    /// The compact height is used by lineage previews; the default preserves full exhibit presentation.
+    let displayHeight: CGFloat
 
-    init(metadata: HistoricalAssetMetadata) {
+    init(metadata: HistoricalAssetMetadata, displayHeight: CGFloat = 276) {
         self.resolution = BundledHistoricalAssetResolver(bundle: .main).resolve(metadata.assetRef)
         self.accessibilityDescription = metadata.accessibilityDescription ?? "Historical character artwork"
+        self.displayHeight = displayHeight
     }
 
-    init(assetRef: String) {
+    init(assetRef: String, displayHeight: CGFloat = 276) {
         self.resolution = BundledHistoricalAssetResolver(bundle: .main).resolve(assetRef)
         self.accessibilityDescription = "Historical character artwork"
+        self.displayHeight = displayHeight
     }
 
     var body: some View {
@@ -316,14 +336,14 @@ struct HistoricalAssetView: View {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
-                    .frame(maxWidth: .infinity, minHeight: 320)
+                    .frame(maxWidth: .infinity, height: displayHeight)
                     .accessibilityLabel(accessibilityDescription)
             } else {
                 HistoricalMissingState(title: "Historical visual unavailable")
             }
         case .bundledSVG(let url):
             BundledSVGView(url: url)
-                .frame(maxWidth: .infinity, minHeight: 320)
+                .frame(maxWidth: .infinity, height: displayHeight)
                 .accessibilityLabel(accessibilityDescription)
         case .unavailable:
             HistoricalMissingState(title: "Historical visual unavailable")

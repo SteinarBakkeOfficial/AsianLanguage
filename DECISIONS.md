@@ -61,6 +61,7 @@
 - HistoricalMissingState is the only acceptable visual response to an unavailable approved asset; modern glyphs and generated ancient-looking substitutes are prohibited.
 - LineagePreview is data-driven and may render only forms present in the approved corpus.
 - The first visual slice uses a restrained current/next rail and horizontally swiped stage pages.
+- The active AppShell typography reference names Playfair Display for editorial/display headings and Inter for interface/body text. Both are bundled and registered locally; CJK glyphs use native platform fallback fonts.
 - Today is the final room in the continuous journey, with one section per selected modern language track and word-level context only; when no tracks are selected it presents an explicit museum-only state; language identity is not communicated by arbitrary color.
 - Structure is a vertical recap, not a second navigation rail; it may show only stage forms and component insights supported by the record.
 - Usage context is a vertical list of selected-track character words, prioritizing the written character, reading, and meaning over unexplained sentences.

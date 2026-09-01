@@ -10,8 +10,8 @@ enum ShellStyle {
     static let cinnabar = AppColors.accentPrimary
     static let softSurface = AppColors.surfaceSubtle
 
-    /// Editorial serif reserved for characters, history, and exhibit headings.
-    static let editorialFont = Font.system(.title2, design: .serif)
+    /// Editorial display face reserved for characters, history, and exhibit headings.
+    static let editorialFont = Font.custom(AppFont.playfairBold, size: 24, relativeTo: .title2)
 }
 
 /// Restrained surface treatment shared by shell cards and content rows.
@@ -40,27 +40,25 @@ struct AppTabBar: View {
                 } label: {
                     VStack(spacing: AppSpacing.space2xs) {
                         Image(systemName: tab.systemImageName)
-                            .font(.system(size: 20, weight: .medium))
+                            .font(.system(size: 17, weight: .medium))
                         Text(tab.title)
                             .font(AppTypography.tabLabel)
                     }
                     .foregroundStyle(selectedTab == tab ? AppColors.accentPrimary : AppColors.textPrimary)
-                    .frame(maxWidth: .infinity, minHeight: 62)
-                    .background(selectedTab == tab ? AppColors.surfaceStrong : Color.clear)
-                    .clipShape(Capsule())
+                    .frame(maxWidth: .infinity, minHeight: 50)
                 }
                 .buttonStyle(.plain)
                 .accessibilityAddTraits(selectedTab == tab ? .isSelected : [])
             }
         }
-        .padding(AppSpacing.space2xs)
+        .padding(3)
         .background(AppColors.surfaceStrong)
-        .clipShape(Capsule())
+        .clipShape(RoundedRectangle(cornerRadius: AppRadius.control))
         .overlay {
             Capsule().stroke(AppColors.separator, lineWidth: 1)
         }
         .padding(.horizontal, AppSpacing.spacePage)
-        .padding(.bottom, AppSpacing.spaceXs)
+        .padding(.bottom, AppSpacing.spaceSm)
     }
 }
 
@@ -95,15 +93,15 @@ enum AppTab: Hashable, CaseIterable, Identifiable {
     var systemImageName: String {
         switch self {
         case .home:
-            return "house"
+            return "house.fill"
         case .symbol:
             return "character"
         case .history:
-            return "clock.arrow.circlepath"
+            return "building.columns"
         case .browse:
-            return "square.grid.2x2"
+            return "magnifyingglass"
         case .more:
-            return "ellipsis.circle"
+            return "ellipsis"
         }
     }
 }

@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Today is the final room of the same Symbol Journey, showing forms without sentence-level lessons.
+/// Today is the final room of the same Symbol Journey, showing one language exhibit at a time.
 struct ModernFormsComparisonView: View {
     let record: SharedCharacterRecord
     let focusSelection: FocusTrackSelection
@@ -18,125 +18,71 @@ struct ModernFormsComparisonView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
-            VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
-                Text("TODAY")
-                    .font(AppTypography.conceptLabel)
-                    .tracking(1.4)
-                    .foregroundStyle(AppColors.textSecondary)
-                Text("The character today")
-                    .font(AppTypography.exhibitHeading)
-                    .foregroundStyle(AppColors.textPrimary)
-                Text(focusSelection.selectedTracks.isEmpty
-                    ? "The museum journey remains focused on the character and its history."
-                    : "One shared character, read and written differently across today's languages.")
-                    .font(AppTypography.body)
-                    .foregroundStyle(AppColors.textSecondary)
-            }
+        VStack(alignment: .leading, spacing: AppSpacing.spaceMd) {
+            todayHeading
 
-            if focusSelection.selectedTracks.isEmpty {
+            if visibleTracks.isEmpty {
                 GroupedSurface {
                     VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
                         Text("Museum view")
                             .font(AppTypography.sectionHeading)
                             .foregroundStyle(AppColors.textPrimary)
-                        Text("Modern language examples are turned off. Enable tracks later in More → Languages if you want to compare them.")
-                            .font(AppTypography.body)
+                        Text("Modern language examples are turned off. The character journey remains complete without selecting a language.")
+                            .font(AppTypography.metadata)
                             .foregroundStyle(AppColors.textSecondary)
                     }
                 }
             } else {
-                VStack(spacing: AppSpacing.spaceXs) {
-                    if visibleTracks.contains(.simplifiedChinese) {
-                        modernSection(title: "Simplified Chinese", coverage: record.focusCoverage.simplifiedChinese)
-                    }
-                    if visibleTracks.contains(.traditionalChinese) {
-                        modernSection(title: "Traditional Chinese", coverage: record.focusCoverage.traditionalChinese)
-                    }
-                    if visibleTracks.contains(.japanese) {
-                        modernSection(title: "Japanese Kanji", coverage: record.focusCoverage.japanese)
-                    }
-                    if visibleTracks.contains(.korean) {
-                        koreanSection(record.focusCoverage.korean)
-                    }
+                ForEach(visibleTracks) { visibleTrack in
+                    exhibitCard(for: visibleTrack)
                 }
             }
         }
     }
 
-    /// The language card follows the reference proportions: metadata header, red shared glyph,
-    /// then reading and meaning on one calm elevated surface.
-    private func modernSection<Coverage: ModernCoverageDisplay>(title: String, coverage: Coverage) -> some View {
+    /// Keeps Today visually continuous with the historical exhibit instead of creating a second lesson header.
+    private var todayHeading: some View {
+        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+            Text("TODAY")
+                .font(AppTypography.conceptLabel)
+                .tracking(1.6)
+                .foregroundStyle(AppColors.textSecondary)
+            Text(track?.title ?? "The character today")
+                .font(AppTypography.exhibitHeading)
+                .foregroundStyle(AppColors.textPrimary)
+            Text("The shared character in modern writing and speech.")
+                .font(AppTypography.metadata)
+                .foregroundStyle(AppColors.textSecondary)
+        }
+    }
+
+    /// Selects the appropriate canonical coverage without duplicating the visual card layout.
+    @ViewBuilder
+    private func exhibitCard(for track: FocusTrack) -> some View {
+        switch track {
+        case .simplifiedChinese:
+            languageCard(title: "Simplified Chinese", coverage: record.focusCoverage.simplifiedChinese)
+        case .traditionalChinese:
+            languageCard(title: "Traditional Chinese · Taiwan / Hong Kong", coverage: record.focusCoverage.traditionalChinese)
+        case .japanese:
+            languageCard(title: "Japanese · Kanji", coverage: record.focusCoverage.japanese)
+        case .korean:
+            koreanCard(record.focusCoverage.korean)
+        }
+    }
+
+    /// Renders the shared form, every relevant reading, and alternate writing system as one exhibit card.
+    private func languageCard<Coverage: ModernCoverageDisplay>(title: String, coverage: Coverage) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
-            HStack {
-                Text(title)
-                    .font(AppTypography.metadata)
-                    .foregroundStyle(AppColors.textSecondary)
-                Spacer()
-                Image(systemName: "speaker.wave.2")
-                    .font(.system(size: 13, weight: .medium))
-                    .foregroundStyle(AppColors.textSecondary)
-                    .accessibilityLabel("Play pronunciation")
-            }
-            HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceMd) {
+            cardHeading(title)
+            HStack(alignment: .top, spacing: AppSpacing.spaceMd) {
                 Text(coverage.form)
-                    .font(.system(size: 48, design: .serif))
+                    .font(.system(size: 56, design: .serif))
                     .foregroundStyle(AppColors.accentPrimary)
-                    .frame(width: 44, alignment: .leading)
+                    .frame(width: 62, alignment: .leading)
                 VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                    Text(coverage.readings.map(\.value).joined(separator: " · "))
-                        .font(AppTypography.body.weight(.semibold))
-                        .foregroundStyle(AppColors.textPrimary)
-                    Text(coverage.glosses.joined(separator: ", "))
-                        .font(AppTypography.metadata)
-                        .foregroundStyle(AppColors.textSecondary)
-                }
-                Spacer(minLength: 0)
-            }
-            ForEach(coverage.variants, id: \.id) { variant in
-                variantRow(variant)
-            }
-            Text("Shared character form and reading")
-                .font(AppTypography.caption)
-                .foregroundStyle(AppColors.textTertiary)
-        }
-        .padding(AppSpacing.spaceMd)
-        .background(AppColors.surfaceElevated)
-        .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
-        .overlay {
-            RoundedRectangle(cornerRadius: AppRadius.surface)
-                .stroke(AppColors.separator, lineWidth: 1)
-        }
-    }
-
-    /// Korean everyday vocabulary is displayed in Hangul; the Hanja reading remains explanatory context.
-    private func koreanSection(_ coverage: StandardFocusCoverage) -> some View {
-        let hanjaReading = coverage.readings.first(where: { $0.system == "hanja" })?.value
-        let nativeReading = coverage.readings.first(where: { $0.system == "native Korean" })?.value
-        return VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
-            HStack {
-                Text("Korean")
-                    .font(AppTypography.metadata)
-                    .foregroundStyle(AppColors.textSecondary)
-                Spacer()
-                Image(systemName: "speaker.wave.2")
-                    .font(.system(size: 13, weight: .medium))
-                    .foregroundStyle(AppColors.textSecondary)
-                    .accessibilityLabel("Play pronunciation")
-            }
-            HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceMd) {
-                Text(coverage.form)
-                    .font(.system(size: 48, design: .serif))
-                    .foregroundStyle(AppColors.accentPrimary)
-                    .frame(width: 44, alignment: .leading)
-                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                    Text(nativeReading ?? "Everyday Korean")
-                        .font(AppTypography.body.weight(.semibold))
-                        .foregroundStyle(AppColors.textPrimary)
-                    if let hanjaReading {
-                        Text("Hanja: \(hanjaReading)")
-                            .font(AppTypography.metadata)
-                            .foregroundStyle(AppColors.textSecondary)
+                    ForEach(coverage.readings, id: \.system) { reading in
+                        readingLine(reading)
                     }
                     Text(coverage.glosses.joined(separator: ", "))
                         .font(AppTypography.metadata)
@@ -144,39 +90,110 @@ struct ModernFormsComparisonView: View {
                 }
                 Spacer(minLength: 0)
             }
-            ForEach(coverage.variants, id: \.id) { variant in
-                variantRow(variant)
-            }
-            Text("Everyday Korean is written in Hangul; Hanja remains the recognition bridge.")
-                .font(AppTypography.caption)
-                .foregroundStyle(AppColors.textTertiary)
+            alternateForms(coverage.variants)
         }
-        .padding(AppSpacing.spaceMd)
-        .background(AppColors.surfaceElevated)
-        .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
-        .overlay {
-            RoundedRectangle(cornerRadius: AppRadius.surface)
-                .stroke(AppColors.separator, lineWidth: 1)
+        .exhibitCardSurface()
+    }
+
+    /// Korean keeps Hanja and everyday Hangul in parallel so neither reading is hidden as a footnote.
+    private func koreanCard(_ coverage: StandardFocusCoverage) -> some View {
+        let nativeVariant = coverage.variants.first(where: { $0.writingSystem == "Hangul" })
+        return VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+            cardHeading("Korean")
+            HStack(alignment: .top, spacing: AppSpacing.spaceMd) {
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text("Hanja")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                    Text(coverage.form)
+                        .font(.system(size: 52, design: .serif))
+                        .foregroundStyle(AppColors.accentPrimary)
+                    if let hanjaReading = coverage.readings.first(where: { $0.system == "hanja" })?.value {
+                        Text("Hanja: \(hanjaReading)")
+                            .font(AppTypography.metadata.weight(.semibold))
+                            .foregroundStyle(AppColors.textPrimary)
+                    }
+                }
+                Rectangle()
+                    .fill(AppColors.separator)
+                    .frame(width: 1, height: 86)
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text("Everyday Korean")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                    Text(nativeVariant?.form ?? "—")
+                        .font(.system(size: 40, design: .serif))
+                        .foregroundStyle(AppColors.textPrimary)
+                    if let nativeVariant {
+                        readingValues(for: nativeVariant.readings)
+                    } else {
+                        readingValues(for: coverage.readings.filter { $0.system == "native Korean" })
+                    }
+                }
+                Spacer(minLength: 0)
+            }
+            Text(coverage.glosses.joined(separator: ", "))
+                .font(AppTypography.metadata)
+                .foregroundStyle(AppColors.textSecondary)
+            alternateForms(coverage.variants.filter { $0.writingSystem != "Hangul" })
+        }
+        .exhibitCardSurface()
+    }
+
+    private func cardHeading(_ title: String) -> some View {
+        HStack {
+            Text(title)
+                .font(AppTypography.stageTitle)
+                .foregroundStyle(AppColors.textPrimary)
+            Spacer()
+            Image(systemName: "speaker.wave.2")
+                .font(.system(size: 13, weight: .medium))
+                .foregroundStyle(AppColors.textSecondary)
+                .accessibilityLabel("Play pronunciation")
         }
     }
 
-    private func variantRow(_ variant: ModernFormVariant) -> some View {
-        HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
-            Text("Also written")
+    private func readingLine(_ reading: CharacterReading) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
+            Text(reading.system.capitalized)
                 .font(AppTypography.caption)
-                .foregroundStyle(AppColors.textTertiary)
-            Text(variant.form)
+                .foregroundStyle(AppColors.textSecondary)
+            Text(reading.value)
                 .font(AppTypography.body.weight(.semibold))
                 .foregroundStyle(AppColors.textPrimary)
-            if let writingSystem = variant.writingSystem {
-                Text("· \(writingSystem)")
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textSecondary)
+        }
+    }
+
+    private func readingValues(for readings: [CharacterReading]) -> some View {
+        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+            ForEach(readings, id: \.system) { reading in
+                Text(reading.value)
+                    .font(AppTypography.metadata.weight(.semibold))
+                    .foregroundStyle(AppColors.textPrimary)
             }
-            if !variant.readings.isEmpty {
-                Text(variant.readings.map(\.value).joined(separator: " · "))
-                    .font(AppTypography.metadata)
-                    .foregroundStyle(AppColors.textSecondary)
+        }
+    }
+
+    @ViewBuilder
+    private func alternateForms(_ variants: [ModernFormVariant]) -> some View {
+        if !variants.isEmpty {
+            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                Divider().overlay(AppColors.separator)
+                ForEach(variants, id: \.id) { variant in
+                    HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
+                        Text(variant.writingSystem ?? "Alternate form")
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                        Text(variant.form)
+                            .font(AppTypography.body.weight(.semibold))
+                            .foregroundStyle(AppColors.textPrimary)
+                        if !variant.readings.isEmpty {
+                            Text(variant.readings.map(\.value).joined(separator: " · "))
+                                .font(AppTypography.metadata)
+                                .foregroundStyle(AppColors.textSecondary)
+                        }
+                    }
+                }
             }
         }
     }
@@ -192,3 +209,22 @@ private protocol ModernCoverageDisplay {
 
 extension StandardFocusCoverage: ModernCoverageDisplay {}
 extension TraditionalChineseCoverage: ModernCoverageDisplay {}
+
+private struct ExhibitCardSurface: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding(AppSpacing.spaceMd)
+            .background(AppColors.surfaceElevated)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+            .overlay {
+                RoundedRectangle(cornerRadius: AppRadius.card)
+                    .stroke(AppColors.separator, lineWidth: 1)
+            }
+            .shadow(color: AppColors.textPrimary.opacity(0.05), radius: 8, y: 3)
+    }
+}
+
+private extension View {
+    /// Shared card treatment for Today exhibits; keep this geometry aligned with the shell cards.
+    func exhibitCardSurface() -> some View { modifier(ExhibitCardSurface()) }
+}

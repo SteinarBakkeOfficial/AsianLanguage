@@ -30,17 +30,29 @@ enum AppColors {
     }
 }
 
-/// Shared typography keeps editorial serif moments distinct from utility UI.
+/// Bundled typefaces match the approved AppShell reference: Playfair for editorial
+/// headings and Inter for interface/body text. CJK glyphs intentionally fall back
+/// to the platform's language fonts because these Latin families do not cover them.
+enum AppFont {
+    static let playfairRegular = "PlayfairDisplay-Regular"
+    static let playfairBold = "PlayfairDisplay-Bold"
+    static let interRegular = "Inter-Regular"
+    static let interMedium = "Inter-Medium"
+    static let interSemiBold = "Inter-SemiBold"
+}
+
+/// Shared typography keeps the Alt reference's editorial/display and utility roles distinct.
 enum AppTypography {
-    static let pageTitle = Font.system(size: 17, weight: .semibold, design: .default)
-    static let exhibitHeading = Font.system(size: 28, weight: .semibold, design: .serif)
-    static let conceptLabel = Font.system(size: 15, weight: .semibold, design: .default)
-    static let stageTitle = Font.system(size: 15, weight: .semibold, design: .default)
-    static let sectionHeading = Font.system(size: 18, weight: .semibold, design: .default)
-    static let body = Font.system(size: 16, weight: .regular, design: .default)
-    static let metadata = Font.system(size: 13, weight: .regular, design: .default)
-    static let caption = Font.system(size: 11, weight: .regular, design: .default)
-    static let tabLabel = Font.system(size: 11, weight: .medium, design: .default)
+    static let pageTitle = Font.custom(AppFont.interSemiBold, size: 17, relativeTo: .headline)
+    static let exhibitHeading = Font.custom(AppFont.playfairBold, size: 24, relativeTo: .title2)
+    static let heroConcept = Font.custom(AppFont.playfairBold, size: 18, relativeTo: .title3)
+    static let conceptLabel = Font.custom(AppFont.interSemiBold, size: 11, relativeTo: .caption)
+    static let stageTitle = Font.custom(AppFont.interSemiBold, size: 15, relativeTo: .headline)
+    static let sectionHeading = Font.custom(AppFont.interSemiBold, size: 13, relativeTo: .subheadline)
+    static let body = Font.custom(AppFont.interRegular, size: 16, relativeTo: .body)
+    static let metadata = Font.custom(AppFont.interRegular, size: 13, relativeTo: .footnote)
+    static let caption = Font.custom(AppFont.interRegular, size: 11, relativeTo: .caption)
+    static let tabLabel = Font.custom(AppFont.interMedium, size: 11, relativeTo: .caption)
 }
 
 /// Small spacing vocabulary used by both shell and Symbol compositions.
@@ -124,11 +136,15 @@ struct SecondaryActionButton: View {
     var body: some View {
         Button(title, action: action)
             .font(AppTypography.body.weight(.semibold))
-            .foregroundStyle(AppColors.textPrimary)
+            .foregroundStyle(AppColors.accentPrimary)
             .frame(minHeight: 44)
             .padding(.horizontal, AppSpacing.spaceMd)
-            .background(AppColors.surfaceSubtle)
-            .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
+            .background(AppColors.surfaceElevated)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.control))
+            .overlay {
+                RoundedRectangle(cornerRadius: AppRadius.control)
+                    .stroke(AppColors.accentPrimary, lineWidth: 1)
+            }
     }
 }
 
@@ -161,8 +177,12 @@ struct GroupedSurface<Content: View>: View {
     var body: some View {
         content
             .padding(AppSpacing.spaceMd)
-            .background(AppColors.surfaceSubtle)
-            .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
+            .background(AppColors.surfaceElevated)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+            .overlay {
+                RoundedRectangle(cornerRadius: AppRadius.card)
+                    .stroke(AppColors.separator, lineWidth: 1)
+            }
     }
 }
 
@@ -176,10 +196,14 @@ struct ArtifactField<Content: View>: View {
 
     var body: some View {
         content
-            .padding(AppSpacing.spaceMd)
+            .padding(AppSpacing.spaceSm)
             .frame(maxWidth: .infinity)
             .background(AppColors.artifactField)
-            .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+            .overlay {
+                RoundedRectangle(cornerRadius: AppRadius.card)
+                    .stroke(AppColors.separator, lineWidth: 1)
+            }
     }
 }
 
@@ -236,7 +260,7 @@ struct LineagePreview: View {
 
         var maximumStages: Int {
             switch self {
-            case .hero: return 5
+            case .hero: return 3
             case .compact: return 3
             case .contextual: return 4
             }
@@ -325,9 +349,9 @@ struct CharacterTile: View {
         Button(action: action) {
             HStack(spacing: AppSpacing.spaceSm) {
                 Text(record.coreCharacter)
-                    .font(.system(size: 48, design: .serif))
+                    .font(.system(size: 34, design: .serif))
                     .foregroundStyle(AppColors.textPrimary)
-                    .frame(width: 58)
+                    .frame(width: 44)
                 VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                     Text(record.coreSharedMeaning.capitalized)
                         .font(AppTypography.body.weight(.semibold))
@@ -352,9 +376,14 @@ struct CharacterTile: View {
                 Spacer(minLength: 0)
             }
             .padding(AppSpacing.spaceMd)
-            .frame(maxWidth: .infinity, minHeight: 88, alignment: .leading)
-            .background(AppColors.surfaceSubtle)
-            .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
+            .frame(maxWidth: .infinity, minHeight: 72, alignment: .leading)
+            .background(AppColors.surfaceElevated)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+            .overlay {
+                RoundedRectangle(cornerRadius: AppRadius.card)
+                    .stroke(AppColors.separator, lineWidth: 1)
+            }
+            .shadow(color: AppColors.textPrimary.opacity(0.06), radius: 8, y: 3)
         }
         .buttonStyle(.plain)
         .accessibilityElement(children: .combine)

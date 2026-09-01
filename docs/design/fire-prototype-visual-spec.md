@@ -25,6 +25,13 @@ Treat the approved Fire reference sheets as the first implementation specificati
 - Learned jade: `#1F8F68`.
 - Small radius: 4 points; control radius: 12 points; large card radius: 16 points.
 
+## Typography
+
+- The active AppShell reference is `AsianLanguage_AppShell_VisualReference_Alt`.
+- Use bundled Playfair Display for editorial/display headings and concept moments.
+- Use bundled Inter for navigation, labels, readings, translations, metadata, and body copy.
+- Render Chinese, Japanese, and Korean characters with the platform's native fallback fonts; Playfair Display and Inter are Latin display/interface families and are not the source for CJK glyph forms.
+
 ## Symbol Journey composition
 
 Each historical page follows the same relationship visible in the Fire sheet:

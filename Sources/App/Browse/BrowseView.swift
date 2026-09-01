@@ -16,10 +16,11 @@ struct BrowseView: View {
     var body: some View {
         NavigationStack(path: $navigationPath) {
             ScrollView {
-                VStack(alignment: .leading, spacing: AppSpacing.spaceSection) {
+                VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
                     Text("Browse")
                         .font(AppTypography.pageTitle)
                         .foregroundStyle(AppColors.textPrimary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
 
                     browseLink(title: "Search", detail: "Search characters, meanings, readings…", systemImage: "magnifyingglass") {
                         SearchView(dependencies: dependencies)
@@ -58,7 +59,8 @@ struct BrowseView: View {
                     }
                 }
                 .padding(.horizontal, AppSpacing.spacePage)
-                .padding(.top, AppSpacing.spaceMd)
+                .padding(.top, AppSpacing.spaceSm)
+                // Browse is a root surface; keep all discovery sections clear of the tab capsule.
                 .padding(.bottom, AppSpacing.spaceSection)
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -77,9 +79,9 @@ struct BrowseView: View {
     /// Section headings mirror the approved shell while leaving each group open and scannable.
     @ViewBuilder
     private func browseSection<Content: View>(_ title: String, @ViewBuilder content: () -> Content) -> some View {
-        VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
             Text(title)
-                .font(AppTypography.sectionHeading)
+                .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
             content()
         }
@@ -112,13 +114,15 @@ struct BrowseView: View {
                     .font(.system(size: 12, weight: .semibold))
                     .foregroundStyle(AppColors.textTertiary)
             }
-            .padding(AppSpacing.spaceMd)
+            .padding(.horizontal, AppSpacing.spaceSm)
+            .frame(minHeight: 56)
             .background(AppColors.surfaceElevated)
-            .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
             .overlay {
-                RoundedRectangle(cornerRadius: AppRadius.card)
+                RoundedRectangle(cornerRadius: AppRadius.surface)
                     .stroke(AppColors.separator, lineWidth: 1)
             }
+            .shadow(color: AppColors.textPrimary.opacity(0.04), radius: 6, y: 2)
         }
         .buttonStyle(.plain)
     }
@@ -160,21 +164,26 @@ struct BrowseStatusView: View {
     let dependencies: AppDependencies
 
     var body: some View {
-        List {
-            if records.isEmpty {
-                ContentUnavailableView("Nothing here yet", systemImage: "tray", description: Text("No Shared Characters match this collection."))
-            } else {
-                ForEach(records) { record in
-                    CharacterTile(
-                        record: record,
-                        userState: dependencies.userStateStore.state.lessonStates[record.id],
-                        action: { dependencies.navigationState.openSymbol(record.id, intent: symbolIntent) }
-                    )
+        ScrollView {
+            VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                if records.isEmpty {
+                    ContentUnavailableView("Nothing here yet", systemImage: "tray", description: Text("No Shared Characters match this collection."))
+                        .frame(maxWidth: .infinity, minHeight: 260)
+                } else {
+                    ForEach(records) { record in
+                        CharacterTile(
+                            record: record,
+                            userState: dependencies.userStateStore.state.lessonStates[record.id],
+                            action: { dependencies.navigationState.openSymbol(record.id, intent: symbolIntent) }
+                        )
+                    }
                 }
             }
+            .padding(.horizontal, AppSpacing.spacePage)
+            .padding(.top, AppSpacing.spaceSm)
+            .padding(.bottom, AppSpacing.spaceSection)
         }
         .navigationTitle(title)
-        .scrollContentBackground(.hidden)
         .background(ShellStyle.paper.ignoresSafeArea())
         .tint(ShellStyle.cinnabar)
     }

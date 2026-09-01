@@ -58,7 +58,7 @@ struct OnboardingView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
+            VStack(alignment: .center, spacing: AppSpacing.spaceMd) {
                 Text("SCRIPT ROOTS")
                     .font(AppTypography.conceptLabel)
                     .tracking(1.4)
@@ -68,11 +68,14 @@ struct OnboardingView: View {
                     Text("One idea. One symbol. Thousands of years.")
                         .font(AppTypography.exhibitHeading)
                         .foregroundStyle(AppColors.textPrimary)
+                        .multilineTextAlignment(.center)
                     Text("Follow Fire from a recognizable origin through its historical transformation.")
                         .font(AppTypography.body)
                         .foregroundStyle(AppColors.textSecondary)
+                        .multilineTextAlignment(.center)
                     if let fire = dependencies.sharedCharacters.first(where: { $0.id == "fire" }) {
                         HeroLineagePreview(record: fire)
+                            .frame(minHeight: 260, maxHeight: 300)
                     }
                     PrimaryActionButton("Continue") {
                         userStateStore.markIntroSeen()
@@ -82,25 +85,31 @@ struct OnboardingView: View {
                     Text("Enter the Fire exhibit")
                         .font(AppTypography.exhibitHeading)
                         .foregroundStyle(AppColors.textPrimary)
+                        .multilineTextAlignment(.center)
                     Text("Begin with 火 as a museum object: its origin, historical forms, and the path into today.")
                         .font(AppTypography.body)
                         .foregroundStyle(AppColors.textSecondary)
-                    Text("火")
-                        .font(.system(size: 112, design: .serif))
+                        .multilineTextAlignment(.center)
+                    if let fire = dependencies.sharedCharacters.first(where: { $0.id == "fire" }) {
+                        HeroLineagePreview(record: fire)
+                            .frame(minHeight: 220, maxHeight: 260)
+                    }
+                    Text("Fire")
+                        .font(AppTypography.exhibitHeading)
                         .foregroundStyle(AppColors.textPrimary)
-                        .frame(maxWidth: .infinity)
-                        .accessibilityLabel("Shared Character Fire")
                     Text("All four modern language tracks are available later. The exhibit comes first.")
-                        .font(AppTypography.body)
+                        .font(AppTypography.metadata)
                         .foregroundStyle(AppColors.textSecondary)
+                        .multilineTextAlignment(.center)
                     PrimaryActionButton("Enter Fire") {
                         userStateStore.markFirstSymbolStarted()
                         dependencies.navigationState.openSymbol("fire", intent: .start)
                     }
                 }
             }
-            .frame(maxWidth: 520)
+            .frame(maxWidth: 390)
             .padding(AppSpacing.spacePage)
+            .padding(.bottom, AppSpacing.spaceSection)
         }
         .background(AppColors.appBackground.ignoresSafeArea())
         .tint(AppColors.accentPrimary)
@@ -135,20 +144,23 @@ private struct HistoryRootView: View {
     let dependencies: AppDependencies
 
     private let periods = [
-        HistoryPeriod(id: "oracleBone", displayName: "Oracle Bone"),
-        HistoryPeriod(id: "bronze", displayName: "Bronze"),
-        HistoryPeriod(id: "seal", displayName: "Seal"),
-        HistoryPeriod(id: "clerical", displayName: "Clerical"),
-        HistoryPeriod(id: "regular", displayName: "Regular")
+        HistoryPeriod(id: "oracleBone", displayName: "Oracle Bone Script"),
+        HistoryPeriod(id: "bronze", displayName: "Bronze Inscriptions"),
+        HistoryPeriod(id: "seal", displayName: "Seal Script"),
+        HistoryPeriod(id: "clerical", displayName: "Clerical Script"),
+        HistoryPeriod(id: "regular", displayName: "Regular Script")
     ]
 
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: AppSpacing.spaceSection) {
+                VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
                     Text("History")
                         .font(AppTypography.pageTitle)
                         .foregroundStyle(AppColors.textPrimary)
+                    Text("How writing changed over thousands of years.")
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
 
                     if let fire = dependencies.sharedCharacters.first(where: { $0.id == "fire" }),
                        let oracle = fire.history.stages.first(where: { $0.stage == "oracleBone" }),
@@ -156,7 +168,7 @@ private struct HistoryRootView: View {
                         ArtifactField {
                             HistoricalAssetView(metadata: metadata)
                         }
-                        .frame(minHeight: 280)
+                        .frame(height: 250)
                         Text(oracle.label)
                             .font(AppTypography.exhibitHeading)
                             .foregroundStyle(AppColors.textPrimary)
@@ -166,8 +178,8 @@ private struct HistoryRootView: View {
                     }
 
                     VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
-                        Text("Script periods")
-                            .font(AppTypography.sectionHeading)
+                        Text("Historical Stages")
+                            .font(AppTypography.stageTitle)
                             .foregroundStyle(AppColors.textPrimary)
                         ForEach(periods) { period in
                             historyRow(period)
@@ -175,7 +187,7 @@ private struct HistoryRootView: View {
                     }
                 }
                 .padding(.horizontal, AppSpacing.spacePage)
-                .padding(.top, AppSpacing.spaceMd)
+                .padding(.top, AppSpacing.spaceSm)
                 .padding(.bottom, AppSpacing.spaceSection)
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -189,7 +201,21 @@ private struct HistoryRootView: View {
         NavigationLink {
             HistoryPeriodView(period: period, dependencies: dependencies)
         } label: {
-            HStack {
+            HStack(spacing: AppSpacing.spaceSm) {
+                if let metadata = fireMetadata(for: period) {
+                    HistoricalAssetView(metadata: metadata)
+                        .frame(width: 56, height: 48)
+                        .clipped()
+                        .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
+                } else {
+                    RoundedRectangle(cornerRadius: AppRadius.small)
+                        .fill(AppColors.surfaceSubtle)
+                        .frame(width: 56, height: 48)
+                        .overlay {
+                            Image(systemName: "character")
+                                .foregroundStyle(AppColors.textSecondary)
+                        }
+                }
                 Text(period.displayName)
                     .font(AppTypography.body.weight(.semibold))
                     .foregroundStyle(AppColors.textPrimary)
@@ -207,6 +233,12 @@ private struct HistoryRootView: View {
             }
         }
         .buttonStyle(.plain)
+    }
+
+    /// Reuses only bundled stage metadata for the overview thumbnails; no new historical claims are created here.
+    private func fireMetadata(for period: HistoryPeriod) -> HistoricalAssetMetadata? {
+        guard let fire = dependencies.sharedCharacters.first(where: { $0.id == "fire" }) else { return nil }
+        return fire.history.stages.first(where: { $0.stage == period.id })?.assetMetadata
     }
 }
 
@@ -288,7 +320,7 @@ private struct MoreRootView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: AppSpacing.spaceSection) {
+                VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
                     Text("More")
                         .font(AppTypography.pageTitle)
                         .foregroundStyle(AppColors.textPrimary)
@@ -315,7 +347,7 @@ private struct MoreRootView: View {
                     }
                 }
                 .padding(.horizontal, AppSpacing.spacePage)
-                .padding(.top, AppSpacing.spaceMd)
+                .padding(.top, AppSpacing.spaceSm)
                 .padding(.bottom, AppSpacing.spaceSection)
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -328,9 +360,9 @@ private struct MoreRootView: View {
     @ViewBuilder
     private func utilitySection<Content: View>(_ title: String, @ViewBuilder content: () -> Content) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
-            Text(title.uppercased())
+            Text(title)
                 .font(AppTypography.conceptLabel)
-                .tracking(1.2)
+                .tracking(0.2)
                 .foregroundStyle(AppColors.textSecondary)
             content()
         }
@@ -363,11 +395,12 @@ private struct MoreRootView: View {
                     .font(.system(size: 12, weight: .semibold))
                     .foregroundStyle(AppColors.textTertiary)
             }
-            .padding(AppSpacing.spaceMd)
+            .padding(.horizontal, AppSpacing.spaceSm)
+            .frame(minHeight: 56)
             .background(AppColors.surfaceElevated)
-            .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
             .overlay {
-                RoundedRectangle(cornerRadius: AppRadius.card)
+                RoundedRectangle(cornerRadius: AppRadius.surface)
                     .stroke(AppColors.separator, lineWidth: 1)
             }
         }

@@ -120,6 +120,15 @@ struct LessonView: View {
                     }
                     .accessibilityLabel("Back to Browse")
                 }
+            } else {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        dependencies.navigationState.selectedTab = .home
+                    } label: {
+                        Label("Home", systemImage: "chevron.left")
+                    }
+                    .accessibilityLabel("Back to Home")
+                }
             }
             ToolbarItem(placement: .topBarTrailing) {
                 IconActionButton(systemName: "ellipsis", accessibilityLabel: "About this character") {

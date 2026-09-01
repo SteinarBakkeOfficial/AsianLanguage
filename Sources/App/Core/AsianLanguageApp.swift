@@ -1,4 +1,5 @@
 import SwiftUI
+import CoreText
 
 /// App entry point for the V1 SwiftUI shell.
 /// Uses live local dependencies for bundled corpus reading and writable user state.
@@ -11,6 +12,7 @@ struct AsianLanguageApp: App {
     @StateObject private var userStateStore: LocalUserStateStore
 
     init() {
+        BundledFontRegistrar.register()
         let liveDependencies = AppDependencies.live
         dependencies = liveDependencies
         _userStateStore = StateObject(wrappedValue: liveDependencies.userStateStore)
@@ -35,6 +37,27 @@ struct AsianLanguageApp: App {
         case .system: return nil
         case .light: return .light
         case .dark: return .dark
+        }
+    }
+}
+
+/// Registers the local font files before SwiftUI resolves the shared typography tokens.
+/// Keep this list in sync with Resources/Fonts when adding or removing app typefaces.
+private enum BundledFontRegistrar {
+    private static let fontNames = [
+        "PlayfairDisplay-Regular",
+        "PlayfairDisplay-Bold",
+        "Inter-Regular",
+        "Inter-Medium",
+        "Inter-SemiBold"
+    ]
+
+    static func register() {
+        for fontName in fontNames {
+            guard let fontURL = Bundle.main.url(forResource: fontName, withExtension: "ttf", subdirectory: "Fonts") else {
+                continue
+            }
+            CTFontManagerRegisterFontsForURL(fontURL as CFURL, .process, nil)
         }
     }
 }
