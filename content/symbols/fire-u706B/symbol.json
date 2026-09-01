@@ -8,7 +8,7 @@
   "publicationStatus": "draft",
   "visuals": {
     "assetStatus": "source-backed-draft",
-    "note": "Regular-script prototype card exists. Historical Oracle/Bronze/Seal assets are attached when source-backed Wikimedia Commons SVGs are available; final publication still needs licensing review and specialist redraw approval."
+    "note": "Pilot historical glyphs use clear source-backed SVGs where available. Concept artwork is a separate educational reconstruction and remains under editorial review."
   },
   "focusCoverage": {
     "simplifiedChinese": {
@@ -16,7 +16,7 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "huo3 / huǒ"
+          "value": "huǒ"
         }
       ],
       "glosses": [
@@ -56,7 +56,7 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "huo3 / huǒ"
+          "value": "huǒ"
         }
       ],
       "glosses": [
@@ -124,11 +124,11 @@
       "readings": [
         {
           "system": "on",
-          "value": "ka / ko"
+          "value": "カ / コ (ka / ko)"
         },
         {
           "system": "kun",
-          "value": "hi"
+          "value": "ひ (hi)"
         }
       ],
       "glosses": [
@@ -137,7 +137,7 @@
       "examples": [
         {
           "text": "火事",
-          "reading": "かじ",
+          "reading": "かじ (kaji)",
           "translation": "fire; accident",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -149,7 +149,7 @@
         },
         {
           "text": "花火",
-          "reading": "はなび",
+          "reading": "はなび (hanabi)",
           "translation": "fireworks",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -272,28 +272,28 @@
     "originAnchor": "火 is taught here from its original idea: flames rising upward, later regularized as 火.",
     "origin": {
       "concept": "Fire",
-      "explanation": "Notice how the central flame rises and spreads outward into smaller tongues of fire.",
+      "explanation": "A rising flame spreads into smaller tongues, an educational way to notice the idea behind the character.",
       "asset": {
         "characterID": "fire",
         "historicalStage": null,
         "approximatePeriod": null,
-        "sourceInstitution": null,
+        "sourceInstitution": "Script Roots educational asset workflow",
         "sourcePageURL": null,
         "sourceAssetURL": null,
         "catalogueReference": null,
-        "sourceDescription": "Educational reconstruction for observing the fire concept; not historical evidence.",
-        "retrievedAt": null,
+        "sourceDescription": "Original educational concept illustration; not historical evidence.",
+        "retrievedAt": "2026-09-02",
         "contentClass": "educationalReconstruction",
-        "assetRef": "Assets/PrototypeVisuals/fire-origin.svg",
+        "assetRef": "Assets/Symbols/fire-u706B/educational/app/origin.png",
         "artifactAssetRef": null,
         "assetKind": "illustrated-concept",
-        "provenance": "AsianLanguage authored educational reconstruction",
-        "licenseStatus": "internal-prototype",
-        "accessibilityDescription": "An educational illustration of a central flame rising into smaller outward tongues of fire.",
-        "readiness": "prototype"
+        "provenance": "OpenAI image generation; Script Roots editorial treatment",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "A clear educational illustration of Fire.",
+        "readiness": "needsReview"
       },
       "sourceIds": [
-        "source-prototype-redraw"
+        "source-generated-concept-fire"
       ]
     },
     "stages": [
@@ -301,7 +301,7 @@
         "stage": "oracleBone",
         "label": "Oracle Bone Script",
         "form": null,
-        "assetRef": "Assets/Symbols/fire-u706B/historical/oracle/app/glyph.png",
+        "assetRef": "Assets/Symbols/fire-u706B/historical/oracle/app/glyph.svg",
         "changeNoteFromPrevious": null,
         "certainty": "medium",
         "sourceIds": [
@@ -309,7 +309,8 @@
           "source-character-classification",
           "source-evobc",
           "source-radical-86",
-          "source-sinica-fire-oracleBone"
+          "source-sinica-fire-oracleBone",
+          "source-commons-fire-oracleBone"
         ],
         "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review.",
         "availabilityState": "available",
@@ -317,17 +318,17 @@
           "characterID": "fire",
           "historicalStage": "oracleBone",
           "approximatePeriod": null,
-          "sourceInstitution": "Academia Sinica Xiaoxuetang",
-          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=43.E50B",
-          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EE%94%8B&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E7%94%B2%E9%AA%A8%E6%96%87%E9%87%8D%E6%96%87%E4%B8%89&size=300&style=regular&color=%23000000&resolution=96",
-          "catalogueReference": "甲1074 | 合9104",
-          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
-          "retrievedAt": "2026-08-31T18:52:36.3778808Z",
+          "sourceInstitution": "Wikimedia Commons / Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://commons.wikimedia.org/wiki/File:%E7%81%AB-oracle-2.svg",
+          "sourceAssetURL": "https://commons.wikimedia.org/wiki/Special:FilePath/%E7%81%AB-oracle-2.svg",
+          "catalogueReference": "Sinica 43.E519",
+          "sourceDescription": "Source-backed historical glyph SVG from the Ancient Chinese Characters project; verify stage interpretation before publication.",
+          "retrievedAt": "2026-09-02",
           "contentClass": "historicalEvidence",
-          "assetRef": "Assets/Symbols/fire-u706B/historical/oracle/app/glyph.png",
+          "assetRef": "Assets/Symbols/fire-u706B/historical/oracle/app/glyph.svg",
           "artifactAssetRef": null,
           "assetKind": "historical-glyph",
-          "provenance": "Academia Sinica Xiaoxuetang",
+          "provenance": "Wikimedia Commons Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang",
           "licenseStatus": "CC0-1.0",
           "accessibilityDescription": "火 in oracleBone historical script",
           "readiness": "needsReview"
@@ -351,17 +352,17 @@
           "characterID": "fire",
           "historicalStage": "bronze",
           "approximatePeriod": null,
-          "sourceInstitution": "Wikimedia Commons",
+          "sourceInstitution": "Wikimedia Commons / Academia Sinica Xiaoxuetang",
           "sourcePageURL": "https://commons.wikimedia.org/wiki/File:%E7%81%AB-bronze.svg",
-          "sourceAssetURL": "https://upload.wikimedia.org/wikipedia/commons/9/96/%E7%81%AB-bronze.svg",
-          "catalogueReference": "火-bronze",
-          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
-          "retrievedAt": "2026-08-31T18:52:36.9882575Z",
+          "sourceAssetURL": "https://commons.wikimedia.org/wiki/Special:FilePath/%E7%81%AB-bronze.svg",
+          "catalogueReference": "Ancient Chinese Characters project",
+          "sourceDescription": "Source-backed historical glyph SVG from the Ancient Chinese Characters project; verify stage interpretation before publication.",
+          "retrievedAt": "2026-09-02",
           "contentClass": "historicalEvidence",
           "assetRef": "Assets/Symbols/fire-u706B/historical/bronze/app/glyph.svg",
           "artifactAssetRef": null,
           "assetKind": "historical-glyph",
-          "provenance": "Wikimedia Commons / Ancient Chinese characters project",
+          "provenance": "Wikimedia Commons Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang",
           "licenseStatus": "CC0-1.0",
           "accessibilityDescription": "火 in bronze historical script",
           "readiness": "needsReview"
@@ -371,14 +372,15 @@
         "stage": "seal",
         "label": "Seal Script",
         "form": null,
-        "assetRef": "Assets/Symbols/fire-u706B/historical/seal/app/glyph.png",
+        "assetRef": "Assets/Symbols/fire-u706B/historical/seal/app/glyph.svg",
         "changeNoteFromPrevious": "Seal script formalizes earlier graph traditions into a more standardized archaic written style.",
         "certainty": "medium",
         "sourceIds": [
           "source-seal-script",
           "source-evobc",
           "source-radical-86",
-          "source-sinica-fire-seal"
+          "source-sinica-fire-seal",
+          "source-commons-fire-seal"
         ],
         "historicalSound": "Not shown in this seed record.",
         "availabilityState": "available",
@@ -386,17 +388,17 @@
           "characterID": "fire",
           "historicalStage": "seal",
           "approximatePeriod": null,
-          "sourceInstitution": "Academia Sinica Xiaoxuetang",
-          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=27.706B",
-          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%E7%81%AB&font=%E5%8C%97%E5%B8%AB%E5%A4%A7%E8%AA%AA%E6%96%87%E5%B0%8F%E7%AF%86&size=300&style=regular&color=%23000000&resolution=96",
-          "catalogueReference": "說文‧火部",
-          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
-          "retrievedAt": "2026-08-31T18:52:37.5294837Z",
+          "sourceInstitution": "Wikimedia Commons / Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://commons.wikimedia.org/wiki/File:%E7%81%AB-seal.svg",
+          "sourceAssetURL": "https://commons.wikimedia.org/wiki/Special:FilePath/%E7%81%AB-seal.svg",
+          "catalogueReference": "Ancient Chinese Characters project",
+          "sourceDescription": "Source-backed historical glyph SVG from the Ancient Chinese Characters project; verify stage interpretation before publication.",
+          "retrievedAt": "2026-09-02",
           "contentClass": "historicalEvidence",
-          "assetRef": "Assets/Symbols/fire-u706B/historical/seal/app/glyph.png",
+          "assetRef": "Assets/Symbols/fire-u706B/historical/seal/app/glyph.svg",
           "artifactAssetRef": null,
           "assetKind": "historical-glyph",
-          "provenance": "Academia Sinica Xiaoxuetang",
+          "provenance": "Wikimedia Commons Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang",
           "licenseStatus": "CC0-1.0",
           "accessibilityDescription": "火 in seal historical script",
           "readiness": "needsReview"
@@ -412,10 +414,12 @@
         "sourceIds": [
           "source-clerical-script",
           "source-evobc",
-          "source-radical-86"
+          "source-radical-86",
+          "source-commons-fire-clerical"
         ],
         "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset"
+        "availabilityState": "unavailableAsset",
+        "assetMetadata": null
       },
       {
         "stage": "regular",

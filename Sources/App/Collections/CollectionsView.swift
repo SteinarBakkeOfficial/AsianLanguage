@@ -20,7 +20,7 @@ struct CollectionsView: View {
     // Product vocabulary remains “Review later”; the title casing is adjusted for the visual shell.
     /// Shared app dependencies used for corpus and user-state collections.
     let dependencies: AppDependencies
-    /// Local state store used for system collections.
+    /// Local state store used for editorial collection progress indicators.
     @ObservedObject private var userStateStore: LocalUserStateStore
 
     init(dependencies: AppDependencies) {
@@ -35,21 +35,15 @@ struct CollectionsView: View {
                     .font(AppTypography.pageTitle)
                     .foregroundStyle(AppColors.textPrimary)
 
-                collectionSection("Your Library") {
-                    systemCollection(title: "Learned", systemImage: "checkmark.circle", records: learnedRecords)
-                    systemCollection(title: "Favorites", systemImage: "star", records: favoriteRecords)
-                    systemCollection(title: "Review Later", systemImage: "clock", records: reviewLaterRecords)
-                }
-
                 collectionSection("Explore Collections") {
                     ForEach(editorialCollections) { collection in
                         NavigationLink {
                             editorialCollection(collection)
                         } label: {
-                            HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
-                                Image(systemName: "square.grid.2x2")
-                                    .foregroundStyle(AppColors.accentPrimary)
-                                    .frame(width: 24)
+                            HStack(alignment: .center, spacing: AppSpacing.spaceSm) {
+                                collectionArtwork(for: collection)
+                                    .frame(width: 88, height: 72)
+                                    .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
                                 VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                                     Text(collection.title)
                                         .font(AppTypography.stageTitle)
@@ -89,6 +83,30 @@ struct CollectionsView: View {
         .tint(AppColors.accentPrimary)
     }
 
+    /// Uses the approved educational concept art only as collection decoration;
+    /// historical stages continue to render their separate source-backed assets.
+    @ViewBuilder
+    private func collectionArtwork(for collection: SharedCharacterCollection) -> some View {
+        if let assetRef = collectionArtworkRef(for: collection) {
+            HistoricalAssetView(assetRef: assetRef, displayHeight: 72)
+        } else {
+            ZStack {
+                AppColors.surfaceSubtle
+                Image(systemName: "square.grid.2x2")
+                    .foregroundStyle(AppColors.accentPrimary)
+            }
+        }
+    }
+
+    private func collectionArtworkRef(for collection: SharedCharacterCollection) -> String? {
+        collection.sharedCharacterIDs
+            .compactMap { characterID in
+                dependencies.sharedCharacters.first(where: { record in record.id == characterID })
+            }
+            .compactMap { record in record.history.origin?.asset?.assetRef }
+            .first
+    }
+
     /// Groups library status lists separately from editorial collections.
     @ViewBuilder
     private func collectionSection<Content: View>(_ title: String, @ViewBuilder content: () -> Content) -> some View {
@@ -98,46 +116,6 @@ struct CollectionsView: View {
                 .foregroundStyle(AppColors.textPrimary)
             content()
         }
-    }
-
-    /// Renders a status list as a library group, never as an editorial collection.
-    @ViewBuilder
-    private func systemCollection(title: String, systemImage: String, records: [SharedCharacterRecord]) -> some View {
-        VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
-            HStack(spacing: AppSpacing.spaceSm) {
-                Image(systemName: systemImage)
-                    .foregroundStyle(AppColors.accentPrimary)
-                    .frame(width: 24)
-                Text(title)
-                    .font(AppTypography.body.weight(.semibold))
-                    .foregroundStyle(AppColors.textPrimary)
-                Spacer()
-            }
-            if records.isEmpty {
-                Text("No saved Shared Characters")
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textSecondary)
-            } else {
-                ForEach(records) { record in
-                    CharacterTile(
-                        record: record,
-                        userState: userStateStore.state.lessonStates[record.id],
-                        action: { dependencies.navigationState.openSymbol(record.id, intent: symbolIntent(for: title)) }
-                    )
-                }
-            }
-        }
-        .padding(AppSpacing.spaceSm)
-        .background(AppColors.surfaceElevated)
-        .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
-        .overlay {
-            RoundedRectangle(cornerRadius: AppRadius.card)
-                .stroke(AppColors.separator, lineWidth: 1)
-        }
-    }
-
-    private func symbolIntent(for collectionTitle: String) -> SymbolOpenIntent {
-        collectionTitle == "Learned" ? .reviewFromBrowse : .view
     }
 
     /// Editorial collection detail page for curated lesson sets.
@@ -168,18 +146,6 @@ struct CollectionsView: View {
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .background(AppColors.appBackground.ignoresSafeArea())
-    }
-
-    private var reviewLaterRecords: [SharedCharacterRecord] {
-        dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.isReviewLater == true }
-    }
-
-    private var favoriteRecords: [SharedCharacterRecord] {
-        dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.isStarred == true }
-    }
-
-    private var learnedRecords: [SharedCharacterRecord] {
-        dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.progressStatus == .learned }
     }
 
     private var editorialCollections: [SharedCharacterCollection] {

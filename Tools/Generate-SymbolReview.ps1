@@ -41,7 +41,8 @@ foreach ($symbolFile in $symbolFiles) {
   foreach ($stage in @($record.history.stages)) {
     $availability = $stage.availabilityState
     if ([string]::IsNullOrWhiteSpace($availability)) { $availability = if ($null -ne $stage.assetRef) { "available" } else { "unavailableAsset" } }
-    $lines.Add("- $($stage.label) ($($stage.stage)): availability $availability; certainty $($stage.certainty); asset $($stage.assetRef)")
+    $asset = if ([string]::IsNullOrWhiteSpace($stage.assetRef)) { "none (explicitly unavailable)" } else { $stage.assetRef }
+    $lines.Add("- $($stage.label) ($($stage.stage)): availability $availability; certainty $($stage.certainty); asset $asset")
   }
   $lines.Add("")
   $lines.Add("### Review files")

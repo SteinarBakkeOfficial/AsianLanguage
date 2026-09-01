@@ -71,7 +71,8 @@ struct ModernFormsComparisonView: View {
         }
     }
 
-    /// Renders the shared form, every relevant reading, and alternate writing system as one exhibit card.
+    /// Renders one clean language exhibit; alternate forms are reserved for the
+    /// dedicated language story so Today does not repeat the same information.
     private func languageCard<Coverage: ModernCoverageDisplay>(title: String, coverage: Coverage) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
             cardHeading(title)
@@ -90,7 +91,6 @@ struct ModernFormsComparisonView: View {
                 }
                 Spacer(minLength: 0)
             }
-            alternateForms(coverage.variants)
         }
         .exhibitCardSurface()
     }
@@ -135,7 +135,6 @@ struct ModernFormsComparisonView: View {
             Text(coverage.glosses.joined(separator: ", "))
                 .font(AppTypography.metadata)
                 .foregroundStyle(AppColors.textSecondary)
-            alternateForms(coverage.variants.filter { $0.writingSystem != "Hangul" })
         }
         .exhibitCardSurface()
     }
@@ -174,29 +173,6 @@ struct ModernFormsComparisonView: View {
         }
     }
 
-    @ViewBuilder
-    private func alternateForms(_ variants: [ModernFormVariant]) -> some View {
-        if !variants.isEmpty {
-            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                Divider().overlay(AppColors.separator)
-                ForEach(variants, id: \.id) { variant in
-                    HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
-                        Text(variant.writingSystem ?? "Alternate form")
-                            .font(AppTypography.caption)
-                            .foregroundStyle(AppColors.textSecondary)
-                        Text(variant.form)
-                            .font(AppTypography.body.weight(.semibold))
-                            .foregroundStyle(AppColors.textPrimary)
-                        if !variant.readings.isEmpty {
-                            Text(variant.readings.map(\.value).joined(separator: " · "))
-                                .font(AppTypography.metadata)
-                                .foregroundStyle(AppColors.textSecondary)
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 /// Small adapter keeps Today shared by standard and regional coverage models.

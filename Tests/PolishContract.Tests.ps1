@@ -53,6 +53,6 @@ $browseText = Get-Text "Sources/App/Browse/BrowseView.swift"
 Assert-Contains -Text $browseText -ExpectedSubstring "ContentUnavailableView" -Message "Browse should have a native empty state."
 
 $collectionsText = Get-Text "Sources/App/Collections/CollectionsView.swift"
-Assert-Contains -Text $collectionsText -ExpectedSubstring "No saved Shared Characters" -Message "Collections should show empty copy for empty system collections."
+Assert-Contains -Text $collectionsText -ExpectedSubstring "collectionArtwork" -Message "Collections should use editorial artwork previews."
 
 Write-Output "OK: polish contract tests passed"

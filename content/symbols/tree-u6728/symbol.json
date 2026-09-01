@@ -8,7 +8,7 @@
   "publicationStatus": "draft",
   "visuals": {
     "assetStatus": "source-backed-draft",
-    "note": "Regular-script prototype card exists. Historical Oracle/Bronze/Seal assets are attached when source-backed Wikimedia Commons SVGs are available; final publication still needs licensing review and specialist redraw approval."
+    "note": "Pilot historical glyphs use clear source-backed SVGs where available. Concept artwork is a separate educational reconstruction and remains under editorial review."
   },
   "focusCoverage": {
     "simplifiedChinese": {
@@ -16,7 +16,7 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "mu4 / mù"
+          "value": "mù"
         }
       ],
       "glosses": [
@@ -25,8 +25,8 @@
       "examples": [
         {
           "text": "木头",
-          "reading": "mu4 / mù",
-          "translation": "tree; wood",
+          "reading": "mùtou",
+          "translation": "wood",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -37,7 +37,7 @@
         },
         {
           "text": "木材",
-          "reading": "mu4 / mù",
+          "reading": "mùcái",
           "translation": "timber; lumber",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -56,7 +56,7 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "mu4 / mù"
+          "value": "mù"
         }
       ],
       "glosses": [
@@ -65,8 +65,8 @@
       "taiwanExamples": [
         {
           "text": "木頭",
-          "reading": "mu4 / mù",
-          "translation": "tree; wood",
+          "reading": "mùtou",
+          "translation": "wood",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -124,11 +124,11 @@
       "readings": [
         {
           "system": "on",
-          "value": "moku / boku"
+          "value": "モク / ボク (moku / boku)"
         },
         {
           "system": "kun",
-          "value": "ki"
+          "value": "き (ki)"
         }
       ],
       "glosses": [
@@ -149,7 +149,7 @@
         },
         {
           "text": "木材",
-          "reading": "もくざい",
+          "reading": "もくざい (mokuzai)",
           "translation": "timber; lumber",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -211,8 +211,8 @@
       "examples": [
         {
           "text": "목재",
-          "reading": "목 / mok",
-          "translation": "tree; wood",
+          "reading": "mokjae",
+          "translation": "lumber; wood material",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -222,9 +222,9 @@
           ]
         },
         {
-          "text": "木材",
-          "reading": "목재 / mokjae",
-          "translation": "timber; lumber",
+          "text": "나무",
+          "reading": "namu",
+          "translation": "tree",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": "tree-parallel-1",
@@ -275,7 +275,7 @@
         "stage": "oracleBone",
         "label": "Oracle Bone Script",
         "form": null,
-        "assetRef": "Assets/Symbols/tree-u6728/historical/oracle/app/glyph.png",
+        "assetRef": "Assets/Symbols/tree-u6728/historical/oracle/app/glyph.svg",
         "changeNoteFromPrevious": null,
         "certainty": "medium",
         "sourceIds": [
@@ -283,7 +283,8 @@
           "source-character-classification",
           "source-evobc",
           "source-radical-75",
-          "source-sinica-tree-oracleBone"
+          "source-sinica-tree-oracleBone",
+          "source-commons-tree-oracleBone"
         ],
         "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review.",
         "availabilityState": "available",
@@ -291,17 +292,17 @@
           "characterID": "tree",
           "historicalStage": "oracleBone",
           "approximatePeriod": null,
-          "sourceInstitution": "Academia Sinica Xiaoxuetang",
-          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=42.EA66",
-          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EE%A9%A6&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E7%94%B2%E9%AA%A8%E6%96%87%E9%87%8D%E6%96%87%E4%BA%8C&size=300&style=regular&color=%23000000&resolution=96",
-          "catalogueReference": "甲600 | 合33193 | 歷組",
-          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
-          "retrievedAt": "2026-08-31T18:52:38.2127617Z",
+          "sourceInstitution": "Wikimedia Commons / Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8-oracle.svg",
+          "sourceAssetURL": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%9C%A8-oracle.svg",
+          "catalogueReference": "Ancient Chinese Characters project",
+          "sourceDescription": "Source-backed historical glyph SVG from the Ancient Chinese Characters project; verify stage interpretation before publication.",
+          "retrievedAt": "2026-09-02",
           "contentClass": "historicalEvidence",
-          "assetRef": "Assets/Symbols/tree-u6728/historical/oracle/app/glyph.png",
+          "assetRef": "Assets/Symbols/tree-u6728/historical/oracle/app/glyph.svg",
           "artifactAssetRef": null,
           "assetKind": "historical-glyph",
-          "provenance": "Academia Sinica Xiaoxuetang",
+          "provenance": "Wikimedia Commons Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang",
           "licenseStatus": "CC0-1.0",
           "accessibilityDescription": "木 in oracleBone historical script",
           "readiness": "needsReview"
@@ -311,70 +312,36 @@
         "stage": "bronze",
         "label": "Bronze Script",
         "form": null,
-        "assetRef": "Assets/Symbols/tree-u6728/historical/bronze/app/glyph.png",
+        "assetRef": null,
         "changeNoteFromPrevious": "Bronze inscriptions continue the ancient graph tradition after the oracle-bone period; final 木-specific redraw still required.",
         "certainty": "medium",
         "sourceIds": [
           "source-evobc",
           "source-radical-75",
-          "source-sinica-tree-bronze"
+          "source-sinica-tree-bronze",
+          "source-commons-tree-bronze"
         ],
         "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "available",
-        "assetMetadata": {
-          "characterID": "tree",
-          "historicalStage": "bronze",
-          "approximatePeriod": null,
-          "sourceInstitution": "Academia Sinica Xiaoxuetang",
-          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=36.EE0A",
-          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EE%B8%8A&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E9%87%91%E6%96%87%E9%87%8D%E6%96%87%E5%85%AD&size=300&style=regular&color=%23000000&resolution=96",
-          "catalogueReference": "木甗 | 商代晚期 | 集成781",
-          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
-          "retrievedAt": "2026-08-31T18:52:38.9157955Z",
-          "contentClass": "historicalEvidence",
-          "assetRef": "Assets/Symbols/tree-u6728/historical/bronze/app/glyph.png",
-          "artifactAssetRef": null,
-          "assetKind": "historical-glyph",
-          "provenance": "Academia Sinica Xiaoxuetang",
-          "licenseStatus": "CC0-1.0",
-          "accessibilityDescription": "木 in bronze historical script",
-          "readiness": "needsReview"
-        }
+        "availabilityState": "unavailableAsset",
+        "assetMetadata": null
       },
       {
         "stage": "seal",
         "label": "Seal Script",
         "form": null,
-        "assetRef": "Assets/Symbols/tree-u6728/historical/seal/app/glyph.png",
+        "assetRef": null,
         "changeNoteFromPrevious": "Seal script formalizes earlier graph traditions into a more standardized archaic written style.",
         "certainty": "medium",
         "sourceIds": [
           "source-seal-script",
           "source-evobc",
           "source-radical-75",
-          "source-sinica-tree-seal"
+          "source-sinica-tree-seal",
+          "source-commons-tree-seal"
         ],
         "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "available",
-        "assetMetadata": {
-          "characterID": "tree",
-          "historicalStage": "seal",
-          "approximatePeriod": null,
-          "sourceInstitution": "Academia Sinica Xiaoxuetang",
-          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=27.6728",
-          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%E6%9C%A8&font=%E5%8C%97%E5%B8%AB%E5%A4%A7%E8%AA%AA%E6%96%87%E5%B0%8F%E7%AF%86&size=300&style=regular&color=%23000000&resolution=96",
-          "catalogueReference": "說文‧木部",
-          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
-          "retrievedAt": "2026-08-31T18:52:39.4575350Z",
-          "contentClass": "historicalEvidence",
-          "assetRef": "Assets/Symbols/tree-u6728/historical/seal/app/glyph.png",
-          "artifactAssetRef": null,
-          "assetKind": "historical-glyph",
-          "provenance": "Academia Sinica Xiaoxuetang",
-          "licenseStatus": "CC0-1.0",
-          "accessibilityDescription": "木 in seal historical script",
-          "readiness": "needsReview"
-        }
+        "availabilityState": "unavailableAsset",
+        "assetMetadata": null
       },
       {
         "stage": "clerical",
@@ -386,10 +353,12 @@
         "sourceIds": [
           "source-clerical-script",
           "source-evobc",
-          "source-radical-75"
+          "source-radical-75",
+          "source-commons-tree-clerical"
         ],
         "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset"
+        "availabilityState": "unavailableAsset",
+        "assetMetadata": null
       },
       {
         "stage": "regular",
@@ -405,7 +374,33 @@
         "historicalSound": null,
         "availabilityState": "available"
       }
-    ]
+    ],
+    "origin": {
+      "concept": "A tree",
+      "explanation": "A trunk, branching limbs, and a modest crown keep the tree idea visible beside the character.",
+      "asset": {
+        "characterID": "tree",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots educational asset workflow",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Original educational concept illustration; not historical evidence.",
+        "retrievedAt": "2026-09-02",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/tree-u6728/educational/app/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; Script Roots editorial treatment",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "A clear educational illustration of A tree.",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-concept-tree"
+      ]
+    }
   },
   "structure": {
     "summary": "木 is handled as a basic graph/radical for 'tree; wood'. It can appear as a standalone character and as a component in related characters.",

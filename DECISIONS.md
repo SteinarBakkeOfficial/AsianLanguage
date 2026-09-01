@@ -77,6 +77,11 @@
 - Each Symbol folder separates learner copy, research notes, review status, source/provenance records, educational reconstructions, historical evidence, and reusable component references.
 - Educational reconstructions are classified separately from historical evidence. Fire's Origin visual is an authored educational reconstruction and must never be presented as an ancient artifact.
 - Offline packaging copies only local app derivatives into the bundle asset area and emits a manifest declaring that runtime networking is not required.
+- The approved AppShell reference uses `#F7F3EE` paper, `#EFE9E1` clay, `#1C1C1C` ink, `#686868` secondary text, `#C23A2B` cinnabar, and `#2E7D6E` jade. Light is the default appearance; Dark is the only alternate, and legacy System values decode to Light.
+- Today remains one horizontal page per selected language until a later content decision approves a scrollable all-language page. Each page must show the correct writing, pronunciation/reading, romanization, and a reviewed word example.
+- Browse owns the Your Library status lists. Collections owns editorial sets only; status lists must not be duplicated on the Collections index.
+- Educational concept illustrations and historical glyph evidence are separate asset classes. Concept art must carry internal-authored provenance and must never fill a missing historical stage.
+- The pilot's source-backed historical SVG allowlist is Fire, Water, and Tree; missing named files remain explicit unavailable states until an approved source is acquired.
 - The initial preparation experiment covers the existing 11 draft records; generated records remain `needsReview` and require human approval.
 - Onboarding uses the same semantic design system as the main shell and routes directly into the canonical Fire Symbol Journey before optional language preferences; More → Languages owns those preferences.
 - Account V1 describes local device state only; it must not imply a real identity, profile, sync account, or cloud capability.
@@ -88,9 +93,9 @@
 - macOS/Xcode or macOS CI is required for actual SwiftUI compilation and XCTest execution.
 - Physical iPhone testing is reserved for touch, gestures, safe areas, rendering, and final device behavior.
 
-## Implementation status record — 2026-08-31
+## Implementation status record — 2026-09-02
 
 - Foundation architecture, local state, content tooling, root shell, discovery foundations, and the first Symbol visual slice are implemented.
-- Fire remains a draft corpus record. Its Origin and most historical stages lack approved renderable assets, so the current app intentionally exposes missing-content states.
+- Fire, Water, and Tree remain draft corpus records. Their acquired historical SVGs and educational concept illustrations are locally packaged with provenance, while unresolved stages intentionally expose missing-content states.
 - Completion, Today/Structure/Usage/Summary visual polish, History/utility-row migration, Revisit/Quick Review visual polish, and final historical asset provenance remain active work.
 - Windows verification is green; native SwiftUI compilation and visual QA remain external macOS work.

@@ -5,21 +5,21 @@ import UIKit
 enum AppColors {
     // These values mirror the approved Fire handoff. Keep the light palette stable because
     // the reference screenshots are composed on this warm gallery field.
-    static let appBackground = adaptive(light: (250, 247, 242), dark: (18, 18, 15))
-    static let surfaceSubtle = adaptive(light: (242, 238, 232), dark: (28, 27, 24))
+    static let appBackground = adaptive(light: (247, 243, 238), dark: (18, 18, 15))
+    static let surfaceSubtle = adaptive(light: (239, 233, 225), dark: (28, 27, 24))
     static let surfaceElevated = adaptive(light: (255, 255, 255), dark: (31, 30, 26))
     static let surfaceStrong = adaptive(light: (247, 245, 240), dark: (38, 35, 32))
-    static let textPrimary = adaptive(light: (17, 17, 17), dark: (245, 245, 242))
-    static let textSecondary = adaptive(light: (106, 106, 106), dark: (134, 132, 140))
+    static let textPrimary = adaptive(light: (28, 28, 28), dark: (245, 245, 242))
+    static let textSecondary = adaptive(light: (104, 104, 104), dark: (134, 132, 140))
     static let textTertiary = adaptive(light: (183, 176, 166), dark: (143, 140, 132))
-    static let separator = adaptive(light: (230, 225, 217), dark: (47, 45, 40))
-    static let accentPrimary = adaptive(light: (200, 56, 47), dark: (226, 92, 74))
+    static let separator = adaptive(light: (225, 218, 209), dark: (47, 45, 40))
+    static let accentPrimary = adaptive(light: (194, 58, 43), dark: (226, 92, 74))
     static let accentPressed = adaptive(light: (165, 32, 34), dark: (191, 66, 47))
     static let accentSubtle = adaptive(light: (248, 233, 230), dark: (58, 29, 24))
-    static let learned = adaptive(light: (31, 143, 104), dark: (51, 196, 157))
+    static let learned = adaptive(light: (46, 125, 110), dark: (51, 196, 157))
     static let warning = adaptive(light: (149, 104, 32), dark: (224, 174, 86))
     static let error = adaptive(light: (178, 55, 53), dark: (239, 113, 107))
-    static let artifactField = adaptive(light: (247, 241, 229), dark: (42, 37, 28))
+    static let artifactField = adaptive(light: (239, 233, 225), dark: (42, 37, 28))
     static let artifactInk = adaptive(light: (53, 43, 36), dark: (228, 216, 200))
 
     private static func adaptive(light: (CGFloat, CGFloat, CGFloat), dark: (CGFloat, CGFloat, CGFloat)) -> Color {

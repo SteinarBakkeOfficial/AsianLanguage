@@ -35,7 +35,21 @@ struct BrowseView: View {
                     }
 
                     browseSection("Collections") {
-                        browseLink(title: "Explore Collections", detail: "Nature · Pictographs · Dramatic Changes", systemImage: "square.grid.2x2") {
+                        collectionPreviewLink(
+                            title: "Nature",
+                            detail: "Fire · Water · Mountain · Tree",
+                            assetRef: "Assets/Symbols/tree-u6728/educational/app/origin.png"
+                        ) {
+                            CollectionsView(dependencies: dependencies)
+                        }
+                        collectionPreviewLink(
+                            title: "Pictographs",
+                            detail: "Early images carried into written form",
+                            assetRef: "Assets/Symbols/fire-u706B/educational/app/origin.png"
+                        ) {
+                            CollectionsView(dependencies: dependencies)
+                        }
+                        browseLink(title: "Explore all collections", detail: "Nature · Pictographs · Dramatic Changes", systemImage: "square.grid.2x2") {
                             CollectionsView(dependencies: dependencies)
                         }
                     }
@@ -123,6 +137,45 @@ struct BrowseView: View {
                     .stroke(AppColors.separator, lineWidth: 1)
             }
             .shadow(color: AppColors.textPrimary.opacity(0.04), radius: 6, y: 2)
+        }
+        .buttonStyle(.plain)
+    }
+
+    /// Editorial collection cards keep Browse visually aligned with the
+    /// reference shell while leaving status lists in Your Library below.
+    private func collectionPreviewLink<Destination: View>(
+        title: String,
+        detail: String,
+        assetRef: String,
+        @ViewBuilder destination: () -> Destination
+    ) -> some View {
+        NavigationLink {
+            destination()
+        } label: {
+            HStack(spacing: AppSpacing.spaceSm) {
+                HistoricalAssetView(assetRef: assetRef, displayHeight: 72)
+                    .frame(width: 96, height: 72)
+                    .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text(title)
+                        .font(AppTypography.stageTitle)
+                        .foregroundStyle(AppColors.textPrimary)
+                    Text(detail)
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+                Spacer(minLength: 0)
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundStyle(AppColors.textTertiary)
+            }
+            .padding(AppSpacing.spaceXs)
+            .background(AppColors.surfaceElevated)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+            .overlay {
+                RoundedRectangle(cornerRadius: AppRadius.card)
+                    .stroke(AppColors.separator, lineWidth: 1)
+            }
         }
         .buttonStyle(.plain)
     }

@@ -11,11 +11,17 @@ enum LessonProgressStatus: String, CaseIterable, Identifiable, Codable {
 
 /// Device appearance preference; the app maps this to SwiftUI's color-scheme API.
 enum AppearancePreference: String, CaseIterable, Codable, Identifiable {
-    case system
     case light
     case dark
 
     var id: String { rawValue }
+
+    /// Maps the retired System value and unknown persisted values to the
+    /// reference shell's light presentation during the appearance migration.
+    init(from decoder: Decoder) throws {
+        let rawValue = try decoder.singleValueContainer().decode(String.self)
+        self = rawValue == AppearancePreference.dark.rawValue ? .dark : .light
+    }
 }
 
 /// Local writable state for one Shared Character Symbol Journey.
@@ -151,7 +157,7 @@ struct AppUserState: Codable, Equatable {
         installedCorpusName: "Draft V1 Corpus",
         currentCharacterID: nil,
         activeJourneySymbolID: nil,
-        appearancePreference: .system,
+        appearancePreference: .light,
         hasCompletedOnboarding: false,
         hasSeenIntro: false,
         hasChosenFocusLanguages: false,
@@ -203,7 +209,7 @@ struct AppUserState: Codable, Equatable {
         self.installedCorpusName = try container.decodeIfPresent(String.self, forKey: .installedCorpusName) ?? "Draft V1 Corpus"
         self.currentCharacterID = try container.decodeIfPresent(String.self, forKey: .currentCharacterID)
         self.activeJourneySymbolID = try container.decodeIfPresent(String.self, forKey: .activeJourneySymbolID) ?? self.currentCharacterID
-        self.appearancePreference = try container.decodeIfPresent(AppearancePreference.self, forKey: .appearancePreference) ?? .system
+        self.appearancePreference = try container.decodeIfPresent(AppearancePreference.self, forKey: .appearancePreference) ?? .light
         self.hasCompletedOnboarding = try container.decodeIfPresent(Bool.self, forKey: .hasCompletedOnboarding) ?? false
         self.hasSeenIntro = try container.decodeIfPresent(Bool.self, forKey: .hasSeenIntro) ?? self.hasCompletedOnboarding
         self.hasChosenFocusLanguages = try container.decodeIfPresent(Bool.self, forKey: .hasChosenFocusLanguages) ?? self.hasCompletedOnboarding
@@ -230,7 +236,7 @@ struct AppUserState: Codable, Equatable {
         installedCorpusName: String,
         currentCharacterID: String? = nil,
         activeJourneySymbolID: String? = nil,
-        appearancePreference: AppearancePreference = .system,
+        appearancePreference: AppearancePreference = .light,
         hasCompletedOnboarding: Bool = false,
         hasSeenIntro: Bool = false,
         hasChosenFocusLanguages: Bool = false,

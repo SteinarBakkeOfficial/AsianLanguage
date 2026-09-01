@@ -31,10 +31,9 @@ struct AsianLanguageApp: App {
         }
     }
 
-    /// Maps the persisted neutral preference to the native SwiftUI appearance API.
+    /// Maps the persisted appearance preference to the native SwiftUI API.
     private var colorScheme: ColorScheme? {
         switch userStateStore.state.appearancePreference {
-        case .system: return nil
         case .light: return .light
         case .dark: return .dark
         }

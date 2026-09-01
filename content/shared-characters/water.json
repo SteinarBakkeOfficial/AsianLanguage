@@ -8,7 +8,7 @@
   "publicationStatus": "draft",
   "visuals": {
     "assetStatus": "source-backed-draft",
-    "note": "Regular-script prototype card exists. Historical Oracle/Bronze/Seal assets are attached when source-backed Wikimedia Commons SVGs are available; final publication still needs licensing review and specialist redraw approval."
+    "note": "Pilot historical glyphs use clear source-backed SVGs where available. Concept artwork is a separate educational reconstruction and remains under editorial review."
   },
   "focusCoverage": {
     "simplifiedChinese": {
@@ -16,7 +16,7 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "shui3 / shuǐ"
+          "value": "shuǐ"
         }
       ],
       "glosses": [
@@ -24,9 +24,9 @@
       ],
       "examples": [
         {
-          "text": "水",
-          "reading": "shui3 / shuǐ",
-          "translation": "water",
+          "text": "水滴",
+          "reading": "shuǐdī",
+          "translation": "water drop",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -36,9 +36,9 @@
           ]
         },
         {
-          "text": "水在山下。",
-          "reading": null,
-          "translation": "Basic sentence using water.",
+          "text": "水很清。",
+          "reading": "shuǐ hěn qīng",
+          "translation": "The water is clear.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "water-parallel-1",
@@ -56,7 +56,7 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "shui3 / shuǐ"
+          "value": "shuǐ"
         }
       ],
       "glosses": [
@@ -64,9 +64,9 @@
       ],
       "taiwanExamples": [
         {
-          "text": "水",
-          "reading": "shui3 / shuǐ",
-          "translation": "water",
+          "text": "水滴",
+          "reading": "shuǐdī",
+          "translation": "water drop",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -76,9 +76,9 @@
           ]
         },
         {
-          "text": "水在山下。",
-          "reading": null,
-          "translation": "Basic Taiwan sentence using water.",
+          "text": "水很清。",
+          "reading": "shuǐ hěn qīng",
+          "translation": "The water is clear.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "water-parallel-1",
@@ -92,9 +92,9 @@
       ],
       "hongKongExamples": [
         {
-          "text": "水",
-          "reading": null,
-          "translation": "water",
+          "text": "水滴",
+          "reading": "seoi2 dik6",
+          "translation": "water drop",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -104,9 +104,9 @@
           ]
         },
         {
-          "text": "水喺山下。",
-          "reading": null,
-          "translation": "Basic Hong Kong sentence using water.",
+          "text": "啲水好清。",
+          "reading": "di1 seoi2 hou2 cing1",
+          "translation": "The water is very clear.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "water-parallel-1",
@@ -124,11 +124,11 @@
       "readings": [
         {
           "system": "on",
-          "value": "sui"
+          "value": "スイ (sui)"
         },
         {
           "system": "kun",
-          "value": "mizu"
+          "value": "みず (mizu)"
         }
       ],
       "glosses": [
@@ -136,9 +136,9 @@
       ],
       "examples": [
         {
-          "text": "水",
-          "reading": "mizu",
-          "translation": "water",
+          "text": "水道",
+          "reading": "すいどう (suidō)",
+          "translation": "water supply",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -148,9 +148,9 @@
           ]
         },
         {
-          "text": "水は山の下にあります。",
-          "reading": null,
-          "translation": "Basic Japanese sentence using water.",
+          "text": "水はきれいです。",
+          "reading": "みずはきれいです (mizu wa kirei desu)",
+          "translation": "The water is clean.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "water-parallel-1",
@@ -180,9 +180,9 @@
       ],
       "examples": [
         {
-          "text": "수",
-          "reading": "수 / su",
-          "translation": "water",
+          "text": "수분",
+          "reading": "subun",
+          "translation": "moisture; water content",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -192,9 +192,9 @@
           ]
         },
         {
-          "text": "물은 산 아래에 있습니다.",
-          "reading": null,
-          "translation": "Basic Korean sentence using water.",
+          "text": "물이 맑습니다.",
+          "reading": "muri malgseumnida",
+          "translation": "The water is clear.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "water-parallel-1",
@@ -215,43 +215,109 @@
         "stage": "oracleBone",
         "label": "Oracle Bone Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/water-u6C34/historical/oracle/app/glyph.svg",
         "changeNoteFromPrevious": null,
         "certainty": "medium",
         "sourceIds": [
           "source-oracle-bone-script",
           "source-character-classification",
           "source-evobc",
-          "source-radical-85"
+          "source-radical-85",
+          "source-sinica-water-oracleBone",
+          "source-commons-water-oracleBone"
         ],
-        "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review."
+        "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review.",
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "water",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "Wikimedia Commons / Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://commons.wikimedia.org/wiki/File:%E6%B0%B4-oracle.svg",
+          "sourceAssetURL": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%B0%B4-oracle.svg",
+          "catalogueReference": "Sinica 43.E7BE; 43.E7BE",
+          "sourceDescription": "Source-backed historical glyph SVG from the Ancient Chinese Characters project; verify stage interpretation before publication.",
+          "retrievedAt": "2026-09-02",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/water-u6C34/historical/oracle/app/glyph.svg",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Wikimedia Commons Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "水 in oracleBone historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "bronze",
         "label": "Bronze Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/water-u6C34/historical/bronze/app/glyph.svg",
         "changeNoteFromPrevious": "Bronze inscriptions continue the ancient graph tradition after the oracle-bone period; final 水-specific redraw still required.",
         "certainty": "medium",
         "sourceIds": [
           "source-evobc",
-          "source-radical-85"
+          "source-radical-85",
+          "source-sinica-water-bronze",
+          "source-commons-water-bronze"
         ],
-        "historicalSound": "Not shown in this seed record."
+        "historicalSound": "Not shown in this seed record.",
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "water",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "Wikimedia Commons / Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://commons.wikimedia.org/wiki/File:%E6%B0%B4-bronze.svg",
+          "sourceAssetURL": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%B0%B4-bronze.svg",
+          "catalogueReference": "Ancient Chinese Characters project",
+          "sourceDescription": "Source-backed historical glyph SVG from the Ancient Chinese Characters project; verify stage interpretation before publication.",
+          "retrievedAt": "2026-09-02",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/water-u6C34/historical/bronze/app/glyph.svg",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Wikimedia Commons Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "水 in bronze historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "seal",
         "label": "Seal Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/water-u6C34/historical/seal/app/glyph.svg",
         "changeNoteFromPrevious": "Seal script formalizes earlier graph traditions into a more standardized archaic written style.",
         "certainty": "medium",
         "sourceIds": [
           "source-seal-script",
           "source-evobc",
-          "source-radical-85"
+          "source-radical-85",
+          "source-sinica-water-seal",
+          "source-commons-water-seal"
         ],
-        "historicalSound": "Not shown in this seed record."
+        "historicalSound": "Not shown in this seed record.",
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "water",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "Wikimedia Commons / Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://commons.wikimedia.org/wiki/File:%E6%B0%B4-seal.svg",
+          "sourceAssetURL": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%B0%B4-seal.svg",
+          "catalogueReference": "Ancient Chinese Characters project",
+          "sourceDescription": "Source-backed historical glyph SVG from the Ancient Chinese Characters project; verify stage interpretation before publication.",
+          "retrievedAt": "2026-09-02",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/water-u6C34/historical/seal/app/glyph.svg",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Wikimedia Commons Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "水 in seal historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "clerical",
@@ -263,9 +329,12 @@
         "sourceIds": [
           "source-clerical-script",
           "source-evobc",
-          "source-radical-85"
+          "source-radical-85",
+          "source-commons-water-clerical"
         ],
-        "historicalSound": "Not shown in this seed record."
+        "historicalSound": "Not shown in this seed record.",
+        "availabilityState": "unavailableAsset",
+        "assetMetadata": null
       },
       {
         "stage": "regular",
@@ -278,9 +347,37 @@
           "source-radical-85",
           "source-prototype-redraw"
         ],
-        "historicalSound": null
+        "historicalSound": null,
+        "availabilityState": "available",
+        "assetMetadata": null
       }
-    ]
+    ],
+    "origin": {
+      "concept": "Flowing water",
+      "explanation": "Flowing ribbons and a falling drop make the movement of water immediately visible beside the character.",
+      "asset": {
+        "characterID": "water",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots educational asset workflow",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Original educational concept illustration; not historical evidence.",
+        "retrievedAt": "2026-09-02",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/water-u6C34/educational/app/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; Script Roots editorial treatment",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "A clear educational illustration of Flowing water.",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-concept-water"
+      ]
+    }
   },
   "structure": {
     "summary": "水 is handled as a basic graph/radical for 'water'. It can appear as a standalone character and as a component in related characters.",
@@ -354,6 +451,62 @@
       "type": "reference",
       "citation": "Radical 85 lists 水 as the water radical with Mandarin shuǐ, Japanese sui/mizu, and Korean 수 su / 물 mul.",
       "url": "https://en.wikipedia.org/wiki/Radical_85"
+    },
+    {
+      "id": "source-sinica-water-oracleBone",
+      "label": "Academia Sinica Xiaoxuetang — oracleBone 水",
+      "type": "historical-asset",
+      "citation": "CC0 historical glyph image from the Academia Sinica Xiaoxuetang source manifest.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=43.E7BE"
+    },
+    {
+      "id": "source-sinica-water-bronze",
+      "label": "Academia Sinica Xiaoxuetang — bronze 水",
+      "type": "historical-asset",
+      "citation": "CC0 historical glyph image from the Academia Sinica Xiaoxuetang source manifest.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=33.EBE9"
+    },
+    {
+      "id": "source-sinica-water-seal",
+      "label": "Academia Sinica Xiaoxuetang — seal 水",
+      "type": "historical-asset",
+      "citation": "CC0 historical glyph image from the Academia Sinica Xiaoxuetang source manifest.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=27.6C34"
+    },
+    {
+      "id": "source-generated-concept-water",
+      "label": "Script Roots educational concept illustration - Flowing water",
+      "type": "educational-asset",
+      "citation": "Original educational reconstruction generated for the Script Roots pilot; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    },
+    {
+      "id": "source-commons-water-oracleBone",
+      "label": "Wikimedia Commons - %E6%B0%B4-oracle.svg",
+      "type": "historical-asset",
+      "citation": "CC0/public-domain SVG from the Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang.",
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%B0%B4-oracle.svg"
+    },
+    {
+      "id": "source-commons-water-bronze",
+      "label": "Wikimedia Commons - %E6%B0%B4-bronze.svg",
+      "type": "historical-asset",
+      "citation": "CC0/public-domain SVG from the Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang.",
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%B0%B4-bronze.svg"
+    },
+    {
+      "id": "source-commons-water-seal",
+      "label": "Wikimedia Commons - %E6%B0%B4-seal.svg",
+      "type": "historical-asset",
+      "citation": "CC0/public-domain SVG from the Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang.",
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%B0%B4-seal.svg"
+    },
+    {
+      "id": "source-commons-water-clerical",
+      "label": "Wikimedia Commons candidate - %E6%B0%B4-clerical.svg",
+      "type": "historical-asset",
+      "citation": "Allowlisted source candidate was checked during the pilot import, but no local asset was acquired; retain the stage as unavailable until an approved file is available.",
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%B0%B4-clerical.svg"
     }
   ],
   "notes": [

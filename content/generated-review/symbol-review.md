@@ -1,6 +1,6 @@
 # Symbol review report
 
-Generated: 2026-09-01T13:14:25.1827721Z
+Generated: 2026-09-01T19:17:38.3250488Z
 
 This report is editorial preparation output. It does not approve generated or draft content.
 
@@ -19,7 +19,7 @@ This report is editorial preparation output. It does not approve generated or dr
 - Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/big-u5927/historical/oracle/app/glyph.png
 - Bronze Script (bronze): availability available; certainty medium; asset Assets/Symbols/big-u5927/historical/bronze/app/glyph.png
 - Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/big-u5927/historical/seal/app/glyph.png
-- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset 
+- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
 - Regular Script (regular): availability available; certainty high; asset Assets/PrototypeVisuals/big-regular.svg
 
 ### Review files
@@ -44,7 +44,7 @@ This report is editorial preparation output. It does not approve generated or dr
 - Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/day-u65E5/historical/oracle/app/glyph.png
 - Bronze Script (bronze): availability available; certainty medium; asset Assets/Symbols/day-u65E5/historical/bronze/app/glyph.png
 - Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/day-u65E5/historical/seal/app/glyph.png
-- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset 
+- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
 - Regular Script (regular): availability available; certainty high; asset Assets/PrototypeVisuals/day-regular.svg
 
 ### Review files
@@ -69,7 +69,7 @@ This report is editorial preparation output. It does not approve generated or dr
 - Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/eye-u76EE/historical/oracle/app/glyph.png
 - Bronze Script (bronze): availability available; certainty medium; asset Assets/Symbols/eye-u76EE/historical/bronze/app/glyph.png
 - Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/eye-u76EE/historical/seal/app/glyph.png
-- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset 
+- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
 - Regular Script (regular): availability available; certainty high; asset Assets/PrototypeVisuals/eye-regular.svg
 
 ### Review files
@@ -91,10 +91,10 @@ This report is editorial preparation output. It does not approve generated or dr
 
 ### Historical stages
 
-- Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/fire-u706B/historical/oracle/app/glyph.png
+- Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/fire-u706B/historical/oracle/app/glyph.svg
 - Bronze Script (bronze): availability available; certainty medium; asset Assets/Symbols/fire-u706B/historical/bronze/app/glyph.svg
-- Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/fire-u706B/historical/seal/app/glyph.png
-- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset 
+- Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/fire-u706B/historical/seal/app/glyph.svg
+- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
 - Regular Script (regular): availability available; certainty high; asset Assets/PrototypeVisuals/fire-regular.svg
 
 ### Review files
@@ -119,7 +119,7 @@ This report is editorial preparation output. It does not approve generated or dr
 - Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/moon-u6708/historical/oracle/app/glyph.png
 - Bronze Script (bronze): availability available; certainty medium; asset Assets/Symbols/moon-u6708/historical/bronze/app/glyph.png
 - Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/moon-u6708/historical/seal/app/glyph.png
-- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset 
+- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
 - Regular Script (regular): availability available; certainty high; asset Assets/PrototypeVisuals/moon-regular.svg
 
 ### Review files
@@ -144,7 +144,7 @@ This report is editorial preparation output. It does not approve generated or dr
 - Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/mountain-u5C71/historical/oracle/app/glyph.png
 - Bronze Script (bronze): availability available; certainty medium; asset Assets/Symbols/mountain-u5C71/historical/bronze/app/glyph.png
 - Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/mountain-u5C71/historical/seal/app/glyph.png
-- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset 
+- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
 - Regular Script (regular): availability available; certainty high; asset Assets/PrototypeVisuals/mountain-regular.svg
 
 ### Review files
@@ -169,7 +169,7 @@ This report is editorial preparation output. It does not approve generated or dr
 - Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/mouth-u53E3/historical/oracle/app/glyph.png
 - Bronze Script (bronze): availability available; certainty medium; asset Assets/Symbols/mouth-u53E3/historical/bronze/app/glyph.png
 - Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/mouth-u53E3/historical/seal/app/glyph.png
-- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset 
+- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
 - Regular Script (regular): availability available; certainty high; asset Assets/PrototypeVisuals/mouth-regular.svg
 
 ### Review files
@@ -194,7 +194,7 @@ This report is editorial preparation output. It does not approve generated or dr
 - Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/person-u4EBA/historical/oracle/app/glyph.png
 - Bronze Script (bronze): availability available; certainty medium; asset Assets/Symbols/person-u4EBA/historical/bronze/app/glyph.png
 - Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/person-u4EBA/historical/seal/app/glyph.png
-- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset 
+- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
 - Regular Script (regular): availability available; certainty high; asset Assets/PrototypeVisuals/person-regular.svg
 
 ### Review files
@@ -219,7 +219,7 @@ This report is editorial preparation output. It does not approve generated or dr
 - Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/small-u5C0F/historical/oracle/app/glyph.png
 - Bronze Script (bronze): availability available; certainty medium; asset Assets/Symbols/small-u5C0F/historical/bronze/app/glyph.png
 - Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/small-u5C0F/historical/seal/app/glyph.png
-- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset 
+- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
 - Regular Script (regular): availability available; certainty high; asset Assets/PrototypeVisuals/small-regular.svg
 
 ### Review files
@@ -241,10 +241,10 @@ This report is editorial preparation output. It does not approve generated or dr
 
 ### Historical stages
 
-- Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/tree-u6728/historical/oracle/app/glyph.png
-- Bronze Script (bronze): availability available; certainty medium; asset Assets/Symbols/tree-u6728/historical/bronze/app/glyph.png
-- Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/tree-u6728/historical/seal/app/glyph.png
-- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset 
+- Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/tree-u6728/historical/oracle/app/glyph.svg
+- Bronze Script (bronze): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
+- Seal Script (seal): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
+- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
 - Regular Script (regular): availability available; certainty high; asset Assets/PrototypeVisuals/tree-regular.svg
 
 ### Review files
@@ -266,10 +266,10 @@ This report is editorial preparation output. It does not approve generated or dr
 
 ### Historical stages
 
-- Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/water-u6C34/historical/oracle/app/glyph.png
-- Bronze Script (bronze): availability available; certainty medium; asset Assets/Symbols/water-u6C34/historical/bronze/app/glyph.png
-- Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/water-u6C34/historical/seal/app/glyph.png
-- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset 
+- Oracle Bone Script (oracleBone): availability available; certainty medium; asset Assets/Symbols/water-u6C34/historical/oracle/app/glyph.svg
+- Bronze Script (bronze): availability available; certainty medium; asset Assets/Symbols/water-u6C34/historical/bronze/app/glyph.svg
+- Seal Script (seal): availability available; certainty medium; asset Assets/Symbols/water-u6C34/historical/seal/app/glyph.svg
+- Clerical Script (clerical): availability unavailableAsset; certainty medium; asset none (explicitly unavailable)
 - Regular Script (regular): availability available; certainty high; asset Assets/PrototypeVisuals/water-regular.svg
 
 ### Review files

@@ -52,28 +52,25 @@ struct UsageExamplesView: View {
         case .simplifiedChinese:
             wordCard(
                 title: "Simplified Chinese",
-                examples: record.focusCoverage.simplifiedChinese.examples,
-                variants: record.focusCoverage.simplifiedChinese.variants
+                examples: record.focusCoverage.simplifiedChinese.examples
             )
         case .traditionalChinese:
             traditionalWordCard(record.focusCoverage.traditionalChinese)
         case .japanese:
             wordCard(
                 title: "Japanese",
-                examples: record.focusCoverage.japanese.examples,
-                variants: record.focusCoverage.japanese.variants
+                examples: record.focusCoverage.japanese.examples
             )
         case .korean:
             wordCard(
                 title: "Korean · Hanja / Hangul",
-                examples: record.focusCoverage.korean.examples,
-                variants: record.focusCoverage.korean.variants
+                examples: record.focusCoverage.korean.examples
             )
         }
     }
 
     /// Shows only word-level examples, as requested by the character-first learning model.
-    private func wordCard(title: String, examples: [UsageExample], variants: [ModernFormVariant]) -> some View {
+    private func wordCard(title: String, examples: [UsageExample]) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
             Text(title)
                 .font(AppTypography.stageTitle)
@@ -93,43 +90,6 @@ struct UsageExamplesView: View {
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.trailing)
-                }
-            }
-            ForEach(variants, id: \.id) { variant in
-                ForEach(variant.examples.filter { $0.exampleLevel == .word }.prefix(1), id: \.text) { example in
-                    HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
-                        Text(variant.writingSystem ?? "Native form")
-                            .font(AppTypography.caption)
-                            .foregroundStyle(AppColors.textSecondary)
-                        Text(example.text)
-                            .font(AppTypography.body.weight(.semibold))
-                            .foregroundStyle(AppColors.textPrimary)
-                        if let reading = example.reading {
-                            Text(reading)
-                                .font(AppTypography.metadata)
-                                .foregroundStyle(AppColors.textSecondary)
-                        }
-                        Spacer(minLength: 0)
-                        Text(example.translation)
-                            .font(AppTypography.caption)
-                            .foregroundStyle(AppColors.textSecondary)
-                            .multilineTextAlignment(.trailing)
-                    }
-                }
-            }
-            ForEach(variants, id: \.id) { variant in
-                HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
-                    Text(variant.writingSystem ?? "Alternate form")
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
-                    Text(variant.form)
-                        .font(AppTypography.body.weight(.semibold))
-                        .foregroundStyle(AppColors.textPrimary)
-                    if !variant.readings.isEmpty {
-                        Text(variant.readings.map(\.value).joined(separator: " · "))
-                            .font(AppTypography.metadata)
-                            .foregroundStyle(AppColors.textSecondary)
-                    }
                 }
             }
         }

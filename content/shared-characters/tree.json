@@ -8,7 +8,7 @@
   "publicationStatus": "draft",
   "visuals": {
     "assetStatus": "source-backed-draft",
-    "note": "Regular-script prototype card exists. Historical Oracle/Bronze/Seal assets are attached when source-backed Wikimedia Commons SVGs are available; final publication still needs licensing review and specialist redraw approval."
+    "note": "Pilot historical glyphs use clear source-backed SVGs where available. Concept artwork is a separate educational reconstruction and remains under editorial review."
   },
   "focusCoverage": {
     "simplifiedChinese": {
@@ -16,7 +16,7 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "mu4 / mù"
+          "value": "mù"
         }
       ],
       "glosses": [
@@ -25,8 +25,8 @@
       "examples": [
         {
           "text": "木头",
-          "reading": "mu4 / mù",
-          "translation": "tree; wood",
+          "reading": "mùtou",
+          "translation": "wood",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -36,9 +36,9 @@
           ]
         },
         {
-          "text": "山上有木。",
-          "reading": null,
-          "translation": "Basic sentence using tree; wood.",
+          "text": "木头很硬。",
+          "reading": "mùtou hěn yìng",
+          "translation": "The wood is hard.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "tree-parallel-1",
@@ -56,7 +56,7 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "mu4 / mù"
+          "value": "mù"
         }
       ],
       "glosses": [
@@ -65,8 +65,8 @@
       "taiwanExamples": [
         {
           "text": "木頭",
-          "reading": "mu4 / mù",
-          "translation": "tree; wood",
+          "reading": "mùtou",
+          "translation": "wood",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -76,9 +76,9 @@
           ]
         },
         {
-          "text": "山上有木。",
-          "reading": null,
-          "translation": "Basic Taiwan sentence using tree; wood.",
+          "text": "木頭很硬。",
+          "reading": "mùtou hěn yìng",
+          "translation": "The wood is hard.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "tree-parallel-1",
@@ -93,8 +93,8 @@
       "hongKongExamples": [
         {
           "text": "木頭",
-          "reading": null,
-          "translation": "tree; wood",
+          "reading": "muk6 tau4",
+          "translation": "wood",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -104,9 +104,9 @@
           ]
         },
         {
-          "text": "山上有木。",
-          "reading": null,
-          "translation": "Basic Hong Kong sentence using tree; wood.",
+          "text": "木頭好硬。",
+          "reading": "muk6 tau4 hou2 ngaang6",
+          "translation": "The wood is hard.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "tree-parallel-1",
@@ -124,11 +124,11 @@
       "readings": [
         {
           "system": "on",
-          "value": "moku / boku"
+          "value": "モク / ボク (moku / boku)"
         },
         {
           "system": "kun",
-          "value": "ki"
+          "value": "き (ki)"
         }
       ],
       "glosses": [
@@ -136,9 +136,9 @@
       ],
       "examples": [
         {
-          "text": "木",
-          "reading": "ki",
-          "translation": "tree; wood",
+          "text": "木材",
+          "reading": "もくざい (mokuzai)",
+          "translation": "lumber",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -148,9 +148,9 @@
           ]
         },
         {
-          "text": "山の上に木があります。",
-          "reading": null,
-          "translation": "Basic Japanese sentence using tree; wood.",
+          "text": "木が大きく育っています。",
+          "reading": "きがおおきくそだっています (ki ga ōkiku sodatte imasu)",
+          "translation": "The tree is growing tall.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "tree-parallel-1",
@@ -181,8 +181,8 @@
       "examples": [
         {
           "text": "목재",
-          "reading": "목 / mok",
-          "translation": "tree; wood",
+          "reading": "mokjae",
+          "translation": "lumber; wood material",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -192,9 +192,9 @@
           ]
         },
         {
-          "text": "산 위에 나무가 있습니다.",
-          "reading": null,
-          "translation": "Basic Korean sentence using tree; wood.",
+          "text": "나무가 크게 자랍니다.",
+          "reading": "namuga keuge jaramnida",
+          "translation": "The tree grows tall.",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": "tree-parallel-1",
@@ -215,16 +215,38 @@
         "stage": "oracleBone",
         "label": "Oracle Bone Script",
         "form": null,
-        "assetRef": null,
+        "assetRef": "Assets/Symbols/tree-u6728/historical/oracle/app/glyph.svg",
         "changeNoteFromPrevious": null,
         "certainty": "medium",
         "sourceIds": [
           "source-oracle-bone-script",
           "source-character-classification",
           "source-evobc",
-          "source-radical-75"
+          "source-radical-75",
+          "source-sinica-tree-oracleBone",
+          "source-commons-tree-oracleBone"
         ],
-        "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review."
+        "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review.",
+        "availabilityState": "available",
+        "assetMetadata": {
+          "characterID": "tree",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "Wikimedia Commons / Academia Sinica Xiaoxuetang",
+          "sourcePageURL": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8-oracle.svg",
+          "sourceAssetURL": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%9C%A8-oracle.svg",
+          "catalogueReference": "Ancient Chinese Characters project",
+          "sourceDescription": "Source-backed historical glyph SVG from the Ancient Chinese Characters project; verify stage interpretation before publication.",
+          "retrievedAt": "2026-09-02",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/tree-u6728/historical/oracle/app/glyph.svg",
+          "artifactAssetRef": null,
+          "assetKind": "historical-glyph",
+          "provenance": "Wikimedia Commons Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang",
+          "licenseStatus": "CC0-1.0",
+          "accessibilityDescription": "木 in oracleBone historical script",
+          "readiness": "needsReview"
+        }
       },
       {
         "stage": "bronze",
@@ -235,9 +257,13 @@
         "certainty": "medium",
         "sourceIds": [
           "source-evobc",
-          "source-radical-75"
+          "source-radical-75",
+          "source-sinica-tree-bronze",
+          "source-commons-tree-bronze"
         ],
-        "historicalSound": "Not shown in this seed record."
+        "historicalSound": "Not shown in this seed record.",
+        "availabilityState": "unavailableAsset",
+        "assetMetadata": null
       },
       {
         "stage": "seal",
@@ -249,9 +275,13 @@
         "sourceIds": [
           "source-seal-script",
           "source-evobc",
-          "source-radical-75"
+          "source-radical-75",
+          "source-sinica-tree-seal",
+          "source-commons-tree-seal"
         ],
-        "historicalSound": "Not shown in this seed record."
+        "historicalSound": "Not shown in this seed record.",
+        "availabilityState": "unavailableAsset",
+        "assetMetadata": null
       },
       {
         "stage": "clerical",
@@ -263,9 +293,12 @@
         "sourceIds": [
           "source-clerical-script",
           "source-evobc",
-          "source-radical-75"
+          "source-radical-75",
+          "source-commons-tree-clerical"
         ],
-        "historicalSound": "Not shown in this seed record."
+        "historicalSound": "Not shown in this seed record.",
+        "availabilityState": "unavailableAsset",
+        "assetMetadata": null
       },
       {
         "stage": "regular",
@@ -278,9 +311,37 @@
           "source-radical-75",
           "source-prototype-redraw"
         ],
-        "historicalSound": null
+        "historicalSound": null,
+        "availabilityState": "available",
+        "assetMetadata": null
       }
-    ]
+    ],
+    "origin": {
+      "concept": "A tree",
+      "explanation": "A trunk, branching limbs, and a modest crown keep the tree idea visible beside the character.",
+      "asset": {
+        "characterID": "tree",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots educational asset workflow",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Original educational concept illustration; not historical evidence.",
+        "retrievedAt": "2026-09-02",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/tree-u6728/educational/app/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; Script Roots editorial treatment",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "A clear educational illustration of A tree.",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-concept-tree"
+      ]
+    }
   },
   "structure": {
     "summary": "木 is handled as a basic graph/radical for 'tree; wood'. It can appear as a standalone character and as a component in related characters.",
@@ -354,6 +415,62 @@
       "type": "reference",
       "citation": "Radical 75 lists 木 as the tree radical with Mandarin mù, Japanese moku/boku and ki, and Korean 목 mok / 나무 namu.",
       "url": "https://en.wikipedia.org/wiki/Radical_75"
+    },
+    {
+      "id": "source-sinica-tree-oracleBone",
+      "label": "Academia Sinica Xiaoxuetang — oracleBone 木",
+      "type": "historical-asset",
+      "citation": "CC0 historical glyph image from the Academia Sinica Xiaoxuetang source manifest.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=42.EA66"
+    },
+    {
+      "id": "source-sinica-tree-bronze",
+      "label": "Academia Sinica Xiaoxuetang — bronze 木",
+      "type": "historical-asset",
+      "citation": "CC0 historical glyph image from the Academia Sinica Xiaoxuetang source manifest.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=36.EE0A"
+    },
+    {
+      "id": "source-sinica-tree-seal",
+      "label": "Academia Sinica Xiaoxuetang — seal 木",
+      "type": "historical-asset",
+      "citation": "CC0 historical glyph image from the Academia Sinica Xiaoxuetang source manifest.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=27.6728"
+    },
+    {
+      "id": "source-generated-concept-tree",
+      "label": "Script Roots educational concept illustration - A tree",
+      "type": "educational-asset",
+      "citation": "Original educational reconstruction generated for the Script Roots pilot; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    },
+    {
+      "id": "source-commons-tree-oracleBone",
+      "label": "Wikimedia Commons - %E6%9C%A8-oracle.svg",
+      "type": "historical-asset",
+      "citation": "CC0/public-domain SVG from the Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang.",
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8-oracle.svg"
+    },
+    {
+      "id": "source-commons-tree-bronze",
+      "label": "Wikimedia Commons candidate - %E6%9C%A8-bronze.svg",
+      "type": "historical-asset",
+      "citation": "Allowlisted source candidate was checked during the pilot import, but no local asset was acquired; retain the stage as unavailable until an approved file is available.",
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8-bronze.svg"
+    },
+    {
+      "id": "source-commons-tree-seal",
+      "label": "Wikimedia Commons candidate - %E6%9C%A8-seal.svg",
+      "type": "historical-asset",
+      "citation": "Allowlisted source candidate was checked during the pilot import, but no local asset was acquired; retain the stage as unavailable until an approved file is available.",
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8-seal.svg"
+    },
+    {
+      "id": "source-commons-tree-clerical",
+      "label": "Wikimedia Commons candidate - %E6%9C%A8-clerical.svg",
+      "type": "historical-asset",
+      "citation": "Allowlisted source candidate was checked during the pilot import, but no local asset was acquired; retain the stage as unavailable until an approved file is available.",
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8-clerical.svg"
     }
   ],
   "notes": [

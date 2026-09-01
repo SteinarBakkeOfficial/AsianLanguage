@@ -25,7 +25,7 @@ Phases 1–3 are complete. Phase 4 is active: the former six-step lesson and pos
 
 Discovery and content-contract foundations are also present, including Browse-owned Search/Collections/status lists, four focus tracks, regional Traditional Chinese coverage, stage-owned asset metadata, migration support, and release/readiness checks. The current 11 records remain draft fixtures.
 
-## Current implementation snapshot — 2026-08-31
+## Current implementation snapshot — 2026-09-02
 
 ### Implemented
 
@@ -62,11 +62,15 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Offline packaging now validates Symbol folders, synchronizes flat bundle records, copies local app derivatives, and emits an asset manifest with runtime networking disabled.
 - A generated human review report lists each Symbol's folder, status, formation mode, stage availability, asset references, and editorial files.
 - All available Windows layout, model, content, visual, discovery, and release checks pass.
+- AppShell light tokens now match the approved clay-and-white reference, with Light as the default and Dark as the sole alternative.
+- Browse and Collections now separate Your Library status lists from editorial collections, with collection artwork previews.
+- Pilot Today copy now uses one page per selected language with cleaned readings, romanization, and word examples.
+- Fire, Water, and Tree now have separate educational concept illustrations, and the allowlisted historical SVG intake preserves source/license provenance.
 
 ### Transitional or incomplete
 
-- Fire Origin now renders an educational reconstruction in the content package; it remains a draft asset and requires editorial review.
-- Fire Oracle Bone, Bronze, Seal, and Clerical stages have no approved renderable assets; only a prototype Regular asset reference exists. Local SVG rendering is now implemented but still requires macOS/Xcode verification.
+- Fire, Water, and Tree concept art renders as educational reconstruction only and remains under editorial review.
+- Allowlisted Fire, Water, and Tree historical SVGs are bundled where acquired; named stages without approved files remain unavailable. Local SVG rendering still requires macOS/Xcode verification.
 - The horizontal Today pages and word-context composition still need simulator comparison and interaction polish.
 - Completion, Revisit, and Quick Review have initial behavior and structure but still need simulator visual QA and final interaction polish.
 - Shared components are available; History and More still need final simulator visual polish and any future approved representative content.
@@ -75,10 +79,10 @@ Discovery and content-contract foundations are also present, including Browse-ow
 
 ### Current next steps
 
-1. Complete the Fire Origin and earliest-supported-stage content/asset review.
-2. Port approved Fire historical evidence and any context/isolated derivatives into the Fire folder without fabricating unavailable stages.
-3. Run the dedicated continuous Today and word-context visual comparison targets.
-4. Run macOS/Xcode simulator screenshot comparison, then physical iPhone checks.
+1. Complete native-speaker review of pilot Today readings, romanization, examples, and translations.
+2. Complete specialist review of historical stage interpretation and source-backed derivatives.
+3. Run macOS/Xcode simulator screenshot comparison for the reference-target screens.
+4. Run physical iPhone checks for touch, safe areas, gestures, and rendering.
 
 ## V1 to VNext Carryover Register
 

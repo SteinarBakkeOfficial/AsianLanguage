@@ -2,7 +2,7 @@
 
 ## Goal
 
-Implement the approved Fire Symbol Journey visual foundation while preserving the verified Shared Character data, navigation, and local-state contracts.
+Implement the AppShell_VisualReference_v1 fidelity pass: clay-and-white shell, clean Today language pages, Browse collection separation, and source-backed pilot artwork while preserving the verified Shared Character, navigation, and local-state contracts.
 
 ## Branding update
 
@@ -19,6 +19,7 @@ Implement the approved Fire Symbol Journey visual foundation while preserving th
 - Focus tracks are four multi-select values, all enabled by default.
 - Historical Assets are source-backed/licensed or explicit Missing Historical Assets; fabricated glyphs are prohibited.
 - Current corpus records are draft prototype fixtures.
+- Today remains one horizontal page per selected language for now; a future scrollable all-language page is intentionally deferred.
 
 ## Completed functional reconciliation
 
@@ -62,6 +63,12 @@ Implement the approved Fire Symbol Journey visual foundation while preserving th
 - Align historical availability and confidence semantics across the runtime model, draft tooling, validator, and contract tests; preserve backwards compatibility for existing draft records.
 - Implement per-Symbol editorial folders, reusable component references, separated educational/historical asset provenance, review reports, and deterministic offline packaging for the 11-record pilot.
 - Add Fire's educational Origin reconstruction as a clearly classified draft asset; preserve missing historical stages where no approved evidence exists.
+- Align the light shell to the approved reference palette: `#F7F3EE` paper, `#EFE9E1` clay, `#1C1C1C` ink, `#686868` secondary text, `#C23A2B` cinnabar, and `#2E7D6E` jade.
+- Make Light the default appearance and retain Dark as the single alternative; legacy System preference values migrate to Light.
+- Add reviewed source-backed SVG intake for Fire, Water, and Tree where the allowlisted Commons files exist, while preserving explicit unavailable stages.
+- Add separate internal-authored Fire, Water, and Tree educational concept illustrations with provenance; these are never used as historical evidence.
+- Keep `Your Library` only on Browse and render collection artwork/cards separately in Browse and Collections.
+- Replace pilot Today seed copy with language-appropriate readings, romanization, kana/Hangul context, word examples, and translations; retain one page per selected language.
 
 ## Verification status
 
@@ -69,26 +76,26 @@ Implement the approved Fire Symbol Journey visual foundation while preserving th
 - `git diff --check`: passing.
 - SwiftUI compilation, XCTest execution, simulator screenshots, and device checks: not available in this Windows workspace; require macOS/Xcode.
 
-## Design freeze boundary
+## Design reference boundary
 
-Do not invent final colors, typography, card geometry, animation, decorative textures, or final stage composition. Those come from the approved Light-mode Fire design.
+Use `Reference Pictures/Chatgpt/AsianLanguage_AppShell_VisualReference_v1.png` as the primary visual reference. Do not introduce unrelated colors, typography, or decorative treatment; the clay-and-white shell and restrained editorial cards are the current target.
 
 ## Current next design deliverable
 
-Run macOS/Xcode validation and visual comparison for the Fire Symbol Journey sequence, then complete Fire's source-backed historical evidence/provenance review and refine the folder-based offline package workflow.
+Run macOS/Xcode validation and visual comparison for Home, Browse, Collections, Today, onboarding, Quick Review, and the Fire Symbol Journey sequence; then complete native-speaker and specialist review of the pilot copy/assets.
 
 The design freeze is active: neutral structural surfaces may be exercised, but approved Fire references determine final screen composition.
 
 ## Blockers
 
 - SwiftUI/Xcode compilation and XCTest execution require macOS/Xcode or macOS CI.
-- Historical assets, source review, regional readings, and specialist editorial review remain incomplete.
+- Historical stage interpretation, regional readings, and specialist/native-speaker editorial review remain incomplete.
 - Horse must not be added until sourced.
 
 ## Pilot findings
 
 - The folder workflow successfully prepared and packaged all 11 existing draft records.
-- Fire has a local educational Origin reconstruction; Oracle Bone, Bronze, Seal, and Clerical remain explicit unavailable-asset stages, while the Regular prototype remains a draft educational reconstruction.
+- Fire, Water, and Tree have local educational concept illustrations; Fire Oracle Bone/Bronze/Seal, Water Oracle/Bronze/Seal, and Tree Oracle have source-backed SVGs, while stages without approved files remain explicit unavailable-asset states.
 - The current package contains source-backed local raster glyphs for the 11-record pilot, plus explicit missing-stage states where no approved file was acquired; iOS rendering and screenshot comparison require macOS/Xcode verification.
 - The generated review report makes each Symbol folder and its remaining editorial actions directly locatable.
 - Onboarding now prioritizes the Fire museum journey; all four language tracks remain enabled by default and may later be adjusted in More → Languages, including turning all tracks off.
@@ -96,3 +103,7 @@ The design freeze is active: neutral structural surfaces may be exercised, but a
 ## Repository/layout note
 
 Strict layout verification reports the existing top-level `MAC_TESTING.md` as outside the canonical iOS layout contract. It has not been moved or deleted; resolving that layout issue requires an explicit repository-structure decision.
+
+## V1 to VNext tracking
+
+The current pass stays within V1: it improves the pilot's visual fidelity, source-backed asset handling, and language copy. Scrollable all-language Today, richer historical animation, audio, tracing, and larger corpus expansion remain intentional VNext carryover.

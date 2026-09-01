@@ -46,7 +46,7 @@ struct SettingsView: View {
                         Text(preference.rawValue.capitalized).tag(preference)
                     }
                 }
-                Text("Choose System, Light, or Dark appearance for the gallery shell.")
+                Text("Choose Light or Dark appearance for the gallery shell.")
                     .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textSecondary)
             }
