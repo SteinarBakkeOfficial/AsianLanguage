@@ -336,14 +336,14 @@ struct HistoricalAssetView: View {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
-                    .frame(maxWidth: .infinity, height: displayHeight)
+                    .frame(maxWidth: .infinity, minHeight: displayHeight, maxHeight: displayHeight)
                     .accessibilityLabel(accessibilityDescription)
             } else {
                 HistoricalMissingState(title: "Historical visual unavailable")
             }
         case .bundledSVG(let url):
             BundledSVGView(url: url)
-                .frame(maxWidth: .infinity, height: displayHeight)
+                .frame(maxWidth: .infinity, minHeight: displayHeight, maxHeight: displayHeight)
                 .accessibilityLabel(accessibilityDescription)
         case .unavailable:
             HistoricalMissingState(title: "Historical visual unavailable")
