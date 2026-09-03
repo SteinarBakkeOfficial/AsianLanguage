@@ -231,6 +231,29 @@ function Assert-HistoryCoverage {
     }
   }
 
+  # New museum records use destination-stage transition captions. Keep the legacy
+  # changeNoteFromPrevious contract for older records, but validate the new captions
+  # whenever a record opts into the per-stage museum note format.
+  $usesTransitionNotes = @($Record.history.stages | Where-Object {
+    $_.PSObject.Properties.Name -contains "transitionNote"
+  }).Count -gt 0
+  if ($usesTransitionNotes) {
+    foreach ($stage in @($Record.history.stages)) {
+      if ($stage.availabilityState -eq "unsupportedStage" -or $stage.availabilityState -eq "intentionallyOmitted") { continue }
+      if (-not (Test-HasText $stage.transitionNote)) {
+        Add-Issue -Path $RecordPath -Message "Historical stage '$($stage.stage)' must include transitionNote when per-stage museum notes are enabled."
+        continue
+      }
+      $wordCount = @($stage.transitionNote -split '\s+' | Where-Object { $_ }).Count
+      if ($wordCount -gt 25) {
+        Add-Issue -Path $RecordPath -Message "Historical stage '$($stage.stage)' transitionNote must be 25 words or fewer."
+      }
+      if ($stage.PSObject.Properties.Name -contains "transitionNoteNeedsReview" -and $stage.transitionNoteNeedsReview -isnot [bool]) {
+        Add-Issue -Path $RecordPath -Message "Historical stage '$($stage.stage)' transitionNoteNeedsReview must be Boolean."
+      }
+    }
+  }
+
   $allowedStageIDs = @("oracleBone", "bronze", "seal", "clerical", "regular")
   $allowedAvailabilityStates = @("available", "unavailableAsset", "unsupportedStage", "intentionallyOmitted")
   $allowedCertaintyValues = @("high", "medium", "limited", "supported", "qualified", "disputed", "missing")

@@ -25,7 +25,7 @@ struct UsageExamplesView: View {
             } else {
                 VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
                     HStack(alignment: .firstTextBaseline) {
-                        Text("IN A WORD")
+                        Text("IN CONTEXT")
                             .font(AppTypography.conceptLabel)
                             .tracking(1.6)
                             .foregroundStyle(AppColors.textSecondary)
@@ -69,13 +69,13 @@ struct UsageExamplesView: View {
         }
     }
 
-    /// Shows only word-level examples, as requested by the character-first learning model.
+    /// Shows up to four context examples across word, phrase, and sentence levels.
     private func wordCard(title: String, examples: [UsageExample]) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
             Text(title)
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
-            ForEach(examples.filter { $0.exampleLevel == .word }.prefix(2), id: \.text) { example in
+            ForEach(examples.prefix(4), id: \.text) { example in
                 HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
                     Text(example.text)
                         .font(AppTypography.body.weight(.semibold))
@@ -122,13 +122,13 @@ struct UsageExamplesView: View {
         }
     }
 
-    /// Renders only the useful word entries for one Traditional Chinese region.
+    /// Renders up to four useful context entries for one Traditional Chinese region.
     private func regionalExamples(title: String, examples: [UsageExample]) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
             Text(title)
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
-            ForEach(examples.filter { $0.exampleLevel == .word }.prefix(2), id: \.text) { example in
+            ForEach(examples.prefix(4), id: \.text) { example in
                 HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
                     Text(example.text)
                         .font(AppTypography.body.weight(.semibold))

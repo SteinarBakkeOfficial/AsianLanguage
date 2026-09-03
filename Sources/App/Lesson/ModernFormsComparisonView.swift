@@ -61,11 +61,11 @@ struct ModernFormsComparisonView: View {
     private func exhibitCard(for track: FocusTrack) -> some View {
         switch track {
         case .simplifiedChinese:
-            languageCard(title: "Simplified Chinese", coverage: record.focusCoverage.simplifiedChinese)
+            languageCard(title: "Simplified Chinese", coverage: record.focusCoverage.simplifiedChinese, fontRole: .simplifiedChinese)
         case .traditionalChinese:
-            languageCard(title: "Traditional Chinese · Taiwan / Hong Kong", coverage: record.focusCoverage.traditionalChinese)
+            languageCard(title: "Traditional Chinese · Taiwan / Hong Kong", coverage: record.focusCoverage.traditionalChinese, fontRole: .traditionalChinese)
         case .japanese:
-            languageCard(title: "Japanese · Kanji", coverage: record.focusCoverage.japanese)
+            languageCard(title: "Japanese · Kanji", coverage: record.focusCoverage.japanese, fontRole: .japanese)
         case .korean:
             koreanCard(record.focusCoverage.korean)
         }
@@ -73,17 +73,17 @@ struct ModernFormsComparisonView: View {
 
     /// Renders one clean language exhibit; alternate forms are reserved for the
     /// dedicated language story so Today does not repeat the same information.
-    private func languageCard<Coverage: ModernCoverageDisplay>(title: String, coverage: Coverage) -> some View {
+    private func languageCard<Coverage: ModernCoverageDisplay>(title: String, coverage: Coverage, fontRole: CJKFontRole) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
             cardHeading(title)
             HStack(alignment: .top, spacing: AppSpacing.spaceMd) {
                 Text(coverage.form)
-                    .font(.system(size: 56, design: .serif))
+                    .font(fontRole.font(size: 56))
                     .foregroundStyle(AppColors.accentPrimary)
                     .frame(width: 62, alignment: .leading)
                 VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                     ForEach(coverage.readings, id: \.system) { reading in
-                        readingLine(reading)
+                        readingLine(reading, fontRole: fontRole)
                     }
                     Text(coverage.glosses.joined(separator: ", "))
                         .font(AppTypography.metadata)
@@ -106,11 +106,11 @@ struct ModernFormsComparisonView: View {
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
                     Text(coverage.form)
-                        .font(.system(size: 52, design: .serif))
+                        .font(CJKFontRole.korean.font(size: 52))
                         .foregroundStyle(AppColors.accentPrimary)
                     if let hanjaReading = coverage.readings.first(where: { $0.system == "hanja" })?.value {
                         Text("Hanja: \(hanjaReading)")
-                            .font(AppTypography.metadata.weight(.semibold))
+                            .font(CJKFontRole.korean.font(size: 13).weight(.semibold))
                             .foregroundStyle(AppColors.textPrimary)
                     }
                 }
@@ -122,12 +122,12 @@ struct ModernFormsComparisonView: View {
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
                     Text(nativeVariant?.form ?? "—")
-                        .font(.system(size: 40, design: .serif))
+                        .font(CJKFontRole.korean.font(size: 40))
                         .foregroundStyle(AppColors.textPrimary)
                     if let nativeVariant {
-                        readingValues(for: nativeVariant.readings)
+                        readingValues(for: nativeVariant.readings, fontRole: .korean)
                     } else {
-                        readingValues(for: coverage.readings.filter { $0.system == "native Korean" })
+                        readingValues(for: coverage.readings.filter { $0.system == "native Korean" }, fontRole: .korean)
                     }
                 }
                 Spacer(minLength: 0)
@@ -152,22 +152,22 @@ struct ModernFormsComparisonView: View {
         }
     }
 
-    private func readingLine(_ reading: CharacterReading) -> some View {
+    private func readingLine(_ reading: CharacterReading, fontRole: CJKFontRole? = nil) -> some View {
         HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
             Text(reading.system.capitalized)
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
             Text(reading.value)
-                .font(AppTypography.body.weight(.semibold))
+                .font((fontRole?.font(size: 16) ?? AppTypography.body).weight(.semibold))
                 .foregroundStyle(AppColors.textPrimary)
         }
     }
 
-    private func readingValues(for readings: [CharacterReading]) -> some View {
+    private func readingValues(for readings: [CharacterReading], fontRole: CJKFontRole? = nil) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
             ForEach(readings, id: \.system) { reading in
                 Text(reading.value)
-                    .font(AppTypography.metadata.weight(.semibold))
+                    .font((fontRole?.font(size: 13) ?? AppTypography.metadata).weight(.semibold))
                     .foregroundStyle(AppColors.textPrimary)
             }
         }

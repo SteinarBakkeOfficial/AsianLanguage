@@ -76,7 +76,7 @@ struct AppDependencies {
             navigationState: AppNavigationState(),
             sharedCharacters: sharedCharacters,
             corpusLoadError: corpusLoadError,
-            installedCorpusName: "Draft V1 Corpus",
+            installedCorpusName: "V1 Complete-Evolution Corpus",
             installedSharedCharacterCount: sharedCharacters.count,
             nextFeaturedSharedCharacter: featuredSummary
         )
@@ -89,7 +89,7 @@ struct AppDependencies {
         navigationState: AppNavigationState(),
         sharedCharacters: [],
         corpusLoadError: nil,
-        installedCorpusName: "Draft V1 Corpus",
+        installedCorpusName: "V1 Complete-Evolution Corpus",
         installedSharedCharacterCount: 1,
         nextFeaturedSharedCharacter: FeaturedSharedCharacterSummary(
             id: "fire",

@@ -12,9 +12,13 @@ The app has five root areas: Home, Symbol, History, Browse, and More. Search and
 
 V1 is local and offline. The bundled corpus is read-only; progress, Favorites, Review later, and focus-track selection are local user state. All four focus tracks are enabled by default, but users may disable every track for a museum-only Symbol Journey; there is no separate All enum value. Language controls live in More rather than blocking the first exhibit.
 
-The current 11 records are draft prototype fixtures. Fire is the first design and schema pilot, followed by Water, Mountain, Tree, and eventually Horse when sourced.
+The runtime V1 manifest contains 126 complete-evolution records in teaching order. The earlier 11-record pilot remains in the repository as historical design/reference content; the incomplete Fire pilot is not included in the V1 runtime manifest.
 
 Historical Assets must be source-backed or licensed, explicitly unavailable, or editorially omitted. Fabricated historical glyphs and modern-form fallbacks are prohibited.
+
+The current V1 runtime is the 126-character complete-evolution selection with 504 selected/normalized ZDIC stage assets, local origin illustrations, and a Regular Script Kai endpoint. The app also bundles the new History overview artwork. ZDIC assets remain marked reuse-review-required before commercial distribution.
+
+The approved modern-form plan uses locale-specific Chinese, Japanese, and Korean rendering. The selected Regular faces from CNS11643 Kai and Adobe Source Han Serif are bundled and registered locally; Source Han Sans and additional weights remain intentionally excluded.
 
 Approved visual references are stored under `Reference Pictures/Chatgpt/`. The written Design System and Symbol Experience handoffs take precedence over generated labels or factual details in those images.
 
@@ -22,7 +26,7 @@ Approved visual references are stored under `Reference Pictures/Chatgpt/`. The w
 
 Each prepared Symbol has a human-editable folder under `content/symbols/`, with learner copy, research notes, review status, sources, educational visual instructions, historical-stage provenance, and component references. Reusable concepts live under `content/components/`. The preparation, validation, review, and offline packaging commands are documented in `Tools/README.md`.
 
-The current experimental package contains 11 draft Symbols. All remain `needsReview`; historical evidence and educational reconstructions are classified separately, and runtime lesson assets are local-only.
+The import source is `Tools/Import-V1RuntimeCorpus.ps1`; it keeps the human-readable research package under `content/research/` and produces the read-only runtime records/assets under `Resources/Corpus` and `Resources/Assets/Symbols`. Records remain `needsReview` until rights, language copy, and editorial QA are complete.
 
 ## Development
 

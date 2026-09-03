@@ -414,6 +414,12 @@ struct HistoricalStage: Decodable, Hashable {
     /// Symbol-specific explanation for this stage.
     let stageExplanation: String?
 
+    /// Short visual comparison from the previous available exhibit to this destination stage.
+    let transitionNote: String?
+
+    /// Marks captions that need visual/editorial review before publication.
+    let transitionNoteNeedsReview: Bool
+
     /// Explicit content availability; legacy records infer this from their asset reference.
     let availabilityState: HistoricalAvailabilityState
 
@@ -425,7 +431,7 @@ struct HistoricalStage: Decodable, Hashable {
     private enum CodingKeys: String, CodingKey {
         case stage, label, form, assetRef, changeNoteFromPrevious, certainty, sourceIds
         case historicalSound, assetMetadata, introducedComponentIds, stageExplanation
-        case availabilityState
+        case transitionNote, transitionNoteNeedsReview, availabilityState
     }
 
     init(from decoder: Decoder) throws {
@@ -441,6 +447,8 @@ struct HistoricalStage: Decodable, Hashable {
         assetMetadata = try container.decodeIfPresent(HistoricalAssetMetadata.self, forKey: .assetMetadata)
         introducedComponentIds = try container.decodeIfPresent([String].self, forKey: .introducedComponentIds)
         stageExplanation = try container.decodeIfPresent(String.self, forKey: .stageExplanation)
+        transitionNote = try container.decodeIfPresent(String.self, forKey: .transitionNote)
+        transitionNoteNeedsReview = try container.decodeIfPresent(Bool.self, forKey: .transitionNoteNeedsReview) ?? false
         availabilityState = try container.decodeIfPresent(HistoricalAvailabilityState.self, forKey: .availabilityState)
             ?? ((assetRef == nil && assetMetadata == nil) ? .unavailableAsset : .available)
     }

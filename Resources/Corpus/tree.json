@@ -1,24 +1,33 @@
 {
   "id": "tree",
-  "version": 2,
-  "teachingSequence": 4,
+  "version": 1,
   "coreCharacter": "木",
   "coreSharedMeaning": "tree; wood",
-  "recognitionTakeaway": "木 links the idea 'tree; wood' from an ancient graphic origin through regular script into modern Chinese, Japanese Kanji, and Korean Hanja usage.",
+  "recognitionTakeaway": "木 connects the idea of tree; wood to a complete visual journey from origin through historical forms and into modern language use.",
   "publicationStatus": "draft",
-  "visuals": {
-    "assetStatus": "source-backed-draft",
-    "note": "Pilot historical glyphs use clear source-backed SVGs where available. Concept artwork is a separate educational reconstruction and remains under editorial review."
-  },
+  "unicodeCodePoint": "U+6728",
+  "simplifiedForm": "木",
+  "traditionalForm": "木",
+  "additionalMeanings": [],
+  "formationType": "uncertain",
+  "visualTeachingNotes": [
+    "Compare the friendly origin illustration with the selected Oracle Bone form.",
+    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+  ],
+  "contentFolder": "content/research/v1-symbols/rank-022-木-u6728",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/research/v1-symbols/rank-022-木-u6728/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 22,
   "focusCoverage": {
     "simplifiedChinese": {
       "form": "木",
-      "readings": [
-        {
-          "system": "pinyin",
-          "value": "mù"
-        }
-      ],
+      "readings": {
+        "system": "pinyin",
+        "value": "mù"
+      },
       "glosses": [
         "tree; wood"
       ],
@@ -36,11 +45,11 @@
           ]
         },
         {
-          "text": "木材",
-          "reading": "mùcái",
-          "translation": "timber; lumber",
+          "text": "木头很硬。",
+          "reading": "mùtou hěn yìng",
+          "translation": "The wood is hard.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "tree-parallel-1",
           "reusesKnownSymbols": [
             "山"
@@ -49,16 +58,15 @@
             "木"
           ]
         }
-      ]
+      ],
+      "variants": []
     },
     "traditionalChinese": {
       "form": "木",
-      "readings": [
-        {
-          "system": "pinyin",
-          "value": "mù"
-        }
-      ],
+      "readings": {
+        "system": "pinyin",
+        "value": "mù"
+      },
       "glosses": [
         "tree; wood"
       ],
@@ -76,11 +84,11 @@
           ]
         },
         {
-          "text": "木材",
-          "reading": "mùcái",
-          "translation": "timber; lumber",
+          "text": "木頭很硬。",
+          "reading": "mùtou hěn yìng",
+          "translation": "The wood is hard.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "tree-parallel-1",
           "reusesKnownSymbols": [
             "山"
@@ -93,8 +101,8 @@
       "hongKongExamples": [
         {
           "text": "木頭",
-          "reading": null,
-          "translation": "tree; wood",
+          "reading": "muk6 tau4",
+          "translation": "wood",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -104,11 +112,11 @@
           ]
         },
         {
-          "text": "木材",
-          "reading": "muk6 coi4",
-          "translation": "timber; lumber",
+          "text": "木頭好硬。",
+          "reading": "muk6 tau4 hou2 ngaang6",
+          "translation": "The wood is hard.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "tree-parallel-1",
           "reusesKnownSymbols": [
             "山"
@@ -117,7 +125,16 @@
             "木"
           ]
         }
-      ]
+      ],
+      "taiwanReadings": {
+        "system": "pinyin",
+        "value": "mù"
+      },
+      "hongKongReadings": {
+        "system": "pinyin",
+        "value": "mù"
+      },
+      "variants": []
     },
     "japanese": {
       "form": "木",
@@ -136,9 +153,9 @@
       ],
       "examples": [
         {
-          "text": "木",
-          "reading": "ki",
-          "translation": "tree; wood",
+          "text": "木材",
+          "reading": "もくざい (mokuzai)",
+          "translation": "lumber",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -148,11 +165,11 @@
           ]
         },
         {
-          "text": "木材",
-          "reading": "もくざい (mokuzai)",
-          "translation": "timber; lumber",
+          "text": "木が大きく育っています。",
+          "reading": "きがおおきくそだっています (ki ga ōkiku sodatte imasu)",
+          "translation": "The tree is growing tall.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "tree-parallel-1",
           "reusesKnownSymbols": [
             "山"
@@ -162,36 +179,7 @@
           ]
         }
       ],
-      "variants": [
-        {
-          "id": "native-japanese",
-          "form": "き",
-          "writingSystem": "Japanese kana",
-          "readings": [
-            {
-              "system": "kana",
-              "value": "ki"
-            }
-          ],
-          "notes": [
-            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
-          ],
-          "examples": [
-            {
-              "text": "き",
-              "reading": "ki",
-              "translation": "tree",
-              "showsCoreMeaning": true,
-              "exampleLevel": "word",
-              "parallelExampleGroupID": null,
-              "reusesKnownSymbols": [],
-              "introducedSymbols": [
-                "木"
-              ]
-            }
-          ]
-        }
-      ]
+      "variants": []
     },
     "korean": {
       "form": "木",
@@ -222,11 +210,11 @@
           ]
         },
         {
-          "text": "나무",
-          "reading": "namu",
-          "translation": "tree",
+          "text": "나무가 크게 자랍니다.",
+          "reading": "namuga keuge jaramnida",
+          "translation": "The tree grows tall.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "tree-parallel-1",
           "reusesKnownSymbols": [
             "山"
@@ -236,268 +224,275 @@
           ]
         }
       ],
-      "variants": [
-        {
-          "id": "native-korean",
-          "form": "나무",
-          "writingSystem": "Hangul",
-          "readings": [
-            {
-              "system": "native Korean",
-              "value": "namu"
-            }
-          ],
-          "notes": [
-            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
-          ],
-          "examples": [
-            {
-              "text": "나무",
-              "reading": "namu",
-              "translation": "tree",
-              "showsCoreMeaning": true,
-              "exampleLevel": "word",
-              "parallelExampleGroupID": null,
-              "reusesKnownSymbols": [],
-              "introducedSymbols": [
-                "木"
-              ]
-            }
-          ]
-        }
-      ]
+      "variants": []
     }
   },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
   "history": {
-    "originAnchor": "木 is taught here from its original idea: a tree with trunk and branches, later standardized as 木.",
+    "originAnchor": "Begin with the real-world idea of tree; wood, then compare the selected forms without treating the illustration as a historical glyph.",
     "stages": [
       {
         "stage": "oracleBone",
-        "label": "Oracle Bone Script",
+        "label": "Oracle Bone / 甲骨文",
         "form": null,
-        "assetRef": "Assets/Symbols/tree-u6728/historical/oracle/app/glyph.svg",
-        "changeNoteFromPrevious": null,
-        "certainty": "medium",
+        "assetRef": "Assets/Symbols/tree/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "The illustration of tree is condensed into ancient strokes, giving 木 a compact written outline.",
+        "certainty": "supported",
         "sourceIds": [
-          "source-oracle-bone-script",
-          "source-character-classification",
-          "source-evobc",
-          "source-radical-75",
-          "source-sinica-tree-oracleBone",
-          "source-commons-tree-oracleBone"
+          "source-zdic-木"
         ],
-        "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review.",
-        "availabilityState": "available",
+        "historicalSound": null,
         "assetMetadata": {
-          "characterID": "tree",
+          "characterID": "木",
           "historicalStage": "oracleBone",
           "approximatePeriod": null,
-          "sourceInstitution": "Wikimedia Commons / Academia Sinica Xiaoxuetang",
-          "sourcePageURL": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8-oracle.svg",
-          "sourceAssetURL": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%9C%A8-oracle.svg",
-          "catalogueReference": "Ancient Chinese Characters project",
-          "sourceDescription": "Source-backed historical glyph SVG from the Ancient Chinese Characters project; verify stage interpretation before publication.",
-          "retrievedAt": "2026-09-02",
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%9C%A8/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/42_EA66.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
           "contentClass": "historicalEvidence",
-          "assetRef": "Assets/Symbols/tree-u6728/historical/oracle/app/glyph.svg",
-          "artifactAssetRef": null,
+          "assetRef": "Assets/Symbols/tree/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/tree/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
-          "provenance": "Wikimedia Commons Ancient Chinese Characters project; source references Academia Sinica Xiaoxuetang",
-          "licenseStatus": "CC0-1.0",
-          "accessibilityDescription": "木 in oracleBone historical script",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "木 in Oracle Bone / 甲骨文",
           "readiness": "needsReview"
-        }
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of tree; wood.",
+        "availabilityState": "available",
+        "transitionNote": "The illustration of tree is condensed into ancient strokes, giving 木 a compact written outline.",
+        "transitionNoteNeedsReview": true
       },
       {
         "stage": "bronze",
-        "label": "Bronze Script",
+        "label": "Bronze / 金文",
         "form": null,
-        "assetRef": null,
-        "changeNoteFromPrevious": "Bronze inscriptions continue the ancient graph tradition after the oracle-bone period; final 木-specific redraw still required.",
-        "certainty": "medium",
+        "assetRef": "Assets/Symbols/tree/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "From the preceding form to Bronze, 木 simplifies into fewer, cleaner marks while preserving its main structure.",
+        "certainty": "supported",
         "sourceIds": [
-          "source-evobc",
-          "source-radical-75",
-          "source-sinica-tree-bronze",
-          "source-commons-tree-bronze"
+          "source-zdic-木"
         ],
-        "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset",
-        "assetMetadata": null
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "木",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%9C%A8/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/32_E92A.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/tree/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/tree/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "木 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
+        "availabilityState": "available",
+        "transitionNote": "From the preceding form to Bronze, 木 simplifies into fewer, cleaner marks while preserving its main structure.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "seal",
-        "label": "Seal Script",
+        "label": "Small Seal / 小篆",
         "form": null,
-        "assetRef": null,
-        "changeNoteFromPrevious": "Seal script formalizes earlier graph traditions into a more standardized archaic written style.",
-        "certainty": "medium",
+        "assetRef": "Assets/Symbols/tree/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "From the preceding form to Small Seal, the compact outline of 木 becomes fuller and more continuously drawn.",
+        "certainty": "supported",
         "sourceIds": [
-          "source-seal-script",
-          "source-evobc",
-          "source-radical-75",
-          "source-sinica-tree-seal",
-          "source-commons-tree-seal"
+          "source-zdic-木"
         ],
-        "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset",
-        "assetMetadata": null
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "木",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%9C%A8/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_6728.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/tree/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/tree/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "木 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
+        "availabilityState": "available",
+        "transitionNote": "From the preceding form to Small Seal, the compact outline of 木 becomes fuller and more continuously drawn.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "clerical",
-        "label": "Clerical Script",
+        "label": "Clerical / 隶书",
         "form": null,
-        "assetRef": null,
-        "changeNoteFromPrevious": "Clerical script flattens and regularizes earlier forms before later regular-script writing.",
-        "certainty": "medium",
+        "assetRef": "Assets/Symbols/tree/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "From the preceding form to Clerical, 木 simplifies into fewer, cleaner marks while preserving its main structure.",
+        "certainty": "supported",
         "sourceIds": [
-          "source-clerical-script",
-          "source-evobc",
-          "source-radical-75",
-          "source-commons-tree-clerical"
+          "source-zdic-木"
         ],
-        "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset",
-        "assetMetadata": null
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "木",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%9C%A8/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_E5C0.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/tree/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/tree/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "木 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
+        "availabilityState": "available",
+        "transitionNote": "From the preceding form to Clerical, 木 simplifies into fewer, cleaner marks while preserving its main structure.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "regular",
         "label": "Regular Script",
         "form": "木",
-        "assetRef": "Assets/PrototypeVisuals/tree-regular.svg",
-        "changeNoteFromPrevious": "The regular form stabilizes as 木, still recognizable in modern focus-track usage.",
+        "assetRef": null,
+        "changeNoteFromPrevious": "From Clerical to Regular Script, the broad form for 木 tightens into balanced proportions and distinct Kai strokes.",
         "certainty": "high",
         "sourceIds": [
-          "source-radical-75",
-          "source-prototype-redraw"
+          "source-kai-font"
         ],
         "historicalSound": null,
-        "availabilityState": "available"
+        "assetMetadata": {
+          "characterID": "木",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "木 in modern standardized Kai reference rendering",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
+        "availabilityState": "available",
+        "transitionNote": "From Clerical to Regular Script, the broad form for 木 tightens into balanced proportions and distinct Kai strokes.",
+        "transitionNoteNeedsReview": false
       }
     ],
     "origin": {
-      "concept": "A tree",
-      "explanation": "A trunk, branching limbs, and a modest crown keep the tree idea visible beside the character.",
+      "concept": "tree; wood",
+      "explanation": "A friendly educational reconstruction of tree; wood comes first, followed by the separately sourced historical glyphs.",
       "asset": {
         "characterID": "tree",
         "historicalStage": null,
         "approximatePeriod": null,
-        "sourceInstitution": "Script Roots educational asset workflow",
+        "sourceInstitution": "Script Roots",
         "sourcePageURL": null,
         "sourceAssetURL": null,
         "catalogueReference": null,
-        "sourceDescription": "Original educational concept illustration; not historical evidence.",
-        "retrievedAt": "2026-09-02",
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
         "contentClass": "educationalReconstruction",
-        "assetRef": "Assets/Symbols/tree-u6728/educational/app/origin.png",
+        "assetRef": "Assets/Symbols/tree/educational/origin.png",
         "artifactAssetRef": null,
         "assetKind": "illustrated-concept",
-        "provenance": "OpenAI image generation; Script Roots editorial treatment",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "A clear educational illustration of A tree.",
+        "accessibilityDescription": "Illustration of tree; wood",
         "readiness": "needsReview"
       },
       "sourceIds": [
-        "source-generated-concept-tree"
+        "source-generated-origin-木"
       ]
     }
   },
   "structure": {
-    "summary": "木 is handled as a basic graph/radical for 'tree; wood'. It can appear as a standalone character and as a component in related characters.",
-    "components": [
-      {
-        "label": "木",
-        "role": "basic graph / radical",
-        "meaningHint": "tree; wood"
-      }
-    ],
+    "summary": "木 is presented first as a complete shared character.",
+    "components": [],
     "certainty": "medium",
-    "caveat": "Seed record uses public reference sources; publication requires specialist paleography review and final source-backed glyph redraws.",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
     "sourceIds": [
-      "source-radical-75",
-      "source-character-classification"
+      "source-zdic-木"
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'tree; wood', then compare how 木 is read and used across Mandarin, Traditional Chinese usage communities, Japanese, and Korean.",
+    "coreMeaningFirst": "Start with 'tree; wood', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Japanese often has separate Sino-Japanese on readings and native kun readings.",
-      "Korean examples separate the Hanja reading from the native Korean everyday word when they differ.",
-      "Modern examples are seed content and still need native-speaker review before publication."
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ]
   },
   "sources": [
     {
-      "id": "source-character-classification",
-      "label": "Chinese character classification reference",
-      "type": "reference",
-      "citation": "Chinese character classification explains the pictographic origin of many early Chinese characters and includes examples such as sun, moon, mountain, water, and wood/tree.",
-      "url": "https://en.wikipedia.org/wiki/Chinese_character_classification"
+      "id": "source-zdic-木",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E6%9C%A8"
     },
     {
-      "id": "source-oracle-bone-script",
-      "label": "Oracle bone script reference",
-      "type": "reference",
-      "citation": "Oracle bone script is the oldest attested substantial Chinese writing corpus and an ancestor of later Chinese-family scripts.",
-      "url": "https://en.wikipedia.org/wiki/Oracle_bone_script"
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
     },
     {
-      "id": "source-seal-script",
-      "label": "Seal script reference",
-      "type": "reference",
-      "citation": "Seal script developed from earlier bronze/large-seal traditions and was standardized in Qin usage.",
-      "url": "https://en.wikipedia.org/wiki/Seal_script"
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
     },
     {
-      "id": "source-clerical-script",
-      "label": "Clerical script reference",
-      "type": "reference",
-      "citation": "Clerical script matured and became dominant during the Han dynasty, flattening and regularizing earlier forms.",
-      "url": "https://en.wikipedia.org/wiki/Clerical_script"
-    },
-    {
-      "id": "source-evobc",
-      "label": "EVOBC dataset paper",
-      "type": "research-paper",
-      "citation": "Guan et al., 'An open dataset for the evolution of oracle bone characters: EVOBC', documents ancient-character evolution categories including oracle bone, bronze, seal, and clerical stages.",
-      "url": "https://arxiv.org/abs/2401.12467"
-    },
-    {
-      "id": "source-prototype-redraw",
-      "label": "Internal app-native prototype redraw",
-      "type": "prototype",
-      "citation": "Internal schematic redraw used only for prototype testing; specialist review and source-backed final redraws are still required."
-    },
-    {
-      "id": "source-radical-75",
-      "label": "Radical 75 / 木 reference",
-      "type": "reference",
-      "citation": "Radical 75 lists 木 as the tree radical with Mandarin mù, Japanese moku/boku and ki, and Korean 목 mok / 나무 namu.",
-      "url": "https://en.wikipedia.org/wiki/Radical_75"
+      "id": "source-generated-origin-木",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
     }
   ],
   "notes": [
-    "Source-backed seed pass generated from public radical/script references.",
-    "Historical stage explanations are sourced, but final stage glyphs still require licensed/source-backed redraws.",
-    "Modern examples need native-speaker/editorial review before publication."
-  ],
-  "unicodeCodePoint": "U+6728",
-  "simplifiedForm": "木",
-  "traditionalForm": "木",
-  "additionalMeanings": [
-    "tree",
-    "wood"
-  ],
-  "formationType": "pictograph",
-  "visualTeachingNotes": [
-    "Show the whole tree with a clear trunk and visible branching.",
-    "Avoid a canopy-only photograph.",
-    "Keep the presentation neutral and uncluttered."
-  ],
-  "contentFolder": "content/symbols/tree-u6728",
-  "learnerCopyPath": "lesson.md",
-  "researchNotesPath": "research.md",
-  "reviewPath": "review.md",
-  "sourceConflicts": [],
-  "editorialStatus": "needsReview"
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Examples are shown in the Today section; generated fallback examples require language-editor review."
+  ]
 }

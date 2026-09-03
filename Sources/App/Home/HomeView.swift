@@ -25,12 +25,12 @@ struct HomeView: View {
                         ContentUnavailableView("No Shared Characters", systemImage: "character")
                     }
 
-                    if !reviewRecords.isEmpty || (learnedCount > 0 && !incompleteCollectionRecords.isEmpty) {
+                    if !reviewRecords.isEmpty || (learnedCount > 0 && !natureCollectionRecords.isEmpty) {
                         Text("Continue Exploring")
                             .font(AppTypography.sectionHeading)
                             .foregroundStyle(AppColors.textPrimary)
                         if !reviewRecords.isEmpty { reviewModule }
-                        if !incompleteCollectionRecords.isEmpty { collectionModule }
+                        if !natureCollectionRecords.isEmpty { collectionModule }
                     }
 
                     if learnedCount > 0 {
@@ -111,12 +111,17 @@ struct HomeView: View {
             GroupedSurface {
                 VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
                     HStack {
-                        Text("Nature").font(AppTypography.stageTitle)
+                        Text("Nature & Cosmos").font(AppTypography.stageTitle)
                         Spacer()
                         Text("Continue →").font(AppTypography.caption).foregroundStyle(AppColors.accentPrimary)
                     }
-                    Text(incompleteCollectionRecords.map(\.coreCharacter).joined(separator: "  "))
-                        .font(.system(size: 25, design: .serif))
+                    HStack(spacing: AppSpacing.spaceSm) {
+                        HistoricalAssetView(assetRef: "Assets/Collections/nature-cosmos.png", displayHeight: 58)
+                            .frame(width: 78, height: 58)
+                            .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
+                        Text(natureCollectionRecords.prefix(6).map(\.coreCharacter).joined(separator: "  "))
+                            .font(.system(size: 25, design: .serif))
+                    }
                     Text("Explore a curated set of Shared Characters")
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
@@ -124,7 +129,7 @@ struct HomeView: View {
             }
         }
         .buttonStyle(.plain)
-        .accessibilityLabel("Continue Nature collection")
+        .accessibilityLabel("Continue Nature and Cosmos collection")
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
@@ -149,8 +154,12 @@ struct HomeView: View {
         dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.isReviewLater == true }
     }
 
-    private var incompleteCollectionRecords: [SharedCharacterRecord] {
-        dependencies.sharedCharacters.prefix(6).filter { userStateStore.state.lessonStates[$0.id]?.progressStatus != .learned }
+    private var natureCollectionRecords: [SharedCharacterRecord] {
+        let natureCharacters = Set("水山木日月土川天雨田井泉云南北年白黑正上下中立央林明夏冬".map(String.init))
+        return dependencies.sharedCharacters.filter {
+            natureCharacters.contains($0.coreCharacter)
+                && userStateStore.state.lessonStates[$0.id]?.progressStatus != .learned
+        }
     }
 
     private var learnedCount: Int {

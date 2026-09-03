@@ -1,24 +1,33 @@
 {
   "id": "mouth",
-  "version": 2,
-  "teachingSequence": 10,
+  "version": 1,
   "coreCharacter": "口",
   "coreSharedMeaning": "mouth; opening",
-  "recognitionTakeaway": "口 links the idea 'mouth; opening' from an ancient graphic origin through regular script into modern Chinese, Japanese Kanji, and Korean Hanja usage.",
+  "recognitionTakeaway": "口 connects the idea of mouth; opening to a complete visual journey from origin through historical forms and into modern language use.",
   "publicationStatus": "draft",
-  "visuals": {
-    "assetStatus": "source-backed-draft",
-    "note": "Regular-script prototype card exists. Historical Oracle/Bronze/Seal assets are attached when source-backed Wikimedia Commons SVGs are available; final publication still needs licensing review and specialist redraw approval."
-  },
+  "unicodeCodePoint": "U+53E3",
+  "simplifiedForm": "口",
+  "traditionalForm": "口",
+  "additionalMeanings": [],
+  "formationType": "uncertain",
+  "visualTeachingNotes": [
+    "Compare the friendly origin illustration with the selected Oracle Bone form.",
+    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+  ],
+  "contentFolder": "content/research/v1-symbols/rank-006-口-u53E3",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/research/v1-symbols/rank-006-口-u53E3/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 6,
   "focusCoverage": {
     "simplifiedChinese": {
       "form": "口",
-      "readings": [
-        {
-          "system": "pinyin",
-          "value": "kou3 / kǒu"
-        }
-      ],
+      "readings": {
+        "system": "pinyin",
+        "value": "kou3 / kǒu"
+      },
       "glosses": [
         "mouth; opening"
       ],
@@ -36,11 +45,11 @@
           ]
         },
         {
-          "text": "入口",
-          "reading": "ru4 / rù",
-          "translation": "entrance",
+          "text": "人有口。",
+          "reading": null,
+          "translation": "Basic sentence using mouth; opening.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "mouth-parallel-1",
           "reusesKnownSymbols": [
             "人"
@@ -49,16 +58,15 @@
             "口"
           ]
         }
-      ]
+      ],
+      "variants": []
     },
     "traditionalChinese": {
       "form": "口",
-      "readings": [
-        {
-          "system": "pinyin",
-          "value": "kou3 / kǒu"
-        }
-      ],
+      "readings": {
+        "system": "pinyin",
+        "value": "kou3 / kǒu"
+      },
       "glosses": [
         "mouth; opening"
       ],
@@ -76,11 +84,11 @@
           ]
         },
         {
-          "text": "入口",
-          "reading": "rùkǒu",
-          "translation": "entrance",
+          "text": "人有口。",
+          "reading": null,
+          "translation": "Basic Taiwan sentence using mouth; opening.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "mouth-parallel-1",
           "reusesKnownSymbols": [
             "人"
@@ -104,11 +112,11 @@
           ]
         },
         {
-          "text": "入口",
-          "reading": "jap6 hau2",
-          "translation": "entrance",
+          "text": "人有口。",
+          "reading": null,
+          "translation": "Basic Hong Kong sentence using mouth; opening.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "mouth-parallel-1",
           "reusesKnownSymbols": [
             "人"
@@ -117,7 +125,16 @@
             "口"
           ]
         }
-      ]
+      ],
+      "taiwanReadings": {
+        "system": "pinyin",
+        "value": "kou3 / kǒu"
+      },
+      "hongKongReadings": {
+        "system": "pinyin",
+        "value": "kou3 / kǒu"
+      },
+      "variants": []
     },
     "japanese": {
       "form": "口",
@@ -148,11 +165,11 @@
           ]
         },
         {
-          "text": "入口",
-          "reading": "いりぐち",
-          "translation": "entrance",
+          "text": "人には口があります。",
+          "reading": null,
+          "translation": "Basic Japanese sentence using mouth; opening.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "mouth-parallel-1",
           "reusesKnownSymbols": [
             "人"
@@ -162,36 +179,7 @@
           ]
         }
       ],
-      "variants": [
-        {
-          "id": "native-japanese",
-          "form": "くち",
-          "writingSystem": "Japanese kana",
-          "readings": [
-            {
-              "system": "kana",
-              "value": "kuchi"
-            }
-          ],
-          "notes": [
-            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
-          ],
-          "examples": [
-            {
-              "text": "くち",
-              "reading": "kuchi",
-              "translation": "mouth",
-              "showsCoreMeaning": true,
-              "exampleLevel": "word",
-              "parallelExampleGroupID": null,
-              "reusesKnownSymbols": [],
-              "introducedSymbols": [
-                "口"
-              ]
-            }
-          ]
-        }
-      ]
+      "variants": []
     },
     "korean": {
       "form": "口",
@@ -222,11 +210,11 @@
           ]
         },
         {
-          "text": "口腔",
-          "reading": "구강 / gugang",
-          "translation": "oral cavity",
+          "text": "사람에게는 입이 있습니다.",
+          "reading": null,
+          "translation": "Basic Korean sentence using mouth; opening.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "mouth-parallel-1",
           "reusesKnownSymbols": [
             "人"
@@ -236,272 +224,275 @@
           ]
         }
       ],
-      "variants": [
-        {
-          "id": "native-korean",
-          "form": "입",
-          "writingSystem": "Hangul",
-          "readings": [
-            {
-              "system": "native Korean",
-              "value": "ip"
-            }
-          ],
-          "notes": [
-            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
-          ],
-          "examples": [
-            {
-              "text": "입",
-              "reading": "ip",
-              "translation": "mouth",
-              "showsCoreMeaning": true,
-              "exampleLevel": "word",
-              "parallelExampleGroupID": null,
-              "reusesKnownSymbols": [],
-              "introducedSymbols": [
-                "口"
-              ]
-            }
-          ]
-        }
-      ]
+      "variants": []
     }
   },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
   "history": {
-    "originAnchor": "口 is taught here from its original idea: an opening or mouth shape, later written as 口.",
+    "originAnchor": "Begin with the real-world idea of mouth; opening, then compare the selected forms without treating the illustration as a historical glyph.",
     "stages": [
       {
         "stage": "oracleBone",
-        "label": "Oracle Bone Script",
+        "label": "Oracle Bone / 甲骨文",
         "form": null,
-        "assetRef": "Assets/Symbols/mouth-u53E3/historical/oracle/app/glyph.png",
-        "changeNoteFromPrevious": null,
-        "certainty": "medium",
+        "assetRef": "Assets/Symbols/mouth/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "The illustration of mouth is condensed into ancient strokes, giving 口 a compact written outline.",
+        "certainty": "supported",
         "sourceIds": [
-          "source-oracle-bone-script",
-          "source-character-classification",
-          "source-evobc",
-          "source-radical-30",
-          "source-sinica-mouth-oracleBone"
+          "source-zdic-口"
         ],
-        "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review.",
-        "availabilityState": "available",
+        "historicalSound": null,
         "assetMetadata": {
-          "characterID": "mouth",
+          "characterID": "口",
           "historicalStage": "oracleBone",
           "approximatePeriod": null,
-          "sourceInstitution": "Academia Sinica Xiaoxuetang",
-          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=41.E511",
-          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EE%94%91&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E7%94%B2%E9%AA%A8%E6%96%87%E9%87%8D%E6%96%87%E4%B8%80&size=300&style=regular&color=%23000000&resolution=96",
-          "catalogueReference": "甲940 | 合24144",
-          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
-          "retrievedAt": "2026-08-31T18:52:40.1288026Z",
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%8F%A3/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/41_E511.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
           "contentClass": "historicalEvidence",
-          "assetRef": "Assets/Symbols/mouth-u53E3/historical/oracle/app/glyph.png",
-          "artifactAssetRef": null,
+          "assetRef": "Assets/Symbols/mouth/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/mouth/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
-          "provenance": "Academia Sinica Xiaoxuetang",
-          "licenseStatus": "CC0-1.0",
-          "accessibilityDescription": "口 in oracleBone historical script",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "口 in Oracle Bone / 甲骨文",
           "readiness": "needsReview"
-        }
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of mouth; opening.",
+        "availabilityState": "available",
+        "transitionNote": "The illustration of mouth is condensed into ancient strokes, giving 口 a compact written outline.",
+        "transitionNoteNeedsReview": true
       },
       {
         "stage": "bronze",
-        "label": "Bronze Script",
+        "label": "Bronze / 金文",
         "form": null,
-        "assetRef": "Assets/Symbols/mouth-u53E3/historical/bronze/app/glyph.png",
-        "changeNoteFromPrevious": "Bronze inscriptions continue the ancient graph tradition after the oracle-bone period; final 口-specific redraw still required.",
-        "certainty": "medium",
+        "assetRef": "Assets/Symbols/mouth/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "From the preceding form to Bronze, the compact outline of 口 becomes fuller and more continuously drawn.",
+        "certainty": "supported",
         "sourceIds": [
-          "source-evobc",
-          "source-radical-30",
-          "source-sinica-mouth-bronze"
+          "source-zdic-口"
         ],
-        "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "available",
+        "historicalSound": null,
         "assetMetadata": {
-          "characterID": "mouth",
+          "characterID": "口",
           "historicalStage": "bronze",
           "approximatePeriod": null,
-          "sourceInstitution": "Academia Sinica Xiaoxuetang",
-          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=31.E4AB",
-          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EE%92%AB&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E9%87%91%E6%96%87%E9%87%8D%E6%96%87%E4%B8%80&size=300&style=regular&color=%23000000&resolution=96",
-          "catalogueReference": "戊寅作父丁方鼎 | 商代晚期 | 集成2594",
-          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
-          "retrievedAt": "2026-08-31T18:52:40.7116325Z",
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%8F%A3/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/31_E4AB.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
           "contentClass": "historicalEvidence",
-          "assetRef": "Assets/Symbols/mouth-u53E3/historical/bronze/app/glyph.png",
-          "artifactAssetRef": null,
+          "assetRef": "Assets/Symbols/mouth/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/mouth/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
-          "provenance": "Academia Sinica Xiaoxuetang",
-          "licenseStatus": "CC0-1.0",
-          "accessibilityDescription": "口 in bronze historical script",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "口 in Bronze / 金文",
           "readiness": "needsReview"
-        }
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
+        "availabilityState": "available",
+        "transitionNote": "From the preceding form to Bronze, the compact outline of 口 becomes fuller and more continuously drawn.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "seal",
-        "label": "Seal Script",
+        "label": "Small Seal / 小篆",
         "form": null,
-        "assetRef": "Assets/Symbols/mouth-u53E3/historical/seal/app/glyph.png",
-        "changeNoteFromPrevious": "Seal script formalizes earlier graph traditions into a more standardized archaic written style.",
-        "certainty": "medium",
+        "assetRef": "Assets/Symbols/mouth/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "From the preceding form to Small Seal, 口 simplifies into fewer, cleaner marks while preserving its main structure.",
+        "certainty": "supported",
         "sourceIds": [
-          "source-seal-script",
-          "source-evobc",
-          "source-radical-30",
-          "source-sinica-mouth-seal"
+          "source-zdic-口"
         ],
-        "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "available",
+        "historicalSound": null,
         "assetMetadata": {
-          "characterID": "mouth",
+          "characterID": "口",
           "historicalStage": "seal",
           "approximatePeriod": null,
-          "sourceInstitution": "Academia Sinica Xiaoxuetang",
-          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=27.53E3",
-          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%E5%8F%A3&font=%E5%8C%97%E5%B8%AB%E5%A4%A7%E8%AA%AA%E6%96%87%E5%B0%8F%E7%AF%86&size=300&style=regular&color=%23000000&resolution=96",
-          "catalogueReference": "說文‧口部",
-          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
-          "retrievedAt": "2026-08-31T18:52:41.2459633Z",
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%8F%A3/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_53E3.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
           "contentClass": "historicalEvidence",
-          "assetRef": "Assets/Symbols/mouth-u53E3/historical/seal/app/glyph.png",
-          "artifactAssetRef": null,
+          "assetRef": "Assets/Symbols/mouth/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/mouth/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
-          "provenance": "Academia Sinica Xiaoxuetang",
-          "licenseStatus": "CC0-1.0",
-          "accessibilityDescription": "口 in seal historical script",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "口 in Small Seal / 小篆",
           "readiness": "needsReview"
-        }
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
+        "availabilityState": "available",
+        "transitionNote": "From the preceding form to Small Seal, 口 simplifies into fewer, cleaner marks while preserving its main structure.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "clerical",
-        "label": "Clerical Script",
+        "label": "Clerical / 隶书",
         "form": null,
-        "assetRef": null,
-        "changeNoteFromPrevious": "Clerical script flattens and regularizes earlier forms before later regular-script writing.",
-        "certainty": "medium",
+        "assetRef": "Assets/Symbols/mouth/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "From the preceding form to Clerical, the compact outline of 口 becomes fuller and more continuously drawn.",
+        "certainty": "supported",
         "sourceIds": [
-          "source-clerical-script",
-          "source-evobc",
-          "source-radical-30"
+          "source-zdic-口"
         ],
-        "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset"
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "口",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%8F%A3/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_E0D5.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/mouth/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/mouth/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "口 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
+        "availabilityState": "available",
+        "transitionNote": "From the preceding form to Clerical, the compact outline of 口 becomes fuller and more continuously drawn.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "regular",
         "label": "Regular Script",
         "form": "口",
-        "assetRef": "Assets/PrototypeVisuals/mouth-regular.svg",
-        "changeNoteFromPrevious": "The regular form stabilizes as 口, still recognizable in modern focus-track usage.",
+        "assetRef": null,
+        "changeNoteFromPrevious": "From Clerical to Regular Script, the broad form for 口 tightens into balanced proportions and distinct Kai strokes.",
         "certainty": "high",
         "sourceIds": [
-          "source-radical-30",
-          "source-prototype-redraw"
+          "source-kai-font"
         ],
         "historicalSound": null,
-        "availabilityState": "available"
-      }
-    ]
-  },
-  "structure": {
-    "summary": "口 is handled as a basic graph/radical for 'mouth; opening'. It can appear as a standalone character and as a component in related characters.",
-    "components": [
-      {
-        "label": "口",
-        "role": "basic graph / radical",
-        "meaningHint": "mouth; opening"
+        "assetMetadata": {
+          "characterID": "口",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "口 in modern standardized Kai reference rendering",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
+        "availabilityState": "available",
+        "transitionNote": "From Clerical to Regular Script, the broad form for 口 tightens into balanced proportions and distinct Kai strokes.",
+        "transitionNoteNeedsReview": false
       }
     ],
+    "origin": {
+      "concept": "mouth; opening",
+      "explanation": "A friendly educational reconstruction of mouth; opening comes first, followed by the separately sourced historical glyphs.",
+      "asset": {
+        "characterID": "mouth",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/mouth/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of mouth; opening",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-口"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "口 is presented first as a complete shared character.",
+    "components": [],
     "certainty": "medium",
-    "caveat": "Seed record uses public reference sources; publication requires specialist paleography review and final source-backed glyph redraws.",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
     "sourceIds": [
-      "source-radical-30",
-      "source-character-classification"
+      "source-zdic-口"
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'mouth; opening', then compare how 口 is read and used across Mandarin, Traditional Chinese usage communities, Japanese, and Korean.",
+    "coreMeaningFirst": "Start with 'mouth; opening', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Japanese often has separate Sino-Japanese on readings and native kun readings.",
-      "Korean examples separate the Hanja reading from the native Korean everyday word when they differ.",
-      "Modern examples are seed content and still need native-speaker review before publication."
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ]
   },
   "sources": [
     {
-      "id": "source-character-classification",
-      "label": "Chinese character classification reference",
-      "type": "reference",
-      "citation": "Chinese character classification explains the pictographic origin of many early Chinese characters and includes examples such as sun, moon, mountain, water, and wood/tree.",
-      "url": "https://en.wikipedia.org/wiki/Chinese_character_classification"
+      "id": "source-zdic-口",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%8F%A3"
     },
     {
-      "id": "source-oracle-bone-script",
-      "label": "Oracle bone script reference",
-      "type": "reference",
-      "citation": "Oracle bone script is the oldest attested substantial Chinese writing corpus and an ancestor of later Chinese-family scripts.",
-      "url": "https://en.wikipedia.org/wiki/Oracle_bone_script"
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
     },
     {
-      "id": "source-seal-script",
-      "label": "Seal script reference",
-      "type": "reference",
-      "citation": "Seal script developed from earlier bronze/large-seal traditions and was standardized in Qin usage.",
-      "url": "https://en.wikipedia.org/wiki/Seal_script"
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
     },
     {
-      "id": "source-clerical-script",
-      "label": "Clerical script reference",
-      "type": "reference",
-      "citation": "Clerical script matured and became dominant during the Han dynasty, flattening and regularizing earlier forms.",
-      "url": "https://en.wikipedia.org/wiki/Clerical_script"
-    },
-    {
-      "id": "source-evobc",
-      "label": "EVOBC dataset paper",
-      "type": "research-paper",
-      "citation": "Guan et al., 'An open dataset for the evolution of oracle bone characters: EVOBC', documents ancient-character evolution categories including oracle bone, bronze, seal, and clerical stages.",
-      "url": "https://arxiv.org/abs/2401.12467"
-    },
-    {
-      "id": "source-prototype-redraw",
-      "label": "Internal app-native prototype redraw",
-      "type": "prototype",
-      "citation": "Internal schematic redraw used only for prototype testing; specialist review and source-backed final redraws are still required."
-    },
-    {
-      "id": "source-radical-30",
-      "label": "Radical 30 / 口 reference",
-      "type": "reference",
-      "citation": "Radical 30 lists 口 as the mouth radical with Mandarin kǒu, Japanese kō/kuchi, and Korean 구 gu / 입 ip.",
-      "url": "https://en.wikipedia.org/wiki/Radical_30"
+      "id": "source-generated-origin-口",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
     }
   ],
   "notes": [
-    "Source-backed seed pass generated from public radical/script references.",
-    "Historical stage explanations are sourced, but final stage glyphs still require licensed/source-backed redraws.",
-    "Modern examples need native-speaker/editorial review before publication."
-  ],
-  "unicodeCodePoint": "U+53E3",
-  "simplifiedForm": "口",
-  "traditionalForm": "口",
-  "additionalMeanings": [
-    "mouth",
-    "opening"
-  ],
-  "formationType": "pictograph",
-  "visualTeachingNotes": [
-    "Show an opening or mouth shape clearly.",
-    "Keep the visual simple and frontal where that supports the approved interpretation."
-  ],
-  "contentFolder": "content/symbols/mouth-u53E3",
-  "learnerCopyPath": "lesson.md",
-  "researchNotesPath": "research.md",
-  "reviewPath": "review.md",
-  "sourceConflicts": [],
-  "editorialStatus": "needsReview"
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Examples are shown in the Today section; generated fallback examples require language-editor review."
+  ]
 }

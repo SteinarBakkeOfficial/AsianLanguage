@@ -28,7 +28,7 @@ Required top-level fields:
 - optional structured \`origin\` with concept, explanation, Historical Asset, and source IDs
 - ordered \`stages\`
 
-Canonical stage IDs are \`origin\`, \`oracleBone\`, \`bronze\`, \`seal\`, \`clerical\`, \`regular\`, and \`modernForms\`. Historical stage records normally use the five historical IDs; origin and modernForms are journey positions.
+Canonical stage IDs are \`origin\`, \`oracleBone\`, \`bronze\`, \`seal\`, \`clerical\`, \`regular\`, and \`modernForms\`. The primary historical museum records use four historical IDs: Oracle Bone, Bronze, Small Seal, and Clerical. Regular is a separate modern standardized reference rendering; origin and modernForms are separate product layers.
 
 Each historical stage may include:
 
@@ -38,12 +38,16 @@ Each historical stage may include:
 - optional \`artifactAssetRef\`
 - \`changeNoteFromPrevious\`
 - \`stageExplanation\`
+- \`transitionNote\` — short visual comparison from the previous available exhibit to this stage
+- \`transitionNoteNeedsReview\` — editorial QA flag for an uncertain or provisional caption
 - \`certainty\`
 - \`sourceIds\`
 - optional \`historicalSound\`
 - optional \`introducedComponentIds\`
 
 Stages are data-driven. Omitted stages are not implied to exist. Relevant unavailable stages may be represented as explicit Missing Historical Asset content gaps.
+
+For the V1 museum journey, \`transitionNote\` is the displayed caption and belongs to the destination stage. The first available stage compares the Origin Illustration with that stage; each later stage compares with the previous available stage. Captions are normally one sentence and no more than 25 words. \`changeNoteFromPrevious\` remains for backward compatibility with older records.
 
 ## Historical assets
 

@@ -22,6 +22,11 @@ enum AppColors {
     static let artifactField = adaptive(light: (239, 233, 225), dark: (42, 37, 28))
     static let artifactInk = adaptive(light: (53, 43, 36), dark: (228, 216, 200))
 
+    /// A visibly separate museum-navigation surface keeps the Origin-to-Today rail
+    /// legible without introducing a new accent color family.
+    static let journeyRailBackground = adaptive(light: (229, 221, 211), dark: (42, 37, 32))
+    static let journeyRailSelected = adaptive(light: (255, 252, 247), dark: (58, 51, 44))
+
     private static func adaptive(light: (CGFloat, CGFloat, CGFloat), dark: (CGFloat, CGFloat, CGFloat)) -> Color {
         Color(uiColor: UIColor { traits in
             let value = traits.userInterfaceStyle == .dark ? dark : light
@@ -30,15 +35,51 @@ enum AppColors {
     }
 }
 
-/// Bundled typefaces match the approved AppShell reference: Playfair for editorial
-/// headings and Inter for interface/body text. CJK glyphs intentionally fall back
-/// to the platform's language fonts because these Latin families do not cover them.
+/// Bundled typefaces match the approved AppShell reference and the locale-aware
+/// CJK typography contract. Keep the CJK names aligned with the PostScript names
+/// embedded in the selected official font files.
 enum AppFont {
     static let playfairRegular = "PlayfairDisplay-Regular"
     static let playfairBold = "PlayfairDisplay-Bold"
     static let interRegular = "Inter-Regular"
     static let interMedium = "Inter-Medium"
     static let interSemiBold = "Inter-SemiBold"
+
+    /// Canonical pedagogical endpoint for the museum timeline.
+    static let museumRegular = "TW-Kai-98_1"
+
+    /// Locale-specific Source Han Serif faces for the parallel Used Today forms.
+    // Adobe's locale-specific OTFs use locale-qualified PostScript names;
+    // keep these aligned with the official deployment filenames.
+    static let sourceHanSerifJP = "SourceHanSerifJP-Regular"
+    static let sourceHanSerifKR = "SourceHanSerifKR-Regular"
+    static let sourceHanSerifSC = "SourceHanSerifSC-Regular"
+    static let sourceHanSerifTC = "SourceHanSerifTC-Regular"
+}
+
+/// The role is semantic so a shared Unicode character never silently receives
+/// the wrong regional glyph convention. Add a new role here if another living
+/// writing system is approved for the product.
+enum CJKFontRole {
+    case museumRegular
+    case simplifiedChinese
+    case traditionalChinese
+    case japanese
+    case korean
+
+    var postScriptName: String {
+        switch self {
+        case .museumRegular: return AppFont.museumRegular
+        case .simplifiedChinese: return AppFont.sourceHanSerifSC
+        case .traditionalChinese: return AppFont.sourceHanSerifTC
+        case .japanese: return AppFont.sourceHanSerifJP
+        case .korean: return AppFont.sourceHanSerifKR
+        }
+    }
+
+    func font(size: CGFloat) -> Font {
+        Font.custom(postScriptName, size: size)
+    }
 }
 
 /// Shared typography keeps the Alt reference's editorial/display and utility roles distinct.

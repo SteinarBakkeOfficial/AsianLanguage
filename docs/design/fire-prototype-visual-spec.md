@@ -30,7 +30,7 @@ Treat the approved Fire reference sheets as the first implementation specificati
 - The active AppShell reference is `AsianLanguage_AppShell_VisualReference_Alt`.
 - Use bundled Playfair Display for editorial/display headings and concept moments.
 - Use bundled Inter for navigation, labels, readings, translations, metadata, and body copy.
-- Render Chinese, Japanese, and Korean characters with the platform's native fallback fonts; Playfair Display and Inter are Latin display/interface families and are not the source for CJK glyph forms.
+- The prototype now renders major Chinese, Japanese, and Korean forms through the bundled locale-specific Source Han Serif faces; Playfair Display and Inter remain the Latin display/interface families. Regular Script uses bundled CNS11643 Kai. The source and locale contract is documented in [`cjk-font-and-modern-forms.md`](cjk-font-and-modern-forms.md).
 
 ## Symbol Journey composition
 

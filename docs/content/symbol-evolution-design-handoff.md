@@ -8,7 +8,9 @@ This document defines how approved visual design becomes native SwiftUI implemen
 
 Design the complete Light-mode Symbol Journey for \`火\` (Fire) first:
 
-Origin, Oracle Bone, Bronze, Seal, Clerical, Regular, Today / Modern Endpoint, stage navigator, component behavior, text density, scrolling, completion, and relevant supporting Content Phases.
+Origin, Oracle Bone, Bronze, Small Seal, Clerical, separate Regular Script reference, Today / Modern Endpoint, stage navigator, component behavior, text density, scrolling, completion, and relevant supporting Content Phases.
+
+The current V1 runtime uses the 126-character ZDIC-complete selection. The selected and normalized ZDIC files, v2 origin illustrations, and 126 corpus records are locally bundled for this implementation pass; each historical asset remains marked reuse-review-required. Regular Script and modern language rendering follow the source and locale contract in [`docs/design/cjk-font-and-modern-forms.md`](../design/cjk-font-and-modern-forms.md). The required CNS11643 Kai and Adobe Source Han Serif Regular faces are local, bundled, and registered; package metadata is in `Resources/Fonts/SOURCE-CJK.md`.
 
 Then test the system against Water, Mountain, Tree, and Horse. Horse must not enter the corpus until its content and assets are sourced.
 

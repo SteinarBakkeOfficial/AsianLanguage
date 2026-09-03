@@ -43,17 +43,22 @@ struct AsianLanguageApp: App {
 /// Registers the local font files before SwiftUI resolves the shared typography tokens.
 /// Keep this list in sync with Resources/Fonts when adding or removing app typefaces.
 private enum BundledFontRegistrar {
-    private static let fontNames = [
-        "PlayfairDisplay-Regular",
-        "PlayfairDisplay-Bold",
-        "Inter-Regular",
-        "Inter-Medium",
-        "Inter-SemiBold"
+    private static let fontFiles = [
+        ("PlayfairDisplay-Regular", "ttf"),
+        ("PlayfairDisplay-Bold", "ttf"),
+        ("Inter-Regular", "ttf"),
+        ("Inter-Medium", "ttf"),
+        ("Inter-SemiBold", "ttf"),
+        ("TW-Kai-98_1", "ttf"),
+        ("SourceHanSerifJP-Regular", "otf"),
+        ("SourceHanSerifKR-Regular", "otf"),
+        ("SourceHanSerifSC-Regular", "otf"),
+        ("SourceHanSerifTC-Regular", "otf")
     ]
 
     static func register() {
-        for fontName in fontNames {
-            guard let fontURL = Bundle.main.url(forResource: fontName, withExtension: "ttf", subdirectory: "Fonts") else {
+        for (fontName, fileExtension) in fontFiles {
+            guard let fontURL = Bundle.main.url(forResource: fontName, withExtension: fileExtension, subdirectory: "Fonts") else {
                 continue
             }
             CTFontManagerRegisterFontsForURL(fontURL as CFURL, .process, nil)

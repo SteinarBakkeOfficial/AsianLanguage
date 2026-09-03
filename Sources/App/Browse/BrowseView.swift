@@ -6,6 +6,7 @@ struct BrowseView: View {
     @ObservedObject private var userStateStore: LocalUserStateStore
     @ObservedObject private var navigationState: AppNavigationState
     @State private var navigationPath = NavigationPath()
+    @State private var browseQuery = ""
 
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
@@ -22,53 +23,75 @@ struct BrowseView: View {
                         .foregroundStyle(AppColors.textPrimary)
                         .frame(maxWidth: .infinity, alignment: .leading)
 
-                    browseLink(title: "Search", detail: "Search characters, meanings, readings…", systemImage: "magnifyingglass") {
-                        SearchView(dependencies: dependencies)
-                    }
+                    // Browse owns the primary discovery search; the All Symbols destination
+                    // repeats the same control so its full-library search remains self-contained.
+                    AppSearchField(text: $browseQuery, prompt: "Search symbols, meanings, readings…", onCancel: {
+                        browseQuery = ""
+                    })
 
-                    if !inProgressRecords.isEmpty {
-                        browseSection("In Progress") {
-                            ForEach(inProgressRecords) { record in
-                                characterRow(record, position: true)
+                    if browseQuery.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                        if !inProgressRecords.isEmpty {
+                            browseSection("In Progress") {
+                                ForEach(inProgressRecords) { record in
+                                    characterRow(record, position: true)
+                                }
                             }
                         }
-                    }
 
-                    browseSection("Collections") {
-                        collectionPreviewLink(
-                            title: "Nature",
-                            detail: "Fire · Water · Mountain · Tree",
-                            assetRef: "Assets/Symbols/tree-u6728/educational/app/origin.png"
-                        ) {
-                            CollectionsView(dependencies: dependencies)
+                        browseSection("Your Library") {
+                            browseLink(title: "Learned", detail: "Review completed symbols", systemImage: "checkmark.circle") {
+                                BrowseStatusView(title: "Learned", records: learnedRecords, dependencies: dependencies)
+                            }
+                            browseLink(title: "Favorites", detail: "Saved for easy return", systemImage: "star") {
+                                BrowseStatusView(title: "Favorites", records: favoriteRecords, dependencies: dependencies)
+                            }
+                            browseLink(title: "Review Later", detail: "Symbols you marked to revisit", systemImage: "clock") {
+                                BrowseStatusView(title: "Review Later", records: reviewLaterRecords, dependencies: dependencies)
+                            }
                         }
-                        collectionPreviewLink(
-                            title: "Pictographs",
-                            detail: "Early images carried into written form",
-                            assetRef: "Assets/Symbols/fire-u706B/educational/app/origin.png"
-                        ) {
-                            CollectionsView(dependencies: dependencies)
-                        }
-                        browseLink(title: "Explore all collections", detail: "Nature · Pictographs · Dramatic Changes", systemImage: "square.grid.2x2") {
-                            CollectionsView(dependencies: dependencies)
-                        }
-                    }
 
-                    browseSection("Browse All Symbols") {
-                        ForEach(dependencies.sharedCharacters) { record in
-                            characterRow(record)
+                        browseSection("Library") {
+                            browseLink(title: "All Symbols", detail: "Open the complete V1 library", systemImage: "books.vertical") {
+                                AllSymbolsLibraryView(dependencies: dependencies)
+                            }
                         }
-                    }
 
-                    browseSection("Your Library") {
-                        browseLink(title: "Learned", detail: "Review completed symbols", systemImage: "checkmark.circle") {
-                            BrowseStatusView(title: "Learned", records: learnedRecords, dependencies: dependencies)
+                        browseSection("Collections") {
+                            collectionPreviewLink(
+                                title: "Nature & Cosmos",
+                                detail: "Natural forms, sky, water, and time",
+                                assetRef: "Assets/Collections/nature-cosmos.png"
+                            ) {
+                                CollectionsView(dependencies: dependencies)
+                            }
+                            collectionPreviewLink(
+                                title: "People, Body & Life",
+                                detail: "People, bodies, relationships, and life",
+                                assetRef: "Assets/Collections/people-body-life.png"
+                            ) {
+                                CollectionsView(dependencies: dependencies)
+                            }
+                            browseLink(title: "Explore all collections", detail: "Ten editorial collections", systemImage: "square.grid.2x2") {
+                                CollectionsView(dependencies: dependencies)
+                            }
                         }
-                        browseLink(title: "Favorites", detail: "Saved for easy return", systemImage: "star") {
-                            BrowseStatusView(title: "Favorites", records: favoriteRecords, dependencies: dependencies)
-                        }
-                        browseLink(title: "Review Later", detail: "Symbols you marked to revisit", systemImage: "clock") {
-                            BrowseStatusView(title: "Review Later", records: reviewLaterRecords, dependencies: dependencies)
+                    } else {
+                        browseSection("Search Results") {
+                            Text("\(browseSearchResults.count) matching symbols")
+                                .font(AppTypography.caption)
+                                .foregroundStyle(AppColors.textSecondary)
+                            if browseSearchResults.isEmpty {
+                                ContentUnavailableView(
+                                    "No symbols found",
+                                    systemImage: "magnifyingglass",
+                                    description: Text("Try a character, meaning, or reading.")
+                                )
+                                .frame(maxWidth: .infinity, minHeight: 220)
+                            } else {
+                                ForEach(browseSearchResults) { record in
+                                    characterRow(record)
+                                }
+                            }
                         }
                     }
                 }
@@ -204,9 +227,61 @@ struct BrowseView: View {
     private var learnedRecords: [SharedCharacterRecord] { records(with: .learned) }
     private var favoriteRecords: [SharedCharacterRecord] { dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.isStarred == true } }
     private var reviewLaterRecords: [SharedCharacterRecord] { dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.isReviewLater == true } }
+    private var browseSearchResults: [SharedCharacterRecord] {
+        SharedCharacterSearchIndex(records: dependencies.sharedCharacters).search(browseQuery)
+    }
 
     private func records(with status: LessonProgressStatus) -> [SharedCharacterRecord] {
         dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.progressStatus == status }
+    }
+}
+
+/// Complete read-only V1 library. Browse owns discovery; this is the deliberate all-symbol destination.
+struct AllSymbolsLibraryView: View {
+    let dependencies: AppDependencies
+    @ObservedObject private var userStateStore: LocalUserStateStore
+    @State private var query = ""
+
+    init(dependencies: AppDependencies) {
+        self.dependencies = dependencies
+        _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
+    }
+
+    private var records: [SharedCharacterRecord] {
+        let normalized = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !normalized.isEmpty else { return dependencies.sharedCharacters }
+        return SharedCharacterSearchIndex(records: dependencies.sharedCharacters).search(normalized)
+    }
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                AppSearchField(text: $query, prompt: "Search the V1 library", onCancel: {})
+                Text("\(records.count) of \(dependencies.sharedCharacters.count) symbols")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+                if records.isEmpty {
+                    ContentUnavailableView("No symbols found", systemImage: "magnifyingglass", description: Text("Try a character, meaning, or reading."))
+                        .frame(maxWidth: .infinity, minHeight: 220)
+                } else {
+                    ForEach(records) { record in
+                        CharacterTile(
+                            record: record,
+                            userState: userStateStore.state.lessonStates[record.id],
+                            action: { dependencies.navigationState.openSymbol(record.id, intent: .view) }
+                        )
+                    }
+                }
+            }
+            .padding(.horizontal, AppSpacing.spacePage)
+            .padding(.top, AppSpacing.spaceSm)
+            .padding(.bottom, AppSpacing.spaceSection)
+        }
+        .navigationTitle("All Symbols")
+        .navigationBarTitleDisplayMode(.inline)
+        .scrollContentBackground(.hidden)
+        .background(ShellStyle.paper.ignoresSafeArea())
+        .tint(ShellStyle.cinnabar)
     }
 }
 

@@ -6,6 +6,8 @@ The app is an offline-first SwiftUI iPhone application centered on one \`Shared 
 
 The corpus is read-only bundled JSON. User state is separate, local, writable JSON. No cloud account or runtime content dependency exists in V1.
 
+The runtime now loads the 126-character complete-evolution selection from `SeedCorpusManifest`. Each selected record has a local origin illustration, four normalized ZDIC historical assets, and a Regular Script endpoint rendered by the bundled CNS11643 Kai font. The locale-specific Adobe Source Han Serif faces are bundled and registered for Used Today. The old 11-record pilot remains as repository history; Fire is not in the complete 126-record runtime set.
+
 ## Root navigation
 
 The root shell has five areas:
@@ -18,7 +20,7 @@ The root shell has five areas:
 
 Symbol is the canonical owner of the active Shared Character journey. Home, Search, Browse, and Collections request an \`open Shared Character\` action through shared navigation state rather than creating competing lesson owners.
 
-Browse contains Search, Browse All, Learned, Review later, Favorites, Saved, and editorial collections. More contains Languages, Settings, About / Method, Account, reset, and offline information. History contains generic script-period explanations.
+Browse contains Search, collections, the separate All Symbols library, Learned, Review later, Favorites, Saved, and editorial collections. More contains Languages, Settings, About / Method, Account, reset, and offline information. History currently presents the approved overview artwork while the former generic period design remains preserved for a later release.
 
 Use one NavigationStack per root area where practical. Child screens must not introduce duplicate root stacks.
 
@@ -30,9 +32,9 @@ The saved position is:
 
 Sections are \`evolution\`, \`today\`, \`structure\`, \`usage\`, and \`summary\`. Historical stages save their exact canonical ID. Legacy \`LessonStep\` values decode through an explicit migration and are not the permanent primary navigation model.
 
-The Evolution Stage sequence is data-driven:
+The primary Evolution Stage sequence is data-driven:
 
-\`origin\`, selected historical stages, \`modernForms\`
+\`origin\`, \`oracleBone\`, \`bronze\`, \`seal\`, \`clerical\`, followed by a separate Regular Script reference and \`modernForms\`
 
 Relevant unavailable stages may remain as explicit Missing Historical Asset states. Uncertain or pedagogically unhelpful stages are omitted.
 

@@ -29,8 +29,8 @@ The earliest lesson stage in which a character is presented as an older visual o
 _Avoid_: Modern character, language-specific modern glyph
 
 **Canonical history spine**:
-The reference sequence Oracle Bone, Bronze, Seal, Clerical, Regular, then modern focus-track forms.
-_Avoid_: Forcing every lesson to show every stage
+The primary museum sequence Origin, Oracle Bone, Bronze, Small Seal, and Clerical, followed by a separate Regular Script reference and parallel modern focus-track forms.
+_Avoid_: Treating Regular or modern regional forms as additional archaeological stages
 
 **Historical stage metadata**:
 The source-backed information attached to a shown script stage, including visual/text form, stage-to-stage change note, certainty, sources, and optional historical sound when accurate enough to include.
@@ -121,8 +121,8 @@ The complete learner experience for one Shared Character from a recognizable ori
 _Avoid_: Treating the old six content phases as the primary user-facing navigator
 
 **Evolution Stage**:
-One historical page/state in the Symbol Journey, such as Origin, Oracle Bone, Bronze, Seal, Clerical, or Regular.
-_Avoid_: Fabricated stages added only to complete a sequence
+One primary historical page/state in the Symbol Journey: Origin, Oracle Bone, Bronze, Small Seal, or Clerical. Regular Script is a separate modern standardized reference layer.
+_Avoid_: Fabricated stages added only to complete a sequence, or treating a regional modern form as an archaeological stage
 
 **Today / Modern Endpoint**:
 The point where historical evolution transitions into selected modern focus-track forms, readings, variants, and usage.
@@ -152,7 +152,7 @@ _Avoid_: Replacing it with a fabricated glyph or modern regular form
 - A **Traditional Chinese focus** includes separate Taiwan/Hong Kong usage examples
 - A **Shared character lesson** follows an **Evolution framework**
 - An **Evolution framework** uses the **Canonical history spine** without requiring every lesson to include every stage
-- An **Evolution framework** progresses from a historical origin anchor to **Characterized form** or regular-script form to modern focus-track forms
+- An **Evolution framework** progresses from a historical origin anchor through the four primary historical stages, then presents a separate Regular Script reference and parallel modern focus-track forms
 - Shown stages in an **Evolution framework** use **Historical stage metadata**
 - Every displayed historical stage after the first has a **Stage-to-stage change note**
 - A **Shared character lesson** ends in **Modern usage** across Mandarin, Traditional Chinese usage communities, Japanese, and Korean

@@ -1,0 +1,141 @@
+# Origin Illustration v2 Review Index
+
+Use this index when reviewing the generated origin assets. Each line states the intended subject before the Oracle Bone comparison. The artwork itself remains text-free. `言` and `石` use the newer v3 compound re-renders listed below; their v2 files are retained as earlier drafts.
+
+## Review list
+
+- [001 人](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-001-人-u4EBA/educational/original/origin-locked-style-v2.png) — **Depicting:** Review the existing verified origin metadata.
+- [002 女](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-002-女-u5973/educational/original/origin-locked-style-v2.png) — **Depicting:** A woman turned to the side
+- [003 子](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-003-子-u5B50/educational/original/origin-locked-style-v2.png) — **Depicting:** A child in a wrap, with outstretched arms but bundled legs
+- [004 大](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-004-大-u5927/educational/original/origin-locked-style-v2.png) — **Depicting:** Review the existing verified origin metadata.
+- [005 小](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-005-小-u5C0F/educational/original/origin-locked-style-v2.png) — **Depicting:** Review the existing verified origin metadata.
+- [006 口](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-006-口-u53E3/educational/original/origin-locked-style-v2.png) — **Depicting:** Review the existing verified origin metadata.
+- [007 目](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-007-目-u76EE/educational/original/origin-locked-style-v2.png) — **Depicting:** Review the existing verified origin metadata.
+- [008 耳](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-008-耳-u8033/educational/original/origin-locked-style-v2.png) — **Depicting:** An ear
+- [011 身](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-011-身-u8EAB/educational/original/origin-locked-style-v2.png) — **Depicting:** A pregnant woman
+- [012 首](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-012-首-u9996/educational/original/origin-locked-style-v2.png) — **Depicting:** A deer's head 自 adorned with antlers 丷
+- [014 舌](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-014-舌-u820C/educational/original/origin-locked-style-v2.png) — **Depicting:** A tongue 千 sticking out of a mouth 口
+- [016 心](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-016-心-u5FC3/educational/original/origin-locked-style-v2.png) — **Depicting:** A heart
+- [017 言](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-017-言-u8A00/educational/original/origin-locked-style-v3.png) — **Depicting:** A tongue sticking out of a mouth 口
+- [018 自](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-018-自-u81EA/educational/original/origin-locked-style-v2.png) — **Depicting:** A nose; in China, people refer to themselves by pointing to their noses
+- [020 水](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-020-水-u6C34/educational/original/origin-locked-style-v2.png) — **Depicting:** Review the existing verified origin metadata.
+- [021 山](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-021-山-u5C71/educational/original/origin-locked-style-v2.png) — **Depicting:** Review the existing verified origin metadata.
+- [022 木](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-022-木-u6728/educational/original/origin-locked-style-v2.png) — **Depicting:** Review the existing verified origin metadata.
+- [023 土](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-023-土-u571F/educational/original/origin-locked-style-v2.png) — **Depicting:** A lump of clay on a potter's wheel
+- [024 石](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-024-石-u77F3/educational/original/origin-locked-style-v3.png) — **Depicting:** A rock 口 at the base of a cliff 厂
+- [025 川](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-025-川-u5DDD/educational/original/origin-locked-style-v2.png) — **Depicting:** A river's flow; compare 巛
+- [026 日](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-026-日-u65E5/educational/original/origin-locked-style-v2.png) — **Depicting:** Review the existing verified origin metadata.
+- [027 月](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-027-月-u6708/educational/original/origin-locked-style-v2.png) — **Depicting:** Review the existing verified origin metadata.
+- [028 天](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-028-天-u5929/educational/original/origin-locked-style-v2.png) — **Depicting:** The heavens 一 above a man 大
+- [029 雨](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-029-雨-u96E8/educational/original/origin-locked-style-v2.png) — **Depicting:** Rain drops falling from a cloud 帀
+- [030 田](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-030-田-u7530/educational/original/origin-locked-style-v2.png) — **Depicting:** The plots of a rice paddy
+- [031 井](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-031-井-u4E95/educational/original/origin-locked-style-v2.png) — **Depicting:** A mine or well
+- [032 泉](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-032-泉-u6CC9/educational/original/origin-locked-style-v2.png) — **Depicting:** Water 水 flowing from a spring 白
+- [033 牛](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-033-牛-u725B/educational/original/origin-locked-style-v2.png) — **Depicting:** An ox's horned head
+- [034 犬](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-034-犬-u72AC/educational/original/origin-locked-style-v2.png) — **Depicting:** A dog turned to the side
+- [035 羊](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-035-羊-u7F8A/educational/original/origin-locked-style-v2.png) — **Depicting:** A sheep's head with horns
+- [039 虎](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-039-虎-u864E/educational/original/origin-locked-style-v2.png) — **Depicting:** A tiger 虍 standing on a rock 几; 虍 also provides the pronunciation
+- [040 角](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-040-角-u89D2/educational/original/origin-locked-style-v2.png) — **Depicting:** A rhinoceros or other animal horn
+- [041 竹](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-041-竹-u7AF9/educational/original/origin-locked-style-v2.png) — **Depicting:** Two stalks of bamboo
+- [043 豆](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-043-豆-u8C46/educational/original/origin-locked-style-v2.png) — **Depicting:** An old serving dish 口 on a stand with a lid 一
+- [044 衣](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-044-衣-u8863/educational/original/origin-locked-style-v2.png) — **Depicting:** A woman's dress
+- [046 玉](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-046-玉-u7389/educational/original/origin-locked-style-v2.png) — **Depicting:** A necklace 丨 adorned with three pieces of jade
+- [047 王](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-047-王-u738B/educational/original/origin-locked-style-v2.png) — **Depicting:** A man 十 bridging heaven and earth (both 一)
+- [048 刀](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-048-刀-u5200/educational/original/origin-locked-style-v2.png) — **Depicting:** Pictograph of a knife.
+- [049 弓](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-049-弓-u5F13/educational/original/origin-locked-style-v2.png) — **Depicting:** A bow aimed to the left
+- [055 册](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-055-册-u518C/educational/original/origin-locked-style-v2.png) — **Depicting:** Bamboo strips 冂 tied together to form a book
+- [056 示](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-056-示-u793A/educational/original/origin-locked-style-v2.png) — **Depicting:** An altar
+- [057 工](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-057-工-u5DE5/educational/original/origin-locked-style-v2.png) — **Depicting:** A spade or other workman's tool
+- [058 力](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-058-力-u529B/educational/original/origin-locked-style-v2.png) — **Depicting:** A plow's head representing strength
+- [059 夕](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-059-夕-u5915/educational/original/origin-locked-style-v2.png) — **Depicting:** A crescent moon
+- [061 申](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-061-申-u7533/educational/original/origin-locked-style-v2.png) — **Depicting:** A bolt of lightning
+- [062 云](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-062-云-u4E91/educational/original/origin-locked-style-v2.png) — **Depicting:** A cloud
+- [063 西](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-063-西-u897F/educational/original/origin-locked-style-v2.png) — **Depicting:** A bird settling into its nest, representing sunset; compare 東
+- [064 南](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-064-南-u5357/educational/original/origin-locked-style-v2.png) — **Depicting:** A musical bell
+- [065 北](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-065-北-u5317/educational/original/origin-locked-style-v2.png) — **Depicting:** Two people 匕 sitting back-to-back; phonetic loan for "north"
+- [067 年](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-067-年-u5E74/educational/original/origin-locked-style-v2.png) — **Depicting:** A man 干 carrying grain, representing the annual harvest
+- [068 老](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-068-老-u8001/educational/original/origin-locked-style-v2.png) — **Depicting:** A person bent over with long hair 匕 and a crutch; compare 耂
+- [069 白](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-069-白-u767D/educational/original/origin-locked-style-v2.png) — **Depicting:** A burning candle; the rays of the sun
+- [070 黑](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-070-黑-u9ED1/educational/original/origin-locked-style-v2.png) — **Depicting:** A man's face blacked by soot from a fire 灬
+- [071 赤](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-071-赤-u8D64/educational/original/origin-locked-style-v2.png) — **Depicting:** A person 土 whose cheeks are burning 火
+- [073 长](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-073-长-u957F/educational/original/origin-locked-style-v2.png) — **Depicting:** Simplified form of 長; an old man with long hair and a cane
+- [074 高](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-074-高-u9AD8/educational/original/origin-locked-style-v2.png) — **Depicting:** A tall palace
+- [075 多](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-075-多-u591A/educational/original/origin-locked-style-v2.png) — **Depicting:** Two nights 夕, suggesting many
+- [076 少](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-076-少-u5C11/educational/original/origin-locked-style-v2.png) — **Depicting:** Grains of sand; 小 provides the pronunciation and meaning
+- [077 正](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-077-正-u6B63/educational/original/origin-locked-style-v2.png) — **Depicting:** A foot 止 stopping in the right place 一
+- [078 上](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-078-上-u4E0A/educational/original/origin-locked-style-v2.png) — **Depicting:** One stroke on top of another; compare 下 (below)
+- [079 下](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-079-下-u4E0B/educational/original/origin-locked-style-v2.png) — **Depicting:** One stroke under another; compare 上 (above)
+- [080 中](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-080-中-u4E2D/educational/original/origin-locked-style-v2.png) — **Depicting:** A line 丨 through the center of a box 口
+- [081 一](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-081-一-u4E00/educational/original/origin-locked-style-v2.png) — **Depicting:** Represents heaven (天), earth (旦), or the number 1
+- [082 十](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-082-十-u5341/educational/original/origin-locked-style-v2.png) — **Depicting:** No compact etymology note was available in the downloaded aggregation; review the linked source pages.
+- [083 二](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-083-二-u4E8C/educational/original/origin-locked-style-v2.png) — **Depicting:** Two  parallel lines; compare 一 (one) and 三 (three)
+- [084 三](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-084-三-u4E09/educational/original/origin-locked-style-v2.png) — **Depicting:** Three  parallel lines; compare 一 (one) and 二 (two)
+- [085 出](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-085-出-u51FA/educational/original/origin-locked-style-v2.png) — **Depicting:** A sprout 屮 growing out of a container 凵
+- [086 入](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-086-入-u5165/educational/original/origin-locked-style-v2.png) — **Depicting:** An arrow indicating "enter"
+- [088 行](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-088-行-u884C/educational/original/origin-locked-style-v2.png) — **Depicting:** To take small steps 亍 with one's feet 彳
+- [089 走](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-089-走-u8D70/educational/original/origin-locked-style-v2.png) — **Depicting:** Someone 土 stepping with their foot 止
+- [091 立](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-091-立-u7ACB/educational/original/origin-locked-style-v2.png) — **Depicting:** A man standing on the ground 一
+- [092 止](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-092-止-u6B62/educational/original/origin-locked-style-v2.png) — **Depicting:** A foot
+- [093 生](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-093-生-u751F/educational/original/origin-locked-style-v2.png) — **Depicting:** A shoot 屮 growing in the soil 土
+- [094 央](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-094-央-u592E/educational/original/origin-locked-style-v2.png) — **Depicting:** Pictograph of a person (大) with a cangue (torture device for punishing criminals) around his neck. People wearing such devices were not able to reach their mouth with their own han…
+- [095 林](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-095-林-u6797/educational/original/origin-locked-style-v2.png) — **Depicting:** Two trees 木 representing a forest
+- [096 光](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-096-光-u5149/educational/original/origin-locked-style-v2.png) — **Depicting:** A person 儿 carrying a torch 火
+- [097 明](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-097-明-u660E/educational/original/origin-locked-style-v2.png) — **Depicting:** The light of the sun 日 and moon 月
+- [098 休](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-098-休-u4F11/educational/original/origin-locked-style-v2.png) — **Depicting:** A person 亻 leaning against a tree 木
+- [099 好](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-099-好-u597D/educational/original/origin-locked-style-v2.png) — **Depicting:** A woman 女 with a son 子
+- [100 男](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-100-男-u7537/educational/original/origin-locked-style-v2.png) — **Depicting:** Someone who can work 力 the farm 田
+- [101 母](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-101-母-u6BCD/educational/original/origin-locked-style-v2.png) — **Depicting:** A mother's breasts
+- [102 兄](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-102-兄-u5144/educational/original/origin-locked-style-v2.png) — **Depicting:** Older brother 儿 speaking 口 to younger ones
+- [103 友](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-103-友-u53CB/educational/original/origin-locked-style-v2.png) — **Depicting:** Two hands 又 joined, representing friendship; 又 also provides the pronunciation
+- [104 公](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-104-公-u516C/educational/original/origin-locked-style-v2.png) — **Depicting:** To divide 八 what is private 厶
+- [105 民](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-105-民-u6C11/educational/original/origin-locked-style-v2.png) — **Depicting:** An eye 巳 pierced by a dagger 戈, an old mark of slavery
+- [106 兵](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-106-兵-u5175/educational/original/origin-locked-style-v2.png) — **Depicting:** Two hands 八 holding an axe 丘
+- [107 典](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-107-典-u5178/educational/original/origin-locked-style-v2.png) — **Depicting:** Two hands 八 holding a book 冊
+- [108 令](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-108-令-u4EE4/educational/original/origin-locked-style-v2.png) — **Depicting:** A person kneeling before a master 人
+- [109 先](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-109-先-u5148/educational/original/origin-locked-style-v2.png) — **Depicting:** Someone stepping 止 in front of another person 儿
+- [110 及](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-110-及-u53CA/educational/original/origin-locked-style-v2.png) — **Depicting:** Pictograph of a hand (又) reaching to grab a person (人).
+- [111 从](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-111-从-u4ECE/educational/original/origin-locked-style-v2.png) — **Depicting:** One person 人 following another
+- [112 取](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-112-取-u53D6/educational/original/origin-locked-style-v2.png) — **Depicting:** A hand 又 taking the ear 耳 of a fallen enemy
+- [113 采](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-113-采-u91C7/educational/original/origin-locked-style-v2.png) — **Depicting:** A hand picking 爫 fruit from a tree 木
+- [114 反](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-114-反-u53CD/educational/original/origin-locked-style-v2.png) — **Depicting:** A hand 又 held up against a cliff 厂
+- [115 交](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-115-交-u4EA4/educational/original/origin-locked-style-v2.png) — **Depicting:** A person with crossed (intersecting) legs
+- [116 同](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-116-同-u540C/educational/original/origin-locked-style-v2.png) — **Depicting:** Sharing a common 凡 tongue 口
+- [117 合](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-117-合-u5408/educational/original/origin-locked-style-v2.png) — **Depicting:** Pictograph of two mouths facing each other.
+- [118 各](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-118-各-u5404/educational/original/origin-locked-style-v2.png) — **Depicting:** Walking 夂 and talking 口
+- [119 告](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-119-告-u544A/educational/original/origin-locked-style-v2.png) — **Depicting:** To speak 口 with the force of an ox 牛
+- [120 向](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-120-向-u5411/educational/original/origin-locked-style-v2.png) — **Depicting:** Depicts a mouth (口) in a closed space (宀) making an echo sound. Based on the original meaning "echo; sound", now written as 響. The current meaning is a phonetic loan.
+- [121 望](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-121-望-u671B/educational/original/origin-locked-style-v2.png) — **Depicting:** A king 王 gazing at the moon 月; 亡 provides the pronunciation
+- [122 步](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-122-步-u6B65/educational/original/origin-locked-style-v2.png) — **Depicting:** Modern form of 歨; putting one foot 止 in front of the other
+- [123 分](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-123-分-u5206/educational/original/origin-locked-style-v2.png) — **Depicting:** Pieces 八 being further subdivided with a knife 刀
+- [124 利](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-124-利-u5229/educational/original/origin-locked-style-v2.png) — **Depicting:** Harvesting 刂 grain 禾
+- [126 後](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-126-後-u5F8C/educational/original/origin-locked-style-v2.png) — **Depicting:** One step 彳 coming behind another 夂; 幺 provides the pronunciation
+- [127 集](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-127-集-u96C6/educational/original/origin-locked-style-v2.png) — **Depicting:** Birds 隹 flocking on a tree 木
+- [128 得](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-128-得-u5F97/educational/original/origin-locked-style-v2.png) — **Depicting:** A hand 寸 grabbing a shell 旦
+- [129 益](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-129-益-u76CA/educational/original/origin-locked-style-v2.png) — **Depicting:** A container 皿 overflowing with water 水
+- [130 甘](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-130-甘-u7518/educational/original/origin-locked-style-v2.png) — **Depicting:** Picture of a tongue with 一 marking the sweet spot
+- [132 祭](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-132-祭-u796D/educational/original/origin-locked-style-v2.png) — **Depicting:** Hand 寸 holding meat ⺼ over an altar 示
+- [133 武](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-133-武-u6B66/educational/original/origin-locked-style-v2.png) — **Depicting:** To stop someone 止 with an arrow 弋
+- [134 族](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-134-族-u65CF/educational/original/origin-locked-style-v2.png) — **Depicting:** A group of people that swear by 矢 a single flag 方
+- [135 旅](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-135-旅-u65C5/educational/original/origin-locked-style-v2.png) — **Depicting:** A man 方 traveling with a pack 氏 on his back
+- [136 夏](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-136-夏-u590F/educational/original/origin-locked-style-v2.png) — **Depicting:** Pictograph of a person, represented by their head (頁) and feet (夂), being heated underneath the sun (日). The sun component was later omitted for brevity during the Warring States p…
+- [137 冬](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-137-冬-u51AC/educational/original/origin-locked-style-v2.png) — **Depicting:** A man walking 夂 on ice ⺀
+- [138 美](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-138-美-u7F8E/educational/original/origin-locked-style-v2.png) — **Depicting:** A person 大 wearing an elegant crown 羊
+- [139 宗](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-139-宗-u5B97/educational/original/origin-locked-style-v2.png) — **Depicting:** An altar 示 to the ancestor spirits found in one's home 宀
+- [140 守](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-140-守-u5B88/educational/original/origin-locked-style-v2.png) — **Depicting:** Keeping something 寸 within one's walls 宀
+- [141 官](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-141-官-u5B98/educational/original/origin-locked-style-v2.png) — **Depicting:** Depicts a knowledgeable person (師) under a roof (宀).
+- [142 宿](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-142-宿-u5BBF/educational/original/origin-locked-style-v2.png) — **Depicting:** A person 亻 sleeping in a bed 百 under a roof 宀
+- [143 妻](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-143-妻-u59BB/educational/original/origin-locked-style-v2.png) — **Depicting:** A woman 女 holding a broom 十 in her hand 彐
+- [144 祝](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-144-祝-u795D/educational/original/origin-locked-style-v2.png) — **Depicting:** A person 兄 praying before an altar 礻
+- [145 香](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-145-香-u9999/educational/original/origin-locked-style-v2.png) — **Depicting:** A herb 禾 with a sweet 甘 smell
+- [146 古](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-146-古-u53E4/educational/original/origin-locked-style-v2.png) — **Depicting:** Words passing through ten 十 mouths 口
+- [147 吉](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-147-吉-u5409/educational/original/origin-locked-style-v2.png) — **Depicting:** The words 口 of a scholar 士
+- [148 品](C:\Users\Stein\dev\personal\AsianLanguage\content\research\v1-symbols\rank-148-品-u54C1/educational/original/origin-locked-style-v2.png) — **Depicting:** Something that everyone is talking 口 about
+
+## Review criteria
+
+- Subject is immediately recognizable and natural.
+- Soft Ink & Wash style is consistent with the approved three-sample review.
+- Oracle Bone reference influences only broad direction or arrangement, never anatomy or literal tracing.
+- Meaningful compound components appear as separate mini-illustrations; phonetic components are not illustrated.
+- Flag any image that is confusing, distorted, too detailed, too realistic, or visually inconsistent for regeneration.
+

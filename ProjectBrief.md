@@ -16,9 +16,9 @@ Each Shared Character is presented as a continuous journey:
 
 1. recognizable real-world idea or pictorial origin
 2. defensible historical Evolution Stages
-3. Regular Script or equivalent characterized form
-4. Today / Modern Endpoint with selected modern focus tracks
-5. modern readings, variants, usage, and recognition recap
+3. Clerical Script as the final primary historical museum stage
+4. Regular Script as a separate modern standardized reference overview
+5. Today / Modern Endpoint with parallel locale-specific modern forms, readings, variants, usage, and recognition recap
 
 The historical journey is the primary information architecture. Internal Content Phases such as Character structure, Modern usage, and Summary may support the journey but must not become a competing six-button navigator.
 
@@ -34,7 +34,9 @@ The five root areas are:
 
 ## V1 scope
 
-V1 includes bundled read-only corpus data, local progress/preferences, multi-select focus tracks, source-backed historical visuals where available, modern forms/readings/examples, search, Browse collections, and the Symbol Journey.
+V1 targets a bundled read-only corpus of 126 characters with complete Oracle Bone, Bronze, Small Seal, and Clerical coverage. The current repository still contains the 11-record draft prototype; the 126-character ZDIC research package is local for review but is not yet bundled.
+
+V1 also requires locale-specific modern forms/readings/examples, search, Browse collections, and the Symbol Journey. CNS11643 Kai and the selected Adobe Source Han Serif locale faces are now downloaded, bundled, and documented for the Regular Script and Used Today layers.
 
 All four focus tracks are enabled by default. There is no user-facing \`All\` enum case.
 

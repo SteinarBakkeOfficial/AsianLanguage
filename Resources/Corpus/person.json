@@ -1,24 +1,33 @@
 {
   "id": "person",
-  "version": 2,
-  "teachingSequence": 7,
+  "version": 1,
   "coreCharacter": "人",
   "coreSharedMeaning": "person",
-  "recognitionTakeaway": "人 links the idea 'person' from an ancient graphic origin through regular script into modern Chinese, Japanese Kanji, and Korean Hanja usage.",
+  "recognitionTakeaway": "人 connects the idea of person to a complete visual journey from origin through historical forms and into modern language use.",
   "publicationStatus": "draft",
-  "visuals": {
-    "assetStatus": "source-backed-draft",
-    "note": "Regular-script prototype card exists. Historical Oracle/Bronze/Seal assets are attached when source-backed Wikimedia Commons SVGs are available; final publication still needs licensing review and specialist redraw approval."
-  },
+  "unicodeCodePoint": "U+4EBA",
+  "simplifiedForm": "人",
+  "traditionalForm": "人",
+  "additionalMeanings": [],
+  "formationType": "uncertain",
+  "visualTeachingNotes": [
+    "Compare the friendly origin illustration with the selected Oracle Bone form.",
+    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+  ],
+  "contentFolder": "content/research/v1-symbols/rank-001-人-u4EBA",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/research/v1-symbols/rank-001-人-u4EBA/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 1,
   "focusCoverage": {
     "simplifiedChinese": {
       "form": "人",
-      "readings": [
-        {
-          "system": "pinyin",
-          "value": "ren2 / rén"
-        }
-      ],
+      "readings": {
+        "system": "pinyin",
+        "value": "ren2 / rén"
+      },
       "glosses": [
         "person"
       ],
@@ -36,11 +45,11 @@
           ]
         },
         {
-          "text": "人口",
-          "reading": "ren2 / rén",
-          "translation": "population",
+          "text": "这个人很好。",
+          "reading": null,
+          "translation": "Basic sentence using person.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "person-parallel-1",
           "reusesKnownSymbols": [
             "日"
@@ -49,16 +58,15 @@
             "人"
           ]
         }
-      ]
+      ],
+      "variants": []
     },
     "traditionalChinese": {
       "form": "人",
-      "readings": [
-        {
-          "system": "pinyin",
-          "value": "ren2 / rén"
-        }
-      ],
+      "readings": {
+        "system": "pinyin",
+        "value": "ren2 / rén"
+      },
       "glosses": [
         "person"
       ],
@@ -76,11 +84,11 @@
           ]
         },
         {
-          "text": "人口",
-          "reading": "rénkǒu",
-          "translation": "population",
+          "text": "這個人很好。",
+          "reading": null,
+          "translation": "Basic Taiwan sentence using person.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "person-parallel-1",
           "reusesKnownSymbols": [
             "日"
@@ -104,11 +112,11 @@
           ]
         },
         {
-          "text": "人口",
-          "reading": "jan4 hau2",
-          "translation": "population",
+          "text": "呢個人好好。",
+          "reading": null,
+          "translation": "Basic Hong Kong sentence using person.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "person-parallel-1",
           "reusesKnownSymbols": [
             "日"
@@ -117,7 +125,16 @@
             "人"
           ]
         }
-      ]
+      ],
+      "taiwanReadings": {
+        "system": "pinyin",
+        "value": "ren2 / rén"
+      },
+      "hongKongReadings": {
+        "system": "pinyin",
+        "value": "ren2 / rén"
+      },
+      "variants": []
     },
     "japanese": {
       "form": "人",
@@ -148,11 +165,11 @@
           ]
         },
         {
-          "text": "人口",
-          "reading": "じんこう",
-          "translation": "population",
+          "text": "この人はよい人です。",
+          "reading": null,
+          "translation": "Basic Japanese sentence using person.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "person-parallel-1",
           "reusesKnownSymbols": [
             "日"
@@ -162,36 +179,7 @@
           ]
         }
       ],
-      "variants": [
-        {
-          "id": "native-japanese",
-          "form": "ひと",
-          "writingSystem": "Japanese kana",
-          "readings": [
-            {
-              "system": "kana",
-              "value": "hito"
-            }
-          ],
-          "notes": [
-            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
-          ],
-          "examples": [
-            {
-              "text": "ひと",
-              "reading": "hito",
-              "translation": "person",
-              "showsCoreMeaning": true,
-              "exampleLevel": "word",
-              "parallelExampleGroupID": null,
-              "reusesKnownSymbols": [],
-              "introducedSymbols": [
-                "人"
-              ]
-            }
-          ]
-        }
-      ]
+      "variants": []
     },
     "korean": {
       "form": "人",
@@ -222,11 +210,11 @@
           ]
         },
         {
-          "text": "人口",
-          "reading": "인구 / ingu",
-          "translation": "population",
+          "text": "이 사람은 좋은 사람입니다.",
+          "reading": null,
+          "translation": "Basic Korean sentence using person.",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
+          "exampleLevel": "sentence",
           "parallelExampleGroupID": "person-parallel-1",
           "reusesKnownSymbols": [
             "日"
@@ -236,271 +224,275 @@
           ]
         }
       ],
-      "variants": [
-        {
-          "id": "native-korean",
-          "form": "사람",
-          "writingSystem": "Hangul",
-          "readings": [
-            {
-              "system": "native Korean",
-              "value": "saram"
-            }
-          ],
-          "notes": [
-            "Draft native-language equivalent shown alongside the shared character; native-speaker review remains required."
-          ],
-          "examples": [
-            {
-              "text": "사람",
-              "reading": "saram",
-              "translation": "person",
-              "showsCoreMeaning": true,
-              "exampleLevel": "word",
-              "parallelExampleGroupID": null,
-              "reusesKnownSymbols": [],
-              "introducedSymbols": [
-                "人"
-              ]
-            }
-          ]
-        }
-      ]
+      "variants": []
     }
   },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
   "history": {
-    "originAnchor": "人 is taught here from its original idea: a side-view human figure, later abstracted into 人.",
+    "originAnchor": "Begin with the real-world idea of person, then compare the selected forms without treating the illustration as a historical glyph.",
     "stages": [
       {
         "stage": "oracleBone",
-        "label": "Oracle Bone Script",
+        "label": "Oracle Bone / 甲骨文",
         "form": null,
-        "assetRef": "Assets/Symbols/person-u4EBA/historical/oracle/app/glyph.png",
-        "changeNoteFromPrevious": null,
-        "certainty": "medium",
+        "assetRef": "Assets/Symbols/person/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "The illustration of person is condensed into ancient strokes, giving 人 a compact written outline.",
+        "certainty": "supported",
         "sourceIds": [
-          "source-oracle-bone-script",
-          "source-character-classification",
-          "source-evobc",
-          "source-radical-9",
-          "source-sinica-person-oracleBone"
+          "source-zdic-人"
         ],
-        "historicalSound": "Old Chinese sound not shown yet; add only after dedicated reconstruction review.",
-        "availabilityState": "available",
+        "historicalSound": null,
         "assetMetadata": {
-          "characterID": "person",
+          "characterID": "人",
           "historicalStage": "oracleBone",
           "approximatePeriod": null,
-          "sourceInstitution": "Academia Sinica Xiaoxuetang",
-          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=42.F47A",
-          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EF%91%BA&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E7%94%B2%E9%AA%A8%E6%96%87%E9%87%8D%E6%96%87%E4%BA%8C&size=300&style=regular&color=%23000000&resolution=96",
-          "catalogueReference": "甲792 | 合27018",
-          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
-          "retrievedAt": "2026-08-31T18:52:21.9350485Z",
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%BA/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/42_F481.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
           "contentClass": "historicalEvidence",
-          "assetRef": "Assets/Symbols/person-u4EBA/historical/oracle/app/glyph.png",
-          "artifactAssetRef": null,
+          "assetRef": "Assets/Symbols/person/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/person/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
-          "provenance": "Academia Sinica Xiaoxuetang",
-          "licenseStatus": "CC0-1.0",
-          "accessibilityDescription": "人 in oracleBone historical script",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "人 in Oracle Bone / 甲骨文",
           "readiness": "needsReview"
-        }
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of person.",
+        "availabilityState": "available",
+        "transitionNote": "The illustration of person is condensed into ancient strokes, giving 人 a compact written outline.",
+        "transitionNoteNeedsReview": true
       },
       {
         "stage": "bronze",
-        "label": "Bronze Script",
+        "label": "Bronze / 金文",
         "form": null,
-        "assetRef": "Assets/Symbols/person-u4EBA/historical/bronze/app/glyph.png",
-        "changeNoteFromPrevious": "Bronze inscriptions continue the ancient graph tradition after the oracle-bone period; final 人-specific redraw still required.",
-        "certainty": "medium",
+        "assetRef": "Assets/Symbols/person/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "From Oracle Bone to Bronze, the angular form of 人 becomes fuller and more continuous, while its silhouette remains recognizable.",
+        "certainty": "supported",
         "sourceIds": [
-          "source-evobc",
-          "source-radical-9",
-          "source-sinica-person-bronze"
+          "source-zdic-人"
         ],
-        "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "available",
+        "historicalSound": null,
         "assetMetadata": {
-          "characterID": "person",
+          "characterID": "人",
           "historicalStage": "bronze",
           "approximatePeriod": null,
-          "sourceInstitution": "Academia Sinica Xiaoxuetang",
-          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=32.F71B",
-          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%EF%9C%9B&font=%E4%B8%AD%E7%A0%94%E9%99%A2%E9%87%91%E6%96%87%E9%87%8D%E6%96%87%E4%BA%8C&size=300&style=regular&color=%23000000&resolution=96",
-          "catalogueReference": "作冊般甗 | 商代晚期 | 集成944",
-          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
-          "retrievedAt": "2026-08-31T18:52:22.5691502Z",
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%BA/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/32_F71B.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
           "contentClass": "historicalEvidence",
-          "assetRef": "Assets/Symbols/person-u4EBA/historical/bronze/app/glyph.png",
-          "artifactAssetRef": null,
+          "assetRef": "Assets/Symbols/person/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/person/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
-          "provenance": "Academia Sinica Xiaoxuetang",
-          "licenseStatus": "CC0-1.0",
-          "accessibilityDescription": "人 in bronze historical script",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "人 in Bronze / 金文",
           "readiness": "needsReview"
-        }
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
+        "availabilityState": "available",
+        "transitionNote": "From Oracle Bone to Bronze, the angular form of 人 becomes fuller and more continuous, while its silhouette remains recognizable.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "seal",
-        "label": "Seal Script",
+        "label": "Small Seal / 小篆",
         "form": null,
-        "assetRef": "Assets/Symbols/person-u4EBA/historical/seal/app/glyph.png",
-        "changeNoteFromPrevious": "Seal script formalizes earlier graph traditions into a more standardized archaic written style.",
-        "certainty": "medium",
+        "assetRef": "Assets/Symbols/person/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "From Bronze to Small Seal, the separate parts of 人 settle into smoother curves and a more balanced outline.",
+        "certainty": "supported",
         "sourceIds": [
-          "source-seal-script",
-          "source-evobc",
-          "source-radical-9",
-          "source-sinica-person-seal"
+          "source-zdic-人"
         ],
-        "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "available",
+        "historicalSound": null,
         "assetMetadata": {
-          "characterID": "person",
+          "characterID": "人",
           "historicalStage": "seal",
           "approximatePeriod": null,
-          "sourceInstitution": "Academia Sinica Xiaoxuetang",
-          "sourcePageURL": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=27.4EBA",
-          "sourceAssetURL": "https://xiaoxue.iis.sinica.edu.tw/ImageText2/ShowImage.ashx?text=%E4%BA%BA&font=%E5%8C%97%E5%B8%AB%E5%A4%A7%E8%AA%AA%E6%96%87%E5%B0%8F%E7%AF%86&size=300&style=regular&color=%23000000&resolution=96",
-          "catalogueReference": "說文‧人部",
-          "sourceDescription": "Source-backed historical glyph image; review stage interpretation before publication.",
-          "retrievedAt": "2026-08-31T18:52:23.1782999Z",
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%BA/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_4EBA.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
           "contentClass": "historicalEvidence",
-          "assetRef": "Assets/Symbols/person-u4EBA/historical/seal/app/glyph.png",
-          "artifactAssetRef": null,
+          "assetRef": "Assets/Symbols/person/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/person/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
-          "provenance": "Academia Sinica Xiaoxuetang",
-          "licenseStatus": "CC0-1.0",
-          "accessibilityDescription": "人 in seal historical script",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "人 in Small Seal / 小篆",
           "readiness": "needsReview"
-        }
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
+        "availabilityState": "available",
+        "transitionNote": "From Bronze to Small Seal, the separate parts of 人 settle into smoother curves and a more balanced outline.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "clerical",
-        "label": "Clerical Script",
+        "label": "Clerical / 隶书",
         "form": null,
-        "assetRef": null,
-        "changeNoteFromPrevious": "Clerical script flattens and regularizes earlier forms before later regular-script writing.",
-        "certainty": "medium",
+        "assetRef": "Assets/Symbols/person/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "From the preceding form to Clerical, 人 simplifies into fewer, cleaner marks while preserving its main structure.",
+        "certainty": "supported",
         "sourceIds": [
-          "source-clerical-script",
-          "source-evobc",
-          "source-radical-9"
+          "source-zdic-人"
         ],
-        "historicalSound": "Not shown in this seed record.",
-        "availabilityState": "unavailableAsset"
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "人",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%BA/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_E895.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/person/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/person/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "人 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
+        "availabilityState": "available",
+        "transitionNote": "From the preceding form to Clerical, 人 simplifies into fewer, cleaner marks while preserving its main structure.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "regular",
         "label": "Regular Script",
         "form": "人",
-        "assetRef": "Assets/PrototypeVisuals/person-regular.svg",
-        "changeNoteFromPrevious": "The regular form stabilizes as 人, still recognizable in modern focus-track usage.",
+        "assetRef": null,
+        "changeNoteFromPrevious": "From Clerical to Regular Script, the broad form for 人 tightens into balanced proportions and distinct Kai strokes.",
         "certainty": "high",
         "sourceIds": [
-          "source-radical-9",
-          "source-prototype-redraw"
+          "source-kai-font"
         ],
         "historicalSound": null,
-        "availabilityState": "available"
-      }
-    ]
-  },
-  "structure": {
-    "summary": "人 is handled as a basic graph/radical for 'person'. It can appear as a standalone character and as a component in related characters.",
-    "components": [
-      {
-        "label": "人",
-        "role": "basic graph / radical",
-        "meaningHint": "person"
+        "assetMetadata": {
+          "characterID": "人",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "人 in modern standardized Kai reference rendering",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
+        "availabilityState": "available",
+        "transitionNote": "From Clerical to Regular Script, the broad form for 人 tightens into balanced proportions and distinct Kai strokes.",
+        "transitionNoteNeedsReview": false
       }
     ],
+    "origin": {
+      "concept": "person",
+      "explanation": "A friendly educational reconstruction of person comes first, followed by the separately sourced historical glyphs.",
+      "asset": {
+        "characterID": "person",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/person/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of person",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-人"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "人 is presented first as a complete shared character.",
+    "components": [],
     "certainty": "medium",
-    "caveat": "Seed record uses public reference sources; publication requires specialist paleography review and final source-backed glyph redraws.",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
     "sourceIds": [
-      "source-radical-9",
-      "source-character-classification"
+      "source-zdic-人"
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'person', then compare how 人 is read and used across Mandarin, Traditional Chinese usage communities, Japanese, and Korean.",
+    "coreMeaningFirst": "Start with 'person', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Japanese often has separate Sino-Japanese on readings and native kun readings.",
-      "Korean examples separate the Hanja reading from the native Korean everyday word when they differ.",
-      "Modern examples are seed content and still need native-speaker review before publication."
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ]
   },
   "sources": [
     {
-      "id": "source-character-classification",
-      "label": "Chinese character classification reference",
-      "type": "reference",
-      "citation": "Chinese character classification explains the pictographic origin of many early Chinese characters and includes examples such as sun, moon, mountain, water, and wood/tree.",
-      "url": "https://en.wikipedia.org/wiki/Chinese_character_classification"
+      "id": "source-zdic-人",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E4%BA%BA"
     },
     {
-      "id": "source-oracle-bone-script",
-      "label": "Oracle bone script reference",
-      "type": "reference",
-      "citation": "Oracle bone script is the oldest attested substantial Chinese writing corpus and an ancestor of later Chinese-family scripts.",
-      "url": "https://en.wikipedia.org/wiki/Oracle_bone_script"
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
     },
     {
-      "id": "source-seal-script",
-      "label": "Seal script reference",
-      "type": "reference",
-      "citation": "Seal script developed from earlier bronze/large-seal traditions and was standardized in Qin usage.",
-      "url": "https://en.wikipedia.org/wiki/Seal_script"
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
     },
     {
-      "id": "source-clerical-script",
-      "label": "Clerical script reference",
-      "type": "reference",
-      "citation": "Clerical script matured and became dominant during the Han dynasty, flattening and regularizing earlier forms.",
-      "url": "https://en.wikipedia.org/wiki/Clerical_script"
-    },
-    {
-      "id": "source-evobc",
-      "label": "EVOBC dataset paper",
-      "type": "research-paper",
-      "citation": "Guan et al., 'An open dataset for the evolution of oracle bone characters: EVOBC', documents ancient-character evolution categories including oracle bone, bronze, seal, and clerical stages.",
-      "url": "https://arxiv.org/abs/2401.12467"
-    },
-    {
-      "id": "source-prototype-redraw",
-      "label": "Internal app-native prototype redraw",
-      "type": "prototype",
-      "citation": "Internal schematic redraw used only for prototype testing; specialist review and source-backed final redraws are still required."
-    },
-    {
-      "id": "source-radical-9",
-      "label": "Radical 9 / 人 reference",
-      "type": "reference",
-      "citation": "Radical 9 lists 人 as the person radical with Mandarin rén, Japanese jin/nin and hito, and Korean 인 in / 사람 saram.",
-      "url": "https://en.wikipedia.org/wiki/Radical_9"
+      "id": "source-generated-origin-人",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
     }
   ],
   "notes": [
-    "Source-backed seed pass generated from public radical/script references.",
-    "Historical stage explanations are sourced, but final stage glyphs still require licensed/source-backed redraws.",
-    "Modern examples need native-speaker/editorial review before publication."
-  ],
-  "unicodeCodePoint": "U+4EBA",
-  "simplifiedForm": "人",
-  "traditionalForm": "人",
-  "additionalMeanings": [
-    "person"
-  ],
-  "formationType": "pictograph",
-  "visualTeachingNotes": [
-    "Use a clear side-view human posture where it supports the source-backed interpretation.",
-    "Avoid modern contextual clutter."
-  ],
-  "contentFolder": "content/symbols/person-u4EBA",
-  "learnerCopyPath": "lesson.md",
-  "researchNotesPath": "research.md",
-  "reviewPath": "review.md",
-  "sourceConflicts": [],
-  "editorialStatus": "needsReview"
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Examples are shown in the Today section; generated fallback examples require language-editor review."
+  ]
 }

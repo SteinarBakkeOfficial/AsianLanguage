@@ -117,7 +117,15 @@ struct CharacterEvolutionView: View {
                 subtitle: stage.editorialConfidence.displayName
             )
             ArtifactField {
-                if stage.availabilityState == .unavailableAsset {
+                if stage.stage == "regular" {
+                    // Regular Script is the approved modern standardized Kai endpoint,
+                    // not a copied historical inscription or a prototype SVG fallback.
+                    Text(record.coreCharacter)
+                        .font(CJKFontRole.museumRegular.font(size: 148))
+                        .foregroundStyle(AppColors.artifactInk)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .accessibilityLabel("Regular Script \(record.coreCharacter)")
+                } else if stage.availabilityState == .unavailableAsset {
                     HistoricalMissingState()
                 } else if let metadata = stage.assetMetadata {
                     HistoricalAssetView(metadata: metadata)
@@ -129,7 +137,9 @@ struct CharacterEvolutionView: View {
                 }
             }
             .frame(height: 304)
-            Text(stage.stageExplanation ?? stage.changeNoteFromPrevious ?? "Stage-specific explanation is pending editorial review.")
+            // Transition notes are destination-stage captions: they explain what visibly changed
+            // from the previous available exhibit into this exact form.
+            Text(stage.transitionNote ?? stage.changeNoteFromPrevious ?? stage.stageExplanation ?? "Stage-specific explanation is pending editorial review.")
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textPrimary)
                 .multilineTextAlignment(.center)
@@ -212,19 +222,12 @@ struct CharacterEvolutionView: View {
             }
 
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 0) {
+                HStack(spacing: AppSpacing.space2xs) {
                     ForEach(Array(journeyIDs.enumerated()), id: \.element) { index, id in
                         stageMarker(index: index, id: id)
-
-                        if index < journeyIDs.count - 1 {
-                            Rectangle()
-                                .fill(index < currentIndex ? AppColors.accentPrimary : AppColors.separator)
-                                .frame(minWidth: 16, maxWidth: 52, minHeight: 1, maxHeight: 1)
-                                .accessibilityHidden(true)
-                        }
                     }
                 }
-                .frame(maxWidth: .infinity)
+                .padding(.vertical, AppSpacing.space2xs)
             }
             HStack(alignment: .firstTextBaseline) {
                 Text(currentLabel)
@@ -244,12 +247,11 @@ struct CharacterEvolutionView: View {
         .padding(.horizontal, AppSpacing.spacePage)
         .padding(.bottom, AppSpacing.space2xs)
         .padding(.top, AppSpacing.spaceXs)
-        .overlay(alignment: .top) {
-            Rectangle()
-                .fill(AppColors.separator)
-                .frame(height: 1)
+        .overlay {
+            RoundedRectangle(cornerRadius: AppRadius.surface)
+                .stroke(AppColors.separator, lineWidth: 1)
         }
-        .background(AppColors.appBackground)
+        .background(AppColors.journeyRailBackground)
         .accessibilityElement(children: .contain)
         .accessibilityLabel("\(currentLabel), stage \(currentIndex + 1) of \(journeyIDs.count)")
     }
@@ -260,10 +262,14 @@ struct CharacterEvolutionView: View {
         return Button {
             selectedStageID = id
         } label: {
-            Circle()
-                .fill(index <= currentIndex ? AppColors.accentPrimary : AppColors.separator)
-                .frame(width: isCurrent ? 9 : 7, height: isCurrent ? 9 : 7)
-                .frame(width: 44, height: 44)
+            Text(label(for: id))
+                .font(AppTypography.caption.weight(isCurrent ? .semibold : .regular))
+                .foregroundStyle(isCurrent ? AppColors.textPrimary : AppColors.textSecondary)
+                .lineLimit(1)
+                .padding(.horizontal, AppSpacing.spaceXs)
+                .frame(minHeight: 32)
+                .background(isCurrent ? AppColors.journeyRailSelected : Color.clear)
+                .clipShape(RoundedRectangle(cornerRadius: AppRadius.control))
         }
         .buttonStyle(.plain)
         .accessibilityLabel("\(label(for: id)), stage \(index + 1) of \(journeyIDs.count)")

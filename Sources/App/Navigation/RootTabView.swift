@@ -42,13 +42,16 @@ struct RootTabView: View {
     }
 }
 
-/// First-launch sequence: enter the Fire exhibit before offering optional modern-language preferences.
+/// First-launch sequence: enter the first approved V1 exhibit before offering optional modern-language preferences.
 struct OnboardingView: View {
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
     @State private var step: Step
 
     private enum Step { case intro, connection }
+
+    /// V1 now begins with the approved teaching order rather than the incomplete Fire pilot.
+    private var firstRecord: SharedCharacterRecord? { dependencies.sharedCharacters.first }
 
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
@@ -69,12 +72,12 @@ struct OnboardingView: View {
                         .font(AppTypography.exhibitHeading)
                         .foregroundStyle(AppColors.textPrimary)
                         .multilineTextAlignment(.center)
-                    Text("Follow Fire from a recognizable origin through its historical transformation.")
+                    Text("Follow the first symbol from a recognizable origin through its historical transformation.")
                         .font(AppTypography.body)
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
-                    if let fire = dependencies.sharedCharacters.first(where: { $0.id == "fire" }) {
-                        HeroLineagePreview(record: fire)
+                    if let firstRecord {
+                        HeroLineagePreview(record: firstRecord)
                             .frame(minHeight: 260, maxHeight: 300)
                     }
                     PrimaryActionButton("Continue") {
@@ -82,28 +85,32 @@ struct OnboardingView: View {
                         step = .connection
                     }
                 case .connection:
-                    Text("Enter the Fire exhibit")
+                    Text("Enter the first exhibit")
                         .font(AppTypography.exhibitHeading)
                         .foregroundStyle(AppColors.textPrimary)
                         .multilineTextAlignment(.center)
-                    Text("Begin with 火 as a museum object: its origin, historical forms, and the path into today.")
+                    Text("Begin with the first V1 symbol as a museum object: its origin, historical forms, and the path into today.")
                         .font(AppTypography.body)
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
-                    if let fire = dependencies.sharedCharacters.first(where: { $0.id == "fire" }) {
-                        HeroLineagePreview(record: fire)
+                    if let firstRecord {
+                        HeroLineagePreview(record: firstRecord)
                             .frame(minHeight: 220, maxHeight: 260)
                     }
-                    Text("Fire")
-                        .font(AppTypography.exhibitHeading)
-                        .foregroundStyle(AppColors.textPrimary)
+                    if let firstRecord {
+                        Text(firstRecord.coreSharedMeaning.capitalized)
+                            .font(AppTypography.exhibitHeading)
+                            .foregroundStyle(AppColors.textPrimary)
+                    }
                     Text("All four modern language tracks are available later. The exhibit comes first.")
                         .font(AppTypography.metadata)
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
-                    PrimaryActionButton("Enter Fire") {
+                    PrimaryActionButton("Enter Exhibit") {
                         userStateStore.markFirstSymbolStarted()
-                        dependencies.navigationState.openSymbol("fire", intent: .start)
+                        if let firstRecord {
+                            dependencies.navigationState.openSymbol(firstRecord.id, intent: .start)
+                        }
                     }
                 }
             }
@@ -139,8 +146,8 @@ private struct SymbolRootView: View {
     }
 }
 
-/// Generic script-period explainer kept separate from individual symbol lessons.
-private struct HistoryRootView: View {
+/// Retained period-by-period history design for a future deeper History release.
+private struct LegacyHistoryRootView: View {
     let dependencies: AppDependencies
 
     private let periods = [
@@ -239,6 +246,36 @@ private struct HistoryRootView: View {
     private func fireMetadata(for period: HistoryPeriod) -> HistoricalAssetMetadata? {
         guard let fire = dependencies.sharedCharacters.first(where: { $0.id == "fire" }) else { return nil }
         return fire.history.stages.first(where: { $0.stage == period.id })?.assetMetadata
+    }
+}
+
+/// V1 History presentation uses the approved editorial overview image while the detailed design remains available above.
+private struct HistoryRootView: View {
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: AppSpacing.spaceMd) {
+                    Text("History")
+                        .font(AppTypography.pageTitle)
+                        .foregroundStyle(AppColors.textPrimary)
+                    Text("A visual overview of the journey from Oracle Bone to Regular Script.")
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                    ArtifactField {
+                        HistoricalAssetView(assetRef: "Assets/History/History_V1.png", displayHeight: 520)
+                    }
+                    Text("The detailed period shelf is retained for a later history release.")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+                .padding(.horizontal, AppSpacing.spacePage)
+                .padding(.top, AppSpacing.spaceSm)
+                .padding(.bottom, AppSpacing.spaceSection)
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .tint(AppColors.accentPrimary)
+        }
+        .background(AppColors.appBackground.ignoresSafeArea())
     }
 }
 

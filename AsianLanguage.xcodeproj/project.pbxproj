@@ -50,6 +50,8 @@
 		8B0000010000000000000030 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000030 /* DesignSystem.swift */; };
 		8B0000010000000000000031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000031 /* Assets.xcassets */; };
 		8B0000010000000000000032 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000032 /* Fonts */; };
+		8B0000010000000000000033 /* Collections in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000033 /* Collections */; };
+		8B0000010000000000000034 /* History in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000034 /* History */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		8B0001010000000000000030 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		8B0001010000000000000031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B0001010000000000000032 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		8B0001010000000000000033 /* Collections */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/Collections; sourceTree = "<group>"; };
+		8B0001010000000000000034 /* History */ = {isa = PBXFileReference; lastKnownFileType = folder; path = History; sourceTree = "<group>"; };
 		8B0002010000000000000001 /* AsianLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsianLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0002010000000000000002 /* AsianLanguageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsianLanguageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -295,6 +299,8 @@
 				8B0001010000000000000020 /* PrototypeVisuals */,
 				8B0001010000000000000024 /* HistoricalGlyphs */,
 				8B0001010000000000000026 /* Symbols */,
+				8B0001010000000000000033 /* Collections */,
+				8B0001010000000000000034 /* History */,
 				8B0001010000000000000031 /* Assets.xcassets */,
 				8B0001010000000000000032 /* Fonts */,
 			);
@@ -421,6 +427,8 @@
 				8B0000010000000000000026 /* Symbols in Resources */,
 				8B0000010000000000000031 /* Assets.xcassets in Resources */,
 				8B0000010000000000000032 /* Fonts in Resources */,
+				8B0000010000000000000033 /* Collections in Resources */,
+				8B0000010000000000000034 /* History in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,9 +23,9 @@ The official product-facing name is Script Roots. AsianLanguage remains the inte
 
 Phases 1–3 are complete. Phase 4 is active: the former six-step lesson and poster-like EvolutionBoardView are no longer on the production path, and the canonical Symbol Journey now has data-driven horizontal swipe pages, persistent stage navigation, Today routing, and exact-position persistence. The first shared visual foundation and Fire stage composition are now in the repository.
 
-Discovery and content-contract foundations are also present, including Browse-owned Search/Collections/status lists, four focus tracks, regional Traditional Chinese coverage, stage-owned asset metadata, migration support, and release/readiness checks. The current 11 records remain draft fixtures.
+Discovery and content-contract foundations are also present, including Browse-owned Search/Collections/status lists, four focus tracks, regional Traditional Chinese coverage, stage-owned asset metadata, migration support, and release/readiness checks. The runtime now loads the 126-record complete-evolution V1 package; the original 11 records remain as repository reference fixtures.
 
-## Current implementation snapshot — 2026-09-02
+## Current implementation snapshot — 2026-09-03
 
 ### Implemented
 
@@ -57,7 +57,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - More utility rows and source/license entries now use quiet semantic presentation while preserving native navigation behavior.
 - Historical stage availability is now distinct from confidence in the runtime model; legacy certainty labels normalize for presentation, draft tooling emits availability, and corpus validation rejects invalid or contradictory states.
 - Per-Symbol folders now contain structured lesson data, learner copy, research notes, review checklist, sources, visual teaching notes, historical-stage provenance, and reusable component references.
-- The preparation workflow has been experimentally run across the 11-record batch; each folder remains `needsReview` and no generated content is auto-approved.
+- The preparation workflow remains available for the original pilot; the current V1 import is handled by `Import-V1RuntimeCorpus.ps1`, and no generated content is auto-approved.
 - Fire now includes a clearly classified educational Origin reconstruction; it is not presented as historical evidence.
 - Offline packaging now validates Symbol folders, synchronizes flat bundle records, copies local app derivatives, and emits an asset manifest with runtime networking disabled.
 - A generated human review report lists each Symbol's folder, status, formation mode, stage availability, asset references, and editorial files.
@@ -76,13 +76,18 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Shared components are available; History and More still need final simulator visual polish and any future approved representative content.
 - Historical asset provenance, renderability, and specialist confidence review remain required before publication; the availability/confidence contract itself is now aligned.
 - The current prototype SVG assets are packaged locally but still require native rendering verification and final asset treatment on macOS.
+- The 148-character research-only ZDIC intake produced 568 of 592 possible Oracle Bone/Bronze/Small Seal/Clerical selections; V1 is now restricted to the 126 characters with all four stages. These copied files are not cleared for commercial bundling.
+- The 126-character V1 historical selection is now imported into `Resources/Assets/Symbols` as 504 normalized ZDIC SVG pairs plus retained originals and is wired to the 126-record runtime manifest. Assets remain rights-review-required.
+- CNS11643 Kai and the four approved Adobe Source Han Serif locale faces are downloaded, documented, bundled, and registered for Regular Script and Used Today. Source Han Sans and additional weights remain intentionally deferred.
 
 ### Current next steps
 
 1. Complete native-speaker review of pilot Today readings, romanization, examples, and translations.
 2. Complete specialist review of historical stage interpretation and source-backed derivatives.
-3. Run macOS/Xcode simulator screenshot comparison for the reference-target screens.
-4. Run physical iPhone checks for touch, safe areas, gestures, and rendering.
+3. Confirm ZDIC reuse permission or replace the bundled historical selections with cleared/public-domain equivalents before commercial distribution.
+4. Complete native-speaker and macOS visual verification of the newly bundled locale-aware glyph rendering.
+5. Run macOS/Xcode simulator screenshot comparison for the reference-target screens.
+6. Run physical iPhone checks for touch, safe areas, gestures, and rendering.
 
 ## V1 to VNext Carryover Register
 
@@ -97,7 +102,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 
 ## Future considerations — undecided
 
-- Consider shipping V1 with a bundled offline baseline of roughly 50–100 symbols, then offering optional online symbol/content packs so users can download additional symbols without requiring a full app update.
+- Consider future V2/V3 expansion packs beyond the current 126-character V1 design target, then evaluate optional online symbol/content packs so users can download additional symbols without requiring a full app update.
 - Evaluate the trade-offs among initial app size, offline availability, pack versioning, storage management, content provenance, and whether future symbol additions should remain app-update based or become downloadable packs.
 
 This is exploratory only and is not currently a product requirement or implementation decision.
