@@ -65,7 +65,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - All available Windows layout, model, content, visual, discovery, and release checks pass.
 - AppShell light tokens now match the approved clay-and-white reference, with Light as the default and Dark as the sole alternative.
 - Browse and Collections now separate Your Library status lists from editorial collections, with collection artwork previews.
-- Pilot Today copy now uses one page per selected language with the existing reviewed readings, romanization, and word examples; broader example expansion and native-speaker review remain deferred.
+- Today now uses one page per selected language with four draft starter entries per track; native-speaker review must replace or approve the neutral learning-context additions before publication.
 - Fire, Water, and Tree now have separate educational concept illustrations, and the allowlisted historical SVG intake preserves source/license provenance.
 - The approved correction pass keeps the Symbol Journey rail persistent and visibly labeled, isolates Fire onboarding from the compact Home preview, fixes Home's orphaned active-state fallback, uses the complete collection banner on Home, identifies Hong Kong Cantonese/Jyutping readings, and recreates the History overview natively from the approved reference content.
 - The Symbol Journey now separates the single Modern/Regular Script museum endpoint from later language Usage pages; one visible rail changes its destinations at that boundary.
@@ -74,7 +74,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 
 - Fire, Water, and Tree concept art renders as educational reconstruction only and remains under editorial review.
 - Allowlisted Fire, Water, and Tree historical SVGs are bundled where acquired; named stages without approved files remain unavailable. Local SVG rendering still requires macOS/Xcode verification.
-- The Modern/Usage page composition and word-context layout still need simulator comparison and interaction polish; sparse language content still needs reviewed expansion.
+- The Modern/Usage page composition and word-context layout still need simulator comparison and interaction polish; the four starter entries per track still need reviewed, character-relevant vocabulary.
 - Completion, Revisit, and Quick Review have initial behavior and structure but still need simulator visual QA and final interaction polish.
 - Shared components are available; History still needs final simulator comparison for crop positioning and typography, while More needs any future approved representative content.
 - Historical asset provenance, renderability, and specialist confidence review remain required before publication; the availability/confidence contract itself is now aligned.

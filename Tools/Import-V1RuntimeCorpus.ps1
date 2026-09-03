@@ -36,6 +36,42 @@ function New-Example([string]$Text, [string]$Reading, [string]$Translation, [boo
   }
 }
 
+function New-StarterExamples([string]$Language, [string]$Form, [string]$Character) {
+  # These starter sentences fill the initial review surface only. Replace
+  # them with native-speaker vocabulary examples before publication.
+  switch ($Language) {
+    "simplifiedChinese" {
+      return @(
+        (New-Example -Text "这是$Form。" -Reading $null -Translation "This is the character $Form." -ShowsCoreMeaning $false -Level "sentence" -Character $Character),
+        (New-Example -Text "我学习$Form。" -Reading $null -Translation "I am learning the character $Form." -ShowsCoreMeaning $false -Level "sentence" -Character $Character),
+        (New-Example -Text "我会读$Form。" -Reading $null -Translation "I can read the character $Form." -ShowsCoreMeaning $false -Level "sentence" -Character $Character)
+      )
+    }
+    "traditionalChinese" {
+      return @(
+        (New-Example -Text "這是「$Form」。" -Reading $null -Translation "This is the character 「$Form」." -ShowsCoreMeaning $false -Level "sentence" -Character $Character),
+        (New-Example -Text "我學習「$Form」。" -Reading $null -Translation "I am learning the character 「$Form」." -ShowsCoreMeaning $false -Level "sentence" -Character $Character),
+        (New-Example -Text "我會讀「$Form」。" -Reading $null -Translation "I can read the character 「$Form」." -ShowsCoreMeaning $false -Level "sentence" -Character $Character)
+      )
+    }
+    "japanese" {
+      return @(
+        (New-Example -Text "これは「$Form」です。" -Reading $null -Translation "This is the kanji 「$Form」." -ShowsCoreMeaning $false -Level "sentence" -Character $Character),
+        (New-Example -Text "「$Form」を学びます。" -Reading $null -Translation "I am learning 「$Form」." -ShowsCoreMeaning $false -Level "sentence" -Character $Character),
+        (New-Example -Text "「$Form」を読みます。" -Reading $null -Translation "I read 「$Form」." -ShowsCoreMeaning $false -Level "sentence" -Character $Character)
+      )
+    }
+    "korean" {
+      return @(
+        (New-Example -Text "이것은 ‘$Form’입니다." -Reading $null -Translation "This is the Hanja ‘$Form’." -ShowsCoreMeaning $false -Level "sentence" -Character $Character),
+        (New-Example -Text "‘$Form’를 배웁니다." -Reading $null -Translation "I am learning ‘$Form’." -ShowsCoreMeaning $false -Level "sentence" -Character $Character),
+        (New-Example -Text "‘$Form’를 읽습니다." -Reading $null -Translation "I read ‘$Form’." -ShowsCoreMeaning $false -Level "sentence" -Character $Character)
+      )
+    }
+  }
+  return @()
+}
+
 function Get-Meaning([string]$Character, $Research) {
   $known = @{
     "人"="person"; "女"="woman"; "子"="child"; "大"="big"; "小"="small"; "口"="mouth"; "目"="eye"; "耳"="ear"; "身"="body"; "首"="head"; "舌"="tongue"; "心"="heart"; "言"="speech"; "自"="self"; "水"="water"; "山"="mountain"; "木"="tree"; "土"="earth"; "石"="stone"; "川"="river"; "日"="sun / day"; "月"="moon"; "天"="sky"; "雨"="rain"; "田"="field"; "井"="well"; "泉"="spring"; "牛"="ox"; "犬"="dog"; "羊"="sheep"; "虎"="tiger"; "角"="horn"; "竹"="bamboo"; "豆"="bean"; "衣"="clothing"; "玉"="jade"; "王"="king"; "刀"="knife"; "弓"="bow"; "册"="book"; "示"="altar"; "工"="work"; "力"="strength"; "夕"="evening"; "申"="stretch"; "云"="cloud"; "西"="west"; "南"="south"; "北"="north"; "年"="year"; "老"="old"; "白"="white"; "黑"="black"; "赤"="red"; "长"="long"; "高"="high"; "多"="many"; "少"="few"; "正"="upright"; "上"="above"; "下"="below"; "中"="middle"; "一"="one"; "十"="ten"; "二"="two"; "三"="three"; "出"="exit"; "入"="enter"; "行"="go"; "走"="walk"; "立"="stand"; "止"="stop"; "生"="life"; "央"="center"; "林"="forest"; "光"="light"; "明"="bright"; "休"="rest"; "好"="good"; "男"="man"; "母"="mother"; "兄"="older brother"; "友"="friend"; "公"="public"; "民"="people"; "兵"="soldier"; "典"="classic"; "令"="command"; "先"="before"; "及"="reach"; "从"="follow"; "取"="take"; "采"="gather"; "反"="turn back"; "交"="交 / meet"; "同"="same"; "合"="join"; "各"="each"; "告"="tell"; "向"="direction"; "望"="look toward"; "步"="step"; "分"="divide"; "利"="benefit"; "後"="after"; "集"="gather"; "得"="obtain"; "益"="increase"; "甘"="sweet"; "祭"="sacrifice"; "武"="martial"; "族"="group"; "旅"="journey"; "夏"="summer"; "冬"="winter"; "美"="beautiful"; "宗"="ancestor"; "守"="guard"; "官"="official"; "宿"="lodging"; "妻"="wife"; "祝"="blessing"; "香"="fragrance"; "古"="old"; "吉"="auspicious"; "品"="things / goods"
@@ -283,26 +319,18 @@ foreach ($manifestRecord in @($manifest.records | Sort-Object rank)) {
   $fallbackReading = $mandarin
   if (-not $fallbackReading) { $fallbackReading = $japanese }
   if (-not $fallbackReading) { $fallbackReading = $korean }
-  $fallbackExamples = @(
-    (New-Example $character $fallbackReading $meaning $true "word" $character),
-    (New-Example "$character·" $fallbackReading "Core character reference" $true "phrase" $character),
-    (New-Example "$character…" $fallbackReading "Usage example pending language-editor review" $false "sentence" $character)
-  )
-  $japaneseFallbackExamples = @(
-    (New-Example $character $japanese $meaning $true "word" $character),
-    (New-Example "$character·" $japanese "Core character reference" $true "phrase" $character),
-    (New-Example "$character…" $japanese "Usage example pending language-editor review" $false "sentence" $character)
-  )
-  $koreanFallbackExamples = @(
-    (New-Example $traditional $korean $meaning $true "word" $character),
-    (New-Example "$traditional·" $korean "Core character reference" $true "phrase" $character),
-    (New-Example "$traditional…" $korean "Usage example pending language-editor review" $false "sentence" $character)
-  )
-  $simplifiedExamples = if (@($baseExamples).Count -ge 2) { @($baseExamples) } else { $fallbackExamples }
-  $taiwanExamples = if (@($baseTraditionalTaiwan).Count -ge 2) { @($baseTraditionalTaiwan) } else { $fallbackExamples }
-  $hongKongExamples = if (@($baseTraditionalHongKong).Count -ge 2) { @($baseTraditionalHongKong) } else { $fallbackExamples }
-  $japaneseExamples = if (@($baseJapaneseExamples).Count -ge 2) { @($baseJapaneseExamples) } else { $japaneseFallbackExamples }
-  $koreanExamples = if (@($baseKoreanExamples).Count -ge 2) { @($baseKoreanExamples) } else { $koreanFallbackExamples }
+  $simplifiedStarterExamples = @((New-Example $character $fallbackReading $meaning $true "word" $character)) + @(New-StarterExamples "simplifiedChinese" $character $character)
+  $traditionalStarterExamples = @((New-Example $traditional $fallbackReading $meaning $true "word" $character)) + @(New-StarterExamples "traditionalChinese" $traditional $character)
+  $japaneseStarterExamples = @((New-Example $traditional $japanese $meaning $true "word" $character)) + @(New-StarterExamples "japanese" $traditional $character)
+  $koreanStarterExamples = @((New-Example $traditional $korean $meaning $true "word" $character)) + @(New-StarterExamples "korean" $traditional $character)
+  # Preserve existing seed entries first, then fill each track to four
+  # examples. This keeps the initial corpus useful without fake dictionary
+  # compounds; native-speaker vocabulary replaces these starters later.
+  $simplifiedExamples = @(@($baseExamples) + @($simplifiedStarterExamples) | Select-Object -First 4)
+  $taiwanExamples = @(@($baseTraditionalTaiwan) + @($traditionalStarterExamples) | Select-Object -First 4)
+  $hongKongExamples = @(@($baseTraditionalHongKong) + @($traditionalStarterExamples) | Select-Object -First 4)
+  $japaneseExamples = @(@($baseJapaneseExamples) + @($japaneseStarterExamples) | Select-Object -First 4)
+  $koreanExamples = @(@($baseKoreanExamples) + @($koreanStarterExamples) | Select-Object -First 4)
   # Wrap the entire conditional in @() so PowerShell preserves one-item and
   # empty collections instead of serializing them as an object or null.
   $jpReadings = @(if ($legacy) { @($legacy.focusCoverage.japanese.readings) } elseif ($japanese) { New-Reading "on / kun" $japanese })
@@ -318,6 +346,8 @@ foreach ($manifestRecord in @($manifest.records | Sort-Object rank)) {
   $record = [ordered]@{
     id = $id; version = 1; coreCharacter = $character; coreSharedMeaning = $meaning; recognitionTakeaway = "$character connects the idea of $meaning to a complete visual journey from origin through historical forms and into modern language use."; publicationStatus = "draft"; unicodeCodePoint = [string]$manifestRecord.unicode; simplifiedForm = $character; traditionalForm = $traditional; additionalMeanings = @(); formationType = Normalize-FormationType $(if ($research -and $research.formationType) { [string]$research.formationType } else { "uncertain" }); visualTeachingNotes = @("Compare the friendly origin illustration with the selected Oracle Bone form.", "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."); contentFolder = "content/research/v1-symbols/$([IO.Path]::GetFileName($folder))"; learnerCopyPath = $null; researchNotesPath = "content/research/v1-symbols/$([IO.Path]::GetFileName($folder))/research.md"; reviewPath = $null; sourceConflicts = @(); editorialStatus = "needsReview"; teachingSequence = [int]$manifestRecord.rank; focusCoverage = $focus; visuals = [ordered]@{ evolutionAssetRefs = $null; assetStatus = "local-source-backed-draft"; note = "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate." }; history = [ordered]@{ originAnchor = "Begin with the real-world idea of $meaning, then compare the selected forms without treating the illustration as a historical glyph."; stages = @($stages.ToArray()); origin = $origin }; structure = [ordered]@{ summary = if ($research -and $research.ideographicDescription) { "The research record describes this structure as $($research.ideographicDescription)." } else { "$character is presented first as a complete shared character." }; components = @(); certainty = if ($research -and $research.confidence -ge 85) { "high" } else { "medium" }; caveat = "Formation and component explanations remain subject to editorial review."; sourceIds = @("source-zdic-$character") }; usage = [ordered]@{ coreMeaningFirst = "Start with '$meaning', then compare the modern forms and readings across the four focus tracks."; notes = @("Modern examples are installed as initial content and should receive language-editor review before publication.", "Japanese and Korean regional forms are rendered through their intentional locale font roles.") }; sources = $sourceRows; notes = @("V1 runtime import from the 126-character complete-evolution manifest.", "ZDIC historical visual reuse remains review-required before commercial release.", "Origin artwork is an educational reconstruction, not historical evidence.", "Examples are shown in the Today section; generated fallback examples require language-editor review.")
   }
+  # Keep the runtime note aligned with the starter-example policy above.
+  $record.notes[3] = "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
   $record | ConvertTo-Json -Depth 60 | Set-Content -LiteralPath (Join-Path $outputCorpus "$id.json") -Encoding utf8
   $records.Add($record) | Out-Null
 }

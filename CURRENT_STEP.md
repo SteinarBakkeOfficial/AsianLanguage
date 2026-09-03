@@ -2,7 +2,7 @@
 
 ## Goal
 
-Integrate and verify the approved early-release V1 package: 126 complete-evolution symbols, local origin artwork, ZDIC historical stages, CNS11643 Kai Regular Script, locale-specific modern forms, existing reviewed examples, updated collections, and search-first Browse. Broader example expansion remains deferred.
+Integrate and verify the approved early-release V1 package: 126 complete-evolution symbols, local origin artwork, ZDIC historical stages, CNS11643 Kai Regular Script, locale-specific modern forms, four draft starter examples per language track, updated collections, and search-first Browse. Native-speaker vocabulary review remains outstanding.
 
 ## Branding update
 
@@ -164,7 +164,7 @@ Working taxonomy thought for discussion, not a decision: semantic collections co
 - `SeedCorpusManifest` now loads exactly 126 complete-evolution records in teaching order.
 - `Resources/Assets/Symbols` contains 126 origin illustrations, 504 normalized ZDIC stage glyphs, and the selected original SVG beside each stage for inspection.
 - Regular Script is rendered from the local CNS11643 Kai font; modern forms use the local Source Han Serif JP/KR/SC/TC faces.
-- Usage context preserves the compact `IN A WORD` layout, shows up to four real stored word/phrase/sentence entries when available, filters importer placeholders, and applies each locale's modern font to written examples and language forms. Expanding sparse V1 content to three or four reviewed examples remains a content task, not a UI fallback.
+- Usage context preserves the compact `IN A WORD` layout, shows up to four stored word/phrase/sentence entries, filters only legacy placeholder markers, and applies each locale's modern font to written examples and language forms. The current additions are neutral native-language learning-context starters; native-speaker vocabulary review must replace or approve them before publication.
 - Collections now resolve members from the installed corpus across all ten editorial collections and reuse the same artwork catalog in Browse.
 - Browse places search first, followed by learner libraries, one All Symbols destination, and all ten complete collection panels directly under Collections.
 - History now follows the supplied `Resources/History/History_V1.png` overview natively: the title/landscape header, rounded timeline card, colored stage markers, stage material illustrations, glyph pairings, explanations, and living-tradition footer are represented in SwiftUI. The full reference screenshot is not rendered in-app, and the prior period-by-period implementation remains retained as `LegacyHistoryRootView`.
@@ -197,7 +197,7 @@ These observations are preserved separately from approved product decisions and 
 - Missing or provisional artwork is the strongest visible weakness. The light Home journey is much more convincing when the Fire and Tree concept illustrations are present, but the Collections index still shows the same Fire artwork for unrelated collection themes; collection artwork needs correct, approved mapping or an intentional neutral treatment.
 - The Symbol stage rail sits immediately above the root navigation and currently shares too much visual weight with the page and bottom navigation. A distinct rail surface and clearer boundary should improve orientation without adding decorative color.
 - The Regular Script screen visibly points toward the next modern language, but does not clearly mark the end of the historical museum portion. This supports testing a deliberate museum-complete state before any Modern Forms or Next Symbol action.
-- Today already has a useful language card and word context, but the tested content is still sparse and some explanatory copy reads like seed text. Expand only with reviewed examples and language-specific copy.
+- Today now has four visible starter entries per language track. Replace the neutral learning-context starters with reviewed, character-relevant vocabulary and examples during language QA; do not silently promote them to final copy.
 - The Home learned-symbol count looks informational rather than obviously actionable. If retained, it should either become a clear Learned-library entry point or remain unmistakably static.
 - The testing set contains both older dark transitional screens and the newer light clay-and-white direction. The light reference should remain the comparison baseline; dark-mode polish should not obscure unresolved content gaps.
 - History currently communicates historical script periods well enough as a structure, but it does not yet explain the four modern language/script trajectories. That is a meaningful content opportunity, though its placement needs a product decision before implementation.
