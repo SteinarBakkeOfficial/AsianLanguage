@@ -103,6 +103,7 @@ struct HomeView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
+    @ViewBuilder
     private var collectionModule: some View {
         if let collection = CollectionsView.catalog(for: dependencies).first {
             NavigationLink {

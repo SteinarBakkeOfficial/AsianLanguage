@@ -89,7 +89,7 @@ struct CollectionsView: View {
             }
         }
 
-        [
+        return [
             SharedCharacterCollection(id: "nature-cosmos", title: "Nature & Cosmos", description: "Symbols rooted in the natural world and sky.", sharedCharacterIDs: ids(for: "水山木日月土川天雨田井泉云南北年白黑正上下中立央林明夏冬"), type: .editorial, sourceIDs: [], artworkResourceName: "Collections/nature-cosmos"),
             SharedCharacterCollection(id: "plants-animals-food", title: "Plants, Animals & Food", description: "Living things and the foods people gather.", sharedCharacterIDs: ids(for: "首肉牛犬羊虎竹豆玉生男采甘美香"), type: .editorial, sourceIDs: [], artworkResourceName: "Collections/plants-animals-food"),
             SharedCharacterCollection(id: "people-body-life", title: "People, Body & Life", description: "People, bodies, relationships, and living experience.", sharedCharacterIDs: ids(for: "人女子大小口目耳身首舌心自角老入好兄兵先妻"), type: .editorial, sourceIDs: [], artworkResourceName: "Collections/people-body-life"),
