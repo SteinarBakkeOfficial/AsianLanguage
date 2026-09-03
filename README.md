@@ -2,7 +2,7 @@
 
 AsianLanguage is an English-first, offline-first iPhone experience about shared Chinese-character heritage across Mandarin, Traditional Chinese usage communities, Japanese Kanji, and Korean Hanja.
 
-The core object is one \`Shared Character\`. Its primary experience is a \`Symbol Journey\`: a recognizable origin moves through defensible historical Evolution Stages and then reaches Today / Modern Forms across the selected focus tracks.
+The core object is one \`Shared Character\`. Its primary experience is a \`Symbol Journey\`: a recognizable origin moves through defensible historical Evolution Stages into Modern Forms, then continues into Usage across the selected focus tracks.
 
 ## Root shell
 

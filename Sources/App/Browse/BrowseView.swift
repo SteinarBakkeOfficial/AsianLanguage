@@ -214,7 +214,7 @@ struct AllSymbolsLibraryView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
-                AppSearchField(text: $query, prompt: "Search the V1 library", onCancel: {})
+                AppSearchField(text: $query, prompt: "Search the V1 library", onCancel: { query = "" })
                 Text("\(records.count) of \(dependencies.sharedCharacters.count) symbols")
                     .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textSecondary)

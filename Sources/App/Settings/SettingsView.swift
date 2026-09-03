@@ -2,17 +2,8 @@ import SwiftUI
 
 /// Settings screen for local preferences and offline app information.
 struct SettingsView: View {
-    /// Optional section the screen should emphasize when opened from a specific tab.
-    enum InitialSection {
-        case standard
-        case focusLanguage
-    }
-
     /// Shared app dependencies used by the shell until real stores exist.
     let dependencies: AppDependencies
-
-    /// Section emphasis used when Languages opens the same underlying controls.
-    let initialSection: InitialSection
 
     /// Local state store used for focus language and reset controls.
     @ObservedObject private var userStateStore: LocalUserStateStore
@@ -23,23 +14,13 @@ struct SettingsView: View {
     @State private var isShowingPreferencesResetConfirmation = false
 
     /// Creates Settings with observed access to local user state.
-    init(dependencies: AppDependencies, initialSection: InitialSection = .standard) {
+    init(dependencies: AppDependencies) {
         self.dependencies = dependencies
-        self.initialSection = initialSection
         _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
     }
 
     var body: some View {
         Form {
-            Section("Focus tracks") {
-                ForEach(FocusTrack.allCases) { track in
-                    Toggle(track.title, isOn: focusTrackBinding(for: track))
-                }
-                Text("All four focus tracks are enabled by default. Turning them all off keeps the Symbol Journey museum-only.")
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textSecondary)
-            }
-
             Section("Display preferences") {
                 Picker("Appearance", selection: appearanceBinding) {
                     ForEach(AppearancePreference.allCases) { preference in
@@ -68,7 +49,7 @@ struct SettingsView: View {
                 }
             }
         }
-        .navigationTitle(initialSection == .focusLanguage ? "Languages" : "Settings")
+        .navigationTitle("Settings")
         .scrollContentBackground(.hidden)
         .background(AppColors.appBackground.ignoresSafeArea())
         .tint(AppColors.accentPrimary)
@@ -88,14 +69,6 @@ struct SettingsView: View {
         } message: {
             Text("This resets learning progress and preferences, but does not delete the bundled corpus.")
         }
-    }
-
-    /// Binding that writes one focus-track toggle into persisted local user state.
-    private func focusTrackBinding(for track: FocusTrack) -> Binding<Bool> {
-        Binding(
-            get: { userStateStore.state.focusSelection.contains(track) },
-            set: { userStateStore.setFocusTrack(track, isSelected: $0) }
-        )
     }
 
     /// Binding for the small, intentionally limited appearance preference model.

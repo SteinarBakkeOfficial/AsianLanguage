@@ -461,6 +461,7 @@ struct AppSearchField: View {
                 .font(AppTypography.body)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled()
+                .layoutPriority(1)
             if !text.isEmpty {
                 IconActionButton(systemName: "xmark.circle.fill", accessibilityLabel: "Clear search") {
                     text = ""
@@ -470,8 +471,10 @@ struct AppSearchField: View {
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.accentPrimary)
                 .frame(minHeight: 44)
+                .fixedSize()
         }
         .padding(.leading, AppSpacing.spaceMd)
+        .padding(.trailing, AppSpacing.spaceXs)
         .background(AppColors.surfaceSubtle)
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }

@@ -22,7 +22,7 @@ struct LessonView: View {
         let requestedPosition: SymbolJourneyPosition = openingIntent == .view
             ? .origin
             : (route.startingPosition ?? savedPosition ?? .origin)
-        // Legacy supporting sections are no longer part of the primary flow; resume them at Today.
+        // Legacy supporting sections are no longer part of the primary flow; resume them at Modern.
         let normalizedPosition: SymbolJourneyPosition
         switch requestedPosition.section {
         case .structure, .summary, .usage:
@@ -158,7 +158,7 @@ struct LessonView: View {
         }
     }
 
-    /// The historical spine and Today endpoint share one horizontally swipeable museum pager.
+    /// The historical spine and Modern/Usage endpoints share one horizontally swipeable museum pager.
     private func journeyContent(record: SharedCharacterRecord) -> some View {
         CharacterEvolutionView(
             record: record,
@@ -166,11 +166,11 @@ struct LessonView: View {
             completionTitle: dependencies.nextSharedCharacter(after: record.id) == nil ? "Complete Symbol" : "Next Symbol",
             onComplete: markLearnedAndOpenNext,
             selectedStageID: Binding(
-                get: { position.section == .today ? (position.stageID ?? "today") : (position.stageID ?? "origin") },
+                get: { position.section == .today ? normalizedModernStageID(position.stageID) : (position.stageID ?? "origin") },
                 set: { stageID in
                     if openingIntent == .view {
                         // Browse/search inspection may scroll freely without creating progress.
-                        position = stageID == "today" || stageID.hasPrefix("today-")
+                        position = isModernStageID(stageID)
                             ? SymbolJourneyPosition(section: .today, stageID: stageID)
                             : SymbolJourneyPosition(section: .evolution, stageID: stageID)
                     } else {
@@ -182,13 +182,28 @@ struct LessonView: View {
     }
 
     private func selectStage(_ stageID: String) {
-        if stageID == "today" || stageID.hasPrefix("today-") {
+        if isModernStageID(stageID) {
             position = SymbolJourneyPosition(section: .today, stageID: stageID)
             persistPositionIfNeeded()
             return
         }
         position = SymbolJourneyPosition(section: .evolution, stageID: stageID)
         persistPositionIfNeeded()
+    }
+
+    /// Keeps positions written by the previous Today endpoint compatible with the Modern/Usage split.
+    private func normalizedModernStageID(_ stageID: String?) -> String {
+        guard let stageID, !stageID.isEmpty else { return "modern" }
+        if stageID == "today" { return "modern" }
+        if stageID.hasPrefix("today-") {
+            return "usage-\(stageID.dropFirst("today-".count))"
+        }
+        return stageID
+    }
+
+    /// Modern and Usage pages share the `.today` persistence section for backwards-compatible state storage.
+    private func isModernStageID(_ stageID: String) -> Bool {
+        stageID == "modern" || stageID.hasPrefix("usage-") || stageID == "today" || stageID.hasPrefix("today-")
     }
 
     private func persistPositionIfNeeded() {

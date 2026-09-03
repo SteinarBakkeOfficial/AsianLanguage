@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Today is the final room of the same Symbol Journey, showing one language exhibit at a time.
+/// Modern is the final museum room of the same Symbol Journey; Usage follows in separate language pages.
 struct ModernFormsComparisonView: View {
     let record: SharedCharacterRecord
     let focusSelection: FocusTrackSelection
@@ -10,7 +10,7 @@ struct ModernFormsComparisonView: View {
         self.record = record
         self.focusSelection = focusSelection
         self.track = track
-        // Modern locale-specific faces are loaded only when Today content is needed.
+        // Modern locale-specific faces are loaded only when the Modern room is needed.
         BundledFontRegistrar.registerModernFonts()
     }
 
@@ -42,14 +42,14 @@ struct ModernFormsComparisonView: View {
         }
     }
 
-    /// Keeps Today visually continuous with the historical exhibit instead of creating a second lesson header.
+    /// Keeps Modern visually continuous with the historical exhibit instead of creating a second lesson header.
     private var todayHeading: some View {
         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-            Text("TODAY")
+            Text("MODERN")
                 .font(AppTypography.conceptLabel)
                 .tracking(1.6)
                 .foregroundStyle(AppColors.textSecondary)
-            Text(track?.title ?? "The character today")
+            Text(track?.title ?? "Modern forms")
                 .font(AppTypography.exhibitHeading)
                 .foregroundStyle(AppColors.textPrimary)
             Text("The shared character in modern writing and speech.")
@@ -74,7 +74,7 @@ struct ModernFormsComparisonView: View {
     }
 
     /// Renders one clean language exhibit; alternate forms are reserved for the
-    /// dedicated language story so Today does not repeat the same information.
+    /// dedicated language story so Modern does not repeat the same information.
     private func languageCard<Coverage: ModernCoverageDisplay>(title: String, coverage: Coverage, fontRole: CJKFontRole) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
             cardHeading(title)
@@ -177,7 +177,7 @@ struct ModernFormsComparisonView: View {
 
 }
 
-/// Small adapter keeps Today shared by standard and regional coverage models.
+/// Small adapter keeps Modern shared by standard and regional coverage models.
 private protocol ModernCoverageDisplay {
     var form: String { get }
     var readings: [CharacterReading] { get }
@@ -203,6 +203,6 @@ private struct ExhibitCardSurface: ViewModifier {
 }
 
 private extension View {
-    /// Shared card treatment for Today exhibits; keep this geometry aligned with the shell cards.
+    /// Shared card treatment for Modern exhibits; keep this geometry aligned with the shell cards.
     func exhibitCardSurface() -> some View { modifier(ExhibitCardSurface()) }
 }

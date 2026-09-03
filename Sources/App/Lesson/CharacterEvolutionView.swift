@@ -34,32 +34,50 @@ struct CharacterEvolutionView: View {
         }
     }
 
-    /// Origin plus only the stages supplied by the record; no stage slots are invented here.
-    private var journeyIDs: [String] {
-        var ids = ["origin"]
-        ids.append(contentsOf: stages.map(\.stage).filter { $0 != "origin" && $0 != "modernForms" && $0 != "today" })
-        if focusSelection.selectedTracks.isEmpty {
-            ids.append("today")
-        } else {
-            ids.append(contentsOf: focusSelection.selectedTracks.map { "today-\($0.rawValue)" })
-        }
-        return ids.enumerated().reduce(into: [String]()) { result, item in
-            if !result.contains(item.element) { result.append(item.element) }
-        }
-    }
-
-    private var currentIndex: Int {
-        journeyIDs.firstIndex(of: selectedStageID) ?? 0
+    /// The museum portion ends at Modern; Regular Script is represented by that Modern endpoint.
+    private var museumStages: [HistoricalStage] {
+        stages.filter { $0.stage != "regular" && $0.stage != "modernForms" && $0.stage != "today" }
     }
 
     private var currentLabel: String {
         if selectedStageID == "origin" { return "Origin" }
-        if selectedStageID == "today" { return "Today" }
-        if selectedStageID.hasPrefix("today-"),
-           let track = FocusTrack(rawValue: String(selectedStageID.dropFirst("today-".count))) {
-            return "Today · \(track.title)"
+        if selectedStageID == "modern" { return "Modern" }
+        if selectedStageID.hasPrefix("usage-"),
+           let track = FocusTrack(rawValue: String(selectedStageID.dropFirst("usage-".count))) {
+            return "Usage · \(track.title)"
         }
         return stages.first(where: { $0.stage == selectedStageID })?.label ?? selectedStageID
+    }
+
+    /// The requested language order is stable even when the persisted selection was made in another order.
+    private var orderedTracks: [FocusTrack] {
+        [.traditionalChinese, .simplifiedChinese, .japanese, .korean]
+            .filter { focusSelection.selectedTracks.contains($0) }
+    }
+
+    /// Main museum rail: the final Modern node becomes the bridge into the usage rail.
+    private var museumNavigatorIDs: [String] {
+        ["origin"] + museumStages.map(\.stage) + ["modern"] + (orderedTracks.isEmpty ? [] : ["usage"])
+    }
+
+    /// Language rail: Modern remains visible as the return point, followed by selected target languages.
+    private var languageNavigatorIDs: [String] {
+        ["modern"] + orderedTracks.map { "usage-\($0.rawValue)" }
+    }
+
+    private var navigatorIDs: [String] {
+        !orderedTracks.isEmpty && (selectedStageID == "modern" || selectedStageID.hasPrefix("usage-"))
+            ? languageNavigatorIDs
+            : museumNavigatorIDs
+    }
+
+    private var selectedNavigatorID: String {
+        if selectedStageID.hasPrefix("usage-") { return selectedStageID }
+        return selectedStageID
+    }
+
+    private var navigatorIndex: Int {
+        navigatorIDs.firstIndex(of: selectedNavigatorID) ?? 0
     }
 
     var body: some View {
@@ -67,18 +85,19 @@ struct CharacterEvolutionView: View {
             TabView(selection: $selectedStageID) {
                 originPage
                     .tag("origin")
-                ForEach(stages, id: \.stage) { stage in
+                ForEach(museumStages, id: \.stage) { stage in
                     historicalPage(stage)
                         .tag(stage.stage)
                 }
-                if focusSelection.selectedTracks.isEmpty {
-                    todayPage(track: nil, isFinal: true)
-                        .tag("today")
-                } else {
-                    ForEach(Array(focusSelection.selectedTracks.enumerated()), id: \.element) { index, track in
-                        todayPage(track: track, isFinal: index == focusSelection.selectedTracks.count - 1)
-                            .tag("today-\(track.rawValue)")
+                modernPage
+                    .tag("modern")
+                if !orderedTracks.isEmpty {
+                    ForEach(Array(orderedTracks.enumerated()), id: \.element) { index, track in
+                        usagePage(track: track, isFinal: index == orderedTracks.count - 1)
+                            .tag("usage-\(track.rawValue)")
                     }
+                } else {
+                    EmptyView()
                 }
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
@@ -95,7 +114,7 @@ struct CharacterEvolutionView: View {
     /// First page begins with the real-world concept and deliberately does not reveal a modern glyph.
     private var originPage: some View {
         journeyPage(allowsVerticalScroll: true) {
-            stageHeader(overline: "ORIGIN", title: nil, subtitle: nil)
+            stageHeader(overline: "Origin", title: nil, subtitle: nil)
             ArtifactField {
                 if let originAsset = record.history.origin?.asset {
                     HistoricalAssetView(metadata: originAsset)
@@ -125,9 +144,9 @@ struct CharacterEvolutionView: View {
     private func historicalPage(_ stage: HistoricalStage) -> some View {
         journeyPage(allowsVerticalScroll: true) {
             stageHeader(
-                overline: stage.label.uppercased(),
-                title: stage.assetMetadata?.approximatePeriod,
-                subtitle: stage.editorialConfidence.displayName
+                overline: learnerStageLabel(for: stage),
+                title: stageDateLabel(for: stage),
+                subtitle: nil
             )
             ArtifactField {
                 if stage.stage == "regular" {
@@ -165,10 +184,19 @@ struct CharacterEvolutionView: View {
         }
     }
 
-    /// Each selected language gets a horizontal Today exhibit page with its own word context.
-    private func todayPage(track: FocusTrack?, isFinal: Bool) -> some View {
+    /// Modern is the last museum page; with no target languages it owns the Next Symbol action.
+    private var modernPage: some View {
         journeyPage(allowsVerticalScroll: true) {
-            ModernFormsComparisonView(record: record, focusSelection: focusSelection, track: track)
+            ModernFormsComparisonView(record: record, focusSelection: focusSelection)
+            if orderedTracks.isEmpty {
+                PrimaryActionButton(completionTitle, action: onComplete)
+            }
+        }
+    }
+
+    /// Each selected target language owns a separate Usage page after the Modern bridge.
+    private func usagePage(track: FocusTrack, isFinal: Bool) -> some View {
+        journeyPage(allowsVerticalScroll: true) {
             UsageExamplesView(record: record, focusSelection: focusSelection, track: track)
             if isFinal {
                 PrimaryActionButton(completionTitle, action: onComplete)
@@ -223,38 +251,22 @@ struct CharacterEvolutionView: View {
 
     /// The rail exposes position and direct access while the exhibit remains horizontally swipeable.
     private var stageNavigator: some View {
-        VStack(spacing: AppSpacing.space2xs) {
-            HStack {
-                Text("Origin")
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textPrimary)
-                Spacer()
-                Text("Today")
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textPrimary)
-            }
-
+        VStack(spacing: 0) {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: AppSpacing.spaceXs) {
-                    ForEach(Array(journeyIDs.enumerated()), id: \.element) { index, id in
+                    ForEach(Array(navigatorIDs.enumerated()), id: \.element) { index, id in
                         stageMarker(index: index, id: id)
 
-                        // Keep the endpoint free of a trailing line while making every real stage reachable.
-                        if index < journeyIDs.count - 1,
-                           id != "regular",
-                           journeyIDs[index + 1] != "regular" {
+                        if index < navigatorIDs.count - 1 {
                             Rectangle()
-                                .fill(index < currentIndex ? AppColors.accentPrimary : AppColors.separator)
-                                .frame(minWidth: 16, maxWidth: 52, minHeight: 1, maxHeight: 1)
+                                .fill(index < navigatorIndex ? AppColors.accentPrimary : AppColors.separator)
+                                .frame(minWidth: 10, maxWidth: 28, minHeight: 1, maxHeight: 1)
                                 .accessibilityHidden(true)
                         }
                     }
                 }
                 .padding(.vertical, AppSpacing.space2xs)
             }
-            Text(currentLabel)
-                .font(AppTypography.caption)
-                .foregroundStyle(AppColors.textSecondary)
         }
         .padding(.horizontal, AppSpacing.spacePage)
         .padding(.bottom, AppSpacing.space2xs)
@@ -265,22 +277,19 @@ struct CharacterEvolutionView: View {
         }
         .background(AppColors.journeyRailBackground)
         .accessibilityElement(children: .contain)
-        .accessibilityLabel("\(currentLabel), stage \(currentIndex + 1) of \(journeyIDs.count)")
+        .accessibilityLabel("\(currentLabel), stage \(navigatorIndex + 1) of \(navigatorIDs.count)")
     }
 
     /// Keeps each stage marker's conditional styling out of the larger navigation builder.
     private func stageMarker(index: Int, id: String) -> some View {
-        let isCurrent = index == currentIndex
+        let isCurrent = index == navigatorIndex
         return Button {
-            selectedStageID = id
+            selectedStageID = destinationID(for: id)
         } label: {
             VStack(spacing: AppSpacing.space2xs) {
-                // Regular Script is identified by its label only; no decorative circle is added.
-                if id != "regular" {
-                    Circle()
-                        .fill(index <= currentIndex ? AppColors.accentPrimary : AppColors.textTertiary)
-                        .frame(width: isCurrent ? 10 : 8, height: isCurrent ? 10 : 8)
-                }
+                Circle()
+                    .fill(index <= navigatorIndex ? AppColors.accentPrimary : AppColors.textTertiary)
+                    .frame(width: isCurrent ? 10 : 8, height: isCurrent ? 10 : 8)
                 Text(shortLabel(for: id))
                     .font(AppTypography.caption.weight(isCurrent ? .semibold : .regular))
                     .foregroundStyle(isCurrent ? AppColors.textPrimary : AppColors.textSecondary)
@@ -293,24 +302,55 @@ struct CharacterEvolutionView: View {
             .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
         }
         .buttonStyle(.plain)
-        .accessibilityLabel("\(label(for: id)), stage \(index + 1) of \(journeyIDs.count)")
+        .accessibilityLabel("\(label(for: id)), stage \(index + 1) of \(navigatorIDs.count)")
         .accessibilityAddTraits(isCurrent ? .isSelected : [])
+    }
+
+    private func destinationID(for navigatorID: String) -> String {
+        if navigatorID == "usage", let firstTrack = orderedTracks.first {
+            return "usage-\(firstTrack.rawValue)"
+        }
+        return navigatorID
     }
 
     private func label(for id: String) -> String {
         if id == "origin" { return "Origin" }
-        if id == "today" { return "Today" }
-        if id.hasPrefix("today-"),
-           let track = FocusTrack(rawValue: String(id.dropFirst("today-".count))) {
-            return track.title
+        if id == "modern" { return "Modern" }
+        if id == "usage" { return "Usage" }
+        if id.hasPrefix("usage-"),
+           let track = FocusTrack(rawValue: String(id.dropFirst("usage-".count))) {
+            return "Usage · \(track.title)"
         }
         return stages.first(where: { $0.stage == id })?.label ?? id
+    }
+
+    private func learnerStageLabel(for stage: HistoricalStage) -> String {
+        switch stage.stage {
+        case "oracleBone": return "Oracle Bone Script"
+        case "bronze": return "Bronze Script"
+        case "seal": return "Small Seal Script"
+        case "clerical": return "Clerical Script"
+        case "regular": return "Regular Script"
+        default: return stage.label.components(separatedBy: " /").first ?? stage.label
+        }
+    }
+
+    private func stageDateLabel(for stage: HistoricalStage) -> String? {
+        if let period = stage.assetMetadata?.approximatePeriod, !period.isEmpty { return period }
+        switch stage.stage {
+        case "oracleBone": return "c. 1200–1046 BCE"
+        case "bronze": return "c. 1046–256 BCE"
+        case "seal": return "c. 221–206 BCE"
+        case "clerical": return "c. 206 BCE–220 CE"
+        default: return nil
+        }
     }
 
     /// Short rail labels preserve the full stage name in the page header and accessibility label.
     private func shortLabel(for id: String) -> String {
         if id == "origin" { return "Origin" }
-        if id == "today" || id.hasPrefix("today-") { return "Today" }
+        if id == "modern" { return "Modern" }
+        if id == "usage" || id.hasPrefix("usage-") { return id == "usage" ? "Usage" : shortTrackLabel(for: id) }
         switch id {
         case "oracleBone": return "Oracle"
         case "bronze": return "Bronze"
@@ -318,6 +358,16 @@ struct CharacterEvolutionView: View {
         case "clerical": return "Clerical"
         case "regular": return "Regular"
         default: return label(for: id)
+        }
+    }
+
+    private func shortTrackLabel(for id: String) -> String {
+        guard let track = FocusTrack(rawValue: String(id.dropFirst("usage-".count))) else { return "Usage" }
+        switch track {
+        case .traditionalChinese: return "Traditional"
+        case .simplifiedChinese: return "Simplified"
+        case .japanese: return "Japanese"
+        case .korean: return "Korean"
         }
     }
 }

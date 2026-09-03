@@ -58,6 +58,10 @@ struct SharedCharacterSearchIndex {
             record.focusCoverage.korean.form
         ]
 
+        // English search should recognize common learner wording such as “girl” or
+        // “lady” for the corpus meaning “woman”; add aliases without changing source data.
+        fields.append(contentsOf: Self.commonMeaningAliases(for: record.coreSharedMeaning))
+
         fields.append(contentsOf: record.focusCoverage.simplifiedChinese.glosses)
         fields.append(contentsOf: record.focusCoverage.traditionalChinese.glosses)
         fields.append(contentsOf: record.focusCoverage.japanese.glosses)
@@ -79,5 +83,29 @@ struct SharedCharacterSearchIndex {
         fields.append(contentsOf: record.focusCoverage.korean.examples.flatMap { [$0.text, $0.translation] })
 
         return fields.map(Self.normalize)
+    }
+
+    /// Keeps a small, editorially controlled synonym layer local to discovery search.
+    private static func commonMeaningAliases(for meaning: String) -> [String] {
+        let aliases: [String: [String]] = [
+            "woman": ["women", "girl", "girls", "lady", "ladies", "female"],
+            "man": ["men", "boy", "boys", "male"],
+            "person": ["people", "human", "humans", "person"],
+            "mountain": ["mountains", "hill", "hills"],
+            "tree; wood": ["trees", "wooden"],
+            "moon; month": ["lunar", "months"],
+            "sun; day": ["sunlight", "daytime", "days"],
+            "mouth; opening": ["mouths", "opening", "openings"],
+            "eye": ["eyes"],
+            "water": ["watery", "river water"],
+            "fire": ["flame", "flames", "burning"],
+            "big; great": ["large", "larger", "huge"],
+            "small": ["little", "tiny"],
+            "child": ["children", "kid", "kids"],
+            "old": ["older", "elderly"],
+            "speech": ["talk", "talking", "language", "speak"],
+            "work": ["labor", "job", "craft"]
+        ]
+        return aliases[normalize(meaning)] ?? []
     }
 }

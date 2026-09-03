@@ -11,7 +11,7 @@ The official product-facing name is Script Roots. AsianLanguage remains the inte
 1. Product foundation — complete; product language and scope are resolved
 2. App skeleton — complete; five-area root shell is wired
 3. Local data layer — complete; bundled corpus and separate local user state are wired
-4. Symbol Journey — in progress; structural pager, stage rail, Today endpoint, exact-position resume, and initial visual slice are implemented
+4. Symbol Journey — in progress; structural pager, two-mode stage rail, Modern/Usage endpoints, exact-position resume, and initial visual slice are implemented
 5. Discovery — foundation implemented; visual refinement remains
 6. Content contract — folder-based editorial layer implemented; current records remain draft and require editorial review
 7. Asset pipeline — offline preparation/package path implemented; production provenance and historical assets remain incomplete
@@ -33,8 +33,8 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Shared `openSymbol` routing with start, resume, view, review, and direct-stage foundations.
 - Separate `selectedSymbolID` and `activeJourneySymbolID` concepts.
 - Local JSON user state with independent progress, Favorite, Review Later, focus-language, appearance, onboarding, and reset behavior.
-- Data-driven Origin, historical stages, and Today language pages in one continuous horizontal journey; each page owns its own vertical content.
-- A quiet stage rail with content-driven stage nodes and direct scroll-to-stage access.
+- Data-driven Origin, historical stages, Modern, and Usage language pages in one continuous horizontal journey; each page owns its own vertical content.
+- Two seamless rails: Origin → Oracle → Bronze → Seal → Clerical → Modern → Usage, then Modern → selected target-language Usage pages.
 - Semantic design tokens for light/dark colors, typography, spacing, radii, and motion.
 - Reusable foundation components for primary/secondary actions, icon actions, grouped surfaces, artifact fields, missing historical content, lineage previews, character tiles, search fields, and settings rows.
 - Home lineage preview now uses actual available corpus forms only.
@@ -68,12 +68,13 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Pilot Today copy now uses one page per selected language with the existing reviewed readings, romanization, and word examples; broader example expansion and native-speaker review remain deferred.
 - Fire, Water, and Tree now have separate educational concept illustrations, and the allowlisted historical SVG intake preserves source/license provenance.
 - The approved correction pass keeps the Symbol Journey rail persistent and visibly labeled, isolates Fire onboarding from the compact Home preview, fixes Home's orphaned active-state fallback, uses the complete collection banner on Home, identifies Hong Kong Cantonese/Jyutping readings, and recreates the History overview natively from the approved reference content.
+- The Symbol Journey now separates the Modern Forms museum endpoint from the later Usage learning pages; the language rail appears only for Modern/Usage navigation.
 
 ### Transitional or incomplete
 
 - Fire, Water, and Tree concept art renders as educational reconstruction only and remains under editorial review.
 - Allowlisted Fire, Water, and Tree historical SVGs are bundled where acquired; named stages without approved files remain unavailable. Local SVG rendering still requires macOS/Xcode verification.
-- The horizontal Today pages and word-context composition still need simulator comparison and interaction polish.
+- The horizontal Modern/Usage pages and word-context composition still need simulator comparison and interaction polish.
 - Completion, Revisit, and Quick Review have initial behavior and structure but still need simulator visual QA and final interaction polish.
 - Shared components are available; History and More still need final simulator visual polish and any future approved representative content.
 - Historical asset provenance, renderability, and specialist confidence review remain required before publication; the availability/confidence contract itself is now aligned.
@@ -103,6 +104,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - richer historical animation
 - Deeper Fire onboarding language orientation covering all four target writing traditions; this applies only to the onboarding symbol experience.
 - A History language-branches section below the main timeline: four illustrated cards in a 2×2 grid for Simplified Chinese, Traditional Chinese, Japanese, and Korean, with detailed language pages deferred.
+- Future Home cleanup: replace the standalone “X symbols learned” footer with a deliberate destination such as History or the Learned library; do not change the current footer during this pass.
 
 ## Future considerations — undecided
 

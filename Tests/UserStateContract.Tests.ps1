@@ -71,8 +71,11 @@ Assert-Contains -Text $dependenciesText -ExpectedSubstring "LocalUserStateStore.
 
 $settingsText = Get-Text "Sources/App/Settings/SettingsView.swift"
 Assert-Contains -Text $settingsText -ExpectedSubstring "@ObservedObject private var userStateStore: LocalUserStateStore" -Message "Settings should observe the local user-state store."
-Assert-Contains -Text $settingsText -ExpectedSubstring "Toggle(track.title" -Message "Settings should expose multi-select focus toggles."
-Assert-Contains -Text $settingsText -ExpectedSubstring "userStateStore.setFocusTrack" -Message "Settings should save focus language changes."
+Assert-True -Condition (-not $settingsText.Contains("Focus tracks")) -Message "Settings should not duplicate the Languages focus-track controls."
+
+$languagesText = Get-Text "Sources/App/Languages/LanguagesView.swift"
+Assert-Contains -Text $languagesText -ExpectedSubstring "Toggle(isOn: focusTrackBinding" -Message "Languages should expose multi-select focus toggles."
+Assert-Contains -Text $languagesText -ExpectedSubstring "userStateStore.setFocusTrack" -Message "Languages should save focus language changes."
 Assert-Contains -Text $settingsText -ExpectedSubstring "userStateStore.resetLearningProgress()" -Message "Settings should expose a learning-only reset."
 Assert-Contains -Text $settingsText -ExpectedSubstring "userStateStore.resetAllPreferences()" -Message "Settings should expose a separate preference reset."
 

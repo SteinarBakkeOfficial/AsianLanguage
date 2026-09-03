@@ -6,7 +6,7 @@
 - Script Roots is the official product-facing name; AsianLanguage remains the internal development/project identifier.
 - Shared Character is the core content object.
 - The primary outcome is cross-language recognition, not fluency or grammar mastery.
-- The primary experience is the Symbol Journey: recognizable origin → historical Evolution Stages → Today / Modern Endpoint.
+- The primary experience is the Symbol Journey: recognizable origin → historical Evolution Stages → Modern → Usage across selected target languages.
 
 ## Navigation
 
@@ -21,9 +21,9 @@
 ## Symbol Journey
 
 - Evolution Stages are data-driven and may be omitted when uncertain or not useful.
-- Canonical IDs are origin, oracleBone, bronze, seal, clerical, regular, and modernForms/today.
-- Today / Modern Endpoint is the final room in the same continuous Symbol Journey, containing selected focus-track forms and word-level context.
-- Historical stages and Today are horizontally swiped exhibit pages; page-local overflow may scroll, but there is no single vertical journey scroll or Continue gate between historical concepts.
+- Canonical page IDs are origin, oracleBone, bronze, seal, clerical, modern, and usage-<target>; Regular Script is rendered inside Modern.
+- Modern is the final museum room, containing the selected modern forms. Usage is a separate learning section in the same horizontal journey, containing language-specific word context.
+- Historical stages, Modern, and Usage are horizontally swiped exhibit pages; page-local overflow may scroll, but there is no single vertical journey scroll or Continue gate between historical concepts.
 - Exact SymbolJourneyPosition, including stage ID, is persisted for resume.
 
 ## Content and assets
@@ -43,7 +43,7 @@
 - Learned, Review later, and Favorites are independent relationships; ordinary navigation does not change any of them.
 - Ordinary navigation through Learned content cannot downgrade it.
 - Restart explicitly clears Learned and resets the position while preserving Favorites and Review later.
-- Completing Today is an explicit Next Symbol / Complete Symbol action that marks the current Symbol learned, preserves Review later/Favorite, and opens the next non-Learned record. The final record shows corpus completion; the character menu remains available for independent library actions.
+- Completing the final Modern/Usage page is an explicit Next Symbol / Complete Symbol action that marks the current Symbol learned, preserves Review later/Favorite, and opens the next non-Learned record. The final record shows corpus completion; the character menu remains available for independent library actions.
 - A learned Symbol opened through ordinary view entry uses a dedicated Revisit state with Revisit Journey, Quick Review, and View Usage actions; it does not restart or replay first-completion behavior.
 - Quick Review is recognition-oriented, contains no XP/score/timer mechanics, uses only approved available content, and can always open the complete Symbol Journey.
 - The final installed record presents a calm Completion state with Return Home and Revisit actions; it does not use confetti, XP, streaks, or scoring.
@@ -62,7 +62,7 @@
 - LineagePreview is data-driven and may render only forms present in the approved corpus.
 - The first visual slice uses a restrained current/next rail and horizontally swiped stage pages.
 - The active AppShell typography reference names Playfair Display for editorial/display headings and Inter for interface/body text. CNS11643 Kai is bundled and registered for the Regular Script endpoint, and locale-specific Source Han Serif Regular faces are bundled and registered for Simplified Chinese, Traditional Chinese Taiwan, Japanese, and Korean modern forms. Source Han Sans and extra weights are deferred.
-- Today is the final room in the continuous journey, with one section per selected modern language track and word-level context only; when no tracks are selected it presents an explicit museum-only state; language identity is not communicated by arbitrary color.
+- Modern is the final museum room and shows the selected modern language forms. Usage follows as one page per selected target language with word-level context; when no tracks are selected, Modern presents an explicit museum-only state. Language identity is not communicated by arbitrary color.
 - Structure is a vertical recap, not a second navigation rail; it may show only stage forms and component insights supported by the record.
 - Usage context is a vertical list of selected-track character words, prioritizing the written character, reading, and meaning over unexplained sentences.
 - There is no Summary/Recall screen in the primary museum flow; character recognition, structure, and source detail live behind the `…` character menu.
@@ -78,7 +78,7 @@
 - Educational reconstructions are classified separately from historical evidence. Fire's Origin visual is an authored educational reconstruction and must never be presented as an ancient artifact.
 - Offline packaging copies only local app derivatives into the bundle asset area and emits a manifest declaring that runtime networking is not required.
 - The approved AppShell reference uses `#F7F3EE` paper, `#EFE9E1` clay, `#1C1C1C` ink, `#686868` secondary text, `#C23A2B` cinnabar, and `#2E7D6E` jade. Light is the default appearance; Dark is the only alternate, and legacy System values decode to Light.
-- Today remains one horizontal page per selected language until a later content decision approves a scrollable all-language page. Each page must show the correct writing, pronunciation/reading, romanization, and a reviewed word example.
+- Usage remains one horizontal page per selected language until a later content decision approves a scrollable all-language page. Each page must show the correct writing, pronunciation/reading, romanization, and a reviewed word example.
 - Browse owns the Your Library status lists. Collections owns editorial sets only; status lists must not be duplicated on the Collections index.
 - Editorial collections use explicit bundled horizontal cover panels. Their artwork is separate from symbol-origin and historical assets, and collection covers must not be derived from whichever symbol happens to appear first in a collection.
 - Educational concept illustrations and historical glyph evidence are separate asset classes. Concept art must carry internal-authored provenance and must never fill a missing historical stage.
@@ -125,6 +125,7 @@
 - The four Used Today lanes render through the locale-specific Source Han Serif JP/KR/SC/TC files. Japanese and Korean form/readings remain distinct data lanes rather than universal Han fallback.
 - Browse is search-first. It owns learner libraries, one All Symbols destination, and editorial collections; All Symbols is a separate searchable library screen.
 - The History tab recreates the supplied `History_V1.png` overview natively for this release. Its five timeline stages, materials, explanations, and living-tradition footer are implemented without rendering the reference screenshot; the previous detailed period implementation remains retained for a later release.
+- `Reference Pictures/Chatgpt/History_V1.png` remains the visual comparison reference for History. Future refinements should compare against its composition and supplied artwork rather than inventing a separate visual language.
 - Origin artwork remains educational reconstruction; ZDIC remains a bundled reference asset with reuse permission unresolved. Records and assets are not release-cleared merely because they are local.
 
 ### Per-stage museum transition captions — 2026-09-03
@@ -145,7 +146,13 @@
 
 - Browse shows its search field first, followed by Learned, Favorites, Review Later, one All Symbols library entry, and editorial Collections.
 - All Symbols is a separate pushed page with the same visual treatment and its own search field; this does not add a sixth root navigation area.
-- The Origin-to-Today rail uses a visibly different warm surface from the Symbol page, labels each available stage for persistent orientation, and preserves compact circles/connectors for non-endpoint stages. Regular Script has no decorative circle or connector, and no next-stage cue is added.
+- The Symbol Journey uses two seamless navigation rails. The museum rail is Origin → Oracle → Bronze → Seal → Clerical → Modern → Usage; the learning rail is Modern → selected target languages. Every item has a visible name and dot, and no extra current-stage caption is shown below the rail.
+
+### Symbol Journey rail and Home footer clarification — 2026-09-03
+
+- The learner does not need “Origin” and “Today” endpoint labels duplicated above or below the rail. The rail itself is the single visible orientation control.
+- Historical page headers use plain learner-facing labels such as “Clerical Script” and an optional period label. Confidence labels and historical Chinese stage names are not shown in the V1 page header.
+- The Home “X symbols learned” footer remains unchanged for now. Replacing it with a deliberate History or Learned-library destination is future work only.
 
 ### Future language-orientation content — 2026-09-03
 

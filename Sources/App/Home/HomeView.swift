@@ -111,20 +111,24 @@ struct HomeView: View {
             } label: {
                 GroupedSurface {
                     VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
-                        HStack {
-                            Text(collection.title).font(AppTypography.stageTitle)
-                            Spacer()
-                            Text("Continue →").font(AppTypography.caption).foregroundStyle(AppColors.accentPrimary)
-                        }
                         // Home uses the same full editorial banner as Browse/Collections;
-                        // the collection artwork is the invitation, not a symbol thumbnail.
+                        // the banner already contains the collection title.
                         EditorialCollectionArtwork(collection: collection)
                             .frame(maxWidth: .infinity)
                             .aspectRatio(contentMode: .fit)
                             .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
-                        Text("Continue exploring this collection")
+                        Text("\(learnedCount(in: collection)) of \(collection.sharedCharacterIDs.count) learned")
+                            .font(AppTypography.metadata)
+                            .foregroundStyle(AppColors.textSecondary)
+                        HStack {
+                            Text("Continue exploring this collection")
                             .font(AppTypography.caption)
                             .foregroundStyle(AppColors.textSecondary)
+                            Spacer()
+                            Text("Continue →")
+                                .font(AppTypography.caption)
+                                .foregroundStyle(AppColors.accentPrimary)
+                        }
                     }
                 }
             }
@@ -169,6 +173,12 @@ struct HomeView: View {
     private var learnedCount: Int {
         dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.progressStatus == .learned }.count
     }
+
+    private func learnedCount(in collection: SharedCharacterCollection) -> Int {
+        collection.sharedCharacterIDs.filter {
+            userStateStore.state.lessonStates[$0]?.progressStatus == .learned
+        }.count
+    }
 }
 
 /// Reusable, intentionally compact historical preview for Home and onboarding.
@@ -179,13 +189,18 @@ struct HeroLineagePreview: View {
     private var previewItems: [HeroLineageItem] {
         var items: [HeroLineageItem] = []
         if let originAsset = record.history.origin?.asset {
-            items.append(HeroLineageItem(id: "origin", metadata: originAsset, form: nil))
+            items.append(HeroLineageItem(id: "origin", metadata: originAsset, assetRef: nil, form: nil))
         }
-        if let historicalAsset = record.history.stages.first(where: { $0.stage != "regular" && $0.assetMetadata != nil })?.assetMetadata
-            ?? record.history.stages.first(where: { $0.assetMetadata != nil })?.assetMetadata {
-            items.append(HeroLineageItem(id: historicalAsset.assetRef, metadata: historicalAsset, form: nil))
+        if let historicalStage = record.history.stages.first(where: { $0.stage == "oracleBone" && $0.assetRef != nil })
+            ?? record.history.stages.first(where: { $0.stage != "regular" && $0.assetRef != nil }) {
+            items.append(HeroLineageItem(
+                id: historicalStage.stage,
+                metadata: historicalStage.assetMetadata,
+                assetRef: historicalStage.assetRef,
+                form: nil
+            ))
         }
-        items.append(HeroLineageItem(id: "modern", metadata: nil, form: record.coreCharacter))
+        items.append(HeroLineageItem(id: "modern", metadata: nil, assetRef: nil, form: record.coreCharacter))
         return items
     }
 
@@ -195,6 +210,13 @@ struct HeroLineagePreview: View {
                 ForEach(Array(previewItems.enumerated()), id: \.offset) { index, item in
                     if let metadata = item.metadata {
                         HistoricalAssetView(metadata: metadata, displayHeight: 72)
+                            .frame(maxWidth: 88, maxHeight: 72)
+                            .padding(.horizontal, AppSpacing.spaceSm)
+                            .background(AppColors.artifactField)
+                            .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
+                            .accessibilityLabel("\(item.id) lineage visual for \(record.coreSharedMeaning)")
+                    } else if let assetRef = item.assetRef {
+                        HistoricalAssetView(assetRef: assetRef, displayHeight: 72)
                             .frame(maxWidth: 88, maxHeight: 72)
                             .padding(.horizontal, AppSpacing.spaceSm)
                             .background(AppColors.artifactField)
@@ -228,5 +250,6 @@ struct HeroLineagePreview: View {
 private struct HeroLineageItem {
     let id: String
     let metadata: HistoricalAssetMetadata?
+    let assetRef: String?
     let form: String?
 }
