@@ -134,6 +134,12 @@
 - The 126-record V1 package contains 630 generated transition-caption drafts. The source package is `content/research/v1-symbols/transition-notes-v1.json`; 78 conservative origin captions are flagged for visual/editorial review.
 - The app prioritizes `transitionNote` while retaining `changeNoteFromPrevious` for legacy records and compatibility.
 
+### Fire onboarding reference restored — 2026-09-03
+
+- The original Fire introduction remains the first-launch introduction, including its local origin imagery and Fire-specific copy.
+- Fire is loaded directly from its repository reference record for onboarding; it is not added to `SeedCorpusManifest` and does not change the 126-record V1 learning corpus.
+- The runtime importer normalizes research formation labels into the canonical `SymbolFormationType` values required by Swift decoding.
+
 ### Browse and museum rail clarification — 2026-09-03
 
 - Browse shows its search field first, followed by Learned, Favorites, Review Later, one All Symbols library entry, and editorial Collections.

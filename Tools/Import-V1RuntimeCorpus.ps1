@@ -58,6 +58,31 @@ function Get-ReadingValue($Value) {
   return $text.Trim()
 }
 
+function Normalize-FormationType([string]$Value) {
+  # Research sources use several classification vocabularies; runtime JSON must
+  # emit only the raw values accepted by SymbolFormationType in Swift.
+  switch (($Value ?? "").Trim().ToLowerInvariant()) {
+    "pictograph" { return "pictograph" }
+    "pictographic" { return "pictograph" }
+    "indicative" { return "simpleIdeograph" }
+    "ideographic" { return "simpleIdeograph" }
+    "simpleideograph" { return "simpleIdeograph" }
+    "simple-ideograph" { return "simpleIdeograph" }
+    "compoundideograph" { return "compoundIdeograph" }
+    "compound-ideograph" { return "compoundIdeograph" }
+    "compound" { return "compoundIdeograph" }
+    "phono-semantic" { return "phonoSemantic" }
+    "phonosemantic" { return "phonoSemantic" }
+    "phonetic-loan" { return "phoneticLoan" }
+    "phoneticloan" { return "phoneticLoan" }
+    "phonetic" { return "phoneticLoan" }
+    "later-formation" { return "laterFormation" }
+    "laterformation" { return "laterFormation" }
+    "uncertain" { return "uncertain" }
+    default { return "uncertain" }
+  }
+}
+
 function Get-SourceRows($ResearchSources, [string]$Character) {
   $rows = [System.Collections.Generic.List[object]]::new()
   foreach ($source in @($ResearchSources)) {
@@ -289,7 +314,7 @@ foreach ($manifestRecord in @($manifest.records | Sort-Object rank)) {
   }
   $origin = [ordered]@{ concept = $meaning; explanation = "A friendly educational reconstruction of $meaning comes first, followed by the separately sourced historical glyphs."; asset = [ordered]@{ characterID = $id; historicalStage = $null; approximatePeriod = $null; sourceInstitution = "Script Roots"; sourcePageURL = $null; sourceAssetURL = $null; catalogueReference = $null; sourceDescription = "Internal educational reconstruction; not historical evidence."; retrievedAt = "2026-09-03"; contentClass = "educationalReconstruction"; assetRef = $originAssetRef; artifactAssetRef = $null; assetKind = "illustrated-concept"; provenance = "OpenAI image generation; approved Soft Ink & Wash museum style"; licenseStatus = "internal-authored"; accessibilityDescription = "Illustration of $meaning"; readiness = "needsReview" }; sourceIds = @("source-generated-origin-$character") }
   $record = [ordered]@{
-    id = $id; version = 1; coreCharacter = $character; coreSharedMeaning = $meaning; recognitionTakeaway = "$character connects the idea of $meaning to a complete visual journey from origin through historical forms and into modern language use."; publicationStatus = "draft"; unicodeCodePoint = [string]$manifestRecord.unicode; simplifiedForm = $character; traditionalForm = $traditional; additionalMeanings = @(); formationType = if ($research -and $research.formationType) { [string]$research.formationType } else { "uncertain" }; visualTeachingNotes = @("Compare the friendly origin illustration with the selected Oracle Bone form.", "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."); contentFolder = "content/research/v1-symbols/$([IO.Path]::GetFileName($folder))"; learnerCopyPath = $null; researchNotesPath = "content/research/v1-symbols/$([IO.Path]::GetFileName($folder))/research.md"; reviewPath = $null; sourceConflicts = @(); editorialStatus = "needsReview"; teachingSequence = [int]$manifestRecord.rank; focusCoverage = $focus; visuals = [ordered]@{ evolutionAssetRefs = $null; assetStatus = "local-source-backed-draft"; note = "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate." }; history = [ordered]@{ originAnchor = "Begin with the real-world idea of $meaning, then compare the selected forms without treating the illustration as a historical glyph."; stages = @($stages.ToArray()); origin = $origin }; structure = [ordered]@{ summary = if ($research -and $research.ideographicDescription) { "The research record describes this structure as $($research.ideographicDescription)." } else { "$character is presented first as a complete shared character." }; components = @(); certainty = if ($research -and $research.confidence -ge 85) { "high" } else { "medium" }; caveat = "Formation and component explanations remain subject to editorial review."; sourceIds = @("source-zdic-$character") }; usage = [ordered]@{ coreMeaningFirst = "Start with '$meaning', then compare the modern forms and readings across the four focus tracks."; notes = @("Modern examples are installed as initial content and should receive language-editor review before publication.", "Japanese and Korean regional forms are rendered through their intentional locale font roles.") }; sources = $sourceRows; notes = @("V1 runtime import from the 126-character complete-evolution manifest.", "ZDIC historical visual reuse remains review-required before commercial release.", "Origin artwork is an educational reconstruction, not historical evidence.", "Examples are shown in the Today section; generated fallback examples require language-editor review.")
+    id = $id; version = 1; coreCharacter = $character; coreSharedMeaning = $meaning; recognitionTakeaway = "$character connects the idea of $meaning to a complete visual journey from origin through historical forms and into modern language use."; publicationStatus = "draft"; unicodeCodePoint = [string]$manifestRecord.unicode; simplifiedForm = $character; traditionalForm = $traditional; additionalMeanings = @(); formationType = Normalize-FormationType $(if ($research -and $research.formationType) { [string]$research.formationType } else { "uncertain" }); visualTeachingNotes = @("Compare the friendly origin illustration with the selected Oracle Bone form.", "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."); contentFolder = "content/research/v1-symbols/$([IO.Path]::GetFileName($folder))"; learnerCopyPath = $null; researchNotesPath = "content/research/v1-symbols/$([IO.Path]::GetFileName($folder))/research.md"; reviewPath = $null; sourceConflicts = @(); editorialStatus = "needsReview"; teachingSequence = [int]$manifestRecord.rank; focusCoverage = $focus; visuals = [ordered]@{ evolutionAssetRefs = $null; assetStatus = "local-source-backed-draft"; note = "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate." }; history = [ordered]@{ originAnchor = "Begin with the real-world idea of $meaning, then compare the selected forms without treating the illustration as a historical glyph."; stages = @($stages.ToArray()); origin = $origin }; structure = [ordered]@{ summary = if ($research -and $research.ideographicDescription) { "The research record describes this structure as $($research.ideographicDescription)." } else { "$character is presented first as a complete shared character." }; components = @(); certainty = if ($research -and $research.confidence -ge 85) { "high" } else { "medium" }; caveat = "Formation and component explanations remain subject to editorial review."; sourceIds = @("source-zdic-$character") }; usage = [ordered]@{ coreMeaningFirst = "Start with '$meaning', then compare the modern forms and readings across the four focus tracks."; notes = @("Modern examples are installed as initial content and should receive language-editor review before publication.", "Japanese and Korean regional forms are rendered through their intentional locale font roles.") }; sources = $sourceRows; notes = @("V1 runtime import from the 126-character complete-evolution manifest.", "ZDIC historical visual reuse remains review-required before commercial release.", "Origin artwork is an educational reconstruction, not historical evidence.", "Examples are shown in the Today section; generated fallback examples require language-editor review.")
   }
   $record | ConvertTo-Json -Depth 60 | Set-Content -LiteralPath (Join-Path $outputCorpus "$id.json") -Encoding utf8
   $records.Add($record) | Out-Null

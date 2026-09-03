@@ -104,6 +104,16 @@ try {
   Assert-Equal -Actual $invalidVisualNotesResult.ExitCode -Expected 1 -Message "Scalar visual teaching notes should fail validation."
   Assert-Contains -Text $invalidVisualNotesResult.Output -ExpectedSubstring "visualTeachingNotes must be an array of strings." -Message "Visual teaching-notes error should be readable."
 
+  $invalidFormationTypeCorpus = Join-Path $tempRoot "invalid-formation-type"
+  New-Item -ItemType Directory -Path $invalidFormationTypeCorpus | Out-Null
+  $record = Get-Content -Raw (Join-Path $fixtureCorpus "tree.json") | ConvertFrom-Json
+  $record | Add-Member -NotePropertyName formationType -NotePropertyValue "ideographic" -Force
+  $record | ConvertTo-Json -Depth 20 | Set-Content -Path (Join-Path $invalidFormationTypeCorpus "tree.json") -Encoding utf8
+
+  $invalidFormationTypeResult = Invoke-Validator -CorpusPath $invalidFormationTypeCorpus
+  Assert-Equal -Actual $invalidFormationTypeResult.ExitCode -Expected 1 -Message "Unknown formation type should fail validation."
+  Assert-Contains -Text $invalidFormationTypeResult.Output -ExpectedSubstring "Unsupported formationType 'ideographic'." -Message "Formation-type error should be readable."
+
   $tooFewExamplesCorpus = Join-Path $tempRoot "too-few-examples"
   New-Item -ItemType Directory -Path $tooFewExamplesCorpus | Out-Null
   $record = Get-Content -Raw (Join-Path $fixtureCorpus "tree.json") | ConvertFrom-Json

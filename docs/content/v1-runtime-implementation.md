@@ -14,7 +14,7 @@ Status: implemented locally; publication and commercial asset clearance remain o
 
 ## Runtime content boundary
 
-The old 11-record pilot files remain in the repository for comparison, but `SeedCorpusManifest` loads only the 126 complete-evolution records. This means the incomplete Fire pilot is not silently counted as V1.
+The old 11-record pilot files remain in the repository for comparison, but `SeedCorpusManifest` loads only the 126 complete-evolution records. This means the incomplete Fire pilot is not silently counted as V1. The original Fire introduction is still available as a separate repository-backed onboarding reference and is loaded directly only when the learner enters that introduction.
 
 ## Discovery behavior
 

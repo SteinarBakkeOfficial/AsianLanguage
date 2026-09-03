@@ -42,7 +42,7 @@ struct RootTabView: View {
     }
 }
 
-/// First-launch sequence: enter the first approved V1 exhibit before offering optional modern-language preferences.
+/// First-launch sequence: use the original Fire introduction before offering optional modern-language preferences.
 struct OnboardingView: View {
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
@@ -50,8 +50,10 @@ struct OnboardingView: View {
 
     private enum Step { case intro, connection }
 
-    /// V1 now begins with the approved teaching order rather than the incomplete Fire pilot.
-    private var firstRecord: SharedCharacterRecord? { dependencies.sharedCharacters.first }
+    /// Fire remains a repository-backed introduction/reference record and is not part of the 126-record V1 manifest.
+    private var fireRecord: SharedCharacterRecord? {
+        try? dependencies.corpusRepository.sharedCharacter(id: "fire")
+    }
 
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
@@ -72,12 +74,12 @@ struct OnboardingView: View {
                         .font(AppTypography.exhibitHeading)
                         .foregroundStyle(AppColors.textPrimary)
                         .multilineTextAlignment(.center)
-                    Text("Follow the first symbol from a recognizable origin through its historical transformation.")
+                        Text("Follow Fire from a recognizable origin through its historical transformation.")
                         .font(AppTypography.body)
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
-                    if let firstRecord {
-                        HeroLineagePreview(record: firstRecord)
+                    if let fireRecord {
+                        HeroLineagePreview(record: fireRecord)
                             .frame(minHeight: 260, maxHeight: 300)
                     }
                     PrimaryActionButton("Continue") {
@@ -85,32 +87,28 @@ struct OnboardingView: View {
                         step = .connection
                     }
                 case .connection:
-                    Text("Enter the first exhibit")
+                        Text("Enter the Fire exhibit")
                         .font(AppTypography.exhibitHeading)
                         .foregroundStyle(AppColors.textPrimary)
                         .multilineTextAlignment(.center)
-                    Text("Begin with the first V1 symbol as a museum object: its origin, historical forms, and the path into today.")
+                        Text("Begin with 火 as a museum object: its origin, historical forms, and the path into today.")
                         .font(AppTypography.body)
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
-                    if let firstRecord {
-                        HeroLineagePreview(record: firstRecord)
+                    if let fireRecord {
+                        HeroLineagePreview(record: fireRecord)
                             .frame(minHeight: 220, maxHeight: 260)
                     }
-                    if let firstRecord {
-                        Text(firstRecord.coreSharedMeaning.capitalized)
-                            .font(AppTypography.exhibitHeading)
-                            .foregroundStyle(AppColors.textPrimary)
-                    }
+                    Text("Fire")
+                        .font(AppTypography.exhibitHeading)
+                        .foregroundStyle(AppColors.textPrimary)
                     Text("All four modern language tracks are available later. The exhibit comes first.")
                         .font(AppTypography.metadata)
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
-                    PrimaryActionButton("Enter Exhibit") {
+                    PrimaryActionButton("Enter Fire") {
                         userStateStore.markFirstSymbolStarted()
-                        if let firstRecord {
-                            dependencies.navigationState.openSymbol(firstRecord.id, intent: .start)
-                        }
+                        dependencies.navigationState.openSymbol("fire", intent: .start)
                     }
                 }
             }

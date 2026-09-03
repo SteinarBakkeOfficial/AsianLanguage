@@ -14,6 +14,8 @@ V1 is local and offline. The bundled corpus is read-only; progress, Favorites, R
 
 The runtime V1 manifest contains 126 complete-evolution records in teaching order. The earlier 11-record pilot remains in the repository as historical design/reference content; the incomplete Fire pilot is not included in the V1 runtime manifest.
 
+The original Fire introduction remains available as a repository-backed onboarding reference and is opened directly from the local repository when the learner enters the introduction. It does not change the 126-record V1 learning corpus.
+
 Historical Assets must be source-backed or licensed, explicitly unavailable, or editorially omitted. Fabricated historical glyphs and modern-form fallbacks are prohibited.
 
 The current V1 runtime is the 126-character complete-evolution selection with 504 selected/normalized ZDIC stage assets, local origin illustrations, and a Regular Script Kai endpoint. The app also bundles the new History overview artwork. ZDIC assets remain marked reuse-review-required before commercial distribution.

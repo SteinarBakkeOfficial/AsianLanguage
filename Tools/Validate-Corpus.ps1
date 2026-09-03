@@ -92,6 +92,19 @@ function Assert-PrototypeMetadata {
       Add-Issue -Path $RecordPath -Message "visualTeachingNotes must be an array of strings."
     }
   }
+
+  $allowedFormationTypes = @(
+    "pictograph",
+    "simpleIdeograph",
+    "compoundIdeograph",
+    "phonoSemantic",
+    "phoneticLoan",
+    "laterFormation",
+    "uncertain"
+  )
+  if ((Test-HasText $Record.formationType) -and $allowedFormationTypes -notcontains $Record.formationType) {
+    Add-Issue -Path $RecordPath -Message "Unsupported formationType '$($Record.formationType)'."
+  }
 }
 
 function Assert-PublicationStatus {

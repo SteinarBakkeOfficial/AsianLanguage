@@ -24,7 +24,8 @@ $testScripts = @(
   "Tests/PolishContract.Tests.ps1",
   "Tests/PrototypeCorpusContract.Tests.ps1",
   "Tests/SymbolWorkspace.Tests.ps1",
-  "Tests/CorpusValidation.Tests.ps1"
+  "Tests/CorpusValidation.Tests.ps1",
+  "Tests/RuntimeCorpusContract.Tests.ps1"
 )
 
 if (-not $SkipReleaseReadiness) {

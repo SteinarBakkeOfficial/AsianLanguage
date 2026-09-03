@@ -2,7 +2,7 @@
 
 ## Goal
 
-Integrate and verify the approved early-release V1 package: 126 complete-evolution symbols, local origin artwork, ZDIC historical stages, CNS11643 Kai Regular Script, locale-specific modern forms, expanded examples, updated collections, and collection-first Browse.
+Integrate and verify the approved early-release V1 package: 126 complete-evolution symbols, local origin artwork, ZDIC historical stages, CNS11643 Kai Regular Script, locale-specific modern forms, expanded examples, updated collections, and search-first Browse.
 
 ## Branding update
 
@@ -228,7 +228,7 @@ These observations are preserved separately from approved product decisions and 
 - Fire, Water, and Tree have local educational concept illustrations; Fire Oracle Bone/Bronze/Seal, Water Oracle/Bronze/Seal, and Tree Oracle have source-backed SVGs, while stages without approved files remain explicit unavailable-asset states.
 - The current package contains source-backed local raster glyphs for the 11-record pilot, plus explicit missing-stage states where no approved file was acquired; iOS rendering and screenshot comparison require macOS/Xcode verification.
 - The generated review report makes each Symbol folder and its remaining editorial actions directly locatable.
-- Onboarding now starts with the first complete V1 exhibit; all four language tracks remain enabled by default and may later be adjusted in More → Languages, including turning all tracks off.
+- Onboarding restores the original Fire introduction and opens that repository-backed reference directly; the 126 complete-evolution records remain the V1 learning corpus. All four language tracks remain enabled by default and may later be adjusted in More → Languages, including turning all tracks off.
 
 ## Repository/layout note
 
