@@ -12,7 +12,9 @@ struct AsianLanguageApp: App {
     @StateObject private var userStateStore: LocalUserStateStore
 
     init() {
-        BundledFontRegistrar.register()
+        // Register only the small shell fonts before the first frame; large CJK faces load
+        // when the Symbol journey needs them so launch remains responsive on-device.
+        BundledFontRegistrar.registerCoreFonts()
         let liveDependencies = AppDependencies.live
         dependencies = liveDependencies
         _userStateStore = StateObject(wrappedValue: liveDependencies.userStateStore)
@@ -42,21 +44,42 @@ struct AsianLanguageApp: App {
 
 /// Registers the local font files before SwiftUI resolves the shared typography tokens.
 /// Keep this list in sync with Resources/Fonts when adding or removing app typefaces.
-private enum BundledFontRegistrar {
-    private static let fontFiles = [
+enum BundledFontRegistrar {
+    private static let coreFontFiles = [
         ("PlayfairDisplay-Regular", "ttf"),
         ("PlayfairDisplay-Bold", "ttf"),
         ("Inter-Regular", "ttf"),
         ("Inter-Medium", "ttf"),
-        ("Inter-SemiBold", "ttf"),
+        ("Inter-SemiBold", "ttf")
+    ]
+
+    private static let museumFontFiles = [
         ("TW-Kai-98_1", "ttf"),
+    ]
+
+    private static let modernFontFiles = [
         ("SourceHanSerifJP-Regular", "otf"),
         ("SourceHanSerifKR-Regular", "otf"),
         ("SourceHanSerifSC-Regular", "otf"),
         ("SourceHanSerifTC-Regular", "otf")
     ]
 
-    static func register() {
+    /// Registers the lightweight fonts used by the shell and onboarding screens.
+    static func registerCoreFonts() {
+        register(coreFontFiles)
+    }
+
+    /// Registers the Kai endpoint when a learner enters the Symbol journey.
+    static func registerMuseumFonts() {
+        register(museumFontFiles)
+    }
+
+    /// Registers locale-specific modern forms when the Today content is constructed.
+    static func registerModernFonts() {
+        register(modernFontFiles)
+    }
+
+    private static func register(_ fontFiles: [(String, String)]) {
         for (fontName, fileExtension) in fontFiles {
             guard let fontURL = Bundle.main.url(forResource: fontName, withExtension: fileExtension, subdirectory: "Fonts") else {
                 continue

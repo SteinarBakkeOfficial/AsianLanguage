@@ -10,6 +10,23 @@ struct CharacterEvolutionView: View {
     let onComplete: () -> Void
     @Binding var selectedStageID: String
 
+    init(
+        record: SharedCharacterRecord,
+        focusSelection: FocusTrackSelection,
+        completionTitle: String,
+        onComplete: @escaping () -> Void,
+        selectedStageID: Binding<String>
+    ) {
+        self.record = record
+        self.focusSelection = focusSelection
+        self.completionTitle = completionTitle
+        self.onComplete = onComplete
+        self._selectedStageID = selectedStageID
+        // Keep the expensive CJK registration out of app launch while ensuring the
+        // Regular Script endpoint is available before the museum pages are shown.
+        BundledFontRegistrar.registerMuseumFonts()
+    }
+
     /// Keeps explicit editorial omissions out of the primary journey while preserving asset gaps as visible states.
     private var stages: [HistoricalStage] {
         record.history.stages.filter {

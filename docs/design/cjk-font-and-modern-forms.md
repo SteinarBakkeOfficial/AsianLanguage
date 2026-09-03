@@ -95,7 +95,7 @@ About / Method now links and describes the source roles:
 
 No source is commercially cleared merely because it is downloadable or attributed.
 
-The selected font faces are now bundled locally and registered at app launch. ZDIC historical images remain research-only and are not made commercially redistributable by this font change.
+The selected font faces are bundled locally. The lightweight UI faces register at launch; the larger Kai and Source Han faces register on demand when Symbol/Today content is opened, keeping launch responsive without changing the approved typography or offline behavior. ZDIC historical images remain research-only and are not made commercially redistributable by this font change.
 
 ## QA fixture
 

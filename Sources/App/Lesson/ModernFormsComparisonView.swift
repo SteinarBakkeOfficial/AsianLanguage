@@ -10,6 +10,8 @@ struct ModernFormsComparisonView: View {
         self.record = record
         self.focusSelection = focusSelection
         self.track = track
+        // Modern locale-specific faces are loaded only when Today content is needed.
+        BundledFontRegistrar.registerModernFonts()
     }
 
     private var visibleTracks: [FocusTrack] {
