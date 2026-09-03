@@ -57,25 +57,12 @@ struct HomeView: View {
         let isResuming = userStateStore.state.activeJourneySymbolID == record.id
         let isReviewHero = !isResuming && learnedCount > 0 && reviewRecords.first?.id == record.id
         return VStack(alignment: .center, spacing: AppSpacing.spaceSm) {
-            Text(record.coreSharedMeaning.uppercased())
+            Text(record.coreSharedMeaning.capitalized)
                 .font(AppTypography.heroConcept)
                 .tracking(1.2)
                 .foregroundStyle(AppColors.accentPrimary)
             HeroLineagePreview(record: record)
                 .frame(maxWidth: .infinity, minHeight: 240, maxHeight: 280)
-            Text("\(record.coreSharedMeaning.capitalized) · \(record.coreCharacter)")
-                .font(AppTypography.exhibitHeading)
-                .foregroundStyle(AppColors.textPrimary)
-            .multilineTextAlignment(.center)
-            if isResuming, let position = userStateStore.state.lessonStates[record.id]?.lastPosition {
-                Text("\(position.stageID ?? position.section.rawValue) · Continue your journey")
-                    .font(AppTypography.metadata)
-                    .foregroundStyle(AppColors.textSecondary)
-            }
-            Text(isReviewHero ? "Review what you know" : (isResuming ? "Continue your journey" : "Follow one picture across thousands of years."))
-                .font(AppTypography.metadata)
-                .foregroundStyle(AppColors.textSecondary)
-                .multilineTextAlignment(.center)
             PrimaryActionButton(isReviewHero ? "Start Quick Review" : (isResuming ? "Continue \(record.coreSharedMeaning.capitalized)" : "Start with \(record.coreSharedMeaning.capitalized)")) {
                 dependencies.navigationState.openSymbol(record.id, intent: isReviewHero ? .review : (isResuming ? .resume : .start))
             }

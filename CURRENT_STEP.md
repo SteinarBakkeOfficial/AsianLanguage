@@ -167,8 +167,8 @@ Working taxonomy thought for discussion, not a decision: semantic collections co
 - Today context preserves the compact `IN A WORD` layout, shows up to four existing word-level examples, and applies each locale's modern font to written examples.
 - Collections now resolve members from the installed corpus across all ten editorial collections and reuse the same artwork catalog in Browse.
 - Browse places search first, followed by learner libraries, one All Symbols destination, and all ten complete collection panels directly under Collections.
-- History now recreates the supplied `Resources/History/History_V1.png` overview natively; the reference screenshot is not rendered in-app, and the prior period-by-period implementation remains retained as `LegacyHistoryRootView`.
-- `Reference Pictures/Chatgpt/History_V1.png` remains the History visual reference for future refinement; the current native page is the approved V1 implementation.
+- History now follows the supplied `Resources/History/History_V1.png` overview natively: the title/landscape header, rounded timeline card, colored stage markers, stage material illustrations, glyph pairings, explanations, and living-tradition footer are represented in SwiftUI. The full reference screenshot is not rendered in-app, and the prior period-by-period implementation remains retained as `LegacyHistoryRootView`.
+- `HistoryReferenceCropView` reuses exact crops of the bundled reference artwork for the landscape, stage material/glyph scenes, and pavilion. `Reference Pictures/Chatgpt/History_V1.png` remains the visual comparison reference; simulator review must confirm crop positioning and text wrapping.
 - See [`v1-runtime-implementation.md`](docs/content/v1-runtime-implementation.md) for the authoritative package record and rebuild command.
 
 ## Tester feedback backlog — discussion candidates, not approved changes
@@ -185,6 +185,7 @@ The following feedback is recorded for the next design and product discussion. I
 - Add a clear completion indicator at Regular Script showing that the historical museum portion is complete and that the learner is choosing whether to continue to Modern Forms or the next Symbol, rather than implying an automatic transition.
 - Consider surfacing Library from Home, including making the learned-symbol count a direct route to the learned collection.
 - Future Home cleanup: replace the standalone learned-symbol count with a deliberate destination such as History or Learned; this is documented only and remains unchanged in V1.
+- Future museum surface treatment: consider stage-specific material backgrounds (bone, bronze, and historically appropriate surfaces through Modern) as a visual enhancement only; do not implement during this pass.
 - Current compromise: Browse owns the top-level search and library discovery; All Symbols is a separate pushed page with its own search, without adding a sixth root tab. Revisit only if testing shows this is confusing.
 
 The tester also emphasized that missing illustrations and missing/revised text are currently the most noticeable issues; those remain ahead of these exploratory interaction and navigation ideas.

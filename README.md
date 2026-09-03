@@ -20,7 +20,7 @@ The original Fire introduction remains available as a repository-backed onboardi
 
 Historical Assets must be source-backed or licensed, explicitly unavailable, or editorially omitted. Fabricated historical glyphs and modern-form fallbacks are prohibited.
 
-The current V1 runtime is the 126-character complete-evolution selection with 504 selected/normalized ZDIC stage assets, local origin illustrations, and a Regular Script Kai endpoint. The app also bundles the new History overview artwork. ZDIC assets remain marked reuse-review-required before commercial distribution.
+The current V1 runtime is the 126-character complete-evolution selection with 504 selected/normalized ZDIC stage assets, local origin illustrations, and a Regular Script Kai endpoint. The app also bundles the History reference artwork and uses its illustrations inside a native timeline layout. ZDIC assets remain marked reuse-review-required before commercial distribution.
 
 The approved modern-form plan uses locale-specific Chinese, Japanese, and Korean rendering. The selected Regular faces from CNS11643 Kai and Adobe Source Han Serif are bundled and registered locally; Source Han Sans and additional weights remain intentionally excluded.
 

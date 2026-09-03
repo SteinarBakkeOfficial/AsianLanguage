@@ -53,7 +53,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Collections and More now use semantic app surfaces, native navigation, and shared CharacterTile presentation where records are listed.
 - Onboarding now uses the shared editorial hierarchy, primary actions, grouped focus-track controls, and semantic surfaces.
 - Languages, Account, and About/Method now use semantic surfaces and typography; Account does not present a fake profile identity.
-- The earlier detailed History period implementation remains retained for later expansion; the current V1 History tab now recreates the supplied overview natively with the five timeline stages, material references, explanations, and living-tradition footer.
+- The earlier detailed History period implementation remains retained for later expansion; the current V1 History tab now follows the supplied overview natively with its title treatment, landscape, five timeline stages, cropped material illustrations, explanations, and living-tradition footer.
 - More utility rows and source/license entries now use quiet semantic presentation while preserving native navigation behavior.
 - Historical stage availability is now distinct from confidence in the runtime model; legacy certainty labels normalize for presentation, draft tooling emits availability, and corpus validation rejects invalid or contradictory states.
 - Per-Symbol folders now contain structured lesson data, learner copy, research notes, review checklist, sources, visual teaching notes, historical-stage provenance, and reusable component references.
@@ -76,7 +76,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Allowlisted Fire, Water, and Tree historical SVGs are bundled where acquired; named stages without approved files remain unavailable. Local SVG rendering still requires macOS/Xcode verification.
 - The horizontal Modern/Usage pages and word-context composition still need simulator comparison and interaction polish.
 - Completion, Revisit, and Quick Review have initial behavior and structure but still need simulator visual QA and final interaction polish.
-- Shared components are available; History and More still need final simulator visual polish and any future approved representative content.
+- Shared components are available; History still needs final simulator comparison for crop positioning and typography, while More needs any future approved representative content.
 - Historical asset provenance, renderability, and specialist confidence review remain required before publication; the availability/confidence contract itself is now aligned.
 - The current prototype SVG assets are packaged locally but still require native rendering verification and final asset treatment on macOS.
 - The 148-character research-only ZDIC intake produced 568 of 592 possible Oracle Bone/Bronze/Small Seal/Clerical selections; V1 is now restricted to the 126 characters with all four stages. These copied files are not cleared for commercial bundling.
@@ -105,6 +105,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Deeper Fire onboarding language orientation covering all four target writing traditions; this applies only to the onboarding symbol experience.
 - A History language-branches section below the main timeline: four illustrated cards in a 2×2 grid for Simplified Chinese, Traditional Chinese, Japanese, and Korean, with detailed language pages deferred.
 - Future Home cleanup: replace the standalone “X symbols learned” footer with a deliberate destination such as History or the Learned library; do not change the current footer during this pass.
+- Future Symbol surface treatment: consider stage-specific material backgrounds (bone for Oracle Bone, bronze for Bronze, and historically appropriate surfaces through Modern) after the current museum layout is stable.
 
 ## Future considerations — undecided
 

@@ -124,8 +124,8 @@
 - Every runtime V1 record has a local origin illustration, selected/normalized ZDIC Oracle Bone, Bronze, Small Seal, and Clerical assets, and a Regular Script endpoint rendered from CNS11643 Kai.
 - The four Used Today lanes render through the locale-specific Source Han Serif JP/KR/SC/TC files. Japanese and Korean form/readings remain distinct data lanes rather than universal Han fallback.
 - Browse is search-first. It owns learner libraries, one All Symbols destination, and editorial collections; All Symbols is a separate searchable library screen.
-- The History tab recreates the supplied `History_V1.png` overview natively for this release. Its five timeline stages, materials, explanations, and living-tradition footer are implemented without rendering the reference screenshot; the previous detailed period implementation remains retained for a later release.
-- `Reference Pictures/Chatgpt/History_V1.png` remains the visual comparison reference for History. Future refinements should compare against its composition and supplied artwork rather than inventing a separate visual language.
+- The History tab follows the supplied `History_V1.png` overview natively for this release. Its title/landscape header, five timeline stages, colored markers, material-and-glyph artwork, explanations, and living-tradition footer are implemented without rendering the full reference screenshot; the previous detailed period implementation remains retained for a later release.
+- The native History page reuses exact crops of the bundled reference artwork through `HistoryReferenceCropView`. `Reference Pictures/Chatgpt/History_V1.png` remains the visual comparison reference, and future refinements must compare against its composition and supplied artwork rather than inventing a separate visual language.
 - Origin artwork remains educational reconstruction; ZDIC remains a bundled reference asset with reuse permission unresolved. Records and assets are not release-cleared merely because they are local.
 
 ### Per-stage museum transition captions — 2026-09-03
@@ -153,6 +153,7 @@
 - The learner does not need “Origin” and “Today” endpoint labels duplicated above or below the rail. The rail itself is the single visible orientation control.
 - Historical page headers use plain learner-facing labels such as “Clerical Script” and an optional period label. Confidence labels and historical Chinese stage names are not shown in the V1 page header.
 - The Home “X symbols learned” footer remains unchanged for now. Replacing it with a deliberate History or Learned-library destination is future work only.
+- Stage-specific material backgrounds are future work only: the team may later test bone behind Oracle Bone, bronze behind Bronze, and appropriate writing surfaces through Modern. This must not replace or obscure the actual historical glyph assets.
 
 ### Future language-orientation content — 2026-09-03
 
