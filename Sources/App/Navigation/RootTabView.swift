@@ -247,31 +247,19 @@ private struct LegacyHistoryRootView: View {
     }
 }
 
-/// V1 History presentation uses the approved editorial overview image while the detailed design remains available above.
+/// V1 History is the supplied overview artwork; the retained period-by-period design remains in code for later use.
 private struct HistoryRootView: View {
     var body: some View {
         NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: AppSpacing.spaceMd) {
-                    Text("History")
-                        .font(AppTypography.pageTitle)
-                        .foregroundStyle(AppColors.textPrimary)
-                    Text("A visual overview of the journey from Oracle Bone to Regular Script.")
-                        .font(AppTypography.metadata)
-                        .foregroundStyle(AppColors.textSecondary)
-                    ArtifactField {
-                        HistoricalAssetView(assetRef: "Assets/History/History_V1.png", displayHeight: 520)
-                    }
-                    Text("The detailed period shelf is retained for a later history release.")
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
-                }
-                .padding(.horizontal, AppSpacing.spacePage)
-                .padding(.top, AppSpacing.spaceSm)
-                .padding(.bottom, AppSpacing.spaceSection)
+            GeometryReader { proxy in
+                HistoricalAssetView(
+                    assetRef: "Assets/History/History_V1.png",
+                    displayHeight: max(proxy.size.height, 1)
+                )
+                .frame(width: proxy.size.width, height: proxy.size.height)
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .tint(AppColors.accentPrimary)
+            .ignoresSafeArea(.container, edges: .top)
+            .toolbar(.hidden, for: .navigationBar)
         }
         .background(AppColors.appBackground.ignoresSafeArea())
     }

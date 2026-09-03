@@ -238,7 +238,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/day/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The illustration of sun is condensed into ancient strokes, giving 日 a compact written outline.",
+        "changeNoteFromPrevious": "The image of sun is reduced to a few simple strokes, while its clearest outline remains visible.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-日"
@@ -265,16 +265,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of sun; day.",
-        "transitionNote": "The illustration of sun is condensed into ancient strokes, giving 日 a compact written outline.",
-        "transitionNoteNeedsReview": true,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The image of sun is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "transitionNoteNeedsReview": true
       },
       {
         "stage": "bronze",
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/day/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "From the preceding form to Bronze, 日 simplifies into fewer, cleaner marks while preserving its main structure.",
+        "changeNoteFromPrevious": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-日"
@@ -301,16 +301,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "From the preceding form to Bronze, 日 simplifies into fewer, cleaner marks while preserving its main structure.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "seal",
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/day/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "From Bronze to Small Seal, the separate parts of 日 settle into smoother curves and a more balanced outline.",
+        "changeNoteFromPrevious": "The parts settle into smoother curves and a more balanced arrangement.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-日"
@@ -337,16 +337,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "From Bronze to Small Seal, the separate parts of 日 settle into smoother curves and a more balanced outline.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The parts settle into smoother curves and a more balanced arrangement.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "clerical",
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/day/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "From the preceding form to Clerical, the compact outline of 日 becomes fuller and more continuously drawn.",
+        "changeNoteFromPrevious": "The strokes broaden and straighten, making the form wider and more structured.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-日"
@@ -373,16 +373,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "From the preceding form to Clerical, the compact outline of 日 becomes fuller and more continuously drawn.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The strokes broaden and straighten, making the form wider and more structured.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "regular",
         "label": "Regular Script",
         "form": "日",
         "assetRef": null,
-        "changeNoteFromPrevious": "From Clerical to Regular Script, the broad form for 日 tightens into balanced proportions and distinct Kai strokes.",
+        "changeNoteFromPrevious": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -409,9 +409,9 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "From Clerical to Regular Script, the broad form for 日 tightens into balanced proportions and distinct Kai strokes.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "transitionNoteNeedsReview": false
       }
     ],
     "origin": {

@@ -296,7 +296,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/symbol-u8033/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The illustrated ear is reduced to a compact set of ancient strokes while retaining its clearest visual outline.",
+        "changeNoteFromPrevious": "The ear’s outer contour is reduced to a compact group of simple strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-耳"
@@ -323,16 +323,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of ear.",
-        "transitionNote": "The illustrated ear is reduced to a compact set of ancient strokes while retaining its clearest visual outline.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The ear’s outer contour is reduced to a compact group of simple strokes.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "bronze",
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/symbol-u8033/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "From Oracle Bone to Bronze, the angular form of 耳 becomes fuller and more continuous, while its silhouette remains recognizable.",
+        "changeNoteFromPrevious": "The marks become fuller and rounder without disturbing the basic arrangement.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-耳"
@@ -359,16 +359,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "From Oracle Bone to Bronze, the angular form of 耳 becomes fuller and more continuous, while its silhouette remains recognizable.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The marks become fuller and rounder without disturbing the basic arrangement.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "seal",
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/symbol-u8033/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "From Bronze to Small Seal, the separate parts of 耳 settle into smoother curves and a more balanced outline.",
+        "changeNoteFromPrevious": "Fewer marks remain, arranged with more even spacing and steadier proportions.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-耳"
@@ -395,16 +395,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "From Bronze to Small Seal, the separate parts of 耳 settle into smoother curves and a more balanced outline.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "Fewer marks remain, arranged with more even spacing and steadier proportions.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "clerical",
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/symbol-u8033/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "From Small Seal to Clerical, the rounded form of 耳 flattens into broader, more distinct stroke-like sections.",
+        "changeNoteFromPrevious": "Several curved details disappear as the strokes become flatter and more direct.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-耳"
@@ -431,16 +431,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "From Small Seal to Clerical, the rounded form of 耳 flattens into broader, more distinct stroke-like sections.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "Several curved details disappear as the strokes become flatter and more direct.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "regular",
         "label": "Regular Script",
         "form": "耳",
         "assetRef": null,
-        "changeNoteFromPrevious": "From Clerical to Regular Script, the broad form for 耳 tightens into balanced proportions and distinct Kai strokes.",
+        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -467,9 +467,9 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "From Clerical to Regular Script, the broad form for 耳 tightens into balanced proportions and distinct Kai strokes.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "transitionNoteNeedsReview": false
       }
     ],
     "origin": {

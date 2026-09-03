@@ -53,11 +53,13 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Collections and More now use semantic app surfaces, native navigation, and shared CharacterTile presentation where records are listed.
 - Onboarding now uses the shared editorial hierarchy, primary actions, grouped focus-track controls, and semantic surfaces.
 - Languages, Account, and About/Method now use semantic surfaces and typography; Account does not present a fake profile identity.
-- History period detail now uses open editorial composition, semantic typography, grouped context, and an intentional missing-representative state until approved content is assigned.
+- The earlier detailed History period implementation remains retained for later expansion; the current V1 History tab uses the supplied full-page overview artwork.
+- The History tab now uses the supplied `History_V1.png` as the full-page V1 overview while retaining the earlier detailed period implementation for a later release.
 - More utility rows and source/license entries now use quiet semantic presentation while preserving native navigation behavior.
 - Historical stage availability is now distinct from confidence in the runtime model; legacy certainty labels normalize for presentation, draft tooling emits availability, and corpus validation rejects invalid or contradictory states.
 - Per-Symbol folders now contain structured lesson data, learner copy, research notes, review checklist, sources, visual teaching notes, historical-stage provenance, and reusable component references.
 - The preparation workflow remains available for the original pilot; the current V1 import is handled by `Import-V1RuntimeCorpus.ps1`, and no generated content is auto-approved.
+- All 630 V1 museum transition captions now use concise neighboring-stage visual language; source and runtime caption contracts reject stage-name prefixes, modern-character prose references, empty notes, and notes over 25 words.
 - Fire now includes a clearly classified educational Origin reconstruction; it is not presented as historical evidence.
 - Offline packaging now validates Symbol folders, synchronizes flat bundle records, copies local app derivatives, and emits an asset manifest with runtime networking disabled.
 - A generated human review report lists each Symbol's folder, status, formation mode, stage availability, asset references, and editorial files.

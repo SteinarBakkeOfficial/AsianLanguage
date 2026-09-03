@@ -22,6 +22,8 @@ $testScripts = @(
   "Tests/ContentTooling.Tests.ps1",
   "Tests/CorpusReadiness.Tests.ps1",
   "Tests/PolishContract.Tests.ps1",
+  "Tests/DesignFreezeContract.Tests.ps1",
+  "Tests/MuseumCaptionContract.Tests.ps1",
   "Tests/PrototypeCorpusContract.Tests.ps1",
   "Tests/SymbolWorkspace.Tests.ps1",
   "Tests/CorpusValidation.Tests.ps1",

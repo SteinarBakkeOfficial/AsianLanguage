@@ -104,33 +104,36 @@ struct HomeView: View {
     }
 
     private var collectionModule: some View {
-        Button {
-            guard let nextRecord = natureCollectionRecords.first else { return }
-            dependencies.navigationState.openSymbol(nextRecord.id, intent: .start)
-        } label: {
-            GroupedSurface {
-                VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
-                    HStack {
-                        Text("Nature & Cosmos").font(AppTypography.stageTitle)
-                        Spacer()
-                        Text("Continue →").font(AppTypography.caption).foregroundStyle(AppColors.accentPrimary)
+        if let collection = CollectionsView.catalog(for: dependencies).first {
+            NavigationLink {
+                EditorialCollectionDetailView(collection: collection, dependencies: dependencies)
+            } label: {
+                GroupedSurface {
+                    VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
+                        HStack {
+                            Text(collection.title).font(AppTypography.stageTitle)
+                            Spacer()
+                            Text("Continue →").font(AppTypography.caption).foregroundStyle(AppColors.accentPrimary)
+                        }
+                        HStack(spacing: AppSpacing.spaceSm) {
+                            EditorialCollectionArtwork(collection: collection)
+                                .frame(width: 78, height: 58)
+                                .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
+                            Text(natureCollectionRecords.prefix(6).map(\.coreCharacter).joined(separator: "  "))
+                                .font(.system(size: 25, design: .serif))
+                        }
+                        Text("Continue exploring this collection")
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
                     }
-                    HStack(spacing: AppSpacing.spaceSm) {
-                        HistoricalAssetView(assetRef: "Assets/Collections/nature-cosmos.png", displayHeight: 58)
-                            .frame(width: 78, height: 58)
-                            .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
-                        Text(natureCollectionRecords.prefix(6).map(\.coreCharacter).joined(separator: "  "))
-                            .font(.system(size: 25, design: .serif))
-                    }
-                    Text("Explore a curated set of Shared Characters")
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
                 }
             }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Continue \(collection.title) collection")
+            .frame(maxWidth: .infinity, alignment: .leading)
+        } else {
+            EmptyView()
         }
-        .buttonStyle(.plain)
-        .accessibilityLabel("Continue Nature and Cosmos collection")
-        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     /// Home always displays the same record its primary action opens.

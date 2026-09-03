@@ -24,15 +24,6 @@ function Get-ConceptLabel([string]$Meaning) {
   return $label.Trim()
 }
 
-function Get-StageDisplayName([string]$Stage) {
-  switch ($Stage) {
-    "bronze" { return "Bronze" }
-    "seal" { return "Small Seal" }
-    "clerical" { return "Clerical" }
-    default { return $Stage }
-  }
-}
-
 function Get-SvgMetrics([string]$Path) {
   $svg = Get-Content -LiteralPath $Path -Raw
   $pathMatches = [regex]::Matches($svg, '<path\b[^>]*\bd="([^"]+)"[^>]*>', [Text.RegularExpressions.RegexOptions]::IgnoreCase)
@@ -66,36 +57,158 @@ function Get-SvgMetrics([string]$Path) {
   }
 }
 
-function Get-TransitionCaption($Previous, $Current, [string]$Stage, [bool]$IsFirst, [string]$Meaning, [string]$FormationType, [string]$Character) {
-  if ($IsFirst) {
-    $concept = Get-ConceptLabel $Meaning
-    if ($FormationType -eq "pictographic") {
-      return "The illustrated $concept is reduced to a compact set of ancient strokes while retaining its clearest visual outline."
-    }
-    return "The illustration of $concept is condensed into ancient strokes, giving $Character a compact written outline."
+function Get-OriginCaption([string]$Meaning) {
+  # Keep the first caption tied to the illustrated subject, never to the modern
+  # character. A few core pictographs get more concrete wording because the
+  # relationship is central to the first museum comparison.
+  $concept = Get-ConceptLabel $Meaning
+  if ($concept -match '[\u3400-\u9FFF]') {
+    return "The illustrated subject is reduced to a few simple strokes, while its clearest outline remains visible."
   }
+  switch -Regex ($concept.ToLowerInvariant()) {
+    "^woman$" { return "The side-facing woman is reduced to a few strokes, while her posture still faces left." }
+    "^person$" { return "The leaning person is reduced to a few strokes, while the basic posture remains visible." }
+    "^tree$" { return "The trunk, branches, and roots are reduced to a few simple strokes, but the tree’s structure remains visible." }
+    "^water$" { return "The flowing water is reduced to a central line with smaller marks spreading around it." }
+    "^mountain$" { return "The mountain peaks are reduced to a few connected strokes, while the rising outline remains clear." }
+    "^mouth$" { return "The open mouth is simplified into a small enclosing outline, keeping its basic shape." }
+    "^tongue$" { return "The tongue remains inside the open mouth as the two visible parts become simple strokes." }
+    "^eye$" { return "The eye’s outer shape and inner mark are reduced to a few simple lines." }
+    "^ear$" { return "The ear’s outer contour is reduced to a compact group of simple strokes." }
+    "^fire$" { return "The central flame and smaller tongues are simplified into sharp marks radiating around the center." }
+    default { return "The image of $concept is reduced to a few simple strokes, while its clearest outline remains visible." }
+  }
+}
 
+function Get-TransitionCaption($Previous, $Current, [string]$Stage, [bool]$IsFirst, [string]$Meaning, [string]$FormationType, [string]$Character) {
+  if ($IsFirst) { return Get-OriginCaption $Meaning }
+
+  # Later captions compare neighboring artwork only. The inexpensive metrics
+  # provide restrained variation grounded in the selected local SVGs; they are
+  # not treated as a substitute for human review of an unclear comparison.
   if ($Stage -eq "regular") {
-    return "From Clerical to Regular Script, the broad form for $Character tightens into balanced proportions and distinct Kai strokes."
+    $characterSeed = [int][char]$Character.Substring(0, 1)
+    $options = @(
+      "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+      "The lines become more controlled, and the main sections settle into balanced proportions.",
+      "The final arrangement is steadier, with distinct strokes and a clear balance between its parts."
+    )
+    return $options[$characterSeed % $options.Count]
   }
 
   if (-not $Previous.usable -or -not $Current.usable) {
-    return "At the $(Get-StageDisplayName $Stage) stage, the main structure of $Character remains recognizable, while the form is redrawn with controlled strokes."
+    return "The main arrangement remains recognizable, while the marks become more even and controlled."
   }
 
   $lengthRatio = if ($Previous.pathLength -eq 0) { 1 } else { [double]$Current.pathLength / [double]$Previous.pathLength }
-  if ($lengthRatio -lt 0.68) {
-    return "From the preceding form to $(Get-StageDisplayName $Stage), $Character simplifies into fewer, cleaner marks while preserving its main structure."
-  }
-  if ($lengthRatio -gt 1.45) {
-    return "From the preceding form to $(Get-StageDisplayName $Stage), the compact outline of $Character becomes fuller and more continuously drawn."
-  }
+  $commandDelta = [int]$Current.commandCount - [int]$Previous.commandCount
+  $characterSeed = [int][char]$Character.Substring(0, 1)
 
   switch ($Stage) {
-    "bronze" { return "From Oracle Bone to Bronze, the angular form of $Character becomes fuller and more continuous, while its silhouette remains recognizable." }
-    "seal" { return "From Bronze to Small Seal, the separate parts of $Character settle into smoother curves and a more balanced outline." }
-    "clerical" { return "From Small Seal to Clerical, the rounded form of $Character flattens into broader, more distinct stroke-like sections." }
-    default { return "At this stage, the overall structure of $Character changes little, but its strokes become more even and controlled." }
+    "bronze" {
+      if ($lengthRatio -lt 0.82) {
+        $options = @(
+          "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+          "Several small marks fall away, leaving the same basic outline in a cleaner form.",
+          "The outline is drawn with fewer, simpler strokes, but its main shape is still easy to see."
+        )
+        return $options[$characterSeed % $options.Count]
+      }
+      if ($lengthRatio -gt 1.18) {
+        $options = @(
+          "The early marks become fuller and more continuous, while the main silhouette remains visible.",
+          "The broken outline fills out into more continuous lines without losing its basic shape.",
+          "The lines grow more complete and connected, keeping the original arrangement easy to follow."
+        )
+        return $options[$characterSeed % $options.Count]
+      }
+      if ($commandDelta -gt 8) {
+        $options = @(
+          "The outline gains fuller curves, while the original arrangement remains easy to recognize.",
+          "More rounded lines fill the outline, but the earlier arrangement stays clear.",
+          "The marks become fuller and rounder without disturbing the basic arrangement."
+        )
+        return $options[$characterSeed % $options.Count]
+      }
+      $options = @(
+        "The main outline remains, but the strokes become more even and continuous.",
+        "The basic shape holds steady as its separate marks become cleaner and more controlled.",
+        "The structure changes only slightly; the lines become smoother and easier to distinguish."
+      )
+      return $options[$characterSeed % $options.Count]
+    }
+    "seal" {
+      if ($lengthRatio -lt 0.82) {
+        $options = @(
+          "Small irregularities disappear, leaving a cleaner and more balanced arrangement.",
+          "The compact shape loses stray details and settles into a clearer balance.",
+          "Fewer marks remain, arranged with more even spacing and steadier proportions."
+        )
+        return $options[$characterSeed % $options.Count]
+      }
+      if ($lengthRatio -gt 1.18) {
+        $options = @(
+          "The separate parts draw into a smoother, more continuous outline with more even proportions.",
+          "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+          "The outline becomes more continuous, while its separate sections settle into steadier proportions."
+        )
+        return $options[$characterSeed % $options.Count]
+      }
+      if ($commandDelta -gt 8) {
+        $options = @(
+          "The lines become more rounded and connected, while the parts settle into a steadier arrangement.",
+          "The curved sections join more smoothly, giving the separate parts a calmer balance.",
+          "The parts remain distinct, but their connecting lines become rounder and more settled."
+        )
+        return $options[$characterSeed % $options.Count]
+      }
+      $options = @(
+        "The parts settle into smoother curves and a more balanced arrangement.",
+        "The separate marks become smoother, with their spacing and proportions more carefully balanced.",
+        "The overall shape steadies as the curves become more even and the parts sit closer together."
+      )
+      return $options[$characterSeed % $options.Count]
+    }
+    "clerical" {
+      if ($lengthRatio -lt 0.82) {
+        $options = @(
+          "Several curved sections reduce to fewer, broader strokes, giving the form a flatter structure.",
+          "The longer curves shorten into broader marks, making the structure flatter and easier to read.",
+          "Small details recede as the form settles into fewer, wider strokes."
+        )
+        return $options[$characterSeed % $options.Count]
+      }
+      if ($lengthRatio -gt 1.18) {
+        $options = @(
+          "The strokes broaden and straighten, making the form wider and more structured.",
+          "The lines open outward into broader, straighter strokes while keeping the same arrangement.",
+          "The form spreads into wider strokes, and its main sections become more clearly separated."
+        )
+        return $options[$characterSeed % $options.Count]
+      }
+      if ($commandDelta -lt -8) {
+        $options = @(
+          "Curved sections flatten into fewer, straighter strokes, giving the form a clearer structure.",
+          "The curved lines simplify into straighter marks, leaving the main sections easier to distinguish.",
+          "Several curved details disappear as the strokes become flatter and more direct."
+        )
+        return $options[$characterSeed % $options.Count]
+      }
+      $options = @(
+        "Curved sections flatten into straighter, broader strokes, giving the form a more structured appearance.",
+        "The rounded lines become flatter and more deliberate, while the main arrangement stays intact.",
+        "The strokes straighten and broaden, bringing the separate sections into a clearer structure."
+      )
+      return $options[$characterSeed % $options.Count]
+    }
+    default {
+      $options = @(
+        "The overall arrangement changes little, but the strokes become more even and controlled.",
+        "The same basic structure remains, with cleaner strokes and more deliberate spacing.",
+        "Only small adjustments appear here; the lines become steadier and easier to separate."
+      )
+      return $options[$characterSeed % $options.Count]
+    }
   }
 }
 
@@ -127,7 +240,7 @@ foreach ($manifestRecord in $records) {
 
     $needsReview = $false
     if ($isFirst) {
-      $needsReview = $record.formationType -ne "pictographic" -or [string]::IsNullOrWhiteSpace($record.history.origin.concept)
+      $needsReview = $record.formationType -notin @("pictograph", "pictographic") -or [string]::IsNullOrWhiteSpace($record.history.origin.concept)
     } elseif ($stage.stage -ne "regular" -and (-not $metrics.usable -or -not $previousMetrics.usable)) {
       $needsReview = $true
     }

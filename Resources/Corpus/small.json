@@ -248,7 +248,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/small/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The illustration of small is condensed into ancient strokes, giving 小 a compact written outline.",
+        "changeNoteFromPrevious": "The image of small is reduced to a few simple strokes, while its clearest outline remains visible.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-小"
@@ -275,16 +275,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of small.",
-        "transitionNote": "The illustration of small is condensed into ancient strokes, giving 小 a compact written outline.",
-        "transitionNoteNeedsReview": true,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The image of small is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "transitionNoteNeedsReview": true
       },
       {
         "stage": "bronze",
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/small/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "From Oracle Bone to Bronze, the angular form of 小 becomes fuller and more continuous, while its silhouette remains recognizable.",
+        "changeNoteFromPrevious": "The marks become fuller and rounder without disturbing the basic arrangement.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-小"
@@ -311,16 +311,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "From Oracle Bone to Bronze, the angular form of 小 becomes fuller and more continuous, while its silhouette remains recognizable.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The marks become fuller and rounder without disturbing the basic arrangement.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "seal",
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/small/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "From Bronze to Small Seal, the separate parts of 小 settle into smoother curves and a more balanced outline.",
+        "changeNoteFromPrevious": "The overall shape steadies as the curves become more even and the parts sit closer together.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-小"
@@ -347,16 +347,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "From Bronze to Small Seal, the separate parts of 小 settle into smoother curves and a more balanced outline.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The overall shape steadies as the curves become more even and the parts sit closer together.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "clerical",
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/small/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "From Small Seal to Clerical, the rounded form of 小 flattens into broader, more distinct stroke-like sections.",
+        "changeNoteFromPrevious": "The strokes straighten and broaden, bringing the separate sections into a clearer structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-小"
@@ -383,16 +383,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "From Small Seal to Clerical, the rounded form of 小 flattens into broader, more distinct stroke-like sections.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The strokes straighten and broaden, bringing the separate sections into a clearer structure.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "regular",
         "label": "Regular Script",
         "form": "小",
         "assetRef": null,
-        "changeNoteFromPrevious": "From Clerical to Regular Script, the broad form for 小 tightens into balanced proportions and distinct Kai strokes.",
+        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -419,9 +419,9 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "From Clerical to Regular Script, the broad form for 小 tightens into balanced proportions and distinct Kai strokes.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "transitionNoteNeedsReview": false
       }
     ],
     "origin": {

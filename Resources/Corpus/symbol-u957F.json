@@ -284,7 +284,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/symbol-u957F/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The illustration of long is condensed into ancient strokes, giving 长 a compact written outline.",
+        "changeNoteFromPrevious": "The image of long is reduced to a few simple strokes, while its clearest outline remains visible.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-长"
@@ -311,16 +311,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of long.",
-        "transitionNote": "The illustration of long is condensed into ancient strokes, giving 长 a compact written outline.",
-        "transitionNoteNeedsReview": true,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The image of long is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "transitionNoteNeedsReview": true
       },
       {
         "stage": "bronze",
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/symbol-u957F/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "From the preceding form to Bronze, 长 simplifies into fewer, cleaner marks while preserving its main structure.",
+        "changeNoteFromPrevious": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-长"
@@ -347,16 +347,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "From the preceding form to Bronze, 长 simplifies into fewer, cleaner marks while preserving its main structure.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "seal",
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/symbol-u957F/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "From the preceding form to Small Seal, the compact outline of 长 becomes fuller and more continuously drawn.",
+        "changeNoteFromPrevious": "The separate parts draw into a smoother, more continuous outline with more even proportions.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-长"
@@ -383,16 +383,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "From the preceding form to Small Seal, the compact outline of 长 becomes fuller and more continuously drawn.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The separate parts draw into a smoother, more continuous outline with more even proportions.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "clerical",
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/symbol-u957F/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "From Small Seal to Clerical, the rounded form of 长 flattens into broader, more distinct stroke-like sections.",
+        "changeNoteFromPrevious": "Several curved sections reduce to fewer, broader strokes, giving the form a flatter structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-长"
@@ -419,16 +419,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "From Small Seal to Clerical, the rounded form of 长 flattens into broader, more distinct stroke-like sections.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "Several curved sections reduce to fewer, broader strokes, giving the form a flatter structure.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "regular",
         "label": "Regular Script",
         "form": "长",
         "assetRef": null,
-        "changeNoteFromPrevious": "From Clerical to Regular Script, the broad form for 长 tightens into balanced proportions and distinct Kai strokes.",
+        "changeNoteFromPrevious": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -455,9 +455,9 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "From Clerical to Regular Script, the broad form for 长 tightens into balanced proportions and distinct Kai strokes.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "transitionNoteNeedsReview": false
       }
     ],
     "origin": {

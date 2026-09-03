@@ -57,22 +57,19 @@ struct BrowseView: View {
                         }
 
                         browseSection("Collections") {
-                            collectionPreviewLink(
-                                title: "Nature & Cosmos",
-                                detail: "Natural forms, sky, water, and time",
-                                assetRef: "Assets/Collections/nature-cosmos.png"
-                            ) {
-                                CollectionsView(dependencies: dependencies)
-                            }
-                            collectionPreviewLink(
-                                title: "People, Body & Life",
-                                detail: "People, bodies, relationships, and life",
-                                assetRef: "Assets/Collections/people-body-life.png"
-                            ) {
-                                CollectionsView(dependencies: dependencies)
-                            }
-                            browseLink(title: "Explore all collections", detail: "Ten editorial collections", systemImage: "square.grid.2x2") {
-                                CollectionsView(dependencies: dependencies)
+                            ForEach(CollectionsView.catalog(for: dependencies)) { collection in
+                                NavigationLink {
+                                    EditorialCollectionDetailView(collection: collection, dependencies: dependencies)
+                                } label: {
+                                    EditorialCollectionArtwork(collection: collection)
+                                        .frame(maxWidth: .infinity)
+                                        .aspectRatio(contentMode: .fit)
+                                        .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
+                                        .contentShape(RoundedRectangle(cornerRadius: AppRadius.surface))
+                                        .accessibilityLabel(collection.title)
+                                        .accessibilityHint("Open collection")
+                                }
+                                .buttonStyle(.plain)
                             }
                         }
                     } else {
@@ -160,45 +157,6 @@ struct BrowseView: View {
                     .stroke(AppColors.separator, lineWidth: 1)
             }
             .shadow(color: AppColors.textPrimary.opacity(0.04), radius: 6, y: 2)
-        }
-        .buttonStyle(.plain)
-    }
-
-    /// Editorial collection cards keep Browse visually aligned with the
-    /// reference shell while leaving status lists in Your Library below.
-    private func collectionPreviewLink<Destination: View>(
-        title: String,
-        detail: String,
-        assetRef: String,
-        @ViewBuilder destination: () -> Destination
-    ) -> some View {
-        NavigationLink {
-            destination()
-        } label: {
-            HStack(spacing: AppSpacing.spaceSm) {
-                HistoricalAssetView(assetRef: assetRef, displayHeight: 72)
-                    .frame(width: 96, height: 72)
-                    .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
-                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                    Text(title)
-                        .font(AppTypography.stageTitle)
-                        .foregroundStyle(AppColors.textPrimary)
-                    Text(detail)
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
-                }
-                Spacer(minLength: 0)
-                Image(systemName: "chevron.right")
-                    .font(.system(size: 12, weight: .semibold))
-                    .foregroundStyle(AppColors.textTertiary)
-            }
-            .padding(AppSpacing.spaceXs)
-            .background(AppColors.surfaceElevated)
-            .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
-            .overlay {
-                RoundedRectangle(cornerRadius: AppRadius.card)
-                    .stroke(AppColors.separator, lineWidth: 1)
-            }
         }
         .buttonStyle(.plain)
     }

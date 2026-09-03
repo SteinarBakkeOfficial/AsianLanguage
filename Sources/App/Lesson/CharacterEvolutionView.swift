@@ -62,12 +62,6 @@ struct CharacterEvolutionView: View {
         return stages.first(where: { $0.stage == selectedStageID })?.label ?? selectedStageID
     }
 
-    /// The reference shows a quiet next-stage cue at the foot of every exhibit; paging remains gesture-led.
-    private var nextStageCue: String? {
-        guard currentIndex + 1 < journeyIDs.count else { return nil }
-        return "Next: \(label(for: journeyIDs[currentIndex + 1])) →"
-    }
-
     var body: some View {
         VStack(spacing: 0) {
             TabView(selection: $selectedStageID) {
@@ -242,24 +236,23 @@ struct CharacterEvolutionView: View {
                 HStack(spacing: AppSpacing.space2xs) {
                     ForEach(Array(journeyIDs.enumerated()), id: \.element) { index, id in
                         stageMarker(index: index, id: id)
+
+                        // Preserve the approved compact timeline; the final stage has no trailing connector.
+                        if index < journeyIDs.count - 1,
+                           id != "regular",
+                           journeyIDs[index + 1] != "regular" {
+                            Rectangle()
+                                .fill(index < currentIndex ? AppColors.accentPrimary : AppColors.separator)
+                                .frame(minWidth: 16, maxWidth: 52, minHeight: 1, maxHeight: 1)
+                                .accessibilityHidden(true)
+                        }
                     }
                 }
                 .padding(.vertical, AppSpacing.space2xs)
             }
-            HStack(alignment: .firstTextBaseline) {
-                Text(currentLabel)
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textSecondary)
-                Spacer()
-                if let nextStageCue, currentIndex + 1 < journeyIDs.count {
-                    Button(nextStageCue) {
-                        selectedStageID = journeyIDs[currentIndex + 1]
-                    }
-                    .font(AppTypography.caption.weight(.semibold))
-                    .foregroundStyle(AppColors.textPrimary)
-                    .buttonStyle(.plain)
-                }
-            }
+            Text(currentLabel)
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textSecondary)
         }
         .padding(.horizontal, AppSpacing.spacePage)
         .padding(.bottom, AppSpacing.space2xs)
@@ -279,14 +272,17 @@ struct CharacterEvolutionView: View {
         return Button {
             selectedStageID = id
         } label: {
-            Text(label(for: id))
-                .font(AppTypography.caption.weight(isCurrent ? .semibold : .regular))
-                .foregroundStyle(isCurrent ? AppColors.textPrimary : AppColors.textSecondary)
-                .lineLimit(1)
-                .padding(.horizontal, AppSpacing.spaceXs)
-                .frame(minHeight: 32)
-                .background(isCurrent ? AppColors.journeyRailSelected : Color.clear)
-                .clipShape(RoundedRectangle(cornerRadius: AppRadius.control))
+            Group {
+                if id == "regular" {
+                    // Regular Script is the museum endpoint and stays free of a decorative marker.
+                    Color.clear
+                } else {
+                    Circle()
+                        .fill(index <= currentIndex ? AppColors.accentPrimary : AppColors.separator)
+                        .frame(width: isCurrent ? 9 : 7, height: isCurrent ? 9 : 7)
+                }
+            }
+            .frame(width: 44, height: 32)
         }
         .buttonStyle(.plain)
         .accessibilityLabel("\(label(for: id)), stage \(index + 1) of \(journeyIDs.count)")

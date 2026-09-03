@@ -131,7 +131,8 @@
 
 - Museum explanatory text belongs to the destination stage as `transitionNote`; it describes the visible change from the previous available exhibit.
 - The first available stage compares against the Origin Illustration. Later stages compare only against their immediately preceding available stage. Missing stages are never invented.
-- The 126-record V1 package contains 630 generated transition-caption drafts. The source package is `content/research/v1-symbols/transition-notes-v1.json`; 78 conservative origin captions are flagged for visual/editorial review.
+- The 126-record V1 package contains 630 concise transition captions. The source package is `content/research/v1-symbols/transition-notes-v1.json`; 78 conservative origin captions are flagged for visual/editorial review.
+- Captions do not name the stage transition or repeat the modern character. They use short, concrete observations: Origin → Oracle connects the illustrated subject to the first glyph; later captions compare only neighboring forms.
 - The app prioritizes `transitionNote` while retaining `changeNoteFromPrevious` for legacy records and compatibility.
 
 ### Fire onboarding reference restored — 2026-09-03
@@ -144,7 +145,7 @@
 
 - Browse shows its search field first, followed by Learned, Favorites, Review Later, one All Symbols library entry, and editorial Collections.
 - All Symbols is a separate pushed page with the same visual treatment and its own search field; this does not add a sixth root navigation area.
-- The Origin-to-Today rail uses a visibly different warm surface from the Symbol page and uses compact stage-name controls instead of circles and connector lines.
+- The Origin-to-Today rail uses a visibly different warm surface from the Symbol page while preserving compact circles and connectors for the historical stages; Regular Script has no decorative circle or connector, and the rail does not add stage-name labels or a next-stage cue.
 - Sound effects, reviewed usage examples, native-speaker review, Home Library surfacing, and the final museum-complete decision remain on hold.
 
 ## Delivery

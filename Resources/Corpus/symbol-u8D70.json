@@ -296,7 +296,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/symbol-u8D70/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The illustration of walk is condensed into ancient strokes, giving 走 a compact written outline.",
+        "changeNoteFromPrevious": "The image of walk is reduced to a few simple strokes, while its clearest outline remains visible.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-走"
@@ -323,16 +323,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of walk.",
-        "transitionNote": "The illustration of walk is condensed into ancient strokes, giving 走 a compact written outline.",
-        "transitionNoteNeedsReview": true,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The image of walk is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "transitionNoteNeedsReview": true
       },
       {
         "stage": "bronze",
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/symbol-u8D70/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "From Oracle Bone to Bronze, the angular form of 走 becomes fuller and more continuous, while its silhouette remains recognizable.",
+        "changeNoteFromPrevious": "Several small marks fall away, leaving the same basic outline in a cleaner form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-走"
@@ -359,16 +359,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "From Oracle Bone to Bronze, the angular form of 走 becomes fuller and more continuous, while its silhouette remains recognizable.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "Several small marks fall away, leaving the same basic outline in a cleaner form.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "seal",
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/symbol-u8D70/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "From Bronze to Small Seal, the separate parts of 走 settle into smoother curves and a more balanced outline.",
+        "changeNoteFromPrevious": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-走"
@@ -395,16 +395,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "From Bronze to Small Seal, the separate parts of 走 settle into smoother curves and a more balanced outline.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "clerical",
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/symbol-u8D70/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "From Small Seal to Clerical, the rounded form of 走 flattens into broader, more distinct stroke-like sections.",
+        "changeNoteFromPrevious": "The lines open outward into broader, straighter strokes while keeping the same arrangement.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-走"
@@ -431,16 +431,16 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "From Small Seal to Clerical, the rounded form of 走 flattens into broader, more distinct stroke-like sections.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The lines open outward into broader, straighter strokes while keeping the same arrangement.",
+        "transitionNoteNeedsReview": false
       },
       {
         "stage": "regular",
         "label": "Regular Script",
         "form": "走",
         "assetRef": null,
-        "changeNoteFromPrevious": "From Clerical to Regular Script, the broad form for 走 tightens into balanced proportions and distinct Kai strokes.",
+        "changeNoteFromPrevious": "The lines become more controlled, and the main sections settle into balanced proportions.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -467,9 +467,9 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "From Clerical to Regular Script, the broad form for 走 tightens into balanced proportions and distinct Kai strokes.",
-        "transitionNoteNeedsReview": false,
-        "availabilityState": "available"
+        "availabilityState": "available",
+        "transitionNote": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "transitionNoteNeedsReview": false
       }
     ],
     "origin": {
