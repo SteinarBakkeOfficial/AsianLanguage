@@ -33,7 +33,7 @@ struct RootTabView: View {
         case .symbol:
             SymbolRootView(dependencies: dependencies)
         case .history:
-            HistoryRootView(dependencies: dependencies)
+            HistoryRootView()
         case .browse:
             BrowseView(dependencies: dependencies)
         case .more:

@@ -105,7 +105,7 @@ struct HomeView: View {
 
     private var collectionModule: some View {
         Button {
-            guard let nextRecord = incompleteCollectionRecords.first else { return }
+            guard let nextRecord = natureCollectionRecords.first else { return }
             dependencies.navigationState.openSymbol(nextRecord.id, intent: .start)
         } label: {
             GroupedSurface {
