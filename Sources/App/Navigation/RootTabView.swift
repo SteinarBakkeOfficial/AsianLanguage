@@ -333,7 +333,7 @@ private struct HistoryRootView: View {
             dynasty: "Shang Dynasty",
             material: "Carved on animal bones and turtle shells",
             explanation: "People used divination to ask about important matters. They carved questions on bone or shell, then heated them until cracks appeared. These early drawings were simple and symbolic.",
-            artworkRect: CGRect(x: 0.275, y: 0.163, width: 0.34, height: 0.165),
+            artworkRect: CGRect(x: 0.287, y: 0.169, width: 0.318, height: 0.143),
             color: AppColors.accentPrimary
         ),
         HistoryOverviewStage(
@@ -343,7 +343,7 @@ private struct HistoryRootView: View {
             dynasty: "Zhou Dynasty",
             material: "Cast or engraved on bronze vessels",
             explanation: "With the rise of ritual and record-keeping, inscriptions moved to bronze vessels. Tools improved, strokes became more fluid and ornamental, and characters gained structure and balance.",
-            artworkRect: CGRect(x: 0.275, y: 0.333, width: 0.34, height: 0.155),
+            artworkRect: CGRect(x: 0.287, y: 0.339, width: 0.318, height: 0.137),
             color: Color(red: 0.63, green: 0.43, blue: 0.25)
         ),
         HistoryOverviewStage(
@@ -353,7 +353,7 @@ private struct HistoryRootView: View {
             dynasty: "Qin Dynasty",
             material: "Written with brush on bamboo slips and silk",
             explanation: "Qin unified China and standardized writing. Small Seal script was created for official use—characters became more uniform, symmetrical, and elegant.",
-            artworkRect: CGRect(x: 0.275, y: 0.495, width: 0.34, height: 0.155),
+            artworkRect: CGRect(x: 0.287, y: 0.501, width: 0.318, height: 0.137),
             color: Color(red: 0.76, green: 0.56, blue: 0.28)
         ),
         HistoryOverviewStage(
@@ -363,7 +363,7 @@ private struct HistoryRootView: View {
             dynasty: "Han Dynasty",
             material: "Written with brush on paper",
             explanation: "Writing on paper and with brush encouraged faster strokes. Characters became flatter and wider, with distinct horizontal lines and turning strokes—the basis of many modern shapes.",
-            artworkRect: CGRect(x: 0.275, y: 0.646, width: 0.34, height: 0.145),
+            artworkRect: CGRect(x: 0.287, y: 0.653, width: 0.318, height: 0.129),
             color: AppColors.learned
         ),
         HistoryOverviewStage(
@@ -373,7 +373,7 @@ private struct HistoryRootView: View {
             dynasty: "All Dynasties",
             material: "Written with brush on paper",
             explanation: "Over time, Clerical script evolved into Regular script. Strokes became more balanced and refined—the foundation of the characters we use today.",
-            artworkRect: CGRect(x: 0.275, y: 0.786, width: 0.34, height: 0.125),
+            artworkRect: CGRect(x: 0.287, y: 0.792, width: 0.318, height: 0.111),
             color: AppColors.accentPrimary
         )
     ]
@@ -411,7 +411,15 @@ private struct HistoryOverviewStage: Identifiable {
 
 private struct HistoryOverviewHeader: View {
     var body: some View {
-        HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
+        ZStack(alignment: .topLeading) {
+            // The supplied landscape is a quiet background layer, matching the reference rather than sitting beside the title.
+            HistoryReferenceCropView(
+                normalizedRect: CGRect(x: 0.57, y: 0.0, width: 0.43, height: 0.17),
+                accessibilityLabel: "Ink-wash landscape with mountains and a pavilion"
+            )
+            .frame(maxWidth: .infinity, minHeight: 142, maxHeight: 142)
+            .opacity(0.82)
+
             VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
                 Text("The History of Chinese Characters")
                     .font(AppTypography.exhibitHeading)
@@ -420,14 +428,10 @@ private struct HistoryOverviewHeader: View {
                     .font(AppTypography.body)
                     .foregroundStyle(AppColors.textSecondary)
             }
-
-            HistoryReferenceCropView(
-                normalizedRect: CGRect(x: 0.57, y: 0.0, width: 0.43, height: 0.17),
-                accessibilityLabel: "Ink-wash landscape with mountains and a pavilion"
-            )
-            .frame(width: 132, height: 142)
-            .clipped()
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.trailing, AppSpacing.spaceMd)
         }
+        .frame(minHeight: 142, maxHeight: 142)
         .padding(.top, AppSpacing.spaceXs)
     }
 }
@@ -497,7 +501,7 @@ private struct HistoryOverviewRow: View {
 
                 HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
                     HistoryStageArtwork(stage: stage)
-                        .frame(width: 144, height: 112)
+            .frame(width: 144, height: 112)
                     VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                         Text("Why it changed")
                             .font(AppTypography.caption.weight(.semibold))
@@ -572,16 +576,19 @@ private struct HistoryReferenceCropView: View {
                 let cropWidth = image.size.width * normalizedRect.width * scale
                 let cropHeight = image.size.height * normalizedRect.height * scale
 
-                Image(uiImage: image)
-                    .resizable()
-                    .frame(width: image.size.width * scale, height: image.size.height * scale)
-                    .offset(
-                        x: (proxy.size.width - cropWidth) / 2
-                            - normalizedRect.minX * image.size.width * scale,
-                        y: (proxy.size.height - cropHeight) / 2
-                            - normalizedRect.minY * image.size.height * scale
-                    )
-                    .accessibilityLabel(accessibilityLabel)
+                ZStack(alignment: .topLeading) {
+                    Image(uiImage: image)
+                        .resizable()
+                        .frame(width: image.size.width * scale, height: image.size.height * scale)
+                        .offset(
+                            x: (proxy.size.width - cropWidth) / 2
+                                - normalizedRect.minX * image.size.width * scale,
+                            y: (proxy.size.height - cropHeight) / 2
+                                - normalizedRect.minY * image.size.height * scale
+                        )
+                }
+                .frame(width: proxy.size.width, height: proxy.size.height, alignment: .topLeading)
+                .accessibilityLabel(accessibilityLabel)
             } else {
                 AppColors.artifactField
                     .accessibilityLabel("Reference artwork unavailable")

@@ -23,7 +23,7 @@ Assert-True $marker.Contains("Text(shortLabel(for: id))") "The museum rail must 
 
 $usage = Text "Sources/App/Lesson/UsageExamplesView.swift"
 Assert-True $usage.Contains('Text("IN A WORD")') "Word context must retain the approved heading."
-Assert-True $usage.Contains('.filter { $0.exampleLevel == .word }.prefix(4)') "Word context may show up to four existing word examples."
+Assert-True $usage.Contains('displayExamples(examples, variants: variants).prefix(4)') "Language context may show up to four real examples without placeholders."
 Assert-True $usage.Contains("fontRole.font") "Written context examples must use their locale-specific font."
 Assert-True (-not $usage.Contains('Text("IN CONTEXT")')) "Word context must not be relabeled by an unapproved layout pass."
 Assert-True (-not $usage.Contains("Basic sentence using")) "Word context must not include generated placeholder copy."

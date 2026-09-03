@@ -25,12 +25,12 @@ struct HomeView: View {
                         ContentUnavailableView("No Shared Characters", systemImage: "character")
                     }
 
-                    if !reviewRecords.isEmpty || (learnedCount > 0 && !natureCollectionRecords.isEmpty) {
+                    if !reviewRecords.isEmpty || continueCollection != nil {
                         Text("Continue Exploring")
                             .font(AppTypography.sectionHeading)
                             .foregroundStyle(AppColors.textPrimary)
                         if !reviewRecords.isEmpty { reviewModule }
-                        if !natureCollectionRecords.isEmpty { collectionModule }
+                        if continueCollection != nil { collectionModule }
                     }
 
                     if learnedCount > 0 {
@@ -92,7 +92,7 @@ struct HomeView: View {
 
     @ViewBuilder
     private var collectionModule: some View {
-        if let collection = CollectionsView.catalog(for: dependencies).first {
+        if let collection = continueCollection {
             NavigationLink {
                 EditorialCollectionDetailView(collection: collection, dependencies: dependencies)
             } label: {
@@ -149,12 +149,19 @@ struct HomeView: View {
         dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.isReviewLater == true }
     }
 
-    private var natureCollectionRecords: [SharedCharacterRecord] {
-        let natureCharacters = Set("水山木日月土川天雨田井泉云南北年白黑正上下中立央林明夏冬".map(String.init))
-        return dependencies.sharedCharacters.filter {
-            natureCharacters.contains($0.coreCharacter)
-                && userStateStore.state.lessonStates[$0.id]?.progressStatus != .learned
+    /// Prefers the collection with the most progress, then an untouched collection when no partial collection exists.
+    private var continueCollection: SharedCharacterCollection? {
+        let candidates = CollectionsView.catalog(for: dependencies).filter { !$0.sharedCharacterIDs.isEmpty }
+        let progress = candidates.map { collection in
+            (collection: collection, learned: learnedCount(in: collection))
         }
+        if let partial = progress
+            .filter({ $0.learned > 0 && $0.learned < $0.collection.sharedCharacterIDs.count })
+            .sorted(by: { $0.learned > $1.learned })
+            .first {
+            return partial.collection
+        }
+        return progress.first(where: { $0.learned == 0 })?.collection
     }
 
     private var learnedCount: Int {
@@ -196,24 +203,27 @@ struct HeroLineagePreview: View {
             VStack(spacing: AppSpacing.space2xs) {
                 ForEach(Array(previewItems.enumerated()), id: \.offset) { index, item in
                     if let metadata = item.metadata {
-                        HistoricalAssetView(metadata: metadata, displayHeight: 72)
-                            .frame(maxWidth: 88, maxHeight: 72)
+                        HistoricalAssetView(metadata: metadata, displayHeight: 92)
+                            .frame(width: 112, height: 96)
+                            .clipped()
                             .padding(.horizontal, AppSpacing.spaceSm)
                             .background(AppColors.artifactField)
                             .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
                             .accessibilityLabel("\(item.id) lineage visual for \(record.coreSharedMeaning)")
                     } else if let assetRef = item.assetRef {
-                        HistoricalAssetView(assetRef: assetRef, displayHeight: 72)
-                            .frame(maxWidth: 88, maxHeight: 72)
+                        HistoricalAssetView(assetRef: assetRef, displayHeight: 92)
+                            .frame(width: 112, height: 96)
+                            .clipped()
                             .padding(.horizontal, AppSpacing.spaceSm)
                             .background(AppColors.artifactField)
                             .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
                             .accessibilityLabel("\(item.id) lineage visual for \(record.coreSharedMeaning)")
                     } else if let form = item.form {
                         Text(form)
-                            .font(.system(size: 64, design: .serif))
+                            .font(.system(size: 80, design: .serif))
                             .foregroundStyle(AppColors.textPrimary)
-                            .frame(minWidth: 88, minHeight: 72)
+                            .frame(width: 112, height: 96)
+                            .clipped()
                             .accessibilityLabel("Modern form of \(record.coreSharedMeaning)")
                     }
                     if index < previewItems.count - 1 {
@@ -224,7 +234,7 @@ struct HeroLineagePreview: View {
                     }
                 }
             }
-            .frame(maxWidth: .infinity, minHeight: 240, maxHeight: 280)
+            .frame(maxWidth: .infinity, minHeight: 300, maxHeight: 360)
             .accessibilityElement(children: .contain)
             .accessibilityLabel("Available lineage visuals for \(record.coreSharedMeaning)")
         } else {

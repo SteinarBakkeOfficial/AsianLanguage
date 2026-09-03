@@ -7,6 +7,8 @@ $evolution = Text "Sources/App/Lesson/CharacterEvolutionView.swift"
 Assert-True $evolution.Contains("struct BundledHistoricalAssetResolver") "A centralized asset resolver must exist."
 Assert-True $evolution.Contains("case bundledSVG(URL)") "Bundled SVG assets must have an explicit local rendering path."
 Assert-True $evolution.Contains("import WebKit") "Local SVG rendering must use an iOS-native view integration."
+Assert-True $evolution.Contains("loadHTMLString") "Local SVG rendering must fit artwork to its assigned viewport."
+Assert-True $evolution.Contains("isUserInteractionEnabled = false") "Historical artwork must not intercept journey controls."
 Assert-True $evolution.Contains("Asset requires a compiled iOS image representation") "Unsupported source assets must remain explicit."
 Assert-True $evolution.Contains("Historical visual unavailable") "Missing Historical Assets must be visible."
 Assert-True (-not $evolution.Contains("fallbackForm")) "Historical rendering must not use a modern fallback form."
@@ -16,8 +18,12 @@ Assert-True $lesson.Contains("CharacterEvolutionView(") "Lesson must use the Sym
 Assert-True (-not $lesson.Contains("EvolutionBoardView")) "The obsolete board must not be on the production path."
 
 $modern = Text "Sources/App/Lesson/ModernFormsComparisonView.swift"
-Assert-True $modern.Contains('Hanja: \(hanjaReading)') "Korean modern forms must show the Hanja reading alongside native Korean."
-Assert-True (-not $modern.Contains("Hanja 火")) "Korean modern forms must not hardcode the Fire character."
+Assert-True $modern.Contains("Regular Script") "Modern must remain a single Regular Script museum endpoint."
+Assert-True (-not $modern.Contains("ForEach(visibleTracks)")) "Modern must not render all language cards together."
+
+$usage = Text "Sources/App/Lesson/UsageExamplesView.swift"
+Assert-True $usage.Contains("Korean · Hanja / Hangul") "Korean Usage must distinguish Hanja and Hangul."
+Assert-True $usage.Contains("languageFormHeader") "Usage pages must show their locale-specific modern form before examples."
 
 $tile = Text "Sources/App/SharedUI/DesignSystem.swift"
 Assert-True (-not $tile.Contains('case .inProgress: return "In progress"')) "Browse character tiles should not label every non-learned record as in progress."

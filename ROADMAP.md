@@ -11,7 +11,7 @@ The official product-facing name is Script Roots. AsianLanguage remains the inte
 1. Product foundation — complete; product language and scope are resolved
 2. App skeleton — complete; five-area root shell is wired
 3. Local data layer — complete; bundled corpus and separate local user state are wired
-4. Symbol Journey — in progress; structural pager, two-mode stage rail, Modern/Usage endpoints, exact-position resume, and initial visual slice are implemented
+4. Symbol Journey — in progress; structural pager, one context-aware stage rail, Modern/Usage endpoints, exact-position resume, and initial visual slice are implemented
 5. Discovery — foundation implemented; visual refinement remains
 6. Content contract — folder-based editorial layer implemented; current records remain draft and require editorial review
 7. Asset pipeline — offline preparation/package path implemented; production provenance and historical assets remain incomplete
@@ -34,7 +34,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Separate `selectedSymbolID` and `activeJourneySymbolID` concepts.
 - Local JSON user state with independent progress, Favorite, Review Later, focus-language, appearance, onboarding, and reset behavior.
 - Data-driven Origin, historical stages, Modern, and Usage language pages in one continuous horizontal journey; each page owns its own vertical content.
-- Two seamless rails: Origin → Oracle → Bronze → Seal → Clerical → Modern → Usage, then Modern → selected target-language Usage pages.
+- One context-aware rail: Origin → Oracle → Bronze → Seal → Clerical → Modern in the museum room, then Modern → selected target-language pages in Usage.
 - Semantic design tokens for light/dark colors, typography, spacing, radii, and motion.
 - Reusable foundation components for primary/secondary actions, icon actions, grouped surfaces, artifact fields, missing historical content, lineage previews, character tiles, search fields, and settings rows.
 - Home lineage preview now uses actual available corpus forms only.
@@ -68,13 +68,13 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Pilot Today copy now uses one page per selected language with the existing reviewed readings, romanization, and word examples; broader example expansion and native-speaker review remain deferred.
 - Fire, Water, and Tree now have separate educational concept illustrations, and the allowlisted historical SVG intake preserves source/license provenance.
 - The approved correction pass keeps the Symbol Journey rail persistent and visibly labeled, isolates Fire onboarding from the compact Home preview, fixes Home's orphaned active-state fallback, uses the complete collection banner on Home, identifies Hong Kong Cantonese/Jyutping readings, and recreates the History overview natively from the approved reference content.
-- The Symbol Journey now separates the Modern Forms museum endpoint from the later Usage learning pages; the language rail appears only for Modern/Usage navigation.
+- The Symbol Journey now separates the single Modern/Regular Script museum endpoint from later language Usage pages; one visible rail changes its destinations at that boundary.
 
 ### Transitional or incomplete
 
 - Fire, Water, and Tree concept art renders as educational reconstruction only and remains under editorial review.
 - Allowlisted Fire, Water, and Tree historical SVGs are bundled where acquired; named stages without approved files remain unavailable. Local SVG rendering still requires macOS/Xcode verification.
-- The horizontal Modern/Usage pages and word-context composition still need simulator comparison and interaction polish.
+- The Modern/Usage page composition and word-context layout still need simulator comparison and interaction polish; sparse language content still needs reviewed expansion.
 - Completion, Revisit, and Quick Review have initial behavior and structure but still need simulator visual QA and final interaction polish.
 - Shared components are available; History still needs final simulator comparison for crop positioning and typography, while More needs any future approved representative content.
 - Historical asset provenance, renderability, and specialist confidence review remain required before publication; the availability/confidence contract itself is now aligned.

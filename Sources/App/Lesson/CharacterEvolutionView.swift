@@ -55,9 +55,9 @@ struct CharacterEvolutionView: View {
             .filter { focusSelection.selectedTracks.contains($0) }
     }
 
-    /// Main museum rail: the final Modern node becomes the bridge into the usage rail.
+    /// One visible rail changes its destinations with the learner's current room: museum stages through Modern, then selected languages.
     private var museumNavigatorIDs: [String] {
-        ["origin"] + museumStages.map(\.stage) + ["modern"] + (orderedTracks.isEmpty ? [] : ["usage"])
+        ["origin"] + museumStages.map(\.stage) + ["modern"]
     }
 
     /// Language rail: Modern remains visible as the return point, followed by selected target languages.
@@ -306,12 +306,7 @@ struct CharacterEvolutionView: View {
         .accessibilityAddTraits(isCurrent ? .isSelected : [])
     }
 
-    private func destinationID(for navigatorID: String) -> String {
-        if navigatorID == "usage", let firstTrack = orderedTracks.first {
-            return "usage-\(firstTrack.rawValue)"
-        }
-        return navigatorID
-    }
+    private func destinationID(for navigatorID: String) -> String { navigatorID }
 
     private func label(for id: String) -> String {
         if id == "origin" { return "Origin" }
@@ -427,14 +422,16 @@ struct HistoricalAssetView: View {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
-                    .frame(maxWidth: .infinity, minHeight: displayHeight, maxHeight: displayHeight)
+                    .frame(maxWidth: .infinity, height: displayHeight)
+                    .clipped()
                     .accessibilityLabel(accessibilityDescription)
             } else {
                 HistoricalMissingState(title: "Historical visual unavailable")
             }
         case .bundledSVG(let url):
             BundledSVGView(url: url)
-                .frame(maxWidth: .infinity, minHeight: displayHeight, maxHeight: displayHeight)
+                .frame(maxWidth: .infinity, height: displayHeight)
+                .clipped()
                 .accessibilityLabel(accessibilityDescription)
         case .unavailable:
             HistoricalMissingState(title: "Historical visual unavailable")
@@ -446,17 +443,46 @@ struct HistoricalAssetView: View {
 private struct BundledSVGView: UIViewRepresentable {
     let url: URL
 
+    final class Coordinator {
+        var loadedURL: URL?
+    }
+
+    func makeCoordinator() -> Coordinator { Coordinator() }
+
     func makeUIView(context: Context) -> WKWebView {
         let webView = WKWebView(frame: .zero)
         webView.isOpaque = false
         webView.backgroundColor = .clear
+        webView.isUserInteractionEnabled = false
         webView.scrollView.isScrollEnabled = false
-        webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+        webView.scrollView.contentInsetAdjustmentBehavior = .never
+        loadFittedSVG(into: webView)
+        context.coordinator.loadedURL = url
         return webView
     }
 
     func updateUIView(_ webView: WKWebView, context: Context) {
-        guard webView.url != url else { return }
-        webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+        guard context.coordinator.loadedURL != url else { return }
+        loadFittedSVG(into: webView)
+        context.coordinator.loadedURL = url
+    }
+
+    /// Wraps the local SVG in a fixed viewport so its intrinsic dimensions cannot escape the SwiftUI frame.
+    private func loadFittedSVG(into webView: WKWebView) {
+        guard let svg = try? String(contentsOf: url, encoding: .utf8) else { return }
+        let body = svg.replacingOccurrences(of: #"(?s)<\?xml.*?\?>"#, with: "", options: .regularExpression)
+        let html = """
+        <!doctype html>
+        <html><head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <style>
+        html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: transparent; }
+        #canvas { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+        #canvas svg { width: 100% !important; height: 100% !important; max-width: 100%; max-height: 100%; display: block; }
+        </style></head><body><div id="canvas">
+        \(body)
+        </div></body></html>
+        """
+        webView.loadHTMLString(html, baseURL: url.deletingLastPathComponent())
     }
 }

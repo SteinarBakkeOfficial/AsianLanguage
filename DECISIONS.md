@@ -22,7 +22,7 @@
 
 - Evolution Stages are data-driven and may be omitted when uncertain or not useful.
 - Canonical page IDs are origin, oracleBone, bronze, seal, clerical, modern, and usage-<target>; Regular Script is rendered inside Modern.
-- Modern is the final museum room, containing the selected modern forms. Usage is a separate learning section in the same horizontal journey, containing language-specific word context.
+- Modern is the final museum room, containing one modern standardized Kai form. Usage is a separate learning section in the same journey, containing one language-specific page at a time.
 - Historical stages, Modern, and Usage are horizontally swiped exhibit pages; page-local overflow may scroll, but there is no single vertical journey scroll or Continue gate between historical concepts.
 - Exact SymbolJourneyPosition, including stage ID, is persisted for resume.
 
@@ -62,7 +62,7 @@
 - LineagePreview is data-driven and may render only forms present in the approved corpus.
 - The first visual slice uses a restrained current/next rail and horizontally swiped stage pages.
 - The active AppShell typography reference names Playfair Display for editorial/display headings and Inter for interface/body text. CNS11643 Kai is bundled and registered for the Regular Script endpoint, and locale-specific Source Han Serif Regular faces are bundled and registered for Simplified Chinese, Traditional Chinese Taiwan, Japanese, and Korean modern forms. Source Han Sans and extra weights are deferred.
-- Modern is the final museum room and shows the selected modern language forms. Usage follows as one page per selected target language with word-level context; when no tracks are selected, Modern presents an explicit museum-only state. Language identity is not communicated by arbitrary color.
+- Modern is the final museum room and shows only the modern standardized Kai form. Usage follows as one page per selected target language with the locale-specific form and context; when no tracks are selected, Modern presents the museum-only completion state. Language identity is not communicated by arbitrary color.
 - Structure is a vertical recap, not a second navigation rail; it may show only stage forms and component insights supported by the record.
 - Usage context is a vertical list of selected-track character words, prioritizing the written character, reading, and meaning over unexplained sentences.
 - There is no Summary/Recall screen in the primary museum flow; character recognition, structure, and source detail live behind the `…` character menu.
@@ -78,7 +78,7 @@
 - Educational reconstructions are classified separately from historical evidence. Fire's Origin visual is an authored educational reconstruction and must never be presented as an ancient artifact.
 - Offline packaging copies only local app derivatives into the bundle asset area and emits a manifest declaring that runtime networking is not required.
 - The approved AppShell reference uses `#F7F3EE` paper, `#EFE9E1` clay, `#1C1C1C` ink, `#686868` secondary text, `#C23A2B` cinnabar, and `#2E7D6E` jade. Light is the default appearance; Dark is the only alternate, and legacy System values decode to Light.
-- Usage remains one horizontal page per selected language until a later content decision approves a scrollable all-language page. Each page must show the correct writing, pronunciation/reading, romanization, and a reviewed word example.
+- Usage remains one page per selected language. Each page must show the correct writing, pronunciation/reading, romanization, and reviewed examples; the UI may display up to four real stored entries but must not fabricate missing examples.
 - Browse owns the Your Library status lists. Collections owns editorial sets only; status lists must not be duplicated on the Collections index.
 - Editorial collections use explicit bundled horizontal cover panels. Their artwork is separate from symbol-origin and historical assets, and collection covers must not be derived from whichever symbol happens to appear first in a collection.
 - Educational concept illustrations and historical glyph evidence are separate asset classes. Concept art must carry internal-authored provenance and must never fill a missing historical stage.
@@ -146,7 +146,7 @@
 
 - Browse shows its search field first, followed by Learned, Favorites, Review Later, one All Symbols library entry, and editorial Collections.
 - All Symbols is a separate pushed page with the same visual treatment and its own search field; this does not add a sixth root navigation area.
-- The Symbol Journey uses two seamless navigation rails. The museum rail is Origin → Oracle → Bronze → Seal → Clerical → Modern → Usage; the learning rail is Modern → selected target languages. Every item has a visible name and dot, and no extra current-stage caption is shown below the rail.
+- The Symbol Journey uses one context-aware navigation rail. In the museum room it is Origin → Oracle → Bronze → Seal → Clerical → Modern; after Modern it is Modern → selected target languages. Every item has a visible name and dot, and no extra current-stage caption is shown below the rail.
 
 ### Symbol Journey rail and Home footer clarification — 2026-09-03
 

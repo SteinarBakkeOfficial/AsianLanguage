@@ -52,6 +52,8 @@ struct UsageExamplesView: View {
         case .simplifiedChinese:
             wordCard(
                 title: "Simplified Chinese",
+                form: record.focusCoverage.simplifiedChinese.form,
+                readings: record.focusCoverage.simplifiedChinese.readings,
                 examples: record.focusCoverage.simplifiedChinese.examples,
                 variants: record.focusCoverage.simplifiedChinese.variants,
                 fontRole: .simplifiedChinese
@@ -61,23 +63,22 @@ struct UsageExamplesView: View {
         case .japanese:
             wordCard(
                 title: "Japanese",
+                form: record.focusCoverage.japanese.form,
+                readings: record.focusCoverage.japanese.readings,
                 examples: record.focusCoverage.japanese.examples,
                 variants: record.focusCoverage.japanese.variants,
                 fontRole: .japanese
             )
         case .korean:
-            wordCard(
-                title: "Korean · Hanja / Hangul",
-                examples: record.focusCoverage.korean.examples,
-                variants: record.focusCoverage.korean.variants,
-                fontRole: .korean
-            )
+            koreanWordCard(record.focusCoverage.korean)
         }
     }
 
-    /// Shows up to four existing word-level examples without inventing replacement content.
+    /// Shows up to four real editorial examples without exposing importer placeholders as learner content.
     private func wordCard(
         title: String,
+        form: String,
+        readings: [CharacterReading],
         examples: [UsageExample],
         variants: [ModernFormVariant],
         fontRole: CJKFontRole
@@ -86,45 +87,64 @@ struct UsageExamplesView: View {
             Text(title)
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
-            ForEach(examples.filter { $0.exampleLevel == .word }.prefix(4), id: \.text) { example in
+            languageFormHeader(form: form, readings: readings, fontRole: fontRole)
+            ForEach(displayExamples(examples, variants: variants).prefix(4), id: \.text) { example in
                 exampleRow(example, fontRole: fontRole)
             }
-            ForEach(variants, id: \.id) { variant in
-                ForEach(variant.examples.filter { $0.exampleLevel == .word }.prefix(1), id: \.text) { example in
-                    HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
-                        Text(variant.writingSystem ?? "Native form")
-                            .font(AppTypography.caption)
-                            .foregroundStyle(AppColors.textSecondary)
-                        Text(example.text)
-                            .font(fontRole.font(size: 16).weight(.semibold))
-                            .foregroundStyle(AppColors.textPrimary)
-                        if let reading = example.reading {
-                            Text(reading)
-                                .font(AppTypography.metadata)
-                                .foregroundStyle(AppColors.textSecondary)
-                        }
-                        Spacer(minLength: 0)
-                        Text(example.translation)
-                            .font(AppTypography.caption)
-                            .foregroundStyle(AppColors.textSecondary)
-                            .multilineTextAlignment(.trailing)
-                    }
+        }
+        .padding(.vertical, AppSpacing.spaceSm)
+        .padding(.horizontal, AppSpacing.spaceMd)
+        .background(AppColors.surfaceElevated)
+        .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
+        .overlay {
+            RoundedRectangle(cornerRadius: AppRadius.surface)
+                .stroke(AppColors.separator, lineWidth: 1)
+        }
+    }
+
+    /// Presents the selected language's modern form before its contextual examples.
+    private func languageFormHeader(form: String, readings: [CharacterReading], fontRole: CJKFontRole) -> some View {
+        HStack(alignment: .top, spacing: AppSpacing.spaceMd) {
+            Text(form)
+                .font(fontRole.font(size: 48))
+                .foregroundStyle(AppColors.accentPrimary)
+                .frame(minWidth: 58, minHeight: 58, alignment: .leading)
+                .minimumScaleFactor(0.55)
+                .lineLimit(1)
+                .clipped()
+            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                ForEach(readings, id: \.system) { reading in
+                    Text("\(reading.system.capitalized): \(reading.value)")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
                 }
             }
-            ForEach(variants, id: \.id) { variant in
+            Spacer(minLength: 0)
+        }
+    }
+
+    /// Korean keeps the Hanja form and an explicit native-script variant together on the Usage page.
+    private func koreanWordCard(_ coverage: StandardFocusCoverage) -> some View {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
+            Text("Korean · Hanja / Hangul")
+                .font(AppTypography.stageTitle)
+                .foregroundStyle(AppColors.textPrimary)
+            languageFormHeader(form: coverage.form, readings: coverage.readings, fontRole: .korean)
+            ForEach(coverage.variants, id: \.id) { variant in
                 HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
-                    Text(variant.writingSystem ?? "Alternate form")
+                    Text(variant.writingSystem ?? "Native Korean")
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
                     Text(variant.form)
-                        .font(fontRole.font(size: 16).weight(.semibold))
+                        .font(CJKFontRole.korean.font(size: 22).weight(.semibold))
                         .foregroundStyle(AppColors.textPrimary)
-                    if !variant.readings.isEmpty {
-                        Text(variant.readings.map(\.value).joined(separator: " · "))
-                            .font(AppTypography.metadata)
-                            .foregroundStyle(AppColors.textSecondary)
-                    }
+                    Text(variant.readings.map(\.value).joined(separator: " · "))
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
                 }
+            }
+            ForEach(displayExamples(coverage.examples, variants: coverage.variants).prefix(4), id: \.text) { example in
+                exampleRow(example, fontRole: .korean)
             }
         }
         .padding(.vertical, AppSpacing.spaceSm)
@@ -162,6 +182,7 @@ struct UsageExamplesView: View {
             Text("Traditional Chinese")
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
+            languageFormHeader(form: coverage.form, readings: coverage.readings, fontRole: .traditionalChinese)
             regionalExamples(title: "Taiwan", examples: coverage.taiwanExamples)
             regionalExamples(title: "Hong Kong · Cantonese / Jyutping", examples: coverage.hongKongExamples)
         }
@@ -181,9 +202,24 @@ struct UsageExamplesView: View {
             Text(title)
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
-            ForEach(examples.filter { $0.exampleLevel == .word }.prefix(4), id: \.text) { example in
+            ForEach(displayExamples(examples).prefix(4), id: \.text) { example in
                 exampleRow(example, fontRole: .traditionalChinese)
             }
         }
+    }
+
+    /// Keeps learner-facing examples real while allowing future reviewed entries to expand to four naturally.
+    private func displayExamples(_ examples: [UsageExample], variants: [ModernFormVariant] = []) -> [UsageExample] {
+        var result: [UsageExample] = []
+        for example in examples + variants.flatMap(\.examples) {
+            let translation = example.translation.lowercased()
+            let isPlaceholder = translation.contains("pending")
+                || translation.contains("core character reference")
+                || example.text.contains("·")
+                || example.text.contains("…")
+            guard !isPlaceholder, !result.contains(where: { $0.text == example.text }) else { continue }
+            result.append(example)
+        }
+        return result
     }
 }
