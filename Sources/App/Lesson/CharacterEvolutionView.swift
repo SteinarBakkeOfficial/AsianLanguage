@@ -422,7 +422,8 @@ struct HistoricalAssetView: View {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
-                    .frame(maxWidth: .infinity, height: displayHeight)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: displayHeight)
                     .clipped()
                     .accessibilityLabel(accessibilityDescription)
             } else {
@@ -430,7 +431,8 @@ struct HistoricalAssetView: View {
             }
         case .bundledSVG(let url):
             BundledSVGView(url: url)
-                .frame(maxWidth: .infinity, height: displayHeight)
+                .frame(maxWidth: .infinity)
+                .frame(height: displayHeight)
                 .clipped()
                 .accessibilityLabel(accessibilityDescription)
         case .unavailable:
