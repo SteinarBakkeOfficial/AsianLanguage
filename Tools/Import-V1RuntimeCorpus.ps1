@@ -303,9 +303,11 @@ foreach ($manifestRecord in @($manifest.records | Sort-Object rank)) {
   $hongKongExamples = if (@($baseTraditionalHongKong).Count -ge 2) { @($baseTraditionalHongKong) } else { $fallbackExamples }
   $japaneseExamples = if (@($baseJapaneseExamples).Count -ge 2) { @($baseJapaneseExamples) } else { $japaneseFallbackExamples }
   $koreanExamples = if (@($baseKoreanExamples).Count -ge 2) { @($baseKoreanExamples) } else { $koreanFallbackExamples }
-  $jpReadings = if ($legacy) { @($legacy.focusCoverage.japanese.readings) } elseif ($japanese) { @(New-Reading "on / kun" $japanese) } else { @() }
-  $krReadings = if ($legacy) { @($legacy.focusCoverage.korean.readings) } elseif ($korean) { @(New-Reading "hanja" $korean) } else { @() }
-  $cnReadings = if ($legacy) { @($legacy.focusCoverage.simplifiedChinese.readings) } elseif ($mandarin) { @(New-Reading "pinyin" $mandarin) } else { @() }
+  # Wrap the entire conditional in @() so PowerShell preserves one-item and
+  # empty collections instead of serializing them as an object or null.
+  $jpReadings = @(if ($legacy) { @($legacy.focusCoverage.japanese.readings) } elseif ($japanese) { New-Reading "on / kun" $japanese })
+  $krReadings = @(if ($legacy) { @($legacy.focusCoverage.korean.readings) } elseif ($korean) { New-Reading "hanja" $korean })
+  $cnReadings = @(if ($legacy) { @($legacy.focusCoverage.simplifiedChinese.readings) } elseif ($mandarin) { New-Reading "pinyin" $mandarin })
   $focus = [ordered]@{
     simplifiedChinese = [ordered]@{ form = $character; readings = $cnReadings; glosses = @($meaning); examples = $simplifiedExamples; variants = @() }
     traditionalChinese = [ordered]@{ form = $traditional; readings = $cnReadings; glosses = @($meaning); taiwanExamples = $taiwanExamples; hongKongExamples = $hongKongExamples; taiwanReadings = $cnReadings; hongKongReadings = $cnReadings; variants = @() }
