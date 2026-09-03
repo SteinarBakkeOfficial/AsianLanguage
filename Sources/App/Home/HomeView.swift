@@ -116,13 +116,12 @@ struct HomeView: View {
                             Spacer()
                             Text("Continue →").font(AppTypography.caption).foregroundStyle(AppColors.accentPrimary)
                         }
-                        HStack(spacing: AppSpacing.spaceSm) {
-                            EditorialCollectionArtwork(collection: collection)
-                                .frame(width: 78, height: 58)
-                                .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
-                            Text(natureCollectionRecords.prefix(6).map(\.coreCharacter).joined(separator: "  "))
-                                .font(.system(size: 25, design: .serif))
-                        }
+                        // Home uses the same full editorial banner as Browse/Collections;
+                        // the collection artwork is the invitation, not a symbol thumbnail.
+                        EditorialCollectionArtwork(collection: collection)
+                            .frame(maxWidth: .infinity)
+                            .aspectRatio(contentMode: .fit)
+                            .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
                         Text("Continue exploring this collection")
                             .font(AppTypography.caption)
                             .foregroundStyle(AppColors.textSecondary)
@@ -140,6 +139,7 @@ struct HomeView: View {
     /// Home always displays the same record its primary action opens.
     private var homeLessonRoute: LessonRoute? {
         if let active = userStateStore.state.activeJourneySymbolID,
+           dependencies.sharedCharacters.contains(where: { $0.id == active }),
            let state = userStateStore.state.lessonStates[active],
            state.progressStatus == .inProgress {
             return LessonRoute(sharedCharacterID: active, startingPosition: state.lastPosition ?? .origin)

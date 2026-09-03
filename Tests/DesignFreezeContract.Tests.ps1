@@ -18,9 +18,9 @@ Assert-True $rail.Contains("AppColors.journeyRailBackground") "The museum rail m
 Assert-True $rail.Contains('id != "regular"') "The museum rail must not render a connector adjacent to Regular Script."
 Assert-True $rail.Contains("if index < journeyIDs.count - 1") "The museum rail must not render a connector after the final stage."
 Assert-True (-not $rail.Contains("nextStageCue")) "The museum rail must not add an unapproved next-stage text cue."
-Assert-True (-not $rail.Contains("Text(label(for: id))")) "The museum rail must not replace compact markers with stage-name labels."
 Assert-True $marker.Contains("Circle()") "The museum rail must retain the approved compact circle markers."
-Assert-True $marker.Contains('id == "regular"') "Regular Script must remain free of a decorative circle."
+Assert-True $marker.Contains('id != "regular"') "Regular Script must remain free of a decorative circle."
+Assert-True $marker.Contains("Text(shortLabel(for: id))") "The museum rail must keep each stage reachable and visibly named."
 
 $usage = Text "Sources/App/Lesson/UsageExamplesView.swift"
 Assert-True $usage.Contains('Text("IN A WORD")') "Word context must retain the approved heading."
@@ -43,9 +43,11 @@ Assert-True (-not $collectionModule.Contains("openSymbol")) "Home collection con
 
 $history = Text "Sources/App/Navigation/RootTabView.swift"
 $historyPage = Section $history "private struct HistoryRootView" "/// Stable structural model"
-Assert-True $historyPage.Contains("History_V1.png") "History must use the approved overview artwork."
-Assert-True (-not $historyPage.Contains("ScrollView")) "History must present the supplied artwork as the page, without wrapper content."
-Assert-True (-not $historyPage.Contains("ArtifactField")) "History must not place the supplied full-page artwork inside an artifact card."
+Assert-True $historyPage.Contains("The History of Chinese Characters") "History must present the approved timeline title natively."
+Assert-True $historyPage.Contains("ForEach(stages)") "History must render the five approved timeline stages."
+Assert-True $historyPage.Contains("Why it changed") "History must include the visible timeline explanations from the approved reference."
+Assert-True $historyPage.Contains("HistoryLandscapeBanner") "History must recreate the approved visual header natively."
+Assert-True (-not $historyPage.Contains("History_V1.png")) "History must not ship the reference screenshot as the page implementation."
 
 $about = Text "Sources/App/Settings/AboutMethodView.swift"
 Assert-True $about.Contains("Visit 漢典 / ZDIC") "About must retain the historical image source link."

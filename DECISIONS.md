@@ -124,7 +124,7 @@
 - Every runtime V1 record has a local origin illustration, selected/normalized ZDIC Oracle Bone, Bronze, Small Seal, and Clerical assets, and a Regular Script endpoint rendered from CNS11643 Kai.
 - The four Used Today lanes render through the locale-specific Source Han Serif JP/KR/SC/TC files. Japanese and Korean form/readings remain distinct data lanes rather than universal Han fallback.
 - Browse is search-first. It owns learner libraries, one All Symbols destination, and editorial collections; All Symbols is a separate searchable library screen.
-- The History tab uses the supplied `History_V1.png` overview for this release while the previous detailed period implementation is retained for a later release.
+- The History tab recreates the supplied `History_V1.png` overview natively for this release. Its five timeline stages, materials, explanations, and living-tradition footer are implemented without rendering the reference screenshot; the previous detailed period implementation remains retained for a later release.
 - Origin artwork remains educational reconstruction; ZDIC remains a bundled reference asset with reuse permission unresolved. Records and assets are not release-cleared merely because they are local.
 
 ### Per-stage museum transition captions — 2026-09-03
@@ -145,7 +145,13 @@
 
 - Browse shows its search field first, followed by Learned, Favorites, Review Later, one All Symbols library entry, and editorial Collections.
 - All Symbols is a separate pushed page with the same visual treatment and its own search field; this does not add a sixth root navigation area.
-- The Origin-to-Today rail uses a visibly different warm surface from the Symbol page while preserving compact circles and connectors for the historical stages; Regular Script has no decorative circle or connector, and the rail does not add stage-name labels or a next-stage cue.
+- The Origin-to-Today rail uses a visibly different warm surface from the Symbol page, labels each available stage for persistent orientation, and preserves compact circles/connectors for non-endpoint stages. Regular Script has no decorative circle or connector, and no next-stage cue is added.
+
+### Future language-orientation content — 2026-09-03
+
+- The onboarding Symbol experience will eventually provide a deeper introduction to all four target language traditions: Simplified Chinese, Traditional Chinese, Japanese, and Korean. This is onboarding-symbol content only and does not change the main V1 Symbol Journey.
+- The future History overview will place a language-development section beneath the main historical timeline, using four illustrated cards in a 2×2 layout. Each card will explain the language’s separate development and present-day writing context.
+- The language cards may be tappable from the overview, but their detailed destination pages are deliberately deferred. The future copy and artwork must be source-backed and must distinguish Japanese Kanji, Korean Hanja/Hangul, and regional Chinese forms rather than flattening them into one generic CJK story.
 - Sound effects, reviewed usage examples, native-speaker review, Home Library surfacing, and the final museum-complete decision remain on hold.
 
 ## Delivery

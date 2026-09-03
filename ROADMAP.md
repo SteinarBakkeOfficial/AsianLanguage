@@ -53,8 +53,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Collections and More now use semantic app surfaces, native navigation, and shared CharacterTile presentation where records are listed.
 - Onboarding now uses the shared editorial hierarchy, primary actions, grouped focus-track controls, and semantic surfaces.
 - Languages, Account, and About/Method now use semantic surfaces and typography; Account does not present a fake profile identity.
-- The earlier detailed History period implementation remains retained for later expansion; the current V1 History tab uses the supplied full-page overview artwork.
-- The History tab now uses the supplied `History_V1.png` as the full-page V1 overview while retaining the earlier detailed period implementation for a later release.
+- The earlier detailed History period implementation remains retained for later expansion; the current V1 History tab now recreates the supplied overview natively with the five timeline stages, material references, explanations, and living-tradition footer.
 - More utility rows and source/license entries now use quiet semantic presentation while preserving native navigation behavior.
 - Historical stage availability is now distinct from confidence in the runtime model; legacy certainty labels normalize for presentation, draft tooling emits availability, and corpus validation rejects invalid or contradictory states.
 - Per-Symbol folders now contain structured lesson data, learner copy, research notes, review checklist, sources, visual teaching notes, historical-stage provenance, and reusable component references.
@@ -66,8 +65,9 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - All available Windows layout, model, content, visual, discovery, and release checks pass.
 - AppShell light tokens now match the approved clay-and-white reference, with Light as the default and Dark as the sole alternative.
 - Browse and Collections now separate Your Library status lists from editorial collections, with collection artwork previews.
-- Pilot Today copy now uses one page per selected language with cleaned readings, romanization, and word examples.
+- Pilot Today copy now uses one page per selected language with the existing reviewed readings, romanization, and word examples; broader example expansion and native-speaker review remain deferred.
 - Fire, Water, and Tree now have separate educational concept illustrations, and the allowlisted historical SVG intake preserves source/license provenance.
+- The approved correction pass keeps the Symbol Journey rail persistent and visibly labeled, isolates Fire onboarding from the compact Home preview, fixes Home's orphaned active-state fallback, uses the complete collection banner on Home, identifies Hong Kong Cantonese/Jyutping readings, and recreates the History overview natively from the approved reference content.
 
 ### Transitional or incomplete
 
@@ -101,6 +101,8 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Ads/monetization
 - User-created collection folders
 - richer historical animation
+- Deeper Fire onboarding language orientation covering all four target writing traditions; this applies only to the onboarding symbol experience.
+- A History language-branches section below the main timeline: four illustrated cards in a 2×2 grid for Simplified Chinese, Traditional Chinese, Japanese, and Korean, with detailed language pages deferred.
 
 ## Future considerations — undecided
 

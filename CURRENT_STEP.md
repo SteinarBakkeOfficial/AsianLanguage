@@ -2,7 +2,7 @@
 
 ## Goal
 
-Integrate and verify the approved early-release V1 package: 126 complete-evolution symbols, local origin artwork, ZDIC historical stages, CNS11643 Kai Regular Script, locale-specific modern forms, expanded examples, updated collections, and search-first Browse.
+Integrate and verify the approved early-release V1 package: 126 complete-evolution symbols, local origin artwork, ZDIC historical stages, CNS11643 Kai Regular Script, locale-specific modern forms, existing reviewed examples, updated collections, and search-first Browse. Broader example expansion remains deferred.
 
 ## Branding update
 
@@ -86,7 +86,9 @@ Use `Reference Pictures/Chatgpt/AsianLanguage_AppShell_VisualReference_v1.png` a
 
 ## Current next design deliverable
 
-Hold a design-finalization review covering the Symbol Journey, Home, Browse/Library information architecture, History scope, Today content density, collection taxonomy, illustration direction, and early-release corpus size. Only after those decisions are approved should implementation resume. The first implementation pass after approval should close the most visible content gaps: approved illustrations, reviewed learner-facing text, and the remaining historical/source-backed asset work; then run macOS/Xcode visual comparison.
+The approved correction pass is implemented: the museum rail is persistent and visibly labeled, Fire onboarding has its own aligned lineage preview, Home no longer follows an orphaned pre-V1 Fire state, Home uses the full collection banner, Hong Kong readings identify Cantonese/Jyutping, and History is recreated natively from the approved reference content.
+
+The next step is macOS/Xcode visual and interaction verification against the approved references. Do not broaden the pass into sound, broad example replacement, native-speaker review, deeper Fire language orientation, the History language-card section, or detailed historical-stage pages without a new approval.
 
 The 808-character research boundary is now documented with a complete primary collection sort and a source-indexed historical-stage split. Review those artifacts first, then perform the row-level Kanji/Hanja/Chinese relevance and specialist historical-asset audit needed to turn research candidates into an approved V1/V2/V3 corpus.
 
@@ -165,7 +167,7 @@ Working taxonomy thought for discussion, not a decision: semantic collections co
 - Today context preserves the compact `IN A WORD` layout, shows up to four existing word-level examples, and applies each locale's modern font to written examples.
 - Collections now resolve members from the installed corpus across all ten editorial collections and reuse the same artwork catalog in Browse.
 - Browse places search first, followed by learner libraries, one All Symbols destination, and all ten complete collection panels directly under Collections.
-- History now presents `Resources/History/History_V1.png` as the full page; the prior period-by-period implementation remains retained as `LegacyHistoryRootView`.
+- History now recreates the supplied `Resources/History/History_V1.png` overview natively; the reference screenshot is not rendered in-app, and the prior period-by-period implementation remains retained as `LegacyHistoryRootView`.
 - See [`v1-runtime-implementation.md`](docs/content/v1-runtime-implementation.md) for the authoritative package record and rebuild command.
 
 ## Tester feedback backlog — discussion candidates, not approved changes
@@ -175,7 +177,7 @@ The following feedback is recorded for the next design and product discussion. I
 - Implemented: differentiate the Origin-to-Today navigation rail with a clearly separate warm surface, while preserving the approved clay-and-white palette.
 - Expand each modern-language Today page to show three or four reviewed usage examples rather than only one.
 - Evaluate subtle sound effects for button presses and selection changes, including accessibility, mute, offline, and platform-behavior implications.
-- Consider extending History with the development of the four modern language/script tracks from their modern forms to their current usage; determine whether this belongs in generic History, Symbol Today context, or a separate educational surface.
+- Planned VNext: extend History below the main timeline with four illustrated language cards in a 2×2 grid. Each card will explain how that writing tradition developed separately and where it is used today; detailed language pages are deferred.
 - Implemented: Browse now places search first, then the learner's Learned/Favorites/Review Later library, one All Symbols destination, and collections. All Symbols is a separate same-style searchable page.
 - Implemented: preserved the compact circle-and-connector rail and changed only its surface color to distinguish it from the Symbol page.
 - Implemented: restored the original concise About references page; source links remain, while internal method/licensing detail stays in project documentation.
@@ -237,4 +239,4 @@ Strict layout verification reports the existing top-level `MAC_TESTING.md` as ou
 
 ## V1 to VNext tracking
 
-The current pass stays within V1: it improves the pilot's visual fidelity, source-backed asset handling, and language copy. Scrollable all-language Today, richer historical animation, audio, tracing, and larger corpus expansion remain intentional VNext carryover.
+The current pass stays within V1: it improves the pilot's visual fidelity, source-backed asset handling, and language copy. Deeper Fire onboarding language orientation, the four-card History language section, scrollable all-language Today, richer historical animation, audio, tracing, and larger corpus expansion remain intentional VNext carryover.

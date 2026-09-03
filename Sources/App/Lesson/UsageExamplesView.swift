@@ -163,7 +163,7 @@ struct UsageExamplesView: View {
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
             regionalExamples(title: "Taiwan", examples: coverage.taiwanExamples)
-            regionalExamples(title: "Hong Kong", examples: coverage.hongKongExamples)
+            regionalExamples(title: "Hong Kong · Cantonese / Jyutping", examples: coverage.hongKongExamples)
         }
         .padding(.vertical, AppSpacing.spaceSm)
         .padding(.horizontal, AppSpacing.spaceMd)

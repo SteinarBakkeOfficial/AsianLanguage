@@ -111,7 +111,9 @@ struct CharacterEvolutionView: View {
                 .font(AppTypography.exhibitHeading)
                 .foregroundStyle(AppColors.textPrimary)
                 .padding(.top, AppSpacing.spaceMd)
-            Text(record.history.origin?.explanation ?? record.history.originAnchor)
+            // The anchor is the concise learner-facing bridge; the longer asset explanation
+            // is provenance/editorial copy and should not interrupt the first visual comparison.
+            Text(record.history.originAnchor)
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textPrimary)
                 .multilineTextAlignment(.center)
@@ -233,11 +235,11 @@ struct CharacterEvolutionView: View {
             }
 
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: AppSpacing.space2xs) {
+                HStack(spacing: AppSpacing.spaceXs) {
                     ForEach(Array(journeyIDs.enumerated()), id: \.element) { index, id in
                         stageMarker(index: index, id: id)
 
-                        // Preserve the approved compact timeline; the final stage has no trailing connector.
+                        // Keep the endpoint free of a trailing line while making every real stage reachable.
                         if index < journeyIDs.count - 1,
                            id != "regular",
                            journeyIDs[index + 1] != "regular" {
@@ -272,17 +274,23 @@ struct CharacterEvolutionView: View {
         return Button {
             selectedStageID = id
         } label: {
-            Group {
-                if id == "regular" {
-                    // Regular Script is the museum endpoint and stays free of a decorative marker.
-                    Color.clear
-                } else {
+            VStack(spacing: AppSpacing.space2xs) {
+                // Regular Script is identified by its label only; no decorative circle is added.
+                if id != "regular" {
                     Circle()
-                        .fill(index <= currentIndex ? AppColors.accentPrimary : AppColors.separator)
-                        .frame(width: isCurrent ? 9 : 7, height: isCurrent ? 9 : 7)
+                        .fill(index <= currentIndex ? AppColors.accentPrimary : AppColors.textTertiary)
+                        .frame(width: isCurrent ? 10 : 8, height: isCurrent ? 10 : 8)
                 }
+                Text(shortLabel(for: id))
+                    .font(AppTypography.caption.weight(isCurrent ? .semibold : .regular))
+                    .foregroundStyle(isCurrent ? AppColors.textPrimary : AppColors.textSecondary)
+                    .lineLimit(1)
             }
-            .frame(width: 44, height: 32)
+            .padding(.horizontal, AppSpacing.spaceXs)
+            .padding(.vertical, AppSpacing.space2xs)
+            .frame(minWidth: 48)
+            .background(isCurrent ? AppColors.journeyRailSelected : Color.clear)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
         }
         .buttonStyle(.plain)
         .accessibilityLabel("\(label(for: id)), stage \(index + 1) of \(journeyIDs.count)")
@@ -297,6 +305,20 @@ struct CharacterEvolutionView: View {
             return track.title
         }
         return stages.first(where: { $0.stage == id })?.label ?? id
+    }
+
+    /// Short rail labels preserve the full stage name in the page header and accessibility label.
+    private func shortLabel(for id: String) -> String {
+        if id == "origin" { return "Origin" }
+        if id == "today" || id.hasPrefix("today-") { return "Today" }
+        switch id {
+        case "oracleBone": return "Oracle"
+        case "bronze": return "Bronze"
+        case "seal": return "Seal"
+        case "clerical": return "Clerical"
+        case "regular": return "Regular"
+        default: return label(for: id)
+        }
     }
 }
 

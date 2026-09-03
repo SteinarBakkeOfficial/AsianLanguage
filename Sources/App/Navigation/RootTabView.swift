@@ -33,7 +33,7 @@ struct RootTabView: View {
         case .symbol:
             SymbolRootView(dependencies: dependencies)
         case .history:
-            HistoryRootView()
+            HistoryRootView(dependencies: dependencies)
         case .browse:
             BrowseView(dependencies: dependencies)
         case .more:
@@ -79,8 +79,7 @@ struct OnboardingView: View {
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
                     if let fireRecord {
-                        HeroLineagePreview(record: fireRecord)
-                            .frame(minHeight: 260, maxHeight: 300)
+                        FireOnboardingLineage(record: fireRecord)
                     }
                     PrimaryActionButton("Continue") {
                         userStateStore.markIntroSeen()
@@ -96,8 +95,7 @@ struct OnboardingView: View {
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
                     if let fireRecord {
-                        HeroLineagePreview(record: fireRecord)
-                            .frame(minHeight: 220, maxHeight: 260)
+                        FireOnboardingLineage(record: fireRecord)
                     }
                     Text("Fire")
                         .font(AppTypography.exhibitHeading)
@@ -120,6 +118,79 @@ struct OnboardingView: View {
         .tint(AppColors.accentPrimary)
     }
 
+}
+
+/// Fire's first-launch preview is intentionally separate from Home's compact lineage preview.
+/// It shows the real concept first, then the available historical forms, without inventing a missing stage.
+private struct FireOnboardingLineage: View {
+    let record: SharedCharacterRecord
+
+    init(record: SharedCharacterRecord) {
+        self.record = record
+        BundledFontRegistrar.registerMuseumFonts()
+    }
+
+    private var availableStages: [HistoricalStage] {
+        record.history.stages.filter {
+            ["oracleBone", "bronze", "seal"].contains($0.stage) && $0.assetRef != nil
+        }
+    }
+
+    var body: some View {
+        VStack(spacing: AppSpacing.spaceSm) {
+            ArtifactField {
+                if let origin = record.history.origin?.asset {
+                    HistoricalAssetView(metadata: origin, displayHeight: 132)
+                } else {
+                    HistoricalMissingState(title: "Origin visual unavailable")
+                }
+            }
+            .frame(height: 164)
+
+            HStack(alignment: .top, spacing: AppSpacing.spaceXs) {
+                ForEach(availableStages, id: \.stage) { stage in
+                    FireOnboardingStageTile(
+                        title: stage.stage == "oracleBone" ? "Oracle" : stage.stage.capitalized,
+                        stage: stage
+                    )
+                }
+                VStack(spacing: AppSpacing.space2xs) {
+                    Text("Today")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                    Text(record.coreCharacter)
+                        .font(CJKFontRole.museumRegular.font(size: 42))
+                        .foregroundStyle(AppColors.artifactInk)
+                        .frame(height: 54)
+                }
+                .frame(maxWidth: .infinity)
+                .accessibilityLabel("Today \(record.coreCharacter)")
+            }
+        }
+        .frame(maxWidth: 390)
+        .accessibilityElement(children: .contain)
+        .accessibilityLabel("Fire from origin through the available historical forms to today")
+    }
+}
+
+private struct FireOnboardingStageTile: View {
+    let title: String
+    let stage: HistoricalStage
+
+    var body: some View {
+        VStack(spacing: AppSpacing.space2xs) {
+            Text(title)
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textSecondary)
+                .lineLimit(1)
+            HistoricalAssetView(assetRef: stage.assetRef ?? "", displayHeight: 54)
+                .frame(height: 54)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, AppSpacing.space2xs)
+        .background(AppColors.artifactField)
+        .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
+    }
 }
 
 /// Canonical owner of the active Shared Character journey.
@@ -247,21 +318,243 @@ private struct LegacyHistoryRootView: View {
     }
 }
 
-/// V1 History is the supplied overview artwork; the retained period-by-period design remains in code for later use.
+/// Native V1 History overview based on the approved reference artwork; detailed period pages remain deferred.
 private struct HistoryRootView: View {
+    let dependencies: AppDependencies
+
+    private let stages: [HistoryOverviewStage] = [
+        HistoryOverviewStage(
+            id: "oracleBone",
+            title: "Oracle Bone",
+            date: "c. 1200–1046 BCE",
+            dynasty: "Shang Dynasty",
+            material: "Carved on animal bones and turtle shells",
+            explanation: "Characters were carved for divination. Early forms are simple, symbolic, and close to the things they represented.",
+            materialIcon: "tortoise.fill",
+            color: AppColors.accentPrimary
+        ),
+        HistoryOverviewStage(
+            id: "bronze",
+            title: "Bronze",
+            date: "c. 1046–256 BCE",
+            dynasty: "Zhou Dynasty",
+            material: "Cast or engraved on bronze vessels",
+            explanation: "Writing expanded through ritual and record-keeping. Forms became more fluid and ornamental, with clearer structure and balance.",
+            materialIcon: "cup.and.saucer.fill",
+            color: Color(red: 0.63, green: 0.43, blue: 0.25)
+        ),
+        HistoryOverviewStage(
+            id: "seal",
+            title: "Small Seal",
+            date: "c. 221–206 BCE",
+            dynasty: "Qin Dynasty",
+            material: "Written with brush on bamboo slips and silk",
+            explanation: "Writing was unified and regularized. The forms became uniform, symmetrical, and elegant.",
+            materialIcon: "scroll.fill",
+            color: Color(red: 0.76, green: 0.56, blue: 0.28)
+        ),
+        HistoryOverviewStage(
+            id: "clerical",
+            title: "Clerical",
+            date: "c. 206 BCE–220 CE",
+            dynasty: "Han Dynasty",
+            material: "Written with brush on paper",
+            explanation: "Faster brushwork flattened and widened the forms, creating distinct horizontal and turning strokes that led toward modern shapes.",
+            materialIcon: "paintbrush.pointed.fill",
+            color: AppColors.learned
+        ),
+        HistoryOverviewStage(
+            id: "regular",
+            title: "Regular",
+            date: "c. 220 CE–present",
+            dynasty: "All Dynasties",
+            material: "Written with brush on paper",
+            explanation: "Clerical writing settled into balanced, refined forms that became the foundation of the characters used today.",
+            materialIcon: "rectangle.paperclip",
+            color: Color(red: 0.36, green: 0.46, blue: 0.49)
+        )
+    ]
+
     var body: some View {
         NavigationStack {
-            GeometryReader { proxy in
-                HistoricalAssetView(
-                    assetRef: "Assets/History/History_V1.png",
-                    displayHeight: max(proxy.size.height, 1)
-                )
-                .frame(width: proxy.size.width, height: proxy.size.height)
+            ScrollView {
+                VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
+                    Text("The History of Chinese Characters")
+                        .font(AppTypography.exhibitHeading)
+                        .foregroundStyle(AppColors.textPrimary)
+                    Text("Chinese characters have evolved over thousands of years. Each change reflects new materials, tools, and the needs of society.")
+                        .font(AppTypography.body)
+                        .foregroundStyle(AppColors.textSecondary)
+
+                    HistoryLandscapeBanner()
+
+                    ZStack(alignment: .leading) {
+                        Rectangle()
+                            .fill(AppColors.separator)
+                            .frame(width: 2)
+                            .padding(.leading, 12)
+                            .padding(.vertical, 18)
+
+                        VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
+                            ForEach(stages) { stage in
+                                HistoryOverviewRow(
+                                    stage: stage,
+                                    fireRecord: fireRecord
+                                )
+                            }
+                        }
+                    }
+
+                    GroupedSurface {
+                        VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                            HStack(spacing: AppSpacing.spaceSm) {
+                                Image(systemName: "building.columns.fill")
+                                    .foregroundStyle(AppColors.learned)
+                                Text("A living tradition")
+                                    .font(AppTypography.stageTitle)
+                                    .foregroundStyle(AppColors.textPrimary)
+                            }
+                            Text("Chinese characters continue to evolve as they move across languages, regions, tools, and everyday use. The historical forms remain connected to the living writing systems of today.")
+                                .font(AppTypography.body)
+                                .foregroundStyle(AppColors.textSecondary)
+                        }
+                    }
+                }
+                .padding(.horizontal, AppSpacing.spacePage)
+                .padding(.top, AppSpacing.spaceSm)
+                .padding(.bottom, AppSpacing.spaceSection)
             }
-            .ignoresSafeArea(.container, edges: .top)
-            .toolbar(.hidden, for: .navigationBar)
+            .navigationTitle("")
+            .navigationBarTitleDisplayMode(.inline)
         }
         .background(AppColors.appBackground.ignoresSafeArea())
+        .tint(AppColors.accentPrimary)
+    }
+
+    private var fireRecord: SharedCharacterRecord? {
+        try? dependencies.corpusRepository.sharedCharacter(id: "fire")
+    }
+}
+
+private struct HistoryOverviewStage: Identifiable {
+    let id: String
+    let title: String
+    let date: String
+    let dynasty: String
+    let material: String
+    let explanation: String
+    let materialIcon: String
+    let color: Color
+}
+
+private struct HistoryLandscapeBanner: View {
+    var body: some View {
+        ZStack(alignment: .bottomLeading) {
+            RoundedRectangle(cornerRadius: AppRadius.card)
+                .fill(AppColors.surfaceSubtle)
+            Image(systemName: "mountain.2.fill")
+                .font(.system(size: 118, weight: .regular))
+                .foregroundStyle(AppColors.learned.opacity(0.22))
+                .offset(x: 34, y: 18)
+            Image(systemName: "cloud.fill")
+                .font(.system(size: 42, weight: .regular))
+                .foregroundStyle(Color.white.opacity(0.65))
+                .offset(x: 210, y: -58)
+            Text("A visual history of the written form")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textSecondary)
+                .padding(AppSpacing.spaceSm)
+        }
+        .frame(height: 132)
+        .clipped()
+        .accessibilityLabel("Soft illustrated mountain landscape")
+    }
+}
+
+private struct HistoryOverviewRow: View {
+    let stage: HistoryOverviewStage
+    let fireRecord: SharedCharacterRecord?
+
+    var body: some View {
+        HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
+            Circle()
+                .fill(stage.color)
+                .frame(width: 26, height: 26)
+                .overlay {
+                    Circle()
+                        .stroke(AppColors.appBackground, lineWidth: 4)
+                }
+                .padding(.top, AppSpacing.spaceSm)
+
+            GroupedSurface {
+                VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                    HStack(alignment: .firstTextBaseline) {
+                        Text(stage.title)
+                            .font(AppTypography.stageTitle)
+                            .foregroundStyle(AppColors.textPrimary)
+                        Spacer(minLength: AppSpacing.spaceXs)
+                        Text(stage.date)
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                            .multilineTextAlignment(.trailing)
+                    }
+                    Text(stage.dynasty)
+                        .font(AppTypography.metadata.weight(.semibold))
+                        .foregroundStyle(stage.color)
+                    Text(stage.material)
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+
+                    HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
+                        HistoryStageArtifact(stage: stage, fireRecord: fireRecord)
+                            .frame(width: 104, height: 112)
+                        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                            Text("Why it changed")
+                                .font(AppTypography.caption.weight(.semibold))
+                                .foregroundStyle(AppColors.textPrimary)
+                            Text(stage.explanation)
+                                .font(AppTypography.caption)
+                                .foregroundStyle(AppColors.textSecondary)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+private struct HistoryStageArtifact: View {
+    let stage: HistoryOverviewStage
+    let fireRecord: SharedCharacterRecord?
+
+    private var historicalAssetRef: String? {
+        fireRecord?.history.stages.first(where: { $0.stage == stage.id })?.assetRef
+    }
+
+    var body: some View {
+        VStack(spacing: AppSpacing.space2xs) {
+            if stage.id == "regular" {
+                Text(fireRecord?.coreCharacter ?? "火")
+                    .font(CJKFontRole.museumRegular.font(size: 58))
+                    .foregroundStyle(AppColors.artifactInk)
+                    .frame(maxWidth: .infinity, maxHeight: 76)
+            } else if let historicalAssetRef {
+                HistoricalAssetView(assetRef: historicalAssetRef, displayHeight: 76)
+                    .frame(maxWidth: .infinity, maxHeight: 76)
+            } else {
+                Image(systemName: stage.materialIcon)
+                    .font(.system(size: 38, weight: .light))
+                    .foregroundStyle(stage.color)
+                    .frame(maxWidth: .infinity, maxHeight: 76)
+            }
+            Image(systemName: stage.materialIcon)
+                .font(.system(size: 13))
+                .foregroundStyle(stage.color)
+        }
+        .padding(AppSpacing.spaceXs)
+        .background(AppColors.artifactField)
+        .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
+        .accessibilityLabel("\(stage.title) representative artwork")
     }
 }
 
