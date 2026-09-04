@@ -28,7 +28,9 @@
         {
           "system": "pinyin",
           "value": "lì",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "力",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -92,7 +94,9 @@
         {
           "system": "pinyin",
           "value": "lì",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "力",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -148,70 +152,17 @@
           ]
         }
       ],
-      "hongKongExamples": [
-        {
-          "text": "力",
-          "reading": "lì",
-          "translation": "strength",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "力"
-          ]
-        },
-        {
-          "text": "這是「力」。",
-          "reading": "",
-          "translation": "This is the character 「力」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "力"
-          ]
-        },
-        {
-          "text": "我學習「力」。",
-          "reading": "",
-          "translation": "I am learning the character 「力」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "力"
-          ]
-        },
-        {
-          "text": "我會讀「力」。",
-          "reading": "",
-          "translation": "I can read the character 「力」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "力"
-          ]
-        }
-      ],
+      "hongKongExamples": [],
       "taiwanReadings": [
         {
           "system": "pinyin",
           "value": "lì",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "力",
+          "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [
-        {
-          "system": "pinyin",
-          "value": "lì",
-          "audioAssetRef": null
-        }
-      ],
+      "hongKongReadings": [],
       "variants": []
     },
     "japanese": {
@@ -220,7 +171,9 @@
         {
           "system": "on / kun",
           "value": "CHIKARA TSUTOMERU RIKIMU",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "CHIKARA TSUTOMERU RIKIMU",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -284,7 +237,9 @@
         {
           "system": "hanja",
           "value": "LYEK",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "LYEK",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -385,6 +340,7 @@
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of strength.",
         "transitionNote": "The image of strength is reduced to a few simple strokes, while its clearest outline remains visible.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
       {
@@ -421,6 +377,7 @@
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
         "transitionNote": "The main outline remains, but the strokes become more even and continuous.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
       {
@@ -457,6 +414,7 @@
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
         "transitionNote": "The separate parts draw into a smoother, more continuous outline with more even proportions.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
       {
@@ -493,6 +451,7 @@
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
         "transitionNote": "Several curved sections reduce to fewer, broader strokes, giving the form a flatter structure.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
       {
@@ -529,6 +488,7 @@
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
         "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
     ],

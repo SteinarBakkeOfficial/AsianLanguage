@@ -28,7 +28,9 @@
         {
           "system": "pinyin",
           "value": "ěr",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "耳",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -92,7 +94,9 @@
         {
           "system": "pinyin",
           "value": "ěr",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "耳",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -148,70 +152,17 @@
           ]
         }
       ],
-      "hongKongExamples": [
-        {
-          "text": "耳",
-          "reading": "ěr",
-          "translation": "ear",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "耳"
-          ]
-        },
-        {
-          "text": "這是「耳」。",
-          "reading": "",
-          "translation": "This is the character 「耳」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "耳"
-          ]
-        },
-        {
-          "text": "我學習「耳」。",
-          "reading": "",
-          "translation": "I am learning the character 「耳」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "耳"
-          ]
-        },
-        {
-          "text": "我會讀「耳」。",
-          "reading": "",
-          "translation": "I can read the character 「耳」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "耳"
-          ]
-        }
-      ],
+      "hongKongExamples": [],
       "taiwanReadings": [
         {
           "system": "pinyin",
           "value": "ěr",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "耳",
+          "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [
-        {
-          "system": "pinyin",
-          "value": "ěr",
-          "audioAssetRef": null
-        }
-      ],
+      "hongKongReadings": [],
       "variants": []
     },
     "japanese": {
@@ -220,7 +171,9 @@
         {
           "system": "on / kun",
           "value": "MIMI NOMI",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "MIMI NOMI",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -284,7 +237,9 @@
         {
           "system": "hanja",
           "value": "I",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "I",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -385,6 +340,7 @@
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of ear.",
         "transitionNote": "The ear’s outer contour is reduced to a compact group of simple strokes.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
       {
@@ -421,6 +377,7 @@
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
         "transitionNote": "The marks become fuller and rounder without disturbing the basic arrangement.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
       {
@@ -457,6 +414,7 @@
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
         "transitionNote": "Fewer marks remain, arranged with more even spacing and steadier proportions.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
       {
@@ -493,6 +451,7 @@
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
         "transitionNote": "Several curved details disappear as the strokes become flatter and more direct.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
       {
@@ -529,6 +488,7 @@
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
         "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
     ],

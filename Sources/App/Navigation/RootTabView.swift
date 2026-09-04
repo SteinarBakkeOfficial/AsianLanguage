@@ -42,13 +42,10 @@ struct RootTabView: View {
     }
 }
 
-/// First-launch sequence: use the original Fire introduction before offering optional modern-language preferences.
+/// First-launch introduction: explain the exhibit once, then enter the canonical Fire journey.
 struct OnboardingView: View {
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
-    @State private var step: Step
-
-    private enum Step { case intro, connection }
 
     /// Fire remains a repository-backed introduction/reference record and is not part of the 126-record V1 manifest.
     private var fireRecord: SharedCharacterRecord? {
@@ -58,7 +55,6 @@ struct OnboardingView: View {
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
         _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
-        _step = State(initialValue: dependencies.userStateStore.state.hasSeenIntro ? .connection : .intro)
     }
 
     var body: some View {
@@ -68,46 +64,20 @@ struct OnboardingView: View {
                     .font(AppTypography.conceptLabel)
                     .tracking(1.4)
                     .foregroundStyle(AppColors.textSecondary)
-                switch step {
-                case .intro:
-                    Text("One idea. One symbol. Thousands of years.")
-                        .font(AppTypography.exhibitHeading)
-                        .foregroundStyle(AppColors.textPrimary)
-                        .multilineTextAlignment(.center)
-                        Text("Follow Fire from a recognizable origin through its historical transformation.")
-                        .font(AppTypography.body)
-                        .foregroundStyle(AppColors.textSecondary)
-                        .multilineTextAlignment(.center)
-                    if let fireRecord {
-                        FireOnboardingLineage(record: fireRecord)
-                    }
-                    PrimaryActionButton("Continue") {
-                        userStateStore.markIntroSeen()
-                        step = .connection
-                    }
-                case .connection:
-                        Text("Enter the Fire exhibit")
-                        .font(AppTypography.exhibitHeading)
-                        .foregroundStyle(AppColors.textPrimary)
-                        .multilineTextAlignment(.center)
-                        Text("Begin with 火 as a museum object: its origin, historical forms, and the path into today.")
-                        .font(AppTypography.body)
-                        .foregroundStyle(AppColors.textSecondary)
-                        .multilineTextAlignment(.center)
-                    if let fireRecord {
-                        FireOnboardingLineage(record: fireRecord)
-                    }
-                    Text("Fire")
-                        .font(AppTypography.exhibitHeading)
-                        .foregroundStyle(AppColors.textPrimary)
-                    Text("All four modern language tracks are available later. The exhibit comes first.")
-                        .font(AppTypography.metadata)
-                        .foregroundStyle(AppColors.textSecondary)
-                        .multilineTextAlignment(.center)
-                    PrimaryActionButton("Enter Fire") {
-                        userStateStore.markFirstSymbolStarted()
-                        dependencies.navigationState.openSymbol("fire", intent: .start)
-                    }
+                Text("One idea. One symbol. Thousands of years.")
+                    .font(AppTypography.exhibitHeading)
+                    .foregroundStyle(AppColors.textPrimary)
+                    .multilineTextAlignment(.center)
+                Text("Follow Fire from a recognizable origin through historical writing and into modern languages.")
+                    .font(AppTypography.body)
+                    .foregroundStyle(AppColors.textSecondary)
+                    .multilineTextAlignment(.center)
+                if let fireRecord {
+                    FireOnboardingLineage(record: fireRecord)
+                }
+                PrimaryActionButton("Explore Fire") {
+                    userStateStore.markFirstSymbolStarted()
+                    dependencies.navigationState.openSymbol("fire", intent: .start)
                 }
             }
             .frame(maxWidth: 390)
@@ -321,7 +291,7 @@ private struct LegacyHistoryRootView: View {
     }
 }
 
-/// Native V1 History overview based on the approved reference artwork; detailed period pages remain deferred.
+/// Native V1 History overview based on the approved reference artwork; deeper destinations are intentionally unfinished.
 private struct HistoryRootView: View {
     let dependencies: AppDependencies
 
@@ -411,15 +381,7 @@ private struct HistoryOverviewStage: Identifiable {
 
 private struct HistoryOverviewHeader: View {
     var body: some View {
-        ZStack(alignment: .topLeading) {
-            // The supplied landscape is a quiet background layer, matching the reference rather than sitting beside the title.
-            HistoryReferenceCropView(
-                normalizedRect: CGRect(x: 0.57, y: 0.0, width: 0.43, height: 0.17),
-                accessibilityLabel: "Ink-wash landscape with mountains and a pavilion"
-            )
-            .frame(maxWidth: .infinity, minHeight: 142, maxHeight: 142)
-            .opacity(0.82)
-
+        HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
             VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
                 Text("The History of Chinese Characters")
                     .font(AppTypography.exhibitHeading)
@@ -429,9 +391,16 @@ private struct HistoryOverviewHeader: View {
                     .foregroundStyle(AppColors.textSecondary)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.trailing, AppSpacing.spaceMd)
+
+            // Keep the supplied landscape in its intended bounded frame so it cannot stretch under the copy.
+            HistoryReferenceCropView(
+                normalizedRect: CGRect(x: 0.57, y: 0.0, width: 0.43, height: 0.17),
+                accessibilityLabel: "Ink-wash landscape with mountains and a pavilion"
+            )
+            .frame(width: 112, height: 96)
+            .opacity(0.82)
         }
-        .frame(minHeight: 142, maxHeight: 142)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.top, AppSpacing.spaceXs)
     }
 }
@@ -450,7 +419,12 @@ private struct HistoryTimelineCard: View {
 
             VStack(spacing: 0) {
                 ForEach(Array(stages.enumerated()), id: \.element.id) { index, stage in
-                    HistoryOverviewRow(stage: stage)
+                    NavigationLink {
+                        HistoryScriptDetailView(stage: stage)
+                    } label: {
+                        HistoryOverviewRow(stage: stage)
+                    }
+                    .buttonStyle(.plain)
                     if index < stages.count - 1 {
                         Divider()
                             .padding(.leading, 48)
@@ -532,6 +506,33 @@ private struct HistoryStageArtwork: View {
 }
 
 private struct HistoryLivingTraditionCard: View {
+    private let branches: [HistoryModernBranch] = [
+        HistoryModernBranch(
+            id: "traditionalChinese",
+            title: "Traditional Chinese",
+            scriptLabel: "繁體中文",
+            explanation: "Traditional Chinese continues the shared character tradition in a modern Chinese writing environment."
+        ),
+        HistoryModernBranch(
+            id: "simplifiedChinese",
+            title: "Simplified Chinese",
+            scriptLabel: "简体中文",
+            explanation: "Simplified Chinese continues the character tradition with later standardized simplified forms for many characters."
+        ),
+        HistoryModernBranch(
+            id: "japanese",
+            title: "Japanese",
+            scriptLabel: "漢字 + かな",
+            explanation: "Japanese uses Kanji alongside kana, developing a modern writing environment with both systems."
+        ),
+        HistoryModernBranch(
+            id: "korean",
+            title: "Korean",
+            scriptLabel: "한글 + 한자",
+            explanation: "Korean historically used Hanja; Hangul is primary in modern Korean and Hanja has a more limited role."
+        )
+    ]
+
     var body: some View {
         GroupedSurface {
             HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
@@ -551,12 +552,144 @@ private struct HistoryLivingTraditionCard: View {
                 }
             }
 
+            VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
+                Text("Modern writing traditions")
+                    .font(AppTypography.sectionHeading)
+                    .foregroundStyle(AppColors.textPrimary)
+                Text("The shared historical tradition continues differently in each language environment.")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+
+                ForEach(branches) { branch in
+                    NavigationLink {
+                        HistoryModernLanguageDetailView(branch: branch)
+                    } label: {
+                        HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
+                            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                                Text(branch.title)
+                                    .font(AppTypography.stageTitle)
+                                    .foregroundStyle(AppColors.textPrimary)
+                                Text(branch.scriptLabel)
+                                    .font(AppTypography.metadata)
+                                    .foregroundStyle(AppColors.textSecondary)
+                            }
+                            Spacer(minLength: 0)
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 12, weight: .semibold))
+                                .foregroundStyle(AppColors.textTertiary)
+                        }
+                        .padding(.vertical, AppSpacing.spaceXs)
+                        .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+
             HistoryReferenceCropView(
                 normalizedRect: CGRect(x: 0.45, y: 0.91, width: 0.50, height: 0.085),
                 accessibilityLabel: "Oracle Bone, Bronze, Small Seal, Clerical, and Regular Script comparison"
             )
             .frame(maxWidth: .infinity, minHeight: 58, maxHeight: 70)
         }
+    }
+}
+
+private struct HistoryModernBranch: Identifiable, Hashable {
+    let id: String
+    let title: String
+    let scriptLabel: String
+    let explanation: String
+}
+
+private struct HistoryScriptDetailView: View {
+    let stage: HistoryOverviewStage
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
+                Text(stage.title.uppercased())
+                    .font(AppTypography.conceptLabel)
+                    .tracking(1.4)
+                    .foregroundStyle(AppColors.textSecondary)
+                Text(stage.dynasty)
+                    .font(AppTypography.exhibitHeading)
+                    .foregroundStyle(AppColors.textPrimary)
+                Text(stage.date)
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+
+                HistoryReferenceCropView(
+                    normalizedRect: stage.artworkRect,
+                    accessibilityLabel: "Representative \(stage.title) material and character artwork"
+                )
+                .frame(maxWidth: .infinity, minHeight: 112, maxHeight: 160)
+                .background(AppColors.artifactField)
+                .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+
+                GroupedSurface {
+                    VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                        Text(stage.material)
+                            .font(AppTypography.sectionHeading)
+                            .foregroundStyle(AppColors.textPrimary)
+                        Text(stage.explanation)
+                            .font(AppTypography.body)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+                }
+
+                Text("Historical forms shown here are representative examples. Actual forms varied across periods, regions, objects, and individual writers.")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
+            .padding(AppSpacing.spacePage)
+            .padding(.bottom, AppSpacing.spaceSection)
+        }
+        .navigationTitle(stage.title)
+        .navigationBarTitleDisplayMode(.inline)
+        .background(AppColors.appBackground.ignoresSafeArea())
+    }
+}
+
+private struct HistoryModernLanguageDetailView: View {
+    let branch: HistoryModernBranch
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
+                Text("MODERN LANGUAGE")
+                    .font(AppTypography.conceptLabel)
+                    .tracking(1.4)
+                    .foregroundStyle(AppColors.textSecondary)
+                Text(branch.title)
+                    .font(AppTypography.exhibitHeading)
+                    .foregroundStyle(AppColors.textPrimary)
+                Text(branch.scriptLabel)
+                    .font(CJKFontRole.museumRegular.font(size: 42))
+                    .foregroundStyle(AppColors.artifactInk)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
+                GroupedSurface {
+                    VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                        Text("The modern continuation")
+                            .font(AppTypography.sectionHeading)
+                            .foregroundStyle(AppColors.textPrimary)
+                        Text(branch.explanation)
+                            .font(AppTypography.body)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+                }
+
+                HistoricalMissingState(
+                    title: "Detailed language page in progress",
+                    detail: "Further source-backed chronology, writing context, and examples will be added here."
+                )
+            }
+            .padding(AppSpacing.spacePage)
+            .padding(.bottom, AppSpacing.spaceSection)
+        }
+        .navigationTitle(branch.title)
+        .navigationBarTitleDisplayMode(.inline)
+        .background(AppColors.appBackground.ignoresSafeArea())
     }
 }
 
@@ -778,6 +911,18 @@ struct SourcesLicensesView: View {
 
     var body: some View {
         List {
+            Section("Technical attribution") {
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text("Apple Speech Synthesis")
+                        .font(AppTypography.body.weight(.semibold))
+                        .foregroundStyle(AppColors.textPrimary)
+                    Text("Pronunciation playback uses Apple's system speech-synthesis technology through AVSpeechSynthesizer. This describes how audio is produced; linguistic sources remain credited separately.")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+                .padding(.vertical, AppSpacing.spaceXs)
+                .listRowBackground(Color.clear)
+            }
             if dependencies.sharedCharacters.flatMap(\.sources).isEmpty {
                 Text("Source and license metadata is pending for the current draft corpus.")
                     .font(AppTypography.body)

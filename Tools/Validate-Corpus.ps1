@@ -219,6 +219,44 @@ function Assert-ExampleCoverage {
   }
 }
 
+function Assert-PronunciationData {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$RecordPath,
+    [Parameter(Mandatory = $true)]
+    $Record
+  )
+
+  $validLanguages = @("mandarin", "cantonese", "japanese", "korean")
+  $readings = New-Object System.Collections.Generic.List[object]
+  foreach ($coverage in @(
+      $Record.focusCoverage.simplifiedChinese,
+      $Record.focusCoverage.traditionalChinese,
+      $Record.focusCoverage.japanese,
+      $Record.focusCoverage.korean
+    )) {
+    if ($null -eq $coverage) { continue }
+    foreach ($reading in @($coverage.readings, $coverage.taiwanReadings, $coverage.hongKongReadings)) {
+      foreach ($item in @($reading)) { $readings.Add($item) | Out-Null }
+    }
+    foreach ($variant in @($coverage.variants)) {
+      foreach ($item in @($variant.readings)) { $readings.Add($item) | Out-Null }
+    }
+  }
+
+  foreach ($reading in $readings) {
+    $hasText = Test-HasText $reading.speechText
+    $hasLanguage = Test-HasText $reading.speechLanguage
+    if ($hasText -ne $hasLanguage) {
+      Add-Issue -Path $RecordPath -Message "Reading '$($reading.system)' must provide both speechText and speechLanguage, or neither."
+      continue
+    }
+    if ($hasLanguage -and $validLanguages -notcontains ([string]$reading.speechLanguage).ToLowerInvariant()) {
+      Add-Issue -Path $RecordPath -Message "Reading '$($reading.system)' uses unsupported speechLanguage '$($reading.speechLanguage)'."
+    }
+  }
+}
+
 function Assert-HistoryCoverage {
   param(
     [Parameter(Mandatory = $true)]
@@ -389,6 +427,7 @@ foreach ($file in $jsonFiles) {
   Assert-PublicationStatus -RecordPath $recordPath -Record $record
   Assert-FocusCoverage -RecordPath $recordPath -Record $record
   Assert-ExampleCoverage -RecordPath $recordPath -Record $record
+  Assert-PronunciationData -RecordPath $recordPath -Record $record
   Assert-HistoryCoverage -RecordPath $recordPath -Record $record
   Assert-SourceReferences -RecordPath $recordPath -Record $record
   Assert-StructureCertainty -RecordPath $recordPath -Record $record

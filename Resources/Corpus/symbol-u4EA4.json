@@ -28,7 +28,9 @@
         {
           "system": "pinyin",
           "value": "jiāo",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "交",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -92,7 +94,9 @@
         {
           "system": "pinyin",
           "value": "jiāo",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "交",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -148,70 +152,17 @@
           ]
         }
       ],
-      "hongKongExamples": [
-        {
-          "text": "交",
-          "reading": "jiāo",
-          "translation": "交 / meet",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "交"
-          ]
-        },
-        {
-          "text": "這是「交」。",
-          "reading": "",
-          "translation": "This is the character 「交」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "交"
-          ]
-        },
-        {
-          "text": "我學習「交」。",
-          "reading": "",
-          "translation": "I am learning the character 「交」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "交"
-          ]
-        },
-        {
-          "text": "我會讀「交」。",
-          "reading": "",
-          "translation": "I can read the character 「交」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "交"
-          ]
-        }
-      ],
+      "hongKongExamples": [],
       "taiwanReadings": [
         {
           "system": "pinyin",
           "value": "jiāo",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "交",
+          "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [
-        {
-          "system": "pinyin",
-          "value": "jiāo",
-          "audioAssetRef": null
-        }
-      ],
+      "hongKongReadings": [],
       "variants": []
     },
     "japanese": {
@@ -220,7 +171,9 @@
         {
           "system": "on / kun",
           "value": "MAJIWARU MAJIRU KAU",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "MAJIWARU MAJIRU KAU",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -284,7 +237,9 @@
         {
           "system": "hanja",
           "value": "KYO",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "KYO",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -385,6 +340,7 @@
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of 交 / meet.",
         "transitionNote": "The illustrated subject is reduced to a few simple strokes, while its clearest outline remains visible.",
         "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
       {
@@ -421,6 +377,7 @@
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
         "transitionNote": "The outline is drawn with fewer, simpler strokes, but its main shape is still easy to see.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
       {
@@ -457,6 +414,7 @@
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
         "transitionNote": "The overall shape steadies as the curves become more even and the parts sit closer together.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
       {
@@ -493,6 +451,7 @@
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
         "transitionNote": "Several curved details disappear as the strokes become flatter and more direct.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
       {
@@ -529,6 +488,7 @@
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
         "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
     ],

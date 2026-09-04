@@ -77,6 +77,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - The Modern/Usage page composition and word-context layout still need simulator comparison and interaction polish; the four starter entries per track still need reviewed, character-relevant vocabulary.
 - Completion, Revisit, and Quick Review have initial behavior and structure but still need simulator visual QA and final interaction polish.
 - Shared components are available; History still needs final simulator comparison for crop positioning and typography, while More needs any future approved representative content.
+- The approved Symbol / History / modern-language polish implementation is in progress: stage backgrounds, period removal, one-page onboarding, iOS pronunciation seam, clickable History detail destinations, and modern-language branches are now wired; simulator/device verification remains.
 - Historical asset provenance, renderability, and specialist confidence review remain required before publication; the availability/confidence contract itself is now aligned.
 - The current prototype SVG assets are packaged locally but still require native rendering verification and final asset treatment on macOS.
 - The 148-character research-only ZDIC intake produced 568 of 592 possible Oracle Bone/Bronze/Small Seal/Clerical selections; V1 is now restricted to the 126 characters with all four stages. These copied files are not cleared for commercial bundling.
@@ -92,10 +93,25 @@ Discovery and content-contract foundations are also present, including Browse-ow
 5. Run macOS/Xcode simulator screenshot comparison for the reference-target screens.
 6. Run physical iPhone checks for touch, safe areas, gestures, and rendering.
 
+### Screenshot-review follow-ups and polish boundary
+
+- Deferred outside the current polish implementation: move the Home Regular Script artwork upward to preserve space for the Continue button.
+- Included in the current polish implementation: remove the previously tested age/period line from Symbol Journey stage headers; retain chronology in History and source metadata.
+- Included in the current polish implementation: consolidate the two similar Fire onboarding pages into one direct-entry page using the existing first-page concept.
+- Deferred outside the current polish implementation: expand Regular Script transition captions where they are too brief.
+- Deferred outside the current polish implementation: replace the four-track starter examples with fully reviewed, character-relevant Chinese, Japanese, and Korean usage content.
+- Included in the current polish implementation: correct the existing History header crop/layout collision and remaining artwork/text fit issues after comparing the supplied screenshots; preserve the approved composition and existing History artwork.
+- Deferred outside the current polish implementation: audit the complete Sources / Licenses page and resolve the broader About-versus-Sources content-architecture question. Apple Speech Synthesis technical attribution is included with the approved audio work.
+- Browse and More are currently accepted and are out of scope for this fix pass.
+
+The complete 2026-09-04 final-polish brief is preserved in [`docs/design/symbol-history-modern-final-polish-feedback.md`](docs/design/symbol-history-modern-final-polish-feedback.md). Its approved implementation boundary is recorded in [`docs/design/symbol-history-modern-final-polish-implementation-plan.md`](docs/design/symbol-history-modern-final-polish-implementation-plan.md).
+
+The separate [Pronunciation Audio handoff](docs/architecture/pronunciation-audio-apple-avspeechsynthesizer-feedback.md) is approved for this pass: use an isolated iOS AVSpeechSynthesizer service, explicit draft speech text, and small speaker controls; no cloud TTS or bundled MP3 files. User and native-speaker verification is a later release-testing step, not an implementation gate.
+
 ## V1 to VNext Carryover Register
 
 - Grammar and rule lessons
-- Voice/audio
+- Android pronunciation renderer: a future Android port replaces the iOS speech renderer with Android TextToSpeech while retaining the same verified platform-independent pronunciation data.
 - Tracing/handwriting
 - Android
 - Sync and deep account systems
@@ -103,9 +119,9 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - User-created collection folders
 - richer historical animation
 - Deeper Fire onboarding language orientation covering all four target writing traditions; this applies only to the onboarding symbol experience.
-- A History language-branches section below the main timeline: four illustrated cards in a 2×2 grid for Simplified Chinese, Traditional Chinese, Japanese, and Korean, with detailed language pages deferred.
+- History page rework: the broader History overview redesign is intentionally the next implementation after this surgical polish pass.
 - Future Home cleanup: replace the standalone “X symbols learned” footer with a deliberate destination such as History or the Learned library; do not change the current footer during this pass.
-- Future Symbol surface treatment: consider stage-specific material backgrounds (bone for Oracle Bone, bronze for Bronze, and historically appropriate surfaces through Modern) after the current museum layout is stable.
+- Future language-orientation content: broader language-family/context explanation beyond the approved modern-language branches and their intentionally unfinished detail destinations remains deferred.
 
 ## Future considerations — undecided
 

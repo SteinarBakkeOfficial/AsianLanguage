@@ -9,6 +9,7 @@ struct CharacterEvolutionView: View {
     let completionTitle: String
     let onComplete: () -> Void
     @Binding var selectedStageID: String
+    @State private var stageContentOpacity = 1.0
 
     init(
         record: SharedCharacterRecord,
@@ -102,6 +103,14 @@ struct CharacterEvolutionView: View {
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .animation(.easeInOut(duration: AppMotion.exhibit), value: selectedStageID)
+            .opacity(stageContentOpacity)
+            .onChange(of: selectedStageID) { _, _ in
+                stageContentOpacity = 0
+                withAnimation(.easeInOut(duration: AppMotion.exhibit)) {
+                    stageContentOpacity = 1
+                }
+            }
 
             stageNavigator
         }
@@ -116,13 +125,16 @@ struct CharacterEvolutionView: View {
         journeyPage(allowsVerticalScroll: true) {
             stageHeader(overline: "Origin", title: nil, subtitle: nil)
             ArtifactField {
-                if let originAsset = record.history.origin?.asset {
-                    HistoricalAssetView(metadata: originAsset)
-                } else {
-                    HistoricalMissingState(
-                        title: "Origin visual not yet included",
-                        detail: "This concept visual is not currently available in the approved historical corpus."
-                    )
+                ZStack {
+                    SymbolStageBackgroundView(stageID: "origin")
+                    if let originAsset = record.history.origin?.asset {
+                        HistoricalAssetView(metadata: originAsset)
+                    } else {
+                        HistoricalMissingState(
+                            title: "Origin visual not yet included",
+                            detail: "This concept visual is not currently available in the approved historical corpus."
+                        )
+                    }
                 }
             }
             .frame(height: 304)
@@ -145,30 +157,39 @@ struct CharacterEvolutionView: View {
         journeyPage(allowsVerticalScroll: true) {
             stageHeader(
                 overline: learnerStageLabel(for: stage),
-                title: stageDateLabel(for: stage),
+                title: nil,
                 subtitle: nil
             )
             ArtifactField {
-                if stage.stage == "regular" {
-                    // Regular Script is the approved modern standardized Kai endpoint,
-                    // not a copied historical inscription or a prototype SVG fallback.
-                    Text(record.coreCharacter)
-                        .font(CJKFontRole.museumRegular.font(size: 148))
-                        .foregroundStyle(AppColors.artifactInk)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .accessibilityLabel("Regular Script \(record.coreCharacter)")
-                } else if stage.availabilityState == .unavailableAsset {
-                    HistoricalMissingState()
-                } else if let metadata = stage.assetMetadata {
-                    HistoricalAssetView(metadata: metadata)
-                } else if let assetRef = stage.assetRef {
-                    HistoricalAssetView(assetRef: assetRef)
-                } else {
-                    // Historical visual unavailable is an intentional editorial state, never a modern fallback.
-                    HistoricalMissingState()
+                ZStack {
+                    SymbolStageBackgroundView(stageID: stage.stage)
+                    if stage.stage == "regular" {
+                        // Regular Script is the approved modern standardized Kai endpoint,
+                        // not a copied historical inscription or a prototype SVG fallback.
+                        Text(record.coreCharacter)
+                            .font(CJKFontRole.museumRegular.font(size: 148))
+                            .foregroundStyle(AppColors.artifactInk)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .accessibilityLabel("Regular Script \(record.coreCharacter)")
+                    } else if stage.availabilityState == .unavailableAsset {
+                        HistoricalMissingState()
+                    } else if let metadata = stage.assetMetadata {
+                        HistoricalAssetView(metadata: metadata)
+                    } else if let assetRef = stage.assetRef {
+                        HistoricalAssetView(assetRef: assetRef)
+                    } else {
+                        // Historical visual unavailable is an intentional editorial state, never a modern fallback.
+                        HistoricalMissingState()
+                    }
                 }
             }
             .frame(height: 304)
+            if let caption = stage.materialProcessCaption {
+                Text(caption)
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+                    .multilineTextAlignment(.center)
+            }
             // Transition notes are destination-stage captions: they explain what visibly changed
             // from the previous available exhibit into this exact form.
             Text(stage.transitionNote ?? stage.changeNoteFromPrevious ?? stage.stageExplanation ?? "Stage-specific explanation is pending editorial review.")
@@ -330,17 +351,6 @@ struct CharacterEvolutionView: View {
         }
     }
 
-    private func stageDateLabel(for stage: HistoricalStage) -> String? {
-        if let period = stage.assetMetadata?.approximatePeriod, !period.isEmpty { return period }
-        switch stage.stage {
-        case "oracleBone": return "c. 1200–1046 BCE"
-        case "bronze": return "c. 1046–256 BCE"
-        case "seal": return "c. 221–206 BCE"
-        case "clerical": return "c. 206 BCE–220 CE"
-        default: return nil
-        }
-    }
-
     /// Short rail labels preserve the full stage name in the page header and accessibility label.
     private func shortLabel(for id: String) -> String {
         if id == "origin" { return "Origin" }
@@ -363,6 +373,28 @@ struct CharacterEvolutionView: View {
         case .simplifiedChinese: return "Simplified"
         case .japanese: return "Japanese"
         case .korean: return "Korean"
+        }
+    }
+}
+
+/// Renders one exact panel from the approved Symbol_Background_v1 asset set as the exhibit environment.
+struct SymbolStageBackgroundView: View {
+    let stageID: String
+
+    var body: some View {
+        switch BundledHistoricalAssetResolver(bundle: .main).resolve("Assets/Symbols/_StageBackgrounds/\(stageID).png") {
+        case .bundledImage(let url):
+            if let image = UIImage(contentsOfFile: url.path) {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFill()
+                    .opacity(0.84)
+                    .accessibilityHidden(true)
+            } else {
+                AppColors.artifactField
+            }
+        case .bundledSVG, .unavailable:
+            AppColors.artifactField
         }
     }
 }

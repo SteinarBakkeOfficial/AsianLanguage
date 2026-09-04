@@ -88,7 +88,7 @@ Use `Reference Pictures/Chatgpt/AsianLanguage_AppShell_VisualReference_v1.png` a
 
 The approved correction pass is implemented: the museum and language rails are persistent and visibly labeled, Fire onboarding has its own aligned lineage preview, Home no longer follows an orphaned pre-V1 Fire state, Home uses the full collection banner, Hong Kong readings identify Cantonese/Jyutping, and History is recreated natively from the approved reference content.
 
-The next step is macOS/Xcode visual and interaction verification against the approved references. Do not broaden the pass into sound, broad example replacement, native-speaker review, deeper Fire language orientation, the History language-card section, detailed historical-stage pages, or replacement of the Home learned-count footer without a new approval.
+The approved implementation pass documented in [`docs/design/symbol-history-modern-final-polish-implementation-plan.md`](docs/design/symbol-history-modern-final-polish-implementation-plan.md) is now in progress. The current slice includes the approved stage environments, period removal, one-page onboarding, audio service/speaker-control seam, modern-language History branches, and clickable script/language detail destinations. macOS/Xcode visual and interaction verification and physical-device voice checks remain outstanding. The broader History-page rework is deliberately reserved for the next implementation.
 
 The 808-character research boundary is now documented with a complete primary collection sort and a source-indexed historical-stage split. Review those artifacts first, then perform the row-level Kanji/Hanja/Chinese relevance and specialist historical-asset audit needed to turn research candidates into an approved V1/V2/V3 corpus.
 
@@ -203,6 +203,22 @@ These observations are preserved separately from approved product decisions and 
 - History currently communicates historical script periods well enough as a structure, but it does not yet explain the four modern language/script trajectories. That is a meaningful content opportunity, though its placement needs a product decision before implementation.
 - The Today speaker control is different from global interface sound effects. Pronunciation/audio and button/selection feedback should be evaluated as separate decisions; neither should outrank the missing visual and editorial content for this pass.
 
+## Approved implementation pass and deferred next History rework — 2026-09-04
+
+These define the approved current implementation pass; implementation has begun and remains subject to macOS/Xcode and device verification.
+
+- Deferred outside this implementation: move the Home Regular Script artwork slightly upward so the `Continue [symbol]` button has clearer breathing room.
+- Historical stage headers: the age/period line was a visual experiment, not a required fact display; keep the stage names but remove the age/period line from Symbol pages. Chronology remains owned by History.
+- Onboarding: consolidate the two similar Fire introduction pages into one strong page using the existing “One idea. One symbol. Thousands of years.” concept, then enter Fire directly with one primary action. Keep language preferences in More → Languages.
+- Deferred outside this implementation: review and expand Regular-stage transition notes that are too short.
+- Deferred outside this implementation: replace the current four-track starter content with fully native-speaker-reviewed examples and translations. The current pass only makes the approved modern-language hierarchy and explicit reading/speech relationships ready for verified data.
+- Audio data checkpoint: all current V1 reading rows now receive explicit draft speech text and language intent through the existing importer. Nothing is treated as user- or native-speaker-verified yet; later review will refine the draft data. Missing Cantonese rows remain absent rather than falling back to Mandarin.
+- History: correct the existing header crop/layout collision and remaining artwork/text fit issues using the supplied screenshots; preserve the approved composition and existing `History_V1.png` artwork unless comparison shows a specific crop correction is needed.
+- Deferred outside this implementation: audit the complete Sources / Licenses page and resolve the broader About-versus-Sources content-architecture question. The current pass does include the approved Apple Speech Synthesis technical attribution required by the audio handoff.
+- Browse and More currently look acceptable and should not be changed as part of these fixes.
+
+The full 2026-09-04 Symbol / History / Modern Language final-polish brief is preserved in [`docs/design/symbol-history-modern-final-polish-feedback.md`](docs/design/symbol-history-modern-final-polish-feedback.md) and is approved for implementation. The separate [Pronunciation Audio handoff](docs/architecture/pronunciation-audio-apple-avspeechsynthesizer-feedback.md) is also approved: use one isolated iOS AVSpeechSynthesizer service with small speaker controls, explicit draft speech text, and Apple Speech Synthesis technical attribution. User and native-speaker verification will happen during later release testing, not before implementation. History will include modern-language branches and clickable historical-script/modern-language detail destinations with back navigation; these destinations are intentionally unfinished in this pass. The next implementation after this polish pass is the planned broader History-page rework.
+
 ## Blockers
 
 - SwiftUI/Xcode compilation and XCTest execution require macOS/Xcode or macOS CI.
@@ -242,4 +258,4 @@ Strict layout verification reports the existing top-level `MAC_TESTING.md` as ou
 
 ## V1 to VNext tracking
 
-The current pass stays within V1: it improves the pilot's visual fidelity, source-backed asset handling, and language copy. Deeper Fire onboarding language orientation, the four-card History language section, scrollable all-language Today, richer historical animation, audio, tracing, and larger corpus expansion remain intentional VNext carryover.
+The current pass stays within V1: it improves the pilot's visual fidelity, source-backed asset handling, modern-language copy, History branching/detail navigation, and iOS pronunciation playback. Deeper Fire onboarding language orientation, scrollable all-language Today, richer historical animation, tracing, and larger corpus expansion remain intentional VNext carryover. The broader History-page rework is the next implementation after this pass.

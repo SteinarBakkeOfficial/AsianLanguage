@@ -42,7 +42,11 @@ Relevant unavailable stages may remain as explicit Missing Historical Asset stat
 
 The Shared Character content module owns origin content, stage metadata, modern focus-track variants, Character structure, Modern usage, sources, and publication status.
 
-Presentation-facing models distinguish historical confidence from missing content. Readings may carry optional future audio references, but no audio playback system is part of V1.
+Presentation-facing models distinguish historical confidence from missing content. Readings may carry explicit, platform-independent pronunciation data such as verified speech text and language intent. The current polish implementation adds iOS pronunciation playback through one isolated `AVSpeechSynthesizer` service and small speaker controls. It does not add cloud TTS, API keys, or bundled audio assets. A future Android port must replace only the platform-specific renderer with an Android text-to-speech implementation.
+
+### Pronunciation speech — platform dependency
+
+Script Roots currently uses Apple's `AVSpeechSynthesizer` for pronunciation playback on iOS. The Apple speech API is not a cross-platform audio implementation and must remain outside the core Symbol content model. Draft readings, speech text, and language intent remain platform-independent so that a future Android implementation can use Android's `TextToSpeech` API without rewriting the linguistic corpus; later review can refine those values without changing the platform boundary.
 
 Each historical stage owns its canonical asset reference and structured asset metadata. Global visual metadata may describe overall readiness but must not duplicate the stage map.
 

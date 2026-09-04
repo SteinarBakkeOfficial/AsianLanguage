@@ -114,13 +114,59 @@ struct UsageExamplesView: View {
                 .clipped()
             VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                 ForEach(readings, id: \.system) { reading in
-                    Text("\(reading.system.capitalized): \(reading.value)")
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
+                    readingRow(reading, fontRole: fontRole)
                 }
             }
             Spacer(minLength: 0)
         }
+    }
+
+    /// Keeps the learner's script prominent while placing the reading label and audio beside it.
+    private func readingRow(_ reading: CharacterReading, fontRole: CJKFontRole) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
+            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                Text(readingLabel(reading))
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+                let parts = displayReadingParts(reading.value)
+                Text(parts.script)
+                    .font(fontRole.font(size: 22).weight(.medium))
+                    .foregroundStyle(AppColors.textPrimary)
+                if let romanization = parts.romanization {
+                    Text(romanization)
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+            }
+            PronunciationButton(reading: reading)
+        }
+    }
+
+    /// Uses established linguistic labels instead of flattening distinct reading systems into one caption.
+    private func readingLabel(_ reading: CharacterReading) -> String {
+        switch reading.system.lowercased() {
+        case "on": return "On · Sino-Japanese"
+        case "kun": return "Kun · native Japanese"
+        case "hanja": return "Hanja · Sino-Korean"
+        case "native korean": return "Everyday Korean"
+        default: return reading.system.capitalized
+        }
+    }
+
+    /// Splits the current editorial display form from optional romanization without changing the stored value.
+    private func displayReadingParts(_ value: String) -> (script: String, romanization: String?) {
+        let parentheticalParts = value.split(separator: "(", maxSplits: 1, omittingEmptySubsequences: true)
+        if parentheticalParts.count == 2 {
+            return (
+                String(parentheticalParts[0]).trimmingCharacters(in: .whitespaces),
+                String(parentheticalParts[1]).trimmingCharacters(in: CharacterSet(charactersIn: ") "))
+            )
+        }
+        let slashParts = value.components(separatedBy: " / ")
+        if slashParts.count == 2 {
+            return (slashParts[0], slashParts[1])
+        }
+        return (value, nil)
     }
 
     /// Korean keeps the Hanja form and an explicit native-script variant together on the Usage page.
@@ -138,9 +184,9 @@ struct UsageExamplesView: View {
                     Text(variant.form)
                         .font(CJKFontRole.korean.font(size: 22).weight(.semibold))
                         .foregroundStyle(AppColors.textPrimary)
-                    Text(variant.readings.map(\.value).joined(separator: " · "))
-                        .font(AppTypography.metadata)
-                        .foregroundStyle(AppColors.textSecondary)
+                ForEach(variant.readings, id: \.system) { reading in
+                    readingRow(reading, fontRole: .korean)
+                }
                 }
             }
             ForEach(displayExamples(coverage.examples, variants: coverage.variants).prefix(4), id: \.text) { example in
@@ -183,8 +229,12 @@ struct UsageExamplesView: View {
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
             languageFormHeader(form: coverage.form, readings: coverage.readings, fontRole: .traditionalChinese)
-            regionalExamples(title: "Taiwan", examples: coverage.taiwanExamples)
-            regionalExamples(title: "Hong Kong · Cantonese / Jyutping", examples: coverage.hongKongExamples)
+            if !coverage.taiwanReadings.isEmpty || !coverage.taiwanExamples.isEmpty {
+                regionalExamples(title: "Taiwan", readings: coverage.taiwanReadings, examples: coverage.taiwanExamples)
+            }
+            if !coverage.hongKongReadings.isEmpty || !coverage.hongKongExamples.isEmpty {
+                regionalExamples(title: "Hong Kong · Cantonese / Jyutping", readings: coverage.hongKongReadings, examples: coverage.hongKongExamples)
+            }
         }
         .padding(.vertical, AppSpacing.spaceSm)
         .padding(.horizontal, AppSpacing.spaceMd)
@@ -197,11 +247,14 @@ struct UsageExamplesView: View {
     }
 
     /// Renders up to four useful context entries for one Traditional Chinese region.
-    private func regionalExamples(title: String, examples: [UsageExample]) -> some View {
+    private func regionalExamples(title: String, readings: [CharacterReading], examples: [UsageExample]) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
             Text(title)
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
+            ForEach(readings, id: \.system) { reading in
+                readingRow(reading, fontRole: .traditionalChinese)
+            }
             ForEach(displayExamples(examples).prefix(4), id: \.text) { example in
                 exampleRow(example, fontRole: .traditionalChinese)
             }

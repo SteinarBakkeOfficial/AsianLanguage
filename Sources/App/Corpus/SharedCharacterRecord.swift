@@ -253,14 +253,30 @@ struct CharacterReading: Decodable, Hashable {
     /// Optional future pronunciation asset; absence is a normal unavailable state.
     let audioAssetRef: String?
 
-    private enum CodingKeys: String, CodingKey { case system, value, audioAssetRef }
+    /// Explicit verified text for speech playback; never inferred from the visible Han character.
+    let speechText: String?
+
+    /// Platform-independent language intent resolved by the platform pronunciation service.
+    let speechLanguage: PronunciationLanguage?
+
+    private enum CodingKeys: String, CodingKey { case system, value, audioAssetRef, speechText, speechLanguage }
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         system = try container.decode(String.self, forKey: .system)
         value = try container.decode(String.self, forKey: .value)
         audioAssetRef = try container.decodeIfPresent(String.self, forKey: .audioAssetRef)
+        speechText = try container.decodeIfPresent(String.self, forKey: .speechText)
+        speechLanguage = try container.decodeIfPresent(PronunciationLanguage.self, forKey: .speechLanguage)
     }
+}
+
+/// Language intent shared by content and platform-specific pronunciation renderers.
+enum PronunciationLanguage: String, Decodable, Hashable {
+    case mandarin
+    case cantonese
+    case japanese
+    case korean
 }
 
 /// Editorial confidence vocabulary; missing assets remain a separate availability concern.
@@ -420,6 +436,9 @@ struct HistoricalStage: Decodable, Hashable {
     /// Marks captions that need visual/editorial review before publication.
     let transitionNoteNeedsReview: Bool
 
+    /// Quiet material/process cue shown beneath the stage exhibit when supplied by content.
+    let materialProcessCaption: String?
+
     /// Explicit content availability; legacy records infer this from their asset reference.
     let availabilityState: HistoricalAvailabilityState
 
@@ -431,7 +450,7 @@ struct HistoricalStage: Decodable, Hashable {
     private enum CodingKeys: String, CodingKey {
         case stage, label, form, assetRef, changeNoteFromPrevious, certainty, sourceIds
         case historicalSound, assetMetadata, introducedComponentIds, stageExplanation
-        case transitionNote, transitionNoteNeedsReview, availabilityState
+        case transitionNote, transitionNoteNeedsReview, materialProcessCaption, availabilityState
     }
 
     init(from decoder: Decoder) throws {
@@ -449,8 +468,22 @@ struct HistoricalStage: Decodable, Hashable {
         stageExplanation = try container.decodeIfPresent(String.self, forKey: .stageExplanation)
         transitionNote = try container.decodeIfPresent(String.self, forKey: .transitionNote)
         transitionNoteNeedsReview = try container.decodeIfPresent(Bool.self, forKey: .transitionNoteNeedsReview) ?? false
+        materialProcessCaption = try container.decodeIfPresent(String.self, forKey: .materialProcessCaption)
+            ?? Self.defaultMaterialProcessCaption(for: stage)
         availabilityState = try container.decodeIfPresent(HistoricalAvailabilityState.self, forKey: .availabilityState)
             ?? ((assetRef == nil && assetMetadata == nil) ? .unavailableAsset : .available)
+    }
+
+    /// Keeps older bundled records visually complete while newer source records carry the caption explicitly.
+    private static func defaultMaterialProcessCaption(for stage: String) -> String? {
+        switch stage {
+        case "oracleBone": return "Bone / shell · carved"
+        case "bronze": return "Bronze vessel · cast / inscribed"
+        case "seal": return "Bamboo / manuscript · brush"
+        case "clerical": return "Paper · brush"
+        case "regular": return "Paper · brush"
+        default: return nil
+        }
     }
 }
 

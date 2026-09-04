@@ -77,7 +77,12 @@ Traditional Chinese coverage additionally supports:
 
 Traditional Chinese is a written-form focus track, not one universal spoken pronunciation.
 
-Readings may optionally carry an audio asset reference for a future pronunciation action; absent audio is an explicit unavailable state, not an error.
+Readings may optionally carry an audio asset reference and explicit platform-independent speech data:
+
+- `speechText` is the explicit text passed to a speech renderer; current V1 values may remain draft until user and native-speaker review. It is not inferred at playback time from the visible Han character.
+- `speechLanguage` is one of `mandarin`, `cantonese`, `japanese`, or `korean` and is resolved to a platform locale by the renderer.
+
+Absent speech data is an explicit unavailable state, not an error. iOS playback is isolated behind `AVSpeechSynthesizer`; a future Android implementation must replace only that renderer with `TextToSpeech`.
 
 ## Character structure
 

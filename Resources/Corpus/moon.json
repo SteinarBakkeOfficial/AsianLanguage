@@ -27,7 +27,10 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "yue4 / yuè"
+          "value": "yue4 / yuè",
+          "audioAssetRef": null,
+          "speechText": "月",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -92,7 +95,10 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "yue4 / yuè"
+          "value": "yue4 / yuè",
+          "audioAssetRef": null,
+          "speechText": "月",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -176,44 +182,18 @@
           "introducedSymbols": [
             "月"
           ]
-        },
-        {
-          "text": "月",
-          "reading": "yue4 / yuè",
-          "translation": "moon; month",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
-        },
-        {
-          "text": "這是「月」。",
-          "reading": "",
-          "translation": "This is the character 「月」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
         }
       ],
       "taiwanReadings": [
         {
           "system": "pinyin",
-          "value": "yue4 / yuè"
+          "value": "yue4 / yuè",
+          "audioAssetRef": null,
+          "speechText": "月",
+          "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [
-        {
-          "system": "pinyin",
-          "value": "yue4 / yuè"
-        }
-      ],
+      "hongKongReadings": [],
       "variants": []
     },
     "japanese": {
@@ -221,11 +201,17 @@
       "readings": [
         {
           "system": "on",
-          "value": "getsu / gatsu"
+          "value": "getsu / gatsu",
+          "audioAssetRef": null,
+          "speechText": "getsu / gatsu",
+          "speechLanguage": "japanese"
         },
         {
           "system": "kun",
-          "value": "tsuki"
+          "value": "tsuki",
+          "audioAssetRef": null,
+          "speechText": "tsuki",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -290,11 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "월 / wol"
+          "value": "월 / wol",
+          "audioAssetRef": null,
+          "speechText": "월",
+          "speechLanguage": "korean"
         },
         {
           "system": "native Korean",
-          "value": "달 / dal"
+          "value": "달 / dal",
+          "audioAssetRef": null,
+          "speechText": "달",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -397,6 +389,7 @@
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of moon; month.",
         "transitionNote": "The image of moon is reduced to a few simple strokes, while its clearest outline remains visible.",
         "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
       {
@@ -433,6 +426,7 @@
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
         "transitionNote": "The early marks become fuller and more continuous, while the main silhouette remains visible.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
       {
@@ -469,6 +463,7 @@
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
         "transitionNote": "The parts settle into smoother curves and a more balanced arrangement.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
       {
@@ -505,6 +500,7 @@
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
         "transitionNote": "Several curved sections reduce to fewer, broader strokes, giving the form a flatter structure.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
       {
@@ -541,6 +537,7 @@
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
         "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
     ],

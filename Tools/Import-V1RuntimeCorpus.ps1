@@ -19,8 +19,8 @@ function Read-Json([string]$Path) {
   return Get-Content -LiteralPath (Resolve-RepoPath $Path) -Raw | ConvertFrom-Json
 }
 
-function New-Reading([string]$System, [string]$Value) {
-  return [ordered]@{ system = $System; value = $Value; audioAssetRef = $null }
+function New-Reading([string]$System, [string]$Value, [string]$SpeechText = $null, [string]$SpeechLanguage = $null) {
+  return [ordered]@{ system = $System; value = $Value; audioAssetRef = $null; speechText = $SpeechText; speechLanguage = $SpeechLanguage }
 }
 
 function New-Example([string]$Text, [string]$Reading, [string]$Translation, [bool]$ShowsCoreMeaning, [string]$Level, [string]$Character) {
@@ -92,6 +92,39 @@ function Get-ReadingValue($Value) {
   $text = [string]$Value
   if ([string]::IsNullOrWhiteSpace($text)) { return $null }
   return $text.Trim()
+}
+
+function Get-DraftSpeechText([string]$Value, [string]$Language, [string]$Form) {
+  # Current V1 content is intentionally draft. This creates explicit speech
+  # input for implementation while leaving later language/editorial review open.
+  if ($Language -eq "mandarin" -or $Language -eq "cantonese") { return $Form }
+
+  if ($Language -eq "japanese") {
+    $kana = [regex]::Matches($Value, '[ぁ-ゖァ-ヺー]+')
+    if ($kana.Count -gt 0) { return (($kana | ForEach-Object Value) -join " ") }
+  }
+
+  if ($Language -eq "korean") {
+    $hangul = [regex]::Matches($Value, '[가-힣]+')
+    if ($hangul.Count -gt 0) { return (($hangul | ForEach-Object Value) -join " ") }
+  }
+
+  # Preserve the current editorial reading as explicit draft input when no
+  # native-script spelling is available yet; do not infer from the Han form.
+  return $Value
+}
+
+function Normalize-DraftReading($Reading, [string]$Language, [string]$Form) {
+  if ($null -eq $Reading) { return $null }
+  $value = Get-ReadingValue $Reading.value
+  if (-not $value) { return $null }
+
+  $speechText = Get-ReadingValue $Reading.speechText
+  if (-not $speechText) { $speechText = Get-DraftSpeechText $value $Language $Form }
+  $speechLanguage = Get-ReadingValue $Reading.speechLanguage
+  if (-not $speechLanguage) { $speechLanguage = $Language }
+
+  return (New-Reading -System ([string]$Reading.system) -Value $value -SpeechText $speechText -SpeechLanguage $speechLanguage)
 }
 
 function Normalize-FormationType([string]$Value) {
@@ -167,6 +200,18 @@ function New-StageExplanation([string]$Key, [string]$Meaning) {
     "smallSeal" { return "The selected Small Seal form organizes the earlier shape into a more balanced outline." }
     "clerical" { return "The selected Clerical form brings the structure closer to the proportions familiar today." }
     default { return "The modern standardized Kai form provides a consistent endpoint for comparison." }
+  }
+}
+
+function Get-MaterialProcessCaption([string]$Key) {
+  switch ($Key) {
+    "oracleBone" { return "Bone / shell · carved" }
+    "bronze" { return "Bronze vessel · cast / inscribed" }
+    "smallSeal" { return "Bamboo / manuscript · brush" }
+    "seal" { return "Bamboo / manuscript · brush" }
+    "clerical" { return "Paper · brush" }
+    "regular" { return "Paper · brush" }
+    default { return $null }
   }
 }
 
@@ -294,6 +339,7 @@ foreach ($manifestRecord in @($manifest.records | Sort-Object rank)) {
       stageExplanation = New-StageExplanation $selectedStage.key $meaning
       transitionNote = $transitionNote
       transitionNoteNeedsReview = $transitionNeedsReview
+      materialProcessCaption = Get-MaterialProcessCaption $selectedStage.key
       availabilityState = "available"
     }) | Out-Null
   }
@@ -308,7 +354,7 @@ foreach ($manifestRecord in @($manifest.records | Sort-Object rank)) {
     stage = "regular"; label = "Regular Script"; form = $character; assetRef = $null
     changeNoteFromPrevious = $regularTransitionNote
     certainty = "high"; sourceIds = @("source-kai-font"); historicalSound = $null; assetMetadata = (New-KaiMetadata $character "Assets/Fonts/TW-Kai-98_1.ttf")
-    introducedComponentIds = @(); stageExplanation = "A modern standardized Kai reference rendering provides the consistent endpoint for comparison."; transitionNote = $regularTransitionNote; transitionNoteNeedsReview = $regularTransitionNeedsReview; availabilityState = "available"
+    introducedComponentIds = @(); stageExplanation = "A modern standardized Kai reference rendering provides the consistent endpoint for comparison."; transitionNote = $regularTransitionNote; transitionNoteNeedsReview = $regularTransitionNeedsReview; materialProcessCaption = (Get-MaterialProcessCaption "regular"); availabilityState = "available"
   }) | Out-Null
 
   $baseExamples = if ($legacy) { $legacy.focusCoverage.simplifiedChinese.examples } else { @() }
@@ -328,17 +374,22 @@ foreach ($manifestRecord in @($manifest.records | Sort-Object rank)) {
   # compounds; native-speaker vocabulary replaces these starters later.
   $simplifiedExamples = @(@($baseExamples) + @($simplifiedStarterExamples) | Select-Object -First 4)
   $taiwanExamples = @(@($baseTraditionalTaiwan) + @($traditionalStarterExamples) | Select-Object -First 4)
-  $hongKongExamples = @(@($baseTraditionalHongKong) + @($traditionalStarterExamples) | Select-Object -First 4)
+  # Cantonese examples must remain absent when no reviewed Hong Kong content exists;
+  # Mandarin starter content must never appear under a Cantonese heading.
+  $hongKongExamples = @(@($baseTraditionalHongKong) | Select-Object -First 4)
   $japaneseExamples = @(@($baseJapaneseExamples) + @($japaneseStarterExamples) | Select-Object -First 4)
   $koreanExamples = @(@($baseKoreanExamples) + @($koreanStarterExamples) | Select-Object -First 4)
   # Wrap the entire conditional in @() so PowerShell preserves one-item and
   # empty collections instead of serializing them as an object or null.
-  $jpReadings = @(if ($legacy) { @($legacy.focusCoverage.japanese.readings) } elseif ($japanese) { New-Reading "on / kun" $japanese })
-  $krReadings = @(if ($legacy) { @($legacy.focusCoverage.korean.readings) } elseif ($korean) { New-Reading "hanja" $korean })
-  $cnReadings = @(if ($legacy) { @($legacy.focusCoverage.simplifiedChinese.readings) } elseif ($mandarin) { New-Reading "pinyin" $mandarin })
+  $jpReadings = @(if ($legacy) { @($legacy.focusCoverage.japanese.readings | ForEach-Object { Normalize-DraftReading $_ "japanese" $traditional }) } elseif ($japanese) { New-Reading "on / kun" $japanese (Get-DraftSpeechText $japanese "japanese" $traditional) "japanese" })
+  $krReadings = @(if ($legacy) { @($legacy.focusCoverage.korean.readings | ForEach-Object { Normalize-DraftReading $_ "korean" $traditional }) } elseif ($korean) { New-Reading "hanja" $korean (Get-DraftSpeechText $korean "korean" $traditional) "korean" })
+  $cnReadings = @(if ($legacy) { @($legacy.focusCoverage.simplifiedChinese.readings | ForEach-Object { Normalize-DraftReading $_ "mandarin" $character }) } elseif ($mandarin) { New-Reading "pinyin" $mandarin $character "mandarin" })
+  $twReadings = @(if ($legacy -and $legacy.focusCoverage.traditionalChinese.taiwanReadings) { @($legacy.focusCoverage.traditionalChinese.taiwanReadings | ForEach-Object { Normalize-DraftReading $_ "mandarin" $traditional }) } else { @($cnReadings) })
+  # Missing Cantonese data remains missing; it must never become Mandarin data.
+  $hkReadings = @(if ($legacy -and $legacy.focusCoverage.traditionalChinese.hongKongReadings) { @($legacy.focusCoverage.traditionalChinese.hongKongReadings | ForEach-Object { Normalize-DraftReading $_ "cantonese" $traditional }) } else { @() })
   $focus = [ordered]@{
     simplifiedChinese = [ordered]@{ form = $character; readings = $cnReadings; glosses = @($meaning); examples = $simplifiedExamples; variants = @() }
-    traditionalChinese = [ordered]@{ form = $traditional; readings = $cnReadings; glosses = @($meaning); taiwanExamples = $taiwanExamples; hongKongExamples = $hongKongExamples; taiwanReadings = $cnReadings; hongKongReadings = $cnReadings; variants = @() }
+    traditionalChinese = [ordered]@{ form = $traditional; readings = $cnReadings; glosses = @($meaning); taiwanExamples = $taiwanExamples; hongKongExamples = $hongKongExamples; taiwanReadings = $twReadings; hongKongReadings = $hkReadings; variants = @() }
     japanese = [ordered]@{ form = $traditional; readings = $jpReadings; glosses = @($meaning); examples = $japaneseExamples; variants = @() }
     korean = [ordered]@{ form = $traditional; readings = $krReadings; glosses = @($meaning); examples = $koreanExamples; variants = @() }
   }

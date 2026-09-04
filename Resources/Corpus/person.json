@@ -27,7 +27,10 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "ren2 / rén"
+          "value": "ren2 / rén",
+          "audioAssetRef": null,
+          "speechText": "人",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -92,7 +95,10 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "ren2 / rén"
+          "value": "ren2 / rén",
+          "audioAssetRef": null,
+          "speechText": "人",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -176,44 +182,18 @@
           "introducedSymbols": [
             "人"
           ]
-        },
-        {
-          "text": "人",
-          "reading": "ren2 / rén",
-          "translation": "person",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "人"
-          ]
-        },
-        {
-          "text": "這是「人」。",
-          "reading": "",
-          "translation": "This is the character 「人」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "人"
-          ]
         }
       ],
       "taiwanReadings": [
         {
           "system": "pinyin",
-          "value": "ren2 / rén"
+          "value": "ren2 / rén",
+          "audioAssetRef": null,
+          "speechText": "人",
+          "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [
-        {
-          "system": "pinyin",
-          "value": "ren2 / rén"
-        }
-      ],
+      "hongKongReadings": [],
       "variants": []
     },
     "japanese": {
@@ -221,11 +201,17 @@
       "readings": [
         {
           "system": "on",
-          "value": "jin / nin"
+          "value": "jin / nin",
+          "audioAssetRef": null,
+          "speechText": "jin / nin",
+          "speechLanguage": "japanese"
         },
         {
           "system": "kun",
-          "value": "hito"
+          "value": "hito",
+          "audioAssetRef": null,
+          "speechText": "ひと",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -290,11 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "인 / in"
+          "value": "인 / in",
+          "audioAssetRef": null,
+          "speechText": "인",
+          "speechLanguage": "korean"
         },
         {
           "system": "native Korean",
-          "value": "사람 / saram"
+          "value": "사람 / saram",
+          "audioAssetRef": null,
+          "speechText": "사람",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -397,6 +389,7 @@
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of person.",
         "transitionNote": "The leaning person is reduced to a few strokes, while the basic posture remains visible.",
         "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
       {
@@ -433,6 +426,7 @@
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
         "transitionNote": "The main outline remains, but the strokes become more even and continuous.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
       {
@@ -469,6 +463,7 @@
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
         "transitionNote": "The parts settle into smoother curves and a more balanced arrangement.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
       {
@@ -505,6 +500,7 @@
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
         "transitionNote": "Several curved sections reduce to fewer, broader strokes, giving the form a flatter structure.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
       {
@@ -541,6 +537,7 @@
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
         "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
     ],

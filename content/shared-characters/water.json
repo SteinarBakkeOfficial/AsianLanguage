@@ -16,7 +16,9 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "shuǐ"
+          "value": "shuǐ",
+          "speechText": "水",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -56,7 +58,9 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "shuǐ"
+          "value": "shuǐ",
+          "speechText": "水",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -117,6 +121,14 @@
             "水"
           ]
         }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "seoi2",
+          "speechText": "水",
+          "speechLanguage": "cantonese"
+        }
       ]
     },
     "japanese": {
@@ -124,11 +136,15 @@
       "readings": [
         {
           "system": "on",
-          "value": "スイ (sui)"
+          "value": "スイ (sui)",
+          "speechText": "すい",
+          "speechLanguage": "japanese"
         },
         {
           "system": "kun",
-          "value": "みず (mizu)"
+          "value": "みず (mizu)",
+          "speechText": "みず",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -168,11 +184,15 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "수 / su"
+          "value": "수 / su",
+          "speechText": "수",
+          "speechLanguage": "korean"
         },
         {
           "system": "native Korean",
-          "value": "물 / mul"
+          "value": "물 / mul",
+          "speechText": "물",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [

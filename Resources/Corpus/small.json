@@ -27,7 +27,10 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "xiao3 / xiǎo"
+          "value": "xiao3 / xiǎo",
+          "audioAssetRef": null,
+          "speechText": "小",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -92,7 +95,10 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "xiao3 / xiǎo"
+          "value": "xiao3 / xiǎo",
+          "audioAssetRef": null,
+          "speechText": "小",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -176,44 +182,18 @@
           "introducedSymbols": [
             "小"
           ]
-        },
-        {
-          "text": "小",
-          "reading": "xiao3 / xiǎo",
-          "translation": "small",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "小"
-          ]
-        },
-        {
-          "text": "這是「小」。",
-          "reading": "",
-          "translation": "This is the character 「小」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "小"
-          ]
         }
       ],
       "taiwanReadings": [
         {
           "system": "pinyin",
-          "value": "xiao3 / xiǎo"
+          "value": "xiao3 / xiǎo",
+          "audioAssetRef": null,
+          "speechText": "小",
+          "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [
-        {
-          "system": "pinyin",
-          "value": "xiao3 / xiǎo"
-        }
-      ],
+      "hongKongReadings": [],
       "variants": []
     },
     "japanese": {
@@ -221,11 +201,17 @@
       "readings": [
         {
           "system": "on",
-          "value": "shou"
+          "value": "shou",
+          "audioAssetRef": null,
+          "speechText": "shou",
+          "speechLanguage": "japanese"
         },
         {
           "system": "kun",
-          "value": "chiisai"
+          "value": "chiisai",
+          "audioAssetRef": null,
+          "speechText": "chiisai",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -290,11 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "소 / so"
+          "value": "소 / so",
+          "audioAssetRef": null,
+          "speechText": "소",
+          "speechLanguage": "korean"
         },
         {
           "system": "native Korean",
-          "value": "작은 / jageun"
+          "value": "작은 / jageun",
+          "audioAssetRef": null,
+          "speechText": "작은",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -397,6 +389,7 @@
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of small.",
         "transitionNote": "The image of small is reduced to a few simple strokes, while its clearest outline remains visible.",
         "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
       {
@@ -433,6 +426,7 @@
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
         "transitionNote": "The marks become fuller and rounder without disturbing the basic arrangement.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
       {
@@ -469,6 +463,7 @@
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
         "transitionNote": "The overall shape steadies as the curves become more even and the parts sit closer together.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
       {
@@ -505,6 +500,7 @@
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
         "transitionNote": "The strokes straighten and broaden, bringing the separate sections into a clearer structure.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
       {
@@ -541,6 +537,7 @@
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
         "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
     ],

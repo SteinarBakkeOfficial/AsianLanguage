@@ -84,6 +84,8 @@
 - Educational concept illustrations and historical glyph evidence are separate asset classes. Concept art must carry internal-authored provenance and must never fill a missing historical stage.
 - The pilot's source-backed historical SVG allowlist is Fire, Water, and Tree; missing named files remain explicit unavailable states until an approved source is acquired.
 - The initial preparation experiment covers the existing 11 draft records; generated records remain `needsReview` and require human approval.
+- The current four-track example additions are draft starter content only. They must be replaced or approved through language-specific editorial review, with Japanese and Korean reviewed as their own native-language presentations rather than generic Han-character explanations.
+- Sources / Licenses must contain one canonical entry per reference. Whether About also retains a short acknowledgement or links exclusively to the canonical source list remains undecided until the next content-architecture review.
 - Onboarding uses the same semantic design system as the main shell and routes directly into the canonical Fire Symbol Journey before optional language preferences; More → Languages owns those preferences.
 - Account V1 describes local device state only; it must not imply a real identity, profile, sync account, or cloud capability.
 - Final visual QA requires macOS/Xcode simulator screenshots against the Fire reference before screen-level geometry is considered complete.
@@ -151,15 +153,22 @@
 ### Symbol Journey rail and Home footer clarification — 2026-09-03
 
 - The learner does not need “Origin” and “Today” endpoint labels duplicated above or below the rail. The rail itself is the single visible orientation control.
-- Historical page headers use plain learner-facing labels such as “Clerical Script” and an optional period label. Confidence labels and historical Chinese stage names are not shown in the V1 page header.
+- Historical page headers use plain learner-facing labels such as “Clerical Script.” The age/period line was tested as a visual experiment and is intentionally not shown on Symbol Journey pages. Chronology remains available in History and source metadata. Confidence labels and historical Chinese stage names are not shown in the V1 page header.
 - The Home “X symbols learned” footer remains unchanged for now. Replacing it with a deliberate History or Learned-library destination is future work only.
-- Stage-specific material backgrounds are future work only: the team may later test bone behind Oracle Bone, bronze behind Bronze, and appropriate writing surfaces through Modern. This must not replace or obscure the actual historical glyph assets.
+- `Symbol_Background_v1` is approved for exact integration across all six stages, including Origin. Existing illustrations/glyphs remain the content layer; the backgrounds are the environment and must not replace or obscure actual historical glyph assets.
+
+### Onboarding and final-polish review — 2026-09-04
+
+- The two Fire onboarding pages are intentionally consolidated into one strong introduction. The existing “One idea. One symbol. Thousands of years.” concept remains the baseline, and the primary action enters the canonical Fire Symbol Journey directly.
+- The age/period line on individual Symbol pages was a tried visual option, not a required product fact. It is rejected for Symbol presentation; History remains the home of chronology.
+- The existing `History_V1.png` remains the History artwork/reference source. The current screenshot defects are treated as surgical crop/layout corrections, not a request for replacement artwork.
+- The full user-provided final-polish brief is approved for the surgical implementation pass. It includes material captions, stage crossfade, modern-language refinements, current History layout corrections, modern-language branches, and clickable unfinished detail destinations with back navigation. The broader History-page rework is deferred to the next implementation.
+- Pronunciation audio is approved for the current pass through one isolated iOS `AVSpeechSynthesizer` service and small speaker controls. No cloud TTS, API keys, or bundled MP3 library is permitted; linguistic speech data remains platform-independent for a future Android renderer.
 
 ### Future language-orientation content — 2026-09-03
 
 - The onboarding Symbol experience will eventually provide a deeper introduction to all four target language traditions: Simplified Chinese, Traditional Chinese, Japanese, and Korean. This is onboarding-symbol content only and does not change the main V1 Symbol Journey.
-- The future History overview will place a language-development section beneath the main historical timeline, using four illustrated cards in a 2×2 layout. Each card will explain the language’s separate development and present-day writing context.
-- The language cards may be tappable from the overview, but their detailed destination pages are deliberately deferred. The future copy and artwork must be source-backed and must distinguish Japanese Kanji, Korean Hanja/Hangul, and regional Chinese forms rather than flattening them into one generic CJK story.
+- The current polish pass places modern-language branches beneath the main historical timeline. Each script entry and modern-language branch is clickable and opens a deeper, intentionally unfinished detail page with a back button to History. Future copy and artwork must remain source-backed and distinguish Japanese Kanji, Korean Hanja/Hangul, and regional Chinese forms rather than flattening them into one generic CJK story.
 - Sound effects, reviewed usage examples, native-speaker review, Home Library surfacing, and the final museum-complete decision remain on hold.
 
 ## Delivery

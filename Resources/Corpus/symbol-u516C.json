@@ -28,7 +28,9 @@
         {
           "system": "pinyin",
           "value": "gōng",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "公",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -92,7 +94,9 @@
         {
           "system": "pinyin",
           "value": "gōng",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "公",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -148,70 +152,17 @@
           ]
         }
       ],
-      "hongKongExamples": [
-        {
-          "text": "公",
-          "reading": "gōng",
-          "translation": "public",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "公"
-          ]
-        },
-        {
-          "text": "這是「公」。",
-          "reading": "",
-          "translation": "This is the character 「公」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "公"
-          ]
-        },
-        {
-          "text": "我學習「公」。",
-          "reading": "",
-          "translation": "I am learning the character 「公」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "公"
-          ]
-        },
-        {
-          "text": "我會讀「公」。",
-          "reading": "",
-          "translation": "I can read the character 「公」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "公"
-          ]
-        }
-      ],
+      "hongKongExamples": [],
       "taiwanReadings": [
         {
           "system": "pinyin",
           "value": "gōng",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "公",
+          "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [
-        {
-          "system": "pinyin",
-          "value": "gōng",
-          "audioAssetRef": null
-        }
-      ],
+      "hongKongReadings": [],
       "variants": []
     },
     "japanese": {
@@ -220,7 +171,9 @@
         {
           "system": "on / kun",
           "value": "OOYAKE KIMI",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "OOYAKE KIMI",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -284,7 +237,9 @@
         {
           "system": "hanja",
           "value": "KONG",
-          "audioAssetRef": null
+          "audioAssetRef": null,
+          "speechText": "KONG",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -385,6 +340,7 @@
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of public.",
         "transitionNote": "The image of public is reduced to a few simple strokes, while its clearest outline remains visible.",
         "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
       {
@@ -421,6 +377,7 @@
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
         "transitionNote": "The early marks become fuller and more continuous, while the main silhouette remains visible.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
       {
@@ -457,6 +414,7 @@
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
         "transitionNote": "Small irregularities disappear, leaving a cleaner and more balanced arrangement.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
       {
@@ -493,6 +451,7 @@
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
         "transitionNote": "Curved sections flatten into straighter, broader strokes, giving the form a more structured appearance.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
       {
@@ -529,6 +488,7 @@
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
         "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
     ],

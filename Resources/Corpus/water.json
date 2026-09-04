@@ -27,7 +27,10 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "shuǐ"
+          "value": "shuǐ",
+          "audioAssetRef": null,
+          "speechText": "水",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -92,7 +95,10 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "shuǐ"
+          "value": "shuǐ",
+          "audioAssetRef": null,
+          "speechText": "水",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -176,42 +182,24 @@
           "introducedSymbols": [
             "水"
           ]
-        },
-        {
-          "text": "水",
-          "reading": "shuǐ",
-          "translation": "water",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
-        },
-        {
-          "text": "這是「水」。",
-          "reading": "",
-          "translation": "This is the character 「水」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
         }
       ],
       "taiwanReadings": [
         {
           "system": "pinyin",
-          "value": "shuǐ"
+          "value": "shuǐ",
+          "audioAssetRef": null,
+          "speechText": "水",
+          "speechLanguage": "mandarin"
         }
       ],
       "hongKongReadings": [
         {
-          "system": "pinyin",
-          "value": "shuǐ"
+          "system": "jyutping",
+          "value": "seoi2",
+          "audioAssetRef": null,
+          "speechText": "水",
+          "speechLanguage": "cantonese"
         }
       ],
       "variants": []
@@ -221,11 +209,17 @@
       "readings": [
         {
           "system": "on",
-          "value": "スイ (sui)"
+          "value": "スイ (sui)",
+          "audioAssetRef": null,
+          "speechText": "すい",
+          "speechLanguage": "japanese"
         },
         {
           "system": "kun",
-          "value": "みず (mizu)"
+          "value": "みず (mizu)",
+          "audioAssetRef": null,
+          "speechText": "みず",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -290,11 +284,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "수 / su"
+          "value": "수 / su",
+          "audioAssetRef": null,
+          "speechText": "수",
+          "speechLanguage": "korean"
         },
         {
           "system": "native Korean",
-          "value": "물 / mul"
+          "value": "물 / mul",
+          "audioAssetRef": null,
+          "speechText": "물",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -397,6 +397,7 @@
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of water.",
         "transitionNote": "The flowing water is reduced to a central line with smaller marks spreading around it.",
         "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
       {
@@ -433,6 +434,7 @@
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
         "transitionNote": "Several small marks fall away, leaving the same basic outline in a cleaner form.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
       {
@@ -469,6 +471,7 @@
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
         "transitionNote": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
       {
@@ -505,6 +508,7 @@
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
         "transitionNote": "The rounded lines become flatter and more deliberate, while the main arrangement stays intact.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
       {
@@ -541,6 +545,7 @@
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
         "transitionNote": "The lines become more controlled, and the main sections settle into balanced proportions.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
     ],

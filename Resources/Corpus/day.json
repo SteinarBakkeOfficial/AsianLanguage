@@ -27,7 +27,10 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "ri4 / rì"
+          "value": "ri4 / rì",
+          "audioAssetRef": null,
+          "speechText": "日",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -90,7 +93,10 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "ri4 / rì"
+          "value": "ri4 / rì",
+          "audioAssetRef": null,
+          "speechText": "日",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -170,44 +176,18 @@
           "introducedSymbols": [
             "日"
           ]
-        },
-        {
-          "text": "日",
-          "reading": "ri4 / rì",
-          "translation": "sun; day",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "日"
-          ]
-        },
-        {
-          "text": "這是「日」。",
-          "reading": "",
-          "translation": "This is the character 「日」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "日"
-          ]
         }
       ],
       "taiwanReadings": [
         {
           "system": "pinyin",
-          "value": "ri4 / rì"
+          "value": "ri4 / rì",
+          "audioAssetRef": null,
+          "speechText": "日",
+          "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [
-        {
-          "system": "pinyin",
-          "value": "ri4 / rì"
-        }
-      ],
+      "hongKongReadings": [],
       "variants": []
     },
     "japanese": {
@@ -215,11 +195,17 @@
       "readings": [
         {
           "system": "on",
-          "value": "nichi / jitsu"
+          "value": "nichi / jitsu",
+          "audioAssetRef": null,
+          "speechText": "nichi / jitsu",
+          "speechLanguage": "japanese"
         },
         {
           "system": "kun",
-          "value": "hi"
+          "value": "hi",
+          "audioAssetRef": null,
+          "speechText": "ひ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -282,11 +268,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "일 / il"
+          "value": "일 / il",
+          "audioAssetRef": null,
+          "speechText": "일",
+          "speechLanguage": "korean"
         },
         {
           "system": "native Korean",
-          "value": "날 / nal"
+          "value": "날 / nal",
+          "audioAssetRef": null,
+          "speechText": "날",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -387,6 +379,7 @@
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of sun; day.",
         "transitionNote": "The image of sun is reduced to a few simple strokes, while its clearest outline remains visible.",
         "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
       {
@@ -423,6 +416,7 @@
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
         "transitionNote": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
       {
@@ -459,6 +453,7 @@
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
         "transitionNote": "The parts settle into smoother curves and a more balanced arrangement.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
       {
@@ -495,6 +490,7 @@
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
         "transitionNote": "The strokes broaden and straighten, making the form wider and more structured.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
       {
@@ -531,6 +527,7 @@
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
         "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
     ],

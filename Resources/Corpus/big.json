@@ -27,7 +27,10 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "da4 / dà"
+          "value": "da4 / dà",
+          "audioAssetRef": null,
+          "speechText": "大",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -92,7 +95,10 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "da4 / dà"
+          "value": "da4 / dà",
+          "audioAssetRef": null,
+          "speechText": "大",
+          "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
@@ -176,44 +182,18 @@
           "introducedSymbols": [
             "大"
           ]
-        },
-        {
-          "text": "大",
-          "reading": "da4 / dà",
-          "translation": "big; great",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "大"
-          ]
-        },
-        {
-          "text": "這是「大」。",
-          "reading": "",
-          "translation": "This is the character 「大」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "大"
-          ]
         }
       ],
       "taiwanReadings": [
         {
           "system": "pinyin",
-          "value": "da4 / dà"
+          "value": "da4 / dà",
+          "audioAssetRef": null,
+          "speechText": "大",
+          "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [
-        {
-          "system": "pinyin",
-          "value": "da4 / dà"
-        }
-      ],
+      "hongKongReadings": [],
       "variants": []
     },
     "japanese": {
@@ -221,11 +201,17 @@
       "readings": [
         {
           "system": "on",
-          "value": "dai / tai"
+          "value": "dai / tai",
+          "audioAssetRef": null,
+          "speechText": "dai / tai",
+          "speechLanguage": "japanese"
         },
         {
           "system": "kun",
-          "value": "oo / ookii"
+          "value": "oo / ookii",
+          "audioAssetRef": null,
+          "speechText": "oo / ookii",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -290,11 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "대 / dae"
+          "value": "대 / dae",
+          "audioAssetRef": null,
+          "speechText": "대",
+          "speechLanguage": "korean"
         },
         {
           "system": "native Korean",
-          "value": "큰 / keun"
+          "value": "큰 / keun",
+          "audioAssetRef": null,
+          "speechText": "큰",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -397,6 +389,7 @@
         "stageExplanation": "The earliest selected form remains a visual starting point for the idea of big; great.",
         "transitionNote": "The image of big is reduced to a few simple strokes, while its clearest outline remains visible.",
         "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
       {
@@ -433,6 +426,7 @@
         "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
         "transitionNote": "The marks become fuller and rounder without disturbing the basic arrangement.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
       {
@@ -469,6 +463,7 @@
         "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
         "transitionNote": "The overall shape steadies as the curves become more even and the parts sit closer together.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
       {
@@ -505,6 +500,7 @@
         "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
         "transitionNote": "Several curved details disappear as the strokes become flatter and more direct.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
       {
@@ -541,6 +537,7 @@
         "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
         "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
         "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
     ],
