@@ -2,6 +2,8 @@
 
 Status: implemented locally; publication and commercial asset clearance remain open gates.
 
+Runtime record filenames and IDs use readable, meaning-based names (for example, `one.json`). Collision cases use a deterministic Unicode suffix. Research/source folder names remain Unicode-based because they are archival evidence paths rather than app-facing record names.
+
 ## Bundled scope
 
 - 126 complete-evolution Shared Character records from `content/research/zdic-v1-complete-manifest.json`.
@@ -14,7 +16,7 @@ Status: implemented locally; publication and commercial asset clearance remain o
 
 ## Runtime content boundary
 
-The old 11-record pilot files remain in the repository for comparison, but `SeedCorpusManifest` loads only the 126 complete-evolution records. This means the incomplete Fire pilot is not silently counted as V1. The original Fire introduction is still available as a separate repository-backed onboarding reference and is loaded directly only when the learner enters that introduction.
+The old 11-record pilot files remain in the repository for comparison, but `SeedCorpusManifest` loads only the 126 complete-evolution records. This means the incomplete Fire pilot is not silently counted as V1. Onboarding loads the first-ranked runtime record, currently 一, while Fire remains available separately as a repository pilot/reference record.
 
 ## Discovery behavior
 
@@ -33,3 +35,4 @@ The runtime is offline and read-only, but records remain `needsReview`. ZDIC is 
 ## Rebuild
 
 Run `Tools/Import-V1RuntimeCorpus.ps1` after changing the approved research manifest or origin-artwork selection. Then run `Tools/Generate-MuseumTransitionNotes.ps1`, validate the generated corpus, and perform macOS/Xcode build and simulator review.
+Runtime record filenames and IDs use the readable meaning-based naming convention used by the V1 corpus (for example, `one.json`). When two records share a meaning, the later collision receives a deterministic Unicode suffix. Source/research folder names remain Unicode-based for stable archival identity.

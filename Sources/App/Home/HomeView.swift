@@ -61,8 +61,12 @@ struct HomeView: View {
                 .font(AppTypography.heroConcept)
                 .tracking(1.2)
                 .foregroundStyle(AppColors.accentPrimary)
+                // Keep the concept title visibly above the first lineage panel on compact devices.
+                .padding(.bottom, AppSpacing.spaceXs)
             HeroLineagePreview(record: record)
-                .frame(maxWidth: .infinity, minHeight: 240, maxHeight: 280)
+                // The preview owns a little breathing room before the primary action.
+                .frame(maxWidth: .infinity, minHeight: 300, maxHeight: 320)
+                .padding(.bottom, AppSpacing.spaceSm)
             PrimaryActionButton(isReviewHero ? "Start Quick Review" : (isResuming ? "Continue \(record.coreSharedMeaning.capitalized)" : "Start with \(record.coreSharedMeaning.capitalized)")) {
                 dependencies.navigationState.openSymbol(record.id, intent: isReviewHero ? .review : (isResuming ? .resume : .start))
             }
@@ -130,7 +134,6 @@ struct HomeView: View {
     /// Home always displays the same record its primary action opens.
     private var homeLessonRoute: LessonRoute? {
         if let active = userStateStore.state.activeJourneySymbolID,
-           dependencies.sharedCharacters.contains(where: { $0.id == active }),
            let state = userStateStore.state.lessonStates[active],
            state.progressStatus == .inProgress {
             return LessonRoute(sharedCharacterID: active, startingPosition: state.lastPosition ?? .origin)
@@ -142,7 +145,9 @@ struct HomeView: View {
 
     private var homeRecord: SharedCharacterRecord? {
         guard let route = homeLessonRoute else { return nil }
+        // The active journey may be a repository-backed pilot symbol outside the seeded gallery.
         return dependencies.sharedCharacters.first { $0.id == route.sharedCharacterID }
+            ?? (try? dependencies.corpusRepository.sharedCharacter(id: route.sharedCharacterID))
     }
 
     private var reviewRecords: [SharedCharacterRecord] {

@@ -61,7 +61,7 @@ Assert-Contains -Text $evolutionText -ExpectedSubstring "AppMotion.exhibit" -Mes
 Assert-True (-not $evolutionText.Contains("stageDateLabel")) "Symbol pages must not show period/date metadata."
 
 $onboardingText = Get-Text "Sources/App/Navigation/RootTabView.swift"
-Assert-Contains -Text $onboardingText -ExpectedSubstring 'PrimaryActionButton("Explore Fire")' -Message "Onboarding should enter Fire from one primary page."
+Assert-Contains -Text $onboardingText -ExpectedSubstring 'PrimaryActionButton("Explore \(firstSymbolRecord?.coreSharedMeaning.capitalized ?? "One")")' -Message "Onboarding should enter the first ranked symbol from one primary page."
 Assert-True (-not $onboardingText.Contains("private enum Step")) "Onboarding should not retain the duplicate two-step flow."
 Assert-Contains -Text $onboardingText -ExpectedSubstring "HistoryScriptDetailView" -Message "History script entries should open detail destinations."
 Assert-Contains -Text $onboardingText -ExpectedSubstring "HistoryModernLanguageDetailView" -Message "History modern-language branches should open detail destinations."

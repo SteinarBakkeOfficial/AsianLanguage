@@ -704,3 +704,9 @@ That distinction — historical evolution first, modern linguistic reality secon
 - The brief’s modern-language hierarchy remains subject to editorial/source verification during implementation; no unsupported readings or examples should be invented.
 
 See the approved [implementation plan](symbol-history-modern-final-polish-implementation-plan.md) for the exact scope and fallback boundary.
+
+## Subsequent approved teaching-order update — 2026-09-05
+
+The exact 126-symbol teaching order was subsequently changed by direct user instruction. The authoritative order is now stored in `content/research/zdic-v1-complete-manifest.json` and mirrored by `Sources/App/Corpus/SeedCorpusManifest.swift` and `Resources/V1CorpusManifest.json`. It begins with 一 and then follows the eight supplied gallery groups through position 126.
+
+Onboarding now opens the first-ranked runtime symbol dynamically, so the current onboarding symbol is 一. This does not change the complete-evolution corpus membership, Fire's separate pilot/reference status, draft language content, or the approved visual polish scope.

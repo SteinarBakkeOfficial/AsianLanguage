@@ -60,7 +60,7 @@ Integrate and verify the approved early-release V1 package: 126 complete-evoluti
 - Apply semantic design tokens to the Settings background, tint, and supporting copy while retaining native controls.
 - Migrate Home to shared page/title/action hierarchy while keeping the Symbol Journey as the dominant content.
 - Migrate Collections and More utility surfaces to semantic backgrounds, native navigation, and CharacterTile records.
-- Migrate onboarding to the shared editorial hierarchy, primary actions, and semantic surfaces; enter the Fire exhibit before optional language controls.
+- Migrate onboarding to the shared editorial hierarchy, primary actions, and semantic surfaces; enter the first-ranked V1 exhibit before optional language controls.
 - Migrate Languages, Account, and About/Method; remove the fake profile identity card and keep local-only account scope explicit.
 - Migrate History detail to open editorial context with deliberate missing-content treatment; migrate More utility/source rows to quiet semantic presentation while retaining native navigation.
 - Align historical availability and confidence semantics across the runtime model, draft tooling, validator, and contract tests; preserve backwards compatibility for existing draft records.
@@ -86,7 +86,7 @@ Use `Reference Pictures/Chatgpt/AsianLanguage_AppShell_VisualReference_v1.png` a
 
 ## Current next design deliverable
 
-The approved correction pass is implemented: the museum and language rails are persistent and visibly labeled, Fire onboarding has its own aligned lineage preview, Home no longer follows an orphaned pre-V1 Fire state, Home uses the full collection banner, Hong Kong readings identify Cantonese/Jyutping, and History is recreated natively from the approved reference content.
+The approved correction pass is implemented: the museum and language rails are persistent and visibly labeled, onboarding has its own aligned lineage preview, Home no longer follows an orphaned pre-V1 state, Home uses the full collection banner, Hong Kong readings identify Cantonese/Jyutping, and History is recreated natively from the approved reference content.
 
 The approved implementation pass documented in [`docs/design/symbol-history-modern-final-polish-implementation-plan.md`](docs/design/symbol-history-modern-final-polish-implementation-plan.md) is now in progress. The current slice includes the approved stage environments, period removal, one-page onboarding, audio service/speaker-control seam, modern-language History branches, and clickable script/language detail destinations. macOS/Xcode visual and interaction verification and physical-device voice checks remain outstanding. The broader History-page rework is deliberately reserved for the next implementation.
 
@@ -207,9 +207,9 @@ These observations are preserved separately from approved product decisions and 
 
 These define the approved current implementation pass; implementation has begun and remains subject to macOS/Xcode and device verification.
 
-- Deferred outside this implementation: move the Home Regular Script artwork slightly upward so the `Continue [symbol]` button has clearer breathing room.
+- The Testing07_09 correction slice now approves a narrow Home fix: preserve the active repository-backed symbol, keep the actual concept title visible above the lineage artwork, move the lineage exhibit slightly upward, and give the modern symbol clearer breathing room above the primary action. This does not authorize unrelated Home redesign.
 - Historical stage headers: the age/period line was a visual experiment, not a required fact display; keep the stage names but remove the age/period line from Symbol pages. Chronology remains owned by History.
-- Onboarding: consolidate the two similar Fire introduction pages into one strong page using the existing “One idea. One symbol. Thousands of years.” concept, then enter Fire directly with one primary action. Keep language preferences in More → Languages.
+- Onboarding: consolidate the two similar introduction pages into one strong page using the existing “One idea. One symbol. Thousands of years.” concept, then enter the first-ranked symbol 一 directly with one primary action. Keep language preferences in More → Languages.
 - Deferred outside this implementation: review and expand Regular-stage transition notes that are too short.
 - Deferred outside this implementation: replace the current four-track starter content with fully native-speaker-reviewed examples and translations. The current pass only makes the approved modern-language hierarchy and explicit reading/speech relationships ready for verified data.
 - Audio data checkpoint: all current V1 reading rows now receive explicit draft speech text and language intent through the existing importer. Nothing is treated as user- or native-speaker-verified yet; later review will refine the draft data. Missing Cantonese rows remain absent rather than falling back to Mandarin.
@@ -250,7 +250,7 @@ The full 2026-09-04 Symbol / History / Modern Language final-polish brief is pre
 - Fire, Water, and Tree have local educational concept illustrations; Fire Oracle Bone/Bronze/Seal, Water Oracle/Bronze/Seal, and Tree Oracle have source-backed SVGs, while stages without approved files remain explicit unavailable-asset states.
 - The current package contains source-backed local raster glyphs for the 11-record pilot, plus explicit missing-stage states where no approved file was acquired; iOS rendering and screenshot comparison require macOS/Xcode verification.
 - The generated review report makes each Symbol folder and its remaining editorial actions directly locatable.
-- Onboarding restores the original Fire introduction and opens that repository-backed reference directly; the 126 complete-evolution records remain the V1 learning corpus. All four language tracks remain enabled by default and may later be adjusted in More → Languages, including turning all tracks off.
+- Onboarding opens the first-ranked runtime symbol 一 directly; Fire remains a separate repository pilot/reference record and the 126 complete-evolution records remain the V1 learning corpus. All four language tracks remain enabled by default and may later be adjusted in More → Languages, including turning all tracks off.
 
 ## Repository/layout note
 
@@ -258,4 +258,8 @@ Strict layout verification reports the existing top-level `MAC_TESTING.md` as ou
 
 ## V1 to VNext tracking
 
-The current pass stays within V1: it improves the pilot's visual fidelity, source-backed asset handling, modern-language copy, History branching/detail navigation, and iOS pronunciation playback. Deeper Fire onboarding language orientation, scrollable all-language Today, richer historical animation, tracing, and larger corpus expansion remain intentional VNext carryover. The broader History-page rework is the next implementation after this pass.
+### Testing07_09 correction slice — implemented locally, pending visual verification
+
+The correction slice recorded in [`symbol-history-modern-final-polish-implementation-plan.md`](docs/design/symbol-history-modern-final-polish-implementation-plan.md) is now implemented locally: Home's repository-backed active-symbol state and layout, Symbol stage labels/caption spacing/Regular Script scale, exhibit-square crossfade, one-page onboarding composition spacing, and surgical History crop/typography/full-row navigation fixes. This does not change the 126-symbol corpus logic, Fire's pilot/reference status, draft language content, or the broader History rework planned afterward. macOS/Xcode and device visual verification remain outstanding.
+
+The current pass stays within V1: it improves the pilot's visual fidelity, source-backed asset handling, modern-language copy, History branching/detail navigation, and iOS pronunciation playback. Deeper first-symbol onboarding language orientation, scrollable all-language Today, richer historical animation, tracing, and larger corpus expansion remain intentional VNext carryover. The broader History-page rework is the next implementation after this pass.

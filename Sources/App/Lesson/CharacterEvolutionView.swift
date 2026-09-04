@@ -9,7 +9,6 @@ struct CharacterEvolutionView: View {
     let completionTitle: String
     let onComplete: () -> Void
     @Binding var selectedStageID: String
-    @State private var stageContentOpacity = 1.0
 
     init(
         record: SharedCharacterRecord,
@@ -61,6 +60,12 @@ struct CharacterEvolutionView: View {
         ["origin"] + museumStages.map(\.stage) + ["modern"]
     }
 
+    /// The full journey order is used by the lightweight horizontal gesture below.
+    /// The visible rail intentionally remains room-specific, as established by the V1 navigation.
+    private var allJourneyIDs: [String] {
+        museumNavigatorIDs + orderedTracks.map { "usage-\($0.rawValue)" }
+    }
+
     /// Language rail: Modern remains visible as the return point, followed by selected target languages.
     private var languageNavigatorIDs: [String] {
         ["modern"] + orderedTracks.map { "usage-\($0.rawValue)" }
@@ -83,34 +88,10 @@ struct CharacterEvolutionView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            TabView(selection: $selectedStageID) {
-                originPage
-                    .tag("origin")
-                ForEach(museumStages, id: \.stage) { stage in
-                    historicalPage(stage)
-                        .tag(stage.stage)
-                }
-                modernPage
-                    .tag("modern")
-                if !orderedTracks.isEmpty {
-                    ForEach(Array(orderedTracks.enumerated()), id: \.element) { index, track in
-                        usagePage(track: track, isFinal: index == orderedTracks.count - 1)
-                            .tag("usage-\(track.rawValue)")
-                    }
-                } else {
-                    EmptyView()
-                }
-            }
-            .tabViewStyle(.page(indexDisplayMode: .never))
+            currentJourneyPage
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .animation(.easeInOut(duration: AppMotion.exhibit), value: selectedStageID)
-            .opacity(stageContentOpacity)
-            .onChange(of: selectedStageID) { _, _ in
-                stageContentOpacity = 0
-                withAnimation(.easeInOut(duration: AppMotion.exhibit)) {
-                    stageContentOpacity = 1
-                }
-            }
+            // Horizontal swiping remains available without reintroducing the page-slide animation.
+            .simultaneousGesture(journeySwipeGesture)
 
             stageNavigator
         }
@@ -120,13 +101,85 @@ struct CharacterEvolutionView: View {
         .accessibilityLabel("Historical journey for \(record.coreSharedMeaning)")
     }
 
-    /// First page begins with the real-world concept and deliberately does not reveal a modern glyph.
-    private var originPage: some View {
+    /// The current page changes only when moving between the museum square and language-specific sections.
+    /// Museum stages share one stable layout so the complete exhibit square can crossfade in place.
+    @ViewBuilder
+    private var currentJourneyPage: some View {
+        if selectedStageID == "origin" || selectedMuseumStage != nil {
+            museumJourneyPage
+        } else if selectedStageID == "modern" {
+            modernPage
+        } else if let track = selectedTrack {
+            usagePage(track: track, isFinal: track == orderedTracks.last)
+        } else {
+            museumJourneyPage
+        }
+    }
+
+    private var selectedMuseumStage: HistoricalStage? {
+        museumStages.first(where: { $0.stage == selectedStageID })
+    }
+
+    private var selectedTrack: FocusTrack? {
+        guard selectedStageID.hasPrefix("usage-") else { return nil }
+        return FocusTrack(rawValue: String(selectedStageID.dropFirst("usage-".count)))
+    }
+
+    /// Museum pages keep the header, square, and explanatory area anchored while only the square crossfades.
+    private var museumJourneyPage: some View {
         journeyPage(allowsVerticalScroll: true) {
-            stageHeader(overline: "Origin", title: nil, subtitle: nil)
-            ArtifactField {
-                ZStack {
-                    SymbolStageBackgroundView(stageID: "origin")
+            if let stage = selectedMuseumStage {
+                stageHeader(overline: learnerStageLabel(for: stage), title: nil, subtitle: nil)
+            } else {
+                stageHeader(overline: "Origin", title: nil, subtitle: nil)
+            }
+
+            ZStack {
+                exhibitSquare(stageID: selectedMuseumStage?.stage ?? "origin")
+                    .id(selectedMuseumStage?.stage ?? "origin")
+                    .transition(.opacity)
+            }
+            .animation(.easeInOut(duration: AppMotion.exhibit), value: selectedMuseumStage?.stage ?? "origin")
+
+            if let stage = selectedMuseumStage {
+                if let caption = stage.materialProcessCaption {
+                    Text(caption)
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                        .multilineTextAlignment(.center)
+                        .padding(.top, AppSpacing.spaceXs)
+                }
+                Text(stage.transitionNote ?? stage.changeNoteFromPrevious ?? stage.stageExplanation ?? "Stage-specific explanation is pending editorial review.")
+                    .font(AppTypography.body)
+                    .foregroundStyle(AppColors.textPrimary)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: 320)
+                if let sound = stage.historicalSound {
+                    Text(sound)
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+            } else {
+                Text(record.history.origin?.concept ?? record.coreSharedMeaning.capitalized)
+                    .font(AppTypography.exhibitHeading)
+                    .foregroundStyle(AppColors.textPrimary)
+                    .padding(.top, AppSpacing.spaceMd)
+                Text(record.history.originAnchor)
+                    .font(AppTypography.body)
+                    .foregroundStyle(AppColors.textPrimary)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: 320)
+            }
+        }
+    }
+
+    /// Renders the full exhibit square in one fixed position for the museum-stage crossfade.
+    @ViewBuilder
+    private func exhibitSquare(stageID: String) -> some View {
+        ArtifactField {
+            ZStack {
+                SymbolStageBackgroundView(stageID: stageID)
+                if stageID == "origin" {
                     if let originAsset = record.history.origin?.asset {
                         HistoricalAssetView(metadata: originAsset)
                     } else {
@@ -135,43 +188,8 @@ struct CharacterEvolutionView: View {
                             detail: "This concept visual is not currently available in the approved historical corpus."
                         )
                     }
-                }
-            }
-            .frame(height: 304)
-            Text(record.history.origin?.concept ?? record.coreSharedMeaning.capitalized)
-                .font(AppTypography.exhibitHeading)
-                .foregroundStyle(AppColors.textPrimary)
-                .padding(.top, AppSpacing.spaceMd)
-            // The anchor is the concise learner-facing bridge; the longer asset explanation
-            // is provenance/editorial copy and should not interrupt the first visual comparison.
-            Text(record.history.originAnchor)
-                .font(AppTypography.body)
-                .foregroundStyle(AppColors.textPrimary)
-                .multilineTextAlignment(.center)
-                .frame(maxWidth: 320)
-        }
-    }
-
-    /// One historical page shows only the evidence and explanation attached to that stage.
-    private func historicalPage(_ stage: HistoricalStage) -> some View {
-        journeyPage(allowsVerticalScroll: true) {
-            stageHeader(
-                overline: learnerStageLabel(for: stage),
-                title: nil,
-                subtitle: nil
-            )
-            ArtifactField {
-                ZStack {
-                    SymbolStageBackgroundView(stageID: stage.stage)
-                    if stage.stage == "regular" {
-                        // Regular Script is the approved modern standardized Kai endpoint,
-                        // not a copied historical inscription or a prototype SVG fallback.
-                        Text(record.coreCharacter)
-                            .font(CJKFontRole.museumRegular.font(size: 148))
-                            .foregroundStyle(AppColors.artifactInk)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .accessibilityLabel("Regular Script \(record.coreCharacter)")
-                    } else if stage.availabilityState == .unavailableAsset {
+                } else if let stage = museumStages.first(where: { $0.stage == stageID }) {
+                    if stage.availabilityState == .unavailableAsset {
                         HistoricalMissingState()
                     } else if let metadata = stage.assetMetadata {
                         HistoricalAssetView(metadata: metadata)
@@ -183,26 +201,23 @@ struct CharacterEvolutionView: View {
                     }
                 }
             }
-            .frame(height: 304)
-            if let caption = stage.materialProcessCaption {
-                Text(caption)
-                    .font(AppTypography.metadata)
-                    .foregroundStyle(AppColors.textSecondary)
-                    .multilineTextAlignment(.center)
-            }
-            // Transition notes are destination-stage captions: they explain what visibly changed
-            // from the previous available exhibit into this exact form.
-            Text(stage.transitionNote ?? stage.changeNoteFromPrevious ?? stage.stageExplanation ?? "Stage-specific explanation is pending editorial review.")
-                .font(AppTypography.body)
-                .foregroundStyle(AppColors.textPrimary)
-                .multilineTextAlignment(.center)
-                .frame(maxWidth: 320)
-            if let sound = stage.historicalSound {
-                Text(sound)
-                    .font(AppTypography.metadata)
-                    .foregroundStyle(AppColors.textSecondary)
-            }
         }
+        .frame(height: 304)
+    }
+
+    /// Converts a horizontal swipe into the same ordered stage selection as the museum rail.
+    private var journeySwipeGesture: some Gesture {
+        DragGesture(minimumDistance: 24)
+            .onEnded { value in
+                let horizontal = value.translation.width
+                guard abs(horizontal) > abs(value.translation.height), abs(horizontal) > 40,
+                      let currentIndex = allJourneyIDs.firstIndex(of: selectedStageID) else { return }
+                let nextIndex = currentIndex + (horizontal < 0 ? 1 : -1)
+                guard allJourneyIDs.indices.contains(nextIndex) else { return }
+                withAnimation(.easeInOut(duration: AppMotion.exhibit)) {
+                    selectedStageID = allJourneyIDs[nextIndex]
+                }
+            }
     }
 
     /// Modern is the last museum page; with no target languages it owns the Next Symbol action.
@@ -268,6 +283,7 @@ struct CharacterEvolutionView: View {
                     .foregroundStyle(AppColors.textSecondary)
             }
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     /// The rail exposes position and direct access while the exhibit remains horizontally swipeable.

@@ -12,8 +12,10 @@ Assert-True (-not $lesson.Contains("EvolutionBoardView")) "Lesson must not depen
 Assert-True $lesson.Contains("UsageExamplesView(record: record, focusSelection:") "Usage must remain focus-track aware."
 
 $evolution = Text "Sources/App/Lesson/CharacterEvolutionView.swift"
-Assert-True $evolution.Contains('TabView(selection: $selectedStageID)') "Evolution must support horizontal stage paging."
-Assert-True $evolution.Contains(".tabViewStyle(.page(indexDisplayMode: .never))") "Evolution must expose swipeable pages without a second page-dot control."
+# The exhibit uses a custom horizontal gesture so the whole page does not slide while the
+# museum square crossfades in place. Keep testing the learner-facing behavior, not TabView.
+Assert-True $evolution.Contains("DragGesture(minimumDistance: 24)") "Evolution must support horizontal stage paging."
+Assert-True $evolution.Contains("selectedStageID = allJourneyIDs[nextIndex]") "Evolution swipe paging must select the adjacent stage."
 Assert-True $evolution.Contains("PrimaryActionButton(completionTitle, action: onComplete)") "Today must offer a completion action that advances the Symbol Journey."
 Assert-True $evolution.Contains("stageNavigator") "Evolution must expose stage navigation."
 Assert-True $evolution.Contains("HistoricalAssetView") "Evolution must use the asset renderer."

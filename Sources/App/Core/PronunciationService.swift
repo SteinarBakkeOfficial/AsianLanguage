@@ -38,7 +38,7 @@ final class PronunciationService {
         return AVSpeechSynthesisVoice(language: locale(for: language)) != nil
     }
 
-    /// Speaks only explicit verified speech text and stops an existing item first.
+    /// Speaks only explicit native-script speech text and stops an existing item first.
     @discardableResult
     func speak(_ reading: CharacterReading) -> Bool {
         guard let text = reading.speechText,

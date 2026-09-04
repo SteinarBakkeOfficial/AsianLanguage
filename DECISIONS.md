@@ -53,7 +53,7 @@
 
 - The product personality is modern gallery + ancient artifact.
 - Home is approximately 70% current/resumable/next Symbol Journey and 30% supporting context.
-- Fire is the first approved design target; the pilot is Fire, Water, Mountain, Tree, and eventually sourced Horse.
+- Fire was the first approved design target; the pilot is Fire, Water, Mountain, Tree, and eventually sourced Horse. The current ranked runtime onboarding target is defined by the first V1 manifest record.
 - Figma plus approved exported references and behavioral specifications are the design source of truth.
 - The written Design System v0.1 and Symbol Experience Implementation Handoff now define the implementation target for tokens, component relationships, stage behavior, accessibility, and visual hierarchy.
 - Semantic design tokens live in `Sources/App/SharedUI/DesignSystem.swift`; raw visual values should not be added directly to views.
@@ -86,7 +86,7 @@
 - The initial preparation experiment covers the existing 11 draft records; generated records remain `needsReview` and require human approval.
 - The current four-track example additions are draft starter content only. They must be replaced or approved through language-specific editorial review, with Japanese and Korean reviewed as their own native-language presentations rather than generic Han-character explanations.
 - Sources / Licenses must contain one canonical entry per reference. Whether About also retains a short acknowledgement or links exclusively to the canonical source list remains undecided until the next content-architecture review.
-- Onboarding uses the same semantic design system as the main shell and routes directly into the canonical Fire Symbol Journey before optional language preferences; More → Languages owns those preferences.
+- Onboarding uses the same semantic design system as the main shell and routes directly into the first ranked V1 Symbol Journey before optional language preferences; More → Languages owns those preferences.
 - Account V1 describes local device state only; it must not imply a real identity, profile, sync account, or cloud capability.
 - Final visual QA requires macOS/Xcode simulator screenshots against the Fire reference before screen-level geometry is considered complete.
 
@@ -138,10 +138,10 @@
 - Captions do not name the stage transition or repeat the modern character. They use short, concrete observations: Origin → Oracle connects the illustrated subject to the first glyph; later captions compare only neighboring forms.
 - The app prioritizes `transitionNote` while retaining `changeNoteFromPrevious` for legacy records and compatibility.
 
-### Fire onboarding reference restored — 2026-09-03
+### Pilot Fire reference retained — 2026-09-03
 
-- The original Fire introduction remains the first-launch introduction, including its local origin imagery and Fire-specific copy.
-- Fire is loaded directly from its repository reference record for onboarding; it is not added to `SeedCorpusManifest` and does not change the 126-record V1 learning corpus.
+- Fire remains available as a repository pilot/reference record, including its local origin imagery and Fire-specific content.
+- Fire is not added to `SeedCorpusManifest` and does not change the 126-record V1 learning corpus.
 - The runtime importer normalizes research formation labels into the canonical `SymbolFormationType` values required by Swift decoding.
 
 ### Browse and museum rail clarification — 2026-09-03
@@ -159,11 +159,17 @@
 
 ### Onboarding and final-polish review — 2026-09-04
 
-- The two Fire onboarding pages are intentionally consolidated into one strong introduction. The existing “One idea. One symbol. Thousands of years.” concept remains the baseline, and the primary action enters the canonical Fire Symbol Journey directly.
+- The two onboarding pages are intentionally consolidated into one strong introduction. The existing “One idea. One symbol. Thousands of years.” concept remains the baseline, and the primary action enters the first-ranked V1 Symbol Journey directly.
 - The age/period line on individual Symbol pages was a tried visual option, not a required product fact. It is rejected for Symbol presentation; History remains the home of chronology.
 - The existing `History_V1.png` remains the History artwork/reference source. The current screenshot defects are treated as surgical crop/layout corrections, not a request for replacement artwork.
 - The full user-provided final-polish brief is approved for the surgical implementation pass. It includes material captions, stage crossfade, modern-language refinements, current History layout corrections, modern-language branches, and clickable unfinished detail destinations with back navigation. The broader History-page rework is deferred to the next implementation.
 - Pronunciation audio is approved for the current pass through one isolated iOS `AVSpeechSynthesizer` service and small speaker controls. No cloud TTS, API keys, or bundled MP3 library is permitted; linguistic speech data remains platform-independent for a future Android renderer.
+
+### Teaching order and onboarding update — 2026-09-05
+
+- The 126 runtime records now use the exact approved teaching order supplied for the eight galleries, with 一 at position 1.
+- Onboarding resolves the first ID from `SeedCorpusManifest` and therefore opens 一 without creating a second corpus or changing corpus eligibility.
+- Fire remains the separate draft pilot/reference record and is not promoted into the complete-evolution runtime corpus by this ordering change.
 
 ### Future language-orientation content — 2026-09-03
 

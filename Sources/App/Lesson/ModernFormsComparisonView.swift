@@ -23,7 +23,8 @@ struct ModernFormsComparisonView: View {
                 ZStack {
                     SymbolStageBackgroundView(stageID: "regular")
                     Text(record.coreCharacter)
-                        .font(CJKFontRole.museumRegular.font(size: 148))
+                        // Match the Regular Script visual weight to the historical exhibits above it.
+                        .font(CJKFontRole.museumRegular.font(size: 196))
                         .foregroundStyle(AppColors.artifactInk)
                         .frame(maxWidth: .infinity, minHeight: 236, maxHeight: 236)
                         .minimumScaleFactor(0.55)

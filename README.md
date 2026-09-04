@@ -16,7 +16,7 @@ The runtime V1 manifest contains 126 complete-evolution records in teaching orde
 
 Each available museum stage has a short destination-stage transition caption. Origin → Oracle connects the illustrated subject to the first glyph; later captions describe only visible changes between neighboring forms, without repeating the modern character or naming the transition.
 
-The original Fire introduction remains available as a repository-backed onboarding reference and is opened directly from the local repository when the learner enters the introduction. It does not change the 126-record V1 learning corpus.
+Onboarding opens the first-ranked runtime symbol, currently 一, directly from the bundled corpus. Fire remains available as a separate repository pilot/reference record and is not added to the 126-record V1 learning corpus.
 
 Historical Assets must be source-backed or licensed, explicitly unavailable, or editorially omitted. Fabricated historical glyphs and modern-form fallbacks are prohibited.
 

@@ -104,7 +104,7 @@ never fall back from Cantonese to Mandarin simply because Mandarin is available.
 
 A missing pronunciation is preferable to an incorrect one.
 
-5. The most important data rule: speak the verified reading, not blindly the Han character
+5. The most important data rule: speak the explicit native-script reading, not blindly the Han character
 
 The visible character and the string passed to the speech engine are not necessarily the same thing.
 
@@ -122,7 +122,7 @@ Reading:
 
 shuǐ
 
-Speech input may be the verified Mandarin lexical form represented by 水.
+Speech input may be the explicit Mandarin lexical form represented by 水.
 
 Cantonese
 
@@ -134,7 +134,7 @@ Reading:
 
 seoi2
 
-Speech must use the verified Cantonese reading/context.
+Speech must use the explicit Cantonese reading/context.
 
 Japanese Kun
 
@@ -194,11 +194,11 @@ native Korean vocabulary
 meanings
 which reading is appropriate for a Symbol
 
-Those values must come from our verified Script Roots content.
+Those values must come from the Script Roots content model. The current V1 values are draft and remain open to later user/native-speaker review.
 
 The direction is:
 
-verified Script Roots data → explicit speech text → AVSpeechSynthesizer
+Script Roots draft/editorial data → explicit native-script speech text → AVSpeechSynthesizer
 
 Never:
 
@@ -223,7 +223,7 @@ Use the existing data architecture if it already supports this cleanly.
 
 Do not create a second parallel content database merely for audio.
 
-The important point is that speechText is explicit and verified.
+The important point is that `speechText` is explicit native-script input. It must not be a romanized label when Japanese kana, Korean Hangul, or another native-script form is required. Missing native-script speech text should leave playback unavailable until the content is supplied.
 
 8. Mandarin and Traditional/Simplified Chinese
 
@@ -276,7 +276,7 @@ and we later add audio for the example word, speak:
 
 Do not pass 水道 and assume the speech synthesizer will always choose the reading our lesson intends.
 
-Our verified kana reading is safer and explicit.
+An explicit kana reading is safer and clearer.
 
 10. Korean
 
@@ -465,7 +465,7 @@ Conceptually:
 
 Symbol linguistic data
         ↓
-verified speechText + language intent
+draft native-script speechText + language intent
         ↓
 Pronunciation service
         ↓

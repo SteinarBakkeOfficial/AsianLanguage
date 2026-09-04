@@ -42,14 +42,15 @@ struct RootTabView: View {
     }
 }
 
-/// First-launch introduction: explain the exhibit once, then enter the canonical Fire journey.
+/// First-launch introduction: explain the exhibit once, then enter the canonical first-symbol journey.
 struct OnboardingView: View {
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
 
-    /// Fire remains a repository-backed introduction/reference record and is not part of the 126-record V1 manifest.
-    private var fireRecord: SharedCharacterRecord? {
-        try? dependencies.corpusRepository.sharedCharacter(id: "fire")
+    /// The first ranked runtime symbol is the onboarding exhibit and remains data-backed.
+    private var firstSymbolRecord: SharedCharacterRecord? {
+        guard let firstSymbolID = SeedCorpusManifest.recordIDs.first else { return nil }
+        return try? dependencies.corpusRepository.sharedCharacter(id: firstSymbolID)
     }
 
     init(dependencies: AppDependencies) {
@@ -59,7 +60,7 @@ struct OnboardingView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .center, spacing: AppSpacing.spaceMd) {
+            VStack(alignment: .center, spacing: AppSpacing.spaceSm) {
                 Text("SCRIPT ROOTS")
                     .font(AppTypography.conceptLabel)
                     .tracking(1.4)
@@ -68,16 +69,18 @@ struct OnboardingView: View {
                     .font(AppTypography.exhibitHeading)
                     .foregroundStyle(AppColors.textPrimary)
                     .multilineTextAlignment(.center)
-                Text("Follow Fire from a recognizable origin through historical writing and into modern languages.")
+                Text("Follow \(firstSymbolRecord?.coreSharedMeaning.capitalized ?? "One") from a recognizable origin through historical writing and into modern languages.")
                     .font(AppTypography.body)
                     .foregroundStyle(AppColors.textSecondary)
                     .multilineTextAlignment(.center)
-                if let fireRecord {
-                    FireOnboardingLineage(record: fireRecord)
+                if let firstSymbolRecord {
+                    SymbolOnboardingLineage(record: firstSymbolRecord)
                 }
-                PrimaryActionButton("Explore Fire") {
+                PrimaryActionButton("Explore \(firstSymbolRecord?.coreSharedMeaning.capitalized ?? "One")") {
                     userStateStore.markFirstSymbolStarted()
-                    dependencies.navigationState.openSymbol("fire", intent: .start)
+                    if let firstSymbolID = SeedCorpusManifest.recordIDs.first {
+                        dependencies.navigationState.openSymbol(firstSymbolID, intent: .start)
+                    }
                 }
             }
             .frame(maxWidth: 390)
@@ -90,9 +93,9 @@ struct OnboardingView: View {
 
 }
 
-/// Fire's first-launch preview is intentionally separate from Home's compact lineage preview.
+/// The first symbol's launch preview is intentionally separate from Home's compact lineage preview.
 /// It shows the real concept first, then the available historical forms, without inventing a missing stage.
-private struct FireOnboardingLineage: View {
+private struct SymbolOnboardingLineage: View {
     let record: SharedCharacterRecord
 
     init(record: SharedCharacterRecord) {
@@ -110,16 +113,16 @@ private struct FireOnboardingLineage: View {
         VStack(spacing: AppSpacing.spaceSm) {
             ArtifactField {
                 if let origin = record.history.origin?.asset {
-                    HistoricalAssetView(metadata: origin, displayHeight: 132)
+                    HistoricalAssetView(metadata: origin, displayHeight: 168)
                 } else {
                     HistoricalMissingState(title: "Origin visual unavailable")
                 }
             }
-            .frame(height: 164)
+            .frame(height: 204)
 
             HStack(alignment: .top, spacing: AppSpacing.spaceXs) {
                 ForEach(availableStages, id: \.stage) { stage in
-                    FireOnboardingStageTile(
+                    SymbolOnboardingStageTile(
                         title: stage.stage == "oracleBone" ? "Oracle" : stage.stage.capitalized,
                         stage: stage
                     )
@@ -139,11 +142,11 @@ private struct FireOnboardingLineage: View {
         }
         .frame(maxWidth: 390)
         .accessibilityElement(children: .contain)
-        .accessibilityLabel("Fire from origin through the available historical forms to today")
+        .accessibilityLabel("\(record.coreSharedMeaning.capitalized) from origin through the available historical forms to today")
     }
 }
 
-private struct FireOnboardingStageTile: View {
+private struct SymbolOnboardingStageTile: View {
     let title: String
     let stage: HistoricalStage
 
@@ -303,7 +306,7 @@ private struct HistoryRootView: View {
             dynasty: "Shang Dynasty",
             material: "Carved on animal bones and turtle shells",
             explanation: "People used divination to ask about important matters. They carved questions on bone or shell, then heated them until cracks appeared. These early drawings were simple and symbolic.",
-            artworkRect: CGRect(x: 0.287, y: 0.169, width: 0.318, height: 0.143),
+            artworkRect: CGRect(x: 0.287, y: 0.160, width: 0.318, height: 0.150),
             color: AppColors.accentPrimary
         ),
         HistoryOverviewStage(
@@ -313,7 +316,7 @@ private struct HistoryRootView: View {
             dynasty: "Zhou Dynasty",
             material: "Cast or engraved on bronze vessels",
             explanation: "With the rise of ritual and record-keeping, inscriptions moved to bronze vessels. Tools improved, strokes became more fluid and ornamental, and characters gained structure and balance.",
-            artworkRect: CGRect(x: 0.287, y: 0.339, width: 0.318, height: 0.137),
+            artworkRect: CGRect(x: 0.287, y: 0.323, width: 0.318, height: 0.150),
             color: Color(red: 0.63, green: 0.43, blue: 0.25)
         ),
         HistoryOverviewStage(
@@ -323,7 +326,7 @@ private struct HistoryRootView: View {
             dynasty: "Qin Dynasty",
             material: "Written with brush on bamboo slips and silk",
             explanation: "Qin unified China and standardized writing. Small Seal script was created for official use—characters became more uniform, symmetrical, and elegant.",
-            artworkRect: CGRect(x: 0.287, y: 0.501, width: 0.318, height: 0.137),
+            artworkRect: CGRect(x: 0.287, y: 0.486, width: 0.318, height: 0.145),
             color: Color(red: 0.76, green: 0.56, blue: 0.28)
         ),
         HistoryOverviewStage(
@@ -333,7 +336,7 @@ private struct HistoryRootView: View {
             dynasty: "Han Dynasty",
             material: "Written with brush on paper",
             explanation: "Writing on paper and with brush encouraged faster strokes. Characters became flatter and wider, with distinct horizontal lines and turning strokes—the basis of many modern shapes.",
-            artworkRect: CGRect(x: 0.287, y: 0.653, width: 0.318, height: 0.129),
+            artworkRect: CGRect(x: 0.287, y: 0.646, width: 0.318, height: 0.130),
             color: AppColors.learned
         ),
         HistoryOverviewStage(
@@ -343,7 +346,7 @@ private struct HistoryRootView: View {
             dynasty: "All Dynasties",
             material: "Written with brush on paper",
             explanation: "Over time, Clerical script evolved into Regular script. Strokes became more balanced and refined—the foundation of the characters we use today.",
-            artworkRect: CGRect(x: 0.287, y: 0.792, width: 0.318, height: 0.111),
+            artworkRect: CGRect(x: 0.287, y: 0.784, width: 0.318, height: 0.105),
             color: AppColors.accentPrimary
         )
     ]
@@ -394,7 +397,9 @@ private struct HistoryOverviewHeader: View {
 
             // Keep the supplied landscape in its intended bounded frame so it cannot stretch under the copy.
             HistoryReferenceCropView(
-                normalizedRect: CGRect(x: 0.57, y: 0.0, width: 0.43, height: 0.17),
+                // The supplied reference is portrait; stop above the timeline card so the header never
+                // picks up source copy or the first row's explanation panel.
+                normalizedRect: CGRect(x: 0.60, y: 0.0, width: 0.40, height: 0.145),
                 accessibilityLabel: "Ink-wash landscape with mountains and a pavilion"
             )
             .frame(width: 112, height: 96)
@@ -423,6 +428,8 @@ private struct HistoryTimelineCard: View {
                         HistoryScriptDetailView(stage: stage)
                     } label: {
                         HistoryOverviewRow(stage: stage)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                     if index < stages.count - 1 {
@@ -481,8 +488,9 @@ private struct HistoryOverviewRow: View {
                             .font(AppTypography.caption.weight(.semibold))
                             .foregroundStyle(stage.color)
                         Text(stage.explanation)
-                            .font(AppTypography.caption)
+                            .font(AppTypography.metadata)
                             .foregroundStyle(AppColors.textSecondary)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
                 }
             }
@@ -557,7 +565,7 @@ private struct HistoryLivingTraditionCard: View {
                     .font(AppTypography.sectionHeading)
                     .foregroundStyle(AppColors.textPrimary)
                 Text("The shared historical tradition continues differently in each language environment.")
-                    .font(AppTypography.caption)
+                    .font(AppTypography.metadata)
                     .foregroundStyle(AppColors.textSecondary)
 
                 ForEach(branches) { branch in
@@ -579,6 +587,7 @@ private struct HistoryLivingTraditionCard: View {
                                 .foregroundStyle(AppColors.textTertiary)
                         }
                         .padding(.vertical, AppSpacing.spaceXs)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
@@ -586,7 +595,8 @@ private struct HistoryLivingTraditionCard: View {
             }
 
             HistoryReferenceCropView(
-                normalizedRect: CGRect(x: 0.45, y: 0.91, width: 0.50, height: 0.085),
+                // Crop the comparison glyphs, not the labels and card text beneath them.
+                normalizedRect: CGRect(x: 0.45, y: 0.895, width: 0.50, height: 0.065),
                 accessibilityLabel: "Oracle Bone, Bronze, Small Seal, Clerical, and Regular Script comparison"
             )
             .frame(maxWidth: .infinity, minHeight: 58, maxHeight: 70)

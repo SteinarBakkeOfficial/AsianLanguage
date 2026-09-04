@@ -67,7 +67,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Browse and Collections now separate Your Library status lists from editorial collections, with collection artwork previews.
 - Today now uses one page per selected language with four draft starter entries per track; native-speaker review must replace or approve the neutral learning-context additions before publication.
 - Fire, Water, and Tree now have separate educational concept illustrations, and the allowlisted historical SVG intake preserves source/license provenance.
-- The approved correction pass keeps the Symbol Journey rail persistent and visibly labeled, isolates Fire onboarding from the compact Home preview, fixes Home's orphaned active-state fallback, uses the complete collection banner on Home, identifies Hong Kong Cantonese/Jyutping readings, and recreates the History overview natively from the approved reference content.
+- The approved correction pass keeps the Symbol Journey rail persistent and visibly labeled, isolates onboarding from the compact Home preview, fixes Home's orphaned active-state fallback, uses the complete collection banner on Home, identifies Hong Kong Cantonese/Jyutping readings, and recreates the History overview natively from the approved reference content.
 - The Symbol Journey now separates the single Modern/Regular Script museum endpoint from later language Usage pages; one visible rail changes its destinations at that boundary.
 
 ### Transitional or incomplete
@@ -97,7 +97,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 
 - Deferred outside the current polish implementation: move the Home Regular Script artwork upward to preserve space for the Continue button.
 - Included in the current polish implementation: remove the previously tested age/period line from Symbol Journey stage headers; retain chronology in History and source metadata.
-- Included in the current polish implementation: consolidate the two similar Fire onboarding pages into one direct-entry page using the existing first-page concept.
+- Included in the current polish implementation: consolidate the two similar onboarding pages into one direct-entry page for the first-ranked runtime symbol using the existing first-page concept.
 - Deferred outside the current polish implementation: expand Regular Script transition captions where they are too brief.
 - Deferred outside the current polish implementation: replace the four-track starter examples with fully reviewed, character-relevant Chinese, Japanese, and Korean usage content.
 - Included in the current polish implementation: correct the existing History header crop/layout collision and remaining artwork/text fit issues after comparing the supplied screenshots; preserve the approved composition and existing History artwork.
@@ -118,7 +118,7 @@ The separate [Pronunciation Audio handoff](docs/architecture/pronunciation-audio
 - Ads/monetization
 - User-created collection folders
 - richer historical animation
-- Deeper Fire onboarding language orientation covering all four target writing traditions; this applies only to the onboarding symbol experience.
+- Deeper onboarding language orientation covering all four target writing traditions; this applies only to the onboarding symbol experience.
 - History page rework: the broader History overview redesign is intentionally the next implementation after this surgical polish pass.
 - Future Home cleanup: replace the standalone “X symbols learned” footer with a deliberate destination such as History or the Learned library; do not change the current footer during this pass.
 - Future language-orientation content: broader language-family/context explanation beyond the approved modern-language branches and their intentionally unfinished detail destinations remains deferred.

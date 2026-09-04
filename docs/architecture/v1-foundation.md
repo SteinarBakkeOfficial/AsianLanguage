@@ -42,7 +42,7 @@ Relevant unavailable stages may remain as explicit Missing Historical Asset stat
 
 The Shared Character content module owns origin content, stage metadata, modern focus-track variants, Character structure, Modern usage, sources, and publication status.
 
-Presentation-facing models distinguish historical confidence from missing content. Readings may carry explicit, platform-independent pronunciation data such as verified speech text and language intent. The current polish implementation adds iOS pronunciation playback through one isolated `AVSpeechSynthesizer` service and small speaker controls. It does not add cloud TTS, API keys, or bundled audio assets. A future Android port must replace only the platform-specific renderer with an Android text-to-speech implementation.
+Presentation-facing models distinguish historical confidence from missing content. Readings may carry explicit, platform-independent pronunciation data such as draft native-script speech text and language intent. Japanese playback requires kana speech text and Korean playback requires Hangul speech text; romanized research labels remain visible content but are not sent to TTS. The current polish implementation adds iOS pronunciation playback through one isolated `AVSpeechSynthesizer` service and small speaker controls. It does not add cloud TTS, API keys, or bundled audio assets. A future Android port must replace only the platform-specific renderer with an Android text-to-speech implementation.
 
 ### Pronunciation speech — platform dependency
 

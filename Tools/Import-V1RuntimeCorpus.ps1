@@ -20,7 +20,10 @@ function Read-Json([string]$Path) {
 }
 
 function New-Reading([string]$System, [string]$Value, [string]$SpeechText = $null, [string]$SpeechLanguage = $null) {
-  return [ordered]@{ system = $System; value = $Value; audioAssetRef = $null; speechText = $SpeechText; speechLanguage = $SpeechLanguage }
+  # Keep incomplete draft pronunciation metadata unavailable instead of exposing
+  # a language intent with no native text for the platform speech renderer.
+  $hasSpeechText = -not [string]::IsNullOrWhiteSpace($SpeechText)
+  return [ordered]@{ system = $System; value = $Value; audioAssetRef = $null; speechText = if ($hasSpeechText) { $SpeechText } else { $null }; speechLanguage = if ($hasSpeechText) { $SpeechLanguage } else { $null } }
 }
 
 function New-Example([string]$Text, [string]$Reading, [string]$Translation, [bool]$ShowsCoreMeaning, [string]$Level, [string]$Character) {
@@ -109,9 +112,10 @@ function Get-DraftSpeechText([string]$Value, [string]$Language, [string]$Form) {
     if ($hangul.Count -gt 0) { return (($hangul | ForEach-Object Value) -join " ") }
   }
 
-  # Preserve the current editorial reading as explicit draft input when no
-  # native-script spelling is available yet; do not infer from the Han form.
-  return $Value
+  # Do not send romanized draft labels to a Japanese or Korean voice. Keep the
+  # reading visible in content, but leave playback unavailable until native
+  # kana/Hangul speech text is supplied.
+  return $null
 }
 
 function Normalize-DraftReading($Reading, [string]$Language, [string]$Form) {
@@ -120,6 +124,11 @@ function Normalize-DraftReading($Reading, [string]$Language, [string]$Form) {
   if (-not $value) { return $null }
 
   $speechText = Get-ReadingValue $Reading.speechText
+  if ($Language -eq "japanese" -or $Language -eq "korean") {
+    # Existing source rows may contain mixed native-script and romanized labels;
+    # retain only the native writing system for speech playback.
+    $speechText = Get-DraftSpeechText $speechText $Language $Form
+  }
   if (-not $speechText) { $speechText = Get-DraftSpeechText $value $Language $Form }
   $speechLanguage = Get-ReadingValue $Reading.speechLanguage
   if (-not $speechLanguage) { $speechLanguage = $Language }
@@ -258,8 +267,8 @@ $outputAssets = Resolve-RepoPath $AssetDestination
 New-Item -ItemType Directory -Path $outputCorpus -Force | Out-Null
 New-Item -ItemType Directory -Path $outputAssets -Force | Out-Null
 
-$oldIDByCharacter = @{
-  "水"="water"; "山"="mountain"; "木"="tree"; "日"="day"; "月"="moon"; "人"="person"; "大"="big"; "小"="small"; "口"="mouth"; "目"="eye"
+$idByCharacter = @{
+  "一"="one"; "日"="day"; "月"="moon"; "夕"="evening"; "山"="mountain"; "水"="water"; "川"="river"; "木"="tree"; "竹"="bamboo"; "土"="earth"; "石"="stone"; "雨"="rain"; "云"="cloud"; "田"="field"; "井"="well"; "泉"="spring"; "生"="life"; "人"="person"; "大"="big"; "女"="woman"; "子"="child"; "母"="mother"; "目"="eye"; "耳"="ear"; "口"="mouth"; "舌"="tongue"; "自"="self"; "首"="head"; "身"="body"; "心"="heart"; "老"="old"; "长"="long"; "天"="sky"; "牛"="ox"; "羊"="sheep"; "犬"="dog"; "虎"="tiger"; "角"="horn"; "刀"="knife"; "弓"="bow"; "衣"="clothing"; "豆"="bean"; "工"="work"; "册"="book"; "玉"="jade"; "王"="king"; "示"="altar"; "力"="strength"; "二"="two"; "三"="three"; "十"="ten"; "上"="above"; "下"="below"; "中"="middle"; "小"="small"; "少"="few"; "多"="many"; "高"="high"; "入"="enter"; "出"="exit"; "立"="stand"; "央"="center"; "南"="south"; "北"="north"; "西"="west"; "林"="forest"; "休"="rest"; "从"="follow"; "好"="good"; "男"="man"; "明"="bright"; "美"="beautiful"; "兄"="older-brother"; "品"="things-goods"; "告"="tell"; "合"="join"; "取"="take"; "采"="gather"; "止"="stop"; "步"="step"; "走"="walk"; "行"="go"; "正"="upright"; "先"="before"; "及"="reach"; "交"="meet"; "反"="turn-back"; "友"="friend"; "向"="direction"; "分"="divide"; "利"="benefit"; "武"="martial"; "得"="obtain"; "後"="after"; "集"="gather-u96c6"; "言"="speech"; "公"="public"; "民"="people"; "典"="classic"; "兵"="soldier"; "令"="command"; "各"="each"; "同"="same"; "妻"="wife"; "古"="old-u53e4"; "吉"="auspicious"; "旅"="journey"; "族"="group"; "守"="guard"; "官"="official"; "申"="stretch"; "光"="light"; "白"="white"; "黑"="black"; "赤"="red"; "年"="year"; "夏"="summer"; "冬"="winter"; "望"="look-toward"; "甘"="sweet"; "香"="fragrance"; "益"="increase"; "祭"="sacrifice"; "宗"="ancestor"; "宿"="lodging"; "祝"="blessing"
 }
 $records = [System.Collections.Generic.List[object]]::new()
 
@@ -277,7 +286,7 @@ foreach ($manifestRecord in @($manifest.records | Sort-Object rank)) {
     $indexRow = @($indexRows | Where-Object character -eq $character | Sort-Object rank | Select-Object -First 1)
   }
   $legacy = $legacyByCharacter[$character]
-  $id = if ($oldIDByCharacter.ContainsKey($character)) { $oldIDByCharacter[$character] } else { "symbol-$($manifestRecord.unicode.Replace('U+', 'u'))" }
+  $id = if ($idByCharacter.ContainsKey($character)) { $idByCharacter[$character] } else { "symbol-$($manifestRecord.unicode.Replace('U+', 'u'))" }
   $meaning = if ($legacy) { $legacy.coreSharedMeaning } elseif ($research) { Get-Meaning $character $research } else { "shared character" }
   $traditional = if ($research -and $research.traditionalVariant) { [string]$research.traditionalVariant } elseif ($legacy -and $legacy.traditionalForm) { [string]$legacy.traditionalForm } else { $character }
   $mandarin = if ($research) { Get-ReadingValue $research.readings.mandarin } elseif ($legacy) { $legacy.focusCoverage.simplifiedChinese.readings[0].value } else { $null }

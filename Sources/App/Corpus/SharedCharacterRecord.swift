@@ -253,7 +253,7 @@ struct CharacterReading: Decodable, Hashable {
     /// Optional future pronunciation asset; absence is a normal unavailable state.
     let audioAssetRef: String?
 
-    /// Explicit verified text for speech playback; never inferred from the visible Han character.
+    /// Explicit native-script text for speech playback; never inferred from the visible Han character.
     let speechText: String?
 
     /// Platform-independent language intent resolved by the platform pronunciation service.
