@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "旅",
-          "reading": "lǚ",
-          "translation": "journey",
+          "text": "旅行",
+          "reading": "lǚxíng",
+          "translation": "travel",
+          "speechText": "旅行",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是旅。",
-          "reading": "",
-          "translation": "This is the character 旅.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "旅馆",
+          "reading": "lǚguǎn",
+          "translation": "hotel; inn",
+          "speechText": "旅馆",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习旅。",
-          "reading": "",
-          "translation": "I am learning the character 旅.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "旅"
-          ]
-        },
-        {
-          "text": "我会读旅。",
-          "reading": "",
-          "translation": "I can read the character 旅.",
-          "showsCoreMeaning": false,
+          "text": "我喜欢旅行。",
+          "reading": "Wǒ xǐhuan lǚxíng.",
+          "translation": "I like traveling.",
+          "speechText": "我喜欢旅行。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "旅",
-          "reading": "lǚ",
-          "translation": "journey",
+          "text": "旅行",
+          "reading": "lǚxíng",
+          "translation": "travel",
+          "speechText": "旅行",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「旅」。",
-          "reading": "",
-          "translation": "This is the character 「旅」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "旅館",
+          "reading": "lǚguǎn",
+          "translation": "hotel; inn",
+          "speechText": "旅館",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「旅」。",
-          "reading": "",
-          "translation": "I am learning the character 「旅」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "旅"
-          ]
-        },
-        {
-          "text": "我會讀「旅」。",
-          "reading": "",
-          "translation": "I can read the character 「旅」.",
-          "showsCoreMeaning": false,
+          "text": "我喜歡旅行。",
+          "reading": "Wǒ xǐhuan lǚxíng.",
+          "translation": "I like traveling.",
+          "speechText": "我喜歡旅行。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "旅行",
+          "reading": "leoi5 hang4",
+          "translation": "travel",
+          "speechText": "旅行",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "旅"
+          ]
+        },
+        {
+          "text": "旅館",
+          "reading": "leoi5 gun2",
+          "translation": "hotel; inn",
+          "speechText": "旅館",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "旅"
+          ]
+        },
+        {
+          "text": "我鍾意旅行。",
+          "reading": "ngo5 zung1 ji3 leoi5 hang4",
+          "translation": "I like traveling.",
+          "speechText": "我鍾意旅行。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "旅"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "leoi5",
+          "audioAssetRef": null,
+          "speechText": "旅",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "旅",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TABI",
+          "system": "on",
+          "value": "リョ (ryo)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "りょ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "たび (tabi)",
+          "audioAssetRef": null,
+          "speechText": "たび",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "旅",
-          "reading": "TABI",
-          "translation": "journey",
+          "reading": "tabi",
+          "translation": "journey; trip",
+          "speechText": "旅",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「旅」です。",
-          "reading": "",
-          "translation": "This is the kanji 「旅」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "旅行",
+          "reading": "ryokō",
+          "translation": "travel",
+          "speechText": "旅行",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「旅」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「旅」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "旅"
-          ]
-        },
-        {
-          "text": "「旅」を読みます。",
-          "reading": "",
-          "translation": "I read 「旅」.",
-          "showsCoreMeaning": false,
+          "text": "旅行に行きます。",
+          "reading": "ryokō ni ikimasu.",
+          "translation": "I am going on a trip.",
+          "speechText": "旅行に行きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,24 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "LYE",
+          "value": "려 / ryeo",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "려",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "hanja · word-initial form",
+          "value": "여 / yeo",
+          "audioAssetRef": null,
+          "speechText": "여",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean",
+          "value": "여행 / yeohaeng",
+          "audioAssetRef": null,
+          "speechText": "여행",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "旅",
-          "reading": "LYE",
-          "translation": "journey",
+          "text": "여행",
+          "reading": "yeohaeng",
+          "translation": "travel",
+          "speechText": "여행",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘旅’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘旅’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "여행객",
+          "reading": "yeohaenggaek",
+          "translation": "traveler",
+          "speechText": "여행객",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘旅’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘旅’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "旅"
-          ]
-        },
-        {
-          "text": "‘旅’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘旅’.",
-          "showsCoreMeaning": false,
+          "text": "여행을 가요.",
+          "reading": "yeohaengeul gayo.",
+          "translation": "I am going on a trip.",
+          "speechText": "여행을 가요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

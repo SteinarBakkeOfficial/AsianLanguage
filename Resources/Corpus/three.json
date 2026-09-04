@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "三",
-          "reading": "sān",
-          "translation": "three",
+          "text": "三月",
+          "reading": "sānyuè",
+          "translation": "March",
+          "speechText": "三月",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是三。",
-          "reading": "",
-          "translation": "This is the character 三.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "三个人",
+          "reading": "sān ge rén",
+          "translation": "three people",
+          "speechText": "三个人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习三。",
-          "reading": "",
-          "translation": "I am learning the character 三.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "三"
-          ]
-        },
-        {
-          "text": "我会读三。",
-          "reading": "",
-          "translation": "I can read the character 三.",
-          "showsCoreMeaning": false,
+          "text": "我有三本书。",
+          "reading": "Wǒ yǒu sān běn shū.",
+          "translation": "I have three books.",
+          "speechText": "我有三本书。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "三",
-          "reading": "sān",
-          "translation": "three",
+          "text": "三月",
+          "reading": "sānyuè",
+          "translation": "March",
+          "speechText": "三月",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「三」。",
-          "reading": "",
-          "translation": "This is the character 「三」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "三個人",
+          "reading": "sān ge rén",
+          "translation": "three people",
+          "speechText": "三個人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「三」。",
-          "reading": "",
-          "translation": "I am learning the character 「三」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "三"
-          ]
-        },
-        {
-          "text": "我會讀「三」。",
-          "reading": "",
-          "translation": "I can read the character 「三」.",
-          "showsCoreMeaning": false,
+          "text": "我有三本書。",
+          "reading": "Wǒ yǒu sān běn shū.",
+          "translation": "I have three books.",
+          "speechText": "我有三本書。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "三月",
+          "reading": "saam1 jyut6",
+          "translation": "March",
+          "speechText": "三月",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "三"
+          ]
+        },
+        {
+          "text": "三個人",
+          "reading": "saam1 go3 jan4",
+          "translation": "three people",
+          "speechText": "三個人",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "三"
+          ]
+        },
+        {
+          "text": "我有三本書。",
+          "reading": "ngo5 jau5 saam1 bun2 syu1",
+          "translation": "I have three books.",
+          "speechText": "我有三本書。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "三"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "saam1",
+          "audioAssetRef": null,
+          "speechText": "三",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "三",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "MITSU MITABI",
+          "system": "on",
+          "value": "サン (san)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "さん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "みっつ (mittsu)",
+          "audioAssetRef": null,
+          "speechText": "みっつ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "三",
-          "reading": "MITSU MITABI",
-          "translation": "three",
+          "text": "三つ",
+          "reading": "mittsu",
+          "translation": "three things",
+          "speechText": "三つ",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「三」です。",
-          "reading": "",
-          "translation": "This is the kanji 「三」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "三人",
+          "reading": "sannin",
+          "translation": "three people",
+          "speechText": "三人",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「三」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「三」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "三"
-          ]
-        },
-        {
-          "text": "「三」を読みます。",
-          "reading": "",
-          "translation": "I read 「三」.",
-          "showsCoreMeaning": false,
+          "text": "りんごを三つください。",
+          "reading": "ringo o mittsu kudasai.",
+          "translation": "Three apples, please.",
+          "speechText": "りんごを三つください。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SAM",
+          "value": "삼 / sam",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "삼",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "셋 / set",
+          "audioAssetRef": null,
+          "speechText": "셋",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "三",
-          "reading": "SAM",
-          "translation": "three",
+          "text": "삼월",
+          "reading": "samwol",
+          "translation": "March",
+          "speechText": "삼월",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘三’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘三’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "삼층",
+          "reading": "samcheung",
+          "translation": "third floor",
+          "speechText": "삼층",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘三’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘三’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "三"
-          ]
-        },
-        {
-          "text": "‘三’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘三’.",
-          "showsCoreMeaning": false,
+          "text": "셋이 가요.",
+          "reading": "sesi gayo.",
+          "translation": "Three of us are going.",
+          "speechText": "셋이 가요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

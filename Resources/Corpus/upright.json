@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "正",
-          "reading": "zhèng",
-          "translation": "upright",
+          "text": "正确",
+          "reading": "zhèngquè",
+          "translation": "correct",
+          "speechText": "正确",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是正。",
-          "reading": "",
-          "translation": "This is the character 正.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "正中",
+          "reading": "zhèngzhōng",
+          "translation": "exact center",
+          "speechText": "正中",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习正。",
-          "reading": "",
-          "translation": "I am learning the character 正.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "正"
-          ]
-        },
-        {
-          "text": "我会读正。",
-          "reading": "",
-          "translation": "I can read the character 正.",
-          "showsCoreMeaning": false,
+          "text": "这个答案正确。",
+          "reading": "Zhège dá’àn zhèngquè.",
+          "translation": "This answer is correct.",
+          "speechText": "这个答案正确。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "正",
-          "reading": "zhèng",
-          "translation": "upright",
+          "text": "正确",
+          "reading": "zhèngquè",
+          "translation": "correct",
+          "speechText": "正确",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「正」。",
-          "reading": "",
-          "translation": "This is the character 「正」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "正中",
+          "reading": "zhèngzhōng",
+          "translation": "exact center",
+          "speechText": "正中",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「正」。",
-          "reading": "",
-          "translation": "I am learning the character 「正」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "正"
-          ]
-        },
-        {
-          "text": "我會讀「正」。",
-          "reading": "",
-          "translation": "I can read the character 「正」.",
-          "showsCoreMeaning": false,
+          "text": "這個答案正确。",
+          "reading": "Zhège dá’àn zhèngquè.",
+          "translation": "This answer is correct.",
+          "speechText": "這個答案正确。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "正確",
+          "reading": "zing3 kok3",
+          "translation": "correct",
+          "speechText": "正確",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        },
+        {
+          "text": "正中",
+          "reading": "zing3 zung1",
+          "translation": "exact center",
+          "speechText": "正中",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        },
+        {
+          "text": "答案正確。",
+          "reading": "daap3 on3 zing3 kok3",
+          "translation": "The answer is correct.",
+          "speechText": "答案正確。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "zing3",
+          "audioAssetRef": null,
+          "speechText": "正",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "正",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TADASHII MASA TADASU",
+          "system": "on",
+          "value": "セイ (sei)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "せい",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "ショウ (shō)",
+          "audioAssetRef": null,
+          "speechText": "しょう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "ただしい (tadashii)",
+          "audioAssetRef": null,
+          "speechText": "ただしい",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "正",
-          "reading": "TADASHII MASA TADASU",
-          "translation": "upright",
+          "text": "正しい",
+          "reading": "tadashii",
+          "translation": "correct; right",
+          "speechText": "正しい",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「正」です。",
-          "reading": "",
-          "translation": "This is the kanji 「正」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "正解",
+          "reading": "seikai",
+          "translation": "correct answer",
+          "speechText": "正解",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「正」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「正」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "正"
-          ]
-        },
-        {
-          "text": "「正」を読みます。",
-          "reading": "",
-          "translation": "I read 「正」.",
-          "showsCoreMeaning": false,
+          "text": "答えは正しいです。",
+          "reading": "kotae wa tadashii desu.",
+          "translation": "The answer is correct.",
+          "speechText": "答えは正しいです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CENG",
+          "value": "정 / jeong",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "정",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "바르다 / bareuda",
+          "audioAssetRef": null,
+          "speechText": "바르다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "正",
-          "reading": "CENG",
-          "translation": "upright",
+          "text": "정답",
+          "reading": "jeongdap",
+          "translation": "correct answer",
+          "speechText": "정답",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘正’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘正’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "정면",
+          "reading": "jeongmyeon",
+          "translation": "front; straight ahead",
+          "speechText": "정면",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘正’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘正’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "正"
-          ]
-        },
-        {
-          "text": "‘正’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘正’.",
-          "showsCoreMeaning": false,
+          "text": "답이 맞아요.",
+          "reading": "dabi majayo.",
+          "translation": "The answer is correct.",
+          "speechText": "답이 맞아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

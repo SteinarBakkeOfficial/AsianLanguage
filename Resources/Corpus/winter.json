@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "冬",
-          "reading": "dōng",
+          "text": "冬天",
+          "reading": "dōngtiān",
           "translation": "winter",
+          "speechText": "冬天",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是冬。",
-          "reading": "",
-          "translation": "This is the character 冬.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "冬季",
+          "reading": "dōngjì",
+          "translation": "winter season",
+          "speechText": "冬季",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习冬。",
-          "reading": "",
-          "translation": "I am learning the character 冬.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "冬"
-          ]
-        },
-        {
-          "text": "我会读冬。",
-          "reading": "",
-          "translation": "I can read the character 冬.",
-          "showsCoreMeaning": false,
+          "text": "冬天很冷。",
+          "reading": "Dōngtiān hěn lěng.",
+          "translation": "Winter is cold.",
+          "speechText": "冬天很冷。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "冬",
-          "reading": "dōng",
+          "text": "冬天",
+          "reading": "dōngtiān",
           "translation": "winter",
+          "speechText": "冬天",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「冬」。",
-          "reading": "",
-          "translation": "This is the character 「冬」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "冬季",
+          "reading": "dōngjì",
+          "translation": "winter season",
+          "speechText": "冬季",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「冬」。",
-          "reading": "",
-          "translation": "I am learning the character 「冬」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "冬"
-          ]
-        },
-        {
-          "text": "我會讀「冬」。",
-          "reading": "",
-          "translation": "I can read the character 「冬」.",
-          "showsCoreMeaning": false,
+          "text": "冬天很冷。",
+          "reading": "Dōngtiān hěn lěng.",
+          "translation": "Winter is cold.",
+          "speechText": "冬天很冷。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "冬天",
+          "reading": "dung1 tin1",
+          "translation": "winter",
+          "speechText": "冬天",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        },
+        {
+          "text": "冬季",
+          "reading": "dung1 gwai3",
+          "translation": "winter season",
+          "speechText": "冬季",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        },
+        {
+          "text": "冬天好凍。",
+          "reading": "dung1 tin1 hou2 dung3",
+          "translation": "Winter is cold.",
+          "speechText": "冬天好凍。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "dung1",
+          "audioAssetRef": null,
+          "speechText": "冬",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "冬",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "FUYU",
+          "system": "on",
+          "value": "トウ (tō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "とう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "ふゆ (fuyu)",
+          "audioAssetRef": null,
+          "speechText": "ふゆ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "冬",
-          "reading": "FUYU",
+          "reading": "fuyu",
           "translation": "winter",
+          "speechText": "冬",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「冬」です。",
-          "reading": "",
-          "translation": "This is the kanji 「冬」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "冬休み",
+          "reading": "fuyuyasumi",
+          "translation": "winter vacation",
+          "speechText": "冬休み",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「冬」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「冬」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "冬"
-          ]
-        },
-        {
-          "text": "「冬」を読みます。",
-          "reading": "",
-          "translation": "I read 「冬」.",
-          "showsCoreMeaning": false,
+          "text": "冬は寒いです。",
+          "reading": "fuyu wa samui desu.",
+          "translation": "Winter is cold.",
+          "speechText": "冬は寒いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "TONG",
+          "value": "동 / dong",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "동",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "겨울 / gyeoul",
+          "audioAssetRef": null,
+          "speechText": "겨울",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "冬",
-          "reading": "TONG",
-          "translation": "winter",
+          "text": "동계",
+          "reading": "donggye",
+          "translation": "winter season",
+          "speechText": "동계",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘冬’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘冬’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "겨울",
+          "reading": "gyeoul",
+          "translation": "winter",
+          "speechText": "겨울",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘冬’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘冬’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "冬"
-          ]
-        },
-        {
-          "text": "‘冬’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘冬’.",
-          "showsCoreMeaning": false,
+          "text": "겨울은 추워요.",
+          "reading": "gyeoureun chuwoyo.",
+          "translation": "Winter is cold.",
+          "speechText": "겨울은 추워요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

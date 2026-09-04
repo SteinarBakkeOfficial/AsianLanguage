@@ -24,15 +24,25 @@
   "focusCoverage": {
     "simplifiedChinese": {
       "form": "十",
-      "readings": [],
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "shí",
+          "audioAssetRef": null,
+          "speechText": "十",
+          "speechLanguage": "mandarin"
+        }
+      ],
       "glosses": [
         "ten"
       ],
       "examples": [
         {
-          "text": "十",
-          "reading": "",
-          "translation": "ten",
+          "text": "十月",
+          "reading": "shíyuè",
+          "translation": "October",
+          "speechText": "十月",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -42,11 +52,13 @@
           ]
         },
         {
-          "text": "这是十。",
-          "reading": "",
-          "translation": "This is the character 十.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "十个人",
+          "reading": "shí ge rén",
+          "translation": "ten people",
+          "speechText": "十个人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -54,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习十。",
-          "reading": "",
-          "translation": "I am learning the character 十.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "十"
-          ]
-        },
-        {
-          "text": "我会读十。",
-          "reading": "",
-          "translation": "I can read the character 十.",
-          "showsCoreMeaning": false,
+          "text": "现在十点。",
+          "reading": "Xiànzài shí diǎn.",
+          "translation": "It is ten o’clock now.",
+          "speechText": "现在十点。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -82,15 +84,25 @@
     },
     "traditionalChinese": {
       "form": "十",
-      "readings": [],
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "shí",
+          "audioAssetRef": null,
+          "speechText": "十",
+          "speechLanguage": "mandarin"
+        }
+      ],
       "glosses": [
         "ten"
       ],
       "taiwanExamples": [
         {
-          "text": "十",
-          "reading": "",
-          "translation": "ten",
+          "text": "十月",
+          "reading": "shíyuè",
+          "translation": "October",
+          "speechText": "十月",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -100,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「十」。",
-          "reading": "",
-          "translation": "This is the character 「十」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "十個人",
+          "reading": "shí ge rén",
+          "translation": "ten people",
+          "speechText": "十個人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -112,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「十」。",
-          "reading": "",
-          "translation": "I am learning the character 「十」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "十"
-          ]
-        },
-        {
-          "text": "我會讀「十」。",
-          "reading": "",
-          "translation": "I can read the character 「十」.",
-          "showsCoreMeaning": false,
+          "text": "現在十點。",
+          "reading": "Xiànzài shí diǎn.",
+          "translation": "It is ten o’clock now.",
+          "speechText": "現在十點。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -136,22 +140,13 @@
           ]
         }
       ],
-      "hongKongExamples": [],
-      "taiwanReadings": [],
-      "hongKongReadings": [],
-      "variants": []
-    },
-    "japanese": {
-      "form": "十",
-      "readings": [],
-      "glosses": [
-        "ten"
-      ],
-      "examples": [
+      "hongKongExamples": [
         {
-          "text": "十",
-          "reading": "",
-          "translation": "ten",
+          "text": "十月",
+          "reading": "sap6 jyut6",
+          "translation": "October",
+          "speechText": "十月",
+          "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -161,11 +156,13 @@
           ]
         },
         {
-          "text": "これは「十」です。",
-          "reading": "",
-          "translation": "This is the kanji 「十」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "十個人",
+          "reading": "sap6 go3 jan4",
+          "translation": "ten people",
+          "speechText": "十個人",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -173,11 +170,70 @@
           ]
         },
         {
-          "text": "「十」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「十」.",
-          "showsCoreMeaning": false,
+          "text": "而家十點。",
+          "reading": "ji4 gaa1 sap6 dim2",
+          "translation": "It is ten o’clock now.",
+          "speechText": "而家十點。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "十"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "shí",
+          "audioAssetRef": null,
+          "speechText": "十",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "sap6",
+          "audioAssetRef": null,
+          "speechText": "十",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "variants": []
+    },
+    "japanese": {
+      "form": "十",
+      "readings": [
+        {
+          "system": "on",
+          "value": "ジュウ (jū)",
+          "audioAssetRef": null,
+          "speechText": "じゅう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "とお (tō)",
+          "audioAssetRef": null,
+          "speechText": "とお",
+          "speechLanguage": "japanese"
+        }
+      ],
+      "glosses": [
+        "ten"
+      ],
+      "examples": [
+        {
+          "text": "十",
+          "reading": "jū",
+          "translation": "ten",
+          "speechText": "十",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -185,10 +241,26 @@
           ]
         },
         {
-          "text": "「十」を読みます。",
-          "reading": "",
-          "translation": "I read 「十」.",
-          "showsCoreMeaning": false,
+          "text": "十時",
+          "reading": "jūji",
+          "translation": "ten o’clock",
+          "speechText": "十時",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "十"
+          ]
+        },
+        {
+          "text": "今は十時です。",
+          "reading": "ima wa jūji desu.",
+          "translation": "It is ten o’clock now.",
+          "speechText": "今は十時です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -201,15 +273,32 @@
     },
     "korean": {
       "form": "十",
-      "readings": [],
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "십 / sip",
+          "audioAssetRef": null,
+          "speechText": "십",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "열 / yeol",
+          "audioAssetRef": null,
+          "speechText": "열",
+          "speechLanguage": "korean"
+        }
+      ],
       "glosses": [
         "ten"
       ],
       "examples": [
         {
-          "text": "十",
-          "reading": "",
-          "translation": "ten",
+          "text": "십월",
+          "reading": "siwol",
+          "translation": "October",
+          "speechText": "십월",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -219,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘十’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘十’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "십분",
+          "reading": "sipbun",
+          "translation": "ten minutes",
+          "speechText": "십분",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -231,22 +322,12 @@
           ]
         },
         {
-          "text": "‘十’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘十’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "十"
-          ]
-        },
-        {
-          "text": "‘十’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘十’.",
-          "showsCoreMeaning": false,
+          "text": "열 개 있어요.",
+          "reading": "yeol gae isseoyo.",
+          "translation": "There are ten.",
+          "speechText": "열 개 있어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -493,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -558,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

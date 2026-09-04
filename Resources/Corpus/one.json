@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "一",
-          "reading": "yī",
-          "translation": "one",
+          "text": "一杯",
+          "reading": "yì bēi",
+          "translation": "one cup",
+          "speechText": "一杯",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是一。",
-          "reading": "",
-          "translation": "This is the character 一.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "一天",
+          "reading": "yì tiān",
+          "translation": "one day",
+          "speechText": "一天",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习一。",
-          "reading": "",
-          "translation": "I am learning the character 一.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
-        },
-        {
-          "text": "我会读一。",
-          "reading": "",
-          "translation": "I can read the character 一.",
-          "showsCoreMeaning": false,
+          "text": "我有一本书。",
+          "reading": "Wǒ yǒu yì běn shū.",
+          "translation": "I have one book.",
+          "speechText": "我有一本书。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "一",
-          "reading": "yī",
-          "translation": "one",
+          "text": "一杯",
+          "reading": "yì bēi",
+          "translation": "one cup",
+          "speechText": "一杯",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「一」。",
-          "reading": "",
-          "translation": "This is the character 「一」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "一天",
+          "reading": "yì tiān",
+          "translation": "one day",
+          "speechText": "一天",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「一」。",
-          "reading": "",
-          "translation": "I am learning the character 「一」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
-        },
-        {
-          "text": "我會讀「一」。",
-          "reading": "",
-          "translation": "I can read the character 「一」.",
-          "showsCoreMeaning": false,
+          "text": "我有一本書。",
+          "reading": "Wǒ yǒu yì běn shū.",
+          "translation": "I have one book.",
+          "speechText": "我有一本書。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "一個",
+          "reading": "jat1 go3",
+          "translation": "one",
+          "speechText": "一個",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "一"
+          ]
+        },
+        {
+          "text": "一日",
+          "reading": "jat1 jat6",
+          "translation": "one day",
+          "speechText": "一日",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "一"
+          ]
+        },
+        {
+          "text": "我有一本書。",
+          "reading": "ngo5 jau5 jat1 bun2 syu1",
+          "translation": "I have one book.",
+          "speechText": "我有一本書。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "一"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "jat1",
+          "audioAssetRef": null,
+          "speechText": "一",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "一",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "HITOTSU HITOTABI HAJIME",
+          "system": "on",
+          "value": "イチ (ichi)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "いち",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "ひとつ (hitotsu)",
+          "audioAssetRef": null,
+          "speechText": "ひとつ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "一",
-          "reading": "HITOTSU HITOTABI HAJIME",
-          "translation": "one",
+          "text": "一つ",
+          "reading": "hitotsu",
+          "translation": "one thing",
+          "speechText": "一つ",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「一」です。",
-          "reading": "",
-          "translation": "This is the kanji 「一」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "一人",
+          "reading": "hitori",
+          "translation": "one person",
+          "speechText": "一人",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「一」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「一」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
-        },
-        {
-          "text": "「一」を読みます。",
-          "reading": "",
-          "translation": "I read 「一」.",
-          "showsCoreMeaning": false,
+          "text": "りんごを一つください。",
+          "reading": "ringo o hitotsu kudasai.",
+          "translation": "One apple, please.",
+          "speechText": "りんごを一つください。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "IL",
+          "value": "일 / il",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "일",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "하나 / hana",
+          "audioAssetRef": null,
+          "speechText": "하나",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "一",
-          "reading": "IL",
-          "translation": "one",
+          "text": "일등",
+          "reading": "ildeung",
+          "translation": "first place",
+          "speechText": "일등",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘一’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘一’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "일주일",
+          "reading": "iljuil",
+          "translation": "one week",
+          "speechText": "일주일",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘一’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘一’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
-        },
-        {
-          "text": "‘一’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘一’.",
-          "showsCoreMeaning": false,
+          "text": "하나만 주세요.",
+          "reading": "hanaman juseyo.",
+          "translation": "Just one, please.",
+          "speechText": "하나만 주세요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,6 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

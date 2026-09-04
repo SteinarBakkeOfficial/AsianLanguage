@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "中",
-          "reading": "zhōng",
+          "text": "中间",
+          "reading": "zhōngjiān",
           "translation": "middle",
+          "speechText": "中间",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是中。",
-          "reading": "",
-          "translation": "This is the character 中.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "中国",
+          "reading": "Zhōngguó",
+          "translation": "China",
+          "speechText": "中国",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习中。",
-          "reading": "",
-          "translation": "I am learning the character 中.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "中"
-          ]
-        },
-        {
-          "text": "我会读中。",
-          "reading": "",
-          "translation": "I can read the character 中.",
-          "showsCoreMeaning": false,
+          "text": "他站在中间。",
+          "reading": "Tā zhàn zài zhōngjiān.",
+          "translation": "He is standing in the middle.",
+          "speechText": "他站在中间。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "中",
-          "reading": "zhōng",
+          "text": "中間",
+          "reading": "zhōngjiān",
           "translation": "middle",
+          "speechText": "中間",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「中」。",
-          "reading": "",
-          "translation": "This is the character 「中」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "中國",
+          "reading": "Zhōngguó",
+          "translation": "China",
+          "speechText": "中國",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「中」。",
-          "reading": "",
-          "translation": "I am learning the character 「中」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "中"
-          ]
-        },
-        {
-          "text": "我會讀「中」。",
-          "reading": "",
-          "translation": "I can read the character 「中」.",
-          "showsCoreMeaning": false,
+          "text": "他站在中間。",
+          "reading": "Tā zhàn zài zhōngjiān.",
+          "translation": "He is standing in the middle.",
+          "speechText": "他站在中間。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "中間",
+          "reading": "zung1 gaan1",
+          "translation": "middle",
+          "speechText": "中間",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "中"
+          ]
+        },
+        {
+          "text": "中國",
+          "reading": "zung1 gwok3",
+          "translation": "China",
+          "speechText": "中國",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "中"
+          ]
+        },
+        {
+          "text": "佢企喺中間。",
+          "reading": "keoi5 kei5 hai2 zung1 gaan1",
+          "translation": "He is standing in the middle.",
+          "speechText": "佢企喺中間。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "中"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "zung1",
+          "audioAssetRef": null,
+          "speechText": "中",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "中",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "NAKA UCHI ATARU",
+          "system": "on",
+          "value": "チュウ (chū)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ちゅう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "なか (naka)",
+          "audioAssetRef": null,
+          "speechText": "なか",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "中",
-          "reading": "NAKA UCHI ATARU",
-          "translation": "middle",
+          "reading": "naka",
+          "translation": "inside; middle",
+          "speechText": "中",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「中」です。",
-          "reading": "",
-          "translation": "This is the kanji 「中」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "中心",
+          "reading": "chūshin",
+          "translation": "center",
+          "speechText": "中心",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「中」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「中」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "中"
-          ]
-        },
-        {
-          "text": "「中」を読みます。",
-          "reading": "",
-          "translation": "I read 「中」.",
-          "showsCoreMeaning": false,
+          "text": "箱の中にあります。",
+          "reading": "hako no naka ni arimasu.",
+          "translation": "It is inside the box.",
+          "speechText": "箱の中にあります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CWUNG",
+          "value": "중 / jung",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "중",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "가운데 / gaunde",
+          "audioAssetRef": null,
+          "speechText": "가운데",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "中",
-          "reading": "CWUNG",
-          "translation": "middle",
+          "text": "중심",
+          "reading": "jungsim",
+          "translation": "center",
+          "speechText": "중심",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘中’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘中’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "중국",
+          "reading": "jungguk",
+          "translation": "China",
+          "speechText": "중국",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘中’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘中’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "中"
-          ]
-        },
-        {
-          "text": "‘中’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘中’.",
-          "showsCoreMeaning": false,
+          "text": "가운데에 있어요.",
+          "reading": "gaundee isseoyo.",
+          "translation": "It is in the middle.",
+          "speechText": "가운데에 있어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

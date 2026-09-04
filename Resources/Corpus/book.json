@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "册",
-          "reading": "cè",
-          "translation": "book",
+          "text": "手册",
+          "reading": "shǒucè",
+          "translation": "handbook",
+          "speechText": "手册",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是册。",
-          "reading": "",
-          "translation": "This is the character 册.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "画册",
+          "reading": "huàcè",
+          "translation": "picture album",
+          "speechText": "画册",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习册。",
-          "reading": "",
-          "translation": "I am learning the character 册.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "册"
-          ]
-        },
-        {
-          "text": "我会读册。",
-          "reading": "",
-          "translation": "I can read the character 册.",
-          "showsCoreMeaning": false,
+          "text": "这是一本手册。",
+          "reading": "Zhè shì yì běn shǒucè.",
+          "translation": "This is a handbook.",
+          "speechText": "这是一本手册。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -95,7 +89,7 @@
           "system": "pinyin",
           "value": "cè",
           "audioAssetRef": null,
-          "speechText": "册",
+          "speechText": "冊",
           "speechLanguage": "mandarin"
         }
       ],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "冊",
-          "reading": "cè",
-          "translation": "book",
+          "text": "手冊",
+          "reading": "shǒucè",
+          "translation": "handbook",
+          "speechText": "手冊",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「冊」。",
-          "reading": "",
-          "translation": "This is the character 「冊」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "画冊",
+          "reading": "huàcè",
+          "translation": "picture album",
+          "speechText": "画冊",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「冊」。",
-          "reading": "",
-          "translation": "I am learning the character 「冊」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "册"
-          ]
-        },
-        {
-          "text": "我會讀「冊」。",
-          "reading": "",
-          "translation": "I can read the character 「冊」.",
-          "showsCoreMeaning": false,
+          "text": "這是一本手冊。",
+          "reading": "Zhè shì yì běn shǒucè.",
+          "translation": "This is a handbook.",
+          "speechText": "這是一本手冊。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,28 +140,79 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "手冊",
+          "reading": "sau2 caak3",
+          "translation": "handbook",
+          "speechText": "手冊",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "册"
+          ]
+        },
+        {
+          "text": "畫冊",
+          "reading": "waa2 caak3",
+          "translation": "picture album",
+          "speechText": "畫冊",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "册"
+          ]
+        },
+        {
+          "text": "呢本係手冊。",
+          "reading": "ni1 bun2 hai6 sau2 caak3",
+          "translation": "This is a handbook.",
+          "speechText": "呢本係手冊。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "册"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
           "value": "cè",
           "audioAssetRef": null,
-          "speechText": "册",
+          "speechText": "冊",
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "caak3",
+          "audioAssetRef": null,
+          "speechText": "冊",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "冊",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "FUMI",
+          "system": "on",
+          "value": "サツ (satsu)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "さつ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +220,11 @@
       ],
       "examples": [
         {
-          "text": "冊",
-          "reading": "FUMI",
-          "translation": "book",
+          "text": "一冊",
+          "reading": "issatsu",
+          "translation": "one volume",
+          "speechText": "一冊",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +234,13 @@
           ]
         },
         {
-          "text": "これは「冊」です。",
-          "reading": "",
-          "translation": "This is the kanji 「冊」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "冊子",
+          "reading": "sasshi",
+          "translation": "booklet",
+          "speechText": "冊子",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +248,12 @@
           ]
         },
         {
-          "text": "「冊」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「冊」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "册"
-          ]
-        },
-        {
-          "text": "「冊」を読みます。",
-          "reading": "",
-          "translation": "I read 「冊」.",
-          "showsCoreMeaning": false,
+          "text": "本を一冊買いました。",
+          "reading": "hon o issatsu kaimashita.",
+          "translation": "I bought one book.",
+          "speechText": "本を一冊買いました。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +269,10 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CHAYK",
+          "value": "책 / chaek",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "책",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +280,11 @@
       ],
       "examples": [
         {
-          "text": "冊",
-          "reading": "CHAYK",
+          "text": "책",
+          "reading": "chaek",
           "translation": "book",
+          "speechText": "책",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +294,13 @@
           ]
         },
         {
-          "text": "이것은 ‘冊’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘冊’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "책자",
+          "reading": "chaekja",
+          "translation": "booklet",
+          "speechText": "책자",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +308,12 @@
           ]
         },
         {
-          "text": "‘冊’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘冊’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "册"
-          ]
-        },
-        {
-          "text": "‘冊’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘冊’.",
-          "showsCoreMeaning": false,
+          "text": "책 한 권을 샀어요.",
+          "reading": "chaek han gwoneul sasseoyo.",
+          "translation": "I bought one book.",
+          "speechText": "책 한 권을 샀어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +560,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +626,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

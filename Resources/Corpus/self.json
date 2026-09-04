@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "自",
-          "reading": "zì",
-          "translation": "self",
+          "text": "自己",
+          "reading": "zìjǐ",
+          "translation": "self; oneself",
+          "speechText": "自己",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是自。",
-          "reading": "",
-          "translation": "This is the character 自.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "自然",
+          "reading": "zìrán",
+          "translation": "nature; natural",
+          "speechText": "自然",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习自。",
-          "reading": "",
-          "translation": "I am learning the character 自.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "自"
-          ]
-        },
-        {
-          "text": "我会读自。",
-          "reading": "",
-          "translation": "I can read the character 自.",
-          "showsCoreMeaning": false,
+          "text": "我自己来。",
+          "reading": "Wǒ zìjǐ lái.",
+          "translation": "I will do it myself.",
+          "speechText": "我自己来。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "自",
-          "reading": "zì",
-          "translation": "self",
+          "text": "自己",
+          "reading": "zìjǐ",
+          "translation": "self; oneself",
+          "speechText": "自己",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「自」。",
-          "reading": "",
-          "translation": "This is the character 「自」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "自然",
+          "reading": "zìrán",
+          "translation": "nature; natural",
+          "speechText": "自然",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「自」。",
-          "reading": "",
-          "translation": "I am learning the character 「自」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "自"
-          ]
-        },
-        {
-          "text": "我會讀「自」。",
-          "reading": "",
-          "translation": "I can read the character 「自」.",
-          "showsCoreMeaning": false,
+          "text": "我自己來。",
+          "reading": "Wǒ zìjǐ lái.",
+          "translation": "I will do it myself.",
+          "speechText": "我自己來。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "自己",
+          "reading": "zi6 gei2",
+          "translation": "self; oneself",
+          "speechText": "自己",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "自"
+          ]
+        },
+        {
+          "text": "自然",
+          "reading": "zi6 jin4",
+          "translation": "nature; natural",
+          "speechText": "自然",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "自"
+          ]
+        },
+        {
+          "text": "我自己嚟。",
+          "reading": "ngo5 zi6 gei2 lai4",
+          "translation": "I will do it myself.",
+          "speechText": "我自己嚟。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "自"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "zi6",
+          "audioAssetRef": null,
+          "speechText": "自",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "自",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "MIZUKARA ONOZUKARA YORI",
+          "system": "on",
+          "value": "ジ (ji)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "じ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "みずから (mizukara)",
+          "audioAssetRef": null,
+          "speechText": "みずから",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "自",
-          "reading": "MIZUKARA ONOZUKARA YORI",
-          "translation": "self",
+          "text": "自分",
+          "reading": "jibun",
+          "translation": "oneself",
+          "speechText": "自分",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「自」です。",
-          "reading": "",
-          "translation": "This is the kanji 「自」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "自然",
+          "reading": "shizen",
+          "translation": "nature",
+          "speechText": "自然",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「自」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「自」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "自"
-          ]
-        },
-        {
-          "text": "「自」を読みます。",
-          "reading": "",
-          "translation": "I read 「自」.",
-          "showsCoreMeaning": false,
+          "text": "自分でします。",
+          "reading": "jibun de shimasu.",
+          "translation": "I will do it myself.",
+          "speechText": "自分でします。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CA",
+          "value": "자 / ja",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "자",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "스스로 / seuseuro",
+          "audioAssetRef": null,
+          "speechText": "스스로",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "自",
-          "reading": "CA",
-          "translation": "self",
+          "text": "자기",
+          "reading": "jagi",
+          "translation": "self; oneself",
+          "speechText": "자기",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘自’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘自’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "자연",
+          "reading": "jayeon",
+          "translation": "nature",
+          "speechText": "자연",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘自’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘自’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "自"
-          ]
-        },
-        {
-          "text": "‘自’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘自’.",
-          "showsCoreMeaning": false,
+          "text": "스스로 해요.",
+          "reading": "seuseuro haeyo.",
+          "translation": "I do it myself.",
+          "speechText": "스스로 해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

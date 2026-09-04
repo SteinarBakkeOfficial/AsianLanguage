@@ -40,7 +40,9 @@
         {
           "text": "羊",
           "reading": "yáng",
-          "translation": "sheep",
+          "translation": "sheep; goat",
+          "speechText": "羊",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是羊。",
-          "reading": "",
-          "translation": "This is the character 羊.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "羊毛",
+          "reading": "yángmáo",
+          "translation": "wool",
+          "speechText": "羊毛",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习羊。",
-          "reading": "",
-          "translation": "I am learning the character 羊.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "羊"
-          ]
-        },
-        {
-          "text": "我会读羊。",
-          "reading": "",
-          "translation": "I can read the character 羊.",
-          "showsCoreMeaning": false,
+          "text": "草地上有羊。",
+          "reading": "Cǎodì shang yǒu yáng.",
+          "translation": "There are sheep on the grass.",
+          "speechText": "草地上有羊。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -106,7 +100,9 @@
         {
           "text": "羊",
           "reading": "yáng",
-          "translation": "sheep",
+          "translation": "sheep; goat",
+          "speechText": "羊",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「羊」。",
-          "reading": "",
-          "translation": "This is the character 「羊」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "羊毛",
+          "reading": "yángmáo",
+          "translation": "wool",
+          "speechText": "羊毛",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「羊」。",
-          "reading": "",
-          "translation": "I am learning the character 「羊」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "羊"
-          ]
-        },
-        {
-          "text": "我會讀「羊」。",
-          "reading": "",
-          "translation": "I can read the character 「羊」.",
-          "showsCoreMeaning": false,
+          "text": "草地上有羊。",
+          "reading": "Cǎodì shang yǒu yáng.",
+          "translation": "There are sheep on the grass.",
+          "speechText": "草地上有羊。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "羊",
+          "reading": "joeng4",
+          "translation": "sheep; goat",
+          "speechText": "羊",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "羊"
+          ]
+        },
+        {
+          "text": "羊毛",
+          "reading": "joeng4 mou4",
+          "translation": "wool",
+          "speechText": "羊毛",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "羊"
+          ]
+        },
+        {
+          "text": "草地有羊。",
+          "reading": "cou2 dei6 jau5 joeng4",
+          "translation": "There are sheep on the grass.",
+          "speechText": "草地有羊。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "羊"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "joeng4",
+          "audioAssetRef": null,
+          "speechText": "羊",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "羊",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "HITSUJI",
+          "system": "on",
+          "value": "ヨウ (yō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "よう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "ひつじ (hitsuji)",
+          "audioAssetRef": null,
+          "speechText": "ひつじ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "羊",
-          "reading": "HITSUJI",
+          "reading": "hitsuji",
           "translation": "sheep",
+          "speechText": "羊",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「羊」です。",
-          "reading": "",
-          "translation": "This is the kanji 「羊」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "羊毛",
+          "reading": "yōmō",
+          "translation": "wool",
+          "speechText": "羊毛",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「羊」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「羊」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "羊"
-          ]
-        },
-        {
-          "text": "「羊」を読みます。",
-          "reading": "",
-          "translation": "I read 「羊」.",
-          "showsCoreMeaning": false,
+          "text": "羊が草を食べます。",
+          "reading": "hitsuji ga kusa o tabemasu.",
+          "translation": "The sheep eats grass.",
+          "speechText": "羊が草を食べます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,10 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "YANG",
+          "value": "양 / yang",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "양",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +287,11 @@
       ],
       "examples": [
         {
-          "text": "羊",
-          "reading": "YANG",
-          "translation": "sheep",
+          "text": "양모",
+          "reading": "yangmo",
+          "translation": "wool",
+          "speechText": "양모",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +301,13 @@
           ]
         },
         {
-          "text": "이것은 ‘羊’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘羊’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "양고기",
+          "reading": "yanggogi",
+          "translation": "mutton",
+          "speechText": "양고기",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +315,12 @@
           ]
         },
         {
-          "text": "‘羊’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘羊’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "羊"
-          ]
-        },
-        {
-          "text": "‘羊’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘羊’.",
-          "showsCoreMeaning": false,
+          "text": "양이 풀을 먹어요.",
+          "reading": "yangi pureul meogeoyo.",
+          "translation": "The sheep eats grass.",
+          "speechText": "양이 풀을 먹어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +567,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +633,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

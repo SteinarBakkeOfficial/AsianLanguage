@@ -41,6 +41,8 @@
           "text": "豆",
           "reading": "dòu",
           "translation": "bean",
+          "speechText": "豆",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是豆。",
-          "reading": "",
-          "translation": "This is the character 豆.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "豆腐",
+          "reading": "dòufu",
+          "translation": "tofu",
+          "speechText": "豆腐",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习豆。",
-          "reading": "",
-          "translation": "I am learning the character 豆.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "豆"
-          ]
-        },
-        {
-          "text": "我会读豆。",
-          "reading": "",
-          "translation": "I can read the character 豆.",
-          "showsCoreMeaning": false,
+          "text": "我喜欢吃豆子。",
+          "reading": "Wǒ xǐhuan chī dòuzi.",
+          "translation": "I like eating beans.",
+          "speechText": "我喜欢吃豆子。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -107,6 +101,8 @@
           "text": "豆",
           "reading": "dòu",
           "translation": "bean",
+          "speechText": "豆",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「豆」。",
-          "reading": "",
-          "translation": "This is the character 「豆」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "豆腐",
+          "reading": "dòufu",
+          "translation": "tofu",
+          "speechText": "豆腐",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「豆」。",
-          "reading": "",
-          "translation": "I am learning the character 「豆」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "豆"
-          ]
-        },
-        {
-          "text": "我會讀「豆」。",
-          "reading": "",
-          "translation": "I can read the character 「豆」.",
-          "showsCoreMeaning": false,
+          "text": "我喜歡吃豆子。",
+          "reading": "Wǒ xǐhuan chī dòuzi.",
+          "translation": "I like eating beans.",
+          "speechText": "我喜歡吃豆子。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "豆",
+          "reading": "dau6",
+          "translation": "bean",
+          "speechText": "豆",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "豆"
+          ]
+        },
+        {
+          "text": "豆腐",
+          "reading": "dau6 fu6",
+          "translation": "tofu",
+          "speechText": "豆腐",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "豆"
+          ]
+        },
+        {
+          "text": "我鍾意食豆。",
+          "reading": "ngo5 zung1 ji3 sik6 dau6",
+          "translation": "I like eating beans.",
+          "speechText": "我鍾意食豆。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "豆"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "dau6",
+          "audioAssetRef": null,
+          "speechText": "豆",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "豆",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "MAME TAKATSUKI",
+          "system": "on",
+          "value": "トウ (tō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "とう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "まめ (mame)",
+          "audioAssetRef": null,
+          "speechText": "まめ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "豆",
-          "reading": "MAME TAKATSUKI",
+          "reading": "mame",
           "translation": "bean",
+          "speechText": "豆",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「豆」です。",
-          "reading": "",
-          "translation": "This is the kanji 「豆」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "大豆",
+          "reading": "daizu",
+          "translation": "soybean",
+          "speechText": "大豆",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「豆」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「豆」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "豆"
-          ]
-        },
-        {
-          "text": "「豆」を読みます。",
-          "reading": "",
-          "translation": "I read 「豆」.",
-          "showsCoreMeaning": false,
+          "text": "豆を食べます。",
+          "reading": "mame o tabemasu.",
+          "translation": "I eat beans.",
+          "speechText": "豆を食べます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "TWU",
+          "value": "두 / du",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "두",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "콩 / kong",
+          "audioAssetRef": null,
+          "speechText": "콩",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "豆",
-          "reading": "TWU",
-          "translation": "bean",
+          "text": "두부",
+          "reading": "dubu",
+          "translation": "tofu",
+          "speechText": "두부",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘豆’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘豆’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "대두",
+          "reading": "daedu",
+          "translation": "soybean",
+          "speechText": "대두",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘豆’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘豆’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "豆"
-          ]
-        },
-        {
-          "text": "‘豆’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘豆’.",
-          "showsCoreMeaning": false,
+          "text": "콩을 먹어요.",
+          "reading": "kongeul meogeoyo.",
+          "translation": "I eat beans.",
+          "speechText": "콩을 먹어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

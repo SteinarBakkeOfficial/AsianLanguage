@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "守",
-          "reading": "shǒu",
-          "translation": "guard",
+          "text": "守护",
+          "reading": "shǒuhù",
+          "translation": "protect; guard",
+          "speechText": "守护",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是守。",
-          "reading": "",
-          "translation": "This is the character 守.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "遵守",
+          "reading": "zūnshǒu",
+          "translation": "obey; follow",
+          "speechText": "遵守",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习守。",
-          "reading": "",
-          "translation": "I am learning the character 守.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "守"
-          ]
-        },
-        {
-          "text": "我会读守。",
-          "reading": "",
-          "translation": "I can read the character 守.",
-          "showsCoreMeaning": false,
+          "text": "请遵守规则。",
+          "reading": "Qǐng zūnshǒu guīzé.",
+          "translation": "Please follow the rules.",
+          "speechText": "请遵守规则。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "守",
-          "reading": "shǒu",
-          "translation": "guard",
+          "text": "守護",
+          "reading": "shǒuhù",
+          "translation": "protect; guard",
+          "speechText": "守護",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「守」。",
-          "reading": "",
-          "translation": "This is the character 「守」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "遵守",
+          "reading": "zūnshǒu",
+          "translation": "obey; follow",
+          "speechText": "遵守",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「守」。",
-          "reading": "",
-          "translation": "I am learning the character 「守」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "守"
-          ]
-        },
-        {
-          "text": "我會讀「守」。",
-          "reading": "",
-          "translation": "I can read the character 「守」.",
-          "showsCoreMeaning": false,
+          "text": "請遵守規則。",
+          "reading": "Qǐng zūnshǒu guīzé.",
+          "translation": "Please follow the rules.",
+          "speechText": "請遵守規則。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "守護",
+          "reading": "sau2 wu6",
+          "translation": "protect; guard",
+          "speechText": "守護",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "守"
+          ]
+        },
+        {
+          "text": "遵守",
+          "reading": "zeon1 sau2",
+          "translation": "obey; follow",
+          "speechText": "遵守",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "守"
+          ]
+        },
+        {
+          "text": "請遵守規則。",
+          "reading": "cing2 zeon1 sau2 kwai1 zak1",
+          "translation": "Please follow the rules.",
+          "speechText": "請遵守規則。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "守"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "sau2",
+          "audioAssetRef": null,
+          "speechText": "守",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "守",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "MAMORU MORI MAMORI",
+          "system": "on",
+          "value": "シュ (shu)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "しゅ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "ス (su)",
+          "audioAssetRef": null,
+          "speechText": "す",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "まもる (mamoru)",
+          "audioAssetRef": null,
+          "speechText": "まもる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "守",
-          "reading": "MAMORU MORI MAMORI",
-          "translation": "guard",
+          "text": "守る",
+          "reading": "mamoru",
+          "translation": "protect; obey",
+          "speechText": "守る",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「守」です。",
-          "reading": "",
-          "translation": "This is the kanji 「守」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "守備",
+          "reading": "shubi",
+          "translation": "defense",
+          "speechText": "守備",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「守」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「守」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "守"
-          ]
-        },
-        {
-          "text": "「守」を読みます。",
-          "reading": "",
-          "translation": "I read 「守」.",
-          "showsCoreMeaning": false,
+          "text": "ルールを守ります。",
+          "reading": "rūru o mamorimasu.",
+          "translation": "I follow the rules.",
+          "speechText": "ルールを守ります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SWU",
+          "value": "수 / su",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "수",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "지키다 / jikida",
+          "audioAssetRef": null,
+          "speechText": "지키다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "守",
-          "reading": "SWU",
-          "translation": "guard",
+          "text": "수비",
+          "reading": "subi",
+          "translation": "defense",
+          "speechText": "수비",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘守’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘守’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "준수",
+          "reading": "junsu",
+          "translation": "compliance; observance",
+          "speechText": "준수",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘守’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘守’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "守"
-          ]
-        },
-        {
-          "text": "‘守’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘守’.",
-          "showsCoreMeaning": false,
+          "text": "규칙을 지켜요.",
+          "reading": "gyuchigeul jikyeoyo.",
+          "translation": "I follow the rules.",
+          "speechText": "규칙을 지켜요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

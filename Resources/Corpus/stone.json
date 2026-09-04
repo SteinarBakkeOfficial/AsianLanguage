@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "石",
-          "reading": "shí",
+          "text": "石头",
+          "reading": "shítou",
           "translation": "stone",
+          "speechText": "石头",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是石。",
-          "reading": "",
-          "translation": "This is the character 石.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "石桥",
+          "reading": "shíqiáo",
+          "translation": "stone bridge",
+          "speechText": "石桥",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习石。",
-          "reading": "",
-          "translation": "I am learning the character 石.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "石"
-          ]
-        },
-        {
-          "text": "我会读石。",
-          "reading": "",
-          "translation": "I can read the character 石.",
-          "showsCoreMeaning": false,
+          "text": "地上有一块石头。",
+          "reading": "Dìshang yǒu yí kuài shítou.",
+          "translation": "There is a stone on the ground.",
+          "speechText": "地上有一块石头。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "石",
-          "reading": "shí",
+          "text": "石頭",
+          "reading": "shítou",
           "translation": "stone",
+          "speechText": "石頭",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「石」。",
-          "reading": "",
-          "translation": "This is the character 「石」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "石橋",
+          "reading": "shíqiáo",
+          "translation": "stone bridge",
+          "speechText": "石橋",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「石」。",
-          "reading": "",
-          "translation": "I am learning the character 「石」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "石"
-          ]
-        },
-        {
-          "text": "我會讀「石」。",
-          "reading": "",
-          "translation": "I can read the character 「石」.",
-          "showsCoreMeaning": false,
+          "text": "地上有一塊石頭。",
+          "reading": "Dìshang yǒu yí kuài shítou.",
+          "translation": "There is a stone on the ground.",
+          "speechText": "地上有一塊石頭。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "石頭",
+          "reading": "sek6 tau4",
+          "translation": "stone",
+          "speechText": "石頭",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "石"
+          ]
+        },
+        {
+          "text": "石橋",
+          "reading": "sek6 kiu4",
+          "translation": "stone bridge",
+          "speechText": "石橋",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "石"
+          ]
+        },
+        {
+          "text": "地下有舊石頭。",
+          "reading": "dei6 haa6 jau5 gau6 sek6 tau4",
+          "translation": "There is a stone on the ground.",
+          "speechText": "地下有舊石頭。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "石"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "sek6",
+          "audioAssetRef": null,
+          "speechText": "石",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "石",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "ISHI",
+          "system": "on",
+          "value": "セキ (seki)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "せき",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "いし (ishi)",
+          "audioAssetRef": null,
+          "speechText": "いし",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "石",
-          "reading": "ISHI",
+          "reading": "ishi",
           "translation": "stone",
+          "speechText": "石",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「石」です。",
-          "reading": "",
-          "translation": "This is the kanji 「石」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "宝石",
+          "reading": "hōseki",
+          "translation": "jewel; gemstone",
+          "speechText": "宝石",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「石」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「石」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "石"
-          ]
-        },
-        {
-          "text": "「石」を読みます。",
-          "reading": "",
-          "translation": "I read 「石」.",
-          "showsCoreMeaning": false,
+          "text": "石を拾います。",
+          "reading": "ishi o hiroimasu.",
+          "translation": "I pick up a stone.",
+          "speechText": "石を拾います。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SEK",
+          "value": "석 / seok",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "석",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "돌 / dol",
+          "audioAssetRef": null,
+          "speechText": "돌",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "石",
-          "reading": "SEK",
-          "translation": "stone",
+          "text": "석재",
+          "reading": "seokjae",
+          "translation": "stone material",
+          "speechText": "석재",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘石’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘石’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "보석",
+          "reading": "boseok",
+          "translation": "jewel; gemstone",
+          "speechText": "보석",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘石’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘石’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "石"
-          ]
-        },
-        {
-          "text": "‘石’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘石’.",
-          "showsCoreMeaning": false,
+          "text": "돌을 주워요.",
+          "reading": "doreul juwoyo.",
+          "translation": "I pick up a stone.",
+          "speechText": "돌을 주워요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

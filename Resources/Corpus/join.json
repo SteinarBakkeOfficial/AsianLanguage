@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "合",
-          "reading": "hé",
-          "translation": "join",
+          "text": "合作",
+          "reading": "hézuò",
+          "translation": "cooperate",
+          "speechText": "合作",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是合。",
-          "reading": "",
-          "translation": "This is the character 合.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "合适",
+          "reading": "héshì",
+          "translation": "suitable",
+          "speechText": "合适",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习合。",
-          "reading": "",
-          "translation": "I am learning the character 合.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "合"
-          ]
-        },
-        {
-          "text": "我会读合。",
-          "reading": "",
-          "translation": "I can read the character 合.",
-          "showsCoreMeaning": false,
+          "text": "我们一起合作。",
+          "reading": "Wǒmen yìqǐ hézuò.",
+          "translation": "Let’s work together.",
+          "speechText": "我们一起合作。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "合",
-          "reading": "hé",
-          "translation": "join",
+          "text": "合作",
+          "reading": "hézuò",
+          "translation": "cooperate",
+          "speechText": "合作",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「合」。",
-          "reading": "",
-          "translation": "This is the character 「合」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "合適",
+          "reading": "héshì",
+          "translation": "suitable",
+          "speechText": "合適",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「合」。",
-          "reading": "",
-          "translation": "I am learning the character 「合」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "合"
-          ]
-        },
-        {
-          "text": "我會讀「合」。",
-          "reading": "",
-          "translation": "I can read the character 「合」.",
-          "showsCoreMeaning": false,
+          "text": "我們一起合作。",
+          "reading": "Wǒmen yìqǐ hézuò.",
+          "translation": "Let’s work together.",
+          "speechText": "我們一起合作。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "合作",
+          "reading": "hap6 zok3",
+          "translation": "cooperate",
+          "speechText": "合作",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "合"
+          ]
+        },
+        {
+          "text": "合適",
+          "reading": "hap6 sik1",
+          "translation": "suitable",
+          "speechText": "合適",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "合"
+          ]
+        },
+        {
+          "text": "我哋一齊合作。",
+          "reading": "ngo5 dei6 jat1 cai4 hap6 zok3",
+          "translation": "Let’s work together.",
+          "speechText": "我哋一齊合作。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "合"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "hap6",
+          "audioAssetRef": null,
+          "speechText": "合",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "合",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "AU AWASERU",
+          "system": "on",
+          "value": "ゴウ (gō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ごう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "あう (au)",
+          "audioAssetRef": null,
+          "speechText": "あう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "あわせる (awaseru)",
+          "audioAssetRef": null,
+          "speechText": "あわせる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "合",
-          "reading": "AU AWASERU",
-          "translation": "join",
+          "text": "合う",
+          "reading": "au",
+          "translation": "fit; match",
+          "speechText": "合う",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「合」です。",
-          "reading": "",
-          "translation": "This is the kanji 「合」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "合計",
+          "reading": "gōkei",
+          "translation": "total",
+          "speechText": "合計",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「合」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「合」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "合"
-          ]
-        },
-        {
-          "text": "「合」を読みます。",
-          "reading": "",
-          "translation": "I read 「合」.",
-          "showsCoreMeaning": false,
+          "text": "二つを合わせます。",
+          "reading": "futatsu o awasemasu.",
+          "translation": "I put the two together.",
+          "speechText": "二つを合わせます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "HAP KAP",
+          "value": "합 / hap",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "합",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean",
+          "value": "합치다 / hapchida",
+          "audioAssetRef": null,
+          "speechText": "합치다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "合",
-          "reading": "HAP KAP",
-          "translation": "join",
+          "text": "합계",
+          "reading": "hapgye",
+          "translation": "total",
+          "speechText": "합계",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘合’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘合’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "합동",
+          "reading": "hapdong",
+          "translation": "joint; combined",
+          "speechText": "합동",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘合’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘合’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "合"
-          ]
-        },
-        {
-          "text": "‘合’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘合’.",
-          "showsCoreMeaning": false,
+          "text": "두 개를 합쳐요.",
+          "reading": "du gaereul hapchyeoyo.",
+          "translation": "I put the two together.",
+          "speechText": "두 개를 합쳐요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "林",
-          "reading": "lín",
-          "translation": "forest",
+          "text": "树林",
+          "reading": "shùlín",
+          "translation": "grove; woods",
+          "speechText": "树林",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是林。",
-          "reading": "",
-          "translation": "This is the character 林.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "森林",
+          "reading": "sēnlín",
+          "translation": "forest",
+          "speechText": "森林",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习林。",
-          "reading": "",
-          "translation": "I am learning the character 林.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "林"
-          ]
-        },
-        {
-          "text": "我会读林。",
-          "reading": "",
-          "translation": "I can read the character 林.",
-          "showsCoreMeaning": false,
+          "text": "我们走进树林。",
+          "reading": "Wǒmen zǒu jìn shùlín.",
+          "translation": "We walk into the woods.",
+          "speechText": "我们走进树林。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "林",
-          "reading": "lín",
-          "translation": "forest",
+          "text": "樹林",
+          "reading": "shùlín",
+          "translation": "grove; woods",
+          "speechText": "樹林",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「林」。",
-          "reading": "",
-          "translation": "This is the character 「林」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "森林",
+          "reading": "sēnlín",
+          "translation": "forest",
+          "speechText": "森林",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「林」。",
-          "reading": "",
-          "translation": "I am learning the character 「林」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "林"
-          ]
-        },
-        {
-          "text": "我會讀「林」。",
-          "reading": "",
-          "translation": "I can read the character 「林」.",
-          "showsCoreMeaning": false,
+          "text": "我們走進樹林。",
+          "reading": "Wǒmen zǒu jìn shùlín.",
+          "translation": "We walk into the woods.",
+          "speechText": "我們走進樹林。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "樹林",
+          "reading": "syu6 lam4",
+          "translation": "grove; woods",
+          "speechText": "樹林",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "林"
+          ]
+        },
+        {
+          "text": "森林",
+          "reading": "sam1 lam4",
+          "translation": "forest",
+          "speechText": "森林",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "林"
+          ]
+        },
+        {
+          "text": "我哋行入樹林。",
+          "reading": "ngo5 dei6 haang4 jap6 syu6 lam4",
+          "translation": "We walk into the woods.",
+          "speechText": "我哋行入樹林。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "林"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "lam4",
+          "audioAssetRef": null,
+          "speechText": "林",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "林",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "HAYASHI",
+          "system": "on",
+          "value": "リン (rin)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "りん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "はやし (hayashi)",
+          "audioAssetRef": null,
+          "speechText": "はやし",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "林",
-          "reading": "HAYASHI",
-          "translation": "forest",
+          "reading": "hayashi",
+          "translation": "woods; grove",
+          "speechText": "林",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「林」です。",
-          "reading": "",
-          "translation": "This is the kanji 「林」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "森林",
+          "reading": "shinrin",
+          "translation": "forest",
+          "speechText": "森林",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「林」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「林」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "林"
-          ]
-        },
-        {
-          "text": "「林」を読みます。",
-          "reading": "",
-          "translation": "I read 「林」.",
-          "showsCoreMeaning": false,
+          "text": "林を歩きます。",
+          "reading": "hayashi o arukimasu.",
+          "translation": "I walk through the woods.",
+          "speechText": "林を歩きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,24 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "LIM",
+          "value": "림 / rim",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "림",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "hanja · word-initial form",
+          "value": "임 / im",
+          "audioAssetRef": null,
+          "speechText": "임",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "숲 / sup",
+          "audioAssetRef": null,
+          "speechText": "숲",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "林",
-          "reading": "LIM",
-          "translation": "forest",
+          "text": "산림",
+          "reading": "sallim",
+          "translation": "forest; woodland",
+          "speechText": "산림",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘林’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘林’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "임업",
+          "reading": "imeop",
+          "translation": "forestry",
+          "speechText": "임업",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘林’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘林’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "林"
-          ]
-        },
-        {
-          "text": "‘林’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘林’.",
-          "showsCoreMeaning": false,
+          "text": "숲을 걸어요.",
+          "reading": "supeul georeoyo.",
+          "translation": "I walk through the forest.",
+          "speechText": "숲을 걸어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

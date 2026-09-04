@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "古",
-          "reading": "gǔ",
-          "translation": "old",
+          "text": "古代",
+          "reading": "gǔdài",
+          "translation": "ancient times",
+          "speechText": "古代",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是古。",
-          "reading": "",
-          "translation": "This is the character 古.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "古城",
+          "reading": "gǔchéng",
+          "translation": "ancient city",
+          "speechText": "古城",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习古。",
-          "reading": "",
-          "translation": "I am learning the character 古.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "古"
-          ]
-        },
-        {
-          "text": "我会读古。",
-          "reading": "",
-          "translation": "I can read the character 古.",
-          "showsCoreMeaning": false,
+          "text": "这是一座古城。",
+          "reading": "Zhè shì yí zuò gǔchéng.",
+          "translation": "This is an ancient city.",
+          "speechText": "这是一座古城。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "古",
-          "reading": "gǔ",
-          "translation": "old",
+          "text": "古代",
+          "reading": "gǔdài",
+          "translation": "ancient times",
+          "speechText": "古代",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「古」。",
-          "reading": "",
-          "translation": "This is the character 「古」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "古城",
+          "reading": "gǔchéng",
+          "translation": "ancient city",
+          "speechText": "古城",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「古」。",
-          "reading": "",
-          "translation": "I am learning the character 「古」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "古"
-          ]
-        },
-        {
-          "text": "我會讀「古」。",
-          "reading": "",
-          "translation": "I can read the character 「古」.",
-          "showsCoreMeaning": false,
+          "text": "這是一座古城。",
+          "reading": "Zhè shì yí zuò gǔchéng.",
+          "translation": "This is an ancient city.",
+          "speechText": "這是一座古城。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "古代",
+          "reading": "gu2 doi6",
+          "translation": "ancient times",
+          "speechText": "古代",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "古"
+          ]
+        },
+        {
+          "text": "古城",
+          "reading": "gu2 sing4",
+          "translation": "ancient city",
+          "speechText": "古城",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "古"
+          ]
+        },
+        {
+          "text": "呢座係古城。",
+          "reading": "ni1 zo6 hai6 gu2 sing4",
+          "translation": "This is an ancient city.",
+          "speechText": "呢座係古城。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "古"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gu2",
+          "audioAssetRef": null,
+          "speechText": "古",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "古",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "FURUI INISHIE",
+          "system": "on",
+          "value": "コ (ko)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "こ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "ふるい (furui)",
+          "audioAssetRef": null,
+          "speechText": "ふるい",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "古",
-          "reading": "FURUI INISHIE",
+          "text": "古い",
+          "reading": "furui",
           "translation": "old",
+          "speechText": "古い",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「古」です。",
-          "reading": "",
-          "translation": "This is the kanji 「古」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "古代",
+          "reading": "kodai",
+          "translation": "ancient times",
+          "speechText": "古代",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「古」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「古」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "古"
-          ]
-        },
-        {
-          "text": "「古」を読みます。",
-          "reading": "",
-          "translation": "I read 「古」.",
-          "showsCoreMeaning": false,
+          "text": "この本は古いです。",
+          "reading": "kono hon wa furui desu.",
+          "translation": "This book is old.",
+          "speechText": "この本は古いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "KO",
+          "value": "고 / go",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "고",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "옛 / yet",
+          "audioAssetRef": null,
+          "speechText": "옛",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "古",
-          "reading": "KO",
-          "translation": "old",
+          "text": "고대",
+          "reading": "godae",
+          "translation": "ancient times",
+          "speechText": "고대",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘古’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘古’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "고전",
+          "reading": "gojeon",
+          "translation": "classics",
+          "speechText": "고전",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘古’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘古’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "古"
-          ]
-        },
-        {
-          "text": "‘古’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘古’.",
-          "showsCoreMeaning": false,
+          "text": "이 책은 오래됐어요.",
+          "reading": "i chaegeun oraedwaesseoyo.",
+          "translation": "This book is old.",
+          "speechText": "이 책은 오래됐어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

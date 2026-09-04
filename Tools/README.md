@@ -17,6 +17,8 @@ Use the following sequence after editing a Symbol folder or adding local assets:
 
 `Import-V1RuntimeCorpus.ps1` is the current V1 research-to-runtime import. It reads the 126-record complete-evolution manifest, copies the selected normalized and original ZDIC SVGs, copies the approved v2 origin illustrations, writes the 126 runtime JSON records, and emits `Resources/V1CorpusManifest.json` for inspection. It deliberately preserves review-required rights and editorial status; it does not approve or clear content for release.
 
+`Import-CorrectedTargetLanguageCorpus.ps1` merges the corrected target-language handoff from `Reference Pictures/Chatgpt/Corpus_corrected_target_languages/Corpus` into the 126 existing runtime records. It replaces modern-language forms, readings, examples, speech text, and usage notes while preserving stable readable IDs, filenames, bundled asset references, and draft/review status. It intentionally leaves the excluded Fire pilot untouched.
+
 `Generate-MuseumTransitionNotes.ps1` compares the local selected museum SVG assets, generates one concise destination-stage `transitionNote` for every available stage in the 126-record runtime corpus, writes the reviewable source package to `content/research/v1-symbols/transition-notes-v1.json`, and updates the runtime records. Origin captions connect the concrete illustration to the first glyph; later captions compare neighboring forms without naming stages or repeating the modern character. It uses conservative visual language and records QA flags for uncertain comparisons; it never invents a missing stage or changes an image.
 
 ## ZDIC research intake

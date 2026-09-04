@@ -34,13 +34,15 @@
         }
       ],
       "glosses": [
-        "head"
+        "head; first; classifier for songs/poems"
       ],
       "examples": [
         {
-          "text": "首",
-          "reading": "shǒu",
-          "translation": "head",
+          "text": "首都",
+          "reading": "shǒudū",
+          "translation": "capital city",
+          "speechText": "首都",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是首。",
-          "reading": "",
-          "translation": "This is the character 首.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "首先",
+          "reading": "shǒuxiān",
+          "translation": "first; first of all",
+          "speechText": "首先",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习首。",
-          "reading": "",
-          "translation": "I am learning the character 首.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "首"
-          ]
-        },
-        {
-          "text": "我会读首。",
-          "reading": "",
-          "translation": "I can read the character 首.",
-          "showsCoreMeaning": false,
+          "text": "这首歌很好听。",
+          "reading": "Zhè shǒu gē hěn hǎotīng.",
+          "translation": "This song sounds very good.",
+          "speechText": "这首歌很好听。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -100,13 +94,15 @@
         }
       ],
       "glosses": [
-        "head"
+        "head; first; classifier for songs/poems"
       ],
       "taiwanExamples": [
         {
-          "text": "首",
-          "reading": "shǒu",
-          "translation": "head",
+          "text": "首都",
+          "reading": "shǒudū",
+          "translation": "capital city",
+          "speechText": "首都",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「首」。",
-          "reading": "",
-          "translation": "This is the character 「首」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "首先",
+          "reading": "shǒuxiān",
+          "translation": "first; first of all",
+          "speechText": "首先",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「首」。",
-          "reading": "",
-          "translation": "I am learning the character 「首」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "首"
-          ]
-        },
-        {
-          "text": "我會讀「首」。",
-          "reading": "",
-          "translation": "I can read the character 「首」.",
-          "showsCoreMeaning": false,
+          "text": "這首歌很好聽。",
+          "reading": "Zhè shǒu gē hěn hǎotīng.",
+          "translation": "This song sounds very good.",
+          "speechText": "這首歌很好聽。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "首都",
+          "reading": "sau2 dou1",
+          "translation": "capital city",
+          "speechText": "首都",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        },
+        {
+          "text": "首先",
+          "reading": "sau2 sin1",
+          "translation": "first; first of all",
+          "speechText": "首先",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        },
+        {
+          "text": "呢首歌好聽。",
+          "reading": "ni1 sau2 go1 hou2 teng1",
+          "translation": "This song sounds good.",
+          "speechText": "呢首歌好聽。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,28 +193,45 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "sau2",
+          "audioAssetRef": null,
+          "speechText": "首",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "首",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "KUBI KOUBE SHIRUSHI",
+          "system": "on",
+          "value": "シュ (shu)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "しゅ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "くび (kubi)",
+          "audioAssetRef": null,
+          "speechText": "くび",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
-        "head"
+        "neck/head; capital; first"
       ],
       "examples": [
         {
           "text": "首",
-          "reading": "KUBI KOUBE SHIRUSHI",
-          "translation": "head",
+          "reading": "kubi",
+          "translation": "neck; head",
+          "speechText": "首",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「首」です。",
-          "reading": "",
-          "translation": "This is the kanji 「首」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "首都",
+          "reading": "shuto",
+          "translation": "capital city",
+          "speechText": "首都",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「首」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「首」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "首"
-          ]
-        },
-        {
-          "text": "「首」を読みます。",
-          "reading": "",
-          "translation": "I read 「首」.",
-          "showsCoreMeaning": false,
+          "text": "首が痛いです。",
+          "reading": "kubi ga itai desu.",
+          "translation": "My neck hurts.",
+          "speechText": "首が痛いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,20 +276,29 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SWU",
+          "value": "수 / su",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "수",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "머리 / meori",
+          "audioAssetRef": null,
+          "speechText": "머리",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
-        "head"
+        "head; first (in compounds)"
       ],
       "examples": [
         {
-          "text": "首",
-          "reading": "SWU",
-          "translation": "head",
+          "text": "수도",
+          "reading": "sudo",
+          "translation": "capital city",
+          "speechText": "수도",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘首’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘首’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "수석",
+          "reading": "suseok",
+          "translation": "top; head position",
+          "speechText": "수석",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘首’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘首’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "首"
-          ]
-        },
-        {
-          "text": "‘首’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘首’.",
-          "showsCoreMeaning": false,
+          "text": "머리가 아파요.",
+          "reading": "meoriga apayo.",
+          "translation": "My head hurts.",
+          "speechText": "머리가 아파요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

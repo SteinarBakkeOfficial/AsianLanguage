@@ -41,6 +41,8 @@
           "text": "心",
           "reading": "xīn",
           "translation": "heart",
+          "speechText": "心",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是心。",
-          "reading": "",
-          "translation": "This is the character 心.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "开心",
+          "reading": "kāixīn",
+          "translation": "happy",
+          "speechText": "开心",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习心。",
-          "reading": "",
-          "translation": "I am learning the character 心.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "心"
-          ]
-        },
-        {
-          "text": "我会读心。",
-          "reading": "",
-          "translation": "I can read the character 心.",
-          "showsCoreMeaning": false,
+          "text": "我很开心。",
+          "reading": "Wǒ hěn kāixīn.",
+          "translation": "I am very happy.",
+          "speechText": "我很开心。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -107,6 +101,8 @@
           "text": "心",
           "reading": "xīn",
           "translation": "heart",
+          "speechText": "心",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「心」。",
-          "reading": "",
-          "translation": "This is the character 「心」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "開心",
+          "reading": "kāixīn",
+          "translation": "happy",
+          "speechText": "開心",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「心」。",
-          "reading": "",
-          "translation": "I am learning the character 「心」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "心"
-          ]
-        },
-        {
-          "text": "我會讀「心」。",
-          "reading": "",
-          "translation": "I can read the character 「心」.",
-          "showsCoreMeaning": false,
+          "text": "我很開心。",
+          "reading": "Wǒ hěn kāixīn.",
+          "translation": "I am very happy.",
+          "speechText": "我很開心。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "心",
+          "reading": "sam1",
+          "translation": "heart",
+          "speechText": "心",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "心"
+          ]
+        },
+        {
+          "text": "開心",
+          "reading": "hoi1 sam1",
+          "translation": "happy",
+          "speechText": "開心",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "心"
+          ]
+        },
+        {
+          "text": "我好開心。",
+          "reading": "ngo5 hou2 hoi1 sam1",
+          "translation": "I am very happy.",
+          "speechText": "我好開心。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "心"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "sam1",
+          "audioAssetRef": null,
+          "speechText": "心",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "心",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "KOKORO",
+          "system": "on",
+          "value": "シン (shin)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "しん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "こころ (kokoro)",
+          "audioAssetRef": null,
+          "speechText": "こころ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "心",
-          "reading": "KOKORO",
-          "translation": "heart",
+          "reading": "kokoro",
+          "translation": "heart; mind",
+          "speechText": "心",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「心」です。",
-          "reading": "",
-          "translation": "This is the kanji 「心」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "安心",
+          "reading": "anshin",
+          "translation": "relief; peace of mind",
+          "speechText": "安心",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「心」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「心」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "心"
-          ]
-        },
-        {
-          "text": "「心」を読みます。",
-          "reading": "",
-          "translation": "I read 「心」.",
-          "showsCoreMeaning": false,
+          "text": "心が落ち着きます。",
+          "reading": "kokoro ga ochitsukimasu.",
+          "translation": "My mind settles down.",
+          "speechText": "心が落ち着きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SIM",
+          "value": "심 / sim",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "심",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "마음 / maeum",
+          "audioAssetRef": null,
+          "speechText": "마음",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "心",
-          "reading": "SIM",
-          "translation": "heart",
+          "text": "중심",
+          "reading": "jungsim",
+          "translation": "center",
+          "speechText": "중심",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘心’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘心’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "안심",
+          "reading": "ansim",
+          "translation": "relief; peace of mind",
+          "speechText": "안심",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘心’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘心’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "心"
-          ]
-        },
-        {
-          "text": "‘心’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘心’.",
-          "showsCoreMeaning": false,
+          "text": "마음이 편해요.",
+          "reading": "maeumi pyeonhaeyo.",
+          "translation": "I feel at ease.",
+          "speechText": "마음이 편해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

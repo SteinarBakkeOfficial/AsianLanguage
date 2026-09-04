@@ -40,7 +40,9 @@
         {
           "text": "角",
           "reading": "jiǎo",
-          "translation": "horn",
+          "translation": "horn; corner",
+          "speechText": "角",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是角。",
-          "reading": "",
-          "translation": "This is the character 角.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "牛角",
+          "reading": "niújiǎo",
+          "translation": "ox horn",
+          "speechText": "牛角",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习角。",
-          "reading": "",
-          "translation": "I am learning the character 角.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "角"
-          ]
-        },
-        {
-          "text": "我会读角。",
-          "reading": "",
-          "translation": "I can read the character 角.",
-          "showsCoreMeaning": false,
+          "text": "牛有两只角。",
+          "reading": "Niú yǒu liǎng zhī jiǎo.",
+          "translation": "A cow has two horns.",
+          "speechText": "牛有两只角。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -106,7 +100,9 @@
         {
           "text": "角",
           "reading": "jiǎo",
-          "translation": "horn",
+          "translation": "horn; corner",
+          "speechText": "角",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「角」。",
-          "reading": "",
-          "translation": "This is the character 「角」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "牛角",
+          "reading": "niújiǎo",
+          "translation": "ox horn",
+          "speechText": "牛角",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「角」。",
-          "reading": "",
-          "translation": "I am learning the character 「角」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "角"
-          ]
-        },
-        {
-          "text": "我會讀「角」。",
-          "reading": "",
-          "translation": "I can read the character 「角」.",
-          "showsCoreMeaning": false,
+          "text": "牛有兩隻角。",
+          "reading": "Niú yǒu liǎng zhī jiǎo.",
+          "translation": "A cow has two horns.",
+          "speechText": "牛有兩隻角。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "角",
+          "reading": "gok3",
+          "translation": "horn; corner",
+          "speechText": "角",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "角"
+          ]
+        },
+        {
+          "text": "牛角",
+          "reading": "ngau4 gok3",
+          "translation": "ox horn",
+          "speechText": "牛角",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "角"
+          ]
+        },
+        {
+          "text": "隻牛有兩隻角。",
+          "reading": "zek3 ngau4 jau5 loeng5 zek3 gok3",
+          "translation": "A cow has two horns.",
+          "speechText": "隻牛有兩隻角。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "角"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gok3",
+          "audioAssetRef": null,
+          "speechText": "角",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "角",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TSUNO KADO SUMI",
+          "system": "on",
+          "value": "カク (kaku)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "かく",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "つの (tsuno)",
+          "audioAssetRef": null,
+          "speechText": "つの",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "かど (kado)",
+          "audioAssetRef": null,
+          "speechText": "かど",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +235,10 @@
       "examples": [
         {
           "text": "角",
-          "reading": "TSUNO KADO SUMI",
-          "translation": "horn",
+          "reading": "kado",
+          "translation": "corner",
+          "speechText": "角",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「角」です。",
-          "reading": "",
-          "translation": "This is the kanji 「角」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "牛の角",
+          "reading": "ushi no tsuno",
+          "translation": "cow horn",
+          "speechText": "牛の角",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「角」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「角」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "角"
-          ]
-        },
-        {
-          "text": "「角」を読みます。",
-          "reading": "",
-          "translation": "I read 「角」.",
-          "showsCoreMeaning": false,
+          "text": "角を曲がります。",
+          "reading": "kado o magarimasu.",
+          "translation": "I turn the corner.",
+          "speechText": "角を曲がります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "KAK LOK KOK",
+          "value": "각 / gak",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "각",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "뿔 / ppul",
+          "audioAssetRef": null,
+          "speechText": "뿔",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "角",
-          "reading": "KAK LOK KOK",
-          "translation": "horn",
+          "text": "각도",
+          "reading": "gakdo",
+          "translation": "angle",
+          "speechText": "각도",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘角’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘角’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "각막",
+          "reading": "gakmak",
+          "translation": "cornea",
+          "speechText": "각막",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘角’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘角’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "角"
-          ]
-        },
-        {
-          "text": "‘角’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘角’.",
-          "showsCoreMeaning": false,
+          "text": "소의 뿔이에요.",
+          "reading": "so-ui ppurieyo.",
+          "translation": "It is a cow’s horn.",
+          "speechText": "소의 뿔이에요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "集",
-          "reading": "jí",
-          "translation": "gather",
+          "text": "集合",
+          "reading": "jíhé",
+          "translation": "gather; assemble",
+          "speechText": "集合",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是集。",
-          "reading": "",
-          "translation": "This is the character 集.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "收集",
+          "reading": "shōují",
+          "translation": "collect",
+          "speechText": "收集",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习集。",
-          "reading": "",
-          "translation": "I am learning the character 集.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "集"
-          ]
-        },
-        {
-          "text": "我会读集。",
-          "reading": "",
-          "translation": "I can read the character 集.",
-          "showsCoreMeaning": false,
+          "text": "我们在这里集合。",
+          "reading": "Wǒmen zài zhèlǐ jíhé.",
+          "translation": "We gather here.",
+          "speechText": "我们在这里集合。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "集",
-          "reading": "jí",
-          "translation": "gather",
+          "text": "集合",
+          "reading": "jíhé",
+          "translation": "gather; assemble",
+          "speechText": "集合",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「集」。",
-          "reading": "",
-          "translation": "This is the character 「集」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "收集",
+          "reading": "shōují",
+          "translation": "collect",
+          "speechText": "收集",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「集」。",
-          "reading": "",
-          "translation": "I am learning the character 「集」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "集"
-          ]
-        },
-        {
-          "text": "我會讀「集」。",
-          "reading": "",
-          "translation": "I can read the character 「集」.",
-          "showsCoreMeaning": false,
+          "text": "我們在這裡集合。",
+          "reading": "Wǒmen zài zhèlǐ jíhé.",
+          "translation": "We gather here.",
+          "speechText": "我們在這裡集合。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "集合",
+          "reading": "zaap6 hap6",
+          "translation": "gather; assemble",
+          "speechText": "集合",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "集"
+          ]
+        },
+        {
+          "text": "收集",
+          "reading": "sau1 zaap6",
+          "translation": "collect",
+          "speechText": "收集",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "集"
+          ]
+        },
+        {
+          "text": "我哋喺呢度集合。",
+          "reading": "ngo5 dei6 hai2 ni1 dou6 zaap6 hap6",
+          "translation": "We gather here.",
+          "speechText": "我哋喺呢度集合。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "集"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "zaap6",
+          "audioAssetRef": null,
+          "speechText": "集",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "集",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "ATSUMARU TSUDOU ATSUMERU",
+          "system": "on",
+          "value": "シュウ (shū)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "しゅう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "あつまる (atsumaru)",
+          "audioAssetRef": null,
+          "speechText": "あつまる",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "あつめる (atsumeru)",
+          "audioAssetRef": null,
+          "speechText": "あつめる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "集",
-          "reading": "ATSUMARU TSUDOU ATSUMERU",
+          "text": "集まる",
+          "reading": "atsumaru",
           "translation": "gather",
+          "speechText": "集まる",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「集」です。",
-          "reading": "",
-          "translation": "This is the kanji 「集」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "集合",
+          "reading": "shūgō",
+          "translation": "assembly; meet-up",
+          "speechText": "集合",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「集」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「集」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "集"
-          ]
-        },
-        {
-          "text": "「集」を読みます。",
-          "reading": "",
-          "translation": "I read 「集」.",
-          "showsCoreMeaning": false,
+          "text": "ここに集まります。",
+          "reading": "koko ni atsumarimasu.",
+          "translation": "We gather here.",
+          "speechText": "ここに集まります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CIP",
+          "value": "집 / jip",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "집",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "모이다 / moida",
+          "audioAssetRef": null,
+          "speechText": "모이다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "集",
-          "reading": "CIP",
-          "translation": "gather",
+          "text": "집합",
+          "reading": "jiphap",
+          "translation": "gathering; set",
+          "speechText": "집합",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘集’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘集’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "수집",
+          "reading": "sujip",
+          "translation": "collection",
+          "speechText": "수집",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘集’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘集’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "集"
-          ]
-        },
-        {
-          "text": "‘集’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘集’.",
-          "showsCoreMeaning": false,
+          "text": "여기 모여요.",
+          "reading": "yeogi moyeoyo.",
+          "translation": "We gather here.",
+          "speechText": "여기 모여요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -2,7 +2,7 @@
 
 ## Goal
 
-Integrate and verify the approved early-release V1 package: 126 complete-evolution symbols, local origin artwork, ZDIC historical stages, CNS11643 Kai Regular Script, locale-specific modern forms, four draft starter examples per language track, updated collections, and search-first Browse. Native-speaker vocabulary review remains outstanding.
+Integrate and verify the approved early-release V1 package: 126 complete-evolution symbols, local origin artwork, ZDIC historical stages, CNS11643 Kai Regular Script, corrected locale-specific modern forms and examples, explicit native-script speech data, updated collections, and search-first Browse. Native-speaker vocabulary review remains outstanding.
 
 ## Branding update
 
@@ -164,7 +164,7 @@ Working taxonomy thought for discussion, not a decision: semantic collections co
 - `SeedCorpusManifest` now loads exactly 126 complete-evolution records in teaching order.
 - `Resources/Assets/Symbols` contains 126 origin illustrations, 504 normalized ZDIC stage glyphs, and the selected original SVG beside each stage for inspection.
 - Regular Script is rendered from the local CNS11643 Kai font; modern forms use the local Source Han Serif JP/KR/SC/TC faces.
-- Usage context preserves the compact `IN A WORD` layout, shows up to four stored word/phrase/sentence entries, filters only legacy placeholder markers, and applies each locale's modern font to written examples and language forms. The current additions are neutral native-language learning-context starters; native-speaker vocabulary review must replace or approve them before publication.
+- Usage context preserves the compact `IN A WORD` layout, shows up to four stored word/phrase/sentence entries, filters only legacy placeholder markers, and applies each locale's modern font to written examples and language forms. The corrected target-language handoff now supplies character-relevant draft examples; native-speaker vocabulary review remains required before publication.
 - Collections now resolve members from the installed corpus across all ten editorial collections and reuse the same artwork catalog in Browse.
 - Browse places search first, followed by learner libraries, one All Symbols destination, and all ten complete collection panels directly under Collections.
 - History now follows the supplied `Resources/History/History_V1.png` overview natively: the title/landscape header, rounded timeline card, colored stage markers, stage material illustrations, glyph pairings, explanations, and living-tradition footer are represented in SwiftUI. The full reference screenshot is not rendered in-app, and the prior period-by-period implementation remains retained as `LegacyHistoryRootView`.
@@ -197,7 +197,7 @@ These observations are preserved separately from approved product decisions and 
 - Missing or provisional artwork is the strongest visible weakness. The light Home journey is much more convincing when the Fire and Tree concept illustrations are present, but the Collections index still shows the same Fire artwork for unrelated collection themes; collection artwork needs correct, approved mapping or an intentional neutral treatment.
 - The Symbol stage rail sits immediately above the root navigation and currently shares too much visual weight with the page and bottom navigation. A distinct rail surface and clearer boundary should improve orientation without adding decorative color.
 - The Regular Script screen visibly points toward the next modern language, but does not clearly mark the end of the historical museum portion. This supports testing a deliberate museum-complete state before any Modern Forms or Next Symbol action.
-- Today now has four visible starter entries per language track. Replace the neutral learning-context starters with reviewed, character-relevant vocabulary and examples during language QA; do not silently promote them to final copy.
+- Today now uses the corrected target-language examples from the handoff. Review their vocabulary, readings, and translations during language QA; do not silently promote draft content to final copy.
 - The Home learned-symbol count looks informational rather than obviously actionable. If retained, it should either become a clear Learned-library entry point or remain unmistakably static.
 - The testing set contains both older dark transitional screens and the newer light clay-and-white direction. The light reference should remain the comparison baseline; dark-mode polish should not obscure unresolved content gaps.
 - History currently communicates historical script periods well enough as a structure, but it does not yet explain the four modern language/script trajectories. That is a meaningful content opportunity, though its placement needs a product decision before implementation.
@@ -211,8 +211,8 @@ These define the approved current implementation pass; implementation has begun 
 - Historical stage headers: the age/period line was a visual experiment, not a required fact display; keep the stage names but remove the age/period line from Symbol pages. Chronology remains owned by History.
 - Onboarding: consolidate the two similar introduction pages into one strong page using the existing “One idea. One symbol. Thousands of years.” concept, then enter the first-ranked symbol 一 directly with one primary action. Keep language preferences in More → Languages.
 - Deferred outside this implementation: review and expand Regular-stage transition notes that are too short.
-- Deferred outside this implementation: replace the current four-track starter content with fully native-speaker-reviewed examples and translations. The current pass only makes the approved modern-language hierarchy and explicit reading/speech relationships ready for verified data.
-- Audio data checkpoint: all current V1 reading rows now receive explicit draft speech text and language intent through the existing importer. Nothing is treated as user- or native-speaker-verified yet; later review will refine the draft data. Missing Cantonese rows remain absent rather than falling back to Mandarin.
+- Completed in this implementation: replaced the former four-track starter content with the corrected target-language handoff while preserving draft status. Native-speaker review of examples and translations remains outstanding.
+- Audio data checkpoint: V1 reading rows and stored examples now carry explicit native-script speech text and language intent from the corrected handoff. Nothing is treated as user- or native-speaker-verified yet; later review will refine the draft data. Missing Cantonese rows remain absent rather than falling back to Mandarin.
 - History: correct the existing header crop/layout collision and remaining artwork/text fit issues using the supplied screenshots; preserve the approved composition and existing `History_V1.png` artwork unless comparison shows a specific crop correction is needed.
 - Deferred outside this implementation: audit the complete Sources / Licenses page and resolve the broader About-versus-Sources content-architecture question. The current pass does include the approved Apple Speech Synthesis technical attribution required by the audio handoff.
 - Browse and More currently look acceptable and should not be changed as part of these fixes.

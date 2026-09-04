@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "休",
-          "reading": "xiū",
+          "text": "休息",
+          "reading": "xiūxi",
           "translation": "rest",
+          "speechText": "休息",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是休。",
-          "reading": "",
-          "translation": "This is the character 休.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "休假",
+          "reading": "xiūjià",
+          "translation": "take leave; vacation",
+          "speechText": "休假",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习休。",
-          "reading": "",
-          "translation": "I am learning the character 休.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "休"
-          ]
-        },
-        {
-          "text": "我会读休。",
-          "reading": "",
-          "translation": "I can read the character 休.",
-          "showsCoreMeaning": false,
+          "text": "我想休息。",
+          "reading": "Wǒ xiǎng xiūxi.",
+          "translation": "I want to rest.",
+          "speechText": "我想休息。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "休",
-          "reading": "xiū",
+          "text": "休息",
+          "reading": "xiūxi",
           "translation": "rest",
+          "speechText": "休息",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「休」。",
-          "reading": "",
-          "translation": "This is the character 「休」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "休假",
+          "reading": "xiūjià",
+          "translation": "take leave; vacation",
+          "speechText": "休假",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「休」。",
-          "reading": "",
-          "translation": "I am learning the character 「休」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "休"
-          ]
-        },
-        {
-          "text": "我會讀「休」。",
-          "reading": "",
-          "translation": "I can read the character 「休」.",
-          "showsCoreMeaning": false,
+          "text": "我想休息。",
+          "reading": "Wǒ xiǎng xiūxi.",
+          "translation": "I want to rest.",
+          "speechText": "我想休息。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "休息",
+          "reading": "jau1 sik1",
+          "translation": "rest",
+          "speechText": "休息",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "休"
+          ]
+        },
+        {
+          "text": "休假",
+          "reading": "jau1 gaa3",
+          "translation": "take leave; vacation",
+          "speechText": "休假",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "休"
+          ]
+        },
+        {
+          "text": "我想休息。",
+          "reading": "ngo5 soeng2 jau1 sik1",
+          "translation": "I want to rest.",
+          "speechText": "我想休息。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "休"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "jau1",
+          "audioAssetRef": null,
+          "speechText": "休",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "休",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "YASUMU IKOU YAMERU",
+          "system": "on",
+          "value": "キュウ (kyū)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "きゅう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "やすむ (yasumu)",
+          "audioAssetRef": null,
+          "speechText": "やすむ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "休",
-          "reading": "YASUMU IKOU YAMERU",
-          "translation": "rest",
+          "text": "休む",
+          "reading": "yasumu",
+          "translation": "rest; take a break",
+          "speechText": "休む",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「休」です。",
-          "reading": "",
-          "translation": "This is the kanji 「休」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "休日",
+          "reading": "kyūjitsu",
+          "translation": "day off; holiday",
+          "speechText": "休日",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「休」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「休」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "休"
-          ]
-        },
-        {
-          "text": "「休」を読みます。",
-          "reading": "",
-          "translation": "I read 「休」.",
-          "showsCoreMeaning": false,
+          "text": "今日は休みます。",
+          "reading": "kyō wa yasumimasu.",
+          "translation": "I will rest today.",
+          "speechText": "今日は休みます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "HYU",
+          "value": "휴 / hyu",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "휴",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "쉬다 / swida",
+          "audioAssetRef": null,
+          "speechText": "쉬다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "休",
-          "reading": "HYU",
+          "text": "휴식",
+          "reading": "hyusik",
           "translation": "rest",
+          "speechText": "휴식",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘休’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘休’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "휴일",
+          "reading": "hyuil",
+          "translation": "day off; holiday",
+          "speechText": "휴일",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘休’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘休’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "休"
-          ]
-        },
-        {
-          "text": "‘休’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘休’.",
-          "showsCoreMeaning": false,
+          "text": "오늘은 쉬어요.",
+          "reading": "oneureun swieoyo.",
+          "translation": "I rest today.",
+          "speechText": "오늘은 쉬어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "北",
-          "reading": "běi",
-          "translation": "north",
+          "text": "北方",
+          "reading": "běifāng",
+          "translation": "north; northern region",
+          "speechText": "北方",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是北。",
-          "reading": "",
-          "translation": "This is the character 北.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "北边",
+          "reading": "běibian",
+          "translation": "north side",
+          "speechText": "北边",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习北。",
-          "reading": "",
-          "translation": "I am learning the character 北.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "北"
-          ]
-        },
-        {
-          "text": "我会读北。",
-          "reading": "",
-          "translation": "I can read the character 北.",
-          "showsCoreMeaning": false,
+          "text": "我们向北走。",
+          "reading": "Wǒmen xiàng běi zǒu.",
+          "translation": "We are walking north.",
+          "speechText": "我们向北走。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "北",
-          "reading": "běi",
-          "translation": "north",
+          "text": "北方",
+          "reading": "běifāng",
+          "translation": "north; northern region",
+          "speechText": "北方",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「北」。",
-          "reading": "",
-          "translation": "This is the character 「北」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "北边",
+          "reading": "běibian",
+          "translation": "north side",
+          "speechText": "北边",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「北」。",
-          "reading": "",
-          "translation": "I am learning the character 「北」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "北"
-          ]
-        },
-        {
-          "text": "我會讀「北」。",
-          "reading": "",
-          "translation": "I can read the character 「北」.",
-          "showsCoreMeaning": false,
+          "text": "我們向北走。",
+          "reading": "Wǒmen xiàng běi zǒu.",
+          "translation": "We are walking north.",
+          "speechText": "我們向北走。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "北方",
+          "reading": "bak1 fong1",
+          "translation": "north; northern region",
+          "speechText": "北方",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "北"
+          ]
+        },
+        {
+          "text": "北面",
+          "reading": "bak1 min6",
+          "translation": "north side",
+          "speechText": "北面",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "北"
+          ]
+        },
+        {
+          "text": "我哋向北行。",
+          "reading": "ngo5 dei6 hoeng3 bak1 haang4",
+          "translation": "We are walking north.",
+          "speechText": "我哋向北行。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "北"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "bak1",
+          "audioAssetRef": null,
+          "speechText": "北",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "北",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "KITA NIGERU",
+          "system": "on",
+          "value": "ホク (hoku)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ほく",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "きた (kita)",
+          "audioAssetRef": null,
+          "speechText": "きた",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "北",
-          "reading": "KITA NIGERU",
+          "reading": "kita",
           "translation": "north",
+          "speechText": "北",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「北」です。",
-          "reading": "",
-          "translation": "This is the kanji 「北」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "北口",
+          "reading": "kitaguchi",
+          "translation": "north exit",
+          "speechText": "北口",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「北」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「北」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "北"
-          ]
-        },
-        {
-          "text": "「北」を読みます。",
-          "reading": "",
-          "translation": "I read 「北」.",
-          "showsCoreMeaning": false,
+          "text": "北へ行きます。",
+          "reading": "kita e ikimasu.",
+          "translation": "I go north.",
+          "speechText": "北へ行きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "PWUK PEY",
+          "value": "북 / buk",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "북",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean",
+          "value": "북쪽 / bukjjok",
+          "audioAssetRef": null,
+          "speechText": "북쪽",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "北",
-          "reading": "PWUK PEY",
-          "translation": "north",
+          "text": "북부",
+          "reading": "bukbu",
+          "translation": "northern region",
+          "speechText": "북부",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘北’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘北’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "북쪽",
+          "reading": "bukjjok",
+          "translation": "north",
+          "speechText": "북쪽",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘北’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘北’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "北"
-          ]
-        },
-        {
-          "text": "‘北’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘北’.",
-          "showsCoreMeaning": false,
+          "text": "북쪽으로 가요.",
+          "reading": "bukjjogeuro gayo.",
+          "translation": "I go north.",
+          "speechText": "북쪽으로 가요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

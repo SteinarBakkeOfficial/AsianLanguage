@@ -65,7 +65,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - All available Windows layout, model, content, visual, discovery, and release checks pass.
 - AppShell light tokens now match the approved clay-and-white reference, with Light as the default and Dark as the sole alternative.
 - Browse and Collections now separate Your Library status lists from editorial collections, with collection artwork previews.
-- Today now uses one page per selected language with four draft starter entries per track; native-speaker review must replace or approve the neutral learning-context additions before publication.
+- Today now uses one page per selected language with corrected draft word/phrase/sentence examples per track; native-speaker review remains required before publication.
 - Fire, Water, and Tree now have separate educational concept illustrations, and the allowlisted historical SVG intake preserves source/license provenance.
 - The approved correction pass keeps the Symbol Journey rail persistent and visibly labeled, isolates onboarding from the compact Home preview, fixes Home's orphaned active-state fallback, uses the complete collection banner on Home, identifies Hong Kong Cantonese/Jyutping readings, and recreates the History overview natively from the approved reference content.
 - The Symbol Journey now separates the single Modern/Regular Script museum endpoint from later language Usage pages; one visible rail changes its destinations at that boundary.
@@ -99,7 +99,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - Included in the current polish implementation: remove the previously tested age/period line from Symbol Journey stage headers; retain chronology in History and source metadata.
 - Included in the current polish implementation: consolidate the two similar onboarding pages into one direct-entry page for the first-ranked runtime symbol using the existing first-page concept.
 - Deferred outside the current polish implementation: expand Regular Script transition captions where they are too brief.
-- Deferred outside the current polish implementation: replace the four-track starter examples with fully reviewed, character-relevant Chinese, Japanese, and Korean usage content.
+- The corrected target-language handoff has replaced the former neutral four-track starter examples; native-speaker review and publication approval remain deferred.
 - Included in the current polish implementation: correct the existing History header crop/layout collision and remaining artwork/text fit issues after comparing the supplied screenshots; preserve the approved composition and existing History artwork.
 - Deferred outside the current polish implementation: audit the complete Sources / Licenses page and resolve the broader About-versus-Sources content-architecture question. Apple Speech Synthesis technical attribution is included with the approved audio work.
 - Browse and More are currently accepted and are out of scope for this fix pass.

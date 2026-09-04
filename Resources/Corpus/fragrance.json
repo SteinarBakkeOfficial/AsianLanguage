@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "香",
-          "reading": "xiāng",
-          "translation": "fragrance",
+          "text": "香味",
+          "reading": "xiāngwèi",
+          "translation": "aroma",
+          "speechText": "香味",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是香。",
-          "reading": "",
-          "translation": "This is the character 香.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "香水",
+          "reading": "xiāngshuǐ",
+          "translation": "perfume",
+          "speechText": "香水",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习香。",
-          "reading": "",
-          "translation": "I am learning the character 香.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "香"
-          ]
-        },
-        {
-          "text": "我会读香。",
-          "reading": "",
-          "translation": "I can read the character 香.",
-          "showsCoreMeaning": false,
+          "text": "花很香。",
+          "reading": "Huā hěn xiāng.",
+          "translation": "The flowers smell fragrant.",
+          "speechText": "花很香。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "香",
-          "reading": "xiāng",
-          "translation": "fragrance",
+          "text": "香味",
+          "reading": "xiāngwèi",
+          "translation": "aroma",
+          "speechText": "香味",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「香」。",
-          "reading": "",
-          "translation": "This is the character 「香」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "香水",
+          "reading": "xiāngshuǐ",
+          "translation": "perfume",
+          "speechText": "香水",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「香」。",
-          "reading": "",
-          "translation": "I am learning the character 「香」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "香"
-          ]
-        },
-        {
-          "text": "我會讀「香」。",
-          "reading": "",
-          "translation": "I can read the character 「香」.",
-          "showsCoreMeaning": false,
+          "text": "花很香。",
+          "reading": "Huā hěn xiāng.",
+          "translation": "The flowers smell fragrant.",
+          "speechText": "花很香。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "香味",
+          "reading": "hoeng1 mei6",
+          "translation": "aroma",
+          "speechText": "香味",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "香"
+          ]
+        },
+        {
+          "text": "香水",
+          "reading": "hoeng1 seoi2",
+          "translation": "perfume",
+          "speechText": "香水",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "香"
+          ]
+        },
+        {
+          "text": "啲花好香。",
+          "reading": "di1 faa1 hou2 hoeng1",
+          "translation": "The flowers smell fragrant.",
+          "speechText": "啲花好香。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "香"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "hoeng1",
+          "audioAssetRef": null,
+          "speechText": "香",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "香",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "KAORI KA",
+          "system": "on",
+          "value": "コウ (kō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "こう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "かおり (kaori)",
+          "audioAssetRef": null,
+          "speechText": "かおり",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "かおる (kaoru)",
+          "audioAssetRef": null,
+          "speechText": "かおる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "香",
-          "reading": "KAORI KA",
+          "text": "香り",
+          "reading": "kaori",
           "translation": "fragrance",
+          "speechText": "香り",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「香」です。",
-          "reading": "",
-          "translation": "This is the kanji 「香」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "香水",
+          "reading": "kōsui",
+          "translation": "perfume",
+          "speechText": "香水",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「香」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「香」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "香"
-          ]
-        },
-        {
-          "text": "「香」を読みます。",
-          "reading": "",
-          "translation": "I read 「香」.",
-          "showsCoreMeaning": false,
+          "text": "花の香りがします。",
+          "reading": "hana no kaori ga shimasu.",
+          "translation": "I can smell the flowers.",
+          "speechText": "花の香りがします。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "HYANG",
+          "value": "향 / hyang",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "향",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean",
+          "value": "향기 / hyanggi",
+          "audioAssetRef": null,
+          "speechText": "향기",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "香",
-          "reading": "HYANG",
-          "translation": "fragrance",
+          "text": "향수",
+          "reading": "hyangsu",
+          "translation": "perfume",
+          "speechText": "향수",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘香’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘香’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "향기",
+          "reading": "hyanggi",
+          "translation": "fragrance",
+          "speechText": "향기",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘香’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘香’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "香"
-          ]
-        },
-        {
-          "text": "‘香’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘香’.",
-          "showsCoreMeaning": false,
+          "text": "꽃 향기가 좋아요.",
+          "reading": "kkot hyanggiga joayo.",
+          "translation": "The flower smells nice.",
+          "speechText": "꽃 향기가 좋아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

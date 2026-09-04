@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "多",
-          "reading": "duō",
-          "translation": "many",
+          "text": "很多",
+          "reading": "hěn duō",
+          "translation": "many; a lot",
+          "speechText": "很多",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是多。",
-          "reading": "",
-          "translation": "This is the character 多.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "多数",
+          "reading": "duōshù",
+          "translation": "most; majority",
+          "speechText": "多数",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习多。",
-          "reading": "",
-          "translation": "I am learning the character 多.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "多"
-          ]
-        },
-        {
-          "text": "我会读多。",
-          "reading": "",
-          "translation": "I can read the character 多.",
-          "showsCoreMeaning": false,
+          "text": "这里人很多。",
+          "reading": "Zhèlǐ rén hěn duō.",
+          "translation": "There are many people here.",
+          "speechText": "这里人很多。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "多",
-          "reading": "duō",
-          "translation": "many",
+          "text": "很多",
+          "reading": "hěn duō",
+          "translation": "many; a lot",
+          "speechText": "很多",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「多」。",
-          "reading": "",
-          "translation": "This is the character 「多」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "多数",
+          "reading": "duōshù",
+          "translation": "most; majority",
+          "speechText": "多数",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「多」。",
-          "reading": "",
-          "translation": "I am learning the character 「多」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "多"
-          ]
-        },
-        {
-          "text": "我會讀「多」。",
-          "reading": "",
-          "translation": "I can read the character 「多」.",
-          "showsCoreMeaning": false,
+          "text": "這裡人很多。",
+          "reading": "Zhèlǐ rén hěn duō.",
+          "translation": "There are many people here.",
+          "speechText": "這裡人很多。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "好多",
+          "reading": "hou2 do1",
+          "translation": "many; a lot",
+          "speechText": "好多",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "多"
+          ]
+        },
+        {
+          "text": "多數",
+          "reading": "do1 sou3",
+          "translation": "most; majority",
+          "speechText": "多數",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "多"
+          ]
+        },
+        {
+          "text": "呢度好多人。",
+          "reading": "ni1 dou6 hou2 do1 jan4",
+          "translation": "There are many people here.",
+          "speechText": "呢度好多人。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "多"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "do1",
+          "audioAssetRef": null,
+          "speechText": "多",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "多",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "OOI MASARU MASANI",
+          "system": "on",
+          "value": "タ (ta)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "た",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "おおい (ōi)",
+          "audioAssetRef": null,
+          "speechText": "おおい",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "多",
-          "reading": "OOI MASARU MASANI",
-          "translation": "many",
+          "text": "多い",
+          "reading": "ōi",
+          "translation": "many; much",
+          "speechText": "多い",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「多」です。",
-          "reading": "",
-          "translation": "This is the kanji 「多」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "多数",
+          "reading": "tasū",
+          "translation": "many; majority",
+          "speechText": "多数",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「多」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「多」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "多"
-          ]
-        },
-        {
-          "text": "「多」を読みます。",
-          "reading": "",
-          "translation": "I read 「多」.",
-          "showsCoreMeaning": false,
+          "text": "人が多いです。",
+          "reading": "hito ga ōi desu.",
+          "translation": "There are many people.",
+          "speechText": "人が多いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "TA",
+          "value": "다 / da",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "다",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "많다 / manta",
+          "audioAssetRef": null,
+          "speechText": "많다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "多",
-          "reading": "TA",
-          "translation": "many",
+          "text": "다수",
+          "reading": "dasu",
+          "translation": "many; majority",
+          "speechText": "다수",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘多’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘多’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "과다",
+          "reading": "gwada",
+          "translation": "excessive amount",
+          "speechText": "과다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘多’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘多’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "多"
-          ]
-        },
-        {
-          "text": "‘多’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘多’.",
-          "showsCoreMeaning": false,
+          "text": "사람이 많아요.",
+          "reading": "sarami manayo.",
+          "translation": "There are many people.",
+          "speechText": "사람이 많아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -40,7 +40,9 @@
         {
           "text": "先",
           "reading": "xiān",
-          "translation": "before",
+          "translation": "first; before",
+          "speechText": "先",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是先。",
-          "reading": "",
-          "translation": "This is the character 先.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "先生",
+          "reading": "xiānsheng",
+          "translation": "Mr.; teacher",
+          "speechText": "先生",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习先。",
-          "reading": "",
-          "translation": "I am learning the character 先.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "先"
-          ]
-        },
-        {
-          "text": "我会读先。",
-          "reading": "",
-          "translation": "I can read the character 先.",
-          "showsCoreMeaning": false,
+          "text": "你先吃。",
+          "reading": "Nǐ xiān chī.",
+          "translation": "You eat first.",
+          "speechText": "你先吃。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -106,7 +100,9 @@
         {
           "text": "先",
           "reading": "xiān",
-          "translation": "before",
+          "translation": "first; before",
+          "speechText": "先",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「先」。",
-          "reading": "",
-          "translation": "This is the character 「先」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "先生",
+          "reading": "xiānsheng",
+          "translation": "Mr.; teacher",
+          "speechText": "先生",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「先」。",
-          "reading": "",
-          "translation": "I am learning the character 「先」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "先"
-          ]
-        },
-        {
-          "text": "我會讀「先」。",
-          "reading": "",
-          "translation": "I can read the character 「先」.",
-          "showsCoreMeaning": false,
+          "text": "你先吃。",
+          "reading": "Nǐ xiān chī.",
+          "translation": "You eat first.",
+          "speechText": "你先吃。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "先",
+          "reading": "sin1",
+          "translation": "first; before",
+          "speechText": "先",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "先"
+          ]
+        },
+        {
+          "text": "先生",
+          "reading": "sin1 saang1",
+          "translation": "Mr.; teacher",
+          "speechText": "先生",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "先"
+          ]
+        },
+        {
+          "text": "你食先。",
+          "reading": "nei5 sik6 sin1",
+          "translation": "You eat first.",
+          "speechText": "你食先。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "先"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "sin1",
+          "audioAssetRef": null,
+          "speechText": "先",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "先",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "SAKI SAKINJIRU MAZU",
+          "system": "on",
+          "value": "セン (sen)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "せん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "さき (saki)",
+          "audioAssetRef": null,
+          "speechText": "さき",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "先",
-          "reading": "SAKI SAKINJIRU MAZU",
-          "translation": "before",
+          "reading": "saki",
+          "translation": "ahead; before",
+          "speechText": "先",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「先」です。",
-          "reading": "",
-          "translation": "This is the kanji 「先」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "先生",
+          "reading": "sensei",
+          "translation": "teacher",
+          "speechText": "先生",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「先」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「先」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "先"
-          ]
-        },
-        {
-          "text": "「先」を読みます。",
-          "reading": "",
-          "translation": "I read 「先」.",
-          "showsCoreMeaning": false,
+          "text": "先に行きます。",
+          "reading": "saki ni ikimasu.",
+          "translation": "I will go ahead.",
+          "speechText": "先に行きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SEN",
+          "value": "선 / seon",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "선",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "먼저 / meonjeo",
+          "audioAssetRef": null,
+          "speechText": "먼저",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "先",
-          "reading": "SEN",
-          "translation": "before",
+          "text": "선생",
+          "reading": "seonsaeng",
+          "translation": "teacher",
+          "speechText": "선생",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘先’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘先’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "우선",
+          "reading": "useon",
+          "translation": "first of all",
+          "speechText": "우선",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘先’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘先’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "先"
-          ]
-        },
-        {
-          "text": "‘先’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘先’.",
-          "showsCoreMeaning": false,
+          "text": "먼저 가세요.",
+          "reading": "meonjeo gaseyo.",
+          "translation": "Please go first.",
+          "speechText": "먼저 가세요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "告",
-          "reading": "gào",
+          "text": "告诉",
+          "reading": "gàosu",
           "translation": "tell",
+          "speechText": "告诉",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是告。",
-          "reading": "",
-          "translation": "This is the character 告.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "广告",
+          "reading": "guǎnggào",
+          "translation": "advertisement",
+          "speechText": "广告",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习告。",
-          "reading": "",
-          "translation": "I am learning the character 告.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "告"
-          ]
-        },
-        {
-          "text": "我会读告。",
-          "reading": "",
-          "translation": "I can read the character 告.",
-          "showsCoreMeaning": false,
+          "text": "请告诉我。",
+          "reading": "Qǐng gàosu wǒ.",
+          "translation": "Please tell me.",
+          "speechText": "请告诉我。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "告",
-          "reading": "gào",
+          "text": "告訴",
+          "reading": "gàosu",
           "translation": "tell",
+          "speechText": "告訴",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「告」。",
-          "reading": "",
-          "translation": "This is the character 「告」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "廣告",
+          "reading": "guǎnggào",
+          "translation": "advertisement",
+          "speechText": "廣告",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「告」。",
-          "reading": "",
-          "translation": "I am learning the character 「告」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "告"
-          ]
-        },
-        {
-          "text": "我會讀「告」。",
-          "reading": "",
-          "translation": "I can read the character 「告」.",
-          "showsCoreMeaning": false,
+          "text": "請告訴我。",
+          "reading": "Qǐng gàosu wǒ.",
+          "translation": "Please tell me.",
+          "speechText": "請告訴我。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "告訴",
+          "reading": "gou3 sou3",
+          "translation": "tell",
+          "speechText": "告訴",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "告"
+          ]
+        },
+        {
+          "text": "廣告",
+          "reading": "gwong2 gou3",
+          "translation": "advertisement",
+          "speechText": "廣告",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "告"
+          ]
+        },
+        {
+          "text": "請告訴我。",
+          "reading": "cing2 gou3 sou3 ngo5",
+          "translation": "Please tell me.",
+          "speechText": "請告訴我。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "告"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gou3",
+          "audioAssetRef": null,
+          "speechText": "告",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "告",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TSUGERU",
+          "system": "on",
+          "value": "コク (koku)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "こく",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "つげる (tsugeru)",
+          "audioAssetRef": null,
+          "speechText": "つげる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "告",
-          "reading": "TSUGERU",
-          "translation": "tell",
+          "text": "告げる",
+          "reading": "tsugeru",
+          "translation": "tell; announce",
+          "speechText": "告げる",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「告」です。",
-          "reading": "",
-          "translation": "This is the kanji 「告」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "報告",
+          "reading": "hōkoku",
+          "translation": "report",
+          "speechText": "報告",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「告」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「告」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "告"
-          ]
-        },
-        {
-          "text": "「告」を読みます。",
-          "reading": "",
-          "translation": "I read 「告」.",
-          "showsCoreMeaning": false,
+          "text": "先生に報告します。",
+          "reading": "sensei ni hōkoku shimasu.",
+          "translation": "I report it to the teacher.",
+          "speechText": "先生に報告します。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "KO KOK",
+          "value": "고 / go",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "고",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "말하다 / malhada",
+          "audioAssetRef": null,
+          "speechText": "말하다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "告",
-          "reading": "KO KOK",
-          "translation": "tell",
+          "text": "광고",
+          "reading": "gwanggo",
+          "translation": "advertisement",
+          "speechText": "광고",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘告’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘告’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "보고",
+          "reading": "bogo",
+          "translation": "report",
+          "speechText": "보고",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘告’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘告’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "告"
-          ]
-        },
-        {
-          "text": "‘告’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘告’.",
-          "showsCoreMeaning": false,
+          "text": "선생님께 보고해요.",
+          "reading": "seonsaengnimkke bogohaeyo.",
+          "translation": "I report it to the teacher.",
+          "speechText": "선생님께 보고해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

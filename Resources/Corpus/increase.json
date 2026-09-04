@@ -34,13 +34,15 @@
         }
       ],
       "glosses": [
-        "increase"
+        "benefit; beneficial; increase"
       ],
       "examples": [
         {
-          "text": "益",
-          "reading": "yì",
-          "translation": "increase",
+          "text": "利益",
+          "reading": "lìyì",
+          "translation": "benefit; profit",
+          "speechText": "利益",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是益。",
-          "reading": "",
-          "translation": "This is the character 益.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "有益",
+          "reading": "yǒuyì",
+          "translation": "beneficial",
+          "speechText": "有益",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习益。",
-          "reading": "",
-          "translation": "I am learning the character 益.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "益"
-          ]
-        },
-        {
-          "text": "我会读益。",
-          "reading": "",
-          "translation": "I can read the character 益.",
-          "showsCoreMeaning": false,
+          "text": "运动有益健康。",
+          "reading": "Yùndòng yǒuyì jiànkāng.",
+          "translation": "Exercise is good for health.",
+          "speechText": "运动有益健康。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -100,13 +94,15 @@
         }
       ],
       "glosses": [
-        "increase"
+        "benefit; beneficial; increase"
       ],
       "taiwanExamples": [
         {
-          "text": "益",
-          "reading": "yì",
-          "translation": "increase",
+          "text": "利益",
+          "reading": "lìyì",
+          "translation": "benefit; profit",
+          "speechText": "利益",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「益」。",
-          "reading": "",
-          "translation": "This is the character 「益」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "有益",
+          "reading": "yǒuyì",
+          "translation": "beneficial",
+          "speechText": "有益",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「益」。",
-          "reading": "",
-          "translation": "I am learning the character 「益」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "益"
-          ]
-        },
-        {
-          "text": "我會讀「益」。",
-          "reading": "",
-          "translation": "I can read the character 「益」.",
-          "showsCoreMeaning": false,
+          "text": "運動有益健康。",
+          "reading": "Yùndòng yǒuyì jiànkāng.",
+          "translation": "Exercise is good for health.",
+          "speechText": "運動有益健康。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "利益",
+          "reading": "lei6 jik1",
+          "translation": "benefit; profit",
+          "speechText": "利益",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "益"
+          ]
+        },
+        {
+          "text": "有益",
+          "reading": "jau5 jik1",
+          "translation": "beneficial",
+          "speechText": "有益",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "益"
+          ]
+        },
+        {
+          "text": "運動對健康有益。",
+          "reading": "wan6 dung6 deoi3 gin6 hong1 jau5 jik1",
+          "translation": "Exercise is good for health.",
+          "speechText": "運動對健康有益。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "益"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,28 +193,38 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "jik1",
+          "audioAssetRef": null,
+          "speechText": "益",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "益",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "MASU MASUMASU",
+          "system": "on",
+          "value": "エキ (eki)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "えき",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
-        "increase"
+        "benefit; useful"
       ],
       "examples": [
         {
-          "text": "益",
-          "reading": "MASU MASUMASU",
-          "translation": "increase",
+          "text": "利益",
+          "reading": "rieki",
+          "translation": "benefit; profit",
+          "speechText": "利益",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +234,13 @@
           ]
         },
         {
-          "text": "これは「益」です。",
-          "reading": "",
-          "translation": "This is the kanji 「益」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "有益",
+          "reading": "yūeki",
+          "translation": "beneficial; useful",
+          "speechText": "有益",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +248,12 @@
           ]
         },
         {
-          "text": "「益」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「益」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "益"
-          ]
-        },
-        {
-          "text": "「益」を読みます。",
-          "reading": "",
-          "translation": "I read 「益」.",
-          "showsCoreMeaning": false,
+          "text": "これは有益です。",
+          "reading": "kore wa yūeki desu.",
+          "translation": "This is useful.",
+          "speechText": "これは有益です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,20 +269,22 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "IK",
+          "value": "익 / ik",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "익",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
-        "increase"
+        "benefit; profit; useful"
       ],
       "examples": [
         {
-          "text": "益",
-          "reading": "IK",
-          "translation": "increase",
+          "text": "이익",
+          "reading": "iik",
+          "translation": "benefit; profit",
+          "speechText": "이익",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +294,13 @@
           ]
         },
         {
-          "text": "이것은 ‘益’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘益’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "유익",
+          "reading": "yuik",
+          "translation": "beneficial; useful",
+          "speechText": "유익",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +308,12 @@
           ]
         },
         {
-          "text": "‘益’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘益’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "益"
-          ]
-        },
-        {
-          "text": "‘益’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘益’.",
-          "showsCoreMeaning": false,
+          "text": "이건 유익해요.",
+          "reading": "igeon yuikhaeyo.",
+          "translation": "This is useful.",
+          "speechText": "이건 유익해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +560,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +626,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

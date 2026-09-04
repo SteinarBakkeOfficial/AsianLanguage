@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "身",
-          "reading": "shēn",
-          "translation": "body",
+          "text": "身体",
+          "reading": "shēntǐ",
+          "translation": "body; health",
+          "speechText": "身体",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是身。",
-          "reading": "",
-          "translation": "This is the character 身.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "身上",
+          "reading": "shēnshang",
+          "translation": "on one’s body",
+          "speechText": "身上",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习身。",
-          "reading": "",
-          "translation": "I am learning the character 身.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "身"
-          ]
-        },
-        {
-          "text": "我会读身。",
-          "reading": "",
-          "translation": "I can read the character 身.",
-          "showsCoreMeaning": false,
+          "text": "我的身体很好。",
+          "reading": "Wǒ de shēntǐ hěn hǎo.",
+          "translation": "I am in good health.",
+          "speechText": "我的身体很好。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "身",
-          "reading": "shēn",
-          "translation": "body",
+          "text": "身體",
+          "reading": "shēntǐ",
+          "translation": "body; health",
+          "speechText": "身體",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「身」。",
-          "reading": "",
-          "translation": "This is the character 「身」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "身上",
+          "reading": "shēnshang",
+          "translation": "on one’s body",
+          "speechText": "身上",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「身」。",
-          "reading": "",
-          "translation": "I am learning the character 「身」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "身"
-          ]
-        },
-        {
-          "text": "我會讀「身」。",
-          "reading": "",
-          "translation": "I can read the character 「身」.",
-          "showsCoreMeaning": false,
+          "text": "我的身體很好。",
+          "reading": "Wǒ de shēntǐ hěn hǎo.",
+          "translation": "I am in good health.",
+          "speechText": "我的身體很好。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "身體",
+          "reading": "san1 tai2",
+          "translation": "body; health",
+          "speechText": "身體",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "身"
+          ]
+        },
+        {
+          "text": "身上",
+          "reading": "san1 soeng6",
+          "translation": "on one’s body",
+          "speechText": "身上",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "身"
+          ]
+        },
+        {
+          "text": "我身體幾好。",
+          "reading": "ngo5 san1 tai2 gei2 hou2",
+          "translation": "I am in good health.",
+          "speechText": "我身體幾好。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "身"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "san1",
+          "audioAssetRef": null,
+          "speechText": "身",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "身",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "MI MIZUKARA",
+          "system": "on",
+          "value": "シン (shin)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "しん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "み (mi)",
+          "audioAssetRef": null,
+          "speechText": "み",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "身",
-          "reading": "MI MIZUKARA",
-          "translation": "body",
+          "reading": "mi",
+          "translation": "body; oneself",
+          "speechText": "身",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「身」です。",
-          "reading": "",
-          "translation": "This is the kanji 「身」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "全身",
+          "reading": "zenshin",
+          "translation": "whole body",
+          "speechText": "全身",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「身」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「身」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "身"
-          ]
-        },
-        {
-          "text": "「身」を読みます。",
-          "reading": "",
-          "translation": "I read 「身」.",
-          "showsCoreMeaning": false,
+          "text": "身を守ります。",
+          "reading": "mi o mamorimasu.",
+          "translation": "I protect myself.",
+          "speechText": "身を守ります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SIN",
+          "value": "신 / sin",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "신",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "몸 / mom",
+          "audioAssetRef": null,
+          "speechText": "몸",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "身",
-          "reading": "SIN",
+          "text": "신체",
+          "reading": "sinche",
           "translation": "body",
+          "speechText": "신체",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘身’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘身’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "전신",
+          "reading": "jeonsin",
+          "translation": "whole body",
+          "speechText": "전신",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘身’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘身’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "身"
-          ]
-        },
-        {
-          "text": "‘身’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘身’.",
-          "showsCoreMeaning": false,
+          "text": "몸을 움직여요.",
+          "reading": "momeul umjigyeoyo.",
+          "translation": "I move my body.",
+          "speechText": "몸을 움직여요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

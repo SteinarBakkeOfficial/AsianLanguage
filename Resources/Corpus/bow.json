@@ -41,6 +41,8 @@
           "text": "弓",
           "reading": "gōng",
           "translation": "bow",
+          "speechText": "弓",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是弓。",
-          "reading": "",
-          "translation": "This is the character 弓.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "弓箭",
+          "reading": "gōngjiàn",
+          "translation": "bow and arrow",
+          "speechText": "弓箭",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习弓。",
-          "reading": "",
-          "translation": "I am learning the character 弓.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "弓"
-          ]
-        },
-        {
-          "text": "我会读弓。",
-          "reading": "",
-          "translation": "I can read the character 弓.",
-          "showsCoreMeaning": false,
+          "text": "他会拉弓。",
+          "reading": "Tā huì lā gōng.",
+          "translation": "He can draw a bow.",
+          "speechText": "他会拉弓。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -107,6 +101,8 @@
           "text": "弓",
           "reading": "gōng",
           "translation": "bow",
+          "speechText": "弓",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「弓」。",
-          "reading": "",
-          "translation": "This is the character 「弓」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "弓箭",
+          "reading": "gōngjiàn",
+          "translation": "bow and arrow",
+          "speechText": "弓箭",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「弓」。",
-          "reading": "",
-          "translation": "I am learning the character 「弓」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "弓"
-          ]
-        },
-        {
-          "text": "我會讀「弓」。",
-          "reading": "",
-          "translation": "I can read the character 「弓」.",
-          "showsCoreMeaning": false,
+          "text": "他會拉弓。",
+          "reading": "Tā huì lā gōng.",
+          "translation": "He can draw a bow.",
+          "speechText": "他會拉弓。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "弓",
+          "reading": "gung1",
+          "translation": "bow",
+          "speechText": "弓",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        },
+        {
+          "text": "弓箭",
+          "reading": "gung1 zin3",
+          "translation": "bow and arrow",
+          "speechText": "弓箭",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        },
+        {
+          "text": "佢識拉弓。",
+          "reading": "keoi5 sik1 laai1 gung1",
+          "translation": "He can draw a bow.",
+          "speechText": "佢識拉弓。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gung1",
+          "audioAssetRef": null,
+          "speechText": "弓",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "弓",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "YUMI",
+          "system": "on",
+          "value": "キュウ (kyū)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "きゅう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "ゆみ (yumi)",
+          "audioAssetRef": null,
+          "speechText": "ゆみ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "弓",
-          "reading": "YUMI",
+          "reading": "yumi",
           "translation": "bow",
+          "speechText": "弓",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「弓」です。",
-          "reading": "",
-          "translation": "This is the kanji 「弓」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "弓道",
+          "reading": "kyūdō",
+          "translation": "Japanese archery",
+          "speechText": "弓道",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「弓」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「弓」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "弓"
-          ]
-        },
-        {
-          "text": "「弓」を読みます。",
-          "reading": "",
-          "translation": "I read 「弓」.",
-          "showsCoreMeaning": false,
+          "text": "弓を引きます。",
+          "reading": "yumi o hikimasu.",
+          "translation": "I draw a bow.",
+          "speechText": "弓を引きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "KWUNG",
+          "value": "궁 / gung",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "궁",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean",
+          "value": "활 / hwal",
+          "audioAssetRef": null,
+          "speechText": "활",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "弓",
-          "reading": "KWUNG",
-          "translation": "bow",
+          "text": "궁도",
+          "reading": "gungdo",
+          "translation": "archery",
+          "speechText": "궁도",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘弓’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘弓’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "궁수",
+          "reading": "gungsu",
+          "translation": "archer",
+          "speechText": "궁수",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘弓’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘弓’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "弓"
-          ]
-        },
-        {
-          "text": "‘弓’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘弓’.",
-          "showsCoreMeaning": false,
+          "text": "활을 쏴요.",
+          "reading": "hwareul sswoyo.",
+          "translation": "I shoot a bow.",
+          "speechText": "활을 쏴요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -41,6 +41,8 @@
           "text": "玉",
           "reading": "yù",
           "translation": "jade",
+          "speechText": "玉",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是玉。",
-          "reading": "",
-          "translation": "This is the character 玉.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "玉石",
+          "reading": "yùshí",
+          "translation": "jade; gemstone",
+          "speechText": "玉石",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习玉。",
-          "reading": "",
-          "translation": "I am learning the character 玉.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "玉"
-          ]
-        },
-        {
-          "text": "我会读玉。",
-          "reading": "",
-          "translation": "I can read the character 玉.",
-          "showsCoreMeaning": false,
+          "text": "这块玉很美。",
+          "reading": "Zhè kuài yù hěn měi.",
+          "translation": "This piece of jade is beautiful.",
+          "speechText": "这块玉很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -107,6 +101,8 @@
           "text": "玉",
           "reading": "yù",
           "translation": "jade",
+          "speechText": "玉",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「玉」。",
-          "reading": "",
-          "translation": "This is the character 「玉」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "玉石",
+          "reading": "yùshí",
+          "translation": "jade; gemstone",
+          "speechText": "玉石",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「玉」。",
-          "reading": "",
-          "translation": "I am learning the character 「玉」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "玉"
-          ]
-        },
-        {
-          "text": "我會讀「玉」。",
-          "reading": "",
-          "translation": "I can read the character 「玉」.",
-          "showsCoreMeaning": false,
+          "text": "這塊玉很美。",
+          "reading": "Zhè kuài yù hěn měi.",
+          "translation": "This piece of jade is beautiful.",
+          "speechText": "這塊玉很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "玉",
+          "reading": "juk6",
+          "translation": "jade",
+          "speechText": "玉",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "玉"
+          ]
+        },
+        {
+          "text": "玉石",
+          "reading": "juk6 sek6",
+          "translation": "jade; gemstone",
+          "speechText": "玉石",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "玉"
+          ]
+        },
+        {
+          "text": "呢塊玉好靚。",
+          "reading": "ni1 faai3 juk6 hou2 leng3",
+          "translation": "This piece of jade is beautiful.",
+          "speechText": "呢塊玉好靚。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "玉"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "juk6",
+          "audioAssetRef": null,
+          "speechText": "玉",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "玉",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TAMA",
+          "system": "on",
+          "value": "ギョク (gyoku)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ぎょく",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "たま (tama)",
+          "audioAssetRef": null,
+          "speechText": "たま",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "玉",
-          "reading": "TAMA",
-          "translation": "jade",
+          "reading": "tama",
+          "translation": "ball; jewel",
+          "speechText": "玉",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「玉」です。",
-          "reading": "",
-          "translation": "This is the kanji 「玉」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "宝玉",
+          "reading": "hōgyoku",
+          "translation": "jewel; precious stone",
+          "speechText": "宝玉",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「玉」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「玉」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "玉"
-          ]
-        },
-        {
-          "text": "「玉」を読みます。",
-          "reading": "",
-          "translation": "I read 「玉」.",
-          "showsCoreMeaning": false,
+          "text": "玉を転がします。",
+          "reading": "tama o korogashimasu.",
+          "translation": "I roll the ball.",
+          "speechText": "玉を転がします。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,10 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "OK",
+          "value": "옥 / ok",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "옥",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +287,11 @@
       ],
       "examples": [
         {
-          "text": "玉",
-          "reading": "OK",
-          "translation": "jade",
+          "text": "옥석",
+          "reading": "okseok",
+          "translation": "jade and stone",
+          "speechText": "옥석",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +301,13 @@
           ]
         },
         {
-          "text": "이것은 ‘玉’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘玉’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "옥색",
+          "reading": "oksaek",
+          "translation": "jade color",
+          "speechText": "옥색",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +315,12 @@
           ]
         },
         {
-          "text": "‘玉’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘玉’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "玉"
-          ]
-        },
-        {
-          "text": "‘玉’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘玉’.",
-          "showsCoreMeaning": false,
+          "text": "이 옥은 아름다워요.",
+          "reading": "i ogeun areumdawoyo.",
+          "translation": "This jade is beautiful.",
+          "speechText": "이 옥은 아름다워요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +567,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +633,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

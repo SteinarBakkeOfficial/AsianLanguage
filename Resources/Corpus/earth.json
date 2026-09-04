@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "土",
-          "reading": "tǔ",
-          "translation": "earth",
+          "text": "土地",
+          "reading": "tǔdì",
+          "translation": "land",
+          "speechText": "土地",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是土。",
-          "reading": "",
-          "translation": "This is the character 土.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "泥土",
+          "reading": "nítǔ",
+          "translation": "soil",
+          "speechText": "泥土",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习土。",
-          "reading": "",
-          "translation": "I am learning the character 土.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "土"
-          ]
-        },
-        {
-          "text": "我会读土。",
-          "reading": "",
-          "translation": "I can read the character 土.",
-          "showsCoreMeaning": false,
+          "text": "泥土很干。",
+          "reading": "Nítǔ hěn gān.",
+          "translation": "The soil is dry.",
+          "speechText": "泥土很干。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "土",
-          "reading": "tǔ",
-          "translation": "earth",
+          "text": "土地",
+          "reading": "tǔdì",
+          "translation": "land",
+          "speechText": "土地",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「土」。",
-          "reading": "",
-          "translation": "This is the character 「土」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "泥土",
+          "reading": "nítǔ",
+          "translation": "soil",
+          "speechText": "泥土",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「土」。",
-          "reading": "",
-          "translation": "I am learning the character 「土」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "土"
-          ]
-        },
-        {
-          "text": "我會讀「土」。",
-          "reading": "",
-          "translation": "I can read the character 「土」.",
-          "showsCoreMeaning": false,
+          "text": "泥土很乾。",
+          "reading": "Nítǔ hěn gān.",
+          "translation": "The soil is dry.",
+          "speechText": "泥土很乾。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "土地",
+          "reading": "tou2 dei6",
+          "translation": "land",
+          "speechText": "土地",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "土"
+          ]
+        },
+        {
+          "text": "泥土",
+          "reading": "nai4 tou2",
+          "translation": "soil",
+          "speechText": "泥土",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "土"
+          ]
+        },
+        {
+          "text": "啲泥土好乾。",
+          "reading": "di1 nai4 tou2 hou2 gon1",
+          "translation": "The soil is dry.",
+          "speechText": "啲泥土好乾。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "土"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "tou2",
+          "audioAssetRef": null,
+          "speechText": "土",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "土",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TSUCHI",
+          "system": "on",
+          "value": "ド (do)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ど",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "ト (to)",
+          "audioAssetRef": null,
+          "speechText": "と",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "つち (tsuchi)",
+          "audioAssetRef": null,
+          "speechText": "つち",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +235,10 @@
       "examples": [
         {
           "text": "土",
-          "reading": "TSUCHI",
-          "translation": "earth",
+          "reading": "tsuchi",
+          "translation": "soil; earth",
+          "speechText": "土",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「土」です。",
-          "reading": "",
-          "translation": "This is the kanji 「土」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "土地",
+          "reading": "tochi",
+          "translation": "land",
+          "speechText": "土地",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「土」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「土」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "土"
-          ]
-        },
-        {
-          "text": "「土」を読みます。",
-          "reading": "",
-          "translation": "I read 「土」.",
-          "showsCoreMeaning": false,
+          "text": "土を掘ります。",
+          "reading": "tsuchi o horimasu.",
+          "translation": "I dig the soil.",
+          "speechText": "土を掘ります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "THO TWU",
+          "value": "토 / to",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "토",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "흙 / heuk",
+          "audioAssetRef": null,
+          "speechText": "흙",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "土",
-          "reading": "THO TWU",
-          "translation": "earth",
+          "text": "토지",
+          "reading": "toji",
+          "translation": "land",
+          "speechText": "토지",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘土’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘土’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "국토",
+          "reading": "gukto",
+          "translation": "national territory",
+          "speechText": "국토",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘土’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘土’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "土"
-          ]
-        },
-        {
-          "text": "‘土’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘土’.",
-          "showsCoreMeaning": false,
+          "text": "흙을 만져요.",
+          "reading": "heulgeul manjyeoyo.",
+          "translation": "I touch the soil.",
+          "speechText": "흙을 만져요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

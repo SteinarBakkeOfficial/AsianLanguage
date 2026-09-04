@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "步",
-          "reading": "bù",
-          "translation": "step",
+          "text": "一步",
+          "reading": "yí bù",
+          "translation": "one step",
+          "speechText": "一步",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是步。",
-          "reading": "",
-          "translation": "This is the character 步.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "散步",
+          "reading": "sànbù",
+          "translation": "take a walk",
+          "speechText": "散步",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习步。",
-          "reading": "",
-          "translation": "I am learning the character 步.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "步"
-          ]
-        },
-        {
-          "text": "我会读步。",
-          "reading": "",
-          "translation": "I can read the character 步.",
-          "showsCoreMeaning": false,
+          "text": "我们去散步。",
+          "reading": "Wǒmen qù sànbù.",
+          "translation": "We are going for a walk.",
+          "speechText": "我们去散步。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "步",
-          "reading": "bù",
-          "translation": "step",
+          "text": "一步",
+          "reading": "yí bù",
+          "translation": "one step",
+          "speechText": "一步",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「步」。",
-          "reading": "",
-          "translation": "This is the character 「步」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "散步",
+          "reading": "sànbù",
+          "translation": "take a walk",
+          "speechText": "散步",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「步」。",
-          "reading": "",
-          "translation": "I am learning the character 「步」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "步"
-          ]
-        },
-        {
-          "text": "我會讀「步」。",
-          "reading": "",
-          "translation": "I can read the character 「步」.",
-          "showsCoreMeaning": false,
+          "text": "我們去散步。",
+          "reading": "Wǒmen qù sànbù.",
+          "translation": "We are going for a walk.",
+          "speechText": "我們去散步。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "一步",
+          "reading": "jat1 bou6",
+          "translation": "one step",
+          "speechText": "一步",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "步"
+          ]
+        },
+        {
+          "text": "散步",
+          "reading": "saan3 bou6",
+          "translation": "take a walk",
+          "speechText": "散步",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "步"
+          ]
+        },
+        {
+          "text": "我哋去散步。",
+          "reading": "ngo5 dei6 heoi3 saan3 bou6",
+          "translation": "We are going for a walk.",
+          "speechText": "我哋去散步。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "步"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "bou6",
+          "audioAssetRef": null,
+          "speechText": "步",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
-      "form": "步",
+      "form": "歩",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "ARUKU AYUMU AYUMI",
+          "system": "on",
+          "value": "ホ (ho)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ほ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "ブ (bu)",
+          "audioAssetRef": null,
+          "speechText": "ぶ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "あるく (aruku)",
+          "audioAssetRef": null,
+          "speechText": "あるく",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "步",
-          "reading": "ARUKU AYUMU AYUMI",
-          "translation": "step",
+          "text": "歩く",
+          "reading": "aruku",
+          "translation": "walk",
+          "speechText": "歩く",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「步」です。",
-          "reading": "",
-          "translation": "This is the kanji 「步」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "散歩",
+          "reading": "sanpo",
+          "translation": "walk; stroll",
+          "speechText": "散歩",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「步」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「步」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "步"
-          ]
-        },
-        {
-          "text": "「步」を読みます。",
-          "reading": "",
-          "translation": "I read 「步」.",
-          "showsCoreMeaning": false,
+          "text": "公園を歩きます。",
+          "reading": "kōen o arukimasu.",
+          "translation": "I walk in the park.",
+          "speechText": "公園を歩きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "PO",
+          "value": "보 / bo",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "보",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "걸음 / georeum",
+          "audioAssetRef": null,
+          "speechText": "걸음",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "步",
-          "reading": "PO",
-          "translation": "step",
+          "text": "보행",
+          "reading": "bohaeng",
+          "translation": "walking; pedestrian movement",
+          "speechText": "보행",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘步’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘步’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "산보",
+          "reading": "sanbo",
+          "translation": "stroll",
+          "speechText": "산보",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘步’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘步’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "步"
-          ]
-        },
-        {
-          "text": "‘步’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘步’.",
-          "showsCoreMeaning": false,
+          "text": "천천히 걸어요.",
+          "reading": "cheoncheonhi georeoyo.",
+          "translation": "I walk slowly.",
+          "speechText": "천천히 걸어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

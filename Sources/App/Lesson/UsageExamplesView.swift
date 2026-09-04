@@ -113,7 +113,9 @@ struct UsageExamplesView: View {
                 .lineLimit(1)
                 .clipped()
             VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                ForEach(readings, id: \.system) { reading in
+                // Reading systems are not unique: Japanese may have several On/Kun readings,
+                // and Korean may expose ordinary and sound-law variants.
+                ForEach(Array(readings.enumerated()), id: \.offset) { _, reading in
                     readingRow(reading, fontRole: fontRole)
                 }
             }
@@ -144,13 +146,25 @@ struct UsageExamplesView: View {
 
     /// Uses established linguistic labels instead of flattening distinct reading systems into one caption.
     private func readingLabel(_ reading: CharacterReading) -> String {
-        switch reading.system.lowercased() {
-        case "on": return "On · Sino-Japanese"
-        case "kun": return "Kun · native Japanese"
-        case "hanja": return "Hanja · Sino-Korean"
-        case "native korean": return "Everyday Korean"
-        default: return reading.system.capitalized
+        let normalized = reading.system.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        if normalized == "on" { return "On · Sino-Japanese" }
+        if normalized == "kun" { return "Kun · native Japanese" }
+        if normalized == "hanja" { return "Hanja · Sino-Korean" }
+        if normalized.hasPrefix("hanja · ") {
+            return "Hanja · " + String(reading.system.dropFirst("hanja · ".count))
         }
+        if normalized == "native korean" || normalized == "everyday korean" {
+            return "Everyday Korean"
+        }
+        if normalized.hasPrefix("native korean · ") || normalized.hasPrefix("everyday korean · ") {
+            let separator = reading.system.firstIndex(of: "·")
+            let detail = separator.map {
+                String(reading.system[reading.system.index(after: $0)...])
+                    .trimmingCharacters(in: .whitespacesAndNewlines)
+            } ?? ""
+            return detail.isEmpty ? "Everyday Korean" : "Everyday Korean · \(detail)"
+        }
+        return reading.system.capitalized
     }
 
     /// Splits the current editorial display form from optional romanization without changing the stored value.
@@ -184,7 +198,7 @@ struct UsageExamplesView: View {
                     Text(variant.form)
                         .font(CJKFontRole.korean.font(size: 22).weight(.semibold))
                         .foregroundStyle(AppColors.textPrimary)
-                ForEach(variant.readings, id: \.system) { reading in
+                ForEach(Array(variant.readings.enumerated()), id: \.offset) { _, reading in
                     readingRow(reading, fontRole: .korean)
                 }
                 }
@@ -252,7 +266,7 @@ struct UsageExamplesView: View {
             Text(title)
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
-            ForEach(readings, id: \.system) { reading in
+            ForEach(Array(readings.enumerated()), id: \.offset) { _, reading in
                 readingRow(reading, fontRole: .traditionalChinese)
             }
             ForEach(displayExamples(examples).prefix(4), id: \.text) { example in

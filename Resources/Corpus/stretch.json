@@ -34,13 +34,15 @@
         }
       ],
       "glosses": [
-        "stretch"
+        "apply; state; declare"
       ],
       "examples": [
         {
-          "text": "申",
-          "reading": "shēn",
-          "translation": "stretch",
+          "text": "申请",
+          "reading": "shēnqǐng",
+          "translation": "apply; application",
+          "speechText": "申请",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是申。",
-          "reading": "",
-          "translation": "This is the character 申.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "申报",
+          "reading": "shēnbào",
+          "translation": "declare; report",
+          "speechText": "申报",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习申。",
-          "reading": "",
-          "translation": "I am learning the character 申.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "申"
-          ]
-        },
-        {
-          "text": "我会读申。",
-          "reading": "",
-          "translation": "I can read the character 申.",
-          "showsCoreMeaning": false,
+          "text": "我想申请。",
+          "reading": "Wǒ xiǎng shēnqǐng.",
+          "translation": "I want to apply.",
+          "speechText": "我想申请。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -100,13 +94,15 @@
         }
       ],
       "glosses": [
-        "stretch"
+        "apply; state; declare"
       ],
       "taiwanExamples": [
         {
-          "text": "申",
-          "reading": "shēn",
-          "translation": "stretch",
+          "text": "申請",
+          "reading": "shēnqǐng",
+          "translation": "apply; application",
+          "speechText": "申請",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「申」。",
-          "reading": "",
-          "translation": "This is the character 「申」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "申報",
+          "reading": "shēnbào",
+          "translation": "declare; report",
+          "speechText": "申報",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「申」。",
-          "reading": "",
-          "translation": "I am learning the character 「申」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "申"
-          ]
-        },
-        {
-          "text": "我會讀「申」。",
-          "reading": "",
-          "translation": "I can read the character 「申」.",
-          "showsCoreMeaning": false,
+          "text": "我想申請。",
+          "reading": "Wǒ xiǎng shēnqǐng.",
+          "translation": "I want to apply.",
+          "speechText": "我想申請。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "申請",
+          "reading": "san1 cing2",
+          "translation": "apply; application",
+          "speechText": "申請",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "申"
+          ]
+        },
+        {
+          "text": "申報",
+          "reading": "san1 bou3",
+          "translation": "declare; report",
+          "speechText": "申報",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "申"
+          ]
+        },
+        {
+          "text": "我想申請。",
+          "reading": "ngo5 soeng2 san1 cing2",
+          "translation": "I want to apply.",
+          "speechText": "我想申請。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "申"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,28 +193,45 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "san1",
+          "audioAssetRef": null,
+          "speechText": "申",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "申",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "MOUSU NOBIRU SARU",
+          "system": "on",
+          "value": "シン (shin)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "しん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "もうす (mōsu)",
+          "audioAssetRef": null,
+          "speechText": "もうす",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
-        "stretch"
+        "say (humble); apply"
       ],
       "examples": [
         {
-          "text": "申",
-          "reading": "MOUSU NOBIRU SARU",
-          "translation": "stretch",
+          "text": "申す",
+          "reading": "mōsu",
+          "translation": "say (humble)",
+          "speechText": "申す",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「申」です。",
-          "reading": "",
-          "translation": "This is the kanji 「申」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "申し込む",
+          "reading": "mōshikomu",
+          "translation": "apply; sign up",
+          "speechText": "申し込む",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「申」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「申」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "申"
-          ]
-        },
-        {
-          "text": "「申」を読みます。",
-          "reading": "",
-          "translation": "I read 「申」.",
-          "showsCoreMeaning": false,
+          "text": "ここで申し込みます。",
+          "reading": "koko de mōshikomimasu.",
+          "translation": "I apply here.",
+          "speechText": "ここで申し込みます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,20 +276,22 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SIN",
+          "value": "신 / sin",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "신",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
-        "stretch"
+        "apply; report; declare (in compounds)"
       ],
       "examples": [
         {
-          "text": "申",
-          "reading": "SIN",
-          "translation": "stretch",
+          "text": "신청",
+          "reading": "sincheong",
+          "translation": "application; apply",
+          "speechText": "신청",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +301,13 @@
           ]
         },
         {
-          "text": "이것은 ‘申’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘申’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "신고",
+          "reading": "singo",
+          "translation": "report; declaration",
+          "speechText": "신고",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +315,12 @@
           ]
         },
         {
-          "text": "‘申’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘申’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "申"
-          ]
-        },
-        {
-          "text": "‘申’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘申’.",
-          "showsCoreMeaning": false,
+          "text": "신청해요.",
+          "reading": "sincheonghaeyo.",
+          "translation": "I apply.",
+          "speechText": "신청해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +567,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +633,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

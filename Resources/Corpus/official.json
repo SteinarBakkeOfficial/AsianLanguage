@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "官",
-          "reading": "guān",
+          "text": "官员",
+          "reading": "guānyuán",
           "translation": "official",
+          "speechText": "官员",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是官。",
-          "reading": "",
-          "translation": "This is the character 官.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "官方",
+          "reading": "guānfāng",
+          "translation": "official; authoritative",
+          "speechText": "官方",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习官。",
-          "reading": "",
-          "translation": "I am learning the character 官.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "官"
-          ]
-        },
-        {
-          "text": "我会读官。",
-          "reading": "",
-          "translation": "I can read the character 官.",
-          "showsCoreMeaning": false,
+          "text": "他是政府官员。",
+          "reading": "Tā shì zhèngfǔ guānyuán.",
+          "translation": "He is a government official.",
+          "speechText": "他是政府官员。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "官",
-          "reading": "guān",
+          "text": "官員",
+          "reading": "guānyuán",
           "translation": "official",
+          "speechText": "官員",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「官」。",
-          "reading": "",
-          "translation": "This is the character 「官」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "官方",
+          "reading": "guānfāng",
+          "translation": "official; authoritative",
+          "speechText": "官方",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「官」。",
-          "reading": "",
-          "translation": "I am learning the character 「官」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "官"
-          ]
-        },
-        {
-          "text": "我會讀「官」。",
-          "reading": "",
-          "translation": "I can read the character 「官」.",
-          "showsCoreMeaning": false,
+          "text": "他是政府官員。",
+          "reading": "Tā shì zhèngfǔ guānyuán.",
+          "translation": "He is a government official.",
+          "speechText": "他是政府官員。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "官員",
+          "reading": "gun1 jyun4",
+          "translation": "official",
+          "speechText": "官員",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "官"
+          ]
+        },
+        {
+          "text": "官方",
+          "reading": "gun1 fong1",
+          "translation": "official; authoritative",
+          "speechText": "官方",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "官"
+          ]
+        },
+        {
+          "text": "佢係政府官員。",
+          "reading": "keoi5 hai6 zing3 fu2 gun1 jyun4",
+          "translation": "He is a government official.",
+          "speechText": "佢係政府官員。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "官"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,26 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gun1",
+          "audioAssetRef": null,
+          "speechText": "官",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "官",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TSUKASA OOYAKE",
+          "system": "on",
+          "value": "カン (kan)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "かん",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +220,11 @@
       ],
       "examples": [
         {
-          "text": "官",
-          "reading": "TSUKASA OOYAKE",
-          "translation": "official",
+          "text": "官庁",
+          "reading": "kanchō",
+          "translation": "government office",
+          "speechText": "官庁",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +234,13 @@
           ]
         },
         {
-          "text": "これは「官」です。",
-          "reading": "",
-          "translation": "This is the kanji 「官」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "長官",
+          "reading": "chōkan",
+          "translation": "chief; minister",
+          "speechText": "長官",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +248,12 @@
           ]
         },
         {
-          "text": "「官」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「官」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "官"
-          ]
-        },
-        {
-          "text": "「官」を読みます。",
-          "reading": "",
-          "translation": "I read 「官」.",
-          "showsCoreMeaning": false,
+          "text": "長官が話します。",
+          "reading": "chōkan ga hanashimasu.",
+          "translation": "The minister speaks.",
+          "speechText": "長官が話します。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +269,10 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "KWAN",
+          "value": "관 / gwan",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "관",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +280,11 @@
       ],
       "examples": [
         {
-          "text": "官",
-          "reading": "KWAN",
-          "translation": "official",
+          "text": "관청",
+          "reading": "gwancheong",
+          "translation": "government office",
+          "speechText": "관청",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +294,13 @@
           ]
         },
         {
-          "text": "이것은 ‘官’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘官’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "장관",
+          "reading": "janggwan",
+          "translation": "government minister",
+          "speechText": "장관",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +308,12 @@
           ]
         },
         {
-          "text": "‘官’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘官’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "官"
-          ]
-        },
-        {
-          "text": "‘官’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘官’.",
-          "showsCoreMeaning": false,
+          "text": "장관이 말해요.",
+          "reading": "janggwan-i malhaeyo.",
+          "translation": "The minister speaks.",
+          "speechText": "장관이 말해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +560,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +626,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

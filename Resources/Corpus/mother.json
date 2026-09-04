@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "母",
-          "reading": "mǔ",
+          "text": "母亲",
+          "reading": "mǔqīn",
           "translation": "mother",
+          "speechText": "母亲",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是母。",
-          "reading": "",
-          "translation": "This is the character 母.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "父母",
+          "reading": "fùmǔ",
+          "translation": "parents",
+          "speechText": "父母",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习母。",
-          "reading": "",
-          "translation": "I am learning the character 母.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "母"
-          ]
-        },
-        {
-          "text": "我会读母。",
-          "reading": "",
-          "translation": "I can read the character 母.",
-          "showsCoreMeaning": false,
+          "text": "这是我的母亲。",
+          "reading": "Zhè shì wǒ de mǔqīn.",
+          "translation": "This is my mother.",
+          "speechText": "这是我的母亲。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "母",
-          "reading": "mǔ",
+          "text": "母親",
+          "reading": "mǔqīn",
           "translation": "mother",
+          "speechText": "母親",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「母」。",
-          "reading": "",
-          "translation": "This is the character 「母」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "父母",
+          "reading": "fùmǔ",
+          "translation": "parents",
+          "speechText": "父母",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「母」。",
-          "reading": "",
-          "translation": "I am learning the character 「母」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "母"
-          ]
-        },
-        {
-          "text": "我會讀「母」。",
-          "reading": "",
-          "translation": "I can read the character 「母」.",
-          "showsCoreMeaning": false,
+          "text": "這是我的母親。",
+          "reading": "Zhè shì wǒ de mǔqīn.",
+          "translation": "This is my mother.",
+          "speechText": "這是我的母親。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "母親",
+          "reading": "mou5 can1",
+          "translation": "mother",
+          "speechText": "母親",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "母"
+          ]
+        },
+        {
+          "text": "父母",
+          "reading": "fu6 mou5",
+          "translation": "parents",
+          "speechText": "父母",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "母"
+          ]
+        },
+        {
+          "text": "呢位係我母親。",
+          "reading": "ni1 wai2 hai6 ngo5 mou5 can1",
+          "translation": "This is my mother.",
+          "speechText": "呢位係我母親。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "母"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "mou5",
+          "audioAssetRef": null,
+          "speechText": "母",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "母",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "HAHA",
+          "system": "on",
+          "value": "ボ (bo)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ぼ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "はは (haha)",
+          "audioAssetRef": null,
+          "speechText": "はは",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "母",
-          "reading": "HAHA",
+          "reading": "haha",
           "translation": "mother",
+          "speechText": "母",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「母」です。",
-          "reading": "",
-          "translation": "This is the kanji 「母」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "母親",
+          "reading": "hahaoya",
+          "translation": "mother",
+          "speechText": "母親",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「母」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「母」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "母"
-          ]
-        },
-        {
-          "text": "「母」を読みます。",
-          "reading": "",
-          "translation": "I read 「母」.",
-          "showsCoreMeaning": false,
+          "text": "母は家にいます。",
+          "reading": "haha wa ie ni imasu.",
+          "translation": "My mother is at home.",
+          "speechText": "母は家にいます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "MO",
+          "value": "모 / mo",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "모",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "어머니 / eomeoni",
+          "audioAssetRef": null,
+          "speechText": "어머니",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "母",
-          "reading": "MO",
-          "translation": "mother",
+          "text": "모녀",
+          "reading": "monyeo",
+          "translation": "mother and daughter",
+          "speechText": "모녀",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘母’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘母’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "부모",
+          "reading": "bumo",
+          "translation": "parents",
+          "speechText": "부모",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘母’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘母’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "母"
-          ]
-        },
-        {
-          "text": "‘母’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘母’.",
-          "showsCoreMeaning": false,
+          "text": "어머니가 집에 계세요.",
+          "reading": "eomeoniga jibe gyeseyo.",
+          "translation": "Mother is at home.",
+          "speechText": "어머니가 집에 계세요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

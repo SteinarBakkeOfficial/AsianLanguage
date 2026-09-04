@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "吉",
-          "reading": "jí",
-          "translation": "auspicious",
+          "text": "吉祥",
+          "reading": "jíxiáng",
+          "translation": "auspicious; lucky",
+          "speechText": "吉祥",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是吉。",
-          "reading": "",
-          "translation": "This is the character 吉.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "吉日",
+          "reading": "jírì",
+          "translation": "lucky day",
+          "speechText": "吉日",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习吉。",
-          "reading": "",
-          "translation": "I am learning the character 吉.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "吉"
-          ]
-        },
-        {
-          "text": "我会读吉。",
-          "reading": "",
-          "translation": "I can read the character 吉.",
-          "showsCoreMeaning": false,
+          "text": "今天是吉日。",
+          "reading": "Jīntiān shì jírì.",
+          "translation": "Today is a lucky day.",
+          "speechText": "今天是吉日。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "吉",
-          "reading": "jí",
-          "translation": "auspicious",
+          "text": "吉祥",
+          "reading": "jíxiáng",
+          "translation": "auspicious; lucky",
+          "speechText": "吉祥",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「吉」。",
-          "reading": "",
-          "translation": "This is the character 「吉」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "吉日",
+          "reading": "jírì",
+          "translation": "lucky day",
+          "speechText": "吉日",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「吉」。",
-          "reading": "",
-          "translation": "I am learning the character 「吉」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "吉"
-          ]
-        },
-        {
-          "text": "我會讀「吉」。",
-          "reading": "",
-          "translation": "I can read the character 「吉」.",
-          "showsCoreMeaning": false,
+          "text": "今天是吉日。",
+          "reading": "Jīntiān shì jírì.",
+          "translation": "Today is a lucky day.",
+          "speechText": "今天是吉日。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "吉祥",
+          "reading": "gat1 coeng4",
+          "translation": "auspicious; lucky",
+          "speechText": "吉祥",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "吉"
+          ]
+        },
+        {
+          "text": "吉日",
+          "reading": "gat1 jat6",
+          "translation": "lucky day",
+          "speechText": "吉日",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "吉"
+          ]
+        },
+        {
+          "text": "今日係吉日。",
+          "reading": "gam1 jat6 hai6 gat1 jat6",
+          "translation": "Today is a lucky day.",
+          "speechText": "今日係吉日。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "吉"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gat1",
+          "audioAssetRef": null,
+          "speechText": "吉",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "吉",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "YOI",
+          "system": "on",
+          "value": "キチ (kichi)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "きち",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "キツ (kitsu)",
+          "audioAssetRef": null,
+          "speechText": "きつ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "吉",
-          "reading": "YOI",
-          "translation": "auspicious",
+          "text": "吉日",
+          "reading": "kichijitsu",
+          "translation": "lucky day",
+          "speechText": "吉日",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「吉」です。",
-          "reading": "",
-          "translation": "This is the kanji 「吉」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "大吉",
+          "reading": "daikichi",
+          "translation": "great luck",
+          "speechText": "大吉",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「吉」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「吉」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "吉"
-          ]
-        },
-        {
-          "text": "「吉」を読みます。",
-          "reading": "",
-          "translation": "I read 「吉」.",
-          "showsCoreMeaning": false,
+          "text": "おみくじは大吉でした。",
+          "reading": "omikuji wa daikichi deshita.",
+          "translation": "My fortune slip said “great luck.”",
+          "speechText": "おみくじは大吉でした。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,10 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "KIL",
+          "value": "길 / gil",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "길",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +287,11 @@
       ],
       "examples": [
         {
-          "text": "吉",
-          "reading": "KIL",
-          "translation": "auspicious",
+          "text": "길일",
+          "reading": "giril",
+          "translation": "lucky day",
+          "speechText": "길일",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +301,13 @@
           ]
         },
         {
-          "text": "이것은 ‘吉’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘吉’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "길조",
+          "reading": "giljo",
+          "translation": "good omen",
+          "speechText": "길조",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +315,12 @@
           ]
         },
         {
-          "text": "‘吉’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘吉’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "吉"
-          ]
-        },
-        {
-          "text": "‘吉’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘吉’.",
-          "showsCoreMeaning": false,
+          "text": "오늘은 길일이에요.",
+          "reading": "oneureun giririeyo.",
+          "translation": "Today is a lucky day.",
+          "speechText": "오늘은 길일이에요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +567,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +633,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

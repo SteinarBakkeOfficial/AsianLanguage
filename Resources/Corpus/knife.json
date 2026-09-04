@@ -40,7 +40,9 @@
         {
           "text": "刀",
           "reading": "dāo",
-          "translation": "knife",
+          "translation": "knife; blade",
+          "speechText": "刀",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是刀。",
-          "reading": "",
-          "translation": "This is the character 刀.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "菜刀",
+          "reading": "càidāo",
+          "translation": "kitchen knife",
+          "speechText": "菜刀",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习刀。",
-          "reading": "",
-          "translation": "I am learning the character 刀.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "刀"
-          ]
-        },
-        {
-          "text": "我会读刀。",
-          "reading": "",
-          "translation": "I can read the character 刀.",
-          "showsCoreMeaning": false,
+          "text": "这把刀很锋利。",
+          "reading": "Zhè bǎ dāo hěn fēnglì.",
+          "translation": "This knife is sharp.",
+          "speechText": "这把刀很锋利。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -106,7 +100,9 @@
         {
           "text": "刀",
           "reading": "dāo",
-          "translation": "knife",
+          "translation": "knife; blade",
+          "speechText": "刀",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「刀」。",
-          "reading": "",
-          "translation": "This is the character 「刀」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "菜刀",
+          "reading": "càidāo",
+          "translation": "kitchen knife",
+          "speechText": "菜刀",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「刀」。",
-          "reading": "",
-          "translation": "I am learning the character 「刀」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "刀"
-          ]
-        },
-        {
-          "text": "我會讀「刀」。",
-          "reading": "",
-          "translation": "I can read the character 「刀」.",
-          "showsCoreMeaning": false,
+          "text": "這把刀很鋒利。",
+          "reading": "Zhè bǎ dāo hěn fēnglì.",
+          "translation": "This knife is sharp.",
+          "speechText": "這把刀很鋒利。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "刀",
+          "reading": "dou1",
+          "translation": "knife; blade",
+          "speechText": "刀",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "刀"
+          ]
+        },
+        {
+          "text": "菜刀",
+          "reading": "coi3 dou1",
+          "translation": "kitchen knife",
+          "speechText": "菜刀",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "刀"
+          ]
+        },
+        {
+          "text": "呢把刀好利。",
+          "reading": "ni1 baa2 dou1 hou2 lei6",
+          "translation": "This knife is sharp.",
+          "speechText": "呢把刀好利。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "刀"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "dou1",
+          "audioAssetRef": null,
+          "speechText": "刀",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "刀",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "KATANA",
+          "system": "on",
+          "value": "トウ (tō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "とう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "かたな (katana)",
+          "audioAssetRef": null,
+          "speechText": "かたな",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "刀",
-          "reading": "KATANA",
-          "translation": "knife",
+          "reading": "katana",
+          "translation": "sword; blade",
+          "speechText": "刀",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「刀」です。",
-          "reading": "",
-          "translation": "This is the kanji 「刀」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "日本刀",
+          "reading": "nihontō",
+          "translation": "Japanese sword",
+          "speechText": "日本刀",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「刀」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「刀」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "刀"
-          ]
-        },
-        {
-          "text": "「刀」を読みます。",
-          "reading": "",
-          "translation": "I read 「刀」.",
-          "showsCoreMeaning": false,
+          "text": "刀を使います。",
+          "reading": "katana o tsukaimasu.",
+          "translation": "I use a sword.",
+          "speechText": "刀を使います。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "TO",
+          "value": "도 / do",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "도",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "칼 / kal",
+          "audioAssetRef": null,
+          "speechText": "칼",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "刀",
-          "reading": "TO",
-          "translation": "knife",
+          "text": "도검",
+          "reading": "dogeom",
+          "translation": "swords and blades",
+          "speechText": "도검",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘刀’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘刀’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "식칼",
+          "reading": "sikal",
+          "translation": "kitchen knife",
+          "speechText": "식칼",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘刀’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘刀’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "刀"
-          ]
-        },
-        {
-          "text": "‘刀’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘刀’.",
-          "showsCoreMeaning": false,
+          "text": "칼을 써요.",
+          "reading": "kareul sseoyo.",
+          "translation": "I use a knife.",
+          "speechText": "칼을 써요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

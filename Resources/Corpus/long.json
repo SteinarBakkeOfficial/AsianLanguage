@@ -27,7 +27,7 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "zhǎng",
+          "value": "cháng",
           "audioAssetRef": null,
           "speechText": "长",
           "speechLanguage": "mandarin"
@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "长",
-          "reading": "zhǎng",
-          "translation": "long",
+          "text": "很长",
+          "reading": "hěn cháng",
+          "translation": "very long",
+          "speechText": "很长",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是长。",
-          "reading": "",
-          "translation": "This is the character 长.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "长头发",
+          "reading": "cháng tóufa",
+          "translation": "long hair",
+          "speechText": "长头发",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习长。",
-          "reading": "",
-          "translation": "I am learning the character 长.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "长"
-          ]
-        },
-        {
-          "text": "我会读长。",
-          "reading": "",
-          "translation": "I can read the character 长.",
-          "showsCoreMeaning": false,
+          "text": "这条路很长。",
+          "reading": "Zhè tiáo lù hěn cháng.",
+          "translation": "This road is long.",
+          "speechText": "这条路很长。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -93,9 +87,9 @@
       "readings": [
         {
           "system": "pinyin",
-          "value": "zhǎng",
+          "value": "cháng",
           "audioAssetRef": null,
-          "speechText": "长",
+          "speechText": "長",
           "speechLanguage": "mandarin"
         }
       ],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "長",
-          "reading": "zhǎng",
-          "translation": "long",
+          "text": "很長",
+          "reading": "hěn cháng",
+          "translation": "very long",
+          "speechText": "很長",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「長」。",
-          "reading": "",
-          "translation": "This is the character 「長」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "長頭髮",
+          "reading": "cháng tóufa",
+          "translation": "long hair",
+          "speechText": "長頭髮",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「長」。",
-          "reading": "",
-          "translation": "I am learning the character 「長」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "长"
-          ]
-        },
-        {
-          "text": "我會讀「長」。",
-          "reading": "",
-          "translation": "I can read the character 「長」.",
-          "showsCoreMeaning": false,
+          "text": "這條路很長。",
+          "reading": "Zhè tiáo lù hěn cháng.",
+          "translation": "This road is long.",
+          "speechText": "這條路很長。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,30 +140,98 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "長",
+          "reading": "coeng4",
+          "translation": "long",
+          "speechText": "長",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "长"
+          ]
+        },
+        {
+          "text": "長頭髮",
+          "reading": "coeng4 tau4 faat3",
+          "translation": "long hair",
+          "speechText": "長頭髮",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "长"
+          ]
+        },
+        {
+          "text": "呢條路好長。",
+          "reading": "ni1 tiu4 lou6 hou2 coeng4",
+          "translation": "This road is long.",
+          "speechText": "呢條路好長。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "长"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
-          "value": "zhǎng",
+          "value": "cháng",
           "audioAssetRef": null,
-          "speechText": "长",
+          "speechText": "長",
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "coeng4",
+          "audioAssetRef": null,
+          "speechText": "長",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "長",
-      "readings": [],
+      "readings": [
+        {
+          "system": "on",
+          "value": "チョウ (chō)",
+          "audioAssetRef": null,
+          "speechText": "ちょう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "ながい (nagai)",
+          "audioAssetRef": null,
+          "speechText": "ながい",
+          "speechLanguage": "japanese"
+        }
+      ],
       "glosses": [
         "long"
       ],
       "examples": [
         {
-          "text": "長",
-          "reading": "",
+          "text": "長い",
+          "reading": "nagai",
           "translation": "long",
+          "speechText": "長い",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -185,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「長」です。",
-          "reading": "",
-          "translation": "This is the kanji 「長」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "校長",
+          "reading": "kōchō",
+          "translation": "school principal",
+          "speechText": "校長",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -197,22 +255,12 @@
           ]
         },
         {
-          "text": "「長」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「長」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "长"
-          ]
-        },
-        {
-          "text": "「長」を読みます。",
-          "reading": "",
-          "translation": "I read 「長」.",
-          "showsCoreMeaning": false,
+          "text": "この道は長いです。",
+          "reading": "kono michi wa nagai desu.",
+          "translation": "This road is long.",
+          "speechText": "この道は長いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -225,15 +273,32 @@
     },
     "korean": {
       "form": "長",
-      "readings": [],
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "장 / jang",
+          "audioAssetRef": null,
+          "speechText": "장",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "길다 / gilda",
+          "audioAssetRef": null,
+          "speechText": "길다",
+          "speechLanguage": "korean"
+        }
+      ],
       "glosses": [
         "long"
       ],
       "examples": [
         {
-          "text": "長",
-          "reading": "",
-          "translation": "long",
+          "text": "장거리",
+          "reading": "janggeori",
+          "translation": "long distance",
+          "speechText": "장거리",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -243,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘長’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘長’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "성장",
+          "reading": "seongjang",
+          "translation": "growth",
+          "speechText": "성장",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -255,22 +322,12 @@
           ]
         },
         {
-          "text": "‘長’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘長’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "长"
-          ]
-        },
-        {
-          "text": "‘長’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘長’.",
-          "showsCoreMeaning": false,
+          "text": "길이 길어요.",
+          "reading": "giri gireoyo.",
+          "translation": "The road is long.",
+          "speechText": "길이 길어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -517,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -582,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

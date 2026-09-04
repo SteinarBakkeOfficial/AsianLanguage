@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "上",
-          "reading": "shàng",
-          "translation": "above",
+          "text": "上面",
+          "reading": "shàngmiàn",
+          "translation": "above; on top",
+          "speechText": "上面",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是上。",
-          "reading": "",
-          "translation": "This is the character 上.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "上山",
+          "reading": "shàngshān",
+          "translation": "go up a mountain",
+          "speechText": "上山",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习上。",
-          "reading": "",
-          "translation": "I am learning the character 上.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "上"
-          ]
-        },
-        {
-          "text": "我会读上。",
-          "reading": "",
-          "translation": "I can read the character 上.",
-          "showsCoreMeaning": false,
+          "text": "书在桌子上。",
+          "reading": "Shū zài zhuōzi shang.",
+          "translation": "The book is on the table.",
+          "speechText": "书在桌子上。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "上",
-          "reading": "shàng",
-          "translation": "above",
+          "text": "上面",
+          "reading": "shàngmiàn",
+          "translation": "above; on top",
+          "speechText": "上面",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「上」。",
-          "reading": "",
-          "translation": "This is the character 「上」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "上山",
+          "reading": "shàngshān",
+          "translation": "go up a mountain",
+          "speechText": "上山",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「上」。",
-          "reading": "",
-          "translation": "I am learning the character 「上」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "上"
-          ]
-        },
-        {
-          "text": "我會讀「上」。",
-          "reading": "",
-          "translation": "I can read the character 「上」.",
-          "showsCoreMeaning": false,
+          "text": "書在桌子上。",
+          "reading": "Shū zài zhuōzi shang.",
+          "translation": "The book is on the table.",
+          "speechText": "書在桌子上。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "上面",
+          "reading": "soeng6 min6",
+          "translation": "above; on top",
+          "speechText": "上面",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "上"
+          ]
+        },
+        {
+          "text": "上山",
+          "reading": "soeng5 saan1",
+          "translation": "go up a mountain",
+          "speechText": "上山",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "上"
+          ]
+        },
+        {
+          "text": "本書喺枱上面。",
+          "reading": "bun2 syu1 hai2 toi2 soeng6 min6",
+          "translation": "The book is on the table.",
+          "speechText": "本書喺枱上面。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "上"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "soeng6",
+          "audioAssetRef": null,
+          "speechText": "上",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "上",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "UE KAMI NOBORU",
+          "system": "on",
+          "value": "ジョウ (jō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "じょう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "うえ (ue)",
+          "audioAssetRef": null,
+          "speechText": "うえ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "あがる (agaru)",
+          "audioAssetRef": null,
+          "speechText": "あがる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +235,10 @@
       "examples": [
         {
           "text": "上",
-          "reading": "UE KAMI NOBORU",
-          "translation": "above",
+          "reading": "ue",
+          "translation": "above; on top",
+          "speechText": "上",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「上」です。",
-          "reading": "",
-          "translation": "This is the kanji 「上」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "上る",
+          "reading": "noboru",
+          "translation": "go up; climb",
+          "speechText": "上る",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「上」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「上」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "上"
-          ]
-        },
-        {
-          "text": "「上」を読みます。",
-          "reading": "",
-          "translation": "I read 「上」.",
-          "showsCoreMeaning": false,
+          "text": "本は机の上です。",
+          "reading": "hon wa tsukue no ue desu.",
+          "translation": "The book is on the desk.",
+          "speechText": "本は机の上です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SANG",
+          "value": "상 / sang",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "상",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "위 / wi",
+          "audioAssetRef": null,
+          "speechText": "위",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "上",
-          "reading": "SANG",
-          "translation": "above",
+          "text": "상단",
+          "reading": "sangdan",
+          "translation": "upper part",
+          "speechText": "상단",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘上’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘上’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "이상",
+          "reading": "isang",
+          "translation": "above; more than",
+          "speechText": "이상",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘上’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘上’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "上"
-          ]
-        },
-        {
-          "text": "‘上’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘上’.",
-          "showsCoreMeaning": false,
+          "text": "책이 책상 위에 있어요.",
+          "reading": "chaegi chaeksang wie isseoyo.",
+          "translation": "The book is on the desk.",
+          "speechText": "책이 책상 위에 있어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

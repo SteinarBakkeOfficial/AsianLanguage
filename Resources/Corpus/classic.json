@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "典",
-          "reading": "diǎn",
+          "text": "经典",
+          "reading": "jīngdiǎn",
           "translation": "classic",
+          "speechText": "经典",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是典。",
-          "reading": "",
-          "translation": "This is the character 典.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "字典",
+          "reading": "zìdiǎn",
+          "translation": "dictionary",
+          "speechText": "字典",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习典。",
-          "reading": "",
-          "translation": "I am learning the character 典.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "典"
-          ]
-        },
-        {
-          "text": "我会读典。",
-          "reading": "",
-          "translation": "I can read the character 典.",
-          "showsCoreMeaning": false,
+          "text": "我查字典。",
+          "reading": "Wǒ chá zìdiǎn.",
+          "translation": "I look it up in a dictionary.",
+          "speechText": "我查字典。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "典",
-          "reading": "diǎn",
+          "text": "经典",
+          "reading": "jīngdiǎn",
           "translation": "classic",
+          "speechText": "经典",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「典」。",
-          "reading": "",
-          "translation": "This is the character 「典」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "字典",
+          "reading": "zìdiǎn",
+          "translation": "dictionary",
+          "speechText": "字典",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「典」。",
-          "reading": "",
-          "translation": "I am learning the character 「典」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "典"
-          ]
-        },
-        {
-          "text": "我會讀「典」。",
-          "reading": "",
-          "translation": "I can read the character 「典」.",
-          "showsCoreMeaning": false,
+          "text": "我查字典。",
+          "reading": "Wǒ chá zìdiǎn.",
+          "translation": "I look it up in a dictionary.",
+          "speechText": "我查字典。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "經典",
+          "reading": "ging1 din2",
+          "translation": "classic",
+          "speechText": "經典",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "典"
+          ]
+        },
+        {
+          "text": "字典",
+          "reading": "zi6 din2",
+          "translation": "dictionary",
+          "speechText": "字典",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "典"
+          ]
+        },
+        {
+          "text": "我查字典。",
+          "reading": "ngo5 caa4 zi6 din2",
+          "translation": "I look it up in a dictionary.",
+          "speechText": "我查字典。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "典"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,26 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "din2",
+          "audioAssetRef": null,
+          "speechText": "典",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "典",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "NORI TSUKASADORU SAKAN",
+          "system": "on",
+          "value": "テン (ten)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "てん",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +220,11 @@
       ],
       "examples": [
         {
-          "text": "典",
-          "reading": "NORI TSUKASADORU SAKAN",
-          "translation": "classic",
+          "text": "辞典",
+          "reading": "jiten",
+          "translation": "dictionary",
+          "speechText": "辞典",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +234,13 @@
           ]
         },
         {
-          "text": "これは「典」です。",
-          "reading": "",
-          "translation": "This is the kanji 「典」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "古典",
+          "reading": "koten",
+          "translation": "classics",
+          "speechText": "古典",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +248,12 @@
           ]
         },
         {
-          "text": "「典」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「典」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "典"
-          ]
-        },
-        {
-          "text": "「典」を読みます。",
-          "reading": "",
-          "translation": "I read 「典」.",
-          "showsCoreMeaning": false,
+          "text": "辞典を使います。",
+          "reading": "jiten o tsukaimasu.",
+          "translation": "I use a dictionary.",
+          "speechText": "辞典を使います。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +269,10 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CEN",
+          "value": "전 / jeon",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "전",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +280,11 @@
       ],
       "examples": [
         {
-          "text": "典",
-          "reading": "CEN",
-          "translation": "classic",
+          "text": "사전",
+          "reading": "sajeon",
+          "translation": "dictionary",
+          "speechText": "사전",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +294,13 @@
           ]
         },
         {
-          "text": "이것은 ‘典’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘典’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "고전",
+          "reading": "gojeon",
+          "translation": "classics",
+          "speechText": "고전",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +308,12 @@
           ]
         },
         {
-          "text": "‘典’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘典’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "典"
-          ]
-        },
-        {
-          "text": "‘典’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘典’.",
-          "showsCoreMeaning": false,
+          "text": "사전을 봐요.",
+          "reading": "sajeoneul bwayo.",
+          "translation": "I look in a dictionary.",
+          "speechText": "사전을 봐요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +560,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +626,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

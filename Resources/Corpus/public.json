@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "公",
-          "reading": "gōng",
+          "text": "公共",
+          "reading": "gōnggòng",
           "translation": "public",
+          "speechText": "公共",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是公。",
-          "reading": "",
-          "translation": "This is the character 公.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "公园",
+          "reading": "gōngyuán",
+          "translation": "park",
+          "speechText": "公园",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习公。",
-          "reading": "",
-          "translation": "I am learning the character 公.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "公"
-          ]
-        },
-        {
-          "text": "我会读公。",
-          "reading": "",
-          "translation": "I can read the character 公.",
-          "showsCoreMeaning": false,
+          "text": "我们去公园。",
+          "reading": "Wǒmen qù gōngyuán.",
+          "translation": "We are going to the park.",
+          "speechText": "我们去公园。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "公",
-          "reading": "gōng",
+          "text": "公共",
+          "reading": "gōnggòng",
           "translation": "public",
+          "speechText": "公共",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「公」。",
-          "reading": "",
-          "translation": "This is the character 「公」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "公園",
+          "reading": "gōngyuán",
+          "translation": "park",
+          "speechText": "公園",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「公」。",
-          "reading": "",
-          "translation": "I am learning the character 「公」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "公"
-          ]
-        },
-        {
-          "text": "我會讀「公」。",
-          "reading": "",
-          "translation": "I can read the character 「公」.",
-          "showsCoreMeaning": false,
+          "text": "我們去公園。",
+          "reading": "Wǒmen qù gōngyuán.",
+          "translation": "We are going to the park.",
+          "speechText": "我們去公園。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "公共",
+          "reading": "gung1 gung6",
+          "translation": "public",
+          "speechText": "公共",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "公"
+          ]
+        },
+        {
+          "text": "公園",
+          "reading": "gung1 jyun2",
+          "translation": "park",
+          "speechText": "公園",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "公"
+          ]
+        },
+        {
+          "text": "我哋去公園。",
+          "reading": "ngo5 dei6 heoi3 gung1 jyun2",
+          "translation": "We are going to the park.",
+          "speechText": "我哋去公園。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "公"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gung1",
+          "audioAssetRef": null,
+          "speechText": "公",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "公",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "OOYAKE KIMI",
+          "system": "on",
+          "value": "コウ (kō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "こう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "おおやけ (ōyake)",
+          "audioAssetRef": null,
+          "speechText": "おおやけ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "公",
-          "reading": "OOYAKE KIMI",
+          "text": "公共",
+          "reading": "kōkyō",
           "translation": "public",
+          "speechText": "公共",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「公」です。",
-          "reading": "",
-          "translation": "This is the kanji 「公」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "公園",
+          "reading": "kōen",
+          "translation": "park",
+          "speechText": "公園",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「公」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「公」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "公"
-          ]
-        },
-        {
-          "text": "「公」を読みます。",
-          "reading": "",
-          "translation": "I read 「公」.",
-          "showsCoreMeaning": false,
+          "text": "公園へ行きます。",
+          "reading": "kōen e ikimasu.",
+          "translation": "I go to the park.",
+          "speechText": "公園へ行きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,10 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "KONG",
+          "value": "공 / gong",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "공",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +287,11 @@
       ],
       "examples": [
         {
-          "text": "公",
-          "reading": "KONG",
+          "text": "공공",
+          "reading": "gonggong",
           "translation": "public",
+          "speechText": "공공",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +301,13 @@
           ]
         },
         {
-          "text": "이것은 ‘公’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘公’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "공원",
+          "reading": "gongwon",
+          "translation": "park",
+          "speechText": "공원",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +315,12 @@
           ]
         },
         {
-          "text": "‘公’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘公’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "公"
-          ]
-        },
-        {
-          "text": "‘公’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘公’.",
-          "showsCoreMeaning": false,
+          "text": "공원에 가요.",
+          "reading": "gongwone gayo.",
+          "translation": "I go to the park.",
+          "speechText": "공원에 가요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +567,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +633,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

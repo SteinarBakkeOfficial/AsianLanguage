@@ -40,7 +40,9 @@
         {
           "text": "牛",
           "reading": "niú",
-          "translation": "ox",
+          "translation": "cow; ox",
+          "speechText": "牛",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是牛。",
-          "reading": "",
-          "translation": "This is the character 牛.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "牛奶",
+          "reading": "niúnǎi",
+          "translation": "milk",
+          "speechText": "牛奶",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习牛。",
-          "reading": "",
-          "translation": "I am learning the character 牛.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "牛"
-          ]
-        },
-        {
-          "text": "我会读牛。",
-          "reading": "",
-          "translation": "I can read the character 牛.",
-          "showsCoreMeaning": false,
+          "text": "那边有一头牛。",
+          "reading": "Nàbiān yǒu yì tóu niú.",
+          "translation": "There is a cow over there.",
+          "speechText": "那边有一头牛。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -106,7 +100,9 @@
         {
           "text": "牛",
           "reading": "niú",
-          "translation": "ox",
+          "translation": "cow; ox",
+          "speechText": "牛",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「牛」。",
-          "reading": "",
-          "translation": "This is the character 「牛」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "牛奶",
+          "reading": "niúnǎi",
+          "translation": "milk",
+          "speechText": "牛奶",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「牛」。",
-          "reading": "",
-          "translation": "I am learning the character 「牛」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "牛"
-          ]
-        },
-        {
-          "text": "我會讀「牛」。",
-          "reading": "",
-          "translation": "I can read the character 「牛」.",
-          "showsCoreMeaning": false,
+          "text": "那边有一頭牛。",
+          "reading": "Nàbiān yǒu yì tóu niú.",
+          "translation": "There is a cow over there.",
+          "speechText": "那边有一頭牛。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "牛",
+          "reading": "ngau4",
+          "translation": "cow; ox",
+          "speechText": "牛",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "牛"
+          ]
+        },
+        {
+          "text": "牛奶",
+          "reading": "ngau4 naai5",
+          "translation": "milk",
+          "speechText": "牛奶",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "牛"
+          ]
+        },
+        {
+          "text": "嗰邊有隻牛。",
+          "reading": "go2 bin1 jau5 zek3 ngau4",
+          "translation": "There is a cow over there.",
+          "speechText": "嗰邊有隻牛。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "牛"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "ngau4",
+          "audioAssetRef": null,
+          "speechText": "牛",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "牛",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "USHI",
+          "system": "on",
+          "value": "ギュウ (gyū)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ぎゅう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "うし (ushi)",
+          "audioAssetRef": null,
+          "speechText": "うし",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "牛",
-          "reading": "USHI",
-          "translation": "ox",
+          "reading": "ushi",
+          "translation": "cow; ox",
+          "speechText": "牛",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「牛」です。",
-          "reading": "",
-          "translation": "This is the kanji 「牛」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "牛乳",
+          "reading": "gyūnyū",
+          "translation": "milk",
+          "speechText": "牛乳",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「牛」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「牛」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "牛"
-          ]
-        },
-        {
-          "text": "「牛」を読みます。",
-          "reading": "",
-          "translation": "I read 「牛」.",
-          "showsCoreMeaning": false,
+          "text": "牛がいます。",
+          "reading": "ushi ga imasu.",
+          "translation": "There is a cow.",
+          "speechText": "牛がいます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "WU",
+          "value": "우 / u",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "우",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "소 / so",
+          "audioAssetRef": null,
+          "speechText": "소",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "牛",
-          "reading": "WU",
-          "translation": "ox",
+          "text": "우유",
+          "reading": "uyu",
+          "translation": "milk",
+          "speechText": "우유",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘牛’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘牛’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "소고기",
+          "reading": "sogogi",
+          "translation": "beef",
+          "speechText": "소고기",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘牛’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘牛’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "牛"
-          ]
-        },
-        {
-          "text": "‘牛’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘牛’.",
-          "showsCoreMeaning": false,
+          "text": "소가 있어요.",
+          "reading": "soga isseoyo.",
+          "translation": "There is a cow.",
+          "speechText": "소가 있어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "从",
-          "reading": "cóng",
-          "translation": "follow",
+          "text": "从前",
+          "reading": "cóngqián",
+          "translation": "formerly; long ago",
+          "speechText": "从前",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是从。",
-          "reading": "",
-          "translation": "This is the character 从.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "跟从",
+          "reading": "gēncóng",
+          "translation": "follow",
+          "speechText": "跟从",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习从。",
-          "reading": "",
-          "translation": "I am learning the character 从.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "从"
-          ]
-        },
-        {
-          "text": "我会读从。",
-          "reading": "",
-          "translation": "I can read the character 从.",
-          "showsCoreMeaning": false,
+          "text": "我从家里来。",
+          "reading": "Wǒ cóng jiālǐ lái.",
+          "translation": "I come from home.",
+          "speechText": "我从家里来。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -95,7 +89,7 @@
           "system": "pinyin",
           "value": "cóng",
           "audioAssetRef": null,
-          "speechText": "从",
+          "speechText": "從",
           "speechLanguage": "mandarin"
         }
       ],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "從",
-          "reading": "cóng",
-          "translation": "follow",
+          "text": "從前",
+          "reading": "cóngqián",
+          "translation": "formerly; long ago",
+          "speechText": "從前",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「從」。",
-          "reading": "",
-          "translation": "This is the character 「從」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "跟從",
+          "reading": "gēncóng",
+          "translation": "follow",
+          "speechText": "跟從",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「從」。",
-          "reading": "",
-          "translation": "I am learning the character 「從」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "从"
-          ]
-        },
-        {
-          "text": "我會讀「從」。",
-          "reading": "",
-          "translation": "I can read the character 「從」.",
-          "showsCoreMeaning": false,
+          "text": "我從家裡來。",
+          "reading": "Wǒ cóng jiālǐ lái.",
+          "translation": "I come from home.",
+          "speechText": "我從家裡來。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,28 +140,86 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "從前",
+          "reading": "cung4 cin4",
+          "translation": "formerly; long ago",
+          "speechText": "從前",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "从"
+          ]
+        },
+        {
+          "text": "跟從",
+          "reading": "gan1 cung4",
+          "translation": "follow",
+          "speechText": "跟從",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "从"
+          ]
+        },
+        {
+          "text": "我從屋企嚟。",
+          "reading": "ngo5 cung4 uk1 kei2 lai4",
+          "translation": "I come from home.",
+          "speechText": "我從屋企嚟。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "从"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
           "value": "cóng",
           "audioAssetRef": null,
-          "speechText": "从",
+          "speechText": "從",
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "cung4",
+          "audioAssetRef": null,
+          "speechText": "從",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
-      "form": "從",
+      "form": "従",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "SHITAGAU YORI",
+          "system": "on",
+          "value": "ジュウ (jū)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "じゅう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "したがう (shitagau)",
+          "audioAssetRef": null,
+          "speechText": "したがう",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "從",
-          "reading": "SHITAGAU YORI",
-          "translation": "follow",
+          "text": "従う",
+          "reading": "shitagau",
+          "translation": "follow; obey",
+          "speechText": "従う",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「從」です。",
-          "reading": "",
-          "translation": "This is the kanji 「從」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "従業員",
+          "reading": "jūgyōin",
+          "translation": "employee",
+          "speechText": "従業員",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「從」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「從」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "从"
-          ]
-        },
-        {
-          "text": "「從」を読みます。",
-          "reading": "",
-          "translation": "I read 「從」.",
-          "showsCoreMeaning": false,
+          "text": "指示に従います。",
+          "reading": "shiji ni shitagaimasu.",
+          "translation": "I follow the instructions.",
+          "speechText": "指示に従います。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CONG",
+          "value": "종 / jong",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "종",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "따르다 / ttareuda",
+          "audioAssetRef": null,
+          "speechText": "따르다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "從",
-          "reading": "CONG",
-          "translation": "follow",
+          "text": "복종",
+          "reading": "bokjong",
+          "translation": "obedience; submission",
+          "speechText": "복종",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘從’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘從’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "종업원",
+          "reading": "jongeobwon",
+          "translation": "employee",
+          "speechText": "종업원",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘從’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘從’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "从"
-          ]
-        },
-        {
-          "text": "‘從’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘從’.",
-          "showsCoreMeaning": false,
+          "text": "규칙을 따라요.",
+          "reading": "gyuchigeul ttarayo.",
+          "translation": "I follow the rules.",
+          "speechText": "규칙을 따라요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

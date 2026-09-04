@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "兄",
-          "reading": "xiōng",
-          "translation": "older brother",
+          "text": "兄弟",
+          "reading": "xiōngdì",
+          "translation": "brothers; siblings",
+          "speechText": "兄弟",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是兄。",
-          "reading": "",
-          "translation": "This is the character 兄.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "兄妹",
+          "reading": "xiōngmèi",
+          "translation": "older brother and younger sister",
+          "speechText": "兄妹",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习兄。",
-          "reading": "",
-          "translation": "I am learning the character 兄.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "兄"
-          ]
-        },
-        {
-          "text": "我会读兄。",
-          "reading": "",
-          "translation": "I can read the character 兄.",
-          "showsCoreMeaning": false,
+          "text": "他有两个兄弟。",
+          "reading": "Tā yǒu liǎng ge xiōngdì.",
+          "translation": "He has two brothers.",
+          "speechText": "他有两个兄弟。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "兄",
-          "reading": "xiōng",
-          "translation": "older brother",
+          "text": "兄弟",
+          "reading": "xiōngdì",
+          "translation": "brothers; siblings",
+          "speechText": "兄弟",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「兄」。",
-          "reading": "",
-          "translation": "This is the character 「兄」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "兄妹",
+          "reading": "xiōngmèi",
+          "translation": "older brother and younger sister",
+          "speechText": "兄妹",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「兄」。",
-          "reading": "",
-          "translation": "I am learning the character 「兄」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "兄"
-          ]
-        },
-        {
-          "text": "我會讀「兄」。",
-          "reading": "",
-          "translation": "I can read the character 「兄」.",
-          "showsCoreMeaning": false,
+          "text": "他有兩個兄弟。",
+          "reading": "Tā yǒu liǎng ge xiōngdì.",
+          "translation": "He has two brothers.",
+          "speechText": "他有兩個兄弟。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "兄弟",
+          "reading": "hing1 dai6",
+          "translation": "brothers; siblings",
+          "speechText": "兄弟",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兄"
+          ]
+        },
+        {
+          "text": "兄妹",
+          "reading": "hing1 mui6",
+          "translation": "older brother and younger sister",
+          "speechText": "兄妹",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兄"
+          ]
+        },
+        {
+          "text": "佢有兩個兄弟。",
+          "reading": "keoi5 jau5 loeng5 go3 hing1 dai6",
+          "translation": "He has two brothers.",
+          "speechText": "佢有兩個兄弟。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兄"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "hing1",
+          "audioAssetRef": null,
+          "speechText": "兄",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "兄",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "ANI E",
+          "system": "on",
+          "value": "ケイ (kei)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "けい",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "キョウ (kyō)",
+          "audioAssetRef": null,
+          "speechText": "きょう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "あに (ani)",
+          "audioAssetRef": null,
+          "speechText": "あに",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +235,10 @@
       "examples": [
         {
           "text": "兄",
-          "reading": "ANI E",
+          "reading": "ani",
           "translation": "older brother",
+          "speechText": "兄",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「兄」です。",
-          "reading": "",
-          "translation": "This is the kanji 「兄」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "兄弟",
+          "reading": "kyōdai",
+          "translation": "siblings; brothers",
+          "speechText": "兄弟",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「兄」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「兄」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "兄"
-          ]
-        },
-        {
-          "text": "「兄」を読みます。",
-          "reading": "",
-          "translation": "I read 「兄」.",
-          "showsCoreMeaning": false,
+          "text": "兄は学生です。",
+          "reading": "ani wa gakusei desu.",
+          "translation": "My older brother is a student.",
+          "speechText": "兄は学生です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,24 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "HYENG",
+          "value": "형 / hyeong",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "형",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean",
+          "value": "형 / hyeong",
+          "audioAssetRef": null,
+          "speechText": "형",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean",
+          "value": "오빠 / oppa",
+          "audioAssetRef": null,
+          "speechText": "오빠",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +308,11 @@
       ],
       "examples": [
         {
-          "text": "兄",
-          "reading": "HYENG",
-          "translation": "older brother",
+          "text": "형제",
+          "reading": "hyeongje",
+          "translation": "brothers; siblings",
+          "speechText": "형제",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +322,13 @@
           ]
         },
         {
-          "text": "이것은 ‘兄’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘兄’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "맏형",
+          "reading": "mathyeong",
+          "translation": "eldest brother",
+          "speechText": "맏형",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +336,12 @@
           ]
         },
         {
-          "text": "‘兄’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘兄’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "兄"
-          ]
-        },
-        {
-          "text": "‘兄’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘兄’.",
-          "showsCoreMeaning": false,
+          "text": "형이 와요.",
+          "reading": "hyeongi wayo.",
+          "translation": "My older brother is coming.",
+          "speechText": "형이 와요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +588,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +654,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

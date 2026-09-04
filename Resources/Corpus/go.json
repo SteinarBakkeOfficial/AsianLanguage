@@ -34,13 +34,15 @@
         }
       ],
       "glosses": [
-        "go"
+        "go; walk; act; line/occupation"
       ],
       "examples": [
         {
-          "text": "行",
-          "reading": "xíng",
-          "translation": "go",
+          "text": "行走",
+          "reading": "xíngzǒu",
+          "translation": "walk; travel on foot",
+          "speechText": "行走",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是行。",
-          "reading": "",
-          "translation": "This is the character 行.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "行动",
+          "reading": "xíngdòng",
+          "translation": "action; act",
+          "speechText": "行动",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习行。",
-          "reading": "",
-          "translation": "I am learning the character 行.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "行"
-          ]
-        },
-        {
-          "text": "我会读行。",
-          "reading": "",
-          "translation": "I can read the character 行.",
-          "showsCoreMeaning": false,
+          "text": "行人",
+          "reading": "xíngrén",
+          "translation": "pedestrian",
+          "speechText": "行人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -100,13 +94,15 @@
         }
       ],
       "glosses": [
-        "go"
+        "go; walk; act; line/occupation"
       ],
       "taiwanExamples": [
         {
-          "text": "行",
-          "reading": "xíng",
-          "translation": "go",
+          "text": "行走",
+          "reading": "xíngzǒu",
+          "translation": "walk; travel on foot",
+          "speechText": "行走",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「行」。",
-          "reading": "",
-          "translation": "This is the character 「行」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "行動",
+          "reading": "xíngdòng",
+          "translation": "action; act",
+          "speechText": "行動",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「行」。",
-          "reading": "",
-          "translation": "I am learning the character 「行」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "行"
-          ]
-        },
-        {
-          "text": "我會讀「行」。",
-          "reading": "",
-          "translation": "I can read the character 「行」.",
-          "showsCoreMeaning": false,
+          "text": "行人",
+          "reading": "xíngrén",
+          "translation": "pedestrian",
+          "speechText": "行人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "行路",
+          "reading": "haang4 lou6",
+          "translation": "walk",
+          "speechText": "行路",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "行"
+          ]
+        },
+        {
+          "text": "行街",
+          "reading": "haang4 gaai1",
+          "translation": "walk around; go shopping",
+          "speechText": "行街",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "行"
+          ]
+        },
+        {
+          "text": "我哋行去公園。",
+          "reading": "ngo5 dei6 haang4 heoi3 gung1 jyun2",
+          "translation": "We walk to the park.",
+          "speechText": "我哋行去公園。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "行"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,28 +193,59 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "haang4",
+          "audioAssetRef": null,
+          "speechText": "行",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "行",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "IKU YUKU OKONAU",
+          "system": "on",
+          "value": "コウ (kō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "こう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "ギョウ (gyō)",
+          "audioAssetRef": null,
+          "speechText": "ぎょう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "いく (iku)",
+          "audioAssetRef": null,
+          "speechText": "いく",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "おこなう (okonau)",
+          "audioAssetRef": null,
+          "speechText": "おこなう",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
-        "go"
+        "go; conduct; line"
       ],
       "examples": [
         {
-          "text": "行",
-          "reading": "IKU YUKU OKONAU",
+          "text": "行く",
+          "reading": "iku",
           "translation": "go",
+          "speechText": "行く",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +255,13 @@
           ]
         },
         {
-          "text": "これは「行」です。",
-          "reading": "",
-          "translation": "This is the kanji 「行」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "銀行",
+          "reading": "ginkō",
+          "translation": "bank",
+          "speechText": "銀行",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +269,12 @@
           ]
         },
         {
-          "text": "「行」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「行」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "行"
-          ]
-        },
-        {
-          "text": "「行」を読みます。",
-          "reading": "",
-          "translation": "I read 「行」.",
-          "showsCoreMeaning": false,
+          "text": "学校へ行きます。",
+          "reading": "gakkō e ikimasu.",
+          "translation": "I go to school.",
+          "speechText": "学校へ行きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,20 +290,29 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "HAYNG HANG",
+          "value": "행 / haeng",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "행",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "가다 / gada",
+          "audioAssetRef": null,
+          "speechText": "가다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
-        "go"
+        "go; movement; bank/trade reading by compound"
       ],
       "examples": [
         {
-          "text": "行",
-          "reading": "HAYNG HANG",
-          "translation": "go",
+          "text": "여행",
+          "reading": "yeohaeng",
+          "translation": "travel",
+          "speechText": "여행",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +322,13 @@
           ]
         },
         {
-          "text": "이것은 ‘行’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘行’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "은행",
+          "reading": "eunhaeng",
+          "translation": "bank",
+          "speechText": "은행",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +336,12 @@
           ]
         },
         {
-          "text": "‘行’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘行’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "行"
-          ]
-        },
-        {
-          "text": "‘行’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘行’.",
-          "showsCoreMeaning": false,
+          "text": "학교에 가요.",
+          "reading": "hakgyoe gayo.",
+          "translation": "I go to school.",
+          "speechText": "학교에 가요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +588,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +654,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

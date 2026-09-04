@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "宿",
-          "reading": "sù",
-          "translation": "lodging",
+          "text": "宿舍",
+          "reading": "sùshè",
+          "translation": "dormitory",
+          "speechText": "宿舍",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是宿。",
-          "reading": "",
-          "translation": "This is the character 宿.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "住宿",
+          "reading": "zhùsù",
+          "translation": "lodging; stay",
+          "speechText": "住宿",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习宿。",
-          "reading": "",
-          "translation": "I am learning the character 宿.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "宿"
-          ]
-        },
-        {
-          "text": "我会读宿。",
-          "reading": "",
-          "translation": "I can read the character 宿.",
-          "showsCoreMeaning": false,
+          "text": "我住在宿舍。",
+          "reading": "Wǒ zhù zài sùshè.",
+          "translation": "I live in a dormitory.",
+          "speechText": "我住在宿舍。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "宿",
-          "reading": "sù",
-          "translation": "lodging",
+          "text": "宿舍",
+          "reading": "sùshè",
+          "translation": "dormitory",
+          "speechText": "宿舍",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「宿」。",
-          "reading": "",
-          "translation": "This is the character 「宿」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "住宿",
+          "reading": "zhùsù",
+          "translation": "lodging; stay",
+          "speechText": "住宿",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「宿」。",
-          "reading": "",
-          "translation": "I am learning the character 「宿」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "宿"
-          ]
-        },
-        {
-          "text": "我會讀「宿」。",
-          "reading": "",
-          "translation": "I can read the character 「宿」.",
-          "showsCoreMeaning": false,
+          "text": "我住在宿舍。",
+          "reading": "Wǒ zhù zài sùshè.",
+          "translation": "I live in a dormitory.",
+          "speechText": "我住在宿舍。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "宿舍",
+          "reading": "suk1 se3",
+          "translation": "dormitory",
+          "speechText": "宿舍",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        },
+        {
+          "text": "住宿",
+          "reading": "zyu6 suk1",
+          "translation": "lodging; stay",
+          "speechText": "住宿",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        },
+        {
+          "text": "我住喺宿舍。",
+          "reading": "ngo5 zyu6 hai2 suk1 se3",
+          "translation": "I live in a dormitory.",
+          "speechText": "我住喺宿舍。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "suk1",
+          "audioAssetRef": null,
+          "speechText": "宿",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "宿",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "YADORU YADO",
+          "system": "on",
+          "value": "シュク (shuku)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "しゅく",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "やど (yado)",
+          "audioAssetRef": null,
+          "speechText": "やど",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "やどる (yadoru)",
+          "audioAssetRef": null,
+          "speechText": "やどる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +235,10 @@
       "examples": [
         {
           "text": "宿",
-          "reading": "YADORU YADO",
-          "translation": "lodging",
+          "reading": "yado",
+          "translation": "inn; lodging",
+          "speechText": "宿",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「宿」です。",
-          "reading": "",
-          "translation": "This is the kanji 「宿」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "宿泊",
+          "reading": "shukuhaku",
+          "translation": "overnight stay",
+          "speechText": "宿泊",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「宿」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「宿」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "宿"
-          ]
-        },
-        {
-          "text": "「宿」を読みます。",
-          "reading": "",
-          "translation": "I read 「宿」.",
-          "showsCoreMeaning": false,
+          "text": "この宿に泊まります。",
+          "reading": "kono yado ni tomarimasu.",
+          "translation": "I stay at this inn.",
+          "speechText": "この宿に泊まります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SWUK SWU",
+          "value": "숙 / suk",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "숙",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "묵다 / mukda",
+          "audioAssetRef": null,
+          "speechText": "묵다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "宿",
-          "reading": "SWUK SWU",
+          "text": "숙소",
+          "reading": "sukso",
           "translation": "lodging",
+          "speechText": "숙소",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘宿’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘宿’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "숙박",
+          "reading": "sukbak",
+          "translation": "overnight stay",
+          "speechText": "숙박",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘宿’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘宿’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "宿"
-          ]
-        },
-        {
-          "text": "‘宿’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘宿’.",
-          "showsCoreMeaning": false,
+          "text": "여기서 묵어요.",
+          "reading": "yeogiseo mugeoyo.",
+          "translation": "I stay here overnight.",
+          "speechText": "여기서 묵어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

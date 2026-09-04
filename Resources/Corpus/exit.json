@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "出",
-          "reading": "chū",
+          "text": "出口",
+          "reading": "chūkǒu",
           "translation": "exit",
+          "speechText": "出口",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是出。",
-          "reading": "",
-          "translation": "This is the character 出.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "出门",
+          "reading": "chūmén",
+          "translation": "go out; leave home",
+          "speechText": "出门",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习出。",
-          "reading": "",
-          "translation": "I am learning the character 出.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "出"
-          ]
-        },
-        {
-          "text": "我会读出。",
-          "reading": "",
-          "translation": "I can read the character 出.",
-          "showsCoreMeaning": false,
+          "text": "我现在出门。",
+          "reading": "Wǒ xiànzài chūmén.",
+          "translation": "I am going out now.",
+          "speechText": "我现在出门。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "出",
-          "reading": "chū",
+          "text": "出口",
+          "reading": "chūkǒu",
           "translation": "exit",
+          "speechText": "出口",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「出」。",
-          "reading": "",
-          "translation": "This is the character 「出」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "出門",
+          "reading": "chūmén",
+          "translation": "go out; leave home",
+          "speechText": "出門",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「出」。",
-          "reading": "",
-          "translation": "I am learning the character 「出」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "出"
-          ]
-        },
-        {
-          "text": "我會讀「出」。",
-          "reading": "",
-          "translation": "I can read the character 「出」.",
-          "showsCoreMeaning": false,
+          "text": "我現在出門。",
+          "reading": "Wǒ xiànzài chūmén.",
+          "translation": "I am going out now.",
+          "speechText": "我現在出門。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "出口",
+          "reading": "ceot1 hau2",
+          "translation": "exit",
+          "speechText": "出口",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "出"
+          ]
+        },
+        {
+          "text": "出門",
+          "reading": "ceot1 mun4",
+          "translation": "go out; leave home",
+          "speechText": "出門",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "出"
+          ]
+        },
+        {
+          "text": "我而家出門。",
+          "reading": "ngo5 ji4 gaa1 ceot1 mun4",
+          "translation": "I am going out now.",
+          "speechText": "我而家出門。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "出"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "ceot1",
+          "audioAssetRef": null,
+          "speechText": "出",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "出",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "DERU DASU",
+          "system": "on",
+          "value": "シュツ (shutsu)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "しゅつ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "でる (deru)",
+          "audioAssetRef": null,
+          "speechText": "でる",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "だす (dasu)",
+          "audioAssetRef": null,
+          "speechText": "だす",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "出",
-          "reading": "DERU DASU",
-          "translation": "exit",
+          "text": "出る",
+          "reading": "deru",
+          "translation": "go out; leave",
+          "speechText": "出る",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「出」です。",
-          "reading": "",
-          "translation": "This is the kanji 「出」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "出口",
+          "reading": "deguchi",
+          "translation": "exit",
+          "speechText": "出口",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「出」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「出」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "出"
-          ]
-        },
-        {
-          "text": "「出」を読みます。",
-          "reading": "",
-          "translation": "I read 「出」.",
-          "showsCoreMeaning": false,
+          "text": "家を出ます。",
+          "reading": "ie o demasu.",
+          "translation": "I leave the house.",
+          "speechText": "家を出ます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CHWUL CHWU",
+          "value": "출 / chul",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "출",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "나가다 / nagada",
+          "audioAssetRef": null,
+          "speechText": "나가다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "出",
-          "reading": "CHWUL CHWU",
+          "text": "출구",
+          "reading": "chulgu",
           "translation": "exit",
+          "speechText": "출구",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘出’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘出’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "외출",
+          "reading": "oechul",
+          "translation": "going out",
+          "speechText": "외출",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘出’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘出’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "出"
-          ]
-        },
-        {
-          "text": "‘出’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘出’.",
-          "showsCoreMeaning": false,
+          "text": "집에서 나가요.",
+          "reading": "jibeseo nagayo.",
+          "translation": "I leave the house.",
+          "speechText": "집에서 나가요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

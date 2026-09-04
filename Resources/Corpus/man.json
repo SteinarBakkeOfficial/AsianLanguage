@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "男",
-          "reading": "nán",
+          "text": "男人",
+          "reading": "nánrén",
           "translation": "man",
+          "speechText": "男人",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是男。",
-          "reading": "",
-          "translation": "This is the character 男.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "男孩",
+          "reading": "nánhái",
+          "translation": "boy",
+          "speechText": "男孩",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习男。",
-          "reading": "",
-          "translation": "I am learning the character 男.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "男"
-          ]
-        },
-        {
-          "text": "我会读男。",
-          "reading": "",
-          "translation": "I can read the character 男.",
-          "showsCoreMeaning": false,
+          "text": "他是一个男人。",
+          "reading": "Tā shì yí ge nánrén.",
+          "translation": "He is a man.",
+          "speechText": "他是一个男人。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "男",
-          "reading": "nán",
+          "text": "男人",
+          "reading": "nánrén",
           "translation": "man",
+          "speechText": "男人",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「男」。",
-          "reading": "",
-          "translation": "This is the character 「男」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "男孩",
+          "reading": "nánhái",
+          "translation": "boy",
+          "speechText": "男孩",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「男」。",
-          "reading": "",
-          "translation": "I am learning the character 「男」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "男"
-          ]
-        },
-        {
-          "text": "我會讀「男」。",
-          "reading": "",
-          "translation": "I can read the character 「男」.",
-          "showsCoreMeaning": false,
+          "text": "他是一個男人。",
+          "reading": "Tā shì yí ge nánrén.",
+          "translation": "He is a man.",
+          "speechText": "他是一個男人。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "男人",
+          "reading": "naam4 jan4",
+          "translation": "man",
+          "speechText": "男人",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "男"
+          ]
+        },
+        {
+          "text": "男仔",
+          "reading": "naam4 zai2",
+          "translation": "boy",
+          "speechText": "男仔",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "男"
+          ]
+        },
+        {
+          "text": "佢係男人。",
+          "reading": "keoi5 hai6 naam4 jan4",
+          "translation": "He is a man.",
+          "speechText": "佢係男人。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "男"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "naam4",
+          "audioAssetRef": null,
+          "speechText": "男",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "男",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "OTOKO",
+          "system": "on",
+          "value": "ダン (dan)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "だん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "ナン (nan)",
+          "audioAssetRef": null,
+          "speechText": "なん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "おとこ (otoko)",
+          "audioAssetRef": null,
+          "speechText": "おとこ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +235,10 @@
       "examples": [
         {
           "text": "男",
-          "reading": "OTOKO",
+          "reading": "otoko",
           "translation": "man",
+          "speechText": "男",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「男」です。",
-          "reading": "",
-          "translation": "This is the kanji 「男」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "男性",
+          "reading": "dansei",
+          "translation": "man; male",
+          "speechText": "男性",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「男」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「男」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "男"
-          ]
-        },
-        {
-          "text": "「男」を読みます。",
-          "reading": "",
-          "translation": "I read 「男」.",
-          "showsCoreMeaning": false,
+          "text": "あの人は男の人です。",
+          "reading": "ano hito wa otoko no hito desu.",
+          "translation": "That person is a man.",
+          "speechText": "あの人は男の人です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "NAM",
+          "value": "남 / nam",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "남",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean",
+          "value": "남자 / namja",
+          "audioAssetRef": null,
+          "speechText": "남자",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "男",
-          "reading": "NAM",
+          "text": "남자",
+          "reading": "namja",
           "translation": "man",
+          "speechText": "남자",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘男’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘男’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "남성",
+          "reading": "namseong",
+          "translation": "male; man",
+          "speechText": "남성",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘男’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘男’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "男"
-          ]
-        },
-        {
-          "text": "‘男’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘男’.",
-          "showsCoreMeaning": false,
+          "text": "저 사람은 남자예요.",
+          "reading": "jeo sarameun namjayeyo.",
+          "translation": "That person is a man.",
+          "speechText": "저 사람은 남자예요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

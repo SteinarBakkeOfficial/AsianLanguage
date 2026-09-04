@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "分",
-          "reading": "fēn",
-          "translation": "divide",
+          "text": "分开",
+          "reading": "fēnkāi",
+          "translation": "separate",
+          "speechText": "分开",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是分。",
-          "reading": "",
-          "translation": "This is the character 分.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "一分钟",
+          "reading": "yì fēnzhōng",
+          "translation": "one minute",
+          "speechText": "一分钟",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习分。",
-          "reading": "",
-          "translation": "I am learning the character 分.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "分"
-          ]
-        },
-        {
-          "text": "我会读分。",
-          "reading": "",
-          "translation": "I can read the character 分.",
-          "showsCoreMeaning": false,
+          "text": "请分成两份。",
+          "reading": "Qǐng fēn chéng liǎng fèn.",
+          "translation": "Please divide it into two portions.",
+          "speechText": "请分成两份。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "分",
-          "reading": "fēn",
-          "translation": "divide",
+          "text": "分開",
+          "reading": "fēnkāi",
+          "translation": "separate",
+          "speechText": "分開",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「分」。",
-          "reading": "",
-          "translation": "This is the character 「分」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "一分鐘",
+          "reading": "yì fēnzhōng",
+          "translation": "one minute",
+          "speechText": "一分鐘",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「分」。",
-          "reading": "",
-          "translation": "I am learning the character 「分」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "分"
-          ]
-        },
-        {
-          "text": "我會讀「分」。",
-          "reading": "",
-          "translation": "I can read the character 「分」.",
-          "showsCoreMeaning": false,
+          "text": "請分成兩份。",
+          "reading": "Qǐng fēn chéng liǎng fèn.",
+          "translation": "Please divide it into two portions.",
+          "speechText": "請分成兩份。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "分開",
+          "reading": "fan1 hoi1",
+          "translation": "separate",
+          "speechText": "分開",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "分"
+          ]
+        },
+        {
+          "text": "一分鐘",
+          "reading": "jat1 fan1 zung1",
+          "translation": "one minute",
+          "speechText": "一分鐘",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "分"
+          ]
+        },
+        {
+          "text": "請分做兩份。",
+          "reading": "cing2 fan1 zou6 loeng5 fan6",
+          "translation": "Please divide it into two portions.",
+          "speechText": "請分做兩份。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "分"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,47 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "fan1",
+          "audioAssetRef": null,
+          "speechText": "分",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "分",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "WAKERU WAKARU WAKARERU",
+          "system": "on",
+          "value": "ブン (bun)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ぶん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "フン (fun)",
+          "audioAssetRef": null,
+          "speechText": "ふん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "わける (wakeru)",
+          "audioAssetRef": null,
+          "speechText": "わける",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "わかる (wakaru)",
+          "audioAssetRef": null,
+          "speechText": "わかる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +241,11 @@
       ],
       "examples": [
         {
-          "text": "分",
-          "reading": "WAKERU WAKARU WAKARERU",
-          "translation": "divide",
+          "text": "分ける",
+          "reading": "wakeru",
+          "translation": "divide; separate",
+          "speechText": "分ける",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +255,13 @@
           ]
         },
         {
-          "text": "これは「分」です。",
-          "reading": "",
-          "translation": "This is the kanji 「分」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "五分",
+          "reading": "gofun",
+          "translation": "five minutes",
+          "speechText": "五分",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +269,12 @@
           ]
         },
         {
-          "text": "「分」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「分」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "分"
-          ]
-        },
-        {
-          "text": "「分」を読みます。",
-          "reading": "",
-          "translation": "I read 「分」.",
-          "showsCoreMeaning": false,
+          "text": "二つに分けます。",
+          "reading": "futatsu ni wakemasu.",
+          "translation": "I divide it into two.",
+          "speechText": "二つに分けます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +290,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "PWUN PHWUN",
+          "value": "분 / bun",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "분",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "나누다 / nanuda",
+          "audioAssetRef": null,
+          "speechText": "나누다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +308,11 @@
       ],
       "examples": [
         {
-          "text": "分",
-          "reading": "PWUN PHWUN",
-          "translation": "divide",
+          "text": "구분",
+          "reading": "gubun",
+          "translation": "division; distinction",
+          "speechText": "구분",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +322,13 @@
           ]
         },
         {
-          "text": "이것은 ‘分’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘分’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "오분",
+          "reading": "obun",
+          "translation": "five minutes",
+          "speechText": "오분",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +336,12 @@
           ]
         },
         {
-          "text": "‘分’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘分’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "分"
-          ]
-        },
-        {
-          "text": "‘分’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘分’.",
-          "showsCoreMeaning": false,
+          "text": "둘로 나눠요.",
+          "reading": "dullo nanwoyo.",
+          "translation": "I divide it into two.",
+          "speechText": "둘로 나눠요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +588,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +654,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

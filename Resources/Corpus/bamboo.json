@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "竹",
-          "reading": "zhú",
+          "text": "竹子",
+          "reading": "zhúzi",
           "translation": "bamboo",
+          "speechText": "竹子",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是竹。",
-          "reading": "",
-          "translation": "This is the character 竹.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "竹林",
+          "reading": "zhúlín",
+          "translation": "bamboo grove",
+          "speechText": "竹林",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习竹。",
-          "reading": "",
-          "translation": "I am learning the character 竹.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "竹"
-          ]
-        },
-        {
-          "text": "我会读竹。",
-          "reading": "",
-          "translation": "I can read the character 竹.",
-          "showsCoreMeaning": false,
+          "text": "这里有很多竹子。",
+          "reading": "Zhèlǐ yǒu hěn duō zhúzi.",
+          "translation": "There is a lot of bamboo here.",
+          "speechText": "这里有很多竹子。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "竹",
-          "reading": "zhú",
+          "text": "竹子",
+          "reading": "zhúzi",
           "translation": "bamboo",
+          "speechText": "竹子",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「竹」。",
-          "reading": "",
-          "translation": "This is the character 「竹」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "竹林",
+          "reading": "zhúlín",
+          "translation": "bamboo grove",
+          "speechText": "竹林",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「竹」。",
-          "reading": "",
-          "translation": "I am learning the character 「竹」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "竹"
-          ]
-        },
-        {
-          "text": "我會讀「竹」。",
-          "reading": "",
-          "translation": "I can read the character 「竹」.",
-          "showsCoreMeaning": false,
+          "text": "這裡有很多竹子。",
+          "reading": "Zhèlǐ yǒu hěn duō zhúzi.",
+          "translation": "There is a lot of bamboo here.",
+          "speechText": "這裡有很多竹子。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "竹",
+          "reading": "zuk1",
+          "translation": "bamboo",
+          "speechText": "竹",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "竹"
+          ]
+        },
+        {
+          "text": "竹林",
+          "reading": "zuk1 lam4",
+          "translation": "bamboo grove",
+          "speechText": "竹林",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "竹"
+          ]
+        },
+        {
+          "text": "呢度有好多竹。",
+          "reading": "ni1 dou6 jau5 hou2 do1 zuk1",
+          "translation": "There is a lot of bamboo here.",
+          "speechText": "呢度有好多竹。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "竹"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "zuk1",
+          "audioAssetRef": null,
+          "speechText": "竹",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "竹",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TAKE",
+          "system": "on",
+          "value": "チク (chiku)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ちく",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "たけ (take)",
+          "audioAssetRef": null,
+          "speechText": "たけ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "竹",
-          "reading": "TAKE",
+          "reading": "take",
           "translation": "bamboo",
+          "speechText": "竹",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「竹」です。",
-          "reading": "",
-          "translation": "This is the kanji 「竹」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "竹林",
+          "reading": "chikurin",
+          "translation": "bamboo grove",
+          "speechText": "竹林",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「竹」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「竹」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "竹"
-          ]
-        },
-        {
-          "text": "「竹」を読みます。",
-          "reading": "",
-          "translation": "I read 「竹」.",
-          "showsCoreMeaning": false,
+          "text": "竹は高く育ちます。",
+          "reading": "take wa takaku sodachimasu.",
+          "translation": "Bamboo grows tall.",
+          "speechText": "竹は高く育ちます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CWUK",
+          "value": "죽 / juk",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "죽",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean",
+          "value": "대나무 / daenamu",
+          "audioAssetRef": null,
+          "speechText": "대나무",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "竹",
-          "reading": "CWUK",
-          "translation": "bamboo",
+          "text": "죽순",
+          "reading": "juksun",
+          "translation": "bamboo shoot",
+          "speechText": "죽순",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘竹’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘竹’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "죽림",
+          "reading": "jungnim",
+          "translation": "bamboo grove",
+          "speechText": "죽림",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘竹’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘竹’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "竹"
-          ]
-        },
-        {
-          "text": "‘竹’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘竹’.",
-          "showsCoreMeaning": false,
+          "text": "대나무가 높아요.",
+          "reading": "daenamuga nopayo.",
+          "translation": "The bamboo is tall.",
+          "speechText": "대나무가 높아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

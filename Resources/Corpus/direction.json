@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "向",
-          "reading": "xiàng",
+          "text": "方向",
+          "reading": "fāngxiàng",
           "translation": "direction",
+          "speechText": "方向",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是向。",
-          "reading": "",
-          "translation": "This is the character 向.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "向前",
+          "reading": "xiàng qián",
+          "translation": "forward",
+          "speechText": "向前",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习向。",
-          "reading": "",
-          "translation": "I am learning the character 向.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "向"
-          ]
-        },
-        {
-          "text": "我会读向。",
-          "reading": "",
-          "translation": "I can read the character 向.",
-          "showsCoreMeaning": false,
+          "text": "我们向前走。",
+          "reading": "Wǒmen xiàng qián zǒu.",
+          "translation": "We walk forward.",
+          "speechText": "我们向前走。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "向",
-          "reading": "xiàng",
+          "text": "方向",
+          "reading": "fāngxiàng",
           "translation": "direction",
+          "speechText": "方向",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「向」。",
-          "reading": "",
-          "translation": "This is the character 「向」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "向前",
+          "reading": "xiàng qián",
+          "translation": "forward",
+          "speechText": "向前",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「向」。",
-          "reading": "",
-          "translation": "I am learning the character 「向」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "向"
-          ]
-        },
-        {
-          "text": "我會讀「向」。",
-          "reading": "",
-          "translation": "I can read the character 「向」.",
-          "showsCoreMeaning": false,
+          "text": "我們向前走。",
+          "reading": "Wǒmen xiàng qián zǒu.",
+          "translation": "We walk forward.",
+          "speechText": "我們向前走。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "方向",
+          "reading": "fong1 hoeng3",
+          "translation": "direction",
+          "speechText": "方向",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        },
+        {
+          "text": "向前",
+          "reading": "hoeng3 cin4",
+          "translation": "forward",
+          "speechText": "向前",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        },
+        {
+          "text": "我哋向前行。",
+          "reading": "ngo5 dei6 hoeng3 cin4 haang4",
+          "translation": "We walk forward.",
+          "speechText": "我哋向前行。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "hoeng3",
+          "audioAssetRef": null,
+          "speechText": "向",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "向",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "MUKU MUKAU SAKINI",
+          "system": "on",
+          "value": "コウ (kō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "こう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "むく (muku)",
+          "audioAssetRef": null,
+          "speechText": "むく",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "むかう (mukau)",
+          "audioAssetRef": null,
+          "speechText": "むかう",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "向",
-          "reading": "MUKU MUKAU SAKINI",
-          "translation": "direction",
+          "text": "向く",
+          "reading": "muku",
+          "translation": "face; turn toward",
+          "speechText": "向く",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「向」です。",
-          "reading": "",
-          "translation": "This is the kanji 「向」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "方向",
+          "reading": "hōkō",
+          "translation": "direction",
+          "speechText": "方向",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「向」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「向」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "向"
-          ]
-        },
-        {
-          "text": "「向」を読みます。",
-          "reading": "",
-          "translation": "I read 「向」.",
-          "showsCoreMeaning": false,
+          "text": "北を向きます。",
+          "reading": "kita o mukimasu.",
+          "translation": "I face north.",
+          "speechText": "北を向きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "HYANG SANG",
+          "value": "향 / hyang",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "향",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean",
+          "value": "향하다 / hyanghada",
+          "audioAssetRef": null,
+          "speechText": "향하다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "向",
-          "reading": "HYANG SANG",
+          "text": "방향",
+          "reading": "banghyang",
           "translation": "direction",
+          "speechText": "방향",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘向’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘向’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "향하다",
+          "reading": "hyanghada",
+          "translation": "face; head toward",
+          "speechText": "향하다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘向’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘向’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "向"
-          ]
-        },
-        {
-          "text": "‘向’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘向’.",
-          "showsCoreMeaning": false,
+          "text": "북쪽을 향해요.",
+          "reading": "bukjjogeul hyanghaeyo.",
+          "translation": "I face north.",
+          "speechText": "북쪽을 향해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

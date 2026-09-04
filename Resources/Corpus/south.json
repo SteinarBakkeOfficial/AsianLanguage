@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "南",
-          "reading": "nán",
-          "translation": "south",
+          "text": "南方",
+          "reading": "nánfāng",
+          "translation": "south; southern region",
+          "speechText": "南方",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是南。",
-          "reading": "",
-          "translation": "This is the character 南.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "南边",
+          "reading": "nánbian",
+          "translation": "south side",
+          "speechText": "南边",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习南。",
-          "reading": "",
-          "translation": "I am learning the character 南.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "南"
-          ]
-        },
-        {
-          "text": "我会读南。",
-          "reading": "",
-          "translation": "I can read the character 南.",
-          "showsCoreMeaning": false,
+          "text": "我们向南走。",
+          "reading": "Wǒmen xiàng nán zǒu.",
+          "translation": "We are walking south.",
+          "speechText": "我们向南走。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "南",
-          "reading": "nán",
-          "translation": "south",
+          "text": "南方",
+          "reading": "nánfāng",
+          "translation": "south; southern region",
+          "speechText": "南方",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「南」。",
-          "reading": "",
-          "translation": "This is the character 「南」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "南边",
+          "reading": "nánbian",
+          "translation": "south side",
+          "speechText": "南边",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「南」。",
-          "reading": "",
-          "translation": "I am learning the character 「南」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "南"
-          ]
-        },
-        {
-          "text": "我會讀「南」。",
-          "reading": "",
-          "translation": "I can read the character 「南」.",
-          "showsCoreMeaning": false,
+          "text": "我們向南走。",
+          "reading": "Wǒmen xiàng nán zǒu.",
+          "translation": "We are walking south.",
+          "speechText": "我們向南走。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "南方",
+          "reading": "naam4 fong1",
+          "translation": "south; southern region",
+          "speechText": "南方",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "南"
+          ]
+        },
+        {
+          "text": "南面",
+          "reading": "naam4 min6",
+          "translation": "south side",
+          "speechText": "南面",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "南"
+          ]
+        },
+        {
+          "text": "我哋向南行。",
+          "reading": "ngo5 dei6 hoeng3 naam4 haang4",
+          "translation": "We are walking south.",
+          "speechText": "我哋向南行。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "南"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "naam4",
+          "audioAssetRef": null,
+          "speechText": "南",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "南",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "MINAMI",
+          "system": "on",
+          "value": "ナン (nan)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "なん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "みなみ (minami)",
+          "audioAssetRef": null,
+          "speechText": "みなみ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "南",
-          "reading": "MINAMI",
+          "reading": "minami",
           "translation": "south",
+          "speechText": "南",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「南」です。",
-          "reading": "",
-          "translation": "This is the kanji 「南」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "南口",
+          "reading": "minamiguchi",
+          "translation": "south exit",
+          "speechText": "南口",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「南」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「南」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "南"
-          ]
-        },
-        {
-          "text": "「南」を読みます。",
-          "reading": "",
-          "translation": "I read 「南」.",
-          "showsCoreMeaning": false,
+          "text": "南へ行きます。",
+          "reading": "minami e ikimasu.",
+          "translation": "I go south.",
+          "speechText": "南へ行きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "NAM",
+          "value": "남 / nam",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "남",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean",
+          "value": "남쪽 / namjjok",
+          "audioAssetRef": null,
+          "speechText": "남쪽",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "南",
-          "reading": "NAM",
-          "translation": "south",
+          "text": "남부",
+          "reading": "nambu",
+          "translation": "southern region",
+          "speechText": "남부",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘南’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘南’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "남쪽",
+          "reading": "namjjok",
+          "translation": "south",
+          "speechText": "남쪽",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘南’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘南’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "南"
-          ]
-        },
-        {
-          "text": "‘南’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘南’.",
-          "showsCoreMeaning": false,
+          "text": "남쪽으로 가요.",
+          "reading": "namjjogeuro gayo.",
+          "translation": "I go south.",
+          "speechText": "남쪽으로 가요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

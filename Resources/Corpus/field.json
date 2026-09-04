@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "田",
-          "reading": "tián",
-          "translation": "field",
+          "text": "田地",
+          "reading": "tiándì",
+          "translation": "fields",
+          "speechText": "田地",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是田。",
-          "reading": "",
-          "translation": "This is the character 田.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "农田",
+          "reading": "nóngtián",
+          "translation": "farmland",
+          "speechText": "农田",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习田。",
-          "reading": "",
-          "translation": "I am learning the character 田.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "田"
-          ]
-        },
-        {
-          "text": "我会读田。",
-          "reading": "",
-          "translation": "I can read the character 田.",
-          "showsCoreMeaning": false,
+          "text": "田里有水。",
+          "reading": "Tián lǐ yǒu shuǐ.",
+          "translation": "There is water in the field.",
+          "speechText": "田里有水。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "田",
-          "reading": "tián",
-          "translation": "field",
+          "text": "田地",
+          "reading": "tiándì",
+          "translation": "fields",
+          "speechText": "田地",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「田」。",
-          "reading": "",
-          "translation": "This is the character 「田」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "農田",
+          "reading": "nóngtián",
+          "translation": "farmland",
+          "speechText": "農田",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「田」。",
-          "reading": "",
-          "translation": "I am learning the character 「田」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "田"
-          ]
-        },
-        {
-          "text": "我會讀「田」。",
-          "reading": "",
-          "translation": "I can read the character 「田」.",
-          "showsCoreMeaning": false,
+          "text": "田裡有水。",
+          "reading": "Tián lǐ yǒu shuǐ.",
+          "translation": "There is water in the field.",
+          "speechText": "田裡有水。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "田地",
+          "reading": "tin4 dei6",
+          "translation": "fields",
+          "speechText": "田地",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "田"
+          ]
+        },
+        {
+          "text": "農田",
+          "reading": "nung4 tin4",
+          "translation": "farmland",
+          "speechText": "農田",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "田"
+          ]
+        },
+        {
+          "text": "田入面有水。",
+          "reading": "tin4 jap6 min6 jau5 seoi2",
+          "translation": "There is water in the field.",
+          "speechText": "田入面有水。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "田"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "tin4",
+          "audioAssetRef": null,
+          "speechText": "田",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "田",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TA KARI",
+          "system": "on",
+          "value": "デン (den)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "でん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "た (ta)",
+          "audioAssetRef": null,
+          "speechText": "た",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "田",
-          "reading": "TA KARI",
-          "translation": "field",
+          "reading": "ta",
+          "translation": "rice field; field",
+          "speechText": "田",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「田」です。",
-          "reading": "",
-          "translation": "This is the kanji 「田」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "田んぼ",
+          "reading": "tanbo",
+          "translation": "rice paddy",
+          "speechText": "田んぼ",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「田」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「田」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "田"
-          ]
-        },
-        {
-          "text": "「田」を読みます。",
-          "reading": "",
-          "translation": "I read 「田」.",
-          "showsCoreMeaning": false,
+          "text": "田んぼに水があります。",
+          "reading": "tanbo ni mizu ga arimasu.",
+          "translation": "There is water in the rice field.",
+          "speechText": "田んぼに水があります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CEN",
+          "value": "전 / jeon",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "전",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "밭 / bat",
+          "audioAssetRef": null,
+          "speechText": "밭",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "田",
-          "reading": "CEN",
-          "translation": "field",
+          "text": "전답",
+          "reading": "jeondap",
+          "translation": "fields and paddies",
+          "speechText": "전답",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘田’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘田’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "논밭",
+          "reading": "nonbat",
+          "translation": "rice paddies and fields",
+          "speechText": "논밭",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘田’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘田’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "田"
-          ]
-        },
-        {
-          "text": "‘田’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘田’.",
-          "showsCoreMeaning": false,
+          "text": "밭에 물을 줘요.",
+          "reading": "bate mureul jwoyo.",
+          "translation": "I water the field.",
+          "speechText": "밭에 물을 줘요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

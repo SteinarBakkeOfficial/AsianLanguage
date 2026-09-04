@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "美",
-          "reading": "měi",
+          "text": "美丽",
+          "reading": "měilì",
           "translation": "beautiful",
+          "speechText": "美丽",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是美。",
-          "reading": "",
-          "translation": "This is the character 美.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "美人",
+          "reading": "měirén",
+          "translation": "beautiful person; beauty",
+          "speechText": "美人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习美。",
-          "reading": "",
-          "translation": "I am learning the character 美.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "美"
-          ]
-        },
-        {
-          "text": "我会读美。",
-          "reading": "",
-          "translation": "I can read the character 美.",
-          "showsCoreMeaning": false,
+          "text": "这里很美。",
+          "reading": "Zhèlǐ hěn měi.",
+          "translation": "It is beautiful here.",
+          "speechText": "这里很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "美",
-          "reading": "měi",
+          "text": "美麗",
+          "reading": "měilì",
           "translation": "beautiful",
+          "speechText": "美麗",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「美」。",
-          "reading": "",
-          "translation": "This is the character 「美」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "美人",
+          "reading": "měirén",
+          "translation": "beautiful person; beauty",
+          "speechText": "美人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「美」。",
-          "reading": "",
-          "translation": "I am learning the character 「美」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "美"
-          ]
-        },
-        {
-          "text": "我會讀「美」。",
-          "reading": "",
-          "translation": "I can read the character 「美」.",
-          "showsCoreMeaning": false,
+          "text": "這裡很美。",
+          "reading": "Zhèlǐ hěn měi.",
+          "translation": "It is beautiful here.",
+          "speechText": "這裡很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "美麗",
+          "reading": "mei5 lai6",
+          "translation": "beautiful",
+          "speechText": "美麗",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "美"
+          ]
+        },
+        {
+          "text": "美人",
+          "reading": "mei5 jan4",
+          "translation": "beautiful person; beauty",
+          "speechText": "美人",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "美"
+          ]
+        },
+        {
+          "text": "呢度好靚。",
+          "reading": "ni1 dou6 hou2 leng3",
+          "translation": "It is beautiful here.",
+          "speechText": "呢度好靚。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "美"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "mei5",
+          "audioAssetRef": null,
+          "speechText": "美",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "美",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "UTSUKUSHII YOI HOMERU",
+          "system": "on",
+          "value": "ビ (bi)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "び",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "うつくしい (utsukushii)",
+          "audioAssetRef": null,
+          "speechText": "うつくしい",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "美",
-          "reading": "UTSUKUSHII YOI HOMERU",
+          "text": "美しい",
+          "reading": "utsukushii",
           "translation": "beautiful",
+          "speechText": "美しい",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「美」です。",
-          "reading": "",
-          "translation": "This is the kanji 「美」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "美術",
+          "reading": "bijutsu",
+          "translation": "art",
+          "speechText": "美術",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「美」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「美」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "美"
-          ]
-        },
-        {
-          "text": "「美」を読みます。",
-          "reading": "",
-          "translation": "I read 「美」.",
-          "showsCoreMeaning": false,
+          "text": "景色が美しいです。",
+          "reading": "keshiki ga utsukushii desu.",
+          "translation": "The scenery is beautiful.",
+          "speechText": "景色が美しいです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "MI",
+          "value": "미 / mi",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "미",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "아름답다 / areumdapda",
+          "audioAssetRef": null,
+          "speechText": "아름답다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "美",
-          "reading": "MI",
-          "translation": "beautiful",
+          "text": "미인",
+          "reading": "miin",
+          "translation": "beautiful person",
+          "speechText": "미인",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘美’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘美’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "미술",
+          "reading": "misul",
+          "translation": "art",
+          "speechText": "미술",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘美’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘美’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "美"
-          ]
-        },
-        {
-          "text": "‘美’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘美’.",
-          "showsCoreMeaning": false,
+          "text": "꽃이 아름다워요.",
+          "reading": "kkochi areumdawoyo.",
+          "translation": "The flower is beautiful.",
+          "speechText": "꽃이 아름다워요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

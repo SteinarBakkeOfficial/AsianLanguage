@@ -41,6 +41,8 @@
           "text": "好",
           "reading": "hǎo",
           "translation": "good",
+          "speechText": "好",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是好。",
-          "reading": "",
-          "translation": "This is the character 好.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "好人",
+          "reading": "hǎorén",
+          "translation": "good person",
+          "speechText": "好人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习好。",
-          "reading": "",
-          "translation": "I am learning the character 好.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "好"
-          ]
-        },
-        {
-          "text": "我会读好。",
-          "reading": "",
-          "translation": "I can read the character 好.",
-          "showsCoreMeaning": false,
+          "text": "我很好。",
+          "reading": "Wǒ hěn hǎo.",
+          "translation": "I am very well.",
+          "speechText": "我很好。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -107,6 +101,8 @@
           "text": "好",
           "reading": "hǎo",
           "translation": "good",
+          "speechText": "好",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「好」。",
-          "reading": "",
-          "translation": "This is the character 「好」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "好人",
+          "reading": "hǎorén",
+          "translation": "good person",
+          "speechText": "好人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「好」。",
-          "reading": "",
-          "translation": "I am learning the character 「好」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "好"
-          ]
-        },
-        {
-          "text": "我會讀「好」。",
-          "reading": "",
-          "translation": "I can read the character 「好」.",
-          "showsCoreMeaning": false,
+          "text": "我很好。",
+          "reading": "Wǒ hěn hǎo.",
+          "translation": "I am very well.",
+          "speechText": "我很好。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "好",
+          "reading": "hou2",
+          "translation": "good",
+          "speechText": "好",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "好"
+          ]
+        },
+        {
+          "text": "好人",
+          "reading": "hou2 jan4",
+          "translation": "good person",
+          "speechText": "好人",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "好"
+          ]
+        },
+        {
+          "text": "我幾好。",
+          "reading": "ngo5 gei2 hou2",
+          "translation": "I am quite well.",
+          "speechText": "我幾好。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "好"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "hou2",
+          "audioAssetRef": null,
+          "speechText": "好",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "好",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "KONOMU SUKU YOI",
+          "system": "on",
+          "value": "コウ (kō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "こう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "すき (suki)",
+          "audioAssetRef": null,
+          "speechText": "すき",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "このむ (konomu)",
+          "audioAssetRef": null,
+          "speechText": "このむ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "好",
-          "reading": "KONOMU SUKU YOI",
-          "translation": "good",
+          "text": "好き",
+          "reading": "suki",
+          "translation": "like; favorite",
+          "speechText": "好き",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「好」です。",
-          "reading": "",
-          "translation": "This is the kanji 「好」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "好み",
+          "reading": "konomi",
+          "translation": "preference",
+          "speechText": "好み",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「好」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「好」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "好"
-          ]
-        },
-        {
-          "text": "「好」を読みます。",
-          "reading": "",
-          "translation": "I read 「好」.",
-          "showsCoreMeaning": false,
+          "text": "私は水が好きです。",
+          "reading": "watashi wa mizu ga suki desu.",
+          "translation": "I like water.",
+          "speechText": "私は水が好きです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "HO",
+          "value": "호 / ho",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "호",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "좋다 / jota",
+          "audioAssetRef": null,
+          "speechText": "좋다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "好",
-          "reading": "HO",
-          "translation": "good",
+          "text": "호감",
+          "reading": "hogam",
+          "translation": "good feeling; favorable impression",
+          "speechText": "호감",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘好’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘好’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "선호",
+          "reading": "seonho",
+          "translation": "preference",
+          "speechText": "선호",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘好’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘好’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "好"
-          ]
-        },
-        {
-          "text": "‘好’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘好’.",
-          "showsCoreMeaning": false,
+          "text": "이게 좋아요.",
+          "reading": "ige joayo.",
+          "translation": "I like this / This is good.",
+          "speechText": "이게 좋아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

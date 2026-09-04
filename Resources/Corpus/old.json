@@ -34,13 +34,15 @@
         }
       ],
       "glosses": [
-        "old"
+        "old; elderly"
       ],
       "examples": [
         {
-          "text": "老",
-          "reading": "lǎo",
-          "translation": "old",
+          "text": "老人",
+          "reading": "lǎorén",
+          "translation": "elderly person",
+          "speechText": "老人",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是老。",
-          "reading": "",
-          "translation": "This is the character 老.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "老师",
+          "reading": "lǎoshī",
+          "translation": "teacher",
+          "speechText": "老师",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习老。",
-          "reading": "",
-          "translation": "I am learning the character 老.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "老"
-          ]
-        },
-        {
-          "text": "我会读老。",
-          "reading": "",
-          "translation": "I can read the character 老.",
-          "showsCoreMeaning": false,
+          "text": "爷爷老了。",
+          "reading": "Yéye lǎo le.",
+          "translation": "Grandpa has grown old.",
+          "speechText": "爷爷老了。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -100,13 +94,15 @@
         }
       ],
       "glosses": [
-        "old"
+        "old; elderly"
       ],
       "taiwanExamples": [
         {
-          "text": "老",
-          "reading": "lǎo",
-          "translation": "old",
+          "text": "老人",
+          "reading": "lǎorén",
+          "translation": "elderly person",
+          "speechText": "老人",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「老」。",
-          "reading": "",
-          "translation": "This is the character 「老」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "老師",
+          "reading": "lǎoshī",
+          "translation": "teacher",
+          "speechText": "老師",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「老」。",
-          "reading": "",
-          "translation": "I am learning the character 「老」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "老"
-          ]
-        },
-        {
-          "text": "我會讀「老」。",
-          "reading": "",
-          "translation": "I can read the character 「老」.",
-          "showsCoreMeaning": false,
+          "text": "爺爺老了。",
+          "reading": "Yéye lǎo le.",
+          "translation": "Grandpa has grown old.",
+          "speechText": "爺爺老了。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "老人",
+          "reading": "lou5 jan4",
+          "translation": "elderly person",
+          "speechText": "老人",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "老"
+          ]
+        },
+        {
+          "text": "老師",
+          "reading": "lou5 si1",
+          "translation": "teacher",
+          "speechText": "老師",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "老"
+          ]
+        },
+        {
+          "text": "爺爺老咗。",
+          "reading": "je4 je4 lou5 zo2",
+          "translation": "Grandpa has grown old.",
+          "speechText": "爺爺老咗。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "老"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,28 +193,45 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "lou5",
+          "audioAssetRef": null,
+          "speechText": "老",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "老",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "OIRU FUKERU OI",
+          "system": "on",
+          "value": "ロウ (rō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ろう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "おいる (oiru)",
+          "audioAssetRef": null,
+          "speechText": "おいる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
-        "old"
+        "old; aged"
       ],
       "examples": [
         {
-          "text": "老",
-          "reading": "OIRU FUKERU OI",
-          "translation": "old",
+          "text": "老人",
+          "reading": "rōjin",
+          "translation": "elderly person",
+          "speechText": "老人",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「老」です。",
-          "reading": "",
-          "translation": "This is the kanji 「老」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "老犬",
+          "reading": "rōken",
+          "translation": "old dog",
+          "speechText": "老犬",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「老」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「老」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "老"
-          ]
-        },
-        {
-          "text": "「老」を読みます。",
-          "reading": "",
-          "translation": "I read 「老」.",
-          "showsCoreMeaning": false,
+          "text": "その犬は老犬です。",
+          "reading": "sono inu wa rōken desu.",
+          "translation": "That dog is old.",
+          "speechText": "その犬は老犬です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,20 +276,36 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "LO",
+          "value": "로 / ro",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "로",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "hanja · word-initial form",
+          "value": "노 / no",
+          "audioAssetRef": null,
+          "speechText": "노",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "늙다 / neukda",
+          "audioAssetRef": null,
+          "speechText": "늙다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
-        "old"
+        "old; elderly (in compounds)"
       ],
       "examples": [
         {
-          "text": "老",
-          "reading": "LO",
-          "translation": "old",
+          "text": "노인",
+          "reading": "noin",
+          "translation": "elderly person",
+          "speechText": "노인",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘老’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘老’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "노후",
+          "reading": "nohu",
+          "translation": "later life; old age",
+          "speechText": "노후",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘老’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘老’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "老"
-          ]
-        },
-        {
-          "text": "‘老’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘老’.",
-          "showsCoreMeaning": false,
+          "text": "강아지가 늙었어요.",
+          "reading": "gangajiga neulgeosseoyo.",
+          "translation": "The dog has grown old.",
+          "speechText": "강아지가 늙었어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

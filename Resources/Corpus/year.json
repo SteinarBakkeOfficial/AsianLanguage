@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "年",
-          "reading": "nián",
-          "translation": "year",
+          "text": "今年",
+          "reading": "jīnnián",
+          "translation": "this year",
+          "speechText": "今年",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是年。",
-          "reading": "",
-          "translation": "This is the character 年.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "明年",
+          "reading": "míngnián",
+          "translation": "next year",
+          "speechText": "明年",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习年。",
-          "reading": "",
-          "translation": "I am learning the character 年.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "年"
-          ]
-        },
-        {
-          "text": "我会读年。",
-          "reading": "",
-          "translation": "I can read the character 年.",
-          "showsCoreMeaning": false,
+          "text": "明年见。",
+          "reading": "Míngnián jiàn.",
+          "translation": "See you next year.",
+          "speechText": "明年见。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "年",
-          "reading": "nián",
-          "translation": "year",
+          "text": "今年",
+          "reading": "jīnnián",
+          "translation": "this year",
+          "speechText": "今年",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「年」。",
-          "reading": "",
-          "translation": "This is the character 「年」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "明年",
+          "reading": "míngnián",
+          "translation": "next year",
+          "speechText": "明年",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「年」。",
-          "reading": "",
-          "translation": "I am learning the character 「年」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "年"
-          ]
-        },
-        {
-          "text": "我會讀「年」。",
-          "reading": "",
-          "translation": "I can read the character 「年」.",
-          "showsCoreMeaning": false,
+          "text": "明年見。",
+          "reading": "Míngnián jiàn.",
+          "translation": "See you next year.",
+          "speechText": "明年見。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "今年",
+          "reading": "gam1 nin4",
+          "translation": "this year",
+          "speechText": "今年",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "年"
+          ]
+        },
+        {
+          "text": "明年",
+          "reading": "ming4 nin4",
+          "translation": "next year",
+          "speechText": "明年",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "年"
+          ]
+        },
+        {
+          "text": "明年見。",
+          "reading": "ming4 nin4 gin3",
+          "translation": "See you next year.",
+          "speechText": "明年見。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "年"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "nin4",
+          "audioAssetRef": null,
+          "speechText": "年",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "年",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TOSHI MINORU YOWAI",
+          "system": "on",
+          "value": "ネン (nen)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ねん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "とし (toshi)",
+          "audioAssetRef": null,
+          "speechText": "とし",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "年",
-          "reading": "TOSHI MINORU YOWAI",
+          "reading": "toshi",
           "translation": "year",
+          "speechText": "年",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「年」です。",
-          "reading": "",
-          "translation": "This is the kanji 「年」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "今年",
+          "reading": "kotoshi",
+          "translation": "this year",
+          "speechText": "今年",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「年」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「年」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "年"
-          ]
-        },
-        {
-          "text": "「年」を読みます。",
-          "reading": "",
-          "translation": "I read 「年」.",
-          "showsCoreMeaning": false,
+          "text": "来年また会いましょう。",
+          "reading": "rainen mata aimashō.",
+          "translation": "Let’s meet again next year.",
+          "speechText": "来年また会いましょう。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,24 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "NYEN",
+          "value": "년 / nyeon",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "년",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "hanja · word-initial form",
+          "value": "연 / yeon",
+          "audioAssetRef": null,
+          "speechText": "연",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "해 / hae",
+          "audioAssetRef": null,
+          "speechText": "해",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "年",
-          "reading": "NYEN",
-          "translation": "year",
+          "text": "일 년",
+          "reading": "il nyeon",
+          "translation": "one year",
+          "speechText": "일 년",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘年’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘年’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "내년",
+          "reading": "naenyeon",
+          "translation": "next year",
+          "speechText": "내년",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘年’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘年’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "年"
-          ]
-        },
-        {
-          "text": "‘年’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘年’.",
-          "showsCoreMeaning": false,
+          "text": "내년에 만나요.",
+          "reading": "naenyeone mannayo.",
+          "translation": "See you next year.",
+          "speechText": "내년에 만나요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "工",
-          "reading": "gōng",
+          "text": "工作",
+          "reading": "gōngzuò",
           "translation": "work",
+          "speechText": "工作",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是工。",
-          "reading": "",
-          "translation": "This is the character 工.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "工人",
+          "reading": "gōngrén",
+          "translation": "worker",
+          "speechText": "工人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习工。",
-          "reading": "",
-          "translation": "I am learning the character 工.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "工"
-          ]
-        },
-        {
-          "text": "我会读工。",
-          "reading": "",
-          "translation": "I can read the character 工.",
-          "showsCoreMeaning": false,
+          "text": "我在工作。",
+          "reading": "Wǒ zài gōngzuò.",
+          "translation": "I am working.",
+          "speechText": "我在工作。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "工",
-          "reading": "gōng",
+          "text": "工作",
+          "reading": "gōngzuò",
           "translation": "work",
+          "speechText": "工作",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「工」。",
-          "reading": "",
-          "translation": "This is the character 「工」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "工人",
+          "reading": "gōngrén",
+          "translation": "worker",
+          "speechText": "工人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「工」。",
-          "reading": "",
-          "translation": "I am learning the character 「工」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "工"
-          ]
-        },
-        {
-          "text": "我會讀「工」。",
-          "reading": "",
-          "translation": "I can read the character 「工」.",
-          "showsCoreMeaning": false,
+          "text": "我在工作。",
+          "reading": "Wǒ zài gōngzuò.",
+          "translation": "I am working.",
+          "speechText": "我在工作。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "工作",
+          "reading": "gung1 zok3",
+          "translation": "work",
+          "speechText": "工作",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "工"
+          ]
+        },
+        {
+          "text": "工人",
+          "reading": "gung1 jan4",
+          "translation": "worker",
+          "speechText": "工人",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "工"
+          ]
+        },
+        {
+          "text": "我返緊工。",
+          "reading": "ngo5 faan1 gan2 gung1",
+          "translation": "I am at work / working.",
+          "speechText": "我返緊工。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "工"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,26 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gung1",
+          "audioAssetRef": null,
+          "speechText": "工",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "工",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TAKUMI WAZA TSUKASA",
+          "system": "on",
+          "value": "コウ (kō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "こう",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +220,11 @@
       ],
       "examples": [
         {
-          "text": "工",
-          "reading": "TAKUMI WAZA TSUKASA",
-          "translation": "work",
+          "text": "工場",
+          "reading": "kōjō",
+          "translation": "factory",
+          "speechText": "工場",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +234,13 @@
           ]
         },
         {
-          "text": "これは「工」です。",
-          "reading": "",
-          "translation": "This is the kanji 「工」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "工事",
+          "reading": "kōji",
+          "translation": "construction work",
+          "speechText": "工事",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +248,12 @@
           ]
         },
         {
-          "text": "「工」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「工」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "工"
-          ]
-        },
-        {
-          "text": "「工」を読みます。",
-          "reading": "",
-          "translation": "I read 「工」.",
-          "showsCoreMeaning": false,
+          "text": "工事中です。",
+          "reading": "kōjichū desu.",
+          "translation": "Construction is in progress.",
+          "speechText": "工事中です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +269,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "KONG",
+          "value": "공 / gong",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "공",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean · work",
+          "value": "일 / il",
+          "audioAssetRef": null,
+          "speechText": "일",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +287,11 @@
       ],
       "examples": [
         {
-          "text": "工",
-          "reading": "KONG",
-          "translation": "work",
+          "text": "공장",
+          "reading": "gongjang",
+          "translation": "factory",
+          "speechText": "공장",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +301,13 @@
           ]
         },
         {
-          "text": "이것은 ‘工’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘工’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "공사",
+          "reading": "gongsa",
+          "translation": "construction work",
+          "speechText": "공사",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +315,12 @@
           ]
         },
         {
-          "text": "‘工’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘工’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "工"
-          ]
-        },
-        {
-          "text": "‘工’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘工’.",
-          "showsCoreMeaning": false,
+          "text": "오늘 일해요.",
+          "reading": "oneul ilhaeyo.",
+          "translation": "I work today.",
+          "speechText": "오늘 일해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +567,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +633,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

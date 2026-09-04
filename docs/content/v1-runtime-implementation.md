@@ -32,6 +32,12 @@ Run `Tools/Generate-MuseumTransitionNotes.ps1` after changing selected museum as
 
 The runtime is offline and read-only, but records remain `needsReview`. ZDIC is a reference source and not assumed commercially redistributable by attribution alone. Confirm permission or replace the historical assets with cleared/public-domain equivalents before shipping. Origin illustrations are educational reconstructions, not historical evidence. Generated fallback usage examples are explicitly marked for language-editor review.
 
+## Corrected target-language handoff
+
+The corrected modern-language content is maintained in `Reference Pictures/Chatgpt/Corpus_corrected_target_languages/`. Its 126 records provide revised Chinese, Japanese, and Korean forms, readings, examples, and explicit native-script speech text. The records remain draft/needs-review content; automated QA does not replace native-speaker or editorial release review.
+
+Run `Tools/Import-CorrectedTargetLanguageCorpus.ps1` to merge that content into the runtime corpus. The merge preserves current readable record IDs, filenames, historical asset references, and Fire exclusion because the handoff was generated before the runtime naming cleanup. Example `speechText` remains stored for future use, while the current UI exposes pronunciation controls only for main readings.
+
 ## Rebuild
 
 Run `Tools/Import-V1RuntimeCorpus.ps1` after changing the approved research manifest or origin-artwork selection. Then run `Tools/Generate-MuseumTransitionNotes.ps1`, validate the generated corpus, and perform macOS/Xcode build and simulator review.

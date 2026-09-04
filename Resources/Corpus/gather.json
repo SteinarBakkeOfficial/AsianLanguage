@@ -34,13 +34,15 @@
         }
       ],
       "glosses": [
-        "gather"
+        "pick; gather; collect"
       ],
       "examples": [
         {
-          "text": "采",
-          "reading": "cǎi",
-          "translation": "gather",
+          "text": "采摘",
+          "reading": "cǎizhāi",
+          "translation": "pick; gather",
+          "speechText": "采摘",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是采。",
-          "reading": "",
-          "translation": "This is the character 采.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "采访",
+          "reading": "cǎifǎng",
+          "translation": "interview",
+          "speechText": "采访",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习采。",
-          "reading": "",
-          "translation": "I am learning the character 采.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "采"
-          ]
-        },
-        {
-          "text": "我会读采。",
-          "reading": "",
-          "translation": "I can read the character 采.",
-          "showsCoreMeaning": false,
+          "text": "我们采苹果。",
+          "reading": "Wǒmen cǎi píngguǒ.",
+          "translation": "We pick apples.",
+          "speechText": "我们采苹果。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -95,18 +89,20 @@
           "system": "pinyin",
           "value": "cǎi",
           "audioAssetRef": null,
-          "speechText": "采",
+          "speechText": "採",
           "speechLanguage": "mandarin"
         }
       ],
       "glosses": [
-        "gather"
+        "pick; gather; collect"
       ],
       "taiwanExamples": [
         {
-          "text": "採",
-          "reading": "cǎi",
-          "translation": "gather",
+          "text": "採摘",
+          "reading": "cǎizhāi",
+          "translation": "pick; gather",
+          "speechText": "採摘",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「採」。",
-          "reading": "",
-          "translation": "This is the character 「採」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "採訪",
+          "reading": "cǎifǎng",
+          "translation": "interview",
+          "speechText": "採訪",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「採」。",
-          "reading": "",
-          "translation": "I am learning the character 「採」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "采"
-          ]
-        },
-        {
-          "text": "我會讀「採」。",
-          "reading": "",
-          "translation": "I can read the character 「採」.",
-          "showsCoreMeaning": false,
+          "text": "我們採蘋果。",
+          "reading": "Wǒmen cǎi píngguǒ.",
+          "translation": "We pick apples.",
+          "speechText": "我們採蘋果。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,38 +140,98 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "採摘",
+          "reading": "coi2 zaak6",
+          "translation": "pick; gather",
+          "speechText": "採摘",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "采"
+          ]
+        },
+        {
+          "text": "採訪",
+          "reading": "coi2 fong2",
+          "translation": "interview",
+          "speechText": "採訪",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "采"
+          ]
+        },
+        {
+          "text": "我哋採蘋果。",
+          "reading": "ngo5 dei6 coi2 ping4 gwo2",
+          "translation": "We pick apples.",
+          "speechText": "我哋採蘋果。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "采"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
           "value": "cǎi",
           "audioAssetRef": null,
-          "speechText": "采",
+          "speechText": "採",
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "coi2",
+          "audioAssetRef": null,
+          "speechText": "採",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "採",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TORU",
+          "system": "on",
+          "value": "サイ (sai)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "さい",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "とる (toru)",
+          "audioAssetRef": null,
+          "speechText": "とる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
-        "gather"
+        "pick; gather; select"
       ],
       "examples": [
         {
-          "text": "採",
-          "reading": "TORU",
-          "translation": "gather",
+          "text": "採る",
+          "reading": "toru",
+          "translation": "pick; gather; select",
+          "speechText": "採る",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「採」です。",
-          "reading": "",
-          "translation": "This is the kanji 「採」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "採用",
+          "reading": "saiyō",
+          "translation": "adopt; hire",
+          "speechText": "採用",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「採」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「採」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "采"
-          ]
-        },
-        {
-          "text": "「採」を読みます。",
-          "reading": "",
-          "translation": "I read 「採」.",
-          "showsCoreMeaning": false,
+          "text": "りんごを採ります。",
+          "reading": "ringo o torimasu.",
+          "translation": "I pick apples.",
+          "speechText": "りんごを採ります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,20 +276,29 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CHAY",
+          "value": "채 / chae",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "채",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean · pick",
+          "value": "따다 / ttada",
+          "audioAssetRef": null,
+          "speechText": "따다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
-        "gather"
+        "pick; gather; select (in compounds)"
       ],
       "examples": [
         {
-          "text": "採",
-          "reading": "CHAY",
-          "translation": "gather",
+          "text": "채택",
+          "reading": "chaetaek",
+          "translation": "adoption; selection",
+          "speechText": "채택",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘採’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘採’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "채집",
+          "reading": "chaejip",
+          "translation": "collection; gathering",
+          "speechText": "채집",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘採’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘採’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "采"
-          ]
-        },
-        {
-          "text": "‘採’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘採’.",
-          "showsCoreMeaning": false,
+          "text": "사과를 따요.",
+          "reading": "sagwareul ttayo.",
+          "translation": "I pick apples.",
+          "speechText": "사과를 따요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

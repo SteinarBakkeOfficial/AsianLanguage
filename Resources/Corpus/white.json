@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "白",
-          "reading": "bái",
+          "text": "白色",
+          "reading": "báisè",
           "translation": "white",
+          "speechText": "白色",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是白。",
-          "reading": "",
-          "translation": "This is the character 白.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "白云",
+          "reading": "báiyún",
+          "translation": "white cloud",
+          "speechText": "白云",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习白。",
-          "reading": "",
-          "translation": "I am learning the character 白.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "白"
-          ]
-        },
-        {
-          "text": "我会读白。",
-          "reading": "",
-          "translation": "I can read the character 白.",
-          "showsCoreMeaning": false,
+          "text": "这件衣服是白色的。",
+          "reading": "Zhè jiàn yīfu shì báisè de.",
+          "translation": "This clothing is white.",
+          "speechText": "这件衣服是白色的。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "白",
-          "reading": "bái",
+          "text": "白色",
+          "reading": "báisè",
           "translation": "white",
+          "speechText": "白色",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「白」。",
-          "reading": "",
-          "translation": "This is the character 「白」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "白雲",
+          "reading": "báiyún",
+          "translation": "white cloud",
+          "speechText": "白雲",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「白」。",
-          "reading": "",
-          "translation": "I am learning the character 「白」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "白"
-          ]
-        },
-        {
-          "text": "我會讀「白」。",
-          "reading": "",
-          "translation": "I can read the character 「白」.",
-          "showsCoreMeaning": false,
+          "text": "這件衣服是白色的。",
+          "reading": "Zhè jiàn yīfu shì báisè de.",
+          "translation": "This clothing is white.",
+          "speechText": "這件衣服是白色的。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "白色",
+          "reading": "baak6 sik1",
+          "translation": "white",
+          "speechText": "白色",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "白"
+          ]
+        },
+        {
+          "text": "白雲",
+          "reading": "baak6 wan4",
+          "translation": "white cloud",
+          "speechText": "白雲",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "白"
+          ]
+        },
+        {
+          "text": "呢件衫係白色。",
+          "reading": "ni1 gin6 saam1 hai6 baak6 sik1",
+          "translation": "This clothing is white.",
+          "speechText": "呢件衫係白色。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "白"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "baak6",
+          "audioAssetRef": null,
+          "speechText": "白",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "白",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "SHIRO SHIROI MOUSU",
+          "system": "on",
+          "value": "ハク (haku)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "はく",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "しろ (shiro)",
+          "audioAssetRef": null,
+          "speechText": "しろ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "しろい (shiroi)",
+          "audioAssetRef": null,
+          "speechText": "しろい",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "白",
-          "reading": "SHIRO SHIROI MOUSU",
+          "text": "白い",
+          "reading": "shiroi",
           "translation": "white",
+          "speechText": "白い",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「白」です。",
-          "reading": "",
-          "translation": "This is the kanji 「白」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "白紙",
+          "reading": "hakushi",
+          "translation": "blank paper",
+          "speechText": "白紙",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「白」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「白」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "白"
-          ]
-        },
-        {
-          "text": "「白」を読みます。",
-          "reading": "",
-          "translation": "I read 「白」.",
-          "showsCoreMeaning": false,
+          "text": "雪は白いです。",
+          "reading": "yuki wa shiroi desu.",
+          "translation": "Snow is white.",
+          "speechText": "雪は白いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "PAYK PAY",
+          "value": "백 / baek",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "백",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "하얗다 / hayata",
+          "audioAssetRef": null,
+          "speechText": "하얗다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "白",
-          "reading": "PAYK PAY",
+          "text": "백색",
+          "reading": "baeksaek",
           "translation": "white",
+          "speechText": "백색",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘白’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘白’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "백지",
+          "reading": "baekji",
+          "translation": "blank paper",
+          "speechText": "백지",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘白’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘白’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "白"
-          ]
-        },
-        {
-          "text": "‘白’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘白’.",
-          "showsCoreMeaning": false,
+          "text": "눈이 하얘요.",
+          "reading": "nuni hayaeyo.",
+          "translation": "The snow is white.",
+          "speechText": "눈이 하얘요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

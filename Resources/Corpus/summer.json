@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "夏",
-          "reading": "xià",
+          "text": "夏天",
+          "reading": "xiàtiān",
           "translation": "summer",
+          "speechText": "夏天",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是夏。",
-          "reading": "",
-          "translation": "This is the character 夏.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "夏季",
+          "reading": "xiàjì",
+          "translation": "summer season",
+          "speechText": "夏季",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习夏。",
-          "reading": "",
-          "translation": "I am learning the character 夏.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夏"
-          ]
-        },
-        {
-          "text": "我会读夏。",
-          "reading": "",
-          "translation": "I can read the character 夏.",
-          "showsCoreMeaning": false,
+          "text": "夏天很热。",
+          "reading": "Xiàtiān hěn rè.",
+          "translation": "Summer is hot.",
+          "speechText": "夏天很热。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "夏",
-          "reading": "xià",
+          "text": "夏天",
+          "reading": "xiàtiān",
           "translation": "summer",
+          "speechText": "夏天",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「夏」。",
-          "reading": "",
-          "translation": "This is the character 「夏」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "夏季",
+          "reading": "xiàjì",
+          "translation": "summer season",
+          "speechText": "夏季",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「夏」。",
-          "reading": "",
-          "translation": "I am learning the character 「夏」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夏"
-          ]
-        },
-        {
-          "text": "我會讀「夏」。",
-          "reading": "",
-          "translation": "I can read the character 「夏」.",
-          "showsCoreMeaning": false,
+          "text": "夏天很熱。",
+          "reading": "Xiàtiān hěn rè.",
+          "translation": "Summer is hot.",
+          "speechText": "夏天很熱。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "夏天",
+          "reading": "haa6 tin1",
+          "translation": "summer",
+          "speechText": "夏天",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "夏"
+          ]
+        },
+        {
+          "text": "夏季",
+          "reading": "haa6 gwai3",
+          "translation": "summer season",
+          "speechText": "夏季",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "夏"
+          ]
+        },
+        {
+          "text": "夏天好熱。",
+          "reading": "haa6 tin1 hou2 jit6",
+          "translation": "Summer is hot.",
+          "speechText": "夏天好熱。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "夏"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "haa6",
+          "audioAssetRef": null,
+          "speechText": "夏",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "夏",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "NATSU",
+          "system": "on",
+          "value": "カ (ka)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "か",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "なつ (natsu)",
+          "audioAssetRef": null,
+          "speechText": "なつ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "夏",
-          "reading": "NATSU",
+          "reading": "natsu",
           "translation": "summer",
+          "speechText": "夏",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「夏」です。",
-          "reading": "",
-          "translation": "This is the kanji 「夏」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "夏休み",
+          "reading": "natsuyasumi",
+          "translation": "summer vacation",
+          "speechText": "夏休み",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「夏」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「夏」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夏"
-          ]
-        },
-        {
-          "text": "「夏」を読みます。",
-          "reading": "",
-          "translation": "I read 「夏」.",
-          "showsCoreMeaning": false,
+          "text": "夏は暑いです。",
+          "reading": "natsu wa atsui desu.",
+          "translation": "Summer is hot.",
+          "speechText": "夏は暑いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "HA",
+          "value": "하 / ha",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "하",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "여름 / yeoreum",
+          "audioAssetRef": null,
+          "speechText": "여름",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "夏",
-          "reading": "HA",
-          "translation": "summer",
+          "text": "하계",
+          "reading": "hagye",
+          "translation": "summer season",
+          "speechText": "하계",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘夏’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘夏’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "여름",
+          "reading": "yeoreum",
+          "translation": "summer",
+          "speechText": "여름",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘夏’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘夏’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夏"
-          ]
-        },
-        {
-          "text": "‘夏’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘夏’.",
-          "showsCoreMeaning": false,
+          "text": "여름은 더워요.",
+          "reading": "yeoreumeun deowoyo.",
+          "translation": "Summer is hot.",
+          "speechText": "여름은 더워요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

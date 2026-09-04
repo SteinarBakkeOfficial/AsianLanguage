@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "舌",
-          "reading": "shé",
+          "text": "舌头",
+          "reading": "shétou",
           "translation": "tongue",
+          "speechText": "舌头",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是舌。",
-          "reading": "",
-          "translation": "This is the character 舌.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "舌尖",
+          "reading": "shéjiān",
+          "translation": "tip of the tongue",
+          "speechText": "舌尖",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习舌。",
-          "reading": "",
-          "translation": "I am learning the character 舌.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "舌"
-          ]
-        },
-        {
-          "text": "我会读舌。",
-          "reading": "",
-          "translation": "I can read the character 舌.",
-          "showsCoreMeaning": false,
+          "text": "舌头有点痛。",
+          "reading": "Shétou yǒudiǎn tòng.",
+          "translation": "My tongue hurts a little.",
+          "speechText": "舌头有点痛。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "舌",
-          "reading": "shé",
+          "text": "舌頭",
+          "reading": "shétou",
           "translation": "tongue",
+          "speechText": "舌頭",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「舌」。",
-          "reading": "",
-          "translation": "This is the character 「舌」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "舌尖",
+          "reading": "shéjiān",
+          "translation": "tip of the tongue",
+          "speechText": "舌尖",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「舌」。",
-          "reading": "",
-          "translation": "I am learning the character 「舌」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "舌"
-          ]
-        },
-        {
-          "text": "我會讀「舌」。",
-          "reading": "",
-          "translation": "I can read the character 「舌」.",
-          "showsCoreMeaning": false,
+          "text": "舌頭有點痛。",
+          "reading": "Shétou yǒudiǎn tòng.",
+          "translation": "My tongue hurts a little.",
+          "speechText": "舌頭有點痛。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "舌頭",
+          "reading": "sit6 tau4",
+          "translation": "tongue",
+          "speechText": "舌頭",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "舌"
+          ]
+        },
+        {
+          "text": "舌尖",
+          "reading": "sit6 zim1",
+          "translation": "tip of the tongue",
+          "speechText": "舌尖",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "舌"
+          ]
+        },
+        {
+          "text": "我條脷有啲痛。",
+          "reading": "ngo5 tiu4 lei6 jau5 di1 tung3",
+          "translation": "My tongue hurts a little.",
+          "speechText": "我條脷有啲痛。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "舌"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "sit6",
+          "audioAssetRef": null,
+          "speechText": "舌",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "舌",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "SHITA",
+          "system": "on",
+          "value": "ゼツ (zetsu)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ぜつ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "した (shita)",
+          "audioAssetRef": null,
+          "speechText": "した",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "舌",
-          "reading": "SHITA",
+          "reading": "shita",
           "translation": "tongue",
+          "speechText": "舌",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「舌」です。",
-          "reading": "",
-          "translation": "This is the kanji 「舌」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "舌先",
+          "reading": "shitasaki",
+          "translation": "tip of the tongue",
+          "speechText": "舌先",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「舌」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「舌」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "舌"
-          ]
-        },
-        {
-          "text": "「舌」を読みます。",
-          "reading": "",
-          "translation": "I read 「舌」.",
-          "showsCoreMeaning": false,
+          "text": "舌が痛いです。",
+          "reading": "shita ga itai desu.",
+          "translation": "My tongue hurts.",
+          "speechText": "舌が痛いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SEL",
+          "value": "설 / seol",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "설",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "혀 / hyeo",
+          "audioAssetRef": null,
+          "speechText": "혀",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "舌",
-          "reading": "SEL",
+          "text": "혀",
+          "reading": "hyeo",
           "translation": "tongue",
+          "speechText": "혀",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘舌’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘舌’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "혀끝",
+          "reading": "hyeokkeut",
+          "translation": "tip of the tongue",
+          "speechText": "혀끝",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘舌’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘舌’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "舌"
-          ]
-        },
-        {
-          "text": "‘舌’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘舌’.",
-          "showsCoreMeaning": false,
+          "text": "혀가 아파요.",
+          "reading": "hyeoga apayo.",
+          "translation": "My tongue hurts.",
+          "speechText": "혀가 아파요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

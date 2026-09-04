@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "族",
-          "reading": "zú",
-          "translation": "group",
+          "text": "家族",
+          "reading": "jiāzú",
+          "translation": "family; clan",
+          "speechText": "家族",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是族。",
-          "reading": "",
-          "translation": "This is the character 族.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "民族",
+          "reading": "mínzú",
+          "translation": "ethnic group; people",
+          "speechText": "民族",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习族。",
-          "reading": "",
-          "translation": "I am learning the character 族.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "族"
-          ]
-        },
-        {
-          "text": "我会读族。",
-          "reading": "",
-          "translation": "I can read the character 族.",
-          "showsCoreMeaning": false,
+          "text": "我去水族馆。",
+          "reading": "Wǒ qù shuǐzúguǎn.",
+          "translation": "I am going to the aquarium.",
+          "speechText": "我去水族馆。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "族",
-          "reading": "zú",
-          "translation": "group",
+          "text": "家族",
+          "reading": "jiāzú",
+          "translation": "family; clan",
+          "speechText": "家族",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「族」。",
-          "reading": "",
-          "translation": "This is the character 「族」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "民族",
+          "reading": "mínzú",
+          "translation": "ethnic group; people",
+          "speechText": "民族",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「族」。",
-          "reading": "",
-          "translation": "I am learning the character 「族」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "族"
-          ]
-        },
-        {
-          "text": "我會讀「族」。",
-          "reading": "",
-          "translation": "I can read the character 「族」.",
-          "showsCoreMeaning": false,
+          "text": "我去水族館。",
+          "reading": "Wǒ qù shuǐzúguǎn.",
+          "translation": "I am going to the aquarium.",
+          "speechText": "我去水族館。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "家族",
+          "reading": "gaa1 zuk6",
+          "translation": "family; clan",
+          "speechText": "家族",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "族"
+          ]
+        },
+        {
+          "text": "民族",
+          "reading": "man4 zuk6",
+          "translation": "ethnic group; people",
+          "speechText": "民族",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "族"
+          ]
+        },
+        {
+          "text": "我去水族館。",
+          "reading": "ngo5 heoi3 seoi2 zuk6 gun2",
+          "translation": "I am going to the aquarium.",
+          "speechText": "我去水族館。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "族"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,26 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "zuk6",
+          "audioAssetRef": null,
+          "speechText": "族",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "族",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "YAKARA",
+          "system": "on",
+          "value": "ゾク (zoku)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ぞく",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +220,11 @@
       ],
       "examples": [
         {
-          "text": "族",
-          "reading": "YAKARA",
-          "translation": "group",
+          "text": "家族",
+          "reading": "kazoku",
+          "translation": "family",
+          "speechText": "家族",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +234,13 @@
           ]
         },
         {
-          "text": "これは「族」です。",
-          "reading": "",
-          "translation": "This is the kanji 「族」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "水族館",
+          "reading": "suizokukan",
+          "translation": "aquarium",
+          "speechText": "水族館",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +248,12 @@
           ]
         },
         {
-          "text": "「族」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「族」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "族"
-          ]
-        },
-        {
-          "text": "「族」を読みます。",
-          "reading": "",
-          "translation": "I read 「族」.",
-          "showsCoreMeaning": false,
+          "text": "家族と行きます。",
+          "reading": "kazoku to ikimasu.",
+          "translation": "I go with my family.",
+          "speechText": "家族と行きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +269,10 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "COK CWU",
+          "value": "족 / jok",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "족",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +280,11 @@
       ],
       "examples": [
         {
-          "text": "族",
-          "reading": "COK CWU",
-          "translation": "group",
+          "text": "가족",
+          "reading": "gajok",
+          "translation": "family",
+          "speechText": "가족",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +294,13 @@
           ]
         },
         {
-          "text": "이것은 ‘族’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘族’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "민족",
+          "reading": "minjok",
+          "translation": "ethnic group; people",
+          "speechText": "민족",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +308,12 @@
           ]
         },
         {
-          "text": "‘族’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘族’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "族"
-          ]
-        },
-        {
-          "text": "‘族’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘族’.",
-          "showsCoreMeaning": false,
+          "text": "가족과 가요.",
+          "reading": "gajokgwa gayo.",
+          "translation": "I go with my family.",
+          "speechText": "가족과 가요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +560,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +626,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "取",
-          "reading": "qǔ",
-          "translation": "take",
+          "text": "取得",
+          "reading": "qǔdé",
+          "translation": "obtain",
+          "speechText": "取得",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是取。",
-          "reading": "",
-          "translation": "This is the character 取.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "取出",
+          "reading": "qǔchū",
+          "translation": "take out",
+          "speechText": "取出",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习取。",
-          "reading": "",
-          "translation": "I am learning the character 取.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "取"
-          ]
-        },
-        {
-          "text": "我会读取。",
-          "reading": "",
-          "translation": "I can read the character 取.",
-          "showsCoreMeaning": false,
+          "text": "请取一张票。",
+          "reading": "Qǐng qǔ yì zhāng piào.",
+          "translation": "Please take a ticket.",
+          "speechText": "请取一张票。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "取",
-          "reading": "qǔ",
-          "translation": "take",
+          "text": "取得",
+          "reading": "qǔdé",
+          "translation": "obtain",
+          "speechText": "取得",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「取」。",
-          "reading": "",
-          "translation": "This is the character 「取」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "取出",
+          "reading": "qǔchū",
+          "translation": "take out",
+          "speechText": "取出",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「取」。",
-          "reading": "",
-          "translation": "I am learning the character 「取」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "取"
-          ]
-        },
-        {
-          "text": "我會讀「取」。",
-          "reading": "",
-          "translation": "I can read the character 「取」.",
-          "showsCoreMeaning": false,
+          "text": "請取一張票。",
+          "reading": "Qǐng qǔ yì zhāng piào.",
+          "translation": "Please take a ticket.",
+          "speechText": "請取一張票。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "取得",
+          "reading": "ceoi2 dak1",
+          "translation": "obtain",
+          "speechText": "取得",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "取"
+          ]
+        },
+        {
+          "text": "取出",
+          "reading": "ceoi2 ceot1",
+          "translation": "take out",
+          "speechText": "取出",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "取"
+          ]
+        },
+        {
+          "text": "請取一張票。",
+          "reading": "cing2 ceoi2 jat1 zoeng1 piu3",
+          "translation": "Please take a ticket.",
+          "speechText": "請取一張票。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "取"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "ceoi2",
+          "audioAssetRef": null,
+          "speechText": "取",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "取",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TORU",
+          "system": "on",
+          "value": "シュ (shu)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "しゅ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "とる (toru)",
+          "audioAssetRef": null,
+          "speechText": "とる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "取",
-          "reading": "TORU",
+          "text": "取る",
+          "reading": "toru",
           "translation": "take",
+          "speechText": "取る",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「取」です。",
-          "reading": "",
-          "translation": "This is the kanji 「取」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "取得",
+          "reading": "shutoku",
+          "translation": "acquisition; obtain",
+          "speechText": "取得",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「取」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「取」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "取"
-          ]
-        },
-        {
-          "text": "「取」を読みます。",
-          "reading": "",
-          "translation": "I read 「取」.",
-          "showsCoreMeaning": false,
+          "text": "本を取ります。",
+          "reading": "hon o torimasu.",
+          "translation": "I take the book.",
+          "speechText": "本を取ります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CHWI",
+          "value": "취 / chwi",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "취",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "가져가다 / gajyeogada",
+          "audioAssetRef": null,
+          "speechText": "가져가다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "取",
-          "reading": "CHWI",
-          "translation": "take",
+          "text": "취득",
+          "reading": "chwideuk",
+          "translation": "acquisition; obtain",
+          "speechText": "취득",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘取’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘取’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "취소",
+          "reading": "chwiso",
+          "translation": "cancel",
+          "speechText": "취소",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘取’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘取’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "取"
-          ]
-        },
-        {
-          "text": "‘取’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘取’.",
-          "showsCoreMeaning": false,
+          "text": "책을 가져가요.",
+          "reading": "chaegeul gajyeogayo.",
+          "translation": "I take the book with me.",
+          "speechText": "책을 가져가요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

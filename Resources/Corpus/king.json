@@ -41,6 +41,8 @@
           "text": "王",
           "reading": "wáng",
           "translation": "king",
+          "speechText": "王",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是王。",
-          "reading": "",
-          "translation": "This is the character 王.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "国王",
+          "reading": "guówáng",
+          "translation": "king; monarch",
+          "speechText": "国王",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习王。",
-          "reading": "",
-          "translation": "I am learning the character 王.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "王"
-          ]
-        },
-        {
-          "text": "我会读王。",
-          "reading": "",
-          "translation": "I can read the character 王.",
-          "showsCoreMeaning": false,
+          "text": "他是国王。",
+          "reading": "Tā shì guówáng.",
+          "translation": "He is the king.",
+          "speechText": "他是国王。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -107,6 +101,8 @@
           "text": "王",
           "reading": "wáng",
           "translation": "king",
+          "speechText": "王",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「王」。",
-          "reading": "",
-          "translation": "This is the character 「王」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "國王",
+          "reading": "guówáng",
+          "translation": "king; monarch",
+          "speechText": "國王",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「王」。",
-          "reading": "",
-          "translation": "I am learning the character 「王」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "王"
-          ]
-        },
-        {
-          "text": "我會讀「王」。",
-          "reading": "",
-          "translation": "I can read the character 「王」.",
-          "showsCoreMeaning": false,
+          "text": "他是國王。",
+          "reading": "Tā shì guówáng.",
+          "translation": "He is the king.",
+          "speechText": "他是國王。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "王",
+          "reading": "wong4",
+          "translation": "king",
+          "speechText": "王",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "王"
+          ]
+        },
+        {
+          "text": "國王",
+          "reading": "gwok3 wong4",
+          "translation": "king; monarch",
+          "speechText": "國王",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "王"
+          ]
+        },
+        {
+          "text": "佢係國王。",
+          "reading": "keoi5 hai6 gwok3 wong4",
+          "translation": "He is the king.",
+          "speechText": "佢係國王。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "王"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,26 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "wong4",
+          "audioAssetRef": null,
+          "speechText": "王",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "王",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "KIMI",
+          "system": "on",
+          "value": "オウ (ō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "おう",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +221,10 @@
       "examples": [
         {
           "text": "王",
-          "reading": "KIMI",
+          "reading": "ō",
           "translation": "king",
+          "speechText": "王",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +234,13 @@
           ]
         },
         {
-          "text": "これは「王」です。",
-          "reading": "",
-          "translation": "This is the kanji 「王」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "王国",
+          "reading": "ōkoku",
+          "translation": "kingdom",
+          "speechText": "王国",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +248,12 @@
           ]
         },
         {
-          "text": "「王」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「王」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "王"
-          ]
-        },
-        {
-          "text": "「王」を読みます。",
-          "reading": "",
-          "translation": "I read 「王」.",
-          "showsCoreMeaning": false,
+          "text": "王さまが来ます。",
+          "reading": "ōsama ga kimasu.",
+          "translation": "The king is coming.",
+          "speechText": "王さまが来ます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +269,10 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "WANG",
+          "value": "왕 / wang",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "왕",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +280,11 @@
       ],
       "examples": [
         {
-          "text": "王",
-          "reading": "WANG",
+          "text": "왕",
+          "reading": "wang",
           "translation": "king",
+          "speechText": "왕",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +294,13 @@
           ]
         },
         {
-          "text": "이것은 ‘王’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘王’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "왕국",
+          "reading": "wangguk",
+          "translation": "kingdom",
+          "speechText": "왕국",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +308,12 @@
           ]
         },
         {
-          "text": "‘王’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘王’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "王"
-          ]
-        },
-        {
-          "text": "‘王’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘王’.",
-          "showsCoreMeaning": false,
+          "text": "왕이 와요.",
+          "reading": "wangi wayo.",
+          "translation": "The king is coming.",
+          "speechText": "왕이 와요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +560,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +626,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

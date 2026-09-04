@@ -34,13 +34,15 @@
         }
       ],
       "glosses": [
-        "speech"
+        "speech; words; say"
       ],
       "examples": [
         {
-          "text": "言",
-          "reading": "yán",
-          "translation": "speech",
+          "text": "言语",
+          "reading": "yányǔ",
+          "translation": "speech; words",
+          "speechText": "言语",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是言。",
-          "reading": "",
-          "translation": "This is the character 言.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "发言",
+          "reading": "fāyán",
+          "translation": "speak; make a remark",
+          "speechText": "发言",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习言。",
-          "reading": "",
-          "translation": "I am learning the character 言.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "言"
-          ]
-        },
-        {
-          "text": "我会读言。",
-          "reading": "",
-          "translation": "I can read the character 言.",
-          "showsCoreMeaning": false,
+          "text": "他正在发言。",
+          "reading": "Tā zhèngzài fāyán.",
+          "translation": "He is speaking now.",
+          "speechText": "他正在发言。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -100,13 +94,15 @@
         }
       ],
       "glosses": [
-        "speech"
+        "speech; words; say"
       ],
       "taiwanExamples": [
         {
-          "text": "言",
-          "reading": "yán",
-          "translation": "speech",
+          "text": "言語",
+          "reading": "yányǔ",
+          "translation": "speech; words",
+          "speechText": "言語",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「言」。",
-          "reading": "",
-          "translation": "This is the character 「言」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "發言",
+          "reading": "fāyán",
+          "translation": "speak; make a remark",
+          "speechText": "發言",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「言」。",
-          "reading": "",
-          "translation": "I am learning the character 「言」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "言"
-          ]
-        },
-        {
-          "text": "我會讀「言」。",
-          "reading": "",
-          "translation": "I can read the character 「言」.",
-          "showsCoreMeaning": false,
+          "text": "他正在發言。",
+          "reading": "Tā zhèngzài fāyán.",
+          "translation": "He is speaking now.",
+          "speechText": "他正在發言。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "言語",
+          "reading": "jin4 jyu5",
+          "translation": "speech; language",
+          "speechText": "言語",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "言"
+          ]
+        },
+        {
+          "text": "發言",
+          "reading": "faat3 jin4",
+          "translation": "speak; make a remark",
+          "speechText": "發言",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "言"
+          ]
+        },
+        {
+          "text": "佢而家發言。",
+          "reading": "keoi5 ji4 gaa1 faat3 jin4",
+          "translation": "He is speaking now.",
+          "speechText": "佢而家發言。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "言"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,28 +193,59 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "jin4",
+          "audioAssetRef": null,
+          "speechText": "言",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "言",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "KOTO IU KOTOBA",
+          "system": "on",
+          "value": "ゲン (gen)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "げん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "ゴン (gon)",
+          "audioAssetRef": null,
+          "speechText": "ごん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "いう (iu)",
+          "audioAssetRef": null,
+          "speechText": "いう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "こと (koto)",
+          "audioAssetRef": null,
+          "speechText": "こと",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
-        "speech"
+        "say; word; speech"
       ],
       "examples": [
         {
-          "text": "言",
-          "reading": "KOTO IU KOTOBA",
-          "translation": "speech",
+          "text": "言う",
+          "reading": "iu",
+          "translation": "say",
+          "speechText": "言う",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +255,13 @@
           ]
         },
         {
-          "text": "これは「言」です。",
-          "reading": "",
-          "translation": "This is the kanji 「言」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "言葉",
+          "reading": "kotoba",
+          "translation": "word; language",
+          "speechText": "言葉",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +269,12 @@
           ]
         },
         {
-          "text": "「言」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「言」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "言"
-          ]
-        },
-        {
-          "text": "「言」を読みます。",
-          "reading": "",
-          "translation": "I read 「言」.",
-          "showsCoreMeaning": false,
+          "text": "本当のことを言います。",
+          "reading": "hontō no koto o iimasu.",
+          "translation": "I tell the truth.",
+          "speechText": "本当のことを言います。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,20 +290,29 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "EN UN",
+          "value": "언 / eon",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "언",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "말 / mal",
+          "audioAssetRef": null,
+          "speechText": "말",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
-        "speech"
+        "language; speech; words"
       ],
       "examples": [
         {
-          "text": "言",
-          "reading": "EN UN",
-          "translation": "speech",
+          "text": "언어",
+          "reading": "eoneo",
+          "translation": "language",
+          "speechText": "언어",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +322,13 @@
           ]
         },
         {
-          "text": "이것은 ‘言’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘言’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "발언",
+          "reading": "bareon",
+          "translation": "remark; statement",
+          "speechText": "발언",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +336,12 @@
           ]
         },
         {
-          "text": "‘言’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘言’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "言"
-          ]
-        },
-        {
-          "text": "‘言’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘言’.",
-          "showsCoreMeaning": false,
+          "text": "말을 해요.",
+          "reading": "mareul haeyo.",
+          "translation": "I speak / say something.",
+          "speechText": "말을 해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +588,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +654,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

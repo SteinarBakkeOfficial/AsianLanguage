@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "利",
-          "reading": "lì",
-          "translation": "benefit",
+          "text": "利益",
+          "reading": "lìyì",
+          "translation": "benefit; profit",
+          "speechText": "利益",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是利。",
-          "reading": "",
-          "translation": "This is the character 利.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "有利",
+          "reading": "yǒulì",
+          "translation": "advantageous",
+          "speechText": "有利",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习利。",
-          "reading": "",
-          "translation": "I am learning the character 利.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "利"
-          ]
-        },
-        {
-          "text": "我会读利。",
-          "reading": "",
-          "translation": "I can read the character 利.",
-          "showsCoreMeaning": false,
+          "text": "这对大家有利。",
+          "reading": "Zhè duì dàjiā yǒulì.",
+          "translation": "This benefits everyone.",
+          "speechText": "这对大家有利。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "利",
-          "reading": "lì",
-          "translation": "benefit",
+          "text": "利益",
+          "reading": "lìyì",
+          "translation": "benefit; profit",
+          "speechText": "利益",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「利」。",
-          "reading": "",
-          "translation": "This is the character 「利」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "有利",
+          "reading": "yǒulì",
+          "translation": "advantageous",
+          "speechText": "有利",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「利」。",
-          "reading": "",
-          "translation": "I am learning the character 「利」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "利"
-          ]
-        },
-        {
-          "text": "我會讀「利」。",
-          "reading": "",
-          "translation": "I can read the character 「利」.",
-          "showsCoreMeaning": false,
+          "text": "這對大家有利。",
+          "reading": "Zhè duì dàjiā yǒulì.",
+          "translation": "This benefits everyone.",
+          "speechText": "這對大家有利。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "利益",
+          "reading": "lei6 jik1",
+          "translation": "benefit; profit",
+          "speechText": "利益",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "利"
+          ]
+        },
+        {
+          "text": "有利",
+          "reading": "jau5 lei6",
+          "translation": "advantageous",
+          "speechText": "有利",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "利"
+          ]
+        },
+        {
+          "text": "呢樣對大家有利。",
+          "reading": "ni1 joeng6 deoi3 daai6 gaa1 jau5 lei6",
+          "translation": "This benefits everyone.",
+          "speechText": "呢樣對大家有利。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "利"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,26 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "lei6",
+          "audioAssetRef": null,
+          "speechText": "利",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "利",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "KIKU YOI SURUDOI",
+          "system": "on",
+          "value": "リ (ri)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "り",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +220,11 @@
       ],
       "examples": [
         {
-          "text": "利",
-          "reading": "KIKU YOI SURUDOI",
-          "translation": "benefit",
+          "text": "利益",
+          "reading": "rieki",
+          "translation": "benefit; profit",
+          "speechText": "利益",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +234,13 @@
           ]
         },
         {
-          "text": "これは「利」です。",
-          "reading": "",
-          "translation": "This is the kanji 「利」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "利用",
+          "reading": "riyō",
+          "translation": "use; utilization",
+          "speechText": "利用",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +248,12 @@
           ]
         },
         {
-          "text": "「利」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「利」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "利"
-          ]
-        },
-        {
-          "text": "「利」を読みます。",
-          "reading": "",
-          "translation": "I read 「利」.",
-          "showsCoreMeaning": false,
+          "text": "これは便利です。",
+          "reading": "kore wa benri desu.",
+          "translation": "This is convenient.",
+          "speechText": "これは便利です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +269,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "LI",
+          "value": "리 / ri",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "리",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "hanja · word-initial form",
+          "value": "이 / i",
+          "audioAssetRef": null,
+          "speechText": "이",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +287,11 @@
       ],
       "examples": [
         {
-          "text": "利",
-          "reading": "LI",
-          "translation": "benefit",
+          "text": "이익",
+          "reading": "iik",
+          "translation": "benefit; profit",
+          "speechText": "이익",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +301,13 @@
           ]
         },
         {
-          "text": "이것은 ‘利’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘利’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "이용",
+          "reading": "iyong",
+          "translation": "use; utilization",
+          "speechText": "이용",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +315,12 @@
           ]
         },
         {
-          "text": "‘利’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘利’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "利"
-          ]
-        },
-        {
-          "text": "‘利’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘利’.",
-          "showsCoreMeaning": false,
+          "text": "이게 더 유리해요.",
+          "reading": "ige deo yurihaeyo.",
+          "translation": "This is more advantageous.",
+          "speechText": "이게 더 유리해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +567,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +633,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

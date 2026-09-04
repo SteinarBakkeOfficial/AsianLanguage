@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "夕",
-          "reading": "xī",
-          "translation": "evening",
+          "text": "夕阳",
+          "reading": "xīyáng",
+          "translation": "sunset",
+          "speechText": "夕阳",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是夕。",
-          "reading": "",
-          "translation": "This is the character 夕.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "朝夕",
+          "reading": "zhāoxī",
+          "translation": "morning and evening",
+          "speechText": "朝夕",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习夕。",
-          "reading": "",
-          "translation": "I am learning the character 夕.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夕"
-          ]
-        },
-        {
-          "text": "我会读夕。",
-          "reading": "",
-          "translation": "I can read the character 夕.",
-          "showsCoreMeaning": false,
+          "text": "夕阳很美。",
+          "reading": "Xīyáng hěn měi.",
+          "translation": "The sunset is beautiful.",
+          "speechText": "夕阳很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "夕",
-          "reading": "xī",
-          "translation": "evening",
+          "text": "夕陽",
+          "reading": "xīyáng",
+          "translation": "sunset",
+          "speechText": "夕陽",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「夕」。",
-          "reading": "",
-          "translation": "This is the character 「夕」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "朝夕",
+          "reading": "zhāoxī",
+          "translation": "morning and evening",
+          "speechText": "朝夕",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「夕」。",
-          "reading": "",
-          "translation": "I am learning the character 「夕」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夕"
-          ]
-        },
-        {
-          "text": "我會讀「夕」。",
-          "reading": "",
-          "translation": "I can read the character 「夕」.",
-          "showsCoreMeaning": false,
+          "text": "夕陽很美。",
+          "reading": "Xīyáng hěn měi.",
+          "translation": "The sunset is beautiful.",
+          "speechText": "夕陽很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "夕陽",
+          "reading": "zik6 joeng4",
+          "translation": "sunset",
+          "speechText": "夕陽",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "夕"
+          ]
+        },
+        {
+          "text": "朝夕",
+          "reading": "ziu1 zik6",
+          "translation": "morning and evening",
+          "speechText": "朝夕",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "夕"
+          ]
+        },
+        {
+          "text": "夕陽好靚。",
+          "reading": "zik6 joeng4 hou2 leng3",
+          "translation": "The sunset is beautiful.",
+          "speechText": "夕陽好靚。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "夕"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "zik6",
+          "audioAssetRef": null,
+          "speechText": "夕",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "夕",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "YUU YUUBE",
+          "system": "on",
+          "value": "セキ (seki)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "せき",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "ゆう (yū)",
+          "audioAssetRef": null,
+          "speechText": "ゆう",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "夕",
-          "reading": "YUU YUUBE",
+          "text": "夕方",
+          "reading": "yūgata",
           "translation": "evening",
+          "speechText": "夕方",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「夕」です。",
-          "reading": "",
-          "translation": "This is the kanji 「夕」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "夕日",
+          "reading": "yūhi",
+          "translation": "evening sun; sunset",
+          "speechText": "夕日",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「夕」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「夕」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夕"
-          ]
-        },
-        {
-          "text": "「夕」を読みます。",
-          "reading": "",
-          "translation": "I read 「夕」.",
-          "showsCoreMeaning": false,
+          "text": "夕方に帰ります。",
+          "reading": "yūgata ni kaerimasu.",
+          "translation": "I will go home in the evening.",
+          "speechText": "夕方に帰ります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,20 +276,29 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SEK SA",
+          "value": "석 / seok",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "석",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "저녁 / jeonyeok",
+          "audioAssetRef": null,
+          "speechText": "저녁",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
-        "evening"
+        "evening; sunset (in compounds)"
       ],
       "examples": [
         {
-          "text": "夕",
-          "reading": "SEK SA",
-          "translation": "evening",
+          "text": "석양",
+          "reading": "seogyang",
+          "translation": "sunset",
+          "speechText": "석양",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘夕’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘夕’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "조석",
+          "reading": "joseok",
+          "translation": "morning and evening",
+          "speechText": "조석",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘夕’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘夕’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夕"
-          ]
-        },
-        {
-          "text": "‘夕’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘夕’.",
-          "showsCoreMeaning": false,
+          "text": "저녁에 만나요.",
+          "reading": "jeonyeoge mannayo.",
+          "translation": "Let’s meet in the evening.",
+          "speechText": "저녁에 만나요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

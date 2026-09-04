@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "川",
-          "reading": "chuān",
-          "translation": "river",
+          "text": "河川",
+          "reading": "héchuān",
+          "translation": "rivers; waterways",
+          "speechText": "河川",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是川。",
-          "reading": "",
-          "translation": "This is the character 川.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "山川",
+          "reading": "shānchuān",
+          "translation": "mountains and rivers",
+          "speechText": "山川",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习川。",
-          "reading": "",
-          "translation": "I am learning the character 川.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
-        },
-        {
-          "text": "我会读川。",
-          "reading": "",
-          "translation": "I can read the character 川.",
-          "showsCoreMeaning": false,
+          "text": "这里河川很多。",
+          "reading": "Zhèlǐ héchuān hěn duō.",
+          "translation": "There are many rivers here.",
+          "speechText": "这里河川很多。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "川",
-          "reading": "chuān",
-          "translation": "river",
+          "text": "河川",
+          "reading": "héchuān",
+          "translation": "rivers; waterways",
+          "speechText": "河川",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「川」。",
-          "reading": "",
-          "translation": "This is the character 「川」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "山川",
+          "reading": "shānchuān",
+          "translation": "mountains and rivers",
+          "speechText": "山川",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「川」。",
-          "reading": "",
-          "translation": "I am learning the character 「川」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
-        },
-        {
-          "text": "我會讀「川」。",
-          "reading": "",
-          "translation": "I can read the character 「川」.",
-          "showsCoreMeaning": false,
+          "text": "這裡河川很多。",
+          "reading": "Zhèlǐ héchuān hěn duō.",
+          "translation": "There are many rivers here.",
+          "speechText": "這裡河川很多。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "河川",
+          "reading": "ho4 cyun1",
+          "translation": "rivers; waterways",
+          "speechText": "河川",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "川"
+          ]
+        },
+        {
+          "text": "山川",
+          "reading": "saan1 cyun1",
+          "translation": "mountains and rivers",
+          "speechText": "山川",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "川"
+          ]
+        },
+        {
+          "text": "呢度河川好多。",
+          "reading": "ni1 dou6 ho4 cyun1 hou2 do1",
+          "translation": "There are many rivers here.",
+          "speechText": "呢度河川好多。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "川"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "cyun1",
+          "audioAssetRef": null,
+          "speechText": "川",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "川",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "KAWA",
+          "system": "on",
+          "value": "セン (sen)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "せん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "かわ (kawa)",
+          "audioAssetRef": null,
+          "speechText": "かわ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "川",
-          "reading": "KAWA",
+          "reading": "kawa",
           "translation": "river",
+          "speechText": "川",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「川」です。",
-          "reading": "",
-          "translation": "This is the kanji 「川」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "河川",
+          "reading": "kasen",
+          "translation": "rivers; waterways",
+          "speechText": "河川",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「川」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「川」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
-        },
-        {
-          "text": "「川」を読みます。",
-          "reading": "",
-          "translation": "I read 「川」.",
-          "showsCoreMeaning": false,
+          "text": "川の水は冷たいです。",
+          "reading": "kawa no mizu wa tsumetai desu.",
+          "translation": "The river water is cold.",
+          "speechText": "川の水は冷たいです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,20 +276,29 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CHEN",
+          "value": "천 / cheon",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "천",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean · stream",
+          "value": "내 / nae",
+          "audioAssetRef": null,
+          "speechText": "내",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
-        "river"
+        "river; stream (mainly in compounds)"
       ],
       "examples": [
         {
-          "text": "川",
-          "reading": "CHEN",
-          "translation": "river",
+          "text": "하천",
+          "reading": "hacheon",
+          "translation": "river; stream",
+          "speechText": "하천",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘川’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘川’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "산천",
+          "reading": "sancheon",
+          "translation": "mountains and rivers",
+          "speechText": "산천",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘川’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘川’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
-        },
-        {
-          "text": "‘川’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘川’.",
-          "showsCoreMeaning": false,
+          "text": "냇물이 맑아요.",
+          "reading": "naenmuri malgayo.",
+          "translation": "The stream water is clear.",
+          "speechText": "냇물이 맑아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

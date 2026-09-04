@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "民",
-          "reading": "mín",
-          "translation": "people",
+          "text": "人民",
+          "reading": "rénmín",
+          "translation": "the people",
+          "speechText": "人民",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是民。",
-          "reading": "",
-          "translation": "This is the character 民.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "居民",
+          "reading": "jūmín",
+          "translation": "resident",
+          "speechText": "居民",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习民。",
-          "reading": "",
-          "translation": "I am learning the character 民.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "民"
-          ]
-        },
-        {
-          "text": "我会读民。",
-          "reading": "",
-          "translation": "I can read the character 民.",
-          "showsCoreMeaning": false,
+          "text": "他是本地居民。",
+          "reading": "Tā shì běndì jūmín.",
+          "translation": "He is a local resident.",
+          "speechText": "他是本地居民。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "民",
-          "reading": "mín",
-          "translation": "people",
+          "text": "人民",
+          "reading": "rénmín",
+          "translation": "the people",
+          "speechText": "人民",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「民」。",
-          "reading": "",
-          "translation": "This is the character 「民」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "居民",
+          "reading": "jūmín",
+          "translation": "resident",
+          "speechText": "居民",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「民」。",
-          "reading": "",
-          "translation": "I am learning the character 「民」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "民"
-          ]
-        },
-        {
-          "text": "我會讀「民」。",
-          "reading": "",
-          "translation": "I can read the character 「民」.",
-          "showsCoreMeaning": false,
+          "text": "他是本地居民。",
+          "reading": "Tā shì běndì jūmín.",
+          "translation": "He is a local resident.",
+          "speechText": "他是本地居民。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "人民",
+          "reading": "jan4 man4",
+          "translation": "the people",
+          "speechText": "人民",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "民"
+          ]
+        },
+        {
+          "text": "居民",
+          "reading": "geoi1 man4",
+          "translation": "resident",
+          "speechText": "居民",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "民"
+          ]
+        },
+        {
+          "text": "佢係本地居民。",
+          "reading": "keoi5 hai6 bun2 dei6 geoi1 man4",
+          "translation": "He is a local resident.",
+          "speechText": "佢係本地居民。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "民"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "man4",
+          "audioAssetRef": null,
+          "speechText": "民",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "民",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TAMI",
+          "system": "on",
+          "value": "ミン (min)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "みん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "たみ (tami)",
+          "audioAssetRef": null,
+          "speechText": "たみ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "民",
-          "reading": "TAMI",
-          "translation": "people",
+          "text": "国民",
+          "reading": "kokumin",
+          "translation": "citizenry; people of a country",
+          "speechText": "国民",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「民」です。",
-          "reading": "",
-          "translation": "This is the kanji 「民」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "住民",
+          "reading": "jūmin",
+          "translation": "resident",
+          "speechText": "住民",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「民」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「民」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "民"
-          ]
-        },
-        {
-          "text": "「民」を読みます。",
-          "reading": "",
-          "translation": "I read 「民」.",
-          "showsCoreMeaning": false,
+          "text": "この町の住民です。",
+          "reading": "kono machi no jūmin desu.",
+          "translation": "I am a resident of this town.",
+          "speechText": "この町の住民です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,10 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "MIN",
+          "value": "민 / min",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "민",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +287,11 @@
       ],
       "examples": [
         {
-          "text": "民",
-          "reading": "MIN",
-          "translation": "people",
+          "text": "국민",
+          "reading": "gukmin",
+          "translation": "citizenry; people of a country",
+          "speechText": "국민",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +301,13 @@
           ]
         },
         {
-          "text": "이것은 ‘民’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘民’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "주민",
+          "reading": "jumin",
+          "translation": "resident",
+          "speechText": "주민",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +315,12 @@
           ]
         },
         {
-          "text": "‘民’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘民’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "民"
-          ]
-        },
-        {
-          "text": "‘民’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘民’.",
-          "showsCoreMeaning": false,
+          "text": "이 동네 주민이에요.",
+          "reading": "i dongne juminieyo.",
+          "translation": "I am a resident of this neighborhood.",
+          "speechText": "이 동네 주민이에요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +567,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +633,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

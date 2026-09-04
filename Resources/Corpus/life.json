@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "生",
-          "reading": "shēng",
-          "translation": "life",
+          "text": "生活",
+          "reading": "shēnghuó",
+          "translation": "life; daily life",
+          "speechText": "生活",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是生。",
-          "reading": "",
-          "translation": "This is the character 生.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "生日",
+          "reading": "shēngrì",
+          "translation": "birthday",
+          "speechText": "生日",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习生。",
-          "reading": "",
-          "translation": "I am learning the character 生.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "生"
-          ]
-        },
-        {
-          "text": "我会读生。",
-          "reading": "",
-          "translation": "I can read the character 生.",
-          "showsCoreMeaning": false,
+          "text": "我喜欢这里的生活。",
+          "reading": "Wǒ xǐhuan zhèlǐ de shēnghuó.",
+          "translation": "I like life here.",
+          "speechText": "我喜欢这里的生活。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "生",
-          "reading": "shēng",
-          "translation": "life",
+          "text": "生活",
+          "reading": "shēnghuó",
+          "translation": "life; daily life",
+          "speechText": "生活",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「生」。",
-          "reading": "",
-          "translation": "This is the character 「生」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "生日",
+          "reading": "shēngrì",
+          "translation": "birthday",
+          "speechText": "生日",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「生」。",
-          "reading": "",
-          "translation": "I am learning the character 「生」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "生"
-          ]
-        },
-        {
-          "text": "我會讀「生」。",
-          "reading": "",
-          "translation": "I can read the character 「生」.",
-          "showsCoreMeaning": false,
+          "text": "我喜歡這裡的生活。",
+          "reading": "Wǒ xǐhuan zhèlǐ de shēnghuó.",
+          "translation": "I like life here.",
+          "speechText": "我喜歡這裡的生活。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "生活",
+          "reading": "sang1 wut6",
+          "translation": "life; daily life",
+          "speechText": "生活",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "生"
+          ]
+        },
+        {
+          "text": "生日",
+          "reading": "saang1 jat6",
+          "translation": "birthday",
+          "speechText": "生日",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "生"
+          ]
+        },
+        {
+          "text": "生活好忙。",
+          "reading": "sang1 wut6 hou2 mong4",
+          "translation": "Life is busy.",
+          "speechText": "生活好忙。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "生"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,54 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "sang1",
+          "audioAssetRef": null,
+          "speechText": "生",
+          "speechLanguage": "cantonese"
+        },
+        {
+          "system": "jyutping",
+          "value": "saang1",
+          "audioAssetRef": null,
+          "speechText": "生",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "生",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "HAERU OU UMARERU",
+          "system": "on",
+          "value": "セイ (sei)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "せい",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "ショウ (shō)",
+          "audioAssetRef": null,
+          "speechText": "しょう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "いきる (ikiru)",
+          "audioAssetRef": null,
+          "speechText": "いきる",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "うまれる (umareru)",
+          "audioAssetRef": null,
+          "speechText": "うまれる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +248,11 @@
       ],
       "examples": [
         {
-          "text": "生",
-          "reading": "HAERU OU UMARERU",
-          "translation": "life",
+          "text": "生きる",
+          "reading": "ikiru",
+          "translation": "to live",
+          "speechText": "生きる",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +262,13 @@
           ]
         },
         {
-          "text": "これは「生」です。",
-          "reading": "",
-          "translation": "This is the kanji 「生」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "生活",
+          "reading": "seikatsu",
+          "translation": "life; daily life",
+          "speechText": "生活",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +276,12 @@
           ]
         },
         {
-          "text": "「生」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「生」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "生"
-          ]
-        },
-        {
-          "text": "「生」を読みます。",
-          "reading": "",
-          "translation": "I read 「生」.",
-          "showsCoreMeaning": false,
+          "text": "赤ちゃんが生まれました。",
+          "reading": "akachan ga umaremashita.",
+          "translation": "A baby was born.",
+          "speechText": "赤ちゃんが生まれました。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +297,24 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SAYNG",
+          "value": "생 / saeng",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "생",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "삶 / salm",
+          "audioAssetRef": null,
+          "speechText": "삶",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "살다 / salda",
+          "audioAssetRef": null,
+          "speechText": "살다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +322,11 @@
       ],
       "examples": [
         {
-          "text": "生",
-          "reading": "SAYNG",
-          "translation": "life",
+          "text": "생활",
+          "reading": "saenghwal",
+          "translation": "life; daily life",
+          "speechText": "생활",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +336,13 @@
           ]
         },
         {
-          "text": "이것은 ‘生’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘生’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "생일",
+          "reading": "saengil",
+          "translation": "birthday",
+          "speechText": "생일",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +350,12 @@
           ]
         },
         {
-          "text": "‘生’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘生’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "生"
-          ]
-        },
-        {
-          "text": "‘生’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘生’.",
-          "showsCoreMeaning": false,
+          "text": "삶은 소중해요.",
+          "reading": "salmeun sojunghaeyo.",
+          "translation": "Life is precious.",
+          "speechText": "삶은 소중해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +602,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +668,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "雨",
-          "reading": "yǔ",
-          "translation": "rain",
+          "text": "下雨",
+          "reading": "xiàyǔ",
+          "translation": "to rain",
+          "speechText": "下雨",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是雨。",
-          "reading": "",
-          "translation": "This is the character 雨.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "雨水",
+          "reading": "yǔshuǐ",
+          "translation": "rainwater",
+          "speechText": "雨水",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习雨。",
-          "reading": "",
-          "translation": "I am learning the character 雨.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "雨"
-          ]
-        },
-        {
-          "text": "我会读雨。",
-          "reading": "",
-          "translation": "I can read the character 雨.",
-          "showsCoreMeaning": false,
+          "text": "今天下雨。",
+          "reading": "Jīntiān xiàyǔ.",
+          "translation": "It is raining today.",
+          "speechText": "今天下雨。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "雨",
-          "reading": "yǔ",
-          "translation": "rain",
+          "text": "下雨",
+          "reading": "xiàyǔ",
+          "translation": "to rain",
+          "speechText": "下雨",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「雨」。",
-          "reading": "",
-          "translation": "This is the character 「雨」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "雨水",
+          "reading": "yǔshuǐ",
+          "translation": "rainwater",
+          "speechText": "雨水",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「雨」。",
-          "reading": "",
-          "translation": "I am learning the character 「雨」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "雨"
-          ]
-        },
-        {
-          "text": "我會讀「雨」。",
-          "reading": "",
-          "translation": "I can read the character 「雨」.",
-          "showsCoreMeaning": false,
+          "text": "今天下雨。",
+          "reading": "Jīntiān xiàyǔ.",
+          "translation": "It is raining today.",
+          "speechText": "今天下雨。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "落雨",
+          "reading": "lok6 jyu5",
+          "translation": "to rain",
+          "speechText": "落雨",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "雨"
+          ]
+        },
+        {
+          "text": "雨水",
+          "reading": "jyu5 seoi2",
+          "translation": "rainwater",
+          "speechText": "雨水",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "雨"
+          ]
+        },
+        {
+          "text": "今日落雨。",
+          "reading": "gam1 jat6 lok6 jyu5",
+          "translation": "It is raining today.",
+          "speechText": "今日落雨。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "雨"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "jyu5",
+          "audioAssetRef": null,
+          "speechText": "雨",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "雨",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "AME AMA",
+          "system": "on",
+          "value": "ウ (u)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "う",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "あめ (ame)",
+          "audioAssetRef": null,
+          "speechText": "あめ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "雨",
-          "reading": "AME AMA",
+          "reading": "ame",
           "translation": "rain",
+          "speechText": "雨",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「雨」です。",
-          "reading": "",
-          "translation": "This is the kanji 「雨」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "大雨",
+          "reading": "ōame",
+          "translation": "heavy rain",
+          "speechText": "大雨",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「雨」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「雨」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "雨"
-          ]
-        },
-        {
-          "text": "「雨」を読みます。",
-          "reading": "",
-          "translation": "I read 「雨」.",
-          "showsCoreMeaning": false,
+          "text": "雨が降っています。",
+          "reading": "ame ga futte imasu.",
+          "translation": "It is raining.",
+          "speechText": "雨が降っています。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "WU",
+          "value": "우 / u",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "우",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "비 / bi",
+          "audioAssetRef": null,
+          "speechText": "비",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "雨",
-          "reading": "WU",
-          "translation": "rain",
+          "text": "우산",
+          "reading": "usan",
+          "translation": "umbrella",
+          "speechText": "우산",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘雨’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘雨’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "폭우",
+          "reading": "pogu",
+          "translation": "heavy rain",
+          "speechText": "폭우",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘雨’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘雨’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "雨"
-          ]
-        },
-        {
-          "text": "‘雨’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘雨’.",
-          "showsCoreMeaning": false,
+          "text": "비가 와요.",
+          "reading": "biga wayo.",
+          "translation": "It is raining.",
+          "speechText": "비가 와요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

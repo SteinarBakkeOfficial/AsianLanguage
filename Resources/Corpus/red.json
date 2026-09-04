@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "赤",
-          "reading": "chì",
-          "translation": "red",
+          "text": "赤道",
+          "reading": "chìdào",
+          "translation": "equator",
+          "speechText": "赤道",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是赤。",
-          "reading": "",
-          "translation": "This is the character 赤.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "赤脚",
+          "reading": "chìjiǎo",
+          "translation": "barefoot",
+          "speechText": "赤脚",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习赤。",
-          "reading": "",
-          "translation": "I am learning the character 赤.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "赤"
-          ]
-        },
-        {
-          "text": "我会读赤。",
-          "reading": "",
-          "translation": "I can read the character 赤.",
-          "showsCoreMeaning": false,
+          "text": "他赤脚走路。",
+          "reading": "Tā chìjiǎo zǒulù.",
+          "translation": "He walks barefoot.",
+          "speechText": "他赤脚走路。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "赤",
-          "reading": "chì",
-          "translation": "red",
+          "text": "赤道",
+          "reading": "chìdào",
+          "translation": "equator",
+          "speechText": "赤道",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「赤」。",
-          "reading": "",
-          "translation": "This is the character 「赤」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "赤脚",
+          "reading": "chìjiǎo",
+          "translation": "barefoot",
+          "speechText": "赤脚",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「赤」。",
-          "reading": "",
-          "translation": "I am learning the character 「赤」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "赤"
-          ]
-        },
-        {
-          "text": "我會讀「赤」。",
-          "reading": "",
-          "translation": "I can read the character 「赤」.",
-          "showsCoreMeaning": false,
+          "text": "他赤脚走路。",
+          "reading": "Tā chìjiǎo zǒulù.",
+          "translation": "He walks barefoot.",
+          "speechText": "他赤脚走路。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "赤道",
+          "reading": "cek3 dou6",
+          "translation": "equator",
+          "speechText": "赤道",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "赤"
+          ]
+        },
+        {
+          "text": "赤腳",
+          "reading": "cek3 goek3",
+          "translation": "barefoot",
+          "speechText": "赤腳",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "赤"
+          ]
+        },
+        {
+          "text": "佢赤腳行路。",
+          "reading": "keoi5 cek3 goek3 haang4 lou6",
+          "translation": "He/She walks barefoot.",
+          "speechText": "佢赤腳行路。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "赤"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "cek3",
+          "audioAssetRef": null,
+          "speechText": "赤",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "赤",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "AKA AKAI",
+          "system": "on",
+          "value": "セキ (seki)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "せき",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "あか (aka)",
+          "audioAssetRef": null,
+          "speechText": "あか",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "あかい (akai)",
+          "audioAssetRef": null,
+          "speechText": "あかい",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "赤",
-          "reading": "AKA AKAI",
+          "text": "赤い",
+          "reading": "akai",
           "translation": "red",
+          "speechText": "赤い",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「赤」です。",
-          "reading": "",
-          "translation": "This is the kanji 「赤」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "赤道",
+          "reading": "sekidō",
+          "translation": "equator",
+          "speechText": "赤道",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「赤」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「赤」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "赤"
-          ]
-        },
-        {
-          "text": "「赤」を読みます。",
-          "reading": "",
-          "translation": "I read 「赤」.",
-          "showsCoreMeaning": false,
+          "text": "りんごは赤いです。",
+          "reading": "ringo wa akai desu.",
+          "translation": "The apple is red.",
+          "speechText": "りんごは赤いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CEK",
+          "value": "적 / jeok",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "적",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "빨갛다 / ppalghata",
+          "audioAssetRef": null,
+          "speechText": "빨갛다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "赤",
-          "reading": "CEK",
-          "translation": "red",
+          "text": "적색",
+          "reading": "jeoksaek",
+          "translation": "red; scarlet",
+          "speechText": "적색",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘赤’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘赤’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "적도",
+          "reading": "jeokdo",
+          "translation": "equator",
+          "speechText": "적도",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘赤’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘赤’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "赤"
-          ]
-        },
-        {
-          "text": "‘赤’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘赤’.",
-          "showsCoreMeaning": false,
+          "text": "사과가 빨개요.",
+          "reading": "sagwaga ppalgaeyo.",
+          "translation": "The apple is red.",
+          "speechText": "사과가 빨개요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

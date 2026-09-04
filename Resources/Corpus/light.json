@@ -41,6 +41,8 @@
           "text": "光",
           "reading": "guāng",
           "translation": "light",
+          "speechText": "光",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是光。",
-          "reading": "",
-          "translation": "This is the character 光.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "阳光",
+          "reading": "yángguāng",
+          "translation": "sunlight",
+          "speechText": "阳光",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习光。",
-          "reading": "",
-          "translation": "I am learning the character 光.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "光"
-          ]
-        },
-        {
-          "text": "我会读光。",
-          "reading": "",
-          "translation": "I can read the character 光.",
-          "showsCoreMeaning": false,
+          "text": "阳光很暖。",
+          "reading": "Yángguāng hěn nuǎn.",
+          "translation": "The sunlight is warm.",
+          "speechText": "阳光很暖。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -107,6 +101,8 @@
           "text": "光",
           "reading": "guāng",
           "translation": "light",
+          "speechText": "光",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「光」。",
-          "reading": "",
-          "translation": "This is the character 「光」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "陽光",
+          "reading": "yángguāng",
+          "translation": "sunlight",
+          "speechText": "陽光",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「光」。",
-          "reading": "",
-          "translation": "I am learning the character 「光」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "光"
-          ]
-        },
-        {
-          "text": "我會讀「光」。",
-          "reading": "",
-          "translation": "I can read the character 「光」.",
-          "showsCoreMeaning": false,
+          "text": "陽光很暖。",
+          "reading": "Yángguāng hěn nuǎn.",
+          "translation": "The sunlight is warm.",
+          "speechText": "陽光很暖。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "光",
+          "reading": "gwong1",
+          "translation": "light",
+          "speechText": "光",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "光"
+          ]
+        },
+        {
+          "text": "陽光",
+          "reading": "joeng4 gwong1",
+          "translation": "sunlight",
+          "speechText": "陽光",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "光"
+          ]
+        },
+        {
+          "text": "陽光好暖。",
+          "reading": "joeng4 gwong1 hou2 nyun5",
+          "translation": "The sunlight is warm.",
+          "speechText": "陽光好暖。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "光"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gwong1",
+          "audioAssetRef": null,
+          "speechText": "光",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "光",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "HIKARU HIKARI",
+          "system": "on",
+          "value": "コウ (kō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "こう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "ひかり (hikari)",
+          "audioAssetRef": null,
+          "speechText": "ひかり",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "ひかる (hikaru)",
+          "audioAssetRef": null,
+          "speechText": "ひかる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +235,10 @@
       "examples": [
         {
           "text": "光",
-          "reading": "HIKARU HIKARI",
+          "reading": "hikari",
           "translation": "light",
+          "speechText": "光",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「光」です。",
-          "reading": "",
-          "translation": "This is the kanji 「光」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "日光",
+          "reading": "nikkō",
+          "translation": "sunlight",
+          "speechText": "日光",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「光」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「光」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "光"
-          ]
-        },
-        {
-          "text": "「光」を読みます。",
-          "reading": "",
-          "translation": "I read 「光」.",
-          "showsCoreMeaning": false,
+          "text": "光が見えます。",
+          "reading": "hikari ga miemasu.",
+          "translation": "I can see the light.",
+          "speechText": "光が見えます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "KWANG",
+          "value": "광 / gwang",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "광",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "빛 / bit",
+          "audioAssetRef": null,
+          "speechText": "빛",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "光",
-          "reading": "KWANG",
-          "translation": "light",
+          "text": "광선",
+          "reading": "gwangseon",
+          "translation": "ray of light",
+          "speechText": "광선",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘光’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘光’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "햇빛",
+          "reading": "haetbit",
+          "translation": "sunlight",
+          "speechText": "햇빛",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘光’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘光’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "光"
-          ]
-        },
-        {
-          "text": "‘光’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘光’.",
-          "showsCoreMeaning": false,
+          "text": "빛이 보여요.",
+          "reading": "bichi boyeoyo.",
+          "translation": "I can see the light.",
+          "speechText": "빛이 보여요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

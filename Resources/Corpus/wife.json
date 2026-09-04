@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "妻",
-          "reading": "qī",
+          "text": "妻子",
+          "reading": "qīzi",
           "translation": "wife",
+          "speechText": "妻子",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是妻。",
-          "reading": "",
-          "translation": "This is the character 妻.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "夫妻",
+          "reading": "fūqī",
+          "translation": "married couple",
+          "speechText": "夫妻",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习妻。",
-          "reading": "",
-          "translation": "I am learning the character 妻.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "妻"
-          ]
-        },
-        {
-          "text": "我会读妻。",
-          "reading": "",
-          "translation": "I can read the character 妻.",
-          "showsCoreMeaning": false,
+          "text": "他的妻子在家。",
+          "reading": "Tā de qīzi zài jiā.",
+          "translation": "His wife is at home.",
+          "speechText": "他的妻子在家。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "妻",
-          "reading": "qī",
+          "text": "妻子",
+          "reading": "qīzi",
           "translation": "wife",
+          "speechText": "妻子",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「妻」。",
-          "reading": "",
-          "translation": "This is the character 「妻」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "夫妻",
+          "reading": "fūqī",
+          "translation": "married couple",
+          "speechText": "夫妻",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「妻」。",
-          "reading": "",
-          "translation": "I am learning the character 「妻」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "妻"
-          ]
-        },
-        {
-          "text": "我會讀「妻」。",
-          "reading": "",
-          "translation": "I can read the character 「妻」.",
-          "showsCoreMeaning": false,
+          "text": "他的妻子在家。",
+          "reading": "Tā de qīzi zài jiā.",
+          "translation": "His wife is at home.",
+          "speechText": "他的妻子在家。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "妻子",
+          "reading": "cai1 zi2",
+          "translation": "wife",
+          "speechText": "妻子",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        },
+        {
+          "text": "夫妻",
+          "reading": "fu1 cai1",
+          "translation": "married couple",
+          "speechText": "夫妻",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        },
+        {
+          "text": "佢妻子喺屋企。",
+          "reading": "keoi5 cai1 zi2 hai2 uk1 kei2",
+          "translation": "His wife is at home.",
+          "speechText": "佢妻子喺屋企。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "cai1",
+          "audioAssetRef": null,
+          "speechText": "妻",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "妻",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TSUMA MEAWASERU",
+          "system": "on",
+          "value": "サイ (sai)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "さい",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "つま (tsuma)",
+          "audioAssetRef": null,
+          "speechText": "つま",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "妻",
-          "reading": "TSUMA MEAWASERU",
+          "reading": "tsuma",
           "translation": "wife",
+          "speechText": "妻",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「妻」です。",
-          "reading": "",
-          "translation": "This is the kanji 「妻」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "夫妻",
+          "reading": "fūfu",
+          "translation": "married couple",
+          "speechText": "夫妻",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「妻」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「妻」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "妻"
-          ]
-        },
-        {
-          "text": "「妻」を読みます。",
-          "reading": "",
-          "translation": "I read 「妻」.",
-          "showsCoreMeaning": false,
+          "text": "妻は家にいます。",
+          "reading": "tsuma wa ie ni imasu.",
+          "translation": "My wife is at home.",
+          "speechText": "妻は家にいます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CHE",
+          "value": "처 / cheo",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "처",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "아내 / anae",
+          "audioAssetRef": null,
+          "speechText": "아내",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "妻",
-          "reading": "CHE",
-          "translation": "wife",
+          "text": "처가",
+          "reading": "cheoga",
+          "translation": "wife’s family",
+          "speechText": "처가",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘妻’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘妻’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "부부",
+          "reading": "bubu",
+          "translation": "married couple",
+          "speechText": "부부",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘妻’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘妻’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "妻"
-          ]
-        },
-        {
-          "text": "‘妻’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘妻’.",
-          "showsCoreMeaning": false,
+          "text": "아내가 집에 있어요.",
+          "reading": "anaega jibe isseoyo.",
+          "translation": "My wife is at home.",
+          "speechText": "아내가 집에 있어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

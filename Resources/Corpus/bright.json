@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "明",
-          "reading": "míng",
+          "text": "明亮",
+          "reading": "míngliàng",
           "translation": "bright",
+          "speechText": "明亮",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是明。",
-          "reading": "",
-          "translation": "This is the character 明.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "明天",
+          "reading": "míngtiān",
+          "translation": "tomorrow",
+          "speechText": "明天",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习明。",
-          "reading": "",
-          "translation": "I am learning the character 明.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "明"
-          ]
-        },
-        {
-          "text": "我会读明。",
-          "reading": "",
-          "translation": "I can read the character 明.",
-          "showsCoreMeaning": false,
+          "text": "房间很明亮。",
+          "reading": "Fángjiān hěn míngliàng.",
+          "translation": "The room is bright.",
+          "speechText": "房间很明亮。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "明",
-          "reading": "míng",
+          "text": "明亮",
+          "reading": "míngliàng",
           "translation": "bright",
+          "speechText": "明亮",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「明」。",
-          "reading": "",
-          "translation": "This is the character 「明」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "明天",
+          "reading": "míngtiān",
+          "translation": "tomorrow",
+          "speechText": "明天",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「明」。",
-          "reading": "",
-          "translation": "I am learning the character 「明」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "明"
-          ]
-        },
-        {
-          "text": "我會讀「明」。",
-          "reading": "",
-          "translation": "I can read the character 「明」.",
-          "showsCoreMeaning": false,
+          "text": "房間很明亮。",
+          "reading": "Fángjiān hěn míngliàng.",
+          "translation": "The room is bright.",
+          "speechText": "房間很明亮。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "明亮",
+          "reading": "ming4 loeng6",
+          "translation": "bright",
+          "speechText": "明亮",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "明"
+          ]
+        },
+        {
+          "text": "明天",
+          "reading": "ming4 tin1",
+          "translation": "tomorrow",
+          "speechText": "明天",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "明"
+          ]
+        },
+        {
+          "text": "間房好光。",
+          "reading": "gaan1 fong2 hou2 gwong1",
+          "translation": "The room is bright.",
+          "speechText": "間房好光。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "明"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "ming4",
+          "audioAssetRef": null,
+          "speechText": "明",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "明",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "AKARUI AKIRAKA AKERU",
+          "system": "on",
+          "value": "メイ (mei)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "めい",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "ミョウ (myō)",
+          "audioAssetRef": null,
+          "speechText": "みょう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "あかるい (akarui)",
+          "audioAssetRef": null,
+          "speechText": "あかるい",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "明",
-          "reading": "AKARUI AKIRAKA AKERU",
+          "text": "明るい",
+          "reading": "akarui",
           "translation": "bright",
+          "speechText": "明るい",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「明」です。",
-          "reading": "",
-          "translation": "This is the kanji 「明」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "明日",
+          "reading": "ashita",
+          "translation": "tomorrow",
+          "speechText": "明日",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「明」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「明」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "明"
-          ]
-        },
-        {
-          "text": "「明」を読みます。",
-          "reading": "",
-          "translation": "I read 「明」.",
-          "showsCoreMeaning": false,
+          "text": "部屋は明るいです。",
+          "reading": "heya wa akarui desu.",
+          "translation": "The room is bright.",
+          "speechText": "部屋は明るいです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "MYENG",
+          "value": "명 / myeong",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "명",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "밝다 / bakda",
+          "audioAssetRef": null,
+          "speechText": "밝다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "明",
-          "reading": "MYENG",
-          "translation": "bright",
+          "text": "명암",
+          "reading": "myeongam",
+          "translation": "light and dark",
+          "speechText": "명암",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘明’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘明’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "명확",
+          "reading": "myeonghwak",
+          "translation": "clear; explicit",
+          "speechText": "명확",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘明’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘明’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "明"
-          ]
-        },
-        {
-          "text": "‘明’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘明’.",
-          "showsCoreMeaning": false,
+          "text": "방이 밝아요.",
+          "reading": "bangi balgayo.",
+          "translation": "The room is bright.",
+          "speechText": "방이 밝아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

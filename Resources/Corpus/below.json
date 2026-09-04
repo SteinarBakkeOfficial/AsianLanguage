@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "下",
-          "reading": "xià",
-          "translation": "below",
+          "text": "下面",
+          "reading": "xiàmiàn",
+          "translation": "below; underneath",
+          "speechText": "下面",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是下。",
-          "reading": "",
-          "translation": "This is the character 下.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "下山",
+          "reading": "xiàshān",
+          "translation": "go down a mountain",
+          "speechText": "下山",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习下。",
-          "reading": "",
-          "translation": "I am learning the character 下.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "下"
-          ]
-        },
-        {
-          "text": "我会读下。",
-          "reading": "",
-          "translation": "I can read the character 下.",
-          "showsCoreMeaning": false,
+          "text": "猫在桌子下面。",
+          "reading": "Māo zài zhuōzi xiàmiàn.",
+          "translation": "The cat is under the table.",
+          "speechText": "猫在桌子下面。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "下",
-          "reading": "xià",
-          "translation": "below",
+          "text": "下面",
+          "reading": "xiàmiàn",
+          "translation": "below; underneath",
+          "speechText": "下面",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「下」。",
-          "reading": "",
-          "translation": "This is the character 「下」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "下山",
+          "reading": "xiàshān",
+          "translation": "go down a mountain",
+          "speechText": "下山",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「下」。",
-          "reading": "",
-          "translation": "I am learning the character 「下」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "下"
-          ]
-        },
-        {
-          "text": "我會讀「下」。",
-          "reading": "",
-          "translation": "I can read the character 「下」.",
-          "showsCoreMeaning": false,
+          "text": "貓在桌子下面。",
+          "reading": "Māo zài zhuōzi xiàmiàn.",
+          "translation": "The cat is under the table.",
+          "speechText": "貓在桌子下面。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "下面",
+          "reading": "haa6 min6",
+          "translation": "below; underneath",
+          "speechText": "下面",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "下"
+          ]
+        },
+        {
+          "text": "地下",
+          "reading": "dei6 haa6",
+          "translation": "underground; ground level",
+          "speechText": "地下",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "下"
+          ]
+        },
+        {
+          "text": "隻貓喺枱下面。",
+          "reading": "zek3 maau1 hai2 toi2 haa6 min6",
+          "translation": "The cat is under the table.",
+          "speechText": "隻貓喺枱下面。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "下"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,47 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "haa6",
+          "audioAssetRef": null,
+          "speechText": "下",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "下",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "SHITA SHIMO MOTO",
+          "system": "on",
+          "value": "カ (ka)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "か",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "ゲ (ge)",
+          "audioAssetRef": null,
+          "speechText": "げ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "した (shita)",
+          "audioAssetRef": null,
+          "speechText": "した",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "さがる (sagaru)",
+          "audioAssetRef": null,
+          "speechText": "さがる",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +242,10 @@
       "examples": [
         {
           "text": "下",
-          "reading": "SHITA SHIMO MOTO",
-          "translation": "below",
+          "reading": "shita",
+          "translation": "below; under",
+          "speechText": "下",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +255,13 @@
           ]
         },
         {
-          "text": "これは「下」です。",
-          "reading": "",
-          "translation": "This is the kanji 「下」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "地下",
+          "reading": "chika",
+          "translation": "underground",
+          "speechText": "地下",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +269,12 @@
           ]
         },
         {
-          "text": "「下」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「下」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "下"
-          ]
-        },
-        {
-          "text": "「下」を読みます。",
-          "reading": "",
-          "translation": "I read 「下」.",
-          "showsCoreMeaning": false,
+          "text": "猫は机の下です。",
+          "reading": "neko wa tsukue no shita desu.",
+          "translation": "The cat is under the desk.",
+          "speechText": "猫は机の下です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +290,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "HA",
+          "value": "하 / ha",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "하",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "아래 / arae",
+          "audioAssetRef": null,
+          "speechText": "아래",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +308,11 @@
       ],
       "examples": [
         {
-          "text": "下",
-          "reading": "HA",
-          "translation": "below",
+          "text": "하단",
+          "reading": "hadan",
+          "translation": "lower part",
+          "speechText": "하단",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +322,13 @@
           ]
         },
         {
-          "text": "이것은 ‘下’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘下’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "지하",
+          "reading": "jiha",
+          "translation": "underground",
+          "speechText": "지하",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +336,12 @@
           ]
         },
         {
-          "text": "‘下’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘下’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "下"
-          ]
-        },
-        {
-          "text": "‘下’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘下’.",
-          "showsCoreMeaning": false,
+          "text": "고양이가 책상 아래에 있어요.",
+          "reading": "goyangiga chaeksang araee isseoyo.",
+          "translation": "The cat is under the desk.",
+          "speechText": "고양이가 책상 아래에 있어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +588,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +654,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

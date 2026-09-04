@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "泉",
-          "reading": "quán",
-          "translation": "spring",
+          "text": "泉水",
+          "reading": "quánshuǐ",
+          "translation": "spring water",
+          "speechText": "泉水",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是泉。",
-          "reading": "",
-          "translation": "This is the character 泉.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "温泉",
+          "reading": "wēnquán",
+          "translation": "hot spring",
+          "speechText": "温泉",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习泉。",
-          "reading": "",
-          "translation": "I am learning the character 泉.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "泉"
-          ]
-        },
-        {
-          "text": "我会读泉。",
-          "reading": "",
-          "translation": "I can read the character 泉.",
-          "showsCoreMeaning": false,
+          "text": "这里有温泉。",
+          "reading": "Zhèlǐ yǒu wēnquán.",
+          "translation": "There is a hot spring here.",
+          "speechText": "这里有温泉。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "泉",
-          "reading": "quán",
-          "translation": "spring",
+          "text": "泉水",
+          "reading": "quánshuǐ",
+          "translation": "spring water",
+          "speechText": "泉水",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「泉」。",
-          "reading": "",
-          "translation": "This is the character 「泉」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "温泉",
+          "reading": "wēnquán",
+          "translation": "hot spring",
+          "speechText": "温泉",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「泉」。",
-          "reading": "",
-          "translation": "I am learning the character 「泉」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "泉"
-          ]
-        },
-        {
-          "text": "我會讀「泉」。",
-          "reading": "",
-          "translation": "I can read the character 「泉」.",
-          "showsCoreMeaning": false,
+          "text": "這裡有温泉。",
+          "reading": "Zhèlǐ yǒu wēnquán.",
+          "translation": "There is a hot spring here.",
+          "speechText": "這裡有温泉。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "泉水",
+          "reading": "cyun4 seoi2",
+          "translation": "spring water",
+          "speechText": "泉水",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "泉"
+          ]
+        },
+        {
+          "text": "溫泉",
+          "reading": "wan1 cyun4",
+          "translation": "hot spring",
+          "speechText": "溫泉",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "泉"
+          ]
+        },
+        {
+          "text": "呢度有溫泉。",
+          "reading": "ni1 dou6 jau5 wan1 cyun4",
+          "translation": "There is a hot spring here.",
+          "speechText": "呢度有溫泉。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "泉"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "cyun4",
+          "audioAssetRef": null,
+          "speechText": "泉",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "泉",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "IZUMI ZENI",
+          "system": "on",
+          "value": "セン (sen)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "せん",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "いずみ (izumi)",
+          "audioAssetRef": null,
+          "speechText": "いずみ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "泉",
-          "reading": "IZUMI ZENI",
+          "reading": "izumi",
           "translation": "spring",
+          "speechText": "泉",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「泉」です。",
-          "reading": "",
-          "translation": "This is the kanji 「泉」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "温泉",
+          "reading": "onsen",
+          "translation": "hot spring",
+          "speechText": "温泉",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「泉」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「泉」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "泉"
-          ]
-        },
-        {
-          "text": "「泉」を読みます。",
-          "reading": "",
-          "translation": "I read 「泉」.",
-          "showsCoreMeaning": false,
+          "text": "温泉に入ります。",
+          "reading": "onsen ni hairimasu.",
+          "translation": "I bathe in a hot spring.",
+          "speechText": "温泉に入ります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "CHEN",
+          "value": "천 / cheon",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "천",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "샘 / saem",
+          "audioAssetRef": null,
+          "speechText": "샘",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "泉",
-          "reading": "CHEN",
-          "translation": "spring",
+          "text": "온천",
+          "reading": "oncheon",
+          "translation": "hot spring",
+          "speechText": "온천",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘泉’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘泉’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "샘물",
+          "reading": "saemmul",
+          "translation": "spring water",
+          "speechText": "샘물",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘泉’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘泉’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "泉"
-          ]
-        },
-        {
-          "text": "‘泉’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘泉’.",
-          "showsCoreMeaning": false,
+          "text": "온천에 가요.",
+          "reading": "oncheone gayo.",
+          "translation": "I go to a hot spring.",
+          "speechText": "온천에 가요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

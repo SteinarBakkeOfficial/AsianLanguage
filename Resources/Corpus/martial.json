@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "武",
-          "reading": "wǔ",
-          "translation": "martial",
+          "text": "武术",
+          "reading": "wǔshù",
+          "translation": "martial arts",
+          "speechText": "武术",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是武。",
-          "reading": "",
-          "translation": "This is the character 武.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "武器",
+          "reading": "wǔqì",
+          "translation": "weapon",
+          "speechText": "武器",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习武。",
-          "reading": "",
-          "translation": "I am learning the character 武.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "武"
-          ]
-        },
-        {
-          "text": "我会读武。",
-          "reading": "",
-          "translation": "I can read the character 武.",
-          "showsCoreMeaning": false,
+          "text": "他学武术。",
+          "reading": "Tā xué wǔshù.",
+          "translation": "He studies martial arts.",
+          "speechText": "他学武术。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "武",
-          "reading": "wǔ",
-          "translation": "martial",
+          "text": "武術",
+          "reading": "wǔshù",
+          "translation": "martial arts",
+          "speechText": "武術",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「武」。",
-          "reading": "",
-          "translation": "This is the character 「武」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "武器",
+          "reading": "wǔqì",
+          "translation": "weapon",
+          "speechText": "武器",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「武」。",
-          "reading": "",
-          "translation": "I am learning the character 「武」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "武"
-          ]
-        },
-        {
-          "text": "我會讀「武」。",
-          "reading": "",
-          "translation": "I can read the character 「武」.",
-          "showsCoreMeaning": false,
+          "text": "他學武術。",
+          "reading": "Tā xué wǔshù.",
+          "translation": "He studies martial arts.",
+          "speechText": "他學武術。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "武術",
+          "reading": "mou5 seot6",
+          "translation": "martial arts",
+          "speechText": "武術",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "武"
+          ]
+        },
+        {
+          "text": "武器",
+          "reading": "mou5 hei3",
+          "translation": "weapon",
+          "speechText": "武器",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "武"
+          ]
+        },
+        {
+          "text": "佢學武術。",
+          "reading": "keoi5 hok6 mou5 seot6",
+          "translation": "He studies martial arts.",
+          "speechText": "佢學武術。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "武"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "mou5",
+          "audioAssetRef": null,
+          "speechText": "武",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "武",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TAKESHI",
+          "system": "on",
+          "value": "ブ (bu)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "ぶ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "on",
+          "value": "ム (mu)",
+          "audioAssetRef": null,
+          "speechText": "む",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "武",
-          "reading": "TAKESHI",
-          "translation": "martial",
+          "text": "武道",
+          "reading": "budō",
+          "translation": "martial arts",
+          "speechText": "武道",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「武」です。",
-          "reading": "",
-          "translation": "This is the kanji 「武」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "武器",
+          "reading": "buki",
+          "translation": "weapon",
+          "speechText": "武器",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「武」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「武」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "武"
-          ]
-        },
-        {
-          "text": "「武」を読みます。",
-          "reading": "",
-          "translation": "I read 「武」.",
-          "showsCoreMeaning": false,
+          "text": "武道を習います。",
+          "reading": "budō o naraimasu.",
+          "translation": "I learn martial arts.",
+          "speechText": "武道を習います。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,10 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "MWU",
+          "value": "무 / mu",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "무",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +287,11 @@
       ],
       "examples": [
         {
-          "text": "武",
-          "reading": "MWU",
-          "translation": "martial",
+          "text": "무술",
+          "reading": "musul",
+          "translation": "martial arts",
+          "speechText": "무술",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +301,13 @@
           ]
         },
         {
-          "text": "이것은 ‘武’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘武’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "무기",
+          "reading": "mugi",
+          "translation": "weapon",
+          "speechText": "무기",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +315,12 @@
           ]
         },
         {
-          "text": "‘武’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘武’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "武"
-          ]
-        },
-        {
-          "text": "‘武’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘武’.",
-          "showsCoreMeaning": false,
+          "text": "무술을 배워요.",
+          "reading": "musureul baewoyo.",
+          "translation": "I learn martial arts.",
+          "speechText": "무술을 배워요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +567,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +633,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

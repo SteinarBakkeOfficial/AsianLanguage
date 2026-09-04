@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "少",
-          "reading": "shǎo",
-          "translation": "few",
+          "text": "少数",
+          "reading": "shǎoshù",
+          "translation": "small number; minority",
+          "speechText": "少数",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是少。",
-          "reading": "",
-          "translation": "This is the character 少.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "很少",
+          "reading": "hěn shǎo",
+          "translation": "very few",
+          "speechText": "很少",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习少。",
-          "reading": "",
-          "translation": "I am learning the character 少.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "少"
-          ]
-        },
-        {
-          "text": "我会读少。",
-          "reading": "",
-          "translation": "I can read the character 少.",
-          "showsCoreMeaning": false,
+          "text": "今天人很少。",
+          "reading": "Jīntiān rén hěn shǎo.",
+          "translation": "There are few people today.",
+          "speechText": "今天人很少。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "少",
-          "reading": "shǎo",
-          "translation": "few",
+          "text": "少数",
+          "reading": "shǎoshù",
+          "translation": "small number; minority",
+          "speechText": "少数",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「少」。",
-          "reading": "",
-          "translation": "This is the character 「少」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "很少",
+          "reading": "hěn shǎo",
+          "translation": "very few",
+          "speechText": "很少",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「少」。",
-          "reading": "",
-          "translation": "I am learning the character 「少」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "少"
-          ]
-        },
-        {
-          "text": "我會讀「少」。",
-          "reading": "",
-          "translation": "I can read the character 「少」.",
-          "showsCoreMeaning": false,
+          "text": "今天人很少。",
+          "reading": "Jīntiān rén hěn shǎo.",
+          "translation": "There are few people today.",
+          "speechText": "今天人很少。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "少數",
+          "reading": "siu2 sou3",
+          "translation": "small number; minority",
+          "speechText": "少數",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "少"
+          ]
+        },
+        {
+          "text": "好少",
+          "reading": "hou2 siu2",
+          "translation": "very few",
+          "speechText": "好少",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "少"
+          ]
+        },
+        {
+          "text": "今日好少人。",
+          "reading": "gam1 jat6 hou2 siu2 jan4",
+          "translation": "There are few people today.",
+          "speechText": "今日好少人。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "少"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,40 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "siu2",
+          "audioAssetRef": null,
+          "speechText": "少",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "少",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "SUKUNAI SUKOSHI SHIBARAKU",
+          "system": "on",
+          "value": "ショウ (shō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "しょう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "すくない (sukunai)",
+          "audioAssetRef": null,
+          "speechText": "すくない",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "すこし (sukoshi)",
+          "audioAssetRef": null,
+          "speechText": "すこし",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +234,11 @@
       ],
       "examples": [
         {
-          "text": "少",
-          "reading": "SUKUNAI SUKOSHI SHIBARAKU",
-          "translation": "few",
+          "text": "少ない",
+          "reading": "sukunai",
+          "translation": "few; little",
+          "speechText": "少ない",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +248,13 @@
           ]
         },
         {
-          "text": "これは「少」です。",
-          "reading": "",
-          "translation": "This is the kanji 「少」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "少し",
+          "reading": "sukoshi",
+          "translation": "a little",
+          "speechText": "少し",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +262,12 @@
           ]
         },
         {
-          "text": "「少」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「少」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "少"
-          ]
-        },
-        {
-          "text": "「少」を読みます。",
-          "reading": "",
-          "translation": "I read 「少」.",
-          "showsCoreMeaning": false,
+          "text": "人が少ないです。",
+          "reading": "hito ga sukunai desu.",
+          "translation": "There are few people.",
+          "speechText": "人が少ないです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +283,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SO",
+          "value": "소 / so",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "소",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "적다 / jeokda",
+          "audioAssetRef": null,
+          "speechText": "적다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "少",
-          "reading": "SO",
-          "translation": "few",
+          "text": "소수",
+          "reading": "sosu",
+          "translation": "few; minority",
+          "speechText": "소수",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘少’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘少’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "감소",
+          "reading": "gamso",
+          "translation": "decrease",
+          "speechText": "감소",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘少’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘少’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "少"
-          ]
-        },
-        {
-          "text": "‘少’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘少’.",
-          "showsCoreMeaning": false,
+          "text": "사람이 적어요.",
+          "reading": "sarami jeogoyo.",
+          "translation": "There are few people.",
+          "speechText": "사람이 적어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

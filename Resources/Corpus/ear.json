@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "耳",
-          "reading": "ěr",
+          "text": "耳朵",
+          "reading": "ěrduo",
           "translation": "ear",
+          "speechText": "耳朵",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是耳。",
-          "reading": "",
-          "translation": "This is the character 耳.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "耳机",
+          "reading": "ěrjī",
+          "translation": "headphones",
+          "speechText": "耳机",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习耳。",
-          "reading": "",
-          "translation": "I am learning the character 耳.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "耳"
-          ]
-        },
-        {
-          "text": "我会读耳。",
-          "reading": "",
-          "translation": "I can read the character 耳.",
-          "showsCoreMeaning": false,
+          "text": "我的耳朵很冷。",
+          "reading": "Wǒ de ěrduo hěn lěng.",
+          "translation": "My ears are cold.",
+          "speechText": "我的耳朵很冷。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "耳",
-          "reading": "ěr",
+          "text": "耳朵",
+          "reading": "ěrduo",
           "translation": "ear",
+          "speechText": "耳朵",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「耳」。",
-          "reading": "",
-          "translation": "This is the character 「耳」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "耳機",
+          "reading": "ěrjī",
+          "translation": "headphones",
+          "speechText": "耳機",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「耳」。",
-          "reading": "",
-          "translation": "I am learning the character 「耳」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "耳"
-          ]
-        },
-        {
-          "text": "我會讀「耳」。",
-          "reading": "",
-          "translation": "I can read the character 「耳」.",
-          "showsCoreMeaning": false,
+          "text": "我的耳朵很冷。",
+          "reading": "Wǒ de ěrduo hěn lěng.",
+          "translation": "My ears are cold.",
+          "speechText": "我的耳朵很冷。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "耳仔",
+          "reading": "ji5 zai2",
+          "translation": "ear",
+          "speechText": "耳仔",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "耳"
+          ]
+        },
+        {
+          "text": "耳機",
+          "reading": "ji5 gei1",
+          "translation": "headphones",
+          "speechText": "耳機",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "耳"
+          ]
+        },
+        {
+          "text": "我戴住耳機。",
+          "reading": "ngo5 daai3 zyu6 ji5 gei1",
+          "translation": "I am wearing headphones.",
+          "speechText": "我戴住耳機。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "耳"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "ji5",
+          "audioAssetRef": null,
+          "speechText": "耳",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "耳",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "MIMI NOMI",
+          "system": "on",
+          "value": "ジ (ji)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "じ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "みみ (mimi)",
+          "audioAssetRef": null,
+          "speechText": "みみ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "耳",
-          "reading": "MIMI NOMI",
+          "reading": "mimi",
           "translation": "ear",
+          "speechText": "耳",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「耳」です。",
-          "reading": "",
-          "translation": "This is the kanji 「耳」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "耳元",
+          "reading": "mimimoto",
+          "translation": "beside the ear",
+          "speechText": "耳元",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「耳」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「耳」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "耳"
-          ]
-        },
-        {
-          "text": "「耳」を読みます。",
-          "reading": "",
-          "translation": "I read 「耳」.",
-          "showsCoreMeaning": false,
+          "text": "耳が痛いです。",
+          "reading": "mimi ga itai desu.",
+          "translation": "My ear hurts.",
+          "speechText": "耳が痛いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "I",
+          "value": "이 / i",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "이",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "귀 / gwi",
+          "audioAssetRef": null,
+          "speechText": "귀",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "耳",
-          "reading": "I",
+          "text": "귀",
+          "reading": "gwi",
           "translation": "ear",
+          "speechText": "귀",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘耳’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘耳’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "귀걸이",
+          "reading": "gwigeori",
+          "translation": "earring",
+          "speechText": "귀걸이",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘耳’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘耳’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "耳"
-          ]
-        },
-        {
-          "text": "‘耳’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘耳’.",
-          "showsCoreMeaning": false,
+          "text": "귀가 아파요.",
+          "reading": "gwiga apayo.",
+          "translation": "My ear hurts.",
+          "speechText": "귀가 아파요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "女",
-          "reading": "nǚ",
+          "text": "女人",
+          "reading": "nǚrén",
           "translation": "woman",
+          "speechText": "女人",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是女。",
-          "reading": "",
-          "translation": "This is the character 女.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "女儿",
+          "reading": "nǚ’ér",
+          "translation": "daughter",
+          "speechText": "女儿",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习女。",
-          "reading": "",
-          "translation": "I am learning the character 女.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "女"
-          ]
-        },
-        {
-          "text": "我会读女。",
-          "reading": "",
-          "translation": "I can read the character 女.",
-          "showsCoreMeaning": false,
+          "text": "她是女生。",
+          "reading": "Tā shì nǚshēng.",
+          "translation": "She is a female student.",
+          "speechText": "她是女生。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "女",
-          "reading": "nǚ",
+          "text": "女人",
+          "reading": "nǚrén",
           "translation": "woman",
+          "speechText": "女人",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「女」。",
-          "reading": "",
-          "translation": "This is the character 「女」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "女兒",
+          "reading": "nǚ’ér",
+          "translation": "daughter",
+          "speechText": "女兒",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「女」。",
-          "reading": "",
-          "translation": "I am learning the character 「女」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "女"
-          ]
-        },
-        {
-          "text": "我會讀「女」。",
-          "reading": "",
-          "translation": "I can read the character 「女」.",
-          "showsCoreMeaning": false,
+          "text": "她是女生。",
+          "reading": "Tā shì nǚshēng.",
+          "translation": "She is a female student.",
+          "speechText": "她是女生。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "女人",
+          "reading": "neoi5 jan4",
+          "translation": "woman",
+          "speechText": "女人",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "女"
+          ]
+        },
+        {
+          "text": "女兒",
+          "reading": "neoi5 ji4",
+          "translation": "daughter",
+          "speechText": "女兒",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "女"
+          ]
+        },
+        {
+          "text": "佢係女仔。",
+          "reading": "keoi5 hai6 neoi5 zai2",
+          "translation": "She is a girl.",
+          "speechText": "佢係女仔。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "女"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "neoi5",
+          "audioAssetRef": null,
+          "speechText": "女",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "女",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "ONNA ME MUSUME",
+          "system": "on",
+          "value": "ジョ (jo)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "じょ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "おんな (onna)",
+          "audioAssetRef": null,
+          "speechText": "おんな",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -182,8 +228,10 @@
       "examples": [
         {
           "text": "女",
-          "reading": "ONNA ME MUSUME",
+          "reading": "onna",
           "translation": "woman",
+          "speechText": "女",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「女」です。",
-          "reading": "",
-          "translation": "This is the kanji 「女」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "女性",
+          "reading": "josei",
+          "translation": "woman; female",
+          "speechText": "女性",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「女」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「女」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "女"
-          ]
-        },
-        {
-          "text": "「女」を読みます。",
-          "reading": "",
-          "translation": "I read 「女」.",
-          "showsCoreMeaning": false,
+          "text": "あの人は女の人です。",
+          "reading": "ano hito wa onna no hito desu.",
+          "translation": "That person is a woman.",
+          "speechText": "あの人は女の人です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,24 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "NYE",
+          "value": "녀 / nyeo",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "녀",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "hanja · word-initial form",
+          "value": "여 / yeo",
+          "audioAssetRef": null,
+          "speechText": "여",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "everyday Korean",
+          "value": "여자 / yeoja",
+          "audioAssetRef": null,
+          "speechText": "여자",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +301,11 @@
       ],
       "examples": [
         {
-          "text": "女",
-          "reading": "NYE",
+          "text": "여자",
+          "reading": "yeoja",
           "translation": "woman",
+          "speechText": "여자",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +315,13 @@
           ]
         },
         {
-          "text": "이것은 ‘女’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘女’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "여성",
+          "reading": "yeoseong",
+          "translation": "woman; female",
+          "speechText": "여성",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +329,12 @@
           ]
         },
         {
-          "text": "‘女’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘女’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "女"
-          ]
-        },
-        {
-          "text": "‘女’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘女’.",
-          "showsCoreMeaning": false,
+          "text": "저 사람은 여자예요.",
+          "reading": "jeo sarameun yeojayeyo.",
+          "translation": "That person is a woman.",
+          "speechText": "저 사람은 여자예요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +581,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +647,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

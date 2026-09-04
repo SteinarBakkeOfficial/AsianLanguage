@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "各",
-          "reading": "gè",
-          "translation": "each",
+          "text": "各个",
+          "reading": "gège",
+          "translation": "each; every",
+          "speechText": "各个",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是各。",
-          "reading": "",
-          "translation": "This is the character 各.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "各国",
+          "reading": "gèguó",
+          "translation": "various countries",
+          "speechText": "各国",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习各。",
-          "reading": "",
-          "translation": "I am learning the character 各.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "各"
-          ]
-        },
-        {
-          "text": "我会读各。",
-          "reading": "",
-          "translation": "I can read the character 各.",
-          "showsCoreMeaning": false,
+          "text": "各有不同。",
+          "reading": "Gè yǒu bùtóng.",
+          "translation": "Each is different.",
+          "speechText": "各有不同。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "各",
-          "reading": "gè",
-          "translation": "each",
+          "text": "各個",
+          "reading": "gège",
+          "translation": "each; every",
+          "speechText": "各個",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「各」。",
-          "reading": "",
-          "translation": "This is the character 「各」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "各國",
+          "reading": "gèguó",
+          "translation": "various countries",
+          "speechText": "各國",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「各」。",
-          "reading": "",
-          "translation": "I am learning the character 「各」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "各"
-          ]
-        },
-        {
-          "text": "我會讀「各」。",
-          "reading": "",
-          "translation": "I can read the character 「各」.",
-          "showsCoreMeaning": false,
+          "text": "各有不同。",
+          "reading": "Gè yǒu bùtóng.",
+          "translation": "Each is different.",
+          "speechText": "各有不同。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "各個",
+          "reading": "gok3 go3",
+          "translation": "each; every",
+          "speechText": "各個",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "各"
+          ]
+        },
+        {
+          "text": "各國",
+          "reading": "gok3 gwok3",
+          "translation": "various countries",
+          "speechText": "各國",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "各"
+          ]
+        },
+        {
+          "text": "各有不同。",
+          "reading": "gok3 jau5 bat1 tung4",
+          "translation": "Each is different.",
+          "speechText": "各有不同。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "各"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gok3",
+          "audioAssetRef": null,
+          "speechText": "各",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "各",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "ONOONO",
+          "system": "on",
+          "value": "カク (kaku)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "かく",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "おのおの (ono-ono)",
+          "audioAssetRef": null,
+          "speechText": "おのおの",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "各",
-          "reading": "ONOONO",
-          "translation": "each",
+          "text": "各国",
+          "reading": "kakkoku",
+          "translation": "each country; various countries",
+          "speechText": "各国",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「各」です。",
-          "reading": "",
-          "translation": "This is the kanji 「各」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "各自",
+          "reading": "kakuji",
+          "translation": "each person; individually",
+          "speechText": "各自",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「各」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「各」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "各"
-          ]
-        },
-        {
-          "text": "「各」を読みます。",
-          "reading": "",
-          "translation": "I read 「各」.",
-          "showsCoreMeaning": false,
+          "text": "各自でします。",
+          "reading": "kakuji de shimasu.",
+          "translation": "Each person does it themselves.",
+          "speechText": "各自でします。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "KAK",
+          "value": "각 / gak",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "각",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "저마다 / jeomada",
+          "audioAssetRef": null,
+          "speechText": "저마다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "各",
-          "reading": "KAK",
-          "translation": "each",
+          "text": "각각",
+          "reading": "gakgak",
+          "translation": "each; respectively",
+          "speechText": "각각",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘各’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘各’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "각국",
+          "reading": "gakguk",
+          "translation": "various countries",
+          "speechText": "각국",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘各’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘各’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "各"
-          ]
-        },
-        {
-          "text": "‘各’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘各’.",
-          "showsCoreMeaning": false,
+          "text": "각자 해요.",
+          "reading": "gakja haeyo.",
+          "translation": "Each person does it themselves.",
+          "speechText": "각자 해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

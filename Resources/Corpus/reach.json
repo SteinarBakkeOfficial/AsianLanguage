@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "及",
-          "reading": "jí",
-          "translation": "reach",
+          "text": "以及",
+          "reading": "yǐjí",
+          "translation": "and; as well as",
+          "speechText": "以及",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是及。",
-          "reading": "",
-          "translation": "This is the character 及.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "及时",
+          "reading": "jíshí",
+          "translation": "in time; timely",
+          "speechText": "及时",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习及。",
-          "reading": "",
-          "translation": "I am learning the character 及.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "及"
-          ]
-        },
-        {
-          "text": "我会读及。",
-          "reading": "",
-          "translation": "I can read the character 及.",
-          "showsCoreMeaning": false,
+          "text": "及格",
+          "reading": "jígé",
+          "translation": "pass; reach a passing grade",
+          "speechText": "及格",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "及",
-          "reading": "jí",
-          "translation": "reach",
+          "text": "以及",
+          "reading": "yǐjí",
+          "translation": "and; as well as",
+          "speechText": "以及",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「及」。",
-          "reading": "",
-          "translation": "This is the character 「及」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "及时",
+          "reading": "jíshí",
+          "translation": "in time; timely",
+          "speechText": "及时",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「及」。",
-          "reading": "",
-          "translation": "I am learning the character 「及」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "及"
-          ]
-        },
-        {
-          "text": "我會讀「及」。",
-          "reading": "",
-          "translation": "I can read the character 「及」.",
-          "showsCoreMeaning": false,
+          "text": "及格",
+          "reading": "jígé",
+          "translation": "pass; reach a passing grade",
+          "speechText": "及格",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "以及",
+          "reading": "ji5 kap6",
+          "translation": "and; as well as",
+          "speechText": "以及",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "及"
+          ]
+        },
+        {
+          "text": "及時",
+          "reading": "kap6 si4",
+          "translation": "in time; timely",
+          "speechText": "及時",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "及"
+          ]
+        },
+        {
+          "text": "及格",
+          "reading": "kap6 gaak3",
+          "translation": "pass; reach a passing grade",
+          "speechText": "及格",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "及"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "kap6",
+          "audioAssetRef": null,
+          "speechText": "及",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "及",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "OYOBU OYOBI OYOBOSU",
+          "system": "on",
+          "value": "キュウ (kyū)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "きゅう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "およぶ (oyobu)",
+          "audioAssetRef": null,
+          "speechText": "およぶ",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "及",
-          "reading": "OYOBU OYOBI OYOBOSU",
-          "translation": "reach",
+          "text": "及ぶ",
+          "reading": "oyobu",
+          "translation": "reach; extend to",
+          "speechText": "及ぶ",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「及」です。",
-          "reading": "",
-          "translation": "This is the kanji 「及」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "普及",
+          "reading": "fukyū",
+          "translation": "spread; become widespread",
+          "speechText": "普及",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「及」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「及」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "及"
-          ]
-        },
-        {
-          "text": "「及」を読みます。",
-          "reading": "",
-          "translation": "I read 「及」.",
-          "showsCoreMeaning": false,
+          "text": "水は足元まで及びます。",
+          "reading": "mizu wa ashimoto made oyobimasu.",
+          "translation": "The water reaches my feet.",
+          "speechText": "水は足元まで及びます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "KUP",
+          "value": "급 / geup",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "급",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean · reach",
+          "value": "미치다 / michida",
+          "audioAssetRef": null,
+          "speechText": "미치다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "及",
-          "reading": "KUP",
-          "translation": "reach",
+          "text": "보급",
+          "reading": "bogeup",
+          "translation": "supply; distribution",
+          "speechText": "보급",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘及’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘及’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "언급",
+          "reading": "eongeup",
+          "translation": "mention",
+          "speechText": "언급",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘及’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘及’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "及"
-          ]
-        },
-        {
-          "text": "‘及’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘及’.",
-          "showsCoreMeaning": false,
+          "text": "영향이 여기까지 미쳐요.",
+          "reading": "yeonghyangi yeogikkaji michyeoyo.",
+          "translation": "The effect reaches this far.",
+          "speechText": "영향이 여기까지 미쳐요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

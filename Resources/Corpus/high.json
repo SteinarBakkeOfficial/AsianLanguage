@@ -38,9 +38,11 @@
       ],
       "examples": [
         {
-          "text": "高",
-          "reading": "gāo",
-          "translation": "high",
+          "text": "高山",
+          "reading": "gāoshān",
+          "translation": "high mountain",
+          "speechText": "高山",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是高。",
-          "reading": "",
-          "translation": "This is the character 高.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "高楼",
+          "reading": "gāolóu",
+          "translation": "tall building",
+          "speechText": "高楼",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习高。",
-          "reading": "",
-          "translation": "I am learning the character 高.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "高"
-          ]
-        },
-        {
-          "text": "我会读高。",
-          "reading": "",
-          "translation": "I can read the character 高.",
-          "showsCoreMeaning": false,
+          "text": "这座山很高。",
+          "reading": "Zhè zuò shān hěn gāo.",
+          "translation": "This mountain is high.",
+          "speechText": "这座山很高。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -104,9 +98,11 @@
       ],
       "taiwanExamples": [
         {
-          "text": "高",
-          "reading": "gāo",
-          "translation": "high",
+          "text": "高山",
+          "reading": "gāoshān",
+          "translation": "high mountain",
+          "speechText": "高山",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「高」。",
-          "reading": "",
-          "translation": "This is the character 「高」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "高樓",
+          "reading": "gāolóu",
+          "translation": "tall building",
+          "speechText": "高樓",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「高」。",
-          "reading": "",
-          "translation": "I am learning the character 「高」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "高"
-          ]
-        },
-        {
-          "text": "我會讀「高」。",
-          "reading": "",
-          "translation": "I can read the character 「高」.",
-          "showsCoreMeaning": false,
+          "text": "這座山很高。",
+          "reading": "Zhè zuò shān hěn gāo.",
+          "translation": "This mountain is high.",
+          "speechText": "這座山很高。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "高山",
+          "reading": "gou1 saan1",
+          "translation": "high mountain",
+          "speechText": "高山",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "高"
+          ]
+        },
+        {
+          "text": "高樓",
+          "reading": "gou1 lau4",
+          "translation": "tall building",
+          "speechText": "高樓",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "高"
+          ]
+        },
+        {
+          "text": "呢座山好高。",
+          "reading": "ni1 zo6 saan1 hou2 gou1",
+          "translation": "This mountain is high.",
+          "speechText": "呢座山好高。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "高"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,18 +193,33 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gou1",
+          "audioAssetRef": null,
+          "speechText": "高",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "高",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "TAKAI TAKAMARU TAKASA",
+          "system": "on",
+          "value": "コウ (kō)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "こう",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "たかい (takai)",
+          "audioAssetRef": null,
+          "speechText": "たかい",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
@@ -181,9 +227,11 @@
       ],
       "examples": [
         {
-          "text": "高",
-          "reading": "TAKAI TAKAMARU TAKASA",
-          "translation": "high",
+          "text": "高い",
+          "reading": "takai",
+          "translation": "high; tall",
+          "speechText": "高い",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「高」です。",
-          "reading": "",
-          "translation": "This is the kanji 「高」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "高校",
+          "reading": "kōkō",
+          "translation": "high school",
+          "speechText": "高校",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「高」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「高」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "高"
-          ]
-        },
-        {
-          "text": "「高」を読みます。",
-          "reading": "",
-          "translation": "I read 「高」.",
-          "showsCoreMeaning": false,
+          "text": "この山は高いです。",
+          "reading": "kono yama wa takai desu.",
+          "translation": "This mountain is high.",
+          "speechText": "この山は高いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,10 +276,17 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "KO",
+          "value": "고 / go",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "고",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean",
+          "value": "높다 / nopda",
+          "audioAssetRef": null,
+          "speechText": "높다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
@@ -247,9 +294,11 @@
       ],
       "examples": [
         {
-          "text": "高",
-          "reading": "KO",
-          "translation": "high",
+          "text": "고층",
+          "reading": "gocheung",
+          "translation": "high-rise; upper floor",
+          "speechText": "고층",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘高’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘高’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "고온",
+          "reading": "goon",
+          "translation": "high temperature",
+          "speechText": "고온",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘高’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘高’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "高"
-          ]
-        },
-        {
-          "text": "‘高’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘高’.",
-          "showsCoreMeaning": false,
+          "text": "산이 높아요.",
+          "reading": "sani nopayo.",
+          "translation": "The mountain is high.",
+          "speechText": "산이 높아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

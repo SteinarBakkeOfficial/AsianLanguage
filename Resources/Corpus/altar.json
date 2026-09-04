@@ -34,13 +34,15 @@
         }
       ],
       "glosses": [
-        "altar"
+        "show; indicate"
       ],
       "examples": [
         {
-          "text": "示",
-          "reading": "shì",
-          "translation": "altar",
+          "text": "表示",
+          "reading": "biǎoshì",
+          "translation": "express; indicate",
+          "speechText": "表示",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -50,11 +52,13 @@
           ]
         },
         {
-          "text": "这是示。",
-          "reading": "",
-          "translation": "This is the character 示.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "显示",
+          "reading": "xiǎnshì",
+          "translation": "display; show",
+          "speechText": "显示",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -62,22 +66,12 @@
           ]
         },
         {
-          "text": "我学习示。",
-          "reading": "",
-          "translation": "I am learning the character 示.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "示"
-          ]
-        },
-        {
-          "text": "我会读示。",
-          "reading": "",
-          "translation": "I can read the character 示.",
-          "showsCoreMeaning": false,
+          "text": "请出示车票。",
+          "reading": "Qǐng chūshì chēpiào.",
+          "translation": "Please show your ticket.",
+          "speechText": "请出示车票。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -100,13 +94,15 @@
         }
       ],
       "glosses": [
-        "altar"
+        "show; indicate"
       ],
       "taiwanExamples": [
         {
-          "text": "示",
-          "reading": "shì",
-          "translation": "altar",
+          "text": "表示",
+          "reading": "biǎoshì",
+          "translation": "express; indicate",
+          "speechText": "表示",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -116,11 +112,13 @@
           ]
         },
         {
-          "text": "這是「示」。",
-          "reading": "",
-          "translation": "This is the character 「示」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "顯示",
+          "reading": "xiǎnshì",
+          "translation": "display; show",
+          "speechText": "顯示",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -128,22 +126,12 @@
           ]
         },
         {
-          "text": "我學習「示」。",
-          "reading": "",
-          "translation": "I am learning the character 「示」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "示"
-          ]
-        },
-        {
-          "text": "我會讀「示」。",
-          "reading": "",
-          "translation": "I can read the character 「示」.",
-          "showsCoreMeaning": false,
+          "text": "請出示车票。",
+          "reading": "Qǐng chūshì chēpiào.",
+          "translation": "Please show your ticket.",
+          "speechText": "請出示车票。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -152,7 +140,50 @@
           ]
         }
       ],
-      "hongKongExamples": [],
+      "hongKongExamples": [
+        {
+          "text": "表示",
+          "reading": "biu2 si6",
+          "translation": "express; indicate",
+          "speechText": "表示",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "示"
+          ]
+        },
+        {
+          "text": "顯示",
+          "reading": "hin2 si6",
+          "translation": "display; show",
+          "speechText": "顯示",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "示"
+          ]
+        },
+        {
+          "text": "請出示車票。",
+          "reading": "cing2 ceot1 si6 ce1 piu3",
+          "translation": "Please show your ticket.",
+          "speechText": "請出示車票。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "示"
+          ]
+        }
+      ],
       "taiwanReadings": [
         {
           "system": "pinyin",
@@ -162,28 +193,45 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "hongKongReadings": [],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "si6",
+          "audioAssetRef": null,
+          "speechText": "示",
+          "speechLanguage": "cantonese"
+        }
+      ],
       "variants": []
     },
     "japanese": {
       "form": "示",
       "readings": [
         {
-          "system": "on / kun",
-          "value": "SHIMESU SHIMESHI",
+          "system": "on",
+          "value": "ジ (ji)",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "じ",
+          "speechLanguage": "japanese"
+        },
+        {
+          "system": "kun",
+          "value": "しめす (shimesu)",
+          "audioAssetRef": null,
+          "speechText": "しめす",
+          "speechLanguage": "japanese"
         }
       ],
       "glosses": [
-        "altar"
+        "show; indicate"
       ],
       "examples": [
         {
-          "text": "示",
-          "reading": "SHIMESU SHIMESHI",
-          "translation": "altar",
+          "text": "示す",
+          "reading": "shimesu",
+          "translation": "show; indicate",
+          "speechText": "示す",
+          "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -193,11 +241,13 @@
           ]
         },
         {
-          "text": "これは「示」です。",
-          "reading": "",
-          "translation": "This is the kanji 「示」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "表示",
+          "reading": "hyōji",
+          "translation": "display; indication",
+          "speechText": "表示",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -205,22 +255,12 @@
           ]
         },
         {
-          "text": "「示」を学びます。",
-          "reading": "",
-          "translation": "I am learning 「示」.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "示"
-          ]
-        },
-        {
-          "text": "「示」を読みます。",
-          "reading": "",
-          "translation": "I read 「示」.",
-          "showsCoreMeaning": false,
+          "text": "地図を示します。",
+          "reading": "chizu o shimeshimasu.",
+          "translation": "I show the map.",
+          "speechText": "地図を示します。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -236,20 +276,29 @@
       "readings": [
         {
           "system": "hanja",
-          "value": "SI KI",
+          "value": "시 / si",
           "audioAssetRef": null,
-          "speechText": null,
-          "speechLanguage": null
+          "speechText": "시",
+          "speechLanguage": "korean"
+        },
+        {
+          "system": "native Korean · show",
+          "value": "보이다 / boida",
+          "audioAssetRef": null,
+          "speechText": "보이다",
+          "speechLanguage": "korean"
         }
       ],
       "glosses": [
-        "altar"
+        "show; indicate (in compounds)"
       ],
       "examples": [
         {
-          "text": "示",
-          "reading": "SI KI",
-          "translation": "altar",
+          "text": "표시",
+          "reading": "pyosi",
+          "translation": "display; indication",
+          "speechText": "표시",
+          "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -259,11 +308,13 @@
           ]
         },
         {
-          "text": "이것은 ‘示’입니다.",
-          "reading": "",
-          "translation": "This is the Hanja ‘示’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
+          "text": "지시",
+          "reading": "jisi",
+          "translation": "instruction; indication",
+          "speechText": "지시",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -271,22 +322,12 @@
           ]
         },
         {
-          "text": "‘示’를 배웁니다.",
-          "reading": "",
-          "translation": "I am learning ‘示’.",
-          "showsCoreMeaning": false,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "示"
-          ]
-        },
-        {
-          "text": "‘示’를 읽습니다.",
-          "reading": "",
-          "translation": "I read ‘示’.",
-          "showsCoreMeaning": false,
+          "text": "표시를 봐요.",
+          "reading": "pyosireul bwayo.",
+          "translation": "I look at the sign/mark.",
+          "speechText": "표시를 봐요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
@@ -533,7 +574,8 @@
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
-    ]
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
   },
   "sources": [
     {
@@ -598,5 +640,13 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
