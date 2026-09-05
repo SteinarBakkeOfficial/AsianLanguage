@@ -12,14 +12,10 @@ struct ModernFormsComparisonView: View {
 
     var body: some View {
         VStack(alignment: .center, spacing: AppSpacing.spaceMd) {
-            Text("MODERN")
+            Text("Regular Script")
                 .font(AppTypography.conceptLabel)
                 .tracking(1.6)
                 .foregroundStyle(AppColors.textSecondary)
-            Text("Regular Script")
-                .font(AppTypography.exhibitHeading)
-                .foregroundStyle(AppColors.textPrimary)
-                .multilineTextAlignment(.center)
             ArtifactField {
                 ZStack(alignment: .bottom) {
                     SymbolStageBackgroundView(stageID: "regular")
@@ -43,6 +39,7 @@ struct ModernFormsComparisonView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .clipped()
             }
+            .frame(height: 304)
             Text("A modern standardized Kai reference rendering.")
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textSecondary)

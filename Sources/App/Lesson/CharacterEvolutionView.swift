@@ -50,7 +50,7 @@ struct CharacterEvolutionView: View {
 
     private var currentLabel: String {
         if selectedStageID == "origin" { return "Origin" }
-        if selectedStageID == "modern" { return "Modern" }
+        if selectedStageID == "modern" { return "Regular Script" }
         if selectedStageID.hasPrefix("usage-"),
            let track = FocusTrack(rawValue: String(selectedStageID.dropFirst("usage-".count))) {
             return "Usage · \(track.title)"
@@ -421,7 +421,7 @@ struct CharacterEvolutionView: View {
 
     private func label(for id: String) -> String {
         if id == "origin" { return "Origin" }
-        if id == "modern" { return "Modern" }
+        if id == "modern" { return "Regular Script" }
         if id == "usage" { return "Usage" }
         if id.hasPrefix("usage-"),
            let track = FocusTrack(rawValue: String(id.dropFirst("usage-".count))) {
@@ -444,7 +444,7 @@ struct CharacterEvolutionView: View {
     /// Short rail labels preserve the full stage name in the page header and accessibility label.
     private func shortLabel(for id: String) -> String {
         if id == "origin" { return "Origin" }
-        if id == "modern" { return "Modern" }
+        if id == "modern" { return "Regular" }
         if id == "usage" || id.hasPrefix("usage-") { return id == "usage" ? "Usage" : shortTrackLabel(for: id) }
         switch id {
         case "oracleBone": return "Oracle"

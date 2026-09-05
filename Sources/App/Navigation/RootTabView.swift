@@ -429,11 +429,12 @@ private struct HistoryTimelineCard: View {
                     } label: {
                         HistoryOverviewRow(stage: stage)
                             .frame(maxWidth: .infinity, minHeight: 1, alignment: .leading)
-                            .contentShape(Rectangle())
+                            .allowsHitTesting(false)
                     }
                     .buttonStyle(.plain)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .contentShape(Rectangle())
+                    .zIndex(1)
                     if index < stages.count - 1 {
                         Divider()
                             .padding(.leading, 48)
@@ -547,7 +548,7 @@ private struct HistoryLivingTraditionCard: View {
         GroupedSurface {
             HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
                 HistoryReferenceCropView(
-                    normalizedRect: CGRect(x: 0.07, y: 0.909, width: 0.08, height: 0.065),
+                    normalizedRect: CGRect(x: 0.055, y: 0.909, width: 0.085, height: 0.065),
                     accessibilityLabel: "Traditional pavilion illustration"
                 )
                 .frame(width: 54, height: 64)
@@ -590,17 +591,18 @@ private struct HistoryLivingTraditionCard: View {
                         }
                         .padding(.vertical, AppSpacing.spaceXs)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .contentShape(Rectangle())
+                        .allowsHitTesting(false)
                     }
                     .buttonStyle(.plain)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .contentShape(Rectangle())
+                    .zIndex(1)
                 }
             }
 
             HistoryReferenceCropView(
                 // Crop the comparison glyphs, not the labels and card text beneath them.
-                normalizedRect: CGRect(x: 0.45, y: 0.895, width: 0.50, height: 0.065),
+                normalizedRect: CGRect(x: 0.50, y: 0.905, width: 0.46, height: 0.070),
                 accessibilityLabel: "Oracle Bone, Bronze, Small Seal, Clerical, and Regular Script comparison"
             )
             .frame(maxWidth: .infinity, minHeight: 58, maxHeight: 70)
