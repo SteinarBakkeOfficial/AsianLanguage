@@ -120,7 +120,7 @@ enum AppRadius {
 enum AppMotion {
     static let press: Double = 0.12
     static let standard: Double = 0.22
-    static let exhibit: Double = 0.32
+    static let exhibit: Double = 0.64
 }
 
 /// Full-width primary action with stable dimensions across loading and Dynamic Type.

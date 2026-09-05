@@ -13,22 +13,24 @@ struct ModernFormsComparisonView: View {
     var body: some View {
         VStack(alignment: .center, spacing: AppSpacing.spaceMd) {
             Text("Regular Script")
-                .font(AppTypography.conceptLabel)
-                .tracking(1.6)
-                .foregroundStyle(AppColors.textSecondary)
+                .font(AppTypography.exhibitHeading)
+                .foregroundStyle(AppColors.textPrimary)
+                .multilineTextAlignment(.center)
             ArtifactField {
-                ZStack(alignment: .bottom) {
+                ZStack {
                     SymbolStageBackgroundView(stageID: "regular")
                     Text(record.coreCharacter)
                         // Match the Regular Script visual weight to the historical exhibits above it.
                         .font(CJKFontRole.museumRegular.font(size: 196))
                         .foregroundStyle(AppColors.artifactInk)
-                        .frame(maxWidth: .infinity, minHeight: 236, maxHeight: 236)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                         .minimumScaleFactor(0.55)
                         .lineLimit(1)
-                        .clipped()
                         .accessibilityLabel("Regular Script \(record.coreCharacter)")
 
+                }
+                .frame(maxWidth: .infinity, minHeight: 280, maxHeight: 280)
+                .overlay(alignment: .bottom) {
                     Text("Paper · brush")
                         .font(AppTypography.metadata)
                         .foregroundStyle(AppColors.textSecondary)
@@ -37,7 +39,6 @@ struct ModernFormsComparisonView: View {
                         .padding(.bottom, AppSpacing.spaceSm)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .clipped()
             }
             .frame(height: 304)
             Text("A modern standardized Kai reference rendering.")

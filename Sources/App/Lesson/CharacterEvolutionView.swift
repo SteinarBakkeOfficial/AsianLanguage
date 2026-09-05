@@ -198,9 +198,9 @@ struct CharacterEvolutionView: View {
     private var museumJourneyPage: some View {
         journeyPage(allowsVerticalScroll: true) {
             if let stage = selectedMuseumStage {
-                stageHeader(overline: learnerStageLabel(for: stage), title: nil, subtitle: nil)
+                stageHeader(overline: nil, title: learnerStageLabel(for: stage), subtitle: nil)
             } else {
-                stageHeader(overline: "Origin", title: nil, subtitle: nil)
+                stageHeader(overline: nil, title: "Origin", subtitle: nil)
             }
 
             museumExhibitTransition
@@ -234,7 +234,7 @@ struct CharacterEvolutionView: View {
     @ViewBuilder
     private func exhibitSquare(stageID: String, materialCaption: String?) -> some View {
         ArtifactField {
-            ZStack(alignment: .bottom) {
+            ZStack {
                 SymbolStageBackgroundView(stageID: stageID)
                 if stageID == "origin" {
                     if let originAsset = record.history.origin?.asset {
@@ -258,6 +258,8 @@ struct CharacterEvolutionView: View {
                     }
                 }
 
+            }
+            .overlay(alignment: .bottom) {
                 if let materialCaption {
                     Text(materialCaption)
                         .font(AppTypography.metadata)
@@ -272,7 +274,6 @@ struct CharacterEvolutionView: View {
             }
         }
         .frame(height: 304)
-        .clipped()
     }
 
     /// Converts a horizontal swipe into the same ordered stage selection as the museum rail.
@@ -335,15 +336,17 @@ struct CharacterEvolutionView: View {
         .padding(.bottom, AppSpacing.spaceMd)
     }
 
-    private func stageHeader(overline: String, title: String?, subtitle: String?) -> some View {
+    private func stageHeader(overline: String?, title: String?, subtitle: String?) -> some View {
         VStack(spacing: AppSpacing.space2xs) {
-            Text(overline)
-                .font(AppTypography.conceptLabel)
-                .tracking(1.6)
-                .foregroundStyle(AppColors.textSecondary)
+            if let overline, !overline.isEmpty {
+                Text(overline)
+                    .font(AppTypography.conceptLabel)
+                    .tracking(1.6)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
             if let title {
                 Text(title)
-                    .font(AppTypography.stageTitle)
+                    .font(AppTypography.exhibitHeading)
                     .foregroundStyle(AppColors.textPrimary)
                     .multilineTextAlignment(.center)
             }
@@ -477,10 +480,9 @@ struct SymbolStageBackgroundView: View {
             if let image = UIImage(contentsOfFile: url.path) {
                 Image(uiImage: image)
                     .resizable()
-                    .scaledToFill()
+                    .scaledToFit()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .opacity(0.84)
-                    .clipped()
                     .accessibilityHidden(true)
             } else {
                 AppColors.artifactField

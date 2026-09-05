@@ -429,7 +429,7 @@ private struct HistoryTimelineCard: View {
                     } label: {
                         HistoryOverviewRow(stage: stage)
                             .frame(maxWidth: .infinity, minHeight: 1, alignment: .leading)
-                            .allowsHitTesting(false)
+                            .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -591,7 +591,7 @@ private struct HistoryLivingTraditionCard: View {
                         }
                         .padding(.vertical, AppSpacing.spaceXs)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .allowsHitTesting(false)
+                        .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                     .frame(maxWidth: .infinity, alignment: .leading)
