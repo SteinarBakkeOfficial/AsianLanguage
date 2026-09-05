@@ -9,6 +9,9 @@ struct CharacterEvolutionView: View {
     let completionTitle: String
     let onComplete: () -> Void
     @Binding var selectedStageID: String
+    @State private var displayedMuseumStageID: String
+    @State private var outgoingMuseumStageID: String?
+    @State private var exhibitCrossfadeProgress: Double = 1
 
     init(
         record: SharedCharacterRecord,
@@ -22,6 +25,12 @@ struct CharacterEvolutionView: View {
         self.completionTitle = completionTitle
         self.onComplete = onComplete
         self._selectedStageID = selectedStageID
+        let initialStageID = selectedStageID.wrappedValue
+        self._displayedMuseumStageID = State(
+            initialValue: initialStageID == "modern" || initialStageID.hasPrefix("usage-")
+                ? "origin"
+                : initialStageID
+        )
         // Keep the expensive CJK registration out of app launch while ensuring the
         // Regular Script endpoint is available before the museum pages are shown.
         BundledFontRegistrar.registerMuseumFonts()
@@ -86,12 +95,23 @@ struct CharacterEvolutionView: View {
         navigatorIDs.firstIndex(of: selectedNavigatorID) ?? 0
     }
 
+    /// Historical pages share one room; Regular/Usage pages form the next room.
+    /// This keeps the room boundary separate from the exhibit crossfade.
+    private var journeyRoomID: String {
+        selectedStageID == "origin" || selectedMuseumStage != nil ? "museum" : "modern"
+    }
+
     var body: some View {
         VStack(spacing: 0) {
-            currentJourneyPage
+            ZStack {
+                currentJourneyPage
+                    .id(journeyRoomID)
+                    .transition(.opacity)
+            }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            // Horizontal swiping remains available without reintroducing the page-slide animation.
+            // Horizontal swiping remains available without introducing a page-slide animation.
             .simultaneousGesture(journeySwipeGesture)
+            .animation(.easeInOut(duration: AppMotion.exhibit), value: journeyRoomID)
 
             stageNavigator
         }
@@ -99,6 +119,9 @@ struct CharacterEvolutionView: View {
         .tint(AppColors.accentPrimary)
         .accessibilityElement(children: .contain)
         .accessibilityLabel("Historical journey for \(record.coreSharedMeaning)")
+        .onChange(of: selectedStageID) { _, newStageID in
+            animateExhibitChangeIfNeeded(to: newStageID)
+        }
     }
 
     /// The current page changes only when moving between the museum square and language-specific sections.
@@ -125,6 +148,52 @@ struct CharacterEvolutionView: View {
         return FocusTrack(rawValue: String(selectedStageID.dropFirst("usage-".count)))
     }
 
+    /// The square owns both the approved background and its symbol artwork, so
+    /// crossfading these two layers keeps the exhibit visually anchored in place.
+    private var museumExhibitTransition: some View {
+        ZStack {
+            if let outgoingMuseumStageID {
+                exhibitSquare(
+                    stageID: outgoingMuseumStageID,
+                    materialCaption: materialCaption(for: outgoingMuseumStageID)
+                )
+                .opacity(1 - exhibitCrossfadeProgress)
+            }
+
+            exhibitSquare(
+                stageID: displayedMuseumStageID,
+                materialCaption: materialCaption(for: displayedMuseumStageID)
+            )
+            .opacity(exhibitCrossfadeProgress)
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    private func materialCaption(for stageID: String) -> String? {
+        museumStages.first(where: { $0.stage == stageID })?.materialProcessCaption
+    }
+
+    /// Starts one deterministic crossfade for rail taps, swipes, and restored positions.
+    private func animateExhibitChangeIfNeeded(to newStageID: String) {
+        guard newStageID == "origin" || museumStages.contains(where: { $0.stage == newStageID }) else { return }
+        guard newStageID != displayedMuseumStageID else { return }
+
+        let oldStageID = displayedMuseumStageID
+        outgoingMuseumStageID = oldStageID
+        displayedMuseumStageID = newStageID
+        exhibitCrossfadeProgress = 0
+
+        withAnimation(.easeInOut(duration: AppMotion.exhibit)) {
+            exhibitCrossfadeProgress = 1
+        }
+
+        let transitionTarget = newStageID
+        DispatchQueue.main.asyncAfter(deadline: .now() + AppMotion.exhibit) {
+            guard displayedMuseumStageID == transitionTarget else { return }
+            outgoingMuseumStageID = nil
+        }
+    }
+
     /// Museum pages keep the header, square, and explanatory area anchored while only the square crossfades.
     private var museumJourneyPage: some View {
         journeyPage(allowsVerticalScroll: true) {
@@ -134,21 +203,9 @@ struct CharacterEvolutionView: View {
                 stageHeader(overline: "Origin", title: nil, subtitle: nil)
             }
 
-            ZStack {
-                exhibitSquare(stageID: selectedMuseumStage?.stage ?? "origin")
-                    .id(selectedMuseumStage?.stage ?? "origin")
-                    .transition(.opacity)
-            }
-            .animation(.easeInOut(duration: AppMotion.exhibit), value: selectedMuseumStage?.stage ?? "origin")
+            museumExhibitTransition
 
             if let stage = selectedMuseumStage {
-                if let caption = stage.materialProcessCaption {
-                    Text(caption)
-                        .font(AppTypography.metadata)
-                        .foregroundStyle(AppColors.textSecondary)
-                        .multilineTextAlignment(.center)
-                        .padding(.top, AppSpacing.spaceXs)
-                }
                 Text(stage.transitionNote ?? stage.changeNoteFromPrevious ?? stage.stageExplanation ?? "Stage-specific explanation is pending editorial review.")
                     .font(AppTypography.body)
                     .foregroundStyle(AppColors.textPrimary)
@@ -175,9 +232,9 @@ struct CharacterEvolutionView: View {
 
     /// Renders the full exhibit square in one fixed position for the museum-stage crossfade.
     @ViewBuilder
-    private func exhibitSquare(stageID: String) -> some View {
+    private func exhibitSquare(stageID: String, materialCaption: String?) -> some View {
         ArtifactField {
-            ZStack {
+            ZStack(alignment: .bottom) {
                 SymbolStageBackgroundView(stageID: stageID)
                 if stageID == "origin" {
                     if let originAsset = record.history.origin?.asset {
@@ -200,9 +257,22 @@ struct CharacterEvolutionView: View {
                         HistoricalMissingState()
                     }
                 }
+
+                if let materialCaption {
+                    Text(materialCaption)
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                        .multilineTextAlignment(.center)
+                        .lineLimit(1)
+                        .padding(.horizontal, AppSpacing.spaceSm)
+                        // Lift the caption slightly from the lower edge so it stays
+                        // inside the square on the shortest device layout.
+                        .padding(.bottom, AppSpacing.spaceSm)
+                }
             }
         }
         .frame(height: 304)
+        .clipped()
     }
 
     /// Converts a horizontal swipe into the same ordered stage selection as the museum rail.
@@ -283,7 +353,9 @@ struct CharacterEvolutionView: View {
                     .foregroundStyle(AppColors.textSecondary)
             }
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(maxWidth: .infinity, alignment: .center)
+        .multilineTextAlignment(.center)
+        .zIndex(1)
     }
 
     /// The rail exposes position and direct access while the exhibit remains horizontally swipeable.
@@ -321,7 +393,9 @@ struct CharacterEvolutionView: View {
     private func stageMarker(index: Int, id: String) -> some View {
         let isCurrent = index == navigatorIndex
         return Button {
-            selectedStageID = destinationID(for: id)
+            withAnimation(.easeInOut(duration: AppMotion.exhibit)) {
+                selectedStageID = destinationID(for: id)
+            }
         } label: {
             VStack(spacing: AppSpacing.space2xs) {
                 Circle()
@@ -404,7 +478,9 @@ struct SymbolStageBackgroundView: View {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFill()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .opacity(0.84)
+                    .clipped()
                     .accessibilityHidden(true)
             } else {
                 AppColors.artifactField

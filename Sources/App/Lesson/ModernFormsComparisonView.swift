@@ -11,7 +11,7 @@ struct ModernFormsComparisonView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: AppSpacing.spaceMd) {
+        VStack(alignment: .center, spacing: AppSpacing.spaceMd) {
             Text("MODERN")
                 .font(AppTypography.conceptLabel)
                 .tracking(1.6)
@@ -19,8 +19,9 @@ struct ModernFormsComparisonView: View {
             Text("Regular Script")
                 .font(AppTypography.exhibitHeading)
                 .foregroundStyle(AppColors.textPrimary)
+                .multilineTextAlignment(.center)
             ArtifactField {
-                ZStack {
+                ZStack(alignment: .bottom) {
                     SymbolStageBackgroundView(stageID: "regular")
                     Text(record.coreCharacter)
                         // Match the Regular Script visual weight to the historical exhibits above it.
@@ -31,14 +32,21 @@ struct ModernFormsComparisonView: View {
                         .lineLimit(1)
                         .clipped()
                         .accessibilityLabel("Regular Script \(record.coreCharacter)")
+
+                    Text("Paper · brush")
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, AppSpacing.spaceSm)
+                        .padding(.bottom, AppSpacing.spaceSm)
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .clipped()
             }
-            Text("Paper · brush")
-                .font(AppTypography.metadata)
-                .foregroundStyle(AppColors.textSecondary)
             Text("A modern standardized Kai reference rendering.")
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textSecondary)
+                .multilineTextAlignment(.center)
         }
     }
 }

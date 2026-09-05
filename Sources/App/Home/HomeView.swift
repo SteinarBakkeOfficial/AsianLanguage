@@ -231,7 +231,9 @@ struct HeroLineagePreview: View {
                             .clipped()
                             .accessibilityLabel("Modern form of \(record.coreSharedMeaning)")
                     }
-                    if index < previewItems.count - 1 {
+                    // Keep the final modern form visually connected to the lineage;
+                    // the extra divider made the symbol sit unnecessarily low on Home.
+                    if index < previewItems.count - 2 {
                         Rectangle()
                             .fill(AppColors.separator)
                             .frame(width: 1, height: 12)

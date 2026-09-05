@@ -428,10 +428,12 @@ private struct HistoryTimelineCard: View {
                         HistoryScriptDetailView(stage: stage)
                     } label: {
                         HistoryOverviewRow(stage: stage)
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .frame(maxWidth: .infinity, minHeight: 1, alignment: .leading)
                             .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .contentShape(Rectangle())
                     if index < stages.count - 1 {
                         Divider()
                             .padding(.leading, 48)
@@ -591,6 +593,8 @@ private struct HistoryLivingTraditionCard: View {
                         .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .contentShape(Rectangle())
                 }
             }
 
