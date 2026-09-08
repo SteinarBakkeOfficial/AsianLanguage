@@ -195,6 +195,43 @@ This record preserves the remaining handoff suggestions without approving anothe
 - Launch collateral not yet produced: App Store screenshots, listing copy, positioning, and a later review-prompt decision.
 - No item in this section is an approval to change the current V1 patch. Reassess all candidates together after tester feedback.
 
+### Testing10_09 findings — discussion record — 2026-09-09
+
+These observations come from testing the latest commit. They are recorded for the next planning discussion and do not authorize implementation yet.
+
+- Symbol Origin copy is wrong at the content level: the repeated disclaimer about beginning with the real-world idea and not treating the illustration as a historical glyph appears throughout the corpus. That clarification belongs in the appropriate global teaching/method context, not as repeated copy on every Origin illustration.
+- Symbol transition copy is broadly generic and should be rewritten as character-specific editorial content. Remove stock phrases such as “easy to see,” “clearly separated,” “very visible,” and generic curve/stroke observations. When a form changes little or there is no useful observation, the transition should be shorter or have no explanatory copy rather than describing an obvious visual fact.
+- History navigation is not functionally complete in testing despite the NavigationLink declarations: Regular and A Living Tradition did not open, and the four modern-language rows only opened from the trailing chevron area. Treat full-row hit testing as a real bug requiring device verification, not as completed based on static code inspection.
+- History article content has valuable structure, especially Look closely corpus links and next-page links. Preserve the useful information and section structure; the problem is that some copy is placed directly on the background while other sections are placed in white boxes without a clear editorial or visual reason. The article presentation needs a focused visual-hierarchy revision, not an assumed reduction in content.
+- History overview and article image crops remain visibly poor in testing. The existing normalized crop rectangles require screenshot-led correction; the current reference artwork must not be considered visually fixed merely because a crop view exists.
+- Browse, Home, and More were positively received in this testing round and should not be redesigned while the agreed problem areas are corrected.
+- Sources & Licenses is still conceptually wrong for the intended product. Canonical ID deduplication is not enough: the user-facing page should contain only meaningful material/history references, normally one link per source at most. Generated origin artwork, OpenAI generation attribution, and font implementation details should not appear as ordinary educational sources. Font and system-attribution obligations should be reviewed separately in the legal-notices layer where required.
+- About Script Roots should become an app/about page: a short app summary plus developer, version/build, and release information. The current teaching-method essay does not match this intended purpose; method content and source/legal information need a separate decision.
+- Review reminders were positively received. Current behavior is documented below in the implementation notes and remains a candidate for refinement only after more testing.
+- Send Feedback was positively received. Current behavior is a local text composer that hands the user’s message to the iOS share sheet; it does not send or store feedback automatically.
+- Reminder behavior audit: the current implementation requests notification permission only after the user taps the setting, then schedules one repeating local notification for 19:00 in the device’s local time. It has no immediate test notification, no notification delegate for foreground presentation, and no recovery UI when system notification permission is later disabled. These are the first points to verify before changing the feature.
+- Feedback routing decision: during testing, the useful version should route directly to the developer through a configured email address or support destination rather than relying on a generic share sheet. The exact destination must be supplied and approved; do not hard-code a guessed address. Reassess whether to keep the feature for release after testing.
+- Home interaction hint: the current “Swipe, or tap the timeline, to follow the character through time. Got it” message appears on Home even though Home only offers entry actions and does not contain the interactive Symbol timeline. Remove or rewrite this hint so it describes the actual Home action; the Symbol Journey may have its own context-specific guidance if needed.
+- Symbol tab icon: the current SF Symbol `character` renders as an unattractive large “A”-like mark in the navbar. Replace it later with a clearer museum/Symbol icon while preserving the `Symbol` label and five-area navigation.
+- Feedback decision from Testing10_09: keep the current generic iOS share-sheet implementation for now. Revisit direct developer email/support routing later, especially for testing builds, and decide separately whether Feedback remains in the release build.
+- Preserve the successful History Look closely links, next-page links, and the positive Browse/Home/More changes while revising only the failed content, navigation, crop, Sources, and About areas.
+
+### Approved Testing10_09 implementation — 2026-09-09
+
+The preceding Testing10_09 section records the pre-approval discussion. The following surgical changes are now implemented in the working tree:
+
+- Home's misleading Symbol-timeline hint is removed, and the Symbol tab uses a clearer book/character icon.
+- History stage rows, the A Living Tradition card, and all four modern-language rows use full-row hit areas; decorative artwork does not intercept navigation taps.
+- History article sections now share one open editorial presentation, while the useful Look closely and next-page links remain.
+- History overview and modern-article crops are tightened to avoid infographic labels and unrelated source text fragments.
+- Sources & Licenses now shows one consolidated ZDIC reference plus meaningful research/history sources only; generated-origin, font, and speech implementation metadata remain outside the readable source inventory.
+- About Script Roots now presents app, developer, version/build, release-year, and offline-library information.
+- Review reminders now reconcile permission and pending-request state, recover after returning from Settings, and can present while the app is foregrounded.
+- Regular's handout copy and transition to the dedicated A Living Tradition calligraphy page are implemented. The page includes the supplied prose, style descriptions, Four Treasures, Look closely, and modern-traditions CTA.
+- The supplied History artwork placement board is bundled and cropped into the five ancient heroes, five-style calligraphy, four modern-language cards, and Four Treasures. Board captions remain excluded from runtime crops; all app labels stay native SwiftUI text. Symbol copy, Feedback behavior, monetization, and picture/scan recognition remain unchanged/deferred.
+
+Windows layout, contract, corpus, and release-readiness checks pass. SwiftUI compilation, simulator screenshots, and device interaction still require macOS/Xcode verification.
+
 ## V1 to VNext Carryover Register
 
 - Grammar and rule lessons
@@ -206,7 +243,7 @@ This record preserves the remaining handoff suggestions without approving anothe
 - User-created collection folders
 - richer historical animation
 - Deeper onboarding language orientation covering all four target writing traditions; this applies only to the onboarding symbol experience.
-- History page rework: the broader History overview redesign is intentionally the next implementation after this surgical polish pass.
+- History artwork and richer visual treatment: the textual A Living Tradition page is implemented, while verified five-style calligraphy artwork and broader History visual redesign remain deferred.
 - Future Home cleanup: replace the standalone “X symbols learned” footer with a deliberate destination such as History or the Learned library; do not change the current footer during this pass.
 - Future language-orientation content: broader language-family/context explanation beyond the approved modern-language branches and their intentionally unfinished detail destinations remains deferred.
 

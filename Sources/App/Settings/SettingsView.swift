@@ -15,6 +15,8 @@ struct SettingsView: View {
     /// Controls the separate all-preferences reset confirmation.
     @State private var isShowingPreferencesResetConfirmation = false
     @AppStorage("reviewReminderEnabled") private var reviewReminderEnabled = false
+    @Environment(\.scenePhase) private var scenePhase
+    @State private var reminderAuthorization: UNAuthorizationStatus = .notDetermined
 
     /// Creates Settings with observed access to local user state.
     init(dependencies: AppDependencies) {
@@ -46,6 +48,15 @@ struct SettingsView: View {
                 Text(reviewReminderEnabled ? "A gentle daily reminder is scheduled on this device." : "Choose this when you want a gentle daily reminder to revisit saved characters.")
                     .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textSecondary)
+                if reminderAuthorization == .denied {
+                    Text("Notifications are disabled for Script Roots in iPhone Settings.")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                    Button("Open Notification Settings") {
+                        guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
+                        UIApplication.shared.open(url)
+                    }
+                }
             }
 
             Section("Data") {
@@ -58,7 +69,7 @@ struct SettingsView: View {
             }
 
             Section("About") {
-                NavigationLink("About / Method") {
+                NavigationLink("About Script Roots") {
                     AboutMethodView(corpusCount: dependencies.installedSharedCharacterCount)
                 }
                 NavigationLink("Sources & Licenses") {
@@ -70,6 +81,13 @@ struct SettingsView: View {
         .scrollContentBackground(.hidden)
         .background(AppColors.appBackground.ignoresSafeArea())
         .tint(AppColors.accentPrimary)
+        .task {
+            refreshReminderState()
+        }
+        .onChange(of: scenePhase) { phase in
+            guard phase == .active else { return }
+            refreshReminderState()
+        }
         .alert("Reset app progress?", isPresented: $isShowingResetConfirmation) {
             Button("Reset", role: .destructive) {
                 userStateStore.resetLearningProgress()
@@ -102,6 +120,7 @@ struct SettingsView: View {
         guard enabled else {
             reviewReminderEnabled = false
             center.removePendingNotificationRequests(withIdentifiers: ["script-roots-review-reminder"])
+            refreshReminderState()
             return
         }
 
@@ -109,16 +128,37 @@ struct SettingsView: View {
             DispatchQueue.main.async {
                 guard granted else {
                     reviewReminderEnabled = false
+                    refreshReminderState()
                     return
                 }
                 let content = UNMutableNotificationContent()
                 content.title = "Return to Script Roots"
                 content.body = "A few quiet minutes with your saved characters."
                 content.sound = .default
-                let trigger = UNCalendarNotificationTrigger(dateMatching: DateComponents(hour: 19), repeats: true)
+                let trigger = UNCalendarNotificationTrigger(dateMatching: DateComponents(hour: 19, minute: 0), repeats: true)
                 let request = UNNotificationRequest(identifier: "script-roots-review-reminder", content: content, trigger: trigger)
-                center.add(request)
-                reviewReminderEnabled = true
+                center.add(request) { error in
+                    DispatchQueue.main.async {
+                        reviewReminderEnabled = error == nil
+                        refreshReminderState()
+                    }
+                }
+            }
+        }
+    }
+
+    /// Keeps the visible toggle aligned with the system permission and pending request state.
+    private func refreshReminderState() {
+        let center = UNUserNotificationCenter.current()
+        center.getNotificationSettings { settings in
+            center.getPendingNotificationRequests { requests in
+                let hasPendingReminder = requests.contains { $0.identifier == "script-roots-review-reminder" }
+                DispatchQueue.main.async {
+                    reminderAuthorization = settings.authorizationStatus
+                    if settings.authorizationStatus == .denied || !hasPendingReminder {
+                        reviewReminderEnabled = false
+                    }
+                }
             }
         }
     }

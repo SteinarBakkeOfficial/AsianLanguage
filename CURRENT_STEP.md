@@ -319,3 +319,37 @@ Release boundary: the user approved this surgical implementation. New History ar
 - Also held for later editorial/release review: complete copy QA, native-speaker review, historical interpretation review, source-rights clearance, and App Store launch collateral.
 - Picture/scan recognition remains a separately scoped future Browse feature: present-day on-device exact matching only, with an explicit no-match state and no historical OCR, cloud upload, or automatic photo storage by assumption.
 - These are recorded candidates and carryover, not current implementation instructions. Reassess them together after the next tester feedback.
+
+### Testing10_09 findings — discussion only — 2026-09-09
+
+- The latest test build repeats a generic Origin disclaimer across the Symbol corpus. Remove that repeated teaching disclaimer from per-symbol Origin copy; retain only the character-specific idea/origin explanation where it adds value.
+- Most Symbol transition captions are generic templates (“easy to see,” “clearly separated,” “very visible,” curves/strokes). Rewrite them as specific observations, omit them when the form does not meaningfully change, and never describe something merely because it is already visible to the learner.
+- History full-row navigation is not verified and is observably incomplete: Regular and A Living Tradition do not open, while modern-language rows require the trailing arrow. This supersedes the earlier static claim that all rows were reachable.
+- History article structure is promising, especially Look closely links and next-page links. Preserve the useful information and section structure; revise the inconsistent treatment where some copy sits on the background and other copy is placed in white boxes without a clear reason. This is a visual-hierarchy problem, not a request to reduce the History content.
+- All History crops remain poor in the tested build, both on the overview and individual pages. Correct the crop rectangles from the supplied testing screenshots and verify on device.
+- Browse, Home, and More are acceptable in this round and should remain protected from unrelated redesign.
+- Sources & Licenses needs a content-architecture correction, not only deduplication: keep meaningful history/image references only, use at most one link per source, remove generated-origin/OpenAI attribution from the ordinary source list, and move any genuinely required font/system licensing notices to the appropriate legal surface.
+- About Script Roots should focus on the app, developer, version/build, and release information, with at most a short app summary. The current method-focused essay is not the intended About page.
+- Remind me to review and Send Feedback were positively received; their current behavior is recorded in the testing handoff and should not be changed without a specific reason.
+- Reminder behavior to verify: tapping the setting requests permission and schedules one repeating local notification at 19:00 device time, but there is no immediate test notification, no foreground notification delegate, and no recovery state when system permission is disabled later.
+- Feedback routing to decide: for testing, route feedback directly to the developer through an approved email/support destination instead of a generic share sheet. The exact address is still required, and keeping the feature for release remains undecided.
+- Home hint bug: “Swipe, or tap the timeline, to follow the character through time. Got it” is shown on Home, where there is no interactive timeline. Remove or rewrite it to describe the actual Home entry action; keep any Symbol Journey guidance context-specific.
+- Symbol navbar icon: the `character` SF Symbol appears as a large “A”-like icon and should be replaced later with a clearer Symbol/museum icon without changing the tab label or navigation structure.
+- Feedback remains unchanged for now. Its current share-sheet behavior is acceptable during this discussion; direct developer routing and whether to retain Feedback in the release build remain future decisions.
+- Keep the successful History Look closely and next-page links while correcting the failed areas above. No implementation is authorized by this record until the next plan is agreed.
+
+### Approved Testing10_09 implementation — 2026-09-09
+
+The preceding Testing10_09 section records the pre-approval discussion. The following surgical changes are now implemented in the working tree:
+
+- Home's misleading Symbol-timeline hint is removed, and the Symbol tab uses a clearer book/character icon.
+- History stage rows, the A Living Tradition card, and all four modern-language rows use full-row hit areas; decorative artwork does not intercept navigation taps.
+- History article sections now share one open editorial presentation, while the useful Look closely and next-page links remain.
+- History overview and modern-article crops are tightened to avoid infographic labels and unrelated source text fragments.
+- Sources & Licenses now shows one consolidated ZDIC reference plus meaningful research/history sources only; generated-origin, font, and speech implementation metadata remain outside the readable source inventory.
+- About Script Roots now presents app, developer, version/build, release-year, and offline-library information.
+- Review reminders now reconcile permission and pending-request state, recover after returning from Settings, and can present while the app is foregrounded.
+- Regular's handout copy and transition to the dedicated A Living Tradition calligraphy page are implemented. The page includes the supplied prose, style descriptions, Four Treasures, Look closely, and modern-traditions CTA.
+- The supplied History artwork placement board is bundled and cropped into the five ancient heroes, five-style calligraphy, four modern-language cards, and Four Treasures. Board captions remain excluded from runtime crops; all app labels stay native SwiftUI text. Symbol copy, Feedback behavior, monetization, and picture/scan recognition remain unchanged/deferred.
+
+Windows layout, contract, corpus, and release-readiness checks pass. SwiftUI compilation, simulator screenshots, and device interaction still require macOS/Xcode verification.

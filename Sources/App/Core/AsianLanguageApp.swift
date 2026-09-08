@@ -1,5 +1,6 @@
 import SwiftUI
 import CoreText
+import UserNotifications
 
 /// App entry point for the V1 SwiftUI shell.
 /// Uses live local dependencies for bundled corpus reading and writable user state.
@@ -12,6 +13,8 @@ struct AsianLanguageApp: App {
     @StateObject private var userStateStore: LocalUserStateStore
 
     init() {
+        // Allow scheduled reminders to present a banner when the app is still in the foreground.
+        UNUserNotificationCenter.current().delegate = ScriptRootsNotificationDelegate.shared
         // Register only the small shell fonts before the first frame; large CJK faces load
         // when the Symbol journey needs them so launch remains responsive on-device.
         BundledFontRegistrar.registerCoreFonts()
@@ -39,6 +42,19 @@ struct AsianLanguageApp: App {
         case .light: return .light
         case .dark: return .dark
         }
+    }
+}
+
+/// Presents local review reminders while Script Roots is active, which keeps testing predictable.
+final class ScriptRootsNotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
+    static let shared = ScriptRootsNotificationDelegate()
+
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
+    ) {
+        completionHandler([.banner, .sound])
     }
 }
 

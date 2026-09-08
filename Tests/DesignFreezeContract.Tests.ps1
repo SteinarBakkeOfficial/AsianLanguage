@@ -48,11 +48,18 @@ Assert-True $historyPage.Contains("Why it changed") "History must include the vi
 Assert-True $historyPage.Contains("HistoryOverviewHeader") "History must preserve the reference-style editorial header."
 Assert-True $historyPage.Contains("HistoryReferenceCropView") "History must reuse the supplied reference illustrations in native layout."
 Assert-True (-not $historyPage.Contains('Image("History_V1")')) "History must not render the full reference screenshot as the page implementation."
+Assert-True $history.Contains("static var livingTraditionArticle") "History must include the dedicated calligraphy article."
+Assert-True $history.Contains("HistoryLivingTraditionView") "The calligraphy article must be reachable from History."
+Assert-True $history.Contains('nextID: "livingTradition"') "Regular must transition to A Living Tradition."
+Assert-True $history.Contains("Running and Cursive are not additional stages") "History must keep calligraphy styles separate from the evolution timeline."
+Assert-True (Test-Path (Join-Path $repoRoot "Resources/History/History_Artwork_Set.png")) "The approved History artwork set must be bundled with the app."
+Assert-True $history.Contains("HistoryCalligraphyDetailView") "Calligraphy examples must support an enlarged detail view."
 
 $about = Text "Sources/App/Settings/AboutMethodView.swift"
 # The approved content-architecture decision keeps source inventory and external links in Sources.
 Assert-True (-not $about.Contains("ZDIC")) "About must not contain the global source inventory."
-Assert-True $about.Contains("Educational reconstruction") "About must explain the teaching method."
+Assert-True $about.Contains("App information") "About must identify the app rather than explain implementation details."
+Assert-True $about.Contains("Developer") "About must identify the developer."
 Assert-True (-not $about.Contains("Modern forms and typography")) "About must remain a concise reference page rather than an implementation manual."
 
 $collectionsSource = Text "Sources/App/Collections/CollectionsView.swift"

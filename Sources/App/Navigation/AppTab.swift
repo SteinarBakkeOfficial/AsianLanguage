@@ -95,7 +95,7 @@ enum AppTab: Hashable, CaseIterable, Identifiable {
         case .home:
             return "house.fill"
         case .symbol:
-            return "character"
+            return "character.book.closed"
         case .history:
             return "building.columns"
         case .browse:

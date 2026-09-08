@@ -4,9 +4,6 @@ import SwiftUI
 struct HomeView: View {
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
-    /// Tracks whether the single, optional interaction hint has been dismissed.
-    @AppStorage("hasSeenSymbolInteractionHint") private var hasSeenInteractionHint = false
-
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
         _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
@@ -70,22 +67,7 @@ struct HomeView: View {
                 .frame(maxWidth: .infinity, minHeight: 300, maxHeight: 320)
                 .padding(.bottom, AppSpacing.spaceSm)
             PrimaryActionButton(isReviewHero ? "Start Quick Review" : (isResuming ? "Continue \(record.coreSharedMeaning.capitalized)" : "Start with \(record.coreSharedMeaning.capitalized)")) {
-                hasSeenInteractionHint = true
                 dependencies.navigationState.openSymbol(record.id, intent: isReviewHero ? .review : (isResuming ? .resume : .start))
-            }
-            if !hasSeenInteractionHint {
-                Button {
-                    hasSeenInteractionHint = true
-                } label: {
-                    Text("Swipe, or tap the timeline, to follow the character through time.\nGot it")
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
-                        .multilineTextAlignment(.center)
-                        .frame(maxWidth: 300)
-                }
-                .frame(minHeight: 44)
-                .accessibilityLabel("Symbol journey hint")
-                .accessibilityHint("Dismisses this hint")
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
