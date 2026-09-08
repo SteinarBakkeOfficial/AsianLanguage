@@ -781,7 +781,23 @@ private extension HistoryArticle {
 
 private struct HistoryOverviewHeader: View {
     var body: some View {
-        HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
+        ZStack(alignment: .bottomLeading) {
+            // Use the landscape crop as the complete header backdrop; the editorial copy sits over it.
+            HistoryReferenceCropView(
+                normalizedRect: CGRect(x: 0.60, y: 0.0, width: 0.40, height: 0.145),
+                accessibilityLabel: "Ink-wash landscape with mountains and a pavilion"
+            )
+            .frame(maxWidth: .infinity)
+            .frame(height: 214)
+            .allowsHitTesting(false)
+
+            LinearGradient(
+                colors: [Color.white.opacity(0.92), Color.white.opacity(0.48), Color.clear],
+                startPoint: .leading,
+                endPoint: .trailing
+            )
+            .allowsHitTesting(false)
+
             VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
                 Text("The History of Chinese Characters")
                     .font(AppTypography.exhibitHeading)
@@ -791,19 +807,15 @@ private struct HistoryOverviewHeader: View {
                     .foregroundStyle(AppColors.textSecondary)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-
-            // Keep the supplied landscape in its intended bounded frame so it cannot stretch under the copy.
-            HistoryReferenceCropView(
-                // The supplied reference is portrait; stop above the timeline card so the header never
-                // picks up source copy or the first row's explanation panel.
-                normalizedRect: CGRect(x: 0.60, y: 0.0, width: 0.40, height: 0.145),
-                accessibilityLabel: "Ink-wash landscape with mountains and a pavilion"
-            )
-            .frame(width: 112, height: 96)
-            .opacity(0.82)
-            .allowsHitTesting(false)
+            .padding(AppSpacing.spaceMd)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(height: 214)
+        .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+        .overlay {
+            RoundedRectangle(cornerRadius: AppRadius.card)
+                .stroke(AppColors.separator, lineWidth: 1)
+        }
         .padding(.top, AppSpacing.spaceXs)
     }
 }
@@ -1279,15 +1291,28 @@ private struct HistoryArticlePage<NextDestination: View>: View {
                 }
 
                 if let artworkRect {
-                    HistoryReferenceCropView(
-                        normalizedRect: artworkRect,
-                        imageName: artworkImageName,
-                        accessibilityLabel: "Representative artwork for \(article.title)"
-                    )
-                    .frame(maxWidth: .infinity, minHeight: 132, maxHeight: 190)
-                    .background(AppColors.artifactField)
-                    .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
-                    .allowsHitTesting(false)
+                    if presentation == .historical {
+                        HistoryReferenceCropView(
+                            normalizedRect: artworkRect,
+                            imageName: artworkImageName,
+                            accessibilityLabel: "Representative artwork for \(article.title)"
+                        )
+                        .frame(width: 220, height: 340)
+                        .frame(maxWidth: .infinity)
+                        .background(AppColors.artifactField)
+                        .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+                        .allowsHitTesting(false)
+                    } else {
+                        HistoryReferenceCropView(
+                            normalizedRect: artworkRect,
+                            imageName: artworkImageName,
+                            accessibilityLabel: "Representative artwork for \(article.title)"
+                        )
+                        .frame(maxWidth: .infinity, minHeight: 132, maxHeight: 190)
+                        .background(AppColors.artifactField)
+                        .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+                        .allowsHitTesting(false)
+                    }
                 }
 
                 if let modernBranch {
