@@ -263,3 +263,59 @@ Strict layout verification reports the existing top-level `MAC_TESTING.md` as ou
 The correction slice recorded in [`symbol-history-modern-final-polish-implementation-plan.md`](docs/design/symbol-history-modern-final-polish-implementation-plan.md) is now implemented locally: Home's repository-backed active-symbol state and layout, Symbol stage labels/caption spacing/Regular Script scale, exhibit-square crossfade, one-page onboarding composition spacing, and surgical History crop/typography/full-row navigation fixes. This does not change the 126-symbol corpus logic, Fire's pilot/reference status, draft language content, or the broader History rework planned afterward. macOS/Xcode and device visual verification remain outstanding.
 
 The current pass stays within V1: it improves the pilot's visual fidelity, source-backed asset handling, modern-language copy, History branching/detail navigation, and iOS pronunciation playback. Deeper first-symbol onboarding language orientation, scrollable all-language Today, richer historical animation, tracing, and larger corpus expansion remain intentional VNext carryover. The broader History-page rework is the next implementation after this pass.
+
+### Deferred follow-ups from Testing08_09 — next implementation only
+
+- Transition timing: the current `0.64s` exhibit crossfade is much more visible and substantially better than the earlier timing, but now feels slightly too slow. Reduce it modestly in the next implementation after device comparison; do not change it during this hold.
+- Material captions: captions such as “Bone / shell · carved” are now visible inside the exhibit square, but sit roughly 1 mm too high. Move them slightly downward while keeping them inside the square and clear of the lower edge.
+- History navigation: Oracle and Bronze currently respond, but the remaining script rows and modern-language branch cards still require a full-row navigation fix. Verify every row/card by tapping anywhere on a supported simulator or device.
+- These are deferred notes only; no implementation is authorized by this section.
+
+### Deferred follow-ups from Testing09_09 — next implementation only
+
+- History destinations: repair the current fragile timeline/branch hit-testing so all five historical stage rows and all four modern-language rows open their own detail destinations from anywhere across the row. Keep the existing overview and detail structure.
+- History safe areas: verify scrolling on supported simulator/device sizes and correct any content that passes beneath the status/navigation area or fixed root tab bar.
+- History artwork crops: tighten the existing detail/footer crop rectangles so clipped labels and unrelated fragments from the supplied infographic are not visible.
+- Sources / Licenses: render one canonical entry per source/reference. Keep per-character source IDs and asset provenance in the data layer, but show the ZDIC image-download source once only; deduplicate repeated fonts, research references, and origin attribution, while retaining Apple Speech Synthesis attribution.
+- About / Method: remove source links and source-attribution content from this screen. It should explain the teaching method, Shared Character model, offline behavior, and corpus scope; the Sources / Licenses screen owns external references and licenses.
+- Home copy: pluralize the learned-symbol count correctly, including the singular `1 symbol learned` case.
+- Picture/scan discovery: this is a separately scoped future feature. Add it under Browse, process present-day symbol photos/scans on-device, map recognized text to the bundled dictionary/corpus, and route exact matches through the existing Symbol navigation. Show an explicit no-match state; do not recognize historical glyphs by assumption, upload images, or store photos without separate approval.
+- V1 to VNext tracking: the items above were intentional carryover and are now approved for this implementation. New History artwork and monetization remain excluded.
+
+### ChatGPT final hand-off review — discussion candidates, 2026-09-08
+
+The complete hand-offs are [`ScriptRoots_History_Codex_Handoff.md`](Reference%20Pictures/Chatgpt/ScriptRoots_History_Codex_Handoff.md) and [`Script Roots — Final Product Polish, Launch & Monetization Codex Handoff.md`](Reference%20Pictures/Chatgpt/Script%20Roots%20%E2%80%94%20Final%20Product%20Polish%2C%20Launch%20%26%20Monetization%20Codex%20Handoff.md). Their recommendations are recorded here for joint prioritization; they do not authorize implementation.
+
+History content to review/adopt:
+
+- Keep Symbol character-specific and make History explain system-level change.
+- Use the supplied five-stage copy and guardrails for Oracle Bone, Bronze, Small Seal, Clerical, and Regular; then add the Modern / A Living Tradition bridge and four distinct modern-context articles.
+- Preserve the distinctions between continuity, reform, Japanese language adaptation, and Hanja alongside a purpose-built Hangul system. Never present history as a primitive-to-correct ladder or Hangul as simplified Hanja.
+- Use native-text article sections, verified 2–4 example rows, Symbol deep links only for mapped corpus stages, compact article-specific source notes, and accessible text/image labels.
+- Current code has minimal detail pages and a single infographic crop source, so the full hand-off is a content/navigation slice, not merely a crop fix. New History artwork is not available as a complete approved bundle; do not invent or silently replace it.
+
+Normal-page candidates to discuss:
+
+- Account should become “Your Progress” / “Progress & Data,” with user-facing learning counts and offline scope, and without Testing/V1/corpus/deferred/account-system language.
+- About / Method should own method and teaching rationale; Sources / Licenses should own readable provenance and any separate exhaustive legal notices. Deduplicate the current flattened source display to canonical entries, show ZDIC once, and retain Apple Speech Synthesis.
+- Fix Home’s singular learned-count grammar. Confirm Search’s Cancel/focus behavior despite its already-correct short placeholder and callback. Recheck Browse resume labels and collection progress before touching accepted layouts.
+- Treat accessibility, offline failure handling, and macOS/device visual checks as acceptance work. Ads, StoreKit, analytics, feedback, sharing, notifications, dark-mode refinements, haptics, and performance work require separate ranking; monetization requires an explicit decision and external readiness.
+
+Suggested order for discussion: choose free test build versus monetized build; lock the History content/navigation/artwork slice; approve the smallest normal-page cleanup; then verify on macOS/Xcode and device. Keep picture/scan recognition separate and future-facing: on-device present-day exact match into the existing dictionary/Symbol route, explicit no-match, no historical OCR/cloud/photo storage by assumption.
+
+Release boundary: the user approved this surgical implementation. New History artwork, monetization, analytics, picture/scan recognition, and unrelated redesign remain outside the current patch.
+
+### Approved implementation status — 2026-09-08
+
+- History now uses the supplied editorial arc in reusable native-text article views, with all five historical rows and four modern branches reachable across their full rows, verified corpus example links, safe-area padding, and next-page navigation.
+- Account/More, Settings, About / Method, Sources & Licenses, Home, Browse, Search, Quick Review, sharing, review reminders, and feedback now include the approved user-facing polish in focused files.
+- New History artwork and monetization were explicitly held back. The existing `History_V1.png` crops remain the only History artwork source for this pass.
+- Windows contract verification is required before handoff; macOS/Xcode simulator and physical-device verification remain required for SwiftUI visual, accessibility, haptic, notification, sharing, safe-area, and offline claims.
+
+### Post-testing handoff disposition — 2026-09-08
+
+- Permanent product boundary: Script Roots remains a museum app. XP, points, streaks, lives, coins, gems, badges, leaderboards, competitive ranking, and comparable gamification will not be added.
+- Held for discussion after the next testing round: replacement History artwork and illustrated 2×2 modern-language cards; article-specific History sources; fuller legal/license presentation; visual Share Symbol cards; a fuller Quick Review session; richer feedback and reminder flows; broader haptics; dark-mode and performance work; and the complete accessibility, offline, safe-area, crop, and physical-device verification pass.
+- Also held for later editorial/release review: complete copy QA, native-speaker review, historical interpretation review, source-rights clearance, and App Store launch collateral.
+- Picture/scan recognition remains a separately scoped future Browse feature: present-day on-device exact matching only, with an explicit no-match state and no historical OCR, cloud upload, or automatic photo storage by assumption.
+- These are recorded candidates and carryover, not current implementation instructions. Reassess them together after the next tester feedback.

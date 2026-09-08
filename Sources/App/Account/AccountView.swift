@@ -1,14 +1,14 @@
 import SwiftUI
 
-/// Lightweight local account/testing profile until real sync accounts are introduced.
+/// Local progress summary; V1 deliberately has no identity or cloud account.
 struct AccountView: View {
-    /// Shared dependencies used to summarize local testing progress.
+    /// Shared dependencies used to summarize local progress.
     let dependencies: AppDependencies
 
     /// Local state store used for progress and saved counts.
     @ObservedObject private var userStateStore: LocalUserStateStore
 
-    /// Creates the local account/testing profile screen.
+    /// Creates the local progress screen.
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
         _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
@@ -17,40 +17,25 @@ struct AccountView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
-                profileCard
-                progressCard
-                deferredAccountCard
+                learningCard
+                offlineLibraryCard
+                dataCard
             }
             .padding(AppSpacing.spacePage)
         }
         .scrollIndicators(.hidden)
-        .navigationTitle("Account")
+        .navigationTitle("Your Progress")
         .background(AppColors.appBackground.ignoresSafeArea())
         .tint(AppColors.accentPrimary)
     }
 
-    /// Local-only state explanation; no fake profile identity is presented.
-    private var profileCard: some View {
+    /// Shows durable learning state without implying a cloud account.
+    private var learningCard: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("Local data")
+            Text("Learning")
                 .font(AppTypography.sectionHeading)
                 .foregroundStyle(AppColors.textPrimary)
-            Text("Progress, Favorites, Review Later, and preferences are saved only on this device. No account is required for V1.")
-                .font(AppTypography.body)
-                .foregroundStyle(AppColors.textSecondary)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .groupedSurface()
-    }
-
-    /// Local progress summary for testing sessions.
-    private var progressCard: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("Testing Progress")
-                .font(AppTypography.sectionHeading)
-            LabeledContent("Installed corpus", value: dependencies.installedCorpusName)
-            LabeledContent("Shared Characters", value: "\(dependencies.installedSharedCharacterCount)")
-            LabeledContent("Learned", value: "\(learnedCount)")
+            LabeledContent("Characters learned", value: "\(learnedCount)")
             LabeledContent("Review later", value: "\(reviewLaterCount)")
             LabeledContent("Favorites", value: "\(favoriteCount)")
         }
@@ -58,12 +43,23 @@ struct AccountView: View {
         .groupedSurface()
     }
 
-    /// Keeps the deferred account surface explicit without presenting fake account functionality.
-    private var deferredAccountCard: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Account features deferred")
+    /// Explains what is available without exposing the internal corpus identifier.
+    private var offlineLibraryCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("On this device")
                 .font(AppTypography.sectionHeading)
-            Text("Sign-in, cloud sync, social profiles, and public account features are not part of V1. Progress remains local to this device.")
+            LabeledContent("Offline library", value: "\(dependencies.installedSharedCharacterCount) characters")
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .groupedSurface()
+    }
+
+    /// Makes local storage scope clear without presenting deferred account features.
+    private var dataCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Your data")
+                .font(AppTypography.sectionHeading)
+            Text("Your learning progress, favorites, review list, and preferences are stored on this device.")
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textSecondary)
         }

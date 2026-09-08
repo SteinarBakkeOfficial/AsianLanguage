@@ -294,7 +294,7 @@ private struct LegacyHistoryRootView: View {
     }
 }
 
-/// Native V1 History overview based on the approved reference artwork; deeper destinations are intentionally unfinished.
+/// History overview and article entry points. The existing reference artwork remains the bounded visual source.
 private struct HistoryRootView: View {
     let dependencies: AppDependencies
 
@@ -305,7 +305,7 @@ private struct HistoryRootView: View {
             date: "c. 1200–1046 BCE",
             dynasty: "Shang Dynasty",
             material: "Carved on animal bones and turtle shells",
-            explanation: "People used divination to ask about important matters. They carved questions on bone or shell, then heated them until cracks appeared. These early drawings were simple and symbolic.",
+            explanation: "At the Shang court, writing recorded divination, names, dates, offerings, and events. Compact marks had to remain legible on hard surfaces, yet the system was already capable of expressing language through sound and compound principles.",
             artworkRect: CGRect(x: 0.287, y: 0.160, width: 0.318, height: 0.150),
             color: AppColors.accentPrimary
         ),
@@ -315,7 +315,7 @@ private struct HistoryRootView: View {
             date: "c. 1046–256 BCE",
             dynasty: "Zhou Dynasty",
             material: "Cast or engraved on bronze vessels",
-            explanation: "With the rise of ritual and record-keeping, inscriptions moved to bronze vessels. Tools improved, strokes became more fluid and ornamental, and characters gained structure and balance.",
+            explanation: "Bronze inscriptions recorded ancestors, gifts, appointments, victories, and ritual events. Longer texts and ceremonial display encouraged broad, balanced forms, while regional variants continued alongside one another.",
             artworkRect: CGRect(x: 0.287, y: 0.323, width: 0.318, height: 0.150),
             color: Color(red: 0.63, green: 0.43, blue: 0.25)
         ),
@@ -325,7 +325,7 @@ private struct HistoryRootView: View {
             date: "c. 221–206 BCE",
             dynasty: "Qin Dynasty",
             material: "Written with brush on bamboo slips and silk",
-            explanation: "Qin unified China and standardized writing. Small Seal script was created for official use—characters became more uniform, symmetrical, and elegant.",
+            explanation: "The Qin state standardized inherited writing across a newly unified empire. Small Seal forms became taller, more balanced, and more consistent without replacing an undeveloped system with a new invention.",
             artworkRect: CGRect(x: 0.287, y: 0.486, width: 0.318, height: 0.145),
             color: Color(red: 0.76, green: 0.56, blue: 0.28)
         ),
@@ -334,18 +334,18 @@ private struct HistoryRootView: View {
             title: "Clerical",
             date: "c. 206 BCE–220 CE",
             dynasty: "Han Dynasty",
-            material: "Written with brush on paper",
-            explanation: "Writing on paper and with brush encouraged faster strokes. Characters became flatter and wider, with distinct horizontal lines and turning strokes—the basis of many modern shapes.",
+            material: "Written quickly with brush on bamboo, wood, and paper",
+            explanation: "As administration expanded, a practical hand developed for writing large quantities of information. Curves were reorganized into straighter, broader strokes, making the modern structural skeleton easier to recognize.",
             artworkRect: CGRect(x: 0.287, y: 0.646, width: 0.318, height: 0.130),
             color: AppColors.learned
         ),
         HistoryOverviewStage(
             id: "regular",
             title: "Regular",
-            date: "c. 220 CE–present",
-            dynasty: "All Dynasties",
-            material: "Written with brush on paper",
-            explanation: "Over time, Clerical script evolved into Regular script. Strokes became more balanced and refined—the foundation of the characters we use today.",
+            date: "Emerges c. 3rd century CE · mature by Tang",
+            dynasty: "Wei–Jin through Tang; continuing today",
+            material: "Brush-written, carved, printed, and digitized",
+            explanation: "Regular Script emerged over centuries from Clerical Script. By the Tang dynasty, balanced stroke conventions formed an influential model for education, inscriptions, copying, printing, and modern type.",
             artworkRect: CGRect(x: 0.287, y: 0.784, width: 0.318, height: 0.105),
             color: AppColors.accentPrimary
         )
@@ -356,8 +356,8 @@ private struct HistoryRootView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
                     HistoryOverviewHeader()
-                    HistoryTimelineCard(stages: stages)
-                    HistoryLivingTraditionCard()
+                    HistoryTimelineCard(stages: stages, dependencies: dependencies)
+                    HistoryLivingTraditionCard(dependencies: dependencies)
                 }
                 .padding(.horizontal, AppSpacing.spacePage)
                 .padding(.top, AppSpacing.spaceSm)
@@ -380,6 +380,268 @@ private struct HistoryOverviewStage: Identifiable {
     let explanation: String
     let artworkRect: CGRect
     let color: Color
+
+    /// Recreates a navigable stage destination without coupling article layout to the landing view.
+    static func destination(for id: String) -> HistoryOverviewStage? {
+        switch id {
+        case "oracleBone": return HistoryOverviewStage(id: id, title: "Oracle Bone", date: "c. 1200–1046 BCE", dynasty: "Shang Dynasty", material: "Carved on animal bones and turtle shells", explanation: "At the Shang court, writing recorded divination, names, dates, offerings, and events.", artworkRect: CGRect(x: 0.287, y: 0.160, width: 0.318, height: 0.150), color: AppColors.accentPrimary)
+        case "bronze": return HistoryOverviewStage(id: id, title: "Bronze", date: "c. 1046–256 BCE", dynasty: "Zhou Dynasty", material: "Cast or engraved on bronze vessels", explanation: "Bronze inscriptions recorded ancestors, gifts, appointments, victories, and ritual events.", artworkRect: CGRect(x: 0.287, y: 0.323, width: 0.318, height: 0.150), color: Color(red: 0.63, green: 0.43, blue: 0.25))
+        case "seal": return HistoryOverviewStage(id: id, title: "Small Seal", date: "c. 221–206 BCE", dynasty: "Qin Dynasty", material: "Written with brush on bamboo slips and silk", explanation: "The Qin state standardized inherited writing across a newly unified empire.", artworkRect: CGRect(x: 0.287, y: 0.486, width: 0.318, height: 0.145), color: Color(red: 0.76, green: 0.56, blue: 0.28))
+        case "clerical": return HistoryOverviewStage(id: id, title: "Clerical", date: "c. 206 BCE–220 CE", dynasty: "Han Dynasty", material: "Written quickly with brush on bamboo, wood, and paper", explanation: "A practical hand developed for writing large quantities of information.", artworkRect: CGRect(x: 0.287, y: 0.646, width: 0.318, height: 0.130), color: AppColors.learned)
+        case "regular": return HistoryOverviewStage(id: id, title: "Regular", date: "Emerges c. 3rd century CE · mature by Tang", dynasty: "Wei–Jin through Tang; continuing today", material: "Brush-written, carved, printed, and digitized", explanation: "Regular Script emerged over centuries from Clerical Script and remains foundational.", artworkRect: CGRect(x: 0.287, y: 0.784, width: 0.318, height: 0.105), color: AppColors.accentPrimary)
+        default: return nil
+        }
+    }
+}
+
+/// Short native-text article data shared by all History destinations.
+private struct HistoryArticle {
+    let title: String
+    let eyebrow: String
+    let era: String
+    let date: String
+    let intro: [String]
+    let sections: [HistoryArticleSection]
+    let examples: [HistoryArticleExample]
+    let nextID: String?
+}
+
+private struct HistoryArticleSection: Identifiable {
+    let id: String
+    let title: String
+    let paragraphs: [String]
+}
+
+private struct HistoryArticleExample: Identifiable {
+    let id: String
+    let recordID: String
+    let label: String
+    let detail: String
+    let position: SymbolJourneyPosition
+}
+
+private extension HistoryArticle {
+    /// Supplies the approved editorial arc without inventing an additional artwork system.
+    static func article(for id: String) -> HistoryArticle {
+        switch id {
+        case "oracleBone":
+            return HistoryArticle(
+                title: "Writing becomes a record",
+                eyebrow: "ORACLE BONE",
+                era: "Late Shang",
+                date: "c. 1200–1046 BCE",
+                intro: [
+                    "Oracle Bone inscriptions are the earliest large surviving body of mature Chinese writing. At the Shang court, diviners recorded questions about ritual, weather, harvests, warfare, and royal affairs on animal bone and turtle shell.",
+                    "These marks were not merely simple pictures. They used flexible sound and compound principles to record language, while their shapes still preserve visible relationships to the things and ideas they named."
+                ],
+                sections: [
+                    HistoryArticleSection(id: "surface", title: "Why this writing looked different", paragraphs: [
+                        "Bone and shell are hard, narrow surfaces. Marks had to be carved with care and remain legible after the surface was heated to produce divination cracks.",
+                        "The result is angular and economical, but the writing system was already capable of more than drawing objects. It recorded names, dates, actions, and relationships."
+                    ]),
+                    HistoryArticleSection(id: "records", title: "What people wrote", paragraphs: [
+                        "Many inscriptions ask whether an event will happen, report what the court offered, or record what happened after a prediction. Writing was part of a ritual and administrative practice, not an isolated decoration."
+                    ]),
+                    HistoryArticleSection(id: "closely", title: "Look closely", paragraphs: [
+                        "Compare the representative forms below with the modern characters. The connection is sometimes pictorial, sometimes structural, and sometimes preserved through sound."
+                    ])
+                ],
+                examples: historicalExamples(stage: "oracleBone"),
+                nextID: "bronze"
+            )
+        case "bronze":
+            return HistoryArticle(
+                title: "Writing made to last",
+                eyebrow: "BRONZE",
+                era: "Shang and Zhou",
+                date: "c. 11th–3rd centuries BCE",
+                intro: [
+                    "Bronze inscriptions were cast or engraved on ritual vessels, weapons, bells, and other objects. The tradition began in the Shang period and became especially important in the Western Zhou.",
+                    "Bronze writing preserved political and ritual memory: ancestors, gifts, appointments, victories, and ceremonies could be recorded on objects meant to endure."
+                ],
+                sections: [
+                    HistoryArticleSection(id: "forms", title: "Why the forms changed", paragraphs: [
+                        "A vessel offered a broader surface than a bone or shell, and a cast inscription could be designed for ceremonial display. Characters often became fuller, more balanced, and more fluid.",
+                        "Bronze was not one perfectly uniform script. Different regions, workshops, and periods produced related but distinct conventions."
+                    ]),
+                    HistoryArticleSection(id: "voices", title: "A script with many voices", paragraphs: [
+                        "The same inherited writing tradition could serve royal ritual, political memory, and practical identification. Material and purpose shaped the visual result without creating a single clean break from earlier writing."
+                    ]),
+                    HistoryArticleSection(id: "closely", title: "Look closely", paragraphs: [
+                        "Compare the broad Bronze forms with the earlier carved forms and the later standardized stages. Similar structures endure even when the proportions and stroke treatment change."
+                    ])
+                ],
+                examples: historicalExamples(stage: "bronze"),
+                nextID: "seal"
+            )
+        case "seal":
+            return HistoryArticle(
+                title: "One empire, one official standard",
+                eyebrow: "SMALL SEAL",
+                era: "Qin Dynasty",
+                date: "221–206 BCE",
+                intro: [
+                    "Before imperial unification, states of the Warring States period used related but increasingly different writing conventions. When Qin conquered its rivals in 221 BCE, governing the new empire required officials in distant regions to recognize the same written forms.",
+                    "The Qin state promoted a standardized official script now known as Small Seal. It regularized a tradition that had already evolved for more than a thousand years; Qin did not invent Chinese writing."
+                ],
+                sections: [
+                    HistoryArticleSection(id: "regular", title: "What became more regular", paragraphs: [
+                        "Small Seal characters tend to be tall, balanced, and carefully proportioned. Curves are controlled, line thickness is visually even, and components are arranged in more consistent ways."
+                    ]),
+                    HistoryArticleSection(id: "standard", title: "Why standardization mattered", paragraphs: [
+                        "A shared script supported administration across a larger state. Laws, records, measurements, inscriptions, and communication could circulate with fewer regional differences in character form."
+                    ]),
+                    HistoryArticleSection(id: "closely", title: "Look closely", paragraphs: [
+                        "Small Seal can make a character’s ancestry easier to see because its structure is regular while older relationships remain visible."
+                    ])
+                ],
+                examples: historicalExamples(stage: "seal"),
+                nextID: "clerical"
+            )
+        case "clerical":
+            return HistoryArticle(
+                title: "The decisive turn toward modern structure",
+                eyebrow: "CLERICAL",
+                era: "Late Qin and Han Dynasty",
+                date: "c. 3rd century BCE–2nd century CE",
+                intro: [
+                    "As government expanded, scribes needed to write large quantities of information quickly and clearly. A practical style developed alongside and beyond the formal seal tradition, becoming a major form of administrative writing and monumental inscription by the Han dynasty.",
+                    "This was more than a new calligraphic look. Older rounded structures were reorganized into straighter strokes and new component shapes, so many characters began to look recognizably related to forms used today."
+                ],
+                sections: [
+                    HistoryArticleSection(id: "visual", title: "What changed visually", paragraphs: [
+                        "Characters became broader and more rectangular. Curved lines were frequently replaced by straighter brush strokes. Components were compressed, rotated, or rewritten, and strong horizontal movement became characteristic of mature Han clerical writing."
+                    ]),
+                    HistoryArticleSection(id: "matters", title: "Why it matters", paragraphs: [
+                        "The clerical transformation weakened some obvious picture-like connections, but it made writing faster and helped establish the stroke-based structures inherited by later Regular Script."
+                    ]),
+                    HistoryArticleSection(id: "closely", title: "Look closely", paragraphs: [
+                        "Compare Small Seal and Clerical side by side. The meaning may be unchanged even when the internal geometry has been reorganized."
+                    ])
+                ],
+                examples: historicalExamples(stage: "clerical"),
+                nextID: "regular"
+            )
+        case "regular":
+            return HistoryArticle(
+                title: "The form that became the foundation",
+                eyebrow: "REGULAR",
+                era: "Wei–Jin through Tang; continuing today",
+                date: "Emerges c. 3rd century CE · mature by the Tang dynasty",
+                intro: [
+                    "Regular Script developed from the structural changes of Clerical Script while absorbing the more fluid possibilities of brush writing. Each stroke became clearly articulated, and characters settled into balanced, self-contained forms.",
+                    "It emerged over several centuries rather than appearing on one date. By the Tang dynasty, influential models shaped education, official documents, stone inscriptions, copying, printing, and eventually digital type."
+                ],
+                sections: [
+                    HistoryArticleSection(id: "stable", title: "What became stable", paragraphs: [
+                        "Dots, horizontals, verticals, hooks, turns, and diagonals were organized into repeatable conventions. Components occupied more predictable positions inside a square character space."
+                    ]),
+                    HistoryArticleSection(id: "frozen", title: "Regular does not mean frozen", paragraphs: [
+                        "Running and cursive styles continued alongside Regular Script, and calligraphers developed personal hands. Printing introduced its own conventions. Regular Script is a structural foundation, not one immutable font."
+                    ]),
+                    HistoryArticleSection(id: "matters", title: "Why it still matters", paragraphs: [
+                        "The architecture of modern Chinese characters, Japanese kanji, and Korean Hanja remains closely connected to Regular Script, even when digital typefaces look very different from brush calligraphy."
+                    ])
+                ],
+                examples: historicalExamples(stage: "regular"),
+                nextID: "modern"
+            )
+        default:
+            return modernBridgeArticle
+        }
+    }
+
+    /// Keeps the bridge article in the same reusable native-text layout as ancient stages.
+    static var modernBridgeArticle: HistoryArticle {
+        HistoryArticle(
+            title: "One tradition, several paths",
+            eyebrow: "MODERN",
+            era: "From mature Regular Script to the present",
+            date: "A shared foundation shaped by different languages and standards",
+            intro: [
+                "Regular Script did not suddenly split into four equal descendants. Chinese characters entered different societies at different times, served different languages, and were later standardized in different ways.",
+                "To understand modern forms, ask four different questions: Which forms were preserved? Which were simplified? How were characters read in another language? And in Korea, why was an entirely new alphabet created alongside them?"
+            ],
+            sections: [
+                HistoryArticleSection(id: "relationships", title: "Four different relationships", paragraphs: [
+                    "Traditional Chinese represents continuity within inherited character forms and later regional standards. Simplified Chinese represents modern character reform with many older roots. Japanese combines kanji with Japanese readings and kana, followed by later form standardization. Korean preserves Hanja as a historical and lexical tradition alongside a purpose-built Hangul writing system."
+                ]),
+                HistoryArticleSection(id: "note", title: "These are writing traditions, not four identical languages", paragraphs: [
+                    "Traditional and Simplified describe character standards used to write Chinese. Japanese kanji and Korean Hanja are Chinese characters adapted within different languages. The same historical character can therefore preserve a related shape while carrying different readings and patterns of use."
+                ])
+            ],
+            examples: modernExamples(),
+            nextID: nil
+        )
+    }
+
+    static func modernArticle(for id: String) -> HistoryArticle {
+        switch id {
+        case "traditionalChinese":
+            return HistoryArticle(title: "Continuity, not a single split", eyebrow: "TRADITIONAL CHINESE", era: "Inherited forms with modern regional standards", date: "繁體中文 / 正體字", intro: [
+                "Traditional Chinese is the modern name for character forms that largely continue the inherited pre-simplification tradition. It was not created in a single reform, and there is no one moment when it diverged from Regular Script.",
+                "Regular Script forms continued through handwriting, dictionaries, woodblock printing, movable type, education, and modern typography. Over time, institutions in different regions established preferred reference standards."
+            ], sections: [
+                HistoryArticleSection(id: "label", title: "Why “traditional” is a modern label", paragraphs: ["For most of history, writers did not need this label; these were simply the forms in ordinary literary and printed use. It became useful when simplified standards spread in the 20th century and a contrast was needed."]),
+                HistoryArticleSection(id: "regional", title: "One tradition, regional standards", paragraphs: ["Taiwan and Hong Kong both use Traditional Chinese, but they do not always select exactly the same variant or display every component in exactly the same glyph form. These are regional standards within a broader tradition."]),
+                HistoryArticleSection(id: "sound", title: "The same character can sound very different", paragraphs: ["A Traditional Chinese character does not belong to only one spoken variety. The same written form may be read in Mandarin, Cantonese, or another Chinese language with different pronunciation."])
+            ], examples: modernExamples(), nextID: "simplifiedChinese")
+        case "simplifiedChinese":
+            return HistoryArticle(title: "A modern standard with older roots", eyebrow: "SIMPLIFIED CHINESE", era: "Mainland China", date: "National simplification adopted from 1956 · 简体中文", intro: [
+                "Simplified Chinese is a modern character standard associated especially with mainland China. A national simplification scheme was approved in 1956 as part of a broader effort to make reading and writing easier to teach and use.",
+                "The reform did not invent every form from nothing. Many simplified forms drew on abbreviations, cursive shapes, popular variants, or simplification patterns that had existed for centuries."
+            ], sections: [
+                HistoryArticleSection(id: "methods", title: "Several methods, not one rule", paragraphs: ["Some characters lost strokes. Some complex components were replaced by shorter forms. Some handwritten shapes were regularized into print, and some older characters were consolidated under one modern form."]),
+                HistoryArticleSection(id: "different", title: "Similar does not mean identical", paragraphs: ["China and Japan simplified characters independently. Some results happen to match, while others differ. Modern standards therefore differ while remaining part of the same long character tradition."]),
+                HistoryArticleSection(id: "shared", title: "Most of the writing system remained shared", paragraphs: ["Many characters were never simplified, and many components remain recognizable across Traditional Chinese, Simplified Chinese, and Japanese kanji."])
+            ], examples: modernExamples(), nextID: "japanese")
+        case "japanese":
+            return HistoryArticle(title: "Chinese characters adapted to Japanese", eyebrow: "JAPANESE", era: "Adopted by the 5th–6th centuries", date: "漢字 + かな", intro: [
+                "Japan adopted Chinese writing through sustained contact with the Asian continent, especially China and the Korean peninsula. Chinese characters became central to government, Buddhism, scholarship, and record-keeping.",
+                "Japanese and Chinese are structurally different languages. Japanese writers therefore developed new ways to read, combine, and supplement characters rather than simply borrowing shapes."
+            ], sections: [
+                HistoryArticleSection(id: "readings", title: "One character, more than one reading", paragraphs: ["Kanji can preserve readings derived historically from Chinese pronunciation, called on’yomi, while also representing native Japanese words with kun’yomi. A single kanji can therefore have several established readings."]),
+                HistoryArticleSection(id: "kana", title: "Japanese needed a way to write grammar and sound", paragraphs: ["Early writers sometimes used characters for their sound rather than their meaning. These practices developed into kana: hiragana emerged from flowing cursive forms, while katakana developed from abbreviated parts. Modern Japanese combines kanji, hiragana, and katakana."]),
+                HistoryArticleSection(id: "reform", title: "A separate 20th-century reform", paragraphs: ["Japan later standardized many commonly used kanji forms. The 1946 Tōyō Kanji list and 1949 character-form table established many shinjitai forms independently of mainland Chinese reform."]),
+                HistoryArticleSection(id: "divergence", title: "The divergence happened in layers", paragraphs: ["Japanese writing began diverging through pronunciation, grammar, local vocabulary, and kana many centuries ago. Visible divergence of some kanji shapes became more systematic much later."])
+            ], examples: modernExamples(), nextID: "korean")
+        default:
+            return HistoryArticle(title: "Hanja remained. Hangul changed the system.", eyebrow: "KOREAN", era: "Chinese characters used for centuries", date: "한글 + 漢字 · Hangul created 1443, promulgated 1446", intro: [
+                "Chinese characters reached the Korean peninsula long before Hangul and became a major written medium for government, scholarship, literature, religion, and historical record.",
+                "Korean and Chinese are very different languages. Characters could carry meaning and learned vocabulary, but they were not designed to represent Korean speech and grammar directly."
+            ], sections: [
+                HistoryArticleSection(id: "hangul", title: "A writing system designed for Korean", paragraphs: ["In 1443, King Sejong created Hunminjeongeum, the ancestor of modern Hangul. In 1446, the system was publicly explained and promulgated. Its letters were designed to represent Korean sounds systematically."]),
+                HistoryArticleSection(id: "coexist", title: "Centuries of coexistence", paragraphs: ["Hangul did not immediately replace Chinese characters. Hanja remained important in official, scholarly, and elite writing while Hangul expanded through literature, correspondence, education, and everyday communication. Modern Korean is primarily written in Hangul, while Hanja remains part of its historical and lexical background."]),
+                HistoryArticleSection(id: "different", title: "A different relationship", paragraphs: ["A Korean reading is not the next graphical stage of a Hanja character. It is the Korean pronunciation written in a different script. The major change was functional: Hanja tradition alongside a newly designed Korean alphabet."])
+            ], examples: koreanExamples(), nextID: nil)
+        }
+    }
+
+    private static func historicalExamples(stage: String) -> [HistoryArticleExample] {
+        [
+            HistoryArticleExample(id: "day-\(stage)", recordID: "day", label: "Day", detail: stageDisplay(stage), position: SymbolJourneyPosition(section: .evolution, stageID: stage)),
+            HistoryArticleExample(id: "moon-\(stage)", recordID: "moon", label: "Moon", detail: stageDisplay(stage), position: SymbolJourneyPosition(section: .evolution, stageID: stage)),
+            HistoryArticleExample(id: "mountain-\(stage)", recordID: "mountain", label: "Mountain", detail: stageDisplay(stage), position: SymbolJourneyPosition(section: .evolution, stageID: stage))
+        ]
+    }
+
+    private static func modernExamples() -> [HistoryArticleExample] {
+        [
+            HistoryArticleExample(id: "day-modern", recordID: "day", label: "日", detail: "Open this Shared Character", position: SymbolJourneyPosition(section: .today, stageID: "modern")),
+            HistoryArticleExample(id: "water-modern", recordID: "water", label: "水", detail: "Open this Shared Character", position: SymbolJourneyPosition(section: .today, stageID: "modern")),
+            HistoryArticleExample(id: "person-modern", recordID: "person", label: "人", detail: "Open this Shared Character", position: SymbolJourneyPosition(section: .today, stageID: "modern"))
+        ]
+    }
+
+    private static func koreanExamples() -> [HistoryArticleExample] {
+        [
+            HistoryArticleExample(id: "mountain-korean", recordID: "mountain", label: "山 · 산 · san", detail: "Read in Korean as", position: SymbolJourneyPosition(section: .today, stageID: "usage-korean")),
+            HistoryArticleExample(id: "water-korean", recordID: "water", label: "水 · 수 · su", detail: "Read in Korean as", position: SymbolJourneyPosition(section: .today, stageID: "usage-korean")),
+            HistoryArticleExample(id: "person-korean", recordID: "person", label: "人 · 인 · in", detail: "Read in Korean as", position: SymbolJourneyPosition(section: .today, stageID: "usage-korean"))
+        ]
+    }
+
+    private static func stageDisplay(_ stage: String) -> String { "Representative \(stage) form" }
 }
 
 private struct HistoryOverviewHeader: View {
@@ -389,7 +651,7 @@ private struct HistoryOverviewHeader: View {
                 Text("The History of Chinese Characters")
                     .font(AppTypography.exhibitHeading)
                     .foregroundStyle(AppColors.textPrimary)
-                Text("Chinese characters have evolved over thousands of years. Each change reflects new materials, tools, and the needs of society.")
+                Text("Chinese characters have changed for more than three thousand years. New tools, institutions, and communities reshaped how they were written—while many underlying structures endured.")
                     .font(AppTypography.body)
                     .foregroundStyle(AppColors.textSecondary)
             }
@@ -412,35 +674,34 @@ private struct HistoryOverviewHeader: View {
 
 private struct HistoryTimelineCard: View {
     let stages: [HistoryOverviewStage]
+    let dependencies: AppDependencies
 
     var body: some View {
-        ZStack(alignment: .leading) {
+        VStack(spacing: 0) {
+            ForEach(Array(stages.enumerated()), id: \.element.id) { index, stage in
+                NavigationLink {
+                    HistoryScriptDetailView(stage: stage, dependencies: dependencies)
+                } label: {
+                    HistoryOverviewRow(stage: stage)
+                        .frame(maxWidth: .infinity, minHeight: 1, alignment: .leading)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .contentShape(Rectangle())
+                if index < stages.count - 1 {
+                    Divider()
+                        .padding(.leading, 48)
+                }
+            }
+        }
+        .overlay(alignment: .leading) {
             Rectangle()
                 .fill(AppColors.separator)
                 .frame(width: 2)
                 .padding(.leading, 16)
                 .padding(.vertical, 34)
                 .allowsHitTesting(false)
-
-            VStack(spacing: 0) {
-                ForEach(Array(stages.enumerated()), id: \.element.id) { index, stage in
-                    NavigationLink {
-                        HistoryScriptDetailView(stage: stage)
-                    } label: {
-                        HistoryOverviewRow(stage: stage)
-                            .frame(maxWidth: .infinity, minHeight: 1, alignment: .leading)
-                            .contentShape(Rectangle())
-                    }
-                    .buttonStyle(.plain)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .contentShape(Rectangle())
-                    .zIndex(1)
-                    if index < stages.count - 1 {
-                        Divider()
-                            .padding(.leading, 48)
-                    }
-                }
-            }
         }
         .background(AppColors.surfaceElevated)
         .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
@@ -485,7 +746,7 @@ private struct HistoryOverviewRow: View {
 
                 HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
                     HistoryStageArtwork(stage: stage)
-            .frame(width: 144, height: 112)
+                        .frame(width: 144, height: 112)
                     VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                         Text("Why it changed")
                             .font(AppTypography.caption.weight(.semibold))
@@ -517,51 +778,34 @@ private struct HistoryStageArtwork: View {
 }
 
 private struct HistoryLivingTraditionCard: View {
-    private let branches: [HistoryModernBranch] = [
-        HistoryModernBranch(
-            id: "traditionalChinese",
-            title: "Traditional Chinese",
-            scriptLabel: "繁體中文",
-            explanation: "Traditional Chinese continues the shared character tradition in a modern Chinese writing environment."
-        ),
-        HistoryModernBranch(
-            id: "simplifiedChinese",
-            title: "Simplified Chinese",
-            scriptLabel: "简体中文",
-            explanation: "Simplified Chinese continues the character tradition with later standardized simplified forms for many characters."
-        ),
-        HistoryModernBranch(
-            id: "japanese",
-            title: "Japanese",
-            scriptLabel: "漢字 + かな",
-            explanation: "Japanese uses Kanji alongside kana, developing a modern writing environment with both systems."
-        ),
-        HistoryModernBranch(
-            id: "korean",
-            title: "Korean",
-            scriptLabel: "한글 + 한자",
-            explanation: "Korean historically used Hanja; Hangul is primary in modern Korean and Hanja has a more limited role."
-        )
-    ]
+    let dependencies: AppDependencies
+
+    private let branches = HistoryModernBranch.catalog
 
     var body: some View {
         GroupedSurface {
-            HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
-                HistoryReferenceCropView(
-                    normalizedRect: CGRect(x: 0.055, y: 0.909, width: 0.085, height: 0.065),
-                    accessibilityLabel: "Traditional pavilion illustration"
-                )
-                .frame(width: 54, height: 64)
-
-                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                    Text("A living tradition")
-                        .font(AppTypography.stageTitle)
-                        .foregroundStyle(AppColors.textPrimary)
-                    Text("Chinese characters continue to evolve in calligraphy styles and modern life, connecting the past with the present.")
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
+            NavigationLink {
+                HistoryModernBridgeView(dependencies: dependencies)
+            } label: {
+                HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
+                    HistoryReferenceCropView(
+                        normalizedRect: CGRect(x: 0.055, y: 0.909, width: 0.085, height: 0.065),
+                        accessibilityLabel: "Traditional pavilion illustration"
+                    )
+                    .frame(width: 54, height: 64)
+                    VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                        Text("A living tradition")
+                            .font(AppTypography.stageTitle)
+                            .foregroundStyle(AppColors.textPrimary)
+                        Text("Chinese characters continue to evolve in calligraphy styles and modern life, connecting the past with the present.")
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
+                .contentShape(Rectangle())
             }
+            .buttonStyle(.plain)
 
             VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
                 Text("Modern writing traditions")
@@ -573,7 +817,7 @@ private struct HistoryLivingTraditionCard: View {
 
                 ForEach(branches) { branch in
                     NavigationLink {
-                        HistoryModernLanguageDetailView(branch: branch)
+                        HistoryModernLanguageDetailView(branch: branch, dependencies: dependencies)
                     } label: {
                         HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
                             VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
@@ -596,7 +840,6 @@ private struct HistoryLivingTraditionCard: View {
                     .buttonStyle(.plain)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .contentShape(Rectangle())
-                    .zIndex(1)
                 }
             }
 
@@ -615,52 +858,71 @@ private struct HistoryModernBranch: Identifiable, Hashable {
     let title: String
     let scriptLabel: String
     let explanation: String
+
+    /// Stable branch order is shared by the landing card and the bridge article.
+    static let catalog: [HistoryModernBranch] = [
+        HistoryModernBranch(id: "traditionalChinese", title: "Traditional Chinese", scriptLabel: "繁體中文 / 正體字", explanation: "Inherited forms with modern regional standards."),
+        HistoryModernBranch(id: "simplifiedChinese", title: "Simplified Chinese", scriptLabel: "简体中文", explanation: "A modern standard with older roots."),
+        HistoryModernBranch(id: "japanese", title: "Japanese", scriptLabel: "漢字 + かな", explanation: "Chinese characters adapted to Japanese."),
+        HistoryModernBranch(id: "korean", title: "Korean", scriptLabel: "한글 + 漢字", explanation: "Hanja alongside a purpose-built Korean alphabet.")
+    ]
 }
 
 private struct HistoryScriptDetailView: View {
     let stage: HistoryOverviewStage
+    let dependencies: AppDependencies
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
-                Text(stage.title.uppercased())
-                    .font(AppTypography.conceptLabel)
-                    .tracking(1.4)
-                    .foregroundStyle(AppColors.textSecondary)
-                Text(stage.dynasty)
-                    .font(AppTypography.exhibitHeading)
-                    .foregroundStyle(AppColors.textPrimary)
-                Text(stage.date)
-                    .font(AppTypography.metadata)
-                    .foregroundStyle(AppColors.textSecondary)
-
-                HistoryReferenceCropView(
-                    normalizedRect: stage.artworkRect,
-                    accessibilityLabel: "Representative \(stage.title) material and character artwork"
-                )
-                .frame(maxWidth: .infinity, minHeight: 112, maxHeight: 160)
-                .background(AppColors.artifactField)
-                .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
-
-                GroupedSurface {
-                    VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
-                        Text(stage.material)
-                            .font(AppTypography.sectionHeading)
-                            .foregroundStyle(AppColors.textPrimary)
-                        Text(stage.explanation)
-                            .font(AppTypography.body)
-                            .foregroundStyle(AppColors.textSecondary)
-                    }
-                }
-
-                Text("Historical forms shown here are representative examples. Actual forms varied across periods, regions, objects, and individual writers.")
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textSecondary)
-            }
-            .padding(AppSpacing.spacePage)
-            .padding(.bottom, AppSpacing.spaceSection)
+        HistoryArticlePage(
+            article: .article(for: stage.id),
+            dependencies: dependencies,
+            artworkRect: stage.artworkRect
+        ) {
+            nextStageDestination
         }
         .navigationTitle(stage.title)
+        .navigationBarTitleDisplayMode(.inline)
+        .background(AppColors.appBackground.ignoresSafeArea())
+    }
+
+    @ViewBuilder
+    private var nextStageDestination: some View {
+        if let nextID = HistoryArticle.article(for: stage.id).nextID,
+           let nextStage = HistoryOverviewStage.destination(for: nextID) {
+            NavigationLink {
+                HistoryScriptDetailView(stage: nextStage, dependencies: dependencies)
+            } label: {
+                HistoryNextLink(title: "Next: \(nextStage.title)", detail: nextStage.explanation)
+            }
+            .buttonStyle(.plain)
+        }
+    }
+}
+
+private struct HistoryModernBridgeView: View {
+    let dependencies: AppDependencies
+
+    var body: some View {
+        HistoryArticlePage(
+            article: .modernBridgeArticle,
+            dependencies: dependencies,
+            artworkRect: CGRect(x: 0.50, y: 0.905, width: 0.46, height: 0.070)
+        ) {
+            VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                Text("Explore the four modern contexts")
+                    .font(AppTypography.sectionHeading)
+                    .foregroundStyle(AppColors.textPrimary)
+                ForEach(HistoryModernBranch.catalog) { branch in
+                    NavigationLink {
+                        HistoryModernLanguageDetailView(branch: branch, dependencies: dependencies)
+                    } label: {
+                        HistoryNextLink(title: branch.title, detail: branch.scriptLabel)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+        .navigationTitle("Modern")
         .navigationBarTitleDisplayMode(.inline)
         .background(AppColors.appBackground.ignoresSafeArea())
     }
@@ -668,44 +930,231 @@ private struct HistoryScriptDetailView: View {
 
 private struct HistoryModernLanguageDetailView: View {
     let branch: HistoryModernBranch
+    let dependencies: AppDependencies
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
-                Text("MODERN LANGUAGE")
-                    .font(AppTypography.conceptLabel)
-                    .tracking(1.4)
-                    .foregroundStyle(AppColors.textSecondary)
-                Text(branch.title)
-                    .font(AppTypography.exhibitHeading)
-                    .foregroundStyle(AppColors.textPrimary)
-                Text(branch.scriptLabel)
-                    .font(CJKFontRole.museumRegular.font(size: 42))
-                    .foregroundStyle(AppColors.artifactInk)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-
-                GroupedSurface {
-                    VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
-                        Text("The modern continuation")
-                            .font(AppTypography.sectionHeading)
-                            .foregroundStyle(AppColors.textPrimary)
-                        Text(branch.explanation)
-                            .font(AppTypography.body)
-                            .foregroundStyle(AppColors.textSecondary)
-                    }
+        HistoryArticlePage(
+            article: .modernArticle(for: branch.id),
+            dependencies: dependencies,
+            artworkRect: CGRect(x: 0.50, y: 0.905, width: 0.46, height: 0.070)
+        ) {
+            if let nextBranch = HistoryModernBranch.catalog.first(where: { $0.id == nextBranchID }) {
+                NavigationLink {
+                    HistoryModernLanguageDetailView(branch: nextBranch, dependencies: dependencies)
+                } label: {
+                    HistoryNextLink(title: "Compare: \(nextBranch.title)", detail: nextBranch.scriptLabel)
                 }
-
-                HistoricalMissingState(
-                    title: "Detailed language page in progress",
-                    detail: "Further source-backed chronology, writing context, and examples will be added here."
-                )
+                .buttonStyle(.plain)
+            } else {
+                NavigationLink {
+                    HistoryModernBridgeView(dependencies: dependencies)
+                } label: {
+                    HistoryNextLink(title: "Back to modern traditions", detail: "Explore another modern context")
+                }
+                .buttonStyle(.plain)
             }
-            .padding(AppSpacing.spacePage)
-            .padding(.bottom, AppSpacing.spaceSection)
         }
         .navigationTitle(branch.title)
         .navigationBarTitleDisplayMode(.inline)
         .background(AppColors.appBackground.ignoresSafeArea())
+    }
+
+    private var nextBranchID: String? {
+        switch branch.id {
+        case "traditionalChinese": return "simplifiedChinese"
+        case "simplifiedChinese": return "japanese"
+        case "japanese": return "korean"
+        default: return nil
+        }
+    }
+}
+
+/// Shared native-text article layout for historical and modern History pages.
+private struct HistoryArticlePage<NextDestination: View>: View {
+    let article: HistoryArticle
+    let dependencies: AppDependencies
+    let artworkRect: CGRect?
+    let nextDestination: () -> NextDestination
+
+    init(article: HistoryArticle, dependencies: AppDependencies, artworkRect: CGRect? = nil, @ViewBuilder nextDestination: @escaping () -> NextDestination) {
+        self.article = article
+        self.dependencies = dependencies
+        self.artworkRect = artworkRect
+        self.nextDestination = nextDestination
+    }
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
+                Text(article.eyebrow)
+                    .font(AppTypography.conceptLabel)
+                    .tracking(1.4)
+                    .foregroundStyle(AppColors.textSecondary)
+                Text(article.title)
+                    .font(AppTypography.exhibitHeading)
+                    .foregroundStyle(AppColors.textPrimary)
+                Text(article.era)
+                    .font(AppTypography.sectionHeading)
+                    .foregroundStyle(AppColors.textPrimary)
+                Text(article.date)
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+
+                if let artworkRect {
+                    HistoryReferenceCropView(
+                        normalizedRect: artworkRect,
+                        accessibilityLabel: "Representative artwork for \(article.title)"
+                    )
+                    .frame(maxWidth: .infinity, minHeight: 132, maxHeight: 190)
+                    .background(AppColors.artifactField)
+                    .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+                }
+
+                ForEach(Array(article.intro.enumerated()), id: \.offset) { _, paragraph in
+                    Text(paragraph)
+                        .font(AppTypography.body)
+                        .foregroundStyle(AppColors.textSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+
+                ForEach(article.sections) { section in
+                    GroupedSurface {
+                        VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                            Text(section.title)
+                                .font(AppTypography.sectionHeading)
+                                .foregroundStyle(AppColors.textPrimary)
+                            ForEach(Array(section.paragraphs.enumerated()), id: \.offset) { _, paragraph in
+                                Text(paragraph)
+                                    .font(AppTypography.body)
+                                    .foregroundStyle(AppColors.textSecondary)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                        }
+                    }
+                }
+
+                if !article.examples.isEmpty {
+                    GroupedSurface {
+                        VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                            Text("Look closely")
+                                .font(AppTypography.sectionHeading)
+                                .foregroundStyle(AppColors.textPrimary)
+                            Text("These representative forms are drawn from the app’s available Shared Character corpus.")
+                                .font(AppTypography.caption)
+                                .foregroundStyle(AppColors.textSecondary)
+                            ForEach(article.examples) { example in
+                                HistoryArticleExampleRow(example: example, dependencies: dependencies)
+                            }
+                        }
+                    }
+                }
+
+                Text("Historical forms are representative examples. Styles overlap, and forms varied across periods, regions, materials, objects, and writers.")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+
+                NavigationLink {
+                    SourcesLicensesView(dependencies: dependencies)
+                } label: {
+                    Text("Sources & historical notes")
+                        .font(AppTypography.caption.weight(.semibold))
+                        .foregroundStyle(AppColors.accentPrimary)
+                        .frame(minHeight: 44, alignment: .leading)
+                }
+
+                nextDestination()
+            }
+            .padding(AppSpacing.spacePage)
+            .padding(.bottom, AppSpacing.spaceSection)
+        }
+        .scrollIndicators(.hidden)
+    }
+}
+
+private struct HistoryArticleExampleRow: View {
+    let example: HistoryArticleExample
+    let dependencies: AppDependencies
+
+    var body: some View {
+        if let record = dependencies.sharedCharacters.first(where: { $0.id == example.recordID }),
+           let form = displayForm(for: record) {
+            NavigationLink {
+                LessonView(route: LessonRoute(sharedCharacterID: record.id, startingPosition: example.position), dependencies: dependencies)
+            } label: {
+                HStack(spacing: AppSpacing.spaceSm) {
+                    Text(form)
+                        .font(CJKFontRole.museumRegular.font(size: 34))
+                        .foregroundStyle(AppColors.artifactInk)
+                        .frame(width: 54, height: 48)
+                    VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                        Text(displayLabel(for: record))
+                            .font(AppTypography.body.weight(.semibold))
+                            .foregroundStyle(AppColors.textPrimary)
+                        Text(example.detail)
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+                    Spacer(minLength: 0)
+                    Image(systemName: "chevron.right")
+                        .foregroundStyle(AppColors.textTertiary)
+                        .accessibilityHidden(true)
+                }
+                .frame(minHeight: 52)
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("\(displayLabel(for: record)), open \(record.coreSharedMeaning) Symbol")
+        }
+    }
+
+    private func displayForm(for record: SharedCharacterRecord) -> String? {
+        if example.position.section == .evolution, let stageID = example.position.stageID,
+           let stage = record.history.stages.first(where: { $0.stage == stageID }), let form = stage.form, !form.isEmpty {
+            return form
+        }
+        guard example.position.section == .today else { return nil }
+        if example.position.stageID == "usage-korean" { return record.focusCoverage.korean.form }
+        return record.coreCharacter
+    }
+
+    /// Uses the bundled Korean reading data when a History row presents Hanja in Korean.
+    private func displayLabel(for record: SharedCharacterRecord) -> String {
+        guard example.position.stageID == "usage-korean",
+              let reading = record.focusCoverage.korean.readings.first?.value else {
+            return example.label
+        }
+        return "\(record.focusCoverage.korean.form) · \(reading)"
+    }
+}
+
+private struct HistoryNextLink: View {
+    let title: String
+    let detail: String
+
+    var body: some View {
+        HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
+            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                Text(title)
+                    .font(AppTypography.body.weight(.semibold))
+                    .foregroundStyle(AppColors.accentPrimary)
+                Text(detail)
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
+            Spacer(minLength: 0)
+            Image(systemName: "arrow.right")
+                .foregroundStyle(AppColors.accentPrimary)
+                .accessibilityHidden(true)
+        }
+        .padding(AppSpacing.spaceMd)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(AppColors.surfaceElevated)
+        .clipShape(RoundedRectangle(cornerRadius: AppRadius.surface))
+        .overlay {
+            RoundedRectangle(cornerRadius: AppRadius.surface)
+                .stroke(AppColors.separator, lineWidth: 1)
+        }
+        .contentShape(Rectangle())
     }
 }
 
@@ -847,15 +1296,24 @@ private struct MoreRootView: View {
                         }
                     }
 
-                    utilitySection("About") {
-                        utilityLink("Account", detail: "Local-only learner profile", systemImage: "person") {
+                    utilitySection("Your Library") {
+                        utilityLink("Your Progress", detail: "Learning and saved items on this device", systemImage: "person") {
                             AccountView(dependencies: dependencies)
                         }
+                    }
+
+                    utilitySection("About") {
                         utilityLink("About / Method", detail: "How Script Roots teaches characters", systemImage: "info.circle") {
                             AboutMethodView(corpusCount: dependencies.installedSharedCharacterCount)
                         }
-                        utilityLink("Sources / Licenses", detail: "Evidence and attribution", systemImage: "doc.text.magnifyingglass") {
+                        utilityLink("Sources & Licenses", detail: "Evidence, attribution, and licenses", systemImage: "doc.text.magnifyingglass") {
                             SourcesLicensesView(dependencies: dependencies)
+                        }
+                    }
+
+                    utilitySection("Support") {
+                        utilityLink("Send Feedback", detail: "Share thoughts about the museum experience", systemImage: "bubble.left.and.bubble.right") {
+                            FeedbackView()
                         }
                     }
                 }
@@ -925,40 +1383,115 @@ private struct MoreRootView: View {
 struct SourcesLicensesView: View {
     let dependencies: AppDependencies
 
+    /// Collapses repeated record-level provenance into a readable global inventory.
+    /// Per-character source IDs remain untouched in the corpus and Symbol detail sheets.
+    private var canonicalSources: [CorpusSource] {
+        var unique: [String: CorpusSource] = [:]
+        for source in dependencies.sharedCharacters.flatMap(\.sources) {
+            let key = canonicalSourceKey(for: source)
+            // Apple Speech is rendered in the fixed technical-attribution row below.
+            if key == "apple-speech" { continue }
+            if unique[key] == nil {
+                unique[key] = source
+            }
+        }
+        return unique.values.sorted { $0.label.localizedCaseInsensitiveCompare($1.label) == .orderedAscending }
+    }
+
     var body: some View {
         List {
-            Section("Technical attribution") {
+            Section {
+                Text("Script Roots uses historical references, language standards, system speech, and original educational artwork to explain character development clearly and responsibly.")
+                    .font(AppTypography.body)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
+
+            Section("Sources") {
                 VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                     Text("Apple Speech Synthesis")
                         .font(AppTypography.body.weight(.semibold))
                         .foregroundStyle(AppColors.textPrimary)
-                    Text("Pronunciation playback uses Apple's system speech-synthesis technology through AVSpeechSynthesizer. This describes how audio is produced; linguistic sources remain credited separately.")
+                    Text("Pronunciation playback uses Apple's system speech-synthesis technology. Linguistic sources remain credited with the relevant character content.")
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
                 }
                 .padding(.vertical, AppSpacing.spaceXs)
                 .listRowBackground(Color.clear)
+                ForEach(canonicalSources, id: \.id) { source in
+                    sourceRow(source)
+                }
             }
-            if dependencies.sharedCharacters.flatMap(\.sources).isEmpty {
-                Text("Source and license metadata is pending for the current draft corpus.")
+            if canonicalSources.isEmpty {
+                Text("Source and license information is not available for this content yet.")
                     .font(AppTypography.body)
                     .foregroundStyle(AppColors.textSecondary)
-            } else {
-                ForEach(dependencies.sharedCharacters.flatMap(\.sources), id: \.id) { source in
-                    VStack(alignment: .leading) {
-                        Text(source.label)
-                            .font(AppTypography.body.weight(.semibold))
-                            .foregroundStyle(AppColors.textPrimary)
-                        Text(source.citation)
-                            .font(AppTypography.caption)
-                            .foregroundStyle(AppColors.textSecondary)
-                    }
-                    .padding(.vertical, AppSpacing.spaceXs)
-                    .listRowBackground(Color.clear)
+            }
+
+            Section("Licensing") {
+                Text("Historical image reuse and font notices are retained with the bundled content provenance. Rights clearance is required before commercial distribution of copied reference assets.")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+                NavigationLink("Legal notices & licenses") {
+                    LegalNoticesView()
                 }
             }
         }
-        .navigationTitle("Sources / Licenses")
+        .navigationTitle("Sources & Licenses")
+        .scrollContentBackground(.hidden)
+        .background(AppColors.appBackground.ignoresSafeArea())
+        .tint(AppColors.accentPrimary)
+    }
+
+    /// Keeps source rows concise while preserving a direct reference link when one exists.
+    @ViewBuilder
+    private func sourceRow(_ source: CorpusSource) -> some View {
+        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+            Text(source.label)
+                .font(AppTypography.body.weight(.semibold))
+                .foregroundStyle(AppColors.textPrimary)
+            Text(source.citation)
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textSecondary)
+            if let urlString = source.url, let url = URL(string: urlString) {
+                Link("Open reference", destination: url)
+                    .font(AppTypography.caption)
+            }
+        }
+        .padding(.vertical, AppSpacing.spaceXs)
+        .listRowBackground(Color.clear)
+    }
+
+    /// Treats per-character ZDIC identifiers as one visible historical-image source.
+    private func canonicalSourceKey(for source: CorpusSource) -> String {
+        let identity = "\(source.id) \(source.label)".lowercased()
+        if identity.contains("zdic") || identity.contains("漢典") || identity.contains("汉典") {
+            return "zdic"
+        }
+        if identity.contains("apple") && identity.contains("speech") {
+            return "apple-speech"
+        }
+        return source.id.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+    }
+}
+
+/// Keeps exhaustive rights language separate from the readable source overview.
+private struct LegalNoticesView: View {
+    var body: some View {
+        List {
+            Section("Historical references") {
+                Text("Historical image selections are retained with their source and asset provenance. Copied ZDIC reference images require reuse permission or cleared replacements before commercial distribution.")
+            }
+            Section("Fonts") {
+                Text("Regular Script uses CNS11643 Kai. Modern Chinese, Japanese, and Korean forms use the bundled Adobe Source Han Serif locale faces. Refer to the bundled font notices for the applicable license terms.")
+            }
+            Section("Speech") {
+                Text("Pronunciation playback uses Apple's system speech-synthesis technology. No audio files are bundled by the app.")
+            }
+            Section("Third-party notices") {
+                Text("The full source URLs, attribution details, and license terms used by the current content package are maintained with the app's bundled provenance records.")
+            }
+        }
+        .navigationTitle("Legal Notices")
         .scrollContentBackground(.hidden)
         .background(AppColors.appBackground.ignoresSafeArea())
         .tint(AppColors.accentPrimary)

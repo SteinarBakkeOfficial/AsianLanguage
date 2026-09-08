@@ -4,6 +4,8 @@ import SwiftUI
 struct HomeView: View {
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
+    /// Tracks whether the single, optional interaction hint has been dismissed.
+    @AppStorage("hasSeenSymbolInteractionHint") private var hasSeenInteractionHint = false
 
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
@@ -34,7 +36,7 @@ struct HomeView: View {
                     }
 
                     if learnedCount > 0 {
-                        Text("\(learnedCount) symbols learned")
+                        Text(learnedCountLabel)
                             .font(AppTypography.metadata)
                             .foregroundStyle(AppColors.textSecondary)
                     }
@@ -68,7 +70,22 @@ struct HomeView: View {
                 .frame(maxWidth: .infinity, minHeight: 300, maxHeight: 320)
                 .padding(.bottom, AppSpacing.spaceSm)
             PrimaryActionButton(isReviewHero ? "Start Quick Review" : (isResuming ? "Continue \(record.coreSharedMeaning.capitalized)" : "Start with \(record.coreSharedMeaning.capitalized)")) {
+                hasSeenInteractionHint = true
                 dependencies.navigationState.openSymbol(record.id, intent: isReviewHero ? .review : (isResuming ? .resume : .start))
+            }
+            if !hasSeenInteractionHint {
+                Button {
+                    hasSeenInteractionHint = true
+                } label: {
+                    Text("Swipe, or tap the timeline, to follow the character through time.\nGot it")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: 300)
+                }
+                .frame(minHeight: 44)
+                .accessibilityLabel("Symbol journey hint")
+                .accessibilityHint("Dismisses this hint")
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -111,6 +128,10 @@ struct HomeView: View {
                         Text("\(learnedCount(in: collection)) of \(collection.sharedCharacterIDs.count) learned")
                             .font(AppTypography.metadata)
                             .foregroundStyle(AppColors.textSecondary)
+                        ProgressView(value: Double(learnedCount(in: collection)), total: Double(collection.sharedCharacterIDs.count))
+                            .tint(AppColors.learned)
+                            .accessibilityLabel("Collection progress")
+                            .accessibilityValue("\(learnedCount(in: collection)) of \(collection.sharedCharacterIDs.count) learned")
                         HStack {
                             Text("Continue exploring this collection")
                             .font(AppTypography.caption)
@@ -171,6 +192,11 @@ struct HomeView: View {
 
     private var learnedCount: Int {
         dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.progressStatus == .learned }.count
+    }
+
+    /// Uses correct singular/plural grammar for the compact Home summary.
+    private var learnedCountLabel: String {
+        "\(learnedCount) symbol\(learnedCount == 1 ? "" : "s") learned"
     }
 
     private func learnedCount(in collection: SharedCharacterCollection) -> Int {

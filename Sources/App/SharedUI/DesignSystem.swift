@@ -120,7 +120,7 @@ enum AppRadius {
 enum AppMotion {
     static let press: Double = 0.12
     static let standard: Double = 0.22
-    static let exhibit: Double = 0.64
+    static let exhibit: Double = 0.48
 }
 
 /// Full-width primary action with stable dimensions across loading and Dynamic Type.
@@ -451,6 +451,7 @@ struct AppSearchField: View {
     @Binding var text: String
     let prompt: String
     let onCancel: () -> Void
+    @FocusState private var isFocused: Bool
 
     var body: some View {
         HStack(spacing: AppSpacing.spaceXs) {
@@ -461,17 +462,24 @@ struct AppSearchField: View {
                 .font(AppTypography.body)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled()
+                .focused($isFocused)
+                .submitLabel(.search)
                 .layoutPriority(1)
-            if !text.isEmpty {
+            if isFocused && !text.isEmpty {
                 IconActionButton(systemName: "xmark.circle.fill", accessibilityLabel: "Clear search") {
                     text = ""
                 }
             }
-            Button("Cancel", action: onCancel)
+            if isFocused {
+                Button("Cancel") {
+                    isFocused = false
+                    onCancel()
+                }
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.accentPrimary)
                 .frame(minHeight: 44)
                 .fixedSize()
+            }
         }
         .padding(.leading, AppSpacing.spaceMd)
         .padding(.trailing, AppSpacing.spaceXs)

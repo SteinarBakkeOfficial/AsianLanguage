@@ -12,6 +12,7 @@ struct CharacterEvolutionView: View {
     @State private var displayedMuseumStageID: String
     @State private var outgoingMuseumStageID: String?
     @State private var exhibitCrossfadeProgress: Double = 1
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     init(
         record: SharedCharacterRecord,
@@ -111,7 +112,7 @@ struct CharacterEvolutionView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             // Horizontal swiping remains available without introducing a page-slide animation.
             .simultaneousGesture(journeySwipeGesture)
-            .animation(.easeInOut(duration: AppMotion.exhibit), value: journeyRoomID)
+            .animation(reduceMotion ? nil : .easeInOut(duration: AppMotion.exhibit), value: journeyRoomID)
 
             stageNavigator
         }
@@ -269,7 +270,7 @@ struct CharacterEvolutionView: View {
                         .padding(.horizontal, AppSpacing.spaceSm)
                         // Lift the caption slightly from the lower edge so it stays
                         // inside the square on the shortest device layout.
-                        .padding(.bottom, AppSpacing.spaceSm)
+                        .padding(.bottom, AppSpacing.spaceXs)
                 }
             }
         }
@@ -285,7 +286,7 @@ struct CharacterEvolutionView: View {
                       let currentIndex = allJourneyIDs.firstIndex(of: selectedStageID) else { return }
                 let nextIndex = currentIndex + (horizontal < 0 ? 1 : -1)
                 guard allJourneyIDs.indices.contains(nextIndex) else { return }
-                withAnimation(.easeInOut(duration: AppMotion.exhibit)) {
+                withAnimation(reduceMotion ? nil : .easeInOut(duration: AppMotion.exhibit)) {
                     selectedStageID = allJourneyIDs[nextIndex]
                 }
             }

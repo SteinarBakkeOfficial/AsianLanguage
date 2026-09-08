@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 /// Canonical Symbol Journey host shared by Home, Browse, Search, History, and review entry points.
 struct LessonView: View {
@@ -220,6 +221,8 @@ struct LessonView: View {
         userStateStore.updateLessonState(sharedCharacterID: route.sharedCharacterID) { state in
             state.markLearned()
         }
+        // A single restrained success cue acknowledges completion without gamifying the journey.
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
         guard let next = dependencies.nextSharedCharacter(after: route.sharedCharacterID) else {
             showingCorpusComplete = true
             return
@@ -374,7 +377,28 @@ private struct QuickReviewView: View {
                 )
             )
         }
-        return Array(result.prefix(3))
+        if let reading = record.focusCoverage.japanese.readings.first?.value {
+            result.append(
+                QuickReviewQuestion(
+                    id: "japanese-reading",
+                    question: "How is it read in Japanese?",
+                    prompt: record.coreCharacter,
+                    answer: reading
+                )
+            )
+        }
+        if let reading = record.focusCoverage.korean.readings.first?.value {
+            result.append(
+                QuickReviewQuestion(
+                    id: "korean-reading",
+                    question: "How is it read in Korean?",
+                    prompt: record.coreCharacter,
+                    answer: reading
+                )
+            )
+        }
+        // Keep the review short while using up to five recognition prompts when the data supports them.
+        return Array(result.prefix(5))
     }
 
     private var currentQuestion: QuickReviewQuestion {
@@ -446,6 +470,7 @@ private struct CharacterAboutSheet: View {
     @ObservedObject var userStateStore: LocalUserStateStore
     let onMarkLearned: () -> Void
     @Environment(\.dismiss) private var dismiss
+    @State private var isShowingShareSheet = false
 
     var body: some View {
         NavigationStack {
@@ -482,6 +507,11 @@ private struct CharacterAboutSheet: View {
                             state.setReviewLater(!isReviewLater)
                         }
                     }
+                    Button {
+                        isShowingShareSheet = true
+                    } label: {
+                        Label("Share Symbol", systemImage: "square.and.arrow.up")
+                    }
                 }
                 Section("Learning") {
                     Button("Mark as Learned", action: onMarkLearned)
@@ -496,6 +526,9 @@ private struct CharacterAboutSheet: View {
             }
         }
         .tint(AppColors.accentPrimary)
+        .sheet(isPresented: $isShowingShareSheet) {
+            ActivityShareSheet(items: [shareText])
+        }
     }
 
     private var isFavorite: Bool {
@@ -505,4 +538,28 @@ private struct CharacterAboutSheet: View {
     private var isReviewLater: Bool {
         userStateStore.state.lessonStates[record.id]?.isReviewLater == true
     }
+
+    /// A useful text-first share payload keeps sharing available without generating new image assets.
+    private var shareText: String {
+        let stages = record.history.stages.compactMap { stage in
+            stage.form.map { "\(stage.stage): \($0)" }
+        }
+        return ([
+            "Script Roots",
+            "\(record.coreCharacter) · \(record.coreSharedMeaning.capitalized)",
+            record.recognitionTakeaway,
+            stages.joined(separator: " → ")
+        ] as [String]).filter { !$0.isEmpty }.joined(separator: "\n")
+    }
+}
+
+/// Presents the system share sheet without coupling the lesson to online services.
+private struct ActivityShareSheet: UIViewControllerRepresentable {
+    let items: [Any]
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        UIActivityViewController(activityItems: items, applicationActivities: nil)
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }

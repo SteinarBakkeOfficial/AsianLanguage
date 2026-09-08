@@ -51,7 +51,7 @@ struct BrowseView: View {
                         }
 
                         browseSection("Library") {
-                            browseLink(title: "All Symbols", detail: "Open the complete V1 library", systemImage: "books.vertical") {
+                            browseLink(title: "All Symbols", detail: "Open the complete offline library", systemImage: "books.vertical") {
                                 AllSymbolsLibraryView(dependencies: dependencies)
                             }
                         }
@@ -173,7 +173,7 @@ struct BrowseView: View {
                 }
             )
             if position {
-                Text("Opens at Origin")
+                Text(resumeLabel(for: record))
                     .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textSecondary)
                     .padding(.leading, AppSpacing.spaceMd)
@@ -192,9 +192,27 @@ struct BrowseView: View {
     private func records(with status: LessonProgressStatus) -> [SharedCharacterRecord] {
         dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.progressStatus == status }
     }
+
+    /// Tells the learner where an unfinished Symbol will resume instead of always claiming Origin.
+    private func resumeLabel(for record: SharedCharacterRecord) -> String {
+        guard let state = userStateStore.state.lessonStates[record.id] else { return "Start at Origin" }
+        if state.progressStatus == .learned { return "Learned" }
+        guard let stageID = state.lastPosition?.stageID, !stageID.isEmpty else { return "Start at Origin" }
+        let name: String
+        switch stageID {
+        case "origin": name = "Origin"
+        case "oracleBone": name = "Oracle Bone"
+        case "bronze": name = "Bronze"
+        case "seal": name = "Small Seal"
+        case "clerical": name = "Clerical"
+        case "modern": name = "Modern"
+        default: name = "Modern language"
+        }
+        return name == "Origin" ? "Start at Origin" : "Continue at \(name)"
+    }
 }
 
-/// Complete read-only V1 library. Browse owns discovery; this is the deliberate all-symbol destination.
+/// Complete read-only offline library. Browse owns discovery; this is the deliberate all-symbol destination.
 struct AllSymbolsLibraryView: View {
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
@@ -214,7 +232,7 @@ struct AllSymbolsLibraryView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
-                AppSearchField(text: $query, prompt: "Search the V1 library", onCancel: { query = "" })
+                AppSearchField(text: $query, prompt: "Search all characters", onCancel: { query = "" })
                 Text("\(records.count) of \(dependencies.sharedCharacters.count) symbols")
                     .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textSecondary)

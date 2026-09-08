@@ -108,6 +108,93 @@ The complete 2026-09-04 final-polish brief is preserved in [`docs/design/symbol-
 
 The separate [Pronunciation Audio handoff](docs/architecture/pronunciation-audio-apple-avspeechsynthesizer-feedback.md) is approved for this pass: use an isolated iOS AVSpeechSynthesizer service, explicit draft speech text, and small speaker controls; no cloud TTS or bundled MP3 files. User and native-speaker verification is a later release-testing step, not an implementation gate.
 
+#### Testing08_09 follow-up notes — next implementation
+
+- Deferred: reduce the current exhibit transition modestly from `0.64s`; the new timing is much more visible than before but is slightly too slow.
+- Deferred: move in-square material/process captions down by approximately 1 mm while keeping them inside the exhibit square and unclipped.
+- Deferred: repair and verify full-row History navigation for all remaining script and modern-language entries. Oracle and Bronze are the currently known working rows.
+
+#### Testing09_09 follow-up notes — next implementation only
+
+- Deferred: repair History navigation so every historical stage row and all four modern-language branch rows open their own detail destination across the full row. Preserve the current History composition and use the smallest reliable hit-testing/navigation change.
+- Deferred: verify History scrolling against the safe areas; content must not sit beneath the status/navigation area or the fixed root tab bar on supported simulator/device sizes.
+- Deferred: correct the existing History detail and footer crop rectangles so bundled reference artwork does not expose clipped infographic labels or unrelated source-image text fragments.
+- Deferred: replace the Sources / Licenses record-level `flatMap` presentation with one canonical, deduplicated entry per reference. Keep per-character provenance IDs internally, but show the ZDIC historical-image source once and avoid repeated font/research/origin entries. Preserve the Apple Speech Synthesis attribution.
+- Deferred: remove source links and source-attribution content from About / Method. Keep About focused on the teaching method, Shared Character, offline behavior, and corpus scope; Sources / Licenses owns external references and licensing information.
+- Deferred: correct Home's learned-count grammar so singular and plural forms read naturally (for example, `1 symbol learned`).
+- Future feature, separate from surgical polish: add an offline Browse entry point for taking/importing a picture or scan of a present-day symbol, recognize it on-device, match it against the bundled dictionary/corpus, and open the existing Symbol route only for an exact match. Historical-glyph recognition, cloud processing, and automatic photo storage are out of scope unless separately approved.
+- These notes were held for discussion and were approved for the current implementation on 2026-09-08. New History artwork and monetization remain excluded.
+
+## ChatGPT final hand-off review — discussion record — 2026-09-08
+
+The source documents are [`ScriptRoots_History_Codex_Handoff.md`](Reference%20Pictures/Chatgpt/ScriptRoots_History_Codex_Handoff.md) and [`Script Roots — Final Product Polish, Launch & Monetization Codex Handoff.md`](Reference%20Pictures/Chatgpt/Script%20Roots%20%E2%80%94%20Final%20Product%20Polish%2C%20Launch%20%26%20Monetization%20Codex%20Handoff.md). This section records analysis and candidates for our next discussion. It is not approval to implement the complete hand-off.
+
+### What the hand-off says about History
+
+- History should explain why writing traditions changed at the system level; Symbol should remain focused on what changed in one character. Avoid duplicating stage-material explanations in every Symbol caption.
+- The historical model is Oracle Bone, Bronze, Small Seal, Clerical, Regular, then a Modern / A Living Tradition bridge into Traditional Chinese, Simplified Chinese, Japanese, and Korean. These are overlapping traditions and different relationships to a shared inheritance, not a simple primitive-to-advanced ladder or four equal splits.
+- The five ancient landing cards should use the supplied museum copy and careful framing: Oracle Bone as the earliest large surviving body of mature Chinese writing; Bronze as beginning before the principal Zhou period; Small Seal as Qin standardization of inherited forms; Clerical as a gradual Qin–Han transformation driven partly by practical writing; and Regular as an evolution over centuries that matured by Tang and remains foundational.
+- The landing introduction should use the supplied concise explanation of three thousand years of change, new tools, institutions, and communities, followed by the five stages and a clearly clickable living-tradition bridge.
+- The bridge and four modern articles should explain continuity, reform, language adaptation, readings, kana, shinjitai, Hanja, and Hangul distinctly. In particular, Traditional Chinese is not a dated divergence, Simplified Chinese has older roots as well as 20th-century standardization, Japanese did not diverge only after World War II, and Hangul must never be depicted as a graphical simplification of Hanja.
+- The proposed deep-page sequence is: native eyebrow/title/era/date; large separate artwork; native intro and short text cards; a “Look closely” area with 2–4 verified examples; a representative-form note; and a next-article action. The supplied page titles and section copy are the editorial source to review before implementation.
+- History examples may deep-link to the existing Symbol route only when the displayed historical form maps to a verified corpus record and stage. Korean examples use a separate Hanja-reading presentation without a morph arrow.
+- Body copy must remain native UI text for Dynamic Type, localization, VoiceOver, and accessibility. Artwork must not contain paragraphs, labels, or unverified glyphs. A compact per-article “Sources & historical notes” surface is preferable to repeating the global source inventory.
+
+### History feasibility and boundary found in the repository
+
+- The current runtime has the five landing rows and four modern branch rows, but the detail views remain minimal and explicitly unfinished. The modern bridge is not yet a full article, and the current page still uses crops from the single `History_V1.png` infographic.
+- The requested full article set is larger than a crop or hit-testing fix. It needs an agreed reusable article/content model, article data, verified corpus-example mapping, and nine complete destinations while preserving the existing root shell.
+- The supplied artwork direction calls for new, clean, text-free hero/card art. No such complete History asset set was found in the current bundle. Existing `History_V1.png` contains infographic text and is already the source of the reported crop fragments. New artwork, asset licensing, or generated imagery therefore requires a separate decision; it must not be fabricated or silently substituted.
+- Decision needed: whether the next implementation is a text-first History completion using the existing source-backed artwork where safe, or a larger History release slice that also waits for approved replacement artwork. The current surgical boundary supports the former more readily.
+
+### Normal-page and release candidates from the second hand-off
+
+These are candidates to rank together, not an instruction to implement every item:
+
+- Account / More: rename the user-facing destination to “Your Progress” or “Progress & Data”; remove “Testing Progress,” “V1,” “Installed corpus,” “local-only learner profile,” and “Account features deferred”; show learned/review/favorite counts, offline library count, and local-device data scope in ordinary user language. Do not imply sign-in or cloud sync.
+- Sources / About: keep the readable Sources page small and human-facing; show each actual research/font/art/audio source once; retain Apple Speech Synthesis attribution; move exhaustive URLs, licenses, notices, and rights details to a separate legal surface if needed. Remove source links and attribution inventory from About / Method, which should explain the teaching method, Shared Character model, representative forms, materials, and offline scope.
+- Data correctness: current analysis found approximately 968 flattened source entries, 258 distinct source IDs, and repeated ZDIC/font/research references across the 126 runtime records. The display should deduplicate by canonical source identity while retaining per-character provenance in the data layer. Rights review for copied ZDIC assets remains a release gate for commercial distribution.
+- Copy QA: fix Home’s `1 symbols learned` grammar and audit singular/plural, stage names, “Symbol” versus “Character,” capitalization, dates, truncation, long readings, and unfinished/internal wording. Do not blindly replace established terminology.
+- Search: the current short placeholder and explicit Cancel callback are already present. Verify that Cancel is shown/behaves as an active-search control, dismisses focus appropriately, and does not remain permanently visible when the field is unfocused. Keep character, meaning, and four-track reading search without raw metadata.
+- Browse/Home: the hand-off suggests latest-stage resume labels (`Start at Origin`, `Continue at Bronze`, `Learned`) and restrained collection progress lines. Existing local progress and Quick Review/resume work should be checked before changing anything; do not redesign accepted collection artwork or add dashboard widgets.
+- Completion/accessibility: preserve the restrained Learned state and Next Symbol flow; verify Dynamic Type, VoiceOver labels/order, 44-point targets, contrast, Reduce Motion, image descriptions, audio labels, selected-state semantics, and the special visual case for 一. These require macOS/Xcode or device verification for claims about visual fidelity.
+- Offline/release: core learning must continue if external links, ads, analytics, or StoreKit are unavailable. Testers should never be blocked by an unavailable ad or purchase service. The current app has no identified ads, StoreKit, or analytics implementation, so adding them is a separate dependency/credential/privacy-scope decision rather than a surgical cleanup.
+- Monetization: the hand-off prefers free core learning with no banners and, if monetization launches immediately, a one-time Remove Ads / Script Roots Pass with restore. Ads may occur only at calm completion boundaries, never mid-Symbol, History, Search, Settings, legal, or first meaningful session. This is not approved by the notes and should not be introduced without an explicit product decision and external-service readiness.
+- Optional growth/retention: Share Symbol, a one-time interaction hint, Quick Review expansion, review reminders, feedback, analytics, haptics, dark-mode polish, performance tuning, and App Store screenshot/review-prompt work are candidates. They are not prerequisites for a focused V1 test build unless separately agreed.
+- Explicit no-add boundary: no XP, streaks, lives, coins, gems, leaderboards, forced sign-in, subscription paywall, locked History, banner or mid-journey ads, fake premium gates, aggressive prompts, mascots, or unrelated redesign.
+
+### Proposed discussion order for the remaining V1 work
+
+1. Agree whether the target is a free V1 test build or a monetized launch build. Treat ads, StoreKit, analytics, privacy copy, and legal surfaces as a separate scope if monetization is selected.
+2. Lock the History slice: all five stage destinations and four modern destinations, the supplied editorial copy/guardrails, the native article layout, verified example links, safe-area/navigation behavior, and the artwork decision.
+3. Apply only the highest-confidence normal-page cleanup: Account language/presentation, About-versus-Sources separation, canonical Sources rendering, Home grammar, and any confirmed Search focus behavior.
+4. Run repository checks, then perform the required macOS/Xcode simulator and physical-device pass for navigation, safe areas, Dynamic Type, VoiceOver, Reduce Motion, fonts, artwork crops, and offline behavior. Windows checks alone cannot verify SwiftUI visual fidelity.
+5. Reassess P1/P2 items after tester feedback. Keep picture/scan recognition as a later Browse feature: on-device recognition of present-day symbols, exact matching to the bundled dictionary, existing Symbol routing, explicit no-match, no historical OCR/cloud upload/photo storage without a new decision.
+
+### Release-readiness facts to keep visible
+
+- The 126-record corpus, language content, historical interpretation, copied ZDIC asset reuse, and native-speaker language review still have outstanding review/rights work documented elsewhere in this roadmap. “Ready for user testing” and “cleared for commercial release” are different gates.
+- The approved patch remains surgical and reversible. It changes focused SwiftUI presentation/navigation and local polish only; it does not add History artwork, monetization, analytics, or content imports.
+
+### Approved final polish implementation — 2026-09-08
+
+- Implemented the agreed History article/content pass with all five stage destinations, the modern bridge, four modern-language destinations, native editorial copy, corpus-backed example links, next-page navigation, and full-row navigation hit areas.
+- Implemented the agreed normal-page cleanup: production-language Your Progress presentation, Settings cleanup, About / Method separation, canonical Sources & Licenses presentation, legal-notice surface, Home pluralization/progress treatment, Browse resume labels, and focused Search Cancel behavior.
+- Implemented the approved calm polish: five-prompt Quick Review when data supports it, one-time journey hint, restrained completion haptic, text-first system Share Symbol, user-initiated review reminders, feedback sharing, Reduce Motion handling, and accessibility labels/targets in the touched surfaces.
+- Explicitly excluded: new History artwork, ads, StoreKit, monetization, analytics, picture/scan recognition, cloud sync, and gamification.
+- The current bundle still uses the existing `History_V1.png` artwork and ZDIC-backed assets; artwork replacement and commercial rights clearance remain separate gates.
+
+### Post-testing disposition record — 2026-09-08
+
+This record preserves the remaining handoff suggestions without approving another implementation before the next testing round.
+
+- Permanently out of scope: XP, points, streaks, lives, coins, gems, badges, leaderboards, competitive ranking, and other game mechanics. Script Roots is a museum app; retention must remain calm, educational, and recognition-oriented.
+- Revisit after next testing: new History artwork and illustrated 2×2 modern-language cards, a compact article-specific History source surface, more complete legal/license/source presentation, a visual Share Symbol card, a fuller Quick Review session, richer feedback submission, notification-flow refinement, broader haptics, dark-mode polish, performance tuning, and a complete accessibility/offline/device QA pass.
+- Revisit after next testing: full copy and editorial review across readings, translations, dates, terminology, truncation, native-speaker approval, historical interpretation, and source-rights clearance.
+- Separate future feature: offline present-day picture/scan recognition with exact matching into the existing dictionary/Symbol route and an explicit no-match state. Historical-glyph recognition, cloud processing, image upload, and automatic photo storage remain out of scope unless separately approved.
+- Launch collateral not yet produced: App Store screenshots, listing copy, positioning, and a later review-prompt decision.
+- No item in this section is an approval to change the current V1 patch. Reassess all candidates together after tester feedback.
+
 ## V1 to VNext Carryover Register
 
 - Grammar and rule lessons

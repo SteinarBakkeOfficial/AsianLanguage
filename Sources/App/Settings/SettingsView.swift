@@ -1,4 +1,6 @@
 import SwiftUI
+import UIKit
+import UserNotifications
 
 /// Settings screen for local preferences and offline app information.
 struct SettingsView: View {
@@ -12,6 +14,7 @@ struct SettingsView: View {
     @State private var isShowingResetConfirmation = false
     /// Controls the separate all-preferences reset confirmation.
     @State private var isShowingPreferencesResetConfirmation = false
+    @AppStorage("reviewReminderEnabled") private var reviewReminderEnabled = false
 
     /// Creates Settings with observed access to local user state.
     init(dependencies: AppDependencies) {
@@ -21,7 +24,7 @@ struct SettingsView: View {
 
     var body: some View {
         Form {
-            Section("Display preferences") {
+            Section("Display") {
                 Picker("Appearance", selection: appearanceBinding) {
                     ForEach(AppearancePreference.allCases) { preference in
                         Text(preference.rawValue.capitalized).tag(preference)
@@ -32,20 +35,34 @@ struct SettingsView: View {
                     .foregroundStyle(AppColors.textSecondary)
             }
 
-            Section("Offline corpus") {
-                LabeledContent("Installed", value: dependencies.installedCorpusName)
-                LabeledContent("Shared Characters", value: "\(dependencies.installedSharedCharacterCount)")
-                NavigationLink("About / Method") {
-                    AboutMethodView(corpusCount: dependencies.installedSharedCharacterCount)
-                }
+            Section("Offline content") {
+                LabeledContent("Character library", value: "\(dependencies.installedSharedCharacterCount) available offline")
             }
 
-            Section("Reset") {
+            Section("Learning") {
+                Button(reviewReminderEnabled ? "Turn off review reminder" : "Remind me to review") {
+                    setReviewReminder(enabled: !reviewReminderEnabled)
+                }
+                Text(reviewReminderEnabled ? "A gentle daily reminder is scheduled on this device." : "Choose this when you want a gentle daily reminder to revisit saved characters.")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
+
+            Section("Data") {
                 Button("Reset learning progress", role: .destructive) {
                     isShowingResetConfirmation = true
                 }
                 Button("Reset all preferences", role: .destructive) {
                     isShowingPreferencesResetConfirmation = true
+                }
+            }
+
+            Section("About") {
+                NavigationLink("About / Method") {
+                    AboutMethodView(corpusCount: dependencies.installedSharedCharacterCount)
+                }
+                NavigationLink("Sources & Licenses") {
+                    SourcesLicensesView(dependencies: dependencies)
                 }
             }
         }
@@ -78,4 +95,73 @@ struct SettingsView: View {
             set: { userStateStore.setAppearancePreference($0) }
         )
     }
+
+    /// Requests permission only after an explicit user choice and never blocks the offline app.
+    private func setReviewReminder(enabled: Bool) {
+        let center = UNUserNotificationCenter.current()
+        guard enabled else {
+            reviewReminderEnabled = false
+            center.removePendingNotificationRequests(withIdentifiers: ["script-roots-review-reminder"])
+            return
+        }
+
+        center.requestAuthorization(options: [.alert, .sound]) { granted, _ in
+            DispatchQueue.main.async {
+                guard granted else {
+                    reviewReminderEnabled = false
+                    return
+                }
+                let content = UNMutableNotificationContent()
+                content.title = "Return to Script Roots"
+                content.body = "A few quiet minutes with your saved characters."
+                content.sound = .default
+                let trigger = UNCalendarNotificationTrigger(dateMatching: DateComponents(hour: 19), repeats: true)
+                let request = UNNotificationRequest(identifier: "script-roots-review-reminder", content: content, trigger: trigger)
+                center.add(request)
+                reviewReminderEnabled = true
+            }
+        }
+    }
+}
+
+/// Lightweight feedback composer that uses the system share sheet and stores nothing remotely.
+struct FeedbackView: View {
+    @State private var feedback = ""
+    @State private var isShowingShareSheet = false
+
+    var body: some View {
+        Form {
+            Section("Your thoughts") {
+                Text("Tell us what felt clear, confusing, or worth exploring next.")
+                    .font(AppTypography.body)
+                    .foregroundStyle(AppColors.textSecondary)
+                TextEditor(text: $feedback)
+                    .frame(minHeight: 180)
+            }
+            Section {
+                Button("Share Feedback") {
+                    isShowingShareSheet = true
+                }
+                .disabled(feedback.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+            }
+        }
+        .navigationTitle("Send Feedback")
+        .scrollContentBackground(.hidden)
+        .background(AppColors.appBackground.ignoresSafeArea())
+        .tint(AppColors.accentPrimary)
+        .sheet(isPresented: $isShowingShareSheet) {
+            FeedbackShareSheet(items: ["Script Roots feedback\n\n\(feedback)"])
+        }
+    }
+}
+
+/// Shares feedback through Mail, Messages, or another user-selected system destination.
+private struct FeedbackShareSheet: UIViewControllerRepresentable {
+    let items: [Any]
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        UIActivityViewController(activityItems: items, applicationActivities: nil)
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }

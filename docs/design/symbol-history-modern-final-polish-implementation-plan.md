@@ -4,6 +4,10 @@
 
 **Approved:** 2026-09-04
 
+## Superseding final V1 pass — 2026-09-08
+
+The user-approved final pass extends this plan for release testing. It includes the complete native-text History article/content slice, full-row History navigation, safe-area/crop corrections, Account/Settings/About/Sources/Home/Search/Browse polish, accessibility and Reduce Motion handling, restrained sharing/completion feedback, Quick Review expansion, user-initiated review reminders, and system feedback sharing. New History artwork, monetization, analytics, picture/scan recognition, cloud sync, and gamification remain excluded.
+
 ## Goal
 
 Make the Symbol Journey feel like one continuous historical exhibit, clarify modern language usage, add restrained pronunciation playback, and make History a navigable entry point to unfinished deeper detail pages without redesigning the app.
@@ -23,9 +27,16 @@ Make the Symbol Journey feel like one continuous historical exhibit, clarify mod
 9. Extend History after Regular Script with branching modern-language contexts for Traditional Chinese, Simplified Chinese, Japanese, and Korean. These are branches, not four additional sequential script stages.
 10. Make each existing historical script entry clickable: Oracle Bone, Bronze, Small Seal, Clerical, and Regular. Make each modern-language branch clickable as well. Each destination is a deeper detail page with source-backed detail where available, an explicit unfinished state where content is not yet complete, and a normal back button returning to History. Do not add a new root tab or separate comparison flow.
 
-### Explicitly deferred to the next implementation
+### Previously deferred History rework — now superseded
 
-The next implementation will rework the History page itself. That later work may revisit the composition, layout, information architecture, and presentation of the History overview. It is not part of this polish implementation. This pass only makes the existing History page fit correctly, adds the agreed modern branches, and provides their minimal navigable detail destinations.
+This paragraph recorded the former hold before the 2026-09-08 approval. The current pass now adds the supplied History editorial articles and reusable native-text article layout while preserving the existing shell and available artwork. Replacement History artwork remains excluded.
+
+### Deferred follow-ups from Testing08_09 — next implementation only
+
+- Transition timing: the current `0.64s` exhibit crossfade is much more visible and substantially better than the earlier timing, but now feels slightly too slow. Reduce it modestly in the next implementation after device comparison; do not change it during this hold.
+- Material captions: captions such as “Bone / shell · carved” are now visible inside the exhibit square, but sit roughly 1 mm too high. Move them slightly downward while keeping them inside the square and clear of the lower edge.
+- History navigation: Oracle and Bronze currently respond, but the remaining script rows and modern-language branch cards still require a full-row navigation fix. Verify every row/card by tapping anywhere on a supported simulator or device.
+- These are deferred notes only; no implementation is authorized by this section.
 
 ## Data and source boundaries
 
@@ -40,7 +51,7 @@ The next implementation will rework the History page itself. That later work may
 
 Likely touched areas are limited to the existing Symbol evolution/onboarding views, modern-language views and data, History view/navigation, the shared content model and validation path only if required for explicit speech/caption/detail data, the existing iOS shared/core service area for one pronunciation service, and the relevant focused tests. The approved reference asset may be converted into runtime assets during implementation.
 
-Do not change Home beyond the narrowly defined Testing07_09 active-symbol and layout corrections recorded below. Do not change Browse, More, Collections, unrelated navigation, the typography/color/spacing/card systems, the existing illustration set, or unrelated architecture. Do not hand-edit generated review/runtime artifacts.
+Keep Home, Browse, More, and Collections changes focused on the approved copy/state/accessibility polish only. Do not change unrelated navigation, the typography/color/spacing/card systems, or the existing illustration set. Do not hand-edit generated review/runtime artifacts.
 
 ## Implementation order
 

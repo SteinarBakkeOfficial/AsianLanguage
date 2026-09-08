@@ -4,6 +4,7 @@
 
 - AsianLanguage is an English-first, offline-first iPhone experience about Shared Chinese-character heritage.
 - Script Roots is the official product-facing name; AsianLanguage remains the internal development/project identifier.
+- Script Roots is a museum app, not a gamified learning service. XP, points, streaks, leaderboards, lives, coins, gems, badges, and similar reward mechanics are permanently outside the product direction.
 - Shared Character is the core content object.
 - The primary outcome is cross-language recognition, not fluency or grammar mastery.
 - The primary experience is the Symbol Journey: recognizable origin → historical Evolution Stages → Modern → Usage across selected target languages.

@@ -134,7 +134,7 @@ struct EditorialCollectionDetailView: View {
                         .foregroundStyle(AppColors.textSecondary)
                 }
                 if records.isEmpty {
-                    Text("No installed V1 symbols are currently assigned to this collection.")
+                    Text("No characters are currently assigned to this collection.")
                         .font(AppTypography.body)
                         .foregroundStyle(AppColors.textSecondary)
                 } else {

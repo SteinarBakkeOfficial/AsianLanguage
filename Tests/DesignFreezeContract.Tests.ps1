@@ -50,7 +50,9 @@ Assert-True $historyPage.Contains("HistoryReferenceCropView") "History must reus
 Assert-True (-not $historyPage.Contains('Image("History_V1")')) "History must not render the full reference screenshot as the page implementation."
 
 $about = Text "Sources/App/Settings/AboutMethodView.swift"
-Assert-True $about.Contains("Visit 漢典 / ZDIC") "About must retain the historical image source link."
+# The approved content-architecture decision keeps source inventory and external links in Sources.
+Assert-True (-not $about.Contains("ZDIC")) "About must not contain the global source inventory."
+Assert-True $about.Contains("Educational reconstruction") "About must explain the teaching method."
 Assert-True (-not $about.Contains("Modern forms and typography")) "About must remain a concise reference page rather than an implementation manual."
 
 $collectionsSource = Text "Sources/App/Collections/CollectionsView.swift"
