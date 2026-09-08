@@ -964,13 +964,29 @@ private struct HistoryLivingTraditionCard: View {
             }
             .buttonStyle(.plain)
 
+            NavigationLink {
+                HistoryModernBridgeView(dependencies: dependencies)
+            } label: {
+                HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
+                    VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                        Text("Modern writing traditions")
+                            .font(AppTypography.sectionHeading)
+                            .foregroundStyle(AppColors.textPrimary)
+                        Text("The shared historical tradition continues differently in each language environment.")
+                            .font(AppTypography.metadata)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+                    Spacer(minLength: 0)
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundStyle(AppColors.textTertiary)
+                }
+                .contentShape(Rectangle())
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .buttonStyle(.plain)
+
             VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
-                Text("Modern writing traditions")
-                    .font(AppTypography.sectionHeading)
-                    .foregroundStyle(AppColors.textPrimary)
-                Text("The shared historical tradition continues differently in each language environment.")
-                    .font(AppTypography.metadata)
-                    .foregroundStyle(AppColors.textSecondary)
 
                 ForEach(branches) { branch in
                     NavigationLink {
@@ -1568,16 +1584,12 @@ private struct HistoryArticleExampleRow: View {
     let dependencies: AppDependencies
 
     var body: some View {
-        if let record = dependencies.sharedCharacters.first(where: { $0.id == example.recordID }),
-           let form = displayForm(for: record) {
+        if let record = dependencies.sharedCharacters.first(where: { $0.id == example.recordID }) {
             NavigationLink {
                 LessonView(route: LessonRoute(sharedCharacterID: record.id, startingPosition: example.position), dependencies: dependencies)
             } label: {
                 HStack(spacing: AppSpacing.spaceSm) {
-                    Text(form)
-                        .font(CJKFontRole.museumRegular.font(size: 34))
-                        .foregroundStyle(AppColors.artifactInk)
-                        .frame(width: 54, height: 48)
+                    historicalThumbnail(for: record)
                     VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                         Text(displayLabel(for: record))
                             .font(AppTypography.body.weight(.semibold))
@@ -1597,6 +1609,37 @@ private struct HistoryArticleExampleRow: View {
             .buttonStyle(.plain)
             .accessibilityLabel("\(displayLabel(for: record)), open \(record.coreSharedMeaning) Symbol")
         }
+    }
+
+    /// Uses the text form when available and the bundled historical asset for source-backed glyphs.
+    @ViewBuilder
+    private func historicalThumbnail(for record: SharedCharacterRecord) -> some View {
+        if let form = displayForm(for: record) {
+            Text(form)
+                .font(CJKFontRole.museumRegular.font(size: 34))
+                .foregroundStyle(AppColors.artifactInk)
+                .frame(width: 54, height: 48)
+        } else if let stage = historicalStage(for: record), let metadata = stage.assetMetadata {
+            HistoricalAssetView(metadata: metadata, displayHeight: 48)
+                .frame(width: 54, height: 48)
+                .clipped()
+        } else if let stage = historicalStage(for: record), let assetRef = stage.assetRef {
+            HistoricalAssetView(assetRef: assetRef, displayHeight: 48)
+                .frame(width: 54, height: 48)
+                .clipped()
+        } else {
+            Image(systemName: "rectangle.dashed")
+                .foregroundStyle(AppColors.textTertiary)
+                .frame(width: 54, height: 48)
+                .accessibilityLabel("Historical visual unavailable")
+        }
+    }
+
+    /// Resolves the exact historical stage represented by this History row.
+    private func historicalStage(for record: SharedCharacterRecord) -> HistoricalStage? {
+        guard example.position.section == .evolution,
+              let stageID = example.position.stageID else { return nil }
+        return record.history.stages.first(where: { $0.stage == stageID })
     }
 
     private func displayForm(for record: SharedCharacterRecord) -> String? {

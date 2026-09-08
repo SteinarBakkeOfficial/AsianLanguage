@@ -232,6 +232,13 @@ The preceding Testing10_09 section records the pre-approval discussion. The foll
 
 Windows layout, contract, corpus, and release-readiness checks pass. SwiftUI compilation, simulator screenshots, and device interaction still require macOS/Xcode verification.
 
+### History follow-up — 2026-09-09
+
+- Fixed the History article “Look closely” rows for Oracle Bone, Bronze, Small Seal, and Clerical. These stages use source-backed historical assets rather than Unicode `form` text, so the rows now resolve their existing `assetMetadata` / `assetRef` before showing the explicit unavailable state. No modern-character fallback is used.
+- Made the “Modern writing traditions” heading and introduction a full navigation target to the existing modern-traditions bridge page. The four individual language rows remain separate destinations.
+- This was a surgical navigation/rendering correction only; Symbol copy, History copy, artwork crops, sources, and unrelated screens were not changed.
+- Windows contract and release-readiness checks pass. SwiftUI compilation, simulator screenshots, and device interaction still require macOS/Xcode verification.
+
 ## V1 to VNext Carryover Register
 
 - Grammar and rule lessons

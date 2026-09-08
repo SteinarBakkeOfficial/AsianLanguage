@@ -353,3 +353,10 @@ The preceding Testing10_09 section records the pre-approval discussion. The foll
 - The supplied History artwork placement board is bundled and cropped into the five ancient heroes, five-style calligraphy, four modern-language cards, and Four Treasures. Board captions remain excluded from runtime crops; all app labels stay native SwiftUI text. Symbol copy, Feedback behavior, monetization, and picture/scan recognition remain unchanged/deferred.
 
 Windows layout, contract, corpus, and release-readiness checks pass. SwiftUI compilation, simulator screenshots, and device interaction still require macOS/Xcode verification.
+
+### History follow-up — 2026-09-09
+
+- The History article “Look closely” rows now render the bundled/source-backed historical asset for Oracle Bone, Bronze, Small Seal, and Clerical when the stage has no Unicode `form` value. Existing Regular/modern text forms remain unchanged, and no modern-character fallback is introduced.
+- The “Modern writing traditions” heading and introductory text now open the existing modern-traditions bridge page. The four language rows remain their own direct destinations.
+- This follow-up is intentionally limited to the two observed History rendering/navigation defects; no Symbol content, artwork crop, source architecture, or unrelated page behavior was changed.
+- Windows checks pass. Native SwiftUI compilation, simulator screenshots, and device interaction remain macOS/Xcode verification work.
