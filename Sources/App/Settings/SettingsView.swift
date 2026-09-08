@@ -1,5 +1,4 @@
 import SwiftUI
-import UIKit
 import UserNotifications
 
 /// Settings screen for local preferences and offline app information.
@@ -16,7 +15,6 @@ struct SettingsView: View {
     @State private var isShowingPreferencesResetConfirmation = false
     @AppStorage("reviewReminderEnabled") private var reviewReminderEnabled = false
     @Environment(\.scenePhase) private var scenePhase
-    @State private var reminderAuthorization: UNAuthorizationStatus = .notDetermined
 
     /// Creates Settings with observed access to local user state.
     init(dependencies: AppDependencies) {
@@ -44,18 +42,6 @@ struct SettingsView: View {
             Section("Learning") {
                 Button(reviewReminderEnabled ? "Turn off review reminder" : "Remind me to review") {
                     setReviewReminder(enabled: !reviewReminderEnabled)
-                }
-                Text(reviewReminderEnabled ? "A gentle daily reminder is scheduled on this device." : "Choose this when you want a gentle daily reminder to revisit saved characters.")
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textSecondary)
-                if reminderAuthorization == .denied {
-                    Text("Notifications are disabled for Script Roots in iPhone Settings.")
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
-                    Button("Open Notification Settings") {
-                        guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
-                        UIApplication.shared.open(url)
-                    }
                 }
             }
 
@@ -154,7 +140,6 @@ struct SettingsView: View {
             center.getPendingNotificationRequests { requests in
                 let hasPendingReminder = requests.contains { $0.identifier == "script-roots-review-reminder" }
                 DispatchQueue.main.async {
-                    reminderAuthorization = settings.authorizationStatus
                     if settings.authorizationStatus == .denied || !hasPendingReminder {
                         reviewReminderEnabled = false
                     }

@@ -306,7 +306,7 @@ private struct HistoryRootView: View {
             dynasty: "Shang Dynasty",
             material: "Carved on animal bones and turtle shells",
             explanation: "At the Shang court, writing recorded divination, names, dates, offerings, and events. Compact marks had to remain legible on hard surfaces, yet the system was already capable of expressing language through sound and compound principles.",
-            artworkRect: CGRect(x: 0.004, y: 0.068, width: 0.160, height: 0.294),
+            artworkRect: CGRect(x: 0.287, y: 0.160, width: 0.318, height: 0.150),
             color: AppColors.accentPrimary
         ),
         HistoryOverviewStage(
@@ -316,7 +316,7 @@ private struct HistoryRootView: View {
             dynasty: "Zhou Dynasty",
             material: "Cast or engraved on bronze vessels",
             explanation: "Bronze inscriptions recorded ancestors, gifts, appointments, victories, and ritual events. Longer texts and ceremonial display encouraged broad, balanced forms, while regional variants continued alongside one another.",
-            artworkRect: CGRect(x: 0.168, y: 0.068, width: 0.161, height: 0.294),
+            artworkRect: CGRect(x: 0.287, y: 0.323, width: 0.318, height: 0.150),
             color: Color(red: 0.63, green: 0.43, blue: 0.25)
         ),
         HistoryOverviewStage(
@@ -326,7 +326,7 @@ private struct HistoryRootView: View {
             dynasty: "Qin Dynasty",
             material: "Written with brush on bamboo slips and silk",
             explanation: "The Qin state standardized inherited writing across a newly unified empire. Small Seal forms became taller, more balanced, and more consistent without replacing an undeveloped system with a new invention.",
-            artworkRect: CGRect(x: 0.332, y: 0.068, width: 0.164, height: 0.294),
+            artworkRect: CGRect(x: 0.287, y: 0.486, width: 0.318, height: 0.145),
             color: Color(red: 0.76, green: 0.56, blue: 0.28)
         ),
         HistoryOverviewStage(
@@ -336,7 +336,7 @@ private struct HistoryRootView: View {
             dynasty: "Han Dynasty",
             material: "Written quickly with brush on bamboo, wood, and paper",
             explanation: "As administration expanded, a practical hand developed for writing large quantities of information. Curves were reorganized into straighter, broader strokes, making the modern structural skeleton easier to recognize.",
-            artworkRect: CGRect(x: 0.500, y: 0.068, width: 0.161, height: 0.294),
+            artworkRect: CGRect(x: 0.287, y: 0.646, width: 0.318, height: 0.130),
             color: AppColors.learned
         ),
         HistoryOverviewStage(
@@ -346,7 +346,7 @@ private struct HistoryRootView: View {
             dynasty: "Wei–Jin through Tang; continuing today",
             material: "Brush-written, carved, printed, and digitized",
             explanation: "Regular Script emerged over centuries from Clerical Script. By the Tang dynasty, balanced stroke conventions formed an influential model for education, inscriptions, copying, printing, and modern type.",
-            artworkRect: CGRect(x: 0.663, y: 0.068, width: 0.164, height: 0.294),
+            artworkRect: CGRect(x: 0.287, y: 0.784, width: 0.318, height: 0.105),
             color: AppColors.accentPrimary
         )
     ]
@@ -384,11 +384,26 @@ private struct HistoryOverviewStage: Identifiable {
     /// Recreates a navigable stage destination without coupling article layout to the landing view.
     static func destination(for id: String) -> HistoryOverviewStage? {
         switch id {
-        case "oracleBone": return HistoryOverviewStage(id: id, title: "Oracle Bone", date: "c. 1200–1046 BCE", dynasty: "Shang Dynasty", material: "Carved on animal bones and turtle shells", explanation: "At the Shang court, writing recorded divination, names, dates, offerings, and events.", artworkRect: CGRect(x: 0.004, y: 0.068, width: 0.160, height: 0.294), color: AppColors.accentPrimary)
-        case "bronze": return HistoryOverviewStage(id: id, title: "Bronze", date: "c. 1046–256 BCE", dynasty: "Zhou Dynasty", material: "Cast or engraved on bronze vessels", explanation: "Bronze inscriptions recorded ancestors, gifts, appointments, victories, and ritual events.", artworkRect: CGRect(x: 0.168, y: 0.068, width: 0.161, height: 0.294), color: Color(red: 0.63, green: 0.43, blue: 0.25))
-        case "seal": return HistoryOverviewStage(id: id, title: "Small Seal", date: "c. 221–206 BCE", dynasty: "Qin Dynasty", material: "Written with brush on bamboo slips and silk", explanation: "The Qin state standardized inherited writing across a newly unified empire.", artworkRect: CGRect(x: 0.332, y: 0.068, width: 0.164, height: 0.294), color: Color(red: 0.76, green: 0.56, blue: 0.28))
-        case "clerical": return HistoryOverviewStage(id: id, title: "Clerical", date: "c. 206 BCE–220 CE", dynasty: "Han Dynasty", material: "Written quickly with brush on bamboo, wood, and paper", explanation: "A practical hand developed for writing large quantities of information.", artworkRect: CGRect(x: 0.500, y: 0.068, width: 0.161, height: 0.294), color: AppColors.learned)
-        case "regular": return HistoryOverviewStage(id: id, title: "Regular", date: "Emerges c. 3rd century CE · mature by Tang", dynasty: "Wei–Jin through Tang; continuing today", material: "Brush-written, carved, printed, and digitized", explanation: "Regular Script emerged over centuries from Clerical Script and remains foundational.", artworkRect: CGRect(x: 0.663, y: 0.068, width: 0.164, height: 0.294), color: AppColors.accentPrimary)
+        case "oracleBone": return HistoryOverviewStage(id: id, title: "Oracle Bone", date: "c. 1200–1046 BCE", dynasty: "Shang Dynasty", material: "Carved on animal bones and turtle shells", explanation: "At the Shang court, writing recorded divination, names, dates, offerings, and events.", artworkRect: CGRect(x: 0.287, y: 0.160, width: 0.318, height: 0.150), color: AppColors.accentPrimary)
+        case "bronze": return HistoryOverviewStage(id: id, title: "Bronze", date: "c. 1046–256 BCE", dynasty: "Zhou Dynasty", material: "Cast or engraved on bronze vessels", explanation: "Bronze inscriptions recorded ancestors, gifts, appointments, victories, and ritual events.", artworkRect: CGRect(x: 0.287, y: 0.323, width: 0.318, height: 0.150), color: Color(red: 0.63, green: 0.43, blue: 0.25))
+        case "seal": return HistoryOverviewStage(id: id, title: "Small Seal", date: "c. 221–206 BCE", dynasty: "Qin Dynasty", material: "Written with brush on bamboo slips and silk", explanation: "The Qin state standardized inherited writing across a newly unified empire.", artworkRect: CGRect(x: 0.287, y: 0.486, width: 0.318, height: 0.145), color: Color(red: 0.76, green: 0.56, blue: 0.28))
+        case "clerical": return HistoryOverviewStage(id: id, title: "Clerical", date: "c. 206 BCE–220 CE", dynasty: "Han Dynasty", material: "Written quickly with brush on bamboo, wood, and paper", explanation: "A practical hand developed for writing large quantities of information.", artworkRect: CGRect(x: 0.287, y: 0.646, width: 0.318, height: 0.130), color: AppColors.learned)
+        case "regular": return HistoryOverviewStage(id: id, title: "Regular", date: "Emerges c. 3rd century CE · mature by Tang", dynasty: "Wei–Jin through Tang; continuing today", material: "Brush-written, carved, printed, and digitized", explanation: "Regular Script emerged over centuries from Clerical Script and remains foundational.", artworkRect: CGRect(x: 0.287, y: 0.784, width: 0.318, height: 0.105), color: AppColors.accentPrimary)
+        default: return nil
+        }
+    }
+}
+
+/// Keeps the supplied artwork board scoped to individual History pages, never the overview timeline.
+private enum HistoryArtworkSet {
+    /// Crops each historical panel inside the visible white dividers of the supplied artwork board.
+    static func stageRect(for id: String) -> CGRect? {
+        switch id {
+        case "oracleBone": return CGRect(x: 0.004, y: 0.068, width: 0.158, height: 0.294)
+        case "bronze": return CGRect(x: 0.166, y: 0.068, width: 0.165, height: 0.294)
+        case "seal": return CGRect(x: 0.335, y: 0.068, width: 0.163, height: 0.294)
+        case "clerical": return CGRect(x: 0.501, y: 0.068, width: 0.160, height: 0.294)
+        case "regular": return CGRect(x: 0.665, y: 0.068, width: 0.166, height: 0.294)
         default: return nil
         }
     }
@@ -781,7 +796,7 @@ private struct HistoryOverviewHeader: View {
             HistoryReferenceCropView(
                 // The supplied reference is portrait; stop above the timeline card so the header never
                 // picks up source copy or the first row's explanation panel.
-                normalizedRect: CGRect(x: 0.60, y: 0.0, width: 0.40, height: 0.130),
+                normalizedRect: CGRect(x: 0.60, y: 0.0, width: 0.40, height: 0.145),
                 accessibilityLabel: "Ink-wash landscape with mountains and a pavilion"
             )
             .frame(width: 112, height: 96)
@@ -891,7 +906,6 @@ private struct HistoryStageArtwork: View {
     var body: some View {
         HistoryReferenceCropView(
             normalizedRect: stage.artworkRect,
-            imageName: "History/History_Artwork_Set",
             accessibilityLabel: "\(stage.title) material and representative character artwork"
         )
         .background(AppColors.artifactField)
@@ -975,8 +989,8 @@ private struct HistoryLivingTraditionCard: View {
             }
 
             HistoryReferenceCropView(
-                // Crop the comparison glyphs, not the labels and card text beneath them.
-                normalizedRect: CGRect(x: 0.50, y: 0.914, width: 0.46, height: 0.045),
+                // Crop only the comparison glyphs; the source labels below them stay out of the overview.
+                normalizedRect: CGRect(x: 0.475, y: 0.914, width: 0.485, height: 0.050),
                 accessibilityLabel: "Oracle Bone, Bronze, Small Seal, Clerical, and Regular Script comparison"
             )
             .frame(maxWidth: .infinity, minHeight: 58, maxHeight: 70)
@@ -1009,7 +1023,7 @@ private struct HistoryScriptDetailView: View {
         HistoryArticlePage(
             article: .article(for: stage.id),
             dependencies: dependencies,
-            artworkRect: stage.artworkRect,
+            artworkRect: HistoryArtworkSet.stageRect(for: stage.id),
             artworkImageName: "History/History_Artwork_Set"
         ) {
             nextStageDestination

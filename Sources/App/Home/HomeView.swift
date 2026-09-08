@@ -192,6 +192,9 @@ struct HomeView: View {
 struct HeroLineagePreview: View {
     let record: SharedCharacterRecord
 
+    /// Historical glyph PNGs are transparent black artwork; keep their small museum tiles on paper in Dark mode.
+    private let historicalPreviewPaper = Color(red: 239 / 255, green: 233 / 255, blue: 225 / 255)
+
     /// Prefer the real origin and earliest available historical asset; never synthesize a visual stage.
     private var previewItems: [HeroLineageItem] {
         var items: [HeroLineageItem] = []
@@ -220,7 +223,7 @@ struct HeroLineagePreview: View {
                             .frame(width: 112, height: 96)
                             .clipped()
                             .padding(.horizontal, AppSpacing.spaceSm)
-                            .background(AppColors.artifactField)
+                            .background(historicalPreviewPaper)
                             .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
                             .accessibilityLabel("\(item.id) lineage visual for \(record.coreSharedMeaning)")
                     } else if let assetRef = item.assetRef {
@@ -228,7 +231,7 @@ struct HeroLineagePreview: View {
                             .frame(width: 112, height: 96)
                             .clipped()
                             .padding(.horizontal, AppSpacing.spaceSm)
-                            .background(AppColors.artifactField)
+                            .background(historicalPreviewPaper)
                             .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
                             .accessibilityLabel("\(item.id) lineage visual for \(record.coreSharedMeaning)")
                     } else if let form = item.form {
