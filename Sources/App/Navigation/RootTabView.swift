@@ -306,7 +306,7 @@ private struct HistoryRootView: View {
             dynasty: "Shang Dynasty",
             material: "Carved on animal bones and turtle shells",
             explanation: "At the Shang court, writing recorded divination, names, dates, offerings, and events. Compact marks had to remain legible on hard surfaces, yet the system was already capable of expressing language through sound and compound principles.",
-            artworkRect: CGRect(x: 0.287, y: 0.160, width: 0.318, height: 0.150),
+            artworkRect: CGRect(x: 0.282, y: 0.165, width: 0.323, height: 0.150),
             color: AppColors.accentPrimary
         ),
         HistoryOverviewStage(
@@ -316,7 +316,7 @@ private struct HistoryRootView: View {
             dynasty: "Zhou Dynasty",
             material: "Cast or engraved on bronze vessels",
             explanation: "Bronze inscriptions recorded ancestors, gifts, appointments, victories, and ritual events. Longer texts and ceremonial display encouraged broad, balanced forms, while regional variants continued alongside one another.",
-            artworkRect: CGRect(x: 0.287, y: 0.323, width: 0.318, height: 0.150),
+            artworkRect: CGRect(x: 0.282, y: 0.331, width: 0.323, height: 0.135),
             color: Color(red: 0.63, green: 0.43, blue: 0.25)
         ),
         HistoryOverviewStage(
@@ -326,7 +326,7 @@ private struct HistoryRootView: View {
             dynasty: "Qin Dynasty",
             material: "Written with brush on bamboo slips and silk",
             explanation: "The Qin state standardized inherited writing across a newly unified empire. Small Seal forms became taller, more balanced, and more consistent without replacing an undeveloped system with a new invention.",
-            artworkRect: CGRect(x: 0.287, y: 0.486, width: 0.318, height: 0.145),
+            artworkRect: CGRect(x: 0.282, y: 0.492, width: 0.323, height: 0.136),
             color: Color(red: 0.76, green: 0.56, blue: 0.28)
         ),
         HistoryOverviewStage(
@@ -336,7 +336,7 @@ private struct HistoryRootView: View {
             dynasty: "Han Dynasty",
             material: "Written quickly with brush on bamboo, wood, and paper",
             explanation: "As administration expanded, a practical hand developed for writing large quantities of information. Curves were reorganized into straighter, broader strokes, making the modern structural skeleton easier to recognize.",
-            artworkRect: CGRect(x: 0.287, y: 0.646, width: 0.318, height: 0.130),
+            artworkRect: CGRect(x: 0.282, y: 0.645, width: 0.323, height: 0.126),
             color: AppColors.learned
         ),
         HistoryOverviewStage(
@@ -346,7 +346,7 @@ private struct HistoryRootView: View {
             dynasty: "Wei–Jin through Tang; continuing today",
             material: "Brush-written, carved, printed, and digitized",
             explanation: "Regular Script emerged over centuries from Clerical Script. By the Tang dynasty, balanced stroke conventions formed an influential model for education, inscriptions, copying, printing, and modern type.",
-            artworkRect: CGRect(x: 0.287, y: 0.784, width: 0.318, height: 0.105),
+            artworkRect: CGRect(x: 0.282, y: 0.781, width: 0.323, height: 0.115),
             color: AppColors.accentPrimary
         )
     ]
@@ -384,11 +384,11 @@ private struct HistoryOverviewStage: Identifiable {
     /// Recreates a navigable stage destination without coupling article layout to the landing view.
     static func destination(for id: String) -> HistoryOverviewStage? {
         switch id {
-        case "oracleBone": return HistoryOverviewStage(id: id, title: "Oracle Bone", date: "c. 1200–1046 BCE", dynasty: "Shang Dynasty", material: "Carved on animal bones and turtle shells", explanation: "At the Shang court, writing recorded divination, names, dates, offerings, and events.", artworkRect: CGRect(x: 0.287, y: 0.160, width: 0.318, height: 0.150), color: AppColors.accentPrimary)
-        case "bronze": return HistoryOverviewStage(id: id, title: "Bronze", date: "c. 1046–256 BCE", dynasty: "Zhou Dynasty", material: "Cast or engraved on bronze vessels", explanation: "Bronze inscriptions recorded ancestors, gifts, appointments, victories, and ritual events.", artworkRect: CGRect(x: 0.287, y: 0.323, width: 0.318, height: 0.150), color: Color(red: 0.63, green: 0.43, blue: 0.25))
-        case "seal": return HistoryOverviewStage(id: id, title: "Small Seal", date: "c. 221–206 BCE", dynasty: "Qin Dynasty", material: "Written with brush on bamboo slips and silk", explanation: "The Qin state standardized inherited writing across a newly unified empire.", artworkRect: CGRect(x: 0.287, y: 0.486, width: 0.318, height: 0.145), color: Color(red: 0.76, green: 0.56, blue: 0.28))
-        case "clerical": return HistoryOverviewStage(id: id, title: "Clerical", date: "c. 206 BCE–220 CE", dynasty: "Han Dynasty", material: "Written quickly with brush on bamboo, wood, and paper", explanation: "A practical hand developed for writing large quantities of information.", artworkRect: CGRect(x: 0.287, y: 0.646, width: 0.318, height: 0.130), color: AppColors.learned)
-        case "regular": return HistoryOverviewStage(id: id, title: "Regular", date: "Emerges c. 3rd century CE · mature by Tang", dynasty: "Wei–Jin through Tang; continuing today", material: "Brush-written, carved, printed, and digitized", explanation: "Regular Script emerged over centuries from Clerical Script and remains foundational.", artworkRect: CGRect(x: 0.287, y: 0.784, width: 0.318, height: 0.105), color: AppColors.accentPrimary)
+        case "oracleBone": return HistoryOverviewStage(id: id, title: "Oracle Bone", date: "c. 1200–1046 BCE", dynasty: "Shang Dynasty", material: "Carved on animal bones and turtle shells", explanation: "At the Shang court, writing recorded divination, names, dates, offerings, and events.", artworkRect: CGRect(x: 0.282, y: 0.165, width: 0.323, height: 0.150), color: AppColors.accentPrimary)
+        case "bronze": return HistoryOverviewStage(id: id, title: "Bronze", date: "c. 1046–256 BCE", dynasty: "Zhou Dynasty", material: "Cast or engraved on bronze vessels", explanation: "Bronze inscriptions recorded ancestors, gifts, appointments, victories, and ritual events.", artworkRect: CGRect(x: 0.282, y: 0.331, width: 0.323, height: 0.135), color: Color(red: 0.63, green: 0.43, blue: 0.25))
+        case "seal": return HistoryOverviewStage(id: id, title: "Small Seal", date: "c. 221–206 BCE", dynasty: "Qin Dynasty", material: "Written with brush on bamboo slips and silk", explanation: "The Qin state standardized inherited writing across a newly unified empire.", artworkRect: CGRect(x: 0.282, y: 0.492, width: 0.323, height: 0.136), color: Color(red: 0.76, green: 0.56, blue: 0.28))
+        case "clerical": return HistoryOverviewStage(id: id, title: "Clerical", date: "c. 206 BCE–220 CE", dynasty: "Han Dynasty", material: "Written quickly with brush on bamboo, wood, and paper", explanation: "A practical hand developed for writing large quantities of information.", artworkRect: CGRect(x: 0.282, y: 0.645, width: 0.323, height: 0.126), color: AppColors.learned)
+        case "regular": return HistoryOverviewStage(id: id, title: "Regular", date: "Emerges c. 3rd century CE · mature by Tang", dynasty: "Wei–Jin through Tang; continuing today", material: "Brush-written, carved, printed, and digitized", explanation: "Regular Script emerged over centuries from Clerical Script and remains foundational.", artworkRect: CGRect(x: 0.282, y: 0.781, width: 0.323, height: 0.115), color: AppColors.accentPrimary)
         default: return nil
         }
     }
@@ -1639,28 +1639,14 @@ private struct HistoryReferenceCropView: View {
 
     var body: some View {
         GeometryReader { proxy in
-            if let image = referenceImage {
-                // Fit the complete reference crop so the material scene is never trimmed at the edges.
-                let scale = min(
-                    proxy.size.width / (image.size.width * normalizedRect.width),
-                    proxy.size.height / (image.size.height * normalizedRect.height)
-                )
-                let cropWidth = image.size.width * normalizedRect.width * scale
-                let cropHeight = image.size.height * normalizedRect.height * scale
-
-                ZStack(alignment: .topLeading) {
-                    Image(uiImage: image)
-                        .resizable()
-                        .frame(width: image.size.width * scale, height: image.size.height * scale)
-                        .offset(
-                            x: (proxy.size.width - cropWidth) / 2
-                                - normalizedRect.minX * image.size.width * scale,
-                            y: (proxy.size.height - cropHeight) / 2
-                                - normalizedRect.minY * image.size.height * scale
-                        )
-                }
-                .frame(width: proxy.size.width, height: proxy.size.height, alignment: .topLeading)
-                .accessibilityLabel(accessibilityLabel)
+            if let image = referenceImage, let croppedImage = croppedImage(from: image) {
+                // Crop the source pixels first so a narrow panel can never reveal neighboring artwork
+                // when it is fitted into a wider page frame.
+                Image(uiImage: croppedImage)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: proxy.size.width, height: proxy.size.height)
+                    .accessibilityLabel(accessibilityLabel)
             } else {
                 AppColors.artifactField
                     .accessibilityLabel("Reference artwork unavailable")
@@ -1675,6 +1661,21 @@ private struct HistoryReferenceCropView: View {
             return nil
         }
         return UIImage(contentsOfFile: url.path)
+    }
+
+    /// Extracts only the requested normalized panel from the bundled reference image.
+    private func croppedImage(from image: UIImage) -> UIImage? {
+        guard let source = image.cgImage else { return nil }
+        let sourceSize = CGSize(width: source.width, height: source.height)
+        let requestedRect = CGRect(
+            x: normalizedRect.minX * sourceSize.width,
+            y: normalizedRect.minY * sourceSize.height,
+            width: normalizedRect.width * sourceSize.width,
+            height: normalizedRect.height * sourceSize.height
+        ).integral.intersection(CGRect(origin: .zero, size: sourceSize))
+        guard requestedRect.width > 0, requestedRect.height > 0,
+              let croppedSource = source.cropping(to: requestedRect) else { return nil }
+        return UIImage(cgImage: croppedSource, scale: image.scale, orientation: image.imageOrientation)
     }
 }
 
