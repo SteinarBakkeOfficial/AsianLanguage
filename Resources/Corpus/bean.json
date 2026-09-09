@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "豆",
   "coreSharedMeaning": "bean",
-  "recognitionTakeaway": "豆 connects the idea of bean to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 豆 preserves the stacked vessel structure as a top lid, central container, narrow support, and bottom strokes even though the everyday meaning later shifted to “bean.”",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+8C46",
   "simplifiedForm": "豆",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A lidded pedestal vessel—the object depicted by the old pictograph, rather than a modern bean.",
+    "Oracle clearly shows a bowl or vessel resting on a narrow stand and broad foot.",
+    "Regular 豆 preserves the stacked vessel structure as a top lid, central container, narrow support, and bottom strokes even though the everyday meaning later shifted to “bean.”"
   ],
   "contentFolder": "content/research/v1-symbols/rank-043-豆-u8C46",
   "learnerCopyPath": null,
@@ -345,14 +346,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of bean, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A lidded pedestal vessel—the object depicted by the old pictograph, rather than a modern bean.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/bean/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of bean is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle clearly shows a bowl or vessel resting on a narrow stand and broad foot.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-豆"
@@ -378,8 +379,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of bean.",
-        "transitionNote": "The image of bean is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle clearly shows a bowl or vessel resting on a narrow stand and broad foot.",
+        "transitionNote": "Oracle clearly shows a bowl or vessel resting on a narrow stand and broad foot.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -389,7 +390,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/bean/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+        "changeNoteFromPrevious": "Bronze makes the vessel taller and more symmetrical, with a distinct rim, bowl, stem, and base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-豆"
@@ -415,8 +416,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+        "stageExplanation": "Bronze makes the vessel taller and more symmetrical, with a distinct rim, bowl, stem, and base.",
+        "transitionNote": "Bronze makes the vessel taller and more symmetrical, with a distinct rim, bowl, stem, and base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -426,7 +427,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/bean/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small irregularities disappear, leaving a cleaner and more balanced arrangement.",
+        "changeNoteFromPrevious": "Small Seal regularizes the object into an oval bowl above two straight supports and a long horizontal foot.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-豆"
@@ -452,8 +453,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "Small irregularities disappear, leaving a cleaner and more balanced arrangement.",
+        "stageExplanation": "Small Seal regularizes the object into an oval bowl above two straight supports and a long horizontal foot.",
+        "transitionNote": "Small Seal regularizes the object into an oval bowl above two straight supports and a long horizontal foot.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -463,7 +464,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/bean/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The strokes broaden and straighten, making the form wider and more structured.",
+        "changeNoteFromPrevious": "Clerical flattens the bowl and stand into wide horizontal brush strokes, reducing the vessel-like roundness.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-豆"
@@ -489,8 +490,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The strokes broaden and straighten, making the form wider and more structured.",
+        "stageExplanation": "Clerical flattens the bowl and stand into wide horizontal brush strokes, reducing the vessel-like roundness.",
+        "transitionNote": "Clerical flattens the bowl and stand into wide horizontal brush strokes, reducing the vessel-like roundness.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -500,7 +501,7 @@
         "label": "Regular Script",
         "form": "豆",
         "assetRef": null,
-        "changeNoteFromPrevious": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "changeNoteFromPrevious": "Regular 豆 preserves the stacked vessel structure as a top lid, central container, narrow support, and bottom strokes even though the everyday meaning later shifted to “bean.”",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -522,12 +523,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "豆 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "豆 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "stageExplanation": "Regular 豆 preserves the stacked vessel structure as a top lid, central container, narrow support, and bottom strokes even though the everyday meaning later shifted to “bean.”",
+        "transitionNote": "Regular 豆 preserves the stacked vessel structure as a top lid, central container, narrow support, and bottom strokes even though the everyday meaning later shifted to “bean.”",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -535,7 +536,7 @@
     ],
     "origin": {
       "concept": "bean",
-      "explanation": "A friendly educational reconstruction of bean comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A lidded pedestal vessel—the object depicted by the old pictograph, rather than a modern bean.",
       "asset": {
         "characterID": "bean",
         "historicalStage": null,

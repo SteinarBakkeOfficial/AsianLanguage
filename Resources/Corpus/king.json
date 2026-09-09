@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "王",
   "coreSharedMeaning": "king",
-  "recognitionTakeaway": "王 connects the idea of king to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 王 is essentially the standardized version of that three-horizontal, one-vertical frame.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+738B",
   "simplifiedForm": "王",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A ruler standing centrally with arms spread, shown beside a ceremonial bronze object.",
+    "Oracle still has a person-like silhouette: a central body stands on a base with arms extending from the sides.",
+    "Regular 王 is essentially the standardized version of that three-horizontal, one-vertical frame."
   ],
   "contentFolder": "content/research/v1-symbols/rank-047-王-u738B",
   "learnerCopyPath": null,
@@ -331,14 +332,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of king, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A ruler standing centrally with arms spread, shown beside a ceremonial bronze object.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/king/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of king is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle still has a person-like silhouette: a central body stands on a base with arms extending from the sides.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-王"
@@ -364,8 +365,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of king.",
-        "transitionNote": "The image of king is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle still has a person-like silhouette: a central body stands on a base with arms extending from the sides.",
+        "transitionNote": "Oracle still has a person-like silhouette: a central body stands on a base with arms extending from the sides.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -375,7 +376,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/king/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The structure changes only slightly; the lines become smoother and easier to distinguish.",
+        "changeNoteFromPrevious": "Bronze turns that figure into a vertical stem crossing three strong horizontal levels.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-王"
@@ -401,8 +402,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The structure changes only slightly; the lines become smoother and easier to distinguish.",
+        "stageExplanation": "Bronze turns that figure into a vertical stem crossing three strong horizontal levels.",
+        "transitionNote": "Bronze turns that figure into a vertical stem crossing three strong horizontal levels.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -412,7 +413,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/king/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Fewer marks remain, arranged with more even spacing and steadier proportions.",
+        "changeNoteFromPrevious": "Small Seal regularizes the three bars and central vertical into an almost geometric 王.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-王"
@@ -438,8 +439,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "Fewer marks remain, arranged with more even spacing and steadier proportions.",
+        "stageExplanation": "Small Seal regularizes the three bars and central vertical into an almost geometric 王.",
+        "transitionNote": "Small Seal regularizes the three bars and central vertical into an almost geometric 王.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -449,7 +450,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/king/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The form spreads into wider strokes, and its main sections become more clearly separated.",
+        "changeNoteFromPrevious": "Clerical keeps the same structure but broadens the bars and gives the vertical a slight brush bend.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-王"
@@ -475,8 +476,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The form spreads into wider strokes, and its main sections become more clearly separated.",
+        "stageExplanation": "Clerical keeps the same structure but broadens the bars and gives the vertical a slight brush bend.",
+        "transitionNote": "Clerical keeps the same structure but broadens the bars and gives the vertical a slight brush bend.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -486,7 +487,7 @@
         "label": "Regular Script",
         "form": "王",
         "assetRef": null,
-        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "changeNoteFromPrevious": "Regular 王 is essentially the standardized version of that three-horizontal, one-vertical frame.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -508,12 +509,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "王 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "王 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "stageExplanation": "Regular 王 is essentially the standardized version of that three-horizontal, one-vertical frame.",
+        "transitionNote": "Regular 王 is essentially the standardized version of that three-horizontal, one-vertical frame.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -521,7 +522,7 @@
     ],
     "origin": {
       "concept": "king",
-      "explanation": "A friendly educational reconstruction of king comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A ruler standing centrally with arms spread, shown beside a ceremonial bronze object.",
       "asset": {
         "characterID": "king",
         "historicalStage": null,

@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "首",
   "coreSharedMeaning": "head",
-  "recognitionTakeaway": "首 connects the idea of head to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 首 reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+9996",
   "simplifiedForm": "首",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A human head and neck shown in side profile.",
+    "A head-like enclosure contains angled facial lines, with several loose strokes rising above it like hair.",
+    "Regular 首 reduces the hair to the two top strokes and regularizes the head into the 自-like lower component."
   ],
   "contentFolder": "content/research/v1-symbols/rank-012-首-u9996",
   "learnerCopyPath": null,
@@ -345,14 +346,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of head, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A human head and neck shown in side profile.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/head/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of head is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "A head-like enclosure contains angled facial lines, with several loose strokes rising above it like hair.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-首"
@@ -378,8 +379,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of head.",
-        "transitionNote": "The image of head is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "A head-like enclosure contains angled facial lines, with several loose strokes rising above it like hair.",
+        "transitionNote": "A head-like enclosure contains angled facial lines, with several loose strokes rising above it like hair.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -389,7 +390,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/head/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+        "changeNoteFromPrevious": "The head is compacted into a dark shape with three clear hair-like spikes at the top and internal facial divisions.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-首"
@@ -415,8 +416,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+        "stageExplanation": "The head is compacted into a dark shape with three clear hair-like spikes at the top and internal facial divisions.",
+        "transitionNote": "The head is compacted into a dark shape with three clear hair-like spikes at the top and internal facial divisions.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -426,7 +427,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/head/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The separate parts draw into a smoother, more continuous outline with more even proportions.",
+        "changeNoteFromPrevious": "Three long hair strokes stand above a rounded head box containing several horizontal lines.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-首"
@@ -452,8 +453,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The separate parts draw into a smoother, more continuous outline with more even proportions.",
+        "stageExplanation": "Three long hair strokes stand above a rounded head box containing several horizontal lines.",
+        "transitionNote": "Three long hair strokes stand above a rounded head box containing several horizontal lines.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -463,7 +464,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/head/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Curved sections flatten into fewer, straighter strokes, giving the form a clearer structure.",
+        "changeNoteFromPrevious": "The head becomes a rectangular stack under three short vertical hair strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-首"
@@ -489,8 +490,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Curved sections flatten into fewer, straighter strokes, giving the form a clearer structure.",
+        "stageExplanation": "The head becomes a rectangular stack under three short vertical hair strokes.",
+        "transitionNote": "The head becomes a rectangular stack under three short vertical hair strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -500,7 +501,7 @@
         "label": "Regular Script",
         "form": "首",
         "assetRef": null,
-        "changeNoteFromPrevious": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "changeNoteFromPrevious": "Regular 首 reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -522,12 +523,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "首 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "首 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "stageExplanation": "Regular 首 reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
+        "transitionNote": "Regular 首 reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -535,7 +536,7 @@
     ],
     "origin": {
       "concept": "head",
-      "explanation": "A friendly educational reconstruction of head comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A human head and neck shown in side profile.",
       "asset": {
         "characterID": "head",
         "historicalStage": null,

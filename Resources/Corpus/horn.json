@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "角",
   "coreSharedMeaning": "horn",
-  "recognitionTakeaway": "角 connects the idea of horn to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 角 regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+89D2",
   "simplifiedForm": "角",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A large curved horn shown on an animal and as separate horn sections.",
+    "The Oracle form follows the outline of a single pointed horn with an inner hollow or layered section.",
+    "Regular 角 regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes."
   ],
   "contentFolder": "content/research/v1-symbols/rank-040-角-u89D2",
   "learnerCopyPath": null,
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of horn, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A large curved horn shown on an animal and as separate horn sections.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/horn/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of horn is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "The Oracle form follows the outline of a single pointed horn with an inner hollow or layered section.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-角"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of horn.",
-        "transitionNote": "The image of horn is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "The Oracle form follows the outline of a single pointed horn with an inner hollow or layered section.",
+        "transitionNote": "The Oracle form follows the outline of a single pointed horn with an inner hollow or layered section.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/horn/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The marks become fuller and rounder without disturbing the basic arrangement.",
+        "changeNoteFromPrevious": "Bronze exaggerates the long sweeping horn and divides its inside into several band-like segments.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-角"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The marks become fuller and rounder without disturbing the basic arrangement.",
+        "stageExplanation": "Bronze exaggerates the long sweeping horn and divides its inside into several band-like segments.",
+        "transitionNote": "Bronze exaggerates the long sweeping horn and divides its inside into several band-like segments.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/horn/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The parts remain distinct, but their connecting lines become rounder and more settled.",
+        "changeNoteFromPrevious": "Small Seal rotates and regularizes the horn into a tall rectangular frame with an angular inner bend.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-角"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The parts remain distinct, but their connecting lines become rounder and more settled.",
+        "stageExplanation": "Small Seal rotates and regularizes the horn into a tall rectangular frame with an angular inner bend.",
+        "transitionNote": "Small Seal rotates and regularizes the horn into a tall rectangular frame with an angular inner bend.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/horn/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Small details recede as the form settles into fewer, wider strokes.",
+        "changeNoteFromPrevious": "Clerical collapses the tall frame into a compact stack of angled shapes, making the original horn difficult to see.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-角"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Small details recede as the form settles into fewer, wider strokes.",
+        "stageExplanation": "Clerical collapses the tall frame into a compact stack of angled shapes, making the original horn difficult to see.",
+        "transitionNote": "Clerical collapses the tall frame into a compact stack of angled shapes, making the original horn difficult to see.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "角",
         "assetRef": null,
-        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "changeNoteFromPrevious": "Regular 角 regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "角 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "角 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "stageExplanation": "Regular 角 regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
+        "transitionNote": "Regular 角 regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "horn",
-      "explanation": "A friendly educational reconstruction of horn comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A large curved horn shown on an animal and as separate horn sections.",
       "asset": {
         "characterID": "horn",
         "historicalStage": null,

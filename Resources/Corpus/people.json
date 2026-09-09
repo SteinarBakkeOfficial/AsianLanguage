@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "民",
   "coreSharedMeaning": "people",
-  "recognitionTakeaway": "民 connects the idea of people to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 民 regularizes the upper bends and long lower sweep; the original eye-like quality is almost completely lost.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6C11",
   "simplifiedForm": "民",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "An eye being marked or pierced, with a person subjected to the action in the illustration.",
+    "Oracle has a broad eye- or lid-like top crossed by angular inner strokes and a long vertical line descending below.",
+    "Regular 民 regularizes the upper bends and long lower sweep; the original eye-like quality is almost completely lost."
   ],
   "contentFolder": "content/research/v1-symbols/rank-105-民-u6C11",
   "learnerCopyPath": null,
@@ -338,14 +339,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of people, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "An eye being marked or pierced, with a person subjected to the action in the illustration.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/people/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of people is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle has a broad eye- or lid-like top crossed by angular inner strokes and a long vertical line descending below.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-民"
@@ -371,8 +372,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of people.",
-        "transitionNote": "The image of people is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle has a broad eye- or lid-like top crossed by angular inner strokes and a long vertical line descending below.",
+        "transitionNote": "Oracle has a broad eye- or lid-like top crossed by angular inner strokes and a long vertical line descending below.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -382,7 +383,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/people/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The outline is drawn with fewer, simpler strokes, but its main shape is still easy to see.",
+        "changeNoteFromPrevious": "Bronze reduces the top to a compact bent enclosure while keeping one heavy vertical stroke hanging downward.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-民"
@@ -408,8 +409,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The outline is drawn with fewer, simpler strokes, but its main shape is still easy to see.",
+        "stageExplanation": "Bronze reduces the top to a compact bent enclosure while keeping one heavy vertical stroke hanging downward.",
+        "transitionNote": "Bronze reduces the top to a compact bent enclosure while keeping one heavy vertical stroke hanging downward.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -419,7 +420,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/people/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The parts remain distinct, but their connecting lines become rounder and more settled.",
+        "changeNoteFromPrevious": "Small Seal squares the upper section into a maze-like enclosure and adds a long diagonal lower stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-民"
@@ -445,8 +446,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The parts remain distinct, but their connecting lines become rounder and more settled.",
+        "stageExplanation": "Small Seal squares the upper section into a maze-like enclosure and adds a long diagonal lower stroke.",
+        "transitionNote": "Small Seal squares the upper section into a maze-like enclosure and adds a long diagonal lower stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -456,7 +457,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/people/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Small details recede as the form settles into fewer, wider strokes.",
+        "changeNoteFromPrevious": "Clerical thickens the enclosure and turns the lower stroke into a broad sweeping leg.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-民"
@@ -482,8 +483,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Small details recede as the form settles into fewer, wider strokes.",
+        "stageExplanation": "Clerical thickens the enclosure and turns the lower stroke into a broad sweeping leg.",
+        "transitionNote": "Clerical thickens the enclosure and turns the lower stroke into a broad sweeping leg.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -493,7 +494,7 @@
         "label": "Regular Script",
         "form": "民",
         "assetRef": null,
-        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "changeNoteFromPrevious": "Regular 民 regularizes the upper bends and long lower sweep; the original eye-like quality is almost completely lost.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -515,12 +516,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "民 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "民 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "stageExplanation": "Regular 民 regularizes the upper bends and long lower sweep; the original eye-like quality is almost completely lost.",
+        "transitionNote": "Regular 民 regularizes the upper bends and long lower sweep; the original eye-like quality is almost completely lost.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -528,7 +529,7 @@
     ],
     "origin": {
       "concept": "people",
-      "explanation": "A friendly educational reconstruction of people comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "An eye being marked or pierced, with a person subjected to the action in the illustration.",
       "asset": {
         "characterID": "people",
         "historicalStage": null,

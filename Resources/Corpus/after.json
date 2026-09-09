@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "後",
   "coreSharedMeaning": "after",
-  "recognitionTakeaway": "後 connects the idea of after to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 後 standardizes 彳 on the left and the layered right side; Mainland simplified 后 replaces this historical structure with a much shorter modern form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5F8C",
   "simplifiedForm": "后",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A person walking away, leaving a trail of footprints behind.",
+    "Oracle is a tall twisted sequence of linked curves, more like a traced path or repeated movement than a recognizable modern 後.",
+    "Regular 後 standardizes 彳 on the left and the layered right side; Mainland simplified 后 replaces this historical structure with a much shorter modern form."
   ],
   "contentFolder": "content/research/v1-symbols/rank-126-後-u5F8C",
   "learnerCopyPath": null,
@@ -359,14 +360,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of after, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A person walking away, leaving a trail of footprints behind.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/after/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of after is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle is a tall twisted sequence of linked curves, more like a traced path or repeated movement than a recognizable modern 後.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-後"
@@ -392,8 +393,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of after.",
-        "transitionNote": "The image of after is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle is a tall twisted sequence of linked curves, more like a traced path or repeated movement than a recognizable modern 後.",
+        "transitionNote": "Oracle is a tall twisted sequence of linked curves, more like a traced path or repeated movement than a recognizable modern 後.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -403,7 +404,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/after/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The broken outline fills out into more continuous lines without losing its basic shape.",
+        "changeNoteFromPrevious": "Bronze adds a clear walking-side stroke at the left while the central twisted thread and lower foot-like element remain distinct.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-後"
@@ -429,8 +430,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The broken outline fills out into more continuous lines without losing its basic shape.",
+        "stageExplanation": "Bronze adds a clear walking-side stroke at the left while the central twisted thread and lower foot-like element remain distinct.",
+        "transitionNote": "Bronze adds a clear walking-side stroke at the left while the central twisted thread and lower foot-like element remain distinct.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -440,7 +441,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/after/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The separate marks become smoother, with their spacing and proportions more carefully balanced.",
+        "changeNoteFromPrevious": "Small Seal organizes the left walking component and the stacked central/lower movement marks into a tall, balanced form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-後"
@@ -466,8 +467,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The separate marks become smoother, with their spacing and proportions more carefully balanced.",
+        "stageExplanation": "Small Seal organizes the left walking component and the stacked central/lower movement marks into a tall, balanced form.",
+        "transitionNote": "Small Seal organizes the left walking component and the stacked central/lower movement marks into a tall, balanced form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -477,7 +478,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/after/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The lines open outward into broader, straighter strokes while keeping the same arrangement.",
+        "changeNoteFromPrevious": "Clerical shortens the curves and squares the interior, bringing the structure very close to traditional 後.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-後"
@@ -503,8 +504,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The lines open outward into broader, straighter strokes while keeping the same arrangement.",
+        "stageExplanation": "Clerical shortens the curves and squares the interior, bringing the structure very close to traditional 後.",
+        "transitionNote": "Clerical shortens the curves and squares the interior, bringing the structure very close to traditional 後.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -514,7 +515,7 @@
         "label": "Regular Script",
         "form": "後",
         "assetRef": null,
-        "changeNoteFromPrevious": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "changeNoteFromPrevious": "Regular 後 standardizes 彳 on the left and the layered right side; Mainland simplified 后 replaces this historical structure with a much shorter modern form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -536,12 +537,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "後 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "後 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "stageExplanation": "Regular 後 standardizes 彳 on the left and the layered right side; Mainland simplified 后 replaces this historical structure with a much shorter modern form.",
+        "transitionNote": "Regular 後 standardizes 彳 on the left and the layered right side; Mainland simplified 后 replaces this historical structure with a much shorter modern form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -549,7 +550,7 @@
     ],
     "origin": {
       "concept": "after",
-      "explanation": "A friendly educational reconstruction of after comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A person walking away, leaving a trail of footprints behind.",
       "asset": {
         "characterID": "after",
         "historicalStage": null,

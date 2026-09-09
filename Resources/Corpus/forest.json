@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "林",
   "coreSharedMeaning": "forest",
-  "recognitionTakeaway": "林 connects the idea of forest to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 林 is the direct modern pairing of two 木 characters, preserving the two-tree idea more transparently than many other compounds.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6797",
   "simplifiedForm": "林",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "Two full trees standing side by side.",
+    "Oracle simply places two rough tree pictographs next to each other, each with branches and roots.",
+    "Regular 林 is the direct modern pairing of two 木 characters, preserving the two-tree idea more transparently than many other compounds."
   ],
   "contentFolder": "content/research/v1-symbols/rank-095-林-u6797",
   "learnerCopyPath": null,
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of forest, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "Two full trees standing side by side.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/forest/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of forest is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle simply places two rough tree pictographs next to each other, each with branches and roots.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-林"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of forest.",
-        "transitionNote": "The image of forest is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle simply places two rough tree pictographs next to each other, each with branches and roots.",
+        "transitionNote": "Oracle simply places two rough tree pictographs next to each other, each with branches and roots.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/forest/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The structure changes only slightly; the lines become smoother and easier to distinguish.",
+        "changeNoteFromPrevious": "Bronze keeps both trees separate but makes their trunks, branches, and roots straighter and more regular.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-林"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The structure changes only slightly; the lines become smoother and easier to distinguish.",
+        "stageExplanation": "Bronze keeps both trees separate but makes their trunks, branches, and roots straighter and more regular.",
+        "transitionNote": "Bronze keeps both trees separate but makes their trunks, branches, and roots straighter and more regular.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/forest/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The outline becomes more continuous, while its separate sections settle into steadier proportions.",
+        "changeNoteFromPrevious": "Small Seal redraws the pair as two tall, symmetrical tree forms with curved upper and lower branches.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-林"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The outline becomes more continuous, while its separate sections settle into steadier proportions.",
+        "stageExplanation": "Small Seal redraws the pair as two tall, symmetrical tree forms with curved upper and lower branches.",
+        "transitionNote": "Small Seal redraws the pair as two tall, symmetrical tree forms with curved upper and lower branches.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/forest/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Small details recede as the form settles into fewer, wider strokes.",
+        "changeNoteFromPrevious": "Clerical compresses each tree into a dense cluster of crossing brush strokes and brings the pair closer together.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-林"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Small details recede as the form settles into fewer, wider strokes.",
+        "stageExplanation": "Clerical compresses each tree into a dense cluster of crossing brush strokes and brings the pair closer together.",
+        "transitionNote": "Clerical compresses each tree into a dense cluster of crossing brush strokes and brings the pair closer together.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "林",
         "assetRef": null,
-        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "changeNoteFromPrevious": "Regular 林 is the direct modern pairing of two 木 characters, preserving the two-tree idea more transparently than many other compounds.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "林 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "林 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "stageExplanation": "Regular 林 is the direct modern pairing of two 木 characters, preserving the two-tree idea more transparently than many other compounds.",
+        "transitionNote": "Regular 林 is the direct modern pairing of two 木 characters, preserving the two-tree idea more transparently than many other compounds.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "forest",
-      "explanation": "A friendly educational reconstruction of forest comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "Two full trees standing side by side.",
       "asset": {
         "characterID": "forest",
         "historicalStage": null,

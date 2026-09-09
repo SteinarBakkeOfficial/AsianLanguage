@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "明",
   "coreSharedMeaning": "bright",
-  "recognitionTakeaway": "明 connects the idea of bright to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 明 fixes 日 on the left and 月 on the right, making the original pairing of sun and moon legible again in standardized characters.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+660E",
   "simplifiedForm": "明",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "The sun and a crescent moon shown together.",
+    "Oracle places a round sun with an inner mark beside a tall crescent moon; both celestial pictures are directly recognizable.",
+    "Regular 明 fixes 日 on the left and 月 on the right, making the original pairing of sun and moon legible again in standardized characters."
   ],
   "contentFolder": "content/research/v1-symbols/rank-097-明-u660E",
   "learnerCopyPath": null,
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of bright, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "The sun and a crescent moon shown together.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/bright/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of bright is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle places a round sun with an inner mark beside a tall crescent moon; both celestial pictures are directly recognizable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-明"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of bright.",
-        "transitionNote": "The image of bright is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle places a round sun with an inner mark beside a tall crescent moon; both celestial pictures are directly recognizable.",
+        "transitionNote": "Oracle places a round sun with an inner mark beside a tall crescent moon; both celestial pictures are directly recognizable.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/bright/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The structure changes only slightly; the lines become smoother and easier to distinguish.",
+        "changeNoteFromPrevious": "Bronze keeps the two pictures side by side but thickens the sun enclosure and makes the moon more D-shaped.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-明"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The structure changes only slightly; the lines become smoother and easier to distinguish.",
+        "stageExplanation": "Bronze keeps the two pictures side by side but thickens the sun enclosure and makes the moon more D-shaped.",
+        "transitionNote": "Bronze keeps the two pictures side by side but thickens the sun enclosure and makes the moon more D-shaped.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/bright/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The overall shape steadies as the curves become more even and the parts sit closer together.",
+        "changeNoteFromPrevious": "Small Seal regularizes both: the sun becomes a divided rounded box and the moon a tall curved frame with inner strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-明"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The overall shape steadies as the curves become more even and the parts sit closer together.",
+        "stageExplanation": "Small Seal regularizes both: the sun becomes a divided rounded box and the moon a tall curved frame with inner strokes.",
+        "transitionNote": "Small Seal regularizes both: the sun becomes a divided rounded box and the moon a tall curved frame with inner strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/bright/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The form spreads into wider strokes, and its main sections become more clearly separated.",
+        "changeNoteFromPrevious": "Clerical squares both components into block-like forms while preserving their left-right separation.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-明"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The form spreads into wider strokes, and its main sections become more clearly separated.",
+        "stageExplanation": "Clerical squares both components into block-like forms while preserving their left-right separation.",
+        "transitionNote": "Clerical squares both components into block-like forms while preserving their left-right separation.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "明",
         "assetRef": null,
-        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "changeNoteFromPrevious": "Regular 明 fixes 日 on the left and 月 on the right, making the original pairing of sun and moon legible again in standardized characters.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "明 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "明 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "stageExplanation": "Regular 明 fixes 日 on the left and 月 on the right, making the original pairing of sun and moon legible again in standardized characters.",
+        "transitionNote": "Regular 明 fixes 日 on the left and 月 on the right, making the original pairing of sun and moon legible again in standardized characters.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "bright",
-      "explanation": "A friendly educational reconstruction of bright comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "The sun and a crescent moon shown together.",
       "asset": {
         "characterID": "bright",
         "historicalStage": null,

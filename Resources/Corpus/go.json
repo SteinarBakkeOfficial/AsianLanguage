@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "行",
   "coreSharedMeaning": "go",
-  "recognitionTakeaway": "行 connects the idea of go to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 行 regularizes the two road-side components into the familiar left 彳-like and right strokes, preserving the sense of parallel paths and intersections.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+884C",
   "simplifiedForm": "行",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A person approaching and crossing a four-way road junction.",
+    "Oracle consists of four separate road strokes around an empty center, like a crossroads seen from above.",
+    "Regular 行 regularizes the two road-side components into the familiar left 彳-like and right strokes, preserving the sense of parallel paths and intersections."
   ],
   "contentFolder": "content/research/v1-symbols/rank-088-行-u884C",
   "learnerCopyPath": null,
@@ -359,14 +360,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of go, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A person approaching and crossing a four-way road junction.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/go/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of go is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle consists of four separate road strokes around an empty center, like a crossroads seen from above.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-行"
@@ -392,8 +393,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of go.",
-        "transitionNote": "The image of go is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle consists of four separate road strokes around an empty center, like a crossroads seen from above.",
+        "transitionNote": "Oracle consists of four separate road strokes around an empty center, like a crossroads seen from above.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -403,7 +404,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/go/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The lines grow more complete and connected, keeping the original arrangement easy to follow.",
+        "changeNoteFromPrevious": "Bronze makes the crossroads even clearer with four right-angled arms meeting around the center.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-行"
@@ -429,8 +430,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The lines grow more complete and connected, keeping the original arrangement easy to follow.",
+        "stageExplanation": "Bronze makes the crossroads even clearer with four right-angled arms meeting around the center.",
+        "transitionNote": "Bronze makes the crossroads even clearer with four right-angled arms meeting around the center.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -440,7 +441,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/go/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The outline becomes more continuous, while its separate sections settle into steadier proportions.",
+        "changeNoteFromPrevious": "Small Seal separates the road into two mirrored vertical components, each with inward-curving branches.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-行"
@@ -466,8 +467,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The outline becomes more continuous, while its separate sections settle into steadier proportions.",
+        "stageExplanation": "Small Seal separates the road into two mirrored vertical components, each with inward-curving branches.",
+        "transitionNote": "Small Seal separates the road into two mirrored vertical components, each with inward-curving branches.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -477,7 +478,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/go/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Small details recede as the form settles into fewer, wider strokes.",
+        "changeNoteFromPrevious": "Clerical keeps those mirrored road sides but shortens and thickens the branches.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-行"
@@ -503,8 +504,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Small details recede as the form settles into fewer, wider strokes.",
+        "stageExplanation": "Clerical keeps those mirrored road sides but shortens and thickens the branches.",
+        "transitionNote": "Clerical keeps those mirrored road sides but shortens and thickens the branches.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -514,7 +515,7 @@
         "label": "Regular Script",
         "form": "行",
         "assetRef": null,
-        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "changeNoteFromPrevious": "Regular 行 regularizes the two road-side components into the familiar left 彳-like and right strokes, preserving the sense of parallel paths and intersections.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -536,12 +537,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "行 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "行 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "stageExplanation": "Regular 行 regularizes the two road-side components into the familiar left 彳-like and right strokes, preserving the sense of parallel paths and intersections.",
+        "transitionNote": "Regular 行 regularizes the two road-side components into the familiar left 彳-like and right strokes, preserving the sense of parallel paths and intersections.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -549,7 +550,7 @@
     ],
     "origin": {
       "concept": "go",
-      "explanation": "A friendly educational reconstruction of go comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A person approaching and crossing a four-way road junction.",
       "asset": {
         "characterID": "go",
         "historicalStage": null,

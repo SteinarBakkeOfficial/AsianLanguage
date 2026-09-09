@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "身",
   "coreSharedMeaning": "body",
-  "recognitionTakeaway": "身 connects the idea of body to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 身 tightens the stacked body strokes and preserves the long final sweep, completing the modern abstract body form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+8EAB",
   "simplifiedForm": "身",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A full human body shown from head to feet.",
+    "A narrow, slanted body profile is drawn as a compact enclosed torso with one long descending stroke.",
+    "Regular 身 tightens the stacked body strokes and preserves the long final sweep, completing the modern abstract body form."
   ],
   "contentFolder": "content/research/v1-symbols/rank-011-身-u8EAB",
   "learnerCopyPath": null,
@@ -345,14 +346,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of body, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A full human body shown from head to feet.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/body/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of body is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "A narrow, slanted body profile is drawn as a compact enclosed torso with one long descending stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-身"
@@ -378,8 +379,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of body.",
-        "transitionNote": "The image of body is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "A narrow, slanted body profile is drawn as a compact enclosed torso with one long descending stroke.",
+        "transitionNote": "A narrow, slanted body profile is drawn as a compact enclosed torso with one long descending stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -389,7 +390,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/body/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Several small marks fall away, leaving the same basic outline in a cleaner form.",
+        "changeNoteFromPrevious": "The body becomes a bold angular figure with an interior bend and a clear lower vertical.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-身"
@@ -415,8 +416,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "Several small marks fall away, leaving the same basic outline in a cleaner form.",
+        "stageExplanation": "The body becomes a bold angular figure with an interior bend and a clear lower vertical.",
+        "transitionNote": "The body becomes a bold angular figure with an interior bend and a clear lower vertical.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -426,7 +427,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/body/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "changeNoteFromPrevious": "The Seal form stretches the torso into a tall curved enclosure with a bent upper section and long leg-like strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-身"
@@ -452,8 +453,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "stageExplanation": "The Seal form stretches the torso into a tall curved enclosure with a bent upper section and long leg-like strokes.",
+        "transitionNote": "The Seal form stretches the torso into a tall curved enclosure with a bent upper section and long leg-like strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -463,7 +464,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/body/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The longer curves shorten into broader marks, making the structure flatter and easier to read.",
+        "changeNoteFromPrevious": "The outline collapses into the recognizable clerical 身, including the strong rightward sweep.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-身"
@@ -489,8 +490,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The longer curves shorten into broader marks, making the structure flatter and easier to read.",
+        "stageExplanation": "The outline collapses into the recognizable clerical 身, including the strong rightward sweep.",
+        "transitionNote": "The outline collapses into the recognizable clerical 身, including the strong rightward sweep.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -500,7 +501,7 @@
         "label": "Regular Script",
         "form": "身",
         "assetRef": null,
-        "changeNoteFromPrevious": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "changeNoteFromPrevious": "Regular 身 tightens the stacked body strokes and preserves the long final sweep, completing the modern abstract body form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -522,12 +523,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "身 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "身 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "stageExplanation": "Regular 身 tightens the stacked body strokes and preserves the long final sweep, completing the modern abstract body form.",
+        "transitionNote": "Regular 身 tightens the stacked body strokes and preserves the long final sweep, completing the modern abstract body form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -535,7 +536,7 @@
     ],
     "origin": {
       "concept": "body",
-      "explanation": "A friendly educational reconstruction of body comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A full human body shown from head to feet.",
       "asset": {
         "characterID": "body",
         "historicalStage": null,

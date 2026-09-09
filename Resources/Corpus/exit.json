@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "出",
   "coreSharedMeaning": "exit",
-  "recognitionTakeaway": "出 connects the idea of exit to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 出 squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+51FA",
   "simplifiedForm": "出",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A foot or figure emerging outward from an enclosed opening.",
+    "Oracle shows a U-shaped enclosure with a central form rising out of it and branching at the top.",
+    "Regular 出 squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both."
   ],
   "contentFolder": "content/research/v1-symbols/rank-085-出-u51FA",
   "learnerCopyPath": null,
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of exit, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A foot or figure emerging outward from an enclosed opening.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/exit/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of exit is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle shows a U-shaped enclosure with a central form rising out of it and branching at the top.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-出"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of exit.",
-        "transitionNote": "The image of exit is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle shows a U-shaped enclosure with a central form rising out of it and branching at the top.",
+        "transitionNote": "Oracle shows a U-shaped enclosure with a central form rising out of it and branching at the top.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/exit/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Several small marks fall away, leaving the same basic outline in a cleaner form.",
+        "changeNoteFromPrevious": "Bronze separates the image into two stacked open enclosures with an upward stem passing through them.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-出"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "Several small marks fall away, leaving the same basic outline in a cleaner form.",
+        "stageExplanation": "Bronze separates the image into two stacked open enclosures with an upward stem passing through them.",
+        "transitionNote": "Bronze separates the image into two stacked open enclosures with an upward stem passing through them.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/exit/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "changeNoteFromPrevious": "Small Seal elongates the stacked open shapes into several nested vertical curves, emphasizing emergence through layers.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-出"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "stageExplanation": "Small Seal elongates the stacked open shapes into several nested vertical curves, emphasizing emergence through layers.",
+        "transitionNote": "Small Seal elongates the stacked open shapes into several nested vertical curves, emphasizing emergence through layers.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/exit/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The rounded lines become flatter and more deliberate, while the main arrangement stays intact.",
+        "changeNoteFromPrevious": "Clerical compresses the nested curves into two heavy box-like rises connected at the base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-出"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The rounded lines become flatter and more deliberate, while the main arrangement stays intact.",
+        "stageExplanation": "Clerical compresses the nested curves into two heavy box-like rises connected at the base.",
+        "transitionNote": "Clerical compresses the nested curves into two heavy box-like rises connected at the base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "出",
         "assetRef": null,
-        "changeNoteFromPrevious": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "changeNoteFromPrevious": "Regular 出 squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "出 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "出 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "stageExplanation": "Regular 出 squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both.",
+        "transitionNote": "Regular 出 squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "exit",
-      "explanation": "A friendly educational reconstruction of exit comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A foot or figure emerging outward from an enclosed opening.",
       "asset": {
         "characterID": "exit",
         "historicalStage": null,

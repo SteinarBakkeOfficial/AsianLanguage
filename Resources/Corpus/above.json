@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "上",
   "coreSharedMeaning": "above",
-  "recognitionTakeaway": "上 connects the idea of above to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 上 adds the short upper horizontal to the vertical stem while retaining the long lower baseline.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+4E0A",
   "simplifiedForm": "上",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A short mark positioned above a longer baseline to show “above.”",
+    "Oracle expresses the idea directly with a short horizontal floating over a longer one.",
+    "Regular 上 adds the short upper horizontal to the vertical stem while retaining the long lower baseline."
   ],
   "contentFolder": "content/research/v1-symbols/rank-078-上-u4E0A",
   "learnerCopyPath": null,
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of above, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A short mark positioned above a longer baseline to show “above.”",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/above/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of above is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle expresses the idea directly with a short horizontal floating over a longer one.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-上"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of above.",
-        "transitionNote": "The image of above is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle expresses the idea directly with a short horizontal floating over a longer one.",
+        "transitionNote": "Oracle expresses the idea directly with a short horizontal floating over a longer one.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/above/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Several small marks fall away, leaving the same basic outline in a cleaner form.",
+        "changeNoteFromPrevious": "Bronze preserves the two-level arrangement but exaggerates the thickness and tilt of both bars.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-上"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "Several small marks fall away, leaving the same basic outline in a cleaner form.",
+        "stageExplanation": "Bronze preserves the two-level arrangement but exaggerates the thickness and tilt of both bars.",
+        "transitionNote": "Bronze preserves the two-level arrangement but exaggerates the thickness and tilt of both bars.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/above/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "changeNoteFromPrevious": "Small Seal changes the logic: a vertical now rises from a long baseline, turning the upper relation into a more integrated symbol.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-上"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "stageExplanation": "Small Seal changes the logic: a vertical now rises from a long baseline, turning the upper relation into a more integrated symbol.",
+        "transitionNote": "Small Seal changes the logic: a vertical now rises from a long baseline, turning the upper relation into a more integrated symbol.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/above/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The curved lines simplify into straighter marks, leaving the main sections easier to distinguish.",
+        "changeNoteFromPrevious": "Clerical keeps the upright-on-baseline shape with heavier, flatter brush strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-上"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The curved lines simplify into straighter marks, leaving the main sections easier to distinguish.",
+        "stageExplanation": "Clerical keeps the upright-on-baseline shape with heavier, flatter brush strokes.",
+        "transitionNote": "Clerical keeps the upright-on-baseline shape with heavier, flatter brush strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "上",
         "assetRef": null,
-        "changeNoteFromPrevious": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "changeNoteFromPrevious": "Regular 上 adds the short upper horizontal to the vertical stem while retaining the long lower baseline.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "上 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "上 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "stageExplanation": "Regular 上 adds the short upper horizontal to the vertical stem while retaining the long lower baseline.",
+        "transitionNote": "Regular 上 adds the short upper horizontal to the vertical stem while retaining the long lower baseline.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "above",
-      "explanation": "A friendly educational reconstruction of above comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A short mark positioned above a longer baseline to show “above.”",
       "asset": {
         "characterID": "above",
         "historicalStage": null,

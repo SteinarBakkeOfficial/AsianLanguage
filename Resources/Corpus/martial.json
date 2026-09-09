@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "武",
   "coreSharedMeaning": "martial",
-  "recognitionTakeaway": "武 connects the idea of martial to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 武 standardizes the weapon-derived upper strokes over 止, keeping the two historical components visible even though the original pictures are abstract.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6B66",
   "simplifiedForm": "武",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A footprint beside an upright weapon, showing movement together with martial force.",
+    "Oracle combines a weapon-like upper structure with a distinct foot or 止-like form beneath it.",
+    "Regular 武 standardizes the weapon-derived upper strokes over 止, keeping the two historical components visible even though the original pictures are abstract."
   ],
   "contentFolder": "content/research/v1-symbols/rank-133-武-u6B66",
   "learnerCopyPath": null,
@@ -338,14 +339,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of martial, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A footprint beside an upright weapon, showing movement together with martial force.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/martial/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of martial is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle combines a weapon-like upper structure with a distinct foot or 止-like form beneath it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-武"
@@ -371,8 +372,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of martial.",
-        "transitionNote": "The image of martial is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle combines a weapon-like upper structure with a distinct foot or 止-like form beneath it.",
+        "transitionNote": "Oracle combines a weapon-like upper structure with a distinct foot or 止-like form beneath it.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -382,7 +383,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/martial/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The structure changes only slightly; the lines become smoother and easier to distinguish.",
+        "changeNoteFromPrevious": "Bronze thickens the weapon and draws the lower foot more compactly, pulling the two components closer together.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-武"
@@ -408,8 +409,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The structure changes only slightly; the lines become smoother and easier to distinguish.",
+        "stageExplanation": "Bronze thickens the weapon and draws the lower foot more compactly, pulling the two components closer together.",
+        "transitionNote": "Bronze thickens the weapon and draws the lower foot more compactly, pulling the two components closer together.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -419,7 +420,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/martial/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The outline becomes more continuous, while its separate sections settle into steadier proportions.",
+        "changeNoteFromPrevious": "Small Seal organizes the weapon above and the 止-like lower element below on a clear vertical axis.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-武"
@@ -445,8 +446,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The outline becomes more continuous, while its separate sections settle into steadier proportions.",
+        "stageExplanation": "Small Seal organizes the weapon above and the 止-like lower element below on a clear vertical axis.",
+        "transitionNote": "Small Seal organizes the weapon above and the 止-like lower element below on a clear vertical axis.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -456,7 +457,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/martial/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Several curved details disappear as the strokes become flatter and more direct.",
+        "changeNoteFromPrevious": "Clerical broadens the horizontals and bends the lower strokes, making the whole form nearly recognizable as 武.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-武"
@@ -482,8 +483,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Several curved details disappear as the strokes become flatter and more direct.",
+        "stageExplanation": "Clerical broadens the horizontals and bends the lower strokes, making the whole form nearly recognizable as 武.",
+        "transitionNote": "Clerical broadens the horizontals and bends the lower strokes, making the whole form nearly recognizable as 武.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -493,7 +494,7 @@
         "label": "Regular Script",
         "form": "武",
         "assetRef": null,
-        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "changeNoteFromPrevious": "Regular 武 standardizes the weapon-derived upper strokes over 止, keeping the two historical components visible even though the original pictures are abstract.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -515,12 +516,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "武 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "武 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "stageExplanation": "Regular 武 standardizes the weapon-derived upper strokes over 止, keeping the two historical components visible even though the original pictures are abstract.",
+        "transitionNote": "Regular 武 standardizes the weapon-derived upper strokes over 止, keeping the two historical components visible even though the original pictures are abstract.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -528,7 +529,7 @@
     ],
     "origin": {
       "concept": "martial",
-      "explanation": "A friendly educational reconstruction of martial comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A footprint beside an upright weapon, showing movement together with martial force.",
       "asset": {
         "characterID": "martial",
         "historicalStage": null,

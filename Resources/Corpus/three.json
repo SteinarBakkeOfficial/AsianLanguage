@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "三",
   "coreSharedMeaning": "three",
-  "recognitionTakeaway": "三 connects the idea of three to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 三 standardizes the pattern with a short top line, medium middle line, and long bottom line.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+4E09",
   "simplifiedForm": "三",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "Three separate marks, demonstrated with three stones or horizontal pieces stacked in order.",
+    "Oracle has three thick floating strokes, each slightly different in width and angle.",
+    "Regular 三 standardizes the pattern with a short top line, medium middle line, and long bottom line."
   ],
   "contentFolder": "content/research/v1-symbols/rank-084-三-u4E09",
   "learnerCopyPath": null,
@@ -345,14 +346,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of three, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "Three separate marks, demonstrated with three stones or horizontal pieces stacked in order.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/three/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of three is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle has three thick floating strokes, each slightly different in width and angle.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-三"
@@ -378,8 +379,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of three.",
-        "transitionNote": "The image of three is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle has three thick floating strokes, each slightly different in width and angle.",
+        "transitionNote": "Oracle has three thick floating strokes, each slightly different in width and angle.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -389,7 +390,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/three/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The early marks become fuller and more continuous, while the main silhouette remains visible.",
+        "changeNoteFromPrevious": "Bronze stretches the three marks into longer, diagonally rising lines.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-三"
@@ -415,8 +416,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The early marks become fuller and more continuous, while the main silhouette remains visible.",
+        "stageExplanation": "Bronze stretches the three marks into longer, diagonally rising lines.",
+        "transitionNote": "Bronze stretches the three marks into longer, diagonally rising lines.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -426,7 +427,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/three/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small irregularities disappear, leaving a cleaner and more balanced arrangement.",
+        "changeNoteFromPrevious": "Small Seal makes all three short, level, and evenly spaced.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-三"
@@ -452,8 +453,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "Small irregularities disappear, leaving a cleaner and more balanced arrangement.",
+        "stageExplanation": "Small Seal makes all three short, level, and evenly spaced.",
+        "transitionNote": "Small Seal makes all three short, level, and evenly spaced.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -463,7 +464,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/three/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The strokes broaden and straighten, making the form wider and more structured.",
+        "changeNoteFromPrevious": "Clerical broadens the strokes and begins differentiating their lengths.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-三"
@@ -489,8 +490,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The strokes broaden and straighten, making the form wider and more structured.",
+        "stageExplanation": "Clerical broadens the strokes and begins differentiating their lengths.",
+        "transitionNote": "Clerical broadens the strokes and begins differentiating their lengths.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -500,7 +501,7 @@
         "label": "Regular Script",
         "form": "三",
         "assetRef": null,
-        "changeNoteFromPrevious": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "changeNoteFromPrevious": "Regular 三 standardizes the pattern with a short top line, medium middle line, and long bottom line.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -522,12 +523,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "三 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "三 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "stageExplanation": "Regular 三 standardizes the pattern with a short top line, medium middle line, and long bottom line.",
+        "transitionNote": "Regular 三 standardizes the pattern with a short top line, medium middle line, and long bottom line.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -535,7 +536,7 @@
     ],
     "origin": {
       "concept": "three",
-      "explanation": "A friendly educational reconstruction of three comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "Three separate marks, demonstrated with three stones or horizontal pieces stacked in order.",
       "asset": {
         "characterID": "three",
         "historicalStage": null,

@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "旅",
   "coreSharedMeaning": "journey",
-  "recognitionTakeaway": "旅 connects the idea of journey to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 旅 regularizes the left 方 and the right-hand movement/people strokes; the literal marching group and banner are no longer pictorial.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+65C5",
   "simplifiedForm": "旅",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A group of travelers walking together beneath a long banner or flag.",
+    "Oracle is a thin banner-like vertical form with several trailing strokes below, suggesting movement under a standard rather than separate modern components.",
+    "Regular 旅 regularizes the left 方 and the right-hand movement/people strokes; the literal marching group and banner are no longer pictorial."
   ],
   "contentFolder": "content/research/v1-symbols/rank-135-旅-u65C5",
   "learnerCopyPath": null,
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of journey, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A group of travelers walking together beneath a long banner or flag.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/journey/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of journey is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle is a thin banner-like vertical form with several trailing strokes below, suggesting movement under a standard rather than separate modern components.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-旅"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of journey.",
-        "transitionNote": "The image of journey is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle is a thin banner-like vertical form with several trailing strokes below, suggesting movement under a standard rather than separate modern components.",
+        "transitionNote": "Oracle is a thin banner-like vertical form with several trailing strokes below, suggesting movement under a standard rather than separate modern components.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/journey/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The broken outline fills out into more continuous lines without losing its basic shape.",
+        "changeNoteFromPrevious": "Bronze expands the banner into a complex pole-and-emblem structure with multiple small figures or supports clustered beneath it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-旅"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The broken outline fills out into more continuous lines without losing its basic shape.",
+        "stageExplanation": "Bronze expands the banner into a complex pole-and-emblem structure with multiple small figures or supports clustered beneath it.",
+        "transitionNote": "Bronze expands the banner into a complex pole-and-emblem structure with multiple small figures or supports clustered beneath it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/journey/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The compact shape loses stray details and settles into a clearer balance.",
+        "changeNoteFromPrevious": "Small Seal separates the left banner/pole from a dense group of long vertical strokes on the right, making the multi-part composition clearer.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-旅"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The compact shape loses stray details and settles into a clearer balance.",
+        "stageExplanation": "Small Seal separates the left banner/pole from a dense group of long vertical strokes on the right, making the multi-part composition clearer.",
+        "transitionNote": "Small Seal separates the left banner/pole from a dense group of long vertical strokes on the right, making the multi-part composition clearer.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/journey/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The longer curves shorten into broader marks, making the structure flatter and easier to read.",
+        "changeNoteFromPrevious": "Clerical compresses the left side into 方-like strokes and the right into a compact traveler-related cluster, closely approaching 旅.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-旅"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The longer curves shorten into broader marks, making the structure flatter and easier to read.",
+        "stageExplanation": "Clerical compresses the left side into 方-like strokes and the right into a compact traveler-related cluster, closely approaching 旅.",
+        "transitionNote": "Clerical compresses the left side into 方-like strokes and the right into a compact traveler-related cluster, closely approaching 旅.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "旅",
         "assetRef": null,
-        "changeNoteFromPrevious": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "changeNoteFromPrevious": "Regular 旅 regularizes the left 方 and the right-hand movement/people strokes; the literal marching group and banner are no longer pictorial.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "旅 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "旅 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "stageExplanation": "Regular 旅 regularizes the left 方 and the right-hand movement/people strokes; the literal marching group and banner are no longer pictorial.",
+        "transitionNote": "Regular 旅 regularizes the left 方 and the right-hand movement/people strokes; the literal marching group and banner are no longer pictorial.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "journey",
-      "explanation": "A friendly educational reconstruction of journey comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A group of travelers walking together beneath a long banner or flag.",
       "asset": {
         "characterID": "journey",
         "historicalStage": null,

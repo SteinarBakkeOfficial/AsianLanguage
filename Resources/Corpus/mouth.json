@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "口",
   "coreSharedMeaning": "mouth; opening",
-  "recognitionTakeaway": "口 connects the idea of mouth; opening to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 口 regularizes the outline into a compact square box, the simplest modern version of the original opening.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+53E3",
   "simplifiedForm": "口",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "uncertain",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A human mouth shown as a pair of open lips.",
+    "A thick rounded enclosure surrounds an empty center, already functioning as a simple pictograph of an opening.",
+    "Regular 口 regularizes the outline into a compact square box, the simplest modern version of the original opening."
   ],
   "contentFolder": "content/research/v1-symbols/rank-006-口-u53E3",
   "learnerCopyPath": null,
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of mouth; opening, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A human mouth shown as a pair of open lips.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/mouth/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The open mouth is simplified into a small enclosing outline, keeping its basic shape.",
+        "changeNoteFromPrevious": "A thick rounded enclosure surrounds an empty center, already functioning as a simple pictograph of an opening.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-口"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of mouth; opening.",
-        "transitionNote": "The open mouth is simplified into a small enclosing outline, keeping its basic shape.",
+        "stageExplanation": "A thick rounded enclosure surrounds an empty center, already functioning as a simple pictograph of an opening.",
+        "transitionNote": "A thick rounded enclosure surrounds an empty center, already functioning as a simple pictograph of an opening.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/mouth/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The broken outline fills out into more continuous lines without losing its basic shape.",
+        "changeNoteFromPrevious": "The enclosure becomes a cleaner bowl-like rectangle with a strong top edge.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-口"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The broken outline fills out into more continuous lines without losing its basic shape.",
+        "stageExplanation": "The enclosure becomes a cleaner bowl-like rectangle with a strong top edge.",
+        "transitionNote": "The enclosure becomes a cleaner bowl-like rectangle with a strong top edge.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/mouth/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The compact shape loses stray details and settles into a clearer balance.",
+        "changeNoteFromPrevious": "The sides straighten and lengthen into a tall U-shaped frame closed by a horizontal stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-口"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The compact shape loses stray details and settles into a clearer balance.",
+        "stageExplanation": "The sides straighten and lengthen into a tall U-shaped frame closed by a horizontal stroke.",
+        "transitionNote": "The sides straighten and lengthen into a tall U-shaped frame closed by a horizontal stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/mouth/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The lines open outward into broader, straighter strokes while keeping the same arrangement.",
+        "changeNoteFromPrevious": "The form is flattened and widened, with the opening compressed into a narrow central rectangle.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-口"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The lines open outward into broader, straighter strokes while keeping the same arrangement.",
+        "stageExplanation": "The form is flattened and widened, with the opening compressed into a narrow central rectangle.",
+        "transitionNote": "The form is flattened and widened, with the opening compressed into a narrow central rectangle.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "口",
         "assetRef": null,
-        "changeNoteFromPrevious": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "changeNoteFromPrevious": "Regular 口 regularizes the outline into a compact square box, the simplest modern version of the original opening.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "口 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "口 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "stageExplanation": "Regular 口 regularizes the outline into a compact square box, the simplest modern version of the original opening.",
+        "transitionNote": "Regular 口 regularizes the outline into a compact square box, the simplest modern version of the original opening.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "mouth; opening",
-      "explanation": "A friendly educational reconstruction of mouth; opening comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A human mouth shown as a pair of open lips.",
       "asset": {
         "characterID": "mouth",
         "historicalStage": null,

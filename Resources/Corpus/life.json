@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "生",
   "coreSharedMeaning": "life",
-  "recognitionTakeaway": "生 connects the idea of life to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 生 keeps the central stem and stacked ground/cross strokes, with the small upper diagonal preserving the sense of new growth.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+751F",
   "simplifiedForm": "生",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A seed sprouting from soil and growing into a young plant.",
+    "A central stem rises from a ground line and splits into two leaves or shoots; the plant image is still very clear.",
+    "Regular 生 keeps the central stem and stacked ground/cross strokes, with the small upper diagonal preserving the sense of new growth."
   ],
   "contentFolder": "content/research/v1-symbols/rank-093-生-u751F",
   "learnerCopyPath": null,
@@ -373,14 +374,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of life, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A seed sprouting from soil and growing into a young plant.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/life/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of life is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "A central stem rises from a ground line and splits into two leaves or shoots; the plant image is still very clear.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-生"
@@ -406,8 +407,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of life.",
-        "transitionNote": "The image of life is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "A central stem rises from a ground line and splits into two leaves or shoots; the plant image is still very clear.",
+        "transitionNote": "A central stem rises from a ground line and splits into two leaves or shoots; the plant image is still very clear.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -417,7 +418,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/life/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The basic shape holds steady as its separate marks become cleaner and more controlled.",
+        "changeNoteFromPrevious": "The stem becomes straighter and the sprout more symmetrical, with an additional horizontal near the base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-生"
@@ -443,8 +444,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The basic shape holds steady as its separate marks become cleaner and more controlled.",
+        "stageExplanation": "The stem becomes straighter and the sprout more symmetrical, with an additional horizontal near the base.",
+        "transitionNote": "The stem becomes straighter and the sprout more symmetrical, with an additional horizontal near the base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -454,7 +455,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/life/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "changeNoteFromPrevious": "The sprout is regularized into a vertical stem with paired upper curves and two strong ground lines.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-生"
@@ -480,8 +481,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "stageExplanation": "The sprout is regularized into a vertical stem with paired upper curves and two strong ground lines.",
+        "transitionNote": "The sprout is regularized into a vertical stem with paired upper curves and two strong ground lines.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -491,7 +492,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/life/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The lines open outward into broader, straighter strokes while keeping the same arrangement.",
+        "changeNoteFromPrevious": "The plant shape flattens into crossing horizontal strokes around a central vertical, leaving only a faint sprout silhouette.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-生"
@@ -517,8 +518,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The lines open outward into broader, straighter strokes while keeping the same arrangement.",
+        "stageExplanation": "The plant shape flattens into crossing horizontal strokes around a central vertical, leaving only a faint sprout silhouette.",
+        "transitionNote": "The plant shape flattens into crossing horizontal strokes around a central vertical, leaving only a faint sprout silhouette.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -528,7 +529,7 @@
         "label": "Regular Script",
         "form": "生",
         "assetRef": null,
-        "changeNoteFromPrevious": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "changeNoteFromPrevious": "Regular 生 keeps the central stem and stacked ground/cross strokes, with the small upper diagonal preserving the sense of new growth.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -550,12 +551,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "生 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "生 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "stageExplanation": "Regular 生 keeps the central stem and stacked ground/cross strokes, with the small upper diagonal preserving the sense of new growth.",
+        "transitionNote": "Regular 生 keeps the central stem and stacked ground/cross strokes, with the small upper diagonal preserving the sense of new growth.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -563,7 +564,7 @@
     ],
     "origin": {
       "concept": "life",
-      "explanation": "A friendly educational reconstruction of life comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A seed sprouting from soil and growing into a young plant.",
       "asset": {
         "characterID": "life",
         "historicalStage": null,

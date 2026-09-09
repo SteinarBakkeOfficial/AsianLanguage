@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "典",
   "coreSharedMeaning": "classic",
-  "recognitionTakeaway": "典 connects the idea of classic to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 典 compresses the writing-slip grid into the upper 曲-like structure and preserves the supporting lower strokes, still suggesting something formally displayed or set out.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5178",
   "simplifiedForm": "典",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "Hands presenting a bound set of writing slips on a low table or stand.",
+    "Oracle shows a dense bundle of vertical slips at the top with supporting strokes and a table-like base beneath.",
+    "Regular 典 compresses the writing-slip grid into the upper 曲-like structure and preserves the supporting lower strokes, still suggesting something formally displayed or set out."
   ],
   "contentFolder": "content/research/v1-symbols/rank-107-典-u5178",
   "learnerCopyPath": null,
@@ -98,10 +99,10 @@
       ],
       "taiwanExamples": [
         {
-          "text": "经典",
+          "text": "經典",
           "reading": "jīngdiǎn",
           "translation": "classic",
-          "speechText": "经典",
+          "speechText": "經典",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -331,14 +332,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of classic, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "Hands presenting a bound set of writing slips on a low table or stand.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/classic/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of classic is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle shows a dense bundle of vertical slips at the top with supporting strokes and a table-like base beneath.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-典"
@@ -364,8 +365,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of classic.",
-        "transitionNote": "The image of classic is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle shows a dense bundle of vertical slips at the top with supporting strokes and a table-like base beneath.",
+        "transitionNote": "Oracle shows a dense bundle of vertical slips at the top with supporting strokes and a table-like base beneath.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -375,7 +376,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/classic/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The main outline remains, but the strokes become more even and continuous.",
+        "changeNoteFromPrevious": "Bronze makes the bound-slip grid clearer and separates it from the broad lower support.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-典"
@@ -401,8 +402,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The main outline remains, but the strokes become more even and continuous.",
+        "stageExplanation": "Bronze makes the bound-slip grid clearer and separates it from the broad lower support.",
+        "transitionNote": "Bronze makes the bound-slip grid clearer and separates it from the broad lower support.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -412,7 +413,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/classic/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The lines become more rounded and connected, while the parts settle into a steadier arrangement.",
+        "changeNoteFromPrevious": "Small Seal regularizes the slips into a neat lattice standing on two long legs or supports.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-典"
@@ -438,8 +439,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The lines become more rounded and connected, while the parts settle into a steadier arrangement.",
+        "stageExplanation": "Small Seal regularizes the slips into a neat lattice standing on two long legs or supports.",
+        "transitionNote": "Small Seal regularizes the slips into a neat lattice standing on two long legs or supports.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -449,7 +450,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/classic/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Curved sections flatten into fewer, straighter strokes, giving the form a clearer structure.",
+        "changeNoteFromPrevious": "Clerical thickens the lattice and adds a distinct small lower mark beneath the support.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-典"
@@ -475,8 +476,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Curved sections flatten into fewer, straighter strokes, giving the form a clearer structure.",
+        "stageExplanation": "Clerical thickens the lattice and adds a distinct small lower mark beneath the support.",
+        "transitionNote": "Clerical thickens the lattice and adds a distinct small lower mark beneath the support.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -486,7 +487,7 @@
         "label": "Regular Script",
         "form": "典",
         "assetRef": null,
-        "changeNoteFromPrevious": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "changeNoteFromPrevious": "Regular 典 compresses the writing-slip grid into the upper 曲-like structure and preserves the supporting lower strokes, still suggesting something formally displayed or set out.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -508,12 +509,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "典 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "典 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "stageExplanation": "Regular 典 compresses the writing-slip grid into the upper 曲-like structure and preserves the supporting lower strokes, still suggesting something formally displayed or set out.",
+        "transitionNote": "Regular 典 compresses the writing-slip grid into the upper 曲-like structure and preserves the supporting lower strokes, still suggesting something formally displayed or set out.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -521,7 +522,7 @@
     ],
     "origin": {
       "concept": "classic",
-      "explanation": "A friendly educational reconstruction of classic comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "Hands presenting a bound set of writing slips on a low table or stand.",
       "asset": {
         "characterID": "classic",
         "historicalStage": null,

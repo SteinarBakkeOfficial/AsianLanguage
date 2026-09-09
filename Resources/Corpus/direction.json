@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "向",
   "coreSharedMeaning": "direction",
-  "recognitionTakeaway": "向 connects the idea of direction to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 向 regularizes the outer enclosure and inner 口, keeping the image of an opening or voice directed outward.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5411",
   "simplifiedForm": "向",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A person calling from inside a house or doorway, with sound shown traveling outward.",
+    "Oracle has a pointed house-like enclosure surrounding a small mouth-shaped box near the bottom.",
+    "Regular 向 regularizes the outer enclosure and inner 口, keeping the image of an opening or voice directed outward."
   ],
   "contentFolder": "content/research/v1-symbols/rank-120-向-u5411",
   "learnerCopyPath": null,
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of direction, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A person calling from inside a house or doorway, with sound shown traveling outward.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/direction/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of direction is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle has a pointed house-like enclosure surrounding a small mouth-shaped box near the bottom.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-向"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of direction.",
-        "transitionNote": "The image of direction is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle has a pointed house-like enclosure surrounding a small mouth-shaped box near the bottom.",
+        "transitionNote": "Oracle has a pointed house-like enclosure surrounding a small mouth-shaped box near the bottom.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/direction/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The outline is drawn with fewer, simpler strokes, but its main shape is still easy to see.",
+        "changeNoteFromPrevious": "Bronze makes the roof broad and curved while the mouth becomes a clear bowl-like form inside.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-向"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The outline is drawn with fewer, simpler strokes, but its main shape is still easy to see.",
+        "stageExplanation": "Bronze makes the roof broad and curved while the mouth becomes a clear bowl-like form inside.",
+        "transitionNote": "Bronze makes the roof broad and curved while the mouth becomes a clear bowl-like form inside.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/direction/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The parts remain distinct, but their connecting lines become rounder and more settled.",
+        "changeNoteFromPrevious": "Small Seal straightens the roof into a tall enclosure and centers a rectangular 口-like element within it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-向"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The parts remain distinct, but their connecting lines become rounder and more settled.",
+        "stageExplanation": "Small Seal straightens the roof into a tall enclosure and centers a rectangular 口-like element within it.",
+        "transitionNote": "Small Seal straightens the roof into a tall enclosure and centers a rectangular 口-like element within it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/direction/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Several curved details disappear as the strokes become flatter and more direct.",
+        "changeNoteFromPrevious": "Clerical shortens and widens the enclosure, with the mouth now a compact box under the top stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-向"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Several curved details disappear as the strokes become flatter and more direct.",
+        "stageExplanation": "Clerical shortens and widens the enclosure, with the mouth now a compact box under the top stroke.",
+        "transitionNote": "Clerical shortens and widens the enclosure, with the mouth now a compact box under the top stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "向",
         "assetRef": null,
-        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "changeNoteFromPrevious": "Regular 向 regularizes the outer enclosure and inner 口, keeping the image of an opening or voice directed outward.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "向 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "向 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "stageExplanation": "Regular 向 regularizes the outer enclosure and inner 口, keeping the image of an opening or voice directed outward.",
+        "transitionNote": "Regular 向 regularizes the outer enclosure and inner 口, keeping the image of an opening or voice directed outward.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "direction",
-      "explanation": "A friendly educational reconstruction of direction comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A person calling from inside a house or doorway, with sound shown traveling outward.",
       "asset": {
         "characterID": "direction",
         "historicalStage": null,

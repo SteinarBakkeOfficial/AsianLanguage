@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "利",
   "coreSharedMeaning": "benefit",
-  "recognitionTakeaway": "利 connects the idea of benefit to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 利 fixes 禾 on the left and 刂 on the right, preserving the historical pairing of grain and cutting tool in a compact modern compound.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5229",
   "simplifiedForm": "利",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A person harvesting grain beside a standing crop and a curved sickle or knife.",
+    "Oracle places a plant-like stalk on the left and a separate blade-like form on the right, so the two working components remain distinct.",
+    "Regular 利 fixes 禾 on the left and 刂 on the right, preserving the historical pairing of grain and cutting tool in a compact modern compound."
   ],
   "contentFolder": "content/research/v1-symbols/rank-124-利-u5229",
   "learnerCopyPath": null,
@@ -338,14 +339,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of benefit, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A person harvesting grain beside a standing crop and a curved sickle or knife.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/benefit/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of benefit is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle places a plant-like stalk on the left and a separate blade-like form on the right, so the two working components remain distinct.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-利"
@@ -371,8 +372,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of benefit.",
-        "transitionNote": "The image of benefit is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle places a plant-like stalk on the left and a separate blade-like form on the right, so the two working components remain distinct.",
+        "transitionNote": "Oracle places a plant-like stalk on the left and a separate blade-like form on the right, so the two working components remain distinct.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -382,7 +383,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/benefit/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The main outline remains, but the strokes become more even and continuous.",
+        "changeNoteFromPrevious": "Bronze keeps the grain stalk recognizable and makes the right cutting element broader and more integrated with it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-利"
@@ -408,8 +409,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The main outline remains, but the strokes become more even and continuous.",
+        "stageExplanation": "Bronze keeps the grain stalk recognizable and makes the right cutting element broader and more integrated with it.",
+        "transitionNote": "Bronze keeps the grain stalk recognizable and makes the right cutting element broader and more integrated with it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -419,7 +420,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/benefit/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The lines become more rounded and connected, while the parts settle into a steadier arrangement.",
+        "changeNoteFromPrevious": "Small Seal regularizes the left plant into a 禾-like structure and the right blade into a long curved knife shape.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-利"
@@ -445,8 +446,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The lines become more rounded and connected, while the parts settle into a steadier arrangement.",
+        "stageExplanation": "Small Seal regularizes the left plant into a 禾-like structure and the right blade into a long curved knife shape.",
+        "transitionNote": "Small Seal regularizes the left plant into a 禾-like structure and the right blade into a long curved knife shape.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -456,7 +457,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/benefit/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Several curved sections reduce to fewer, broader strokes, giving the form a flatter structure.",
+        "changeNoteFromPrevious": "Clerical shortens and thickens both sides, producing a form already very close to 利.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-利"
@@ -482,8 +483,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Several curved sections reduce to fewer, broader strokes, giving the form a flatter structure.",
+        "stageExplanation": "Clerical shortens and thickens both sides, producing a form already very close to 利.",
+        "transitionNote": "Clerical shortens and thickens both sides, producing a form already very close to 利.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -493,7 +494,7 @@
         "label": "Regular Script",
         "form": "利",
         "assetRef": null,
-        "changeNoteFromPrevious": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "changeNoteFromPrevious": "Regular 利 fixes 禾 on the left and 刂 on the right, preserving the historical pairing of grain and cutting tool in a compact modern compound.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -515,12 +516,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "利 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "利 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "stageExplanation": "Regular 利 fixes 禾 on the left and 刂 on the right, preserving the historical pairing of grain and cutting tool in a compact modern compound.",
+        "transitionNote": "Regular 利 fixes 禾 on the left and 刂 on the right, preserving the historical pairing of grain and cutting tool in a compact modern compound.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -528,7 +529,7 @@
     ],
     "origin": {
       "concept": "benefit",
-      "explanation": "A friendly educational reconstruction of benefit comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A person harvesting grain beside a standing crop and a curved sickle or knife.",
       "asset": {
         "characterID": "benefit",
         "historicalStage": null,

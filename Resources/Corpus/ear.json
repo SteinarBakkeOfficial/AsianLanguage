@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "耳",
   "coreSharedMeaning": "ear",
-  "recognitionTakeaway": "耳 connects the idea of ear to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 耳 squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+8033",
   "simplifiedForm": "耳",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A human ear viewed from the side.",
+    "The outline closely follows the folds of a real ear, with several inward notches along one side.",
+    "Regular 耳 squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form."
   ],
   "contentFolder": "content/research/v1-symbols/rank-008-耳-u8033",
   "learnerCopyPath": null,
@@ -345,14 +346,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of ear, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A human ear viewed from the side.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/ear/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The ear’s outer contour is reduced to a compact group of simple strokes.",
+        "changeNoteFromPrevious": "The outline closely follows the folds of a real ear, with several inward notches along one side.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-耳"
@@ -378,8 +379,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of ear.",
-        "transitionNote": "The ear’s outer contour is reduced to a compact group of simple strokes.",
+        "stageExplanation": "The outline closely follows the folds of a real ear, with several inward notches along one side.",
+        "transitionNote": "The outline closely follows the folds of a real ear, with several inward notches along one side.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -389,7 +390,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/ear/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The marks become fuller and rounder without disturbing the basic arrangement.",
+        "changeNoteFromPrevious": "The ear becomes a rounded enclosure with a strong central crossing form, still vaguely anatomical.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-耳"
@@ -415,8 +416,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The marks become fuller and rounder without disturbing the basic arrangement.",
+        "stageExplanation": "The ear becomes a rounded enclosure with a strong central crossing form, still vaguely anatomical.",
+        "transitionNote": "The ear becomes a rounded enclosure with a strong central crossing form, still vaguely anatomical.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -426,7 +427,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/ear/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Fewer marks remain, arranged with more even spacing and steadier proportions.",
+        "changeNoteFromPrevious": "The outline straightens into a tall rectangular form with interior bars and a long downward tail.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-耳"
@@ -452,8 +453,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "Fewer marks remain, arranged with more even spacing and steadier proportions.",
+        "stageExplanation": "The outline straightens into a tall rectangular form with interior bars and a long downward tail.",
+        "transitionNote": "The outline straightens into a tall rectangular form with interior bars and a long downward tail.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -463,7 +464,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/ear/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Several curved details disappear as the strokes become flatter and more direct.",
+        "changeNoteFromPrevious": "The upper box becomes shorter and heavier while the lower vertical stroke extends distinctly below it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-耳"
@@ -489,8 +490,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Several curved details disappear as the strokes become flatter and more direct.",
+        "stageExplanation": "The upper box becomes shorter and heavier while the lower vertical stroke extends distinctly below it.",
+        "transitionNote": "The upper box becomes shorter and heavier while the lower vertical stroke extends distinctly below it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -500,7 +501,7 @@
         "label": "Regular Script",
         "form": "耳",
         "assetRef": null,
-        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "changeNoteFromPrevious": "Regular 耳 squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -522,12 +523,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "耳 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "耳 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "stageExplanation": "Regular 耳 squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form.",
+        "transitionNote": "Regular 耳 squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -535,7 +536,7 @@
     ],
     "origin": {
       "concept": "ear",
-      "explanation": "A friendly educational reconstruction of ear comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A human ear viewed from the side.",
       "asset": {
         "characterID": "ear",
         "historicalStage": null,

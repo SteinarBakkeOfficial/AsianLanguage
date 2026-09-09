@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "黑",
   "coreSharedMeaning": "black",
-  "recognitionTakeaway": "黑 connects the idea of black to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 黑 regularizes the boxed upper section and four lower dots; the literal soot-darkened person is no longer visible, but the dark/fire association remains in the lower marks.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+9ED1",
   "simplifiedForm": "黑",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A soot-darkened person beside a fire, smoke rising around the blackened figure.",
+    "Oracle shows a human-like body with a dark enclosed head or top and branching limbs below.",
+    "Regular 黑 regularizes the boxed upper section and four lower dots; the literal soot-darkened person is no longer visible, but the dark/fire association remains in the lower marks."
   ],
   "contentFolder": "content/research/v1-symbols/rank-070-黑-u9ED1",
   "learnerCopyPath": null,
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of black, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A soot-darkened person beside a fire, smoke rising around the blackened figure.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/black/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of black is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle shows a human-like body with a dark enclosed head or top and branching limbs below.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-黑"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of black.",
-        "transitionNote": "The image of black is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle shows a human-like body with a dark enclosed head or top and branching limbs below.",
+        "transitionNote": "Oracle shows a human-like body with a dark enclosed head or top and branching limbs below.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/black/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The basic shape holds steady as its separate marks become cleaner and more controlled.",
+        "changeNoteFromPrevious": "Bronze keeps the upright person silhouette but makes the head a pointed dark enclosure with paired internal marks.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-黑"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The basic shape holds steady as its separate marks become cleaner and more controlled.",
+        "stageExplanation": "Bronze keeps the upright person silhouette but makes the head a pointed dark enclosure with paired internal marks.",
+        "transitionNote": "Bronze keeps the upright person silhouette but makes the head a pointed dark enclosure with paired internal marks.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/black/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "changeNoteFromPrevious": "Small Seal expands the head into a broad barred top and adds several long downward strokes beneath, producing a much more complex figure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-黑"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "stageExplanation": "Small Seal expands the head into a broad barred top and adds several long downward strokes beneath, producing a much more complex figure.",
+        "transitionNote": "Small Seal expands the head into a broad barred top and adds several long downward strokes beneath, producing a much more complex figure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/black/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The rounded lines become flatter and more deliberate, while the main arrangement stays intact.",
+        "changeNoteFromPrevious": "Clerical flattens the top and turns the lower strokes into a dense 灬-like spread, closely anticipating 黑.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-黑"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The rounded lines become flatter and more deliberate, while the main arrangement stays intact.",
+        "stageExplanation": "Clerical flattens the top and turns the lower strokes into a dense 灬-like spread, closely anticipating 黑.",
+        "transitionNote": "Clerical flattens the top and turns the lower strokes into a dense 灬-like spread, closely anticipating 黑.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "黑",
         "assetRef": null,
-        "changeNoteFromPrevious": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "changeNoteFromPrevious": "Regular 黑 regularizes the boxed upper section and four lower dots; the literal soot-darkened person is no longer visible, but the dark/fire association remains in the lower marks.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "黑 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "黑 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "stageExplanation": "Regular 黑 regularizes the boxed upper section and four lower dots; the literal soot-darkened person is no longer visible, but the dark/fire association remains in the lower marks.",
+        "transitionNote": "Regular 黑 regularizes the boxed upper section and four lower dots; the literal soot-darkened person is no longer visible, but the dark/fire association remains in the lower marks.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "black",
-      "explanation": "A friendly educational reconstruction of black comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A soot-darkened person beside a fire, smoke rising around the blackened figure.",
       "asset": {
         "characterID": "black",
         "historicalStage": null,

@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "夕",
   "coreSharedMeaning": "evening",
-  "recognitionTakeaway": "夕 connects the idea of evening to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 夕 keeps the slanting outer stroke and turns the inner detail into the short diagonal stroke of the modern character.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5915",
   "simplifiedForm": "夕",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A crescent moon hanging in an evening sky, with a small sequence showing the crescent simplified.",
+    "A compact crescent-shaped form encloses one short interior mark.",
+    "Regular 夕 keeps the slanting outer stroke and turns the inner detail into the short diagonal stroke of the modern character."
   ],
   "contentFolder": "content/research/v1-symbols/rank-059-夕-u5915",
   "learnerCopyPath": null,
@@ -345,14 +346,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of evening, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A crescent moon hanging in an evening sky, with a small sequence showing the crescent simplified.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/evening/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of evening is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "A compact crescent-shaped form encloses one short interior mark.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-夕"
@@ -378,8 +379,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of evening.",
-        "transitionNote": "The image of evening is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "A compact crescent-shaped form encloses one short interior mark.",
+        "transitionNote": "A compact crescent-shaped form encloses one short interior mark.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -389,7 +390,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/evening/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The outline is drawn with fewer, simpler strokes, but its main shape is still easy to see.",
+        "changeNoteFromPrevious": "The crescent is simplified to a more open D-like curve with a single inner stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-夕"
@@ -415,8 +416,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The outline is drawn with fewer, simpler strokes, but its main shape is still easy to see.",
+        "stageExplanation": "The crescent is simplified to a more open D-like curve with a single inner stroke.",
+        "transitionNote": "The crescent is simplified to a more open D-like curve with a single inner stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -426,7 +427,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/evening/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The outline becomes more continuous, while its separate sections settle into steadier proportions.",
+        "changeNoteFromPrevious": "The outline loosens into a long flowing curve with one diagonal mark inside; it is much less pictorial than the Oracle form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-夕"
@@ -452,8 +453,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The outline becomes more continuous, while its separate sections settle into steadier proportions.",
+        "stageExplanation": "The outline loosens into a long flowing curve with one diagonal mark inside; it is much less pictorial than the Oracle form.",
+        "transitionNote": "The outline loosens into a long flowing curve with one diagonal mark inside; it is much less pictorial than the Oracle form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -463,7 +464,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/evening/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Several curved details disappear as the strokes become flatter and more direct.",
+        "changeNoteFromPrevious": "The flowing Seal form is compressed into a heavy diagonal shape with a small angular enclosure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-夕"
@@ -489,8 +490,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Several curved details disappear as the strokes become flatter and more direct.",
+        "stageExplanation": "The flowing Seal form is compressed into a heavy diagonal shape with a small angular enclosure.",
+        "transitionNote": "The flowing Seal form is compressed into a heavy diagonal shape with a small angular enclosure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -500,7 +501,7 @@
         "label": "Regular Script",
         "form": "夕",
         "assetRef": null,
-        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "changeNoteFromPrevious": "Regular 夕 keeps the slanting outer stroke and turns the inner detail into the short diagonal stroke of the modern character.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -522,12 +523,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "夕 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "夕 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "stageExplanation": "Regular 夕 keeps the slanting outer stroke and turns the inner detail into the short diagonal stroke of the modern character.",
+        "transitionNote": "Regular 夕 keeps the slanting outer stroke and turns the inner detail into the short diagonal stroke of the modern character.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -535,7 +536,7 @@
     ],
     "origin": {
       "concept": "evening",
-      "explanation": "A friendly educational reconstruction of evening comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A crescent moon hanging in an evening sky, with a small sequence showing the crescent simplified.",
       "asset": {
         "characterID": "evening",
         "historicalStage": null,

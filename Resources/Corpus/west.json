@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "西",
   "coreSharedMeaning": "west",
-  "recognitionTakeaway": "西 connects the idea of west to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 西 squares the enclosure and reduces the inside to the familiar crossing and short strokes; the sunset or nesting imagery is no longer visually obvious.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+897F",
   "simplifiedForm": "西",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A setting sun, a bird in flight, and a bird returning to a nest.",
+    "Oracle is already far from a literal sunset: a dense rectangular enclosure is divided by several internal strokes.",
+    "Regular 西 squares the enclosure and reduces the inside to the familiar crossing and short strokes; the sunset or nesting imagery is no longer visually obvious."
   ],
   "contentFolder": "content/research/v1-symbols/rank-063-西-u897F",
   "learnerCopyPath": null,
@@ -112,10 +113,10 @@
           ]
         },
         {
-          "text": "西边",
+          "text": "西邊",
           "reading": "xībian",
           "translation": "west side",
-          "speechText": "西边",
+          "speechText": "西邊",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of west, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A setting sun, a bird in flight, and a bird returning to a nest.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/west/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of west is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle is already far from a literal sunset: a dense rectangular enclosure is divided by several internal strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-西"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of west.",
-        "transitionNote": "The image of west is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle is already far from a literal sunset: a dense rectangular enclosure is divided by several internal strokes.",
+        "transitionNote": "Oracle is already far from a literal sunset: a dense rectangular enclosure is divided by several internal strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/west/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+        "changeNoteFromPrevious": "Bronze simplifies the enclosure into a pointed oval or pouch with a strong X-like crossing inside.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-西"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+        "stageExplanation": "Bronze simplifies the enclosure into a pointed oval or pouch with a strong X-like crossing inside.",
+        "transitionNote": "Bronze simplifies the enclosure into a pointed oval or pouch with a strong X-like crossing inside.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/west/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The separate parts draw into a smoother, more continuous outline with more even proportions.",
+        "changeNoteFromPrevious": "Small Seal adds a long curved top and places the crossed enclosure below it, creating a more organized two-part structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-西"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The separate parts draw into a smoother, more continuous outline with more even proportions.",
+        "stageExplanation": "Small Seal adds a long curved top and places the crossed enclosure below it, creating a more organized two-part structure.",
+        "transitionNote": "Small Seal adds a long curved top and places the crossed enclosure below it, creating a more organized two-part structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/west/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Several curved sections reduce to fewer, broader strokes, giving the form a flatter structure.",
+        "changeNoteFromPrevious": "Clerical flattens the outer shape into a wide box with four small inner compartments and a long top stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-西"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Several curved sections reduce to fewer, broader strokes, giving the form a flatter structure.",
+        "stageExplanation": "Clerical flattens the outer shape into a wide box with four small inner compartments and a long top stroke.",
+        "transitionNote": "Clerical flattens the outer shape into a wide box with four small inner compartments and a long top stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "西",
         "assetRef": null,
-        "changeNoteFromPrevious": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "changeNoteFromPrevious": "Regular 西 squares the enclosure and reduces the inside to the familiar crossing and short strokes; the sunset or nesting imagery is no longer visually obvious.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "西 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "西 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "stageExplanation": "Regular 西 squares the enclosure and reduces the inside to the familiar crossing and short strokes; the sunset or nesting imagery is no longer visually obvious.",
+        "transitionNote": "Regular 西 squares the enclosure and reduces the inside to the familiar crossing and short strokes; the sunset or nesting imagery is no longer visually obvious.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "west",
-      "explanation": "A friendly educational reconstruction of west comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A setting sun, a bird in flight, and a bird returning to a nest.",
       "asset": {
         "characterID": "west",
         "historicalStage": null,

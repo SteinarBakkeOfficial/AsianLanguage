@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "目",
   "coreSharedMeaning": "eye",
-  "recognitionTakeaway": "目 connects the idea of eye to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 目 keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+76EE",
   "simplifiedForm": "目",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "uncertain",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A human eye viewed from the front.",
+    "An elongated eye outline encloses inner divisions, still reading directly as an eye laid horizontally.",
+    "Regular 目 keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye."
   ],
   "contentFolder": "content/research/v1-symbols/rank-007-目-u76EE",
   "learnerCopyPath": null,
@@ -126,10 +127,10 @@
           ]
         },
         {
-          "text": "他的目光很温和。",
+          "text": "他的目光很溫和。",
           "reading": "Tā de mùguāng hěn wēnhé.",
           "translation": "His gaze is gentle.",
-          "speechText": "他的目光很温和。",
+          "speechText": "他的目光很溫和。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -345,14 +346,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of eye, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A human eye viewed from the front.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/eye/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The eye’s outer shape and inner mark are reduced to a few simple lines.",
+        "changeNoteFromPrevious": "An elongated eye outline encloses inner divisions, still reading directly as an eye laid horizontally.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-目"
@@ -378,8 +379,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of eye.",
-        "transitionNote": "The eye’s outer shape and inner mark are reduced to a few simple lines.",
+        "stageExplanation": "An elongated eye outline encloses inner divisions, still reading directly as an eye laid horizontally.",
+        "transitionNote": "An elongated eye outline encloses inner divisions, still reading directly as an eye laid horizontally.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -389,7 +390,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/eye/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The marks become fuller and rounder without disturbing the basic arrangement.",
+        "changeNoteFromPrevious": "The eye turns upright: a crescent-like outer contour surrounds a central pupil and inner line.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-目"
@@ -415,8 +416,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The marks become fuller and rounder without disturbing the basic arrangement.",
+        "stageExplanation": "The eye turns upright: a crescent-like outer contour surrounds a central pupil and inner line.",
+        "transitionNote": "The eye turns upright: a crescent-like outer contour surrounds a central pupil and inner line.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -426,7 +427,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/eye/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Fewer marks remain, arranged with more even spacing and steadier proportions.",
+        "changeNoteFromPrevious": "The pictorial pupil disappears as the eye becomes a tall rounded rectangle divided by two horizontal bands.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-目"
@@ -452,8 +453,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "Fewer marks remain, arranged with more even spacing and steadier proportions.",
+        "stageExplanation": "The pictorial pupil disappears as the eye becomes a tall rounded rectangle divided by two horizontal bands.",
+        "transitionNote": "The pictorial pupil disappears as the eye becomes a tall rounded rectangle divided by two horizontal bands.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -463,7 +464,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/eye/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The form spreads into wider strokes, and its main sections become more clearly separated.",
+        "changeNoteFromPrevious": "The frame thickens and squares off into three stacked compartments.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-目"
@@ -489,8 +490,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The form spreads into wider strokes, and its main sections become more clearly separated.",
+        "stageExplanation": "The frame thickens and squares off into three stacked compartments.",
+        "transitionNote": "The frame thickens and squares off into three stacked compartments.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -500,7 +501,7 @@
         "label": "Regular Script",
         "form": "目",
         "assetRef": null,
-        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "changeNoteFromPrevious": "Regular 目 keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -522,12 +523,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "目 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "目 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "stageExplanation": "Regular 目 keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye.",
+        "transitionNote": "Regular 目 keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -535,7 +536,7 @@
     ],
     "origin": {
       "concept": "eye",
-      "explanation": "A friendly educational reconstruction of eye comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A human eye viewed from the front.",
       "asset": {
         "characterID": "eye",
         "historicalStage": null,

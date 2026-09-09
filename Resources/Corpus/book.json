@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "册",
   "coreSharedMeaning": "book",
-  "recognitionTakeaway": "册 connects the idea of book to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular simplified 册 reduces the number of visible slips and replaces the binding with a diagonal crossing stroke; Traditional 冊 keeps the fuller bound-slip structure.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+518C",
   "simplifiedForm": "册",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "Loose writing slips bound together into a rolled or bundled book.",
+    "Oracle shows many uneven vertical slips tied across the middle by horizontal bindings.",
+    "Regular simplified 册 reduces the number of visible slips and replaces the binding with a diagonal crossing stroke; Traditional 冊 keeps the fuller bound-slip structure."
   ],
   "contentFolder": "content/research/v1-symbols/rank-055-册-u518C",
   "learnerCopyPath": null,
@@ -112,10 +113,10 @@
           ]
         },
         {
-          "text": "画冊",
+          "text": "畫冊",
           "reading": "huàcè",
           "translation": "picture album",
-          "speechText": "画冊",
+          "speechText": "畫冊",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -331,14 +332,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of book, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "Loose writing slips bound together into a rolled or bundled book.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/book/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of book is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle shows many uneven vertical slips tied across the middle by horizontal bindings.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-册"
@@ -364,8 +365,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of book.",
-        "transitionNote": "The image of book is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle shows many uneven vertical slips tied across the middle by horizontal bindings.",
+        "transitionNote": "Oracle shows many uneven vertical slips tied across the middle by horizontal bindings.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -375,7 +376,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/book/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The structure changes only slightly; the lines become smoother and easier to distinguish.",
+        "changeNoteFromPrevious": "Bronze straightens the bundle into a dense grid of upright slips and crossing cords.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-册"
@@ -401,8 +402,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The structure changes only slightly; the lines become smoother and easier to distinguish.",
+        "stageExplanation": "Bronze straightens the bundle into a dense grid of upright slips and crossing cords.",
+        "transitionNote": "Bronze straightens the bundle into a dense grid of upright slips and crossing cords.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -412,7 +413,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/book/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The parts remain distinct, but their connecting lines become rounder and more settled.",
+        "changeNoteFromPrevious": "Small Seal lengthens the slips and curves the binding lines around them, making the bundle look tied at the center.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-册"
@@ -438,8 +439,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The parts remain distinct, but their connecting lines become rounder and more settled.",
+        "stageExplanation": "Small Seal lengthens the slips and curves the binding lines around them, making the bundle look tied at the center.",
+        "transitionNote": "Small Seal lengthens the slips and curves the binding lines around them, making the bundle look tied at the center.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -449,7 +450,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/book/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Several curved details disappear as the strokes become flatter and more direct.",
+        "changeNoteFromPrevious": "Clerical spreads the vertical slips wider and turns the bindings into thick horizontal bars.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-册"
@@ -475,8 +476,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Several curved details disappear as the strokes become flatter and more direct.",
+        "stageExplanation": "Clerical spreads the vertical slips wider and turns the bindings into thick horizontal bars.",
+        "transitionNote": "Clerical spreads the vertical slips wider and turns the bindings into thick horizontal bars.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -486,7 +487,7 @@
         "label": "Regular Script",
         "form": "册",
         "assetRef": null,
-        "changeNoteFromPrevious": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "changeNoteFromPrevious": "Regular simplified 册 reduces the number of visible slips and replaces the binding with a diagonal crossing stroke; Traditional 冊 keeps the fuller bound-slip structure.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -508,12 +509,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "册 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "册 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The final arrangement is steadier, with distinct strokes and a clear balance between its parts.",
+        "stageExplanation": "Regular simplified 册 reduces the number of visible slips and replaces the binding with a diagonal crossing stroke; Traditional 冊 keeps the fuller bound-slip structure.",
+        "transitionNote": "Regular simplified 册 reduces the number of visible slips and replaces the binding with a diagonal crossing stroke; Traditional 冊 keeps the fuller bound-slip structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -521,7 +522,7 @@
     ],
     "origin": {
       "concept": "book",
-      "explanation": "A friendly educational reconstruction of book comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "Loose writing slips bound together into a rolled or bundled book.",
       "asset": {
         "characterID": "book",
         "historicalStage": null,

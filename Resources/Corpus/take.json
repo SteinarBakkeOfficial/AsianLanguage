@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "取",
   "coreSharedMeaning": "take",
-  "recognitionTakeaway": "取 connects the idea of take to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 取 fixes 耳 on the left and 又 on the right, making the historical “hand at an ear” composition structurally explicit.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+53D6",
   "simplifiedForm": "取",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A hand grasping an ear from a reclining person, with the act of taking emphasized.",
+    "Oracle shows a long hand or arm reaching toward a large ear-like shape; the two components are still pictorial and widely separated.",
+    "Regular 取 fixes 耳 on the left and 又 on the right, making the historical “hand at an ear” composition structurally explicit."
   ],
   "contentFolder": "content/research/v1-symbols/rank-112-取-u53D6",
   "learnerCopyPath": null,
@@ -345,14 +346,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of take, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A hand grasping an ear from a reclining person, with the act of taking emphasized.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/take/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of take is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle shows a long hand or arm reaching toward a large ear-like shape; the two components are still pictorial and widely separated.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-取"
@@ -378,8 +379,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of take.",
-        "transitionNote": "The image of take is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle shows a long hand or arm reaching toward a large ear-like shape; the two components are still pictorial and widely separated.",
+        "transitionNote": "Oracle shows a long hand or arm reaching toward a large ear-like shape; the two components are still pictorial and widely separated.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -389,7 +390,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/take/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The main outline remains, but the strokes become more even and continuous.",
+        "changeNoteFromPrevious": "Bronze rounds the hand into a compact left element while the ear becomes a thick right enclosure with a long trailing stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-取"
@@ -415,8 +416,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The main outline remains, but the strokes become more even and continuous.",
+        "stageExplanation": "Bronze rounds the hand into a compact left element while the ear becomes a thick right enclosure with a long trailing stroke.",
+        "transitionNote": "Bronze rounds the hand into a compact left element while the ear becomes a thick right enclosure with a long trailing stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -426,7 +427,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/take/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The parts settle into smoother curves and a more balanced arrangement.",
+        "changeNoteFromPrevious": "Small Seal makes the ear into a clear rectangular component and the hand into a distinct curved stroke beside it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-取"
@@ -452,8 +453,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The parts settle into smoother curves and a more balanced arrangement.",
+        "stageExplanation": "Small Seal makes the ear into a clear rectangular component and the hand into a distinct curved stroke beside it.",
+        "transitionNote": "Small Seal makes the ear into a clear rectangular component and the hand into a distinct curved stroke beside it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -463,7 +464,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/take/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Curved sections flatten into straighter, broader strokes, giving the form a more structured appearance.",
+        "changeNoteFromPrevious": "Clerical squares the ear further and turns the hand into the angular 又-like right side, closely approaching 取.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-取"
@@ -489,8 +490,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Curved sections flatten into straighter, broader strokes, giving the form a more structured appearance.",
+        "stageExplanation": "Clerical squares the ear further and turns the hand into the angular 又-like right side, closely approaching 取.",
+        "transitionNote": "Clerical squares the ear further and turns the hand into the angular 又-like right side, closely approaching 取.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -500,7 +501,7 @@
         "label": "Regular Script",
         "form": "取",
         "assetRef": null,
-        "changeNoteFromPrevious": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "changeNoteFromPrevious": "Regular 取 fixes 耳 on the left and 又 on the right, making the historical “hand at an ear” composition structurally explicit.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -522,12 +523,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "取 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "取 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "stageExplanation": "Regular 取 fixes 耳 on the left and 又 on the right, making the historical “hand at an ear” composition structurally explicit.",
+        "transitionNote": "Regular 取 fixes 耳 on the left and 又 on the right, making the historical “hand at an ear” composition structurally explicit.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -535,7 +536,7 @@
     ],
     "origin": {
       "concept": "take",
-      "explanation": "A friendly educational reconstruction of take comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A hand grasping an ear from a reclining person, with the act of taking emphasized.",
       "asset": {
         "characterID": "take",
         "historicalStage": null,

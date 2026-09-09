@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "土",
   "coreSharedMeaning": "earth",
-  "recognitionTakeaway": "土 connects the idea of earth to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 土 adds a short upper horizontal to the central stem while keeping the long lower ground line, producing the familiar three-stroke form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+571F",
   "simplifiedForm": "土",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A mound of earth rising from a flat ground surface.",
+    "A large irregular mound sits directly on a horizontal ground line; it looks more like a heap than the modern character.",
+    "Regular 土 adds a short upper horizontal to the central stem while keeping the long lower ground line, producing the familiar three-stroke form."
   ],
   "contentFolder": "content/research/v1-symbols/rank-023-土-u571F",
   "learnerCopyPath": null,
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of earth, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A mound of earth rising from a flat ground surface.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/earth/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of earth is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "A large irregular mound sits directly on a horizontal ground line; it looks more like a heap than the modern character.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-土"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of earth.",
-        "transitionNote": "The image of earth is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "A large irregular mound sits directly on a horizontal ground line; it looks more like a heap than the modern character.",
+        "transitionNote": "A large irregular mound sits directly on a horizontal ground line; it looks more like a heap than the modern character.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/earth/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "More rounded lines fill the outline, but the earlier arrangement stays clear.",
+        "changeNoteFromPrevious": "The mound narrows into a vertical post with a swollen center standing on a broad base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-土"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "More rounded lines fill the outline, but the earlier arrangement stays clear.",
+        "stageExplanation": "The mound narrows into a vertical post with a swollen center standing on a broad base.",
+        "transitionNote": "The mound narrows into a vertical post with a swollen center standing on a broad base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/earth/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The curved sections join more smoothly, giving the separate parts a calmer balance.",
+        "changeNoteFromPrevious": "The swollen center disappears, leaving a simple cross planted on a long ground line.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-土"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The curved sections join more smoothly, giving the separate parts a calmer balance.",
+        "stageExplanation": "The swollen center disappears, leaving a simple cross planted on a long ground line.",
+        "transitionNote": "The swollen center disappears, leaving a simple cross planted on a long ground line.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/earth/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The longer curves shorten into broader marks, making the structure flatter and easier to read.",
+        "changeNoteFromPrevious": "The cross-and-ground arrangement is retained with thicker, flatter brush strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-土"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The longer curves shorten into broader marks, making the structure flatter and easier to read.",
+        "stageExplanation": "The cross-and-ground arrangement is retained with thicker, flatter brush strokes.",
+        "transitionNote": "The cross-and-ground arrangement is retained with thicker, flatter brush strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "土",
         "assetRef": null,
-        "changeNoteFromPrevious": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "changeNoteFromPrevious": "Regular 土 adds a short upper horizontal to the central stem while keeping the long lower ground line, producing the familiar three-stroke form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "土 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "土 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "stageExplanation": "Regular 土 adds a short upper horizontal to the central stem while keeping the long lower ground line, producing the familiar three-stroke form.",
+        "transitionNote": "Regular 土 adds a short upper horizontal to the central stem while keeping the long lower ground line, producing the familiar three-stroke form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "earth",
-      "explanation": "A friendly educational reconstruction of earth comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A mound of earth rising from a flat ground surface.",
       "asset": {
         "characterID": "earth",
         "historicalStage": null,

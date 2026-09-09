@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "日",
   "coreSharedMeaning": "sun; day",
-  "recognitionTakeaway": "日 connects the idea of sun; day to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 日 squares the enclosure and tightens it vertically, leaving the familiar box divided by a single inner stroke.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+65E5",
   "simplifiedForm": "日",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "uncertain",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "The sun shown as a bright round disk, including a view near the horizon.",
+    "A rounded enclosure surrounds a strong horizontal line through the middle, like a framed sun with a mark inside.",
+    "Regular 日 squares the enclosure and tightens it vertically, leaving the familiar box divided by a single inner stroke."
   ],
   "contentFolder": "content/research/v1-symbols/rank-026-日-u65E5",
   "learnerCopyPath": null,
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of sun; day, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "The sun shown as a bright round disk, including a view near the horizon.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/day/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of sun is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "A rounded enclosure surrounds a strong horizontal line through the middle, like a framed sun with a mark inside.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-日"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of sun; day.",
-        "transitionNote": "The image of sun is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "A rounded enclosure surrounds a strong horizontal line through the middle, like a framed sun with a mark inside.",
+        "transitionNote": "A rounded enclosure surrounds a strong horizontal line through the middle, like a framed sun with a mark inside.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/day/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+        "changeNoteFromPrevious": "The enclosure becomes lower and bowl-like; the inner division is much less prominent in this selected form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-日"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+        "stageExplanation": "The enclosure becomes lower and bowl-like; the inner division is much less prominent in this selected form.",
+        "transitionNote": "The enclosure becomes lower and bowl-like; the inner division is much less prominent in this selected form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/day/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The parts settle into smoother curves and a more balanced arrangement.",
+        "changeNoteFromPrevious": "The shape is turned into a tall rounded capsule with one clean horizontal divider.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-日"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The parts settle into smoother curves and a more balanced arrangement.",
+        "stageExplanation": "The shape is turned into a tall rounded capsule with one clean horizontal divider.",
+        "transitionNote": "The shape is turned into a tall rounded capsule with one clean horizontal divider.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/day/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The strokes broaden and straighten, making the form wider and more structured.",
+        "changeNoteFromPrevious": "The capsule is flattened into a wide rectangle while the middle line remains.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-日"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The strokes broaden and straighten, making the form wider and more structured.",
+        "stageExplanation": "The capsule is flattened into a wide rectangle while the middle line remains.",
+        "transitionNote": "The capsule is flattened into a wide rectangle while the middle line remains.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "日",
         "assetRef": null,
-        "changeNoteFromPrevious": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "changeNoteFromPrevious": "Regular 日 squares the enclosure and tightens it vertically, leaving the familiar box divided by a single inner stroke.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "日 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "日 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "stageExplanation": "Regular 日 squares the enclosure and tightens it vertically, leaving the familiar box divided by a single inner stroke.",
+        "transitionNote": "Regular 日 squares the enclosure and tightens it vertically, leaving the familiar box divided by a single inner stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "sun; day",
-      "explanation": "A friendly educational reconstruction of sun; day comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "The sun shown as a bright round disk, including a view near the horizon.",
       "asset": {
         "characterID": "day",
         "historicalStage": null,

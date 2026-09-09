@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "赤",
   "coreSharedMeaning": "red",
-  "recognitionTakeaway": "赤 connects the idea of red to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 赤 standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+8D64",
   "simplifiedForm": "赤",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "A person standing beside and above red-orange flames.",
+    "Oracle is a tall person-like figure planted directly over a distinct flame-shaped lower component.",
+    "Regular 赤 standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form."
   ],
   "contentFolder": "content/research/v1-symbols/rank-071-赤-u8D64",
   "learnerCopyPath": null,
@@ -112,10 +113,10 @@
           ]
         },
         {
-          "text": "赤脚",
+          "text": "赤腳",
           "reading": "chìjiǎo",
           "translation": "barefoot",
-          "speechText": "赤脚",
+          "speechText": "赤腳",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -126,10 +127,10 @@
           ]
         },
         {
-          "text": "他赤脚走路。",
+          "text": "他赤腳走路。",
           "reading": "Tā chìjiǎo zǒulù.",
           "translation": "He walks barefoot.",
-          "speechText": "他赤脚走路。",
+          "speechText": "他赤腳走路。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -352,14 +353,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of red, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "A person standing beside and above red-orange flames.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/red/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of red is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle is a tall person-like figure planted directly over a distinct flame-shaped lower component.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-赤"
@@ -385,8 +386,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of red.",
-        "transitionNote": "The image of red is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle is a tall person-like figure planted directly over a distinct flame-shaped lower component.",
+        "transitionNote": "Oracle is a tall person-like figure planted directly over a distinct flame-shaped lower component.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -396,7 +397,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/red/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Several small marks fall away, leaving the same basic outline in a cleaner form.",
+        "changeNoteFromPrevious": "Bronze broadens the human body and makes the fire beneath it into a clear bowl of upward strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-赤"
@@ -422,8 +423,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "Several small marks fall away, leaving the same basic outline in a cleaner form.",
+        "stageExplanation": "Bronze broadens the human body and makes the fire beneath it into a clear bowl of upward strokes.",
+        "transitionNote": "Bronze broadens the human body and makes the fire beneath it into a clear bowl of upward strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -433,7 +434,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/red/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "changeNoteFromPrevious": "Small Seal regularizes the person into a symmetric 大-like upper body over a rounded fire form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-赤"
@@ -459,8 +460,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The parts connect into a fuller outline, with the height and spacing becoming more regular.",
+        "stageExplanation": "Small Seal regularizes the person into a symmetric 大-like upper body over a rounded fire form.",
+        "transitionNote": "Small Seal regularizes the person into a symmetric 大-like upper body over a rounded fire form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -470,7 +471,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/red/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The rounded lines become flatter and more deliberate, while the main arrangement stays intact.",
+        "changeNoteFromPrevious": "Clerical flattens the upper body and spreads the lower flame strokes sideways, creating a form close to 赤.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-赤"
@@ -496,8 +497,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "The rounded lines become flatter and more deliberate, while the main arrangement stays intact.",
+        "stageExplanation": "Clerical flattens the upper body and spreads the lower flame strokes sideways, creating a form close to 赤.",
+        "transitionNote": "Clerical flattens the upper body and spreads the lower flame strokes sideways, creating a form close to 赤.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -507,7 +508,7 @@
         "label": "Regular Script",
         "form": "赤",
         "assetRef": null,
-        "changeNoteFromPrevious": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "changeNoteFromPrevious": "Regular 赤 standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -529,12 +530,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "赤 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "赤 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The lines become more controlled, and the main sections settle into balanced proportions.",
+        "stageExplanation": "Regular 赤 standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form.",
+        "transitionNote": "Regular 赤 standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -542,7 +543,7 @@
     ],
     "origin": {
       "concept": "red",
-      "explanation": "A friendly educational reconstruction of red comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "A person standing beside and above red-orange flames.",
       "asset": {
         "characterID": "red",
         "historicalStage": null,

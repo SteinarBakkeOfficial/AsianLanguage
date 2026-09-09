@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "玉",
   "coreSharedMeaning": "jade",
-  "recognitionTakeaway": "玉 connects the idea of jade to a complete visual journey from origin through historical forms and into modern language use.",
+  "recognitionTakeaway": "Regular 玉 adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+7389",
   "simplifiedForm": "玉",
@@ -11,8 +11,9 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "Compare the friendly origin illustration with the selected Oracle Bone form.",
-    "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."
+    "Several pieces of jade threaded vertically on a cord.",
+    "Oracle shows a central string crossed by three short horizontal jade pieces, with a small top projection.",
+    "Regular 玉 adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王."
   ],
   "contentFolder": "content/research/v1-symbols/rank-046-玉-u7389",
   "learnerCopyPath": null,
@@ -338,14 +339,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Begin with the real-world idea of jade, then compare the selected forms without treating the illustration as a historical glyph.",
+    "originAnchor": "Several pieces of jade threaded vertically on a cord.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/jade/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The image of jade is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "changeNoteFromPrevious": "Oracle shows a central string crossed by three short horizontal jade pieces, with a small top projection.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-玉"
@@ -371,8 +372,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The earliest selected form remains a visual starting point for the idea of jade.",
-        "transitionNote": "The image of jade is reduced to a few simple strokes, while its clearest outline remains visible.",
+        "stageExplanation": "Oracle shows a central string crossed by three short horizontal jade pieces, with a small top projection.",
+        "transitionNote": "Oracle shows a central string crossed by three short horizontal jade pieces, with a small top projection.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -382,7 +383,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/jade/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+        "changeNoteFromPrevious": "Bronze straightens the string and makes the three crosspieces more even, already looking close to 王.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-玉"
@@ -408,8 +409,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Bronze form keeps the character's main structure while reshaping its lines.",
-        "transitionNote": "The early marks simplify into fewer strokes, while the main silhouette remains visible.",
+        "stageExplanation": "Bronze straightens the string and makes the three crosspieces more even, already looking close to 王.",
+        "transitionNote": "Bronze straightens the string and makes the three crosspieces more even, already looking close to 王.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -419,7 +420,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/jade/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The lines become more rounded and connected, while the parts settle into a steadier arrangement.",
+        "changeNoteFromPrevious": "Small Seal makes the three horizontals perfectly regular on one central vertical.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-玉"
@@ -445,8 +446,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Small Seal form organizes the earlier shape into a more balanced outline.",
-        "transitionNote": "The lines become more rounded and connected, while the parts settle into a steadier arrangement.",
+        "stageExplanation": "Small Seal makes the three horizontals perfectly regular on one central vertical.",
+        "transitionNote": "Small Seal makes the three horizontals perfectly regular on one central vertical.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -456,7 +457,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/jade/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Curved sections flatten into fewer, straighter strokes, giving the form a clearer structure.",
+        "changeNoteFromPrevious": "Clerical thickens the same three-bar structure and gives the base a longer brush finish.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-玉"
@@ -482,8 +483,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Clerical form brings the structure closer to the proportions familiar today.",
-        "transitionNote": "Curved sections flatten into fewer, straighter strokes, giving the form a clearer structure.",
+        "stageExplanation": "Clerical thickens the same three-bar structure and gives the base a longer brush finish.",
+        "transitionNote": "Clerical thickens the same three-bar structure and gives the base a longer brush finish.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -493,7 +494,7 @@
         "label": "Regular Script",
         "form": "玉",
         "assetRef": null,
-        "changeNoteFromPrevious": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "changeNoteFromPrevious": "Regular 玉 adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -515,12 +516,12 @@
           "assetKind": "font-glyph-rendering",
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
-          "accessibilityDescription": "玉 in modern standardized Kai reference rendering",
+          "accessibilityDescription": "玉 in Regular Script",
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A modern standardized Kai reference rendering provides the consistent endpoint for comparison.",
-        "transitionNote": "The strokes settle into an even, balanced arrangement with clearer separation between the main parts.",
+        "stageExplanation": "Regular 玉 adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王.",
+        "transitionNote": "Regular 玉 adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -528,7 +529,7 @@
     ],
     "origin": {
       "concept": "jade",
-      "explanation": "A friendly educational reconstruction of jade comes first, followed by the separately sourced historical glyphs.",
+      "explanation": "Several pieces of jade threaded vertically on a cord.",
       "asset": {
         "characterID": "jade",
         "historicalStage": null,
