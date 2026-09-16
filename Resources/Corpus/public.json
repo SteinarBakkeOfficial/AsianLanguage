@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "公",
   "coreSharedMeaning": "public",
-  "recognitionTakeaway": "Regular 公 keeps the split 八-like top over the curled 厶-like lower component, preserving the two-part structure in a highly abstract modern form.",
+  "recognitionTakeaway": "公 now writes “public/common” and related senses, but those meanings came through borrowing; the ancient picture was most likely a vessel.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+516C",
   "simplifiedForm": "公",
@@ -15,9 +15,9 @@
     "Oracle shows two long diverging strokes above a small enclosed box, clearly separating the upper pair from the lower element.",
     "Regular 公 keeps the split 八-like top over the curled 厶-like lower component, preserving the two-part structure in a highly abstract modern form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-104-公-u516C",
+  "contentFolder": "content/release/symbols/public",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-104-公-u516C/research.md",
+  "researchNotesPath": "content/release/symbols/public/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "public"
       ],
       "examples": [
+        {
+          "text": "公",
+          "reading": "gōng",
+          "translation": "public",
+          "speechText": "公",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "gōng"
+          ]
+        },
         {
           "text": "公共",
           "reading": "gōnggòng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "公司",
+          "reading": "gōngsī",
+          "translation": "company",
+          "speechText": "公司",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我们去公园。",
           "reading": "Wǒmen qù gōngyuán.",
           "translation": "We are going to the park.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "公",
@@ -98,6 +127,18 @@
         "public"
       ],
       "taiwanExamples": [
+        {
+          "text": "公",
+          "reading": "gōng",
+          "translation": "public",
+          "speechText": "公",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "公共",
           "reading": "gōnggòng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "公",
+          "reading": "gung1",
+          "translation": "public",
+          "speechText": "公",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "公共",
           "reading": "gung1 gung6",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "公",
       "readings": [
         {
-          "system": "on",
-          "value": "コウ (kō)",
+          "system": "onyomi",
+          "value": "コウ — kō",
           "audioAssetRef": null,
           "speechText": "こう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コウ",
+          "romanization": "kō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "おおやけ (ōyake)",
+          "system": "kunyomi",
+          "value": "おおやけ — ōyake",
           "audioAssetRef": null,
           "speechText": "おおやけ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "おおやけ",
+          "romanization": "ōyake",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "公"
-          ]
+          ],
+          "kanaReading": "こうきょう",
+          "coversReadings": [
+            "コウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "公共",
+              "reading": "こうきょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>公共<rt>こうきょう</rt></ruby>"
         },
         {
           "text": "公園",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "公"
-          ]
+          ],
+          "kanaReading": "こうえん",
+          "furiganaSegments": [
+            {
+              "text": "公園",
+              "reading": "こうえん"
+            }
+          ],
+          "furiganaHtml": "<ruby>公園<rt>こうえん</rt></ruby>"
+        },
+        {
+          "text": "公",
+          "reading": "ōyake",
+          "translation": "public; official",
+          "speechText": "公",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おおやけ",
+          "coversReadings": [
+            "おおやけ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "公",
+              "reading": "おおやけ"
+            }
+          ],
+          "furiganaHtml": "<ruby>公<rt>おおやけ</rt></ruby>"
+        },
+        {
+          "text": "公立",
+          "reading": "kōritsu",
+          "translation": "public (institution)",
+          "speechText": "公立",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうりつ",
+          "furiganaSegments": [
+            {
+              "text": "公立",
+              "reading": "こうりつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>公立<rt>こうりつ</rt></ruby>"
         },
         {
           "text": "公園へ行きます。",
@@ -267,20 +390,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "公"
-          ]
+          ],
+          "kanaReading": "こうえんへいきます。",
+          "furiganaSegments": [
+            {
+              "text": "公園",
+              "reading": "こうえん"
+            },
+            {
+              "text": "へ"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>公園<rt>こうえん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "おおやけ",
+        "romanization": "ōyake",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "公",
       "readings": [
         {
           "system": "hanja",
-          "value": "공 / gong",
+          "value": "공 — gong",
           "audioAssetRef": null,
           "speechText": "공",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "공",
+          "romanization": "gong"
         }
       ],
       "glosses": [
@@ -316,6 +474,30 @@
           ]
         },
         {
+          "text": "공식",
+          "reading": "gongsik",
+          "translation": "official",
+          "speechText": "공식",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "공립",
+          "reading": "gongnip",
+          "translation": "public (institution)",
+          "speechText": "공립",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "공원에 가요.",
           "reading": "gongwone gayo.",
           "translation": "I go to the park.",
@@ -330,7 +512,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "공 — gong",
+          "audioAssetRef": null,
+          "speechText": "공",
+          "speechLanguage": "korean",
+          "nativeReading": "공",
+          "romanization": "gong"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "공",
+        "romanization": "gong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -339,14 +540,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Two separate parts brought together around a small container, used to illustrate something shared or public.",
+    "originAnchor": "A deep rounded vessel.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/public/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows two long diverging strokes above a small enclosed box, clearly separating the upper pair from the lower element.",
+        "changeNoteFromPrevious": "The selected early graph is best understood as a deep rounded vessel with a wide opening.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-公"
@@ -372,8 +573,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows two long diverging strokes above a small enclosed box, clearly separating the upper pair from the lower element.",
-        "transitionNote": "Oracle shows two long diverging strokes above a small enclosed box, clearly separating the upper pair from the lower element.",
+        "stageExplanation": "The selected early graph is best understood as a deep rounded vessel with a wide opening.",
+        "transitionNote": "The selected early graph is best understood as a deep rounded vessel with a wide opening.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -383,7 +584,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/public/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze rounds the lower box into a bowl-like enclosure and brings the upper strokes closer together.",
+        "changeNoteFromPrevious": "The vessel outline becomes more compact and regular while retaining the container-like silhouette.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-公"
@@ -409,8 +610,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze rounds the lower box into a bowl-like enclosure and brings the upper strokes closer together.",
-        "transitionNote": "Bronze rounds the lower box into a bowl-like enclosure and brings the upper strokes closer together.",
+        "stageExplanation": "The vessel outline becomes more compact and regular while retaining the container-like silhouette.",
+        "transitionNote": "The vessel outline becomes more compact and regular while retaining the container-like silhouette.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -420,7 +621,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/public/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal curves the two upper strokes inward and turns the lower enclosure into a small loop suspended beneath them.",
+        "changeNoteFromPrevious": "The old vessel picture is reorganized into a highly abstract written structure; its original object is no longer obvious.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-公"
@@ -446,8 +647,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal curves the two upper strokes inward and turns the lower enclosure into a small loop suspended beneath them.",
-        "transitionNote": "Small Seal curves the two upper strokes inward and turns the lower enclosure into a small loop suspended beneath them.",
+        "stageExplanation": "The old vessel picture is reorganized into a highly abstract written structure; its original object is no longer obvious.",
+        "transitionNote": "The old vessel picture is reorganized into a highly abstract written structure; its original object is no longer obvious.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -457,7 +658,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/public/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical spreads the upper pair into broad diagonals while reducing the lower loop to a compact central box.",
+        "changeNoteFromPrevious": "The Seal curves flatten into the compact strokes that lead to the standard graph.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-公"
@@ -483,8 +684,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical spreads the upper pair into broad diagonals while reducing the lower loop to a compact central box.",
-        "transitionNote": "Clerical spreads the upper pair into broad diagonals while reducing the lower loop to a compact central box.",
+        "stageExplanation": "The Seal curves flatten into the compact strokes that lead to the standard graph.",
+        "transitionNote": "The Seal curves flatten into the compact strokes that lead to the standard graph.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -494,7 +695,7 @@
         "label": "Regular Script",
         "form": "公",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 公 keeps the split 八-like top over the curled 厶-like lower component, preserving the two-part structure in a highly abstract modern form.",
+        "changeNoteFromPrevious": "公 now writes “public/common” and related senses, but those meanings came through borrowing; the ancient picture was most likely a vessel.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -520,8 +721,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 公 keeps the split 八-like top over the curled 厶-like lower component, preserving the two-part structure in a highly abstract modern form.",
-        "transitionNote": "Regular 公 keeps the split 八-like top over the curled 厶-like lower component, preserving the two-part structure in a highly abstract modern form.",
+        "stageExplanation": "公 now writes “public/common” and related senses, but those meanings came through borrowing; the ancient picture was most likely a vessel.",
+        "transitionNote": "公 now writes “public/common” and related senses, but those meanings came through borrowing; the ancient picture was most likely a vessel.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -529,7 +730,7 @@
     ],
     "origin": {
       "concept": "public",
-      "explanation": "Two separate parts brought together around a small container, used to illustrate something shared or public.",
+      "explanation": "The early graph most likely depicts a deep rounded vessel.",
       "asset": {
         "characterID": "public",
         "historicalStage": null,
@@ -634,13 +835,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

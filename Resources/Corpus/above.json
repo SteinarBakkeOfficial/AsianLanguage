@@ -2,8 +2,8 @@
   "id": "above",
   "version": 1,
   "coreCharacter": "上",
-  "coreSharedMeaning": "above",
-  "recognitionTakeaway": "Regular 上 adds the short upper horizontal to the vertical stem while retaining the long lower baseline.",
+  "coreSharedMeaning": "above / on",
+  "recognitionTakeaway": "Adds the short upper horizontal to the vertical stem while retaining the long lower baseline.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+4E0A",
   "simplifiedForm": "上",
@@ -15,9 +15,9 @@
     "Oracle expresses the idea directly with a short horizontal floating over a longer one.",
     "Regular 上 adds the short upper horizontal to the vertical stem while retaining the long lower baseline."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-078-上-u4E0A",
+  "contentFolder": "content/release/symbols/above",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-078-上-u4E0A/research.md",
+  "researchNotesPath": "content/release/symbols/above/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "above"
       ],
       "examples": [
+        {
+          "text": "上",
+          "reading": "shàng",
+          "translation": "above",
+          "speechText": "上",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shàng"
+          ]
+        },
         {
           "text": "上面",
           "reading": "shàngmiàn",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "上衣",
+          "reading": "shàngyī",
+          "translation": "top; jacket",
+          "speechText": "上衣",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "书在桌子上。",
           "reading": "Shū zài zhuōzi shang.",
           "translation": "The book is on the table.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "上",
@@ -98,6 +127,18 @@
         "above"
       ],
       "taiwanExamples": [
+        {
+          "text": "上",
+          "reading": "shàng",
+          "translation": "above",
+          "speechText": "上",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "上面",
           "reading": "shàngmiàn",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "上",
+          "reading": "soeng6",
+          "translation": "above",
+          "speechText": "上",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "上面",
           "reading": "soeng6 min6",
@@ -203,31 +256,82 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "上",
       "readings": [
         {
-          "system": "on",
-          "value": "ジョウ (jō)",
+          "system": "onyomi",
+          "value": "ジョウ — jō",
           "audioAssetRef": null,
           "speechText": "じょう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ジョウ",
+          "romanization": "jō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "うえ (ue)",
+          "system": "kunyomi",
+          "value": "うえ — ue",
           "audioAssetRef": null,
           "speechText": "うえ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "うえ",
+          "romanization": "ue",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "あがる (agaru)",
+          "system": "kunyomi",
+          "value": "あがる — agaru",
           "audioAssetRef": null,
           "speechText": "あがる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "あがる",
+          "romanization": "agaru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "うわ — uwa",
+          "audioAssetRef": null,
+          "speechText": "うわ",
+          "speechLanguage": "japanese",
+          "nativeReading": "うわ",
+          "romanization": "uwa",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "かみ — kami",
+          "audioAssetRef": null,
+          "speechText": "かみ",
+          "speechLanguage": "japanese",
+          "nativeReading": "かみ",
+          "romanization": "kami",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "あげる — ageru",
+          "audioAssetRef": null,
+          "speechText": "あげる",
+          "speechLanguage": "japanese",
+          "nativeReading": "あげる",
+          "romanization": "ageru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "のぼる — noboru",
+          "audioAssetRef": null,
+          "speechText": "のぼる",
+          "speechLanguage": "japanese",
+          "nativeReading": "のぼる",
+          "romanization": "noboru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +350,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "上"
-          ]
+          ],
+          "kanaReading": "うえ",
+          "coversReadings": [
+            "うえ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "上",
+              "reading": "うえ"
+            }
+          ],
+          "furiganaHtml": "<ruby>上<rt>うえ</rt></ruby>"
         },
         {
           "text": "上る",
@@ -260,7 +375,70 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "上"
-          ]
+          ],
+          "kanaReading": "のぼる",
+          "coversReadings": [
+            "のぼる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "上",
+              "reading": "のぼ"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>上<rt>のぼ</rt></ruby>る"
+        },
+        {
+          "text": "上司",
+          "reading": "jōshi",
+          "translation": "boss; superior",
+          "speechText": "上司",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "じょうし",
+          "coversReadings": [
+            "ジョウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "上司",
+              "reading": "じょうし"
+            }
+          ],
+          "furiganaHtml": "<ruby>上司<rt>じょうし</rt></ruby>"
+        },
+        {
+          "text": "上がる",
+          "reading": "agaru",
+          "translation": "rise; go up",
+          "speechText": "上がる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あがる",
+          "coversReadings": [
+            "あがる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "上",
+              "reading": "あ"
+            },
+            {
+              "text": "がる"
+            }
+          ],
+          "furiganaHtml": "<ruby>上<rt>あ</rt></ruby>がる"
         },
         {
           "text": "本は机の上です。",
@@ -274,33 +452,153 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "上"
-          ]
+          ],
+          "kanaReading": "ほんはつくえのうえです。",
+          "furiganaSegments": [
+            {
+              "text": "本",
+              "reading": "ほん"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "机",
+              "reading": "つくえ"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "上",
+              "reading": "うえ"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>本<rt>ほん</rt></ruby>は<ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>です。"
+        },
+        {
+          "text": "上着",
+          "reading": "uwagi",
+          "translation": "jacket; outerwear",
+          "speechText": "上着",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "うわぎ",
+          "coversReadings": [
+            "うわ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "上着",
+              "reading": "うわぎ"
+            }
+          ],
+          "furiganaHtml": "<ruby>上着<rt>うわぎ</rt></ruby>"
+        },
+        {
+          "text": "川上",
+          "reading": "kawakami",
+          "translation": "upstream",
+          "speechText": "川上",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "かわかみ",
+          "coversReadings": [
+            "かみ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "川上",
+              "reading": "かわかみ"
+            }
+          ],
+          "furiganaHtml": "<ruby>川上<rt>かわかみ</rt></ruby>"
+        },
+        {
+          "text": "上げる",
+          "reading": "ageru",
+          "translation": "raise; lift",
+          "speechText": "上げる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あげる",
+          "coversReadings": [
+            "あげる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "上",
+              "reading": "あ"
+            },
+            {
+              "text": "げる"
+            }
+          ],
+          "furiganaHtml": "<ruby>上<rt>あ</rt></ruby>げる"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "うえ",
+        "romanization": "ue",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "上",
       "readings": [
         {
           "system": "hanja",
-          "value": "상 / sang",
+          "value": "상 — sang",
           "audioAssetRef": null,
           "speechText": "상",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "위 / wi",
-          "audioAssetRef": null,
-          "speechText": "위",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "상",
+          "romanization": "sang"
         }
       ],
       "glosses": [
         "above"
       ],
       "examples": [
+        {
+          "text": "위",
+          "reading": "wi",
+          "translation": "above / on",
+          "speechText": "위",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "상단",
           "reading": "sangdan",
@@ -330,6 +628,18 @@
           ]
         },
         {
+          "text": "상승",
+          "reading": "sangseung",
+          "translation": "rise / increase",
+          "speechText": "상승",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "책이 책상 위에 있어요.",
           "reading": "chaegi chaeksang wie isseoyo.",
           "translation": "The book is on the desk.",
@@ -344,7 +654,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "상 — sang",
+          "audioAssetRef": null,
+          "speechText": "상",
+          "speechLanguage": "korean",
+          "nativeReading": "상",
+          "romanization": "sang"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "위 — wi",
+          "audioAssetRef": null,
+          "speechText": "위",
+          "speechLanguage": "korean",
+          "nativeReading": "위",
+          "romanization": "wi",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "above / on",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "상",
+        "romanization": "sang",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +702,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A short mark positioned above a longer baseline to show “above.”",
+    "originAnchor": "The longer line marks a boundary or the ground; the short mark above points to the space above. This abstract sign came to mean 'above'.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/above/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle expresses the idea directly with a short horizontal floating over a longer one.",
+        "changeNoteFromPrevious": "Expresses the idea directly with a short horizontal floating over a longer one.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-上"
@@ -386,8 +735,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle expresses the idea directly with a short horizontal floating over a longer one.",
-        "transitionNote": "Oracle expresses the idea directly with a short horizontal floating over a longer one.",
+        "stageExplanation": "Expresses the idea directly with a short horizontal floating over a longer one.",
+        "transitionNote": "Expresses the idea directly with a short horizontal floating over a longer one.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +746,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/above/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze preserves the two-level arrangement but exaggerates the thickness and tilt of both bars.",
+        "changeNoteFromPrevious": "Preserves the two-level arrangement but exaggerates the thickness and tilt of both bars.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-上"
@@ -423,8 +772,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze preserves the two-level arrangement but exaggerates the thickness and tilt of both bars.",
-        "transitionNote": "Bronze preserves the two-level arrangement but exaggerates the thickness and tilt of both bars.",
+        "stageExplanation": "Preserves the two-level arrangement but exaggerates the thickness and tilt of both bars.",
+        "transitionNote": "Preserves the two-level arrangement but exaggerates the thickness and tilt of both bars.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +783,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/above/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal changes the logic: a vertical now rises from a long baseline, turning the upper relation into a more integrated symbol.",
+        "changeNoteFromPrevious": "Changes the logic: a vertical now rises from a long baseline, turning the upper relation into a more integrated symbol.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-上"
@@ -460,8 +809,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal changes the logic: a vertical now rises from a long baseline, turning the upper relation into a more integrated symbol.",
-        "transitionNote": "Small Seal changes the logic: a vertical now rises from a long baseline, turning the upper relation into a more integrated symbol.",
+        "stageExplanation": "Changes the logic: a vertical now rises from a long baseline, turning the upper relation into a more integrated symbol.",
+        "transitionNote": "Changes the logic: a vertical now rises from a long baseline, turning the upper relation into a more integrated symbol.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +820,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/above/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical keeps the upright-on-baseline shape with heavier, flatter brush strokes.",
+        "changeNoteFromPrevious": "Keeps the upright-on-baseline shape with heavier, flatter brush strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-上"
@@ -497,8 +846,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical keeps the upright-on-baseline shape with heavier, flatter brush strokes.",
-        "transitionNote": "Clerical keeps the upright-on-baseline shape with heavier, flatter brush strokes.",
+        "stageExplanation": "Keeps the upright-on-baseline shape with heavier, flatter brush strokes.",
+        "transitionNote": "Keeps the upright-on-baseline shape with heavier, flatter brush strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +857,7 @@
         "label": "Regular Script",
         "form": "上",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 上 adds the short upper horizontal to the vertical stem while retaining the long lower baseline.",
+        "changeNoteFromPrevious": "The original mark above a line was later reshaped with a vertical stroke to distinguish it from the numeral for two; the meaning ‘above’ remained.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +883,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 上 adds the short upper horizontal to the vertical stem while retaining the long lower baseline.",
-        "transitionNote": "Regular 上 adds the short upper horizontal to the vertical stem while retaining the long lower baseline.",
+        "stageExplanation": "Adds the short upper horizontal to the vertical stem while retaining the long lower baseline.",
+        "transitionNote": "The original mark above a line was later reshaped with a vertical stroke to distinguish it from the numeral for two; the meaning ‘above’ remained.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +892,7 @@
     ],
     "origin": {
       "concept": "above",
-      "explanation": "A short mark positioned above a longer baseline to show “above.”",
+      "explanation": "A short mark placed above a longer reference line.",
       "asset": {
         "characterID": "above",
         "historicalStage": null,
@@ -560,7 +909,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of above",
+        "accessibilityDescription": "Illustration of above / on",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +927,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'above', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'above / on', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +997,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

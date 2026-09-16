@@ -2,8 +2,8 @@
   "id": "many",
   "version": 1,
   "coreCharacter": "多",
-  "coreSharedMeaning": "many",
-  "recognitionTakeaway": "Regular 多 regularizes the pair as two stacked 夕 components, preserving the original doubling principle.",
+  "coreSharedMeaning": "many / much",
+  "recognitionTakeaway": "The stacked early forms conventionalize into 多, while the exact semantic motivation for “many” remains uncertain.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+591A",
   "simplifiedForm": "多",
@@ -15,9 +15,9 @@
     "Oracle stacks two small box-like or meat-shaped forms, each with an open center.",
     "Regular 多 regularizes the pair as two stacked 夕 components, preserving the original doubling principle."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-075-多-u591A",
+  "contentFolder": "content/release/symbols/many",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-075-多-u591A/research.md",
+  "researchNotesPath": "content/release/symbols/many/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "many"
       ],
       "examples": [
+        {
+          "text": "多",
+          "reading": "duō",
+          "translation": "many",
+          "speechText": "多",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "duō"
+          ]
+        },
         {
           "text": "很多",
           "reading": "hěn duō",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "多少",
+          "reading": "duōshao",
+          "translation": "how many; how much",
+          "speechText": "多少",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这里人很多。",
           "reading": "Zhèlǐ rén hěn duō.",
           "translation": "There are many people here.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "多",
@@ -98,6 +127,18 @@
         "many"
       ],
       "taiwanExamples": [
+        {
+          "text": "多",
+          "reading": "duō",
+          "translation": "many",
+          "speechText": "多",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "很多",
           "reading": "hěn duō",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "多",
+          "reading": "do1",
+          "translation": "many",
+          "speechText": "多",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "好多",
           "reading": "hou2 do1",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "多",
       "readings": [
         {
-          "system": "on",
-          "value": "タ (ta)",
+          "system": "onyomi",
+          "value": "タ — ta",
           "audioAssetRef": null,
           "speechText": "た",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "タ",
+          "romanization": "ta",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "おおい (ōi)",
+          "system": "kunyomi",
+          "value": "おおい — ōi",
           "audioAssetRef": null,
           "speechText": "おおい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "おおい",
+          "romanization": "ōi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "多"
-          ]
+          ],
+          "kanaReading": "おおい",
+          "coversReadings": [
+            "おおい"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "多",
+              "reading": "おお"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "furiganaHtml": "<ruby>多<rt>おお</rt></ruby>い"
         },
         {
           "text": "多数",
@@ -253,7 +328,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "多"
-          ]
+          ],
+          "kanaReading": "たすう",
+          "coversReadings": [
+            "タ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "多数",
+              "reading": "たすう"
+            }
+          ],
+          "furiganaHtml": "<ruby>多数<rt>たすう</rt></ruby>"
+        },
+        {
+          "text": "多量",
+          "reading": "taryō",
+          "translation": "large quantity",
+          "speechText": "多量",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たりょう",
+          "furiganaSegments": [
+            {
+              "text": "多量",
+              "reading": "たりょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>多量<rt>たりょう</rt></ruby>"
+        },
+        {
+          "text": "多様",
+          "reading": "tayō",
+          "translation": "diverse",
+          "speechText": "多様",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たよう",
+          "furiganaSegments": [
+            {
+              "text": "多様",
+              "reading": "たよう"
+            }
+          ],
+          "furiganaHtml": "<ruby>多様<rt>たよう</rt></ruby>"
         },
         {
           "text": "人が多いです。",
@@ -267,33 +393,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "多"
-          ]
+          ],
+          "kanaReading": "ひとがおおいです。",
+          "furiganaSegments": [
+            {
+              "text": "人",
+              "reading": "ひと"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "多",
+              "reading": "おお"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "おおい",
+        "romanization": "ōi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "多",
       "readings": [
         {
           "system": "hanja",
-          "value": "다 / da",
+          "value": "다 — da",
           "audioAssetRef": null,
           "speechText": "다",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "많다 / manta",
-          "audioAssetRef": null,
-          "speechText": "많다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "다",
+          "romanization": "da"
         }
       ],
       "glosses": [
         "many"
       ],
       "examples": [
+        {
+          "text": "많다",
+          "reading": "manta",
+          "translation": "many / much",
+          "speechText": "많다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "다수",
           "reading": "dasu",
@@ -323,6 +490,18 @@
           ]
         },
         {
+          "text": "다양",
+          "reading": "dayang",
+          "translation": "variety; diversity",
+          "speechText": "다양",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "사람이 많아요.",
           "reading": "sarami manayo.",
           "translation": "There are many people.",
@@ -337,7 +516,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "다 — da",
+          "audioAssetRef": null,
+          "speechText": "다",
+          "speechLanguage": "korean",
+          "nativeReading": "다",
+          "romanization": "da"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "많다 — manta",
+          "audioAssetRef": null,
+          "speechText": "많다",
+          "speechLanguage": "korean",
+          "nativeReading": "많다",
+          "romanization": "manta",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "many / much",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "다",
+        "romanization": "da",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +564,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Two separate pieces of meat, shown one above the other.",
+    "originAnchor": "Two portions of meat repeat to suggest abundance, leading to the meanings 'many' or 'much.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/many/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle stacks two small box-like or meat-shaped forms, each with an open center.",
+        "changeNoteFromPrevious": "A leading analysis reads the early graph as two stacked meat forms; do not interpret the shapes as “two evenings.”",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-多"
@@ -379,8 +597,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle stacks two small box-like or meat-shaped forms, each with an open center.",
-        "transitionNote": "Oracle stacks two small box-like or meat-shaped forms, each with an open center.",
+        "stageExplanation": "A leading analysis reads the early graph as two stacked meat forms; do not interpret the shapes as “two evenings.”",
+        "transitionNote": "A leading analysis reads the early graph as two stacked meat forms; do not interpret the shapes as “two evenings.”",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +608,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/many/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps the pair but rounds them into two curved D-like shapes.",
+        "changeNoteFromPrevious": "Keeps the pair but rounds them into two curved D-like shapes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-多"
@@ -416,8 +634,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps the pair but rounds them into two curved D-like shapes.",
-        "transitionNote": "Bronze keeps the pair but rounds them into two curved D-like shapes.",
+        "stageExplanation": "Keeps the pair but rounds them into two curved D-like shapes.",
+        "transitionNote": "Keeps the pair but rounds them into two curved D-like shapes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +645,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/many/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal turns each unit into a smooth 夕-like curve, still clearly stacked as two similar parts.",
+        "changeNoteFromPrevious": "Turns each unit into a smooth evening/moon-derived sign-like curve, still clearly stacked as two similar parts.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-多"
@@ -453,8 +671,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal turns each unit into a smooth 夕-like curve, still clearly stacked as two similar parts.",
-        "transitionNote": "Small Seal turns each unit into a smooth 夕-like curve, still clearly stacked as two similar parts.",
+        "stageExplanation": "Turns each unit into a smooth evening/moon-derived sign-like curve, still clearly stacked as two similar parts.",
+        "transitionNote": "Turns each unit into a smooth evening/moon-derived sign-like curve, still clearly stacked as two similar parts.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +682,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/many/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical thickens and overlaps the two components, making them more angular.",
+        "changeNoteFromPrevious": "Thickens and overlaps the two components, making them more angular.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-多"
@@ -490,8 +708,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical thickens and overlaps the two components, making them more angular.",
-        "transitionNote": "Clerical thickens and overlaps the two components, making them more angular.",
+        "stageExplanation": "Thickens and overlaps the two components, making them more angular.",
+        "transitionNote": "Thickens and overlaps the two components, making them more angular.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +719,7 @@
         "label": "Regular Script",
         "form": "多",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 多 regularizes the pair as two stacked 夕 components, preserving the original doubling principle.",
+        "changeNoteFromPrevious": "The stacked early forms conventionalize into 多, while the exact semantic motivation for “many” remains uncertain.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +745,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 多 regularizes the pair as two stacked 夕 components, preserving the original doubling principle.",
-        "transitionNote": "Regular 多 regularizes the pair as two stacked 夕 components, preserving the original doubling principle.",
+        "stageExplanation": "The stacked early forms conventionalize into 多, while the exact semantic motivation for “many” remains uncertain.",
+        "transitionNote": "The stacked early forms conventionalize into 多, while the exact semantic motivation for “many” remains uncertain.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +754,7 @@
     ],
     "origin": {
       "concept": "many",
-      "explanation": "Two separate pieces of meat, shown one above the other.",
+      "explanation": "A common early form places two meat portions together to express a larger quantity.",
       "asset": {
         "characterID": "many",
         "historicalStage": null,
@@ -553,7 +771,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of many",
+        "accessibilityDescription": "Illustration of many / much",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +789,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'many', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'many / much', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +859,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

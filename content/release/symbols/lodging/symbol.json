@@ -1,0 +1,924 @@
+{
+  "id": "lodging",
+  "version": 1,
+  "coreCharacter": "宿",
+  "coreSharedMeaning": "lodging / stay overnight",
+  "recognitionTakeaway": "The lodging graph stabilizes as 宿, with roof + person/resting-material compressed into a conventional structure.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+5BBF",
+  "simplifiedForm": "宿",
+  "traditionalForm": "宿",
+  "additionalMeanings": [],
+  "formationType": "pictograph",
+  "visualTeachingNotes": [
+    "A person lying down to sleep beneath a roof or simple shelter.",
+    "Oracle shows a pointed roof enclosing a bent person-like figure or sleeping body on one side.",
+    "Regular 宿 standardizes 宀 over the person-and-bed derived lower components; the scene of sleeping under a roof is no longer literal but the shelter structure remains clear."
+  ],
+  "contentFolder": "content/release/symbols/lodging",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/lodging/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 125,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "宿",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "sù",
+          "audioAssetRef": null,
+          "speechText": "宿",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "lodging"
+      ],
+      "examples": [
+        {
+          "text": "宿",
+          "reading": "sù",
+          "translation": "lodging",
+          "speechText": "宿",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "sù"
+          ]
+        },
+        {
+          "text": "宿舍",
+          "reading": "sùshè",
+          "translation": "dormitory",
+          "speechText": "宿舍",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        },
+        {
+          "text": "住宿",
+          "reading": "zhùsù",
+          "translation": "lodging; stay",
+          "speechText": "住宿",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        },
+        {
+          "text": "宿命",
+          "reading": "sùmìng",
+          "translation": "fate; destiny",
+          "speechText": "宿命",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "我住在宿舍。",
+          "reading": "Wǒ zhù zài sùshè.",
+          "translation": "I live in a dormitory.",
+          "speechText": "我住在宿舍。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "宿",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "sù",
+          "audioAssetRef": null,
+          "speechText": "宿",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "lodging"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "宿",
+          "reading": "sù",
+          "translation": "lodging",
+          "speechText": "宿",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "宿舍",
+          "reading": "sùshè",
+          "translation": "dormitory",
+          "speechText": "宿舍",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        },
+        {
+          "text": "住宿",
+          "reading": "zhùsù",
+          "translation": "lodging; stay",
+          "speechText": "住宿",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        },
+        {
+          "text": "我住在宿舍。",
+          "reading": "Wǒ zhù zài sùshè.",
+          "translation": "I live in a dormitory.",
+          "speechText": "我住在宿舍。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "宿",
+          "reading": "suk1",
+          "translation": "lodging",
+          "speechText": "宿",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "宿舍",
+          "reading": "suk1 se3",
+          "translation": "dormitory",
+          "speechText": "宿舍",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        },
+        {
+          "text": "住宿",
+          "reading": "zyu6 suk1",
+          "translation": "lodging; stay",
+          "speechText": "住宿",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        },
+        {
+          "text": "我住喺宿舍。",
+          "reading": "ngo5 zyu6 hai2 suk1 se3",
+          "translation": "I live in a dormitory.",
+          "speechText": "我住喺宿舍。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "sù",
+          "audioAssetRef": null,
+          "speechText": "宿",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "suk1",
+          "audioAssetRef": null,
+          "speechText": "宿",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "宿",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "シュク — shuku",
+          "audioAssetRef": null,
+          "speechText": "しゅく",
+          "speechLanguage": "japanese",
+          "nativeReading": "シュク",
+          "romanization": "shuku",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "やど — yado",
+          "audioAssetRef": null,
+          "speechText": "やど",
+          "speechLanguage": "japanese",
+          "nativeReading": "やど",
+          "romanization": "yado",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "やどる — yadoru",
+          "audioAssetRef": null,
+          "speechText": "やどる",
+          "speechLanguage": "japanese",
+          "nativeReading": "やどる",
+          "romanization": "yadoru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "やどす — yadosu",
+          "audioAssetRef": null,
+          "speechText": "やどす",
+          "speechLanguage": "japanese",
+          "nativeReading": "やどす",
+          "romanization": "yadosu",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "lodging"
+      ],
+      "examples": [
+        {
+          "text": "宿",
+          "reading": "yado",
+          "translation": "inn; lodging",
+          "speechText": "宿",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ],
+          "kanaReading": "やど",
+          "coversReadings": [
+            "やど"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "宿",
+              "reading": "やど"
+            }
+          ],
+          "furiganaHtml": "<ruby>宿<rt>やど</rt></ruby>"
+        },
+        {
+          "text": "宿泊",
+          "reading": "shukuhaku",
+          "translation": "overnight stay",
+          "speechText": "宿泊",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ],
+          "kanaReading": "しゅくはく",
+          "coversReadings": [
+            "シュク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "宿泊",
+              "reading": "しゅくはく"
+            }
+          ],
+          "furiganaHtml": "<ruby>宿泊<rt>しゅくはく</rt></ruby>"
+        },
+        {
+          "text": "宿題",
+          "reading": "shukudai",
+          "translation": "homework",
+          "speechText": "宿題",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しゅくだい",
+          "furiganaSegments": [
+            {
+              "text": "宿題",
+              "reading": "しゅくだい"
+            }
+          ],
+          "furiganaHtml": "<ruby>宿題<rt>しゅくだい</rt></ruby>"
+        },
+        {
+          "text": "宿る",
+          "reading": "yadoru",
+          "translation": "dwell / lodge",
+          "speechText": "宿る",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "やどる",
+          "coversReadings": [
+            "やどる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "宿",
+              "reading": "やど"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>宿<rt>やど</rt></ruby>る"
+        },
+        {
+          "text": "この宿に泊まります。",
+          "reading": "kono yado ni tomarimasu.",
+          "translation": "I stay at this inn.",
+          "speechText": "この宿に泊まります。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ],
+          "kanaReading": "このやどにとまります。",
+          "furiganaSegments": [
+            {
+              "text": "この"
+            },
+            {
+              "text": "宿",
+              "reading": "やど"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "泊",
+              "reading": "と"
+            },
+            {
+              "text": "まります"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "この<ruby>宿<rt>やど</rt></ruby>に<ruby>泊<rt>と</rt></ruby>まります。"
+        },
+        {
+          "text": "宿す",
+          "reading": "yadosu",
+          "translation": "harbor; contain; lodge",
+          "speechText": "宿す",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "やどす",
+          "coversReadings": [
+            "やどす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "宿",
+              "reading": "やど"
+            },
+            {
+              "text": "す"
+            }
+          ],
+          "furiganaHtml": "<ruby>宿<rt>やど</rt></ruby>す"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "やど",
+        "romanization": "yado",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "宿",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "숙 — suk",
+          "audioAssetRef": null,
+          "speechText": "숙",
+          "speechLanguage": "korean",
+          "nativeReading": "숙",
+          "romanization": "suk"
+        }
+      ],
+      "glosses": [
+        "lodging"
+      ],
+      "examples": [
+        {
+          "text": "묵다",
+          "reading": "mukda",
+          "translation": "stay overnight",
+          "speechText": "묵다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "숙소",
+          "reading": "sukso",
+          "translation": "lodging",
+          "speechText": "숙소",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        },
+        {
+          "text": "숙박",
+          "reading": "sukbak",
+          "translation": "overnight stay",
+          "speechText": "숙박",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        },
+        {
+          "text": "숙제",
+          "reading": "sukje",
+          "translation": "homework",
+          "speechText": "숙제",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "여기서 묵어요.",
+          "reading": "yeogiseo mugeoyo.",
+          "translation": "I stay here overnight.",
+          "speechText": "여기서 묵어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "宿"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "숙 — suk",
+          "audioAssetRef": null,
+          "speechText": "숙",
+          "speechLanguage": "korean",
+          "nativeReading": "숙",
+          "romanization": "suk"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "묵다 — mukda",
+          "audioAssetRef": null,
+          "speechText": "묵다",
+          "speechLanguage": "korean",
+          "nativeReading": "묵다",
+          "romanization": "mukda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "stay overnight",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "숙",
+        "romanization": "suk",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A person and a mat combine to show someone resting for the night; this led to the meaning “lodging.”",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/lodging/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "A person rests on a mat; roof/shelter appears in expanded forms and should not erase the mat from the origin explanation.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-宿"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "宿",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%AE%BF/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/42_F20C.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/lodging/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/lodging/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "宿 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A person rests on a mat; roof/shelter appears in expanded forms and should not erase the mat from the origin explanation.",
+        "transitionNote": "A person rests on a mat; roof/shelter appears in expanded forms and should not erase the mat from the origin explanation.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/lodging/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "Makes the shelter large and rounded and encloses a much clearer curled body and bedding-like shapes inside.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-宿"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "宿",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%AE%BF/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/32_F563.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/lodging/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/lodging/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "宿 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Makes the shelter large and rounded and encloses a much clearer curled body and bedding-like shapes inside.",
+        "transitionNote": "Makes the shelter large and rounded and encloses a much clearer curled body and bedding-like shapes inside.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/lodging/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Straightens the roof into a tall enclosure and organizes the sleeper/bed elements into compact inner strokes.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-宿"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "宿",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%AE%BF/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_5BBF.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/lodging/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/lodging/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "宿 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Straightens the roof into a tall enclosure and organizes the sleeper/bed elements into compact inner strokes.",
+        "transitionNote": "Straightens the roof into a tall enclosure and organizes the sleeper/bed elements into compact inner strokes.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/lodging/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The person, resting surface, and shelter elements compress into an angular structure approaching the later standard form.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-宿"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "宿",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%AE%BF/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/92_F2C6.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/lodging/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/lodging/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "宿 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The person, resting surface, and shelter elements compress into an angular structure approaching the later standard form.",
+        "transitionNote": "The person, resting surface, and shelter elements compress into an angular structure approaching the later standard form.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "宿",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The lodging graph stabilizes as 宿, with roof + person/resting-material compressed into a conventional structure.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "宿",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "宿 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The lodging graph stabilizes as 宿, with roof + person/resting-material compressed into a conventional structure.",
+        "transitionNote": "The lodging graph stabilizes as 宿, with roof + person/resting-material compressed into a conventional structure.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "lodging",
+      "explanation": "A person resting/sleeping on a mat; roof/shelter material appears in forms specifying indoor lodging.",
+      "asset": {
+        "characterID": "lodging",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/lodging/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of lodging",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-宿"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿱宀佰.",
+    "components": [],
+    "certainty": "medium",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-宿"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'lodging / stay overnight', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E5%AE%BF"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-宿",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%AE%BF"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-宿",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "目",
   "coreSharedMeaning": "eye",
-  "recognitionTakeaway": "Regular 目 keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye.",
+  "recognitionTakeaway": "Keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+76EE",
   "simplifiedForm": "目",
@@ -15,9 +15,9 @@
     "An elongated eye outline encloses inner divisions, still reading directly as an eye laid horizontally.",
     "Regular 目 keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-007-目-u76EE",
+  "contentFolder": "content/release/symbols/eye",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-007-目-u76EE/research.md",
+  "researchNotesPath": null,
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "eye; gaze; item/purpose in compounds"
       ],
       "examples": [
+        {
+          "text": "目",
+          "reading": "mù",
+          "translation": "eye; gaze; item/purpose in compounds",
+          "speechText": "目",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "mù"
+          ]
+        },
         {
           "text": "目光",
           "reading": "mùguāng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "目的",
+          "reading": "mùdì",
+          "translation": "purpose",
+          "speechText": "目的",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他的目光很温和。",
           "reading": "Tā de mùguāng hěn wēnhé.",
           "translation": "His gaze is gentle.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "目",
@@ -98,6 +127,18 @@
         "eye; gaze; item/purpose in compounds"
       ],
       "taiwanExamples": [
+        {
+          "text": "目",
+          "reading": "mù",
+          "translation": "eye; gaze; item/purpose in compounds",
+          "speechText": "目",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "目光",
           "reading": "mùguāng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "目",
+          "reading": "muk6",
+          "translation": "eye; gaze; item/purpose in compounds",
+          "speechText": "目",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "目光",
           "reading": "muk6 gwong1",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "目",
       "readings": [
         {
-          "system": "on",
-          "value": "モク (moku)",
+          "system": "onyomi",
+          "value": "モク — moku",
           "audioAssetRef": null,
           "speechText": "もく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "モク",
+          "romanization": "moku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "め (me)",
+          "system": "kunyomi",
+          "value": "め — me",
           "audioAssetRef": null,
           "speechText": "め",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "め",
+          "romanization": "me",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "目"
-          ]
+          ],
+          "kanaReading": "め",
+          "coversReadings": [
+            "め"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "目",
+              "reading": "め"
+            }
+          ],
+          "furiganaHtml": "<ruby>目<rt>め</rt></ruby>"
         },
         {
           "text": "目的",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "目"
-          ]
+          ],
+          "kanaReading": "もくてき",
+          "coversReadings": [
+            "モク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "目的",
+              "reading": "もくてき"
+            }
+          ],
+          "furiganaHtml": "<ruby>目的<rt>もくてき</rt></ruby>"
+        },
+        {
+          "text": "目薬",
+          "reading": "megusuri",
+          "translation": "eye drops",
+          "speechText": "目薬",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "めぐすり",
+          "furiganaSegments": [
+            {
+              "text": "目薬",
+              "reading": "めぐすり"
+            }
+          ],
+          "furiganaHtml": "<ruby>目薬<rt>めぐすり</rt></ruby>"
+        },
+        {
+          "text": "目標",
+          "reading": "mokuhyō",
+          "translation": "goal",
+          "speechText": "目標",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "もくひょう",
+          "furiganaSegments": [
+            {
+              "text": "目標",
+              "reading": "もくひょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>目標<rt>もくひょう</rt></ruby>"
         },
         {
           "text": "目を閉じます。",
@@ -267,33 +390,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "目"
-          ]
+          ],
+          "kanaReading": "めをとじます。",
+          "furiganaSegments": [
+            {
+              "text": "目",
+              "reading": "め"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "閉",
+              "reading": "と"
+            },
+            {
+              "text": "じます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>目<rt>め</rt></ruby>を<ruby>閉<rt>と</rt></ruby>じます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "め",
+        "romanization": "me",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "目",
       "readings": [
         {
           "system": "hanja",
-          "value": "목 / mok",
+          "value": "목 — mok",
           "audioAssetRef": null,
           "speechText": "목",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "눈 / nun",
-          "audioAssetRef": null,
-          "speechText": "눈",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "목",
+          "romanization": "mok"
         }
       ],
       "glosses": [
         "eye"
       ],
       "examples": [
+        {
+          "text": "눈",
+          "reading": "nun",
+          "translation": "eye",
+          "speechText": "눈",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "목적",
           "reading": "mokjeok",
@@ -323,6 +487,18 @@
           ]
         },
         {
+          "text": "목표",
+          "reading": "mokpyo",
+          "translation": "goal",
+          "speechText": "목표",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "눈을 감아요.",
           "reading": "nuneul gamayo.",
           "translation": "I close my eyes.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "목 — mok",
+          "audioAssetRef": null,
+          "speechText": "목",
+          "speechLanguage": "korean",
+          "nativeReading": "목",
+          "romanization": "mok"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "눈 — nun",
+          "audioAssetRef": null,
+          "speechText": "눈",
+          "speechLanguage": "korean",
+          "nativeReading": "눈",
+          "romanization": "nun",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "eye",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "목",
+        "romanization": "mok",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,7 +561,7 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A human eye viewed from the front.",
+    "originAnchor": "A single human eye shown horizontally, echoing the ancient pictograph.",
     "stages": [
       {
         "stage": "oracleBone",
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "目",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 目 keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye.",
+        "changeNoteFromPrevious": "Keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 目 keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye.",
-        "transitionNote": "Regular 目 keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye.",
+        "stageExplanation": "Keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye.",
+        "transitionNote": "Keeps the vertical rectangle and two internal horizontals, a standardized box derived from the rotated eye.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "eye",
-      "explanation": "A human eye viewed from the front.",
+      "explanation": "A human eye shown horizontally in early forms.",
       "asset": {
         "characterID": "eye",
         "historicalStage": null,
@@ -613,13 +828,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

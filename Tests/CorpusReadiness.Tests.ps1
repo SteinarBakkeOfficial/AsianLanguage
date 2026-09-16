@@ -33,7 +33,7 @@ function Assert-Contains {
   }
 }
 
-$output = & $reportScript -CorpusPath (Join-Path $repoRoot "content/shared-characters") -LaunchTarget 100 2>&1
+$output = & $reportScript -CorpusPath (Join-Path $repoRoot "docs/archive/legacy-pilot/shared-characters") -LaunchTarget 100 2>&1
 $text = $output -join "`n"
 
 Assert-Equal -Actual $LASTEXITCODE -Expected 0 -Message "Corpus readiness report should succeed."

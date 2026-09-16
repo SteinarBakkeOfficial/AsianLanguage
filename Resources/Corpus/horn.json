@@ -2,8 +2,8 @@
   "id": "horn",
   "version": 1,
   "coreCharacter": "角",
-  "coreSharedMeaning": "horn",
-  "recognitionTakeaway": "Regular 角 regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
+  "coreSharedMeaning": "horn / corner",
+  "recognitionTakeaway": "Regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+89D2",
   "simplifiedForm": "角",
@@ -15,9 +15,9 @@
     "The Oracle form follows the outline of a single pointed horn with an inner hollow or layered section.",
     "Regular 角 regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-040-角-u89D2",
+  "contentFolder": "content/release/symbols/horn",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-040-角-u89D2/research.md",
+  "researchNotesPath": "content/release/symbols/horn/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -32,6 +32,14 @@
           "audioAssetRef": null,
           "speechText": "角",
           "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "jué",
+          "audioAssetRef": null,
+          "speechText": "角",
+          "speechLanguage": "mandarin",
+          "usageNote": "common in words such as 角色"
         }
       ],
       "glosses": [
@@ -50,6 +58,9 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "角"
+          ],
+          "coversReadings": [
+            "jiǎo"
           ]
         },
         {
@@ -67,6 +78,45 @@
           ]
         },
         {
+          "text": "角落",
+          "reading": "jiǎoluò",
+          "translation": "corner",
+          "speechText": "角落",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "角度",
+          "reading": "jiǎodù",
+          "translation": "angle",
+          "speechText": "角度",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "角色",
+          "reading": "juésè",
+          "translation": "role",
+          "speechText": "角色",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "jué"
+          ]
+        },
+        {
           "text": "牛有两只角。",
           "reading": "Niú yǒu liǎng zhī jiǎo.",
           "translation": "A cow has two horns.",
@@ -81,7 +131,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "角",
@@ -125,6 +177,18 @@
           "introducedSymbols": [
             "角"
           ]
+        },
+        {
+          "text": "角落",
+          "reading": "jiǎoluò",
+          "translation": "corner",
+          "speechText": "角落",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "牛有兩隻角。",
@@ -171,6 +235,18 @@
           ]
         },
         {
+          "text": "角落",
+          "reading": "gok3 lok6",
+          "translation": "corner",
+          "speechText": "角落",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "隻牛有兩隻角。",
           "reading": "zek3 ngau4 jau5 loeng5 zek3 gok3",
           "translation": "A cow has two horns.",
@@ -203,31 +279,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "角",
       "readings": [
         {
-          "system": "on",
-          "value": "カク (kaku)",
+          "system": "onyomi",
+          "value": "カク — kaku",
           "audioAssetRef": null,
           "speechText": "かく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "カク",
+          "romanization": "kaku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "つの (tsuno)",
+          "system": "kunyomi",
+          "value": "つの — tsuno",
           "audioAssetRef": null,
           "speechText": "つの",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "つの",
+          "romanization": "tsuno",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "かど (kado)",
+          "system": "kunyomi",
+          "value": "かど — kado",
           "audioAssetRef": null,
           "speechText": "かど",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "かど",
+          "romanization": "kado",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +333,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "角"
-          ]
+          ],
+          "kanaReading": "かど",
+          "coversReadings": [
+            "かど"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "角",
+              "reading": "かど"
+            }
+          ],
+          "furiganaHtml": "<ruby>角<rt>かど</rt></ruby>"
         },
         {
           "text": "牛の角",
@@ -260,7 +358,68 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "角"
-          ]
+          ],
+          "kanaReading": "うしのつの",
+          "coversReadings": [
+            "つの"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "牛",
+              "reading": "うし"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "角",
+              "reading": "つの"
+            }
+          ],
+          "furiganaHtml": "<ruby>牛<rt>うし</rt></ruby>の<ruby>角<rt>つの</rt></ruby>"
+        },
+        {
+          "text": "角度",
+          "reading": "kakudo",
+          "translation": "angle",
+          "speechText": "角度",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "かくど",
+          "coversReadings": [
+            "カク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "角度",
+              "reading": "かくど"
+            }
+          ],
+          "furiganaHtml": "<ruby>角度<rt>かくど</rt></ruby>"
+        },
+        {
+          "text": "三角",
+          "reading": "sankaku",
+          "translation": "triangle",
+          "speechText": "三角",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "さんかく",
+          "furiganaSegments": [
+            {
+              "text": "三角",
+              "reading": "さんかく"
+            }
+          ],
+          "furiganaHtml": "<ruby>三角<rt>さんかく</rt></ruby>"
         },
         {
           "text": "角を曲がります。",
@@ -274,33 +433,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "角"
-          ]
+          ],
+          "kanaReading": "かどをまがります。",
+          "furiganaSegments": [
+            {
+              "text": "角",
+              "reading": "かど"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "曲",
+              "reading": "ま"
+            },
+            {
+              "text": "がります"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>角<rt>かど</rt></ruby>を<ruby>曲<rt>ま</rt></ruby>がります。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "かど",
+        "romanization": "kado",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "角",
       "readings": [
         {
           "system": "hanja",
-          "value": "각 / gak",
+          "value": "각 — gak",
           "audioAssetRef": null,
           "speechText": "각",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "뿔 / ppul",
-          "audioAssetRef": null,
-          "speechText": "뿔",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "각",
+          "romanization": "gak"
         }
       ],
       "glosses": [
         "horn"
       ],
       "examples": [
+        {
+          "text": "뿔",
+          "reading": "ppul",
+          "translation": "horn",
+          "speechText": "뿔",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "각도",
           "reading": "gakdo",
@@ -330,6 +530,18 @@
           ]
         },
         {
+          "text": "각질",
+          "reading": "gakjil",
+          "translation": "horny layer / keratin",
+          "speechText": "각질",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "소의 뿔이에요.",
           "reading": "so-ui ppurieyo.",
           "translation": "It is a cow’s horn.",
@@ -344,7 +556,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "각 — gak",
+          "audioAssetRef": null,
+          "speechText": "각",
+          "speechLanguage": "korean",
+          "nativeReading": "각",
+          "romanization": "gak"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "뿔 — ppul",
+          "audioAssetRef": null,
+          "speechText": "뿔",
+          "speechLanguage": "korean",
+          "nativeReading": "뿔",
+          "romanization": "ppul",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "horn",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "각",
+        "romanization": "gak",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +604,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A large curved horn shown on an animal and as separate horn sections.",
+    "originAnchor": "A curved animal horn.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/horn/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The Oracle form follows the outline of a single pointed horn with an inner hollow or layered section.",
+        "changeNoteFromPrevious": "Follows the outline of a single pointed horn with an inner hollow or layered section.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-角"
@@ -386,8 +637,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The Oracle form follows the outline of a single pointed horn with an inner hollow or layered section.",
-        "transitionNote": "The Oracle form follows the outline of a single pointed horn with an inner hollow or layered section.",
+        "stageExplanation": "Follows the outline of a single pointed horn with an inner hollow or layered section.",
+        "transitionNote": "Follows the outline of a single pointed horn with an inner hollow or layered section.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +648,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/horn/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze exaggerates the long sweeping horn and divides its inside into several band-like segments.",
+        "changeNoteFromPrevious": "Exaggerates the long sweeping horn and divides its inside into several band-like segments.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-角"
@@ -423,8 +674,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze exaggerates the long sweeping horn and divides its inside into several band-like segments.",
-        "transitionNote": "Bronze exaggerates the long sweeping horn and divides its inside into several band-like segments.",
+        "stageExplanation": "Exaggerates the long sweeping horn and divides its inside into several band-like segments.",
+        "transitionNote": "Exaggerates the long sweeping horn and divides its inside into several band-like segments.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +685,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/horn/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal rotates and regularizes the horn into a tall rectangular frame with an angular inner bend.",
+        "changeNoteFromPrevious": "Rotates and regularizes the horn into a tall rectangular frame with an angular inner bend.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-角"
@@ -460,8 +711,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal rotates and regularizes the horn into a tall rectangular frame with an angular inner bend.",
-        "transitionNote": "Small Seal rotates and regularizes the horn into a tall rectangular frame with an angular inner bend.",
+        "stageExplanation": "Rotates and regularizes the horn into a tall rectangular frame with an angular inner bend.",
+        "transitionNote": "Rotates and regularizes the horn into a tall rectangular frame with an angular inner bend.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +722,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/horn/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical collapses the tall frame into a compact stack of angled shapes, making the original horn difficult to see.",
+        "changeNoteFromPrevious": "Collapses the tall frame into a compact stack of angled shapes, making the original horn difficult to see.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-角"
@@ -497,8 +748,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical collapses the tall frame into a compact stack of angled shapes, making the original horn difficult to see.",
-        "transitionNote": "Clerical collapses the tall frame into a compact stack of angled shapes, making the original horn difficult to see.",
+        "stageExplanation": "Collapses the tall frame into a compact stack of angled shapes, making the original horn difficult to see.",
+        "transitionNote": "Collapses the tall frame into a compact stack of angled shapes, making the original horn difficult to see.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +759,7 @@
         "label": "Regular Script",
         "form": "角",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 角 regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
+        "changeNoteFromPrevious": "Regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +785,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 角 regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
-        "transitionNote": "Regular 角 regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
+        "stageExplanation": "Regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
+        "transitionNote": "Regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +794,7 @@
     ],
     "origin": {
       "concept": "horn",
-      "explanation": "A large curved horn shown on an animal and as separate horn sections.",
+      "explanation": "A curved animal horn, often with internal texture marks.",
       "asset": {
         "characterID": "horn",
         "historicalStage": null,
@@ -560,7 +811,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of horn",
+        "accessibilityDescription": "Illustration of horn / corner",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +829,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'horn', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'horn / corner', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +899,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

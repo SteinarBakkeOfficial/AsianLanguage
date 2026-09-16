@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
 $projectFile = Join-Path $repoRoot "AsianLanguage.xcodeproj/project.pbxproj"
 $schemeFile = Join-Path $repoRoot "AsianLanguage.xcodeproj/xcshareddata/xcschemes/AsianLanguage.xcscheme"
-$corpusPath = Join-Path $repoRoot "content/shared-characters"
+$corpusPath = Join-Path $repoRoot "docs/archive/legacy-pilot/shared-characters"
 $runChecks = Join-Path $repoRoot "Tools/Run-Checks.ps1"
 $readinessReport = Join-Path $repoRoot "Tools/Report-CorpusReadiness.ps1"
 

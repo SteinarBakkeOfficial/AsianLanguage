@@ -2,8 +2,8 @@
   "id": "people",
   "version": 1,
   "coreCharacter": "民",
-  "coreSharedMeaning": "people",
-  "recognitionTakeaway": "Regular 民 regularizes the upper bends and long lower sweep; the original eye-like quality is almost completely lost.",
+  "coreSharedMeaning": "people / common people",
+  "recognitionTakeaway": "民 now means people/common people; the original marked-eye image is no longer visible in the regular form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6C11",
   "simplifiedForm": "民",
@@ -15,9 +15,9 @@
     "Oracle has a broad eye- or lid-like top crossed by angular inner strokes and a long vertical line descending below.",
     "Regular 民 regularizes the upper bends and long lower sweep; the original eye-like quality is almost completely lost."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-105-民-u6C11",
+  "contentFolder": "content/release/symbols/people",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-105-民-u6C11/research.md",
+  "researchNotesPath": "content/release/symbols/people/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "people"
       ],
       "examples": [
+        {
+          "text": "民",
+          "reading": "mín",
+          "translation": "people",
+          "speechText": "民",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "mín"
+          ]
+        },
         {
           "text": "人民",
           "reading": "rénmín",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "公民",
+          "reading": "gōngmín",
+          "translation": "citizen",
+          "speechText": "公民",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他是本地居民。",
           "reading": "Tā shì běndì jūmín.",
           "translation": "He is a local resident.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "民",
@@ -98,6 +127,18 @@
         "people"
       ],
       "taiwanExamples": [
+        {
+          "text": "民",
+          "reading": "mín",
+          "translation": "people",
+          "speechText": "民",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "人民",
           "reading": "rénmín",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "民",
+          "reading": "man4",
+          "translation": "people",
+          "speechText": "民",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "人民",
           "reading": "jan4 man4",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "民",
       "readings": [
         {
-          "system": "on",
-          "value": "ミン (min)",
+          "system": "onyomi",
+          "value": "ミン — min",
           "audioAssetRef": null,
           "speechText": "みん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ミン",
+          "romanization": "min",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "たみ (tami)",
+          "system": "kunyomi",
+          "value": "たみ — tami",
           "audioAssetRef": null,
           "speechText": "たみ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "たみ",
+          "romanization": "tami",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "民"
-          ]
+          ],
+          "kanaReading": "こくみん",
+          "coversReadings": [
+            "ミン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "国民",
+              "reading": "こくみん"
+            }
+          ],
+          "furiganaHtml": "<ruby>国民<rt>こくみん</rt></ruby>"
         },
         {
           "text": "住民",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "民"
-          ]
+          ],
+          "kanaReading": "じゅうみん",
+          "furiganaSegments": [
+            {
+              "text": "住民",
+              "reading": "じゅうみん"
+            }
+          ],
+          "furiganaHtml": "<ruby>住民<rt>じゅうみん</rt></ruby>"
+        },
+        {
+          "text": "民",
+          "reading": "tami",
+          "translation": "people",
+          "speechText": "民",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たみ",
+          "coversReadings": [
+            "たみ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "民",
+              "reading": "たみ"
+            }
+          ],
+          "furiganaHtml": "<ruby>民<rt>たみ</rt></ruby>"
+        },
+        {
+          "text": "民間",
+          "reading": "minkan",
+          "translation": "private / civilian",
+          "speechText": "民間",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "みんかん",
+          "furiganaSegments": [
+            {
+              "text": "民間",
+              "reading": "みんかん"
+            }
+          ],
+          "furiganaHtml": "<ruby>民間<rt>みんかん</rt></ruby>"
         },
         {
           "text": "この町の住民です。",
@@ -267,20 +390,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "民"
-          ]
+          ],
+          "kanaReading": "このまちのじゅうみんです。",
+          "furiganaSegments": [
+            {
+              "text": "この"
+            },
+            {
+              "text": "町",
+              "reading": "まち"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "住民",
+              "reading": "じゅうみん"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "この<ruby>町<rt>まち</rt></ruby>の<ruby>住民<rt>じゅうみん</rt></ruby>です。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "たみ",
+        "romanization": "tami",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "民",
       "readings": [
         {
           "system": "hanja",
-          "value": "민 / min",
+          "value": "민 — min",
           "audioAssetRef": null,
           "speechText": "민",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "민",
+          "romanization": "min"
         }
       ],
       "glosses": [
@@ -316,6 +477,30 @@
           ]
         },
         {
+          "text": "민간",
+          "reading": "mingan",
+          "translation": "civilian / private sector",
+          "speechText": "민간",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "민족",
+          "reading": "minjok",
+          "translation": "people / nation",
+          "speechText": "민족",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "이 동네 주민이에요.",
           "reading": "i dongne juminieyo.",
           "translation": "I am a resident of this neighborhood.",
@@ -330,7 +515,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "민 — min",
+          "audioAssetRef": null,
+          "speechText": "민",
+          "speechLanguage": "korean",
+          "nativeReading": "민",
+          "romanization": "min"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "민",
+        "romanization": "min",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -339,14 +543,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "An eye being marked or pierced, with a person subjected to the action in the illustration.",
+    "originAnchor": "An eye and a pointed tool combine in a disputed image; later usage broadened to 'people.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/people/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle has a broad eye- or lid-like top crossed by angular inner strokes and a long vertical line descending below.",
+        "changeNoteFromPrevious": "The selected form centers on an eye with a sharp marking element. In the leading account this is connected with an early subordinated population.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-民"
@@ -372,8 +576,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle has a broad eye- or lid-like top crossed by angular inner strokes and a long vertical line descending below.",
-        "transitionNote": "Oracle has a broad eye- or lid-like top crossed by angular inner strokes and a long vertical line descending below.",
+        "stageExplanation": "The selected form centers on an eye with a sharp marking element. In the leading account this is connected with an early subordinated population.",
+        "transitionNote": "The selected form centers on an eye with a sharp marking element. In the leading account this is connected with an early subordinated population.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -383,7 +587,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/people/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze reduces the top to a compact bent enclosure while keeping one heavy vertical stroke hanging downward.",
+        "changeNoteFromPrevious": "The eye and marking element become more compact; inscriptions already broaden the word toward ordinary people/the populace.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-民"
@@ -409,8 +613,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze reduces the top to a compact bent enclosure while keeping one heavy vertical stroke hanging downward.",
-        "transitionNote": "Bronze reduces the top to a compact bent enclosure while keeping one heavy vertical stroke hanging downward.",
+        "stageExplanation": "The eye and marking element become more compact; inscriptions already broaden the word toward ordinary people/the populace.",
+        "transitionNote": "The eye and marking element become more compact; inscriptions already broaden the word toward ordinary people/the populace.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -420,7 +624,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/people/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal squares the upper section into a maze-like enclosure and adds a long diagonal lower stroke.",
+        "changeNoteFromPrevious": "The original eye scene is strongly conventionalized and ceases to look anatomical.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-民"
@@ -446,8 +650,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal squares the upper section into a maze-like enclosure and adds a long diagonal lower stroke.",
-        "transitionNote": "Small Seal squares the upper section into a maze-like enclosure and adds a long diagonal lower stroke.",
+        "stageExplanation": "The original eye scene is strongly conventionalized and ceases to look anatomical.",
+        "transitionNote": "The original eye scene is strongly conventionalized and ceases to look anatomical.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -457,7 +661,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/people/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical thickens the enclosure and turns the lower stroke into a broad sweeping leg.",
+        "changeNoteFromPrevious": "The curved Seal structure flattens into the angular skeleton of the standard form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-民"
@@ -483,8 +687,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical thickens the enclosure and turns the lower stroke into a broad sweeping leg.",
-        "transitionNote": "Clerical thickens the enclosure and turns the lower stroke into a broad sweeping leg.",
+        "stageExplanation": "The curved Seal structure flattens into the angular skeleton of the standard form.",
+        "transitionNote": "The curved Seal structure flattens into the angular skeleton of the standard form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -494,7 +698,7 @@
         "label": "Regular Script",
         "form": "民",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 民 regularizes the upper bends and long lower sweep; the original eye-like quality is almost completely lost.",
+        "changeNoteFromPrevious": "民 now means people/common people; the original marked-eye image is no longer visible in the regular form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -520,8 +724,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 民 regularizes the upper bends and long lower sweep; the original eye-like quality is almost completely lost.",
-        "transitionNote": "Regular 民 regularizes the upper bends and long lower sweep; the original eye-like quality is almost completely lost.",
+        "stageExplanation": "民 now means people/common people; the original marked-eye image is no longer visible in the regular form.",
+        "transitionNote": "民 now means people/common people; the original marked-eye image is no longer visible in the regular form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -529,7 +733,7 @@
     ],
     "origin": {
       "concept": "people",
-      "explanation": "An eye being marked or pierced, with a person subjected to the action in the illustration.",
+      "explanation": "The leading ancient analysis shows an eye being marked with a sharp implement.",
       "asset": {
         "characterID": "people",
         "historicalStage": null,
@@ -546,7 +750,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of people",
+        "accessibilityDescription": "Illustration of people / common people",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -564,7 +768,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'people', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'people / common people', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -634,13 +838,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

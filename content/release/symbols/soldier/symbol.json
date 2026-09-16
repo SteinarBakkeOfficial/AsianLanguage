@@ -1,0 +1,835 @@
+{
+  "id": "soldier",
+  "version": 1,
+  "coreCharacter": "兵",
+  "coreSharedMeaning": "soldier / weapon",
+  "recognitionTakeaway": "The hands-and-weapon compound regularizes as 兵, extending from weapon/armed action to soldier.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+5175",
+  "simplifiedForm": "兵",
+  "traditionalForm": "兵",
+  "additionalMeanings": [],
+  "formationType": "simpleIdeograph",
+  "visualTeachingNotes": [
+    "A hand-held axe or weapon, with two hands shown beneath it.",
+    "Oracle combines a long weapon-like upper form with several hand or support strokes below and beside it.",
+    "Regular 兵 standardizes the weapon-derived upper strokes over the two separated lower supports, keeping the historical “weapon with hands” composition."
+  ],
+  "contentFolder": "content/release/symbols/soldier",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/soldier/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 100,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "兵",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "bīng",
+          "audioAssetRef": null,
+          "speechText": "兵",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "soldier"
+      ],
+      "examples": [
+        {
+          "text": "兵",
+          "reading": "bīng",
+          "translation": "soldier",
+          "speechText": "兵",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "bīng"
+          ]
+        },
+        {
+          "text": "士兵",
+          "reading": "shìbīng",
+          "translation": "soldier",
+          "speechText": "士兵",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
+        },
+        {
+          "text": "兵器",
+          "reading": "bīngqì",
+          "translation": "weapon",
+          "speechText": "兵器",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
+        },
+        {
+          "text": "兵力",
+          "reading": "bīnglì",
+          "translation": "military strength",
+          "speechText": "兵力",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "他是一名士兵。",
+          "reading": "Tā shì yì míng shìbīng.",
+          "translation": "He is a soldier.",
+          "speechText": "他是一名士兵。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "兵",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "bīng",
+          "audioAssetRef": null,
+          "speechText": "兵",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "soldier"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "兵",
+          "reading": "bīng",
+          "translation": "soldier",
+          "speechText": "兵",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "士兵",
+          "reading": "shìbīng",
+          "translation": "soldier",
+          "speechText": "士兵",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
+        },
+        {
+          "text": "兵器",
+          "reading": "bīngqì",
+          "translation": "weapon",
+          "speechText": "兵器",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
+        },
+        {
+          "text": "他是一名士兵。",
+          "reading": "Tā shì yì míng shìbīng.",
+          "translation": "He is a soldier.",
+          "speechText": "他是一名士兵。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "兵",
+          "reading": "bing1",
+          "translation": "soldier",
+          "speechText": "兵",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "士兵",
+          "reading": "si6 bing1",
+          "translation": "soldier",
+          "speechText": "士兵",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
+        },
+        {
+          "text": "兵器",
+          "reading": "bing1 hei3",
+          "translation": "weapon",
+          "speechText": "兵器",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
+        },
+        {
+          "text": "佢係士兵。",
+          "reading": "keoi5 hai6 si6 bing1",
+          "translation": "He is a soldier.",
+          "speechText": "佢係士兵。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "bīng",
+          "audioAssetRef": null,
+          "speechText": "兵",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "bing1",
+          "audioAssetRef": null,
+          "speechText": "兵",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "兵",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "ヘイ — hei",
+          "audioAssetRef": null,
+          "speechText": "へい",
+          "speechLanguage": "japanese",
+          "nativeReading": "ヘイ",
+          "romanization": "hei",
+          "historicalOrigin": "sinoJapanese"
+        }
+      ],
+      "glosses": [
+        "soldier"
+      ],
+      "examples": [
+        {
+          "text": "兵士",
+          "reading": "heishi",
+          "translation": "soldier",
+          "speechText": "兵士",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ],
+          "kanaReading": "へいし",
+          "coversReadings": [
+            "ヘイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "兵士",
+              "reading": "へいし"
+            }
+          ],
+          "furiganaHtml": "<ruby>兵士<rt>へいし</rt></ruby>"
+        },
+        {
+          "text": "兵器",
+          "reading": "heiki",
+          "translation": "weapon",
+          "speechText": "兵器",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ],
+          "kanaReading": "へいき",
+          "furiganaSegments": [
+            {
+              "text": "兵器",
+              "reading": "へいき"
+            }
+          ],
+          "furiganaHtml": "<ruby>兵器<rt>へいき</rt></ruby>"
+        },
+        {
+          "text": "徴兵",
+          "reading": "chōhei",
+          "translation": "conscription",
+          "speechText": "徴兵",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ちょうへい",
+          "furiganaSegments": [
+            {
+              "text": "徴兵",
+              "reading": "ちょうへい"
+            }
+          ],
+          "furiganaHtml": "<ruby>徴兵<rt>ちょうへい</rt></ruby>"
+        },
+        {
+          "text": "兵隊",
+          "reading": "heitai",
+          "translation": "soldier",
+          "speechText": "兵隊",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "へいたい",
+          "furiganaSegments": [
+            {
+              "text": "兵隊",
+              "reading": "へいたい"
+            }
+          ],
+          "furiganaHtml": "<ruby>兵隊<rt>へいたい</rt></ruby>"
+        },
+        {
+          "text": "兵士が立っています。",
+          "reading": "heishi ga tatte imasu.",
+          "translation": "A soldier is standing.",
+          "speechText": "兵士が立っています。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ],
+          "kanaReading": "へいしがたっています。",
+          "furiganaSegments": [
+            {
+              "text": "兵士",
+              "reading": "へいし"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "立",
+              "reading": "た"
+            },
+            {
+              "text": "っています"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>兵士<rt>へいし</rt></ruby>が<ruby>立<rt>た</rt></ruby>っています。"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ヘイ",
+        "romanization": "hei",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "兵",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "병 — byeong",
+          "audioAssetRef": null,
+          "speechText": "병",
+          "speechLanguage": "korean",
+          "nativeReading": "병",
+          "romanization": "byeong"
+        }
+      ],
+      "glosses": [
+        "soldier"
+      ],
+      "examples": [
+        {
+          "text": "병사",
+          "reading": "byeongsa",
+          "translation": "soldier",
+          "speechText": "병사",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
+        },
+        {
+          "text": "병력",
+          "reading": "byeongnyeok",
+          "translation": "military personnel; troops",
+          "speechText": "병력",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
+        },
+        {
+          "text": "병기",
+          "reading": "byeonggi",
+          "translation": "weapon",
+          "speechText": "병기",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "징병",
+          "reading": "jingbyeong",
+          "translation": "conscription",
+          "speechText": "징병",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "병사가 서 있어요.",
+          "reading": "byeongsaga seo isseoyo.",
+          "translation": "A soldier is standing.",
+          "speechText": "병사가 서 있어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "병 — byeong",
+          "audioAssetRef": null,
+          "speechText": "병",
+          "speechLanguage": "korean",
+          "nativeReading": "병",
+          "romanization": "byeong"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "병",
+        "romanization": "byeong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "An axe and two hands combine to show a weapon in use; this led to 'soldier.'",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/soldier/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "Two hands hold an axe/weapon; the weapon is the central concrete object.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-兵"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "兵",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%85%B5/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/41_ED09.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/soldier/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/soldier/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "兵 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Two hands hold an axe/weapon; the weapon is the central concrete object.",
+        "transitionNote": "Two hands hold an axe/weapon; the weapon is the central concrete object.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/soldier/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "Simplifies the weapon into a bold hooked upper shape while a pair of hand-like strokes remain underneath.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-兵"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "兵",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%85%B5/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/31_ED34.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/soldier/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/soldier/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "兵 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Simplifies the weapon into a bold hooked upper shape while a pair of hand-like strokes remain underneath.",
+        "transitionNote": "Simplifies the weapon into a bold hooked upper shape while a pair of hand-like strokes remain underneath.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/soldier/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Organizes the upper weapon into a compact frame and keeps the lower pair as two clear supporting strokes.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-兵"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "兵",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%85%B5/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_5175.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/soldier/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/soldier/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "兵 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Organizes the upper weapon into a compact frame and keeps the lower pair as two clear supporting strokes.",
+        "transitionNote": "Organizes the upper weapon into a compact frame and keeps the lower pair as two clear supporting strokes.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/soldier/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "Flattens the weapon and spreads the lower hands outward, producing a recognizable layout.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-兵"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "兵",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%85%B5/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_E293.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/soldier/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/soldier/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "兵 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Flattens the weapon and spreads the lower hands outward, producing a recognizable layout.",
+        "transitionNote": "Flattens the weapon and spreads the lower hands outward, producing a recognizable layout.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "兵",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The hands-and-weapon compound regularizes as 兵, extending from weapon/armed action to soldier.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "兵",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "兵 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The hands-and-weapon compound regularizes as 兵, extending from weapon/armed action to soldier.",
+        "transitionNote": "The hands-and-weapon compound regularizes as 兵, extending from weapon/armed action to soldier.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "soldier",
+      "explanation": "Two hands hold an axe or weapon.",
+      "asset": {
+        "characterID": "soldier",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/soldier/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of soldier",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-兵"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿱丘八.",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-兵"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'soldier / weapon', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E5%85%B5"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-兵",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%85%B5"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-兵",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

@@ -2,8 +2,8 @@
   "id": "speech",
   "version": 1,
   "coreCharacter": "言",
-  "coreSharedMeaning": "speech",
-  "recognitionTakeaway": "Regular 言 tightens the entire stack into the familiar top mark, horizontal lines, and 口, with the original mouth still plainly preserved at the bottom.",
+  "coreSharedMeaning": "speech / words",
+  "recognitionTakeaway": "Tightens the entire stack into the familiar top mark, horizontal lines, and 口, with the original mouth still plainly preserved at the bottom.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+8A00",
   "simplifiedForm": "言",
@@ -15,9 +15,9 @@
     "Oracle stacks a pointed upper mark and central stem over a clear mouth-shaped box at the bottom.",
     "Regular 言 tightens the entire stack into the familiar top mark, horizontal lines, and 口, with the original mouth still plainly preserved at the bottom."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-017-言-u8A00",
+  "contentFolder": "content/release/symbols/speech",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-017-言-u8A00/research.md",
+  "researchNotesPath": "content/release/symbols/speech/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "speech; words; say"
       ],
       "examples": [
+        {
+          "text": "言",
+          "reading": "yán",
+          "translation": "speech; words; say",
+          "speechText": "言",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "yán"
+          ]
+        },
         {
           "text": "言语",
           "reading": "yányǔ",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "语言",
+          "reading": "yǔyán",
+          "translation": "language",
+          "speechText": "语言",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他正在发言。",
           "reading": "Tā zhèngzài fāyán.",
           "translation": "He is speaking now.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "言",
@@ -98,6 +127,18 @@
         "speech; words; say"
       ],
       "taiwanExamples": [
+        {
+          "text": "言",
+          "reading": "yán",
+          "translation": "speech; words; say",
+          "speechText": "言",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "言語",
           "reading": "yányǔ",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "言",
+          "reading": "jin4",
+          "translation": "speech; words; say",
+          "speechText": "言",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "言語",
           "reading": "jin4 jyu5",
@@ -203,38 +256,52 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "言",
       "readings": [
         {
-          "system": "on",
-          "value": "ゲン (gen)",
+          "system": "onyomi",
+          "value": "ゲン — gen",
           "audioAssetRef": null,
           "speechText": "げん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ゲン",
+          "romanization": "gen",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ゴン (gon)",
+          "system": "onyomi",
+          "value": "ゴン — gon",
           "audioAssetRef": null,
           "speechText": "ごん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ゴン",
+          "romanization": "gon",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "いう (iu)",
+          "system": "kunyomi",
+          "value": "いう — iu",
           "audioAssetRef": null,
           "speechText": "いう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "いう",
+          "romanization": "iu",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "こと (koto)",
+          "system": "kunyomi",
+          "value": "こと — koto",
           "audioAssetRef": null,
           "speechText": "こと",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "こと",
+          "romanization": "koto",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -253,7 +320,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "言"
-          ]
+          ],
+          "kanaReading": "いう",
+          "coversReadings": [
+            "いう"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "言",
+              "reading": "い"
+            },
+            {
+              "text": "う"
+            }
+          ],
+          "furiganaHtml": "<ruby>言<rt>い</rt></ruby>う"
         },
         {
           "text": "言葉",
@@ -267,7 +348,64 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "言"
-          ]
+          ],
+          "kanaReading": "ことば",
+          "coversReadings": [
+            "こと"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "言葉",
+              "reading": "ことば"
+            }
+          ],
+          "furiganaHtml": "<ruby>言葉<rt>ことば</rt></ruby>"
+        },
+        {
+          "text": "言語",
+          "reading": "gengo",
+          "translation": "language",
+          "speechText": "言語",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "げんご",
+          "coversReadings": [
+            "ゲン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "言語",
+              "reading": "げんご"
+            }
+          ],
+          "furiganaHtml": "<ruby>言語<rt>げんご</rt></ruby>"
+        },
+        {
+          "text": "伝言",
+          "reading": "dengon",
+          "translation": "message",
+          "speechText": "伝言",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "でんごん",
+          "coversReadings": [
+            "ゴン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "伝言",
+              "reading": "でんごん"
+            }
+          ],
+          "furiganaHtml": "<ruby>伝言<rt>でんごん</rt></ruby>"
         },
         {
           "text": "本当のことを言います。",
@@ -281,33 +419,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "言"
-          ]
+          ],
+          "kanaReading": "ほんとうのことをいいます。",
+          "furiganaSegments": [
+            {
+              "text": "本当",
+              "reading": "ほんとう"
+            },
+            {
+              "text": "のことを"
+            },
+            {
+              "text": "言",
+              "reading": "い"
+            },
+            {
+              "text": "います"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>本当<rt>ほんとう</rt></ruby>のことを<ruby>言<rt>い</rt></ruby>います。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "いう",
+        "romanization": "iu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "言",
       "readings": [
         {
           "system": "hanja",
-          "value": "언 / eon",
+          "value": "언 — eon",
           "audioAssetRef": null,
           "speechText": "언",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "말 / mal",
-          "audioAssetRef": null,
-          "speechText": "말",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "언",
+          "romanization": "eon"
         }
       ],
       "glosses": [
         "language; speech; words"
       ],
       "examples": [
+        {
+          "text": "말",
+          "reading": "mal",
+          "translation": "speech / word",
+          "speechText": "말",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "언어",
           "reading": "eoneo",
@@ -337,6 +516,18 @@
           ]
         },
         {
+          "text": "언급",
+          "reading": "eongeup",
+          "translation": "mention",
+          "speechText": "언급",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "말을 해요.",
           "reading": "mareul haeyo.",
           "translation": "I speak / say something.",
@@ -351,7 +542,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "언 — eon",
+          "audioAssetRef": null,
+          "speechText": "언",
+          "speechLanguage": "korean",
+          "nativeReading": "언",
+          "romanization": "eon"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "말 — mal",
+          "audioAssetRef": null,
+          "speechText": "말",
+          "speechLanguage": "korean",
+          "nativeReading": "말",
+          "romanization": "mal",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "speech / word",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "언",
+        "romanization": "eon",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -360,14 +590,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "An open mouth and tongue shown as the physical source of speech.",
+    "originAnchor": "The earliest form shows a mouth with a separate speech marker; later forms became more tongue-like.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/speech/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle stacks a pointed upper mark and central stem over a clear mouth-shaped box at the bottom.",
+        "changeNoteFromPrevious": "A mouth and added marker indicate an utterance; the tongue-shaped form belongs to later developments.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-言"
@@ -393,8 +623,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle stacks a pointed upper mark and central stem over a clear mouth-shaped box at the bottom.",
-        "transitionNote": "Oracle stacks a pointed upper mark and central stem over a clear mouth-shaped box at the bottom.",
+        "stageExplanation": "A speech/tongue-related form with an added mark indicates utterance; the early graph is more specific than a generic mouth box.",
+        "transitionNote": "A mouth and added marker indicate an utterance; the tongue-shaped form belongs to later developments.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -404,7 +634,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/speech/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze thickens the upper point into a forked or hourglass-like shape while preserving the mouth below.",
+        "changeNoteFromPrevious": "Bronze forms develop a tongue-like upper part and add a short horizontal marker above it, making the speech structure more explicit.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-言"
@@ -430,8 +660,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze thickens the upper point into a forked or hourglass-like shape while preserving the mouth below.",
-        "transitionNote": "Bronze thickens the upper point into a forked or hourglass-like shape while preserving the mouth below.",
+        "stageExplanation": "Thickens the upper point into a forked or hourglass-like shape while preserving the mouth below.",
+        "transitionNote": "Bronze forms develop a tongue-like upper part and add a short horizontal marker above it, making the speech structure more explicit.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -441,7 +671,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/speech/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the stack into a short top line, a central vertical-cross structure, and a rounded 口 at the base.",
+        "changeNoteFromPrevious": "Regularizes the stack into a short top line, a central vertical-cross structure, and a rounded mouth/opening sign at the base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-言"
@@ -467,8 +697,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the stack into a short top line, a central vertical-cross structure, and a rounded 口 at the base.",
-        "transitionNote": "Small Seal regularizes the stack into a short top line, a central vertical-cross structure, and a rounded 口 at the base.",
+        "stageExplanation": "Regularizes the stack into a short top line, a central vertical-cross structure, and a rounded mouth/opening sign at the base.",
+        "transitionNote": "Regularizes the stack into a short top line, a central vertical-cross structure, and a rounded mouth/opening sign at the base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -478,7 +708,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/speech/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical squares the lower mouth and flattens the upper strokes into several strong horizontals.",
+        "changeNoteFromPrevious": "Squares the lower mouth and flattens the upper strokes into several strong horizontals.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-言"
@@ -504,8 +734,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical squares the lower mouth and flattens the upper strokes into several strong horizontals.",
-        "transitionNote": "Clerical squares the lower mouth and flattens the upper strokes into several strong horizontals.",
+        "stageExplanation": "Squares the lower mouth and flattens the upper strokes into several strong horizontals.",
+        "transitionNote": "Squares the lower mouth and flattens the upper strokes into several strong horizontals.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -515,7 +745,7 @@
         "label": "Regular Script",
         "form": "言",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 言 tightens the entire stack into the familiar top mark, horizontal lines, and 口, with the original mouth still plainly preserved at the bottom.",
+        "changeNoteFromPrevious": "The mouth-and-speech-marker structure is heavily regularized into the modern form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -541,8 +771,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 言 tightens the entire stack into the familiar top mark, horizontal lines, and 口, with the original mouth still plainly preserved at the bottom.",
-        "transitionNote": "Regular 言 tightens the entire stack into the familiar top mark, horizontal lines, and 口, with the original mouth still plainly preserved at the bottom.",
+        "stageExplanation": "Tightens the entire stack into the familiar top mark, horizontal lines, and 口, with the original mouth still plainly preserved at the bottom.",
+        "transitionNote": "The mouth-and-speech-marker structure is heavily regularized into the modern form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -550,7 +780,7 @@
     ],
     "origin": {
       "concept": "speech",
-      "explanation": "An open mouth and tongue shown as the physical source of speech.",
+      "explanation": "A tongue/speech organ with an added mark indicating spoken output in a leading analysis.",
       "asset": {
         "characterID": "speech",
         "historicalStage": null,
@@ -567,7 +797,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of speech",
+        "accessibilityDescription": "Illustration of speech / words",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -585,7 +815,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'speech', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'speech / words', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -655,13 +885,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

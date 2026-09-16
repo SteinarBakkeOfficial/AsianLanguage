@@ -2,8 +2,8 @@
   "id": "same",
   "version": 1,
   "coreCharacter": "同",
-  "coreSharedMeaning": "same",
-  "recognitionTakeaway": "Regular 同 squares the outer 冂-like frame and centers the inner 一 and 口, making the nested structure compact and balanced.",
+  "coreSharedMeaning": "same / together",
+  "recognitionTakeaway": "The graph stabilizes as 同 for “same/together,” while the earliest object/component analysis remains uncertain.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+540C",
   "simplifiedForm": "同",
@@ -15,9 +15,9 @@
     "Oracle separates a large outer frame-like form above from a small enclosed box below, with the two parts not yet integrated.",
     "Regular 同 squares the outer 冂-like frame and centers the inner 一 and 口, making the nested structure compact and balanced."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-116-同-u540C",
+  "contentFolder": "content/release/symbols/same",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-116-同-u540C/research.md",
+  "researchNotesPath": "content/release/symbols/same/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -32,12 +32,35 @@
           "audioAssetRef": null,
           "speechText": "同",
           "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "tòng",
+          "audioAssetRef": null,
+          "speechText": "同",
+          "speechLanguage": "mandarin",
+          "usageNote": "lexicalized modern reading in 胡同"
         }
       ],
       "glosses": [
         "same"
       ],
       "examples": [
+        {
+          "text": "同",
+          "reading": "tóng",
+          "translation": "same",
+          "speechText": "同",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "tóng"
+          ]
+        },
         {
           "text": "同样",
           "reading": "tóngyàng",
@@ -67,6 +90,33 @@
           ]
         },
         {
+          "text": "同时",
+          "reading": "tóngshí",
+          "translation": "at the same time",
+          "speechText": "同时",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "胡同",
+          "reading": "hútòng",
+          "translation": "alley; hutong",
+          "speechText": "胡同",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "tòng"
+          ]
+        },
+        {
           "text": "我同意。",
           "reading": "Wǒ tóngyì.",
           "translation": "I agree.",
@@ -81,7 +131,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "同",
@@ -98,6 +150,18 @@
         "same"
       ],
       "taiwanExamples": [
+        {
+          "text": "同",
+          "reading": "tóng",
+          "translation": "same",
+          "speechText": "同",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "同樣",
           "reading": "tóngyàng",
@@ -142,6 +206,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "同",
+          "reading": "tung4",
+          "translation": "same",
+          "speechText": "同",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "同樣",
           "reading": "tung4 joeng6",
@@ -203,24 +279,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "同",
       "readings": [
         {
-          "system": "on",
-          "value": "ドウ (dō)",
+          "system": "onyomi",
+          "value": "ドウ — dō",
           "audioAssetRef": null,
           "speechText": "どう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ドウ",
+          "romanization": "dō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "おなじ (onaji)",
+          "system": "kunyomi",
+          "value": "おなじ — onaji",
           "audioAssetRef": null,
           "speechText": "おなじ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "おなじ",
+          "romanization": "onaji",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +323,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "同"
-          ]
+          ],
+          "kanaReading": "おなじ",
+          "coversReadings": [
+            "おなじ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "同",
+              "reading": "おな"
+            },
+            {
+              "text": "じ"
+            }
+          ],
+          "furiganaHtml": "<ruby>同<rt>おな</rt></ruby>じ"
         },
         {
           "text": "同時",
@@ -253,47 +351,124 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "同"
-          ]
+          ],
+          "kanaReading": "どうじ",
+          "coversReadings": [
+            "ドウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "同時",
+              "reading": "どうじ"
+            }
+          ],
+          "furiganaHtml": "<ruby>同時<rt>どうじ</rt></ruby>"
         },
         {
-          "text": "同じです。",
-          "reading": "onaji desu.",
-          "translation": "It is the same.",
-          "speechText": "同じです。",
+          "text": "共同",
+          "reading": "kyōdō",
+          "translation": "joint; cooperation",
+          "speechText": "共同",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "同"
-          ]
+          "introducedSymbols": [],
+          "kanaReading": "きょうどう",
+          "furiganaSegments": [
+            {
+              "text": "共同",
+              "reading": "きょうどう"
+            }
+          ],
+          "furiganaHtml": "<ruby>共同<rt>きょうどう</rt></ruby>"
+        },
+        {
+          "text": "同意",
+          "reading": "dōi",
+          "translation": "agreement; consent",
+          "speechText": "同意",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "どうい",
+          "furiganaSegments": [
+            {
+              "text": "同意",
+              "reading": "どうい"
+            }
+          ],
+          "furiganaHtml": "<ruby>同意<rt>どうい</rt></ruby>"
+        },
+        {
+          "text": "同一",
+          "reading": "dōitsu",
+          "translation": "identical / the same",
+          "speechText": "同一",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "どういつ",
+          "furiganaSegments": [
+            {
+              "text": "同一",
+              "reading": "どういつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>同一<rt>どういつ</rt></ruby>"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "おなじ",
+        "romanization": "onaji",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "同",
       "readings": [
         {
           "system": "hanja",
-          "value": "동 / dong",
+          "value": "동 — dong",
           "audioAssetRef": null,
           "speechText": "동",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "같다 / gatda",
-          "audioAssetRef": null,
-          "speechText": "같다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "동",
+          "romanization": "dong"
         }
       ],
       "glosses": [
         "same"
       ],
       "examples": [
+        {
+          "text": "같다",
+          "reading": "gatda",
+          "translation": "same",
+          "speechText": "같다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "동시에",
           "reading": "dongsie",
@@ -323,6 +498,18 @@
           ]
         },
         {
+          "text": "동일",
+          "reading": "dongil",
+          "translation": "same / identical",
+          "speechText": "동일",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "같아요.",
           "reading": "gatayo.",
           "translation": "It is the same.",
@@ -337,7 +524,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "동 — dong",
+          "audioAssetRef": null,
+          "speechText": "동",
+          "speechLanguage": "korean",
+          "nativeReading": "동",
+          "romanization": "dong"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "같다 — gatda",
+          "audioAssetRef": null,
+          "speechText": "같다",
+          "speechLanguage": "korean",
+          "nativeReading": "같다",
+          "romanization": "gatda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "same",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "동",
+        "romanization": "dong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +572,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Two matching people and two matching container-like objects, used to show the idea of “same.”",
+    "originAnchor": "An early enclosed or tube-like form.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/same/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle separates a large outer frame-like form above from a small enclosed box below, with the two parts not yet integrated.",
+        "changeNoteFromPrevious": "The selected early enclosed/tube-like form does not support a simple modern-component decomposition; its construction remains debated.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-同"
@@ -379,8 +605,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle separates a large outer frame-like form above from a small enclosed box below, with the two parts not yet integrated.",
-        "transitionNote": "Oracle separates a large outer frame-like form above from a small enclosed box below, with the two parts not yet integrated.",
+        "stageExplanation": "The selected early enclosed/tube-like form does not support a simple modern-component decomposition; its construction remains debated.",
+        "transitionNote": "The selected early enclosed/tube-like form does not support a simple modern-component decomposition; its construction remains debated.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +616,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/same/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze joins the upper frame and lower mouth-like enclosure into a single stacked structure.",
+        "changeNoteFromPrevious": "A mouth/opening marker is added to the early tube-like form, helping distinguish it from a similar sign; the original object interpretation remains uncertain.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-同"
@@ -416,8 +642,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze joins the upper frame and lower mouth-like enclosure into a single stacked structure.",
-        "transitionNote": "Bronze joins the upper frame and lower mouth-like enclosure into a single stacked structure.",
+        "stageExplanation": "Joins the upper frame and lower mouth-like enclosure into a single stacked structure.",
+        "transitionNote": "A mouth/opening marker is added to the early tube-like form, helping distinguish it from a similar sign; the original object interpretation remains uncertain.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +653,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/same/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal surrounds the inner box with a tall rounded outer enclosure and adds a short horizontal inside the top.",
+        "changeNoteFromPrevious": "Surrounds the inner box with a tall rounded outer enclosure and adds a short horizontal inside the top.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-同"
@@ -453,8 +679,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal surrounds the inner box with a tall rounded outer enclosure and adds a short horizontal inside the top.",
-        "transitionNote": "Small Seal surrounds the inner box with a tall rounded outer enclosure and adds a short horizontal inside the top.",
+        "stageExplanation": "Surrounds the inner box with a tall rounded outer enclosure and adds a short horizontal inside the top.",
+        "transitionNote": "Surrounds the inner box with a tall rounded outer enclosure and adds a short horizontal inside the top.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +690,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/same/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the outer enclosure into a broad roof-like frame and widens the inner box.",
+        "changeNoteFromPrevious": "Flattens the outer enclosure into a broad roof-like frame and widens the inner box.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-同"
@@ -490,8 +716,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the outer enclosure into a broad roof-like frame and widens the inner box.",
-        "transitionNote": "Clerical flattens the outer enclosure into a broad roof-like frame and widens the inner box.",
+        "stageExplanation": "Flattens the outer enclosure into a broad roof-like frame and widens the inner box.",
+        "transitionNote": "Flattens the outer enclosure into a broad roof-like frame and widens the inner box.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +727,7 @@
         "label": "Regular Script",
         "form": "同",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 同 squares the outer 冂-like frame and centers the inner 一 and 口, making the nested structure compact and balanced.",
+        "changeNoteFromPrevious": "The graph stabilizes as 同 for “same/together,” while the earliest object/component analysis remains uncertain.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +753,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 同 squares the outer 冂-like frame and centers the inner 一 and 口, making the nested structure compact and balanced.",
-        "transitionNote": "Regular 同 squares the outer 冂-like frame and centers the inner 一 and 口, making the nested structure compact and balanced.",
+        "stageExplanation": "The graph stabilizes as 同 for “same/together,” while the earliest object/component analysis remains uncertain.",
+        "transitionNote": "The graph stabilizes as 同 for “same/together,” while the earliest object/component analysis remains uncertain.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +762,7 @@
     ],
     "origin": {
       "concept": "same",
-      "explanation": "Two matching people and two matching container-like objects, used to show the idea of “same.”",
+      "explanation": "An early enclosed or tube-like form appears in the leading analysis; the familiar lower opening belongs to later or variant structures.",
       "asset": {
         "characterID": "same",
         "historicalStage": null,
@@ -553,7 +779,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of same",
+        "accessibilityDescription": "Illustration of same / together",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +797,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'same', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'same / together', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +867,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

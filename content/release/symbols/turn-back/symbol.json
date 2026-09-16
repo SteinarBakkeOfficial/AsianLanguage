@@ -1,0 +1,907 @@
+{
+  "id": "turn-back",
+  "version": 1,
+  "coreCharacter": "反",
+  "coreSharedMeaning": "reverse / turn back / oppose",
+  "recognitionTakeaway": "The hand-and-cliff graph becomes 反, while reverse/return/opposition senses develop beyond the original action.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+53CD",
+  "simplifiedForm": "反",
+  "traditionalForm": "反",
+  "additionalMeanings": [],
+  "formationType": "simpleIdeograph",
+  "visualTeachingNotes": [
+    "A hand turning back around a cliff or corner.",
+    "Oracle places a cliff-like top-and-left frame around a small hand or bent stroke, with a long arm descending outside it.",
+    "Regular 反 simplifies the cliff to 厂 and the turning hand to 又, keeping the backward-turning gesture in two compact components."
+  ],
+  "contentFolder": "content/release/symbols/turn-back",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/turn-back/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 87,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "反",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "fǎn",
+          "audioAssetRef": null,
+          "speechText": "反",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "turn back"
+      ],
+      "examples": [
+        {
+          "text": "反",
+          "reading": "fǎn",
+          "translation": "turn back",
+          "speechText": "反",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "fǎn"
+          ]
+        },
+        {
+          "text": "反对",
+          "reading": "fǎnduì",
+          "translation": "oppose",
+          "speechText": "反对",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ]
+        },
+        {
+          "text": "相反",
+          "reading": "xiāngfǎn",
+          "translation": "opposite",
+          "speechText": "相反",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ]
+        },
+        {
+          "text": "反应",
+          "reading": "fǎnyìng",
+          "translation": "reaction; respond",
+          "speechText": "反应",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "我反对。",
+          "reading": "Wǒ fǎnduì.",
+          "translation": "I disagree.",
+          "speechText": "我反对。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "反",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "fǎn",
+          "audioAssetRef": null,
+          "speechText": "反",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "turn back"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "反",
+          "reading": "fǎn",
+          "translation": "turn back",
+          "speechText": "反",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "反對",
+          "reading": "fǎnduì",
+          "translation": "oppose",
+          "speechText": "反對",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ]
+        },
+        {
+          "text": "相反",
+          "reading": "xiāngfǎn",
+          "translation": "opposite",
+          "speechText": "相反",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ]
+        },
+        {
+          "text": "我反對。",
+          "reading": "Wǒ fǎnduì.",
+          "translation": "I disagree.",
+          "speechText": "我反對。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "反",
+          "reading": "faan2",
+          "translation": "turn back",
+          "speechText": "反",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "反對",
+          "reading": "faan2 deoi3",
+          "translation": "oppose",
+          "speechText": "反對",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ]
+        },
+        {
+          "text": "相反",
+          "reading": "soeng1 faan2",
+          "translation": "opposite",
+          "speechText": "相反",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ]
+        },
+        {
+          "text": "我反對。",
+          "reading": "ngo5 faan2 deoi3",
+          "translation": "I disagree.",
+          "speechText": "我反對。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "fǎn",
+          "audioAssetRef": null,
+          "speechText": "反",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "faan2",
+          "audioAssetRef": null,
+          "speechText": "反",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "反",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "ハン — han",
+          "audioAssetRef": null,
+          "speechText": "はん",
+          "speechLanguage": "japanese",
+          "nativeReading": "ハン",
+          "romanization": "han",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "そる — soru",
+          "audioAssetRef": null,
+          "speechText": "そる",
+          "speechLanguage": "japanese",
+          "nativeReading": "そる",
+          "romanization": "soru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "そらす — sorasu",
+          "audioAssetRef": null,
+          "speechText": "そらす",
+          "speechLanguage": "japanese",
+          "nativeReading": "そらす",
+          "romanization": "sorasu",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "turn back"
+      ],
+      "examples": [
+        {
+          "text": "反対",
+          "reading": "hantai",
+          "translation": "opposite; opposition",
+          "speechText": "反対",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ],
+          "kanaReading": "はんたい",
+          "coversReadings": [
+            "ハン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "反対",
+              "reading": "はんたい"
+            }
+          ],
+          "furiganaHtml": "<ruby>反対<rt>はんたい</rt></ruby>"
+        },
+        {
+          "text": "反応",
+          "reading": "hannō",
+          "translation": "reaction",
+          "speechText": "反応",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ],
+          "kanaReading": "はんのう",
+          "furiganaSegments": [
+            {
+              "text": "反応",
+              "reading": "はんのう"
+            }
+          ],
+          "furiganaHtml": "<ruby>反応<rt>はんのう</rt></ruby>"
+        },
+        {
+          "text": "反省",
+          "reading": "hansei",
+          "translation": "reflection; self-examination",
+          "speechText": "反省",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "はんせい",
+          "furiganaSegments": [
+            {
+              "text": "反省",
+              "reading": "はんせい"
+            }
+          ],
+          "furiganaHtml": "<ruby>反省<rt>はんせい</rt></ruby>"
+        },
+        {
+          "text": "反論",
+          "reading": "hanron",
+          "translation": "rebuttal",
+          "speechText": "反論",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "はんろん",
+          "furiganaSegments": [
+            {
+              "text": "反論",
+              "reading": "はんろん"
+            }
+          ],
+          "furiganaHtml": "<ruby>反論<rt>はんろん</rt></ruby>"
+        },
+        {
+          "text": "私は反対です。",
+          "reading": "watashi wa hantai desu.",
+          "translation": "I disagree.",
+          "speechText": "私は反対です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ],
+          "kanaReading": "わたしははんたいです。",
+          "furiganaSegments": [
+            {
+              "text": "私",
+              "reading": "わたし"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "反対",
+              "reading": "はんたい"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>私<rt>わたし</rt></ruby>は<ruby>反対<rt>はんたい</rt></ruby>です。"
+        },
+        {
+          "text": "反る",
+          "reading": "soru",
+          "translation": "bend backward; warp",
+          "speechText": "反る",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "そる",
+          "coversReadings": [
+            "そる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "反",
+              "reading": "そ"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>反<rt>そ</rt></ruby>る"
+        },
+        {
+          "text": "反らす",
+          "reading": "sorasu",
+          "translation": "bend/turn back",
+          "speechText": "反らす",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "そらす",
+          "coversReadings": [
+            "そらす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "反",
+              "reading": "そ"
+            },
+            {
+              "text": "らす"
+            }
+          ],
+          "furiganaHtml": "<ruby>反<rt>そ</rt></ruby>らす"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ハン",
+        "romanization": "han",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "反",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "반 — ban",
+          "audioAssetRef": null,
+          "speechText": "반",
+          "speechLanguage": "korean",
+          "nativeReading": "반",
+          "romanization": "ban"
+        }
+      ],
+      "glosses": [
+        "turn back"
+      ],
+      "examples": [
+        {
+          "text": "반대",
+          "reading": "bandae",
+          "translation": "opposite; opposition",
+          "speechText": "반대",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ]
+        },
+        {
+          "text": "반응",
+          "reading": "baneung",
+          "translation": "reaction",
+          "speechText": "반응",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ]
+        },
+        {
+          "text": "반사",
+          "reading": "bansa",
+          "translation": "reflection",
+          "speechText": "반사",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "반복",
+          "reading": "banbok",
+          "translation": "repetition",
+          "speechText": "반복",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "저는 반대예요.",
+          "reading": "jeoneun bandaeyeyo.",
+          "translation": "I disagree.",
+          "speechText": "저는 반대예요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "反"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "반 — ban",
+          "audioAssetRef": null,
+          "speechText": "반",
+          "speechLanguage": "korean",
+          "nativeReading": "반",
+          "romanization": "ban"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "반",
+        "romanization": "ban",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A hand and a cliff face combine to suggest climbing; this later came to mean 'turn back.'",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/turn-back/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "A hand is associated with a cliff/rock-face element; climbing/clambering is a leading early interpretation.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-反"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "反",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%8F%8D/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/41_EF73.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/turn-back/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/turn-back/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "反 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A hand is associated with a cliff/rock-face element; climbing/clambering is a leading early interpretation.",
+        "transitionNote": "A hand is associated with a cliff/rock-face element; climbing/clambering is a leading early interpretation.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/turn-back/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "Keeps the cliff corner but enlarges the diagonal hand or arm sweeping out from beneath it.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-反"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "反",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%8F%8D/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/31_EFCF.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/turn-back/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/turn-back/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "反 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Keeps the cliff corner but enlarges the diagonal hand or arm sweeping out from beneath it.",
+        "transitionNote": "Keeps the cliff corner but enlarges the diagonal hand or arm sweeping out from beneath it.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/turn-back/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Squares the cliff and organizes the inner hand into two clean bends.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-反"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "反",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%8F%8D/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_53CD.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/turn-back/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/turn-back/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "反 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Squares the cliff and organizes the inner hand into two clean bends.",
+        "transitionNote": "Squares the cliff and organizes the inner hand into two clean bends.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/turn-back/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "Thickens the enclosure and extends the hand into a strong diagonal lower-right stroke.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-反"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "反",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%8F%8D/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_E2E6.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/turn-back/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/turn-back/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "反 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Thickens the enclosure and extends the hand into a strong diagonal lower-right stroke.",
+        "transitionNote": "Thickens the enclosure and extends the hand into a strong diagonal lower-right stroke.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "反",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The hand-and-cliff graph becomes 反, while reverse/return/opposition senses develop beyond the original action.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "反",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "反 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The hand-and-cliff graph becomes 反, while reverse/return/opposition senses develop beyond the original action.",
+        "transitionNote": "The hand-and-cliff graph becomes 反, while reverse/return/opposition senses develop beyond the original action.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "turn back",
+      "explanation": "A hand associated with a cliff/rock-face element; a leading analysis reads the early action as climbing/clambering at a cliff.",
+      "asset": {
+        "characterID": "turn-back",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/turn-back/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of turn back",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-反"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿸𠂆又[G].",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-反"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'reverse / turn back / oppose', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E5%8F%8D"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-反",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%8F%8D"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-反",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

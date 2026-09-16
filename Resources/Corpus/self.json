@@ -2,8 +2,8 @@
   "id": "self",
   "version": 1,
   "coreCharacter": "自",
-  "coreSharedMeaning": "self",
-  "recognitionTakeaway": "Regular 自 squares the outline, keeps the interior horizontals, and turns the split top into the small opening stroke of the modern character.",
+  "coreSharedMeaning": "self (originally nose)",
+  "recognitionTakeaway": "A human nose; traditionally, pointing to one’s own nose was a familiar way to refer to oneself, helping this nose symbol develop the meaning “self.” As that meaning became dominant, another written representation took over the specific meaning “nose.”",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+81EA",
   "simplifiedForm": "自",
@@ -15,9 +15,9 @@
     "A broad nose-like outline encloses one strong internal horizontal, with two lower side lobes hanging beneath.",
     "Regular 自 squares the outline, keeps the interior horizontals, and turns the split top into the small opening stroke of the modern character."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-018-自-u81EA",
+  "contentFolder": "content/release/symbols/self",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-018-自-u81EA/research.md",
+  "researchNotesPath": "content/release/symbols/self/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "self"
       ],
       "examples": [
+        {
+          "text": "自",
+          "reading": "zì",
+          "translation": "self",
+          "speechText": "自",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zì"
+          ]
+        },
         {
           "text": "自己",
           "reading": "zìjǐ",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "自由",
+          "reading": "zìyóu",
+          "translation": "freedom; free",
+          "speechText": "自由",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我自己来。",
           "reading": "Wǒ zìjǐ lái.",
           "translation": "I will do it myself.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "自",
@@ -98,6 +127,18 @@
         "self"
       ],
       "taiwanExamples": [
+        {
+          "text": "自",
+          "reading": "zì",
+          "translation": "self",
+          "speechText": "自",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "自己",
           "reading": "zìjǐ",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "自",
+          "reading": "zi6",
+          "translation": "self",
+          "speechText": "自",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "自己",
           "reading": "zi6 gei2",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "自",
       "readings": [
         {
-          "system": "on",
-          "value": "ジ (ji)",
+          "system": "onyomi",
+          "value": "ジ — ji",
           "audioAssetRef": null,
           "speechText": "じ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ジ",
+          "romanization": "ji",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "みずから (mizukara)",
+          "system": "kunyomi",
+          "value": "みずから — mizukara",
           "audioAssetRef": null,
           "speechText": "みずから",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "みずから",
+          "romanization": "mizukara",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "自"
-          ]
+          ],
+          "kanaReading": "じぶん",
+          "coversReadings": [
+            "ジ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "自分",
+              "reading": "じぶん"
+            }
+          ],
+          "furiganaHtml": "<ruby>自分<rt>じぶん</rt></ruby>"
         },
         {
           "text": "自然",
@@ -253,7 +325,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "自"
-          ]
+          ],
+          "kanaReading": "しぜん",
+          "furiganaSegments": [
+            {
+              "text": "自然",
+              "reading": "しぜん"
+            }
+          ],
+          "furiganaHtml": "<ruby>自然<rt>しぜん</rt></ruby>"
+        },
+        {
+          "text": "自ら",
+          "reading": "mizukara",
+          "translation": "oneself",
+          "speechText": "自ら",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "みずから",
+          "coversReadings": [
+            "みずから"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "自",
+              "reading": "みずか"
+            },
+            {
+              "text": "ら"
+            }
+          ],
+          "furiganaHtml": "<ruby>自<rt>みずか</rt></ruby>ら"
+        },
+        {
+          "text": "自動",
+          "reading": "jidō",
+          "translation": "automatic",
+          "speechText": "自動",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "じどう",
+          "furiganaSegments": [
+            {
+              "text": "自動",
+              "reading": "じどう"
+            }
+          ],
+          "furiganaHtml": "<ruby>自動<rt>じどう</rt></ruby>"
         },
         {
           "text": "自分でします。",
@@ -267,33 +393,67 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "自"
-          ]
+          ],
+          "kanaReading": "じぶんでします。",
+          "furiganaSegments": [
+            {
+              "text": "自分",
+              "reading": "じぶん"
+            },
+            {
+              "text": "でします"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>自分<rt>じぶん</rt></ruby>でします。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "みずから",
+        "romanization": "mizukara",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "自",
       "readings": [
         {
           "system": "hanja",
-          "value": "자 / ja",
+          "value": "자 — ja",
           "audioAssetRef": null,
           "speechText": "자",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "스스로 / seuseuro",
-          "audioAssetRef": null,
-          "speechText": "스스로",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "자",
+          "romanization": "ja"
         }
       ],
       "glosses": [
         "self"
       ],
       "examples": [
+        {
+          "text": "스스로",
+          "reading": "seuseuro",
+          "translation": "oneself / by oneself",
+          "speechText": "스스로",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "자기",
           "reading": "jagi",
@@ -323,6 +483,18 @@
           ]
         },
         {
+          "text": "자신",
+          "reading": "jasin",
+          "translation": "oneself",
+          "speechText": "자신",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "스스로 해요.",
           "reading": "seuseuro haeyo.",
           "translation": "I do it myself.",
@@ -337,7 +509,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "자 — ja",
+          "audioAssetRef": null,
+          "speechText": "자",
+          "speechLanguage": "korean",
+          "nativeReading": "자",
+          "romanization": "ja"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "스스로 — seuseuro",
+          "audioAssetRef": null,
+          "speechText": "스스로",
+          "speechLanguage": "korean",
+          "nativeReading": "스스로",
+          "romanization": "seuseuro",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "oneself / by oneself",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "자",
+        "romanization": "ja",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +557,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person pointing to or touching the nose on their own face.",
+    "originAnchor": "A nose is the pictorial source. The meaning ‘self’ was later borrowed by sound; the nose-pointing explanation is a later folk interpretation.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/self/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A broad nose-like outline encloses one strong internal horizontal, with two lower side lobes hanging beneath.",
+        "changeNoteFromPrevious": "The early form is a nose pictograph; it does not yet depict the abstract idea ‘self.’",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-自"
@@ -379,8 +590,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A broad nose-like outline encloses one strong internal horizontal, with two lower side lobes hanging beneath.",
-        "transitionNote": "A broad nose-like outline encloses one strong internal horizontal, with two lower side lobes hanging beneath.",
+        "stageExplanation": "The graph is a nose pictograph with internal structural detail; the later “self” sense should not be acted out inside the origin image.",
+        "transitionNote": "The early form is a nose pictograph; it does not yet depict the abstract idea ‘self.’",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -501,7 +712,7 @@
         "label": "Regular Script",
         "form": "自",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 自 squares the outline, keeps the interior horizontals, and turns the split top into the small opening stroke of the modern character.",
+        "changeNoteFromPrevious": "The nose graph was later used for ‘self’ by sound, so a body-related addition was introduced for the ordinary nose sense.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +738,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 自 squares the outline, keeps the interior horizontals, and turns the split top into the small opening stroke of the modern character.",
-        "transitionNote": "Regular 自 squares the outline, keeps the interior horizontals, and turns the split top into the small opening stroke of the modern character.",
+        "stageExplanation": "The old nose picture becomes the regular graph 自. Because 自 had taken over the “self” word, 鼻 later carries the ordinary nose sense.",
+        "transitionNote": "The nose graph was later used for ‘self’ by sound, so a body-related addition was introduced for the ordinary nose sense.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +747,7 @@
     ],
     "origin": {
       "concept": "self",
-      "explanation": "A person pointing to or touching the nose on their own face.",
+      "explanation": "The graph originally depicted a nose.",
       "asset": {
         "characterID": "self",
         "historicalStage": null,
@@ -553,7 +764,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of self",
+        "accessibilityDescription": "Illustration of self (originally nose)",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +782,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'self', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'self (originally nose)', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +852,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

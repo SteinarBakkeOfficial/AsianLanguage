@@ -2,8 +2,8 @@
   "id": "go",
   "version": 1,
   "coreCharacter": "行",
-  "coreSharedMeaning": "go",
-  "recognitionTakeaway": "Regular 行 regularizes the two road-side components into the familiar left 彳-like and right strokes, preserving the sense of parallel paths and intersections.",
+  "coreSharedMeaning": "go / move; conduct",
+  "recognitionTakeaway": "The crossroads graph regularizes as 行 and extends to going, movement, conduct, and other language-specific uses.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+884C",
   "simplifiedForm": "行",
@@ -15,9 +15,9 @@
     "Oracle consists of four separate road strokes around an empty center, like a crossroads seen from above.",
     "Regular 行 regularizes the two road-side components into the familiar left 彳-like and right strokes, preserving the sense of parallel paths and intersections."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-088-行-u884C",
+  "contentFolder": "content/release/symbols/go",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-088-行-u884C/research.md",
+  "researchNotesPath": "content/release/symbols/go/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -32,12 +32,36 @@
           "audioAssetRef": null,
           "speechText": "行",
           "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "háng",
+          "audioAssetRef": null,
+          "speechText": "行",
+          "speechLanguage": "mandarin",
+          "usageNote": "common in words referring to lines, trades, and institutions"
         }
       ],
       "glosses": [
-        "go; walk; act; line/occupation"
+        "go; walk; act (xíng)",
+        "line; profession (háng)"
       ],
       "examples": [
+        {
+          "text": "行",
+          "reading": "xíng",
+          "translation": "go; walk; act",
+          "speechText": "行",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "xíng"
+          ]
+        },
         {
           "text": "行走",
           "reading": "xíngzǒu",
@@ -67,21 +91,50 @@
           ]
         },
         {
+          "text": "银行",
+          "reading": "yínháng",
+          "translation": "bank",
+          "speechText": "银行",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "háng"
+          ]
+        },
+        {
           "text": "行人",
           "reading": "xíngrén",
           "translation": "pedestrian",
           "speechText": "行人",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "行"
           ]
+        },
+        {
+          "text": "这里行人很多。",
+          "reading": "Zhèlǐ xíngrén hěn duō.",
+          "translation": "There are many pedestrians here.",
+          "speechText": "这里行人很多。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "行",
@@ -98,6 +151,18 @@
         "go; walk; act; line/occupation"
       ],
       "taiwanExamples": [
+        {
+          "text": "行",
+          "reading": "xíng",
+          "translation": "go; walk; act; line/occupation",
+          "speechText": "行",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "行走",
           "reading": "xíngzǒu",
@@ -133,7 +198,7 @@
           "speechText": "行人",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -142,6 +207,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "行",
+          "reading": "haang4",
+          "translation": "go; walk; act; line/occupation",
+          "speechText": "行",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "行路",
           "reading": "haang4 lou6",
@@ -203,38 +280,62 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "行",
       "readings": [
         {
-          "system": "on",
-          "value": "コウ (kō)",
+          "system": "onyomi",
+          "value": "コウ — kō",
           "audioAssetRef": null,
           "speechText": "こう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コウ",
+          "romanization": "kō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ギョウ (gyō)",
+          "system": "onyomi",
+          "value": "ギョウ — gyō",
           "audioAssetRef": null,
           "speechText": "ぎょう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ギョウ",
+          "romanization": "gyō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "いく (iku)",
+          "system": "kunyomi",
+          "value": "いく — iku",
           "audioAssetRef": null,
           "speechText": "いく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "いく",
+          "romanization": "iku",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "おこなう (okonau)",
+          "system": "kunyomi",
+          "value": "おこなう — okonau",
           "audioAssetRef": null,
           "speechText": "おこなう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "おこなう",
+          "romanization": "okonau",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "ゆく — yuku",
+          "audioAssetRef": null,
+          "speechText": "ゆく",
+          "speechLanguage": "japanese",
+          "nativeReading": "ゆく",
+          "romanization": "yuku",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -253,7 +354,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "行"
-          ]
+          ],
+          "kanaReading": "いく",
+          "coversReadings": [
+            "いく"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "く"
+            }
+          ],
+          "furiganaHtml": "<ruby>行<rt>い</rt></ruby>く"
         },
         {
           "text": "銀行",
@@ -267,7 +382,67 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "行"
-          ]
+          ],
+          "kanaReading": "ぎんこう",
+          "coversReadings": [
+            "コウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "銀行",
+              "reading": "ぎんこう"
+            }
+          ],
+          "furiganaHtml": "<ruby>銀行<rt>ぎんこう</rt></ruby>"
+        },
+        {
+          "text": "行列",
+          "reading": "gyōretsu",
+          "translation": "line; queue",
+          "speechText": "行列",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ぎょうれつ",
+          "coversReadings": [
+            "ギョウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "行列",
+              "reading": "ぎょうれつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>行列<rt>ぎょうれつ</rt></ruby>"
+        },
+        {
+          "text": "行う",
+          "reading": "okonau",
+          "translation": "carry out",
+          "speechText": "行う",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おこなう",
+          "coversReadings": [
+            "おこなう"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "行",
+              "reading": "おこな"
+            },
+            {
+              "text": "う"
+            }
+          ],
+          "furiganaHtml": "<ruby>行<rt>おこな</rt></ruby>う"
         },
         {
           "text": "学校へ行きます。",
@@ -281,33 +456,104 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "行"
-          ]
+          ],
+          "kanaReading": "がっこうへいきます。",
+          "furiganaSegments": [
+            {
+              "text": "学校",
+              "reading": "がっこう"
+            },
+            {
+              "text": "へ"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>学校<rt>がっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。"
+        },
+        {
+          "text": "行く末",
+          "reading": "yukusue",
+          "translation": "future; what lies ahead",
+          "speechText": "行く末",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ゆくすえ",
+          "coversReadings": [
+            "ゆく"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "行",
+              "reading": "ゆ"
+            },
+            {
+              "text": "く"
+            },
+            {
+              "text": "末",
+              "reading": "すえ"
+            }
+          ],
+          "furiganaHtml": "<ruby>行<rt>ゆ</rt></ruby>く<ruby>末<rt>すえ</rt></ruby>"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "いく",
+        "romanization": "iku",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "行",
       "readings": [
         {
           "system": "hanja",
-          "value": "행 / haeng",
+          "value": "행 — haeng",
           "audioAssetRef": null,
           "speechText": "행",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "가다 / gada",
-          "audioAssetRef": null,
-          "speechText": "가다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "행",
+          "romanization": "haeng"
         }
       ],
       "glosses": [
         "go; movement; bank/trade reading by compound"
       ],
       "examples": [
+        {
+          "text": "가다",
+          "reading": "gada",
+          "translation": "go",
+          "speechText": "가다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "여행",
           "reading": "yeohaeng",
@@ -337,6 +583,18 @@
           ]
         },
         {
+          "text": "행동",
+          "reading": "haengdong",
+          "translation": "action / behavior",
+          "speechText": "행동",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "학교에 가요.",
           "reading": "hakgyoe gayo.",
           "translation": "I go to school.",
@@ -351,7 +609,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "행 — haeng",
+          "audioAssetRef": null,
+          "speechText": "행",
+          "speechLanguage": "korean",
+          "nativeReading": "행",
+          "romanization": "haeng"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "가다 — gada",
+          "audioAssetRef": null,
+          "speechText": "가다",
+          "speechLanguage": "korean",
+          "nativeReading": "가다",
+          "romanization": "gada",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "go",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "행",
+        "romanization": "haeng",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -360,14 +657,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person approaching and crossing a four-way road junction.",
+    "originAnchor": "A crossroads or road intersection originally represented a road. The later sense ‘go’ developed from movement along a road, though some analyses treat the verbal use as a sound borrowing.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/go/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle consists of four separate road strokes around an empty center, like a crossroads seen from above.",
+        "changeNoteFromPrevious": "Intersecting roads/crossroads form the entire picture; no person is encoded.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-行"
@@ -393,8 +690,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle consists of four separate road strokes around an empty center, like a crossroads seen from above.",
-        "transitionNote": "Oracle consists of four separate road strokes around an empty center, like a crossroads seen from above.",
+        "stageExplanation": "Intersecting roads/crossroads form the entire picture; no person is encoded.",
+        "transitionNote": "Intersecting roads/crossroads form the entire picture; no person is encoded.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -404,7 +701,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/go/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the crossroads even clearer with four right-angled arms meeting around the center.",
+        "changeNoteFromPrevious": "Makes the crossroads even clearer with four right-angled arms meeting around the center.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-行"
@@ -430,8 +727,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the crossroads even clearer with four right-angled arms meeting around the center.",
-        "transitionNote": "Bronze makes the crossroads even clearer with four right-angled arms meeting around the center.",
+        "stageExplanation": "Makes the crossroads even clearer with four right-angled arms meeting around the center.",
+        "transitionNote": "Makes the crossroads even clearer with four right-angled arms meeting around the center.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -441,7 +738,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/go/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal separates the road into two mirrored vertical components, each with inward-curving branches.",
+        "changeNoteFromPrevious": "Separates the road into two mirrored vertical components, each with inward-curving branches.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-行"
@@ -467,8 +764,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal separates the road into two mirrored vertical components, each with inward-curving branches.",
-        "transitionNote": "Small Seal separates the road into two mirrored vertical components, each with inward-curving branches.",
+        "stageExplanation": "Separates the road into two mirrored vertical components, each with inward-curving branches.",
+        "transitionNote": "Separates the road into two mirrored vertical components, each with inward-curving branches.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -478,7 +775,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/go/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical keeps those mirrored road sides but shortens and thickens the branches.",
+        "changeNoteFromPrevious": "Keeps those mirrored road sides but shortens and thickens the branches.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-行"
@@ -504,8 +801,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical keeps those mirrored road sides but shortens and thickens the branches.",
-        "transitionNote": "Clerical keeps those mirrored road sides but shortens and thickens the branches.",
+        "stageExplanation": "Keeps those mirrored road sides but shortens and thickens the branches.",
+        "transitionNote": "Keeps those mirrored road sides but shortens and thickens the branches.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -515,7 +812,7 @@
         "label": "Regular Script",
         "form": "行",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 行 regularizes the two road-side components into the familiar left 彳-like and right strokes, preserving the sense of parallel paths and intersections.",
+        "changeNoteFromPrevious": "The road graph later came to mean ‘go,’ then extended to movement, conduct, and other language-specific uses.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -541,8 +838,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 行 regularizes the two road-side components into the familiar left 彳-like and right strokes, preserving the sense of parallel paths and intersections.",
-        "transitionNote": "Regular 行 regularizes the two road-side components into the familiar left 彳-like and right strokes, preserving the sense of parallel paths and intersections.",
+        "stageExplanation": "The crossroads graph regularizes as 行 and extends to going, movement, conduct, and other language-specific uses.",
+        "transitionNote": "The road graph later came to mean ‘go,’ then extended to movement, conduct, and other language-specific uses.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -550,7 +847,7 @@
     ],
     "origin": {
       "concept": "go",
-      "explanation": "A person approaching and crossing a four-way road junction.",
+      "explanation": "A crossroads or road intersection.",
       "asset": {
         "characterID": "go",
         "historicalStage": null,
@@ -567,7 +864,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of go",
+        "accessibilityDescription": "Illustration of go / move; conduct",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -585,7 +882,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'go', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'go / move; conduct', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -655,13 +952,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

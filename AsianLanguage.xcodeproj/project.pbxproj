@@ -36,12 +36,8 @@
 		8B000001000000000000001D /* AboutMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001D /* AboutMethodView.swift */; };
 		8B000001000000000000001E /* SeedCorpusManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001E /* SeedCorpusManifest.swift */; };
 		8B000001000000000000001F /* Corpus in Resources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001F /* Corpus */; };
-		8B0000010000000000000020 /* PrototypeVisuals in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000020 /* PrototypeVisuals */; };
 		8B0000010000000000000021 /* Corpus in Resources */ = {isa = PBXBuildFile; fileRef = 8B000101000000000000001F /* Corpus */; };
-		8B0000010000000000000022 /* PrototypeVisuals in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000020 /* PrototypeVisuals */; };
 		8B0000010000000000000023 /* UsageExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000023 /* UsageExamplesView.swift */; };
-		8B0000010000000000000024 /* HistoricalGlyphs in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000024 /* HistoricalGlyphs */; };
-		8B0000010000000000000025 /* HistoricalGlyphs in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000024 /* HistoricalGlyphs */; };
 		8B0000010000000000000026 /* Symbols in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000026 /* Symbols */; };
 		8B000001000000000000002A /* Symbols in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000026 /* Symbols */; };
 		8B0000010000000000000027 /* SymbolPictogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000027 /* SymbolPictogramView.swift */; };
@@ -53,6 +49,7 @@
 		8B0000010000000000000033 /* Collections in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000033 /* Collections */; };
 		8B0000010000000000000034 /* History in Resources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000034 /* History */; };
 		8B0000010000000000000035 /* PronunciationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000035 /* PronunciationService.swift */; };
+		8B0000010000000000000036 /* HistoryModernLanguageReadingGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000036 /* HistoryModernLanguageReadingGuide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,9 +91,7 @@
 		8B000101000000000000001D /* AboutMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMethodView.swift; sourceTree = "<group>"; };
 		8B000101000000000000001E /* SeedCorpusManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedCorpusManifest.swift; sourceTree = "<group>"; };
 		8B000101000000000000001F /* Corpus */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Corpus; sourceTree = "<group>"; };
-		8B0001010000000000000020 /* PrototypeVisuals */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/PrototypeVisuals; sourceTree = "<group>"; };
 		8B0001010000000000000023 /* UsageExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageExamplesView.swift; sourceTree = "<group>"; };
-		8B0001010000000000000024 /* HistoricalGlyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/HistoricalGlyphs; sourceTree = "<group>"; };
 		8B0001010000000000000026 /* Symbols */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/Symbols; sourceTree = "<group>"; };
 		8B0001010000000000000027 /* SymbolPictogramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolPictogramView.swift; sourceTree = "<group>"; };
 		8B0001010000000000000028 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
@@ -107,6 +102,7 @@
 		8B0001010000000000000033 /* Collections */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/Collections; sourceTree = "<group>"; };
 		8B0001010000000000000034 /* History */ = {isa = PBXFileReference; lastKnownFileType = folder; path = History; sourceTree = "<group>"; };
 		8B0001010000000000000035 /* PronunciationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationService.swift; sourceTree = "<group>"; };
+		8B0001010000000000000036 /* HistoryModernLanguageReadingGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModernLanguageReadingGuide.swift; sourceTree = "<group>"; };
 		8B0002010000000000000001 /* AsianLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsianLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0002010000000000000002 /* AsianLanguageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsianLanguageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -184,6 +180,7 @@
 			children = (
 				8B0001010000000000000004 /* AppTab.swift */,
 				8B0001010000000000000005 /* RootTabView.swift */,
+				8B0001010000000000000036 /* HistoryModernLanguageReadingGuide.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -299,8 +296,6 @@
 			children = (
 				8B0004010000000000000011 /* Corpus */,
 				8B000101000000000000001F /* Corpus */,
-				8B0001010000000000000020 /* PrototypeVisuals */,
-				8B0001010000000000000024 /* HistoricalGlyphs */,
 				8B0001010000000000000026 /* Symbols */,
 				8B0001010000000000000033 /* Collections */,
 				8B0001010000000000000034 /* History */,
@@ -425,8 +420,6 @@
 			files = (
 				8B000001000000000000000E /* tree.json in Resources */,
 				8B000001000000000000001F /* Corpus in Resources */,
-				8B0000010000000000000020 /* PrototypeVisuals in Resources */,
-				8B0000010000000000000024 /* HistoricalGlyphs in Resources */,
 				8B0000010000000000000026 /* Symbols in Resources */,
 				8B0000010000000000000031 /* Assets.xcassets in Resources */,
 				8B0000010000000000000032 /* Fonts in Resources */,
@@ -441,8 +434,6 @@
 			files = (
 				8B0000010000000000000014 /* tree.json in Resources */,
 				8B0000010000000000000021 /* Corpus in Resources */,
-				8B0000010000000000000022 /* PrototypeVisuals in Resources */,
-				8B0000010000000000000025 /* HistoricalGlyphs in Resources */,
 				8B000001000000000000002A /* Symbols in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +473,7 @@
 				8B0000010000000000000029 /* LanguagesView.swift in Sources */,
 				8B0000010000000000000030 /* DesignSystem.swift in Sources */,
 				8B0000010000000000000035 /* PronunciationService.swift in Sources */,
+				8B0000010000000000000036 /* HistoryModernLanguageReadingGuide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -174,8 +174,14 @@ struct StandardFocusCoverage: Decodable, Hashable {
     /// Explicit modern alternatives, such as a kana or Hangul presentation.
     let variants: [ModernFormVariant]
 
+    /// Learner-facing lexical equivalents that are not readings of the Han character.
+    let semanticEquivalents: [CharacterReading]
+
+    /// Genuine alternate graph forms within this language tradition.
+    let orthographicVariants: [OrthographicVariant]
+
     private enum CodingKeys: String, CodingKey {
-        case form, readings, glosses, examples, variants
+        case form, readings, glosses, examples, variants, semanticEquivalents, orthographicVariants
     }
 
     init(from decoder: Decoder) throws {
@@ -185,6 +191,8 @@ struct StandardFocusCoverage: Decodable, Hashable {
         glosses = try container.decode([String].self, forKey: .glosses)
         examples = try container.decode([UsageExample].self, forKey: .examples)
         variants = try container.decodeIfPresent([ModernFormVariant].self, forKey: .variants) ?? []
+        semanticEquivalents = try container.decodeIfPresent([CharacterReading].self, forKey: .semanticEquivalents) ?? []
+        orthographicVariants = try container.decodeIfPresent([OrthographicVariant].self, forKey: .orthographicVariants) ?? []
     }
 }
 
@@ -214,9 +222,15 @@ struct TraditionalChineseCoverage: Decodable, Hashable {
     /// Explicit modern alternatives for regional written usage.
     let variants: [ModernFormVariant]
 
+    /// Learner-facing lexical equivalents that are not readings of the Han character.
+    let semanticEquivalents: [CharacterReading]
+
+    /// Genuine alternate graph forms within the regional written tradition.
+    let orthographicVariants: [OrthographicVariant]
+
     private enum CodingKeys: String, CodingKey {
         case form, readings, glosses, taiwanExamples, hongKongExamples
-        case taiwanReadings, hongKongReadings, variants
+        case taiwanReadings, hongKongReadings, variants, semanticEquivalents, orthographicVariants
     }
 
     init(from decoder: Decoder) throws {
@@ -229,6 +243,8 @@ struct TraditionalChineseCoverage: Decodable, Hashable {
         taiwanReadings = try container.decodeIfPresent([CharacterReading].self, forKey: .taiwanReadings) ?? []
         hongKongReadings = try container.decodeIfPresent([CharacterReading].self, forKey: .hongKongReadings) ?? []
         variants = try container.decodeIfPresent([ModernFormVariant].self, forKey: .variants) ?? []
+        semanticEquivalents = try container.decodeIfPresent([CharacterReading].self, forKey: .semanticEquivalents) ?? []
+        orthographicVariants = try container.decodeIfPresent([OrthographicVariant].self, forKey: .orthographicVariants) ?? []
     }
 }
 
@@ -259,7 +275,15 @@ struct CharacterReading: Decodable, Hashable {
     /// Platform-independent language intent resolved by the platform pronunciation service.
     let speechLanguage: PronunciationLanguage?
 
-    private enum CodingKeys: String, CodingKey { case system, value, audioAssetRef, speechText, speechLanguage }
+    /// Native-script reading and romanization supplied by the final language payload.
+    let nativeReading: String?
+
+    /// Separate romanization supplied by the final language payload.
+    let romanization: String?
+
+    private enum CodingKeys: String, CodingKey {
+        case system, value, audioAssetRef, speechText, speechLanguage, nativeReading, romanization
+    }
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -268,6 +292,26 @@ struct CharacterReading: Decodable, Hashable {
         audioAssetRef = try container.decodeIfPresent(String.self, forKey: .audioAssetRef)
         speechText = try container.decodeIfPresent(String.self, forKey: .speechText)
         speechLanguage = try container.decodeIfPresent(PronunciationLanguage.self, forKey: .speechLanguage)
+        nativeReading = try container.decodeIfPresent(String.self, forKey: .nativeReading)
+        romanization = try container.decodeIfPresent(String.self, forKey: .romanization)
+    }
+}
+
+/// A verified alternate written graph, kept separate from pronunciation data.
+struct OrthographicVariant: Decodable, Hashable {
+    let form: String
+    let label: String?
+    let usage: String?
+    let relationship: String?
+
+    private enum CodingKeys: String, CodingKey { case form, label, usage, relationship }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        form = try container.decode(String.self, forKey: .form)
+        label = try container.decodeIfPresent(String.self, forKey: .label)
+        usage = try container.decodeIfPresent(String.self, forKey: .usage)
+        relationship = try container.decodeIfPresent(String.self, forKey: .relationship)
     }
 }
 
@@ -353,10 +397,63 @@ struct UsageExample: Decodable, Hashable {
 
     /// Symbols introduced by this example.
     let introducedSymbols: [String]
+
+    /// Optional semantic-role marker, such as a Korean equivalent example.
+    let exampleRole: String?
+
+    /// Complete native-script reading retained for Japanese audit and furigana rendering.
+    let kanaReading: String?
+
+    /// Readings explicitly demonstrated by this example.
+    let coversReadings: [String]
+
+    /// Structured Japanese furigana segments; the natural spelling remains `text`.
+    let furiganaSegments: [FuriganaSegment]
+
+    /// Review-only HTML representation retained for editorial comparison.
+    let furiganaHTML: String?
+
+    private enum CodingKeys: String, CodingKey {
+        case text, reading, translation, showsCoreMeaning, exampleLevel
+        case parallelExampleGroupID, reusesKnownSymbols, introducedSymbols
+        case exampleRole, kanaReading, coversReadings, furiganaSegments, furiganaHtml
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        text = try container.decode(String.self, forKey: .text)
+        reading = try container.decodeIfPresent(String.self, forKey: .reading)
+        translation = try container.decode(String.self, forKey: .translation)
+        showsCoreMeaning = try container.decodeIfPresent(Bool.self, forKey: .showsCoreMeaning) ?? false
+        exampleLevel = try container.decodeIfPresent(UsageExampleLevel.self, forKey: .exampleLevel) ?? .word
+        parallelExampleGroupID = try container.decodeIfPresent(String.self, forKey: .parallelExampleGroupID)
+        reusesKnownSymbols = try container.decodeIfPresent([String].self, forKey: .reusesKnownSymbols) ?? []
+        introducedSymbols = try container.decodeIfPresent([String].self, forKey: .introducedSymbols) ?? []
+        exampleRole = try container.decodeIfPresent(String.self, forKey: .exampleRole)
+        kanaReading = try container.decodeIfPresent(String.self, forKey: .kanaReading)
+        coversReadings = try container.decodeIfPresent([String].self, forKey: .coversReadings) ?? []
+        furiganaSegments = try container.decodeIfPresent([FuriganaSegment].self, forKey: .furiganaSegments) ?? []
+        furiganaHTML = try container.decodeIfPresent(String.self, forKey: .furiganaHtml)
+    }
+}
+
+/// One Japanese kanji-to-kana annotation supplied by the editorial payload.
+struct FuriganaSegment: Decodable, Hashable {
+    let text: String
+    let reading: String?
+
+    private enum CodingKeys: String, CodingKey { case text, reading }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        text = try container.decode(String.self, forKey: .text)
+        reading = try container.decodeIfPresent(String.self, forKey: .reading)
+    }
 }
 
 /// Progressive example level for teaching sequence and lesson usage display.
 enum UsageExampleLevel: String, Decodable, Hashable {
+    case coreForm
     case word
     case phrase
     case sentence

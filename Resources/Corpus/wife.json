@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "妻",
   "coreSharedMeaning": "wife",
-  "recognitionTakeaway": "Regular 妻 fixes the stacked upper strokes over 女, preserving the two-level figure while removing the literal hair-arranging scene.",
+  "recognitionTakeaway": "The compound stabilizes as 妻; V2 avoids presenting bride capture as an established pictorial fact.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+59BB",
   "simplifiedForm": "妻",
@@ -15,9 +15,9 @@
     "Oracle is a dense human figure with branching hair or hand strokes at the top and a long woman-like body below.",
     "Regular 妻 fixes the stacked upper strokes over 女, preserving the two-level figure while removing the literal hair-arranging scene."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-143-妻-u59BB",
+  "contentFolder": "content/release/symbols/wife",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-143-妻-u59BB/research.md",
+  "researchNotesPath": "content/release/symbols/wife/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "wife"
       ],
       "examples": [
+        {
+          "text": "妻",
+          "reading": "qī",
+          "translation": "wife",
+          "speechText": "妻",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "qī"
+          ]
+        },
         {
           "text": "妻子",
           "reading": "qīzi",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "前妻",
+          "reading": "qiánqī",
+          "translation": "former wife",
+          "speechText": "前妻",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他的妻子在家。",
           "reading": "Tā de qīzi zài jiā.",
           "translation": "His wife is at home.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "妻",
@@ -98,6 +127,18 @@
         "wife"
       ],
       "taiwanExamples": [
+        {
+          "text": "妻",
+          "reading": "qī",
+          "translation": "wife",
+          "speechText": "妻",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "妻子",
           "reading": "qīzi",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "妻",
+          "reading": "cai1",
+          "translation": "wife",
+          "speechText": "妻",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "妻子",
           "reading": "cai1 zi2",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "妻",
       "readings": [
         {
-          "system": "on",
-          "value": "サイ (sai)",
+          "system": "onyomi",
+          "value": "サイ — sai",
           "audioAssetRef": null,
           "speechText": "さい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "サイ",
+          "romanization": "sai",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "つま (tsuma)",
+          "system": "kunyomi",
+          "value": "つま — tsuma",
           "audioAssetRef": null,
           "speechText": "つま",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "つま",
+          "romanization": "tsuma",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "妻"
-          ]
+          ],
+          "kanaReading": "つま",
+          "coversReadings": [
+            "つま"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "妻",
+              "reading": "つま"
+            }
+          ],
+          "furiganaHtml": "<ruby>妻<rt>つま</rt></ruby>"
         },
         {
           "text": "夫妻",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "妻"
-          ]
+          ],
+          "kanaReading": "ふうふ",
+          "furiganaSegments": [
+            {
+              "text": "夫妻",
+              "reading": "ふうふ"
+            }
+          ],
+          "furiganaHtml": "<ruby>夫妻<rt>ふうふ</rt></ruby>"
+        },
+        {
+          "text": "妻子",
+          "reading": "saishi",
+          "translation": "wife and children",
+          "speechText": "妻子",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "さいし",
+          "coversReadings": [
+            "サイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "妻子",
+              "reading": "さいし"
+            }
+          ],
+          "furiganaHtml": "<ruby>妻子<rt>さいし</rt></ruby>"
+        },
+        {
+          "text": "愛妻",
+          "reading": "aisai",
+          "translation": "beloved wife",
+          "speechText": "愛妻",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あいさい",
+          "furiganaSegments": [
+            {
+              "text": "愛妻",
+              "reading": "あいさい"
+            }
+          ],
+          "furiganaHtml": "<ruby>愛妻<rt>あいさい</rt></ruby>"
         },
         {
           "text": "妻は家にいます。",
@@ -267,33 +390,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "妻"
-          ]
+          ],
+          "kanaReading": "つまはいえにいます。",
+          "furiganaSegments": [
+            {
+              "text": "妻",
+              "reading": "つま"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "家",
+              "reading": "いえ"
+            },
+            {
+              "text": "にいます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>妻<rt>つま</rt></ruby>は<ruby>家<rt>いえ</rt></ruby>にいます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "つま",
+        "romanization": "tsuma",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "妻",
       "readings": [
         {
           "system": "hanja",
-          "value": "처 / cheo",
+          "value": "처 — cheo",
           "audioAssetRef": null,
           "speechText": "처",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "아내 / anae",
-          "audioAssetRef": null,
-          "speechText": "아내",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "처",
+          "romanization": "cheo"
         }
       ],
       "glosses": [
         "wife"
       ],
       "examples": [
+        {
+          "text": "아내",
+          "reading": "anae",
+          "translation": "wife",
+          "speechText": "아내",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "처가",
           "reading": "cheoga",
@@ -323,6 +487,18 @@
           ]
         },
         {
+          "text": "처자",
+          "reading": "cheoja",
+          "translation": "wife and children",
+          "speechText": "처자",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "아내가 집에 있어요.",
           "reading": "anaega jibe isseoyo.",
           "translation": "My wife is at home.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "처 — cheo",
+          "audioAssetRef": null,
+          "speechText": "처",
+          "speechLanguage": "korean",
+          "nativeReading": "처",
+          "romanization": "cheo"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "아내 — anae",
+          "audioAssetRef": null,
+          "speechText": "아내",
+          "speechLanguage": "korean",
+          "nativeReading": "아내",
+          "romanization": "anae",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "wife",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "처",
+        "romanization": "cheo",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +561,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A woman having her long hair gathered or arranged by a hand, with a broom-like object shown nearby.",
+    "originAnchor": "A woman and a hand combine in disputed interpretations: seizing or arranging her hair; together, they came to mean 'wife.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/wife/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a dense human figure with branching hair or hand strokes at the top and a long woman-like body below.",
+        "changeNoteFromPrevious": "A woman is shown with a hand acting at the hair/head; the exact action and marriage context are debated.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-妻"
@@ -379,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a dense human figure with branching hair or hand strokes at the top and a long woman-like body below.",
-        "transitionNote": "Oracle is a dense human figure with branching hair or hand strokes at the top and a long woman-like body below.",
+        "stageExplanation": "A woman is shown with a hand acting at the hair/head; the exact action and marriage context are debated.",
+        "transitionNote": "A woman is shown with a hand acting at the hair/head; the exact action and marriage context are debated.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +605,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/wife/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the upper hair or hand area into a woven grid while keeping a slender lower female figure.",
+        "changeNoteFromPrevious": "Makes the upper hair or hand area into a woven grid while keeping a slender lower female figure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-妻"
@@ -416,8 +631,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the upper hair or hand area into a woven grid while keeping a slender lower female figure.",
-        "transitionNote": "Bronze makes the upper hair or hand area into a woven grid while keeping a slender lower female figure.",
+        "stageExplanation": "Makes the upper hair or hand area into a woven grid while keeping a slender lower female figure.",
+        "transitionNote": "Makes the upper hair or hand area into a woven grid while keeping a slender lower female figure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +642,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/wife/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the upper crossings into several horizontal and vertical strokes above a flowing 女-like lower body.",
+        "changeNoteFromPrevious": "Regularizes the upper crossings into several horizontal and vertical strokes above a flowing woman sign-like lower body.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-妻"
@@ -453,8 +668,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the upper crossings into several horizontal and vertical strokes above a flowing 女-like lower body.",
-        "transitionNote": "Small Seal regularizes the upper crossings into several horizontal and vertical strokes above a flowing 女-like lower body.",
+        "stageExplanation": "Regularizes the upper crossings into several horizontal and vertical strokes above a flowing woman sign-like lower body.",
+        "transitionNote": "Regularizes the upper crossings into several horizontal and vertical strokes above a flowing woman sign-like lower body.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +679,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/wife/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical compresses the upper hair strokes and makes the lower woman component much clearer, bringing the form close to 妻.",
+        "changeNoteFromPrevious": "The woman and hand-at-head elements become angular and compact, bringing the graph close to the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-妻"
@@ -490,8 +705,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical compresses the upper hair strokes and makes the lower woman component much clearer, bringing the form close to 妻.",
-        "transitionNote": "Clerical compresses the upper hair strokes and makes the lower woman component much clearer, bringing the form close to 妻.",
+        "stageExplanation": "The woman and hand-at-head elements become angular and compact, bringing the graph close to the later standard structure.",
+        "transitionNote": "The woman and hand-at-head elements become angular and compact, bringing the graph close to the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "妻",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 妻 fixes the stacked upper strokes over 女, preserving the two-level figure while removing the literal hair-arranging scene.",
+        "changeNoteFromPrevious": "The compound stabilizes as 妻; V2 avoids presenting bride capture as an established pictorial fact.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 妻 fixes the stacked upper strokes over 女, preserving the two-level figure while removing the literal hair-arranging scene.",
-        "transitionNote": "Regular 妻 fixes the stacked upper strokes over 女, preserving the two-level figure while removing the literal hair-arranging scene.",
+        "stageExplanation": "The compound stabilizes as 妻; V2 avoids presenting bride capture as an established pictorial fact.",
+        "transitionNote": "The compound stabilizes as 妻; V2 avoids presenting bride capture as an established pictorial fact.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "wife",
-      "explanation": "A woman having her long hair gathered or arranged by a hand, with a broom-like object shown nearby.",
+      "explanation": "A woman is shown with a hand acting at the hair or head.",
       "asset": {
         "characterID": "wife",
         "historicalStage": null,
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -2,8 +2,8 @@
   "id": "few",
   "version": 1,
   "coreCharacter": "少",
-  "coreSharedMeaning": "few",
-  "recognitionTakeaway": "Regular 少 reduces the pattern to three small upper strokes plus one long diagonal sweep, a clear descendant of the Clerical form.",
+  "coreSharedMeaning": "few / little",
+  "recognitionTakeaway": "An extra/differentiating stroke helps establish 少 as the form for “few/little.”",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5C11",
   "simplifiedForm": "少",
@@ -15,9 +15,9 @@
     "Oracle represents “few” with four separate short marks scattered around an empty center.",
     "Regular 少 reduces the pattern to three small upper strokes plus one long diagonal sweep, a clear descendant of the Clerical form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-076-少-u5C11",
+  "contentFolder": "content/release/symbols/few",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-076-少-u5C11/research.md",
+  "researchNotesPath": "content/release/symbols/few/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -32,12 +32,35 @@
           "audioAssetRef": null,
           "speechText": "少",
           "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "shào",
+          "audioAssetRef": null,
+          "speechText": "少",
+          "speechLanguage": "mandarin",
+          "usageNote": "common in words such as 少年"
         }
       ],
       "glosses": [
         "few"
       ],
       "examples": [
+        {
+          "text": "少",
+          "reading": "shǎo",
+          "translation": "few",
+          "speechText": "少",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shǎo"
+          ]
+        },
         {
           "text": "少数",
           "reading": "shǎoshù",
@@ -67,6 +90,21 @@
           ]
         },
         {
+          "text": "少年",
+          "reading": "shàonián",
+          "translation": "young person; youth",
+          "speechText": "少年",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shào"
+          ]
+        },
+        {
           "text": "今天人很少。",
           "reading": "Jīntiān rén hěn shǎo.",
           "translation": "There are few people today.",
@@ -81,7 +119,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "少",
@@ -98,6 +138,18 @@
         "few"
       ],
       "taiwanExamples": [
+        {
+          "text": "少",
+          "reading": "shǎo",
+          "translation": "few",
+          "speechText": "少",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "少數",
           "reading": "shǎoshù",
@@ -142,6 +194,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "少",
+          "reading": "siu2",
+          "translation": "few",
+          "speechText": "少",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "少數",
           "reading": "siu2 sou3",
@@ -203,31 +267,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "少",
       "readings": [
         {
-          "system": "on",
-          "value": "ショウ (shō)",
+          "system": "onyomi",
+          "value": "ショウ — shō",
           "audioAssetRef": null,
           "speechText": "しょう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ショウ",
+          "romanization": "shō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "すくない (sukunai)",
+          "system": "kunyomi",
+          "value": "すくない — sukunai",
           "audioAssetRef": null,
           "speechText": "すくない",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "すくない",
+          "romanization": "sukunai",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "すこし (sukoshi)",
+          "system": "kunyomi",
+          "value": "すこし — sukoshi",
           "audioAssetRef": null,
           "speechText": "すこし",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "すこし",
+          "romanization": "sukoshi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +321,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "少"
-          ]
+          ],
+          "kanaReading": "すくない",
+          "coversReadings": [
+            "すくない"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "少",
+              "reading": "すく"
+            },
+            {
+              "text": "ない"
+            }
+          ],
+          "furiganaHtml": "<ruby>少<rt>すく</rt></ruby>ない"
         },
         {
           "text": "少し",
@@ -260,7 +349,64 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "少"
-          ]
+          ],
+          "kanaReading": "すこし",
+          "coversReadings": [
+            "すこし"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "少",
+              "reading": "すこ"
+            },
+            {
+              "text": "し"
+            }
+          ],
+          "furiganaHtml": "<ruby>少<rt>すこ</rt></ruby>し"
+        },
+        {
+          "text": "少数",
+          "reading": "shōsū",
+          "translation": "small number; minority",
+          "speechText": "少数",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しょうすう",
+          "coversReadings": [
+            "ショウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "少数",
+              "reading": "しょうすう"
+            }
+          ],
+          "furiganaHtml": "<ruby>少数<rt>しょうすう</rt></ruby>"
+        },
+        {
+          "text": "少年",
+          "reading": "shōnen",
+          "translation": "boy / youth",
+          "speechText": "少年",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しょうねん",
+          "furiganaSegments": [
+            {
+              "text": "少年",
+              "reading": "しょうねん"
+            }
+          ],
+          "furiganaHtml": "<ruby>少年<rt>しょうねん</rt></ruby>"
         },
         {
           "text": "人が少ないです。",
@@ -274,33 +420,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "少"
-          ]
+          ],
+          "kanaReading": "ひとがすくないです。",
+          "furiganaSegments": [
+            {
+              "text": "人",
+              "reading": "ひと"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "少",
+              "reading": "すく"
+            },
+            {
+              "text": "ないです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>人<rt>ひと</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ないです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "すくない",
+        "romanization": "sukunai",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "少",
       "readings": [
         {
           "system": "hanja",
-          "value": "소 / so",
+          "value": "소 — so",
           "audioAssetRef": null,
           "speechText": "소",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "적다 / jeokda",
-          "audioAssetRef": null,
-          "speechText": "적다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "소",
+          "romanization": "so"
         }
       ],
       "glosses": [
         "few"
       ],
       "examples": [
+        {
+          "text": "적다",
+          "reading": "jeokda",
+          "translation": "few / little",
+          "speechText": "적다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "소수",
           "reading": "sosu",
@@ -330,6 +517,18 @@
           ]
         },
         {
+          "text": "소량",
+          "reading": "soryang",
+          "translation": "small amount",
+          "speechText": "소량",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "사람이 적어요.",
           "reading": "sarami jeogoyo.",
           "translation": "There are few people.",
@@ -344,7 +543,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "소 — so",
+          "audioAssetRef": null,
+          "speechText": "소",
+          "speechLanguage": "korean",
+          "nativeReading": "소",
+          "romanization": "so"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "적다 — jeokda",
+          "audioAssetRef": null,
+          "speechText": "적다",
+          "speechLanguage": "korean",
+          "nativeReading": "적다",
+          "romanization": "jeokda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "few / little",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "소",
+        "romanization": "so",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +591,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A few small objects being counted or picked up by hand.",
+    "originAnchor": "Four small marks first overlapped with the graph for ‘small’; later forms distinguished ‘few’ from ‘small.’",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/few/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle represents “few” with four separate short marks scattered around an empty center.",
+        "changeNoteFromPrevious": "The early few and small forms overlap; their meanings are not yet fully separated.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-少"
@@ -386,8 +624,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle represents “few” with four separate short marks scattered around an empty center.",
-        "transitionNote": "Oracle represents “few” with four separate short marks scattered around an empty center.",
+        "stageExplanation": "Early few form is closely related to the small-mark graph also behind small form; differentiation is not yet fully fixed.",
+        "transitionNote": "The early few and small forms overlap; their meanings are not yet fully separated.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +635,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/few/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze connects the idea into a more organized shape: three upright strokes sit above a long sweeping lower line.",
+        "changeNoteFromPrevious": "Connects the idea into a more organized shape: three upright strokes sit above a long sweeping lower line.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-少"
@@ -423,8 +661,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze connects the idea into a more organized shape: three upright strokes sit above a long sweeping lower line.",
-        "transitionNote": "Bronze connects the idea into a more organized shape: three upright strokes sit above a long sweeping lower line.",
+        "stageExplanation": "Connects the idea into a more organized shape: three upright strokes sit above a long sweeping lower line.",
+        "transitionNote": "Connects the idea into a more organized shape: three upright strokes sit above a long sweeping lower line.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +672,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/few/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal keeps the three upper strokes but bends the lower stroke into a strong curved tail.",
+        "changeNoteFromPrevious": "Keeps the three upper strokes but bends the lower stroke into a strong curved tail.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-少"
@@ -460,8 +698,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal keeps the three upper strokes but bends the lower stroke into a strong curved tail.",
-        "transitionNote": "Small Seal keeps the three upper strokes but bends the lower stroke into a strong curved tail.",
+        "stageExplanation": "Keeps the three upper strokes but bends the lower stroke into a strong curved tail.",
+        "transitionNote": "Keeps the three upper strokes but bends the lower stroke into a strong curved tail.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +709,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/few/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical turns the upper strokes into three compact dots and broadens the lower sweep.",
+        "changeNoteFromPrevious": "Turns the upper strokes into three compact dots and broadens the lower sweep.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-少"
@@ -497,8 +735,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical turns the upper strokes into three compact dots and broadens the lower sweep.",
-        "transitionNote": "Clerical turns the upper strokes into three compact dots and broadens the lower sweep.",
+        "stageExplanation": "Turns the upper strokes into three compact dots and broadens the lower sweep.",
+        "transitionNote": "Turns the upper strokes into three compact dots and broadens the lower sweep.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +746,7 @@
         "label": "Regular Script",
         "form": "少",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 少 reduces the pattern to three small upper strokes plus one long diagonal sweep, a clear descendant of the Clerical form.",
+        "changeNoteFromPrevious": "An added stroke helps establish the form for ‘few/little,’ while the related small-mark form supplies its sound.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +772,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 少 reduces the pattern to three small upper strokes plus one long diagonal sweep, a clear descendant of the Clerical form.",
-        "transitionNote": "Regular 少 reduces the pattern to three small upper strokes plus one long diagonal sweep, a clear descendant of the Clerical form.",
+        "stageExplanation": "An extra/differentiating stroke helps establish 少 as the form for “few/little.”",
+        "transitionNote": "An added stroke helps establish the form for ‘few/little,’ while the related small-mark form supplies its sound.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +781,7 @@
     ],
     "origin": {
       "concept": "few",
-      "explanation": "A few small objects being counted or picked up by hand.",
+      "explanation": "A reduced set of small marks derived from the early sign for smallness, expressing a lesser amount.",
       "asset": {
         "characterID": "few",
         "historicalStage": null,
@@ -560,7 +798,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of few",
+        "accessibilityDescription": "Illustration of few / little",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +816,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'few', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'few / little', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +886,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

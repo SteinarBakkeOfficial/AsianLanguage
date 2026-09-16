@@ -2,8 +2,8 @@
   "id": "book",
   "version": 1,
   "coreCharacter": "册",
-  "coreSharedMeaning": "book",
-  "recognitionTakeaway": "Regular simplified 册 reduces the number of visible slips and replaces the binding with a diagonal crossing stroke; Traditional 冊 keeps the fuller bound-slip structure.",
+  "coreSharedMeaning": "book / bound slips",
+  "recognitionTakeaway": "The bound-slip structure stabilizes as 冊; simplified Chinese later uses 册.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+518C",
   "simplifiedForm": "册",
@@ -15,9 +15,9 @@
     "Oracle shows many uneven vertical slips tied across the middle by horizontal bindings.",
     "Regular simplified 册 reduces the number of visible slips and replaces the binding with a diagonal crossing stroke; Traditional 冊 keeps the fuller bound-slip structure."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-055-册-u518C",
+  "contentFolder": "content/release/symbols/book",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-055-册-u518C/research.md",
+  "researchNotesPath": "content/release/symbols/book/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "book"
       ],
       "examples": [
+        {
+          "text": "册",
+          "reading": "cè",
+          "translation": "book",
+          "speechText": "册",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "cè"
+          ]
+        },
         {
           "text": "手册",
           "reading": "shǒucè",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "册子",
+          "reading": "cèzi",
+          "translation": "booklet",
+          "speechText": "册子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这是一本手册。",
           "reading": "Zhè shì yì běn shǒucè.",
           "translation": "This is a handbook.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "冊",
@@ -98,6 +127,18 @@
         "book"
       ],
       "taiwanExamples": [
+        {
+          "text": "冊",
+          "reading": "cè",
+          "translation": "book",
+          "speechText": "冊",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "手冊",
           "reading": "shǒucè",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "冊",
+          "reading": "caak3",
+          "translation": "book",
+          "speechText": "冊",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "手冊",
           "reading": "sau2 caak3",
@@ -203,17 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "冊",
       "readings": [
         {
-          "system": "on",
-          "value": "サツ (satsu)",
+          "system": "onyomi",
+          "value": "サツ — satsu",
           "audioAssetRef": null,
           "speechText": "さつ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "サツ",
+          "romanization": "satsu",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "onyomi",
+          "value": "サク — saku",
+          "audioAssetRef": null,
+          "speechText": "サク",
+          "speechLanguage": "japanese",
+          "nativeReading": "サク",
+          "romanization": "saku",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -232,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "册"
-          ]
+          ],
+          "kanaReading": "いっさつ",
+          "coversReadings": [
+            "サツ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "一冊",
+              "reading": "いっさつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>一冊<rt>いっさつ</rt></ruby>"
         },
         {
           "text": "冊子",
@@ -246,7 +325,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "册"
-          ]
+          ],
+          "kanaReading": "さっし",
+          "furiganaSegments": [
+            {
+              "text": "冊子",
+              "reading": "さっし"
+            }
+          ],
+          "furiganaHtml": "<ruby>冊子<rt>さっし</rt></ruby>"
+        },
+        {
+          "text": "冊数",
+          "reading": "sassū",
+          "translation": "number of volumes",
+          "speechText": "冊数",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "さっすう",
+          "furiganaSegments": [
+            {
+              "text": "冊数",
+              "reading": "さっすう"
+            }
+          ],
+          "furiganaHtml": "<ruby>冊数<rt>さっすう</rt></ruby>"
+        },
+        {
+          "text": "別冊",
+          "reading": "bessatsu",
+          "translation": "supplementary volume",
+          "speechText": "別冊",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "べっさつ",
+          "furiganaSegments": [
+            {
+              "text": "別冊",
+              "reading": "べっさつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>別冊<rt>べっさつ</rt></ruby>"
         },
         {
           "text": "本を一冊買いました。",
@@ -260,20 +387,78 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "册"
-          ]
+          ],
+          "kanaReading": "ほんをいっさつかいました。",
+          "furiganaSegments": [
+            {
+              "text": "本",
+              "reading": "ほん"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "一冊買",
+              "reading": "いっさつか"
+            },
+            {
+              "text": "いました"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>本<rt>ほん</rt></ruby>を<ruby>一冊買<rt>いっさつか</rt></ruby>いました。"
+        },
+        {
+          "text": "短冊",
+          "reading": "tanzaku",
+          "translation": "paper strip; tanzaku",
+          "speechText": "短冊",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たんざく",
+          "coversReadings": [
+            "サク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "短冊",
+              "reading": "たんざく"
+            }
+          ],
+          "furiganaHtml": "<ruby>短冊<rt>たんざく</rt></ruby>"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "サツ",
+        "romanization": "satsu",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "冊",
       "readings": [
         {
           "system": "hanja",
-          "value": "책 / chaek",
+          "value": "책 — chaek",
           "audioAssetRef": null,
           "speechText": "책",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "책",
+          "romanization": "chaek"
         }
       ],
       "glosses": [
@@ -309,6 +494,30 @@
           ]
         },
         {
+          "text": "책방",
+          "reading": "chaekbang",
+          "translation": "bookstore",
+          "speechText": "책방",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "책상",
+          "reading": "chaeksang",
+          "translation": "desk",
+          "speechText": "책상",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "책 한 권을 샀어요.",
           "reading": "chaek han gwoneul sasseoyo.",
           "translation": "I bought one book.",
@@ -323,7 +532,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "책 — chaek",
+          "audioAssetRef": null,
+          "speechText": "책",
+          "speechLanguage": "korean",
+          "nativeReading": "책",
+          "romanization": "chaek"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "책",
+        "romanization": "chaek",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -332,14 +560,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Loose writing slips bound together into a rolled or bundled book.",
+    "originAnchor": "Bamboo writing slips lined up and tied together with cords—the form of an early book.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/book/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows many uneven vertical slips tied across the middle by horizontal bindings.",
+        "changeNoteFromPrevious": "Parallel writing slips are tied by binding cords to form a bound text; it is not a rolled scroll.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-册"
@@ -365,8 +593,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows many uneven vertical slips tied across the middle by horizontal bindings.",
-        "transitionNote": "Oracle shows many uneven vertical slips tied across the middle by horizontal bindings.",
+        "stageExplanation": "Parallel writing slips are tied by binding cords to form a bound text; it is not a rolled scroll.",
+        "transitionNote": "Parallel writing slips are tied by binding cords to form a bound text; it is not a rolled scroll.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -376,7 +604,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/book/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze straightens the bundle into a dense grid of upright slips and crossing cords.",
+        "changeNoteFromPrevious": "Straightens the bundle into a dense grid of upright slips and crossing cords.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-册"
@@ -402,8 +630,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze straightens the bundle into a dense grid of upright slips and crossing cords.",
-        "transitionNote": "Bronze straightens the bundle into a dense grid of upright slips and crossing cords.",
+        "stageExplanation": "Straightens the bundle into a dense grid of upright slips and crossing cords.",
+        "transitionNote": "Straightens the bundle into a dense grid of upright slips and crossing cords.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -413,7 +641,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/book/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal lengthens the slips and curves the binding lines around them, making the bundle look tied at the center.",
+        "changeNoteFromPrevious": "Lengthens the slips and curves the binding lines around them, making the bundle look tied at the center.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-册"
@@ -439,8 +667,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal lengthens the slips and curves the binding lines around them, making the bundle look tied at the center.",
-        "transitionNote": "Small Seal lengthens the slips and curves the binding lines around them, making the bundle look tied at the center.",
+        "stageExplanation": "Lengthens the slips and curves the binding lines around them, making the bundle look tied at the center.",
+        "transitionNote": "Lengthens the slips and curves the binding lines around them, making the bundle look tied at the center.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -450,7 +678,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/book/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical spreads the vertical slips wider and turns the bindings into thick horizontal bars.",
+        "changeNoteFromPrevious": "Spreads the vertical slips wider and turns the bindings into thick horizontal bars.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-册"
@@ -476,8 +704,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical spreads the vertical slips wider and turns the bindings into thick horizontal bars.",
-        "transitionNote": "Clerical spreads the vertical slips wider and turns the bindings into thick horizontal bars.",
+        "stageExplanation": "Spreads the vertical slips wider and turns the bindings into thick horizontal bars.",
+        "transitionNote": "Spreads the vertical slips wider and turns the bindings into thick horizontal bars.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -487,7 +715,7 @@
         "label": "Regular Script",
         "form": "册",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular simplified 册 reduces the number of visible slips and replaces the binding with a diagonal crossing stroke; Traditional 冊 keeps the fuller bound-slip structure.",
+        "changeNoteFromPrevious": "The bound-slip structure stabilizes as 冊; simplified Chinese later uses 册.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -513,8 +741,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular simplified 册 reduces the number of visible slips and replaces the binding with a diagonal crossing stroke; Traditional 冊 keeps the fuller bound-slip structure.",
-        "transitionNote": "Regular simplified 册 reduces the number of visible slips and replaces the binding with a diagonal crossing stroke; Traditional 冊 keeps the fuller bound-slip structure.",
+        "stageExplanation": "The bound-slip structure stabilizes as 冊; simplified Chinese later uses 册.",
+        "transitionNote": "The bound-slip structure stabilizes as 冊; simplified Chinese later uses 册.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -522,7 +750,7 @@
     ],
     "origin": {
       "concept": "book",
-      "explanation": "Loose writing slips bound together into a rolled or bundled book.",
+      "explanation": "Bamboo/writing slips tied together with binding cords.",
       "asset": {
         "characterID": "book",
         "historicalStage": null,
@@ -539,7 +767,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of book",
+        "accessibilityDescription": "Illustration of book / bound slips",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -557,7 +785,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'book', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'book / bound slips', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -627,13 +855,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

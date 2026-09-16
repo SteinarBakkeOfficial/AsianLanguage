@@ -107,7 +107,7 @@ struct LessonView: View {
                 ContentUnavailableView("Symbol Unavailable", systemImage: "exclamationmark.triangle")
             }
         }
-        .navigationTitle(sharedCharacter?.coreCharacter ?? "Symbol")
+        .navigationTitle(sharedCharacter.map { "\($0.coreSharedMeaning.capitalized) · \($0.coreCharacter)" } ?? "Symbol")
         .navigationBarTitleDisplayMode(.inline)
         .background(AppColors.appBackground.ignoresSafeArea())
         .tint(AppColors.accentPrimary)

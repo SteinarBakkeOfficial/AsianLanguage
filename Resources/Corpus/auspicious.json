@@ -2,8 +2,8 @@
   "id": "auspicious",
   "version": 1,
   "coreCharacter": "吉",
-  "coreSharedMeaning": "auspicious",
-  "recognitionTakeaway": "Regular 吉 fixes the upper 士-like component over 口, preserving the same two-part stack with cleaner proportions.",
+  "coreSharedMeaning": "auspicious / lucky",
+  "recognitionTakeaway": "The compound regularizes as 吉 for auspicious/good fortune; the upper ancient object remains a research-note uncertainty.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5409",
   "simplifiedForm": "吉",
@@ -15,9 +15,9 @@
     "Oracle stacks a tall pointed form over a small mouth-shaped enclosure, with the two components clearly separated.",
     "Regular 吉 fixes the upper 士-like component over 口, preserving the same two-part stack with cleaner proportions."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-147-吉-u5409",
+  "contentFolder": "content/release/symbols/auspicious",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-147-吉-u5409/research.md",
+  "researchNotesPath": "content/release/symbols/auspicious/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "auspicious"
       ],
       "examples": [
+        {
+          "text": "吉",
+          "reading": "jí",
+          "translation": "auspicious",
+          "speechText": "吉",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "jí"
+          ]
+        },
         {
           "text": "吉祥",
           "reading": "jíxiáng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "吉利",
+          "reading": "jílì",
+          "translation": "auspicious; lucky",
+          "speechText": "吉利",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "今天是吉日。",
           "reading": "Jīntiān shì jírì.",
           "translation": "Today is a lucky day.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "吉",
@@ -98,6 +127,18 @@
         "auspicious"
       ],
       "taiwanExamples": [
+        {
+          "text": "吉",
+          "reading": "jí",
+          "translation": "auspicious",
+          "speechText": "吉",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "吉祥",
           "reading": "jíxiáng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "吉",
+          "reading": "gat1",
+          "translation": "auspicious",
+          "speechText": "吉",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "吉祥",
           "reading": "gat1 coeng4",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "吉",
       "readings": [
         {
-          "system": "on",
-          "value": "キチ (kichi)",
+          "system": "onyomi",
+          "value": "キチ — kichi",
           "audioAssetRef": null,
           "speechText": "きち",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "キチ",
+          "romanization": "kichi",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "キツ (kitsu)",
+          "system": "onyomi",
+          "value": "キツ — kitsu",
           "audioAssetRef": null,
           "speechText": "きつ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "キツ",
+          "romanization": "kitsu",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "吉"
-          ]
+          ],
+          "kanaReading": "きちじつ",
+          "coversReadings": [
+            "キチ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "吉日",
+              "reading": "きちじつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>吉日<rt>きちじつ</rt></ruby>"
         },
         {
           "text": "大吉",
@@ -253,7 +325,81 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "吉"
-          ]
+          ],
+          "kanaReading": "だいきち",
+          "furiganaSegments": [
+            {
+              "text": "大吉",
+              "reading": "だいきち"
+            }
+          ],
+          "furiganaHtml": "<ruby>大吉<rt>だいきち</rt></ruby>"
+        },
+        {
+          "text": "不吉",
+          "reading": "fukitsu",
+          "translation": "ominous; unlucky",
+          "speechText": "不吉",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "吉"
+          ],
+          "verificationRole": "readingCoverage",
+          "kanaReading": "ふきつ",
+          "coversReadings": [
+            "キツ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "不吉",
+              "reading": "ふきつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>不吉<rt>ふきつ</rt></ruby>"
+        },
+        {
+          "text": "吉祥",
+          "reading": "kisshō",
+          "translation": "auspiciousness; good omen",
+          "speechText": "吉祥",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "きっしょう",
+          "furiganaSegments": [
+            {
+              "text": "吉祥",
+              "reading": "きっしょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>吉祥<rt>きっしょう</rt></ruby>"
+        },
+        {
+          "text": "吉凶",
+          "reading": "kikkyō",
+          "translation": "good or bad fortune",
+          "speechText": "吉凶",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "きっきょう",
+          "furiganaSegments": [
+            {
+              "text": "吉凶",
+              "reading": "きっきょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>吉凶<rt>きっきょう</rt></ruby>"
         },
         {
           "text": "おみくじは大吉でした。",
@@ -267,20 +413,51 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "吉"
-          ]
+          ],
+          "kanaReading": "おみくじはだいきちでした。",
+          "furiganaSegments": [
+            {
+              "text": "おみくじは"
+            },
+            {
+              "text": "大吉",
+              "reading": "だいきち"
+            },
+            {
+              "text": "でした"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "おみくじは<ruby>大吉<rt>だいきち</rt></ruby>でした。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "キチ",
+        "romanization": "kichi",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "吉",
       "readings": [
         {
           "system": "hanja",
-          "value": "길 / gil",
+          "value": "길 — gil",
           "audioAssetRef": null,
           "speechText": "길",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "길",
+          "romanization": "gil"
         }
       ],
       "glosses": [
@@ -316,6 +493,30 @@
           ]
         },
         {
+          "text": "길상",
+          "reading": "gilsang",
+          "translation": "auspiciousness",
+          "speechText": "길상",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "길운",
+          "reading": "girun",
+          "translation": "good fortune",
+          "speechText": "길운",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "오늘은 길일이에요.",
           "reading": "oneureun giririeyo.",
           "translation": "Today is a lucky day.",
@@ -330,7 +531,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "길 — gil",
+          "audioAssetRef": null,
+          "speechText": "길",
+          "speechLanguage": "korean",
+          "nativeReading": "길",
+          "romanization": "gil"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "길",
+        "romanization": "gil",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -339,14 +559,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A pointed upright object and an open mouth, shown leading to a smiling, fortunate person.",
+    "originAnchor": "An upper ritual object and a separate lower enclosure suggest sacred protection and blessing; this led to 'auspicious.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/auspicious/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle stacks a tall pointed form over a small mouth-shaped enclosure, with the two components clearly separated.",
+        "changeNoteFromPrevious": "A lower mouth/opening sign is combined with an upper ritual/authority object whose exact identity is debated.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-吉"
@@ -372,8 +592,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle stacks a tall pointed form over a small mouth-shaped enclosure, with the two components clearly separated.",
-        "transitionNote": "Oracle stacks a tall pointed form over a small mouth-shaped enclosure, with the two components clearly separated.",
+        "stageExplanation": "A lower mouth/opening sign is combined with an upper ritual/authority object whose exact identity is debated.",
+        "transitionNote": "A lower mouth/opening sign is combined with an upper ritual/authority object whose exact identity is debated.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -383,7 +603,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/auspicious/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze reduces the upper point to a simpler vertical-cross shape while preserving the lower mouth.",
+        "changeNoteFromPrevious": "Reduces the upper point to a simpler vertical-cross shape while preserving the lower mouth.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-吉"
@@ -409,8 +629,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze reduces the upper point to a simpler vertical-cross shape while preserving the lower mouth.",
-        "transitionNote": "Bronze reduces the upper point to a simpler vertical-cross shape while preserving the lower mouth.",
+        "stageExplanation": "Reduces the upper point to a simpler vertical-cross shape while preserving the lower mouth.",
+        "transitionNote": "Reduces the upper point to a simpler vertical-cross shape while preserving the lower mouth.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -420,7 +640,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/auspicious/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the upper part into a compact cross over a rounded 口.",
+        "changeNoteFromPrevious": "Regularizes the upper part into a compact cross over a rounded mouth/opening sign.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-吉"
@@ -446,8 +666,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the upper part into a compact cross over a rounded 口.",
-        "transitionNote": "Small Seal regularizes the upper part into a compact cross over a rounded 口.",
+        "stageExplanation": "Regularizes the upper part into a compact cross over a rounded mouth/opening sign.",
+        "transitionNote": "Regularizes the upper part into a compact cross over a rounded mouth/opening sign.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -457,7 +677,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/auspicious/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical broadens the upper horizontals and squares the lower mouth, making 吉 immediately recognizable.",
+        "changeNoteFromPrevious": "Broadens the upper horizontals and squares the lower mouth, making immediately recognizable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-吉"
@@ -483,8 +703,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical broadens the upper horizontals and squares the lower mouth, making 吉 immediately recognizable.",
-        "transitionNote": "Clerical broadens the upper horizontals and squares the lower mouth, making 吉 immediately recognizable.",
+        "stageExplanation": "Broadens the upper horizontals and squares the lower mouth, making immediately recognizable.",
+        "transitionNote": "Broadens the upper horizontals and squares the lower mouth, making immediately recognizable.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -494,7 +714,7 @@
         "label": "Regular Script",
         "form": "吉",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 吉 fixes the upper 士-like component over 口, preserving the same two-part stack with cleaner proportions.",
+        "changeNoteFromPrevious": "The compound regularizes as 吉 for auspicious/good fortune; the upper ancient object remains a research-note uncertainty.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -520,8 +740,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 吉 fixes the upper 士-like component over 口, preserving the same two-part stack with cleaner proportions.",
-        "transitionNote": "Regular 吉 fixes the upper 士-like component over 口, preserving the same two-part stack with cleaner proportions.",
+        "stageExplanation": "The compound regularizes as 吉 for auspicious/good fortune; the upper ancient object remains a research-note uncertainty.",
+        "transitionNote": "The compound regularizes as 吉 for auspicious/good fortune; the upper ancient object remains a research-note uncertainty.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -529,7 +749,7 @@
     ],
     "origin": {
       "concept": "auspicious",
-      "explanation": "A pointed upright object and an open mouth, shown leading to a smiling, fortunate person.",
+      "explanation": "A lower opening is combined with an upper ritual or authority object, often interpreted as a ceremonial weapon or jade-tablet-like object.",
       "asset": {
         "characterID": "auspicious",
         "historicalStage": null,
@@ -546,7 +766,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of auspicious",
+        "accessibilityDescription": "Illustration of auspicious / lucky",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -564,7 +784,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'auspicious', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'auspicious / lucky', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -634,13 +854,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

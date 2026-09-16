@@ -2,8 +2,8 @@
   "id": "tell",
   "version": 1,
   "coreCharacter": "告",
-  "coreSharedMeaning": "tell",
-  "recognitionTakeaway": "Regular 告 stabilizes the stacked 牛-derived upper section over 口, retaining the two-part arrangement established very early.",
+  "coreSharedMeaning": "tell / announce",
+  "recognitionTakeaway": "The early speaking/reporting graph regularizes as 告; the disputed upper element is no longer visually recoverable with certainty.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+544A",
   "simplifiedForm": "告",
@@ -15,9 +15,9 @@
     "Oracle places a horned 牛-like upper form directly over a large mouth-shaped enclosure.",
     "Regular 告 stabilizes the stacked 牛-derived upper section over 口, retaining the two-part arrangement established very early."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-119-告-u544A",
+  "contentFolder": "content/release/symbols/tell",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-119-告-u544A/research.md",
+  "researchNotesPath": "content/release/symbols/tell/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "tell"
       ],
       "examples": [
+        {
+          "text": "告",
+          "reading": "gào",
+          "translation": "tell",
+          "speechText": "告",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "gào"
+          ]
+        },
         {
           "text": "告诉",
           "reading": "gàosu",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "告别",
+          "reading": "gàobié",
+          "translation": "say goodbye",
+          "speechText": "告别",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "请告诉我。",
           "reading": "Qǐng gàosu wǒ.",
           "translation": "Please tell me.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "告",
@@ -98,6 +127,18 @@
         "tell"
       ],
       "taiwanExamples": [
+        {
+          "text": "告",
+          "reading": "gào",
+          "translation": "tell",
+          "speechText": "告",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "告訴",
           "reading": "gàosu",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "告",
+          "reading": "gou3",
+          "translation": "tell",
+          "speechText": "告",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "告訴",
           "reading": "gou3 sou3",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "告",
       "readings": [
         {
-          "system": "on",
-          "value": "コク (koku)",
+          "system": "onyomi",
+          "value": "コク — koku",
           "audioAssetRef": null,
           "speechText": "こく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コク",
+          "romanization": "koku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "つげる (tsugeru)",
+          "system": "kunyomi",
+          "value": "つげる — tsugeru",
           "audioAssetRef": null,
           "speechText": "つげる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "つげる",
+          "romanization": "tsugeru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "告"
-          ]
+          ],
+          "kanaReading": "つげる",
+          "coversReadings": [
+            "つげる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "告",
+              "reading": "つ"
+            },
+            {
+              "text": "げる"
+            }
+          ],
+          "furiganaHtml": "<ruby>告<rt>つ</rt></ruby>げる"
         },
         {
           "text": "報告",
@@ -253,7 +328,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "告"
-          ]
+          ],
+          "kanaReading": "ほうこく",
+          "coversReadings": [
+            "コク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "報告",
+              "reading": "ほうこく"
+            }
+          ],
+          "furiganaHtml": "<ruby>報告<rt>ほうこく</rt></ruby>"
+        },
+        {
+          "text": "告白",
+          "reading": "kokuhaku",
+          "translation": "confession",
+          "speechText": "告白",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こくはく",
+          "furiganaSegments": [
+            {
+              "text": "告白",
+              "reading": "こくはく"
+            }
+          ],
+          "furiganaHtml": "<ruby>告白<rt>こくはく</rt></ruby>"
+        },
+        {
+          "text": "告知",
+          "reading": "kokuchi",
+          "translation": "notice / announcement",
+          "speechText": "告知",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こくち",
+          "furiganaSegments": [
+            {
+              "text": "告知",
+              "reading": "こくち"
+            }
+          ],
+          "furiganaHtml": "<ruby>告知<rt>こくち</rt></ruby>"
         },
         {
           "text": "先生に報告します。",
@@ -267,33 +393,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "告"
-          ]
+          ],
+          "kanaReading": "せんせいにほうこくします。",
+          "furiganaSegments": [
+            {
+              "text": "先生",
+              "reading": "せんせい"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "報告",
+              "reading": "ほうこく"
+            },
+            {
+              "text": "します"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>報告<rt>ほうこく</rt></ruby>します。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "つげる",
+        "romanization": "tsugeru",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "告",
       "readings": [
         {
           "system": "hanja",
-          "value": "고 / go",
+          "value": "고 — go",
           "audioAssetRef": null,
           "speechText": "고",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "말하다 / malhada",
-          "audioAssetRef": null,
-          "speechText": "말하다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "고",
+          "romanization": "go"
         }
       ],
       "glosses": [
         "tell"
       ],
       "examples": [
+        {
+          "text": "말하다",
+          "reading": "malhada",
+          "translation": "say / tell",
+          "speechText": "말하다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "광고",
           "reading": "gwanggo",
@@ -323,6 +490,18 @@
           ]
         },
         {
+          "text": "고백",
+          "reading": "gobaek",
+          "translation": "confession",
+          "speechText": "고백",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "선생님께 보고해요.",
           "reading": "seonsaengnimkke bogohaeyo.",
           "translation": "I report it to the teacher.",
@@ -337,7 +516,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "고 — go",
+          "audioAssetRef": null,
+          "speechText": "고",
+          "speechLanguage": "korean",
+          "nativeReading": "고",
+          "romanization": "go"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "말하다 — malhada",
+          "audioAssetRef": null,
+          "speechText": "말하다",
+          "speechLanguage": "korean",
+          "nativeReading": "말하다",
+          "romanization": "malhada",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "say / tell",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "고",
+        "romanization": "go",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +564,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "An ox, an open tongue or mouth, and a person calling out.",
+    "originAnchor": "A tongue and an upper speech element combine to express telling.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/tell/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle places a horned 牛-like upper form directly over a large mouth-shaped enclosure.",
+        "changeNoteFromPrevious": "The lower speech/mouth element is clear, but the upper early shape is disputed; do not label it an ox as settled fact.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-告"
@@ -379,8 +597,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle places a horned 牛-like upper form directly over a large mouth-shaped enclosure.",
-        "transitionNote": "Oracle places a horned 牛-like upper form directly over a large mouth-shaped enclosure.",
+        "stageExplanation": "The lower speech/mouth element is clear, but the upper early shape is disputed; do not label it an ox as settled fact.",
+        "transitionNote": "The lower speech/mouth element is clear, but the upper early shape is disputed; do not label it an ox as settled fact.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +608,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/tell/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze sharpens the upper horns and central stem while making the lower mouth more compact.",
+        "changeNoteFromPrevious": "Sharpens the upper horns and central stem while making the lower mouth more compact.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-告"
@@ -416,8 +634,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze sharpens the upper horns and central stem while making the lower mouth more compact.",
-        "transitionNote": "Bronze sharpens the upper horns and central stem while making the lower mouth more compact.",
+        "stageExplanation": "Sharpens the upper horns and central stem while making the lower mouth more compact.",
+        "transitionNote": "Sharpens the upper horns and central stem while making the lower mouth more compact.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +645,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/tell/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal aligns the components on a strict vertical axis: a formal 牛-like top sits over a rounded 口.",
+        "changeNoteFromPrevious": "Aligns the components on a strict vertical axis: a formal ox sign-like top sits over a rounded mouth/opening sign.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-告"
@@ -453,8 +671,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal aligns the components on a strict vertical axis: a formal 牛-like top sits over a rounded 口.",
-        "transitionNote": "Small Seal aligns the components on a strict vertical axis: a formal 牛-like top sits over a rounded 口.",
+        "stageExplanation": "Aligns the components on a strict vertical axis: a formal ox sign-like top sits over a rounded mouth/opening sign.",
+        "transitionNote": "Aligns the components on a strict vertical axis: a formal ox sign-like top sits over a rounded mouth/opening sign.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +682,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/tell/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the horns and crossbars and squares the lower mouth, making 告 nearly recognizable.",
+        "changeNoteFromPrevious": "Flattens the horns and crossbars and squares the lower mouth, making nearly recognizable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-告"
@@ -490,8 +708,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the horns and crossbars and squares the lower mouth, making 告 nearly recognizable.",
-        "transitionNote": "Clerical flattens the horns and crossbars and squares the lower mouth, making 告 nearly recognizable.",
+        "stageExplanation": "Flattens the horns and crossbars and squares the lower mouth, making nearly recognizable.",
+        "transitionNote": "Flattens the horns and crossbars and squares the lower mouth, making nearly recognizable.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +719,7 @@
         "label": "Regular Script",
         "form": "告",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 告 stabilizes the stacked 牛-derived upper section over 口, retaining the two-part arrangement established very early.",
+        "changeNoteFromPrevious": "The early speaking/reporting graph regularizes as 告; the disputed upper element is no longer visually recoverable with certainty.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +745,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 告 stabilizes the stacked 牛-derived upper section over 口, retaining the two-part arrangement established very early.",
-        "transitionNote": "Regular 告 stabilizes the stacked 牛-derived upper section over 口, retaining the two-part arrangement established very early.",
+        "stageExplanation": "The early speaking/reporting graph regularizes as 告; the disputed upper element is no longer visually recoverable with certainty.",
+        "transitionNote": "The early speaking/reporting graph regularizes as 告; the disputed upper element is no longer visually recoverable with certainty.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +754,7 @@
     ],
     "origin": {
       "concept": "tell",
-      "explanation": "An ox, an open tongue or mouth, and a person calling out.",
+      "explanation": "An early speaking/tongue-related graph in a leading account; other analyses interpret the upper element differently.",
       "asset": {
         "characterID": "tell",
         "historicalStage": null,
@@ -553,7 +771,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of tell",
+        "accessibilityDescription": "Illustration of tell / announce",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +789,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'tell', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'tell / announce', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +859,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

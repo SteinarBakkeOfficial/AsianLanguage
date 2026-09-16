@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "白",
   "coreSharedMeaning": "white",
-  "recognitionTakeaway": "Regular 白 opens and squares the shape into the familiar box with a top stroke and central horizontal, losing the pointed outline of the earliest forms.",
+  "recognitionTakeaway": "The graph stabilizes as 白 for “white”; the exact original object remains uncertain.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+767D",
   "simplifiedForm": "白",
@@ -15,9 +15,9 @@
     "Oracle is a pointed oval or seed-like enclosure divided by one strong horizontal band.",
     "Regular 白 opens and squares the shape into the familiar box with a top stroke and central horizontal, losing the pointed outline of the earliest forms."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-069-白-u767D",
+  "contentFolder": "content/release/symbols/white",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-069-白-u767D/research.md",
+  "researchNotesPath": "content/release/symbols/white/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "white"
       ],
       "examples": [
+        {
+          "text": "白",
+          "reading": "bái",
+          "translation": "white",
+          "speechText": "白",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "bái"
+          ]
+        },
         {
           "text": "白色",
           "reading": "báisè",
@@ -67,9 +82,21 @@
           ]
         },
         {
+          "text": "白纸",
+          "reading": "báizhǐ",
+          "translation": "white paper",
+          "speechText": "白纸",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这件衣服是白色的。",
           "reading": "Zhè jiàn yīfu shì báisè de.",
-          "translation": "This clothing is white.",
+          "translation": "This piece of clothing is white.",
           "speechText": "这件衣服是白色的。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "白",
@@ -98,6 +127,18 @@
         "white"
       ],
       "taiwanExamples": [
+        {
+          "text": "白",
+          "reading": "bái",
+          "translation": "white",
+          "speechText": "白",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "白色",
           "reading": "báisè",
@@ -129,7 +170,7 @@
         {
           "text": "這件衣服是白色的。",
           "reading": "Zhè jiàn yīfu shì báisè de.",
-          "translation": "This clothing is white.",
+          "translation": "This piece of clothing is white.",
           "speechText": "這件衣服是白色的。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "白",
+          "reading": "baak6",
+          "translation": "white",
+          "speechText": "白",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "白色",
           "reading": "baak6 sik1",
@@ -173,7 +226,7 @@
         {
           "text": "呢件衫係白色。",
           "reading": "ni1 gin6 saam1 hai6 baak6 sik1",
-          "translation": "This clothing is white.",
+          "translation": "This piece of clothing is white.",
           "speechText": "呢件衫係白色。",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
@@ -203,31 +256,52 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "白",
       "readings": [
         {
-          "system": "on",
-          "value": "ハク (haku)",
+          "system": "onyomi",
+          "value": "ハク — haku",
           "audioAssetRef": null,
           "speechText": "はく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ハク",
+          "romanization": "haku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "しろ (shiro)",
+          "system": "kunyomi",
+          "value": "しろ — shiro",
           "audioAssetRef": null,
           "speechText": "しろ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "しろ",
+          "romanization": "shiro",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "しろい (shiroi)",
+          "system": "kunyomi",
+          "value": "しろい — shiroi",
           "audioAssetRef": null,
           "speechText": "しろい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "しろい",
+          "romanization": "shiroi",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "しら — shira",
+          "audioAssetRef": null,
+          "speechText": "しら",
+          "speechLanguage": "japanese",
+          "nativeReading": "しら",
+          "romanization": "shira",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +320,22 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "白"
-          ]
+          ],
+          "kanaReading": "しろい",
+          "coversReadings": [
+            "しろ",
+            "しろい"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "白",
+              "reading": "しろ"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "furiganaHtml": "<ruby>白<rt>しろ</rt></ruby>い"
         },
         {
           "text": "白紙",
@@ -260,7 +349,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "白"
-          ]
+          ],
+          "kanaReading": "はくし",
+          "coversReadings": [
+            "ハク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "白紙",
+              "reading": "はくし"
+            }
+          ],
+          "furiganaHtml": "<ruby>白紙<rt>はくし</rt></ruby>"
+        },
+        {
+          "text": "白鳥",
+          "reading": "hakuchō",
+          "translation": "swan",
+          "speechText": "白鳥",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "はくちょう",
+          "furiganaSegments": [
+            {
+              "text": "白鳥",
+              "reading": "はくちょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>白鳥<rt>はくちょう</rt></ruby>"
+        },
+        {
+          "text": "白黒",
+          "reading": "shirokuro",
+          "translation": "black and white",
+          "speechText": "白黒",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しろくろ",
+          "furiganaSegments": [
+            {
+              "text": "白黒",
+              "reading": "しろくろ"
+            }
+          ],
+          "furiganaHtml": "<ruby>白黒<rt>しろくろ</rt></ruby>"
         },
         {
           "text": "雪は白いです。",
@@ -274,33 +414,97 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "白"
-          ]
+          ],
+          "kanaReading": "ゆきはしろいです。",
+          "furiganaSegments": [
+            {
+              "text": "雪",
+              "reading": "ゆき"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "白",
+              "reading": "しろ"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>雪<rt>ゆき</rt></ruby>は<ruby>白<rt>しろ</rt></ruby>いです。"
+        },
+        {
+          "text": "白髪",
+          "reading": "shiraga",
+          "translation": "white/gray hair",
+          "speechText": "白髪",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しらが",
+          "coversReadings": [
+            "しら"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "白髪",
+              "reading": "しらが"
+            }
+          ],
+          "furiganaHtml": "<ruby>白髪<rt>しらが</rt></ruby>"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "しろ",
+        "romanization": "shiro",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "白",
       "readings": [
         {
           "system": "hanja",
-          "value": "백 / baek",
+          "value": "백 — baek",
           "audioAssetRef": null,
           "speechText": "백",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "하얗다 / hayata",
-          "audioAssetRef": null,
-          "speechText": "하얗다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "백",
+          "romanization": "baek"
         }
       ],
       "glosses": [
         "white"
       ],
       "examples": [
+        {
+          "text": "하얗다",
+          "reading": "hayata",
+          "translation": "white",
+          "speechText": "하얗다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "백색",
           "reading": "baeksaek",
@@ -330,6 +534,18 @@
           ]
         },
         {
+          "text": "백발",
+          "reading": "baekbal",
+          "translation": "white hair",
+          "speechText": "백발",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "눈이 하얘요.",
           "reading": "nuni hayaeyo.",
           "translation": "The snow is white.",
@@ -344,7 +560,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "백 — baek",
+          "audioAssetRef": null,
+          "speechText": "백",
+          "speechLanguage": "korean",
+          "nativeReading": "백",
+          "romanization": "baek"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "하얗다 — hayata",
+          "audioAssetRef": null,
+          "speechText": "하얗다",
+          "speechLanguage": "korean",
+          "nativeReading": "하얗다",
+          "romanization": "hayata",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "white",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "백",
+        "romanization": "baek",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +608,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A bright candle flame, the sun, and a pale stone opening shown as examples of whiteness or brightness.",
+    "originAnchor": "Leading theory: a raised thumb linked with 'first' and 'chief,' later borrowed by sound for 'white.' Other theories see a vessel, head, or light.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/white/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a pointed oval or seed-like enclosure divided by one strong horizontal band.",
+        "changeNoteFromPrevious": "The selected simple early form has been interpreted as a thumb/finger in a leading account, but the pictorial identity is disputed.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-白"
@@ -386,8 +641,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a pointed oval or seed-like enclosure divided by one strong horizontal band.",
-        "transitionNote": "Oracle is a pointed oval or seed-like enclosure divided by one strong horizontal band.",
+        "stageExplanation": "The selected simple early form has been interpreted as a thumb/finger in a leading account, but the pictorial identity is disputed.",
+        "transitionNote": "The selected simple early form has been interpreted as a thumb/finger in a leading account, but the pictorial identity is disputed.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +652,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/white/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps the pointed enclosure and central divider but makes the bottom rounder and heavier.",
+        "changeNoteFromPrevious": "Keeps the pointed enclosure and central divider but makes the bottom rounder and heavier.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-白"
@@ -423,8 +678,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps the pointed enclosure and central divider but makes the bottom rounder and heavier.",
-        "transitionNote": "Bronze keeps the pointed enclosure and central divider but makes the bottom rounder and heavier.",
+        "stageExplanation": "Keeps the pointed enclosure and central divider but makes the bottom rounder and heavier.",
+        "transitionNote": "Keeps the pointed enclosure and central divider but makes the bottom rounder and heavier.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +689,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/white/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal rounds the shape into a vertical capsule with one horizontal across the middle and a short top projection.",
+        "changeNoteFromPrevious": "Rounds the shape into a vertical capsule with one horizontal across the middle and a short top projection.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-白"
@@ -460,8 +715,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal rounds the shape into a vertical capsule with one horizontal across the middle and a short top projection.",
-        "transitionNote": "Small Seal rounds the shape into a vertical capsule with one horizontal across the middle and a short top projection.",
+        "stageExplanation": "Rounds the shape into a vertical capsule with one horizontal across the middle and a short top projection.",
+        "transitionNote": "Rounds the shape into a vertical capsule with one horizontal across the middle and a short top projection.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +726,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/white/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical thickens the capsule into a bold two-chamber enclosure.",
+        "changeNoteFromPrevious": "Thickens the capsule into a bold two-chamber enclosure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-白"
@@ -497,8 +752,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical thickens the capsule into a bold two-chamber enclosure.",
-        "transitionNote": "Clerical thickens the capsule into a bold two-chamber enclosure.",
+        "stageExplanation": "Thickens the capsule into a bold two-chamber enclosure.",
+        "transitionNote": "Thickens the capsule into a bold two-chamber enclosure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +763,7 @@
         "label": "Regular Script",
         "form": "白",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 白 opens and squares the shape into the familiar box with a top stroke and central horizontal, losing the pointed outline of the earliest forms.",
+        "changeNoteFromPrevious": "The graph stabilizes as 白 for “white”; the exact original object remains uncertain.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +789,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 白 opens and squares the shape into the familiar box with a top stroke and central horizontal, losing the pointed outline of the earliest forms.",
-        "transitionNote": "Regular 白 opens and squares the shape into the familiar box with a top stroke and central horizontal, losing the pointed outline of the earliest forms.",
+        "stageExplanation": "The graph stabilizes as 白 for “white”; the exact original object remains uncertain.",
+        "transitionNote": "The graph stabilizes as 白 for “white”; the exact original object remains uncertain.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +798,7 @@
     ],
     "origin": {
       "concept": "white",
-      "explanation": "A bright candle flame, the sun, and a pale stone opening shown as examples of whiteness or brightness.",
+      "explanation": "A thumb/finger-like pictograph in a leading specialist analysis.",
       "asset": {
         "characterID": "white",
         "historicalStage": null,
@@ -648,13 +903,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

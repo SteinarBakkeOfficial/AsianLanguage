@@ -2,8 +2,8 @@
   "id": "tree",
   "version": 1,
   "coreCharacter": "木",
-  "coreSharedMeaning": "tree; wood",
-  "recognitionTakeaway": "Regular 木 fixes the tree into a vertical trunk crossed by one horizontal, with two diagonals recalling the spreading branches and roots.",
+  "coreSharedMeaning": "tree / wood",
+  "recognitionTakeaway": "The trunk-and-branch structure is regularized as 木, with the spreading diagonals preserving the old branches/root layout.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6728",
   "simplifiedForm": "木",
@@ -15,9 +15,9 @@
     "A central trunk splits upward into branches and downward into roots; the whole tree is still plainly visible.",
     "Regular 木 fixes the tree into a vertical trunk crossed by one horizontal, with two diagonals recalling the spreading branches and roots."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-022-木-u6728",
+  "contentFolder": "content/release/symbols/tree",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-022-木-u6728/research.md",
+  "researchNotesPath": null,
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "tree; wood"
       ],
       "examples": [
+        {
+          "text": "木",
+          "reading": "mù",
+          "translation": "tree; wood",
+          "speechText": "木",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "mù"
+          ]
+        },
         {
           "text": "木头",
           "reading": "mùtou",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "木材",
+          "reading": "mùcái",
+          "translation": "timber",
+          "speechText": "木材",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这张桌子是木头的。",
           "reading": "Zhè zhāng zhuōzi shì mùtou de.",
           "translation": "This table is made of wood.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "木",
@@ -98,6 +127,18 @@
         "tree; wood"
       ],
       "taiwanExamples": [
+        {
+          "text": "木",
+          "reading": "mù",
+          "translation": "tree; wood",
+          "speechText": "木",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "木頭",
           "reading": "mùtou",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "木",
+          "reading": "muk6",
+          "translation": "tree; wood",
+          "speechText": "木",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "木頭",
           "reading": "muk6 tau4",
@@ -203,31 +256,53 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "木",
       "readings": [
         {
-          "system": "on",
-          "value": "モク (moku)",
+          "system": "onyomi",
+          "value": "モク — moku",
           "audioAssetRef": null,
           "speechText": "もく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "モク",
+          "romanization": "moku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ボク (boku)",
+          "system": "onyomi",
+          "value": "ボク — boku",
           "audioAssetRef": null,
           "speechText": "ぼく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ボク",
+          "romanization": "boku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "き (ki)",
+          "system": "kunyomi",
+          "value": "き — ki",
           "audioAssetRef": null,
           "speechText": "き",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "き",
+          "romanization": "ki",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "こ — ko",
+          "audioAssetRef": null,
+          "speechText": "こ",
+          "speechLanguage": "japanese",
+          "nativeReading": "こ",
+          "romanization": "ko",
+          "historicalOrigin": "nativeJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
         }
       ],
       "glosses": [
@@ -246,7 +321,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "木"
-          ]
+          ],
+          "kanaReading": "き",
+          "coversReadings": [
+            "き"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "木",
+              "reading": "き"
+            }
+          ],
+          "furiganaHtml": "<ruby>木<rt>き</rt></ruby>"
         },
         {
           "text": "木曜日",
@@ -260,7 +346,82 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "木"
-          ]
+          ],
+          "kanaReading": "もくようび",
+          "coversReadings": [
+            "モク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "木曜日",
+              "reading": "もくようび"
+            }
+          ],
+          "furiganaHtml": "<ruby>木曜日<rt>もくようび</rt></ruby>"
+        },
+        {
+          "text": "大木",
+          "reading": "taiboku",
+          "translation": "large tree",
+          "speechText": "大木",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たいぼく",
+          "coversReadings": [
+            "ボク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "大木",
+              "reading": "たいぼく"
+            }
+          ],
+          "furiganaHtml": "<ruby>大木<rt>たいぼく</rt></ruby>"
+        },
+        {
+          "text": "木材",
+          "reading": "mokuzai",
+          "translation": "lumber",
+          "speechText": "木材",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "もくざい",
+          "furiganaSegments": [
+            {
+              "text": "木材",
+              "reading": "もくざい"
+            }
+          ],
+          "furiganaHtml": "<ruby>木材<rt>もくざい</rt></ruby>"
+        },
+        {
+          "text": "木陰",
+          "reading": "kokage",
+          "translation": "shade of a tree",
+          "speechText": "木陰",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "こかげ",
+          "coversReadings": [
+            "こ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "木陰",
+              "reading": "こかげ"
+            }
+          ],
+          "furiganaHtml": "<ruby>木陰<rt>こかげ</rt></ruby>"
         },
         {
           "text": "木の机です。",
@@ -274,33 +435,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "木"
-          ]
+          ],
+          "kanaReading": "きのつくえです。",
+          "furiganaSegments": [
+            {
+              "text": "木",
+              "reading": "き"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "机",
+              "reading": "つくえ"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>木<rt>き</rt></ruby>の<ruby>机<rt>つくえ</rt></ruby>です。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "き",
+        "romanization": "ki",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "木",
       "readings": [
         {
           "system": "hanja",
-          "value": "목 / mok",
+          "value": "목 — mok",
           "audioAssetRef": null,
           "speechText": "목",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "나무 / namu",
-          "audioAssetRef": null,
-          "speechText": "나무",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "목",
+          "romanization": "mok"
         }
       ],
       "glosses": [
         "tree; wood"
       ],
       "examples": [
+        {
+          "text": "나무",
+          "reading": "namu",
+          "translation": "tree / wood",
+          "speechText": "나무",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "목재",
           "reading": "mokjae",
@@ -330,6 +532,18 @@
           ]
         },
         {
+          "text": "목공",
+          "reading": "mokgong",
+          "translation": "woodworking",
+          "speechText": "목공",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "나무 의자예요.",
           "reading": "namu uijayeyo.",
           "translation": "It is a wooden chair.",
@@ -344,7 +558,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "목 — mok",
+          "audioAssetRef": null,
+          "speechText": "목",
+          "speechLanguage": "korean",
+          "nativeReading": "목",
+          "romanization": "mok"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "나무 — namu",
+          "audioAssetRef": null,
+          "speechText": "나무",
+          "speechLanguage": "korean",
+          "nativeReading": "나무",
+          "romanization": "namu",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "tree / wood",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "목",
+        "romanization": "mok",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +606,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A full tree with trunk, branches, and visible roots.",
+    "originAnchor": "A whole tree with roots, trunk, and branches.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/tree/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A central trunk splits upward into branches and downward into roots; the whole tree is still plainly visible.",
+        "changeNoteFromPrevious": "A vertical trunk branches upward and splits downward into roots; the whole tree is still directly recognizable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-木"
@@ -386,8 +639,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A central trunk splits upward into branches and downward into roots; the whole tree is still plainly visible.",
-        "transitionNote": "A central trunk splits upward into branches and downward into roots; the whole tree is still plainly visible.",
+        "stageExplanation": "A vertical trunk branches upward and splits downward into roots; the whole tree is still directly recognizable.",
+        "transitionNote": "A vertical trunk branches upward and splits downward into roots; the whole tree is still directly recognizable.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -508,7 +761,7 @@
         "label": "Regular Script",
         "form": "木",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 木 fixes the tree into a vertical trunk crossed by one horizontal, with two diagonals recalling the spreading branches and roots.",
+        "changeNoteFromPrevious": "The trunk-and-branch structure is regularized as 木, with the spreading diagonals preserving the old branches/root layout.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +787,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 木 fixes the tree into a vertical trunk crossed by one horizontal, with two diagonals recalling the spreading branches and roots.",
-        "transitionNote": "Regular 木 fixes the tree into a vertical trunk crossed by one horizontal, with two diagonals recalling the spreading branches and roots.",
+        "stageExplanation": "The trunk-and-branch structure is regularized as 木, with the spreading diagonals preserving the old branches/root layout.",
+        "transitionNote": "The trunk-and-branch structure is regularized as 木, with the spreading diagonals preserving the old branches/root layout.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +796,7 @@
     ],
     "origin": {
       "concept": "tree; wood",
-      "explanation": "A full tree with trunk, branches, and visible roots.",
+      "explanation": "A whole tree with trunk, branches, and roots.",
       "asset": {
         "characterID": "tree",
         "historicalStage": null,
@@ -560,7 +813,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of tree; wood",
+        "accessibilityDescription": "Illustration of tree / wood",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +831,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'tree; wood', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'tree / wood', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -620,13 +873,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

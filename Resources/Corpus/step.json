@@ -2,8 +2,8 @@
   "id": "step",
   "version": 1,
   "coreCharacter": "步",
-  "coreSharedMeaning": "step",
-  "recognitionTakeaway": "Regular 步 regularizes the upper 止-like foot and lower step strokes, preserving the idea of successive feet even after the literal prints disappear.",
+  "coreSharedMeaning": "step / walk",
+  "recognitionTakeaway": "The Chinese historical endpoint is 步; the paired-foot origin is no longer pictorial but survives in the stacked structure.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6B65",
   "simplifiedForm": "步",
@@ -15,9 +15,9 @@
     "Oracle places two small foot-like signs one above the other, directly representing repeated stepping.",
     "Regular 步 regularizes the upper 止-like foot and lower step strokes, preserving the idea of successive feet even after the literal prints disappear."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-122-步-u6B65",
+  "contentFolder": "content/release/symbols/step",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-122-步-u6B65/research.md",
+  "researchNotesPath": "content/release/symbols/step/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "step"
       ],
       "examples": [
+        {
+          "text": "步",
+          "reading": "bù",
+          "translation": "step",
+          "speechText": "步",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "bù"
+          ]
+        },
         {
           "text": "一步",
           "reading": "yí bù",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "脚步",
+          "reading": "jiǎobù",
+          "translation": "footstep",
+          "speechText": "脚步",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我们去散步。",
           "reading": "Wǒmen qù sànbù.",
           "translation": "We are going for a walk.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "步",
@@ -98,6 +127,18 @@
         "step"
       ],
       "taiwanExamples": [
+        {
+          "text": "步",
+          "reading": "bù",
+          "translation": "step",
+          "speechText": "步",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "一步",
           "reading": "yí bù",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "步",
+          "reading": "bou6",
+          "translation": "step",
+          "speechText": "步",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "一步",
           "reading": "jat1 bou6",
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "歩",
       "readings": [
         {
-          "system": "on",
-          "value": "ホ (ho)",
+          "system": "onyomi",
+          "value": "ホ — ho",
           "audioAssetRef": null,
           "speechText": "ほ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ホ",
+          "romanization": "ho",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ブ (bu)",
-          "audioAssetRef": null,
-          "speechText": "ぶ",
-          "speechLanguage": "japanese"
-        },
-        {
-          "system": "kun",
-          "value": "あるく (aruku)",
+          "system": "kunyomi",
+          "value": "あるく — aruku",
           "audioAssetRef": null,
           "speechText": "あるく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "あるく",
+          "romanization": "aruku",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "あゆむ — ayumu",
+          "audioAssetRef": null,
+          "speechText": "あゆむ",
+          "speechLanguage": "japanese",
+          "nativeReading": "あゆむ",
+          "romanization": "ayumu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "步"
-          ]
+          ],
+          "kanaReading": "あるく",
+          "coversReadings": [
+            "あるく"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "歩",
+              "reading": "ある"
+            },
+            {
+              "text": "く"
+            }
+          ],
+          "furiganaHtml": "<ruby>歩<rt>ある</rt></ruby>く"
         },
         {
           "text": "散歩",
@@ -260,7 +338,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "步"
-          ]
+          ],
+          "kanaReading": "さんぽ",
+          "furiganaSegments": [
+            {
+              "text": "散歩",
+              "reading": "さんぽ"
+            }
+          ],
+          "furiganaHtml": "<ruby>散歩<rt>さんぽ</rt></ruby>"
+        },
+        {
+          "text": "歩道",
+          "reading": "hodō",
+          "translation": "sidewalk",
+          "speechText": "歩道",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ほどう",
+          "coversReadings": [
+            "ホ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "歩道",
+              "reading": "ほどう"
+            }
+          ],
+          "furiganaHtml": "<ruby>歩道<rt>ほどう</rt></ruby>"
+        },
+        {
+          "text": "歩数",
+          "reading": "hosū",
+          "translation": "step count",
+          "speechText": "歩数",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ほすう",
+          "furiganaSegments": [
+            {
+              "text": "歩数",
+              "reading": "ほすう"
+            }
+          ],
+          "furiganaHtml": "<ruby>歩数<rt>ほすう</rt></ruby>"
         },
         {
           "text": "公園を歩きます。",
@@ -274,33 +403,106 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "步"
-          ]
+          ],
+          "kanaReading": "こうえんをあるきます。",
+          "furiganaSegments": [
+            {
+              "text": "公園",
+              "reading": "こうえん"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "歩",
+              "reading": "ある"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>公園<rt>こうえん</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>きます。"
+        },
+        {
+          "text": "歩む",
+          "reading": "ayumu",
+          "translation": "walk; proceed",
+          "speechText": "歩む",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あゆむ",
+          "coversReadings": [
+            "あゆむ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "歩",
+              "reading": "あゆ"
+            },
+            {
+              "text": "む"
+            }
+          ],
+          "furiganaHtml": "<ruby>歩<rt>あゆ</rt></ruby>む"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [
+        {
+          "form": "步",
+          "label": "historical/traditional glyph form",
+          "usage": "Older graph form; modern standard Japanese uses 歩."
+        }
+      ],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "あるく",
+        "romanization": "aruku",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "步",
       "readings": [
         {
           "system": "hanja",
-          "value": "보 / bo",
+          "value": "보 — bo",
           "audioAssetRef": null,
           "speechText": "보",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "걸음 / georeum",
-          "audioAssetRef": null,
-          "speechText": "걸음",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "보",
+          "romanization": "bo"
         }
       ],
       "glosses": [
         "step"
       ],
       "examples": [
+        {
+          "text": "걸음",
+          "reading": "georeum",
+          "translation": "step",
+          "speechText": "걸음",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "보행",
           "reading": "bohaeng",
@@ -330,6 +532,18 @@
           ]
         },
         {
+          "text": "보도",
+          "reading": "bodo",
+          "translation": "sidewalk",
+          "speechText": "보도",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "천천히 걸어요.",
           "reading": "cheoncheonhi georeoyo.",
           "translation": "I walk slowly.",
@@ -344,7 +558,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "보 — bo",
+          "audioAssetRef": null,
+          "speechText": "보",
+          "speechLanguage": "korean",
+          "nativeReading": "보",
+          "romanization": "bo"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "걸음 — georeum",
+          "audioAssetRef": null,
+          "speechText": "걸음",
+          "speechLanguage": "korean",
+          "nativeReading": "걸음",
+          "romanization": "georeum",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "step",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "보",
+        "romanization": "bo",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +606,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Two feet and a pair of footprints showing successive steps.",
+    "originAnchor": "Two separate footprints, one ahead of the other, combine to express a step.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/step/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle places two small foot-like signs one above the other, directly representing repeated stepping.",
+        "changeNoteFromPrevious": "Two foot forms arranged in sequence represent alternating steps; do not add extra footprints beyond the graph.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-步"
@@ -386,8 +639,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle places two small foot-like signs one above the other, directly representing repeated stepping.",
-        "transitionNote": "Oracle places two small foot-like signs one above the other, directly representing repeated stepping.",
+        "stageExplanation": "Two foot forms arranged in sequence represent alternating steps; do not add extra footprints beyond the graph.",
+        "transitionNote": "Two foot forms arranged in sequence represent alternating steps; do not add extra footprints beyond the graph.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +650,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/step/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze preserves two distinct footprints in the selected rubbing, one above the other, with toe-like projections clearly visible.",
+        "changeNoteFromPrevious": "Preserves two distinct footprints in the selected rubbing, one above the other, with toe-like projections clearly visible.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-步"
@@ -423,8 +676,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze preserves two distinct footprints in the selected rubbing, one above the other, with toe-like projections clearly visible.",
-        "transitionNote": "Bronze preserves two distinct footprints in the selected rubbing, one above the other, with toe-like projections clearly visible.",
+        "stageExplanation": "Preserves two distinct footprints in the selected rubbing, one above the other, with toe-like projections clearly visible.",
+        "transitionNote": "Preserves two distinct footprints in the selected rubbing, one above the other, with toe-like projections clearly visible.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +687,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/step/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal merges the two feet into a single stacked character, with one foot form above another and a long sweeping lower stroke.",
+        "changeNoteFromPrevious": "Merges the two feet into a single stacked character, with one foot form above another and a long sweeping lower stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-步"
@@ -460,8 +713,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal merges the two feet into a single stacked character, with one foot form above another and a long sweeping lower stroke.",
-        "transitionNote": "Small Seal merges the two feet into a single stacked character, with one foot form above another and a long sweeping lower stroke.",
+        "stageExplanation": "Merges the two feet into a single stacked character, with one foot form above another and a long sweeping lower stroke.",
+        "transitionNote": "Merges the two feet into a single stacked character, with one foot form above another and a long sweeping lower stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +724,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/step/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical compresses the pair further, making the upper foot compact and the lower stroke broad and curved.",
+        "changeNoteFromPrevious": "Compresses the pair further, making the upper foot compact and the lower stroke broad and curved.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-步"
@@ -497,8 +750,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical compresses the pair further, making the upper foot compact and the lower stroke broad and curved.",
-        "transitionNote": "Clerical compresses the pair further, making the upper foot compact and the lower stroke broad and curved.",
+        "stageExplanation": "Compresses the pair further, making the upper foot compact and the lower stroke broad and curved.",
+        "transitionNote": "Compresses the pair further, making the upper foot compact and the lower stroke broad and curved.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +761,7 @@
         "label": "Regular Script",
         "form": "步",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 步 regularizes the upper 止-like foot and lower step strokes, preserving the idea of successive feet even after the literal prints disappear.",
+        "changeNoteFromPrevious": "The Chinese historical endpoint is 步; the paired-foot origin is no longer pictorial but survives in the stacked structure.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +787,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 步 regularizes the upper 止-like foot and lower step strokes, preserving the idea of successive feet even after the literal prints disappear.",
-        "transitionNote": "Regular 步 regularizes the upper 止-like foot and lower step strokes, preserving the idea of successive feet even after the literal prints disappear.",
+        "stageExplanation": "The Chinese historical endpoint is 步; the paired-foot origin is no longer pictorial but survives in the stacked structure.",
+        "transitionNote": "The Chinese historical endpoint is 步; the paired-foot origin is no longer pictorial but survives in the stacked structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +796,7 @@
     ],
     "origin": {
       "concept": "step",
-      "explanation": "Two feet and a pair of footprints showing successive steps.",
+      "explanation": "Two feet/footprints arranged as alternating steps.",
       "asset": {
         "characterID": "step",
         "historicalStage": null,
@@ -560,7 +813,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of step",
+        "accessibilityDescription": "Illustration of step / walk",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +831,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'step', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'step / walk', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +901,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

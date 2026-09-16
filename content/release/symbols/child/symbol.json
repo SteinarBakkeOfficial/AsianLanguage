@@ -1,0 +1,923 @@
+{
+  "id": "child",
+  "version": 1,
+  "coreCharacter": "子",
+  "coreSharedMeaning": "child",
+  "recognitionTakeaway": "The child figure is standardized as 子, with the pictorial anatomy largely abstracted.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+5B50",
+  "simplifiedForm": "子",
+  "traditionalForm": "子",
+  "additionalMeanings": [],
+  "formationType": "pictograph",
+  "visualTeachingNotes": [
+    "A swaddled infant with a large head and outstretched or waving arms; the lower body and legs are bundled or underdeveloped.",
+    "A long vertical body rises above a low rectangular form, with very little detail suggesting a child.",
+    "Regular 子 keeps the hooked head, broad middle stroke, and sweeping lower body as the standardized three-part form."
+  ],
+  "contentFolder": "content/release/symbols/child",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/child/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 21,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "子",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "zǐ",
+          "audioAssetRef": null,
+          "speechText": "子",
+          "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "zi",
+          "audioAssetRef": null,
+          "speechText": "子",
+          "speechLanguage": "mandarin",
+          "usageNote": "neutral-tone suffix pronunciation, as in 孩子"
+        }
+      ],
+      "glosses": [
+        "child"
+      ],
+      "examples": [
+        {
+          "text": "子",
+          "reading": "zǐ",
+          "translation": "child",
+          "speechText": "子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zǐ"
+          ]
+        },
+        {
+          "text": "孩子",
+          "reading": "háizi",
+          "translation": "child",
+          "speechText": "孩子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ],
+          "coversReadings": [
+            "zi"
+          ]
+        },
+        {
+          "text": "子女",
+          "reading": "zǐnǚ",
+          "translation": "children; sons and daughters",
+          "speechText": "子女",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
+        },
+        {
+          "text": "子孙",
+          "reading": "zǐsūn",
+          "translation": "descendants",
+          "speechText": "子孙",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "这个孩子很小。",
+          "reading": "Zhège háizi hěn xiǎo.",
+          "translation": "This child is small.",
+          "speechText": "这个孩子很小。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "子",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "zǐ",
+          "audioAssetRef": null,
+          "speechText": "子",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "child"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "子",
+          "reading": "zǐ",
+          "translation": "child",
+          "speechText": "子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "孩子",
+          "reading": "háizi",
+          "translation": "child",
+          "speechText": "孩子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
+        },
+        {
+          "text": "子女",
+          "reading": "zǐnǚ",
+          "translation": "children; sons and daughters",
+          "speechText": "子女",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
+        },
+        {
+          "text": "這個孩子很小。",
+          "reading": "Zhège háizi hěn xiǎo.",
+          "translation": "This child is small.",
+          "speechText": "這個孩子很小。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "子",
+          "reading": "zi2",
+          "translation": "child",
+          "speechText": "子",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "子女",
+          "reading": "zi2 neoi5",
+          "translation": "children; sons and daughters",
+          "speechText": "子女",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
+        },
+        {
+          "text": "兒子",
+          "reading": "ji4 zi2",
+          "translation": "son",
+          "speechText": "兒子",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
+        },
+        {
+          "text": "佢有兩個仔。",
+          "reading": "keoi5 jau5 loeng5 go3 zai2",
+          "translation": "He has two children/sons.",
+          "speechText": "佢有兩個仔。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "zǐ",
+          "audioAssetRef": null,
+          "speechText": "子",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "zi2",
+          "audioAssetRef": null,
+          "speechText": "子",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "子",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "シ — shi",
+          "audioAssetRef": null,
+          "speechText": "し",
+          "speechLanguage": "japanese",
+          "nativeReading": "シ",
+          "romanization": "shi",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "こ — ko",
+          "audioAssetRef": null,
+          "speechText": "こ",
+          "speechLanguage": "japanese",
+          "nativeReading": "こ",
+          "romanization": "ko",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "onyomi",
+          "value": "ス — su",
+          "audioAssetRef": null,
+          "speechText": "ス",
+          "speechLanguage": "japanese",
+          "nativeReading": "ス",
+          "romanization": "su",
+          "historicalOrigin": "sinoJapanese"
+        }
+      ],
+      "glosses": [
+        "child"
+      ],
+      "examples": [
+        {
+          "text": "子ども",
+          "reading": "kodomo",
+          "translation": "child",
+          "speechText": "子ども",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ],
+          "kanaReading": "こども",
+          "coversReadings": [
+            "こ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "子",
+              "reading": "こ"
+            },
+            {
+              "text": "ども"
+            }
+          ],
+          "furiganaHtml": "<ruby>子<rt>こ</rt></ruby>ども"
+        },
+        {
+          "text": "女の子",
+          "reading": "onna no ko",
+          "translation": "girl",
+          "speechText": "女の子",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ],
+          "kanaReading": "おんなのこ",
+          "furiganaSegments": [
+            {
+              "text": "女",
+              "reading": "おんな"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "子",
+              "reading": "こ"
+            }
+          ],
+          "furiganaHtml": "<ruby>女<rt>おんな</rt></ruby>の<ruby>子<rt>こ</rt></ruby>"
+        },
+        {
+          "text": "子孫",
+          "reading": "shison",
+          "translation": "descendants",
+          "speechText": "子孫",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しそん",
+          "coversReadings": [
+            "シ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "子孫",
+              "reading": "しそん"
+            }
+          ],
+          "furiganaHtml": "<ruby>子孫<rt>しそん</rt></ruby>"
+        },
+        {
+          "text": "息子",
+          "reading": "musuko",
+          "translation": "son",
+          "speechText": "息子",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "むすこ",
+          "furiganaSegments": [
+            {
+              "text": "息子",
+              "reading": "むすこ"
+            }
+          ],
+          "furiganaHtml": "<ruby>息子<rt>むすこ</rt></ruby>"
+        },
+        {
+          "text": "子どもが遊んでいます。",
+          "reading": "kodomo ga asonde imasu.",
+          "translation": "The child is playing.",
+          "speechText": "子どもが遊んでいます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ],
+          "kanaReading": "こどもがあそんでいます。",
+          "furiganaSegments": [
+            {
+              "text": "子",
+              "reading": "こ"
+            },
+            {
+              "text": "どもが"
+            },
+            {
+              "text": "遊",
+              "reading": "あそ"
+            },
+            {
+              "text": "んでいます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>子<rt>こ</rt></ruby>どもが<ruby>遊<rt>あそ</rt></ruby>んでいます。"
+        },
+        {
+          "text": "様子",
+          "reading": "yōsu",
+          "translation": "state; appearance",
+          "speechText": "様子",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ようす",
+          "coversReadings": [
+            "ス"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "様子",
+              "reading": "ようす"
+            }
+          ],
+          "furiganaHtml": "<ruby>様子<rt>ようす</rt></ruby>"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "こ",
+        "romanization": "ko",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "子",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "자 — ja",
+          "audioAssetRef": null,
+          "speechText": "자",
+          "speechLanguage": "korean",
+          "nativeReading": "자",
+          "romanization": "ja"
+        }
+      ],
+      "glosses": [
+        "child"
+      ],
+      "examples": [
+        {
+          "text": "아이",
+          "reading": "ai",
+          "translation": "child",
+          "speechText": "아이",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "자녀",
+          "reading": "janyeo",
+          "translation": "children",
+          "speechText": "자녀",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
+        },
+        {
+          "text": "왕자",
+          "reading": "wangja",
+          "translation": "prince",
+          "speechText": "왕자",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
+        },
+        {
+          "text": "자식",
+          "reading": "jasik",
+          "translation": "child / offspring",
+          "speechText": "자식",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "아이가 작아요.",
+          "reading": "aiga jagayo.",
+          "translation": "The child is small.",
+          "speechText": "아이가 작아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "자 — ja",
+          "audioAssetRef": null,
+          "speechText": "자",
+          "speechLanguage": "korean",
+          "nativeReading": "자",
+          "romanization": "ja"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "아이 — ai",
+          "audioAssetRef": null,
+          "speechText": "아이",
+          "speechLanguage": "korean",
+          "nativeReading": "아이",
+          "romanization": "ai",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "child",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "자",
+        "romanization": "ja",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A swaddled infant with a large head and outstretched arms; its lower body is bundled.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/child/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "An infant/young child is shown with an enlarged head and small developing body; early variants differ in arms, hair, and legs.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-子"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "子",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%AD%90/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/43_F77B.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/child/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/child/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "子 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "An infant/young child is shown with an enlarged head and small developing body; early variants differ in arms, hair, and legs.",
+        "transitionNote": "An infant/young child is shown with an enlarged head and small developing body; early variants differ in arms, hair, and legs.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/child/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "A large looped head appears clearly above a central body, with short arms extending to the sides.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-子"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "子",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%AD%90/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/34_E88D.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/child/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/child/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "子 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A large looped head appears clearly above a central body, with short arms extending to the sides.",
+        "transitionNote": "A large looped head appears clearly above a central body, with short arms extending to the sides.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/child/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "The head becomes a clean circle, the arms curve upward, and a single line continues down as the body.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-子"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "子",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%AD%90/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_5B50.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/child/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/child/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "子 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The head becomes a clean circle, the arms curve upward, and a single line continues down as the body.",
+        "transitionNote": "The head becomes a clean circle, the arms curve upward, and a single line continues down as the body.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/child/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The round head collapses into a small hooked stroke while the arms become a long horizontal, bringing the form close to child sign.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-子"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "子",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%AD%90/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_EEE3.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/child/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/child/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "子 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The round head collapses into a small hooked stroke while the arms become a long horizontal, bringing the form close to child sign.",
+        "transitionNote": "The round head collapses into a small hooked stroke while the arms become a long horizontal, bringing the form close to child sign.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "子",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The infant graph becomes the standard child sign. It was also used for a branch name and for titles; later branch notation used a separate sign for the sixth position to prevent confusion.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "子",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "子 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The child figure is standardized as 子, with the pictorial anatomy largely abstracted.",
+        "transitionNote": "The infant graph becomes the standard child sign. It was also used for a branch name and for titles; later branch notation used a separate sign for the sixth position to prevent confusion.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "child",
+      "explanation": "An infant/young child with an emphasized head and arms; the legs are immature/reduced in common early forms.",
+      "asset": {
+        "characterID": "child",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/child/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of child",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-子"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as 子.",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-子"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'child', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E5%AD%90"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-子",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%AD%90"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-子",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

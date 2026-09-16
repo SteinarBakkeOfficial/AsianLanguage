@@ -2,8 +2,8 @@
   "id": "things-goods",
   "version": 1,
   "coreCharacter": "品",
-  "coreSharedMeaning": "things / goods",
-  "recognitionTakeaway": "Regular 品 returns the components to three compact 口 shapes, preserving the repeated-three structure with almost no change in layout.",
+  "coreSharedMeaning": "goods / items / grade",
+  "recognitionTakeaway": "The triplicated forms regularize as 品 and support later senses such as items, products, grades, and quality.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+54C1",
   "simplifiedForm": "品",
@@ -15,9 +15,9 @@
     "Oracle represents the group with three separate open box-like shapes, one above and two below.",
     "Regular 品 returns the components to three compact 口 shapes, preserving the repeated-three structure with almost no change in layout."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-148-品-u54C1",
+  "contentFolder": "content/release/symbols/things-goods",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-148-品-u54C1/research.md",
+  "researchNotesPath": "content/release/symbols/things-goods/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "things / goods"
       ],
       "examples": [
+        {
+          "text": "品",
+          "reading": "pǐn",
+          "translation": "things / goods",
+          "speechText": "品",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "pǐn"
+          ]
+        },
         {
           "text": "商品",
           "reading": "shāngpǐn",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "产品",
+          "reading": "chǎnpǐn",
+          "translation": "product",
+          "speechText": "产品",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这个产品很好。",
           "reading": "Zhège chǎnpǐn hěn hǎo.",
           "translation": "This product is good.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "品",
@@ -98,6 +127,18 @@
         "things / goods"
       ],
       "taiwanExamples": [
+        {
+          "text": "品",
+          "reading": "pǐn",
+          "translation": "things / goods",
+          "speechText": "品",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "商品",
           "reading": "shāngpǐn",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "品",
+          "reading": "ban2",
+          "translation": "things / goods",
+          "speechText": "品",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "商品",
           "reading": "soeng1 ban2",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "品",
       "readings": [
         {
-          "system": "on",
-          "value": "ヒン (hin)",
+          "system": "onyomi",
+          "value": "ヒン — hin",
           "audioAssetRef": null,
           "speechText": "ひん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ヒン",
+          "romanization": "hin",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "しな (shina)",
+          "system": "kunyomi",
+          "value": "しな — shina",
           "audioAssetRef": null,
           "speechText": "しな",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "しな",
+          "romanization": "shina",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "品"
-          ]
+          ],
+          "kanaReading": "しな",
+          "coversReadings": [
+            "しな"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "品",
+              "reading": "しな"
+            }
+          ],
+          "furiganaHtml": "<ruby>品<rt>しな</rt></ruby>"
         },
         {
           "text": "商品",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "品"
-          ]
+          ],
+          "kanaReading": "しょうひん",
+          "coversReadings": [
+            "ヒン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "商品",
+              "reading": "しょうひん"
+            }
+          ],
+          "furiganaHtml": "<ruby>商品<rt>しょうひん</rt></ruby>"
+        },
+        {
+          "text": "品質",
+          "reading": "hinshitsu",
+          "translation": "quality",
+          "speechText": "品質",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ひんしつ",
+          "furiganaSegments": [
+            {
+              "text": "品質",
+              "reading": "ひんしつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>品質<rt>ひんしつ</rt></ruby>"
+        },
+        {
+          "text": "品物",
+          "reading": "shinamono",
+          "translation": "goods / item",
+          "speechText": "品物",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しなもの",
+          "furiganaSegments": [
+            {
+              "text": "品物",
+              "reading": "しなもの"
+            }
+          ],
+          "furiganaHtml": "<ruby>品物<rt>しなもの</rt></ruby>"
         },
         {
           "text": "この商品は安いです。",
@@ -267,33 +390,77 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "品"
-          ]
+          ],
+          "kanaReading": "このしょうひんはやすいです。",
+          "furiganaSegments": [
+            {
+              "text": "この"
+            },
+            {
+              "text": "商品",
+              "reading": "しょうひん"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "安",
+              "reading": "やす"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "この<ruby>商品<rt>しょうひん</rt></ruby>は<ruby>安<rt>やす</rt></ruby>いです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "しな",
+        "romanization": "shina",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "品",
       "readings": [
         {
           "system": "hanja",
-          "value": "품 / pum",
+          "value": "품 — pum",
           "audioAssetRef": null,
           "speechText": "품",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "물건 / mulgeon",
-          "audioAssetRef": null,
-          "speechText": "물건",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "품",
+          "romanization": "pum"
         }
       ],
       "glosses": [
         "things / goods"
       ],
       "examples": [
+        {
+          "text": "물건",
+          "reading": "mulgeon",
+          "translation": "goods / item",
+          "speechText": "물건",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "상품",
           "reading": "sangpum",
@@ -323,6 +490,18 @@
           ]
         },
         {
+          "text": "품질",
+          "reading": "pumjil",
+          "translation": "quality",
+          "speechText": "품질",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "이 상품은 좋아요.",
           "reading": "i sangpumeun joayo.",
           "translation": "This product is good.",
@@ -337,7 +516,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "품 — pum",
+          "audioAssetRef": null,
+          "speechText": "품",
+          "speechLanguage": "korean",
+          "nativeReading": "품",
+          "romanization": "pum"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "물건 — mulgeon",
+          "audioAssetRef": null,
+          "speechText": "물건",
+          "speechLanguage": "korean",
+          "nativeReading": "물건",
+          "romanization": "mulgeon",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "goods / item",
+          "displayTier": "secondary",
+          "lexicalOrigin": "sinoKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "품",
+        "romanization": "pum",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +564,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Several bowls, cups, and household goods grouped together.",
+    "originAnchor": "Three separate vessel-like forms combine to suggest goods, things, and a range of items.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/things-goods/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle represents the group with three separate open box-like shapes, one above and two below.",
+        "changeNoteFromPrevious": "Three repeated enclosed object/vessel-like forms appear; they should not automatically be read as three mouths.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-品"
@@ -379,8 +597,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle represents the group with three separate open box-like shapes, one above and two below.",
-        "transitionNote": "Oracle represents the group with three separate open box-like shapes, one above and two below.",
+        "stageExplanation": "Three repeated enclosed object/vessel-like forms appear; they should not automatically be read as three mouths.",
+        "transitionNote": "Three repeated enclosed object/vessel-like forms appear; they should not automatically be read as three mouths.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +608,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/things-goods/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes all three units more rounded and nearly identical while keeping the one-over-two arrangement.",
+        "changeNoteFromPrevious": "Makes all three units more rounded and nearly identical while keeping the one-over-two arrangement.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-品"
@@ -416,8 +634,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes all three units more rounded and nearly identical while keeping the one-over-two arrangement.",
-        "transitionNote": "Bronze makes all three units more rounded and nearly identical while keeping the one-over-two arrangement.",
+        "stageExplanation": "Makes all three units more rounded and nearly identical while keeping the one-over-two arrangement.",
+        "transitionNote": "Makes all three units more rounded and nearly identical while keeping the one-over-two arrangement.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +645,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/things-goods/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the three boxes into a clean triangular stack of one above two.",
+        "changeNoteFromPrevious": "Regularizes the three boxes into a clean triangular stack of one above two.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-品"
@@ -453,8 +671,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the three boxes into a clean triangular stack of one above two.",
-        "transitionNote": "Small Seal regularizes the three boxes into a clean triangular stack of one above two.",
+        "stageExplanation": "Regularizes the three boxes into a clean triangular stack of one above two.",
+        "transitionNote": "Regularizes the three boxes into a clean triangular stack of one above two.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +682,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/things-goods/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the boxes into broad rectangles, with the top one especially wide.",
+        "changeNoteFromPrevious": "Flattens the boxes into broad rectangles, with the top one especially wide.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-品"
@@ -490,8 +708,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the boxes into broad rectangles, with the top one especially wide.",
-        "transitionNote": "Clerical flattens the boxes into broad rectangles, with the top one especially wide.",
+        "stageExplanation": "Flattens the boxes into broad rectangles, with the top one especially wide.",
+        "transitionNote": "Flattens the boxes into broad rectangles, with the top one especially wide.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +719,7 @@
         "label": "Regular Script",
         "form": "品",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 品 returns the components to three compact 口 shapes, preserving the repeated-three structure with almost no change in layout.",
+        "changeNoteFromPrevious": "The triplicated forms regularize as 品 and support later senses such as items, products, grades, and quality.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +745,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 品 returns the components to three compact 口 shapes, preserving the repeated-three structure with almost no change in layout.",
-        "transitionNote": "Regular 品 returns the components to three compact 口 shapes, preserving the repeated-three structure with almost no change in layout.",
+        "stageExplanation": "The triplicated forms regularize as 品 and support later senses such as items, products, grades, and quality.",
+        "transitionNote": "The triplicated forms regularize as 品 and support later senses such as items, products, grades, and quality.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +754,7 @@
     ],
     "origin": {
       "concept": "things / goods",
-      "explanation": "Several bowls, cups, and household goods grouped together.",
+      "explanation": "Three repeated enclosed object forms, plausibly vessels or goods rather than literal mouths.",
       "asset": {
         "characterID": "things-goods",
         "historicalStage": null,
@@ -553,7 +771,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of things / goods",
+        "accessibilityDescription": "Illustration of goods / items / grade",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +789,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'things / goods', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'goods / items / grade', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +859,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

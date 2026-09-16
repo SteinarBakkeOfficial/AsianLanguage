@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "舌",
   "coreSharedMeaning": "tongue",
-  "recognitionTakeaway": "Regular 舌 simplifies the upper fork into a short top stroke over 十, while the mouth remains as 口 at the bottom.",
+  "recognitionTakeaway": "Simplifies the upper fork into a short top stroke over 十, while the mouth remains as 口 at the bottom.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+820C",
   "simplifiedForm": "舌",
@@ -15,9 +15,9 @@
     "A mouth-like box sits at the bottom while a central tongue rises above it and splits into small upper strokes.",
     "Regular 舌 simplifies the upper fork into a short top stroke over 十, while the mouth remains as 口 at the bottom."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-014-舌-u820C",
+  "contentFolder": "content/release/symbols/tongue",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-014-舌-u820C/research.md",
+  "researchNotesPath": "content/release/symbols/tongue/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "tongue"
       ],
       "examples": [
+        {
+          "text": "舌",
+          "reading": "shé",
+          "translation": "tongue",
+          "speechText": "舌",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shé"
+          ]
+        },
         {
           "text": "舌头",
           "reading": "shétou",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "舌根",
+          "reading": "shégēn",
+          "translation": "base of the tongue",
+          "speechText": "舌根",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "舌头有点痛。",
           "reading": "Shétou yǒudiǎn tòng.",
           "translation": "My tongue hurts a little.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "舌",
@@ -98,6 +127,18 @@
         "tongue"
       ],
       "taiwanExamples": [
+        {
+          "text": "舌",
+          "reading": "shé",
+          "translation": "tongue",
+          "speechText": "舌",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "舌頭",
           "reading": "shétou",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "舌",
+          "reading": "sit6",
+          "translation": "tongue",
+          "speechText": "舌",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "舌頭",
           "reading": "sit6 tau4",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "舌",
       "readings": [
         {
-          "system": "on",
-          "value": "ゼツ (zetsu)",
+          "system": "onyomi",
+          "value": "ゼツ — zetsu",
           "audioAssetRef": null,
           "speechText": "ぜつ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ゼツ",
+          "romanization": "zetsu",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "した (shita)",
+          "system": "kunyomi",
+          "value": "した — shita",
           "audioAssetRef": null,
           "speechText": "した",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "した",
+          "romanization": "shita",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "舌"
-          ]
+          ],
+          "kanaReading": "した",
+          "coversReadings": [
+            "した"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "舌",
+              "reading": "した"
+            }
+          ],
+          "furiganaHtml": "<ruby>舌<rt>した</rt></ruby>"
         },
         {
           "text": "舌先",
@@ -253,7 +325,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "舌"
-          ]
+          ],
+          "kanaReading": "したさき",
+          "furiganaSegments": [
+            {
+              "text": "舌先",
+              "reading": "したさき"
+            }
+          ],
+          "furiganaHtml": "<ruby>舌先<rt>したさき</rt></ruby>"
+        },
+        {
+          "text": "毒舌",
+          "reading": "dokuzetsu",
+          "translation": "sharp tongue",
+          "speechText": "毒舌",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "どくぜつ",
+          "coversReadings": [
+            "ゼツ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "毒舌",
+              "reading": "どくぜつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>毒舌<rt>どくぜつ</rt></ruby>"
+        },
+        {
+          "text": "舌打ち",
+          "reading": "shitauchi",
+          "translation": "clicking the tongue",
+          "speechText": "舌打ち",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "したうち",
+          "furiganaSegments": [
+            {
+              "text": "舌打",
+              "reading": "したう"
+            },
+            {
+              "text": "ち"
+            }
+          ],
+          "furiganaHtml": "<ruby>舌打<rt>したう</rt></ruby>ち"
         },
         {
           "text": "舌が痛いです。",
@@ -267,27 +393,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "舌"
-          ]
+          ],
+          "kanaReading": "したがいたいです。",
+          "furiganaSegments": [
+            {
+              "text": "舌",
+              "reading": "した"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "痛",
+              "reading": "いた"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>舌<rt>した</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "した",
+        "romanization": "shita",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "舌",
       "readings": [
         {
           "system": "hanja",
-          "value": "설 / seol",
+          "value": "설 — seol",
           "audioAssetRef": null,
           "speechText": "설",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "혀 / hyeo",
-          "audioAssetRef": null,
-          "speechText": "혀",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "설",
+          "romanization": "seol"
         }
       ],
       "glosses": [
@@ -306,7 +460,8 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "舌"
-          ]
+          ],
+          "exampleRole": "semanticEquivalent"
         },
         {
           "text": "혀끝",
@@ -323,6 +478,30 @@
           ]
         },
         {
+          "text": "혓바닥",
+          "reading": "hyeotbadak",
+          "translation": "tongue",
+          "speechText": "혓바닥",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "독설",
+          "reading": "dokseol",
+          "translation": "harsh words",
+          "speechText": "독설",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "혀가 아파요.",
           "reading": "hyeoga apayo.",
           "translation": "My tongue hurts.",
@@ -337,7 +516,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "설 — seol",
+          "audioAssetRef": null,
+          "speechText": "설",
+          "speechLanguage": "korean",
+          "nativeReading": "설",
+          "romanization": "seol"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "혀 — hyeo",
+          "audioAssetRef": null,
+          "speechText": "혀",
+          "speechLanguage": "korean",
+          "nativeReading": "혀",
+          "romanization": "hyeo",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "tongue",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "설",
+        "romanization": "seol",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +564,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "An open mouth with the tongue extended and clearly visible.",
+    "originAnchor": "A tongue projecting from an open mouth.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/tongue/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A mouth-like box sits at the bottom while a central tongue rises above it and splits into small upper strokes.",
+        "changeNoteFromPrevious": "The earliest form shows a mouth with a forked tongue; later variants add a base stroke and sometimes extra dots or a stone-like element.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-舌"
@@ -380,7 +598,7 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "A mouth-like box sits at the bottom while a central tongue rises above it and splits into small upper strokes.",
-        "transitionNote": "A mouth-like box sits at the bottom while a central tongue rises above it and splits into small upper strokes.",
+        "transitionNote": "The earliest form shows a mouth with a forked tongue; later variants add a base stroke and sometimes extra dots or a stone-like element.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +608,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/tongue/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The tongue becomes taller and more symmetrical, with paired side marks and a clearer mouth enclosure below.",
+        "changeNoteFromPrevious": "Bronze forms standardize the double-forked tongue and add four dots between it and the mouth.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-舌"
@@ -417,7 +635,7 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The tongue becomes taller and more symmetrical, with paired side marks and a clearer mouth enclosure below.",
-        "transitionNote": "The tongue becomes taller and more symmetrical, with paired side marks and a clearer mouth enclosure below.",
+        "transitionNote": "Bronze forms standardize the double-forked tongue and add four dots between it and the mouth.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -464,7 +682,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/tongue/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The forked upper strokes spread into a brushy cross while the lower mouth becomes a heavy rectangular bowl.",
+        "changeNoteFromPrevious": "The added dots disappear in later forms, leaving the simpler tongue-over-mouth structure that leads to the modern form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-舌"
@@ -491,7 +709,7 @@
         },
         "introducedComponentIds": [],
         "stageExplanation": "The forked upper strokes spread into a brushy cross while the lower mouth becomes a heavy rectangular bowl.",
-        "transitionNote": "The forked upper strokes spread into a brushy cross while the lower mouth becomes a heavy rectangular bowl.",
+        "transitionNote": "The added dots disappear in later forms, leaving the simpler tongue-over-mouth structure that leads to the modern form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +719,7 @@
         "label": "Regular Script",
         "form": "舌",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 舌 simplifies the upper fork into a short top stroke over 十, while the mouth remains as 口 at the bottom.",
+        "changeNoteFromPrevious": "Simplifies the upper fork into a short top stroke over 十, while the mouth remains as 口 at the bottom.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +745,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 舌 simplifies the upper fork into a short top stroke over 十, while the mouth remains as 口 at the bottom.",
-        "transitionNote": "Regular 舌 simplifies the upper fork into a short top stroke over 十, while the mouth remains as 口 at the bottom.",
+        "stageExplanation": "Simplifies the upper fork into a short top stroke over 十, while the mouth remains as 口 at the bottom.",
+        "transitionNote": "Simplifies the upper fork into a short top stroke over 十, while the mouth remains as 口 at the bottom.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +754,7 @@
     ],
     "origin": {
       "concept": "tongue",
-      "explanation": "An open mouth with the tongue extended and clearly visible.",
+      "explanation": "A tongue projecting from a mouth, often forked or marked so it is recognizable; some forms include saliva marks.",
       "asset": {
         "characterID": "tongue",
         "historicalStage": null,
@@ -641,13 +859,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

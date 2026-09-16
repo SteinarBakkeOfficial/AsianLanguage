@@ -7,7 +7,7 @@ Runtime record filenames and IDs use readable, meaning-based names (for example,
 ## Bundled scope
 
 - 126 complete-evolution Shared Character records from `content/research/zdic-v1-complete-manifest.json`.
-- 126 approved-for-review Soft Ink & Wash origin illustrations from `content/research/v1-symbols/**/origin-locked-style-v2.png`; the two compound rerenders use v3.
+- 126 approved-for-review Soft Ink & Wash origin illustrations stored beside their release Symbol records under `content/release/symbols/<id>/educational/`; the two compound rerenders use v3.
 - 504 normalized ZDIC historical glyphs: Oracle Bone, Bronze, Small Seal, and Clerical for every V1 record. The original selected SVG is retained beside each normalized glyph.
 - 630 destination-stage transition captions: one for every available journey stage in every V1 record, comparing Origin → Oracle (or the first available stage) and each subsequent stage to its previous available image.
 - Regular Script is rendered dynamically from `Resources/Fonts/TW-Kai-98_1.ttf`.
@@ -16,7 +16,7 @@ Runtime record filenames and IDs use readable, meaning-based names (for example,
 
 ## Runtime content boundary
 
-The old 11-record pilot files remain in the repository for comparison, but `SeedCorpusManifest` loads only the 126 complete-evolution records. This means the incomplete Fire pilot is not silently counted as V1. Onboarding loads the first-ranked runtime record, currently 一, while Fire remains available separately as a repository pilot/reference record.
+The old 11-record pilot files are archived under `docs/archive/legacy-pilot/` for comparison, but `SeedCorpusManifest` loads only the 126 complete-evolution records. This means the incomplete Fire pilot is not silently counted as V1. Onboarding loads the first-ranked runtime record, currently 一, while Fire remains available separately as a repository pilot/reference record.
 
 ## Discovery behavior
 

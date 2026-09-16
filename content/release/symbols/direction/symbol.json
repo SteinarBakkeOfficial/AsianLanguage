@@ -1,0 +1,960 @@
+{
+  "id": "direction",
+  "version": 1,
+  "coreCharacter": "向",
+  "coreSharedMeaning": "toward / direction (earlier echo/sound graph)",
+  "recognitionTakeaway": "The graph regularizes as 向 for “toward/direction”; the early sound/echo connection belongs to its prehistory and later differentiation.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+5411",
+  "simplifiedForm": "向",
+  "traditionalForm": "向",
+  "additionalMeanings": [],
+  "formationType": "simpleIdeograph",
+  "visualTeachingNotes": [
+    "A person calling from inside a house or doorway, with sound shown traveling outward.",
+    "Oracle has a pointed house-like enclosure surrounding a small mouth-shaped box near the bottom.",
+    "Regular 向 regularizes the outer enclosure and inner 口, keeping the image of an opening or voice directed outward."
+  ],
+  "contentFolder": "content/release/symbols/direction",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/direction/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 89,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "向",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "xiàng",
+          "audioAssetRef": null,
+          "speechText": "向",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "direction"
+      ],
+      "examples": [
+        {
+          "text": "向",
+          "reading": "xiàng",
+          "translation": "direction",
+          "speechText": "向",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "xiàng"
+          ]
+        },
+        {
+          "text": "方向",
+          "reading": "fāngxiàng",
+          "translation": "direction",
+          "speechText": "方向",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        },
+        {
+          "text": "向前",
+          "reading": "xiàng qián",
+          "translation": "forward",
+          "speechText": "向前",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        },
+        {
+          "text": "向上",
+          "reading": "xiàngshàng",
+          "translation": "upward",
+          "speechText": "向上",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "我们向前走。",
+          "reading": "Wǒmen xiàng qián zǒu.",
+          "translation": "We walk forward.",
+          "speechText": "我们向前走。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "向",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "xiàng",
+          "audioAssetRef": null,
+          "speechText": "向",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "direction"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "向",
+          "reading": "xiàng",
+          "translation": "direction",
+          "speechText": "向",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "方向",
+          "reading": "fāngxiàng",
+          "translation": "direction",
+          "speechText": "方向",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        },
+        {
+          "text": "向前",
+          "reading": "xiàng qián",
+          "translation": "forward",
+          "speechText": "向前",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        },
+        {
+          "text": "我們向前走。",
+          "reading": "Wǒmen xiàng qián zǒu.",
+          "translation": "We walk forward.",
+          "speechText": "我們向前走。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "向",
+          "reading": "hoeng3",
+          "translation": "direction",
+          "speechText": "向",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "方向",
+          "reading": "fong1 hoeng3",
+          "translation": "direction",
+          "speechText": "方向",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        },
+        {
+          "text": "向前",
+          "reading": "hoeng3 cin4",
+          "translation": "forward",
+          "speechText": "向前",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        },
+        {
+          "text": "我哋向前行。",
+          "reading": "ngo5 dei6 hoeng3 cin4 haang4",
+          "translation": "We walk forward.",
+          "speechText": "我哋向前行。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "xiàng",
+          "audioAssetRef": null,
+          "speechText": "向",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "hoeng3",
+          "audioAssetRef": null,
+          "speechText": "向",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "向",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "コウ — kō",
+          "audioAssetRef": null,
+          "speechText": "こう",
+          "speechLanguage": "japanese",
+          "nativeReading": "コウ",
+          "romanization": "kō",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "むく — muku",
+          "audioAssetRef": null,
+          "speechText": "むく",
+          "speechLanguage": "japanese",
+          "nativeReading": "むく",
+          "romanization": "muku",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "むかう — mukau",
+          "audioAssetRef": null,
+          "speechText": "むかう",
+          "speechLanguage": "japanese",
+          "nativeReading": "むかう",
+          "romanization": "mukau",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "むける — mukeru",
+          "audioAssetRef": null,
+          "speechText": "むける",
+          "speechLanguage": "japanese",
+          "nativeReading": "むける",
+          "romanization": "mukeru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "むこう — mukō",
+          "audioAssetRef": null,
+          "speechText": "むこう",
+          "speechLanguage": "japanese",
+          "nativeReading": "むこう",
+          "romanization": "mukō",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "direction"
+      ],
+      "examples": [
+        {
+          "text": "向く",
+          "reading": "muku",
+          "translation": "face; turn toward",
+          "speechText": "向く",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ],
+          "kanaReading": "むく",
+          "coversReadings": [
+            "むく"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "向",
+              "reading": "む"
+            },
+            {
+              "text": "く"
+            }
+          ],
+          "furiganaHtml": "<ruby>向<rt>む</rt></ruby>く"
+        },
+        {
+          "text": "方向",
+          "reading": "hōkō",
+          "translation": "direction",
+          "speechText": "方向",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ],
+          "kanaReading": "ほうこう",
+          "coversReadings": [
+            "コウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "方向",
+              "reading": "ほうこう"
+            }
+          ],
+          "furiganaHtml": "<ruby>方向<rt>ほうこう</rt></ruby>"
+        },
+        {
+          "text": "向上",
+          "reading": "kōjō",
+          "translation": "improvement",
+          "speechText": "向上",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうじょう",
+          "furiganaSegments": [
+            {
+              "text": "向上",
+              "reading": "こうじょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>向上<rt>こうじょう</rt></ruby>"
+        },
+        {
+          "text": "向かう",
+          "reading": "mukau",
+          "translation": "head toward",
+          "speechText": "向かう",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "むかう",
+          "coversReadings": [
+            "むかう"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "向",
+              "reading": "む"
+            },
+            {
+              "text": "かう"
+            }
+          ],
+          "furiganaHtml": "<ruby>向<rt>む</rt></ruby>かう"
+        },
+        {
+          "text": "北を向きます。",
+          "reading": "kita o mukimasu.",
+          "translation": "I face north.",
+          "speechText": "北を向きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ],
+          "kanaReading": "きたをむきます。",
+          "furiganaSegments": [
+            {
+              "text": "北",
+              "reading": "きた"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "向",
+              "reading": "む"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>北<rt>きた</rt></ruby>を<ruby>向<rt>む</rt></ruby>きます。"
+        },
+        {
+          "text": "向ける",
+          "reading": "mukeru",
+          "translation": "turn/direct toward",
+          "speechText": "向ける",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "むける",
+          "coversReadings": [
+            "むける"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "向",
+              "reading": "む"
+            },
+            {
+              "text": "ける"
+            }
+          ],
+          "furiganaHtml": "<ruby>向<rt>む</rt></ruby>ける"
+        },
+        {
+          "text": "向こう",
+          "reading": "mukō",
+          "translation": "over there; the other side",
+          "speechText": "向こう",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "むこう",
+          "coversReadings": [
+            "むこう"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "向",
+              "reading": "む"
+            },
+            {
+              "text": "こう"
+            }
+          ],
+          "furiganaHtml": "<ruby>向<rt>む</rt></ruby>こう"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "むく",
+        "romanization": "muku",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "向",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "향 — hyang",
+          "audioAssetRef": null,
+          "speechText": "향",
+          "speechLanguage": "korean",
+          "nativeReading": "향",
+          "romanization": "hyang"
+        }
+      ],
+      "glosses": [
+        "direction"
+      ],
+      "examples": [
+        {
+          "text": "향하다",
+          "reading": "hyanghada",
+          "translation": "face; head toward",
+          "speechText": "향하다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "방향",
+          "reading": "banghyang",
+          "translation": "direction",
+          "speechText": "방향",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        },
+        {
+          "text": "향상",
+          "reading": "hyangsang",
+          "translation": "improvement",
+          "speechText": "향상",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "향후",
+          "reading": "hyanghu",
+          "translation": "from now on / future",
+          "speechText": "향후",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "북쪽을 향해요.",
+          "reading": "bukjjogeul hyanghaeyo.",
+          "translation": "I face north.",
+          "speechText": "북쪽을 향해요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "향 — hyang",
+          "audioAssetRef": null,
+          "speechText": "향",
+          "speechLanguage": "korean",
+          "nativeReading": "향",
+          "romanization": "hyang"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "향하다 — hyanghada",
+          "audioAssetRef": null,
+          "speechText": "향하다",
+          "speechLanguage": "korean",
+          "nativeReading": "향하다",
+          "romanization": "hyanghada",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "head toward",
+          "displayTier": "secondary",
+          "lexicalOrigin": "mixed",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "향",
+        "romanization": "hyang",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A roofed house and a sound opening suggest an echo; sound borrowing later gave the meaning 'direction.'",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/direction/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "A roofed/house element is combined with a sound/opening element in an early graph connected with echo/resonance.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-向"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "向",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%90%91/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/42_F1DE.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/direction/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/direction/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "向 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A roofed/house element is combined with a sound/opening element in an early graph connected with echo/resonance.",
+        "transitionNote": "A roofed/house element is combined with a sound/opening element in an early graph connected with echo/resonance.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/direction/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "Makes the roof broad and curved while the mouth becomes a clear bowl-like form inside.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-向"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "向",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%90%91/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/32_F3CE.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/direction/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/direction/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "向 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Makes the roof broad and curved while the mouth becomes a clear bowl-like form inside.",
+        "transitionNote": "Makes the roof broad and curved while the mouth becomes a clear bowl-like form inside.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/direction/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Straightens the roof into a tall enclosure and centers a rectangular mouth/opening sign-like element within it.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-向"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "向",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%90%91/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_5411.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/direction/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/direction/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "向 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Straightens the roof into a tall enclosure and centers a rectangular mouth/opening sign-like element within it.",
+        "transitionNote": "Straightens the roof into a tall enclosure and centers a rectangular mouth/opening sign-like element within it.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/direction/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "Shortens and widens the enclosure, with the mouth now a compact box under the top stroke.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-向"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "向",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%90%91/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/92_F1C4.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/direction/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/direction/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "向 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Shortens and widens the enclosure, with the mouth now a compact box under the top stroke.",
+        "transitionNote": "Shortens and widens the enclosure, with the mouth now a compact box under the top stroke.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "向",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The graph regularizes as 向 for “toward/direction”; the early sound/echo connection belongs to its prehistory and later differentiation.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "向",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "向 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The graph regularizes as 向 for “toward/direction”; the early sound/echo connection belongs to its prehistory and later differentiation.",
+        "transitionNote": "The graph regularizes as 向 for “toward/direction”; the early sound/echo connection belongs to its prehistory and later differentiation.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "direction",
+      "explanation": "The early graph shows sound produced inside a building, creating an echo.",
+      "asset": {
+        "characterID": "direction",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/direction/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of direction",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-向"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿵⿱丿冂口.",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-向"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'toward / direction (earlier echo/sound graph)', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E5%90%91"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-向",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%90%91"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-向",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

@@ -2,8 +2,8 @@
   "id": "after",
   "version": 1,
   "coreCharacter": "後",
-  "coreSharedMeaning": "after",
-  "recognitionTakeaway": "Regular 後 standardizes 彳 on the left and the layered right side; Mainland simplified 后 replaces this historical structure with a much shorter modern form.",
+  "coreSharedMeaning": "after / behind",
+  "recognitionTakeaway": "Traditional 後 preserves the historical after/behind graph. Mainland 后 is a later simplification/merger with a historically different character.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5F8C",
   "simplifiedForm": "后",
@@ -15,9 +15,9 @@
     "Oracle is a tall twisted sequence of linked curves, more like a traced path or repeated movement than a recognizable modern 後.",
     "Regular 後 standardizes 彳 on the left and the layered right side; Mainland simplified 后 replaces this historical structure with a much shorter modern form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-126-後-u5F8C",
+  "contentFolder": "content/release/symbols/after",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-126-後-u5F8C/research.md",
+  "researchNotesPath": "content/release/symbols/after/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "after; behind"
       ],
       "examples": [
+        {
+          "text": "后",
+          "reading": "hòu",
+          "translation": "after; behind",
+          "speechText": "后",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "hòu"
+          ]
+        },
         {
           "text": "后面",
           "reading": "hòumiàn",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "后来",
+          "reading": "hòulái",
+          "translation": "later; afterwards",
+          "speechText": "后来",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我们以后再见。",
           "reading": "Wǒmen yǐhòu zàijiàn.",
           "translation": "We will meet again later.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "後",
@@ -98,6 +127,18 @@
         "after; behind"
       ],
       "taiwanExamples": [
+        {
+          "text": "後",
+          "reading": "hòu",
+          "translation": "after; behind",
+          "speechText": "後",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "後面",
           "reading": "hòumiàn",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "後",
+          "reading": "hau6",
+          "translation": "after; behind",
+          "speechText": "後",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "後面",
           "reading": "hau6 min6",
@@ -203,38 +256,52 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "後",
       "readings": [
         {
-          "system": "on",
-          "value": "ゴ (go)",
+          "system": "onyomi",
+          "value": "ゴ — go",
           "audioAssetRef": null,
           "speechText": "ご",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ゴ",
+          "romanization": "go",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "コウ (kō)",
+          "system": "onyomi",
+          "value": "コウ — kō",
           "audioAssetRef": null,
           "speechText": "こう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コウ",
+          "romanization": "kō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "あと (ato)",
+          "system": "kunyomi",
+          "value": "あと — ato",
           "audioAssetRef": null,
           "speechText": "あと",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "あと",
+          "romanization": "ato",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "うしろ (ushiro)",
+          "system": "kunyomi",
+          "value": "うしろ — ushiro",
           "audioAssetRef": null,
           "speechText": "うしろ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "うしろ",
+          "romanization": "ushiro",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -253,7 +320,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "後"
-          ]
+          ],
+          "kanaReading": "あと",
+          "coversReadings": [
+            "あと"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "後",
+              "reading": "あと"
+            }
+          ],
+          "furiganaHtml": "<ruby>後<rt>あと</rt></ruby>"
         },
         {
           "text": "後ろ",
@@ -267,7 +345,67 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "後"
-          ]
+          ],
+          "kanaReading": "うしろ",
+          "coversReadings": [
+            "うしろ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "後",
+              "reading": "うし"
+            },
+            {
+              "text": "ろ"
+            }
+          ],
+          "furiganaHtml": "<ruby>後<rt>うし</rt></ruby>ろ"
+        },
+        {
+          "text": "午後",
+          "reading": "gogo",
+          "translation": "afternoon",
+          "speechText": "午後",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ごご",
+          "coversReadings": [
+            "ゴ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "午後",
+              "reading": "ごご"
+            }
+          ],
+          "furiganaHtml": "<ruby>午後<rt>ごご</rt></ruby>"
+        },
+        {
+          "text": "後期",
+          "reading": "kōki",
+          "translation": "latter period",
+          "speechText": "後期",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうき",
+          "coversReadings": [
+            "コウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "後期",
+              "reading": "こうき"
+            }
+          ],
+          "furiganaHtml": "<ruby>後期<rt>こうき</rt></ruby>"
         },
         {
           "text": "後で行きます。",
@@ -281,33 +419,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "後"
-          ]
+          ],
+          "kanaReading": "あとでいきます。",
+          "furiganaSegments": [
+            {
+              "text": "後",
+              "reading": "あと"
+            },
+            {
+              "text": "で"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>後<rt>あと</rt></ruby>で<ruby>行<rt>い</rt></ruby>きます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "あと",
+        "romanization": "ato",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "後",
       "readings": [
         {
           "system": "hanja",
-          "value": "후 / hu",
+          "value": "후 — hu",
           "audioAssetRef": null,
           "speechText": "후",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "뒤 / dwi",
-          "audioAssetRef": null,
-          "speechText": "뒤",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "후",
+          "romanization": "hu"
         }
       ],
       "glosses": [
         "after; later; behind"
       ],
       "examples": [
+        {
+          "text": "뒤",
+          "reading": "dwi",
+          "translation": "behind / after",
+          "speechText": "뒤",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "이후",
           "reading": "ihu",
@@ -337,6 +516,18 @@
           ]
         },
         {
+          "text": "후방",
+          "reading": "hubang",
+          "translation": "rear",
+          "speechText": "후방",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "뒤에 있어요.",
           "reading": "dwie isseoyo.",
           "translation": "It is behind.",
@@ -351,7 +542,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "후 — hu",
+          "audioAssetRef": null,
+          "speechText": "후",
+          "speechLanguage": "korean",
+          "nativeReading": "후",
+          "romanization": "hu"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "뒤 — dwi",
+          "audioAssetRef": null,
+          "speechText": "뒤",
+          "speechLanguage": "korean",
+          "nativeReading": "뒤",
+          "romanization": "dwi",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "behind / after",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "후",
+        "romanization": "hu",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -360,14 +590,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person walking away, leaving a trail of footprints behind.",
+    "originAnchor": "An early foot held back by a thread-like element suggests lagging behind; the thread-like element may also have supplied the sound.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/after/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a tall twisted sequence of linked curves, more like a traced path or repeated movement than a recognizable modern 後.",
+        "changeNoteFromPrevious": "The earliest form shows a foot held back by a thread-like element, expressing lagging behind; some analyses treat the thread-like element as phonetic.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-後"
@@ -393,8 +623,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a tall twisted sequence of linked curves, more like a traced path or repeated movement than a recognizable modern 後.",
-        "transitionNote": "Oracle is a tall twisted sequence of linked curves, more like a traced path or repeated movement than a recognizable modern 後.",
+        "stageExplanation": "An early delayed/lagging movement graph underlies the “behind/after” word; exact cord/foot details vary by analysis.",
+        "transitionNote": "The earliest form shows a foot held back by a thread-like element, expressing lagging behind; some analyses treat the thread-like element as phonetic.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -404,7 +634,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/after/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze adds a clear walking-side stroke at the left while the central twisted thread and lower foot-like element remain distinct.",
+        "changeNoteFromPrevious": "Adds a clear walking-side stroke at the left while the central twisted thread and lower foot-like element remain distinct.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-後"
@@ -430,8 +660,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze adds a clear walking-side stroke at the left while the central twisted thread and lower foot-like element remain distinct.",
-        "transitionNote": "Bronze adds a clear walking-side stroke at the left while the central twisted thread and lower foot-like element remain distinct.",
+        "stageExplanation": "Adds a clear walking-side stroke at the left while the central twisted thread and lower foot-like element remain distinct.",
+        "transitionNote": "Adds a clear walking-side stroke at the left while the central twisted thread and lower foot-like element remain distinct.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -441,7 +671,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/after/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal organizes the left walking component and the stacked central/lower movement marks into a tall, balanced form.",
+        "changeNoteFromPrevious": "Organizes the left walking component and the stacked central/lower movement marks into a tall, balanced form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-後"
@@ -467,8 +697,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal organizes the left walking component and the stacked central/lower movement marks into a tall, balanced form.",
-        "transitionNote": "Small Seal organizes the left walking component and the stacked central/lower movement marks into a tall, balanced form.",
+        "stageExplanation": "Organizes the left walking component and the stacked central/lower movement marks into a tall, balanced form.",
+        "transitionNote": "Organizes the left walking component and the stacked central/lower movement marks into a tall, balanced form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -478,7 +708,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/after/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical shortens the curves and squares the interior, bringing the structure very close to traditional 後.",
+        "changeNoteFromPrevious": "Shortens the curves and squares the interior, bringing the structure very close to traditional.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-後"
@@ -504,8 +734,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical shortens the curves and squares the interior, bringing the structure very close to traditional 後.",
-        "transitionNote": "Clerical shortens the curves and squares the interior, bringing the structure very close to traditional 後.",
+        "stageExplanation": "Shortens the curves and squares the interior, bringing the structure very close to traditional.",
+        "transitionNote": "Shortens the curves and squares the interior, bringing the structure very close to traditional.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -515,7 +745,7 @@
         "label": "Regular Script",
         "form": "後",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 後 standardizes 彳 on the left and the layered right side; Mainland simplified 后 replaces this historical structure with a much shorter modern form.",
+        "changeNoteFromPrevious": "Traditional 後 preserves the historical after/behind graph. Mainland 后 is a later simplification/merger with a historically different character.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -541,8 +771,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 後 standardizes 彳 on the left and the layered right side; Mainland simplified 后 replaces this historical structure with a much shorter modern form.",
-        "transitionNote": "Regular 後 standardizes 彳 on the left and the layered right side; Mainland simplified 后 replaces this historical structure with a much shorter modern form.",
+        "stageExplanation": "Traditional 後 preserves the historical after/behind graph. Mainland 后 is a later simplification/merger with a historically different character.",
+        "transitionNote": "Traditional 後 preserves the historical after/behind graph. Mainland 后 is a later simplification/merger with a historically different character.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -550,7 +780,7 @@
     ],
     "origin": {
       "concept": "after",
-      "explanation": "A person walking away, leaving a trail of footprints behind.",
+      "explanation": "An early graph shows delayed or lagging movement; a walking/path component is added later in the traditional form.",
       "asset": {
         "characterID": "after",
         "historicalStage": null,
@@ -567,7 +797,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of after",
+        "accessibilityDescription": "Illustration of after / behind",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -585,7 +815,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'after', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'after / behind', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -655,13 +885,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "小",
   "coreSharedMeaning": "small",
-  "recognitionTakeaway": "Regular 小 keeps that hierarchy: one long central hook flanked by two small diagonal dots.",
+  "recognitionTakeaway": "The small-mark sign is standardized as 小; exact pictorial motivation remains debated.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5C0F",
   "simplifiedForm": "小",
@@ -15,9 +15,9 @@
     "Oracle already uses three separate strokes: one tall center and two shorter side marks.",
     "Regular 小 keeps that hierarchy: one long central hook flanked by two small diagonal dots."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-005-小-u5C0F",
+  "contentFolder": "content/release/symbols/small",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-005-小-u5C0F/research.md",
+  "researchNotesPath": null,
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "small"
       ],
       "examples": [
+        {
+          "text": "小",
+          "reading": "xiǎo",
+          "translation": "small",
+          "speechText": "小",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "xiǎo"
+          ]
+        },
         {
           "text": "小狗",
           "reading": "xiǎogǒu",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "小孩",
+          "reading": "xiǎohái",
+          "translation": "child",
+          "speechText": "小孩",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这只猫很小。",
           "reading": "Zhè zhī māo hěn xiǎo.",
           "translation": "This cat is small.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "小",
@@ -98,6 +127,18 @@
         "small"
       ],
       "taiwanExamples": [
+        {
+          "text": "小",
+          "reading": "xiǎo",
+          "translation": "small",
+          "speechText": "小",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "小狗",
           "reading": "xiǎogǒu",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "小",
+          "reading": "siu2",
+          "translation": "small",
+          "speechText": "小",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "小狗",
           "reading": "siu2 gau2",
@@ -203,24 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "小",
       "readings": [
         {
-          "system": "on",
-          "value": "ショウ (shō)",
+          "system": "onyomi",
+          "value": "ショウ — shō",
           "audioAssetRef": null,
           "speechText": "しょう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ショウ",
+          "romanization": "shō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "ちいさい (chiisai)",
+          "system": "kunyomi",
+          "value": "ちいさい — chiisai",
           "audioAssetRef": null,
           "speechText": "ちいさい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ちいさい",
+          "romanization": "chiisai",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "こ — ko",
+          "audioAssetRef": null,
+          "speechText": "こ",
+          "speechLanguage": "japanese",
+          "nativeReading": "こ",
+          "romanization": "ko",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +310,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "小"
-          ]
+          ],
+          "kanaReading": "ちいさい",
+          "coversReadings": [
+            "ちいさい"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "小",
+              "reading": "ちい"
+            },
+            {
+              "text": "さい"
+            }
+          ],
+          "furiganaHtml": "<ruby>小<rt>ちい</rt></ruby>さい"
         },
         {
           "text": "小学校",
@@ -253,7 +338,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "小"
-          ]
+          ],
+          "kanaReading": "しょうがっこう",
+          "coversReadings": [
+            "ショウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "小学校",
+              "reading": "しょうがっこう"
+            }
+          ],
+          "furiganaHtml": "<ruby>小学校<rt>しょうがっこう</rt></ruby>"
+        },
+        {
+          "text": "小説",
+          "reading": "shōsetsu",
+          "translation": "novel",
+          "speechText": "小説",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しょうせつ",
+          "furiganaSegments": [
+            {
+              "text": "小説",
+              "reading": "しょうせつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>小説<rt>しょうせつ</rt></ruby>"
+        },
+        {
+          "text": "小型",
+          "reading": "kogata",
+          "translation": "small-sized",
+          "speechText": "小型",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こがた",
+          "coversReadings": [
+            "こ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "小型",
+              "reading": "こがた"
+            }
+          ],
+          "furiganaHtml": "<ruby>小型<rt>こがた</rt></ruby>"
         },
         {
           "text": "この犬は小さいです。",
@@ -267,33 +406,97 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "小"
-          ]
+          ],
+          "kanaReading": "このいぬはちいさいです。",
+          "furiganaSegments": [
+            {
+              "text": "この"
+            },
+            {
+              "text": "犬",
+              "reading": "いぬ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "小",
+              "reading": "ちい"
+            },
+            {
+              "text": "さいです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "この<ruby>犬<rt>いぬ</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さいです。"
+        },
+        {
+          "text": "小鳥",
+          "reading": "kotori",
+          "translation": "small bird",
+          "speechText": "小鳥",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ことり",
+          "furiganaSegments": [
+            {
+              "text": "小鳥",
+              "reading": "ことり"
+            }
+          ],
+          "furiganaHtml": "<ruby>小鳥<rt>ことり</rt></ruby>"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ちいさい",
+        "romanization": "chiisai",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "小",
       "readings": [
         {
           "system": "hanja",
-          "value": "소 / so",
+          "value": "소 — so",
           "audioAssetRef": null,
           "speechText": "소",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "작다 / jakda",
-          "audioAssetRef": null,
-          "speechText": "작다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "소",
+          "romanization": "so"
         }
       ],
       "glosses": [
         "small"
       ],
       "examples": [
+        {
+          "text": "작다",
+          "reading": "jakda",
+          "translation": "small",
+          "speechText": "작다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "소형",
           "reading": "sohyeong",
@@ -323,6 +526,18 @@
           ]
         },
         {
+          "text": "소규모",
+          "reading": "sogyumo",
+          "translation": "small-scale",
+          "speechText": "소규모",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "이 개는 작아요.",
           "reading": "i gaeneun jagayo.",
           "translation": "This dog is small.",
@@ -337,7 +552,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "소 — so",
+          "audioAssetRef": null,
+          "speechText": "소",
+          "speechLanguage": "korean",
+          "nativeReading": "소",
+          "romanization": "so"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "작다 — jakda",
+          "audioAssetRef": null,
+          "speechText": "작다",
+          "speechLanguage": "korean",
+          "nativeReading": "작다",
+          "romanization": "jakda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "small",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "소",
+        "romanization": "so",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +600,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Three small upright pieces, with the center one taller than the two on the sides.",
+    "originAnchor": "A cluster of tiny marks suggests 'small'; early forms varied, and the related meaning 'few' later separated.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/small/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle already uses three separate strokes: one tall center and two shorter side marks.",
+        "changeNoteFromPrevious": "Several tiny marks/dots represent smallness or small particles in the leading analysis.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-小"
@@ -379,8 +633,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle already uses three separate strokes: one tall center and two shorter side marks.",
-        "transitionNote": "Oracle already uses three separate strokes: one tall center and two shorter side marks.",
+        "stageExplanation": "Several tiny marks/dots represent smallness or small particles in the leading analysis.",
+        "transitionNote": "Several tiny marks/dots represent smallness or small particles in the leading analysis.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +644,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/small/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze turns the center into a small diamond-like mark while the two side strokes remain detached.",
+        "changeNoteFromPrevious": "Turns the center into a small diamond-like mark while the two side strokes remain detached.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-小"
@@ -416,8 +670,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze turns the center into a small diamond-like mark while the two side strokes remain detached.",
-        "transitionNote": "Bronze turns the center into a small diamond-like mark while the two side strokes remain detached.",
+        "stageExplanation": "Turns the center into a small diamond-like mark while the two side strokes remain detached.",
+        "transitionNote": "Turns the center into a small diamond-like mark while the two side strokes remain detached.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +681,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/small/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal lengthens all three marks into parallel vertical lines, temporarily making them look less like the modern 小.",
+        "changeNoteFromPrevious": "Lengthens all three marks into parallel vertical lines, temporarily making them look less like the modern small form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-小"
@@ -453,8 +707,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal lengthens all three marks into parallel vertical lines, temporarily making them look less like the modern 小.",
-        "transitionNote": "Small Seal lengthens all three marks into parallel vertical lines, temporarily making them look less like the modern 小.",
+        "stageExplanation": "Lengthens all three marks into parallel vertical lines, temporarily making them look less like the modern small form.",
+        "transitionNote": "Lengthens all three marks into parallel vertical lines, temporarily making them look less like the modern small form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +718,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/small/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical restores a dominant central stroke and reduces the side lines to short detached brush marks.",
+        "changeNoteFromPrevious": "Restores a dominant central stroke and reduces the side lines to short detached brush marks.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-小"
@@ -490,8 +744,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical restores a dominant central stroke and reduces the side lines to short detached brush marks.",
-        "transitionNote": "Clerical restores a dominant central stroke and reduces the side lines to short detached brush marks.",
+        "stageExplanation": "Restores a dominant central stroke and reduces the side lines to short detached brush marks.",
+        "transitionNote": "Restores a dominant central stroke and reduces the side lines to short detached brush marks.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +755,7 @@
         "label": "Regular Script",
         "form": "小",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 小 keeps that hierarchy: one long central hook flanked by two small diagonal dots.",
+        "changeNoteFromPrevious": "The small-mark sign is standardized as 小; exact pictorial motivation remains debated.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +781,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 小 keeps that hierarchy: one long central hook flanked by two small diagonal dots.",
-        "transitionNote": "Regular 小 keeps that hierarchy: one long central hook flanked by two small diagonal dots.",
+        "stageExplanation": "The small-mark sign is standardized as 小; exact pictorial motivation remains debated.",
+        "transitionNote": "The small-mark sign is standardized as 小; exact pictorial motivation remains debated.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +790,7 @@
     ],
     "origin": {
       "concept": "small",
-      "explanation": "Three small upright pieces, with the center one taller than the two on the sides.",
+      "explanation": "Several tiny marks/dots, commonly three, representing smallness in a leading analysis.",
       "asset": {
         "characterID": "small",
         "historicalStage": null,
@@ -613,13 +867,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

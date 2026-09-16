@@ -1,0 +1,869 @@
+{
+  "id": "cloud",
+  "version": 1,
+  "coreCharacter": "云",
+  "coreSharedMeaning": "cloud; literary “say” in 云",
+  "recognitionTakeaway": "Traditional 雲 preserves the added weather element over the older 云 graph for “cloud.” Literary 云 continues the borrowed “say” use; modern Simplified Chinese later also writes “cloud” as 云.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+4E91",
+  "simplifiedForm": "云",
+  "traditionalForm": "雲",
+  "additionalMeanings": [],
+  "formationType": "pictograph",
+  "visualTeachingNotes": [
+    "Layered cloud bands above a bank of soft, gathered clouds.",
+    "Two short horizontal cloud bands sit above a large curling loop; the lower curve dominates the form.",
+    "Modern simplified 云 removes the large 雨-like upper structure entirely and returns to a compact two-horizontal-and-curl form; Traditional Chinese retains 雲."
+  ],
+  "contentFolder": "content/release/symbols/cloud",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/cloud/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 13,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "云",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "yún",
+          "audioAssetRef": null,
+          "speechText": "云",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "cloud"
+      ],
+      "examples": [
+        {
+          "text": "云",
+          "reading": "yún",
+          "translation": "cloud",
+          "speechText": "云",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "yún"
+          ]
+        },
+        {
+          "text": "云彩",
+          "reading": "yúncai",
+          "translation": "clouds",
+          "speechText": "云彩",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ]
+        },
+        {
+          "text": "乌云",
+          "reading": "wūyún",
+          "translation": "dark cloud",
+          "speechText": "乌云",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ]
+        },
+        {
+          "text": "白云",
+          "reading": "báiyún",
+          "translation": "white cloud",
+          "speechText": "白云",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "天上有白云。",
+          "reading": "Tiānshang yǒu báiyún.",
+          "translation": "There are white clouds in the sky.",
+          "speechText": "天上有白云。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "雲",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "yún",
+          "audioAssetRef": null,
+          "speechText": "雲",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "cloud"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "雲",
+          "reading": "yún",
+          "translation": "cloud",
+          "speechText": "雲",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "雲彩",
+          "reading": "yúncai",
+          "translation": "clouds",
+          "speechText": "雲彩",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ]
+        },
+        {
+          "text": "烏雲",
+          "reading": "wūyún",
+          "translation": "dark cloud",
+          "speechText": "烏雲",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ]
+        },
+        {
+          "text": "天上有白雲。",
+          "reading": "Tiānshang yǒu báiyún.",
+          "translation": "There are white clouds in the sky.",
+          "speechText": "天上有白雲。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "雲",
+          "reading": "wan4",
+          "translation": "cloud",
+          "speechText": "雲",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ]
+        },
+        {
+          "text": "烏雲",
+          "reading": "wu1 wan4",
+          "translation": "dark cloud",
+          "speechText": "烏雲",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ]
+        },
+        {
+          "text": "白雲",
+          "reading": "baak6 wan4",
+          "translation": "white cloud",
+          "speechText": "白雲",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "天上有白雲。",
+          "reading": "tin1 soeng6 jau5 baak6 wan4",
+          "translation": "There are white clouds in the sky.",
+          "speechText": "天上有白雲。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "yún",
+          "audioAssetRef": null,
+          "speechText": "雲",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "wan4",
+          "audioAssetRef": null,
+          "speechText": "雲",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "雲",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "ウン — un",
+          "audioAssetRef": null,
+          "speechText": "うん",
+          "speechLanguage": "japanese",
+          "nativeReading": "ウン",
+          "romanization": "un",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "くも — kumo",
+          "audioAssetRef": null,
+          "speechText": "くも",
+          "speechLanguage": "japanese",
+          "nativeReading": "くも",
+          "romanization": "kumo",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "cloud"
+      ],
+      "examples": [
+        {
+          "text": "雲",
+          "reading": "kumo",
+          "translation": "cloud",
+          "speechText": "雲",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ],
+          "kanaReading": "くも",
+          "coversReadings": [
+            "くも"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "雲",
+              "reading": "くも"
+            }
+          ],
+          "furiganaHtml": "<ruby>雲<rt>くも</rt></ruby>"
+        },
+        {
+          "text": "雲海",
+          "reading": "unkai",
+          "translation": "sea of clouds",
+          "speechText": "雲海",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ],
+          "kanaReading": "うんかい",
+          "coversReadings": [
+            "ウン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "雲海",
+              "reading": "うんかい"
+            }
+          ],
+          "furiganaHtml": "<ruby>雲海<rt>うんかい</rt></ruby>"
+        },
+        {
+          "text": "雨雲",
+          "reading": "amagumo",
+          "translation": "rain cloud",
+          "speechText": "雨雲",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あまぐも",
+          "furiganaSegments": [
+            {
+              "text": "雨雲",
+              "reading": "あまぐも"
+            }
+          ],
+          "furiganaHtml": "<ruby>雨雲<rt>あまぐも</rt></ruby>"
+        },
+        {
+          "text": "雲間",
+          "reading": "kumoma",
+          "translation": "gap between clouds",
+          "speechText": "雲間",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "くもま",
+          "furiganaSegments": [
+            {
+              "text": "雲間",
+              "reading": "くもま"
+            }
+          ],
+          "furiganaHtml": "<ruby>雲間<rt>くもま</rt></ruby>"
+        },
+        {
+          "text": "雲が多いです。",
+          "reading": "kumo ga ōi desu.",
+          "translation": "There are many clouds.",
+          "speechText": "雲が多いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ],
+          "kanaReading": "くもがおおいです。",
+          "furiganaSegments": [
+            {
+              "text": "雲",
+              "reading": "くも"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "多",
+              "reading": "おお"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>雲<rt>くも</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いです。"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "くも",
+        "romanization": "kumo",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "雲",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "운 — un",
+          "audioAssetRef": null,
+          "speechText": "운",
+          "speechLanguage": "korean",
+          "nativeReading": "운",
+          "romanization": "un"
+        }
+      ],
+      "glosses": [
+        "cloud"
+      ],
+      "examples": [
+        {
+          "text": "구름",
+          "reading": "gureum",
+          "translation": "cloud",
+          "speechText": "구름",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "운해",
+          "reading": "unhae",
+          "translation": "sea of clouds",
+          "speechText": "운해",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ]
+        },
+        {
+          "text": "먹구름",
+          "reading": "meokgureum",
+          "translation": "dark cloud",
+          "speechText": "먹구름",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ]
+        },
+        {
+          "text": "운무",
+          "reading": "unmu",
+          "translation": "cloud and mist",
+          "speechText": "운무",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "구름이 많아요.",
+          "reading": "gureumi manayo.",
+          "translation": "There are many clouds.",
+          "speechText": "구름이 많아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "云"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "운 — un",
+          "audioAssetRef": null,
+          "speechText": "운",
+          "speechLanguage": "korean",
+          "nativeReading": "운",
+          "romanization": "un"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "구름 — gureum",
+          "audioAssetRef": null,
+          "speechText": "구름",
+          "speechLanguage": "korean",
+          "nativeReading": "구름",
+          "romanization": "gureum",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "cloud",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "운",
+        "romanization": "un",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "Three clouds grouped together: one large curling cloud below and two smaller clouds above; together, they show a cloudy sky.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/cloud/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "An upper mark associated with the sky sits above a curling lower element. The lower element mainly carries the sound in the leading analysis, while the complete graph is used for “cloud.”",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-云"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "云",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%91/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/43_EAE3.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/cloud/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/cloud/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "云 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "An upper mark associated with the sky sits above a curling lower element. The lower element mainly carries the sound in the leading analysis, while the complete graph is used for “cloud.”",
+        "transitionNote": "An upper mark associated with the sky sits above a curling lower element. The lower element mainly carries the sound in the leading analysis, while the complete graph is used for “cloud.”",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/cloud/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "The upper and curling lower elements become more compact and regular, while the cloud word continues to use the same basic graph.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-云"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "云",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%91/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/38_E8CE.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/cloud/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/cloud/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "云 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The upper and curling lower elements become more compact and regular, while the cloud word continues to use the same basic graph.",
+        "transitionNote": "The upper and curling lower elements become more compact and regular, while the cloud word continues to use the same basic graph.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/cloud/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "A rain-and-weather element is added above the older graph, making the cloud meaning explicit after the older form had also been borrowed for “say.”",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-云"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "云",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%91/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_96F2.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/cloud/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/cloud/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "云 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A rain-and-weather element is added above the older graph, making the cloud meaning explicit after the older form had also been borrowed for “say.”",
+        "transitionNote": "A rain-and-weather element is added above the older graph, making the cloud meaning explicit after the older form had also been borrowed for “say.”",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/cloud/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The added weather element and the older lower graph are flattened into a clear top-and-bottom structure.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-云"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "云",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%91/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/93_F2DF.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/cloud/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/cloud/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "云 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The added weather element and the older lower graph are flattened into a clear top-and-bottom structure.",
+        "transitionNote": "The added weather element and the older lower graph are flattened into a clear top-and-bottom structure.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "云",
+        "assetRef": null,
+        "changeNoteFromPrevious": "Traditional 雲 preserves the added weather element over the older 云 graph for “cloud.” Literary 云 continues the borrowed “say” use; modern Simplified Chinese later also writes “cloud” as 云.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "云",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "云 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Traditional 雲 preserves the added weather element over the older 云 graph for “cloud.” Literary 云 continues the borrowed “say” use; modern Simplified Chinese later also writes “cloud” as 云.",
+        "transitionNote": "Traditional 雲 preserves the added weather element over the older 云 graph for “cloud.” Literary 云 continues the borrowed “say” use; modern Simplified Chinese later also writes “cloud” as 云.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "cloud",
+      "explanation": "The earliest form combines an upper sky/above marker with a curling lower element that mainly supplies the sound, and was used for “cloud.”",
+      "asset": {
+        "characterID": "cloud",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/cloud/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of cloud",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-云"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿱二厶.",
+    "components": [],
+    "certainty": "medium",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-云"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'cloud; literary “say” in 云', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E4%BA%91"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-云",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E4%BA%91"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-云",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

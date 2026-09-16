@@ -2,8 +2,8 @@
   "id": "work",
   "version": 1,
   "coreCharacter": "工",
-  "coreSharedMeaning": "work",
-  "recognitionTakeaway": "Regular 工 keeps exactly that three-stroke framework, with only brush taper distinguishing it from the geometric Seal form.",
+  "coreSharedMeaning": "work / craft",
+  "recognitionTakeaway": "A bladed working tool, used for working the ground or making boundaries. Some scholars instead see a carpenter’s square for measuring and marking, so the exact tool is uncertain; the character later came to mean “work” or “craft.”",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5DE5",
   "simplifiedForm": "工",
@@ -15,9 +15,9 @@
     "Oracle looks like a T-shaped handle planted into a rounded rectangular working end.",
     "Regular 工 keeps exactly that three-stroke framework, with only brush taper distinguishing it from the geometric Seal form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-057-工-u5DE5",
+  "contentFolder": "content/release/symbols/work",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-057-工-u5DE5/research.md",
+  "researchNotesPath": "content/release/symbols/work/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "work"
       ],
       "examples": [
+        {
+          "text": "工",
+          "reading": "gōng",
+          "translation": "work",
+          "speechText": "工",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "gōng"
+          ]
+        },
         {
           "text": "工作",
           "reading": "gōngzuò",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "工厂",
+          "reading": "gōngchǎng",
+          "translation": "factory",
+          "speechText": "工厂",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我在工作。",
           "reading": "Wǒ zài gōngzuò.",
           "translation": "I am working.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "工",
@@ -98,6 +127,18 @@
         "work"
       ],
       "taiwanExamples": [
+        {
+          "text": "工",
+          "reading": "gōng",
+          "translation": "work",
+          "speechText": "工",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "工作",
           "reading": "gōngzuò",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "工",
+          "reading": "gung1",
+          "translation": "work",
+          "speechText": "工",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "工作",
           "reading": "gung1 zok3",
@@ -203,17 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "工",
       "readings": [
         {
-          "system": "on",
-          "value": "コウ (kō)",
+          "system": "onyomi",
+          "value": "コウ — kō",
           "audioAssetRef": null,
           "speechText": "こう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コウ",
+          "romanization": "kō",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "onyomi",
+          "value": "ク — ku",
+          "audioAssetRef": null,
+          "speechText": "ク",
+          "speechLanguage": "japanese",
+          "nativeReading": "ク",
+          "romanization": "ku",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -232,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "工"
-          ]
+          ],
+          "kanaReading": "こうじょう",
+          "coversReadings": [
+            "コウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "工場",
+              "reading": "こうじょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>工場<rt>こうじょう</rt></ruby>"
         },
         {
           "text": "工事",
@@ -246,7 +325,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "工"
-          ]
+          ],
+          "kanaReading": "こうじ",
+          "furiganaSegments": [
+            {
+              "text": "工事",
+              "reading": "こうじ"
+            }
+          ],
+          "furiganaHtml": "<ruby>工事<rt>こうじ</rt></ruby>"
+        },
+        {
+          "text": "工業",
+          "reading": "kōgyō",
+          "translation": "industry",
+          "speechText": "工業",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうぎょう",
+          "furiganaSegments": [
+            {
+              "text": "工業",
+              "reading": "こうぎょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>工業<rt>こうぎょう</rt></ruby>"
+        },
+        {
+          "text": "工学",
+          "reading": "kōgaku",
+          "translation": "engineering",
+          "speechText": "工学",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうがく",
+          "furiganaSegments": [
+            {
+              "text": "工学",
+              "reading": "こうがく"
+            }
+          ],
+          "furiganaHtml": "<ruby>工学<rt>こうがく</rt></ruby>"
         },
         {
           "text": "工事中です。",
@@ -260,33 +387,90 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "工"
-          ]
+          ],
+          "kanaReading": "こうじちゅうです。",
+          "furiganaSegments": [
+            {
+              "text": "工事中",
+              "reading": "こうじちゅう"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>工事中<rt>こうじちゅう</rt></ruby>です。"
+        },
+        {
+          "text": "工夫",
+          "reading": "kufū",
+          "translation": "device; ingenuity; creative effort",
+          "speechText": "工夫",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "くふう",
+          "coversReadings": [
+            "ク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "工夫",
+              "reading": "くふう"
+            }
+          ],
+          "furiganaHtml": "<ruby>工夫<rt>くふう</rt></ruby>"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "コウ",
+        "romanization": "kō",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "工",
       "readings": [
         {
           "system": "hanja",
-          "value": "공 / gong",
+          "value": "공 — gong",
           "audioAssetRef": null,
           "speechText": "공",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean · work",
-          "value": "일 / il",
-          "audioAssetRef": null,
-          "speechText": "일",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "공",
+          "romanization": "gong"
         }
       ],
       "glosses": [
         "work"
       ],
       "examples": [
+        {
+          "text": "일",
+          "reading": "il",
+          "translation": "work",
+          "speechText": "일",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "공장",
           "reading": "gongjang",
@@ -316,6 +500,18 @@
           ]
         },
         {
+          "text": "공업",
+          "reading": "gongeop",
+          "translation": "industry",
+          "speechText": "공업",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "오늘 일해요.",
           "reading": "oneul ilhaeyo.",
           "translation": "I work today.",
@@ -330,7 +526,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "공 — gong",
+          "audioAssetRef": null,
+          "speechText": "공",
+          "speechLanguage": "korean",
+          "nativeReading": "공",
+          "romanization": "gong"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "일 — il",
+          "audioAssetRef": null,
+          "speechText": "일",
+          "speechLanguage": "korean",
+          "nativeReading": "일",
+          "romanization": "il",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "work",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "공",
+        "romanization": "gong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -339,14 +574,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A handled digging tool beside a person working the ground and a simple carpentry joint.",
+    "originAnchor": "A bladed tool likely represents working the ground, though some see a carpenter's square; it later came to mean 'work' or 'craft.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/work/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle looks like a T-shaped handle planted into a rounded rectangular working end.",
+        "changeNoteFromPrevious": "The selected form resembles an edged working tool rather than an abstract symbol for labor.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-工"
@@ -372,8 +607,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle looks like a T-shaped handle planted into a rounded rectangular working end.",
-        "transitionNote": "Oracle looks like a T-shaped handle planted into a rounded rectangular working end.",
+        "stageExplanation": "The selected form resembles an edged working tool rather than an abstract symbol for labor.",
+        "transitionNote": "The selected form resembles an edged working tool rather than an abstract symbol for labor.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -383,7 +618,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/work/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze removes the enclosed lower box and replaces it with a broad curved base, giving the form an I-beam or tool-handle silhouette.",
+        "changeNoteFromPrevious": "The tool outline becomes more balanced and geometric while retaining its implement-like structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-工"
@@ -409,8 +644,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze removes the enclosed lower box and replaces it with a broad curved base, giving the form an I-beam or tool-handle silhouette.",
-        "transitionNote": "Bronze removes the enclosed lower box and replaces it with a broad curved base, giving the form an I-beam or tool-handle silhouette.",
+        "stageExplanation": "The tool outline becomes more balanced and geometric while retaining its implement-like structure.",
+        "transitionNote": "The tool outline becomes more balanced and geometric while retaining its implement-like structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -420,7 +655,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/work/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal straightens both ends into clean horizontals joined by one central vertical.",
+        "changeNoteFromPrevious": "The tool is regularized into a symmetrical written shape, reducing the visibility of the original blade/implement.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-工"
@@ -446,8 +681,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal straightens both ends into clean horizontals joined by one central vertical.",
-        "transitionNote": "Small Seal straightens both ends into clean horizontals joined by one central vertical.",
+        "stageExplanation": "The tool is regularized into a symmetrical written shape, reducing the visibility of the original blade/implement.",
+        "transitionNote": "The tool is regularized into a symmetrical written shape, reducing the visibility of the original blade/implement.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -457,7 +692,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/work/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical thickens the simple I-shape and makes the top and bottom bars broad and flat.",
+        "changeNoteFromPrevious": "The curves flatten and the form becomes the compact horizontal-and-vertical structure familiar from later writing.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-工"
@@ -483,8 +718,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical thickens the simple I-shape and makes the top and bottom bars broad and flat.",
-        "transitionNote": "Clerical thickens the simple I-shape and makes the top and bottom bars broad and flat.",
+        "stageExplanation": "The curves flatten and the form becomes the compact horizontal-and-vertical structure familiar from later writing.",
+        "transitionNote": "The curves flatten and the form becomes the compact horizontal-and-vertical structure familiar from later writing.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -494,7 +729,7 @@
         "label": "Regular Script",
         "form": "工",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 工 keeps exactly that three-stroke framework, with only brush taper distinguishing it from the geometric Seal form.",
+        "changeNoteFromPrevious": "工 is now highly abstract, but its history begins with a working tool and then extends to craft/work.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -520,8 +755,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 工 keeps exactly that three-stroke framework, with only brush taper distinguishing it from the geometric Seal form.",
-        "transitionNote": "Regular 工 keeps exactly that three-stroke framework, with only brush taper distinguishing it from the geometric Seal form.",
+        "stageExplanation": "工 is now highly abstract, but its history begins with a working tool and then extends to craft/work.",
+        "transitionNote": "工 is now highly abstract, but its history begins with a working tool and then extends to craft/work.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -529,7 +764,7 @@
     ],
     "origin": {
       "concept": "work",
-      "explanation": "A handled digging tool beside a person working the ground and a simple carpentry joint.",
+      "explanation": "A bladed working tool, used for working the ground or making boundaries. Some scholars instead see a carpenter’s square for measuring and marking, so the exact tool is uncertain; the character later came to mean “work” or “craft.”",
       "asset": {
         "characterID": "work",
         "historicalStage": null,
@@ -546,7 +781,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of work",
+        "accessibilityDescription": "Illustration of work / craft",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -564,7 +799,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'work', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'work / craft', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -634,13 +869,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

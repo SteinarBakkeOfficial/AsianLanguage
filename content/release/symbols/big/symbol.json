@@ -1,0 +1,914 @@
+{
+  "id": "big",
+  "version": 1,
+  "coreCharacter": "大",
+  "coreSharedMeaning": "big / great",
+  "recognitionTakeaway": "The full human figure is reduced to the familiar three-stroke 大.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+5927",
+  "simplifiedForm": "大",
+  "traditionalForm": "大",
+  "additionalMeanings": [],
+  "formationType": "uncertain",
+  "visualTeachingNotes": [
+    "A person standing with arms stretched wide and legs apart.",
+    "Head, outstretched arms, torso, and two legs are all visible, making the human pose unmistakable.",
+    "Regular 大 fixes the pose into three strokes, preserving the broad outstretched shape while removing all anatomical detail."
+  ],
+  "contentFolder": "content/release/symbols/big",
+  "learnerCopyPath": null,
+  "researchNotesPath": null,
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 19,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "大",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "dà",
+          "audioAssetRef": null,
+          "speechText": "大",
+          "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "dài",
+          "audioAssetRef": null,
+          "speechText": "大",
+          "speechLanguage": "mandarin",
+          "usageNote": "lexicalized/common in fixed modern words such as 大夫"
+        }
+      ],
+      "glosses": [
+        "big; great"
+      ],
+      "examples": [
+        {
+          "text": "大",
+          "reading": "dà",
+          "translation": "big; great",
+          "speechText": "大",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ],
+          "coversReadings": [
+            "dà"
+          ]
+        },
+        {
+          "text": "大山",
+          "reading": "dàshān",
+          "translation": "big mountain",
+          "speechText": "大山",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ]
+        },
+        {
+          "text": "大门",
+          "reading": "dàmén",
+          "translation": "main gate",
+          "speechText": "大门",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "大小",
+          "reading": "dàxiǎo",
+          "translation": "size",
+          "speechText": "大小",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "大夫",
+          "reading": "dàifu",
+          "translation": "doctor",
+          "speechText": "大夫",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "dài"
+          ]
+        },
+        {
+          "text": "这只狗很大。",
+          "reading": "Zhè zhī gǒu hěn dà.",
+          "translation": "This dog is big.",
+          "speechText": "这只狗很大。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "大",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "dà",
+          "audioAssetRef": null,
+          "speechText": "大",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "big; great"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "大",
+          "reading": "dà",
+          "translation": "big; great",
+          "speechText": "大",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ]
+        },
+        {
+          "text": "大山",
+          "reading": "dàshān",
+          "translation": "big mountain",
+          "speechText": "大山",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ]
+        },
+        {
+          "text": "大門",
+          "reading": "dàmén",
+          "translation": "main gate",
+          "speechText": "大門",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "這隻狗很大。",
+          "reading": "Zhè zhī gǒu hěn dà.",
+          "translation": "This dog is big.",
+          "speechText": "這隻狗很大。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "大",
+          "reading": "daai6",
+          "translation": "big; great",
+          "speechText": "大",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ]
+        },
+        {
+          "text": "大山",
+          "reading": "daai6 saan1",
+          "translation": "big mountain",
+          "speechText": "大山",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ]
+        },
+        {
+          "text": "大門",
+          "reading": "daai6 mun4",
+          "translation": "main gate",
+          "speechText": "大門",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "呢隻狗好大。",
+          "reading": "ni1 zek3 gau2 hou2 daai6",
+          "translation": "This dog is big.",
+          "speechText": "呢隻狗好大。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "dà",
+          "audioAssetRef": null,
+          "speechText": "大",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "daai6",
+          "audioAssetRef": null,
+          "speechText": "大",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "大",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "ダイ — dai",
+          "audioAssetRef": null,
+          "speechText": "だい",
+          "speechLanguage": "japanese",
+          "nativeReading": "ダイ",
+          "romanization": "dai",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "onyomi",
+          "value": "タイ — tai",
+          "audioAssetRef": null,
+          "speechText": "たい",
+          "speechLanguage": "japanese",
+          "nativeReading": "タイ",
+          "romanization": "tai",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "おおきい — ōkii",
+          "audioAssetRef": null,
+          "speechText": "おおきい",
+          "speechLanguage": "japanese",
+          "nativeReading": "おおきい",
+          "romanization": "ōkii",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "おお — ō",
+          "audioAssetRef": null,
+          "speechText": "おお",
+          "speechLanguage": "japanese",
+          "nativeReading": "おお",
+          "romanization": "ō",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "big; great"
+      ],
+      "examples": [
+        {
+          "text": "大きい",
+          "reading": "ōkii",
+          "translation": "big",
+          "speechText": "大きい",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ],
+          "kanaReading": "おおきい",
+          "coversReadings": [
+            "おおきい",
+            "おお"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "大",
+              "reading": "おお"
+            },
+            {
+              "text": "きい"
+            }
+          ],
+          "furiganaHtml": "<ruby>大<rt>おお</rt></ruby>きい"
+        },
+        {
+          "text": "大学",
+          "reading": "daigaku",
+          "translation": "university",
+          "speechText": "大学",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ],
+          "kanaReading": "だいがく",
+          "coversReadings": [
+            "ダイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "大学",
+              "reading": "だいがく"
+            }
+          ],
+          "furiganaHtml": "<ruby>大学<rt>だいがく</rt></ruby>"
+        },
+        {
+          "text": "大切",
+          "reading": "taisetsu",
+          "translation": "important; precious",
+          "speechText": "大切",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たいせつ",
+          "coversReadings": [
+            "タイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "大切",
+              "reading": "たいせつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>大切<rt>たいせつ</rt></ruby>"
+        },
+        {
+          "text": "大人",
+          "reading": "otona",
+          "translation": "adult",
+          "speechText": "大人",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おとな",
+          "furiganaSegments": [
+            {
+              "text": "大人",
+              "reading": "おとな"
+            }
+          ],
+          "furiganaHtml": "<ruby>大人<rt>おとな</rt></ruby>"
+        },
+        {
+          "text": "この犬は大きいです。",
+          "reading": "kono inu wa ōkii desu.",
+          "translation": "This dog is big.",
+          "speechText": "この犬は大きいです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ],
+          "kanaReading": "このいぬはおおきいです。",
+          "furiganaSegments": [
+            {
+              "text": "この"
+            },
+            {
+              "text": "犬",
+              "reading": "いぬ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "大",
+              "reading": "おお"
+            },
+            {
+              "text": "きいです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "この<ruby>犬<rt>いぬ</rt></ruby>は<ruby>大<rt>おお</rt></ruby>きいです。"
+        },
+        {
+          "text": "大雨",
+          "reading": "ōame",
+          "translation": "heavy rain",
+          "speechText": "大雨",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おおあめ",
+          "furiganaSegments": [
+            {
+              "text": "大雨",
+              "reading": "おおあめ"
+            }
+          ],
+          "furiganaHtml": "<ruby>大雨<rt>おおあめ</rt></ruby>"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "おおきい",
+        "romanization": "ōkii",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "大",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "대 — dae",
+          "audioAssetRef": null,
+          "speechText": "대",
+          "speechLanguage": "korean",
+          "nativeReading": "대",
+          "romanization": "dae"
+        }
+      ],
+      "glosses": [
+        "big; great"
+      ],
+      "examples": [
+        {
+          "text": "크다",
+          "reading": "keuda",
+          "translation": "big",
+          "speechText": "크다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "대학",
+          "reading": "daehak",
+          "translation": "university",
+          "speechText": "대학",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ]
+        },
+        {
+          "text": "대형",
+          "reading": "daehyeong",
+          "translation": "large-sized",
+          "speechText": "대형",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ]
+        },
+        {
+          "text": "대규모",
+          "reading": "daegyumo",
+          "translation": "large-scale",
+          "speechText": "대규모",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "이 집은 커요.",
+          "reading": "i jibeun keoyo.",
+          "translation": "This house is big.",
+          "speechText": "이 집은 커요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "大"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "대 — dae",
+          "audioAssetRef": null,
+          "speechText": "대",
+          "speechLanguage": "korean",
+          "nativeReading": "대",
+          "romanization": "dae"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "크다 — keuda",
+          "audioAssetRef": null,
+          "speechText": "크다",
+          "speechLanguage": "korean",
+          "nativeReading": "크다",
+          "romanization": "keuda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "big",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "대",
+        "romanization": "dae",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A front-facing person with the body opened wide.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/big/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "A front-facing adult human figure is shown with arms and legs spread; the figure itself, not a deliberate “big gesture,” is the pictorial source.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-大"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "大",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%A4%A7/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/43_E619.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/big/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/big/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "大 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A front-facing adult human figure is shown with arms and legs spread; the figure itself, not a deliberate “big gesture,” is the pictorial source.",
+        "transitionNote": "A front-facing adult human figure is shown with arms and legs spread; the figure itself, not a deliberate “big gesture,” is the pictorial source.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/big/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "The figure is filled and simplified, but the spread arms and legs remain obvious.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-大"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "大",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%A4%A7/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/33_E9C8.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/big/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/big/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "大 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The figure is filled and simplified, but the spread arms and legs remain obvious.",
+        "transitionNote": "The figure is filled and simplified, but the spread arms and legs remain obvious.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/big/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "The head disappears and the body is reduced to three intersecting strokes: a vertical torso with two sweeping limbs.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-大"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "大",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%A4%A7/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_5927.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/big/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/big/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "大 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The head disappears and the body is reduced to three intersecting strokes: a vertical torso with two sweeping limbs.",
+        "transitionNote": "The head disappears and the body is reduced to three intersecting strokes: a vertical torso with two sweeping limbs.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/big/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The selected Clerical form briefly looks more person-like again, with a thin central body and long curved arms and legs.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-大"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "大",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%A4%A7/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/93_EADE.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/big/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/big/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "大 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The selected Clerical form briefly looks more person-like again, with a thin central body and long curved arms and legs.",
+        "transitionNote": "The selected Clerical form briefly looks more person-like again, with a thin central body and long curved arms and legs.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "大",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The full human figure is reduced to the familiar three-stroke 大.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "大",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "大 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The full human figure is reduced to the familiar three-stroke 大.",
+        "transitionNote": "The full human figure is reduced to the familiar three-stroke 大.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "big; great",
+      "explanation": "A front-facing adult human figure was used for the idea “big/great.”",
+      "asset": {
+        "characterID": "big",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/big/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of big; great",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-大"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "大 is presented first as a complete shared character.",
+    "components": [],
+    "certainty": "medium",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-大"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'big / great', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "source-zdic-大",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%A4%A7"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-大",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

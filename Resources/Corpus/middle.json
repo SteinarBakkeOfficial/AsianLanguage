@@ -2,8 +2,8 @@
   "id": "middle",
   "version": 1,
   "coreCharacter": "中",
-  "coreSharedMeaning": "middle",
-  "recognitionTakeaway": "Regular 中 squares the enclosure and extends the central vertical cleanly through it, making the “through the middle” relation visually obvious again.",
+  "coreSharedMeaning": "middle / center",
+  "recognitionTakeaway": "中 standardizes the enclosure and central line; the modern geometry preserves the idea of a visibly marked center.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+4E2D",
   "simplifiedForm": "中",
@@ -15,9 +15,9 @@
     "Oracle has a vertical pole passing through a rounded central shape, with several loose streamers or side strokes extending from it.",
     "Regular 中 squares the enclosure and extends the central vertical cleanly through it, making the “through the middle” relation visually obvious again."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-080-中-u4E2D",
+  "contentFolder": "content/release/symbols/middle",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-080-中-u4E2D/research.md",
+  "researchNotesPath": "content/release/symbols/middle/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -32,12 +32,35 @@
           "audioAssetRef": null,
           "speechText": "中",
           "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "zhòng",
+          "audioAssetRef": null,
+          "speechText": "中",
+          "speechLanguage": "mandarin",
+          "usageNote": "common verb reading: hit; be affected; win"
         }
       ],
       "glosses": [
         "middle"
       ],
       "examples": [
+        {
+          "text": "中",
+          "reading": "zhōng",
+          "translation": "middle",
+          "speechText": "中",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zhōng"
+          ]
+        },
         {
           "text": "中间",
           "reading": "zhōngjiān",
@@ -67,6 +90,33 @@
           ]
         },
         {
+          "text": "中文",
+          "reading": "Zhōngwén",
+          "translation": "Chinese language",
+          "speechText": "中文",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "中奖",
+          "reading": "zhòngjiǎng",
+          "translation": "win a prize",
+          "speechText": "中奖",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zhòng"
+          ]
+        },
+        {
           "text": "他站在中间。",
           "reading": "Tā zhàn zài zhōngjiān.",
           "translation": "He is standing in the middle.",
@@ -81,7 +131,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "中",
@@ -98,6 +150,18 @@
         "middle"
       ],
       "taiwanExamples": [
+        {
+          "text": "中",
+          "reading": "zhōng",
+          "translation": "middle",
+          "speechText": "中",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "中間",
           "reading": "zhōngjiān",
@@ -142,6 +206,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "中",
+          "reading": "zung1",
+          "translation": "middle",
+          "speechText": "中",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "中間",
           "reading": "zung1 gaan1",
@@ -203,24 +279,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "中",
       "readings": [
         {
-          "system": "on",
-          "value": "チュウ (chū)",
+          "system": "onyomi",
+          "value": "チュウ — chū",
           "audioAssetRef": null,
           "speechText": "ちゅう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "チュウ",
+          "romanization": "chū",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "なか (naka)",
+          "system": "kunyomi",
+          "value": "なか — naka",
           "audioAssetRef": null,
           "speechText": "なか",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "なか",
+          "romanization": "naka",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +323,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "中"
-          ]
+          ],
+          "kanaReading": "なか",
+          "coversReadings": [
+            "なか"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "中",
+              "reading": "なか"
+            }
+          ],
+          "furiganaHtml": "<ruby>中<rt>なか</rt></ruby>"
         },
         {
           "text": "中心",
@@ -253,7 +348,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "中"
-          ]
+          ],
+          "kanaReading": "ちゅうしん",
+          "coversReadings": [
+            "チュウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "中心",
+              "reading": "ちゅうしん"
+            }
+          ],
+          "furiganaHtml": "<ruby>中心<rt>ちゅうしん</rt></ruby>"
+        },
+        {
+          "text": "中学",
+          "reading": "chūgaku",
+          "translation": "middle school",
+          "speechText": "中学",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ちゅうがく",
+          "furiganaSegments": [
+            {
+              "text": "中学",
+              "reading": "ちゅうがく"
+            }
+          ],
+          "furiganaHtml": "<ruby>中学<rt>ちゅうがく</rt></ruby>"
+        },
+        {
+          "text": "中央",
+          "reading": "chūō",
+          "translation": "center",
+          "speechText": "中央",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ちゅうおう",
+          "furiganaSegments": [
+            {
+              "text": "中央",
+              "reading": "ちゅうおう"
+            }
+          ],
+          "furiganaHtml": "<ruby>中央<rt>ちゅうおう</rt></ruby>"
         },
         {
           "text": "箱の中にあります。",
@@ -267,33 +413,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "中"
-          ]
+          ],
+          "kanaReading": "はこのなかにあります。",
+          "furiganaSegments": [
+            {
+              "text": "箱",
+              "reading": "はこ"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "中",
+              "reading": "なか"
+            },
+            {
+              "text": "にあります"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にあります。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "なか",
+        "romanization": "naka",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "中",
       "readings": [
         {
           "system": "hanja",
-          "value": "중 / jung",
+          "value": "중 — jung",
           "audioAssetRef": null,
           "speechText": "중",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "가운데 / gaunde",
-          "audioAssetRef": null,
-          "speechText": "가운데",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "중",
+          "romanization": "jung"
         }
       ],
       "glosses": [
         "middle"
       ],
       "examples": [
+        {
+          "text": "가운데",
+          "reading": "gaunde",
+          "translation": "middle / center",
+          "speechText": "가운데",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "중심",
           "reading": "jungsim",
@@ -323,6 +510,18 @@
           ]
         },
         {
+          "text": "중앙",
+          "reading": "jungang",
+          "translation": "center",
+          "speechText": "중앙",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "가운데에 있어요.",
           "reading": "gaundee isseoyo.",
           "translation": "It is in the middle.",
@@ -337,7 +536,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "중 — jung",
+          "audioAssetRef": null,
+          "speechText": "중",
+          "speechLanguage": "korean",
+          "nativeReading": "중",
+          "romanization": "jung"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "가운데 — gaunde",
+          "audioAssetRef": null,
+          "speechText": "가운데",
+          "speechLanguage": "korean",
+          "nativeReading": "가운데",
+          "romanization": "gaunde",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "middle / center",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "중",
+        "romanization": "jung",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +584,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A central pole or marker placed through the middle of a larger object, shown as the idea of a center.",
+    "originAnchor": "A settlement flag may mark the center; other theories see a wind flag or abstract midpoint sign. The meaning became 'middle' or 'center.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/middle/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle has a vertical pole passing through a rounded central shape, with several loose streamers or side strokes extending from it.",
+        "changeNoteFromPrevious": "The selected early form marks a center with a strong central axis/marker. Other ancient variants use a pole with streamers, but both designs make the middle visually explicit.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-中"
@@ -379,8 +617,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle has a vertical pole passing through a rounded central shape, with several loose streamers or side strokes extending from it.",
-        "transitionNote": "Oracle has a vertical pole passing through a rounded central shape, with several loose streamers or side strokes extending from it.",
+        "stageExplanation": "The selected early form marks a center with a strong central axis/marker. Other ancient variants use a pole with streamers, but both designs make the middle visually explicit.",
+        "transitionNote": "The selected early form marks a center with a strong central axis/marker. Other ancient variants use a pole with streamers, but both designs make the middle visually explicit.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +628,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/middle/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the central enclosure clearer and keeps long flag-like lines flowing from the right side.",
+        "changeNoteFromPrevious": "The central axis and surrounding marker become more regular and compact.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-中"
@@ -416,8 +654,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the central enclosure clearer and keeps long flag-like lines flowing from the right side.",
-        "transitionNote": "Bronze makes the central enclosure clearer and keeps long flag-like lines flowing from the right side.",
+        "stageExplanation": "The central axis and surrounding marker become more regular and compact.",
+        "transitionNote": "The central axis and surrounding marker become more regular and compact.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +665,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/middle/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal removes the streamers and reduces the symbol to a clean vertical line passing through a rectangular enclosure.",
+        "changeNoteFromPrevious": "The center is enclosed and the vertical axis is standardized, moving closer to the later written structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-中"
@@ -453,8 +691,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal removes the streamers and reduces the symbol to a clean vertical line passing through a rectangular enclosure.",
-        "transitionNote": "Small Seal removes the streamers and reduces the symbol to a clean vertical line passing through a rectangular enclosure.",
+        "stageExplanation": "The center is enclosed and the vertical axis is standardized, moving closer to the later written structure.",
+        "transitionNote": "The center is enclosed and the vertical axis is standardized, moving closer to the later written structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +702,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/middle/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical keeps the through-line and enclosure but flattens the box and lets one side curl outward.",
+        "changeNoteFromPrevious": "The rounded enclosure flattens into a rectangular form around the central vertical stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-中"
@@ -490,8 +728,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical keeps the through-line and enclosure but flattens the box and lets one side curl outward.",
-        "transitionNote": "Clerical keeps the through-line and enclosure but flattens the box and lets one side curl outward.",
+        "stageExplanation": "The rounded enclosure flattens into a rectangular form around the central vertical stroke.",
+        "transitionNote": "The rounded enclosure flattens into a rectangular form around the central vertical stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +739,7 @@
         "label": "Regular Script",
         "form": "中",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 中 squares the enclosure and extends the central vertical cleanly through it, making the “through the middle” relation visually obvious again.",
+        "changeNoteFromPrevious": "中 standardizes the enclosure and central line; the modern geometry preserves the idea of a visibly marked center.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +765,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 中 squares the enclosure and extends the central vertical cleanly through it, making the “through the middle” relation visually obvious again.",
-        "transitionNote": "Regular 中 squares the enclosure and extends the central vertical cleanly through it, making the “through the middle” relation visually obvious again.",
+        "stageExplanation": "中 standardizes the enclosure and central line; the modern geometry preserves the idea of a visibly marked center.",
+        "transitionNote": "中 standardizes the enclosure and central line; the modern geometry preserves the idea of a visibly marked center.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +774,7 @@
     ],
     "origin": {
       "concept": "middle",
-      "explanation": "A central pole or marker placed through the middle of a larger object, shown as the idea of a center.",
+      "explanation": "Early forms express a center through a central pole/axis or by marking the midpoint of a line.",
       "asset": {
         "characterID": "middle",
         "historicalStage": null,
@@ -553,7 +791,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of middle",
+        "accessibilityDescription": "Illustration of middle / center",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +809,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'middle', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'middle / center', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +879,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

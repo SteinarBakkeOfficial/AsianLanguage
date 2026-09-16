@@ -2,8 +2,8 @@
   "id": "bean",
   "version": 1,
   "coreCharacter": "豆",
-  "coreSharedMeaning": "bean",
-  "recognitionTakeaway": "Regular 豆 preserves the stacked vessel structure as a top lid, central container, narrow support, and bottom strokes even though the everyday meaning later shifted to “bean.”",
+  "coreSharedMeaning": "bean (originally a vessel)",
+  "recognitionTakeaway": "This picture shows a high-footed lidded vessel, not a bean. The vessel’s name sounded like the word for beans, so its picture was borrowed to write that word; this sound-based meaning became dominant, while the vessel meaning survived mainly in historical contexts.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+8C46",
   "simplifiedForm": "豆",
@@ -15,9 +15,9 @@
     "Oracle clearly shows a bowl or vessel resting on a narrow stand and broad foot.",
     "Regular 豆 preserves the stacked vessel structure as a top lid, central container, narrow support, and bottom strokes even though the everyday meaning later shifted to “bean.”"
   ],
-  "contentFolder": "content/research/v1-symbols/rank-043-豆-u8C46",
+  "contentFolder": "content/release/symbols/bean",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-043-豆-u8C46/research.md",
+  "researchNotesPath": "content/release/symbols/bean/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -50,6 +50,9 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "豆"
+          ],
+          "coversReadings": [
+            "dòu"
           ]
         },
         {
@@ -67,6 +70,30 @@
           ]
         },
         {
+          "text": "豆子",
+          "reading": "dòuzi",
+          "translation": "bean",
+          "speechText": "豆子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "豆浆",
+          "reading": "dòujiāng",
+          "translation": "soy milk",
+          "speechText": "豆浆",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我喜欢吃豆子。",
           "reading": "Wǒ xǐhuan chī dòuzi.",
           "translation": "I like eating beans.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "豆",
@@ -125,6 +154,18 @@
           "introducedSymbols": [
             "豆"
           ]
+        },
+        {
+          "text": "豆子",
+          "reading": "dòuzi",
+          "translation": "bean",
+          "speechText": "豆子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "我喜歡吃豆子。",
@@ -183,6 +224,18 @@
           "introducedSymbols": [
             "豆"
           ]
+        },
+        {
+          "text": "呢個係豆腐。",
+          "reading": "ni1 go3 hai6 dau6 fu6",
+          "translation": "This is tofu.",
+          "speechText": "呢個係豆腐。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -203,24 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "豆",
       "readings": [
         {
-          "system": "on",
-          "value": "トウ (tō)",
+          "system": "onyomi",
+          "value": "トウ — tō",
           "audioAssetRef": null,
           "speechText": "とう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "トウ",
+          "romanization": "tō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "まめ (mame)",
+          "system": "kunyomi",
+          "value": "まめ — mame",
           "audioAssetRef": null,
           "speechText": "まめ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "まめ",
+          "romanization": "mame",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "onyomi",
+          "value": "ズ — zu",
+          "audioAssetRef": null,
+          "speechText": "ズ",
+          "speechLanguage": "japanese",
+          "nativeReading": "ズ",
+          "romanization": "zu",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +310,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "豆"
-          ]
+          ],
+          "kanaReading": "まめ",
+          "coversReadings": [
+            "まめ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "豆",
+              "reading": "まめ"
+            }
+          ],
+          "furiganaHtml": "<ruby>豆<rt>まめ</rt></ruby>"
         },
         {
           "text": "大豆",
@@ -253,7 +335,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "豆"
-          ]
+          ],
+          "kanaReading": "だいず",
+          "coversReadings": [
+            "ズ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "大豆",
+              "reading": "だいず"
+            }
+          ],
+          "furiganaHtml": "<ruby>大豆<rt>だいず</rt></ruby>"
+        },
+        {
+          "text": "豆腐",
+          "reading": "tōfu",
+          "translation": "tofu",
+          "speechText": "豆腐",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "とうふ",
+          "coversReadings": [
+            "トウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "豆腐",
+              "reading": "とうふ"
+            }
+          ],
+          "furiganaHtml": "<ruby>豆腐<rt>とうふ</rt></ruby>"
+        },
+        {
+          "text": "豆乳",
+          "reading": "tōnyū",
+          "translation": "soy milk",
+          "speechText": "豆乳",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "とうにゅう",
+          "furiganaSegments": [
+            {
+              "text": "豆乳",
+              "reading": "とうにゅう"
+            }
+          ],
+          "furiganaHtml": "<ruby>豆乳<rt>とうにゅう</rt></ruby>"
         },
         {
           "text": "豆を食べます。",
@@ -267,33 +403,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "豆"
-          ]
+          ],
+          "kanaReading": "まめをたべます。",
+          "furiganaSegments": [
+            {
+              "text": "豆",
+              "reading": "まめ"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "食",
+              "reading": "た"
+            },
+            {
+              "text": "べます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>豆<rt>まめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "まめ",
+        "romanization": "mame",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "豆",
       "readings": [
         {
           "system": "hanja",
-          "value": "두 / du",
+          "value": "두 — du",
           "audioAssetRef": null,
           "speechText": "두",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "콩 / kong",
-          "audioAssetRef": null,
-          "speechText": "콩",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "두",
+          "romanization": "du"
         }
       ],
       "glosses": [
         "bean"
       ],
       "examples": [
+        {
+          "text": "콩",
+          "reading": "kong",
+          "translation": "bean",
+          "speechText": "콩",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "두부",
           "reading": "dubu",
@@ -323,6 +500,18 @@
           ]
         },
         {
+          "text": "콩나물",
+          "reading": "kongnamul",
+          "translation": "bean sprouts",
+          "speechText": "콩나물",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "콩을 먹어요.",
           "reading": "kongeul meogeoyo.",
           "translation": "I eat beans.",
@@ -337,7 +526,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "두 — du",
+          "audioAssetRef": null,
+          "speechText": "두",
+          "speechLanguage": "korean",
+          "nativeReading": "두",
+          "romanization": "du"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "콩 — kong",
+          "audioAssetRef": null,
+          "speechText": "콩",
+          "speechLanguage": "korean",
+          "nativeReading": "콩",
+          "romanization": "kong",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "bean",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "두",
+        "romanization": "du",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +574,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A lidded pedestal vessel—the object depicted by the old pictograph, rather than a modern bean.",
+    "originAnchor": "A high-footed lidded vessel was borrowed by sound to write 'bean'; the vessel meaning survives mainly in historical contexts.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/bean/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle clearly shows a bowl or vessel resting on a narrow stand and broad foot.",
+        "changeNoteFromPrevious": "The early graph depicts a high-footed food/ritual vessel, not a bean.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-豆"
@@ -379,8 +607,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle clearly shows a bowl or vessel resting on a narrow stand and broad foot.",
-        "transitionNote": "Oracle clearly shows a bowl or vessel resting on a narrow stand and broad foot.",
+        "stageExplanation": "The early graph depicts a high-footed food/ritual vessel, not a bean.",
+        "transitionNote": "The early graph depicts a high-footed food/ritual vessel, not a bean.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +618,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/bean/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the vessel taller and more symmetrical, with a distinct rim, bowl, stem, and base.",
+        "changeNoteFromPrevious": "Makes the vessel taller and more symmetrical, with a distinct rim, bowl, stem, and base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-豆"
@@ -416,8 +644,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the vessel taller and more symmetrical, with a distinct rim, bowl, stem, and base.",
-        "transitionNote": "Bronze makes the vessel taller and more symmetrical, with a distinct rim, bowl, stem, and base.",
+        "stageExplanation": "Makes the vessel taller and more symmetrical, with a distinct rim, bowl, stem, and base.",
+        "transitionNote": "Makes the vessel taller and more symmetrical, with a distinct rim, bowl, stem, and base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +655,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/bean/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the object into an oval bowl above two straight supports and a long horizontal foot.",
+        "changeNoteFromPrevious": "Regularizes the object into an oval bowl above two straight supports and a long horizontal foot.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-豆"
@@ -453,8 +681,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the object into an oval bowl above two straight supports and a long horizontal foot.",
-        "transitionNote": "Small Seal regularizes the object into an oval bowl above two straight supports and a long horizontal foot.",
+        "stageExplanation": "Regularizes the object into an oval bowl above two straight supports and a long horizontal foot.",
+        "transitionNote": "Regularizes the object into an oval bowl above two straight supports and a long horizontal foot.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +692,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/bean/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the bowl and stand into wide horizontal brush strokes, reducing the vessel-like roundness.",
+        "changeNoteFromPrevious": "Flattens the bowl and stand into wide horizontal brush strokes, reducing the vessel-like roundness.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-豆"
@@ -490,8 +718,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the bowl and stand into wide horizontal brush strokes, reducing the vessel-like roundness.",
-        "transitionNote": "Clerical flattens the bowl and stand into wide horizontal brush strokes, reducing the vessel-like roundness.",
+        "stageExplanation": "Flattens the bowl and stand into wide horizontal brush strokes, reducing the vessel-like roundness.",
+        "transitionNote": "Flattens the bowl and stand into wide horizontal brush strokes, reducing the vessel-like roundness.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +729,7 @@
         "label": "Regular Script",
         "form": "豆",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 豆 preserves the stacked vessel structure as a top lid, central container, narrow support, and bottom strokes even though the everyday meaning later shifted to “bean.”",
+        "changeNoteFromPrevious": "The vessel picture was borrowed for the similarly sounding word for beans; the sound-based meaning later became dominant, while the vessel meaning remained mainly historical.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +755,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 豆 preserves the stacked vessel structure as a top lid, central container, narrow support, and bottom strokes even though the everyday meaning later shifted to “bean.”",
-        "transitionNote": "Regular 豆 preserves the stacked vessel structure as a top lid, central container, narrow support, and bottom strokes even though the everyday meaning later shifted to “bean.”",
+        "stageExplanation": "The vessel picture was borrowed for the similarly sounding word for beans; the sound-based meaning later became dominant, while the vessel meaning remained mainly historical.",
+        "transitionNote": "The vessel picture was borrowed for the similarly sounding word for beans; the sound-based meaning later became dominant, while the vessel meaning remained mainly historical.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +764,7 @@
     ],
     "origin": {
       "concept": "bean",
-      "explanation": "A lidded pedestal vessel—the object depicted by the old pictograph, rather than a modern bean.",
+      "explanation": "This picture shows a high-footed lidded vessel, not a bean. The vessel’s name sounded like the word for beans, so its picture was borrowed to write that word; this sound-based meaning became dominant, while the vessel meaning survived mainly in historical contexts.",
       "asset": {
         "characterID": "bean",
         "historicalStage": null,
@@ -553,7 +781,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of bean",
+        "accessibilityDescription": "Illustration of bean (originally a vessel)",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +799,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'bean', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'bean (originally a vessel)', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +869,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

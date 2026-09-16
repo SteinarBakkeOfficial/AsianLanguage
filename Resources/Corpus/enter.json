@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "入",
   "coreSharedMeaning": "enter",
-  "recognitionTakeaway": "Regular 入 keeps just those two converging strokes, one shorter and one longer, as the highly abstract modern form.",
+  "recognitionTakeaway": "Keeps just those two converging strokes, one shorter and one longer, as the highly abstract modern form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5165",
   "simplifiedForm": "入",
@@ -15,9 +15,9 @@
     "Oracle is a simple inverted V, like an open entrance or two legs converging at the top.",
     "Regular 入 keeps just those two converging strokes, one shorter and one longer, as the highly abstract modern form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-086-入-u5165",
+  "contentFolder": "content/release/symbols/enter",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-086-入-u5165/research.md",
+  "researchNotesPath": "content/release/symbols/enter/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "enter"
       ],
       "examples": [
+        {
+          "text": "入",
+          "reading": "rù",
+          "translation": "enter",
+          "speechText": "入",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "rù"
+          ]
+        },
         {
           "text": "进入",
           "reading": "jìnrù",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "入学",
+          "reading": "rùxué",
+          "translation": "enter school; enroll",
+          "speechText": "入学",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "请进入房间。",
           "reading": "Qǐng jìnrù fángjiān.",
           "translation": "Please enter the room.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "入",
@@ -98,6 +127,18 @@
         "enter"
       ],
       "taiwanExamples": [
+        {
+          "text": "入",
+          "reading": "rù",
+          "translation": "enter",
+          "speechText": "入",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "進入",
           "reading": "jìnrù",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "入",
+          "reading": "jap6",
+          "translation": "enter",
+          "speechText": "入",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "進入",
           "reading": "zeon3 jap6",
@@ -203,24 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "入",
       "readings": [
         {
-          "system": "on",
-          "value": "ニュウ (nyū)",
+          "system": "onyomi",
+          "value": "ニュウ — nyū",
           "audioAssetRef": null,
           "speechText": "にゅう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ニュウ",
+          "romanization": "nyū",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "はいる (hairu)",
+          "system": "kunyomi",
+          "value": "はいる — hairu",
           "audioAssetRef": null,
           "speechText": "はいる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "はいる",
+          "romanization": "hairu",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "いれる — ireru",
+          "audioAssetRef": null,
+          "speechText": "いれる",
+          "speechLanguage": "japanese",
+          "nativeReading": "いれる",
+          "romanization": "ireru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +310,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "入"
-          ]
+          ],
+          "kanaReading": "はいる",
+          "coversReadings": [
+            "はいる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "入",
+              "reading": "はい"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>入<rt>はい</rt></ruby>る"
         },
         {
           "text": "入口",
@@ -253,7 +338,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "入"
-          ]
+          ],
+          "kanaReading": "いりぐち",
+          "furiganaSegments": [
+            {
+              "text": "入口",
+              "reading": "いりぐち"
+            }
+          ],
+          "furiganaHtml": "<ruby>入口<rt>いりぐち</rt></ruby>"
+        },
+        {
+          "text": "入学",
+          "reading": "nyūgaku",
+          "translation": "enter school",
+          "speechText": "入学",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "にゅうがく",
+          "coversReadings": [
+            "ニュウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "入学",
+              "reading": "にゅうがく"
+            }
+          ],
+          "furiganaHtml": "<ruby>入学<rt>にゅうがく</rt></ruby>"
+        },
+        {
+          "text": "入場",
+          "reading": "nyūjō",
+          "translation": "entry / admission",
+          "speechText": "入場",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "にゅうじょう",
+          "furiganaSegments": [
+            {
+              "text": "入場",
+              "reading": "にゅうじょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>入場<rt>にゅうじょう</rt></ruby>"
         },
         {
           "text": "部屋に入ります。",
@@ -267,33 +403,100 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "入"
-          ]
+          ],
+          "kanaReading": "へやにはいります。",
+          "furiganaSegments": [
+            {
+              "text": "部屋",
+              "reading": "へや"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "入",
+              "reading": "はい"
+            },
+            {
+              "text": "ります"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>部屋<rt>へや</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ります。"
+        },
+        {
+          "text": "入れる",
+          "reading": "ireru",
+          "translation": "put in; let enter",
+          "speechText": "入れる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "いれる",
+          "coversReadings": [
+            "いれる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "入",
+              "reading": "い"
+            },
+            {
+              "text": "れる"
+            }
+          ],
+          "furiganaHtml": "<ruby>入<rt>い</rt></ruby>れる"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "はいる",
+        "romanization": "hairu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "入",
       "readings": [
         {
           "system": "hanja",
-          "value": "입 / ip",
+          "value": "입 — ip",
           "audioAssetRef": null,
           "speechText": "입",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "들어가다 / deureogada",
-          "audioAssetRef": null,
-          "speechText": "들어가다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "입",
+          "romanization": "ip"
         }
       ],
       "glosses": [
         "enter"
       ],
       "examples": [
+        {
+          "text": "들어가다",
+          "reading": "deureogada",
+          "translation": "enter / go in",
+          "speechText": "들어가다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "입구",
           "reading": "ipgu",
@@ -323,6 +526,18 @@
           ]
         },
         {
+          "text": "입학",
+          "reading": "iphak",
+          "translation": "school entrance",
+          "speechText": "입학",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "방에 들어가요.",
           "reading": "bange deureogayo.",
           "translation": "I enter the room.",
@@ -337,7 +552,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "입 — ip",
+          "audioAssetRef": null,
+          "speechText": "입",
+          "speechLanguage": "korean",
+          "nativeReading": "입",
+          "romanization": "ip"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "들어가다 — deureogada",
+          "audioAssetRef": null,
+          "speechText": "들어가다",
+          "speechLanguage": "korean",
+          "nativeReading": "들어가다",
+          "romanization": "deureogada",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "enter / go in",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "입",
+        "romanization": "ip",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +600,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person moving through the opening of a tent or doorway.",
+    "originAnchor": "The origin is uncertain: the pointed form may represent an entrance or an arrow directed inward.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/enter/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a simple inverted V, like an open entrance or two legs converging at the top.",
+        "changeNoteFromPrevious": "The early pointed form may represent an entrance or an arrow directed inward; the exact origin is uncertain.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-入"
@@ -379,8 +633,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a simple inverted V, like an open entrance or two legs converging at the top.",
-        "transitionNote": "Oracle is a simple inverted V, like an open entrance or two legs converging at the top.",
+        "stageExplanation": "Is a simple inverted V, like an open entrance or two legs converging at the top.",
+        "transitionNote": "The early pointed form may represent an entrance or an arrow directed inward; the exact origin is uncertain.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +644,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/enter/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze adds a strong central apex and makes the two lower strokes spread more like a three-pronged opening.",
+        "changeNoteFromPrevious": "Adds a strong central apex and makes the two lower strokes spread more like a three-pronged opening.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-入"
@@ -416,8 +670,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze adds a strong central apex and makes the two lower strokes spread more like a three-pronged opening.",
-        "transitionNote": "Bronze adds a strong central apex and makes the two lower strokes spread more like a three-pronged opening.",
+        "stageExplanation": "Adds a strong central apex and makes the two lower strokes spread more like a three-pronged opening.",
+        "transitionNote": "Adds a strong central apex and makes the two lower strokes spread more like a three-pronged opening.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +681,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/enter/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal rounds the top into a tall arch with two long sides, making the form temporarily look like a doorway.",
+        "changeNoteFromPrevious": "Rounds the top into a tall arch with two long sides, making the form temporarily look like a doorway.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-入"
@@ -453,8 +707,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal rounds the top into a tall arch with two long sides, making the form temporarily look like a doorway.",
-        "transitionNote": "Small Seal rounds the top into a tall arch with two long sides, making the form temporarily look like a doorway.",
+        "stageExplanation": "Rounds the top into a tall arch with two long sides, making the form temporarily look like a doorway.",
+        "transitionNote": "Rounds the top into a tall arch with two long sides, making the form temporarily look like a doorway.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +718,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/enter/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical collapses the arch into two broad diagonals meeting at a central point.",
+        "changeNoteFromPrevious": "Collapses the arch into two broad diagonals meeting at a central point.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-入"
@@ -490,8 +744,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical collapses the arch into two broad diagonals meeting at a central point.",
-        "transitionNote": "Clerical collapses the arch into two broad diagonals meeting at a central point.",
+        "stageExplanation": "Collapses the arch into two broad diagonals meeting at a central point.",
+        "transitionNote": "Collapses the arch into two broad diagonals meeting at a central point.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +755,7 @@
         "label": "Regular Script",
         "form": "入",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 入 keeps just those two converging strokes, one shorter and one longer, as the highly abstract modern form.",
+        "changeNoteFromPrevious": "Keeps just those two converging strokes, one shorter and one longer, as the highly abstract modern form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +781,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 入 keeps just those two converging strokes, one shorter and one longer, as the highly abstract modern form.",
-        "transitionNote": "Regular 入 keeps just those two converging strokes, one shorter and one longer, as the highly abstract modern form.",
+        "stageExplanation": "Keeps just those two converging strokes, one shorter and one longer, as the highly abstract modern form.",
+        "transitionNote": "Keeps just those two converging strokes, one shorter and one longer, as the highly abstract modern form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +790,7 @@
     ],
     "origin": {
       "concept": "enter",
-      "explanation": "A person moving through the opening of a tent or doorway.",
+      "explanation": "A pointed/inward shape representing entry or movement inward.",
       "asset": {
         "characterID": "enter",
         "historicalStage": null,
@@ -641,13 +895,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

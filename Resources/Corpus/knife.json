@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "刀",
   "coreSharedMeaning": "knife",
-  "recognitionTakeaway": "Regular 刀 tightens those two strokes into the familiar hooked blade and descending cutting edge.",
+  "recognitionTakeaway": "Tightens those two strokes into the familiar hooked blade and descending cutting edge.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5200",
   "simplifiedForm": "刀",
@@ -15,9 +15,9 @@
     "The Oracle glyph is little more than a long, slightly hooked blade profile.",
     "Regular 刀 tightens those two strokes into the familiar hooked blade and descending cutting edge."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-048-刀-u5200",
+  "contentFolder": "content/release/symbols/knife",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-048-刀-u5200/research.md",
+  "researchNotesPath": "content/release/symbols/knife/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -50,6 +50,9 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "刀"
+          ],
+          "coversReadings": [
+            "dāo"
           ]
         },
         {
@@ -67,6 +70,30 @@
           ]
         },
         {
+          "text": "刀子",
+          "reading": "dāozi",
+          "translation": "knife",
+          "speechText": "刀子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "刀片",
+          "reading": "dāopiàn",
+          "translation": "blade",
+          "speechText": "刀片",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这把刀很锋利。",
           "reading": "Zhè bǎ dāo hěn fēnglì.",
           "translation": "This knife is sharp.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "刀",
@@ -125,6 +154,18 @@
           "introducedSymbols": [
             "刀"
           ]
+        },
+        {
+          "text": "刀子",
+          "reading": "dāozi",
+          "translation": "knife",
+          "speechText": "刀子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "這把刀很鋒利。",
@@ -183,6 +224,18 @@
           "introducedSymbols": [
             "刀"
           ]
+        },
+        {
+          "text": "呢個係菜刀。",
+          "reading": "ni1 go3 hai6 coi3 dou1",
+          "translation": "This is a kitchen knife.",
+          "speechText": "呢個係菜刀。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "刀",
       "readings": [
         {
-          "system": "on",
-          "value": "トウ (tō)",
+          "system": "onyomi",
+          "value": "トウ — tō",
           "audioAssetRef": null,
           "speechText": "とう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "トウ",
+          "romanization": "tō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "かたな (katana)",
+          "system": "kunyomi",
+          "value": "かたな — katana",
           "audioAssetRef": null,
           "speechText": "かたな",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "かたな",
+          "romanization": "katana",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "刀"
-          ]
+          ],
+          "kanaReading": "かたな",
+          "coversReadings": [
+            "かたな"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "刀",
+              "reading": "かたな"
+            }
+          ],
+          "furiganaHtml": "<ruby>刀<rt>かたな</rt></ruby>"
         },
         {
           "text": "日本刀",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "刀"
-          ]
+          ],
+          "kanaReading": "にほんとう",
+          "coversReadings": [
+            "トウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "日本刀",
+              "reading": "にほんとう"
+            }
+          ],
+          "furiganaHtml": "<ruby>日本刀<rt>にほんとう</rt></ruby>"
+        },
+        {
+          "text": "刀剣",
+          "reading": "tōken",
+          "translation": "swords; blades",
+          "speechText": "刀剣",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "とうけん",
+          "furiganaSegments": [
+            {
+              "text": "刀剣",
+              "reading": "とうけん"
+            }
+          ],
+          "furiganaHtml": "<ruby>刀剣<rt>とうけん</rt></ruby>"
+        },
+        {
+          "text": "短刀",
+          "reading": "tantō",
+          "translation": "dagger",
+          "speechText": "短刀",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たんとう",
+          "furiganaSegments": [
+            {
+              "text": "短刀",
+              "reading": "たんとう"
+            }
+          ],
+          "furiganaHtml": "<ruby>短刀<rt>たんとう</rt></ruby>"
         },
         {
           "text": "刀を使います。",
@@ -267,33 +390,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "刀"
-          ]
+          ],
+          "kanaReading": "かたなをつかいます。",
+          "furiganaSegments": [
+            {
+              "text": "刀",
+              "reading": "かたな"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "使",
+              "reading": "つか"
+            },
+            {
+              "text": "います"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>刀<rt>かたな</rt></ruby>を<ruby>使<rt>つか</rt></ruby>います。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "かたな",
+        "romanization": "katana",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "刀",
       "readings": [
         {
           "system": "hanja",
-          "value": "도 / do",
+          "value": "도 — do",
           "audioAssetRef": null,
           "speechText": "도",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "칼 / kal",
-          "audioAssetRef": null,
-          "speechText": "칼",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "도",
+          "romanization": "do"
         }
       ],
       "glosses": [
         "knife"
       ],
       "examples": [
+        {
+          "text": "칼",
+          "reading": "kal",
+          "translation": "knife / blade",
+          "speechText": "칼",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "도검",
           "reading": "dogeom",
@@ -323,6 +487,18 @@
           ]
         },
         {
+          "text": "칼날",
+          "reading": "kallal",
+          "translation": "blade",
+          "speechText": "칼날",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "칼을 써요.",
           "reading": "kareul sseoyo.",
           "translation": "I use a knife.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "도 — do",
+          "audioAssetRef": null,
+          "speechText": "도",
+          "speechLanguage": "korean",
+          "nativeReading": "도",
+          "romanization": "do"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "칼 — kal",
+          "audioAssetRef": null,
+          "speechText": "칼",
+          "speechLanguage": "korean",
+          "nativeReading": "칼",
+          "romanization": "kal",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "knife / blade",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "도",
+        "romanization": "do",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +561,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A curved knife with a bound handle and cutting blade.",
+    "originAnchor": "A knife with blade and handle.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/knife/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The Oracle glyph is little more than a long, slightly hooked blade profile.",
+        "changeNoteFromPrevious": "Is little more than a long, slightly hooked blade profile.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-刀"
@@ -379,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The Oracle glyph is little more than a long, slightly hooked blade profile.",
-        "transitionNote": "The Oracle glyph is little more than a long, slightly hooked blade profile.",
+        "stageExplanation": "Is little more than a long, slightly hooked blade profile.",
+        "transitionNote": "Is little more than a long, slightly hooked blade profile.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +605,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/knife/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the top handle thicker and adds a small forked or hooked detail at the bottom.",
+        "changeNoteFromPrevious": "Makes the top handle thicker and adds a small forked or hooked detail at the bottom.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-刀"
@@ -416,8 +631,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the top handle thicker and adds a small forked or hooked detail at the bottom.",
-        "transitionNote": "Bronze makes the top handle thicker and adds a small forked or hooked detail at the bottom.",
+        "stageExplanation": "Makes the top handle thicker and adds a small forked or hooked detail at the bottom.",
+        "transitionNote": "Makes the top handle thicker and adds a small forked or hooked detail at the bottom.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +642,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/knife/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal redraws the knife as a smooth bent outline with a long vertical side and hooked top.",
+        "changeNoteFromPrevious": "Redraws the knife as a smooth bent outline with a long vertical side and hooked top.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-刀"
@@ -453,8 +668,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal redraws the knife as a smooth bent outline with a long vertical side and hooked top.",
-        "transitionNote": "Small Seal redraws the knife as a smooth bent outline with a long vertical side and hooked top.",
+        "stageExplanation": "Redraws the knife as a smooth bent outline with a long vertical side and hooked top.",
+        "transitionNote": "Redraws the knife as a smooth bent outline with a long vertical side and hooked top.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +679,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/knife/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical rotates and broadens the form into two strong sweeping strokes that already resemble 刀.",
+        "changeNoteFromPrevious": "Rotates and broadens the form into two strong sweeping strokes that already resemble knife sign.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-刀"
@@ -490,8 +705,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical rotates and broadens the form into two strong sweeping strokes that already resemble 刀.",
-        "transitionNote": "Clerical rotates and broadens the form into two strong sweeping strokes that already resemble 刀.",
+        "stageExplanation": "Rotates and broadens the form into two strong sweeping strokes that already resemble knife sign.",
+        "transitionNote": "Rotates and broadens the form into two strong sweeping strokes that already resemble knife sign.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "刀",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 刀 tightens those two strokes into the familiar hooked blade and descending cutting edge.",
+        "changeNoteFromPrevious": "Tightens those two strokes into the familiar hooked blade and descending cutting edge.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 刀 tightens those two strokes into the familiar hooked blade and descending cutting edge.",
-        "transitionNote": "Regular 刀 tightens those two strokes into the familiar hooked blade and descending cutting edge.",
+        "stageExplanation": "Tightens those two strokes into the familiar hooked blade and descending cutting edge.",
+        "transitionNote": "Tightens those two strokes into the familiar hooked blade and descending cutting edge.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "knife",
-      "explanation": "A curved knife with a bound handle and cutting blade.",
+      "explanation": "A knife with blade and handle.",
       "asset": {
         "characterID": "knife",
         "historicalStage": null,
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

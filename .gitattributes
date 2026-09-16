@@ -1,0 +1,7 @@
+# Keep local research, production candidates, and historical revisions out of
+# `git archive` handoffs. The explicit export script applies the same boundary
+# to handoffs created by copying the project.
+"/Reference Pictures" export-ignore
+/artwork_production export-ignore
+/content/archive export-ignore
+/docs/archive export-ignore

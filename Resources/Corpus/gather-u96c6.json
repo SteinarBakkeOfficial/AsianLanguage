@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "集",
   "coreSharedMeaning": "gather",
-  "recognitionTakeaway": "Regular 集 reduces the flock to a single standardized 隹 above 木; the literal multiplicity disappears, but the bird-over-tree composition remains.",
+  "recognitionTakeaway": "Reduces the flock to a single standardized 隹 above 木; the literal multiplicity disappears, but the bird-over-tree composition remains.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+96C6",
   "simplifiedForm": "集",
@@ -15,9 +15,9 @@
     "Oracle shows one bird-like figure perched above or beside a simple tree, with the bird still relatively easy to identify.",
     "Regular 集 reduces the flock to a single standardized 隹 above 木; the literal multiplicity disappears, but the bird-over-tree composition remains."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-127-集-u96C6",
+  "contentFolder": "content/release/symbols/gather-u96c6",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-127-集-u96C6/research.md",
+  "researchNotesPath": "content/release/symbols/gather-u96c6/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "gather"
       ],
       "examples": [
+        {
+          "text": "集",
+          "reading": "jí",
+          "translation": "gather",
+          "speechText": "集",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "jí"
+          ]
+        },
         {
           "text": "集合",
           "reading": "jíhé",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "集中",
+          "reading": "jízhōng",
+          "translation": "concentrate; gather",
+          "speechText": "集中",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我们在这里集合。",
           "reading": "Wǒmen zài zhèlǐ jíhé.",
           "translation": "We gather here.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "集",
@@ -98,6 +127,18 @@
         "gather"
       ],
       "taiwanExamples": [
+        {
+          "text": "集",
+          "reading": "jí",
+          "translation": "gather",
+          "speechText": "集",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "集合",
           "reading": "jíhé",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "集",
+          "reading": "zaap6",
+          "translation": "gather",
+          "speechText": "集",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "集合",
           "reading": "zaap6 hap6",
@@ -203,31 +256,52 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "集",
       "readings": [
         {
-          "system": "on",
-          "value": "シュウ (shū)",
+          "system": "onyomi",
+          "value": "シュウ — shū",
           "audioAssetRef": null,
           "speechText": "しゅう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "シュウ",
+          "romanization": "shū",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "あつまる (atsumaru)",
+          "system": "kunyomi",
+          "value": "あつまる — atsumaru",
           "audioAssetRef": null,
           "speechText": "あつまる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "あつまる",
+          "romanization": "atsumaru",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "あつめる (atsumeru)",
+          "system": "kunyomi",
+          "value": "あつめる — atsumeru",
           "audioAssetRef": null,
           "speechText": "あつめる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "あつめる",
+          "romanization": "atsumeru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "つどう — tsudou",
+          "audioAssetRef": null,
+          "speechText": "つどう",
+          "speechLanguage": "japanese",
+          "nativeReading": "つどう",
+          "romanization": "tsudou",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +320,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "集"
-          ]
+          ],
+          "kanaReading": "あつまる",
+          "coversReadings": [
+            "あつまる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "集",
+              "reading": "あつ"
+            },
+            {
+              "text": "まる"
+            }
+          ],
+          "furiganaHtml": "<ruby>集<rt>あつ</rt></ruby>まる"
         },
         {
           "text": "集合",
@@ -260,7 +348,64 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "集"
-          ]
+          ],
+          "kanaReading": "しゅうごう",
+          "coversReadings": [
+            "シュウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "集合",
+              "reading": "しゅうごう"
+            }
+          ],
+          "furiganaHtml": "<ruby>集合<rt>しゅうごう</rt></ruby>"
+        },
+        {
+          "text": "集中",
+          "reading": "shūchū",
+          "translation": "concentration",
+          "speechText": "集中",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しゅうちゅう",
+          "furiganaSegments": [
+            {
+              "text": "集中",
+              "reading": "しゅうちゅう"
+            }
+          ],
+          "furiganaHtml": "<ruby>集中<rt>しゅうちゅう</rt></ruby>"
+        },
+        {
+          "text": "集める",
+          "reading": "atsumeru",
+          "translation": "collect / gather",
+          "speechText": "集める",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あつめる",
+          "coversReadings": [
+            "あつめる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "集",
+              "reading": "あつ"
+            },
+            {
+              "text": "める"
+            }
+          ],
+          "furiganaHtml": "<ruby>集<rt>あつ</rt></ruby>める"
         },
         {
           "text": "ここに集まります。",
@@ -274,33 +419,96 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "集"
-          ]
+          ],
+          "kanaReading": "ここにあつまります。",
+          "furiganaSegments": [
+            {
+              "text": "ここに"
+            },
+            {
+              "text": "集",
+              "reading": "あつ"
+            },
+            {
+              "text": "まります"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "ここに<ruby>集<rt>あつ</rt></ruby>まります。"
+        },
+        {
+          "text": "集う",
+          "reading": "tsudou",
+          "translation": "gather; assemble",
+          "speechText": "集う",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "つどう",
+          "coversReadings": [
+            "つどう"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "集",
+              "reading": "つど"
+            },
+            {
+              "text": "う"
+            }
+          ],
+          "furiganaHtml": "<ruby>集<rt>つど</rt></ruby>う"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "あつまる",
+        "romanization": "atsumaru",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "集",
       "readings": [
         {
           "system": "hanja",
-          "value": "집 / jip",
+          "value": "집 — jip",
           "audioAssetRef": null,
           "speechText": "집",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "모이다 / moida",
-          "audioAssetRef": null,
-          "speechText": "모이다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "집",
+          "romanization": "jip"
         }
       ],
       "glosses": [
         "gather"
       ],
       "examples": [
+        {
+          "text": "모이다",
+          "reading": "moida",
+          "translation": "gather",
+          "speechText": "모이다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "집합",
           "reading": "jiphap",
@@ -330,6 +538,18 @@
           ]
         },
         {
+          "text": "집중",
+          "reading": "jipjung",
+          "translation": "concentration",
+          "speechText": "집중",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "여기 모여요.",
           "reading": "yeogi moyeoyo.",
           "translation": "We gather here.",
@@ -344,7 +564,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "집 — jip",
+          "audioAssetRef": null,
+          "speechText": "집",
+          "speechLanguage": "korean",
+          "nativeReading": "집",
+          "romanization": "jip"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "모이다 — moida",
+          "audioAssetRef": null,
+          "speechText": "모이다",
+          "speechLanguage": "korean",
+          "nativeReading": "모이다",
+          "romanization": "moida",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "gather",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "집",
+        "romanization": "jip",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +612,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Several birds gathering and perching together on a tree.",
+    "originAnchor": "A bird and a tree combine to show birds gathering in a tree; this led to 'gather.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/gather-u96c6/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows one bird-like figure perched above or beside a simple tree, with the bird still relatively easy to identify.",
+        "changeNoteFromPrevious": "The transmitted interpretation shows a bird alighting on a tree; exact Oracle identification and multiplicity should be treated cautiously.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-集"
@@ -386,8 +645,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows one bird-like figure perched above or beside a simple tree, with the bird still relatively easy to identify.",
-        "transitionNote": "Oracle shows one bird-like figure perched above or beside a simple tree, with the bird still relatively easy to identify.",
+        "stageExplanation": "The transmitted interpretation shows a bird alighting on a tree; exact Oracle identification and multiplicity should be treated cautiously.",
+        "transitionNote": "The transmitted interpretation shows a bird alighting on a tree; exact Oracle identification and multiplicity should be treated cautiously.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +656,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/gather-u96c6/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze multiplies the birds around the central tree, making the gathering idea visually explicit.",
+        "changeNoteFromPrevious": "Multiplies the birds around the central tree, making the gathering idea visually explicit.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-集"
@@ -423,8 +682,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze multiplies the birds around the central tree, making the gathering idea visually explicit.",
-        "transitionNote": "Bronze multiplies the birds around the central tree, making the gathering idea visually explicit.",
+        "stageExplanation": "Multiplies the birds around the central tree, making the gathering idea visually explicit.",
+        "transitionNote": "Multiplies the birds around the central tree, making the gathering idea visually explicit.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +693,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/gather-u96c6/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal stacks several detailed bird forms above a tree trunk and roots, creating one of the most literal “many birds on a tree” stages.",
+        "changeNoteFromPrevious": "Stacks several detailed bird forms above a tree trunk and roots, creating one of the most literal “many birds on a tree” stages.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-集"
@@ -460,8 +719,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal stacks several detailed bird forms above a tree trunk and roots, creating one of the most literal “many birds on a tree” stages.",
-        "transitionNote": "Small Seal stacks several detailed bird forms above a tree trunk and roots, creating one of the most literal “many birds on a tree” stages.",
+        "stageExplanation": "Stacks several detailed bird forms above a tree trunk and roots, creating one of the most literal “many birds on a tree” stages.",
+        "transitionNote": "Stacks several detailed bird forms above a tree trunk and roots, creating one of the most literal “many birds on a tree” stages.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +730,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/gather-u96c6/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical compresses the birds into dense repeated upper shapes while the tree remains visible below.",
+        "changeNoteFromPrevious": "Compresses the birds into dense repeated upper shapes while the tree remains visible below.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-集"
@@ -497,8 +756,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical compresses the birds into dense repeated upper shapes while the tree remains visible below.",
-        "transitionNote": "Clerical compresses the birds into dense repeated upper shapes while the tree remains visible below.",
+        "stageExplanation": "Compresses the birds into dense repeated upper shapes while the tree remains visible below.",
+        "transitionNote": "Compresses the birds into dense repeated upper shapes while the tree remains visible below.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +767,7 @@
         "label": "Regular Script",
         "form": "集",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 集 reduces the flock to a single standardized 隹 above 木; the literal multiplicity disappears, but the bird-over-tree composition remains.",
+        "changeNoteFromPrevious": "Reduces the flock to a single standardized 隹 above 木; the literal multiplicity disappears, but the bird-over-tree composition remains.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +793,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 集 reduces the flock to a single standardized 隹 above 木; the literal multiplicity disappears, but the bird-over-tree composition remains.",
-        "transitionNote": "Regular 集 reduces the flock to a single standardized 隹 above 木; the literal multiplicity disappears, but the bird-over-tree composition remains.",
+        "stageExplanation": "Reduces the flock to a single standardized 隹 above 木; the literal multiplicity disappears, but the bird-over-tree composition remains.",
+        "transitionNote": "Reduces the flock to a single standardized 隹 above 木; the literal multiplicity disappears, but the bird-over-tree composition remains.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +802,7 @@
     ],
     "origin": {
       "concept": "gather",
-      "explanation": "Several birds gathering and perching together on a tree.",
+      "explanation": "A bird is perched on a tree; some ancient forms repeat the bird to emphasize gathering.",
       "asset": {
         "characterID": "gather-u96c6",
         "historicalStage": null,
@@ -648,13 +907,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

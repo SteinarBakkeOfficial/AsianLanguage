@@ -2,8 +2,8 @@
   "id": "long",
   "version": 1,
   "coreCharacter": "长",
-  "coreSharedMeaning": "long",
-  "recognitionTakeaway": "Modern simplified 长 removes most of the internal structure of 長, leaving a much more open four-stroke form while preserving the long downward sweep.",
+  "coreSharedMeaning": "long / grow; elder/chief",
+  "recognitionTakeaway": "Traditional 長 regularizes the old elder figure; Simplified Chinese later uses 长.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+957F",
   "simplifiedForm": "长",
@@ -15,9 +15,9 @@
     "A side-facing figure carries a large rectangular upper mass with long trailing strokes below, emphasizing length through the extended body or hair.",
     "Modern simplified 长 removes most of the internal structure of 長, leaving a much more open four-stroke form while preserving the long downward sweep."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-073-长-u957F",
+  "contentFolder": "content/release/symbols/long",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-073-长-u957F/research.md",
+  "researchNotesPath": "content/release/symbols/long/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -32,12 +32,35 @@
           "audioAssetRef": null,
           "speechText": "长",
           "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "zhǎng",
+          "audioAssetRef": null,
+          "speechText": "长",
+          "speechLanguage": "mandarin",
+          "usageNote": "common modern reading: grow; elder/chief"
         }
       ],
       "glosses": [
         "long"
       ],
       "examples": [
+        {
+          "text": "长",
+          "reading": "cháng",
+          "translation": "long",
+          "speechText": "长",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "cháng"
+          ]
+        },
         {
           "text": "很长",
           "reading": "hěn cháng",
@@ -67,6 +90,33 @@
           ]
         },
         {
+          "text": "长短",
+          "reading": "chángduǎn",
+          "translation": "length; long and short",
+          "speechText": "长短",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "长大",
+          "reading": "zhǎngdà",
+          "translation": "grow up",
+          "speechText": "长大",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zhǎng"
+          ]
+        },
+        {
           "text": "这条路很长。",
           "reading": "Zhè tiáo lù hěn cháng.",
           "translation": "This road is long.",
@@ -81,7 +131,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "長",
@@ -98,6 +150,18 @@
         "long"
       ],
       "taiwanExamples": [
+        {
+          "text": "長",
+          "reading": "cháng",
+          "translation": "long",
+          "speechText": "長",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "很長",
           "reading": "hěn cháng",
@@ -171,6 +235,18 @@
           ]
         },
         {
+          "text": "長短",
+          "reading": "coeng4 dyun2",
+          "translation": "length; long and short",
+          "speechText": "長短",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "呢條路好長。",
           "reading": "ni1 tiu4 lou6 hou2 coeng4",
           "translation": "This road is long.",
@@ -203,24 +279,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "長",
       "readings": [
         {
-          "system": "on",
-          "value": "チョウ (chō)",
+          "system": "onyomi",
+          "value": "チョウ — chō",
           "audioAssetRef": null,
           "speechText": "ちょう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "チョウ",
+          "romanization": "chō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "ながい (nagai)",
+          "system": "kunyomi",
+          "value": "ながい — nagai",
           "audioAssetRef": null,
           "speechText": "ながい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ながい",
+          "romanization": "nagai",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +323,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "长"
-          ]
+          ],
+          "kanaReading": "ながい",
+          "coversReadings": [
+            "ながい"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "長",
+              "reading": "なが"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "furiganaHtml": "<ruby>長<rt>なが</rt></ruby>い"
         },
         {
           "text": "校長",
@@ -253,7 +351,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "长"
-          ]
+          ],
+          "kanaReading": "こうちょう",
+          "coversReadings": [
+            "チョウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "校長",
+              "reading": "こうちょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>校長<rt>こうちょう</rt></ruby>"
+        },
+        {
+          "text": "長さ",
+          "reading": "nagasa",
+          "translation": "length",
+          "speechText": "長さ",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ながさ",
+          "furiganaSegments": [
+            {
+              "text": "長",
+              "reading": "なが"
+            },
+            {
+              "text": "さ"
+            }
+          ],
+          "furiganaHtml": "<ruby>長<rt>なが</rt></ruby>さ"
+        },
+        {
+          "text": "長男",
+          "reading": "chōnan",
+          "translation": "eldest son",
+          "speechText": "長男",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ちょうなん",
+          "furiganaSegments": [
+            {
+              "text": "長男",
+              "reading": "ちょうなん"
+            }
+          ],
+          "furiganaHtml": "<ruby>長男<rt>ちょうなん</rt></ruby>"
         },
         {
           "text": "この道は長いです。",
@@ -267,33 +419,77 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "长"
-          ]
+          ],
+          "kanaReading": "このみちはながいです。",
+          "furiganaSegments": [
+            {
+              "text": "この"
+            },
+            {
+              "text": "道",
+              "reading": "みち"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "長",
+              "reading": "なが"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "この<ruby>道<rt>みち</rt></ruby>は<ruby>長<rt>なが</rt></ruby>いです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ながい",
+        "romanization": "nagai",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "長",
       "readings": [
         {
           "system": "hanja",
-          "value": "장 / jang",
+          "value": "장 — jang",
           "audioAssetRef": null,
           "speechText": "장",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "길다 / gilda",
-          "audioAssetRef": null,
-          "speechText": "길다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "장",
+          "romanization": "jang"
         }
       ],
       "glosses": [
         "long"
       ],
       "examples": [
+        {
+          "text": "길다",
+          "reading": "gilda",
+          "translation": "be long",
+          "speechText": "길다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "장거리",
           "reading": "janggeori",
@@ -323,6 +519,18 @@
           ]
         },
         {
+          "text": "장기",
+          "reading": "janggi",
+          "translation": "long-term period",
+          "speechText": "장기",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "길이 길어요.",
           "reading": "giri gireoyo.",
           "translation": "The road is long.",
@@ -337,7 +545,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "장 — jang",
+          "audioAssetRef": null,
+          "speechText": "장",
+          "speechLanguage": "korean",
+          "nativeReading": "장",
+          "romanization": "jang"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "길다 — gilda",
+          "audioAssetRef": null,
+          "speechText": "길다",
+          "speechLanguage": "korean",
+          "nativeReading": "길다",
+          "romanization": "gilda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "be long",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "장",
+        "romanization": "jang",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +593,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "An elderly person with very long hair, shown beside a hanging lock of hair and a cane.",
+    "originAnchor": "A long-haired elderly person leaning on a staff.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/long/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A side-facing figure carries a large rectangular upper mass with long trailing strokes below, emphasizing length through the extended body or hair.",
+        "changeNoteFromPrevious": "A long-haired elder with a staff is the pictorial source in the leading analysis.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-长"
@@ -379,8 +626,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A side-facing figure carries a large rectangular upper mass with long trailing strokes below, emphasizing length through the extended body or hair.",
-        "transitionNote": "A side-facing figure carries a large rectangular upper mass with long trailing strokes below, emphasizing length through the extended body or hair.",
+        "stageExplanation": "A long-haired elder with a staff is the pictorial source in the leading analysis.",
+        "transitionNote": "A long-haired elder with a staff is the pictorial source in the leading analysis.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -464,7 +711,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/long/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The character becomes the densely stacked traditional 長, with several clear horizontal bands and a long lower sweep.",
+        "changeNoteFromPrevious": "The character becomes the densely stacked traditional, with several clear horizontal bands and a long lower sweep.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-长"
@@ -490,8 +737,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The character becomes the densely stacked traditional 長, with several clear horizontal bands and a long lower sweep.",
-        "transitionNote": "The character becomes the densely stacked traditional 長, with several clear horizontal bands and a long lower sweep.",
+        "stageExplanation": "The character becomes the densely stacked traditional, with several clear horizontal bands and a long lower sweep.",
+        "transitionNote": "The character becomes the densely stacked traditional, with several clear horizontal bands and a long lower sweep.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +748,7 @@
         "label": "Regular Script",
         "form": "长",
         "assetRef": null,
-        "changeNoteFromPrevious": "Modern simplified 长 removes most of the internal structure of 長, leaving a much more open four-stroke form while preserving the long downward sweep.",
+        "changeNoteFromPrevious": "Traditional 長 regularizes the old elder figure; Simplified Chinese later uses 长.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +774,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Modern simplified 长 removes most of the internal structure of 長, leaving a much more open four-stroke form while preserving the long downward sweep.",
-        "transitionNote": "Modern simplified 长 removes most of the internal structure of 長, leaving a much more open four-stroke form while preserving the long downward sweep.",
+        "stageExplanation": "Traditional 長 regularizes the old elder figure; Simplified Chinese later uses 长.",
+        "transitionNote": "Traditional 長 regularizes the old elder figure; Simplified Chinese later uses 长.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +783,7 @@
     ],
     "origin": {
       "concept": "long",
-      "explanation": "An elderly person with very long hair, shown beside a hanging lock of hair and a cane.",
+      "explanation": "A long-haired elderly person leaning on a staff in early forms.",
       "asset": {
         "characterID": "long",
         "historicalStage": null,
@@ -553,7 +800,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of long",
+        "accessibilityDescription": "Illustration of long / grow; elder/chief",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +818,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'long', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'long / grow; elder/chief', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +888,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

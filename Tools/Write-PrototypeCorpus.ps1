@@ -1,7 +1,7 @@
 param(
-  [string]$ContentPath = "content/shared-characters",
-  [string]$VisualPath = "Resources/Assets/PrototypeVisuals",
-  [string]$HistoricalGlyphPath = "Resources/Assets/HistoricalGlyphs"
+  [string]$ContentPath = "docs/archive/legacy-pilot/shared-characters",
+  [string]$VisualPath = "docs/archive/legacy-pilot/bundled-assets/PrototypeVisuals",
+  [string]$HistoricalGlyphPath = "docs/archive/legacy-pilot/bundled-assets/HistoricalGlyphs"
 )
 
 $ErrorActionPreference = "Stop"

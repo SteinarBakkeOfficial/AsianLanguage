@@ -2,8 +2,8 @@
   "id": "woman",
   "version": 1,
   "coreCharacter": "女",
-  "coreSharedMeaning": "woman",
-  "recognitionTakeaway": "Regular 女 condenses those crossing curves into three strokes, preserving the bent, crossed posture in a highly abstract form.",
+  "coreSharedMeaning": "woman / female",
+  "recognitionTakeaway": "The kneeling figure is highly abstracted into 女; the original posture is difficult to see without the historical forms.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5973",
   "simplifiedForm": "女",
@@ -11,13 +11,13 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "A woman standing in side view with her hands held in front of her body.",
+    "A woman in side view, kneeling or sitting back on her heels, with both arms/hands crossed or folded in front of her chest.",
     "The body is shown as a compact bent figure with crossed upper lines and a long angled lower stroke.",
     "Regular 女 condenses those crossing curves into three strokes, preserving the bent, crossed posture in a highly abstract form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-002-女-u5973",
+  "contentFolder": "content/release/symbols/woman",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-002-女-u5973/research.md",
+  "researchNotesPath": "content/release/symbols/woman/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "woman"
       ],
       "examples": [
+        {
+          "text": "女",
+          "reading": "nǚ",
+          "translation": "woman",
+          "speechText": "女",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "nǚ"
+          ]
+        },
         {
           "text": "女人",
           "reading": "nǚrén",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "女生",
+          "reading": "nǚshēng",
+          "translation": "female student",
+          "speechText": "女生",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "她是女生。",
           "reading": "Tā shì nǚshēng.",
           "translation": "She is a female student.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "女",
@@ -98,6 +127,18 @@
         "woman"
       ],
       "taiwanExamples": [
+        {
+          "text": "女",
+          "reading": "nǚ",
+          "translation": "woman",
+          "speechText": "女",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "女人",
           "reading": "nǚrén",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "女",
+          "reading": "neoi5",
+          "translation": "woman",
+          "speechText": "女",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "女人",
           "reading": "neoi5 jan4",
@@ -203,24 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "女",
       "readings": [
         {
-          "system": "on",
-          "value": "ジョ (jo)",
+          "system": "onyomi",
+          "value": "ジョ — jo",
           "audioAssetRef": null,
           "speechText": "じょ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ジョ",
+          "romanization": "jo",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "おんな (onna)",
+          "system": "kunyomi",
+          "value": "おんな — onna",
           "audioAssetRef": null,
           "speechText": "おんな",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "おんな",
+          "romanization": "onna",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "め — me",
+          "audioAssetRef": null,
+          "speechText": "め",
+          "speechLanguage": "japanese",
+          "nativeReading": "め",
+          "romanization": "me",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +310,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "女"
-          ]
+          ],
+          "kanaReading": "おんな",
+          "coversReadings": [
+            "おんな"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "女",
+              "reading": "おんな"
+            }
+          ],
+          "furiganaHtml": "<ruby>女<rt>おんな</rt></ruby>"
         },
         {
           "text": "女性",
@@ -253,7 +335,65 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "女"
-          ]
+          ],
+          "kanaReading": "じょせい",
+          "coversReadings": [
+            "ジョ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "女性",
+              "reading": "じょせい"
+            }
+          ],
+          "furiganaHtml": "<ruby>女性<rt>じょせい</rt></ruby>"
+        },
+        {
+          "text": "女子",
+          "reading": "joshi",
+          "translation": "woman; girl; female",
+          "speechText": "女子",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "じょし",
+          "furiganaSegments": [
+            {
+              "text": "女子",
+              "reading": "じょし"
+            }
+          ],
+          "furiganaHtml": "<ruby>女子<rt>じょし</rt></ruby>"
+        },
+        {
+          "text": "女の子",
+          "reading": "onna no ko",
+          "translation": "girl",
+          "speechText": "女の子",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おんなのこ",
+          "furiganaSegments": [
+            {
+              "text": "女",
+              "reading": "おんな"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "子",
+              "reading": "こ"
+            }
+          ],
+          "furiganaHtml": "<ruby>女<rt>おんな</rt></ruby>の<ruby>子<rt>こ</rt></ruby>"
         },
         {
           "text": "あの人は女の人です。",
@@ -267,34 +407,97 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "女"
-          ]
+          ],
+          "kanaReading": "あのひとはおんなのひとです。",
+          "furiganaSegments": [
+            {
+              "text": "あの"
+            },
+            {
+              "text": "人",
+              "reading": "ひと"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "女",
+              "reading": "おんな"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "人",
+              "reading": "ひと"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "あの<ruby>人<rt>ひと</rt></ruby>は<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>です。"
+        },
+        {
+          "text": "女神",
+          "reading": "megami",
+          "translation": "goddess",
+          "speechText": "女神",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "めがみ",
+          "coversReadings": [
+            "め"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "女神",
+              "reading": "めがみ"
+            }
+          ],
+          "furiganaHtml": "<ruby>女神<rt>めがみ</rt></ruby>"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "おんな",
+        "romanization": "onna",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "女",
       "readings": [
         {
           "system": "hanja",
-          "value": "녀 / nyeo",
+          "value": "녀 — nyeo",
           "audioAssetRef": null,
           "speechText": "녀",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "녀",
+          "romanization": "nyeo"
         },
         {
           "system": "hanja · word-initial form",
-          "value": "여 / yeo",
+          "value": "여 — yeo",
           "audioAssetRef": null,
           "speechText": "여",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "여자 / yeoja",
-          "audioAssetRef": null,
-          "speechText": "여자",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "여",
+          "romanization": "yeo"
         }
       ],
       "glosses": [
@@ -313,7 +516,8 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "女"
-          ]
+          ],
+          "exampleRole": "semanticEquivalent"
         },
         {
           "text": "여성",
@@ -330,6 +534,42 @@
           ]
         },
         {
+          "text": "여학생",
+          "reading": "yeohaksaeng",
+          "translation": "female student",
+          "speechText": "여학생",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "여왕",
+          "reading": "yeowang",
+          "translation": "queen",
+          "speechText": "여왕",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "모녀",
+          "reading": "monyeo",
+          "translation": "mother and daughter",
+          "speechText": "모녀",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "저 사람은 여자예요.",
           "reading": "jeo sarameun yeojayeyo.",
           "translation": "That person is a woman.",
@@ -344,7 +584,55 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "녀 — nyeo",
+          "audioAssetRef": null,
+          "speechText": "녀",
+          "speechLanguage": "korean",
+          "nativeReading": "녀",
+          "romanization": "nyeo"
+        },
+        {
+          "system": "hanja · word-initial form",
+          "value": "여 — yeo",
+          "audioAssetRef": null,
+          "speechText": "여",
+          "speechLanguage": "korean",
+          "nativeReading": "여",
+          "romanization": "yeo"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "여자 — yeoja",
+          "audioAssetRef": null,
+          "speechText": "여자",
+          "speechLanguage": "korean",
+          "nativeReading": "여자",
+          "romanization": "yeoja",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "woman",
+          "displayTier": "secondary",
+          "lexicalOrigin": "sinoKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "녀",
+        "romanization": "nyeo",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +641,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A woman standing in side view with her hands held in front of her body.",
+    "originAnchor": "A kneeling woman with crossed arms is the pictographic origin of 'woman' and 'female.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/woman/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The body is shown as a compact bent figure with crossed upper lines and a long angled lower stroke.",
+        "changeNoteFromPrevious": "A kneeling/seated female figure appears with the hands held or crossed in front.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-女"
@@ -386,8 +674,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The body is shown as a compact bent figure with crossed upper lines and a long angled lower stroke.",
-        "transitionNote": "The body is shown as a compact bent figure with crossed upper lines and a long angled lower stroke.",
+        "stageExplanation": "A kneeling/seated female figure appears with the hands held or crossed in front.",
+        "transitionNote": "A kneeling/seated female figure appears with the hands held or crossed in front.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -508,7 +796,7 @@
         "label": "Regular Script",
         "form": "女",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 女 condenses those crossing curves into three strokes, preserving the bent, crossed posture in a highly abstract form.",
+        "changeNoteFromPrevious": "The kneeling figure is highly abstracted into 女; the original posture is difficult to see without the historical forms.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +822,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 女 condenses those crossing curves into three strokes, preserving the bent, crossed posture in a highly abstract form.",
-        "transitionNote": "Regular 女 condenses those crossing curves into three strokes, preserving the bent, crossed posture in a highly abstract form.",
+        "stageExplanation": "The kneeling figure is highly abstracted into 女; the original posture is difficult to see without the historical forms.",
+        "transitionNote": "The kneeling figure is highly abstracted into 女; the original posture is difficult to see without the historical forms.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +831,7 @@
     ],
     "origin": {
       "concept": "woman",
-      "explanation": "A woman standing in side view with her hands held in front of her body.",
+      "explanation": "A kneeling/seated female figure, commonly with the hands crossed or held in front.",
       "asset": {
         "characterID": "woman",
         "historicalStage": null,
@@ -560,7 +848,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of woman",
+        "accessibilityDescription": "Illustration of woman / female",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +866,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'woman', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'woman / female', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +936,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -2,8 +2,8 @@
   "id": "altar",
   "version": 1,
   "coreCharacter": "示",
-  "coreSharedMeaning": "altar",
-  "recognitionTakeaway": "Regular 示 keeps the two upper horizontals and central support but adds the modern side strokes, forming the standard altar-derived shape.",
+  "coreSharedMeaning": "show / indicate",
+  "recognitionTakeaway": "The ritual sign becomes 示. Its common modern “show/indicate” use is later and is not a literal picture of displaying an object.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+793A",
   "simplifiedForm": "示",
@@ -15,9 +15,9 @@
     "Oracle shows two short horizontal slabs above a single long vertical support, like a simple altar or stand.",
     "Regular 示 keeps the two upper horizontals and central support but adds the modern side strokes, forming the standard altar-derived shape."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-056-示-u793A",
+  "contentFolder": "content/release/symbols/altar",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-056-示-u793A/research.md",
+  "researchNotesPath": "content/release/symbols/altar/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "show; indicate"
       ],
       "examples": [
+        {
+          "text": "示",
+          "reading": "shì",
+          "translation": "show; indicate",
+          "speechText": "示",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shì"
+          ]
+        },
         {
           "text": "表示",
           "reading": "biǎoshì",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "示意",
+          "reading": "shìyì",
+          "translation": "indicate; gesture",
+          "speechText": "示意",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "请出示车票。",
           "reading": "Qǐng chūshì chēpiào.",
           "translation": "Please show your ticket.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "示",
@@ -98,6 +127,18 @@
         "show; indicate"
       ],
       "taiwanExamples": [
+        {
+          "text": "示",
+          "reading": "shì",
+          "translation": "show; indicate",
+          "speechText": "示",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "表示",
           "reading": "biǎoshì",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "示",
+          "reading": "si6",
+          "translation": "show; indicate",
+          "speechText": "示",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "表示",
           "reading": "biu2 si6",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "示",
       "readings": [
         {
-          "system": "on",
-          "value": "ジ (ji)",
+          "system": "onyomi",
+          "value": "ジ — ji",
           "audioAssetRef": null,
           "speechText": "じ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ジ",
+          "romanization": "ji",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "しめす (shimesu)",
+          "system": "kunyomi",
+          "value": "しめす — shimesu",
           "audioAssetRef": null,
           "speechText": "しめす",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "しめす",
+          "romanization": "shimesu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "示"
-          ]
+          ],
+          "kanaReading": "しめす",
+          "coversReadings": [
+            "しめす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "示",
+              "reading": "しめ"
+            },
+            {
+              "text": "す"
+            }
+          ],
+          "furiganaHtml": "<ruby>示<rt>しめ</rt></ruby>す"
         },
         {
           "text": "表示",
@@ -253,7 +328,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "示"
-          ]
+          ],
+          "kanaReading": "ひょうじ",
+          "coversReadings": [
+            "ジ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "表示",
+              "reading": "ひょうじ"
+            }
+          ],
+          "furiganaHtml": "<ruby>表示<rt>ひょうじ</rt></ruby>"
+        },
+        {
+          "text": "指示",
+          "reading": "shiji",
+          "translation": "instruction; indication",
+          "speechText": "指示",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しじ",
+          "furiganaSegments": [
+            {
+              "text": "指示",
+              "reading": "しじ"
+            }
+          ],
+          "furiganaHtml": "<ruby>指示<rt>しじ</rt></ruby>"
+        },
+        {
+          "text": "提示",
+          "reading": "teiji",
+          "translation": "presentation / showing",
+          "speechText": "提示",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ていじ",
+          "furiganaSegments": [
+            {
+              "text": "提示",
+              "reading": "ていじ"
+            }
+          ],
+          "furiganaHtml": "<ruby>提示<rt>ていじ</rt></ruby>"
         },
         {
           "text": "地図を示します。",
@@ -267,33 +393,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "示"
-          ]
+          ],
+          "kanaReading": "ちずをしめします。",
+          "furiganaSegments": [
+            {
+              "text": "地図",
+              "reading": "ちず"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "示",
+              "reading": "しめ"
+            },
+            {
+              "text": "します"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>地図<rt>ちず</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>します。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "しめす",
+        "romanization": "shimesu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "示",
       "readings": [
         {
           "system": "hanja",
-          "value": "시 / si",
+          "value": "시 — si",
           "audioAssetRef": null,
           "speechText": "시",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean · show",
-          "value": "보이다 / boida",
-          "audioAssetRef": null,
-          "speechText": "보이다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "시",
+          "romanization": "si"
         }
       ],
       "glosses": [
         "show; indicate (in compounds)"
       ],
       "examples": [
+        {
+          "text": "보이다",
+          "reading": "boida",
+          "translation": "be visible / show",
+          "speechText": "보이다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "표시",
           "reading": "pyosi",
@@ -323,6 +490,18 @@
           ]
         },
         {
+          "text": "시범",
+          "reading": "sibeom",
+          "translation": "demonstration",
+          "speechText": "시범",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "표시를 봐요.",
           "reading": "pyosireul bwayo.",
           "translation": "I look at the sign/mark.",
@@ -337,7 +516,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "시 — si",
+          "audioAssetRef": null,
+          "speechText": "시",
+          "speechLanguage": "korean",
+          "nativeReading": "시",
+          "romanization": "si"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "보이다 — boida",
+          "audioAssetRef": null,
+          "speechText": "보이다",
+          "speechLanguage": "korean",
+          "nativeReading": "보이다",
+          "romanization": "boida",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "be visible / show",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "시",
+        "romanization": "si",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +564,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A stone offering altar with food and incense placed on top.",
+    "originAnchor": "An ancient spirit tablet or ritual marker used in worship. The sacred sign was later borrowed for “show” or “indicate.”",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/altar/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows two short horizontal slabs above a single long vertical support, like a simple altar or stand.",
+        "changeNoteFromPrevious": "The early sign is interpreted as a sacred/spirit tablet or ritual marker in a leading account; the exact origin remains debated.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-示"
@@ -379,8 +597,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows two short horizontal slabs above a single long vertical support, like a simple altar or stand.",
-        "transitionNote": "Oracle shows two short horizontal slabs above a single long vertical support, like a simple altar or stand.",
+        "stageExplanation": "The early sign is interpreted as a sacred/spirit tablet or ritual marker in a leading account; the exact origin remains debated.",
+        "transitionNote": "The early sign is interpreted as a sacred/spirit tablet or ritual marker in a leading account; the exact origin remains debated.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +608,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/altar/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze enlarges the top into a massive cap over a tapered central support.",
+        "changeNoteFromPrevious": "Enlarges the top into a massive cap over a tapered central support.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-示"
@@ -416,8 +634,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze enlarges the top into a massive cap over a tapered central support.",
-        "transitionNote": "Bronze enlarges the top into a massive cap over a tapered central support.",
+        "stageExplanation": "Enlarges the top into a massive cap over a tapered central support.",
+        "transitionNote": "Enlarges the top into a massive cap over a tapered central support.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +645,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/altar/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal separates the top into two clear horizontals and splits the lower support into two curved legs.",
+        "changeNoteFromPrevious": "Separates the top into two clear horizontals and splits the lower support into two curved legs.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-示"
@@ -453,8 +671,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal separates the top into two clear horizontals and splits the lower support into two curved legs.",
-        "transitionNote": "Small Seal separates the top into two clear horizontals and splits the lower support into two curved legs.",
+        "stageExplanation": "Separates the top into two clear horizontals and splits the lower support into two curved legs.",
+        "transitionNote": "Separates the top into two clear horizontals and splits the lower support into two curved legs.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +682,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/altar/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the top bars and turns the lower legs into short diagonal brush strokes.",
+        "changeNoteFromPrevious": "Flattens the top bars and turns the lower legs into short diagonal brush strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-示"
@@ -490,8 +708,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the top bars and turns the lower legs into short diagonal brush strokes.",
-        "transitionNote": "Clerical flattens the top bars and turns the lower legs into short diagonal brush strokes.",
+        "stageExplanation": "Flattens the top bars and turns the lower legs into short diagonal brush strokes.",
+        "transitionNote": "Flattens the top bars and turns the lower legs into short diagonal brush strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +719,7 @@
         "label": "Regular Script",
         "form": "示",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 示 keeps the two upper horizontals and central support but adds the modern side strokes, forming the standard altar-derived shape.",
+        "changeNoteFromPrevious": "The ritual sign becomes 示. Its common modern “show/indicate” use is later and is not a literal picture of displaying an object.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +745,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 示 keeps the two upper horizontals and central support but adds the modern side strokes, forming the standard altar-derived shape.",
-        "transitionNote": "Regular 示 keeps the two upper horizontals and central support but adds the modern side strokes, forming the standard altar-derived shape.",
+        "stageExplanation": "The ritual sign becomes 示. Its common modern “show/indicate” use is later and is not a literal picture of displaying an object.",
+        "transitionNote": "The ritual sign becomes 示. Its common modern “show/indicate” use is later and is not a literal picture of displaying an object.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +754,7 @@
     ],
     "origin": {
       "concept": "altar",
-      "explanation": "A stone offering altar with food and incense placed on top.",
+      "explanation": "A spirit/ancestor tablet or ritual post/marker in a leading analysis.",
       "asset": {
         "characterID": "altar",
         "historicalStage": null,
@@ -553,7 +771,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of altar",
+        "accessibilityDescription": "Illustration of show / indicate",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +789,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'altar', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'show / indicate', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +859,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

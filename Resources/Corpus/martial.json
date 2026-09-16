@@ -2,8 +2,8 @@
   "id": "martial",
   "version": 1,
   "coreCharacter": "武",
-  "coreSharedMeaning": "martial",
-  "recognitionTakeaway": "Regular 武 standardizes the weapon-derived upper strokes over 止, keeping the two historical components visible even though the original pictures are abstract.",
+  "coreSharedMeaning": "martial / military",
+  "recognitionTakeaway": "The military graph stabilizes as 武; the later “stop weapons” moral decomposition is not the ancient construction.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6B66",
   "simplifiedForm": "武",
@@ -15,9 +15,9 @@
     "Oracle combines a weapon-like upper structure with a distinct foot or 止-like form beneath it.",
     "Regular 武 standardizes the weapon-derived upper strokes over 止, keeping the two historical components visible even though the original pictures are abstract."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-133-武-u6B66",
+  "contentFolder": "content/release/symbols/martial",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-133-武-u6B66/research.md",
+  "researchNotesPath": "content/release/symbols/martial/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "martial"
       ],
       "examples": [
+        {
+          "text": "武",
+          "reading": "wǔ",
+          "translation": "martial",
+          "speechText": "武",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "wǔ"
+          ]
+        },
         {
           "text": "武术",
           "reading": "wǔshù",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "武功",
+          "reading": "wǔgōng",
+          "translation": "martial-arts skill",
+          "speechText": "武功",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他学武术。",
           "reading": "Tā xué wǔshù.",
           "translation": "He studies martial arts.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "武",
@@ -98,6 +127,18 @@
         "martial"
       ],
       "taiwanExamples": [
+        {
+          "text": "武",
+          "reading": "wǔ",
+          "translation": "martial",
+          "speechText": "武",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "武術",
           "reading": "wǔshù",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "武",
+          "reading": "mou5",
+          "translation": "martial",
+          "speechText": "武",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "武術",
           "reading": "mou5 seot6",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "武",
       "readings": [
         {
-          "system": "on",
-          "value": "ブ (bu)",
+          "system": "onyomi",
+          "value": "ブ — bu",
           "audioAssetRef": null,
           "speechText": "ぶ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ブ",
+          "romanization": "bu",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ム (mu)",
+          "system": "onyomi",
+          "value": "ム — mu",
           "audioAssetRef": null,
           "speechText": "む",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ム",
+          "romanization": "mu",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "武"
-          ]
+          ],
+          "kanaReading": "ぶどう",
+          "coversReadings": [
+            "ブ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "武道",
+              "reading": "ぶどう"
+            }
+          ],
+          "furiganaHtml": "<ruby>武道<rt>ぶどう</rt></ruby>"
         },
         {
           "text": "武器",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "武"
-          ]
+          ],
+          "kanaReading": "ぶき",
+          "furiganaSegments": [
+            {
+              "text": "武器",
+              "reading": "ぶき"
+            }
+          ],
+          "furiganaHtml": "<ruby>武器<rt>ぶき</rt></ruby>"
+        },
+        {
+          "text": "武者",
+          "reading": "musha",
+          "translation": "warrior",
+          "speechText": "武者",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "むしゃ",
+          "coversReadings": [
+            "ム"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "武者",
+              "reading": "むしゃ"
+            }
+          ],
+          "furiganaHtml": "<ruby>武者<rt>むしゃ</rt></ruby>"
+        },
+        {
+          "text": "武力",
+          "reading": "buryoku",
+          "translation": "military force",
+          "speechText": "武力",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ぶりょく",
+          "furiganaSegments": [
+            {
+              "text": "武力",
+              "reading": "ぶりょく"
+            }
+          ],
+          "furiganaHtml": "<ruby>武力<rt>ぶりょく</rt></ruby>"
         },
         {
           "text": "武道を習います。",
@@ -267,20 +390,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "武"
-          ]
+          ],
+          "kanaReading": "ぶどうをならいます。",
+          "furiganaSegments": [
+            {
+              "text": "武道",
+              "reading": "ぶどう"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "習",
+              "reading": "なら"
+            },
+            {
+              "text": "います"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>武道<rt>ぶどう</rt></ruby>を<ruby>習<rt>なら</rt></ruby>います。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ブ",
+        "romanization": "bu",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "武",
       "readings": [
         {
           "system": "hanja",
-          "value": "무 / mu",
+          "value": "무 — mu",
           "audioAssetRef": null,
           "speechText": "무",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "무",
+          "romanization": "mu"
         }
       ],
       "glosses": [
@@ -316,6 +474,30 @@
           ]
         },
         {
+          "text": "무도",
+          "reading": "mudo",
+          "translation": "martial arts",
+          "speechText": "무도",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "무장",
+          "reading": "mujang",
+          "translation": "armament / armed",
+          "speechText": "무장",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "무술을 배워요.",
           "reading": "musureul baewoyo.",
           "translation": "I learn martial arts.",
@@ -330,7 +512,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "무 — mu",
+          "audioAssetRef": null,
+          "speechText": "무",
+          "speechLanguage": "korean",
+          "nativeReading": "무",
+          "romanization": "mu"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "무",
+        "romanization": "mu",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -339,14 +540,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A footprint beside an upright weapon, showing movement together with martial force.",
+    "originAnchor": "A weapon and an advancing foot combine to express military force in motion; this led to 'martial.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/martial/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle combines a weapon-like upper structure with a distinct foot or 止-like form beneath it.",
+        "changeNoteFromPrevious": "Weapon combines with the old foot/movement value of foot sign, evoking military advance/action.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-武"
@@ -372,8 +573,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle combines a weapon-like upper structure with a distinct foot or 止-like form beneath it.",
-        "transitionNote": "Oracle combines a weapon-like upper structure with a distinct foot or 止-like form beneath it.",
+        "stageExplanation": "Weapon combines with the old foot/movement value of foot sign, evoking military advance/action.",
+        "transitionNote": "Weapon combines with the old foot/movement value of foot sign, evoking military advance/action.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -383,7 +584,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/martial/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze thickens the weapon and draws the lower foot more compactly, pulling the two components closer together.",
+        "changeNoteFromPrevious": "Thickens the weapon and draws the lower foot more compactly, pulling the two components closer together.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-武"
@@ -409,8 +610,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze thickens the weapon and draws the lower foot more compactly, pulling the two components closer together.",
-        "transitionNote": "Bronze thickens the weapon and draws the lower foot more compactly, pulling the two components closer together.",
+        "stageExplanation": "Thickens the weapon and draws the lower foot more compactly, pulling the two components closer together.",
+        "transitionNote": "Thickens the weapon and draws the lower foot more compactly, pulling the two components closer together.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -420,7 +621,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/martial/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal organizes the weapon above and the 止-like lower element below on a clear vertical axis.",
+        "changeNoteFromPrevious": "Organizes the weapon above and the foot sign-like lower element below on a clear vertical axis.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-武"
@@ -446,8 +647,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal organizes the weapon above and the 止-like lower element below on a clear vertical axis.",
-        "transitionNote": "Small Seal organizes the weapon above and the 止-like lower element below on a clear vertical axis.",
+        "stageExplanation": "Organizes the weapon above and the foot sign-like lower element below on a clear vertical axis.",
+        "transitionNote": "Organizes the weapon above and the foot sign-like lower element below on a clear vertical axis.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -457,7 +658,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/martial/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical broadens the horizontals and bends the lower strokes, making the whole form nearly recognizable as 武.",
+        "changeNoteFromPrevious": "The weapon and movement elements become angular and compact, nearly recognizable as the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-武"
@@ -483,8 +684,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical broadens the horizontals and bends the lower strokes, making the whole form nearly recognizable as 武.",
-        "transitionNote": "Clerical broadens the horizontals and bends the lower strokes, making the whole form nearly recognizable as 武.",
+        "stageExplanation": "The weapon and movement elements become angular and compact, nearly recognizable as the later standard structure.",
+        "transitionNote": "The weapon and movement elements become angular and compact, nearly recognizable as the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -494,7 +695,7 @@
         "label": "Regular Script",
         "form": "武",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 武 standardizes the weapon-derived upper strokes over 止, keeping the two historical components visible even though the original pictures are abstract.",
+        "changeNoteFromPrevious": "The military graph stabilizes as 武; the later “stop weapons” moral decomposition is not the ancient construction.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -520,8 +721,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 武 standardizes the weapon-derived upper strokes over 止, keeping the two historical components visible even though the original pictures are abstract.",
-        "transitionNote": "Regular 武 standardizes the weapon-derived upper strokes over 止, keeping the two historical components visible even though the original pictures are abstract.",
+        "stageExplanation": "The military graph stabilizes as 武; the later “stop weapons” moral decomposition is not the ancient construction.",
+        "transitionNote": "The military graph stabilizes as 武; the later “stop weapons” moral decomposition is not the ancient construction.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -529,7 +730,7 @@
     ],
     "origin": {
       "concept": "martial",
-      "explanation": "A footprint beside an upright weapon, showing movement together with martial force.",
+      "explanation": "A weapon is combined with a foot/movement sign in its older foot sense.",
       "asset": {
         "characterID": "martial",
         "historicalStage": null,
@@ -546,7 +747,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of martial",
+        "accessibilityDescription": "Illustration of martial / military",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -564,7 +765,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'martial', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'martial / military', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -634,13 +835,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

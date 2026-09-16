@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "一",
   "coreSharedMeaning": "one",
-  "recognitionTakeaway": "The modern 一 is still one horizontal stroke, now controlled by regular-script brush shape and a slight rise at the end.",
+  "recognitionTakeaway": "The original one-line symbol survives essentially unchanged into modern writing.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+4E00",
   "simplifiedForm": "一",
@@ -15,9 +15,9 @@
     "A thick, uneven horizontal stroke; the idea is already reduced to a single mark rather than a picture.",
     "The modern 一 is still one horizontal stroke, now controlled by regular-script brush shape and a slight rise at the end."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-081-一-u4E00",
+  "contentFolder": "content/release/symbols/one",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-081-一-u4E00/research.md",
+  "researchNotesPath": "content/release/symbols/one/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -34,10 +34,23 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "glosses": [
-        "one"
-      ],
+      "glosses": [],
       "examples": [
+        {
+          "text": "一",
+          "reading": "yī",
+          "translation": "one",
+          "speechText": "一",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "yī"
+          ]
+        },
         {
           "text": "一杯",
           "reading": "yì bēi",
@@ -45,43 +58,51 @@
           "speechText": "一杯",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "一天",
-          "reading": "yì tiān",
-          "translation": "one day",
-          "speechText": "一天",
+          "text": "第一",
+          "reading": "dì-yī",
+          "translation": "first",
+          "speechText": "第一",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "一个",
+          "reading": "yí ge",
+          "translation": "one item",
+          "speechText": "一个",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "一起",
+          "reading": "yìqǐ",
+          "translation": "together",
+          "speechText": "一起",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "introducedSymbols": []
         },
         {
-          "text": "我有一本书。",
-          "reading": "Wǒ yǒu yì běn shū.",
-          "translation": "I have one book.",
-          "speechText": "我有一本书。",
+          "text": "我要一个。",
+          "reading": "Wǒ yào yí ge.",
+          "translation": "I want one.",
+          "speechText": "我要一个。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "exampleLevel": "sentence"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "一",
@@ -94,10 +115,20 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "glosses": [
-        "one"
-      ],
+      "glosses": [],
       "taiwanExamples": [
+        {
+          "text": "一",
+          "reading": "yī",
+          "translation": "one",
+          "speechText": "一",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "一杯",
           "reading": "yì bēi",
@@ -105,56 +136,66 @@
           "speechText": "一杯",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "一天",
-          "reading": "yì tiān",
-          "translation": "one day",
-          "speechText": "一天",
+          "text": "第一",
+          "reading": "dì-yī",
+          "translation": "first",
+          "speechText": "第一",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "我有一本書。",
-          "reading": "Wǒ yǒu yì běn shū.",
-          "translation": "I have one book.",
-          "speechText": "我有一本書。",
+          "text": "一個",
+          "reading": "yí ge",
+          "translation": "one item",
+          "speechText": "一個",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "exampleLevel": "word"
+        },
+        {
+          "text": "我要一個。",
+          "reading": "Wǒ yào yí ge.",
+          "translation": "I want one.",
+          "speechText": "我要一個。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
         }
       ],
       "hongKongExamples": [
         {
+          "text": "一",
+          "reading": "jat1",
+          "translation": "one",
+          "speechText": "一",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "一個",
           "reading": "jat1 go3",
-          "translation": "one",
+          "translation": "one item",
           "speechText": "一個",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "exampleLevel": "word"
+        },
+        {
+          "text": "第一",
+          "reading": "dai6 jat1",
+          "translation": "first",
+          "speechText": "第一",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
         },
         {
           "text": "一日",
@@ -163,26 +204,16 @@
           "speechText": "一日",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "我有一本書。",
-          "reading": "ngo5 jau5 jat1 bun2 syu1",
-          "translation": "I have one book.",
-          "speechText": "我有一本書。",
+          "text": "我要一個。",
+          "reading": "ngo5 jiu3 jat1 go3.",
+          "translation": "I want one.",
+          "speechText": "我要一個。",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "exampleLevel": "sentence"
         }
       ],
       "taiwanReadings": [
@@ -203,43 +234,77 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "一",
       "readings": [
         {
-          "system": "on",
-          "value": "イチ (ichi)",
+          "system": "onyomi",
+          "value": "イチ — ichi",
           "audioAssetRef": null,
           "speechText": "いち",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "イチ",
+          "romanization": "ichi",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "ひとつ (hitotsu)",
+          "system": "kunyomi",
+          "value": "ひとつ — hitotsu",
           "audioAssetRef": null,
           "speechText": "ひとつ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ひとつ",
+          "romanization": "hitotsu",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "onyomi",
+          "value": "イツ — itsu",
+          "audioAssetRef": null,
+          "speechText": "イツ",
+          "speechLanguage": "japanese",
+          "nativeReading": "イツ",
+          "romanization": "itsu",
+          "historicalOrigin": "sinoJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
+        },
+        {
+          "system": "kunyomi",
+          "value": "ひと — hito",
+          "audioAssetRef": null,
+          "speechText": "ひと",
+          "speechLanguage": "japanese",
+          "nativeReading": "ひと",
+          "romanization": "hito",
+          "historicalOrigin": "nativeJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
         }
       ],
-      "glosses": [
-        "one"
-      ],
+      "glosses": [],
       "examples": [
         {
-          "text": "一つ",
-          "reading": "hitotsu",
-          "translation": "one thing",
-          "speechText": "一つ",
+          "text": "一年",
+          "reading": "ichinen",
+          "translation": "one year",
+          "speechText": "一年",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "kanaReading": "いちねん",
+          "coversReadings": [
+            "イチ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "一年",
+              "reading": "いちねん"
+            }
+          ],
+          "furiganaHtml": "<ruby>一年<rt>いちねん</rt></ruby>"
         },
         {
           "text": "一人",
@@ -249,51 +314,163 @@
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "kanaReading": "ひとり",
+          "furiganaSegments": [
+            {
+              "text": "一人",
+              "reading": "ひとり"
+            }
+          ],
+          "furiganaHtml": "<ruby>一人<rt>ひとり</rt></ruby>"
         },
         {
-          "text": "りんごを一つください。",
-          "reading": "ringo o hitotsu kudasai.",
-          "translation": "One apple, please.",
-          "speechText": "りんごを一つください。",
+          "text": "一つ",
+          "reading": "hitotsu",
+          "translation": "one item",
+          "speechText": "一つ",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "ひとつ",
+          "coversReadings": [
+            "ひとつ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "一",
+              "reading": "ひと"
+            },
+            {
+              "text": "つ"
+            }
+          ],
+          "furiganaHtml": "<ruby>一<rt>ひと</rt></ruby>つ"
+        },
+        {
+          "text": "一緒",
+          "reading": "issho",
+          "translation": "together",
+          "speechText": "一緒",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "いっしょ",
+          "furiganaSegments": [
+            {
+              "text": "一緒",
+              "reading": "いっしょ"
+            }
+          ],
+          "furiganaHtml": "<ruby>一緒<rt>いっしょ</rt></ruby>"
+        },
+        {
+          "text": "統一",
+          "reading": "tōitsu",
+          "translation": "unification",
+          "speechText": "統一",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "とういつ",
+          "coversReadings": [
+            "イツ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "統一",
+              "reading": "とういつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>統一<rt>とういつ</rt></ruby>"
+        },
+        {
+          "text": "一息",
+          "reading": "hitoiki",
+          "translation": "a breath; a short rest",
+          "speechText": "一息",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "ひといき",
+          "coversReadings": [
+            "ひと"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "一息",
+              "reading": "ひといき"
+            }
+          ],
+          "furiganaHtml": "<ruby>一息<rt>ひといき</rt></ruby>"
+        },
+        {
+          "text": "一つください。",
+          "reading": "hitotsu kudasai.",
+          "translation": "One, please.",
+          "speechText": "一つください。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "kanaReading": "ひとつください。",
+          "furiganaSegments": [
+            {
+              "text": "一",
+              "reading": "ひと"
+            },
+            {
+              "text": "つください"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>一<rt>ひと</rt></ruby>つください。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "イチ",
+        "romanization": "ichi",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "一",
       "readings": [
         {
           "system": "hanja",
-          "value": "일 / il",
+          "value": "일 — il",
           "audioAssetRef": null,
           "speechText": "일",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "하나 / hana",
-          "audioAssetRef": null,
-          "speechText": "하나",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "일",
+          "romanization": "il"
         }
       ],
-      "glosses": [
-        "one"
-      ],
+      "glosses": [],
       "examples": [
+        {
+          "text": "하나",
+          "reading": "hana",
+          "translation": "one",
+          "speechText": "하나",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "일등",
           "reading": "ildeung",
@@ -301,12 +478,7 @@
           "speechText": "일등",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "exampleLevel": "word"
         },
         {
           "text": "일주일",
@@ -315,29 +487,70 @@
           "speechText": "일주일",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "일회",
+          "reading": "ilhoe",
+          "translation": "one time / once",
+          "speechText": "일회",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "introducedSymbols": []
         },
         {
-          "text": "하나만 주세요.",
-          "reading": "hanaman juseyo.",
-          "translation": "Just one, please.",
-          "speechText": "하나만 주세요.",
+          "text": "하나 주세요.",
+          "reading": "hana juseyo.",
+          "translation": "One, please.",
+          "speechText": "하나 주세요.",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "一"
-          ]
+          "exampleLevel": "sentence"
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "일 — il",
+          "audioAssetRef": null,
+          "speechText": "일",
+          "speechLanguage": "korean",
+          "nativeReading": "일",
+          "romanization": "il"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "하나 — hana",
+          "audioAssetRef": null,
+          "speechText": "하나",
+          "speechLanguage": "korean",
+          "nativeReading": "하나",
+          "romanization": "hana",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "one",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "일",
+        "romanization": "il",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +559,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A single horizontal mark, shown as one line beneath several simple scenes.",
+    "originAnchor": "A single horizontal mark represents one.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/one/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A thick, uneven horizontal stroke; the idea is already reduced to a single mark rather than a picture.",
+        "changeNoteFromPrevious": "One represented directly by a single horizontal mark.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-一"
@@ -379,8 +592,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A thick, uneven horizontal stroke; the idea is already reduced to a single mark rather than a picture.",
-        "transitionNote": "A thick, uneven horizontal stroke; the idea is already reduced to a single mark rather than a picture.",
+        "stageExplanation": "One represented directly by a single horizontal mark.",
+        "transitionNote": "One represented directly by a single horizontal mark.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +603,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/one/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The same one-stroke form is kept, but it tilts upward and tapers toward the right.",
+        "changeNoteFromPrevious": "The form remains intact.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-一"
@@ -416,8 +629,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The same one-stroke form is kept, but it tilts upward and tapers toward the right.",
-        "transitionNote": "The same one-stroke form is kept, but it tilts upward and tapers toward the right.",
+        "stageExplanation": "The form remains intact.",
+        "transitionNote": "The form remains intact.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +640,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/one/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The line becomes thin, level, and almost geometric.",
+        "changeNoteFromPrevious": "The form remains intact.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-一"
@@ -453,8 +666,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The line becomes thin, level, and almost geometric.",
-        "transitionNote": "The line becomes thin, level, and almost geometric.",
+        "stageExplanation": "The form remains intact.",
+        "transitionNote": "The form remains intact.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +677,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/one/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The stroke broadens again into a flat brush line with slightly irregular edges.",
+        "changeNoteFromPrevious": "The structure remains unchanged.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-一"
@@ -490,8 +703,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The stroke broadens again into a flat brush line with slightly irregular edges.",
-        "transitionNote": "The stroke broadens again into a flat brush line with slightly irregular edges.",
+        "stageExplanation": "The structure remains unchanged.",
+        "transitionNote": "The structure remains unchanged.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +714,7 @@
         "label": "Regular Script",
         "form": "一",
         "assetRef": null,
-        "changeNoteFromPrevious": "The modern 一 is still one horizontal stroke, now controlled by regular-script brush shape and a slight rise at the end.",
+        "changeNoteFromPrevious": "The original one-line symbol survives essentially unchanged into modern writing.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +740,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The modern 一 is still one horizontal stroke, now controlled by regular-script brush shape and a slight rise at the end.",
-        "transitionNote": "The modern 一 is still one horizontal stroke, now controlled by regular-script brush shape and a slight rise at the end.",
+        "stageExplanation": "The original one-line symbol survives essentially unchanged into modern writing.",
+        "transitionNote": "The original one-line symbol survives essentially unchanged into modern writing.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +749,7 @@
     ],
     "origin": {
       "concept": "one",
-      "explanation": "A single horizontal mark, shown as one line beneath several simple scenes.",
+      "explanation": "A single horizontal mark directly represents one.",
       "asset": {
         "characterID": "one",
         "historicalStage": null,
@@ -641,13 +854,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

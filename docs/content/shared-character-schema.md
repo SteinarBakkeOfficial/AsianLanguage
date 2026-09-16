@@ -2,7 +2,7 @@
 
 ## Source of truth
 
-One UTF-8 JSON file per Shared Character under \`content/shared-characters/\` is the human-edited source. \`Resources/Corpus/\` is generated from it and is read-only at runtime.
+One UTF-8 `symbol.json` per active release Symbol under `content/release/symbols/<id>/` is the human-edited source. `Resources/Corpus/` is generated from it and is read-only at runtime. Previous active-package versions are archived under `content/archive/symbols/<id>/`; the older pilot workspace is archived under `docs/archive/legacy-pilot/` for historical tooling/reference only.
 
 Draft records may omit richer editorial fields. The validator and publication gate enforce stricter requirements only for \`review\` and \`published\` content.
 

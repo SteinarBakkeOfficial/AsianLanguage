@@ -2,8 +2,8 @@
   "id": "man",
   "version": 1,
   "coreCharacter": "男",
-  "coreSharedMeaning": "man",
-  "recognitionTakeaway": "Regular 男 preserves the clear 田 over 力 composition, a much more transparent component structure than the earlier side-by-side forms.",
+  "coreSharedMeaning": "man / male",
+  "recognitionTakeaway": "Preserves the clear 田 over 力 composition, a much more transparent component structure than the earlier side-by-side forms.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+7537",
   "simplifiedForm": "男",
@@ -15,9 +15,9 @@
     "Oracle places a small field grid beside a long curved tool-like stroke, so the two ideas remain visibly separate.",
     "Regular 男 preserves the clear 田 over 力 composition, a much more transparent component structure than the earlier side-by-side forms."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-100-男-u7537",
+  "contentFolder": "content/release/symbols/man",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-100-男-u7537/research.md",
+  "researchNotesPath": "content/release/symbols/man/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "man"
       ],
       "examples": [
+        {
+          "text": "男",
+          "reading": "nán",
+          "translation": "man",
+          "speechText": "男",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "nán"
+          ]
+        },
         {
           "text": "男人",
           "reading": "nánrén",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "男生",
+          "reading": "nánshēng",
+          "translation": "male student",
+          "speechText": "男生",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他是一个男人。",
           "reading": "Tā shì yí ge nánrén.",
           "translation": "He is a man.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "男",
@@ -98,6 +127,18 @@
         "man"
       ],
       "taiwanExamples": [
+        {
+          "text": "男",
+          "reading": "nán",
+          "translation": "man",
+          "speechText": "男",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "男人",
           "reading": "nánrén",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "男",
+          "reading": "naam4",
+          "translation": "man",
+          "speechText": "男",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "男人",
           "reading": "naam4 jan4",
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "男",
       "readings": [
         {
-          "system": "on",
-          "value": "ダン (dan)",
+          "system": "onyomi",
+          "value": "ダン — dan",
           "audioAssetRef": null,
           "speechText": "だん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ダン",
+          "romanization": "dan",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ナン (nan)",
+          "system": "onyomi",
+          "value": "ナン — nan",
           "audioAssetRef": null,
           "speechText": "なん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ナン",
+          "romanization": "nan",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "おとこ (otoko)",
+          "system": "kunyomi",
+          "value": "おとこ — otoko",
           "audioAssetRef": null,
           "speechText": "おとこ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "おとこ",
+          "romanization": "otoko",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "男"
-          ]
+          ],
+          "kanaReading": "おとこ",
+          "coversReadings": [
+            "おとこ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "男",
+              "reading": "おとこ"
+            }
+          ],
+          "furiganaHtml": "<ruby>男<rt>おとこ</rt></ruby>"
         },
         {
           "text": "男性",
@@ -260,7 +335,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "男"
-          ]
+          ],
+          "kanaReading": "だんせい",
+          "coversReadings": [
+            "ダン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "男性",
+              "reading": "だんせい"
+            }
+          ],
+          "furiganaHtml": "<ruby>男性<rt>だんせい</rt></ruby>"
+        },
+        {
+          "text": "男女",
+          "reading": "danjo",
+          "translation": "men and women",
+          "speechText": "男女",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "だんじょ",
+          "furiganaSegments": [
+            {
+              "text": "男女",
+              "reading": "だんじょ"
+            }
+          ],
+          "furiganaHtml": "<ruby>男女<rt>だんじょ</rt></ruby>"
+        },
+        {
+          "text": "長男",
+          "reading": "chōnan",
+          "translation": "eldest son",
+          "speechText": "長男",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ちょうなん",
+          "coversReadings": [
+            "ナン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "長男",
+              "reading": "ちょうなん"
+            }
+          ],
+          "furiganaHtml": "<ruby>長男<rt>ちょうなん</rt></ruby>"
         },
         {
           "text": "あの人は男の人です。",
@@ -274,27 +403,65 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "男"
-          ]
+          ],
+          "kanaReading": "あのひとはおとこのひとです。",
+          "furiganaSegments": [
+            {
+              "text": "あの"
+            },
+            {
+              "text": "人",
+              "reading": "ひと"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "男",
+              "reading": "おとこ"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "人",
+              "reading": "ひと"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "あの<ruby>人<rt>ひと</rt></ruby>は<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>です。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "おとこ",
+        "romanization": "otoko",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "男",
       "readings": [
         {
           "system": "hanja",
-          "value": "남 / nam",
+          "value": "남 — nam",
           "audioAssetRef": null,
           "speechText": "남",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "남자 / namja",
-          "audioAssetRef": null,
-          "speechText": "남자",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "남",
+          "romanization": "nam"
         }
       ],
       "glosses": [
@@ -313,7 +480,8 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "男"
-          ]
+          ],
+          "exampleRole": "semanticEquivalent"
         },
         {
           "text": "남성",
@@ -330,6 +498,30 @@
           ]
         },
         {
+          "text": "남학생",
+          "reading": "namhaksaeng",
+          "translation": "male student",
+          "speechText": "남학생",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "장남",
+          "reading": "jangnam",
+          "translation": "eldest son",
+          "speechText": "장남",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "저 사람은 남자예요.",
           "reading": "jeo sarameun namjayeyo.",
           "translation": "That person is a man.",
@@ -344,7 +536,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "남 — nam",
+          "audioAssetRef": null,
+          "speechText": "남",
+          "speechLanguage": "korean",
+          "nativeReading": "남",
+          "romanization": "nam"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "남자 — namja",
+          "audioAssetRef": null,
+          "speechText": "남자",
+          "speechLanguage": "korean",
+          "nativeReading": "남자",
+          "romanization": "namja",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "man",
+          "displayTier": "secondary",
+          "lexicalOrigin": "sinoKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "남",
+        "romanization": "nam",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +584,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A field, a plow or working tool, and a man laboring with an ox.",
+    "originAnchor": "A field and a farming tool combine to represent a man.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/man/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle places a small field grid beside a long curved tool-like stroke, so the two ideas remain visibly separate.",
+        "changeNoteFromPrevious": "A cultivated-field sign is combined with the old agricultural-tool/force sign, linking male identity with historical field labor in the traditional analysis.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-男"
@@ -386,8 +617,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle places a small field grid beside a long curved tool-like stroke, so the two ideas remain visibly separate.",
-        "transitionNote": "Oracle places a small field grid beside a long curved tool-like stroke, so the two ideas remain visibly separate.",
+        "stageExplanation": "A cultivated-field sign is combined with the old agricultural-tool/force sign, linking male identity with historical field labor in the traditional analysis.",
+        "transitionNote": "A cultivated-field sign is combined with the old agricultural-tool/force sign, linking male identity with historical field labor in the traditional analysis.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +628,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/man/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps the field on the left but turns the tool into a larger hooked form that begins to wrap beneath it.",
+        "changeNoteFromPrevious": "Keeps the field on the left but turns the tool into a larger hooked form that begins to wrap beneath it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-男"
@@ -423,8 +654,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps the field on the left but turns the tool into a larger hooked form that begins to wrap beneath it.",
-        "transitionNote": "Bronze keeps the field on the left but turns the tool into a larger hooked form that begins to wrap beneath it.",
+        "stageExplanation": "Keeps the field on the left but turns the tool into a larger hooked form that begins to wrap beneath it.",
+        "transitionNote": "Keeps the field on the left but turns the tool into a larger hooked form that begins to wrap beneath it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +665,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/man/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal reorganizes the components vertically, placing a clear 田-like field above a curved 力-like lower element.",
+        "changeNoteFromPrevious": "The field element becomes more regular while the agricultural-tool/force element is standardized below it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-男"
@@ -460,8 +691,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal reorganizes the components vertically, placing a clear 田-like field above a curved 力-like lower element.",
-        "transitionNote": "Small Seal reorganizes the components vertically, placing a clear 田-like field above a curved 力-like lower element.",
+        "stageExplanation": "The field element becomes more regular while the agricultural-tool/force element is standardized below it.",
+        "transitionNote": "The field element becomes more regular while the agricultural-tool/force element is standardized below it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +702,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/man/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical tightens that vertical stack and makes the lower component more angular, nearly reaching 男.",
+        "changeNoteFromPrevious": "The two elements flatten and square off, producing a structure already close to the later standard character.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-男"
@@ -497,8 +728,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical tightens that vertical stack and makes the lower component more angular, nearly reaching 男.",
-        "transitionNote": "Clerical tightens that vertical stack and makes the lower component more angular, nearly reaching 男.",
+        "stageExplanation": "The two elements flatten and square off, producing a structure already close to the later standard character.",
+        "transitionNote": "The two elements flatten and square off, producing a structure already close to the later standard character.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +739,7 @@
         "label": "Regular Script",
         "form": "男",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 男 preserves the clear 田 over 力 composition, a much more transparent component structure than the earlier side-by-side forms.",
+        "changeNoteFromPrevious": "Preserves the clear 田 over 力 composition, a much more transparent component structure than the earlier side-by-side forms.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +765,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 男 preserves the clear 田 over 力 composition, a much more transparent component structure than the earlier side-by-side forms.",
-        "transitionNote": "Regular 男 preserves the clear 田 over 力 composition, a much more transparent component structure than the earlier side-by-side forms.",
+        "stageExplanation": "Preserves the clear 田 over 力 composition, a much more transparent component structure than the earlier side-by-side forms.",
+        "transitionNote": "Preserves the clear 田 over 力 composition, a much more transparent component structure than the earlier side-by-side forms.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +774,7 @@
     ],
     "origin": {
       "concept": "man",
-      "explanation": "A field, a plow or working tool, and a man laboring with an ox.",
+      "explanation": "A cultivated field is combined with the old agricultural-tool/force graph.",
       "asset": {
         "characterID": "man",
         "historicalStage": null,
@@ -560,7 +791,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of man",
+        "accessibilityDescription": "Illustration of man / male",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +809,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'man', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'man / male', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +879,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

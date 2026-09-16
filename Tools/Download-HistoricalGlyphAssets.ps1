@@ -1,5 +1,5 @@
 param(
-  [string]$SymbolsPath = "content/symbols"
+  [string]$SymbolsPath = "docs/archive/legacy-pilot/symbols"
 )
 
 $ErrorActionPreference = "Stop"

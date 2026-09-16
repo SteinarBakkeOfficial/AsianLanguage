@@ -130,7 +130,7 @@ struct UsageExamplesView: View {
                 Text(readingLabel(reading))
                     .font(AppTypography.metadata)
                     .foregroundStyle(AppColors.textSecondary)
-                let parts = displayReadingParts(reading.value)
+                let parts = displayReadingParts(reading)
                 Text(parts.script)
                     .font(fontRole.font(size: 22).weight(.medium))
                     .foregroundStyle(AppColors.textPrimary)
@@ -147,8 +147,8 @@ struct UsageExamplesView: View {
     /// Uses established linguistic labels instead of flattening distinct reading systems into one caption.
     private func readingLabel(_ reading: CharacterReading) -> String {
         let normalized = reading.system.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        if normalized == "on" { return "On · Sino-Japanese" }
-        if normalized == "kun" { return "Kun · native Japanese" }
+        if normalized == "on" || normalized == "onyomi" { return "On · Sino-Japanese" }
+        if normalized == "kun" || normalized == "kunyomi" { return "Kun · native Japanese" }
         if normalized == "hanja" { return "Hanja · Sino-Korean" }
         if normalized.hasPrefix("hanja · ") {
             return "Hanja · " + String(reading.system.dropFirst("hanja · ".count))
@@ -169,6 +169,10 @@ struct UsageExamplesView: View {
 
     /// Splits the current editorial display form from optional romanization without changing the stored value.
     private func displayReadingParts(_ value: String) -> (script: String, romanization: String?) {
+        let emDashParts = value.components(separatedBy: " — ")
+        if emDashParts.count == 2 {
+            return (emDashParts[0], emDashParts[1])
+        }
         let parentheticalParts = value.split(separator: "(", maxSplits: 1, omittingEmptySubsequences: true)
         if parentheticalParts.count == 2 {
             return (
@@ -183,6 +187,14 @@ struct UsageExamplesView: View {
         return (value, nil)
     }
 
+    /// Prefers structured V3.3 reading fields while keeping older records readable.
+    private func displayReadingParts(_ reading: CharacterReading) -> (script: String, romanization: String?) {
+        if let nativeReading = reading.nativeReading, !nativeReading.isEmpty {
+            return (nativeReading, reading.romanization)
+        }
+        return displayReadingParts(reading.value)
+    }
+
     /// Korean keeps the Hanja form and an explicit native-script variant together on the Usage page.
     private func koreanWordCard(_ coverage: StandardFocusCoverage) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
@@ -190,6 +202,26 @@ struct UsageExamplesView: View {
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
             languageFormHeader(form: coverage.form, readings: coverage.readings, fontRole: .korean)
+            if !coverage.semanticEquivalents.isEmpty {
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text("Korean equivalent")
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                    ForEach(Array(coverage.semanticEquivalents.enumerated()), id: \.offset) { _, equivalent in
+                        let parts = displayReadingParts(equivalent)
+                        HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
+                            Text(parts.script)
+                                .font(CJKFontRole.korean.font(size: 22).weight(.semibold))
+                                .foregroundStyle(AppColors.textPrimary)
+                            if let romanization = parts.romanization {
+                                Text(romanization)
+                                    .font(AppTypography.metadata)
+                                    .foregroundStyle(AppColors.textSecondary)
+                            }
+                        }
+                    }
+                }
+            }
             ForEach(coverage.variants, id: \.id) { variant in
                 HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
                     Text(variant.writingSystem ?? "Native Korean")

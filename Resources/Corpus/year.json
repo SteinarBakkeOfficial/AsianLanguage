@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "年",
   "coreSharedMeaning": "year",
-  "recognitionTakeaway": "Regular 年 tightens the stacked horizontals and central vertical, leaving little visible trace of the original person carrying grain.",
+  "recognitionTakeaway": "The harvest graph regularizes as 年; the annual harvest cycle supplies the “year” sense.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5E74",
   "simplifiedForm": "年",
@@ -15,9 +15,9 @@
     "Oracle shows a human-like lower body attached to or carrying a long grain stalk with branching leaves at the top.",
     "Regular 年 tightens the stacked horizontals and central vertical, leaving little visible trace of the original person carrying grain."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-067-年-u5E74",
+  "contentFolder": "content/release/symbols/year",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-067-年-u5E74/research.md",
+  "researchNotesPath": "content/release/symbols/year/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "year"
       ],
       "examples": [
+        {
+          "text": "年",
+          "reading": "nián",
+          "translation": "year",
+          "speechText": "年",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "nián"
+          ]
+        },
         {
           "text": "今年",
           "reading": "jīnnián",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "年龄",
+          "reading": "niánlíng",
+          "translation": "age",
+          "speechText": "年龄",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "明年见。",
           "reading": "Míngnián jiàn.",
           "translation": "See you next year.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "年",
@@ -98,6 +127,18 @@
         "year"
       ],
       "taiwanExamples": [
+        {
+          "text": "年",
+          "reading": "nián",
+          "translation": "year",
+          "speechText": "年",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "今年",
           "reading": "jīnnián",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "年",
+          "reading": "nin4",
+          "translation": "year",
+          "speechText": "年",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "今年",
           "reading": "gam1 nin4",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "年",
       "readings": [
         {
-          "system": "on",
-          "value": "ネン (nen)",
+          "system": "onyomi",
+          "value": "ネン — nen",
           "audioAssetRef": null,
           "speechText": "ねん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ネン",
+          "romanization": "nen",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "とし (toshi)",
+          "system": "kunyomi",
+          "value": "とし — toshi",
           "audioAssetRef": null,
           "speechText": "とし",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "とし",
+          "romanization": "toshi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "年"
-          ]
+          ],
+          "kanaReading": "とし",
+          "coversReadings": [
+            "とし"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "年",
+              "reading": "とし"
+            }
+          ],
+          "furiganaHtml": "<ruby>年<rt>とし</rt></ruby>"
         },
         {
           "text": "今年",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "年"
-          ]
+          ],
+          "kanaReading": "ことし",
+          "furiganaSegments": [
+            {
+              "text": "今年",
+              "reading": "ことし"
+            }
+          ],
+          "furiganaHtml": "<ruby>今年<rt>ことし</rt></ruby>"
+        },
+        {
+          "text": "年間",
+          "reading": "nenkan",
+          "translation": "period of years; yearly span",
+          "speechText": "年間",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ねんかん",
+          "coversReadings": [
+            "ネン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "年間",
+              "reading": "ねんかん"
+            }
+          ],
+          "furiganaHtml": "<ruby>年間<rt>ねんかん</rt></ruby>"
+        },
+        {
+          "text": "来年",
+          "reading": "rainen",
+          "translation": "next year",
+          "speechText": "来年",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "らいねん",
+          "furiganaSegments": [
+            {
+              "text": "来年",
+              "reading": "らいねん"
+            }
+          ],
+          "furiganaHtml": "<ruby>来年<rt>らいねん</rt></ruby>"
         },
         {
           "text": "来年また会いましょう。",
@@ -267,40 +390,83 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "年"
-          ]
+          ],
+          "kanaReading": "らいねんまたあいましょう。",
+          "furiganaSegments": [
+            {
+              "text": "来年",
+              "reading": "らいねん"
+            },
+            {
+              "text": "また"
+            },
+            {
+              "text": "会",
+              "reading": "あ"
+            },
+            {
+              "text": "いましょう"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>来年<rt>らいねん</rt></ruby>また<ruby>会<rt>あ</rt></ruby>いましょう。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "とし",
+        "romanization": "toshi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "年",
       "readings": [
         {
           "system": "hanja",
-          "value": "년 / nyeon",
+          "value": "년 — nyeon",
           "audioAssetRef": null,
           "speechText": "년",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "년",
+          "romanization": "nyeon"
         },
         {
           "system": "hanja · word-initial form",
-          "value": "연 / yeon",
+          "value": "연 — yeon",
           "audioAssetRef": null,
           "speechText": "연",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "해 / hae",
-          "audioAssetRef": null,
-          "speechText": "해",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "연",
+          "romanization": "yeon"
         }
       ],
       "glosses": [
         "year"
       ],
       "examples": [
+        {
+          "text": "해",
+          "reading": "hae",
+          "translation": "year",
+          "speechText": "해",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "일 년",
           "reading": "il nyeon",
@@ -330,6 +496,18 @@
           ]
         },
         {
+          "text": "연간",
+          "reading": "yeongan",
+          "translation": "annual / yearly",
+          "speechText": "연간",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "내년에 만나요.",
           "reading": "naenyeone mannayo.",
           "translation": "See you next year.",
@@ -344,7 +522,55 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "년 — nyeon",
+          "audioAssetRef": null,
+          "speechText": "년",
+          "speechLanguage": "korean",
+          "nativeReading": "년",
+          "romanization": "nyeon"
+        },
+        {
+          "system": "hanja · word-initial form",
+          "value": "연 — yeon",
+          "audioAssetRef": null,
+          "speechText": "연",
+          "speechLanguage": "korean",
+          "nativeReading": "연",
+          "romanization": "yeon"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "해 — hae",
+          "audioAssetRef": null,
+          "speechText": "해",
+          "speechLanguage": "korean",
+          "nativeReading": "해",
+          "romanization": "hae",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "year",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "년",
+        "romanization": "nyeon",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +579,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person harvesting grain and carrying a bundled sheaf from the field.",
+    "originAnchor": "A person carrying ripe grain depicts a harvest—the earlier meaning of the graph.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/year/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows a human-like lower body attached to or carrying a long grain stalk with branching leaves at the top.",
+        "changeNoteFromPrevious": "The person-and-grain scene shows harvest, not yet an abstract calendar year.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-年"
@@ -386,8 +612,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows a human-like lower body attached to or carrying a long grain stalk with branching leaves at the top.",
-        "transitionNote": "Oracle shows a human-like lower body attached to or carrying a long grain stalk with branching leaves at the top.",
+        "stageExplanation": "A person carries ripe grain, giving a harvest scene rather than an abstract calendar symbol.",
+        "transitionNote": "The person-and-grain scene shows harvest, not yet an abstract calendar year.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +623,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/year/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps the grain head visible but simplifies the human body into a long bent lower stroke.",
+        "changeNoteFromPrevious": "Keeps the grain head visible but simplifies the human body into a long bent lower stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-年"
@@ -423,8 +649,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps the grain head visible but simplifies the human body into a long bent lower stroke.",
-        "transitionNote": "Bronze keeps the grain head visible but simplifies the human body into a long bent lower stroke.",
+        "stageExplanation": "Keeps the grain head visible but simplifies the human body into a long bent lower stroke.",
+        "transitionNote": "Keeps the grain head visible but simplifies the human body into a long bent lower stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +660,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/year/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the grain-like upper crossings and the lower figure into a compact vertical composition.",
+        "changeNoteFromPrevious": "Regularizes the grain-like upper crossings and the lower figure into a compact vertical composition.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-年"
@@ -460,8 +686,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the grain-like upper crossings and the lower figure into a compact vertical composition.",
-        "transitionNote": "Small Seal regularizes the grain-like upper crossings and the lower figure into a compact vertical composition.",
+        "stageExplanation": "Regularizes the grain-like upper crossings and the lower figure into a compact vertical composition.",
+        "transitionNote": "Regularizes the grain-like upper crossings and the lower figure into a compact vertical composition.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +697,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/year/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical straightens and flattens the strokes, making the character nearly recognizable as 年.",
+        "changeNoteFromPrevious": "The grain/person-like early structure becomes more angular and compact, nearly recognizable as the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-年"
@@ -497,8 +723,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical straightens and flattens the strokes, making the character nearly recognizable as 年.",
-        "transitionNote": "Clerical straightens and flattens the strokes, making the character nearly recognizable as 年.",
+        "stageExplanation": "The grain/person-like early structure becomes more angular and compact, nearly recognizable as the later standard structure.",
+        "transitionNote": "The grain/person-like early structure becomes more angular and compact, nearly recognizable as the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +734,7 @@
         "label": "Regular Script",
         "form": "年",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 年 tightens the stacked horizontals and central vertical, leaving little visible trace of the original person carrying grain.",
+        "changeNoteFromPrevious": "Because the harvest returned each year, the harvest word extended to mean ‘year’; the modern form no longer shows the scene clearly.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +760,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 年 tightens the stacked horizontals and central vertical, leaving little visible trace of the original person carrying grain.",
-        "transitionNote": "Regular 年 tightens the stacked horizontals and central vertical, leaving little visible trace of the original person carrying grain.",
+        "stageExplanation": "The harvest graph regularizes as 年; the annual harvest cycle supplies the “year” sense.",
+        "transitionNote": "Because the harvest returned each year, the harvest word extended to mean ‘year’; the modern form no longer shows the scene clearly.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +769,7 @@
     ],
     "origin": {
       "concept": "year",
-      "explanation": "A person harvesting grain and carrying a bundled sheaf from the field.",
+      "explanation": "A person carrying ripe grain/harvest.",
       "asset": {
         "characterID": "year",
         "historicalStage": null,
@@ -648,13 +874,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

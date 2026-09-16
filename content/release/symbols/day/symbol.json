@@ -1,0 +1,848 @@
+{
+  "id": "day",
+  "version": 1,
+  "coreCharacter": "日",
+  "coreSharedMeaning": "sun / day",
+  "recognitionTakeaway": "The round sun has become a compact rectangle, but the enclosed form and central mark preserve the ancient design.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+65E5",
+  "simplifiedForm": "日",
+  "traditionalForm": "日",
+  "additionalMeanings": [],
+  "formationType": "uncertain",
+  "visualTeachingNotes": [
+    "The sun shown as a bright round disk, including a view near the horizon.",
+    "A rounded enclosure surrounds a strong horizontal line through the middle, like a framed sun with a mark inside.",
+    "Regular 日 squares the enclosure and tightens it vertically, leaving the familiar box divided by a single inner stroke."
+  ],
+  "contentFolder": "content/release/symbols/day",
+  "learnerCopyPath": null,
+  "researchNotesPath": null,
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 2,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "日",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "rì",
+          "audioAssetRef": null,
+          "speechText": "日",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [],
+      "examples": [
+        {
+          "text": "日",
+          "reading": "rì",
+          "translation": "sun / day",
+          "speechText": "日",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "rì"
+          ]
+        },
+        {
+          "text": "日出",
+          "reading": "rìchū",
+          "translation": "sunrise",
+          "speechText": "日出",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "日光",
+          "reading": "rìguāng",
+          "translation": "sunlight",
+          "speechText": "日光",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "日期",
+          "reading": "rìqī",
+          "translation": "date",
+          "speechText": "日期",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "日记",
+          "reading": "rìjì",
+          "translation": "diary",
+          "speechText": "日记",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "日出很美。",
+          "reading": "Rìchū hěn měi.",
+          "translation": "The sunrise is beautiful.",
+          "speechText": "日出很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "日",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "rì",
+          "audioAssetRef": null,
+          "speechText": "日",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [],
+      "taiwanExamples": [
+        {
+          "text": "日",
+          "reading": "rì",
+          "translation": "sun / day",
+          "speechText": "日",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "日出",
+          "reading": "rìchū",
+          "translation": "sunrise",
+          "speechText": "日出",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "日光",
+          "reading": "rìguāng",
+          "translation": "sunlight",
+          "speechText": "日光",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "日期",
+          "reading": "rìqī",
+          "translation": "date",
+          "speechText": "日期",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "日出很美。",
+          "reading": "Rìchū hěn měi.",
+          "translation": "The sunrise is beautiful.",
+          "speechText": "日出很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "日",
+          "reading": "jat6",
+          "translation": "sun / day",
+          "speechText": "日",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "日出",
+          "reading": "jat6 ceot1",
+          "translation": "sunrise",
+          "speechText": "日出",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "日光",
+          "reading": "jat6 gwong1",
+          "translation": "sunlight",
+          "speechText": "日光",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "日期",
+          "reading": "jat6 kei4",
+          "translation": "date",
+          "speechText": "日期",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "日出好靚。",
+          "reading": "jat6 ceot1 hou2 leng3.",
+          "translation": "The sunrise is beautiful.",
+          "speechText": "日出好靚。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "rì",
+          "audioAssetRef": null,
+          "speechText": "日",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "jat6",
+          "audioAssetRef": null,
+          "speechText": "日",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "日",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "ニチ — nichi",
+          "audioAssetRef": null,
+          "speechText": "にち",
+          "speechLanguage": "japanese",
+          "nativeReading": "ニチ",
+          "romanization": "nichi",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "onyomi",
+          "value": "ジツ — jitsu",
+          "audioAssetRef": null,
+          "speechText": "じつ",
+          "speechLanguage": "japanese",
+          "nativeReading": "ジツ",
+          "romanization": "jitsu",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "ひ — hi",
+          "audioAssetRef": null,
+          "speechText": "ひ",
+          "speechLanguage": "japanese",
+          "nativeReading": "ひ",
+          "romanization": "hi",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "specialReading",
+          "value": "か — ka",
+          "audioAssetRef": null,
+          "speechText": "か",
+          "speechLanguage": "japanese",
+          "nativeReading": "か",
+          "romanization": "ka",
+          "historicalOrigin": "lexicalizedJapanese"
+        }
+      ],
+      "glosses": [],
+      "examples": [
+        {
+          "text": "日",
+          "reading": "hi",
+          "translation": "sun / day",
+          "speechText": "日",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "ひ",
+          "coversReadings": [
+            "ひ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "日",
+              "reading": "ひ"
+            }
+          ],
+          "furiganaHtml": "<ruby>日<rt>ひ</rt></ruby>"
+        },
+        {
+          "text": "日曜日",
+          "reading": "nichiyōbi",
+          "translation": "Sunday",
+          "speechText": "日曜日",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "にちようび",
+          "coversReadings": [
+            "ニチ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "日曜日",
+              "reading": "にちようび"
+            }
+          ],
+          "furiganaHtml": "<ruby>日曜日<rt>にちようび</rt></ruby>"
+        },
+        {
+          "text": "三日",
+          "reading": "mikka",
+          "translation": "three days / third day",
+          "speechText": "三日",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "みっか",
+          "coversReadings": [
+            "か"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "三日",
+              "reading": "みっか"
+            }
+          ],
+          "furiganaHtml": "<ruby>三日<rt>みっか</rt></ruby>"
+        },
+        {
+          "text": "日記",
+          "reading": "nikki",
+          "translation": "diary",
+          "speechText": "日記",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "にっき",
+          "furiganaSegments": [
+            {
+              "text": "日記",
+              "reading": "にっき"
+            }
+          ],
+          "furiganaHtml": "<ruby>日記<rt>にっき</rt></ruby>"
+        },
+        {
+          "text": "休日",
+          "reading": "kyūjitsu",
+          "translation": "holiday; day off",
+          "speechText": "休日",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "日"
+          ],
+          "verificationRole": "readingCoverage",
+          "kanaReading": "きゅうじつ",
+          "coversReadings": [
+            "ジツ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "休日",
+              "reading": "きゅうじつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>休日<rt>きゅうじつ</rt></ruby>"
+        },
+        {
+          "text": "今日は休日です。",
+          "reading": "kyō wa kyūjitsu desu.",
+          "translation": "Today is a day off.",
+          "speechText": "今日は休日です。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "kanaReading": "きょうはきゅうじつです。",
+          "furiganaSegments": [
+            {
+              "text": "今日",
+              "reading": "きょう"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "休日",
+              "reading": "きゅうじつ"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>休日<rt>きゅうじつ</rt></ruby>です。"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ひ",
+        "romanization": "hi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "日",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "일 — il",
+          "audioAssetRef": null,
+          "speechText": "일",
+          "speechLanguage": "korean",
+          "nativeReading": "일",
+          "romanization": "il"
+        }
+      ],
+      "glosses": [],
+      "examples": [
+        {
+          "text": "해",
+          "reading": "hae",
+          "translation": "sun",
+          "speechText": "해",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "날",
+          "reading": "nal",
+          "translation": "day",
+          "speechText": "날",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "일출",
+          "reading": "ilchul",
+          "translation": "sunrise",
+          "speechText": "일출",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "일요일",
+          "reading": "iryoil",
+          "translation": "Sunday",
+          "speechText": "일요일",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "좋은 날이에요.",
+          "reading": "joeun narieyo.",
+          "translation": "It is a good day.",
+          "speechText": "좋은 날이에요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "일 — il",
+          "audioAssetRef": null,
+          "speechText": "일",
+          "speechLanguage": "korean",
+          "nativeReading": "일",
+          "romanization": "il"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "해 — hae",
+          "audioAssetRef": null,
+          "speechText": "해",
+          "speechLanguage": "korean",
+          "nativeReading": "해",
+          "romanization": "hae",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "sun",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        },
+        {
+          "system": "semanticEquivalent",
+          "value": "날 — nal",
+          "audioAssetRef": null,
+          "speechText": "날",
+          "speechLanguage": "korean",
+          "nativeReading": "날",
+          "romanization": "nal",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "day",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "일",
+        "romanization": "il",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A bright sun in the sky.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/day/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "The round sun is already squared off; carving a true circle on bone was difficult. A central mark distinguishes it from an empty enclosure.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-日"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "日",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%97%A5/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/42_ED44.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/day/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/day/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "日 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The round sun is already squared off; carving a true circle on bone was difficult. A central mark distinguishes it from an empty enclosure.",
+        "transitionNote": "The round sun is already squared off; carving a true circle on bone was difficult. A central mark distinguishes it from an empty enclosure.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/day/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "The sun is compressed into a low rounded shape; other Bronze forms still retain the inner mark.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-日"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "日",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%97%A5/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/32_EE81.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/day/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/day/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "日 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The sun is compressed into a low rounded shape; other Bronze forms still retain the inner mark.",
+        "transitionNote": "The sun is compressed into a low rounded shape; other Bronze forms still retain the inner mark.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/day/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "The inner line returns as a central divider, while the outline becomes a tall, regular enclosure.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-日"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "日",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%97%A5/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_65E5.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/day/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/day/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "日 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The inner line returns as a central divider, while the outline becomes a tall, regular enclosure.",
+        "transitionNote": "The inner line returns as a central divider, while the outline becomes a tall, regular enclosure.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/day/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The tall enclosure becomes broad and rectangular, establishing the basic modern structure.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-日"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "日",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%97%A5/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/92_ED1E.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/day/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/day/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "日 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The tall enclosure becomes broad and rectangular, establishing the basic modern structure.",
+        "transitionNote": "The tall enclosure becomes broad and rectangular, establishing the basic modern structure.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "日",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The round sun has become a compact rectangle, but the enclosed form and central mark preserve the ancient design.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "日",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "日 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The round sun has become a compact rectangle, but the enclosed form and central mark preserve the ancient design.",
+        "transitionNote": "The round sun has become a compact rectangle, but the enclosed form and central mark preserve the ancient design.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "sun; day",
+      "explanation": "A sun disk with an inner distinguishing mark.",
+      "asset": {
+        "characterID": "day",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/day/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of sun; day",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-日"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "日 is presented first as a complete shared character.",
+    "components": [],
+    "certainty": "medium",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-日"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'sun / day', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "source-zdic-日",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E6%97%A5"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-日",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

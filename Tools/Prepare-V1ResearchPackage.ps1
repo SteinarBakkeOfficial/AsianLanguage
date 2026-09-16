@@ -1,6 +1,6 @@
 param(
   [string]$AssessmentPath = "docs/content/shared-cjk-v1-visual-story-oracle-assessment.md",
-  [string]$OutputPath = "content/research/v1-symbols",
+  [string]$OutputPath = "docs/archive/research-intake/v1-symbols",
   [string]$EvoMetadataPath = "",
   [string]$EtymologyDataPath = "",
   [string]$EtymologyRepoPath = "",

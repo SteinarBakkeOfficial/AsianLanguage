@@ -2,8 +2,8 @@
   "id": "life",
   "version": 1,
   "coreCharacter": "生",
-  "coreSharedMeaning": "life",
-  "recognitionTakeaway": "Regular 生 keeps the central stem and stacked ground/cross strokes, with the small upper diagonal preserving the sense of new growth.",
+  "coreSharedMeaning": "life / be born / grow",
+  "recognitionTakeaway": "The sprout-and-ground image is regularized as 生; the original growth idea survives mainly in the central rising structure.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+751F",
   "simplifiedForm": "生",
@@ -15,9 +15,9 @@
     "A central stem rises from a ground line and splits into two leaves or shoots; the plant image is still very clear.",
     "Regular 生 keeps the central stem and stacked ground/cross strokes, with the small upper diagonal preserving the sense of new growth."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-093-生-u751F",
+  "contentFolder": "content/release/symbols/life",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-093-生-u751F/research.md",
+  "researchNotesPath": "content/release/symbols/life/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "life"
       ],
       "examples": [
+        {
+          "text": "生",
+          "reading": "shēng",
+          "translation": "life",
+          "speechText": "生",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shēng"
+          ]
+        },
         {
           "text": "生活",
           "reading": "shēnghuó",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "生命",
+          "reading": "shēngmìng",
+          "translation": "life",
+          "speechText": "生命",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我喜欢这里的生活。",
           "reading": "Wǒ xǐhuan zhèlǐ de shēnghuó.",
           "translation": "I like life here.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "生",
@@ -98,6 +127,18 @@
         "life"
       ],
       "taiwanExamples": [
+        {
+          "text": "生",
+          "reading": "shēng",
+          "translation": "life",
+          "speechText": "生",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "生活",
           "reading": "shēnghuó",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "生",
+          "reading": "sang1",
+          "translation": "life",
+          "speechText": "生",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "生活",
           "reading": "sang1 wut6",
@@ -210,38 +263,116 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "生",
       "readings": [
         {
-          "system": "on",
-          "value": "セイ (sei)",
+          "system": "onyomi",
+          "value": "セイ — sei",
           "audioAssetRef": null,
           "speechText": "せい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "セイ",
+          "romanization": "sei",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ショウ (shō)",
+          "system": "onyomi",
+          "value": "ショウ — shō",
           "audioAssetRef": null,
           "speechText": "しょう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ショウ",
+          "romanization": "shō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "いきる (ikiru)",
+          "system": "kunyomi",
+          "value": "いきる — ikiru",
           "audioAssetRef": null,
           "speechText": "いきる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "いきる",
+          "romanization": "ikiru",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "うまれる (umareru)",
+          "system": "kunyomi",
+          "value": "うまれる — umareru",
           "audioAssetRef": null,
           "speechText": "うまれる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "うまれる",
+          "romanization": "umareru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "うむ — umu",
+          "audioAssetRef": null,
+          "speechText": "うむ",
+          "speechLanguage": "japanese",
+          "nativeReading": "うむ",
+          "romanization": "umu",
+          "historicalOrigin": "nativeJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
+        },
+        {
+          "system": "kunyomi",
+          "value": "はえる — haeru",
+          "audioAssetRef": null,
+          "speechText": "はえる",
+          "speechLanguage": "japanese",
+          "nativeReading": "はえる",
+          "romanization": "haeru",
+          "historicalOrigin": "nativeJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
+        },
+        {
+          "system": "kunyomi",
+          "value": "なま — nama",
+          "audioAssetRef": null,
+          "speechText": "なま",
+          "speechLanguage": "japanese",
+          "nativeReading": "なま",
+          "romanization": "nama",
+          "historicalOrigin": "nativeJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
+        },
+        {
+          "system": "kunyomi",
+          "value": "いかす — ikasu",
+          "audioAssetRef": null,
+          "speechText": "いかす",
+          "speechLanguage": "japanese",
+          "nativeReading": "いかす",
+          "romanization": "ikasu",
+          "historicalOrigin": "nativeJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
+        },
+        {
+          "system": "kunyomi",
+          "value": "いける — ikeru",
+          "audioAssetRef": null,
+          "speechText": "いける",
+          "speechLanguage": "japanese",
+          "nativeReading": "いける",
+          "romanization": "ikeru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "はやす — hayasu",
+          "audioAssetRef": null,
+          "speechText": "はやす",
+          "speechLanguage": "japanese",
+          "nativeReading": "はやす",
+          "romanization": "hayasu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -260,7 +391,50 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "生"
-          ]
+          ],
+          "kanaReading": "いきる",
+          "coversReadings": [
+            "いきる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "生",
+              "reading": "い"
+            },
+            {
+              "text": "きる"
+            }
+          ],
+          "furiganaHtml": "<ruby>生<rt>い</rt></ruby>きる"
+        },
+        {
+          "text": "生まれる",
+          "reading": "umareru",
+          "translation": "be born",
+          "speechText": "生まれる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "生"
+          ],
+          "verificationRole": "readingCoverage",
+          "kanaReading": "うまれる",
+          "coversReadings": [
+            "うまれる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "生",
+              "reading": "う"
+            },
+            {
+              "text": "まれる"
+            }
+          ],
+          "furiganaHtml": "<ruby>生<rt>う</rt></ruby>まれる"
         },
         {
           "text": "生活",
@@ -274,7 +448,157 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "生"
-          ]
+          ],
+          "kanaReading": "せいかつ",
+          "coversReadings": [
+            "セイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "生活",
+              "reading": "せいかつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>生活<rt>せいかつ</rt></ruby>"
+        },
+        {
+          "text": "人生",
+          "reading": "jinsei",
+          "translation": "life",
+          "speechText": "人生",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "じんせい",
+          "furiganaSegments": [
+            {
+              "text": "人生",
+              "reading": "じんせい"
+            }
+          ],
+          "furiganaHtml": "<ruby>人生<rt>じんせい</rt></ruby>"
+        },
+        {
+          "text": "一生",
+          "reading": "isshō",
+          "translation": "a lifetime",
+          "speechText": "一生",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "いっしょう",
+          "coversReadings": [
+            "ショウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "一生",
+              "reading": "いっしょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>一生<rt>いっしょう</rt></ruby>"
+        },
+        {
+          "text": "生む",
+          "reading": "umu",
+          "translation": "to give birth; produce",
+          "speechText": "生む",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "うむ",
+          "coversReadings": [
+            "うむ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "生",
+              "reading": "う"
+            },
+            {
+              "text": "む"
+            }
+          ],
+          "furiganaHtml": "<ruby>生<rt>う</rt></ruby>む"
+        },
+        {
+          "text": "生える",
+          "reading": "haeru",
+          "translation": "to grow; sprout",
+          "speechText": "生える",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "はえる",
+          "coversReadings": [
+            "はえる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "生",
+              "reading": "は"
+            },
+            {
+              "text": "える"
+            }
+          ],
+          "furiganaHtml": "<ruby>生<rt>は</rt></ruby>える"
+        },
+        {
+          "text": "生ビール",
+          "reading": "nama bīru",
+          "translation": "draft beer",
+          "speechText": "生ビール",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "なまビール",
+          "coversReadings": [
+            "なま"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "生",
+              "reading": "なま"
+            },
+            {
+              "text": "ビール"
+            }
+          ],
+          "furiganaHtml": "<ruby>生<rt>なま</rt></ruby>ビール"
+        },
+        {
+          "text": "生かす",
+          "reading": "ikasu",
+          "translation": "to make use of; keep alive",
+          "speechText": "生かす",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "いかす",
+          "coversReadings": [
+            "いかす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "生",
+              "reading": "い"
+            },
+            {
+              "text": "かす"
+            }
+          ],
+          "furiganaHtml": "<ruby>生<rt>い</rt></ruby>かす"
         },
         {
           "text": "赤ちゃんが生まれました。",
@@ -288,40 +612,140 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "生"
-          ]
+          ],
+          "kanaReading": "あかちゃんがうまれました。",
+          "furiganaSegments": [
+            {
+              "text": "赤",
+              "reading": "あか"
+            },
+            {
+              "text": "ちゃんが"
+            },
+            {
+              "text": "生",
+              "reading": "う"
+            },
+            {
+              "text": "まれました"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>赤<rt>あか</rt></ruby>ちゃんが<ruby>生<rt>う</rt></ruby>まれました。"
+        },
+        {
+          "text": "生ける",
+          "reading": "ikeru",
+          "translation": "arrange/keep alive; put flowers in water",
+          "speechText": "生ける",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "いける",
+          "coversReadings": [
+            "いける"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "生",
+              "reading": "い"
+            },
+            {
+              "text": "ける"
+            }
+          ],
+          "furiganaHtml": "<ruby>生<rt>い</rt></ruby>ける"
+        },
+        {
+          "text": "生やす",
+          "reading": "hayasu",
+          "translation": "grow; let grow",
+          "speechText": "生やす",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "はやす",
+          "coversReadings": [
+            "はやす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "生",
+              "reading": "は"
+            },
+            {
+              "text": "やす"
+            }
+          ],
+          "furiganaHtml": "<ruby>生<rt>は</rt></ruby>やす"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout.",
+        "note": "Jōyō 生 has a large official reading family; V2 Final displays a useful subset and V3 must reconcile the complete official list against page-space priorities."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "いきる",
+        "romanization": "ikiru",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "生",
       "readings": [
         {
           "system": "hanja",
-          "value": "생 / saeng",
+          "value": "생 — saeng",
           "audioAssetRef": null,
           "speechText": "생",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "삶 / salm",
-          "audioAssetRef": null,
-          "speechText": "삶",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "살다 / salda",
-          "audioAssetRef": null,
-          "speechText": "살다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "생",
+          "romanization": "saeng"
         }
       ],
       "glosses": [
         "life"
       ],
       "examples": [
+        {
+          "text": "삶",
+          "reading": "salm",
+          "translation": "life",
+          "speechText": "삶",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "살다",
+          "reading": "salda",
+          "translation": "to live",
+          "speechText": "살다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "생활",
           "reading": "saenghwal",
@@ -365,7 +789,65 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "생 — saeng",
+          "audioAssetRef": null,
+          "speechText": "생",
+          "speechLanguage": "korean",
+          "nativeReading": "생",
+          "romanization": "saeng"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "삶 — salm",
+          "audioAssetRef": null,
+          "speechText": "삶",
+          "speechLanguage": "korean",
+          "nativeReading": "삶",
+          "romanization": "salm",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "life",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        },
+        {
+          "system": "semanticEquivalent",
+          "value": "살다 — salda",
+          "audioAssetRef": null,
+          "speechText": "살다",
+          "speechLanguage": "korean",
+          "nativeReading": "살다",
+          "romanization": "salda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "to live",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "생",
+        "romanization": "saeng",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -374,14 +856,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A seed sprouting from soil and growing into a young plant.",
+    "originAnchor": "A sprout and the ground combine to express life, birth, and growth.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/life/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A central stem rises from a ground line and splits into two leaves or shoots; the plant image is still very clear.",
+        "changeNoteFromPrevious": "A sprout rises from a ground line; the early image expresses emerging/growing rather than a separate “seed” object.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-生"
@@ -407,8 +889,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A central stem rises from a ground line and splits into two leaves or shoots; the plant image is still very clear.",
-        "transitionNote": "A central stem rises from a ground line and splits into two leaves or shoots; the plant image is still very clear.",
+        "stageExplanation": "A sprout rises from a ground line; the early image expresses emerging/growing rather than a separate “seed” object.",
+        "transitionNote": "A sprout rises from a ground line; the early image expresses emerging/growing rather than a separate “seed” object.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -529,7 +1011,7 @@
         "label": "Regular Script",
         "form": "生",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 生 keeps the central stem and stacked ground/cross strokes, with the small upper diagonal preserving the sense of new growth.",
+        "changeNoteFromPrevious": "The sprout-and-ground image is regularized as 生; the original growth idea survives mainly in the central rising structure.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -555,8 +1037,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 生 keeps the central stem and stacked ground/cross strokes, with the small upper diagonal preserving the sense of new growth.",
-        "transitionNote": "Regular 生 keeps the central stem and stacked ground/cross strokes, with the small upper diagonal preserving the sense of new growth.",
+        "stageExplanation": "The sprout-and-ground image is regularized as 生; the original growth idea survives mainly in the central rising structure.",
+        "transitionNote": "The sprout-and-ground image is regularized as 生; the original growth idea survives mainly in the central rising structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -564,7 +1046,7 @@
     ],
     "origin": {
       "concept": "life",
-      "explanation": "A seed sprouting from soil and growing into a young plant.",
+      "explanation": "A sprout emerging from the ground.",
       "asset": {
         "characterID": "life",
         "historicalStage": null,
@@ -581,7 +1063,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of life",
+        "accessibilityDescription": "Illustration of life / be born / grow",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -599,7 +1081,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'life', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'life / be born / grow', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -669,13 +1151,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

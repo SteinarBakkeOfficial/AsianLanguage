@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "玉",
   "coreSharedMeaning": "jade",
-  "recognitionTakeaway": "Regular 玉 adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王.",
+  "recognitionTakeaway": "Adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+7389",
   "simplifiedForm": "玉",
@@ -15,9 +15,9 @@
     "Oracle shows a central string crossed by three short horizontal jade pieces, with a small top projection.",
     "Regular 玉 adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-046-玉-u7389",
+  "contentFolder": "content/release/symbols/jade",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-046-玉-u7389/research.md",
+  "researchNotesPath": "content/release/symbols/jade/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -50,6 +50,9 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "玉"
+          ],
+          "coversReadings": [
+            "yù"
           ]
         },
         {
@@ -67,6 +70,30 @@
           ]
         },
         {
+          "text": "玉器",
+          "reading": "yùqì",
+          "translation": "jade ware",
+          "speechText": "玉器",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "玉雕",
+          "reading": "yùdiāo",
+          "translation": "jade carving",
+          "speechText": "玉雕",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这块玉很美。",
           "reading": "Zhè kuài yù hěn měi.",
           "translation": "This piece of jade is beautiful.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "玉",
@@ -125,6 +154,18 @@
           "introducedSymbols": [
             "玉"
           ]
+        },
+        {
+          "text": "玉器",
+          "reading": "yùqì",
+          "translation": "jade ware",
+          "speechText": "玉器",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "這塊玉很美。",
@@ -183,6 +224,18 @@
           "introducedSymbols": [
             "玉"
           ]
+        },
+        {
+          "text": "呢個係玉石。",
+          "reading": "ni1 go3 hai6 juk6 sek6",
+          "translation": "This is jade.",
+          "speechText": "呢個係玉石。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "玉",
       "readings": [
         {
-          "system": "on",
-          "value": "ギョク (gyoku)",
+          "system": "onyomi",
+          "value": "ギョク — gyoku",
           "audioAssetRef": null,
           "speechText": "ぎょく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ギョク",
+          "romanization": "gyoku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "たま (tama)",
+          "system": "kunyomi",
+          "value": "たま — tama",
           "audioAssetRef": null,
           "speechText": "たま",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "たま",
+          "romanization": "tama",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "玉"
-          ]
+          ],
+          "kanaReading": "たま",
+          "coversReadings": [
+            "たま"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "玉",
+              "reading": "たま"
+            }
+          ],
+          "furiganaHtml": "<ruby>玉<rt>たま</rt></ruby>"
         },
         {
           "text": "宝玉",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "玉"
-          ]
+          ],
+          "kanaReading": "ほうぎょく",
+          "coversReadings": [
+            "ギョク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "宝玉",
+              "reading": "ほうぎょく"
+            }
+          ],
+          "furiganaHtml": "<ruby>宝玉<rt>ほうぎょく</rt></ruby>"
+        },
+        {
+          "text": "玉石",
+          "reading": "gyokuseki",
+          "translation": "jade and stone; gemstone",
+          "speechText": "玉石",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ぎょくせき",
+          "furiganaSegments": [
+            {
+              "text": "玉石",
+              "reading": "ぎょくせき"
+            }
+          ],
+          "furiganaHtml": "<ruby>玉石<rt>ぎょくせき</rt></ruby>"
+        },
+        {
+          "text": "玉子",
+          "reading": "tamago",
+          "translation": "egg",
+          "speechText": "玉子",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たまご",
+          "furiganaSegments": [
+            {
+              "text": "玉子",
+              "reading": "たまご"
+            }
+          ],
+          "furiganaHtml": "<ruby>玉子<rt>たまご</rt></ruby>"
         },
         {
           "text": "玉を転がします。",
@@ -267,20 +390,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "玉"
-          ]
+          ],
+          "kanaReading": "たまをころがします。",
+          "furiganaSegments": [
+            {
+              "text": "玉",
+              "reading": "たま"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "転",
+              "reading": "ころ"
+            },
+            {
+              "text": "がします"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>玉<rt>たま</rt></ruby>を<ruby>転<rt>ころ</rt></ruby>がします。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "たま",
+        "romanization": "tama",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "玉",
       "readings": [
         {
           "system": "hanja",
-          "value": "옥 / ok",
+          "value": "옥 — ok",
           "audioAssetRef": null,
           "speechText": "옥",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "옥",
+          "romanization": "ok"
         }
       ],
       "glosses": [
@@ -316,6 +474,30 @@
           ]
         },
         {
+          "text": "옥",
+          "reading": "ok",
+          "translation": "jade",
+          "speechText": "옥",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "옥반지",
+          "reading": "okbanji",
+          "translation": "jade ring",
+          "speechText": "옥반지",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "이 옥은 아름다워요.",
           "reading": "i ogeun areumdawoyo.",
           "translation": "This jade is beautiful.",
@@ -330,7 +512,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "옥 — ok",
+          "audioAssetRef": null,
+          "speechText": "옥",
+          "speechLanguage": "korean",
+          "nativeReading": "옥",
+          "romanization": "ok"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "옥",
+        "romanization": "ok",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -339,14 +540,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Several pieces of jade threaded vertically on a cord.",
+    "originAnchor": "Three pieces of jade pierced and strung on a cord—the shape of an ancient jade ornament.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/jade/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows a central string crossed by three short horizontal jade pieces, with a small top projection.",
+        "changeNoteFromPrevious": "Shows a central string crossed by three short horizontal jade pieces, with a small top projection.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-玉"
@@ -372,8 +573,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows a central string crossed by three short horizontal jade pieces, with a small top projection.",
-        "transitionNote": "Oracle shows a central string crossed by three short horizontal jade pieces, with a small top projection.",
+        "stageExplanation": "Shows a central string crossed by three short horizontal jade pieces, with a small top projection.",
+        "transitionNote": "Shows a central string crossed by three short horizontal jade pieces, with a small top projection.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -383,7 +584,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/jade/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze straightens the string and makes the three crosspieces more even, already looking close to 王.",
+        "changeNoteFromPrevious": "Straightens the string and makes the three crosspieces more even, already looking close to king form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-玉"
@@ -409,8 +610,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze straightens the string and makes the three crosspieces more even, already looking close to 王.",
-        "transitionNote": "Bronze straightens the string and makes the three crosspieces more even, already looking close to 王.",
+        "stageExplanation": "Straightens the string and makes the three crosspieces more even, already looking close to king form.",
+        "transitionNote": "Straightens the string and makes the three crosspieces more even, already looking close to king form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -420,7 +621,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/jade/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal makes the three horizontals perfectly regular on one central vertical.",
+        "changeNoteFromPrevious": "Makes the three horizontals perfectly regular on one central vertical.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-玉"
@@ -446,8 +647,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal makes the three horizontals perfectly regular on one central vertical.",
-        "transitionNote": "Small Seal makes the three horizontals perfectly regular on one central vertical.",
+        "stageExplanation": "Makes the three horizontals perfectly regular on one central vertical.",
+        "transitionNote": "Makes the three horizontals perfectly regular on one central vertical.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -457,7 +658,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/jade/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical thickens the same three-bar structure and gives the base a longer brush finish.",
+        "changeNoteFromPrevious": "Thickens the same three-bar structure and gives the base a longer brush finish.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-玉"
@@ -483,8 +684,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical thickens the same three-bar structure and gives the base a longer brush finish.",
-        "transitionNote": "Clerical thickens the same three-bar structure and gives the base a longer brush finish.",
+        "stageExplanation": "Thickens the same three-bar structure and gives the base a longer brush finish.",
+        "transitionNote": "Thickens the same three-bar structure and gives the base a longer brush finish.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -494,7 +695,7 @@
         "label": "Regular Script",
         "form": "玉",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 玉 adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王.",
+        "changeNoteFromPrevious": "Adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -520,8 +721,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 玉 adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王.",
-        "transitionNote": "Regular 玉 adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王.",
+        "stageExplanation": "Adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王.",
+        "transitionNote": "Adds the decisive small dot to the 王-like frame, preserving the stacked jade pieces while distinguishing “jade” from 王.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -529,7 +730,7 @@
     ],
     "origin": {
       "concept": "jade",
-      "explanation": "Several pieces of jade threaded vertically on a cord.",
+      "explanation": "Several pieces of jade strung together.",
       "asset": {
         "characterID": "jade",
         "historicalStage": null,
@@ -634,13 +835,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -2,8 +2,8 @@
   "id": "moon",
   "version": 1,
   "coreCharacter": "月",
-  "coreSharedMeaning": "moon; month",
-  "recognitionTakeaway": "Regular 月 keeps the tall frame and two inner strokes, with the left side and lower sweep preserving a faint crescent-like asymmetry.",
+  "coreSharedMeaning": "moon / month",
+  "recognitionTakeaway": "The ancient crescent has become the familiar four-stroke form; the original moon picture is now largely lost.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6708",
   "simplifiedForm": "月",
@@ -15,9 +15,9 @@
     "A narrow crescent-like outline curves around an open center; it still reads strongly as a moon profile.",
     "Regular 月 keeps the tall frame and two inner strokes, with the left side and lower sweep preserving a faint crescent-like asymmetry."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-027-月-u6708",
+  "contentFolder": "content/release/symbols/moon",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-027-月-u6708/research.md",
+  "researchNotesPath": null,
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -34,10 +34,23 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "glosses": [
-        "moon; month"
-      ],
+      "glosses": [],
       "examples": [
+        {
+          "text": "月",
+          "reading": "yuè",
+          "translation": "moon / month",
+          "speechText": "月",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "yuè"
+          ]
+        },
         {
           "text": "月亮",
           "reading": "yuèliang",
@@ -45,12 +58,7 @@
           "speechText": "月亮",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "exampleLevel": "word"
         },
         {
           "text": "月光",
@@ -59,29 +67,30 @@
           "speechText": "月光",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "下个月见。",
-          "reading": "Xià ge yuè jiàn.",
-          "translation": "See you next month.",
-          "speechText": "下个月见。",
+          "text": "一月",
+          "reading": "yīyuè",
+          "translation": "January",
+          "speechText": "一月",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "exampleLevel": "word"
+        },
+        {
+          "text": "月亮很美。",
+          "reading": "Yuèliang hěn měi.",
+          "translation": "The moon is beautiful.",
+          "speechText": "月亮很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "月",
@@ -94,10 +103,20 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "glosses": [
-        "moon; month"
-      ],
+      "glosses": [],
       "taiwanExamples": [
+        {
+          "text": "月",
+          "reading": "yuè",
+          "translation": "moon / month",
+          "speechText": "月",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "月亮",
           "reading": "yuèliang",
@@ -105,12 +124,7 @@
           "speechText": "月亮",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "exampleLevel": "word"
         },
         {
           "text": "月光",
@@ -119,29 +133,40 @@
           "speechText": "月光",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "下個月見。",
-          "reading": "Xià ge yuè jiàn.",
-          "translation": "See you next month.",
-          "speechText": "下個月見。",
+          "text": "一月",
+          "reading": "yīyuè",
+          "translation": "January",
+          "speechText": "一月",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "exampleLevel": "word"
+        },
+        {
+          "text": "月亮很美。",
+          "reading": "Yuèliang hěn měi.",
+          "translation": "The moon is beautiful.",
+          "speechText": "月亮很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "月",
+          "reading": "jyut6",
+          "translation": "moon / month",
+          "speechText": "月",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "月亮",
           "reading": "jyut6 loeng6",
@@ -149,12 +174,7 @@
           "speechText": "月亮",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "exampleLevel": "word"
         },
         {
           "text": "月光",
@@ -163,26 +183,25 @@
           "speechText": "月光",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "下個月見。",
-          "reading": "haa6 go3 jyut6 gin3",
-          "translation": "See you next month.",
-          "speechText": "下個月見。",
+          "text": "一月",
+          "reading": "jat1 jyut6",
+          "translation": "January",
+          "speechText": "一月",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "exampleLevel": "word"
+        },
+        {
+          "text": "月亮好靚。",
+          "reading": "jyut6 loeng6 hou2 leng3.",
+          "translation": "The moon is beautiful.",
+          "speechText": "月亮好靚。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
         }
       ],
       "taiwanReadings": [
@@ -203,36 +222,45 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "月",
       "readings": [
         {
-          "system": "on",
-          "value": "ゲツ (getsu)",
+          "system": "onyomi",
+          "value": "ゲツ — getsu",
           "audioAssetRef": null,
           "speechText": "げつ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ゲツ",
+          "romanization": "getsu",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ガツ (gatsu)",
+          "system": "onyomi",
+          "value": "ガツ — gatsu",
           "audioAssetRef": null,
           "speechText": "がつ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ガツ",
+          "romanization": "gatsu",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "つき (tsuki)",
+          "system": "kunyomi",
+          "value": "つき — tsuki",
           "audioAssetRef": null,
           "speechText": "つき",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "つき",
+          "romanization": "tsuki",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
-      "glosses": [
-        "moon; month"
-      ],
+      "glosses": [],
       "examples": [
         {
           "text": "月",
@@ -242,11 +270,17 @@
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "kanaReading": "つき",
+          "coversReadings": [
+            "つき"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "月",
+              "reading": "つき"
+            }
+          ],
+          "furiganaHtml": "<ruby>月<rt>つき</rt></ruby>"
         },
         {
           "text": "月曜日",
@@ -256,51 +290,131 @@
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "kanaReading": "げつようび",
+          "coversReadings": [
+            "ゲツ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "月曜日",
+              "reading": "げつようび"
+            }
+          ],
+          "furiganaHtml": "<ruby>月曜日<rt>げつようび</rt></ruby>"
         },
         {
-          "text": "月がきれいです。",
-          "reading": "tsuki ga kirei desu.",
-          "translation": "The moon is beautiful.",
-          "speechText": "月がきれいです。",
+          "text": "一月",
+          "reading": "ichigatsu",
+          "translation": "January",
+          "speechText": "一月",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "いちがつ",
+          "coversReadings": [
+            "ガツ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "一月",
+              "reading": "いちがつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>一月<rt>いちがつ</rt></ruby>"
+        },
+        {
+          "text": "毎月",
+          "reading": "maitsuki",
+          "translation": "every month",
+          "speechText": "毎月",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "まいつき",
+          "furiganaSegments": [
+            {
+              "text": "毎月",
+              "reading": "まいつき"
+            }
+          ],
+          "furiganaHtml": "<ruby>毎月<rt>まいつき</rt></ruby>"
+        },
+        {
+          "text": "月が見える。",
+          "reading": "tsuki ga mieru.",
+          "translation": "The moon is visible.",
+          "speechText": "月が見える。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "kanaReading": "つきがみえる。",
+          "furiganaSegments": [
+            {
+              "text": "月",
+              "reading": "つき"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "見",
+              "reading": "み"
+            },
+            {
+              "text": "える"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>月<rt>つき</rt></ruby>が<ruby>見<rt>み</rt></ruby>える。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "つき",
+        "romanization": "tsuki",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "月",
       "readings": [
         {
           "system": "hanja",
-          "value": "월 / wol",
+          "value": "월 — wol",
           "audioAssetRef": null,
           "speechText": "월",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "달 / dal",
-          "audioAssetRef": null,
-          "speechText": "달",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "월",
+          "romanization": "wol"
         }
       ],
-      "glosses": [
-        "moon; month"
-      ],
+      "glosses": [],
       "examples": [
+        {
+          "text": "달",
+          "reading": "dal",
+          "translation": "moon / month",
+          "speechText": "달",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "월요일",
           "reading": "woryoil",
@@ -308,43 +422,76 @@
           "speechText": "월요일",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "exampleLevel": "word"
         },
         {
           "text": "월말",
           "reading": "wolmal",
-          "translation": "end of the month",
+          "translation": "month-end",
           "speechText": "월말",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "달이 밝아요.",
-          "reading": "dari balgayo.",
-          "translation": "The moon is bright.",
-          "speechText": "달이 밝아요.",
+          "text": "달빛",
+          "reading": "dalbit",
+          "translation": "moonlight",
+          "speechText": "달빛",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "月"
-          ]
+          "exampleLevel": "word"
+        },
+        {
+          "text": "달이 떠요.",
+          "reading": "dari tteoyo.",
+          "translation": "The moon is rising.",
+          "speechText": "달이 떠요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "월 — wol",
+          "audioAssetRef": null,
+          "speechText": "월",
+          "speechLanguage": "korean",
+          "nativeReading": "월",
+          "romanization": "wol"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "달 — dal",
+          "audioAssetRef": null,
+          "speechText": "달",
+          "speechLanguage": "korean",
+          "nativeReading": "달",
+          "romanization": "dal",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "moon / month",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "월",
+        "romanization": "wol",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +500,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A crescent moon, shown from a thin crescent to a fuller half-moon shape.",
+    "originAnchor": "A crescent moon, representing both the moon and the month.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/moon/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A narrow crescent-like outline curves around an open center; it still reads strongly as a moon profile.",
+        "changeNoteFromPrevious": "The graph was already used for both the moon and calendar months, linking the month to the lunar cycle.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-月"
@@ -386,8 +533,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A narrow crescent-like outline curves around an open center; it still reads strongly as a moon profile.",
-        "transitionNote": "A narrow crescent-like outline curves around an open center; it still reads strongly as a moon profile.",
+        "stageExplanation": "The graph was already used for both the moon and calendar months, linking the month to the lunar cycle.",
+        "transitionNote": "The graph was already used for both the moon and calendar months, linking the month to the lunar cycle.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +544,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/moon/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The crescent thickens and gains a short interior stroke, making the inside structure more explicit.",
+        "changeNoteFromPrevious": "An inner mark becomes increasingly common as the moon sign separates from the related evening sign.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-月"
@@ -423,8 +570,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The crescent thickens and gains a short interior stroke, making the inside structure more explicit.",
-        "transitionNote": "The crescent thickens and gains a short interior stroke, making the inside structure more explicit.",
+        "stageExplanation": "An inner mark becomes increasingly common as the moon sign separates from the related evening sign.",
+        "transitionNote": "An inner mark becomes increasingly common as the moon sign separates from the related evening sign.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +581,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/moon/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The outline becomes a smooth vertical oval-crescent with two short interior bands and a trailing lower curve.",
+        "changeNoteFromPrevious": "The crescent is reorganized into a tall enclosed form with two internal strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-月"
@@ -460,8 +607,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The outline becomes a smooth vertical oval-crescent with two short interior bands and a trailing lower curve.",
-        "transitionNote": "The outline becomes a smooth vertical oval-crescent with two short interior bands and a trailing lower curve.",
+        "stageExplanation": "The crescent is reorganized into a tall enclosed form with two internal strokes.",
+        "transitionNote": "The crescent is reorganized into a tall enclosed form with two internal strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +618,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/moon/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The form is squared and darkened into a vertical frame with several horizontal divisions; the literal crescent is largely gone.",
+        "changeNoteFromPrevious": "The rounded form becomes a square frame with two horizontal divisions, bringing it close to the modern character.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-月"
@@ -497,8 +644,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The form is squared and darkened into a vertical frame with several horizontal divisions; the literal crescent is largely gone.",
-        "transitionNote": "The form is squared and darkened into a vertical frame with several horizontal divisions; the literal crescent is largely gone.",
+        "stageExplanation": "The rounded form becomes a square frame with two horizontal divisions, bringing it close to the modern character.",
+        "transitionNote": "The rounded form becomes a square frame with two horizontal divisions, bringing it close to the modern character.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +655,7 @@
         "label": "Regular Script",
         "form": "月",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 月 keeps the tall frame and two inner strokes, with the left side and lower sweep preserving a faint crescent-like asymmetry.",
+        "changeNoteFromPrevious": "The ancient crescent has become the familiar four-stroke form; the original moon picture is now largely lost.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +681,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 月 keeps the tall frame and two inner strokes, with the left side and lower sweep preserving a faint crescent-like asymmetry.",
-        "transitionNote": "Regular 月 keeps the tall frame and two inner strokes, with the left side and lower sweep preserving a faint crescent-like asymmetry.",
+        "stageExplanation": "The ancient crescent has become the familiar four-stroke form; the original moon picture is now largely lost.",
+        "transitionNote": "The ancient crescent has become the familiar four-stroke form; the original moon picture is now largely lost.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +690,7 @@
     ],
     "origin": {
       "concept": "moon; month",
-      "explanation": "A crescent moon, shown from a thin crescent to a fuller half-moon shape.",
+      "explanation": "A crescent moon.",
       "asset": {
         "characterID": "moon",
         "historicalStage": null,
@@ -560,7 +707,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of moon; month",
+        "accessibilityDescription": "Illustration of moon / month",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +725,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'moon; month', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'moon / month', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -620,13 +767,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

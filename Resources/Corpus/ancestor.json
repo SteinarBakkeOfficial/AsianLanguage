@@ -2,8 +2,8 @@
   "id": "ancestor",
   "version": 1,
   "coreCharacter": "宗",
-  "coreSharedMeaning": "ancestor",
-  "recognitionTakeaway": "Regular 宗 fixes 宀 over 示, preserving the ancestral shrine image in a very transparent two-component structure.",
+  "coreSharedMeaning": "lineage / ancestor / sect",
+  "recognitionTakeaway": "宀 over 示 remains transparent in 宗, while meanings extend from ancestral shrine to lineage, sect, and religion-related uses.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5B97",
   "simplifiedForm": "宗",
@@ -15,9 +15,9 @@
     "Oracle draws a peaked roof over a simple vertical altar or tablet with long supports descending beneath it.",
     "Regular 宗 fixes 宀 over 示, preserving the ancestral shrine image in a very transparent two-component structure."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-139-宗-u5B97",
+  "contentFolder": "content/release/symbols/ancestor",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-139-宗-u5B97/research.md",
+  "researchNotesPath": "content/release/symbols/ancestor/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "lineage; clan; religion"
       ],
       "examples": [
+        {
+          "text": "宗",
+          "reading": "zōng",
+          "translation": "lineage; clan; religion",
+          "speechText": "宗",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zōng"
+          ]
+        },
         {
           "text": "宗教",
           "reading": "zōngjiào",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "祖宗",
+          "reading": "zǔzong",
+          "translation": "ancestors",
+          "speechText": "祖宗",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这是宗教场所。",
           "reading": "Zhè shì zōngjiào chǎngsuǒ.",
           "translation": "This is a religious place.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "宗",
@@ -98,6 +127,18 @@
         "lineage; clan; religion"
       ],
       "taiwanExamples": [
+        {
+          "text": "宗",
+          "reading": "zōng",
+          "translation": "lineage; clan; religion",
+          "speechText": "宗",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "宗教",
           "reading": "zōngjiào",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "宗",
+          "reading": "zung1",
+          "translation": "lineage; clan; religion",
+          "speechText": "宗",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "宗教",
           "reading": "zung1 gaau3",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "宗",
       "readings": [
         {
-          "system": "on",
-          "value": "シュウ (shū)",
+          "system": "onyomi",
+          "value": "シュウ — shū",
           "audioAssetRef": null,
           "speechText": "しゅう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "シュウ",
+          "romanization": "shū",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ソウ (sō)",
+          "system": "onyomi",
+          "value": "ソウ — sō",
           "audioAssetRef": null,
           "speechText": "そう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ソウ",
+          "romanization": "sō",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "宗"
-          ]
+          ],
+          "kanaReading": "しゅうきょう",
+          "coversReadings": [
+            "シュウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "宗教",
+              "reading": "しゅうきょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>宗教<rt>しゅうきょう</rt></ruby>"
         },
         {
           "text": "宗派",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "宗"
-          ]
+          ],
+          "kanaReading": "しゅうは",
+          "furiganaSegments": [
+            {
+              "text": "宗派",
+              "reading": "しゅうは"
+            }
+          ],
+          "furiganaHtml": "<ruby>宗派<rt>しゅうは</rt></ruby>"
+        },
+        {
+          "text": "宗家",
+          "reading": "sōke",
+          "translation": "head family",
+          "speechText": "宗家",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "そうけ",
+          "coversReadings": [
+            "ソウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "宗家",
+              "reading": "そうけ"
+            }
+          ],
+          "furiganaHtml": "<ruby>宗家<rt>そうけ</rt></ruby>"
+        },
+        {
+          "text": "宗門",
+          "reading": "shūmon",
+          "translation": "religious sect / school",
+          "speechText": "宗門",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しゅうもん",
+          "furiganaSegments": [
+            {
+              "text": "宗門",
+              "reading": "しゅうもん"
+            }
+          ],
+          "furiganaHtml": "<ruby>宗門<rt>しゅうもん</rt></ruby>"
         },
         {
           "text": "宗教を学びます。",
@@ -267,20 +390,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "宗"
-          ]
+          ],
+          "kanaReading": "しゅうきょうをまなびます。",
+          "furiganaSegments": [
+            {
+              "text": "宗教",
+              "reading": "しゅうきょう"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "学",
+              "reading": "まな"
+            },
+            {
+              "text": "びます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>宗教<rt>しゅうきょう</rt></ruby>を<ruby>学<rt>まな</rt></ruby>びます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "シュウ",
+        "romanization": "shū",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "宗",
       "readings": [
         {
           "system": "hanja",
-          "value": "종 / jong",
+          "value": "종 — jong",
           "audioAssetRef": null,
           "speechText": "종",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "종",
+          "romanization": "jong"
         }
       ],
       "glosses": [
@@ -316,6 +474,30 @@
           ]
         },
         {
+          "text": "종가",
+          "reading": "jongga",
+          "translation": "head family",
+          "speechText": "종가",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "종친",
+          "reading": "jongchin",
+          "translation": "clan relative",
+          "speechText": "종친",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "종교를 공부해요.",
           "reading": "jonggyoreul gongbuhaeyo.",
           "translation": "I study religion.",
@@ -330,7 +512,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "종 — jong",
+          "audioAssetRef": null,
+          "speechText": "종",
+          "speechLanguage": "korean",
+          "nativeReading": "종",
+          "romanization": "jong"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "종",
+        "romanization": "jong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -339,14 +540,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "An ancestral tablet or shrine standing inside a small roofed structure.",
+    "originAnchor": "A roof and a spirit tablet combine to show an ancestral temple; this sacred family place led to the meanings “ancestor” and “lineage.”",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/ancestor/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle draws a peaked roof over a simple vertical altar or tablet with long supports descending beneath it.",
+        "changeNoteFromPrevious": "A roofed shrine contains a sacred/spirit tablet ritual-tablet sign, directly depicting an ancestral temple.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-宗"
@@ -372,8 +573,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle draws a peaked roof over a simple vertical altar or tablet with long supports descending beneath it.",
-        "transitionNote": "Oracle draws a peaked roof over a simple vertical altar or tablet with long supports descending beneath it.",
+        "stageExplanation": "A roofed shrine contains a sacred/spirit tablet ritual-tablet sign, directly depicting an ancestral temple.",
+        "transitionNote": "A roofed shrine contains a sacred/spirit tablet ritual-tablet sign, directly depicting an ancestral temple.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -383,7 +584,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/ancestor/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the roof broader and places a clear 示-like altar inside the enclosure.",
+        "changeNoteFromPrevious": "Makes the roof broader and places a clear ritual-tablet sign-like altar inside the enclosure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-宗"
@@ -409,8 +610,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the roof broader and places a clear 示-like altar inside the enclosure.",
-        "transitionNote": "Bronze makes the roof broader and places a clear 示-like altar inside the enclosure.",
+        "stageExplanation": "Makes the roof broader and places a clear ritual-tablet sign-like altar inside the enclosure.",
+        "transitionNote": "Makes the roof broader and places a clear ritual-tablet sign-like altar inside the enclosure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -420,7 +621,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/ancestor/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the house roof and the inner altar into a symmetric, centered stack.",
+        "changeNoteFromPrevious": "Regularizes the house roof and the inner altar into a symmetric, centered stack.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-宗"
@@ -446,8 +647,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the house roof and the inner altar into a symmetric, centered stack.",
-        "transitionNote": "Small Seal regularizes the house roof and the inner altar into a symmetric, centered stack.",
+        "stageExplanation": "Regularizes the house roof and the inner altar into a symmetric, centered stack.",
+        "transitionNote": "Regularizes the house roof and the inner altar into a symmetric, centered stack.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -457,7 +658,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/ancestor/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the roof and spreads the lower altar strokes outward, making 宗 immediately recognizable.",
+        "changeNoteFromPrevious": "Flattens the roof and spreads the lower altar strokes outward, making ancestral-shrine form immediately recognizable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-宗"
@@ -483,8 +684,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the roof and spreads the lower altar strokes outward, making 宗 immediately recognizable.",
-        "transitionNote": "Clerical flattens the roof and spreads the lower altar strokes outward, making 宗 immediately recognizable.",
+        "stageExplanation": "Flattens the roof and spreads the lower altar strokes outward, making ancestral-shrine form immediately recognizable.",
+        "transitionNote": "Flattens the roof and spreads the lower altar strokes outward, making ancestral-shrine form immediately recognizable.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -494,7 +695,7 @@
         "label": "Regular Script",
         "form": "宗",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 宗 fixes 宀 over 示, preserving the ancestral shrine image in a very transparent two-component structure.",
+        "changeNoteFromPrevious": "宀 over 示 remains transparent in 宗, while meanings extend from ancestral shrine to lineage, sect, and religion-related uses.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -520,8 +721,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 宗 fixes 宀 over 示, preserving the ancestral shrine image in a very transparent two-component structure.",
-        "transitionNote": "Regular 宗 fixes 宀 over 示, preserving the ancestral shrine image in a very transparent two-component structure.",
+        "stageExplanation": "宀 over 示 remains transparent in 宗, while meanings extend from ancestral shrine to lineage, sect, and religion-related uses.",
+        "transitionNote": "宀 over 示 remains transparent in 宗, while meanings extend from ancestral shrine to lineage, sect, and religion-related uses.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -529,7 +730,7 @@
     ],
     "origin": {
       "concept": "ancestor",
-      "explanation": "An ancestral tablet or shrine standing inside a small roofed structure.",
+      "explanation": "A roofed ancestral building contains a spirit or ancestor tablet.",
       "asset": {
         "characterID": "ancestor",
         "historicalStage": null,
@@ -546,7 +747,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of ancestor",
+        "accessibilityDescription": "Illustration of lineage / ancestor / sect",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -564,7 +765,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'ancestor', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'lineage / ancestor / sect', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -634,13 +835,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -2,8 +2,8 @@
   "id": "north",
   "version": 1,
   "coreCharacter": "北",
-  "coreSharedMeaning": "north",
-  "recognitionTakeaway": "Regular 北 turns the two opposing figures into angular stroke groups, but the left-right mirrored structure still records the original back-to-back arrangement.",
+  "coreSharedMeaning": "north (originally back)",
+  "recognitionTakeaway": "The back-to-back graph stabilizes as 北 for “north,” while 背 later carries the ordinary “back” sense.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5317",
   "simplifiedForm": "北",
@@ -15,9 +15,9 @@
     "Oracle presents two thin human profiles turned away from one another, their backs nearly touching.",
     "Regular 北 turns the two opposing figures into angular stroke groups, but the left-right mirrored structure still records the original back-to-back arrangement."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-065-北-u5317",
+  "contentFolder": "content/release/symbols/north",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-065-北-u5317/research.md",
+  "researchNotesPath": "content/release/symbols/north/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "north"
       ],
       "examples": [
+        {
+          "text": "北",
+          "reading": "běi",
+          "translation": "north",
+          "speechText": "北",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "běi"
+          ]
+        },
         {
           "text": "北方",
           "reading": "běifāng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "北京",
+          "reading": "Běijīng",
+          "translation": "Beijing",
+          "speechText": "北京",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我们向北走。",
           "reading": "Wǒmen xiàng běi zǒu.",
           "translation": "We are walking north.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "北",
@@ -98,6 +127,18 @@
         "north"
       ],
       "taiwanExamples": [
+        {
+          "text": "北",
+          "reading": "běi",
+          "translation": "north",
+          "speechText": "北",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "北方",
           "reading": "běifāng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "北",
+          "reading": "bak1",
+          "translation": "north",
+          "speechText": "北",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "北方",
           "reading": "bak1 fong1",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "北",
       "readings": [
         {
-          "system": "on",
-          "value": "ホク (hoku)",
+          "system": "onyomi",
+          "value": "ホク — hoku",
           "audioAssetRef": null,
           "speechText": "ほく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ホク",
+          "romanization": "hoku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "きた (kita)",
+          "system": "kunyomi",
+          "value": "きた — kita",
           "audioAssetRef": null,
           "speechText": "きた",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "きた",
+          "romanization": "kita",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "北"
-          ]
+          ],
+          "kanaReading": "きた",
+          "coversReadings": [
+            "きた"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "北",
+              "reading": "きた"
+            }
+          ],
+          "furiganaHtml": "<ruby>北<rt>きた</rt></ruby>"
         },
         {
           "text": "北口",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "北"
-          ]
+          ],
+          "kanaReading": "きたぐち",
+          "furiganaSegments": [
+            {
+              "text": "北口",
+              "reading": "きたぐち"
+            }
+          ],
+          "furiganaHtml": "<ruby>北口<rt>きたぐち</rt></ruby>"
+        },
+        {
+          "text": "北海道",
+          "reading": "hokkaidō",
+          "translation": "Hokkaido",
+          "speechText": "北海道",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ほっかいどう",
+          "furiganaSegments": [
+            {
+              "text": "北海道",
+              "reading": "ほっかいどう"
+            }
+          ],
+          "furiganaHtml": "<ruby>北海道<rt>ほっかいどう</rt></ruby>"
+        },
+        {
+          "text": "北部",
+          "reading": "hokubu",
+          "translation": "northern part",
+          "speechText": "北部",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ほくぶ",
+          "coversReadings": [
+            "ホク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "北部",
+              "reading": "ほくぶ"
+            }
+          ],
+          "furiganaHtml": "<ruby>北部<rt>ほくぶ</rt></ruby>"
         },
         {
           "text": "北へ行きます。",
@@ -267,33 +390,76 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "北"
-          ]
+          ],
+          "kanaReading": "きたへいきます。",
+          "furiganaSegments": [
+            {
+              "text": "北",
+              "reading": "きた"
+            },
+            {
+              "text": "へ"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>北<rt>きた</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "きた",
+        "romanization": "kita",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "北",
       "readings": [
         {
           "system": "hanja",
-          "value": "북 / buk",
+          "value": "북 — buk",
           "audioAssetRef": null,
           "speechText": "북",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "북쪽 / bukjjok",
-          "audioAssetRef": null,
-          "speechText": "북쪽",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "북",
+          "romanization": "buk"
         }
       ],
       "glosses": [
         "north"
       ],
       "examples": [
+        {
+          "text": "북쪽",
+          "reading": "bukjjok",
+          "translation": "north",
+          "speechText": "북쪽",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "北"
+          ],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "북부",
           "reading": "bukbu",
@@ -309,18 +475,28 @@
           ]
         },
         {
-          "text": "북쪽",
-          "reading": "bukjjok",
-          "translation": "north",
-          "speechText": "북쪽",
+          "text": "북미",
+          "reading": "bungmi",
+          "translation": "North America",
+          "speechText": "북미",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "北"
-          ]
+          "introducedSymbols": []
+        },
+        {
+          "text": "북문",
+          "reading": "bungmun",
+          "translation": "north gate",
+          "speechText": "북문",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "북쪽으로 가요.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "북 — buk",
+          "audioAssetRef": null,
+          "speechText": "북",
+          "speechLanguage": "korean",
+          "nativeReading": "북",
+          "romanization": "buk"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "북쪽 — bukjjok",
+          "audioAssetRef": null,
+          "speechText": "북쪽",
+          "speechLanguage": "korean",
+          "nativeReading": "북쪽",
+          "romanization": "bukjjok",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "north",
+          "displayTier": "secondary",
+          "lexicalOrigin": "mixed",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "북",
+        "romanization": "buk",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +561,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Two people sitting back-to-back and facing in opposite directions.",
+    "originAnchor": "Two human figures stand back-to-back, expressing the earlier idea of ‘back.’",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/north/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle presents two thin human profiles turned away from one another, their backs nearly touching.",
+        "changeNoteFromPrevious": "Two human figures stand back-to-back, directly expressing the old “back/back-facing” idea.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-北"
@@ -379,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle presents two thin human profiles turned away from one another, their backs nearly touching.",
-        "transitionNote": "Oracle presents two thin human profiles turned away from one another, their backs nearly touching.",
+        "stageExplanation": "Two human figures stand back-to-back, directly expressing the old “back/back-facing” idea.",
+        "transitionNote": "Two human figures stand back-to-back, directly expressing the old “back/back-facing” idea.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +605,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/north/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze reduces the pair to two thick mirrored figures with inward-facing straight edges and outward-curving backs.",
+        "changeNoteFromPrevious": "Reduces the pair to two thick mirrored figures with inward-facing straight edges and outward-curving backs.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-北"
@@ -416,8 +631,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze reduces the pair to two thick mirrored figures with inward-facing straight edges and outward-curving backs.",
-        "transitionNote": "Bronze reduces the pair to two thick mirrored figures with inward-facing straight edges and outward-curving backs.",
+        "stageExplanation": "Reduces the pair to two thick mirrored figures with inward-facing straight edges and outward-curving backs.",
+        "transitionNote": "Reduces the pair to two thick mirrored figures with inward-facing straight edges and outward-curving backs.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +642,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/north/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal stretches them into two tall, narrow mirrored curves separated by a clear central gap.",
+        "changeNoteFromPrevious": "Stretches them into two tall, narrow mirrored curves separated by a clear central gap.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-北"
@@ -453,8 +668,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal stretches them into two tall, narrow mirrored curves separated by a clear central gap.",
-        "transitionNote": "Small Seal stretches them into two tall, narrow mirrored curves separated by a clear central gap.",
+        "stageExplanation": "Stretches them into two tall, narrow mirrored curves separated by a clear central gap.",
+        "transitionNote": "Stretches them into two tall, narrow mirrored curves separated by a clear central gap.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +679,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/north/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical shortens and thickens both halves, preserving the back-to-back opposition more clearly than the Seal form.",
+        "changeNoteFromPrevious": "Shortens and thickens both halves, preserving the back-to-back opposition more clearly than the Seal form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-北"
@@ -490,8 +705,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical shortens and thickens both halves, preserving the back-to-back opposition more clearly than the Seal form.",
-        "transitionNote": "Clerical shortens and thickens both halves, preserving the back-to-back opposition more clearly than the Seal form.",
+        "stageExplanation": "Shortens and thickens both halves, preserving the back-to-back opposition more clearly than the Seal form.",
+        "transitionNote": "Shortens and thickens both halves, preserving the back-to-back opposition more clearly than the Seal form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "北",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 北 turns the two opposing figures into angular stroke groups, but the left-right mirrored structure still records the original back-to-back arrangement.",
+        "changeNoteFromPrevious": "The back-to-back graph was later borrowed by sound for ‘north’; the ordinary ‘back’ sense came to be written with a body-related addition.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 北 turns the two opposing figures into angular stroke groups, but the left-right mirrored structure still records the original back-to-back arrangement.",
-        "transitionNote": "Regular 北 turns the two opposing figures into angular stroke groups, but the left-right mirrored structure still records the original back-to-back arrangement.",
+        "stageExplanation": "The back-to-back graph stabilizes as 北 for “north,” while 背 later carries the ordinary “back” sense.",
+        "transitionNote": "The back-to-back graph was later borrowed by sound for ‘north’; the ordinary ‘back’ sense came to be written with a body-related addition.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "north",
-      "explanation": "Two people sitting back-to-back and facing in opposite directions.",
+      "explanation": "Two people standing back-to-back.",
       "asset": {
         "characterID": "north",
         "historicalStage": null,
@@ -553,7 +768,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of north",
+        "accessibilityDescription": "Illustration of north (originally back)",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +786,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'north', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'north (originally back)', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

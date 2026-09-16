@@ -2,8 +2,8 @@
   "id": "good",
   "version": 1,
   "coreCharacter": "好",
-  "coreSharedMeaning": "good",
-  "recognitionTakeaway": "Regular 好 fixes 女 on the left and 子 on the right, making the two-part composition clear again after the more flowing Seal form.",
+  "coreSharedMeaning": "good / like",
+  "recognitionTakeaway": "Fixes 女 on the left and 子 on the right, making the two-part composition clear again after the more flowing Seal form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+597D",
   "simplifiedForm": "好",
@@ -15,9 +15,9 @@
     "Oracle keeps the two figures distinct: a child-like form stands beside a bent woman-like figure.",
     "Regular 好 fixes 女 on the left and 子 on the right, making the two-part composition clear again after the more flowing Seal form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-099-好-u597D",
+  "contentFolder": "content/release/symbols/good",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-099-好-u597D/research.md",
+  "researchNotesPath": "content/release/symbols/good/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -32,6 +32,14 @@
           "audioAssetRef": null,
           "speechText": "好",
           "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "hào",
+          "audioAssetRef": null,
+          "speechText": "好",
+          "speechLanguage": "mandarin",
+          "usageNote": "common verb/noun-forming reading: like; be fond of"
         }
       ],
       "glosses": [
@@ -50,6 +58,9 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "好"
+          ],
+          "coversReadings": [
+            "hǎo"
           ]
         },
         {
@@ -67,6 +78,45 @@
           ]
         },
         {
+          "text": "好看",
+          "reading": "hǎokàn",
+          "translation": "good-looking; nice to look at",
+          "speechText": "好看",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "好吃",
+          "reading": "hǎochī",
+          "translation": "tasty; delicious",
+          "speechText": "好吃",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "爱好",
+          "reading": "àihào",
+          "translation": "hobby; interest",
+          "speechText": "爱好",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "hào"
+          ]
+        },
+        {
           "text": "我很好。",
           "reading": "Wǒ hěn hǎo.",
           "translation": "I am very well.",
@@ -81,7 +131,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "好",
@@ -125,6 +177,18 @@
           "introducedSymbols": [
             "好"
           ]
+        },
+        {
+          "text": "好看",
+          "reading": "hǎokàn",
+          "translation": "good-looking; nice to look at",
+          "speechText": "好看",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "我很好。",
@@ -183,6 +247,18 @@
           "introducedSymbols": [
             "好"
           ]
+        },
+        {
+          "text": "呢個係好人。",
+          "reading": "ni1 go3 hai6 hou2 jan4",
+          "translation": "This is a good person.",
+          "speechText": "呢個係好人。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -203,31 +279,43 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "好",
       "readings": [
         {
-          "system": "on",
-          "value": "コウ (kō)",
+          "system": "onyomi",
+          "value": "コウ — kō",
           "audioAssetRef": null,
           "speechText": "こう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コウ",
+          "romanization": "kō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "すき (suki)",
+          "system": "kunyomi",
+          "value": "すく — suku",
           "audioAssetRef": null,
-          "speechText": "すき",
-          "speechLanguage": "japanese"
+          "speechText": "すく",
+          "speechLanguage": "japanese",
+          "nativeReading": "すく",
+          "romanization": "suku",
+          "historicalOrigin": "nativeJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table; 好き is lexicalized form based on this reading"
         },
         {
-          "system": "kun",
-          "value": "このむ (konomu)",
+          "system": "kunyomi",
+          "value": "このむ — konomu",
           "audioAssetRef": null,
           "speechText": "このむ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "このむ",
+          "romanization": "konomu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +334,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "好"
-          ]
+          ],
+          "kanaReading": "すき",
+          "coversReadings": [
+            "すく"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "好",
+              "reading": "す"
+            },
+            {
+              "text": "き"
+            }
+          ],
+          "furiganaHtml": "<ruby>好<rt>す</rt></ruby>き"
         },
         {
           "text": "好み",
@@ -260,7 +362,67 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "好"
-          ]
+          ],
+          "kanaReading": "このみ",
+          "furiganaSegments": [
+            {
+              "text": "好",
+              "reading": "この"
+            },
+            {
+              "text": "み"
+            }
+          ],
+          "furiganaHtml": "<ruby>好<rt>この</rt></ruby>み"
+        },
+        {
+          "text": "好意",
+          "reading": "kōi",
+          "translation": "goodwill; favor",
+          "speechText": "好意",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうい",
+          "coversReadings": [
+            "コウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "好意",
+              "reading": "こうい"
+            }
+          ],
+          "furiganaHtml": "<ruby>好意<rt>こうい</rt></ruby>"
+        },
+        {
+          "text": "好む",
+          "reading": "konomu",
+          "translation": "prefer",
+          "speechText": "好む",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "このむ",
+          "coversReadings": [
+            "このむ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "好",
+              "reading": "この"
+            },
+            {
+              "text": "む"
+            }
+          ],
+          "furiganaHtml": "<ruby>好<rt>この</rt></ruby>む"
         },
         {
           "text": "私は水が好きです。",
@@ -274,33 +436,82 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "好"
-          ]
+          ],
+          "kanaReading": "わたしはみずがすきです。",
+          "furiganaSegments": [
+            {
+              "text": "私",
+              "reading": "わたし"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "水",
+              "reading": "みず"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "好",
+              "reading": "す"
+            },
+            {
+              "text": "きです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>私<rt>わたし</rt></ruby>は<ruby>水<rt>みず</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout.",
+        "note": "好き (suki) remains a high-value lexical example, but the Jōyō kun reading is すく, not bare すき."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "このむ",
+        "romanization": "konomu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "好",
       "readings": [
         {
           "system": "hanja",
-          "value": "호 / ho",
+          "value": "호 — ho",
           "audioAssetRef": null,
           "speechText": "호",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "좋다 / jota",
-          "audioAssetRef": null,
-          "speechText": "좋다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "호",
+          "romanization": "ho"
         }
       ],
       "glosses": [
         "good"
       ],
       "examples": [
+        {
+          "text": "좋다",
+          "reading": "jota",
+          "translation": "good / like",
+          "speechText": "좋다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "호감",
           "reading": "hogam",
@@ -330,6 +541,18 @@
           ]
         },
         {
+          "text": "호의",
+          "reading": "houi",
+          "translation": "goodwill",
+          "speechText": "호의",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "이게 좋아요.",
           "reading": "ige joayo.",
           "translation": "I like this / This is good.",
@@ -344,7 +567,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "호 — ho",
+          "audioAssetRef": null,
+          "speechText": "호",
+          "speechLanguage": "korean",
+          "nativeReading": "호",
+          "romanization": "ho"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "좋다 — jota",
+          "audioAssetRef": null,
+          "speechText": "좋다",
+          "speechLanguage": "korean",
+          "nativeReading": "좋다",
+          "romanization": "jota",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "good / like",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "호",
+        "romanization": "ho",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +615,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A woman reaching toward a small child.",
+    "originAnchor": "A woman and a child together express an affectionate bond; this led to 'good.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/good/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle keeps the two figures distinct: a child-like form stands beside a bent woman-like figure.",
+        "changeNoteFromPrevious": "The woman and child figures are combined; the components are clear even though the exact cultural motivation for “good” is interpretive.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-好"
@@ -386,8 +648,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle keeps the two figures distinct: a child-like form stands beside a bent woman-like figure.",
-        "transitionNote": "Oracle keeps the two figures distinct: a child-like form stands beside a bent woman-like figure.",
+        "stageExplanation": "The woman and child figures are combined; the components are clear even though the exact cultural motivation for “good” is interpretive.",
+        "transitionNote": "The woman and child figures are combined; the components are clear even though the exact cultural motivation for “good” is interpretive.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +659,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/good/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the child’s round head clearer while the woman remains a flowing crossed body beside it.",
+        "changeNoteFromPrevious": "Makes the child’s round head clearer while the woman remains a flowing crossed body beside it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-好"
@@ -423,8 +685,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the child’s round head clearer while the woman remains a flowing crossed body beside it.",
-        "transitionNote": "Bronze makes the child’s round head clearer while the woman remains a flowing crossed body beside it.",
+        "stageExplanation": "Makes the child’s round head clearer while the woman remains a flowing crossed body beside it.",
+        "transitionNote": "Makes the child’s round head clearer while the woman remains a flowing crossed body beside it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +696,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/good/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal elongates both figures and intertwines their curves, making the two components less immediately separable.",
+        "changeNoteFromPrevious": "Elongates both figures and intertwines their curves, making the two components less immediately separable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-好"
@@ -460,8 +722,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal elongates both figures and intertwines their curves, making the two components less immediately separable.",
-        "transitionNote": "Small Seal elongates both figures and intertwines their curves, making the two components less immediately separable.",
+        "stageExplanation": "Elongates both figures and intertwines their curves, making the two components less immediately separable.",
+        "transitionNote": "Elongates both figures and intertwines their curves, making the two components less immediately separable.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +733,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/good/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical compresses the left figure toward 女 and the right toward 子, bringing the compound close to its modern arrangement.",
+        "changeNoteFromPrevious": "Compresses the left figure toward woman sign and the right toward child sign, bringing the compound close to its modern arrangement.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-好"
@@ -497,8 +759,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical compresses the left figure toward 女 and the right toward 子, bringing the compound close to its modern arrangement.",
-        "transitionNote": "Clerical compresses the left figure toward 女 and the right toward 子, bringing the compound close to its modern arrangement.",
+        "stageExplanation": "Compresses the left figure toward woman sign and the right toward child sign, bringing the compound close to its modern arrangement.",
+        "transitionNote": "Compresses the left figure toward woman sign and the right toward child sign, bringing the compound close to its modern arrangement.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +770,7 @@
         "label": "Regular Script",
         "form": "好",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 好 fixes 女 on the left and 子 on the right, making the two-part composition clear again after the more flowing Seal form.",
+        "changeNoteFromPrevious": "Fixes 女 on the left and 子 on the right, making the two-part composition clear again after the more flowing Seal form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +796,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 好 fixes 女 on the left and 子 on the right, making the two-part composition clear again after the more flowing Seal form.",
-        "transitionNote": "Regular 好 fixes 女 on the left and 子 on the right, making the two-part composition clear again after the more flowing Seal form.",
+        "stageExplanation": "Fixes 女 on the left and 子 on the right, making the two-part composition clear again after the more flowing Seal form.",
+        "transitionNote": "Fixes 女 on the left and 子 on the right, making the two-part composition clear again after the more flowing Seal form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +805,7 @@
     ],
     "origin": {
       "concept": "good",
-      "explanation": "A woman reaching toward a small child.",
+      "explanation": "A woman and a child are shown together.",
       "asset": {
         "characterID": "good",
         "historicalStage": null,
@@ -560,7 +822,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of good",
+        "accessibilityDescription": "Illustration of good / like",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +840,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'good', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'good / like', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +910,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

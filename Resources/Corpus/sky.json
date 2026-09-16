@@ -2,8 +2,8 @@
   "id": "sky",
   "version": 1,
   "coreCharacter": "天",
-  "coreSharedMeaning": "sky",
-  "recognitionTakeaway": "Regular 天 joins the top line to the simplified 大-like body and fixes the whole form into four strokes.",
+  "coreSharedMeaning": "sky / heaven",
+  "recognitionTakeaway": "Ancient forms vary in whether they emphasize a great person, the head, or what is above; the shared idea of height leads to the sky/heaven meaning.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5929",
   "simplifiedForm": "天",
@@ -11,13 +11,13 @@
   "additionalMeanings": [],
   "formationType": "pictograph",
   "visualTeachingNotes": [
-    "A person standing beneath a long horizontal line representing the sky above.",
-    "A human figure is drawn with an oversized square head, making the uppermost part visually dominant.",
+    "Ancient forms vary: some emphasize a great person, some the head, and some a sign for what is above.",
+    "The shared idea is height or supremacy, linking the human figure to the sky/heaven meaning.",
     "Regular 天 joins the top line to the simplified 大-like body and fixes the whole form into four strokes."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-028-天-u5929",
+  "contentFolder": "content/release/symbols/sky",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-028-天-u5929/research.md",
+  "researchNotesPath": "content/release/symbols/sky/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "sky"
       ],
       "examples": [
+        {
+          "text": "天",
+          "reading": "tiān",
+          "translation": "sky",
+          "speechText": "天",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "tiān"
+          ]
+        },
         {
           "text": "天空",
           "reading": "tiānkōng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "天地",
+          "reading": "tiāndì",
+          "translation": "heaven and earth",
+          "speechText": "天地",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "今天是晴天。",
           "reading": "Jīntiān shì qíngtiān.",
           "translation": "Today is a sunny day.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "天",
@@ -98,6 +127,18 @@
         "sky"
       ],
       "taiwanExamples": [
+        {
+          "text": "天",
+          "reading": "tiān",
+          "translation": "sky",
+          "speechText": "天",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "天空",
           "reading": "tiānkōng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "天",
+          "reading": "tin1",
+          "translation": "sky",
+          "speechText": "天",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "天空",
           "reading": "tin1 hung1",
@@ -203,24 +256,33 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "天",
       "readings": [
         {
-          "system": "on",
-          "value": "テン (ten)",
+          "system": "onyomi",
+          "value": "テン — ten",
           "audioAssetRef": null,
           "speechText": "てん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "テン",
+          "romanization": "ten",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "あめ (ame)",
+          "system": "kunyomi",
+          "value": "あま — ama",
           "audioAssetRef": null,
-          "speechText": "あめ",
-          "speechLanguage": "japanese"
+          "speechText": "あま",
+          "speechLanguage": "japanese",
+          "nativeReading": "あま",
+          "romanization": "ama",
+          "historicalOrigin": "nativeJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
         }
       ],
       "glosses": [
@@ -239,7 +301,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "天"
-          ]
+          ],
+          "kanaReading": "てん",
+          "coversReadings": [
+            "テン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "天",
+              "reading": "てん"
+            }
+          ],
+          "furiganaHtml": "<ruby>天<rt>てん</rt></ruby>"
         },
         {
           "text": "天気",
@@ -253,7 +326,83 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "天"
-          ]
+          ],
+          "kanaReading": "てんき",
+          "furiganaSegments": [
+            {
+              "text": "天気",
+              "reading": "てんき"
+            }
+          ],
+          "furiganaHtml": "<ruby>天気<rt>てんき</rt></ruby>"
+        },
+        {
+          "text": "天空",
+          "reading": "tenkū",
+          "translation": "sky",
+          "speechText": "天空",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "てんくう",
+          "furiganaSegments": [
+            {
+              "text": "天空",
+              "reading": "てんくう"
+            }
+          ],
+          "furiganaHtml": "<ruby>天空<rt>てんくう</rt></ruby>"
+        },
+        {
+          "text": "天国",
+          "reading": "tengoku",
+          "translation": "heaven",
+          "speechText": "天国",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "てんごく",
+          "furiganaSegments": [
+            {
+              "text": "天国",
+              "reading": "てんごく"
+            }
+          ],
+          "furiganaHtml": "<ruby>天国<rt>てんごく</rt></ruby>"
+        },
+        {
+          "text": "天の川",
+          "reading": "amanogawa",
+          "translation": "Milky Way",
+          "speechText": "天の川",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "あまのがわ",
+          "coversReadings": [
+            "あま"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "天",
+              "reading": "あま"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "川",
+              "reading": "がわ"
+            }
+          ],
+          "furiganaHtml": "<ruby>天<rt>あま</rt></ruby>の<ruby>川<rt>がわ</rt></ruby>"
         },
         {
           "text": "天気がいいです。",
@@ -267,33 +416,70 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "天"
-          ]
+          ],
+          "kanaReading": "てんきがいいです。",
+          "furiganaSegments": [
+            {
+              "text": "天気",
+              "reading": "てんき"
+            },
+            {
+              "text": "がいいです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>天気<rt>てんき</rt></ruby>がいいです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout.",
+        "officialReadingNotDisplayed": [
+          "あめ — ame (official kun reading; literary/limited everyday use; retain for V3 display decision)"
+        ]
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "テン",
+        "romanization": "ten",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "天",
       "readings": [
         {
           "system": "hanja",
-          "value": "천 / cheon",
+          "value": "천 — cheon",
           "audioAssetRef": null,
           "speechText": "천",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "하늘 / haneul",
-          "audioAssetRef": null,
-          "speechText": "하늘",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "천",
+          "romanization": "cheon"
         }
       ],
       "glosses": [
         "sky"
       ],
       "examples": [
+        {
+          "text": "하늘",
+          "reading": "haneul",
+          "translation": "sky",
+          "speechText": "하늘",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "천국",
           "reading": "cheonguk",
@@ -323,6 +509,18 @@
           ]
         },
         {
+          "text": "천지",
+          "reading": "cheonji",
+          "translation": "heaven and earth",
+          "speechText": "천지",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "하늘이 맑아요.",
           "reading": "haneuri malgayo.",
           "translation": "The sky is clear.",
@@ -337,7 +535,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "천 — cheon",
+          "audioAssetRef": null,
+          "speechText": "천",
+          "speechLanguage": "korean",
+          "nativeReading": "천",
+          "romanization": "cheon"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "하늘 — haneul",
+          "audioAssetRef": null,
+          "speechText": "하늘",
+          "speechLanguage": "korean",
+          "nativeReading": "하늘",
+          "romanization": "haneul",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "sky",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "천",
+        "romanization": "cheon",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +583,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person standing beneath a long horizontal line representing the sky above.",
+    "originAnchor": "The ancient picture is disputed: scholars see a great person, enlarged head, or sign above a person; all suggest what is highest—'sky' or 'heaven.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/sky/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A human figure is drawn with an oversized square head, making the uppermost part visually dominant.",
+        "changeNoteFromPrevious": "A front-facing human figure has the head specially marked/enlarged; the original head/top sense precedes the sky/heaven use.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-天"
@@ -379,8 +616,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A human figure is drawn with an oversized square head, making the uppermost part visually dominant.",
-        "transitionNote": "A human figure is drawn with an oversized square head, making the uppermost part visually dominant.",
+        "stageExplanation": "A front-facing human figure has the head specially marked/enlarged; the original head/top sense precedes the sky/heaven use.",
+        "transitionNote": "A front-facing human figure has the head specially marked/enlarged; the original head/top sense precedes the sky/heaven use.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -427,7 +664,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/sky/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The person is reduced to a 大-like body with a long horizontal line clearly placed above it.",
+        "changeNoteFromPrevious": "The person is reduced to a human figure-like body with a long horizontal line clearly placed above it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-天"
@@ -453,8 +690,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The person is reduced to a 大-like body with a long horizontal line clearly placed above it.",
-        "transitionNote": "The person is reduced to a 大-like body with a long horizontal line clearly placed above it.",
+        "stageExplanation": "The person is reduced to a human figure-like body with a long horizontal line clearly placed above it.",
+        "transitionNote": "The person is reduced to a human figure-like body with a long horizontal line clearly placed above it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +701,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/sky/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The top line remains broad while the body below becomes angular and brush-like, closely anticipating 天.",
+        "changeNoteFromPrevious": "The top line remains broad while the body below becomes angular and brush-like, closely anticipating head-emphasized human figure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-天"
@@ -490,8 +727,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The top line remains broad while the body below becomes angular and brush-like, closely anticipating 天.",
-        "transitionNote": "The top line remains broad while the body below becomes angular and brush-like, closely anticipating 天.",
+        "stageExplanation": "The top line remains broad while the body below becomes angular and brush-like, closely anticipating head-emphasized human figure.",
+        "transitionNote": "The top line remains broad while the body below becomes angular and brush-like, closely anticipating head-emphasized human figure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +738,7 @@
         "label": "Regular Script",
         "form": "天",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 天 joins the top line to the simplified 大-like body and fixes the whole form into four strokes.",
+        "changeNoteFromPrevious": "The emphasized-head human graph is regularized as 天; its pictorial human origin is mostly lost.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +764,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 天 joins the top line to the simplified 大-like body and fixes the whole form into four strokes.",
-        "transitionNote": "Regular 天 joins the top line to the simplified 大-like body and fixes the whole form into four strokes.",
+        "stageExplanation": "The emphasized-head human graph is regularized as 天; its pictorial human origin is mostly lost.",
+        "transitionNote": "The emphasized-head human graph is regularized as 天; its pictorial human origin is mostly lost.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +773,7 @@
     ],
     "origin": {
       "concept": "sky",
-      "explanation": "A person standing beneath a long horizontal line representing the sky above.",
+      "explanation": "Ancient forms vary in whether they emphasize a great person, the head, or what is above; the shared idea of height or supremacy led to the sky/heaven meaning.",
       "asset": {
         "characterID": "sky",
         "historicalStage": null,
@@ -553,7 +790,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of sky",
+        "accessibilityDescription": "Illustration of sky / heaven",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +808,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'sky', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'sky / heaven', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +878,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

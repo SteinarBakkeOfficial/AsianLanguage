@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "西",
   "coreSharedMeaning": "west",
-  "recognitionTakeaway": "Regular 西 squares the enclosure and reduces the inside to the familiar crossing and short strokes; the sunset or nesting imagery is no longer visually obvious.",
+  "recognitionTakeaway": "The old nest-like graph is regularized as 西 for “west”; the exact semantic path remains interpretive.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+897F",
   "simplifiedForm": "西",
@@ -15,9 +15,9 @@
     "Oracle is already far from a literal sunset: a dense rectangular enclosure is divided by several internal strokes.",
     "Regular 西 squares the enclosure and reduces the inside to the familiar crossing and short strokes; the sunset or nesting imagery is no longer visually obvious."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-063-西-u897F",
+  "contentFolder": "content/release/symbols/west",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-063-西-u897F/research.md",
+  "researchNotesPath": "content/release/symbols/west/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "west"
       ],
       "examples": [
+        {
+          "text": "西",
+          "reading": "xī",
+          "translation": "west",
+          "speechText": "西",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "xī"
+          ]
+        },
         {
           "text": "西方",
           "reading": "xīfāng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "西门",
+          "reading": "xīmén",
+          "translation": "west gate",
+          "speechText": "西门",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我们向西走。",
           "reading": "Wǒmen xiàng xī zǒu.",
           "translation": "We are walking west.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "西",
@@ -98,6 +127,18 @@
         "west"
       ],
       "taiwanExamples": [
+        {
+          "text": "西",
+          "reading": "xī",
+          "translation": "west",
+          "speechText": "西",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "西方",
           "reading": "xīfāng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "西",
+          "reading": "sai1",
+          "translation": "west",
+          "speechText": "西",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "西方",
           "reading": "sai1 fong1",
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "西",
       "readings": [
         {
-          "system": "on",
-          "value": "セイ (sei)",
+          "system": "onyomi",
+          "value": "セイ — sei",
           "audioAssetRef": null,
           "speechText": "せい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "セイ",
+          "romanization": "sei",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "サイ (sai)",
+          "system": "onyomi",
+          "value": "サイ — sai",
           "audioAssetRef": null,
           "speechText": "さい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "サイ",
+          "romanization": "sai",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "にし (nishi)",
+          "system": "kunyomi",
+          "value": "にし — nishi",
           "audioAssetRef": null,
           "speechText": "にし",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "にし",
+          "romanization": "nishi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "西"
-          ]
+          ],
+          "kanaReading": "にし",
+          "coversReadings": [
+            "にし"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "西",
+              "reading": "にし"
+            }
+          ],
+          "furiganaHtml": "<ruby>西<rt>にし</rt></ruby>"
         },
         {
           "text": "西口",
@@ -260,7 +335,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "西"
-          ]
+          ],
+          "kanaReading": "にしぐち",
+          "furiganaSegments": [
+            {
+              "text": "西口",
+              "reading": "にしぐち"
+            }
+          ],
+          "furiganaHtml": "<ruby>西口<rt>にしぐち</rt></ruby>"
+        },
+        {
+          "text": "西洋",
+          "reading": "seiyō",
+          "translation": "the West; Western",
+          "speechText": "西洋",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "せいよう",
+          "coversReadings": [
+            "セイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "西洋",
+              "reading": "せいよう"
+            }
+          ],
+          "furiganaHtml": "<ruby>西洋<rt>せいよう</rt></ruby>"
+        },
+        {
+          "text": "関西",
+          "reading": "kansai",
+          "translation": "Kansai",
+          "speechText": "関西",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "かんさい",
+          "coversReadings": [
+            "サイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "関西",
+              "reading": "かんさい"
+            }
+          ],
+          "furiganaHtml": "<ruby>関西<rt>かんさい</rt></ruby>"
         },
         {
           "text": "西へ行きます。",
@@ -274,33 +403,76 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "西"
-          ]
+          ],
+          "kanaReading": "にしへいきます。",
+          "furiganaSegments": [
+            {
+              "text": "西",
+              "reading": "にし"
+            },
+            {
+              "text": "へ"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>西<rt>にし</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "にし",
+        "romanization": "nishi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "西",
       "readings": [
         {
           "system": "hanja",
-          "value": "서 / seo",
+          "value": "서 — seo",
           "audioAssetRef": null,
           "speechText": "서",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "서쪽 / seojjok",
-          "audioAssetRef": null,
-          "speechText": "서쪽",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "서",
+          "romanization": "seo"
         }
       ],
       "glosses": [
         "west"
       ],
       "examples": [
+        {
+          "text": "서쪽",
+          "reading": "seojjok",
+          "translation": "west",
+          "speechText": "서쪽",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "西"
+          ],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "서부",
           "reading": "seobu",
@@ -316,18 +488,28 @@
           ]
         },
         {
-          "text": "서쪽",
-          "reading": "seojjok",
-          "translation": "west",
-          "speechText": "서쪽",
+          "text": "서양",
+          "reading": "seoyang",
+          "translation": "the West / Western",
+          "speechText": "서양",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "西"
-          ]
+          "introducedSymbols": []
+        },
+        {
+          "text": "서문",
+          "reading": "seomun",
+          "translation": "west gate",
+          "speechText": "서문",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "서쪽으로 가요.",
@@ -344,7 +526,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "서 — seo",
+          "audioAssetRef": null,
+          "speechText": "서",
+          "speechLanguage": "korean",
+          "nativeReading": "서",
+          "romanization": "seo"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "서쪽 — seojjok",
+          "audioAssetRef": null,
+          "speechText": "서쪽",
+          "speechLanguage": "korean",
+          "nativeReading": "서쪽",
+          "romanization": "seojjok",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "west",
+          "displayTier": "secondary",
+          "lexicalOrigin": "mixed",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "서",
+        "romanization": "seo",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +574,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A setting sun, a bird in flight, and a bird returning to a nest.",
+    "originAnchor": "The earliest object is uncertain: leading interpretations see a bird’s nest or a bag/basket.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/west/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is already far from a literal sunset: a dense rectangular enclosure is divided by several internal strokes.",
+        "changeNoteFromPrevious": "One early form resembles a nest or container; another may be a different borrowed form. The sunset explanation is traditional but disputed.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-西"
@@ -386,8 +607,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is already far from a literal sunset: a dense rectangular enclosure is divided by several internal strokes.",
-        "transitionNote": "Oracle is already far from a literal sunset: a dense rectangular enclosure is divided by several internal strokes.",
+        "stageExplanation": "A nest/container-like object is the pictorial source in a leading analysis; it should not be expanded into a sunset scene.",
+        "transitionNote": "One early form resembles a nest or container; another may be a different borrowed form. The sunset explanation is traditional but disputed.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +618,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/west/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze simplifies the enclosure into a pointed oval or pouch with a strong X-like crossing inside.",
+        "changeNoteFromPrevious": "Simplifies the enclosure into a pointed oval or pouch with a strong X-like crossing inside.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-西"
@@ -423,8 +644,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze simplifies the enclosure into a pointed oval or pouch with a strong X-like crossing inside.",
-        "transitionNote": "Bronze simplifies the enclosure into a pointed oval or pouch with a strong X-like crossing inside.",
+        "stageExplanation": "Simplifies the enclosure into a pointed oval or pouch with a strong X-like crossing inside.",
+        "transitionNote": "Simplifies the enclosure into a pointed oval or pouch with a strong X-like crossing inside.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +655,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/west/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal adds a long curved top and places the crossed enclosure below it, creating a more organized two-part structure.",
+        "changeNoteFromPrevious": "Adds a long curved top and places the crossed enclosure below it, creating a more organized two-part structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-西"
@@ -460,8 +681,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal adds a long curved top and places the crossed enclosure below it, creating a more organized two-part structure.",
-        "transitionNote": "Small Seal adds a long curved top and places the crossed enclosure below it, creating a more organized two-part structure.",
+        "stageExplanation": "Adds a long curved top and places the crossed enclosure below it, creating a more organized two-part structure.",
+        "transitionNote": "Adds a long curved top and places the crossed enclosure below it, creating a more organized two-part structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +692,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/west/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the outer shape into a wide box with four small inner compartments and a long top stroke.",
+        "changeNoteFromPrevious": "Flattens the outer shape into a wide box with four small inner compartments and a long top stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-西"
@@ -497,8 +718,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the outer shape into a wide box with four small inner compartments and a long top stroke.",
-        "transitionNote": "Clerical flattens the outer shape into a wide box with four small inner compartments and a long top stroke.",
+        "stageExplanation": "Flattens the outer shape into a wide box with four small inner compartments and a long top stroke.",
+        "transitionNote": "Flattens the outer shape into a wide box with four small inner compartments and a long top stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +729,7 @@
         "label": "Regular Script",
         "form": "西",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 西 squares the enclosure and reduces the inside to the familiar crossing and short strokes; the sunset or nesting imagery is no longer visually obvious.",
+        "changeNoteFromPrevious": "The object graph was later used for ‘west,’ either through a sound borrowing or through an association with birds returning at sunset; the exact path remains disputed.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +755,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 西 squares the enclosure and reduces the inside to the familiar crossing and short strokes; the sunset or nesting imagery is no longer visually obvious.",
-        "transitionNote": "Regular 西 squares the enclosure and reduces the inside to the familiar crossing and short strokes; the sunset or nesting imagery is no longer visually obvious.",
+        "stageExplanation": "The old nest-like graph is regularized as 西 for “west”; the exact semantic path remains interpretive.",
+        "transitionNote": "The object graph was later used for ‘west,’ either through a sound borrowing or through an association with birds returning at sunset; the exact path remains disputed.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +764,7 @@
     ],
     "origin": {
       "concept": "west",
-      "explanation": "A setting sun, a bird in flight, and a bird returning to a nest.",
+      "explanation": "A bird nest or basket/nest-like form in a leading analysis.",
       "asset": {
         "characterID": "west",
         "historicalStage": null,
@@ -648,13 +869,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

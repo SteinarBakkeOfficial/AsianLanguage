@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "各",
   "coreSharedMeaning": "each",
-  "recognitionTakeaway": "Regular 各 standardizes the descending 夂-like top over 口, preserving the same stacked arrangement established in the Bronze and Seal forms.",
+  "recognitionTakeaway": "The old arrival graph stabilizes as 各 for the distributive meaning “each/every.”",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5404",
   "simplifiedForm": "各",
@@ -15,9 +15,9 @@
     "Oracle places a large foot-like form above a broad enclosing curve, creating a strong top-over-bottom relationship.",
     "Regular 各 standardizes the descending 夂-like top over 口, preserving the same stacked arrangement established in the Bronze and Seal forms."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-118-各-u5404",
+  "contentFolder": "content/release/symbols/each",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-118-各-u5404/research.md",
+  "researchNotesPath": "content/release/symbols/each/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -39,8 +39,23 @@
       ],
       "examples": [
         {
+          "text": "各",
+          "reading": "gè",
+          "translation": "each",
+          "speechText": "各",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "gè"
+          ]
+        },
+        {
           "text": "各个",
-          "reading": "gège",
+          "reading": "gè gè",
           "translation": "each; every",
           "speechText": "各个",
           "speechLanguage": "mandarin",
@@ -54,7 +69,7 @@
         },
         {
           "text": "各国",
-          "reading": "gèguó",
+          "reading": "gè guó",
           "translation": "various countries",
           "speechText": "各国",
           "speechLanguage": "mandarin",
@@ -65,6 +80,18 @@
           "introducedSymbols": [
             "各"
           ]
+        },
+        {
+          "text": "各地",
+          "reading": "gè dì",
+          "translation": "various places",
+          "speechText": "各地",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "各有不同。",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "各",
@@ -99,8 +128,20 @@
       ],
       "taiwanExamples": [
         {
+          "text": "各",
+          "reading": "gè",
+          "translation": "each",
+          "speechText": "各",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "各個",
-          "reading": "gège",
+          "reading": "gè gè",
           "translation": "each; every",
           "speechText": "各個",
           "speechLanguage": "mandarin",
@@ -114,7 +155,7 @@
         },
         {
           "text": "各國",
-          "reading": "gèguó",
+          "reading": "gè guó",
           "translation": "various countries",
           "speechText": "各國",
           "speechLanguage": "mandarin",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "各",
+          "reading": "gok3",
+          "translation": "each",
+          "speechText": "各",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "各個",
           "reading": "gok3 go3",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "各",
       "readings": [
         {
-          "system": "on",
-          "value": "カク (kaku)",
+          "system": "onyomi",
+          "value": "カク — kaku",
           "audioAssetRef": null,
           "speechText": "かく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "カク",
+          "romanization": "kaku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "おのおの (ono-ono)",
+          "system": "kunyomi",
+          "value": "おのおの — ono-ono",
           "audioAssetRef": null,
           "speechText": "おのおの",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "おのおの",
+          "romanization": "ono-ono",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,15 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "各"
-          ]
+          ],
+          "kanaReading": "かっこく",
+          "furiganaSegments": [
+            {
+              "text": "各国",
+              "reading": "かっこく"
+            }
+          ],
+          "furiganaHtml": "<ruby>各国<rt>かっこく</rt></ruby>"
         },
         {
           "text": "各自",
@@ -253,7 +322,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "各"
-          ]
+          ],
+          "kanaReading": "かくじ",
+          "coversReadings": [
+            "カク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "各自",
+              "reading": "かくじ"
+            }
+          ],
+          "furiganaHtml": "<ruby>各自<rt>かくじ</rt></ruby>"
+        },
+        {
+          "text": "各々",
+          "reading": "ono-ono",
+          "translation": "each; respectively",
+          "speechText": "各々",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おのおの",
+          "coversReadings": [
+            "おのおの"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "各々",
+              "reading": "おのおの"
+            }
+          ],
+          "furiganaHtml": "<ruby>各々<rt>おのおの</rt></ruby>"
+        },
+        {
+          "text": "各地",
+          "reading": "kakuchi",
+          "translation": "various places",
+          "speechText": "各地",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "かくち",
+          "furiganaSegments": [
+            {
+              "text": "各地",
+              "reading": "かくち"
+            }
+          ],
+          "furiganaHtml": "<ruby>各地<rt>かくち</rt></ruby>"
         },
         {
           "text": "各自でします。",
@@ -267,33 +390,67 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "各"
-          ]
+          ],
+          "kanaReading": "かくじでします。",
+          "furiganaSegments": [
+            {
+              "text": "各自",
+              "reading": "かくじ"
+            },
+            {
+              "text": "でします"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>各自<rt>かくじ</rt></ruby>でします。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "おのおの",
+        "romanization": "ono-ono",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "各",
       "readings": [
         {
           "system": "hanja",
-          "value": "각 / gak",
+          "value": "각 — gak",
           "audioAssetRef": null,
           "speechText": "각",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "저마다 / jeomada",
-          "audioAssetRef": null,
-          "speechText": "저마다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "각",
+          "romanization": "gak"
         }
       ],
       "glosses": [
         "each"
       ],
       "examples": [
+        {
+          "text": "저마다",
+          "reading": "jeomada",
+          "translation": "each / each one",
+          "speechText": "저마다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "각각",
           "reading": "gakgak",
@@ -323,6 +480,18 @@
           ]
         },
         {
+          "text": "각자",
+          "reading": "gakja",
+          "translation": "each person",
+          "speechText": "각자",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "각자 해요.",
           "reading": "gakja haeyo.",
           "translation": "Each person does it themselves.",
@@ -337,7 +506,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "각 — gak",
+          "audioAssetRef": null,
+          "speechText": "각",
+          "speechLanguage": "korean",
+          "nativeReading": "각",
+          "romanization": "gak"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "저마다 — jeomada",
+          "audioAssetRef": null,
+          "speechText": "저마다",
+          "speechLanguage": "korean",
+          "nativeReading": "저마다",
+          "romanization": "jeomada",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "each / each one",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "각",
+        "romanization": "gak",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +554,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A foot approaching or passing through a doorway, with the two elements shown separately and combined.",
+    "originAnchor": "A foot and a cave opening combine to show arrival; sound borrowing later gave the meaning 'each.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/each/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle places a large foot-like form above a broad enclosing curve, creating a strong top-over-bottom relationship.",
+        "changeNoteFromPrevious": "A foot moves into/approaches an opening, expressing arrival/coming before the later “each” use.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-各"
@@ -379,8 +587,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle places a large foot-like form above a broad enclosing curve, creating a strong top-over-bottom relationship.",
-        "transitionNote": "Oracle places a large foot-like form above a broad enclosing curve, creating a strong top-over-bottom relationship.",
+        "stageExplanation": "A foot moves into/approaches an opening, expressing arrival/coming before the later “each” use.",
+        "transitionNote": "A foot moves into/approaches an opening, expressing arrival/coming before the later “each” use.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +598,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/each/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the foot more angular and sets it directly above a small mouth- or doorway-like box.",
+        "changeNoteFromPrevious": "Makes the foot more angular and sets it directly above a small mouth- or doorway-like box.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-各"
@@ -416,8 +624,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the foot more angular and sets it directly above a small mouth- or doorway-like box.",
-        "transitionNote": "Bronze makes the foot more angular and sets it directly above a small mouth- or doorway-like box.",
+        "stageExplanation": "Makes the foot more angular and sets it directly above a small mouth- or doorway-like box.",
+        "transitionNote": "Makes the foot more angular and sets it directly above a small mouth- or doorway-like box.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +635,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/each/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal reduces the top to a long bent descending stroke and keeps a clean rectangular 口 below.",
+        "changeNoteFromPrevious": "Reduces the top to a long bent descending stroke and keeps a clean rectangular mouth/opening sign below.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-各"
@@ -453,8 +661,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal reduces the top to a long bent descending stroke and keeps a clean rectangular 口 below.",
-        "transitionNote": "Small Seal reduces the top to a long bent descending stroke and keeps a clean rectangular 口 below.",
+        "stageExplanation": "Reduces the top to a long bent descending stroke and keeps a clean rectangular mouth/opening sign below.",
+        "transitionNote": "Reduces the top to a long bent descending stroke and keeps a clean rectangular mouth/opening sign below.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +672,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/each/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical widens the top stroke and turns the lower box into a compact slanted enclosure.",
+        "changeNoteFromPrevious": "Widens the top stroke and turns the lower box into a compact slanted enclosure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-各"
@@ -490,8 +698,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical widens the top stroke and turns the lower box into a compact slanted enclosure.",
-        "transitionNote": "Clerical widens the top stroke and turns the lower box into a compact slanted enclosure.",
+        "stageExplanation": "Widens the top stroke and turns the lower box into a compact slanted enclosure.",
+        "transitionNote": "Widens the top stroke and turns the lower box into a compact slanted enclosure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +709,7 @@
         "label": "Regular Script",
         "form": "各",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 各 standardizes the descending 夂-like top over 口, preserving the same stacked arrangement established in the Bronze and Seal forms.",
+        "changeNoteFromPrevious": "The old arrival graph stabilizes as 各 for the distributive meaning “each/every.”",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +735,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 各 standardizes the descending 夂-like top over 口, preserving the same stacked arrangement established in the Bronze and Seal forms.",
-        "transitionNote": "Regular 各 standardizes the descending 夂-like top over 口, preserving the same stacked arrangement established in the Bronze and Seal forms.",
+        "stageExplanation": "The old arrival graph stabilizes as 各 for the distributive meaning “each/every.”",
+        "transitionNote": "The old arrival graph stabilizes as 各 for the distributive meaning “each/every.”",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +744,7 @@
     ],
     "origin": {
       "concept": "each",
-      "explanation": "A foot approaching or passing through a doorway, with the two elements shown separately and combined.",
+      "explanation": "A foot entering/approaching a cave or opening.",
       "asset": {
         "characterID": "each",
         "historicalStage": null,
@@ -641,13 +849,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

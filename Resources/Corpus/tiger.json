@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "虎",
   "coreSharedMeaning": "tiger",
-  "recognitionTakeaway": "Regular 虎 standardizes the top enclosure, inner strokes, and lower legs; the tiger picture survives only in the overall historical lineage, not in an obvious modern silhouette.",
+  "recognitionTakeaway": "Standardizes the top enclosure, inner strokes, and lower legs; the tiger picture survives only in the overall historical lineage, not in an obvious modern silhouette.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+864E",
   "simplifiedForm": "虎",
@@ -15,9 +15,9 @@
     "The Oracle glyph is almost an illustration: jaws, striped body, legs, and a coiled tail are all visible.",
     "Regular 虎 standardizes the top enclosure, inner strokes, and lower legs; the tiger picture survives only in the overall historical lineage, not in an obvious modern silhouette."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-039-虎-u864E",
+  "contentFolder": "content/release/symbols/tiger",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-039-虎-u864E/research.md",
+  "researchNotesPath": "content/release/symbols/tiger/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "tiger"
       ],
       "examples": [
+        {
+          "text": "虎",
+          "reading": "hǔ",
+          "translation": "tiger",
+          "speechText": "虎",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "hǔ"
+          ]
+        },
         {
           "text": "老虎",
           "reading": "lǎohǔ",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "虎纹",
+          "reading": "hǔwén",
+          "translation": "tiger stripes",
+          "speechText": "虎纹",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "老虎很大。",
           "reading": "Lǎohǔ hěn dà.",
           "translation": "The tiger is big.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "虎",
@@ -98,6 +127,18 @@
         "tiger"
       ],
       "taiwanExamples": [
+        {
+          "text": "虎",
+          "reading": "hǔ",
+          "translation": "tiger",
+          "speechText": "虎",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "老虎",
           "reading": "lǎohǔ",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "虎",
+          "reading": "fu2",
+          "translation": "tiger",
+          "speechText": "虎",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "老虎",
           "reading": "lou5 fu2",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "虎",
       "readings": [
         {
-          "system": "on",
-          "value": "コ (ko)",
+          "system": "onyomi",
+          "value": "コ — ko",
           "audioAssetRef": null,
           "speechText": "こ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コ",
+          "romanization": "ko",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "とら (tora)",
+          "system": "kunyomi",
+          "value": "とら — tora",
           "audioAssetRef": null,
           "speechText": "とら",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "とら",
+          "romanization": "tora",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "虎"
-          ]
+          ],
+          "kanaReading": "とら",
+          "coversReadings": [
+            "とら"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "虎",
+              "reading": "とら"
+            }
+          ],
+          "furiganaHtml": "<ruby>虎<rt>とら</rt></ruby>"
         },
         {
           "text": "白虎",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "虎"
-          ]
+          ],
+          "kanaReading": "びゃっこ",
+          "coversReadings": [
+            "コ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "白虎",
+              "reading": "びゃっこ"
+            }
+          ],
+          "furiganaHtml": "<ruby>白虎<rt>びゃっこ</rt></ruby>"
+        },
+        {
+          "text": "虎柄",
+          "reading": "toragara",
+          "translation": "tiger pattern",
+          "speechText": "虎柄",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "とらがら",
+          "furiganaSegments": [
+            {
+              "text": "虎柄",
+              "reading": "とらがら"
+            }
+          ],
+          "furiganaHtml": "<ruby>虎柄<rt>とらがら</rt></ruby>"
+        },
+        {
+          "text": "虎猫",
+          "reading": "toraneko",
+          "translation": "tabby cat",
+          "speechText": "虎猫",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "とらねこ",
+          "furiganaSegments": [
+            {
+              "text": "虎猫",
+              "reading": "とらねこ"
+            }
+          ],
+          "furiganaHtml": "<ruby>虎猫<rt>とらねこ</rt></ruby>"
         },
         {
           "text": "虎は強いです。",
@@ -267,33 +390,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "虎"
-          ]
+          ],
+          "kanaReading": "とらはつよいです。",
+          "furiganaSegments": [
+            {
+              "text": "虎",
+              "reading": "とら"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "強",
+              "reading": "つよ"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>虎<rt>とら</rt></ruby>は<ruby>強<rt>つよ</rt></ruby>いです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "とら",
+        "romanization": "tora",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "虎",
       "readings": [
         {
           "system": "hanja",
-          "value": "호 / ho",
+          "value": "호 — ho",
           "audioAssetRef": null,
           "speechText": "호",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "호랑이 / horangi",
-          "audioAssetRef": null,
-          "speechText": "호랑이",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "호",
+          "romanization": "ho"
         }
       ],
       "glosses": [
         "tiger"
       ],
       "examples": [
+        {
+          "text": "호랑이",
+          "reading": "horangi",
+          "translation": "tiger",
+          "speechText": "호랑이",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "호피",
           "reading": "hopi",
@@ -323,6 +487,18 @@
           ]
         },
         {
+          "text": "맹호",
+          "reading": "maengho",
+          "translation": "fierce tiger",
+          "speechText": "맹호",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "호랑이가 커요.",
           "reading": "horangiga keoyo.",
           "translation": "The tiger is big.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "호 — ho",
+          "audioAssetRef": null,
+          "speechText": "호",
+          "speechLanguage": "korean",
+          "nativeReading": "호",
+          "romanization": "ho"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "호랑이 — horangi",
+          "audioAssetRef": null,
+          "speechText": "호랑이",
+          "speechLanguage": "korean",
+          "nativeReading": "호랑이",
+          "romanization": "horangi",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "tiger",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "호",
+        "romanization": "ho",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +561,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A striped tiger in side view, with smaller studies of its head, body, tail, and curved back.",
+    "originAnchor": "A tiger with visible stripes.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/tiger/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The Oracle glyph is almost an illustration: jaws, striped body, legs, and a coiled tail are all visible.",
+        "changeNoteFromPrevious": "Is almost an illustration: jaws, striped body, legs, and a coiled tail are all visible.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-虎"
@@ -379,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The Oracle glyph is almost an illustration: jaws, striped body, legs, and a coiled tail are all visible.",
-        "transitionNote": "The Oracle glyph is almost an illustration: jaws, striped body, legs, and a coiled tail are all visible.",
+        "stageExplanation": "Is almost an illustration: jaws, striped body, legs, and a coiled tail are all visible.",
+        "transitionNote": "Is almost an illustration: jaws, striped body, legs, and a coiled tail are all visible.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +605,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/tiger/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze compresses the tiger into a dense upright form; the head and curling lower tail remain, but the body is no longer a naturalistic animal.",
+        "changeNoteFromPrevious": "Compresses the tiger into a dense upright form; the head and curling lower tail remain, but the body is no longer a naturalistic animal.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-虎"
@@ -416,8 +631,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze compresses the tiger into a dense upright form; the head and curling lower tail remain, but the body is no longer a naturalistic animal.",
-        "transitionNote": "Bronze compresses the tiger into a dense upright form; the head and curling lower tail remain, but the body is no longer a naturalistic animal.",
+        "stageExplanation": "Compresses the tiger into a dense upright form; the head and curling lower tail remain, but the body is no longer a naturalistic animal.",
+        "transitionNote": "Compresses the tiger into a dense upright form; the head and curling lower tail remain, but the body is no longer a naturalistic animal.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +642,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/tiger/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal turns the tiger into a tall organized stack of curves and bars, losing nearly all literal stripes and anatomy.",
+        "changeNoteFromPrevious": "Turns the tiger into a tall organized stack of curves and bars, losing nearly all literal stripes and anatomy.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-虎"
@@ -453,8 +668,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal turns the tiger into a tall organized stack of curves and bars, losing nearly all literal stripes and anatomy.",
-        "transitionNote": "Small Seal turns the tiger into a tall organized stack of curves and bars, losing nearly all literal stripes and anatomy.",
+        "stageExplanation": "Turns the tiger into a tall organized stack of curves and bars, losing nearly all literal stripes and anatomy.",
+        "transitionNote": "Turns the tiger into a tall organized stack of curves and bars, losing nearly all literal stripes and anatomy.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +679,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/tiger/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the upper frame and makes the lower legs and tail-like sweep more angular, approaching 虎.",
+        "changeNoteFromPrevious": "The animal outline becomes angular and compact, bringing the graph close to the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-虎"
@@ -490,8 +705,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the upper frame and makes the lower legs and tail-like sweep more angular, approaching 虎.",
-        "transitionNote": "Clerical flattens the upper frame and makes the lower legs and tail-like sweep more angular, approaching 虎.",
+        "stageExplanation": "The animal outline becomes angular and compact, bringing the graph close to the later standard structure.",
+        "transitionNote": "The animal outline becomes angular and compact, bringing the graph close to the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "虎",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 虎 standardizes the top enclosure, inner strokes, and lower legs; the tiger picture survives only in the overall historical lineage, not in an obvious modern silhouette.",
+        "changeNoteFromPrevious": "Standardizes the top enclosure, inner strokes, and lower legs; the tiger picture survives only in the overall historical lineage, not in an obvious modern silhouette.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 虎 standardizes the top enclosure, inner strokes, and lower legs; the tiger picture survives only in the overall historical lineage, not in an obvious modern silhouette.",
-        "transitionNote": "Regular 虎 standardizes the top enclosure, inner strokes, and lower legs; the tiger picture survives only in the overall historical lineage, not in an obvious modern silhouette.",
+        "stageExplanation": "Standardizes the top enclosure, inner strokes, and lower legs; the tiger picture survives only in the overall historical lineage, not in an obvious modern silhouette.",
+        "transitionNote": "Standardizes the top enclosure, inner strokes, and lower legs; the tiger picture survives only in the overall historical lineage, not in an obvious modern silhouette.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "tiger",
-      "explanation": "A striped tiger in side view, with smaller studies of its head, body, tail, and curved back.",
+      "explanation": "A tiger with head, body, legs, tail, and stripe/detail marks in early forms.",
       "asset": {
         "characterID": "tiger",
         "historicalStage": null,
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

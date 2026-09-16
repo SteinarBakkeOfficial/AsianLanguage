@@ -1,0 +1,951 @@
+{
+  "id": "meet",
+  "version": 1,
+  "coreCharacter": "交",
+  "coreSharedMeaning": "cross / meet",
+  "recognitionTakeaway": "The crossed-body pictograph regularizes as 交 and extends to meeting, intersecting, exchanging, and interacting.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+4EA4",
+  "simplifiedForm": "交",
+  "traditionalForm": "交",
+  "additionalMeanings": [],
+  "formationType": "simpleIdeograph",
+  "visualTeachingNotes": [
+    "A standing person with the legs crossing beneath the body, shown as “meeting” or crossing.",
+    "Oracle still looks like a human figure whose lower legs cross and overlap beneath a narrow torso.",
+    "Regular 交 turns the head and body into short top strokes while preserving the decisive crossed lower lines."
+  ],
+  "contentFolder": "content/release/symbols/meet",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/meet/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 86,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "交",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "jiāo",
+          "audioAssetRef": null,
+          "speechText": "交",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "cross; meet; interact"
+      ],
+      "examples": [
+        {
+          "text": "交",
+          "reading": "jiāo",
+          "translation": "cross; meet; interact",
+          "speechText": "交",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "jiāo"
+          ]
+        },
+        {
+          "text": "交流",
+          "reading": "jiāoliú",
+          "translation": "exchange; communicate",
+          "speechText": "交流",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ]
+        },
+        {
+          "text": "交朋友",
+          "reading": "jiāo péngyou",
+          "translation": "make friends",
+          "speechText": "交朋友",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ]
+        },
+        {
+          "text": "交通",
+          "reading": "jiāotōng",
+          "translation": "traffic; transportation",
+          "speechText": "交通",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "我们一起交流。",
+          "reading": "Wǒmen yìqǐ jiāoliú.",
+          "translation": "Let’s talk and exchange ideas.",
+          "speechText": "我们一起交流。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "交",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "jiāo",
+          "audioAssetRef": null,
+          "speechText": "交",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "交 / meet"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "交",
+          "reading": "jiāo",
+          "translation": "cross; meet; interact",
+          "speechText": "交",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "交流",
+          "reading": "jiāoliú",
+          "translation": "exchange; communicate",
+          "speechText": "交流",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ]
+        },
+        {
+          "text": "交朋友",
+          "reading": "jiāo péngyou",
+          "translation": "make friends",
+          "speechText": "交朋友",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ]
+        },
+        {
+          "text": "我們一起交流。",
+          "reading": "Wǒmen yìqǐ jiāoliú.",
+          "translation": "Let’s talk and exchange ideas.",
+          "speechText": "我們一起交流。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "交",
+          "reading": "gaau1",
+          "translation": "cross; meet; interact",
+          "speechText": "交",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "交流",
+          "reading": "gaau1 lau4",
+          "translation": "exchange; communicate",
+          "speechText": "交流",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ]
+        },
+        {
+          "text": "交朋友",
+          "reading": "gaau1 pang4 jau5",
+          "translation": "make friends",
+          "speechText": "交朋友",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ]
+        },
+        {
+          "text": "我哋一齊交流。",
+          "reading": "ngo5 dei6 jat1 cai4 gaau1 lau4",
+          "translation": "Let’s talk and exchange ideas.",
+          "speechText": "我哋一齊交流。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "jiāo",
+          "audioAssetRef": null,
+          "speechText": "交",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gaau1",
+          "audioAssetRef": null,
+          "speechText": "交",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "交",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "コウ — kō",
+          "audioAssetRef": null,
+          "speechText": "こう",
+          "speechLanguage": "japanese",
+          "nativeReading": "コウ",
+          "romanization": "kō",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "まじわる — majiwaru",
+          "audioAssetRef": null,
+          "speechText": "まじわる",
+          "speechLanguage": "japanese",
+          "nativeReading": "まじわる",
+          "romanization": "majiwaru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "まじえる — majieru",
+          "audioAssetRef": null,
+          "speechText": "まじえる",
+          "speechLanguage": "japanese",
+          "nativeReading": "まじえる",
+          "romanization": "majieru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "かわす — kawasu",
+          "audioAssetRef": null,
+          "speechText": "かわす",
+          "speechLanguage": "japanese",
+          "nativeReading": "かわす",
+          "romanization": "kawasu",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "交 / meet"
+      ],
+      "examples": [
+        {
+          "text": "交わる",
+          "reading": "majiwaru",
+          "translation": "cross; interact",
+          "speechText": "交わる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ],
+          "kanaReading": "まじわる",
+          "coversReadings": [
+            "まじわる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "交",
+              "reading": "まじ"
+            },
+            {
+              "text": "わる"
+            }
+          ],
+          "furiganaHtml": "<ruby>交<rt>まじ</rt></ruby>わる"
+        },
+        {
+          "text": "交換",
+          "reading": "kōkan",
+          "translation": "exchange",
+          "speechText": "交換",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ],
+          "kanaReading": "こうかん",
+          "coversReadings": [
+            "コウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "交換",
+              "reading": "こうかん"
+            }
+          ],
+          "furiganaHtml": "<ruby>交換<rt>こうかん</rt></ruby>"
+        },
+        {
+          "text": "交流",
+          "reading": "kōryū",
+          "translation": "exchange; interaction",
+          "speechText": "交流",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうりゅう",
+          "furiganaSegments": [
+            {
+              "text": "交流",
+              "reading": "こうりゅう"
+            }
+          ],
+          "furiganaHtml": "<ruby>交流<rt>こうりゅう</rt></ruby>"
+        },
+        {
+          "text": "交差",
+          "reading": "kōsa",
+          "translation": "crossing / intersection",
+          "speechText": "交差",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうさ",
+          "furiganaSegments": [
+            {
+              "text": "交差",
+              "reading": "こうさ"
+            }
+          ],
+          "furiganaHtml": "<ruby>交差<rt>こうさ</rt></ruby>"
+        },
+        {
+          "text": "友達と交流します。",
+          "reading": "tomodachi to kōryū shimasu.",
+          "translation": "I interact with friends.",
+          "speechText": "友達と交流します。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ],
+          "kanaReading": "ともだちとこうりゅうします。",
+          "furiganaSegments": [
+            {
+              "text": "友達",
+              "reading": "ともだち"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "交流",
+              "reading": "こうりゅう"
+            },
+            {
+              "text": "します"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>友達<rt>ともだち</rt></ruby>と<ruby>交流<rt>こうりゅう</rt></ruby>します。"
+        },
+        {
+          "text": "交える",
+          "reading": "majieru",
+          "translation": "mix; exchange",
+          "speechText": "交える",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "まじえる",
+          "coversReadings": [
+            "まじえる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "交",
+              "reading": "まじ"
+            },
+            {
+              "text": "える"
+            }
+          ],
+          "furiganaHtml": "<ruby>交<rt>まじ</rt></ruby>える"
+        },
+        {
+          "text": "言葉を交わす",
+          "reading": "kotoba o kawasu",
+          "translation": "exchange words",
+          "speechText": "言葉を交わす",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ことばをかわす",
+          "coversReadings": [
+            "かわす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "言葉",
+              "reading": "ことば"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "交",
+              "reading": "か"
+            },
+            {
+              "text": "わす"
+            }
+          ],
+          "furiganaHtml": "<ruby>言葉<rt>ことば</rt></ruby>を<ruby>交<rt>か</rt></ruby>わす"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "まじわる",
+        "romanization": "majiwaru",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "交",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "교 — gyo",
+          "audioAssetRef": null,
+          "speechText": "교",
+          "speechLanguage": "korean",
+          "nativeReading": "교",
+          "romanization": "gyo"
+        }
+      ],
+      "glosses": [
+        "交 / meet"
+      ],
+      "examples": [
+        {
+          "text": "만나다",
+          "reading": "mannada",
+          "translation": "meet",
+          "speechText": "만나다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "교통",
+          "reading": "gyotong",
+          "translation": "traffic; transportation",
+          "speechText": "교통",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ]
+        },
+        {
+          "text": "교환",
+          "reading": "gyohwan",
+          "translation": "exchange",
+          "speechText": "교환",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ]
+        },
+        {
+          "text": "교류",
+          "reading": "gyoryu",
+          "translation": "exchange / interaction",
+          "speechText": "교류",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "친구를 만나요.",
+          "reading": "chingureul mannayo.",
+          "translation": "I meet a friend.",
+          "speechText": "친구를 만나요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "交"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "교 — gyo",
+          "audioAssetRef": null,
+          "speechText": "교",
+          "speechLanguage": "korean",
+          "nativeReading": "교",
+          "romanization": "gyo"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "만나다 — mannada",
+          "audioAssetRef": null,
+          "speechText": "만나다",
+          "speechLanguage": "korean",
+          "nativeReading": "만나다",
+          "romanization": "mannada",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "meet",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "교",
+        "romanization": "gyo",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A person with crossed legs.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/meet/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "A single human figure is drawn with crossed legs, providing the concrete “cross” image.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-交"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "交",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%A4/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/43_E6D0.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/meet/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/meet/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "交 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A single human figure is drawn with crossed legs, providing the concrete “cross” image.",
+        "transitionNote": "A single human figure is drawn with crossed legs, providing the concrete “cross” image.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/meet/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "Makes the torso into a bold diamond or loop while the crossed legs remain clear below.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-交"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "交",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%A4/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/33_EA56.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/meet/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/meet/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "交 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Makes the torso into a bold diamond or loop while the crossed legs remain clear below.",
+        "transitionNote": "Makes the torso into a bold diamond or loop while the crossed legs remain clear below.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/meet/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Regularizes the body into a circle beneath a roof-like top, with two long legs crossing through the center.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-交"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "交",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%A4/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_4EA4.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/meet/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/meet/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "交 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Regularizes the body into a circle beneath a roof-like top, with two long legs crossing through the center.",
+        "transitionNote": "Regularizes the body into a circle beneath a roof-like top, with two long legs crossing through the center.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/meet/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "Flattens the circular body and spreads the crossing lower strokes.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-交"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "交",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%A4/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_EB27.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/meet/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/meet/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "交 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Flattens the circular body and spreads the crossing lower strokes.",
+        "transitionNote": "Flattens the circular body and spreads the crossing lower strokes.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "交",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The crossed-body pictograph regularizes as 交 and extends to meeting, intersecting, exchanging, and interacting.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "交",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "交 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The crossed-body pictograph regularizes as 交 and extends to meeting, intersecting, exchanging, and interacting.",
+        "transitionNote": "The crossed-body pictograph regularizes as 交 and extends to meeting, intersecting, exchanging, and interacting.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "交 / meet",
+      "explanation": "A human figure with the legs crossed.",
+      "asset": {
+        "characterID": "meet",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/meet/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of 交 / meet",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-交"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿱亠父.",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-交"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'cross / meet', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E4%BA%A4"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-交",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E4%BA%A4"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-交",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

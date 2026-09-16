@@ -1,0 +1,880 @@
+{
+  "id": "same",
+  "version": 1,
+  "coreCharacter": "同",
+  "coreSharedMeaning": "same / together",
+  "recognitionTakeaway": "The graph stabilizes as 同 for “same/together,” while the earliest object/component analysis remains uncertain.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+540C",
+  "simplifiedForm": "同",
+  "traditionalForm": "同",
+  "additionalMeanings": [],
+  "formationType": "simpleIdeograph",
+  "visualTeachingNotes": [
+    "Two matching people and two matching container-like objects, used to show the idea of “same.”",
+    "Oracle separates a large outer frame-like form above from a small enclosed box below, with the two parts not yet integrated.",
+    "Regular 同 squares the outer 冂-like frame and centers the inner 一 and 口, making the nested structure compact and balanced."
+  ],
+  "contentFolder": "content/release/symbols/same",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/same/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 103,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "同",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "tóng",
+          "audioAssetRef": null,
+          "speechText": "同",
+          "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "tòng",
+          "audioAssetRef": null,
+          "speechText": "同",
+          "speechLanguage": "mandarin",
+          "usageNote": "lexicalized modern reading in 胡同"
+        }
+      ],
+      "glosses": [
+        "same"
+      ],
+      "examples": [
+        {
+          "text": "同",
+          "reading": "tóng",
+          "translation": "same",
+          "speechText": "同",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "tóng"
+          ]
+        },
+        {
+          "text": "同样",
+          "reading": "tóngyàng",
+          "translation": "same; alike",
+          "speechText": "同样",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ]
+        },
+        {
+          "text": "同学",
+          "reading": "tóngxué",
+          "translation": "classmate",
+          "speechText": "同学",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ]
+        },
+        {
+          "text": "同时",
+          "reading": "tóngshí",
+          "translation": "at the same time",
+          "speechText": "同时",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "胡同",
+          "reading": "hútòng",
+          "translation": "alley; hutong",
+          "speechText": "胡同",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "tòng"
+          ]
+        },
+        {
+          "text": "我同意。",
+          "reading": "Wǒ tóngyì.",
+          "translation": "I agree.",
+          "speechText": "我同意。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "同",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "tóng",
+          "audioAssetRef": null,
+          "speechText": "同",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "same"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "同",
+          "reading": "tóng",
+          "translation": "same",
+          "speechText": "同",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "同樣",
+          "reading": "tóngyàng",
+          "translation": "same; alike",
+          "speechText": "同樣",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ]
+        },
+        {
+          "text": "同學",
+          "reading": "tóngxué",
+          "translation": "classmate",
+          "speechText": "同學",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ]
+        },
+        {
+          "text": "我同意。",
+          "reading": "Wǒ tóngyì.",
+          "translation": "I agree.",
+          "speechText": "我同意。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "同",
+          "reading": "tung4",
+          "translation": "same",
+          "speechText": "同",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "同樣",
+          "reading": "tung4 joeng6",
+          "translation": "same; alike",
+          "speechText": "同樣",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ]
+        },
+        {
+          "text": "同學",
+          "reading": "tung4 hok6",
+          "translation": "classmate",
+          "speechText": "同學",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ]
+        },
+        {
+          "text": "我同意。",
+          "reading": "ngo5 tung4 ji3",
+          "translation": "I agree.",
+          "speechText": "我同意。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "tóng",
+          "audioAssetRef": null,
+          "speechText": "同",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "tung4",
+          "audioAssetRef": null,
+          "speechText": "同",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "同",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "ドウ — dō",
+          "audioAssetRef": null,
+          "speechText": "どう",
+          "speechLanguage": "japanese",
+          "nativeReading": "ドウ",
+          "romanization": "dō",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "おなじ — onaji",
+          "audioAssetRef": null,
+          "speechText": "おなじ",
+          "speechLanguage": "japanese",
+          "nativeReading": "おなじ",
+          "romanization": "onaji",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "same"
+      ],
+      "examples": [
+        {
+          "text": "同じ",
+          "reading": "onaji",
+          "translation": "same",
+          "speechText": "同じ",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ],
+          "kanaReading": "おなじ",
+          "coversReadings": [
+            "おなじ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "同",
+              "reading": "おな"
+            },
+            {
+              "text": "じ"
+            }
+          ],
+          "furiganaHtml": "<ruby>同<rt>おな</rt></ruby>じ"
+        },
+        {
+          "text": "同時",
+          "reading": "dōji",
+          "translation": "same time",
+          "speechText": "同時",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ],
+          "kanaReading": "どうじ",
+          "coversReadings": [
+            "ドウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "同時",
+              "reading": "どうじ"
+            }
+          ],
+          "furiganaHtml": "<ruby>同時<rt>どうじ</rt></ruby>"
+        },
+        {
+          "text": "共同",
+          "reading": "kyōdō",
+          "translation": "joint; cooperation",
+          "speechText": "共同",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "きょうどう",
+          "furiganaSegments": [
+            {
+              "text": "共同",
+              "reading": "きょうどう"
+            }
+          ],
+          "furiganaHtml": "<ruby>共同<rt>きょうどう</rt></ruby>"
+        },
+        {
+          "text": "同意",
+          "reading": "dōi",
+          "translation": "agreement; consent",
+          "speechText": "同意",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "どうい",
+          "furiganaSegments": [
+            {
+              "text": "同意",
+              "reading": "どうい"
+            }
+          ],
+          "furiganaHtml": "<ruby>同意<rt>どうい</rt></ruby>"
+        },
+        {
+          "text": "同一",
+          "reading": "dōitsu",
+          "translation": "identical / the same",
+          "speechText": "同一",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "どういつ",
+          "furiganaSegments": [
+            {
+              "text": "同一",
+              "reading": "どういつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>同一<rt>どういつ</rt></ruby>"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "おなじ",
+        "romanization": "onaji",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "同",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "동 — dong",
+          "audioAssetRef": null,
+          "speechText": "동",
+          "speechLanguage": "korean",
+          "nativeReading": "동",
+          "romanization": "dong"
+        }
+      ],
+      "glosses": [
+        "same"
+      ],
+      "examples": [
+        {
+          "text": "같다",
+          "reading": "gatda",
+          "translation": "same",
+          "speechText": "같다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "동시에",
+          "reading": "dongsie",
+          "translation": "at the same time",
+          "speechText": "동시에",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ]
+        },
+        {
+          "text": "동의",
+          "reading": "dongui",
+          "translation": "agreement",
+          "speechText": "동의",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ]
+        },
+        {
+          "text": "동일",
+          "reading": "dongil",
+          "translation": "same / identical",
+          "speechText": "동일",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "같아요.",
+          "reading": "gatayo.",
+          "translation": "It is the same.",
+          "speechText": "같아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "同"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "동 — dong",
+          "audioAssetRef": null,
+          "speechText": "동",
+          "speechLanguage": "korean",
+          "nativeReading": "동",
+          "romanization": "dong"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "같다 — gatda",
+          "audioAssetRef": null,
+          "speechText": "같다",
+          "speechLanguage": "korean",
+          "nativeReading": "같다",
+          "romanization": "gatda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "same",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "동",
+        "romanization": "dong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "An early enclosed or tube-like form.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/same/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "The selected early enclosed/tube-like form does not support a simple modern-component decomposition; its construction remains debated.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-同"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "同",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%90%8C/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/42_F38F.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/same/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/same/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "同 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The selected early enclosed/tube-like form does not support a simple modern-component decomposition; its construction remains debated.",
+        "transitionNote": "The selected early enclosed/tube-like form does not support a simple modern-component decomposition; its construction remains debated.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/same/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "A mouth/opening marker is added to the early tube-like form, helping distinguish it from a similar sign; the original object interpretation remains uncertain.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-同"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "同",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%90%8C/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/32_F669.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/same/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/same/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "同 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Joins the upper frame and lower mouth-like enclosure into a single stacked structure.",
+        "transitionNote": "A mouth/opening marker is added to the early tube-like form, helping distinguish it from a similar sign; the original object interpretation remains uncertain.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/same/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Surrounds the inner box with a tall rounded outer enclosure and adds a short horizontal inside the top.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-同"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "同",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%90%8C/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_540C.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/same/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/same/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "同 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Surrounds the inner box with a tall rounded outer enclosure and adds a short horizontal inside the top.",
+        "transitionNote": "Surrounds the inner box with a tall rounded outer enclosure and adds a short horizontal inside the top.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/same/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "Flattens the outer enclosure into a broad roof-like frame and widens the inner box.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-同"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "同",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%90%8C/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/92_F442.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/same/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/same/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "同 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Flattens the outer enclosure into a broad roof-like frame and widens the inner box.",
+        "transitionNote": "Flattens the outer enclosure into a broad roof-like frame and widens the inner box.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "同",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The graph stabilizes as 同 for “same/together,” while the earliest object/component analysis remains uncertain.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "同",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "同 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The graph stabilizes as 同 for “same/together,” while the earliest object/component analysis remains uncertain.",
+        "transitionNote": "The graph stabilizes as 同 for “same/together,” while the earliest object/component analysis remains uncertain.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "same",
+      "explanation": "An early enclosed or tube-like form appears in the leading analysis; the familiar lower opening belongs to later or variant structures.",
+      "asset": {
+        "characterID": "same",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/same/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of same",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-同"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿵𠔼口.",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-同"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'same / together', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E5%90%8C"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-同",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%90%8C"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-同",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

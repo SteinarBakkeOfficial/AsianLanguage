@@ -2,8 +2,8 @@
   "id": "old-u53e4",
   "version": 1,
   "coreCharacter": "古",
-  "coreSharedMeaning": "old",
-  "recognitionTakeaway": "Regular 古 tightens 十 over 口 into the familiar six-stroke character, with the original pictorial interpretation no longer obvious.",
+  "coreSharedMeaning": "old / ancient",
+  "recognitionTakeaway": "The graph stabilizes as 古 for “old/ancient”; the folk “ten mouths tell old stories” account is excluded.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+53E4",
   "simplifiedForm": "古",
@@ -15,9 +15,9 @@
     "Oracle places a cross-marked upper shape over a large open mouth-like enclosure, already forming a clear top-and-bottom compound.",
     "Regular 古 tightens 十 over 口 into the familiar six-stroke character, with the original pictorial interpretation no longer obvious."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-146-古-u53E4",
+  "contentFolder": "content/release/symbols/old-u53e4",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-146-古-u53E4/research.md",
+  "researchNotesPath": "content/release/symbols/old-u53e4/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "old"
       ],
       "examples": [
+        {
+          "text": "古",
+          "reading": "gǔ",
+          "translation": "old",
+          "speechText": "古",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "gǔ"
+          ]
+        },
         {
           "text": "古代",
           "reading": "gǔdài",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "古老",
+          "reading": "gǔlǎo",
+          "translation": "ancient; very old",
+          "speechText": "古老",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这是一座古城。",
           "reading": "Zhè shì yí zuò gǔchéng.",
           "translation": "This is an ancient city.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "古",
@@ -98,6 +127,18 @@
         "old"
       ],
       "taiwanExamples": [
+        {
+          "text": "古",
+          "reading": "gǔ",
+          "translation": "old",
+          "speechText": "古",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "古代",
           "reading": "gǔdài",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "古",
+          "reading": "gu2",
+          "translation": "old",
+          "speechText": "古",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "古代",
           "reading": "gu2 doi6",
@@ -203,24 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "古",
       "readings": [
         {
-          "system": "on",
-          "value": "コ (ko)",
+          "system": "onyomi",
+          "value": "コ — ko",
           "audioAssetRef": null,
           "speechText": "こ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コ",
+          "romanization": "ko",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "ふるい (furui)",
+          "system": "kunyomi",
+          "value": "ふるい — furui",
           "audioAssetRef": null,
           "speechText": "ふるい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ふるい",
+          "romanization": "furui",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "ふるす — furusu",
+          "audioAssetRef": null,
+          "speechText": "ふるす",
+          "speechLanguage": "japanese",
+          "nativeReading": "ふるす",
+          "romanization": "furusu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +310,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "古"
-          ]
+          ],
+          "kanaReading": "ふるい",
+          "coversReadings": [
+            "ふるい"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "古",
+              "reading": "ふる"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "furiganaHtml": "<ruby>古<rt>ふる</rt></ruby>い"
         },
         {
           "text": "古代",
@@ -253,7 +338,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "古"
-          ]
+          ],
+          "kanaReading": "こだい",
+          "coversReadings": [
+            "コ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "古代",
+              "reading": "こだい"
+            }
+          ],
+          "furiganaHtml": "<ruby>古代<rt>こだい</rt></ruby>"
+        },
+        {
+          "text": "中古",
+          "reading": "chūko",
+          "translation": "secondhand; used",
+          "speechText": "中古",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ちゅうこ",
+          "furiganaSegments": [
+            {
+              "text": "中古",
+              "reading": "ちゅうこ"
+            }
+          ],
+          "furiganaHtml": "<ruby>中古<rt>ちゅうこ</rt></ruby>"
+        },
+        {
+          "text": "古本",
+          "reading": "furuhon",
+          "translation": "used book",
+          "speechText": "古本",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ふるほん",
+          "furiganaSegments": [
+            {
+              "text": "古本",
+              "reading": "ふるほん"
+            }
+          ],
+          "furiganaHtml": "<ruby>古本<rt>ふるほん</rt></ruby>"
         },
         {
           "text": "この本は古いです。",
@@ -267,33 +403,110 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "古"
-          ]
+          ],
+          "kanaReading": "このほんはふるいです。",
+          "furiganaSegments": [
+            {
+              "text": "この"
+            },
+            {
+              "text": "本",
+              "reading": "ほん"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "古",
+              "reading": "ふる"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "この<ruby>本<rt>ほん</rt></ruby>は<ruby>古<rt>ふる</rt></ruby>いです。"
+        },
+        {
+          "text": "使い古す",
+          "reading": "tsukaifurusu",
+          "translation": "wear out through use",
+          "speechText": "使い古す",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "つかいふるす",
+          "coversReadings": [
+            "ふるす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "使",
+              "reading": "つか"
+            },
+            {
+              "text": "い"
+            },
+            {
+              "text": "古",
+              "reading": "ふる"
+            },
+            {
+              "text": "す"
+            }
+          ],
+          "furiganaHtml": "<ruby>使<rt>つか</rt></ruby>い<ruby>古<rt>ふる</rt></ruby>す"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ふるい",
+        "romanization": "furui",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "古",
       "readings": [
         {
           "system": "hanja",
-          "value": "고 / go",
+          "value": "고 — go",
           "audioAssetRef": null,
           "speechText": "고",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "옛 / yet",
-          "audioAssetRef": null,
-          "speechText": "옛",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "고",
+          "romanization": "go"
         }
       ],
       "glosses": [
         "old"
       ],
       "examples": [
+        {
+          "text": "옛",
+          "reading": "yet",
+          "translation": "old / ancient",
+          "speechText": "옛",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "고대",
           "reading": "godae",
@@ -323,6 +536,18 @@
           ]
         },
         {
+          "text": "고서",
+          "reading": "goseo",
+          "translation": "old book",
+          "speechText": "고서",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "이 책은 오래됐어요.",
           "reading": "i chaegeun oraedwaesseoyo.",
           "translation": "This book is old.",
@@ -337,7 +562,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "고 — go",
+          "audioAssetRef": null,
+          "speechText": "고",
+          "speechLanguage": "korean",
+          "nativeReading": "고",
+          "romanization": "go"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "옛 — yet",
+          "audioAssetRef": null,
+          "speechText": "옛",
+          "speechLanguage": "korean",
+          "nativeReading": "옛",
+          "romanization": "yet",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "old / ancient",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "고",
+        "romanization": "go",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +610,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A round shield-like object and an open mouth shown combining into an old stone chamber or structure.",
+    "originAnchor": "A firmness-related upper element and a lower enclosure combine; the original idea was 'solid,' later borrowed for 'old.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/old-u53e4/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle places a cross-marked upper shape over a large open mouth-like enclosure, already forming a clear top-and-bottom compound.",
+        "changeNoteFromPrevious": "The early form should be described as the selected shield/firmness-related structure; “ten mouths” is a later folk decomposition.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-古"
@@ -379,8 +643,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle places a cross-marked upper shape over a large open mouth-like enclosure, already forming a clear top-and-bottom compound.",
-        "transitionNote": "Oracle places a cross-marked upper shape over a large open mouth-like enclosure, already forming a clear top-and-bottom compound.",
+        "stageExplanation": "The early form should be described as the selected shield/firmness-related structure; “ten mouths” is a later folk decomposition.",
+        "transitionNote": "The early form should be described as the selected shield/firmness-related structure; “ten mouths” is a later folk decomposition.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +654,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/old-u53e4/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze simplifies the top into a single solid angular mark while enlarging the rounded mouth below.",
+        "changeNoteFromPrevious": "Simplifies the top into a single solid angular mark while enlarging the rounded mouth below.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-古"
@@ -416,8 +680,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze simplifies the top into a single solid angular mark while enlarging the rounded mouth below.",
-        "transitionNote": "Bronze simplifies the top into a single solid angular mark while enlarging the rounded mouth below.",
+        "stageExplanation": "Simplifies the top into a single solid angular mark while enlarging the rounded mouth below.",
+        "transitionNote": "Simplifies the top into a single solid angular mark while enlarging the rounded mouth below.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +691,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/old-u53e4/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the upper mark into a 十-like cross and the lower element into a smooth 口.",
+        "changeNoteFromPrevious": "The upper and lower elements are regularized into a compact vertical structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-古"
@@ -453,8 +717,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the upper mark into a 十-like cross and the lower element into a smooth 口.",
-        "transitionNote": "Small Seal regularizes the upper mark into a 十-like cross and the lower element into a smooth 口.",
+        "stageExplanation": "The upper and lower elements are regularized into a compact vertical structure.",
+        "transitionNote": "The upper and lower elements are regularized into a compact vertical structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +728,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/old-u53e4/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical thickens the cross and squares the mouth, producing a form almost identical in layout to 古.",
+        "changeNoteFromPrevious": "The strokes flatten and simplify, producing a layout close to the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-古"
@@ -490,8 +754,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical thickens the cross and squares the mouth, producing a form almost identical in layout to 古.",
-        "transitionNote": "Clerical thickens the cross and squares the mouth, producing a form almost identical in layout to 古.",
+        "stageExplanation": "The strokes flatten and simplify, producing a layout close to the later standard structure.",
+        "transitionNote": "The strokes flatten and simplify, producing a layout close to the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +765,7 @@
         "label": "Regular Script",
         "form": "古",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 古 tightens 十 over 口 into the familiar six-stroke character, with the original pictorial interpretation no longer obvious.",
+        "changeNoteFromPrevious": "The graph stabilizes as 古 for “old/ancient”; the folk “ten mouths tell old stories” account is excluded.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +791,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 古 tightens 十 over 口 into the familiar six-stroke character, with the original pictorial interpretation no longer obvious.",
-        "transitionNote": "Regular 古 tightens 十 over 口 into the familiar six-stroke character, with the original pictorial interpretation no longer obvious.",
+        "stageExplanation": "The graph stabilizes as 古 for “old/ancient”; the folk “ten mouths tell old stories” account is excluded.",
+        "transitionNote": "The graph stabilizes as 古 for “old/ancient”; the folk “ten mouths tell old stories” account is excluded.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +800,7 @@
     ],
     "origin": {
       "concept": "old",
-      "explanation": "A round shield-like object and an open mouth shown combining into an old stone chamber or structure.",
+      "explanation": "An ancient graph combines an upper firmness or shield-related element with a lower differentiating element in a leading analysis.",
       "asset": {
         "characterID": "old-u53e4",
         "historicalStage": null,
@@ -553,7 +817,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of old",
+        "accessibilityDescription": "Illustration of old / ancient",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +835,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'old', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'old / ancient', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +905,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

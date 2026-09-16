@@ -33,9 +33,9 @@ This paragraph recorded the former hold before the 2026-09-08 approval. The curr
 
 ### Deferred follow-ups from Testing08_09 — next implementation only
 
-- Transition timing: the current `0.64s` exhibit crossfade is much more visible and substantially better than the earlier timing, but now feels slightly too slow. Reduce it modestly in the next implementation after device comparison; do not change it during this hold.
-- Material captions: captions such as “Bone / shell · carved” are now visible inside the exhibit square, but sit roughly 1 mm too high. Move them slightly downward while keeping them inside the square and clear of the lower edge.
-- History navigation: Oracle and Bronze currently respond, but the remaining script rows and modern-language branch cards still require a full-row navigation fix. Verify every row/card by tapping anywhere on a supported simulator or device.
+- Resolved locally: the exhibit crossfade is now `0.36s`; native simulator/device verification remains.
+- Resolved locally: material captions now have a small additional gap while remaining inside the exhibit square; native visual verification remains.
+- Resolved locally: History script rows and modern-language branch cards use full-row navigation; native tap verification remains.
 - These are deferred notes only; no implementation is authorized by this section.
 
 ## Data and source boundaries

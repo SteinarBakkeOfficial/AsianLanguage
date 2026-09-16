@@ -2,8 +2,8 @@
   "id": "blessing",
   "version": 1,
   "coreCharacter": "祝",
-  "coreSharedMeaning": "blessing",
-  "recognitionTakeaway": "Regular 祝 fixes 礻 on the left and 兄 on the right, preserving the ritual scene as the combination of an altar and a person addressing or praying before it.",
+  "coreSharedMeaning": "bless / congratulate / pray",
+  "recognitionTakeaway": "The modern 祝 structure preserves the ritual semantic component 礻 beside the speaking/person-derived right side; no incense belongs to the graph.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+795D",
   "simplifiedForm": "祝",
@@ -15,9 +15,9 @@
     "Oracle places a clear 示-like altar on the left and a tall kneeling or speaking human form on the right.",
     "Regular 祝 fixes 礻 on the left and 兄 on the right, preserving the ritual scene as the combination of an altar and a person addressing or praying before it."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-144-祝-u795D",
+  "contentFolder": "content/release/symbols/blessing",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-144-祝-u795D/research.md",
+  "researchNotesPath": "content/release/symbols/blessing/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "blessing"
       ],
       "examples": [
+        {
+          "text": "祝",
+          "reading": "zhù",
+          "translation": "blessing",
+          "speechText": "祝",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zhù"
+          ]
+        },
         {
           "text": "祝福",
           "reading": "zhùfú",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "祝愿",
+          "reading": "zhùyuàn",
+          "translation": "good wishes; wish",
+          "speechText": "祝愿",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "祝你生日快乐。",
           "reading": "Zhù nǐ shēngrì kuàilè.",
           "translation": "Happy birthday to you.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "祝",
@@ -98,6 +127,18 @@
         "blessing"
       ],
       "taiwanExamples": [
+        {
+          "text": "祝",
+          "reading": "zhù",
+          "translation": "blessing",
+          "speechText": "祝",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "祝福",
           "reading": "zhùfú",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "祝",
+          "reading": "zuk1",
+          "translation": "blessing",
+          "speechText": "祝",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "祝福",
           "reading": "zuk1 fuk1",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "祝",
       "readings": [
         {
-          "system": "on",
-          "value": "シュク (shuku)",
+          "system": "onyomi",
+          "value": "シュク — shuku",
           "audioAssetRef": null,
           "speechText": "しゅく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "シュク",
+          "romanization": "shuku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "いわう (iwau)",
+          "system": "kunyomi",
+          "value": "いわう — iwau",
           "audioAssetRef": null,
           "speechText": "いわう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "いわう",
+          "romanization": "iwau",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "祝"
-          ]
+          ],
+          "kanaReading": "いわう",
+          "coversReadings": [
+            "いわう"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "祝",
+              "reading": "いわ"
+            },
+            {
+              "text": "う"
+            }
+          ],
+          "furiganaHtml": "<ruby>祝<rt>いわ</rt></ruby>う"
         },
         {
           "text": "祝日",
@@ -253,7 +328,64 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "祝"
-          ]
+          ],
+          "kanaReading": "しゅくじつ",
+          "coversReadings": [
+            "シュク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "祝日",
+              "reading": "しゅくじつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>祝日<rt>しゅくじつ</rt></ruby>"
+        },
+        {
+          "text": "祝福",
+          "reading": "shukufuku",
+          "translation": "blessing; congratulations",
+          "speechText": "祝福",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しゅくふく",
+          "furiganaSegments": [
+            {
+              "text": "祝福",
+              "reading": "しゅくふく"
+            }
+          ],
+          "furiganaHtml": "<ruby>祝福<rt>しゅくふく</rt></ruby>"
+        },
+        {
+          "text": "お祝い",
+          "reading": "oiwai",
+          "translation": "celebration / congratulations",
+          "speechText": "お祝い",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おいわい",
+          "furiganaSegments": [
+            {
+              "text": "お"
+            },
+            {
+              "text": "祝",
+              "reading": "いわ"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "furiganaHtml": "お<ruby>祝<rt>いわ</rt></ruby>い"
         },
         {
           "text": "誕生日を祝います。",
@@ -267,33 +399,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "祝"
-          ]
+          ],
+          "kanaReading": "たんじょうびをいわいます。",
+          "furiganaSegments": [
+            {
+              "text": "誕生日",
+              "reading": "たんじょうび"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "祝",
+              "reading": "いわ"
+            },
+            {
+              "text": "います"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>誕生日<rt>たんじょうび</rt></ruby>を<ruby>祝<rt>いわ</rt></ruby>います。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "いわう",
+        "romanization": "iwau",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "祝",
       "readings": [
         {
           "system": "hanja",
-          "value": "축 / chuk",
+          "value": "축 — chuk",
           "audioAssetRef": null,
           "speechText": "축",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean · wish/bless",
-          "value": "빌다 / bilda",
-          "audioAssetRef": null,
-          "speechText": "빌다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "축",
+          "romanization": "chuk"
         }
       ],
       "glosses": [
         "blessing"
       ],
       "examples": [
+        {
+          "text": "빌다",
+          "reading": "bilda",
+          "translation": "wish / pray",
+          "speechText": "빌다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "축복",
           "reading": "chukbok",
@@ -323,6 +496,18 @@
           ]
         },
         {
+          "text": "경축",
+          "reading": "gyeongchuk",
+          "translation": "celebration / congratulations",
+          "speechText": "경축",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "생일을 축하해요.",
           "reading": "saengireul chukhahaeyo.",
           "translation": "Happy birthday / I celebrate the birthday.",
@@ -337,7 +522,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "축 — chuk",
+          "audioAssetRef": null,
+          "speechText": "축",
+          "speechLanguage": "korean",
+          "nativeReading": "축",
+          "romanization": "chuk"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "빌다 — bilda",
+          "audioAssetRef": null,
+          "speechText": "빌다",
+          "speechLanguage": "korean",
+          "nativeReading": "빌다",
+          "romanization": "bilda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "wish / pray",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "축",
+        "romanization": "chuk",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +570,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person kneeling in prayer beside an offering altar with incense rising from it.",
+    "originAnchor": "A spirit tablet, spoken prayer, and kneeling ritual participant combine to show a ritual prayer; this led to the meanings “bless” and “pray.”",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/blessing/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle places a clear 示-like altar on the left and a tall kneeling or speaking human form on the right.",
+        "changeNoteFromPrevious": "The early graph combines spoken prayer (mouth/opening sign), a kneeling ritual person, and in many forms a spirit tablet ritual-tablet sign; some variants show raised hands.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-祝"
@@ -379,8 +603,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle places a clear 示-like altar on the left and a tall kneeling or speaking human form on the right.",
-        "transitionNote": "Oracle places a clear 示-like altar on the left and a tall kneeling or speaking human form on the right.",
+        "stageExplanation": "The early graph combines spoken prayer (mouth/opening sign), a kneeling ritual person, and in many forms a spirit tablet ritual-tablet sign; some variants show raised hands.",
+        "transitionNote": "The early graph combines spoken prayer (mouth/opening sign), a kneeling ritual person, and in many forms a spirit tablet ritual-tablet sign; some variants show raised hands.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +614,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/blessing/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze is very fragmentary in the selected rubbing, preserving mainly the narrow human/action trace rather than a complete two-part character.",
+        "changeNoteFromPrevious": "Bronze forms vary in how clearly the tablet, mouth, and kneeling/raised-hand figure are preserved.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-祝"
@@ -416,8 +640,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze is very fragmentary in the selected rubbing, preserving mainly the narrow human/action trace rather than a complete two-part character.",
-        "transitionNote": "Bronze is very fragmentary in the selected rubbing, preserving mainly the narrow human/action trace rather than a complete two-part character.",
+        "stageExplanation": "Bronze forms vary in how clearly the tablet, mouth, and kneeling/raised-hand figure are preserved.",
+        "transitionNote": "Bronze forms vary in how clearly the tablet, mouth, and kneeling/raised-hand figure are preserved.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +651,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/blessing/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal restores a clear paired composition: a formal 示 altar stands on the left beside a tall 兄-like kneeling or speaking figure.",
+        "changeNoteFromPrevious": "The ritual components are regularized into a left ritual-tablet sign and a right speaking/person complex.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-祝"
@@ -453,8 +677,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal restores a clear paired composition: a formal 示 altar stands on the left beside a tall 兄-like kneeling or speaking figure.",
-        "transitionNote": "Small Seal restores a clear paired composition: a formal 示 altar stands on the left beside a tall 兄-like kneeling or speaking figure.",
+        "stageExplanation": "The ritual components are regularized into a left ritual-tablet sign and a right speaking/person complex.",
+        "transitionNote": "The ritual components are regularized into a left ritual-tablet sign and a right speaking/person complex.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +688,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/blessing/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens both sides into compact brush forms, producing a shape already close to 祝.",
+        "changeNoteFromPrevious": "Flattens both sides into compact brush forms, producing a shape already close to blessing form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-祝"
@@ -490,8 +714,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens both sides into compact brush forms, producing a shape already close to 祝.",
-        "transitionNote": "Clerical flattens both sides into compact brush forms, producing a shape already close to 祝.",
+        "stageExplanation": "Flattens both sides into compact brush forms, producing a shape already close to blessing form.",
+        "transitionNote": "Flattens both sides into compact brush forms, producing a shape already close to blessing form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +725,7 @@
         "label": "Regular Script",
         "form": "祝",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 祝 fixes 礻 on the left and 兄 on the right, preserving the ritual scene as the combination of an altar and a person addressing or praying before it.",
+        "changeNoteFromPrevious": "The modern 祝 structure preserves the ritual semantic component 礻 beside the speaking/person-derived right side; no incense belongs to the graph.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +751,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 祝 fixes 礻 on the left and 兄 on the right, preserving the ritual scene as the combination of an altar and a person addressing or praying before it.",
-        "transitionNote": "Regular 祝 fixes 礻 on the left and 兄 on the right, preserving the ritual scene as the combination of an altar and a person addressing or praying before it.",
+        "stageExplanation": "The modern 祝 structure preserves the ritual semantic component 礻 beside the speaking/person-derived right side; no incense belongs to the graph.",
+        "transitionNote": "The modern 祝 structure preserves the ritual semantic component 礻 beside the speaking/person-derived right side; no incense belongs to the graph.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +760,7 @@
     ],
     "origin": {
       "concept": "blessing",
-      "explanation": "A person kneeling in prayer beside an offering altar with incense rising from it.",
+      "explanation": "A spirit or ancestor tablet, a speech element, and a kneeling ritual figure combine; some ancient variants emphasize raised hands.",
       "asset": {
         "characterID": "blessing",
         "historicalStage": null,
@@ -553,7 +777,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of blessing",
+        "accessibilityDescription": "Illustration of bless / congratulate / pray",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +795,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'blessing', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'bless / congratulate / pray', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +865,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

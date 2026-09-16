@@ -2,8 +2,8 @@
   "id": "look-toward",
   "version": 1,
   "coreCharacter": "望",
-  "coreSharedMeaning": "look toward",
-  "recognitionTakeaway": "Regular 望 regularizes the upper 亡/月-related shapes over 王, leaving the original person gazing at the moon readable only through the historical sequence.",
+  "coreSharedMeaning": "look afar / look toward; hope/expect",
+  "recognitionTakeaway": "The regular 望 structure reflects later phonetic/component history; the original act of looking afar is no longer directly pictorial.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+671B",
   "simplifiedForm": "望",
@@ -15,9 +15,9 @@
     "Oracle is a thin standing profile with a small eye- or head-like form projecting to the right near the top.",
     "Regular 望 regularizes the upper 亡/月-related shapes over 王, leaving the original person gazing at the moon readable only through the historical sequence."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-121-望-u671B",
+  "contentFolder": "content/release/symbols/look-toward",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-121-望-u671B/research.md",
+  "researchNotesPath": "content/release/symbols/look-toward/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "look toward"
       ],
       "examples": [
+        {
+          "text": "望",
+          "reading": "wàng",
+          "translation": "look toward",
+          "speechText": "望",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "wàng"
+          ]
+        },
         {
           "text": "希望",
           "reading": "xīwàng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "失望",
+          "reading": "shīwàng",
+          "translation": "disappointed; lose hope",
+          "speechText": "失望",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我希望明天是晴天。",
           "reading": "Wǒ xīwàng míngtiān shì qíngtiān.",
           "translation": "I hope tomorrow is sunny.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "望",
@@ -98,6 +127,18 @@
         "look toward"
       ],
       "taiwanExamples": [
+        {
+          "text": "望",
+          "reading": "wàng",
+          "translation": "look toward",
+          "speechText": "望",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "希望",
           "reading": "xīwàng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "望",
+          "reading": "mong6",
+          "translation": "look toward",
+          "speechText": "望",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "希望",
           "reading": "hei1 mong6",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "望",
       "readings": [
         {
-          "system": "on",
-          "value": "ボウ (bō)",
+          "system": "onyomi",
+          "value": "ボウ — bō",
           "audioAssetRef": null,
           "speechText": "ぼう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ボウ",
+          "romanization": "bō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "のぞむ (nozomu)",
+          "system": "kunyomi",
+          "value": "のぞむ — nozomu",
           "audioAssetRef": null,
           "speechText": "のぞむ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "のぞむ",
+          "romanization": "nozomu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "望"
-          ]
+          ],
+          "kanaReading": "のぞむ",
+          "coversReadings": [
+            "のぞむ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "望",
+              "reading": "のぞ"
+            },
+            {
+              "text": "む"
+            }
+          ],
+          "furiganaHtml": "<ruby>望<rt>のぞ</rt></ruby>む"
         },
         {
           "text": "希望",
@@ -253,7 +328,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "望"
-          ]
+          ],
+          "kanaReading": "きぼう",
+          "coversReadings": [
+            "ボウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "希望",
+              "reading": "きぼう"
+            }
+          ],
+          "furiganaHtml": "<ruby>希望<rt>きぼう</rt></ruby>"
+        },
+        {
+          "text": "望遠鏡",
+          "reading": "bōenkyō",
+          "translation": "telescope",
+          "speechText": "望遠鏡",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ぼうえんきょう",
+          "furiganaSegments": [
+            {
+              "text": "望遠鏡",
+              "reading": "ぼうえんきょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>望遠鏡<rt>ぼうえんきょう</rt></ruby>"
+        },
+        {
+          "text": "願望",
+          "reading": "ganbō",
+          "translation": "wish / desire",
+          "speechText": "願望",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "がんぼう",
+          "furiganaSegments": [
+            {
+              "text": "願望",
+              "reading": "がんぼう"
+            }
+          ],
+          "furiganaHtml": "<ruby>願望<rt>がんぼう</rt></ruby>"
         },
         {
           "text": "良い天気を望みます。",
@@ -267,33 +393,81 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "望"
-          ]
+          ],
+          "kanaReading": "よいてんきをのぞみます。",
+          "furiganaSegments": [
+            {
+              "text": "良",
+              "reading": "よ"
+            },
+            {
+              "text": "い"
+            },
+            {
+              "text": "天気",
+              "reading": "てんき"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "望",
+              "reading": "のぞ"
+            },
+            {
+              "text": "みます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>良<rt>よ</rt></ruby>い<ruby>天気<rt>てんき</rt></ruby>を<ruby>望<rt>のぞ</rt></ruby>みます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "のぞむ",
+        "romanization": "nozomu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "望",
       "readings": [
         {
           "system": "hanja",
-          "value": "망 / mang",
+          "value": "망 — mang",
           "audioAssetRef": null,
           "speechText": "망",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "바라다 / barada",
-          "audioAssetRef": null,
-          "speechText": "바라다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "망",
+          "romanization": "mang"
         }
       ],
       "glosses": [
         "look toward"
       ],
       "examples": [
+        {
+          "text": "바라다",
+          "reading": "barada",
+          "translation": "hope / wish for",
+          "speechText": "바라다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "희망",
           "reading": "huimang",
@@ -323,6 +497,18 @@
           ]
         },
         {
+          "text": "망원경",
+          "reading": "mangwongyeong",
+          "translation": "telescope",
+          "speechText": "망원경",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "좋은 날을 바라요.",
           "reading": "joeun nareul barayo.",
           "translation": "I hope for a good day.",
@@ -337,7 +523,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "망 — mang",
+          "audioAssetRef": null,
+          "speechText": "망",
+          "speechLanguage": "korean",
+          "nativeReading": "망",
+          "romanization": "mang"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "바라다 — barada",
+          "audioAssetRef": null,
+          "speechText": "바라다",
+          "speechLanguage": "korean",
+          "nativeReading": "바라다",
+          "romanization": "barada",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "hope / wish for",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "망",
+        "romanization": "mang",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +571,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person looking upward toward a crescent moon, with an eye shown separately to emphasize looking.",
+    "originAnchor": "A person and a separate eye show looking into the distance; this led to waiting and hope, while later forms added the moon.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/look-toward/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a thin standing profile with a small eye- or head-like form projecting to the right near the top.",
+        "changeNoteFromPrevious": "A standing person with an emphasized eye looks into the distance. This precedes the later reorganization of the graph and the addition or replacement of sound-bearing and lunar elements.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-望"
@@ -379,8 +604,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a thin standing profile with a small eye- or head-like form projecting to the right near the top.",
-        "transitionNote": "Oracle is a thin standing profile with a small eye- or head-like form projecting to the right near the top.",
+        "stageExplanation": "A standing person with an emphasized eye looks into the distance. This precedes the later reorganization of the graph and the addition or replacement of sound-bearing and lunar elements.",
+        "transitionNote": "A standing person with an emphasized eye looks into the distance. This precedes the later reorganization of the graph and the addition or replacement of sound-bearing and lunar elements.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +615,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/look-toward/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze separates the composition into a person-like element on the left and a large eye or moon-shaped enclosure on the right.",
+        "changeNoteFromPrevious": "Later forms reorganize the looking graph; sound-bearing element functions phonetically in the developing lineage, while moon sign belongs to moon/lunar-phase-related variants rather than a simple “moon-gazing” origin.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-望"
@@ -416,8 +641,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze separates the composition into a person-like element on the left and a large eye or moon-shaped enclosure on the right.",
-        "transitionNote": "Bronze separates the composition into a person-like element on the left and a large eye or moon-shaped enclosure on the right.",
+        "stageExplanation": "Later forms reorganize the looking graph; sound-bearing element functions phonetically in the developing lineage, while moon sign belongs to moon/lunar-phase-related variants rather than a simple “moon-gazing” origin.",
+        "transitionNote": "Later forms reorganize the looking graph; sound-bearing element functions phonetically in the developing lineage, while moon sign belongs to moon/lunar-phase-related variants rather than a simple “moon-gazing” origin.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +652,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/look-toward/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal integrates the left standing figure and right eye/moon into a tall, tightly interlocked structure.",
+        "changeNoteFromPrevious": "Integrates the left standing figure and right eye/moon into a tall, tightly interlocked structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-望"
@@ -453,8 +678,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal integrates the left standing figure and right eye/moon into a tall, tightly interlocked structure.",
-        "transitionNote": "Small Seal integrates the left standing figure and right eye/moon into a tall, tightly interlocked structure.",
+        "stageExplanation": "Integrates the left standing figure and right eye/moon into a tall, tightly interlocked structure.",
+        "transitionNote": "Integrates the left standing figure and right eye/moon into a tall, tightly interlocked structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +689,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/look-toward/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the upper parts and creates the recognizable stacked 月/王-like right side over a long base.",
+        "changeNoteFromPrevious": "Flattens the upper parts and creates the recognizable stacked moon sign/king form-like right side over a long base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-望"
@@ -490,8 +715,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the upper parts and creates the recognizable stacked 月/王-like right side over a long base.",
-        "transitionNote": "Clerical flattens the upper parts and creates the recognizable stacked 月/王-like right side over a long base.",
+        "stageExplanation": "Flattens the upper parts and creates the recognizable stacked moon sign/king form-like right side over a long base.",
+        "transitionNote": "Flattens the upper parts and creates the recognizable stacked moon sign/king form-like right side over a long base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +726,7 @@
         "label": "Regular Script",
         "form": "望",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 望 regularizes the upper 亡/月-related shapes over 王, leaving the original person gazing at the moon readable only through the historical sequence.",
+        "changeNoteFromPrevious": "The regular 望 structure reflects later phonetic/component history; the original act of looking afar is no longer directly pictorial.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +752,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 望 regularizes the upper 亡/月-related shapes over 王, leaving the original person gazing at the moon readable only through the historical sequence.",
-        "transitionNote": "Regular 望 regularizes the upper 亡/月-related shapes over 王, leaving the original person gazing at the moon readable only through the historical sequence.",
+        "stageExplanation": "The regular 望 structure reflects later phonetic/component history; the original act of looking afar is no longer directly pictorial.",
+        "transitionNote": "The regular 望 structure reflects later phonetic/component history; the original act of looking afar is no longer directly pictorial.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +761,7 @@
     ],
     "origin": {
       "concept": "look toward",
-      "explanation": "A person looking upward toward a crescent moon, with an eye shown separately to emphasize looking.",
+      "explanation": "A standing person with an emphasized eye expresses looking into the distance.",
       "asset": {
         "characterID": "look-toward",
         "historicalStage": null,
@@ -553,7 +778,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of look toward",
+        "accessibilityDescription": "Illustration of look afar / look toward; hope/expect",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +796,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'look toward', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'look afar / look toward; hope/expect', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +866,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

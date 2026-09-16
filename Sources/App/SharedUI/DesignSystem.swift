@@ -5,27 +5,27 @@ import UIKit
 enum AppColors {
     // These values mirror the approved Fire handoff. Keep the light palette stable because
     // the reference screenshots are composed on this warm gallery field.
-    static let appBackground = adaptive(light: (247, 243, 238), dark: (18, 18, 15))
-    static let surfaceSubtle = adaptive(light: (239, 233, 225), dark: (28, 27, 24))
-    static let surfaceElevated = adaptive(light: (255, 255, 255), dark: (31, 30, 26))
-    static let surfaceStrong = adaptive(light: (247, 245, 240), dark: (38, 35, 32))
+    static let appBackground = adaptive(light: (247, 243, 238), dark: (43, 39, 34))
+    static let surfaceSubtle = adaptive(light: (239, 233, 225), dark: (55, 49, 42))
+    static let surfaceElevated = adaptive(light: (255, 255, 255), dark: (64, 57, 49))
+    static let surfaceStrong = adaptive(light: (247, 245, 240), dark: (75, 66, 56))
     static let textPrimary = adaptive(light: (28, 28, 28), dark: (245, 245, 242))
-    static let textSecondary = adaptive(light: (104, 104, 104), dark: (134, 132, 140))
-    static let textTertiary = adaptive(light: (183, 176, 166), dark: (143, 140, 132))
-    static let separator = adaptive(light: (225, 218, 209), dark: (47, 45, 40))
+    static let textSecondary = adaptive(light: (104, 104, 104), dark: (196, 188, 178))
+    static let textTertiary = adaptive(light: (183, 176, 166), dark: (161, 151, 139))
+    static let separator = adaptive(light: (225, 218, 209), dark: (91, 81, 70))
     static let accentPrimary = adaptive(light: (194, 58, 43), dark: (226, 92, 74))
     static let accentPressed = adaptive(light: (165, 32, 34), dark: (191, 66, 47))
-    static let accentSubtle = adaptive(light: (248, 233, 230), dark: (58, 29, 24))
-    static let learned = adaptive(light: (46, 125, 110), dark: (51, 196, 157))
+    static let accentSubtle = adaptive(light: (248, 233, 230), dark: (83, 42, 34))
+    static let learned = adaptive(light: (46, 125, 110), dark: (67, 183, 148))
     static let warning = adaptive(light: (149, 104, 32), dark: (224, 174, 86))
     static let error = adaptive(light: (178, 55, 53), dark: (239, 113, 107))
-    static let artifactField = adaptive(light: (239, 233, 225), dark: (42, 37, 28))
-    static let artifactInk = adaptive(light: (53, 43, 36), dark: (228, 216, 200))
+    static let artifactField = adaptive(light: (239, 233, 225), dark: (58, 51, 43))
+    static let artifactInk = adaptive(light: (53, 43, 36), dark: (53, 43, 36))
 
     /// A visibly separate museum-navigation surface keeps the Origin-to-Today rail
     /// legible without introducing a new accent color family.
-    static let journeyRailBackground = adaptive(light: (229, 221, 211), dark: (42, 37, 32))
-    static let journeyRailSelected = adaptive(light: (255, 252, 247), dark: (58, 51, 44))
+    static let journeyRailBackground = adaptive(light: (229, 221, 211), dark: (67, 59, 50))
+    static let journeyRailSelected = adaptive(light: (255, 252, 247), dark: (83, 73, 61))
 
     private static func adaptive(light: (CGFloat, CGFloat, CGFloat), dark: (CGFloat, CGFloat, CGFloat)) -> Color {
         Color(uiColor: UIColor { traits in
@@ -120,7 +120,8 @@ enum AppRadius {
 enum AppMotion {
     static let press: Double = 0.12
     static let standard: Double = 0.22
-    static let exhibit: Double = 0.48
+    // Keep the museum-stage crossfade restrained so navigation feels continuous without slowing exploration.
+    static let exhibit: Double = 0.36
 }
 
 /// Full-width primary action with stable dimensions across loading and Dynamic Type.

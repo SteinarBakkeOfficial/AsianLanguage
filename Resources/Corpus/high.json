@@ -2,8 +2,8 @@
   "id": "high",
   "version": 1,
   "coreCharacter": "高",
-  "coreSharedMeaning": "high",
-  "recognitionTakeaway": "Regular 高 regularizes the stacked roof-and-room architecture without losing the clear sense of vertical height.",
+  "coreSharedMeaning": "high / tall",
+  "recognitionTakeaway": "Regularizes the stacked roof-and-room architecture without losing the clear sense of vertical height.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+9AD8",
   "simplifiedForm": "高",
@@ -15,9 +15,9 @@
     "Oracle is strikingly architectural: a pointed roof sits over several stacked rooms and supports.",
     "Regular 高 regularizes the stacked roof-and-room architecture without losing the clear sense of vertical height."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-074-高-u9AD8",
+  "contentFolder": "content/release/symbols/high",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-074-高-u9AD8/research.md",
+  "researchNotesPath": "content/release/symbols/high/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "high"
       ],
       "examples": [
+        {
+          "text": "高",
+          "reading": "gāo",
+          "translation": "high",
+          "speechText": "高",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "gāo"
+          ]
+        },
         {
           "text": "高山",
           "reading": "gāoshān",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "高度",
+          "reading": "gāodù",
+          "translation": "height",
+          "speechText": "高度",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这座山很高。",
           "reading": "Zhè zuò shān hěn gāo.",
           "translation": "This mountain is high.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "高",
@@ -98,6 +127,18 @@
         "high"
       ],
       "taiwanExamples": [
+        {
+          "text": "高",
+          "reading": "gāo",
+          "translation": "high",
+          "speechText": "高",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "高山",
           "reading": "gāoshān",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "高",
+          "reading": "gou1",
+          "translation": "high",
+          "speechText": "高",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "高山",
           "reading": "gou1 saan1",
@@ -203,24 +256,52 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "高",
       "readings": [
         {
-          "system": "on",
-          "value": "コウ (kō)",
+          "system": "onyomi",
+          "value": "コウ — kō",
           "audioAssetRef": null,
           "speechText": "こう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コウ",
+          "romanization": "kō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "たかい (takai)",
+          "system": "kunyomi",
+          "value": "たかい — takai",
           "audioAssetRef": null,
           "speechText": "たかい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "たかい",
+          "romanization": "takai",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "たかまる — takamaru",
+          "audioAssetRef": null,
+          "speechText": "たかまる",
+          "speechLanguage": "japanese",
+          "nativeReading": "たかまる",
+          "romanization": "takamaru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "たかめる — takameru",
+          "audioAssetRef": null,
+          "speechText": "たかめる",
+          "speechLanguage": "japanese",
+          "nativeReading": "たかめる",
+          "romanization": "takameru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +320,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "高"
-          ]
+          ],
+          "kanaReading": "たかい",
+          "coversReadings": [
+            "たかい"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "高",
+              "reading": "たか"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "furiganaHtml": "<ruby>高<rt>たか</rt></ruby>い"
         },
         {
           "text": "高校",
@@ -253,7 +348,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "高"
-          ]
+          ],
+          "kanaReading": "こうこう",
+          "coversReadings": [
+            "コウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "高校",
+              "reading": "こうこう"
+            }
+          ],
+          "furiganaHtml": "<ruby>高校<rt>こうこう</rt></ruby>"
+        },
+        {
+          "text": "高速",
+          "reading": "kōsoku",
+          "translation": "high speed",
+          "speechText": "高速",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうそく",
+          "furiganaSegments": [
+            {
+              "text": "高速",
+              "reading": "こうそく"
+            }
+          ],
+          "furiganaHtml": "<ruby>高速<rt>こうそく</rt></ruby>"
+        },
+        {
+          "text": "高級",
+          "reading": "kōkyū",
+          "translation": "high-class",
+          "speechText": "高級",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうきゅう",
+          "furiganaSegments": [
+            {
+              "text": "高級",
+              "reading": "こうきゅう"
+            }
+          ],
+          "furiganaHtml": "<ruby>高級<rt>こうきゅう</rt></ruby>"
         },
         {
           "text": "この山は高いです。",
@@ -267,33 +413,129 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "高"
-          ]
+          ],
+          "kanaReading": "このやまはたかいです。",
+          "furiganaSegments": [
+            {
+              "text": "この"
+            },
+            {
+              "text": "山",
+              "reading": "やま"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "高",
+              "reading": "たか"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "この<ruby>山<rt>やま</rt></ruby>は<ruby>高<rt>たか</rt></ruby>いです。"
+        },
+        {
+          "text": "高まる",
+          "reading": "takamaru",
+          "translation": "rise; heighten",
+          "speechText": "高まる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たかまる",
+          "coversReadings": [
+            "たかまる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "高",
+              "reading": "たか"
+            },
+            {
+              "text": "まる"
+            }
+          ],
+          "furiganaHtml": "<ruby>高<rt>たか</rt></ruby>まる"
+        },
+        {
+          "text": "高める",
+          "reading": "takameru",
+          "translation": "raise; enhance",
+          "speechText": "高める",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たかめる",
+          "coversReadings": [
+            "たかめる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "高",
+              "reading": "たか"
+            },
+            {
+              "text": "める"
+            }
+          ],
+          "furiganaHtml": "<ruby>高<rt>たか</rt></ruby>める"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "たかい",
+        "romanization": "takai",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "高",
       "readings": [
         {
           "system": "hanja",
-          "value": "고 / go",
+          "value": "고 — go",
           "audioAssetRef": null,
           "speechText": "고",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "높다 / nopda",
-          "audioAssetRef": null,
-          "speechText": "높다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "고",
+          "romanization": "go"
         }
       ],
       "glosses": [
         "high"
       ],
       "examples": [
+        {
+          "text": "높다",
+          "reading": "nopda",
+          "translation": "high / tall",
+          "speechText": "높다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "고층",
           "reading": "gocheung",
@@ -323,6 +565,18 @@
           ]
         },
         {
+          "text": "고도",
+          "reading": "godo",
+          "translation": "altitude",
+          "speechText": "고도",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "산이 높아요.",
           "reading": "sani nopayo.",
           "translation": "The mountain is high.",
@@ -337,7 +591,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "고 — go",
+          "audioAssetRef": null,
+          "speechText": "고",
+          "speechLanguage": "korean",
+          "nativeReading": "고",
+          "romanization": "go"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "높다 — nopda",
+          "audioAssetRef": null,
+          "speechText": "높다",
+          "speechLanguage": "korean",
+          "nativeReading": "높다",
+          "romanization": "nopda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "high / tall",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "고",
+        "romanization": "go",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +639,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A tall multi-story tower contrasted with a shorter building.",
+    "originAnchor": "A tall multi-level tower on a raised platform represents something high or tall.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/high/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is strikingly architectural: a pointed roof sits over several stacked rooms and supports.",
+        "changeNoteFromPrevious": "Is strikingly architectural: a pointed roof sits over several stacked rooms and supports.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-高"
@@ -379,8 +672,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is strikingly architectural: a pointed roof sits over several stacked rooms and supports.",
-        "transitionNote": "Oracle is strikingly architectural: a pointed roof sits over several stacked rooms and supports.",
+        "stageExplanation": "Is strikingly architectural: a pointed roof sits over several stacked rooms and supports.",
+        "transitionNote": "Is strikingly architectural: a pointed roof sits over several stacked rooms and supports.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +683,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/high/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze thickens the tower into a bold two-level building with a large lower opening.",
+        "changeNoteFromPrevious": "Thickens the tower into a bold two-level building with a large lower opening.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-高"
@@ -416,8 +709,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze thickens the tower into a bold two-level building with a large lower opening.",
-        "transitionNote": "Bronze thickens the tower into a bold two-level building with a large lower opening.",
+        "stageExplanation": "Thickens the tower into a bold two-level building with a large lower opening.",
+        "transitionNote": "Thickens the tower into a bold two-level building with a large lower opening.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +720,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/high/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal smooths the architecture into a symmetrical stack of roof, upper chamber, and lower framed chamber.",
+        "changeNoteFromPrevious": "Smooths the architecture into a symmetrical stack of roof, upper chamber, and lower framed chamber.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-高"
@@ -453,8 +746,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal smooths the architecture into a symmetrical stack of roof, upper chamber, and lower framed chamber.",
-        "transitionNote": "Small Seal smooths the architecture into a symmetrical stack of roof, upper chamber, and lower framed chamber.",
+        "stageExplanation": "Smooths the architecture into a symmetrical stack of roof, upper chamber, and lower framed chamber.",
+        "transitionNote": "Smooths the architecture into a symmetrical stack of roof, upper chamber, and lower framed chamber.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +757,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/high/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the roofs and compresses the openings, already reading strongly as 高.",
+        "changeNoteFromPrevious": "The building/tower elements flatten and regularize, already reading strongly as the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-高"
@@ -490,8 +783,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the roofs and compresses the openings, already reading strongly as 高.",
-        "transitionNote": "Clerical flattens the roofs and compresses the openings, already reading strongly as 高.",
+        "stageExplanation": "The building/tower elements flatten and regularize, already reading strongly as the later standard structure.",
+        "transitionNote": "The building/tower elements flatten and regularize, already reading strongly as the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +794,7 @@
         "label": "Regular Script",
         "form": "高",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 高 regularizes the stacked roof-and-room architecture without losing the clear sense of vertical height.",
+        "changeNoteFromPrevious": "Regularizes the stacked roof-and-room architecture without losing the clear sense of vertical height.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +820,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 高 regularizes the stacked roof-and-room architecture without losing the clear sense of vertical height.",
-        "transitionNote": "Regular 高 regularizes the stacked roof-and-room architecture without losing the clear sense of vertical height.",
+        "stageExplanation": "Regularizes the stacked roof-and-room architecture without losing the clear sense of vertical height.",
+        "transitionNote": "Regularizes the stacked roof-and-room architecture without losing the clear sense of vertical height.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +829,7 @@
     ],
     "origin": {
       "concept": "high",
-      "explanation": "A tall multi-story tower contrasted with a shorter building.",
+      "explanation": "A tall multi-level building or tower-like structure.",
       "asset": {
         "characterID": "high",
         "historicalStage": null,
@@ -553,7 +846,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of high",
+        "accessibilityDescription": "Illustration of high / tall",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +864,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'high', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'high / tall', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +934,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

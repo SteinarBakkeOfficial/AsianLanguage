@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "南",
   "coreSharedMeaning": "south",
-  "recognitionTakeaway": "Regular 南 regularizes the outer verticals, top strokes, and compact inner element while keeping the character’s distinctive enclosed center.",
+  "recognitionTakeaway": "The borrowed directional word stabilizes as 南; the ancient instrument picture is no longer transparent.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5357",
   "simplifiedForm": "南",
@@ -15,9 +15,9 @@
     "Oracle is a tall stacked sign with a branched top above a rectangular chamber containing one inner opening.",
     "Regular 南 regularizes the outer verticals, top strokes, and compact inner element while keeping the character’s distinctive enclosed center."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-064-南-u5357",
+  "contentFolder": "content/release/symbols/south",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-064-南-u5357/research.md",
+  "researchNotesPath": "content/release/symbols/south/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "south"
       ],
       "examples": [
+        {
+          "text": "南",
+          "reading": "nán",
+          "translation": "south",
+          "speechText": "南",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "nán"
+          ]
+        },
         {
           "text": "南方",
           "reading": "nánfāng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "南门",
+          "reading": "nánmén",
+          "translation": "south gate",
+          "speechText": "南门",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我们向南走。",
           "reading": "Wǒmen xiàng nán zǒu.",
           "translation": "We are walking south.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "南",
@@ -98,6 +127,18 @@
         "south"
       ],
       "taiwanExamples": [
+        {
+          "text": "南",
+          "reading": "nán",
+          "translation": "south",
+          "speechText": "南",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "南方",
           "reading": "nánfāng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "南",
+          "reading": "naam4",
+          "translation": "south",
+          "speechText": "南",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "南方",
           "reading": "naam4 fong1",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "南",
       "readings": [
         {
-          "system": "on",
-          "value": "ナン (nan)",
+          "system": "onyomi",
+          "value": "ナン — nan",
           "audioAssetRef": null,
           "speechText": "なん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ナン",
+          "romanization": "nan",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "みなみ (minami)",
+          "system": "kunyomi",
+          "value": "みなみ — minami",
           "audioAssetRef": null,
           "speechText": "みなみ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "みなみ",
+          "romanization": "minami",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "南"
-          ]
+          ],
+          "kanaReading": "みなみ",
+          "coversReadings": [
+            "みなみ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "南",
+              "reading": "みなみ"
+            }
+          ],
+          "furiganaHtml": "<ruby>南<rt>みなみ</rt></ruby>"
         },
         {
           "text": "南口",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "南"
-          ]
+          ],
+          "kanaReading": "みなみぐち",
+          "furiganaSegments": [
+            {
+              "text": "南口",
+              "reading": "みなみぐち"
+            }
+          ],
+          "furiganaHtml": "<ruby>南口<rt>みなみぐち</rt></ruby>"
+        },
+        {
+          "text": "南米",
+          "reading": "nanbei",
+          "translation": "South America",
+          "speechText": "南米",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "なんべい",
+          "coversReadings": [
+            "ナン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "南米",
+              "reading": "なんべい"
+            }
+          ],
+          "furiganaHtml": "<ruby>南米<rt>なんべい</rt></ruby>"
+        },
+        {
+          "text": "南国",
+          "reading": "nangoku",
+          "translation": "southern / tropical country",
+          "speechText": "南国",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "なんごく",
+          "furiganaSegments": [
+            {
+              "text": "南国",
+              "reading": "なんごく"
+            }
+          ],
+          "furiganaHtml": "<ruby>南国<rt>なんごく</rt></ruby>"
         },
         {
           "text": "南へ行きます。",
@@ -267,33 +390,76 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "南"
-          ]
+          ],
+          "kanaReading": "みなみへいきます。",
+          "furiganaSegments": [
+            {
+              "text": "南",
+              "reading": "みなみ"
+            },
+            {
+              "text": "へ"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>南<rt>みなみ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "みなみ",
+        "romanization": "minami",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "南",
       "readings": [
         {
           "system": "hanja",
-          "value": "남 / nam",
+          "value": "남 — nam",
           "audioAssetRef": null,
           "speechText": "남",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "남쪽 / namjjok",
-          "audioAssetRef": null,
-          "speechText": "남쪽",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "남",
+          "romanization": "nam"
         }
       ],
       "glosses": [
         "south"
       ],
       "examples": [
+        {
+          "text": "남쪽",
+          "reading": "namjjok",
+          "translation": "south",
+          "speechText": "남쪽",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "南"
+          ],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "남부",
           "reading": "nambu",
@@ -309,18 +475,28 @@
           ]
         },
         {
-          "text": "남쪽",
-          "reading": "namjjok",
-          "translation": "south",
-          "speechText": "남쪽",
+          "text": "남미",
+          "reading": "nammi",
+          "translation": "South America",
+          "speechText": "남미",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "南"
-          ]
+          "introducedSymbols": []
+        },
+        {
+          "text": "남문",
+          "reading": "nammun",
+          "translation": "south gate",
+          "speechText": "남문",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "남쪽으로 가요.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "남 — nam",
+          "audioAssetRef": null,
+          "speechText": "남",
+          "speechLanguage": "korean",
+          "nativeReading": "남",
+          "romanization": "nam"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "남쪽 — namjjok",
+          "audioAssetRef": null,
+          "speechText": "남쪽",
+          "speechLanguage": "korean",
+          "nativeReading": "남쪽",
+          "romanization": "namjjok",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "south",
+          "displayTier": "secondary",
+          "lexicalOrigin": "mixed",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "남",
+        "romanization": "nam",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +561,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A hanging bell and a roofed structure, with a cross-like component shown beside them.",
+    "originAnchor": "An ancient bell or chime-like instrument.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/south/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a tall stacked sign with a branched top above a rectangular chamber containing one inner opening.",
+        "changeNoteFromPrevious": "The early graph represents a bell/chime-like musical instrument in the leading account, not the direction south.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-南"
@@ -379,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a tall stacked sign with a branched top above a rectangular chamber containing one inner opening.",
-        "transitionNote": "Oracle is a tall stacked sign with a branched top above a rectangular chamber containing one inner opening.",
+        "stageExplanation": "The early graph represents a bell/chime-like musical instrument in the leading account, not the direction south.",
+        "transitionNote": "The early graph represents a bell/chime-like musical instrument in the leading account, not the direction south.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +605,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/south/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze expands the middle into a wide roofed lattice, with the branching top still clearly separated above it.",
+        "changeNoteFromPrevious": "Expands the middle into a wide roofed lattice, with the branching top still clearly separated above it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-南"
@@ -416,8 +631,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze expands the middle into a wide roofed lattice, with the branching top still clearly separated above it.",
-        "transitionNote": "Bronze expands the middle into a wide roofed lattice, with the branching top still clearly separated above it.",
+        "stageExplanation": "Expands the middle into a wide roofed lattice, with the branching top still clearly separated above it.",
+        "transitionNote": "Expands the middle into a wide roofed lattice, with the branching top still clearly separated above it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +642,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/south/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal narrows the whole structure into a tall enclosure and reorganizes the interior into a compact central cluster.",
+        "changeNoteFromPrevious": "Narrows the whole structure into a tall enclosure and reorganizes the interior into a compact central cluster.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-南"
@@ -453,8 +668,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal narrows the whole structure into a tall enclosure and reorganizes the interior into a compact central cluster.",
-        "transitionNote": "Small Seal narrows the whole structure into a tall enclosure and reorganizes the interior into a compact central cluster.",
+        "stageExplanation": "Narrows the whole structure into a tall enclosure and reorganizes the interior into a compact central cluster.",
+        "transitionNote": "Narrows the whole structure into a tall enclosure and reorganizes the interior into a compact central cluster.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +679,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/south/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the enclosure and interior, producing a broad form already recognizably close to 南.",
+        "changeNoteFromPrevious": "The older instrument-derived shape is compressed and squared, becoming recognizably close to the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-南"
@@ -490,8 +705,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the enclosure and interior, producing a broad form already recognizably close to 南.",
-        "transitionNote": "Clerical flattens the enclosure and interior, producing a broad form already recognizably close to 南.",
+        "stageExplanation": "The older instrument-derived shape is compressed and squared, becoming recognizably close to the later standard structure.",
+        "transitionNote": "The older instrument-derived shape is compressed and squared, becoming recognizably close to the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "南",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 南 regularizes the outer verticals, top strokes, and compact inner element while keeping the character’s distinctive enclosed center.",
+        "changeNoteFromPrevious": "The borrowed directional word stabilizes as 南; the ancient instrument picture is no longer transparent.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 南 regularizes the outer verticals, top strokes, and compact inner element while keeping the character’s distinctive enclosed center.",
-        "transitionNote": "Regular 南 regularizes the outer verticals, top strokes, and compact inner element while keeping the character’s distinctive enclosed center.",
+        "stageExplanation": "The borrowed directional word stabilizes as 南; the ancient instrument picture is no longer transparent.",
+        "transitionNote": "The borrowed directional word stabilizes as 南; the ancient instrument picture is no longer transparent.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "south",
-      "explanation": "A hanging bell and a roofed structure, with a cross-like component shown beside them.",
+      "explanation": "An ancient bell/chime-like musical instrument in a leading analysis.",
       "asset": {
         "characterID": "south",
         "historicalStage": null,
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

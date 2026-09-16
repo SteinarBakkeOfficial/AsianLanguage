@@ -235,44 +235,46 @@ struct CharacterEvolutionView: View {
     @ViewBuilder
     private func exhibitSquare(stageID: String, materialCaption: String?) -> some View {
         ArtifactField {
-            ZStack {
-                SymbolStageBackgroundView(stageID: stageID)
-                if stageID == "origin" {
-                    if let originAsset = record.history.origin?.asset {
-                        HistoricalAssetView(metadata: originAsset)
-                    } else {
-                        HistoricalMissingState(
-                            title: "Origin visual not yet included",
-                            detail: "This concept visual is not currently available in the approved historical corpus."
-                        )
-                    }
-                } else if let stage = museumStages.first(where: { $0.stage == stageID }) {
-                    if stage.availabilityState == .unavailableAsset {
-                        HistoricalMissingState()
-                    } else if let metadata = stage.assetMetadata {
-                        HistoricalAssetView(metadata: metadata)
-                    } else if let assetRef = stage.assetRef {
-                        HistoricalAssetView(assetRef: assetRef)
-                    } else {
-                        // Historical visual unavailable is an intentional editorial state, never a modern fallback.
-                        HistoricalMissingState()
+            // Leave a small breathing gap so the material caption sits below, rather than against, the artwork.
+            VStack(spacing: 16) {
+                ZStack {
+                    SymbolStageBackgroundView(stageID: stageID)
+                    if stageID == "origin" {
+                        if let originAsset = record.history.origin?.asset {
+                            HistoricalAssetView(metadata: originAsset, displayHeight: 248)
+                        } else {
+                            HistoricalMissingState(
+                                title: "Origin visual not yet included",
+                                detail: "This concept visual is not currently available in the approved historical corpus."
+                            )
+                        }
+                    } else if let stage = museumStages.first(where: { $0.stage == stageID }) {
+                        if stage.availabilityState == .unavailableAsset {
+                            HistoricalMissingState()
+                        } else if let metadata = stage.assetMetadata {
+                            HistoricalAssetView(metadata: metadata, displayHeight: 248)
+                        } else if let assetRef = stage.assetRef {
+                            HistoricalAssetView(assetRef: assetRef, displayHeight: 248)
+                        } else {
+                            // Historical visual unavailable is an intentional editorial state, never a modern fallback.
+                            HistoricalMissingState()
+                        }
                     }
                 }
+                // Reserve a quiet caption band below the square so material/process metadata never overlays the artwork.
+                .frame(maxWidth: .infinity, height: 248)
 
-            }
-            .overlay(alignment: .bottom) {
                 if let materialCaption {
                     Text(materialCaption)
                         .font(AppTypography.metadata)
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
                         .lineLimit(1)
+                        .frame(maxWidth: .infinity, height: 20)
                         .padding(.horizontal, AppSpacing.spaceSm)
-                        // Lift the caption slightly from the lower edge so it stays
-                        // inside the square on the shortest device layout.
-                        .padding(.bottom, AppSpacing.spaceXs)
                 }
             }
+            .frame(maxWidth: .infinity, height: 284)
         }
         .frame(height: 304)
     }
@@ -482,6 +484,8 @@ struct SymbolStageBackgroundView: View {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
+                    // Every approved stage panel is square; this prevents content from changing the background dimensions.
+                    .aspectRatio(1, contentMode: .fit)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .opacity(0.84)
                     .accessibilityHidden(true)

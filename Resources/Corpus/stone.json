@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "石",
   "coreSharedMeaning": "stone",
-  "recognitionTakeaway": "Regular 石 regularizes the cliff into the top-left strokes and the stone into a square 口-like lower component.",
+  "recognitionTakeaway": "The standardized form 石 preserves the later cliff-and-stone structure rather than the earliest object-like picture.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+77F3",
   "simplifiedForm": "石",
@@ -15,9 +15,9 @@
     "A slanted outer stroke forms a cliff-like edge with a small enclosed opening inside; the stone is not a simple round boulder here.",
     "Regular 石 regularizes the cliff into the top-left strokes and the stone into a square 口-like lower component."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-024-石-u77F3",
+  "contentFolder": "content/release/symbols/stone",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-024-石-u77F3/research.md",
+  "researchNotesPath": "content/release/symbols/stone/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "stone"
       ],
       "examples": [
+        {
+          "text": "石",
+          "reading": "shí",
+          "translation": "stone",
+          "speechText": "石",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shí"
+          ]
+        },
         {
           "text": "石头",
           "reading": "shítou",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "石块",
+          "reading": "shíkuài",
+          "translation": "stone; stone block",
+          "speechText": "石块",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "地上有一块石头。",
           "reading": "Dìshang yǒu yí kuài shítou.",
           "translation": "There is a stone on the ground.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "石",
@@ -98,6 +127,18 @@
         "stone"
       ],
       "taiwanExamples": [
+        {
+          "text": "石",
+          "reading": "shí",
+          "translation": "stone",
+          "speechText": "石",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "石頭",
           "reading": "shítou",
@@ -143,6 +184,18 @@
       ],
       "hongKongExamples": [
         {
+          "text": "石",
+          "reading": "sek6",
+          "translation": "stone",
+          "speechText": "石",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "石頭",
           "reading": "sek6 tau4",
           "translation": "stone",
@@ -171,10 +224,10 @@
           ]
         },
         {
-          "text": "地下有舊石頭。",
+          "text": "地下有嚿石頭。",
           "reading": "dei6 haa6 jau5 gau6 sek6 tau4",
           "translation": "There is a stone on the ground.",
-          "speechText": "地下有舊石頭。",
+          "speechText": "地下有嚿石頭。",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "石",
       "readings": [
         {
-          "system": "on",
-          "value": "セキ (seki)",
+          "system": "onyomi",
+          "value": "セキ — seki",
           "audioAssetRef": null,
           "speechText": "せき",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "セキ",
+          "romanization": "seki",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "いし (ishi)",
+          "system": "kunyomi",
+          "value": "いし — ishi",
           "audioAssetRef": null,
           "speechText": "いし",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "いし",
+          "romanization": "ishi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "石"
-          ]
+          ],
+          "kanaReading": "いし",
+          "coversReadings": [
+            "いし"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "石",
+              "reading": "いし"
+            }
+          ],
+          "furiganaHtml": "<ruby>石<rt>いし</rt></ruby>"
         },
         {
           "text": "宝石",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "石"
-          ]
+          ],
+          "kanaReading": "ほうせき",
+          "coversReadings": [
+            "セキ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "宝石",
+              "reading": "ほうせき"
+            }
+          ],
+          "furiganaHtml": "<ruby>宝石<rt>ほうせき</rt></ruby>"
+        },
+        {
+          "text": "石材",
+          "reading": "sekizai",
+          "translation": "stone material",
+          "speechText": "石材",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "せきざい",
+          "furiganaSegments": [
+            {
+              "text": "石材",
+              "reading": "せきざい"
+            }
+          ],
+          "furiganaHtml": "<ruby>石材<rt>せきざい</rt></ruby>"
+        },
+        {
+          "text": "小石",
+          "reading": "koishi",
+          "translation": "pebble",
+          "speechText": "小石",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こいし",
+          "furiganaSegments": [
+            {
+              "text": "小石",
+              "reading": "こいし"
+            }
+          ],
+          "furiganaHtml": "<ruby>小石<rt>こいし</rt></ruby>"
         },
         {
           "text": "石を拾います。",
@@ -267,33 +390,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "石"
-          ]
+          ],
+          "kanaReading": "いしをひろいます。",
+          "furiganaSegments": [
+            {
+              "text": "石",
+              "reading": "いし"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "拾",
+              "reading": "ひろ"
+            },
+            {
+              "text": "います"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>石<rt>いし</rt></ruby>を<ruby>拾<rt>ひろ</rt></ruby>います。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "いし",
+        "romanization": "ishi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "石",
       "readings": [
         {
           "system": "hanja",
-          "value": "석 / seok",
+          "value": "석 — seok",
           "audioAssetRef": null,
           "speechText": "석",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "돌 / dol",
-          "audioAssetRef": null,
-          "speechText": "돌",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "석",
+          "romanization": "seok"
         }
       ],
       "glosses": [
         "stone"
       ],
       "examples": [
+        {
+          "text": "돌",
+          "reading": "dol",
+          "translation": "stone",
+          "speechText": "돌",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "석재",
           "reading": "seokjae",
@@ -323,6 +487,18 @@
           ]
         },
         {
+          "text": "석탄",
+          "reading": "seoktan",
+          "translation": "coal",
+          "speechText": "석탄",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "돌을 주워요.",
           "reading": "doreul juwoyo.",
           "translation": "I pick up a stone.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "석 — seok",
+          "audioAssetRef": null,
+          "speechText": "석",
+          "speechLanguage": "korean",
+          "nativeReading": "석",
+          "romanization": "seok"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "돌 — dol",
+          "audioAssetRef": null,
+          "speechText": "돌",
+          "speechLanguage": "korean",
+          "nativeReading": "돌",
+          "romanization": "dol",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "stone",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "석",
+        "romanization": "seok",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +561,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A loose stone beside a rocky cliff face.",
+    "originAnchor": "A rocky cliff with a separate stone beneath it; together, they express stone or rock.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/stone/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A slanted outer stroke forms a cliff-like edge with a small enclosed opening inside; the stone is not a simple round boulder here.",
+        "changeNoteFromPrevious": "The earliest selected form is angular and object-like, preserving the outline of a resonant stone or stone-chime form rather than a simple loose rock.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-石"
@@ -379,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A slanted outer stroke forms a cliff-like edge with a small enclosed opening inside; the stone is not a simple round boulder here.",
-        "transitionNote": "A slanted outer stroke forms a cliff-like edge with a small enclosed opening inside; the stone is not a simple round boulder here.",
+        "stageExplanation": "The earliest selected form is angular and object-like, preserving the outline of a resonant stone or stone-chime form rather than a simple loose rock.",
+        "transitionNote": "The earliest selected form is angular and object-like, preserving the outline of a resonant stone or stone-chime form rather than a simple loose rock.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +605,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/stone/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The cliff becomes a strong top-and-left corner, and a small rounded stone-like shape sits beneath it.",
+        "changeNoteFromPrevious": "The angular stone-object outline becomes more regular while retaining the same basic pictorial identity.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-石"
@@ -416,8 +631,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The cliff becomes a strong top-and-left corner, and a small rounded stone-like shape sits beneath it.",
-        "transitionNote": "The cliff becomes a strong top-and-left corner, and a small rounded stone-like shape sits beneath it.",
+        "stageExplanation": "The angular stone-object outline becomes more regular while retaining the same basic pictorial identity.",
+        "transitionNote": "The angular stone-object outline becomes more regular while retaining the same basic pictorial identity.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +642,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/stone/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The corner is smoothed into a tall bent frame with a clear oval stone inside.",
+        "changeNoteFromPrevious": "The graph is reorganized into the later cliff-and-stone arrangement, a major structural reinterpretation of the older picture.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-石"
@@ -453,8 +668,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The corner is smoothed into a tall bent frame with a clear oval stone inside.",
-        "transitionNote": "The corner is smoothed into a tall bent frame with a clear oval stone inside.",
+        "stageExplanation": "The graph is reorganized into the later cliff-and-stone arrangement, a major structural reinterpretation of the older picture.",
+        "transitionNote": "The graph is reorganized into the later cliff-and-stone arrangement, a major structural reinterpretation of the older picture.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +679,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/stone/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The outer cliff is shortened and angled while the inner stone becomes a compact rectangular enclosure.",
+        "changeNoteFromPrevious": "The Seal structure flattens into the familiar written components, making the original object picture much less visible.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-石"
@@ -490,8 +705,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The outer cliff is shortened and angled while the inner stone becomes a compact rectangular enclosure.",
-        "transitionNote": "The outer cliff is shortened and angled while the inner stone becomes a compact rectangular enclosure.",
+        "stageExplanation": "The Seal structure flattens into the familiar written components, making the original object picture much less visible.",
+        "transitionNote": "The Seal structure flattens into the familiar written components, making the original object picture much less visible.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "石",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 石 regularizes the cliff into the top-left strokes and the stone into a square 口-like lower component.",
+        "changeNoteFromPrevious": "The standardized form 石 preserves the later cliff-and-stone structure rather than the earliest object-like picture.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 石 regularizes the cliff into the top-left strokes and the stone into a square 口-like lower component.",
-        "transitionNote": "Regular 石 regularizes the cliff into the top-left strokes and the stone into a square 口-like lower component.",
+        "stageExplanation": "The standardized form 石 preserves the later cliff-and-stone structure rather than the earliest object-like picture.",
+        "transitionNote": "The standardized form 石 preserves the later cliff-and-stone structure rather than the earliest object-like picture.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "stone",
-      "explanation": "A loose stone beside a rocky cliff face.",
+      "explanation": "The earliest form is best explained as a stone chime or resonant stone object used to write the word “stone.”",
       "asset": {
         "characterID": "stone",
         "historicalStage": null,
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

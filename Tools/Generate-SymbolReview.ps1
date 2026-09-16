@@ -1,6 +1,7 @@
 param(
-  [string]$SymbolsPath = "content/symbols",
-  [string]$OutputPath = "content/generated-review/symbol-review.md"
+  [string]$SymbolsPath = "content/release/symbols",
+  [string]$OutputPath = "content/generated-review/symbol-review.md",
+  [string]$V1ManifestPath = "Resources/V1CorpusManifest.json"
 )
 
 $ErrorActionPreference = "Stop"
@@ -14,7 +15,18 @@ if (-not (Test-Path $symbolsRoot)) {
 }
 
 New-Item -ItemType Directory -Path (Split-Path -Parent $outputFile) -Force | Out-Null
-$symbolFiles = @(Get-ChildItem -LiteralPath $symbolsRoot -Recurse -Filter "symbol.json" -File | Sort-Object FullName)
+$manifestFile = Join-Path $repoRoot $V1ManifestPath
+$activeIDs = if (Test-Path -LiteralPath $manifestFile) {
+  @(Get-Content -LiteralPath $manifestFile -Raw | ConvertFrom-Json | ForEach-Object id)
+} else {
+  @()
+}
+$allSymbolFiles = @(Get-ChildItem -LiteralPath $symbolsRoot -Recurse -Filter "symbol.json" -File | Sort-Object FullName)
+$symbolFiles = if ($activeIDs.Count -gt 0) {
+  @($allSymbolFiles | Where-Object { $activeIDs -contains $_.Directory.Name })
+} else {
+  $allSymbolFiles
+}
 $lines = New-Object System.Collections.Generic.List[string]
 $lines.Add("# Symbol review report")
 $lines.Add("")
@@ -47,10 +59,10 @@ foreach ($symbolFile in $symbolFiles) {
   $lines.Add("")
   $lines.Add("### Review files")
   $lines.Add("")
-  $lines.Add("- Learner copy: $folder/lesson.md")
+  $lines.Add("- Structured record: $folder/symbol.json")
   $lines.Add("- Research: $folder/research.md")
   $lines.Add("- Sources: $folder/sources.json")
-  $lines.Add("- Review checklist: $folder/review.md")
+  $lines.Add("- Historical references: $folder/historical-references.json")
   $lines.Add("")
 }
 

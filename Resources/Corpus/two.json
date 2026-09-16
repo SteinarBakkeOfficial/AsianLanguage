@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "二",
   "coreSharedMeaning": "two",
-  "recognitionTakeaway": "Regular 二 keeps the upper line shorter and the lower line longer, establishing the familiar modern proportion.",
+  "recognitionTakeaway": "Keeps the upper line shorter and the lower line longer, establishing the familiar modern proportion.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+4E8C",
   "simplifiedForm": "二",
@@ -15,9 +15,9 @@
     "Oracle uses two thick, slightly irregular horizontal strokes of similar length.",
     "Regular 二 keeps the upper line shorter and the lower line longer, establishing the familiar modern proportion."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-083-二-u4E8C",
+  "contentFolder": "content/release/symbols/two",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-083-二-u4E8C/research.md",
+  "researchNotesPath": "content/release/symbols/two/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "two"
       ],
       "examples": [
+        {
+          "text": "二",
+          "reading": "èr",
+          "translation": "two",
+          "speechText": "二",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "èr"
+          ]
+        },
         {
           "text": "二月",
           "reading": "èryuè",
@@ -67,9 +82,21 @@
           ]
         },
         {
+          "text": "第二",
+          "reading": "dì-èr",
+          "translation": "second",
+          "speechText": "第二",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "今天是二号。",
           "reading": "Jīntiān shì èr hào.",
-          "translation": "Today is the second.",
+          "translation": "Today is the 2nd (of the month).",
           "speechText": "今天是二号。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "二",
@@ -98,6 +127,18 @@
         "two"
       ],
       "taiwanExamples": [
+        {
+          "text": "二",
+          "reading": "èr",
+          "translation": "two",
+          "speechText": "二",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "二月",
           "reading": "èryuè",
@@ -129,7 +170,7 @@
         {
           "text": "今天是二號。",
           "reading": "Jīntiān shì èr hào.",
-          "translation": "Today is the second.",
+          "translation": "Today is the 2nd (of the month).",
           "speechText": "今天是二號。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "二",
+          "reading": "ji6",
+          "translation": "two",
+          "speechText": "二",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "二月",
           "reading": "ji6 jyut6",
@@ -173,7 +226,7 @@
         {
           "text": "今日係二號。",
           "reading": "gam1 jat6 hai6 ji6 hou6",
-          "translation": "Today is the second.",
+          "translation": "Today is the 2nd (of the month).",
           "speechText": "今日係二號。",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "二",
       "readings": [
         {
-          "system": "on",
-          "value": "ニ (ni)",
+          "system": "onyomi",
+          "value": "ニ — ni",
           "audioAssetRef": null,
           "speechText": "に",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ニ",
+          "romanization": "ni",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "ふたつ (futatsu)",
+          "system": "kunyomi",
+          "value": "ふたつ — futatsu",
           "audioAssetRef": null,
           "speechText": "ふたつ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ふたつ",
+          "romanization": "futatsu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "二"
-          ]
+          ],
+          "kanaReading": "ふたつ",
+          "coversReadings": [
+            "ふたつ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "二",
+              "reading": "ふた"
+            },
+            {
+              "text": "つ"
+            }
+          ],
+          "furiganaHtml": "<ruby>二<rt>ふた</rt></ruby>つ"
         },
         {
           "text": "二人",
@@ -253,7 +328,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "二"
-          ]
+          ],
+          "kanaReading": "ふたり",
+          "furiganaSegments": [
+            {
+              "text": "二人",
+              "reading": "ふたり"
+            }
+          ],
+          "furiganaHtml": "<ruby>二人<rt>ふたり</rt></ruby>"
+        },
+        {
+          "text": "二月",
+          "reading": "nigatsu",
+          "translation": "February",
+          "speechText": "二月",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "にがつ",
+          "coversReadings": [
+            "ニ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "二月",
+              "reading": "にがつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>二月<rt>にがつ</rt></ruby>"
+        },
+        {
+          "text": "二階",
+          "reading": "nikai",
+          "translation": "second floor",
+          "speechText": "二階",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "にかい",
+          "furiganaSegments": [
+            {
+              "text": "二階",
+              "reading": "にかい"
+            }
+          ],
+          "furiganaHtml": "<ruby>二階<rt>にかい</rt></ruby>"
         },
         {
           "text": "りんごを二つください。",
@@ -267,33 +393,70 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "二"
-          ]
+          ],
+          "kanaReading": "りんごをふたつください。",
+          "furiganaSegments": [
+            {
+              "text": "りんごを"
+            },
+            {
+              "text": "二",
+              "reading": "ふた"
+            },
+            {
+              "text": "つください"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "りんごを<ruby>二<rt>ふた</rt></ruby>つください。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ニ",
+        "romanization": "ni",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "二",
       "readings": [
         {
           "system": "hanja",
-          "value": "이 / i",
+          "value": "이 — i",
           "audioAssetRef": null,
           "speechText": "이",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "둘 / dul",
-          "audioAssetRef": null,
-          "speechText": "둘",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "이",
+          "romanization": "i"
         }
       ],
       "glosses": [
         "two"
       ],
       "examples": [
+        {
+          "text": "둘",
+          "reading": "dul",
+          "translation": "two",
+          "speechText": "둘",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "이월",
           "reading": "iwol",
@@ -323,6 +486,18 @@
           ]
         },
         {
+          "text": "이등",
+          "reading": "ideung",
+          "translation": "second place",
+          "speechText": "이등",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "둘만 가요.",
           "reading": "dulman gayo.",
           "translation": "Only two of us are going.",
@@ -337,7 +512,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "이 — i",
+          "audioAssetRef": null,
+          "speechText": "이",
+          "speechLanguage": "korean",
+          "nativeReading": "이",
+          "romanization": "i"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "둘 — dul",
+          "audioAssetRef": null,
+          "speechText": "둘",
+          "speechLanguage": "korean",
+          "nativeReading": "둘",
+          "romanization": "dul",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "two",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "이",
+        "romanization": "i",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +560,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Two separate horizontal marks, demonstrated with sticks laid in parallel.",
+    "originAnchor": "Two horizontal marks represent two.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/two/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle uses two thick, slightly irregular horizontal strokes of similar length.",
+        "changeNoteFromPrevious": "Uses two thick, slightly irregular horizontal strokes of similar length.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-二"
@@ -379,8 +593,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle uses two thick, slightly irregular horizontal strokes of similar length.",
-        "transitionNote": "Oracle uses two thick, slightly irregular horizontal strokes of similar length.",
+        "stageExplanation": "Uses two thick, slightly irregular horizontal strokes of similar length.",
+        "transitionNote": "Uses two thick, slightly irregular horizontal strokes of similar length.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +604,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/two/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps two strokes but makes them more sharply tapered and more widely separated.",
+        "changeNoteFromPrevious": "Keeps two strokes but makes them more sharply tapered and more widely separated.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-二"
@@ -416,8 +630,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps two strokes but makes them more sharply tapered and more widely separated.",
-        "transitionNote": "Bronze keeps two strokes but makes them more sharply tapered and more widely separated.",
+        "stageExplanation": "Keeps two strokes but makes them more sharply tapered and more widely separated.",
+        "transitionNote": "Keeps two strokes but makes them more sharply tapered and more widely separated.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +641,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/two/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal reduces them to two short, perfectly level lines.",
+        "changeNoteFromPrevious": "Reduces them to two short, perfectly level lines.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-二"
@@ -453,8 +667,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal reduces them to two short, perfectly level lines.",
-        "transitionNote": "Small Seal reduces them to two short, perfectly level lines.",
+        "stageExplanation": "Reduces them to two short, perfectly level lines.",
+        "transitionNote": "Reduces them to two short, perfectly level lines.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +678,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/two/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical broadens both lines and makes their brush texture visible again.",
+        "changeNoteFromPrevious": "Broadens both lines and makes their brush texture visible again.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-二"
@@ -490,8 +704,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical broadens both lines and makes their brush texture visible again.",
-        "transitionNote": "Clerical broadens both lines and makes their brush texture visible again.",
+        "stageExplanation": "Broadens both lines and makes their brush texture visible again.",
+        "transitionNote": "Broadens both lines and makes their brush texture visible again.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +715,7 @@
         "label": "Regular Script",
         "form": "二",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 二 keeps the upper line shorter and the lower line longer, establishing the familiar modern proportion.",
+        "changeNoteFromPrevious": "Keeps the upper line shorter and the lower line longer, establishing the familiar modern proportion.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +741,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 二 keeps the upper line shorter and the lower line longer, establishing the familiar modern proportion.",
-        "transitionNote": "Regular 二 keeps the upper line shorter and the lower line longer, establishing the familiar modern proportion.",
+        "stageExplanation": "Keeps the upper line shorter and the lower line longer, establishing the familiar modern proportion.",
+        "transitionNote": "Keeps the upper line shorter and the lower line longer, establishing the familiar modern proportion.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +750,7 @@
     ],
     "origin": {
       "concept": "two",
-      "explanation": "Two separate horizontal marks, demonstrated with sticks laid in parallel.",
+      "explanation": "Two horizontal marks directly represent the number two.",
       "asset": {
         "characterID": "two",
         "historicalStage": null,
@@ -641,13 +855,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

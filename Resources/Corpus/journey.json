@@ -2,8 +2,8 @@
   "id": "journey",
   "version": 1,
   "coreCharacter": "旅",
-  "coreSharedMeaning": "journey",
-  "recognitionTakeaway": "Regular 旅 regularizes the left 方 and the right-hand movement/people strokes; the literal marching group and banner are no longer pictorial.",
+  "coreSharedMeaning": "journey / travel (earlier troops under a banner)",
+  "recognitionTakeaway": "The troop/expedition graph becomes 旅 and extends to journey/travel.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+65C5",
   "simplifiedForm": "旅",
@@ -15,9 +15,9 @@
     "Oracle is a thin banner-like vertical form with several trailing strokes below, suggesting movement under a standard rather than separate modern components.",
     "Regular 旅 regularizes the left 方 and the right-hand movement/people strokes; the literal marching group and banner are no longer pictorial."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-135-旅-u65C5",
+  "contentFolder": "content/release/symbols/journey",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-135-旅-u65C5/research.md",
+  "researchNotesPath": "content/release/symbols/journey/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "journey"
       ],
       "examples": [
+        {
+          "text": "旅",
+          "reading": "lǚ",
+          "translation": "journey",
+          "speechText": "旅",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "lǚ"
+          ]
+        },
         {
           "text": "旅行",
           "reading": "lǚxíng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "旅客",
+          "reading": "lǚkè",
+          "translation": "traveler; passenger",
+          "speechText": "旅客",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我喜欢旅行。",
           "reading": "Wǒ xǐhuan lǚxíng.",
           "translation": "I like traveling.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "旅",
@@ -98,6 +127,18 @@
         "journey"
       ],
       "taiwanExamples": [
+        {
+          "text": "旅",
+          "reading": "lǚ",
+          "translation": "journey",
+          "speechText": "旅",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "旅行",
           "reading": "lǚxíng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "旅",
+          "reading": "leoi5",
+          "translation": "journey",
+          "speechText": "旅",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "旅行",
           "reading": "leoi5 hang4",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "旅",
       "readings": [
         {
-          "system": "on",
-          "value": "リョ (ryo)",
+          "system": "onyomi",
+          "value": "リョ — ryo",
           "audioAssetRef": null,
           "speechText": "りょ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "リョ",
+          "romanization": "ryo",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "たび (tabi)",
+          "system": "kunyomi",
+          "value": "たび — tabi",
           "audioAssetRef": null,
           "speechText": "たび",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "たび",
+          "romanization": "tabi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "旅"
-          ]
+          ],
+          "kanaReading": "たび",
+          "coversReadings": [
+            "たび"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "旅",
+              "reading": "たび"
+            }
+          ],
+          "furiganaHtml": "<ruby>旅<rt>たび</rt></ruby>"
         },
         {
           "text": "旅行",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "旅"
-          ]
+          ],
+          "kanaReading": "りょこう",
+          "coversReadings": [
+            "リョ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "旅行",
+              "reading": "りょこう"
+            }
+          ],
+          "furiganaHtml": "<ruby>旅行<rt>りょこう</rt></ruby>"
+        },
+        {
+          "text": "旅館",
+          "reading": "ryokan",
+          "translation": "Japanese inn",
+          "speechText": "旅館",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "りょかん",
+          "furiganaSegments": [
+            {
+              "text": "旅館",
+              "reading": "りょかん"
+            }
+          ],
+          "furiganaHtml": "<ruby>旅館<rt>りょかん</rt></ruby>"
+        },
+        {
+          "text": "旅客",
+          "reading": "ryokaku",
+          "translation": "traveler / passenger",
+          "speechText": "旅客",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "りょかく",
+          "furiganaSegments": [
+            {
+              "text": "旅客",
+              "reading": "りょかく"
+            }
+          ],
+          "furiganaHtml": "<ruby>旅客<rt>りょかく</rt></ruby>"
         },
         {
           "text": "旅行に行きます。",
@@ -267,34 +390,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "旅"
-          ]
+          ],
+          "kanaReading": "りょこうにいきます。",
+          "furiganaSegments": [
+            {
+              "text": "旅行",
+              "reading": "りょこう"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>きます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "たび",
+        "romanization": "tabi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "旅",
       "readings": [
         {
-          "system": "hanja",
-          "value": "려 / ryeo",
-          "audioAssetRef": null,
-          "speechText": "려",
-          "speechLanguage": "korean"
-        },
-        {
           "system": "hanja · word-initial form",
-          "value": "여 / yeo",
+          "value": "여 — yeo",
           "audioAssetRef": null,
           "speechText": "여",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "여행 / yeohaeng",
-          "audioAssetRef": null,
-          "speechText": "여행",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "여",
+          "romanization": "yeo"
         }
       ],
       "glosses": [
@@ -313,7 +457,8 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "旅"
-          ]
+          ],
+          "exampleRole": "semanticEquivalent"
         },
         {
           "text": "여행객",
@@ -330,6 +475,30 @@
           ]
         },
         {
+          "text": "여관",
+          "reading": "yeogwan",
+          "translation": "inn",
+          "speechText": "여관",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "여비",
+          "reading": "yeobi",
+          "translation": "travel expenses",
+          "speechText": "여비",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "여행을 가요.",
           "reading": "yeohaengeul gayo.",
           "translation": "I am going on a trip.",
@@ -344,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja · word-initial form",
+          "value": "여 — yeo",
+          "audioAssetRef": null,
+          "speechText": "여",
+          "speechLanguage": "korean",
+          "nativeReading": "여",
+          "romanization": "yeo"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "여행 — yeohaeng",
+          "audioAssetRef": null,
+          "speechText": "여행",
+          "speechLanguage": "korean",
+          "nativeReading": "여행",
+          "romanization": "yeohaeng",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "travel / journey",
+          "displayTier": "secondary",
+          "lexicalOrigin": "sinoKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "여",
+        "romanization": "yeo",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +561,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A group of travelers walking together beneath a long banner or flag.",
+    "originAnchor": "A banner and a group of people combine to show troops under a standard; this later led to 'journey.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/journey/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a thin banner-like vertical form with several trailing strokes below, suggesting movement under a standard rather than separate modern components.",
+        "changeNoteFromPrevious": "A military banner/standard is shown with grouped people/troops, not ordinary travelers.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-旅"
@@ -386,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a thin banner-like vertical form with several trailing strokes below, suggesting movement under a standard rather than separate modern components.",
-        "transitionNote": "Oracle is a thin banner-like vertical form with several trailing strokes below, suggesting movement under a standard rather than separate modern components.",
+        "stageExplanation": "A military banner/standard is shown with grouped people/troops, not ordinary travelers.",
+        "transitionNote": "A military banner/standard is shown with grouped people/troops, not ordinary travelers.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +605,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/journey/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze expands the banner into a complex pole-and-emblem structure with multiple small figures or supports clustered beneath it.",
+        "changeNoteFromPrevious": "Expands the banner into a complex pole-and-emblem structure with multiple small figures or supports clustered beneath it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-旅"
@@ -423,8 +631,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze expands the banner into a complex pole-and-emblem structure with multiple small figures or supports clustered beneath it.",
-        "transitionNote": "Bronze expands the banner into a complex pole-and-emblem structure with multiple small figures or supports clustered beneath it.",
+        "stageExplanation": "Expands the banner into a complex pole-and-emblem structure with multiple small figures or supports clustered beneath it.",
+        "transitionNote": "Expands the banner into a complex pole-and-emblem structure with multiple small figures or supports clustered beneath it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +642,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/journey/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal separates the left banner/pole from a dense group of long vertical strokes on the right, making the multi-part composition clearer.",
+        "changeNoteFromPrevious": "Separates the left banner/pole from a dense group of long vertical strokes on the right, making the multi-part composition clearer.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-旅"
@@ -460,8 +668,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal separates the left banner/pole from a dense group of long vertical strokes on the right, making the multi-part composition clearer.",
-        "transitionNote": "Small Seal separates the left banner/pole from a dense group of long vertical strokes on the right, making the multi-part composition clearer.",
+        "stageExplanation": "Separates the left banner/pole from a dense group of long vertical strokes on the right, making the multi-part composition clearer.",
+        "transitionNote": "Separates the left banner/pole from a dense group of long vertical strokes on the right, making the multi-part composition clearer.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +679,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/journey/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical compresses the left side into 方-like strokes and the right into a compact traveler-related cluster, closely approaching 旅.",
+        "changeNoteFromPrevious": "The banner side compresses into short strokes while the troop group becomes a compact cluster, approaching the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-旅"
@@ -497,8 +705,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical compresses the left side into 方-like strokes and the right into a compact traveler-related cluster, closely approaching 旅.",
-        "transitionNote": "Clerical compresses the left side into 方-like strokes and the right into a compact traveler-related cluster, closely approaching 旅.",
+        "stageExplanation": "The banner side compresses into short strokes while the troop group becomes a compact cluster, approaching the later standard structure.",
+        "transitionNote": "The banner side compresses into short strokes while the troop group becomes a compact cluster, approaching the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +716,7 @@
         "label": "Regular Script",
         "form": "旅",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 旅 regularizes the left 方 and the right-hand movement/people strokes; the literal marching group and banner are no longer pictorial.",
+        "changeNoteFromPrevious": "The troop/expedition graph becomes 旅 and extends to journey/travel.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 旅 regularizes the left 方 and the right-hand movement/people strokes; the literal marching group and banner are no longer pictorial.",
-        "transitionNote": "Regular 旅 regularizes the left 方 and the right-hand movement/people strokes; the literal marching group and banner are no longer pictorial.",
+        "stageExplanation": "The troop/expedition graph becomes 旅 and extends to journey/travel.",
+        "transitionNote": "The troop/expedition graph becomes 旅 and extends to journey/travel.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +751,7 @@
     ],
     "origin": {
       "concept": "journey",
-      "explanation": "A group of travelers walking together beneath a long banner or flag.",
+      "explanation": "A banner/standard with people/troops beneath or beside it.",
       "asset": {
         "characterID": "journey",
         "historicalStage": null,
@@ -560,7 +768,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of journey",
+        "accessibilityDescription": "Illustration of journey / travel (earlier troops under a banner)",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +786,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'journey', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'journey / travel (earlier troops under a banner)', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

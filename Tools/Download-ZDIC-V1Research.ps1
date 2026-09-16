@@ -58,7 +58,7 @@ $results = @($records | ForEach-Object -Parallel {
     $specs = $using:stageSpecs
     $root = $using:repoRoot
     $unicode = ("{0:X4}" -f [int][char]$record.character)
-    $folder = Join-Path $root ("content/research/v1-symbols/rank-{0:D3}-{1}-u{2}" -f $record.rank, $record.character, $unicode)
+    $folder = Join-Path $root ("docs/archive/research-intake/v1-symbols/rank-{0:D3}-{1}-u{2}" -f $record.rank, $record.character, $unicode)
     $targetRoot = Join-Path $folder "historical/zdic-selected"
     New-Item -ItemType Directory -Force -Path $targetRoot | Out-Null
     $encoded = [uri]::EscapeDataString($record.character)

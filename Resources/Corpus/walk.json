@@ -2,8 +2,8 @@
   "id": "walk",
   "version": 1,
   "coreCharacter": "走",
-  "coreSharedMeaning": "walk",
-  "recognitionTakeaway": "Regular 走 fixes the upper 土-like body and lower running-foot strokes into the modern character; the human figure is no longer obvious, but the movement structure remains.",
+  "coreSharedMeaning": "walk/go (Mandarin); run (historical/Japanese)",
+  "recognitionTakeaway": "The running graph stabilizes as 走. Japanese retains the “run” sense directly, while Mandarin later shifts strongly toward walk/go/leave.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+8D70",
   "simplifiedForm": "走",
@@ -15,9 +15,9 @@
     "Oracle has a person-like upper body with legs spread over a lower crossing or foot form.",
     "Regular 走 fixes the upper 土-like body and lower running-foot strokes into the modern character; the human figure is no longer obvious, but the movement structure remains."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-089-走-u8D70",
+  "contentFolder": "content/release/symbols/walk",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-089-走-u8D70/research.md",
+  "researchNotesPath": "content/release/symbols/walk/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "walk; go; leave"
       ],
       "examples": [
+        {
+          "text": "走",
+          "reading": "zǒu",
+          "translation": "walk; go; leave",
+          "speechText": "走",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zǒu"
+          ]
+        },
         {
           "text": "走路",
           "reading": "zǒulù",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "走进",
+          "reading": "zǒujìn",
+          "translation": "walk into",
+          "speechText": "走进",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我们走吧。",
           "reading": "Wǒmen zǒu ba.",
           "translation": "Let’s go.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "走",
@@ -98,6 +127,18 @@
         "walk/go (Mandarin); leave/run (Cantonese)"
       ],
       "taiwanExamples": [
+        {
+          "text": "走",
+          "reading": "zǒu",
+          "translation": "walk/go (Mandarin); leave/run (Cantonese)",
+          "speechText": "走",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "走路",
           "reading": "zǒulù",
@@ -171,6 +212,18 @@
           ]
         },
         {
+          "text": "走路",
+          "reading": "zau2 lou6",
+          "translation": "walk",
+          "speechText": "走路",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我哋走啦。",
           "reading": "ngo5 dei6 zau2 laa1",
           "translation": "Let’s go / leave.",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "走",
       "readings": [
         {
-          "system": "on",
-          "value": "ソウ (sō)",
+          "system": "onyomi",
+          "value": "ソウ — sō",
           "audioAssetRef": null,
           "speechText": "そう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ソウ",
+          "romanization": "sō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "はしる (hashiru)",
+          "system": "kunyomi",
+          "value": "はしる — hashiru",
           "audioAssetRef": null,
           "speechText": "はしる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "はしる",
+          "romanization": "hashiru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "走"
-          ]
+          ],
+          "kanaReading": "はしる",
+          "coversReadings": [
+            "はしる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "走",
+              "reading": "はし"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>走<rt>はし</rt></ruby>る"
         },
         {
           "text": "走行",
@@ -253,7 +328,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "走"
-          ]
+          ],
+          "kanaReading": "そうこう",
+          "coversReadings": [
+            "ソウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "走行",
+              "reading": "そうこう"
+            }
+          ],
+          "furiganaHtml": "<ruby>走行<rt>そうこう</rt></ruby>"
+        },
+        {
+          "text": "走者",
+          "reading": "sōsha",
+          "translation": "runner",
+          "speechText": "走者",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "そうしゃ",
+          "furiganaSegments": [
+            {
+              "text": "走者",
+              "reading": "そうしゃ"
+            }
+          ],
+          "furiganaHtml": "<ruby>走者<rt>そうしゃ</rt></ruby>"
+        },
+        {
+          "text": "競走",
+          "reading": "kyōsō",
+          "translation": "race",
+          "speechText": "競走",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "きょうそう",
+          "furiganaSegments": [
+            {
+              "text": "競走",
+              "reading": "きょうそう"
+            }
+          ],
+          "furiganaHtml": "<ruby>競走<rt>きょうそう</rt></ruby>"
         },
         {
           "text": "子どもが走っています。",
@@ -267,33 +393,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "走"
-          ]
+          ],
+          "kanaReading": "こどもがはしっています。",
+          "furiganaSegments": [
+            {
+              "text": "子",
+              "reading": "こ"
+            },
+            {
+              "text": "どもが"
+            },
+            {
+              "text": "走",
+              "reading": "はし"
+            },
+            {
+              "text": "っています"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>子<rt>こ</rt></ruby>どもが<ruby>走<rt>はし</rt></ruby>っています。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "はしる",
+        "romanization": "hashiru",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "走",
       "readings": [
         {
           "system": "hanja",
-          "value": "주 / ju",
+          "value": "주 — ju",
           "audioAssetRef": null,
           "speechText": "주",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean · run",
-          "value": "달리다 / dallida",
-          "audioAssetRef": null,
-          "speechText": "달리다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "주",
+          "romanization": "ju"
         }
       ],
       "glosses": [
         "run; travel (in Sino-Korean compounds)"
       ],
       "examples": [
+        {
+          "text": "달리다",
+          "reading": "dallida",
+          "translation": "run",
+          "speechText": "달리다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "주행",
           "reading": "juhaeng",
@@ -323,6 +490,18 @@
           ]
         },
         {
+          "text": "주자",
+          "reading": "juja",
+          "translation": "runner",
+          "speechText": "주자",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "아이가 달려요.",
           "reading": "aiga dallyeoyo.",
           "translation": "The child is running.",
@@ -337,7 +516,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "주 — ju",
+          "audioAssetRef": null,
+          "speechText": "주",
+          "speechLanguage": "korean",
+          "nativeReading": "주",
+          "romanization": "ju"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "달리다 — dallida",
+          "audioAssetRef": null,
+          "speechText": "달리다",
+          "speechLanguage": "korean",
+          "nativeReading": "달리다",
+          "romanization": "dallida",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "run",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "주",
+        "romanization": "ju",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +564,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person walking forward, shown beside a path and footprint-like markers.",
+    "originAnchor": "A running person.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/walk/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle has a person-like upper body with legs spread over a lower crossing or foot form.",
+        "changeNoteFromPrevious": "A running human figure expresses the old core meaning “run,” not a casual walking pose.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-走"
@@ -379,8 +597,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle has a person-like upper body with legs spread over a lower crossing or foot form.",
-        "transitionNote": "Oracle has a person-like upper body with legs spread over a lower crossing or foot form.",
+        "stageExplanation": "A running human figure expresses the old core meaning “run,” not a casual walking pose.",
+        "transitionNote": "A running human figure expresses the old core meaning “run,” not a casual walking pose.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +608,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/walk/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the upper figure more 大-like and adds a distinct downward foot-shaped mark beneath it.",
+        "changeNoteFromPrevious": "Makes the upper figure more human figure-like and adds a distinct downward foot-shaped mark beneath it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-走"
@@ -416,8 +634,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the upper figure more 大-like and adds a distinct downward foot-shaped mark beneath it.",
-        "transitionNote": "Bronze makes the upper figure more 大-like and adds a distinct downward foot-shaped mark beneath it.",
+        "stageExplanation": "Makes the upper figure more human figure-like and adds a distinct downward foot-shaped mark beneath it.",
+        "transitionNote": "Makes the upper figure more human figure-like and adds a distinct downward foot-shaped mark beneath it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +645,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/walk/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal stacks a broad upper body over a rounded 止-like lower element, creating the basic architecture of 走.",
+        "changeNoteFromPrevious": "Stacks a broad upper body over a rounded foot sign-like lower element, creating the basic architecture of.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-走"
@@ -453,8 +671,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal stacks a broad upper body over a rounded 止-like lower element, creating the basic architecture of 走.",
-        "transitionNote": "Small Seal stacks a broad upper body over a rounded 止-like lower element, creating the basic architecture of 走.",
+        "stageExplanation": "Stacks a broad upper body over a rounded foot sign-like lower element, creating the basic architecture of.",
+        "transitionNote": "Stacks a broad upper body over a rounded foot sign-like lower element, creating the basic architecture of.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +682,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/walk/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical compresses the upper and lower parts into a dense brush form but keeps the lower foot sweep prominent.",
+        "changeNoteFromPrevious": "Compresses the upper and lower parts into a dense brush form but keeps the lower foot sweep prominent.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-走"
@@ -490,8 +708,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical compresses the upper and lower parts into a dense brush form but keeps the lower foot sweep prominent.",
-        "transitionNote": "Clerical compresses the upper and lower parts into a dense brush form but keeps the lower foot sweep prominent.",
+        "stageExplanation": "Compresses the upper and lower parts into a dense brush form but keeps the lower foot sweep prominent.",
+        "transitionNote": "Compresses the upper and lower parts into a dense brush form but keeps the lower foot sweep prominent.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +719,7 @@
         "label": "Regular Script",
         "form": "走",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 走 fixes the upper 土-like body and lower running-foot strokes into the modern character; the human figure is no longer obvious, but the movement structure remains.",
+        "changeNoteFromPrevious": "The running graph stabilizes as 走. Japanese retains the “run” sense directly, while Mandarin later shifts strongly toward walk/go/leave.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +745,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 走 fixes the upper 土-like body and lower running-foot strokes into the modern character; the human figure is no longer obvious, but the movement structure remains.",
-        "transitionNote": "Regular 走 fixes the upper 土-like body and lower running-foot strokes into the modern character; the human figure is no longer obvious, but the movement structure remains.",
+        "stageExplanation": "The running graph stabilizes as 走. Japanese retains the “run” sense directly, while Mandarin later shifts strongly toward walk/go/leave.",
+        "transitionNote": "The running graph stabilizes as 走. Japanese retains the “run” sense directly, while Mandarin later shifts strongly toward walk/go/leave.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +754,7 @@
     ],
     "origin": {
       "concept": "walk",
-      "explanation": "A person walking forward, shown beside a path and footprint-like markers.",
+      "explanation": "A running human figure/leg-motion graph; the early core sense is “run.”",
       "asset": {
         "characterID": "walk",
         "historicalStage": null,
@@ -553,7 +771,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of walk",
+        "accessibilityDescription": "Illustration of walk/go (Mandarin); run (historical/Japanese)",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +789,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'walk', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'walk/go (Mandarin); run (historical/Japanese)', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +859,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

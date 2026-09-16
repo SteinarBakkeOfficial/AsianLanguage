@@ -2,8 +2,8 @@
   "id": "strength",
   "version": 1,
   "coreCharacter": "力",
-  "coreSharedMeaning": "strength",
-  "recognitionTakeaway": "Regular 力 tightens the hook and long diagonal into two principal strokes, preserving the sense of a bent, exerting form.",
+  "coreSharedMeaning": "strength / force",
+  "recognitionTakeaway": "The tool picture is abstracted into 力, which now directly carries strength/force meanings.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+529B",
   "simplifiedForm": "力",
@@ -15,9 +15,9 @@
     "Oracle is a long hooked stroke with a small crossing branch near the lower end, more tool-like than muscular.",
     "Regular 力 tightens the hook and long diagonal into two principal strokes, preserving the sense of a bent, exerting form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-058-力-u529B",
+  "contentFolder": "content/release/symbols/strength",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-058-力-u529B/research.md",
+  "researchNotesPath": "content/release/symbols/strength/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "strength"
       ],
       "examples": [
+        {
+          "text": "力",
+          "reading": "lì",
+          "translation": "strength",
+          "speechText": "力",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "lì"
+          ]
+        },
         {
           "text": "力量",
           "reading": "lìliang",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "力气",
+          "reading": "lìqi",
+          "translation": "strength",
+          "speechText": "力气",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他很有力气。",
           "reading": "Tā hěn yǒu lìqi.",
           "translation": "He is very strong.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "力",
@@ -98,6 +127,18 @@
         "strength"
       ],
       "taiwanExamples": [
+        {
+          "text": "力",
+          "reading": "lì",
+          "translation": "strength",
+          "speechText": "力",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "力量",
           "reading": "lìliang",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "力",
+          "reading": "lik6",
+          "translation": "strength",
+          "speechText": "力",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "力量",
           "reading": "lik6 loeng6",
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "力",
       "readings": [
         {
-          "system": "on",
-          "value": "リョク (ryoku)",
+          "system": "onyomi",
+          "value": "リョク — ryoku",
           "audioAssetRef": null,
           "speechText": "りょく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "リョク",
+          "romanization": "ryoku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "リキ (riki)",
+          "system": "onyomi",
+          "value": "リキ — riki",
           "audioAssetRef": null,
           "speechText": "りき",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "リキ",
+          "romanization": "riki",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "ちから (chikara)",
+          "system": "kunyomi",
+          "value": "ちから — chikara",
           "audioAssetRef": null,
           "speechText": "ちから",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ちから",
+          "romanization": "chikara",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "力"
-          ]
+          ],
+          "kanaReading": "ちから",
+          "coversReadings": [
+            "ちから"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "力",
+              "reading": "ちから"
+            }
+          ],
+          "furiganaHtml": "<ruby>力<rt>ちから</rt></ruby>"
         },
         {
           "text": "努力",
@@ -260,7 +335,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "力"
-          ]
+          ],
+          "kanaReading": "どりょく",
+          "coversReadings": [
+            "リョク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "努力",
+              "reading": "どりょく"
+            }
+          ],
+          "furiganaHtml": "<ruby>努力<rt>どりょく</rt></ruby>"
+        },
+        {
+          "text": "力士",
+          "reading": "rikishi",
+          "translation": "sumo wrestler",
+          "speechText": "力士",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "りきし",
+          "coversReadings": [
+            "リキ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "力士",
+              "reading": "りきし"
+            }
+          ],
+          "furiganaHtml": "<ruby>力士<rt>りきし</rt></ruby>"
+        },
+        {
+          "text": "電力",
+          "reading": "denryoku",
+          "translation": "electric power",
+          "speechText": "電力",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "でんりょく",
+          "furiganaSegments": [
+            {
+              "text": "電力",
+              "reading": "でんりょく"
+            }
+          ],
+          "furiganaHtml": "<ruby>電力<rt>でんりょく</rt></ruby>"
         },
         {
           "text": "力を入れます。",
@@ -274,40 +403,83 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "力"
-          ]
+          ],
+          "kanaReading": "ちからをいれます。",
+          "furiganaSegments": [
+            {
+              "text": "力",
+              "reading": "ちから"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "入",
+              "reading": "い"
+            },
+            {
+              "text": "れます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>力<rt>ちから</rt></ruby>を<ruby>入<rt>い</rt></ruby>れます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ちから",
+        "romanization": "chikara",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "力",
       "readings": [
         {
           "system": "hanja",
-          "value": "력 / ryeok",
+          "value": "력 — ryeok",
           "audioAssetRef": null,
           "speechText": "력",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "력",
+          "romanization": "ryeok"
         },
         {
           "system": "hanja · word-initial form",
-          "value": "역 / yeok",
+          "value": "역 — yeok",
           "audioAssetRef": null,
           "speechText": "역",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "힘 / him",
-          "audioAssetRef": null,
-          "speechText": "힘",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "역",
+          "romanization": "yeok"
         }
       ],
       "glosses": [
         "strength"
       ],
       "examples": [
+        {
+          "text": "힘",
+          "reading": "him",
+          "translation": "strength",
+          "speechText": "힘",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "노력",
           "reading": "noryeok",
@@ -337,6 +509,30 @@
           ]
         },
         {
+          "text": "전력",
+          "reading": "jeollyeok",
+          "translation": "power / electric power",
+          "speechText": "전력",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "역량",
+          "reading": "yeongnyang",
+          "translation": "capability / capacity",
+          "speechText": "역량",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "힘이 세요.",
           "reading": "himi seyo.",
           "translation": "He/She is strong.",
@@ -351,7 +547,55 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "력 — ryeok",
+          "audioAssetRef": null,
+          "speechText": "력",
+          "speechLanguage": "korean",
+          "nativeReading": "력",
+          "romanization": "ryeok"
+        },
+        {
+          "system": "hanja · word-initial form",
+          "value": "역 — yeok",
+          "audioAssetRef": null,
+          "speechText": "역",
+          "speechLanguage": "korean",
+          "nativeReading": "역",
+          "romanization": "yeok"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "힘 — him",
+          "audioAssetRef": null,
+          "speechText": "힘",
+          "speechLanguage": "korean",
+          "nativeReading": "힘",
+          "romanization": "him",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "strength",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "력",
+        "romanization": "ryeok",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -360,14 +604,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person levering a heavy tool beside a curved implement and a flexed arm showing force.",
+    "originAnchor": "The ancient picture is a foot-powered agricultural tool for digging and turning soil. Because using it required strength, it came to represent “strength.”",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/strength/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a long hooked stroke with a small crossing branch near the lower end, more tool-like than muscular.",
+        "changeNoteFromPrevious": "The graph depicts an ancient agricultural digging tool with a foot tread; using it required force.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-力"
@@ -393,8 +637,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a long hooked stroke with a small crossing branch near the lower end, more tool-like than muscular.",
-        "transitionNote": "Oracle is a long hooked stroke with a small crossing branch near the lower end, more tool-like than muscular.",
+        "stageExplanation": "The graph depicts an ancient agricultural digging tool with a foot tread; using it required force.",
+        "transitionNote": "The graph depicts an ancient agricultural digging tool with a foot tread; using it required force.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -404,7 +648,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/strength/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps the long curve but enlarges the small lower hook into a claw-like branch.",
+        "changeNoteFromPrevious": "Keeps the long curve but enlarges the small lower hook into a claw-like branch.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-力"
@@ -430,8 +674,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps the long curve but enlarges the small lower hook into a claw-like branch.",
-        "transitionNote": "Bronze keeps the long curve but enlarges the small lower hook into a claw-like branch.",
+        "stageExplanation": "Keeps the long curve but enlarges the small lower hook into a claw-like branch.",
+        "transitionNote": "Keeps the long curve but enlarges the small lower hook into a claw-like branch.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -441,7 +685,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/strength/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal redraws the form as two long parallel curves tied by an inner bend.",
+        "changeNoteFromPrevious": "Redraws the form as two long parallel curves tied by an inner bend.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-力"
@@ -467,8 +711,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal redraws the form as two long parallel curves tied by an inner bend.",
-        "transitionNote": "Small Seal redraws the form as two long parallel curves tied by an inner bend.",
+        "stageExplanation": "Redraws the form as two long parallel curves tied by an inner bend.",
+        "transitionNote": "Redraws the form as two long parallel curves tied by an inner bend.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -478,7 +722,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/strength/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical compresses those curves into the broad hooked shape already recognizable as 力.",
+        "changeNoteFromPrevious": "Compresses those curves into the broad hooked shape already recognizable as work/force sign.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-力"
@@ -504,8 +748,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical compresses those curves into the broad hooked shape already recognizable as 力.",
-        "transitionNote": "Clerical compresses those curves into the broad hooked shape already recognizable as 力.",
+        "stageExplanation": "Compresses those curves into the broad hooked shape already recognizable as work/force sign.",
+        "transitionNote": "Compresses those curves into the broad hooked shape already recognizable as work/force sign.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -515,7 +759,7 @@
         "label": "Regular Script",
         "form": "力",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 力 tightens the hook and long diagonal into two principal strokes, preserving the sense of a bent, exerting form.",
+        "changeNoteFromPrevious": "The tool picture is abstracted into 力, which now directly carries strength/force meanings.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -541,8 +785,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 力 tightens the hook and long diagonal into two principal strokes, preserving the sense of a bent, exerting form.",
-        "transitionNote": "Regular 力 tightens the hook and long diagonal into two principal strokes, preserving the sense of a bent, exerting form.",
+        "stageExplanation": "The tool picture is abstracted into 力, which now directly carries strength/force meanings.",
+        "transitionNote": "The tool picture is abstracted into 力, which now directly carries strength/force meanings.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -550,7 +794,7 @@
     ],
     "origin": {
       "concept": "strength",
-      "explanation": "A person levering a heavy tool beside a curved implement and a flexed arm showing force.",
+      "explanation": "An ancient agricultural digging/soil-turning implement with a foot tread.",
       "asset": {
         "characterID": "strength",
         "historicalStage": null,
@@ -567,7 +811,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of strength",
+        "accessibilityDescription": "Illustration of strength / force",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -585,7 +829,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'strength', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'strength / force', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -655,13 +899,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -1,0 +1,869 @@
+{
+  "id": "head",
+  "version": 1,
+  "coreCharacter": "首",
+  "coreSharedMeaning": "head",
+  "recognitionTakeaway": "Reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+9996",
+  "simplifiedForm": "首",
+  "traditionalForm": "首",
+  "additionalMeanings": [],
+  "formationType": "pictograph",
+  "visualTeachingNotes": [
+    "A human head and neck shown in side profile.",
+    "A head-like enclosure contains angled facial lines, with several loose strokes rising above it like hair.",
+    "Regular 首 reduces the hair to the two top strokes and regularizes the head into the 自-like lower component."
+  ],
+  "contentFolder": "content/release/symbols/head",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/head/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 28,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "首",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "shǒu",
+          "audioAssetRef": null,
+          "speechText": "首",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "head; first; classifier for songs/poems"
+      ],
+      "examples": [
+        {
+          "text": "首",
+          "reading": "shǒu",
+          "translation": "head; first; classifier for songs/poems",
+          "speechText": "首",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shǒu"
+          ]
+        },
+        {
+          "text": "首都",
+          "reading": "shǒudū",
+          "translation": "capital city",
+          "speechText": "首都",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        },
+        {
+          "text": "首先",
+          "reading": "shǒuxiān",
+          "translation": "first; first of all",
+          "speechText": "首先",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        },
+        {
+          "text": "首要",
+          "reading": "shǒuyào",
+          "translation": "primary; most important",
+          "speechText": "首要",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "这首歌很好听。",
+          "reading": "Zhè shǒu gē hěn hǎotīng.",
+          "translation": "This song sounds very good.",
+          "speechText": "这首歌很好听。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "首",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "shǒu",
+          "audioAssetRef": null,
+          "speechText": "首",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "head; first; classifier for songs/poems"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "首",
+          "reading": "shǒu",
+          "translation": "head; first; classifier for songs/poems",
+          "speechText": "首",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "首都",
+          "reading": "shǒudū",
+          "translation": "capital city",
+          "speechText": "首都",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        },
+        {
+          "text": "首先",
+          "reading": "shǒuxiān",
+          "translation": "first; first of all",
+          "speechText": "首先",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        },
+        {
+          "text": "這首歌很好聽。",
+          "reading": "Zhè shǒu gē hěn hǎotīng.",
+          "translation": "This song sounds very good.",
+          "speechText": "這首歌很好聽。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "首",
+          "reading": "sau2",
+          "translation": "head; first; classifier for songs/poems",
+          "speechText": "首",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "首都",
+          "reading": "sau2 dou1",
+          "translation": "capital city",
+          "speechText": "首都",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        },
+        {
+          "text": "首先",
+          "reading": "sau2 sin1",
+          "translation": "first; first of all",
+          "speechText": "首先",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        },
+        {
+          "text": "呢首歌好聽。",
+          "reading": "ni1 sau2 go1 hou2 teng1",
+          "translation": "This song sounds good.",
+          "speechText": "呢首歌好聽。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "shǒu",
+          "audioAssetRef": null,
+          "speechText": "首",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "sau2",
+          "audioAssetRef": null,
+          "speechText": "首",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "首",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "シュ — shu",
+          "audioAssetRef": null,
+          "speechText": "しゅ",
+          "speechLanguage": "japanese",
+          "nativeReading": "シュ",
+          "romanization": "shu",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "くび — kubi",
+          "audioAssetRef": null,
+          "speechText": "くび",
+          "speechLanguage": "japanese",
+          "nativeReading": "くび",
+          "romanization": "kubi",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "neck/head; capital; first"
+      ],
+      "examples": [
+        {
+          "text": "首",
+          "reading": "kubi",
+          "translation": "neck; head",
+          "speechText": "首",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ],
+          "kanaReading": "くび",
+          "coversReadings": [
+            "くび"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "首",
+              "reading": "くび"
+            }
+          ],
+          "furiganaHtml": "<ruby>首<rt>くび</rt></ruby>"
+        },
+        {
+          "text": "首都",
+          "reading": "shuto",
+          "translation": "capital city",
+          "speechText": "首都",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ],
+          "kanaReading": "しゅと",
+          "coversReadings": [
+            "シュ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "首都",
+              "reading": "しゅと"
+            }
+          ],
+          "furiganaHtml": "<ruby>首都<rt>しゅと</rt></ruby>"
+        },
+        {
+          "text": "首相",
+          "reading": "shushō",
+          "translation": "prime minister",
+          "speechText": "首相",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しゅしょう",
+          "furiganaSegments": [
+            {
+              "text": "首相",
+              "reading": "しゅしょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>首相<rt>しゅしょう</rt></ruby>"
+        },
+        {
+          "text": "手首",
+          "reading": "tekubi",
+          "translation": "wrist",
+          "speechText": "手首",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "てくび",
+          "furiganaSegments": [
+            {
+              "text": "手首",
+              "reading": "てくび"
+            }
+          ],
+          "furiganaHtml": "<ruby>手首<rt>てくび</rt></ruby>"
+        },
+        {
+          "text": "首が痛いです。",
+          "reading": "kubi ga itai desu.",
+          "translation": "My neck hurts.",
+          "speechText": "首が痛いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ],
+          "kanaReading": "くびがいたいです。",
+          "furiganaSegments": [
+            {
+              "text": "首",
+              "reading": "くび"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "痛",
+              "reading": "いた"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>首<rt>くび</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いです。"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "くび",
+        "romanization": "kubi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "首",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "수 — su",
+          "audioAssetRef": null,
+          "speechText": "수",
+          "speechLanguage": "korean",
+          "nativeReading": "수",
+          "romanization": "su"
+        }
+      ],
+      "glosses": [
+        "head; first (in compounds)"
+      ],
+      "examples": [
+        {
+          "text": "머리",
+          "reading": "meori",
+          "translation": "head",
+          "speechText": "머리",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "수도",
+          "reading": "sudo",
+          "translation": "capital city",
+          "speechText": "수도",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        },
+        {
+          "text": "수석",
+          "reading": "suseok",
+          "translation": "top; head position",
+          "speechText": "수석",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        },
+        {
+          "text": "수장",
+          "reading": "sujang",
+          "translation": "leader / head",
+          "speechText": "수장",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "머리가 아파요.",
+          "reading": "meoriga apayo.",
+          "translation": "My head hurts.",
+          "speechText": "머리가 아파요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "首"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "수 — su",
+          "audioAssetRef": null,
+          "speechText": "수",
+          "speechLanguage": "korean",
+          "nativeReading": "수",
+          "romanization": "su"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "머리 — meori",
+          "audioAssetRef": null,
+          "speechText": "머리",
+          "speechLanguage": "korean",
+          "nativeReading": "머리",
+          "romanization": "meori",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "head",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "수",
+        "romanization": "su",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A human head in profile.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/head/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "A head-like enclosure contains angled facial lines, with several loose strokes rising above it like hair.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-首"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "首",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E9%A6%96/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/43_E020.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/head/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/head/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "首 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A head-like enclosure contains angled facial lines, with several loose strokes rising above it like hair.",
+        "transitionNote": "A head-like enclosure contains angled facial lines, with several loose strokes rising above it like hair.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/head/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "The head is compacted into a dark shape with three clear hair-like spikes at the top and internal facial divisions.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-首"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "首",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E9%A6%96/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/33_E507.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/head/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/head/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "首 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The head is compacted into a dark shape with three clear hair-like spikes at the top and internal facial divisions.",
+        "transitionNote": "The head is compacted into a dark shape with three clear hair-like spikes at the top and internal facial divisions.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/head/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Three long hair strokes stand above a rounded head box containing several horizontal lines.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-首"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "首",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E9%A6%96/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_9996.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/head/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/head/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "首 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Three long hair strokes stand above a rounded head box containing several horizontal lines.",
+        "transitionNote": "Three long hair strokes stand above a rounded head box containing several horizontal lines.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/head/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The head becomes a rectangular stack under three short vertical hair strokes.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-首"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "首",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E9%A6%96/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/93_E407.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/head/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/head/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "首 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The head becomes a rectangular stack under three short vertical hair strokes.",
+        "transitionNote": "The head becomes a rectangular stack under three short vertical hair strokes.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "首",
+        "assetRef": null,
+        "changeNoteFromPrevious": "Reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "首",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "首 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
+        "transitionNote": "Reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "head",
+      "explanation": "A human head in profile, with hair and facial/eye detail in ancient forms.",
+      "asset": {
+        "characterID": "head",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/head/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of head",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-首"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿱䒑自.",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-首"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'head', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E9%A6%96"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-首",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E9%A6%96"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-首",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

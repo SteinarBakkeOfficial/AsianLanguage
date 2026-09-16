@@ -2,8 +2,8 @@
   "id": "reach",
   "version": 1,
   "coreCharacter": "及",
-  "coreSharedMeaning": "reach",
-  "recognitionTakeaway": "Regular 及 condenses the entire reaching motion into three sweeping strokes, preserving the strong hook-and-catch gesture more than any literal body parts.",
+  "coreSharedMeaning": "reach / catch / extend to",
+  "recognitionTakeaway": "Condenses the entire reaching motion into three sweeping strokes, preserving the strong hook-and-catch gesture more than any literal body parts.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+53CA",
   "simplifiedForm": "及",
@@ -15,9 +15,9 @@
     "Oracle is a chain of hooked curves: an upper reaching shape bends down toward a smaller lower figure.",
     "Regular 及 condenses the entire reaching motion into three sweeping strokes, preserving the strong hook-and-catch gesture more than any literal body parts."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-110-及-u53CA",
+  "contentFolder": "content/release/symbols/reach",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-110-及-u53CA/research.md",
+  "researchNotesPath": "content/release/symbols/reach/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "reach"
       ],
       "examples": [
+        {
+          "text": "及",
+          "reading": "jí",
+          "translation": "reach",
+          "speechText": "及",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "jí"
+          ]
+        },
         {
           "text": "以及",
           "reading": "yǐjí",
@@ -67,21 +82,47 @@
           ]
         },
         {
+          "text": "来不及",
+          "reading": "láibují",
+          "translation": "too late; not enough time",
+          "speechText": "来不及",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "及格",
           "reading": "jígé",
           "translation": "pass; reach a passing grade",
           "speechText": "及格",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "及"
           ]
+        },
+        {
+          "text": "他考试及格了。",
+          "reading": "Tā kǎoshì jígé le.",
+          "translation": "He passed the exam.",
+          "speechText": "他考试及格了。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "及",
@@ -98,6 +139,18 @@
         "reach"
       ],
       "taiwanExamples": [
+        {
+          "text": "及",
+          "reading": "jí",
+          "translation": "reach",
+          "speechText": "及",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "以及",
           "reading": "yǐjí",
@@ -133,7 +186,7 @@
           "speechText": "及格",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -142,6 +195,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "及",
+          "reading": "kap6",
+          "translation": "reach",
+          "speechText": "及",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "以及",
           "reading": "ji5 kap6",
@@ -177,7 +242,7 @@
           "speechText": "及格",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -203,24 +268,52 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "及",
       "readings": [
         {
-          "system": "on",
-          "value": "キュウ (kyū)",
+          "system": "onyomi",
+          "value": "キュウ — kyū",
           "audioAssetRef": null,
           "speechText": "きゅう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "キュウ",
+          "romanization": "kyū",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "およぶ (oyobu)",
+          "system": "kunyomi",
+          "value": "およぶ — oyobu",
           "audioAssetRef": null,
           "speechText": "およぶ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "およぶ",
+          "romanization": "oyobu",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "および — oyobi",
+          "audioAssetRef": null,
+          "speechText": "および",
+          "speechLanguage": "japanese",
+          "nativeReading": "および",
+          "romanization": "oyobi",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "およぼす — oyobosu",
+          "audioAssetRef": null,
+          "speechText": "およぼす",
+          "speechLanguage": "japanese",
+          "nativeReading": "およぼす",
+          "romanization": "oyobosu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +332,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "及"
-          ]
+          ],
+          "kanaReading": "およぶ",
+          "coversReadings": [
+            "およぶ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "及",
+              "reading": "およ"
+            },
+            {
+              "text": "ぶ"
+            }
+          ],
+          "furiganaHtml": "<ruby>及<rt>およ</rt></ruby>ぶ"
         },
         {
           "text": "普及",
@@ -253,7 +360,64 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "及"
-          ]
+          ],
+          "kanaReading": "ふきゅう",
+          "coversReadings": [
+            "キュウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "普及",
+              "reading": "ふきゅう"
+            }
+          ],
+          "furiganaHtml": "<ruby>普及<rt>ふきゅう</rt></ruby>"
+        },
+        {
+          "text": "波及",
+          "reading": "hakyū",
+          "translation": "spread; ripple effect",
+          "speechText": "波及",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "はきゅう",
+          "furiganaSegments": [
+            {
+              "text": "波及",
+              "reading": "はきゅう"
+            }
+          ],
+          "furiganaHtml": "<ruby>波及<rt>はきゅう</rt></ruby>"
+        },
+        {
+          "text": "及ぼす",
+          "reading": "oyobosu",
+          "translation": "extend / exert",
+          "speechText": "及ぼす",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "およぼす",
+          "coversReadings": [
+            "およぼす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "及",
+              "reading": "およ"
+            },
+            {
+              "text": "ぼす"
+            }
+          ],
+          "furiganaHtml": "<ruby>及<rt>およ</rt></ruby>ぼす"
         },
         {
           "text": "水は足元まで及びます。",
@@ -267,33 +431,107 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "及"
-          ]
+          ],
+          "kanaReading": "みずはあしもとまでおよびます。",
+          "furiganaSegments": [
+            {
+              "text": "水",
+              "reading": "みず"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "足元",
+              "reading": "あしもと"
+            },
+            {
+              "text": "まで"
+            },
+            {
+              "text": "及",
+              "reading": "およ"
+            },
+            {
+              "text": "びます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>水<rt>みず</rt></ruby>は<ruby>足元<rt>あしもと</rt></ruby>まで<ruby>及<rt>およ</rt></ruby>びます。"
+        },
+        {
+          "text": "及び",
+          "reading": "oyobi",
+          "translation": "and; as well as",
+          "speechText": "及び",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "および",
+          "coversReadings": [
+            "および"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "及",
+              "reading": "およ"
+            },
+            {
+              "text": "び"
+            }
+          ],
+          "furiganaHtml": "<ruby>及<rt>およ</rt></ruby>び"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "およぶ",
+        "romanization": "oyobu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "及",
       "readings": [
         {
           "system": "hanja",
-          "value": "급 / geup",
+          "value": "급 — geup",
           "audioAssetRef": null,
           "speechText": "급",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean · reach",
-          "value": "미치다 / michida",
-          "audioAssetRef": null,
-          "speechText": "미치다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "급",
+          "romanization": "geup"
         }
       ],
       "glosses": [
         "reach"
       ],
       "examples": [
+        {
+          "text": "미치다",
+          "reading": "michida",
+          "translation": "reach / extend to",
+          "speechText": "미치다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "보급",
           "reading": "bogeup",
@@ -323,6 +561,18 @@
           ]
         },
         {
+          "text": "파급",
+          "reading": "pageup",
+          "translation": "spread / ripple effect",
+          "speechText": "파급",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "영향이 여기까지 미쳐요.",
           "reading": "yeonghyangi yeogikkaji michyeoyo.",
           "translation": "The effect reaches this far.",
@@ -337,7 +587,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "급 — geup",
+          "audioAssetRef": null,
+          "speechText": "급",
+          "speechLanguage": "korean",
+          "nativeReading": "급",
+          "romanization": "geup"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "미치다 — michida",
+          "audioAssetRef": null,
+          "speechText": "미치다",
+          "speechLanguage": "korean",
+          "nativeReading": "미치다",
+          "romanization": "michida",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "reach / extend to",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "급",
+        "romanization": "geup",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +635,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A reaching hand extending toward and catching a person from behind.",
+    "originAnchor": "A person and a reaching hand combine to show catching up; this led to 'reach.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/reach/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a chain of hooked curves: an upper reaching shape bends down toward a smaller lower figure.",
+        "changeNoteFromPrevious": "A hand reaches toward and catches a person ahead, directly showing the old reaching/catching action.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-及"
@@ -379,8 +668,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a chain of hooked curves: an upper reaching shape bends down toward a smaller lower figure.",
-        "transitionNote": "Oracle is a chain of hooked curves: an upper reaching shape bends down toward a smaller lower figure.",
+        "stageExplanation": "A hand reaches toward and catches a person ahead, directly showing the old reaching/catching action.",
+        "transitionNote": "A hand reaches toward and catches a person ahead, directly showing the old reaching/catching action.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +679,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/reach/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze simplifies the upper reach into a bold hook while several short lower strokes cluster beneath it.",
+        "changeNoteFromPrevious": "Simplifies the upper reach into a bold hook while several short lower strokes cluster beneath it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-及"
@@ -416,8 +705,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze simplifies the upper reach into a bold hook while several short lower strokes cluster beneath it.",
-        "transitionNote": "Bronze simplifies the upper reach into a bold hook while several short lower strokes cluster beneath it.",
+        "stageExplanation": "Simplifies the upper reach into a bold hook while several short lower strokes cluster beneath it.",
+        "transitionNote": "Simplifies the upper reach into a bold hook while several short lower strokes cluster beneath it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +716,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/reach/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal stretches the hook into a tall enclosure-like curve with stacked horizontal contacts inside.",
+        "changeNoteFromPrevious": "Stretches the hook into a tall enclosure-like curve with stacked horizontal contacts inside.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-及"
@@ -453,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal stretches the hook into a tall enclosure-like curve with stacked horizontal contacts inside.",
-        "transitionNote": "Small Seal stretches the hook into a tall enclosure-like curve with stacked horizontal contacts inside.",
+        "stageExplanation": "Stretches the hook into a tall enclosure-like curve with stacked horizontal contacts inside.",
+        "transitionNote": "Stretches the hook into a tall enclosure-like curve with stacked horizontal contacts inside.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +753,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/reach/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens those contacts and leaves one very long trailing stroke on the right.",
+        "changeNoteFromPrevious": "Flattens those contacts and leaves one very long trailing stroke on the right.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-及"
@@ -490,8 +779,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens those contacts and leaves one very long trailing stroke on the right.",
-        "transitionNote": "Clerical flattens those contacts and leaves one very long trailing stroke on the right.",
+        "stageExplanation": "Flattens those contacts and leaves one very long trailing stroke on the right.",
+        "transitionNote": "Flattens those contacts and leaves one very long trailing stroke on the right.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +790,7 @@
         "label": "Regular Script",
         "form": "及",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 及 condenses the entire reaching motion into three sweeping strokes, preserving the strong hook-and-catch gesture more than any literal body parts.",
+        "changeNoteFromPrevious": "Condenses the entire reaching motion into three sweeping strokes, preserving the strong hook-and-catch gesture more than any literal body parts.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +816,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 及 condenses the entire reaching motion into three sweeping strokes, preserving the strong hook-and-catch gesture more than any literal body parts.",
-        "transitionNote": "Regular 及 condenses the entire reaching motion into three sweeping strokes, preserving the strong hook-and-catch gesture more than any literal body parts.",
+        "stageExplanation": "Condenses the entire reaching motion into three sweeping strokes, preserving the strong hook-and-catch gesture more than any literal body parts.",
+        "transitionNote": "Condenses the entire reaching motion into three sweeping strokes, preserving the strong hook-and-catch gesture more than any literal body parts.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +825,7 @@
     ],
     "origin": {
       "concept": "reach",
-      "explanation": "A reaching hand extending toward and catching a person from behind.",
+      "explanation": "A hand reaching toward and catching a person ahead.",
       "asset": {
         "characterID": "reach",
         "historicalStage": null,
@@ -553,7 +842,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of reach",
+        "accessibilityDescription": "Illustration of reach / catch / extend to",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +860,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'reach', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'reach / catch / extend to', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +930,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

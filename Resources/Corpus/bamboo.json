@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "竹",
   "coreSharedMeaning": "bamboo",
-  "recognitionTakeaway": "Regular 竹 preserves the two-part layout as two compact bamboo-top components, each built from short slanting strokes.",
+  "recognitionTakeaway": "The paired bamboo picture is compressed into the compact modern 竹 form, still visibly divided into two sides.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+7AF9",
   "simplifiedForm": "竹",
@@ -15,9 +15,9 @@
     "Two plant-like sides meet in a peaked form, with branching marks spreading from the lower edges; the picture is more abstract than the illustration.",
     "Regular 竹 preserves the two-part layout as two compact bamboo-top components, each built from short slanting strokes."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-041-竹-u7AF9",
+  "contentFolder": "content/release/symbols/bamboo",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-041-竹-u7AF9/research.md",
+  "researchNotesPath": "content/release/symbols/bamboo/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "bamboo"
       ],
       "examples": [
+        {
+          "text": "竹",
+          "reading": "zhú",
+          "translation": "bamboo",
+          "speechText": "竹",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zhú"
+          ]
+        },
         {
           "text": "竹子",
           "reading": "zhúzi",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "竹叶",
+          "reading": "zhúyè",
+          "translation": "bamboo leaf",
+          "speechText": "竹叶",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这里有很多竹子。",
           "reading": "Zhèlǐ yǒu hěn duō zhúzi.",
           "translation": "There is a lot of bamboo here.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "竹",
@@ -98,6 +127,18 @@
         "bamboo"
       ],
       "taiwanExamples": [
+        {
+          "text": "竹",
+          "reading": "zhú",
+          "translation": "bamboo",
+          "speechText": "竹",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "竹子",
           "reading": "zhúzi",
@@ -171,6 +212,18 @@
           ]
         },
         {
+          "text": "呢個係竹林。",
+          "reading": "ni1 go3 hai6 zuk1 lam4",
+          "translation": "This is a bamboo grove.",
+          "speechText": "呢個係竹林。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "呢度有好多竹。",
           "reading": "ni1 dou6 jau5 hou2 do1 zuk1",
           "translation": "There is a lot of bamboo here.",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "竹",
       "readings": [
         {
-          "system": "on",
-          "value": "チク (chiku)",
+          "system": "onyomi",
+          "value": "チク — chiku",
           "audioAssetRef": null,
           "speechText": "ちく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "チク",
+          "romanization": "chiku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "たけ (take)",
+          "system": "kunyomi",
+          "value": "たけ — take",
           "audioAssetRef": null,
           "speechText": "たけ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "たけ",
+          "romanization": "take",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "竹"
-          ]
+          ],
+          "kanaReading": "たけ",
+          "coversReadings": [
+            "たけ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "竹",
+              "reading": "たけ"
+            }
+          ],
+          "furiganaHtml": "<ruby>竹<rt>たけ</rt></ruby>"
         },
         {
           "text": "竹林",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "竹"
-          ]
+          ],
+          "kanaReading": "ちくりん",
+          "coversReadings": [
+            "チク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "竹林",
+              "reading": "ちくりん"
+            }
+          ],
+          "furiganaHtml": "<ruby>竹林<rt>ちくりん</rt></ruby>"
+        },
+        {
+          "text": "竹材",
+          "reading": "chikuzai",
+          "translation": "bamboo material",
+          "speechText": "竹材",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ちくざい",
+          "furiganaSegments": [
+            {
+              "text": "竹材",
+              "reading": "ちくざい"
+            }
+          ],
+          "furiganaHtml": "<ruby>竹材<rt>ちくざい</rt></ruby>"
+        },
+        {
+          "text": "竹細工",
+          "reading": "takezaiku",
+          "translation": "bamboo craft",
+          "speechText": "竹細工",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たけざいく",
+          "furiganaSegments": [
+            {
+              "text": "竹細工",
+              "reading": "たけざいく"
+            }
+          ],
+          "furiganaHtml": "<ruby>竹細工<rt>たけざいく</rt></ruby>"
         },
         {
           "text": "竹は高く育ちます。",
@@ -267,33 +390,85 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "竹"
-          ]
+          ],
+          "kanaReading": "たけはたかくそだちます。",
+          "furiganaSegments": [
+            {
+              "text": "竹",
+              "reading": "たけ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "高",
+              "reading": "たか"
+            },
+            {
+              "text": "く"
+            },
+            {
+              "text": "育",
+              "reading": "そだ"
+            },
+            {
+              "text": "ちます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>竹<rt>たけ</rt></ruby>は<ruby>高<rt>たか</rt></ruby>く<ruby>育<rt>そだ</rt></ruby>ちます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout.",
+        "verifiedUsefulReadings": [
+          "チク — chiku (on’yomi)",
+          "たけ — take (kun’yomi)"
+        ]
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "たけ",
+        "romanization": "take",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "竹",
       "readings": [
         {
           "system": "hanja",
-          "value": "죽 / juk",
+          "value": "죽 — juk",
           "audioAssetRef": null,
           "speechText": "죽",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "대나무 / daenamu",
-          "audioAssetRef": null,
-          "speechText": "대나무",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "죽",
+          "romanization": "juk"
         }
       ],
       "glosses": [
         "bamboo"
       ],
       "examples": [
+        {
+          "text": "대나무",
+          "reading": "daenamu",
+          "translation": "bamboo",
+          "speechText": "대나무",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "죽순",
           "reading": "juksun",
@@ -323,6 +498,18 @@
           ]
         },
         {
+          "text": "죽공예",
+          "reading": "jukgongye",
+          "translation": "bamboo craft",
+          "speechText": "죽공예",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "대나무가 높아요.",
           "reading": "daenamuga nopayo.",
           "translation": "The bamboo is tall.",
@@ -337,7 +524,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "죽 — juk",
+          "audioAssetRef": null,
+          "speechText": "죽",
+          "speechLanguage": "korean",
+          "nativeReading": "죽",
+          "romanization": "juk"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "대나무 — daenamu",
+          "audioAssetRef": null,
+          "speechText": "대나무",
+          "speechLanguage": "korean",
+          "nativeReading": "대나무",
+          "romanization": "daenamu",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "bamboo",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "죽",
+        "romanization": "juk",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +572,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Two bamboo stalks with jointed stems and leaves.",
+    "originAnchor": "A bamboo plant with paired stalks or branches and leaves.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/bamboo/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Two plant-like sides meet in a peaked form, with branching marks spreading from the lower edges; the picture is more abstract than the illustration.",
+        "changeNoteFromPrevious": "Paired bamboo branches/stalks with leaf-like strokes form the early picture; exact angles vary by inscription.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-竹"
@@ -379,8 +605,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Two plant-like sides meet in a peaked form, with branching marks spreading from the lower edges; the picture is more abstract than the illustration.",
-        "transitionNote": "Two plant-like sides meet in a peaked form, with branching marks spreading from the lower edges; the picture is more abstract than the illustration.",
+        "stageExplanation": "Paired bamboo branches/stalks with leaf-like strokes form the early picture; exact angles vary by inscription.",
+        "transitionNote": "Paired bamboo branches/stalks with leaf-like strokes form the early picture; exact angles vary by inscription.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -501,7 +727,7 @@
         "label": "Regular Script",
         "form": "竹",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 竹 preserves the two-part layout as two compact bamboo-top components, each built from short slanting strokes.",
+        "changeNoteFromPrevious": "The paired bamboo picture is compressed into the compact modern 竹 form, still visibly divided into two sides.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +753,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 竹 preserves the two-part layout as two compact bamboo-top components, each built from short slanting strokes.",
-        "transitionNote": "Regular 竹 preserves the two-part layout as two compact bamboo-top components, each built from short slanting strokes.",
+        "stageExplanation": "The paired bamboo picture is compressed into the compact modern 竹 form, still visibly divided into two sides.",
+        "transitionNote": "The paired bamboo picture is compressed into the compact modern 竹 form, still visibly divided into two sides.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +762,7 @@
     ],
     "origin": {
       "concept": "bamboo",
-      "explanation": "Two bamboo stalks with jointed stems and leaves.",
+      "explanation": "A paired bamboo plant/branches with leaves.",
       "asset": {
         "characterID": "bamboo",
         "historicalStage": null,
@@ -641,13 +867,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

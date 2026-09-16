@@ -2,8 +2,8 @@
   "id": "classic",
   "version": 1,
   "coreCharacter": "典",
-  "coreSharedMeaning": "classic",
-  "recognitionTakeaway": "Regular 典 compresses the writing-slip grid into the upper 曲-like structure and preserves the supporting lower strokes, still suggesting something formally displayed or set out.",
+  "coreSharedMeaning": "classic / canon / standard",
+  "recognitionTakeaway": "The displayed-book structure becomes 典, with later senses canon, standard, and classic.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5178",
   "simplifiedForm": "典",
@@ -15,9 +15,9 @@
     "Oracle shows a dense bundle of vertical slips at the top with supporting strokes and a table-like base beneath.",
     "Regular 典 compresses the writing-slip grid into the upper 曲-like structure and preserves the supporting lower strokes, still suggesting something formally displayed or set out."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-107-典-u5178",
+  "contentFolder": "content/release/symbols/classic",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-107-典-u5178/research.md",
+  "researchNotesPath": "content/release/symbols/classic/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "classic"
       ],
       "examples": [
+        {
+          "text": "典",
+          "reading": "diǎn",
+          "translation": "classic",
+          "speechText": "典",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "diǎn"
+          ]
+        },
         {
           "text": "经典",
           "reading": "jīngdiǎn",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "典礼",
+          "reading": "diǎnlǐ",
+          "translation": "ceremony",
+          "speechText": "典礼",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我查字典。",
           "reading": "Wǒ chá zìdiǎn.",
           "translation": "I look it up in a dictionary.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "典",
@@ -98,6 +127,18 @@
         "classic"
       ],
       "taiwanExamples": [
+        {
+          "text": "典",
+          "reading": "diǎn",
+          "translation": "classic",
+          "speechText": "典",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "經典",
           "reading": "jīngdiǎn",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "典",
+          "reading": "din2",
+          "translation": "classic",
+          "speechText": "典",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "經典",
           "reading": "ging1 din2",
@@ -203,17 +256,22 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "典",
       "readings": [
         {
-          "system": "on",
-          "value": "テン (ten)",
+          "system": "onyomi",
+          "value": "テン — ten",
           "audioAssetRef": null,
           "speechText": "てん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "テン",
+          "romanization": "ten",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -232,7 +290,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "典"
-          ]
+          ],
+          "kanaReading": "じてん",
+          "coversReadings": [
+            "テン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "辞典",
+              "reading": "じてん"
+            }
+          ],
+          "furiganaHtml": "<ruby>辞典<rt>じてん</rt></ruby>"
         },
         {
           "text": "古典",
@@ -246,7 +315,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "典"
-          ]
+          ],
+          "kanaReading": "こてん",
+          "furiganaSegments": [
+            {
+              "text": "古典",
+              "reading": "こてん"
+            }
+          ],
+          "furiganaHtml": "<ruby>古典<rt>こてん</rt></ruby>"
+        },
+        {
+          "text": "典型",
+          "reading": "tenkei",
+          "translation": "typical form; type",
+          "speechText": "典型",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "てんけい",
+          "furiganaSegments": [
+            {
+              "text": "典型",
+              "reading": "てんけい"
+            }
+          ],
+          "furiganaHtml": "<ruby>典型<rt>てんけい</rt></ruby>"
+        },
+        {
+          "text": "法典",
+          "reading": "hōten",
+          "translation": "code of laws",
+          "speechText": "法典",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ほうてん",
+          "furiganaSegments": [
+            {
+              "text": "法典",
+              "reading": "ほうてん"
+            }
+          ],
+          "furiganaHtml": "<ruby>法典<rt>ほうてん</rt></ruby>"
         },
         {
           "text": "辞典を使います。",
@@ -260,20 +377,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "典"
-          ]
+          ],
+          "kanaReading": "じてんをつかいます。",
+          "furiganaSegments": [
+            {
+              "text": "辞典",
+              "reading": "じてん"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "使",
+              "reading": "つか"
+            },
+            {
+              "text": "います"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>辞典<rt>じてん</rt></ruby>を<ruby>使<rt>つか</rt></ruby>います。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "テン",
+        "romanization": "ten",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "典",
       "readings": [
         {
           "system": "hanja",
-          "value": "전 / jeon",
+          "value": "전 — jeon",
           "audioAssetRef": null,
           "speechText": "전",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "전",
+          "romanization": "jeon"
         }
       ],
       "glosses": [
@@ -309,6 +461,30 @@
           ]
         },
         {
+          "text": "전형",
+          "reading": "jeonhyeong",
+          "translation": "typical form / type",
+          "speechText": "전형",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "법전",
+          "reading": "beopjeon",
+          "translation": "code of laws",
+          "speechText": "법전",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "사전을 봐요.",
           "reading": "sajeoneul bwayo.",
           "translation": "I look in a dictionary.",
@@ -323,7 +499,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "전 — jeon",
+          "audioAssetRef": null,
+          "speechText": "전",
+          "speechLanguage": "korean",
+          "nativeReading": "전",
+          "romanization": "jeon"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "전",
+        "romanization": "jeon",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -332,14 +527,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Hands presenting a bound set of writing slips on a low table or stand.",
+    "originAnchor": "Bound writing slips and a low stand combine to show a written record; this led to 'classic.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/classic/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows a dense bundle of vertical slips at the top with supporting strokes and a table-like base beneath.",
+        "changeNoteFromPrevious": "A bound set of writing slips is placed on a broad support; the lower form is the stand, not a pair of presenting hands.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-典"
@@ -365,8 +560,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows a dense bundle of vertical slips at the top with supporting strokes and a table-like base beneath.",
-        "transitionNote": "Oracle shows a dense bundle of vertical slips at the top with supporting strokes and a table-like base beneath.",
+        "stageExplanation": "A bound set of writing slips is placed on a broad support; the lower form is the stand, not a pair of presenting hands.",
+        "transitionNote": "A bound set of writing slips is placed on a broad support; the lower form is the stand, not a pair of presenting hands.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -376,7 +571,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/classic/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the bound-slip grid clearer and separates it from the broad lower support.",
+        "changeNoteFromPrevious": "Makes the bound-slip grid clearer and separates it from the broad lower support.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-典"
@@ -402,8 +597,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the bound-slip grid clearer and separates it from the broad lower support.",
-        "transitionNote": "Bronze makes the bound-slip grid clearer and separates it from the broad lower support.",
+        "stageExplanation": "Makes the bound-slip grid clearer and separates it from the broad lower support.",
+        "transitionNote": "Makes the bound-slip grid clearer and separates it from the broad lower support.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -413,7 +608,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/classic/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the slips into a neat lattice standing on two long legs or supports.",
+        "changeNoteFromPrevious": "Regularizes the slips into a neat lattice standing on two long legs or supports.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-典"
@@ -439,8 +634,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the slips into a neat lattice standing on two long legs or supports.",
-        "transitionNote": "Small Seal regularizes the slips into a neat lattice standing on two long legs or supports.",
+        "stageExplanation": "Regularizes the slips into a neat lattice standing on two long legs or supports.",
+        "transitionNote": "Regularizes the slips into a neat lattice standing on two long legs or supports.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -450,7 +645,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/classic/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical thickens the lattice and adds a distinct small lower mark beneath the support.",
+        "changeNoteFromPrevious": "Thickens the lattice and adds a distinct small lower mark beneath the support.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-典"
@@ -476,8 +671,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical thickens the lattice and adds a distinct small lower mark beneath the support.",
-        "transitionNote": "Clerical thickens the lattice and adds a distinct small lower mark beneath the support.",
+        "stageExplanation": "Thickens the lattice and adds a distinct small lower mark beneath the support.",
+        "transitionNote": "Thickens the lattice and adds a distinct small lower mark beneath the support.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -487,7 +682,7 @@
         "label": "Regular Script",
         "form": "典",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 典 compresses the writing-slip grid into the upper 曲-like structure and preserves the supporting lower strokes, still suggesting something formally displayed or set out.",
+        "changeNoteFromPrevious": "The displayed-book structure becomes 典, with later senses canon, standard, and classic.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -513,8 +708,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 典 compresses the writing-slip grid into the upper 曲-like structure and preserves the supporting lower strokes, still suggesting something formally displayed or set out.",
-        "transitionNote": "Regular 典 compresses the writing-slip grid into the upper 曲-like structure and preserves the supporting lower strokes, still suggesting something formally displayed or set out.",
+        "stageExplanation": "The displayed-book structure becomes 典, with later senses canon, standard, and classic.",
+        "transitionNote": "The displayed-book structure becomes 典, with later senses canon, standard, and classic.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -522,7 +717,7 @@
     ],
     "origin": {
       "concept": "classic",
-      "explanation": "Hands presenting a bound set of writing slips on a low table or stand.",
+      "explanation": "A bound set of writing slips is placed on a low support or stand.",
       "asset": {
         "characterID": "classic",
         "historicalStage": null,
@@ -539,7 +734,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of classic",
+        "accessibilityDescription": "Illustration of classic / canon / standard",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -557,7 +752,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'classic', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'classic / canon / standard', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -627,13 +822,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

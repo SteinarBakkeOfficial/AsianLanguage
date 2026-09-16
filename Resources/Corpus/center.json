@@ -2,8 +2,8 @@
   "id": "center",
   "version": 1,
   "coreCharacter": "央",
-  "coreSharedMeaning": "center",
-  "recognitionTakeaway": "Regular 央 tightens those crossing strokes around the center, leaving a character whose visual weight remains concentrated in the middle.",
+  "coreSharedMeaning": "center / central",
+  "recognitionTakeaway": "央 is now an abstract written form meaning center/central; the early human-and-center scene is no longer pictorially obvious.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+592E",
   "simplifiedForm": "央",
@@ -15,9 +15,9 @@
     "Oracle shows a human-like figure whose torso is caught inside a U-shaped or forked frame, making the middle visually dominant.",
     "Regular 央 tightens those crossing strokes around the center, leaving a character whose visual weight remains concentrated in the middle."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-094-央-u592E",
+  "contentFolder": "content/release/symbols/center",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-094-央-u592E/research.md",
+  "researchNotesPath": "content/release/symbols/center/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "center"
       ],
       "examples": [
+        {
+          "text": "央",
+          "reading": "yāng",
+          "translation": "center",
+          "speechText": "央",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "yāng"
+          ]
+        },
         {
           "text": "中央",
           "reading": "zhōngyāng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "央求",
+          "reading": "yāngqiú",
+          "translation": "beg; plead",
+          "speechText": "央求",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他站在中央。",
           "reading": "Tā zhàn zài zhōngyāng.",
           "translation": "He is standing in the center.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "央",
@@ -98,6 +127,18 @@
         "center"
       ],
       "taiwanExamples": [
+        {
+          "text": "央",
+          "reading": "yāng",
+          "translation": "center",
+          "speechText": "央",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "中央",
           "reading": "zhōngyāng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "央",
+          "reading": "joeng1",
+          "translation": "center",
+          "speechText": "央",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "中央",
           "reading": "zung1 joeng1",
@@ -203,17 +256,22 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "央",
       "readings": [
         {
-          "system": "on",
-          "value": "オウ (ō)",
+          "system": "onyomi",
+          "value": "オウ — ō",
           "audioAssetRef": null,
           "speechText": "おう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "オウ",
+          "romanization": "ō",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -232,7 +290,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "央"
-          ]
+          ],
+          "kanaReading": "ちゅうおう",
+          "coversReadings": [
+            "オウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "中央",
+              "reading": "ちゅうおう"
+            }
+          ],
+          "furiganaHtml": "<ruby>中央<rt>ちゅうおう</rt></ruby>"
         },
         {
           "text": "中央線",
@@ -246,7 +315,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "央"
-          ]
+          ],
+          "kanaReading": "ちゅうおうせん",
+          "furiganaSegments": [
+            {
+              "text": "中央線",
+              "reading": "ちゅうおうせん"
+            }
+          ],
+          "furiganaHtml": "<ruby>中央線<rt>ちゅうおうせん</rt></ruby>"
+        },
+        {
+          "text": "中央部",
+          "reading": "chūōbu",
+          "translation": "central part",
+          "speechText": "中央部",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ちゅうおうぶ",
+          "furiganaSegments": [
+            {
+              "text": "中央部",
+              "reading": "ちゅうおうぶ"
+            }
+          ],
+          "furiganaHtml": "<ruby>中央部<rt>ちゅうおうぶ</rt></ruby>"
+        },
+        {
+          "text": "中央区",
+          "reading": "chūōku",
+          "translation": "central ward",
+          "speechText": "中央区",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ちゅうおうく",
+          "furiganaSegments": [
+            {
+              "text": "中央区",
+              "reading": "ちゅうおうく"
+            }
+          ],
+          "furiganaHtml": "<ruby>中央区<rt>ちゅうおうく</rt></ruby>"
         },
         {
           "text": "中央に置きます。",
@@ -260,33 +377,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "央"
-          ]
+          ],
+          "kanaReading": "ちゅうおうにおきます。",
+          "furiganaSegments": [
+            {
+              "text": "中央",
+              "reading": "ちゅうおう"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "置",
+              "reading": "お"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>中央<rt>ちゅうおう</rt></ruby>に<ruby>置<rt>お</rt></ruby>きます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "オウ",
+        "romanization": "ō",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "央",
       "readings": [
         {
           "system": "hanja",
-          "value": "앙 / ang",
+          "value": "앙 — ang",
           "audioAssetRef": null,
           "speechText": "앙",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "가운데 / gaunde",
-          "audioAssetRef": null,
-          "speechText": "가운데",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "앙",
+          "romanization": "ang"
         }
       ],
       "glosses": [
         "center"
       ],
       "examples": [
+        {
+          "text": "가운데",
+          "reading": "gaunde",
+          "translation": "center",
+          "speechText": "가운데",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "중앙",
           "reading": "jungang",
@@ -316,6 +474,18 @@
           ]
         },
         {
+          "text": "중앙부",
+          "reading": "jungangbu",
+          "translation": "central part",
+          "speechText": "중앙부",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "중앙에 놓아요.",
           "reading": "jungange noayo.",
           "translation": "I put it in the center.",
@@ -330,7 +500,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "앙 — ang",
+          "audioAssetRef": null,
+          "speechText": "앙",
+          "speechLanguage": "korean",
+          "nativeReading": "앙",
+          "romanization": "ang"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "가운데 — gaunde",
+          "audioAssetRef": null,
+          "speechText": "가운데",
+          "speechLanguage": "korean",
+          "nativeReading": "가운데",
+          "romanization": "gaunde",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "center",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "앙",
+        "romanization": "ang",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -339,14 +548,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person held or framed through the middle, with the center of the body emphasized.",
+    "originAnchor": "The early picture is disputed: a person in a neck restraint is one leading interpretation. The graph was later borrowed by sound for ‘center.’",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/center/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows a human-like figure whose torso is caught inside a U-shaped or forked frame, making the middle visually dominant.",
+        "changeNoteFromPrevious": "A front-facing person carries an element centered around the neck or shoulders. A neck restraint is one leading interpretation, but the ancient scene remains disputed.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-央"
@@ -372,8 +581,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows a human-like figure whose torso is caught inside a U-shaped or forked frame, making the middle visually dominant.",
-        "transitionNote": "Oracle shows a human-like figure whose torso is caught inside a U-shaped or forked frame, making the middle visually dominant.",
+        "stageExplanation": "A front-facing person carries an element centered around the neck or shoulders. The exact ancient scene is debated internally, but the central placement is visually clear.",
+        "transitionNote": "A front-facing person carries an element centered around the neck or shoulders. A neck restraint is one leading interpretation, but the ancient scene remains disputed.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -383,7 +592,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/center/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze thickens the frame and centers a person-like lower body directly beneath it.",
+        "changeNoteFromPrevious": "The human body and centered crosspiece become more compact and integrated.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-央"
@@ -409,8 +618,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze thickens the frame and centers a person-like lower body directly beneath it.",
-        "transitionNote": "Bronze thickens the frame and centers a person-like lower body directly beneath it.",
+        "stageExplanation": "The human body and centered crosspiece become more compact and integrated.",
+        "transitionNote": "The human body and centered crosspiece become more compact and integrated.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -420,7 +629,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/center/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the upper frame into a symmetric box-like crossing over two long legs.",
+        "changeNoteFromPrevious": "The earlier human scene is heavily regularized into a balanced written structure; much of the original anatomy is no longer obvious.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-央"
@@ -446,8 +655,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the upper frame into a symmetric box-like crossing over two long legs.",
-        "transitionNote": "Small Seal regularizes the upper frame into a symmetric box-like crossing over two long legs.",
+        "stageExplanation": "The earlier human scene is heavily regularized into a balanced written structure; much of the original anatomy is no longer obvious.",
+        "transitionNote": "The earlier human scene is heavily regularized into a balanced written structure; much of the original anatomy is no longer obvious.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -457,7 +666,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/center/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the frame and body into a compact central knot with four projecting limbs.",
+        "changeNoteFromPrevious": "The Seal curves flatten into the angular skeleton that leads directly to the standard form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-央"
@@ -483,8 +692,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the frame and body into a compact central knot with four projecting limbs.",
-        "transitionNote": "Clerical flattens the frame and body into a compact central knot with four projecting limbs.",
+        "stageExplanation": "The Seal curves flatten into the angular skeleton that leads directly to the standard form.",
+        "transitionNote": "The Seal curves flatten into the angular skeleton that leads directly to the standard form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -494,7 +703,7 @@
         "label": "Regular Script",
         "form": "央",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 央 tightens those crossing strokes around the center, leaving a character whose visual weight remains concentrated in the middle.",
+        "changeNoteFromPrevious": "The graph was later used for ‘center’; the original scene, if it was a restraint, is no longer visible.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -520,8 +729,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 央 tightens those crossing strokes around the center, leaving a character whose visual weight remains concentrated in the middle.",
-        "transitionNote": "Regular 央 tightens those crossing strokes around the center, leaving a character whose visual weight remains concentrated in the middle.",
+        "stageExplanation": "央 is now an abstract written form meaning center/central; the early human-and-center scene is no longer pictorially obvious.",
+        "transitionNote": "The graph was later used for ‘center’; the original scene, if it was a restraint, is no longer visible.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -529,7 +738,7 @@
     ],
     "origin": {
       "concept": "center",
-      "explanation": "A person held or framed through the middle, with the center of the body emphasized.",
+      "explanation": "The early graph shows a frontal person with an element centered around the neck or shoulders.",
       "asset": {
         "characterID": "center",
         "historicalStage": null,
@@ -546,7 +755,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of center",
+        "accessibilityDescription": "Illustration of center / central",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -564,7 +773,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'center', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'center / central', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -634,13 +843,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

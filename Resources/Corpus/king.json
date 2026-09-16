@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "王",
   "coreSharedMeaning": "king",
-  "recognitionTakeaway": "Regular 王 is essentially the standardized version of that three-horizontal, one-vertical frame.",
+  "recognitionTakeaway": "The authority-symbol graph regularizes as 王. The later heaven–human–earth mnemonic is not the ancient construction.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+738B",
   "simplifiedForm": "王",
@@ -15,9 +15,9 @@
     "Oracle still has a person-like silhouette: a central body stands on a base with arms extending from the sides.",
     "Regular 王 is essentially the standardized version of that three-horizontal, one-vertical frame."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-047-王-u738B",
+  "contentFolder": "content/release/symbols/king",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-047-王-u738B/research.md",
+  "researchNotesPath": "content/release/symbols/king/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -50,6 +50,9 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "王"
+          ],
+          "coversReadings": [
+            "wáng"
           ]
         },
         {
@@ -67,6 +70,30 @@
           ]
         },
         {
+          "text": "王国",
+          "reading": "wángguó",
+          "translation": "kingdom",
+          "speechText": "王国",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "王子",
+          "reading": "wángzǐ",
+          "translation": "prince",
+          "speechText": "王子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他是国王。",
           "reading": "Tā shì guówáng.",
           "translation": "He is the king.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "王",
@@ -125,6 +154,18 @@
           "introducedSymbols": [
             "王"
           ]
+        },
+        {
+          "text": "王國",
+          "reading": "wángguó",
+          "translation": "kingdom",
+          "speechText": "王國",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "他是國王。",
@@ -183,6 +224,18 @@
           "introducedSymbols": [
             "王"
           ]
+        },
+        {
+          "text": "呢個係國王。",
+          "reading": "ni1 go3 hai6 gwok3 wong4",
+          "translation": "This is a king.",
+          "speechText": "呢個係國王。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -203,17 +256,22 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "王",
       "readings": [
         {
-          "system": "on",
-          "value": "オウ (ō)",
+          "system": "onyomi",
+          "value": "オウ — ō",
           "audioAssetRef": null,
           "speechText": "おう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "オウ",
+          "romanization": "ō",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -232,7 +290,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "王"
-          ]
+          ],
+          "kanaReading": "おう",
+          "coversReadings": [
+            "オウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "王",
+              "reading": "おう"
+            }
+          ],
+          "furiganaHtml": "<ruby>王<rt>おう</rt></ruby>"
         },
         {
           "text": "王国",
@@ -246,7 +315,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "王"
-          ]
+          ],
+          "kanaReading": "おうこく",
+          "furiganaSegments": [
+            {
+              "text": "王国",
+              "reading": "おうこく"
+            }
+          ],
+          "furiganaHtml": "<ruby>王国<rt>おうこく</rt></ruby>"
+        },
+        {
+          "text": "王様",
+          "reading": "ōsama",
+          "translation": "king; sovereign",
+          "speechText": "王様",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おうさま",
+          "furiganaSegments": [
+            {
+              "text": "王様",
+              "reading": "おうさま"
+            }
+          ],
+          "furiganaHtml": "<ruby>王様<rt>おうさま</rt></ruby>"
+        },
+        {
+          "text": "女王",
+          "reading": "joō",
+          "translation": "queen",
+          "speechText": "女王",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "じょおう",
+          "furiganaSegments": [
+            {
+              "text": "女王",
+              "reading": "じょおう"
+            }
+          ],
+          "furiganaHtml": "<ruby>女王<rt>じょおう</rt></ruby>"
         },
         {
           "text": "王さまが来ます。",
@@ -260,20 +377,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "王"
-          ]
+          ],
+          "kanaReading": "おうさまがきます。",
+          "furiganaSegments": [
+            {
+              "text": "王",
+              "reading": "おう"
+            },
+            {
+              "text": "さまが"
+            },
+            {
+              "text": "来",
+              "reading": "き"
+            },
+            {
+              "text": "ます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>王<rt>おう</rt></ruby>さまが<ruby>来<rt>き</rt></ruby>ます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "オウ",
+        "romanization": "ō",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "王",
       "readings": [
         {
           "system": "hanja",
-          "value": "왕 / wang",
+          "value": "왕 — wang",
           "audioAssetRef": null,
           "speechText": "왕",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "왕",
+          "romanization": "wang"
         }
       ],
       "glosses": [
@@ -309,6 +461,30 @@
           ]
         },
         {
+          "text": "왕자",
+          "reading": "wangja",
+          "translation": "prince",
+          "speechText": "왕자",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "여왕",
+          "reading": "yeowang",
+          "translation": "queen",
+          "speechText": "여왕",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "왕이 와요.",
           "reading": "wangi wayo.",
           "translation": "The king is coming.",
@@ -323,7 +499,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "왕 — wang",
+          "audioAssetRef": null,
+          "speechText": "왕",
+          "speechLanguage": "korean",
+          "nativeReading": "왕",
+          "romanization": "wang"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "왕",
+        "romanization": "wang",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -332,14 +527,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A ruler standing centrally with arms spread, shown beside a ceremonial bronze object.",
+    "originAnchor": "An ancient ceremonial axe associated with royal power. Some scholars interpret the ancient form differently, so its original referent remains debated.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/king/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle still has a person-like silhouette: a central body stands on a base with arms extending from the sides.",
+        "changeNoteFromPrevious": "The selected early graph is interpreted as an axe/ceremonial authority weapon in the leading palaeographic account.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-王"
@@ -365,8 +560,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle still has a person-like silhouette: a central body stands on a base with arms extending from the sides.",
-        "transitionNote": "Oracle still has a person-like silhouette: a central body stands on a base with arms extending from the sides.",
+        "stageExplanation": "The selected early graph is interpreted as an axe/ceremonial authority weapon in the leading palaeographic account.",
+        "transitionNote": "The selected early graph is interpreted as an axe/ceremonial authority weapon in the leading palaeographic account.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -376,7 +571,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/king/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze turns that figure into a vertical stem crossing three strong horizontal levels.",
+        "changeNoteFromPrevious": "The broad axe-like silhouette is increasingly linearized into strong horizontal bars crossed by a central vertical stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-王"
@@ -402,8 +597,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze turns that figure into a vertical stem crossing three strong horizontal levels.",
-        "transitionNote": "Bronze turns that figure into a vertical stem crossing three strong horizontal levels.",
+        "stageExplanation": "The broad axe-like silhouette is increasingly linearized into strong horizontal bars crossed by a central vertical stroke.",
+        "transitionNote": "The broad axe-like silhouette is increasingly linearized into strong horizontal bars crossed by a central vertical stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -413,7 +608,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/king/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the three bars and central vertical into an almost geometric 王.",
+        "changeNoteFromPrevious": "The bars and central stem are regularized into a nearly geometric framework, further obscuring the original axe silhouette.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-王"
@@ -439,8 +634,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the three bars and central vertical into an almost geometric 王.",
-        "transitionNote": "Small Seal regularizes the three bars and central vertical into an almost geometric 王.",
+        "stageExplanation": "The bars and central stem are regularized into a nearly geometric framework, further obscuring the original axe silhouette.",
+        "transitionNote": "The bars and central stem are regularized into a nearly geometric framework, further obscuring the original axe silhouette.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -450,7 +645,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/king/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical keeps the same structure but broadens the bars and gives the vertical a slight brush bend.",
+        "changeNoteFromPrevious": "The same framework is flattened and balanced into distinct brush strokes while preserving the crossed-bar structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-王"
@@ -476,8 +671,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical keeps the same structure but broadens the bars and gives the vertical a slight brush bend.",
-        "transitionNote": "Clerical keeps the same structure but broadens the bars and gives the vertical a slight brush bend.",
+        "stageExplanation": "The same framework is flattened and balanced into distinct brush strokes while preserving the crossed-bar structure.",
+        "transitionNote": "The same framework is flattened and balanced into distinct brush strokes while preserving the crossed-bar structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -487,7 +682,7 @@
         "label": "Regular Script",
         "form": "王",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 王 is essentially the standardized version of that three-horizontal, one-vertical frame.",
+        "changeNoteFromPrevious": "The authority-symbol graph regularizes as 王. The later heaven–human–earth mnemonic is not the ancient construction.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -513,8 +708,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 王 is essentially the standardized version of that three-horizontal, one-vertical frame.",
-        "transitionNote": "Regular 王 is essentially the standardized version of that three-horizontal, one-vertical frame.",
+        "stageExplanation": "The authority-symbol graph regularizes as 王. The later heaven–human–earth mnemonic is not the ancient construction.",
+        "transitionNote": "The authority-symbol graph regularizes as 王. The later heaven–human–earth mnemonic is not the ancient construction.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -522,7 +717,7 @@
     ],
     "origin": {
       "concept": "king",
-      "explanation": "A ruler standing centrally with arms spread, shown beside a ceremonial bronze object.",
+      "explanation": "A large axe or ceremonial weapon associated with royal power in a leading palaeographic account.",
       "asset": {
         "characterID": "king",
         "historicalStage": null,
@@ -627,13 +822,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

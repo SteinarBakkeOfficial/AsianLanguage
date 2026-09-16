@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "友",
   "coreSharedMeaning": "friend",
-  "recognitionTakeaway": "Regular 友 compresses the two-hand history into the upper crossing stroke and lower 又-like hand, leaving the handshake idea abstract but still recoverable.",
+  "recognitionTakeaway": "Compresses the two-hand history into the upper crossing stroke and lower 又-like hand, leaving the handshake idea abstract but still recoverable.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+53CB",
   "simplifiedForm": "友",
@@ -15,9 +15,9 @@
     "Oracle shows two long arm-and-hand forms side by side, with forked fingers facing inward.",
     "Regular 友 compresses the two-hand history into the upper crossing stroke and lower 又-like hand, leaving the handshake idea abstract but still recoverable."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-103-友-u53CB",
+  "contentFolder": "content/release/symbols/friend",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-103-友-u53CB/research.md",
+  "researchNotesPath": "content/release/symbols/friend/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "friend"
       ],
       "examples": [
+        {
+          "text": "友",
+          "reading": "yǒu",
+          "translation": "friend",
+          "speechText": "友",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "yǒu"
+          ]
+        },
         {
           "text": "朋友",
           "reading": "péngyou",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "友好",
+          "reading": "yǒuhǎo",
+          "translation": "friendly",
+          "speechText": "友好",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他是我的好友。",
           "reading": "Tā shì wǒ de hǎoyǒu.",
           "translation": "He is my good friend.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "友",
@@ -98,6 +127,18 @@
         "friend"
       ],
       "taiwanExamples": [
+        {
+          "text": "友",
+          "reading": "yǒu",
+          "translation": "friend",
+          "speechText": "友",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "朋友",
           "reading": "péngyou",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "友",
+          "reading": "jau5",
+          "translation": "friend",
+          "speechText": "友",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "朋友",
           "reading": "pang4 jau5",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "友",
       "readings": [
         {
-          "system": "on",
-          "value": "ユウ (yū)",
+          "system": "onyomi",
+          "value": "ユウ — yū",
           "audioAssetRef": null,
           "speechText": "ゆう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ユウ",
+          "romanization": "yū",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "とも (tomo)",
+          "system": "kunyomi",
+          "value": "とも — tomo",
           "audioAssetRef": null,
           "speechText": "とも",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "とも",
+          "romanization": "tomo",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "友"
-          ]
+          ],
+          "kanaReading": "とも",
+          "coversReadings": [
+            "とも"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "友",
+              "reading": "とも"
+            }
+          ],
+          "furiganaHtml": "<ruby>友<rt>とも</rt></ruby>"
         },
         {
           "text": "友達",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "友"
-          ]
+          ],
+          "kanaReading": "ともだち",
+          "furiganaSegments": [
+            {
+              "text": "友達",
+              "reading": "ともだち"
+            }
+          ],
+          "furiganaHtml": "<ruby>友達<rt>ともだち</rt></ruby>"
+        },
+        {
+          "text": "友人",
+          "reading": "yūjin",
+          "translation": "friend",
+          "speechText": "友人",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ゆうじん",
+          "coversReadings": [
+            "ユウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "友人",
+              "reading": "ゆうじん"
+            }
+          ],
+          "furiganaHtml": "<ruby>友人<rt>ゆうじん</rt></ruby>"
+        },
+        {
+          "text": "友情",
+          "reading": "yūjō",
+          "translation": "friendship",
+          "speechText": "友情",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ゆうじょう",
+          "furiganaSegments": [
+            {
+              "text": "友情",
+              "reading": "ゆうじょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>友情<rt>ゆうじょう</rt></ruby>"
         },
         {
           "text": "友達に会います。",
@@ -267,33 +390,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "友"
-          ]
+          ],
+          "kanaReading": "ともだちにあいます。",
+          "furiganaSegments": [
+            {
+              "text": "友達",
+              "reading": "ともだち"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "会",
+              "reading": "あ"
+            },
+            {
+              "text": "います"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>友達<rt>ともだち</rt></ruby>に<ruby>会<rt>あ</rt></ruby>います。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "とも",
+        "romanization": "tomo",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "友",
       "readings": [
         {
           "system": "hanja",
-          "value": "우 / u",
+          "value": "우 — u",
           "audioAssetRef": null,
           "speechText": "우",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "친구 / chingu",
-          "audioAssetRef": null,
-          "speechText": "친구",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "우",
+          "romanization": "u"
         }
       ],
       "glosses": [
         "friend"
       ],
       "examples": [
+        {
+          "text": "친구",
+          "reading": "chingu",
+          "translation": "friend",
+          "speechText": "친구",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "우정",
           "reading": "ujeong",
@@ -323,6 +487,18 @@
           ]
         },
         {
+          "text": "우호",
+          "reading": "uho",
+          "translation": "friendship / friendly relations",
+          "speechText": "우호",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "친구를 만나요.",
           "reading": "chingureul mannayo.",
           "translation": "I meet a friend.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "우 — u",
+          "audioAssetRef": null,
+          "speechText": "우",
+          "speechLanguage": "korean",
+          "nativeReading": "우",
+          "romanization": "u"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "친구 — chingu",
+          "audioAssetRef": null,
+          "speechText": "친구",
+          "speechLanguage": "korean",
+          "nativeReading": "친구",
+          "romanization": "chingu",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "friend",
+          "displayTier": "secondary",
+          "lexicalOrigin": "sinoKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "우",
+        "romanization": "u",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +561,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Two hands reaching toward one another and joining in a handshake.",
+    "originAnchor": "Two hands facing the same way suggest friendship in the traditional interpretation; the repeated hand element also serves as a sound element in modern analyses.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/friend/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows two long arm-and-hand forms side by side, with forked fingers facing inward.",
+        "changeNoteFromPrevious": "Two ancient hand forms are placed together, giving a paired or cooperative-hand image; the repeated hand element may also serve as a sound element.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-友"
@@ -379,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows two long arm-and-hand forms side by side, with forked fingers facing inward.",
-        "transitionNote": "Oracle shows two long arm-and-hand forms side by side, with forked fingers facing inward.",
+        "stageExplanation": "Two ancient hand forms are placed together, giving a paired or cooperative-hand image.",
+        "transitionNote": "Two ancient hand forms are placed together, giving a paired or cooperative-hand image; the repeated hand element may also serve as a sound element.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +605,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/friend/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze curves both hands into bold mirrored shapes that lean toward one another.",
+        "changeNoteFromPrevious": "Curves both hands into bold mirrored shapes that lean toward one another.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-友"
@@ -416,8 +631,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze curves both hands into bold mirrored shapes that lean toward one another.",
-        "transitionNote": "Bronze curves both hands into bold mirrored shapes that lean toward one another.",
+        "stageExplanation": "Curves both hands into bold mirrored shapes that lean toward one another.",
+        "transitionNote": "Curves both hands into bold mirrored shapes that lean toward one another.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +642,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/friend/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal stacks and overlaps the two hand forms, turning the pair into a dense set of horizontal finger strokes and one long sweep.",
+        "changeNoteFromPrevious": "Stacks and overlaps the two hand forms, turning the pair into a dense set of horizontal finger strokes and one long sweep.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-友"
@@ -453,8 +668,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal stacks and overlaps the two hand forms, turning the pair into a dense set of horizontal finger strokes and one long sweep.",
-        "transitionNote": "Small Seal stacks and overlaps the two hand forms, turning the pair into a dense set of horizontal finger strokes and one long sweep.",
+        "stageExplanation": "Stacks and overlaps the two hand forms, turning the pair into a dense set of horizontal finger strokes and one long sweep.",
+        "transitionNote": "Stacks and overlaps the two hand forms, turning the pair into a dense set of horizontal finger strokes and one long sweep.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +679,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/friend/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the fingers into parallel bars and stretches one arm strongly to the right.",
+        "changeNoteFromPrevious": "Flattens the fingers into parallel bars and stretches one arm strongly to the right.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-友"
@@ -490,8 +705,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the fingers into parallel bars and stretches one arm strongly to the right.",
-        "transitionNote": "Clerical flattens the fingers into parallel bars and stretches one arm strongly to the right.",
+        "stageExplanation": "Flattens the fingers into parallel bars and stretches one arm strongly to the right.",
+        "transitionNote": "Flattens the fingers into parallel bars and stretches one arm strongly to the right.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "友",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 友 compresses the two-hand history into the upper crossing stroke and lower 又-like hand, leaving the handshake idea abstract but still recoverable.",
+        "changeNoteFromPrevious": "Compresses the two-hand history into the upper crossing stroke and lower 又-like hand, leaving the handshake idea abstract but still recoverable.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 友 compresses the two-hand history into the upper crossing stroke and lower 又-like hand, leaving the handshake idea abstract but still recoverable.",
-        "transitionNote": "Regular 友 compresses the two-hand history into the upper crossing stroke and lower 又-like hand, leaving the handshake idea abstract but still recoverable.",
+        "stageExplanation": "Compresses the two-hand history into the upper crossing stroke and lower 又-like hand, leaving the handshake idea abstract but still recoverable.",
+        "transitionNote": "Compresses the two-hand history into the upper crossing stroke and lower 又-like hand, leaving the handshake idea abstract but still recoverable.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "friend",
-      "explanation": "Two hands reaching toward one another and joining in a handshake.",
+      "explanation": "Two hand forms are oriented toward one another in a cooperative relation.",
       "asset": {
         "characterID": "friend",
         "historicalStage": null,
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

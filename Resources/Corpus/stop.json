@@ -2,8 +2,8 @@
   "id": "stop",
   "version": 1,
   "coreCharacter": "止",
-  "coreSharedMeaning": "stop",
-  "recognitionTakeaway": "Regular 止 squares the foot into vertical and horizontal strokes; the toes and heel are no longer pictorial, but their branching arrangement still underlies the form.",
+  "coreSharedMeaning": "stop (originally foot)",
+  "recognitionTakeaway": "The foot pictograph stabilizes as 止 for “stop,” while 趾 later preserves the foot/toe sense.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6B62",
   "simplifiedForm": "止",
@@ -15,9 +15,9 @@
     "Oracle resembles a foot seen in profile, with a lower heel-like box and several toe or leg strokes rising above it.",
     "Regular 止 squares the foot into vertical and horizontal strokes; the toes and heel are no longer pictorial, but their branching arrangement still underlies the form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-092-止-u6B62",
+  "contentFolder": "content/release/symbols/stop",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-092-止-u6B62/research.md",
+  "researchNotesPath": "content/release/symbols/stop/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "stop"
       ],
       "examples": [
+        {
+          "text": "止",
+          "reading": "zhǐ",
+          "translation": "stop",
+          "speechText": "止",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zhǐ"
+          ]
+        },
         {
           "text": "停止",
           "reading": "tíngzhǐ",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "止痛",
+          "reading": "zhǐtòng",
+          "translation": "relieve pain",
+          "speechText": "止痛",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "请停止。",
           "reading": "Qǐng tíngzhǐ.",
           "translation": "Please stop.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "止",
@@ -98,6 +127,18 @@
         "stop"
       ],
       "taiwanExamples": [
+        {
+          "text": "止",
+          "reading": "zhǐ",
+          "translation": "stop",
+          "speechText": "止",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "停止",
           "reading": "tíngzhǐ",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "止",
+          "reading": "zi2",
+          "translation": "stop",
+          "speechText": "止",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "停止",
           "reading": "ting4 zi2",
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "止",
       "readings": [
         {
-          "system": "on",
-          "value": "シ (shi)",
+          "system": "onyomi",
+          "value": "シ — shi",
           "audioAssetRef": null,
           "speechText": "し",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "シ",
+          "romanization": "shi",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "とまる (tomaru)",
+          "system": "kunyomi",
+          "value": "とまる — tomaru",
           "audioAssetRef": null,
           "speechText": "とまる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "とまる",
+          "romanization": "tomaru",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "とめる (tomeru)",
+          "system": "kunyomi",
+          "value": "とめる — tomeru",
           "audioAssetRef": null,
           "speechText": "とめる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "とめる",
+          "romanization": "tomeru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "止"
-          ]
+          ],
+          "kanaReading": "とまる",
+          "coversReadings": [
+            "とまる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "止",
+              "reading": "と"
+            },
+            {
+              "text": "まる"
+            }
+          ],
+          "furiganaHtml": "<ruby>止<rt>と</rt></ruby>まる"
         },
         {
           "text": "中止",
@@ -260,7 +338,64 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "止"
-          ]
+          ],
+          "kanaReading": "ちゅうし",
+          "coversReadings": [
+            "シ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "中止",
+              "reading": "ちゅうし"
+            }
+          ],
+          "furiganaHtml": "<ruby>中止<rt>ちゅうし</rt></ruby>"
+        },
+        {
+          "text": "停止",
+          "reading": "teishi",
+          "translation": "stop; halt",
+          "speechText": "停止",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ていし",
+          "furiganaSegments": [
+            {
+              "text": "停止",
+              "reading": "ていし"
+            }
+          ],
+          "furiganaHtml": "<ruby>停止<rt>ていし</rt></ruby>"
+        },
+        {
+          "text": "止める",
+          "reading": "tomeru",
+          "translation": "stop (something)",
+          "speechText": "止める",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "とめる",
+          "coversReadings": [
+            "とめる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "止",
+              "reading": "と"
+            },
+            {
+              "text": "める"
+            }
+          ],
+          "furiganaHtml": "<ruby>止<rt>と</rt></ruby>める"
         },
         {
           "text": "車が止まります。",
@@ -274,33 +409,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "止"
-          ]
+          ],
+          "kanaReading": "くるまがとまります。",
+          "furiganaSegments": [
+            {
+              "text": "車",
+              "reading": "くるま"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "止",
+              "reading": "と"
+            },
+            {
+              "text": "まります"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>車<rt>くるま</rt></ruby>が<ruby>止<rt>と</rt></ruby>まります。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "とまる",
+        "romanization": "tomaru",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "止",
       "readings": [
         {
           "system": "hanja",
-          "value": "지 / ji",
+          "value": "지 — ji",
           "audioAssetRef": null,
           "speechText": "지",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "멈추다 / meomchuda",
-          "audioAssetRef": null,
-          "speechText": "멈추다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "지",
+          "romanization": "ji"
         }
       ],
       "glosses": [
         "stop"
       ],
       "examples": [
+        {
+          "text": "멈추다",
+          "reading": "meomchuda",
+          "translation": "stop",
+          "speechText": "멈추다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "정지",
           "reading": "jeongji",
@@ -330,6 +506,18 @@
           ]
         },
         {
+          "text": "중지",
+          "reading": "jungji",
+          "translation": "stop / suspension",
+          "speechText": "중지",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "차가 멈춰요.",
           "reading": "chaga meomchwoyo.",
           "translation": "The car stops.",
@@ -344,7 +532,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "지 — ji",
+          "audioAssetRef": null,
+          "speechText": "지",
+          "speechLanguage": "korean",
+          "nativeReading": "지",
+          "romanization": "ji"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "멈추다 — meomchuda",
+          "audioAssetRef": null,
+          "speechText": "멈추다",
+          "speechLanguage": "korean",
+          "nativeReading": "멈추다",
+          "romanization": "meomchuda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "stop",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "지",
+        "romanization": "ji",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +580,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A footprint and foot shown stopping, followed by a raised hand gesture for “stop.”",
+    "originAnchor": "A foot or footprint.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/stop/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle resembles a foot seen in profile, with a lower heel-like box and several toe or leg strokes rising above it.",
+        "changeNoteFromPrevious": "The graph is a foot/sole pictograph; “stop” is the later word written with this graph.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-止"
@@ -386,8 +613,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle resembles a foot seen in profile, with a lower heel-like box and several toe or leg strokes rising above it.",
-        "transitionNote": "Oracle resembles a foot seen in profile, with a lower heel-like box and several toe or leg strokes rising above it.",
+        "stageExplanation": "The graph is a foot/sole pictograph; “stop” is the later word written with this graph.",
+        "transitionNote": "The graph is a foot/sole pictograph; “stop” is the later word written with this graph.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +624,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/stop/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze in this selected rubbing is a stark footprint-like silhouette, making the foot origin unusually visible again.",
+        "changeNoteFromPrevious": "In this selected rubbing is a stark footprint-like silhouette, making the foot origin unusually visible again.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-止"
@@ -423,8 +650,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze in this selected rubbing is a stark footprint-like silhouette, making the foot origin unusually visible again.",
-        "transitionNote": "Bronze in this selected rubbing is a stark footprint-like silhouette, making the foot origin unusually visible again.",
+        "stageExplanation": "In this selected rubbing is a stark footprint-like silhouette, making the foot origin unusually visible again.",
+        "transitionNote": "In this selected rubbing is a stark footprint-like silhouette, making the foot origin unusually visible again.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +661,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/stop/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal abstracts the foot into three upright prongs rising from a curved base and one long lower sweep.",
+        "changeNoteFromPrevious": "Abstracts the foot into three upright prongs rising from a curved base and one long lower sweep.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-止"
@@ -460,8 +687,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal abstracts the foot into three upright prongs rising from a curved base and one long lower sweep.",
-        "transitionNote": "Small Seal abstracts the foot into three upright prongs rising from a curved base and one long lower sweep.",
+        "stageExplanation": "Abstracts the foot into three upright prongs rising from a curved base and one long lower sweep.",
+        "transitionNote": "Abstracts the foot into three upright prongs rising from a curved base and one long lower sweep.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +698,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/stop/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical thickens the same foot skeleton and straightens the bottom into a stronger base.",
+        "changeNoteFromPrevious": "Thickens the same foot skeleton and straightens the bottom into a stronger base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-止"
@@ -497,8 +724,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical thickens the same foot skeleton and straightens the bottom into a stronger base.",
-        "transitionNote": "Clerical thickens the same foot skeleton and straightens the bottom into a stronger base.",
+        "stageExplanation": "Thickens the same foot skeleton and straightens the bottom into a stronger base.",
+        "transitionNote": "Thickens the same foot skeleton and straightens the bottom into a stronger base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +735,7 @@
         "label": "Regular Script",
         "form": "止",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 止 squares the foot into vertical and horizontal strokes; the toes and heel are no longer pictorial, but their branching arrangement still underlies the form.",
+        "changeNoteFromPrevious": "The foot pictograph stabilizes as 止 for “stop,” while 趾 later preserves the foot/toe sense.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +761,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 止 squares the foot into vertical and horizontal strokes; the toes and heel are no longer pictorial, but their branching arrangement still underlies the form.",
-        "transitionNote": "Regular 止 squares the foot into vertical and horizontal strokes; the toes and heel are no longer pictorial, but their branching arrangement still underlies the form.",
+        "stageExplanation": "The foot pictograph stabilizes as 止 for “stop,” while 趾 later preserves the foot/toe sense.",
+        "transitionNote": "The foot pictograph stabilizes as 止 for “stop,” while 趾 later preserves the foot/toe sense.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +770,7 @@
     ],
     "origin": {
       "concept": "stop",
-      "explanation": "A footprint and foot shown stopping, followed by a raised hand gesture for “stop.”",
+      "explanation": "A foot/footprint or sole.",
       "asset": {
         "characterID": "stop",
         "historicalStage": null,
@@ -560,7 +787,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of stop",
+        "accessibilityDescription": "Illustration of stop (originally foot)",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +805,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'stop', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'stop (originally foot)', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +875,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

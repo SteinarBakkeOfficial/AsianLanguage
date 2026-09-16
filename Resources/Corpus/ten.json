@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "十",
   "coreSharedMeaning": "ten",
-  "recognitionTakeaway": "Regular 十 keeps that cross unchanged in principle, with regular-script taper and balance added to the two strokes.",
+  "recognitionTakeaway": "The later cross form stabilizes as 十; a proposed needle prehistory remains a research-note theory, not learner fact.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5341",
   "simplifiedForm": "十",
@@ -15,9 +15,9 @@
     "Oracle is only one thick vertical stroke; the familiar cross is not present yet.",
     "Regular 十 keeps that cross unchanged in principle, with regular-script taper and balance added to the two strokes."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-082-十-u5341",
+  "contentFolder": "content/release/symbols/ten",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-082-十-u5341/research.md",
+  "researchNotesPath": "content/release/symbols/ten/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "ten"
       ],
       "examples": [
+        {
+          "text": "十",
+          "reading": "shí",
+          "translation": "ten",
+          "speechText": "十",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shí"
+          ]
+        },
         {
           "text": "十月",
           "reading": "shíyuè",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "十个",
+          "reading": "shí ge",
+          "translation": "ten items",
+          "speechText": "十个",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "现在十点。",
           "reading": "Xiànzài shí diǎn.",
           "translation": "It is ten o’clock now.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "十",
@@ -98,6 +127,18 @@
         "ten"
       ],
       "taiwanExamples": [
+        {
+          "text": "十",
+          "reading": "shí",
+          "translation": "ten",
+          "speechText": "十",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "十月",
           "reading": "shíyuè",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "十",
+          "reading": "sap6",
+          "translation": "ten",
+          "speechText": "十",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "十月",
           "reading": "sap6 jyut6",
@@ -203,24 +256,54 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "十",
       "readings": [
         {
-          "system": "on",
-          "value": "ジュウ (jū)",
+          "system": "onyomi",
+          "value": "ジュウ — jū",
           "audioAssetRef": null,
           "speechText": "じゅう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ジュウ",
+          "romanization": "jū",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "とお (tō)",
+          "system": "kunyomi",
+          "value": "とお — tō",
           "audioAssetRef": null,
           "speechText": "とお",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "とお",
+          "romanization": "tō",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "onyomi",
+          "value": "ジッ — ji (geminating form)",
+          "audioAssetRef": null,
+          "speechText": "ジッ",
+          "speechLanguage": "japanese",
+          "nativeReading": "ジッ",
+          "romanization": "ji (geminating form)",
+          "historicalOrigin": "sinoJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
+        },
+        {
+          "system": "kunyomi",
+          "value": "と — to",
+          "audioAssetRef": null,
+          "speechText": "と",
+          "speechLanguage": "japanese",
+          "nativeReading": "と",
+          "romanization": "to",
+          "historicalOrigin": "nativeJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
         }
       ],
       "glosses": [
@@ -239,7 +322,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "十"
-          ]
+          ],
+          "kanaReading": "じゅう",
+          "coversReadings": [
+            "ジュウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "十",
+              "reading": "じゅう"
+            }
+          ],
+          "furiganaHtml": "<ruby>十<rt>じゅう</rt></ruby>"
         },
         {
           "text": "十時",
@@ -253,7 +347,100 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "十"
-          ]
+          ],
+          "kanaReading": "じゅうじ",
+          "furiganaSegments": [
+            {
+              "text": "十時",
+              "reading": "じゅうじ"
+            }
+          ],
+          "furiganaHtml": "<ruby>十時<rt>じゅうじ</rt></ruby>"
+        },
+        {
+          "text": "十日",
+          "reading": "tōka",
+          "translation": "the tenth day; ten days",
+          "speechText": "十日",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "とおか",
+          "coversReadings": [
+            "とお"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "十日",
+              "reading": "とおか"
+            }
+          ],
+          "furiganaHtml": "<ruby>十日<rt>とおか</rt></ruby>"
+        },
+        {
+          "text": "十年",
+          "reading": "jūnen",
+          "translation": "ten years",
+          "speechText": "十年",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "じゅうねん",
+          "furiganaSegments": [
+            {
+              "text": "十年",
+              "reading": "じゅうねん"
+            }
+          ],
+          "furiganaHtml": "<ruby>十年<rt>じゅうねん</rt></ruby>"
+        },
+        {
+          "text": "十回",
+          "reading": "jikkai",
+          "translation": "ten times",
+          "speechText": "十回",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "じっかい",
+          "coversReadings": [
+            "ジッ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "十回",
+              "reading": "じっかい"
+            }
+          ],
+          "furiganaHtml": "<ruby>十回<rt>じっかい</rt></ruby>"
+        },
+        {
+          "text": "十色",
+          "reading": "toiro",
+          "translation": "ten colors; many varieties",
+          "speechText": "十色",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "といろ",
+          "coversReadings": [
+            "と"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "十色",
+              "reading": "といろ"
+            }
+          ],
+          "furiganaHtml": "<ruby>十色<rt>といろ</rt></ruby>"
         },
         {
           "text": "今は十時です。",
@@ -267,27 +454,56 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "十"
-          ]
+          ],
+          "kanaReading": "いまはじゅうじです。",
+          "furiganaSegments": [
+            {
+              "text": "今",
+              "reading": "いま"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "十時",
+              "reading": "じゅうじ"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>今<rt>いま</rt></ruby>は<ruby>十時<rt>じゅうじ</rt></ruby>です。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout.",
+        "note": "Official table includes ジュウ, ジッ, とお, と; ジュッ is accepted in relevant contexts. ジッ is realized with consonant gemination in words such as 十回 jikkai."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ジュウ",
+        "romanization": "jū",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "十",
       "readings": [
         {
           "system": "hanja",
-          "value": "십 / sip",
+          "value": "십 — sip",
           "audioAssetRef": null,
           "speechText": "십",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "열 / yeol",
-          "audioAssetRef": null,
-          "speechText": "열",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "십",
+          "romanization": "sip"
         }
       ],
       "glosses": [
@@ -295,10 +511,23 @@
       ],
       "examples": [
         {
-          "text": "십월",
+          "text": "열",
+          "reading": "yeol",
+          "translation": "ten",
+          "speechText": "열",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "시월",
           "reading": "siwol",
           "translation": "October",
-          "speechText": "십월",
+          "speechText": "시월",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -323,6 +552,18 @@
           ]
         },
         {
+          "text": "십대",
+          "reading": "sipdae",
+          "translation": "teens",
+          "speechText": "십대",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "열 개 있어요.",
           "reading": "yeol gae isseoyo.",
           "translation": "There are ten.",
@@ -337,7 +578,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "십 — sip",
+          "audioAssetRef": null,
+          "speechText": "십",
+          "speechLanguage": "korean",
+          "nativeReading": "십",
+          "romanization": "sip"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "열 — yeol",
+          "audioAssetRef": null,
+          "speechText": "열",
+          "speechLanguage": "korean",
+          "nativeReading": "열",
+          "romanization": "yeol",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "ten",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "십",
+        "romanization": "sip",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +626,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A single upright stake combined with a crossing horizontal piece.",
+    "originAnchor": "A single vertical mark represents ten in the selected earliest form.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/ten/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is only one thick vertical stroke; the familiar cross is not present yet.",
+        "changeNoteFromPrevious": "The earliest ten sign is a single vertical mark; no crossbar should be projected backward into this stage.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-十"
@@ -379,8 +659,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is only one thick vertical stroke; the familiar cross is not present yet.",
-        "transitionNote": "Oracle is only one thick vertical stroke; the familiar cross is not present yet.",
+        "stageExplanation": "The earliest ten sign is a single vertical mark; no crossbar should be projected backward into this stage.",
+        "transitionNote": "The earliest ten sign is a single vertical mark; no crossbar should be projected backward into this stage.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +670,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/ten/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze remains a single vertical line, slightly tapered but still without a horizontal.",
+        "changeNoteFromPrevious": "The vertical numeral mark may thicken or gain a central feature in later early forms.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-十"
@@ -416,8 +696,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze remains a single vertical line, slightly tapered but still without a horizontal.",
-        "transitionNote": "Bronze remains a single vertical line, slightly tapered but still without a horizontal.",
+        "stageExplanation": "The vertical numeral mark may thicken or gain a central feature in later early forms.",
+        "transitionNote": "The vertical numeral mark may thicken or gain a central feature in later early forms.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +707,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/ten/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal introduces the decisive horizontal crossbar through the middle of the vertical.",
+        "changeNoteFromPrevious": "A short cross-stroke becomes established, producing the ancestor of the modern shape.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-十"
@@ -453,8 +733,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal introduces the decisive horizontal crossbar through the middle of the vertical.",
-        "transitionNote": "Small Seal introduces the decisive horizontal crossbar through the middle of the vertical.",
+        "stageExplanation": "A short cross-stroke becomes established, producing the ancestor of the modern shape.",
+        "transitionNote": "A short cross-stroke becomes established, producing the ancestor of the modern shape.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +744,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/ten/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical thickens both arms of the newly formed cross.",
+        "changeNoteFromPrevious": "Thickens both arms of the newly formed cross.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-十"
@@ -490,8 +770,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical thickens both arms of the newly formed cross.",
-        "transitionNote": "Clerical thickens both arms of the newly formed cross.",
+        "stageExplanation": "Thickens both arms of the newly formed cross.",
+        "transitionNote": "Thickens both arms of the newly formed cross.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +781,7 @@
         "label": "Regular Script",
         "form": "十",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 十 keeps that cross unchanged in principle, with regular-script taper and balance added to the two strokes.",
+        "changeNoteFromPrevious": "The later cross form stabilizes as 十; a proposed needle prehistory remains a research-note theory, not learner fact.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +807,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 十 keeps that cross unchanged in principle, with regular-script taper and balance added to the two strokes.",
-        "transitionNote": "Regular 十 keeps that cross unchanged in principle, with regular-script taper and balance added to the two strokes.",
+        "stageExplanation": "The later cross form stabilizes as 十; a proposed needle prehistory remains a research-note theory, not learner fact.",
+        "transitionNote": "The later cross form stabilizes as 十; a proposed needle prehistory remains a research-note theory, not learner fact.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +816,7 @@
     ],
     "origin": {
       "concept": "ten",
-      "explanation": "A single upright stake combined with a crossing horizontal piece.",
+      "explanation": "The earliest form is a single vertical mark for ten; later forms add a central thickening/dot and eventually a short crossbar.",
       "asset": {
         "characterID": "ten",
         "historicalStage": null,
@@ -641,13 +921,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

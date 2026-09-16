@@ -1,0 +1,869 @@
+{
+  "id": "bow",
+  "version": 1,
+  "coreCharacter": "弓",
+  "coreSharedMeaning": "bow",
+  "recognitionTakeaway": "Regularizes the angular bends into three compact turns while retaining the unmistakable bowed profile.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+5F13",
+  "simplifiedForm": "弓",
+  "traditionalForm": "弓",
+  "additionalMeanings": [],
+  "formationType": "pictograph",
+  "visualTeachingNotes": [
+    "A long bow shown strung, with separate close studies of its curved limbs and binding.",
+    "Oracle shows a vertical bow profile with a deep inward curve and a straight opposing edge.",
+    "Regular 弓 regularizes the angular bends into three compact turns while retaining the unmistakable bowed profile."
+  ],
+  "contentFolder": "content/release/symbols/bow",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/bow/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 40,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "弓",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "gōng",
+          "audioAssetRef": null,
+          "speechText": "弓",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "bow"
+      ],
+      "examples": [
+        {
+          "text": "弓",
+          "reading": "gōng",
+          "translation": "bow",
+          "speechText": "弓",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ],
+          "coversReadings": [
+            "gōng"
+          ]
+        },
+        {
+          "text": "弓箭",
+          "reading": "gōngjiàn",
+          "translation": "bow and arrow",
+          "speechText": "弓箭",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        },
+        {
+          "text": "弓手",
+          "reading": "gōngshǒu",
+          "translation": "archer",
+          "speechText": "弓手",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "弓形",
+          "reading": "gōngxíng",
+          "translation": "bow-shaped; arc-shaped",
+          "speechText": "弓形",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "他会拉弓。",
+          "reading": "Tā huì lā gōng.",
+          "translation": "He can draw a bow.",
+          "speechText": "他会拉弓。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "弓",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "gōng",
+          "audioAssetRef": null,
+          "speechText": "弓",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "bow"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "弓",
+          "reading": "gōng",
+          "translation": "bow",
+          "speechText": "弓",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        },
+        {
+          "text": "弓箭",
+          "reading": "gōngjiàn",
+          "translation": "bow and arrow",
+          "speechText": "弓箭",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        },
+        {
+          "text": "弓手",
+          "reading": "gōngshǒu",
+          "translation": "archer",
+          "speechText": "弓手",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "他會拉弓。",
+          "reading": "Tā huì lā gōng.",
+          "translation": "He can draw a bow.",
+          "speechText": "他會拉弓。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "弓",
+          "reading": "gung1",
+          "translation": "bow",
+          "speechText": "弓",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        },
+        {
+          "text": "弓箭",
+          "reading": "gung1 zin3",
+          "translation": "bow and arrow",
+          "speechText": "弓箭",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        },
+        {
+          "text": "佢識拉弓。",
+          "reading": "keoi5 sik1 laai1 gung1",
+          "translation": "He can draw a bow.",
+          "speechText": "佢識拉弓。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        },
+        {
+          "text": "呢個係弓箭。",
+          "reading": "ni1 go3 hai6 gung1 zin3",
+          "translation": "This is a bow and arrow.",
+          "speechText": "呢個係弓箭。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "gōng",
+          "audioAssetRef": null,
+          "speechText": "弓",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "gung1",
+          "audioAssetRef": null,
+          "speechText": "弓",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "弓",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "キュウ — kyū",
+          "audioAssetRef": null,
+          "speechText": "きゅう",
+          "speechLanguage": "japanese",
+          "nativeReading": "キュウ",
+          "romanization": "kyū",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "ゆみ — yumi",
+          "audioAssetRef": null,
+          "speechText": "ゆみ",
+          "speechLanguage": "japanese",
+          "nativeReading": "ゆみ",
+          "romanization": "yumi",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "bow"
+      ],
+      "examples": [
+        {
+          "text": "弓",
+          "reading": "yumi",
+          "translation": "bow",
+          "speechText": "弓",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ],
+          "kanaReading": "ゆみ",
+          "coversReadings": [
+            "ゆみ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "弓",
+              "reading": "ゆみ"
+            }
+          ],
+          "furiganaHtml": "<ruby>弓<rt>ゆみ</rt></ruby>"
+        },
+        {
+          "text": "弓道",
+          "reading": "kyūdō",
+          "translation": "Japanese archery",
+          "speechText": "弓道",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ],
+          "kanaReading": "きゅうどう",
+          "coversReadings": [
+            "キュウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "弓道",
+              "reading": "きゅうどう"
+            }
+          ],
+          "furiganaHtml": "<ruby>弓道<rt>きゅうどう</rt></ruby>"
+        },
+        {
+          "text": "洋弓",
+          "reading": "yōkyū",
+          "translation": "Western-style bow",
+          "speechText": "洋弓",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ようきゅう",
+          "furiganaSegments": [
+            {
+              "text": "洋弓",
+              "reading": "ようきゅう"
+            }
+          ],
+          "furiganaHtml": "<ruby>洋弓<rt>ようきゅう</rt></ruby>"
+        },
+        {
+          "text": "弓矢",
+          "reading": "yumiya",
+          "translation": "bow and arrow",
+          "speechText": "弓矢",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ゆみや",
+          "furiganaSegments": [
+            {
+              "text": "弓矢",
+              "reading": "ゆみや"
+            }
+          ],
+          "furiganaHtml": "<ruby>弓矢<rt>ゆみや</rt></ruby>"
+        },
+        {
+          "text": "弓を引きます。",
+          "reading": "yumi o hikimasu.",
+          "translation": "I draw a bow.",
+          "speechText": "弓を引きます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ],
+          "kanaReading": "ゆみをひきます。",
+          "furiganaSegments": [
+            {
+              "text": "弓",
+              "reading": "ゆみ"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "引",
+              "reading": "ひ"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>弓<rt>ゆみ</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>きます。"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ゆみ",
+        "romanization": "yumi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "弓",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "궁 — gung",
+          "audioAssetRef": null,
+          "speechText": "궁",
+          "speechLanguage": "korean",
+          "nativeReading": "궁",
+          "romanization": "gung"
+        }
+      ],
+      "glosses": [
+        "bow"
+      ],
+      "examples": [
+        {
+          "text": "활",
+          "reading": "hwal",
+          "translation": "bow",
+          "speechText": "활",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "궁도",
+          "reading": "gungdo",
+          "translation": "archery",
+          "speechText": "궁도",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        },
+        {
+          "text": "궁수",
+          "reading": "gungsu",
+          "translation": "archer",
+          "speechText": "궁수",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        },
+        {
+          "text": "궁술",
+          "reading": "gungsul",
+          "translation": "archery",
+          "speechText": "궁술",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "활을 쏴요.",
+          "reading": "hwareul sswoyo.",
+          "translation": "I shoot a bow.",
+          "speechText": "활을 쏴요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "弓"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "궁 — gung",
+          "audioAssetRef": null,
+          "speechText": "궁",
+          "speechLanguage": "korean",
+          "nativeReading": "궁",
+          "romanization": "gung"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "활 — hwal",
+          "audioAssetRef": null,
+          "speechText": "활",
+          "speechLanguage": "korean",
+          "nativeReading": "활",
+          "romanization": "hwal",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "bow",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "궁",
+        "romanization": "gung",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A strung bow.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/bow/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "Shows a vertical bow profile with a deep inward curve and a straight opposing edge.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-弓"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "弓",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%BC%93/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/43_F080.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/bow/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/bow/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "弓 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Shows a vertical bow profile with a deep inward curve and a straight opposing edge.",
+        "transitionNote": "Shows a vertical bow profile with a deep inward curve and a straight opposing edge.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/bow/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "Keeps the same side profile but makes the bow thicker and more angular.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-弓"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "弓",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%BC%93/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/33_F5E9.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/bow/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/bow/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "弓 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Keeps the same side profile but makes the bow thicker and more angular.",
+        "transitionNote": "Keeps the same side profile but makes the bow thicker and more angular.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/bow/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Turns the curved weapon into a clean zigzagging line with a hooked upper end.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-弓"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "弓",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%BC%93/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_5F13.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/bow/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/bow/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "弓 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Turns the curved weapon into a clean zigzagging line with a hooked upper end.",
+        "transitionNote": "Turns the curved weapon into a clean zigzagging line with a hooked upper end.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/bow/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The curved bow is rendered with straighter, angular strokes, bringing the shape close to the later standard structure.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-弓"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "弓",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%BC%93/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_ED00.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/bow/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/bow/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "弓 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The curved bow is rendered with straighter, angular strokes, bringing the shape close to the later standard structure.",
+        "transitionNote": "The curved bow is rendered with straighter, angular strokes, bringing the shape close to the later standard structure.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "弓",
+        "assetRef": null,
+        "changeNoteFromPrevious": "Regularizes the angular bends into three compact turns while retaining the unmistakable bowed profile.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "弓",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "弓 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Regularizes the angular bends into three compact turns while retaining the unmistakable bowed profile.",
+        "transitionNote": "Regularizes the angular bends into three compact turns while retaining the unmistakable bowed profile.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "bow",
+      "explanation": "A bent, strung bow.",
+      "asset": {
+        "characterID": "bow",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/bow/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of bow",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-弓"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as 弓.",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-弓"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'bow', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E5%BC%93"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-弓",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%BC%93"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-弓",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

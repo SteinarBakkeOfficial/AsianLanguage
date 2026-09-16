@@ -28,7 +28,7 @@ Approved visual references are stored under `Reference Pictures/Chatgpt/`. The w
 
 ## Symbol content workspace
 
-Each prepared Symbol has a human-editable folder under `content/symbols/`, with learner copy, research notes, review status, sources, educational visual instructions, historical-stage provenance, and component references. Reusable concepts live under `content/components/`. The preparation, validation, review, and offline packaging commands are documented in `Tools/README.md`.
+Each active release Symbol has a human-editable folder under `content/release/symbols/`, with learner copy, research notes, review status, sources, educational visual instructions, historical-stage provenance, and component references. Previous versions are retained separately under `content/archive/symbols/`. Reusable concepts live under `content/components/`. The release preparation, validation, review, and offline packaging commands are documented in `Tools/README.md`.
 
 The import source is `Tools/Import-V1RuntimeCorpus.ps1`; it keeps the human-readable research package under `content/research/` and produces the read-only runtime records/assets under `Resources/Corpus` and `Resources/Assets/Symbols`. Records remain `needsReview` until rights, language copy, and editorial QA are complete.
 

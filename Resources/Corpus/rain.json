@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "雨",
   "coreSharedMeaning": "rain",
-  "recognitionTakeaway": "Regular 雨 restores a clear top line and turns the four interior marks into diagonal dots, making them look more like falling drops again than in several intermediate stages.",
+  "recognitionTakeaway": "Restores a clear top line and turns the four interior marks into diagonal dots, making them look more like falling drops again than in several intermediate stages.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+96E8",
   "simplifiedForm": "雨",
@@ -15,9 +15,9 @@
     "A long upper line and several hanging strokes suggest rain beneath a sky or cloud, but without the meaning it is not immediately recognizable as rain.",
     "Regular 雨 restores a clear top line and turns the four interior marks into diagonal dots, making them look more like falling drops again than in several intermediate stages."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-029-雨-u96E8",
+  "contentFolder": "content/release/symbols/rain",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-029-雨-u96E8/research.md",
+  "researchNotesPath": "content/release/symbols/rain/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "rain"
       ],
       "examples": [
+        {
+          "text": "雨",
+          "reading": "yǔ",
+          "translation": "rain",
+          "speechText": "雨",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "yǔ"
+          ]
+        },
         {
           "text": "下雨",
           "reading": "xiàyǔ",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "雨伞",
+          "reading": "yǔsǎn",
+          "translation": "umbrella",
+          "speechText": "雨伞",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "今天下雨。",
           "reading": "Jīntiān xiàyǔ.",
           "translation": "It is raining today.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "雨",
@@ -98,6 +127,18 @@
         "rain"
       ],
       "taiwanExamples": [
+        {
+          "text": "雨",
+          "reading": "yǔ",
+          "translation": "rain",
+          "speechText": "雨",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "下雨",
           "reading": "xiàyǔ",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "雨",
+          "reading": "jyu5",
+          "translation": "rain",
+          "speechText": "雨",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "落雨",
           "reading": "lok6 jyu5",
@@ -203,24 +256,43 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "雨",
       "readings": [
         {
-          "system": "on",
-          "value": "ウ (u)",
+          "system": "onyomi",
+          "value": "ウ — u",
           "audioAssetRef": null,
           "speechText": "う",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ウ",
+          "romanization": "u",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "あめ (ame)",
+          "system": "kunyomi",
+          "value": "あめ — ame",
           "audioAssetRef": null,
           "speechText": "あめ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "あめ",
+          "romanization": "ame",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "あま — ama",
+          "audioAssetRef": null,
+          "speechText": "あま",
+          "speechLanguage": "japanese",
+          "nativeReading": "あま",
+          "romanization": "ama",
+          "historicalOrigin": "nativeJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
         }
       ],
       "glosses": [
@@ -239,7 +311,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "雨"
-          ]
+          ],
+          "kanaReading": "あめ",
+          "coversReadings": [
+            "あめ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "雨",
+              "reading": "あめ"
+            }
+          ],
+          "furiganaHtml": "<ruby>雨<rt>あめ</rt></ruby>"
         },
         {
           "text": "大雨",
@@ -253,7 +336,79 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "雨"
-          ]
+          ],
+          "kanaReading": "おおあめ",
+          "furiganaSegments": [
+            {
+              "text": "大雨",
+              "reading": "おおあめ"
+            }
+          ],
+          "furiganaHtml": "<ruby>大雨<rt>おおあめ</rt></ruby>"
+        },
+        {
+          "text": "雨天",
+          "reading": "uten",
+          "translation": "rainy weather",
+          "speechText": "雨天",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "うてん",
+          "coversReadings": [
+            "ウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "雨天",
+              "reading": "うてん"
+            }
+          ],
+          "furiganaHtml": "<ruby>雨天<rt>うてん</rt></ruby>"
+        },
+        {
+          "text": "梅雨",
+          "reading": "tsuyu",
+          "translation": "rainy season",
+          "speechText": "梅雨",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "つゆ",
+          "furiganaSegments": [
+            {
+              "text": "梅雨",
+              "reading": "つゆ"
+            }
+          ],
+          "furiganaHtml": "<ruby>梅雨<rt>つゆ</rt></ruby>"
+        },
+        {
+          "text": "雨雲",
+          "reading": "amagumo",
+          "translation": "rain cloud",
+          "speechText": "雨雲",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "あまぐも",
+          "coversReadings": [
+            "あま"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "雨雲",
+              "reading": "あまぐも"
+            }
+          ],
+          "furiganaHtml": "<ruby>雨雲<rt>あまぐも</rt></ruby>"
         },
         {
           "text": "雨が降っています。",
@@ -267,33 +422,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "雨"
-          ]
+          ],
+          "kanaReading": "あめがふっています。",
+          "furiganaSegments": [
+            {
+              "text": "雨",
+              "reading": "あめ"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "降",
+              "reading": "ふ"
+            },
+            {
+              "text": "っています"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っています。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "あめ",
+        "romanization": "ame",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "雨",
       "readings": [
         {
           "system": "hanja",
-          "value": "우 / u",
+          "value": "우 — u",
           "audioAssetRef": null,
           "speechText": "우",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "비 / bi",
-          "audioAssetRef": null,
-          "speechText": "비",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "우",
+          "romanization": "u"
         }
       ],
       "glosses": [
         "rain"
       ],
       "examples": [
+        {
+          "text": "비",
+          "reading": "bi",
+          "translation": "rain",
+          "speechText": "비",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "우산",
           "reading": "usan",
@@ -323,6 +519,18 @@
           ]
         },
         {
+          "text": "우천",
+          "reading": "ucheon",
+          "translation": "rainy weather",
+          "speechText": "우천",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "비가 와요.",
           "reading": "biga wayo.",
           "translation": "It is raining.",
@@ -337,7 +545,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "우 — u",
+          "audioAssetRef": null,
+          "speechText": "우",
+          "speechLanguage": "korean",
+          "nativeReading": "우",
+          "romanization": "u"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "비 — bi",
+          "audioAssetRef": null,
+          "speechText": "비",
+          "speechLanguage": "korean",
+          "nativeReading": "비",
+          "romanization": "bi",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "rain",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "우",
+        "romanization": "u",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,7 +593,7 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A cloud releasing separate falling raindrops.",
+    "originAnchor": "Rain falling from the sky.",
     "stages": [
       {
         "stage": "oracleBone",
@@ -501,7 +748,7 @@
         "label": "Regular Script",
         "form": "雨",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 雨 restores a clear top line and turns the four interior marks into diagonal dots, making them look more like falling drops again than in several intermediate stages.",
+        "changeNoteFromPrevious": "A top line was added after the earliest forms; later regularization keeps it above four drop marks.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +774,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 雨 restores a clear top line and turns the four interior marks into diagonal dots, making them look more like falling drops again than in several intermediate stages.",
-        "transitionNote": "Regular 雨 restores a clear top line and turns the four interior marks into diagonal dots, making them look more like falling drops again than in several intermediate stages.",
+        "stageExplanation": "Restores a clear top line and turns the four interior marks into diagonal dots, making them look more like falling drops again than in several intermediate stages.",
+        "transitionNote": "A top line was added after the earliest forms; later regularization keeps it above four drop marks.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +783,7 @@
     ],
     "origin": {
       "concept": "rain",
-      "explanation": "A cloud releasing separate falling raindrops.",
+      "explanation": "Rain falling from the sky/cloud region.",
       "asset": {
         "characterID": "rain",
         "historicalStage": null,
@@ -641,13 +888,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

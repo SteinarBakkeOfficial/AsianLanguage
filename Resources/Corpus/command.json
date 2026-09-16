@@ -2,8 +2,8 @@
   "id": "command",
   "version": 1,
   "coreCharacter": "令",
-  "coreSharedMeaning": "command",
-  "recognitionTakeaway": "Regular 令 tightens the roof, central short stroke, and lower bend into the familiar five-stroke character.",
+  "coreSharedMeaning": "command / order",
+  "recognitionTakeaway": "Tightens the roof, central short stroke, and lower bend into the familiar five-stroke character.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+4EE4",
   "simplifiedForm": "令",
@@ -15,9 +15,9 @@
     "Oracle resembles a person beneath a pointed cap or roof, with a long bent lower body extending downward.",
     "Regular 令 tightens the roof, central short stroke, and lower bend into the familiar five-stroke character."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-108-令-u4EE4",
+  "contentFolder": "content/release/symbols/command",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-108-令-u4EE4/research.md",
+  "researchNotesPath": "content/release/symbols/command/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -39,6 +39,21 @@
       ],
       "examples": [
         {
+          "text": "令",
+          "reading": "lìng",
+          "translation": "command",
+          "speechText": "令",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "lìng"
+          ]
+        },
+        {
           "text": "命令",
           "reading": "mìnglìng",
           "translation": "command; order",
@@ -67,10 +82,22 @@
           ]
         },
         {
-          "text": "请听命令。",
-          "reading": "Qǐng tīng mìnglìng.",
+          "text": "口令",
+          "reading": "kǒulìng",
+          "translation": "password; verbal command",
+          "speechText": "口令",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "请听从命令。",
+          "reading": "Qǐng tīngcóng mìnglìng.",
           "translation": "Please follow the order.",
-          "speechText": "请听命令。",
+          "speechText": "请听从命令。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "令",
@@ -99,6 +128,18 @@
       ],
       "taiwanExamples": [
         {
+          "text": "令",
+          "reading": "lìng",
+          "translation": "command",
+          "speechText": "令",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "命令",
           "reading": "mìnglìng",
           "translation": "command; order",
@@ -127,10 +168,10 @@
           ]
         },
         {
-          "text": "請聽命令。",
-          "reading": "Qǐng tīng mìnglìng.",
+          "text": "請聽從命令。",
+          "reading": "Qǐng tīngcóng mìnglìng.",
           "translation": "Please follow the order.",
-          "speechText": "請聽命令。",
+          "speechText": "請聽從命令。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "令",
+          "reading": "ling6",
+          "translation": "command",
+          "speechText": "令",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "命令",
           "reading": "ming6 ling6",
@@ -203,17 +256,22 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "令",
       "readings": [
         {
-          "system": "on",
-          "value": "レイ (rei)",
+          "system": "onyomi",
+          "value": "レイ — rei",
           "audioAssetRef": null,
           "speechText": "れい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "レイ",
+          "romanization": "rei",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -232,7 +290,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "令"
-          ]
+          ],
+          "kanaReading": "めいれい",
+          "coversReadings": [
+            "レイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "命令",
+              "reading": "めいれい"
+            }
+          ],
+          "furiganaHtml": "<ruby>命令<rt>めいれい</rt></ruby>"
         },
         {
           "text": "指令",
@@ -246,7 +315,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "令"
-          ]
+          ],
+          "kanaReading": "しれい",
+          "furiganaSegments": [
+            {
+              "text": "指令",
+              "reading": "しれい"
+            }
+          ],
+          "furiganaHtml": "<ruby>指令<rt>しれい</rt></ruby>"
+        },
+        {
+          "text": "法令",
+          "reading": "hōrei",
+          "translation": "laws and regulations",
+          "speechText": "法令",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ほうれい",
+          "furiganaSegments": [
+            {
+              "text": "法令",
+              "reading": "ほうれい"
+            }
+          ],
+          "furiganaHtml": "<ruby>法令<rt>ほうれい</rt></ruby>"
+        },
+        {
+          "text": "号令",
+          "reading": "gōrei",
+          "translation": "command / call",
+          "speechText": "号令",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ごうれい",
+          "furiganaSegments": [
+            {
+              "text": "号令",
+              "reading": "ごうれい"
+            }
+          ],
+          "furiganaHtml": "<ruby>号令<rt>ごうれい</rt></ruby>"
         },
         {
           "text": "命令を聞きます。",
@@ -260,27 +377,64 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "令"
-          ]
+          ],
+          "kanaReading": "めいれいをききます。",
+          "furiganaSegments": [
+            {
+              "text": "命令",
+              "reading": "めいれい"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "聞",
+              "reading": "き"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>命令<rt>めいれい</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "レイ",
+        "romanization": "rei",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "令",
       "readings": [
         {
           "system": "hanja",
-          "value": "령 / ryeong",
+          "value": "령 — ryeong",
           "audioAssetRef": null,
           "speechText": "령",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "령",
+          "romanization": "ryeong"
         },
         {
           "system": "hanja · word-initial form",
-          "value": "영 / yeong",
+          "value": "영 — yeong",
           "audioAssetRef": null,
           "speechText": "영",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "영",
+          "romanization": "yeong"
         }
       ],
       "glosses": [
@@ -316,6 +470,42 @@
           ]
         },
         {
+          "text": "지령",
+          "reading": "jiryeong",
+          "translation": "directive",
+          "speechText": "지령",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "사령관",
+          "reading": "saryeonggwan",
+          "translation": "commander",
+          "speechText": "사령관",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "영장",
+          "reading": "yeongjang",
+          "translation": "warrant",
+          "speechText": "영장",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "명령을 들어요.",
           "reading": "myeongnyeongeul deureoyo.",
           "translation": "I listen to the command.",
@@ -330,7 +520,35 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "령 — ryeong",
+          "audioAssetRef": null,
+          "speechText": "령",
+          "speechLanguage": "korean",
+          "nativeReading": "령",
+          "romanization": "ryeong"
+        },
+        {
+          "system": "hanja · word-initial form",
+          "value": "영 — yeong",
+          "audioAssetRef": null,
+          "speechText": "영",
+          "speechLanguage": "korean",
+          "nativeReading": "영",
+          "romanization": "yeong"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "령",
+        "romanization": "ryeong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -339,14 +557,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A standing authority figure calling out an order to people kneeling below.",
+    "originAnchor": "A speech element and a kneeling person combine to show authority issuing a command.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/command/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle resembles a person beneath a pointed cap or roof, with a long bent lower body extending downward.",
+        "changeNoteFromPrevious": "An open mouth appears above a kneeling person, representing an order being issued to someone below.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-令"
@@ -372,8 +590,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle resembles a person beneath a pointed cap or roof, with a long bent lower body extending downward.",
-        "transitionNote": "Oracle resembles a person beneath a pointed cap or roof, with a long bent lower body extending downward.",
+        "stageExplanation": "An open mouth appears above a kneeling person, representing an order being issued to someone below.",
+        "transitionNote": "An open mouth appears above a kneeling person, representing an order being issued to someone below.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -383,7 +601,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/command/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps the triangular top but turns the lower body into a larger curling form with a distinct bend.",
+        "changeNoteFromPrevious": "The upper speech/command element and kneeling person remain recognizable while their outlines become more compact.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-令"
@@ -409,8 +627,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps the triangular top but turns the lower body into a larger curling form with a distinct bend.",
-        "transitionNote": "Bronze keeps the triangular top but turns the lower body into a larger curling form with a distinct bend.",
+        "stageExplanation": "The upper speech/command element and kneeling person remain recognizable while their outlines become more compact.",
+        "transitionNote": "The upper speech/command element and kneeling person remain recognizable while their outlines become more compact.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -420,7 +638,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/command/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the cap into a roof-like triangle, adds a short interior line, and lets one long lower stroke curl beneath.",
+        "changeNoteFromPrevious": "The two-part scene is regularized into a roof-like upper shape and a more abstract lower person form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-令"
@@ -446,8 +664,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the cap into a roof-like triangle, adds a short interior line, and lets one long lower stroke curl beneath.",
-        "transitionNote": "Small Seal regularizes the cap into a roof-like triangle, adds a short interior line, and lets one long lower stroke curl beneath.",
+        "stageExplanation": "The two-part scene is regularized into a roof-like upper shape and a more abstract lower person form.",
+        "transitionNote": "The two-part scene is regularized into a roof-like upper shape and a more abstract lower person form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -457,7 +675,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/command/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the roof and greatly simplifies the lower curl, leaving only a compact hanging form.",
+        "changeNoteFromPrevious": "The graph flattens and simplifies, leaving a compact structure close to the later standard character.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-令"
@@ -483,8 +701,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the roof and greatly simplifies the lower curl, leaving only a compact hanging form.",
-        "transitionNote": "Clerical flattens the roof and greatly simplifies the lower curl, leaving only a compact hanging form.",
+        "stageExplanation": "The graph flattens and simplifies, leaving a compact structure close to the later standard character.",
+        "transitionNote": "The graph flattens and simplifies, leaving a compact structure close to the later standard character.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -494,7 +712,7 @@
         "label": "Regular Script",
         "form": "令",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 令 tightens the roof, central short stroke, and lower bend into the familiar five-stroke character.",
+        "changeNoteFromPrevious": "Tightens the roof, central short stroke, and lower bend into the familiar five-stroke character.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -520,8 +738,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 令 tightens the roof, central short stroke, and lower bend into the familiar five-stroke character.",
-        "transitionNote": "Regular 令 tightens the roof, central short stroke, and lower bend into the familiar five-stroke character.",
+        "stageExplanation": "Tightens the roof, central short stroke, and lower bend into the familiar five-stroke character.",
+        "transitionNote": "Tightens the roof, central short stroke, and lower bend into the familiar five-stroke character.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -529,7 +747,7 @@
     ],
     "origin": {
       "concept": "command",
-      "explanation": "A standing authority figure calling out an order to people kneeling below.",
+      "explanation": "An open mouth above a kneeling person represents someone in authority issuing an order.",
       "asset": {
         "characterID": "command",
         "historicalStage": null,
@@ -546,7 +764,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of command",
+        "accessibilityDescription": "Illustration of command / order",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -564,7 +782,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'command', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'command / order', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -634,13 +852,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -29,7 +29,7 @@
 
 ## Content and assets
 
-- Authored JSON under content/shared-characters is the source of truth; Resources/Corpus is generated.
+- Authored JSON under `content/release/symbols/<id>/symbol.json` is the source of truth for active V1 release Symbols; `Resources/Corpus` is generated runtime data. Previous active-package versions are archived under `content/archive/symbols/<id>/`, and the older flat pilot workspace is archived under `docs/archive/legacy-pilot/`.
 - Historical Assets are source-backed or licensed, bundled, and separately provenance-tracked.
 - Missing Historical Assets are explicit content gaps. Fabricated glyphs and modern-form historical fallbacks are prohibited.
 - Each stage owns its canonical asset reference; visuals must not duplicate a stage map.
@@ -74,7 +74,7 @@
 - More and other utility roots retain native list/navigation behavior over themed historical treatment.
 - Generic History detail uses open editorial composition with grouped context and deliberate missing-content states until representative corpus links are approved; More utility/source rows remain quiet and native.
 - Historical stage availability is modeled separately from editorial confidence. Legacy certainty labels remain decodable, explicit unsupported or intentionally omitted stages are excluded from the primary journey, and an available stage must reference an approved asset.
-- The human-editable Symbol source is organized as one folder per Symbol under `content/symbols/`; the existing flat corpus is a transitional export for the current app bundle.
+- The human-editable release Symbol source is organized as one folder per Symbol under `content/release/symbols/`; previous versions are stored under `content/archive/symbols/`, and generated app output is kept under `Resources/`.
 - Each Symbol folder separates learner copy, research notes, review status, source/provenance records, educational reconstructions, historical evidence, and reusable component references.
 - Educational reconstructions are classified separately from historical evidence. Fire's Origin visual is an authored educational reconstruction and must never be presented as an ancient artifact.
 - Offline packaging copies only local app derivatives into the bundle asset area and emits a manifest declaring that runtime networking is not required.
@@ -90,6 +90,7 @@
 - Onboarding uses the same semantic design system as the main shell and routes directly into the first ranked V1 Symbol Journey before optional language preferences; More → Languages owns those preferences.
 - Account V1 describes local device state only; it must not imply a real identity, profile, sync account, or cloud capability.
 - Final visual QA requires macOS/Xcode simulator screenshots against the Fire reference before screen-level geometry is considered complete.
+- The next History implementation is a surgical screenshot-correction pass plus a calligraphy-relevant image for “A Living Tradition.” Symbol editorial rework waits for the user’s new handouts and design.
 
 ### Binding V1 museum-content rule — 2026-09-03
 

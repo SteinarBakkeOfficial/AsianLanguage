@@ -2,8 +2,8 @@
   "id": "old",
   "version": 1,
   "coreCharacter": "老",
-  "coreSharedMeaning": "old",
-  "recognitionTakeaway": "Regular 老 regularizes the branching top, central cross, and bent lower component while retaining almost nothing of the original full figure.",
+  "coreSharedMeaning": "old / elderly",
+  "recognitionTakeaway": "The elder’s hair/body/support elements are conventionalized into 老; the original person is no longer a literal picture.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+8001",
   "simplifiedForm": "老",
@@ -15,9 +15,9 @@
     "A thin human figure bends forward beneath several long hair-like strokes; the old person is still visible as a body rather than a modern character.",
     "Regular 老 regularizes the branching top, central cross, and bent lower component while retaining almost nothing of the original full figure."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-068-老-u8001",
+  "contentFolder": "content/release/symbols/old",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-068-老-u8001/research.md",
+  "researchNotesPath": "content/release/symbols/old/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "old; elderly"
       ],
       "examples": [
+        {
+          "text": "老",
+          "reading": "lǎo",
+          "translation": "old; elderly",
+          "speechText": "老",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "lǎo"
+          ]
+        },
         {
           "text": "老人",
           "reading": "lǎorén",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "老家",
+          "reading": "lǎojiā",
+          "translation": "hometown",
+          "speechText": "老家",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "爷爷老了。",
           "reading": "Yéye lǎo le.",
           "translation": "Grandpa has grown old.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "老",
@@ -98,6 +127,18 @@
         "old; elderly"
       ],
       "taiwanExamples": [
+        {
+          "text": "老",
+          "reading": "lǎo",
+          "translation": "old; elderly",
+          "speechText": "老",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "老人",
           "reading": "lǎorén",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "老",
+          "reading": "lou5",
+          "translation": "old; elderly",
+          "speechText": "老",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "老人",
           "reading": "lou5 jan4",
@@ -203,24 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "老",
       "readings": [
         {
-          "system": "on",
-          "value": "ロウ (rō)",
+          "system": "onyomi",
+          "value": "ロウ — rō",
           "audioAssetRef": null,
           "speechText": "ろう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ロウ",
+          "romanization": "rō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "おいる (oiru)",
+          "system": "kunyomi",
+          "value": "おいる — oiru",
           "audioAssetRef": null,
           "speechText": "おいる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "おいる",
+          "romanization": "oiru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "ふける — fukeru",
+          "audioAssetRef": null,
+          "speechText": "ふける",
+          "speechLanguage": "japanese",
+          "nativeReading": "ふける",
+          "romanization": "fukeru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +310,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "老"
-          ]
+          ],
+          "kanaReading": "ろうじん",
+          "coversReadings": [
+            "ロウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "老人",
+              "reading": "ろうじん"
+            }
+          ],
+          "furiganaHtml": "<ruby>老人<rt>ろうじん</rt></ruby>"
         },
         {
           "text": "老犬",
@@ -253,7 +335,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "老"
-          ]
+          ],
+          "kanaReading": "ろうけん",
+          "furiganaSegments": [
+            {
+              "text": "老犬",
+              "reading": "ろうけん"
+            }
+          ],
+          "furiganaHtml": "<ruby>老犬<rt>ろうけん</rt></ruby>"
+        },
+        {
+          "text": "老いる",
+          "reading": "oiru",
+          "translation": "grow old",
+          "speechText": "老いる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おいる",
+          "coversReadings": [
+            "おいる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "老",
+              "reading": "お"
+            },
+            {
+              "text": "いる"
+            }
+          ],
+          "furiganaHtml": "<ruby>老<rt>お</rt></ruby>いる"
+        },
+        {
+          "text": "老後",
+          "reading": "rōgo",
+          "translation": "old age / later life",
+          "speechText": "老後",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ろうご",
+          "furiganaSegments": [
+            {
+              "text": "老後",
+              "reading": "ろうご"
+            }
+          ],
+          "furiganaHtml": "<ruby>老後<rt>ろうご</rt></ruby>"
         },
         {
           "text": "その犬は老犬です。",
@@ -267,40 +403,112 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "老"
-          ]
+          ],
+          "kanaReading": "そのいぬはろうけんです。",
+          "furiganaSegments": [
+            {
+              "text": "その"
+            },
+            {
+              "text": "犬",
+              "reading": "いぬ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "老犬",
+              "reading": "ろうけん"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "その<ruby>犬<rt>いぬ</rt></ruby>は<ruby>老犬<rt>ろうけん</rt></ruby>です。"
+        },
+        {
+          "text": "老ける",
+          "reading": "fukeru",
+          "translation": "look/grow older",
+          "speechText": "老ける",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ふける",
+          "coversReadings": [
+            "ふける"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "老",
+              "reading": "ふ"
+            },
+            {
+              "text": "ける"
+            }
+          ],
+          "furiganaHtml": "<ruby>老<rt>ふ</rt></ruby>ける"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "おいる",
+        "romanization": "oiru",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "老",
       "readings": [
         {
           "system": "hanja",
-          "value": "로 / ro",
+          "value": "로 — ro",
           "audioAssetRef": null,
           "speechText": "로",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "로",
+          "romanization": "ro"
         },
         {
           "system": "hanja · word-initial form",
-          "value": "노 / no",
+          "value": "노 — no",
           "audioAssetRef": null,
           "speechText": "노",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "늙다 / neukda",
-          "audioAssetRef": null,
-          "speechText": "늙다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "노",
+          "romanization": "no"
         }
       ],
       "glosses": [
         "old; elderly (in compounds)"
       ],
       "examples": [
+        {
+          "text": "늙다",
+          "reading": "neukda",
+          "translation": "grow old",
+          "speechText": "늙다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "노인",
           "reading": "noin",
@@ -330,6 +538,30 @@
           ]
         },
         {
+          "text": "노년",
+          "reading": "nonyeon",
+          "translation": "old age",
+          "speechText": "노년",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "원로",
+          "reading": "wollo",
+          "translation": "senior figure / elder",
+          "speechText": "원로",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "강아지가 늙었어요.",
           "reading": "gangajiga neulgeosseoyo.",
           "translation": "The dog has grown old.",
@@ -344,7 +576,55 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "로 — ro",
+          "audioAssetRef": null,
+          "speechText": "로",
+          "speechLanguage": "korean",
+          "nativeReading": "로",
+          "romanization": "ro"
+        },
+        {
+          "system": "hanja · word-initial form",
+          "value": "노 — no",
+          "audioAssetRef": null,
+          "speechText": "노",
+          "speechLanguage": "korean",
+          "nativeReading": "노",
+          "romanization": "no"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "늙다 — neukda",
+          "audioAssetRef": null,
+          "speechText": "늙다",
+          "speechLanguage": "korean",
+          "nativeReading": "늙다",
+          "romanization": "neukda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "grow old",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "로",
+        "romanization": "ro",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +633,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "An elderly person bent with age, shown with long hair and a walking stick.",
+    "originAnchor": "An elderly person, long hair, and a staff combine to express old age.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/old/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A thin human figure bends forward beneath several long hair-like strokes; the old person is still visible as a body rather than a modern character.",
+        "changeNoteFromPrevious": "An elderly figure bends beneath long hair; a support/staff appears in many early forms.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-老"
@@ -386,8 +666,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A thin human figure bends forward beneath several long hair-like strokes; the old person is still visible as a body rather than a modern character.",
-        "transitionNote": "A thin human figure bends forward beneath several long hair-like strokes; the old person is still visible as a body rather than a modern character.",
+        "stageExplanation": "An elderly figure bends beneath long hair; a support/staff appears in many early forms.",
+        "transitionNote": "An elderly figure bends beneath long hair; a support/staff appears in many early forms.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -471,7 +751,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/old/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The upper strokes spread horizontally and the lower curve tightens, producing a shape already close to 老.",
+        "changeNoteFromPrevious": "The strokes become flatter and more angular, producing a shape already close to the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-老"
@@ -497,8 +777,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The upper strokes spread horizontally and the lower curve tightens, producing a shape already close to 老.",
-        "transitionNote": "The upper strokes spread horizontally and the lower curve tightens, producing a shape already close to 老.",
+        "stageExplanation": "The strokes become flatter and more angular, producing a shape already close to the later standard structure.",
+        "transitionNote": "The strokes become flatter and more angular, producing a shape already close to the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +788,7 @@
         "label": "Regular Script",
         "form": "老",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 老 regularizes the branching top, central cross, and bent lower component while retaining almost nothing of the original full figure.",
+        "changeNoteFromPrevious": "The elder’s hair/body/support elements are conventionalized into 老; the original person is no longer a literal picture.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +814,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 老 regularizes the branching top, central cross, and bent lower component while retaining almost nothing of the original full figure.",
-        "transitionNote": "Regular 老 regularizes the branching top, central cross, and bent lower component while retaining almost nothing of the original full figure.",
+        "stageExplanation": "The elder’s hair/body/support elements are conventionalized into 老; the original person is no longer a literal picture.",
+        "transitionNote": "The elder’s hair/body/support elements are conventionalized into 老; the original person is no longer a literal picture.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +823,7 @@
     ],
     "origin": {
       "concept": "old",
-      "explanation": "An elderly person bent with age, shown with long hair and a walking stick.",
+      "explanation": "An elderly person, bent with age, with long hair and a support/staff in many early forms.",
       "asset": {
         "characterID": "old",
         "historicalStage": null,
@@ -560,7 +840,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of old",
+        "accessibilityDescription": "Illustration of old / elderly",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +858,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'old', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'old / elderly', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +928,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

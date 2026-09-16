@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "夏",
   "coreSharedMeaning": "summer",
-  "recognitionTakeaway": "Regular 夏 regularizes the boxed upper section and the crossed lower movement strokes; the human figure remains only as a distant structural memory.",
+  "recognitionTakeaway": "夏 is now an abstract regular-script form for summer; the ancient sun-and-person heat scene is no longer directly visible.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+590F",
   "simplifiedForm": "夏",
@@ -15,9 +15,9 @@
     "Oracle is already a complex human-like figure with a boxed head at the top and a long bent body below.",
     "Regular 夏 regularizes the boxed upper section and the crossed lower movement strokes; the human figure remains only as a distant structural memory."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-136-夏-u590F",
+  "contentFolder": "content/release/symbols/summer",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-136-夏-u590F/research.md",
+  "researchNotesPath": "content/release/symbols/summer/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "summer"
       ],
       "examples": [
+        {
+          "text": "夏",
+          "reading": "xià",
+          "translation": "summer",
+          "speechText": "夏",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "xià"
+          ]
+        },
         {
           "text": "夏天",
           "reading": "xiàtiān",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "夏日",
+          "reading": "xiàrì",
+          "translation": "summer day",
+          "speechText": "夏日",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "夏天很热。",
           "reading": "Xiàtiān hěn rè.",
           "translation": "Summer is hot.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "夏",
@@ -98,6 +127,18 @@
         "summer"
       ],
       "taiwanExamples": [
+        {
+          "text": "夏",
+          "reading": "xià",
+          "translation": "summer",
+          "speechText": "夏",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "夏天",
           "reading": "xiàtiān",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "夏",
+          "reading": "haa6",
+          "translation": "summer",
+          "speechText": "夏",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "夏天",
           "reading": "haa6 tin1",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "夏",
       "readings": [
         {
-          "system": "on",
-          "value": "カ (ka)",
+          "system": "onyomi",
+          "value": "カ — ka",
           "audioAssetRef": null,
           "speechText": "か",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "カ",
+          "romanization": "ka",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "なつ (natsu)",
+          "system": "kunyomi",
+          "value": "なつ — natsu",
           "audioAssetRef": null,
           "speechText": "なつ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "なつ",
+          "romanization": "natsu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "夏"
-          ]
+          ],
+          "kanaReading": "なつ",
+          "coversReadings": [
+            "なつ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "夏",
+              "reading": "なつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>夏<rt>なつ</rt></ruby>"
         },
         {
           "text": "夏休み",
@@ -253,7 +325,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "夏"
-          ]
+          ],
+          "kanaReading": "なつやすみ",
+          "furiganaSegments": [
+            {
+              "text": "夏休",
+              "reading": "なつやす"
+            },
+            {
+              "text": "み"
+            }
+          ],
+          "furiganaHtml": "<ruby>夏休<rt>なつやす</rt></ruby>み"
+        },
+        {
+          "text": "夏季",
+          "reading": "kaki",
+          "translation": "summer season",
+          "speechText": "夏季",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "かき",
+          "coversReadings": [
+            "カ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "夏季",
+              "reading": "かき"
+            }
+          ],
+          "furiganaHtml": "<ruby>夏季<rt>かき</rt></ruby>"
+        },
+        {
+          "text": "真夏",
+          "reading": "manatsu",
+          "translation": "midsummer",
+          "speechText": "真夏",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "まなつ",
+          "furiganaSegments": [
+            {
+              "text": "真夏",
+              "reading": "まなつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>真夏<rt>まなつ</rt></ruby>"
         },
         {
           "text": "夏は暑いです。",
@@ -267,33 +393,76 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "夏"
-          ]
+          ],
+          "kanaReading": "なつはあついです。",
+          "furiganaSegments": [
+            {
+              "text": "夏",
+              "reading": "なつ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "暑",
+              "reading": "あつ"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>夏<rt>なつ</rt></ruby>は<ruby>暑<rt>あつ</rt></ruby>いです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "なつ",
+        "romanization": "natsu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "夏",
       "readings": [
         {
           "system": "hanja",
-          "value": "하 / ha",
+          "value": "하 — ha",
           "audioAssetRef": null,
           "speechText": "하",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "여름 / yeoreum",
-          "audioAssetRef": null,
-          "speechText": "여름",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "하",
+          "romanization": "ha"
         }
       ],
       "glosses": [
         "summer"
       ],
       "examples": [
+        {
+          "text": "여름",
+          "reading": "yeoreum",
+          "translation": "summer",
+          "speechText": "여름",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "夏"
+          ],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "하계",
           "reading": "hagye",
@@ -309,18 +478,28 @@
           ]
         },
         {
-          "text": "여름",
-          "reading": "yeoreum",
-          "translation": "summer",
-          "speechText": "여름",
+          "text": "하절기",
+          "reading": "hajeolgi",
+          "translation": "summer season",
+          "speechText": "하절기",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夏"
-          ]
+          "introducedSymbols": []
+        },
+        {
+          "text": "여름방학",
+          "reading": "yeoreumbanghak",
+          "translation": "summer vacation",
+          "speechText": "여름방학",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "여름은 더워요.",
@@ -337,7 +516,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "하 — ha",
+          "audioAssetRef": null,
+          "speechText": "하",
+          "speechLanguage": "korean",
+          "nativeReading": "하",
+          "romanization": "ha"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "여름 — yeoreum",
+          "audioAssetRef": null,
+          "speechText": "여름",
+          "speechLanguage": "korean",
+          "nativeReading": "여름",
+          "romanization": "yeoreum",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "summer",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "하",
+        "romanization": "ha",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +564,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person standing under a hot sun and wiping or shielding the head from summer heat.",
+    "originAnchor": "Leading interpretation: a person looking toward the sun expresses summer heat; others see a cicada or a personal name.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/summer/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is already a complex human-like figure with a boxed head at the top and a long bent body below.",
+        "changeNoteFromPrevious": "The sun is paired with a head-emphasized human figure looking upward, evoking the heat of the sun.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-夏"
@@ -379,8 +597,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is already a complex human-like figure with a boxed head at the top and a long bent body below.",
-        "transitionNote": "Oracle is already a complex human-like figure with a boxed head at the top and a long bent body below.",
+        "stageExplanation": "The sun is paired with a head-emphasized human figure looking upward, evoking the heat of the sun.",
+        "transitionNote": "The sun is paired with a head-emphasized human figure looking upward, evoking the heat of the sun.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +608,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/summer/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze enlarges the upper head/body cluster and adds several curled lower strokes, making the figure more elaborate rather than simpler.",
+        "changeNoteFromPrevious": "Bronze variants add feet or hands to the human figure; the sun remains in some forms but is omitted in others.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-夏"
@@ -416,8 +634,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze enlarges the upper head/body cluster and adds several curled lower strokes, making the figure more elaborate rather than simpler.",
-        "transitionNote": "Bronze enlarges the upper head/body cluster and adds several curled lower strokes, making the figure more elaborate rather than simpler.",
+        "stageExplanation": "The sun-and-person scene becomes more compact while retaining the hot-season idea.",
+        "transitionNote": "Bronze variants add feet or hands to the human figure; the sun remains in some forms but is omitted in others.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +645,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/summer/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal organizes the many parts into a tall stacked form with a framed head, central body, and lower crossing strokes.",
+        "changeNoteFromPrevious": "The developing form omits the sun and reorganizes the human elements; this becomes the lineage leading toward the modern form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-夏"
@@ -453,8 +671,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal organizes the many parts into a tall stacked form with a framed head, central body, and lower crossing strokes.",
-        "transitionNote": "Small Seal organizes the many parts into a tall stacked form with a framed head, central body, and lower crossing strokes.",
+        "stageExplanation": "The earlier scene is reorganized into a more complex standardized written form, and the human picture becomes less obvious.",
+        "transitionNote": "The developing form omits the sun and reorganizes the human elements; this becomes the lineage leading toward the modern form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +682,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/summer/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical compresses the stack and broadens the lower sweep, producing a form strongly recognizable as 夏.",
+        "changeNoteFromPrevious": "The Seal curves flatten and simplify substantially, producing the structural basis of the standard form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-夏"
@@ -490,8 +708,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical compresses the stack and broadens the lower sweep, producing a form strongly recognizable as 夏.",
-        "transitionNote": "Clerical compresses the stack and broadens the lower sweep, producing a form strongly recognizable as 夏.",
+        "stageExplanation": "The Seal curves flatten and simplify substantially, producing the structural basis of the standard form.",
+        "transitionNote": "The Seal curves flatten and simplify substantially, producing the structural basis of the standard form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +719,7 @@
         "label": "Regular Script",
         "form": "夏",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 夏 regularizes the boxed upper section and the crossed lower movement strokes; the human figure remains only as a distant structural memory.",
+        "changeNoteFromPrevious": "夏 is now an abstract regular-script form for summer; the ancient sun-and-person heat scene is no longer directly visible.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +745,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 夏 regularizes the boxed upper section and the crossed lower movement strokes; the human figure remains only as a distant structural memory.",
-        "transitionNote": "Regular 夏 regularizes the boxed upper section and the crossed lower movement strokes; the human figure remains only as a distant structural memory.",
+        "stageExplanation": "夏 is now an abstract regular-script form for summer; the ancient sun-and-person heat scene is no longer directly visible.",
+        "transitionNote": "夏 is now an abstract regular-script form for summer; the ancient sun-and-person heat scene is no longer directly visible.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +754,7 @@
     ],
     "origin": {
       "concept": "summer",
-      "explanation": "A person standing under a hot sun and wiping or shielding the head from summer heat.",
+      "explanation": "The early graph places the sun with a head-emphasized person looking upward, evoking strong heat.",
       "asset": {
         "characterID": "summer",
         "historicalStage": null,
@@ -641,13 +859,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

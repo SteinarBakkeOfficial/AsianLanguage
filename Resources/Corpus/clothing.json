@@ -2,8 +2,8 @@
   "id": "clothing",
   "version": 1,
   "coreCharacter": "衣",
-  "coreSharedMeaning": "clothing",
-  "recognitionTakeaway": "Regular 衣 fixes the robe into six strokes, with the top, side folds, and long lower sweep still echoing a hanging garment.",
+  "coreSharedMeaning": "clothing / garment",
+  "recognitionTakeaway": "The garment outline is compressed into 衣; collar/front and sleeve-derived strokes remain as structural echoes.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+8863",
   "simplifiedForm": "衣",
@@ -15,9 +15,9 @@
     "Oracle sketches a robe with a peaked shoulder line, open middle, sleeve-like sides, and a long lower tail.",
     "Regular 衣 fixes the robe into six strokes, with the top, side folds, and long lower sweep still echoing a hanging garment."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-044-衣-u8863",
+  "contentFolder": "content/release/symbols/clothing",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-044-衣-u8863/research.md",
+  "researchNotesPath": "content/release/symbols/clothing/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -39,6 +39,21 @@
       ],
       "examples": [
         {
+          "text": "衣",
+          "reading": "yī",
+          "translation": "clothing",
+          "speechText": "衣",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "yī"
+          ]
+        },
+        {
           "text": "衣服",
           "reading": "yīfu",
           "translation": "clothes",
@@ -67,10 +82,22 @@
           ]
         },
         {
-          "text": "我穿上衣。",
-          "reading": "Wǒ chuān shàngyī.",
+          "text": "衣柜",
+          "reading": "yīguì",
+          "translation": "wardrobe",
+          "speechText": "衣柜",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "我穿了一件上衣。",
+          "reading": "Wǒ chuān le yí jiàn shàngyī.",
           "translation": "I put on a top.",
-          "speechText": "我穿上衣。",
+          "speechText": "我穿了一件上衣。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "衣",
@@ -99,6 +128,18 @@
       ],
       "taiwanExamples": [
         {
+          "text": "衣",
+          "reading": "yī",
+          "translation": "clothing",
+          "speechText": "衣",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "衣服",
           "reading": "yīfu",
           "translation": "clothes",
@@ -127,10 +168,10 @@
           ]
         },
         {
-          "text": "我穿上衣。",
-          "reading": "Wǒ chuān shàngyī.",
+          "text": "我穿了一件上衣。",
+          "reading": "Wǒ chuān le yí jiàn shàngyī.",
           "translation": "I put on a top.",
-          "speechText": "我穿上衣。",
+          "speechText": "我穿了一件上衣。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "衣",
+          "reading": "ji1",
+          "translation": "clothing",
+          "speechText": "衣",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "衣服",
           "reading": "ji1 fuk6",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "衣",
       "readings": [
         {
-          "system": "on",
-          "value": "イ (i)",
+          "system": "onyomi",
+          "value": "イ — i",
           "audioAssetRef": null,
           "speechText": "い",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "イ",
+          "romanization": "i",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "ころも (koromo)",
+          "system": "kunyomi",
+          "value": "ころも — koromo",
           "audioAssetRef": null,
           "speechText": "ころも",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ころも",
+          "romanization": "koromo",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "衣"
-          ]
+          ],
+          "kanaReading": "いふく",
+          "coversReadings": [
+            "イ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "衣服",
+              "reading": "いふく"
+            }
+          ],
+          "furiganaHtml": "<ruby>衣服<rt>いふく</rt></ruby>"
         },
         {
           "text": "衣類",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "衣"
-          ]
+          ],
+          "kanaReading": "いるい",
+          "furiganaSegments": [
+            {
+              "text": "衣類",
+              "reading": "いるい"
+            }
+          ],
+          "furiganaHtml": "<ruby>衣類<rt>いるい</rt></ruby>"
+        },
+        {
+          "text": "衣装",
+          "reading": "ishō",
+          "translation": "clothing; costume",
+          "speechText": "衣装",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "いしょう",
+          "furiganaSegments": [
+            {
+              "text": "衣装",
+              "reading": "いしょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>衣装<rt>いしょう</rt></ruby>"
+        },
+        {
+          "text": "衣",
+          "reading": "koromo",
+          "translation": "robe; garment",
+          "speechText": "衣",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ころも",
+          "coversReadings": [
+            "ころも"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "衣",
+              "reading": "ころも"
+            }
+          ],
+          "furiganaHtml": "<ruby>衣<rt>ころも</rt></ruby>"
         },
         {
           "text": "衣服を着ます。",
@@ -267,33 +390,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "衣"
-          ]
+          ],
+          "kanaReading": "いふくをきます。",
+          "furiganaSegments": [
+            {
+              "text": "衣服",
+              "reading": "いふく"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "着",
+              "reading": "き"
+            },
+            {
+              "text": "ます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>衣服<rt>いふく</rt></ruby>を<ruby>着<rt>き</rt></ruby>ます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ころも",
+        "romanization": "koromo",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "衣",
       "readings": [
         {
           "system": "hanja",
-          "value": "의 / ui",
+          "value": "의 — ui",
           "audioAssetRef": null,
           "speechText": "의",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "옷 / ot",
-          "audioAssetRef": null,
-          "speechText": "옷",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "의",
+          "romanization": "ui"
         }
       ],
       "glosses": [
         "clothing"
       ],
       "examples": [
+        {
+          "text": "옷",
+          "reading": "ot",
+          "translation": "clothes",
+          "speechText": "옷",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "의류",
           "reading": "uiryu",
@@ -323,6 +487,18 @@
           ]
         },
         {
+          "text": "의상",
+          "reading": "uisang",
+          "translation": "clothing / outfit",
+          "speechText": "의상",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "옷을 입어요.",
           "reading": "oseul ibeoyo.",
           "translation": "I put on clothes.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "의 — ui",
+          "audioAssetRef": null,
+          "speechText": "의",
+          "speechLanguage": "korean",
+          "nativeReading": "의",
+          "romanization": "ui"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "옷 — ot",
+          "audioAssetRef": null,
+          "speechText": "옷",
+          "speechLanguage": "korean",
+          "nativeReading": "옷",
+          "romanization": "ot",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "clothes",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "의",
+        "romanization": "ui",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +561,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person wearing a loose robe, with the jacket and lower garment shown separately.",
+    "originAnchor": "An upper garment with collar, sleeves, and overlapping front.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/clothing/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle sketches a robe with a peaked shoulder line, open middle, sleeve-like sides, and a long lower tail.",
+        "changeNoteFromPrevious": "The early graph depicts the garment itself—neck/collar, sleeves, and overlapping front—not a person wearing it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-衣"
@@ -379,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle sketches a robe with a peaked shoulder line, open middle, sleeve-like sides, and a long lower tail.",
-        "transitionNote": "Oracle sketches a robe with a peaked shoulder line, open middle, sleeve-like sides, and a long lower tail.",
+        "stageExplanation": "The early graph depicts the garment itself—neck/collar, sleeves, and overlapping front—not a person wearing it.",
+        "transitionNote": "The early graph depicts the garment itself—neck/collar, sleeves, and overlapping front—not a person wearing it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +605,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/clothing/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the garment more symmetrical: roof-like shoulders sit over an open body with two hanging sides.",
+        "changeNoteFromPrevious": "Makes the garment more symmetrical: roof-like shoulders sit over an open body with two hanging sides.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-衣"
@@ -416,8 +631,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the garment more symmetrical: roof-like shoulders sit over an open body with two hanging sides.",
-        "transitionNote": "Bronze makes the garment more symmetrical: roof-like shoulders sit over an open body with two hanging sides.",
+        "stageExplanation": "Makes the garment more symmetrical: roof-like shoulders sit over an open body with two hanging sides.",
+        "transitionNote": "Makes the garment more symmetrical: roof-like shoulders sit over an open body with two hanging sides.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +642,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/clothing/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal smooths the robe into a central enclosure under a peaked top, with one long curved lower stroke.",
+        "changeNoteFromPrevious": "Smooths the robe into a central enclosure under a peaked top, with one long curved lower stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-衣"
@@ -453,8 +668,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal smooths the robe into a central enclosure under a peaked top, with one long curved lower stroke.",
-        "transitionNote": "Small Seal smooths the robe into a central enclosure under a peaked top, with one long curved lower stroke.",
+        "stageExplanation": "Smooths the robe into a central enclosure under a peaked top, with one long curved lower stroke.",
+        "transitionNote": "Smooths the robe into a central enclosure under a peaked top, with one long curved lower stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +679,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/clothing/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical breaks the garment outline into crossing brush strokes while preserving the broad shoulders and sweeping lower section.",
+        "changeNoteFromPrevious": "Breaks the garment outline into crossing brush strokes while preserving the broad shoulders and sweeping lower section.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-衣"
@@ -490,8 +705,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical breaks the garment outline into crossing brush strokes while preserving the broad shoulders and sweeping lower section.",
-        "transitionNote": "Clerical breaks the garment outline into crossing brush strokes while preserving the broad shoulders and sweeping lower section.",
+        "stageExplanation": "Breaks the garment outline into crossing brush strokes while preserving the broad shoulders and sweeping lower section.",
+        "transitionNote": "Breaks the garment outline into crossing brush strokes while preserving the broad shoulders and sweeping lower section.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "衣",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 衣 fixes the robe into six strokes, with the top, side folds, and long lower sweep still echoing a hanging garment.",
+        "changeNoteFromPrevious": "The garment outline is compressed into 衣; collar/front and sleeve-derived strokes remain as structural echoes.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 衣 fixes the robe into six strokes, with the top, side folds, and long lower sweep still echoing a hanging garment.",
-        "transitionNote": "Regular 衣 fixes the robe into six strokes, with the top, side folds, and long lower sweep still echoing a hanging garment.",
+        "stageExplanation": "The garment outline is compressed into 衣; collar/front and sleeve-derived strokes remain as structural echoes.",
+        "transitionNote": "The garment outline is compressed into 衣; collar/front and sleeve-derived strokes remain as structural echoes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "clothing",
-      "explanation": "A person wearing a loose robe, with the jacket and lower garment shown separately.",
+      "explanation": "An upper garment itself, showing collar/neck opening, sleeves, and overlapping lapels.",
       "asset": {
         "characterID": "clothing",
         "historicalStage": null,
@@ -553,7 +768,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of clothing",
+        "accessibilityDescription": "Illustration of clothing / garment",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +786,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'clothing', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'clothing / garment', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

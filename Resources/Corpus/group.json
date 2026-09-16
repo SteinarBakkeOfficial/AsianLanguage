@@ -2,8 +2,8 @@
   "id": "group",
   "version": 1,
   "coreCharacter": "族",
-  "coreSharedMeaning": "group",
-  "recognitionTakeaway": "Regular 族 standardizes 方 on the left and the compact arrow/person-derived right side, preserving the sense of a group organized under a banner only through its components.",
+  "coreSharedMeaning": "clan / group / people",
+  "recognitionTakeaway": "The banner-and-arrow compound stabilizes as 族 for clan/group/people.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+65CF",
   "simplifiedForm": "族",
@@ -15,9 +15,9 @@
     "Oracle shows a tall flagpole or banner beside a small human or weapon-like figure, with the components still widely separated.",
     "Regular 族 standardizes 方 on the left and the compact arrow/person-derived right side, preserving the sense of a group organized under a banner only through its components."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-134-族-u65CF",
+  "contentFolder": "content/release/symbols/group",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-134-族-u65CF/research.md",
+  "researchNotesPath": "content/release/symbols/group/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "group"
       ],
       "examples": [
+        {
+          "text": "族",
+          "reading": "zú",
+          "translation": "group",
+          "speechText": "族",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zú"
+          ]
+        },
         {
           "text": "家族",
           "reading": "jiāzú",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "族人",
+          "reading": "zúrén",
+          "translation": "clan member; member of a people",
+          "speechText": "族人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我去水族馆。",
           "reading": "Wǒ qù shuǐzúguǎn.",
           "translation": "I am going to the aquarium.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "族",
@@ -98,6 +127,18 @@
         "group"
       ],
       "taiwanExamples": [
+        {
+          "text": "族",
+          "reading": "zú",
+          "translation": "group",
+          "speechText": "族",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "家族",
           "reading": "jiāzú",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "族",
+          "reading": "zuk6",
+          "translation": "group",
+          "speechText": "族",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "家族",
           "reading": "gaa1 zuk6",
@@ -203,17 +256,22 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "族",
       "readings": [
         {
-          "system": "on",
-          "value": "ゾク (zoku)",
+          "system": "onyomi",
+          "value": "ゾク — zoku",
           "audioAssetRef": null,
           "speechText": "ぞく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ゾク",
+          "romanization": "zoku",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -232,7 +290,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "族"
-          ]
+          ],
+          "kanaReading": "かぞく",
+          "coversReadings": [
+            "ゾク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "家族",
+              "reading": "かぞく"
+            }
+          ],
+          "furiganaHtml": "<ruby>家族<rt>かぞく</rt></ruby>"
         },
         {
           "text": "水族館",
@@ -246,7 +315,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "族"
-          ]
+          ],
+          "kanaReading": "すいぞくかん",
+          "furiganaSegments": [
+            {
+              "text": "水族館",
+              "reading": "すいぞくかん"
+            }
+          ],
+          "furiganaHtml": "<ruby>水族館<rt>すいぞくかん</rt></ruby>"
+        },
+        {
+          "text": "民族",
+          "reading": "minzoku",
+          "translation": "people; ethnic group",
+          "speechText": "民族",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "みんぞく",
+          "furiganaSegments": [
+            {
+              "text": "民族",
+              "reading": "みんぞく"
+            }
+          ],
+          "furiganaHtml": "<ruby>民族<rt>みんぞく</rt></ruby>"
+        },
+        {
+          "text": "一族",
+          "reading": "ichizoku",
+          "translation": "clan / family",
+          "speechText": "一族",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "いちぞく",
+          "furiganaSegments": [
+            {
+              "text": "一族",
+              "reading": "いちぞく"
+            }
+          ],
+          "furiganaHtml": "<ruby>一族<rt>いちぞく</rt></ruby>"
         },
         {
           "text": "家族と行きます。",
@@ -260,20 +377,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "族"
-          ]
+          ],
+          "kanaReading": "かぞくといきます。",
+          "furiganaSegments": [
+            {
+              "text": "家族",
+              "reading": "かぞく"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>家族<rt>かぞく</rt></ruby>と<ruby>行<rt>い</rt></ruby>きます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ゾク",
+        "romanization": "zoku",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "族",
       "readings": [
         {
           "system": "hanja",
-          "value": "족 / jok",
+          "value": "족 — jok",
           "audioAssetRef": null,
           "speechText": "족",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "족",
+          "romanization": "jok"
         }
       ],
       "glosses": [
@@ -309,6 +461,30 @@
           ]
         },
         {
+          "text": "종족",
+          "reading": "jongjok",
+          "translation": "tribe / ethnic group",
+          "speechText": "종족",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "수족관",
+          "reading": "sujokgwan",
+          "translation": "aquarium",
+          "speechText": "수족관",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "가족과 가요.",
           "reading": "gajokgwa gayo.",
           "translation": "I go with my family.",
@@ -323,7 +499,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "족 — jok",
+          "audioAssetRef": null,
+          "speechText": "족",
+          "speechLanguage": "korean",
+          "nativeReading": "족",
+          "romanization": "jok"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "족",
+        "romanization": "jok",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -332,14 +527,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A group of people gathered under a flag, with a spear or weapon shown as part of the scene.",
+    "originAnchor": "A banner and an arrow or weapon combine to represent a military group; this later broadened to 'group.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/group/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows a tall flagpole or banner beside a small human or weapon-like figure, with the components still widely separated.",
+        "changeNoteFromPrevious": "A banner/standard combines with an arrow/weapon element, reflecting organized social/military grouping.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-族"
@@ -365,8 +560,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows a tall flagpole or banner beside a small human or weapon-like figure, with the components still widely separated.",
-        "transitionNote": "Oracle shows a tall flagpole or banner beside a small human or weapon-like figure, with the components still widely separated.",
+        "stageExplanation": "A banner/standard combines with an arrow/weapon element, reflecting organized social/military grouping.",
+        "transitionNote": "A banner/standard combines with an arrow/weapon element, reflecting organized social/military grouping.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -376,7 +571,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/group/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the banner into a strong vertical-and-horizontal frame and places a clear person-like figure beneath or inside it.",
+        "changeNoteFromPrevious": "Makes the banner into a strong vertical-and-horizontal frame and places a clear person-like figure beneath or inside it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-族"
@@ -402,8 +597,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the banner into a strong vertical-and-horizontal frame and places a clear person-like figure beneath or inside it.",
-        "transitionNote": "Bronze makes the banner into a strong vertical-and-horizontal frame and places a clear person-like figure beneath or inside it.",
+        "stageExplanation": "Makes the banner into a strong vertical-and-horizontal frame and places a clear person-like figure beneath or inside it.",
+        "transitionNote": "Makes the banner into a strong vertical-and-horizontal frame and places a clear person-like figure beneath or inside it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -413,7 +608,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/group/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal develops a tall left banner component beside a structured right section with several vertical strokes.",
+        "changeNoteFromPrevious": "Develops a tall left banner component beside a structured right section with several vertical strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-族"
@@ -439,8 +634,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal develops a tall left banner component beside a structured right section with several vertical strokes.",
-        "transitionNote": "Small Seal develops a tall left banner component beside a structured right section with several vertical strokes.",
+        "stageExplanation": "Develops a tall left banner component beside a structured right section with several vertical strokes.",
+        "transitionNote": "Develops a tall left banner component beside a structured right section with several vertical strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -450,7 +645,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/group/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens both halves into a dense form that is already close to 族.",
+        "changeNoteFromPrevious": "Flattens both halves into a dense form that is already close to clan form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-族"
@@ -476,8 +671,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens both halves into a dense form that is already close to 族.",
-        "transitionNote": "Clerical flattens both halves into a dense form that is already close to 族.",
+        "stageExplanation": "Flattens both halves into a dense form that is already close to clan form.",
+        "transitionNote": "Flattens both halves into a dense form that is already close to clan form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -487,7 +682,7 @@
         "label": "Regular Script",
         "form": "族",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 族 standardizes 方 on the left and the compact arrow/person-derived right side, preserving the sense of a group organized under a banner only through its components.",
+        "changeNoteFromPrevious": "The banner-and-arrow compound stabilizes as 族 for clan/group/people.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -513,8 +708,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 族 standardizes 方 on the left and the compact arrow/person-derived right side, preserving the sense of a group organized under a banner only through its components.",
-        "transitionNote": "Regular 族 standardizes 方 on the left and the compact arrow/person-derived right side, preserving the sense of a group organized under a banner only through its components.",
+        "stageExplanation": "The banner-and-arrow compound stabilizes as 族 for clan/group/people.",
+        "transitionNote": "The banner-and-arrow compound stabilizes as 族 for clan/group/people.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -522,7 +717,7 @@
     ],
     "origin": {
       "concept": "group",
-      "explanation": "A group of people gathered under a flag, with a spear or weapon shown as part of the scene.",
+      "explanation": "A banner/standard together with an arrow/weapon element.",
       "asset": {
         "characterID": "group",
         "historicalStage": null,
@@ -539,7 +734,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of group",
+        "accessibilityDescription": "Illustration of clan / group / people",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -557,7 +752,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'group', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'clan / group / people', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -627,13 +822,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

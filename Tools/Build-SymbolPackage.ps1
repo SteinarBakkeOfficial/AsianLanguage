@@ -1,7 +1,8 @@
 param(
-  [string]$SymbolsPath = "content/symbols",
-  [string]$CorpusDestination = "Resources/Corpus",
-  [string]$BundleAssetDestination = "Resources/Assets/Symbols"
+  [string]$SymbolsPath = "docs/archive/legacy-pilot/symbols",
+  [string]$CorpusDestination = "docs/archive/legacy-pilot/bundled-assets/Corpus",
+  [string]$BundleAssetDestination = "docs/archive/legacy-pilot/bundled-assets/Symbols",
+  [string]$V1ManifestPath = "docs/archive/legacy-pilot/no-active-v1-manifest.json"
 )
 
 $ErrorActionPreference = "Stop"
@@ -12,7 +13,7 @@ $bundleAssetRoot = Join-Path $repoRoot $BundleAssetDestination
 $workspaceValidator = Join-Path $PSScriptRoot "Validate-SymbolWorkspace.ps1"
 $syncScript = Join-Path $PSScriptRoot "Sync-Corpus.ps1"
 
-& $workspaceValidator -SymbolsPath $SymbolsPath
+& $workspaceValidator -SymbolsPath $SymbolsPath -V1ManifestPath $V1ManifestPath
 if ($LASTEXITCODE -ne 0) {
   Write-Error "Symbol workspace validation failed; offline package was not built."
   exit 1

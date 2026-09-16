@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "休",
   "coreSharedMeaning": "rest",
-  "recognitionTakeaway": "Regular 休 stabilizes that same 亻 + 木 arrangement; the original scene of a person beside a tree remains unusually easy to recover.",
+  "recognitionTakeaway": "Stabilizes that same 亻 + 木 arrangement; the original scene of a person beside a tree remains unusually easy to recover.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+4F11",
   "simplifiedForm": "休",
@@ -15,9 +15,9 @@
     "Oracle places a thin human figure directly beside a clear tree with branches and roots, so both components are still easy to identify.",
     "Regular 休 stabilizes that same 亻 + 木 arrangement; the original scene of a person beside a tree remains unusually easy to recover."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-098-休-u4F11",
+  "contentFolder": "content/release/symbols/rest",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-098-休-u4F11/research.md",
+  "researchNotesPath": "content/release/symbols/rest/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "rest"
       ],
       "examples": [
+        {
+          "text": "休",
+          "reading": "xiū",
+          "translation": "rest",
+          "speechText": "休",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "xiū"
+          ]
+        },
         {
           "text": "休息",
           "reading": "xiūxi",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "休闲",
+          "reading": "xiūxián",
+          "translation": "leisure",
+          "speechText": "休闲",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我想休息。",
           "reading": "Wǒ xiǎng xiūxi.",
           "translation": "I want to rest.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "休",
@@ -98,6 +127,18 @@
         "rest"
       ],
       "taiwanExamples": [
+        {
+          "text": "休",
+          "reading": "xiū",
+          "translation": "rest",
+          "speechText": "休",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "休息",
           "reading": "xiūxi",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "休",
+          "reading": "jau1",
+          "translation": "rest",
+          "speechText": "休",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "休息",
           "reading": "jau1 sik1",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "休",
       "readings": [
         {
-          "system": "on",
-          "value": "キュウ (kyū)",
+          "system": "onyomi",
+          "value": "キュウ — kyū",
           "audioAssetRef": null,
           "speechText": "きゅう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "キュウ",
+          "romanization": "kyū",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "やすむ (yasumu)",
+          "system": "kunyomi",
+          "value": "やすむ — yasumu",
           "audioAssetRef": null,
           "speechText": "やすむ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "やすむ",
+          "romanization": "yasumu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "休"
-          ]
+          ],
+          "kanaReading": "やすむ",
+          "coversReadings": [
+            "やすむ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "休",
+              "reading": "やす"
+            },
+            {
+              "text": "む"
+            }
+          ],
+          "furiganaHtml": "<ruby>休<rt>やす</rt></ruby>む"
         },
         {
           "text": "休日",
@@ -253,7 +328,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "休"
-          ]
+          ],
+          "kanaReading": "きゅうじつ",
+          "coversReadings": [
+            "キュウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "休日",
+              "reading": "きゅうじつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>休日<rt>きゅうじつ</rt></ruby>"
+        },
+        {
+          "text": "休憩",
+          "reading": "kyūkei",
+          "translation": "break; rest",
+          "speechText": "休憩",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "きゅうけい",
+          "furiganaSegments": [
+            {
+              "text": "休憩",
+              "reading": "きゅうけい"
+            }
+          ],
+          "furiganaHtml": "<ruby>休憩<rt>きゅうけい</rt></ruby>"
+        },
+        {
+          "text": "休暇",
+          "reading": "kyūka",
+          "translation": "vacation",
+          "speechText": "休暇",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "きゅうか",
+          "furiganaSegments": [
+            {
+              "text": "休暇",
+              "reading": "きゅうか"
+            }
+          ],
+          "furiganaHtml": "<ruby>休暇<rt>きゅうか</rt></ruby>"
         },
         {
           "text": "今日は休みます。",
@@ -267,33 +393,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "休"
-          ]
+          ],
+          "kanaReading": "きょうはやすみます。",
+          "furiganaSegments": [
+            {
+              "text": "今日",
+              "reading": "きょう"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "休",
+              "reading": "やす"
+            },
+            {
+              "text": "みます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "やすむ",
+        "romanization": "yasumu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "休",
       "readings": [
         {
           "system": "hanja",
-          "value": "휴 / hyu",
+          "value": "휴 — hyu",
           "audioAssetRef": null,
           "speechText": "휴",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "쉬다 / swida",
-          "audioAssetRef": null,
-          "speechText": "쉬다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "휴",
+          "romanization": "hyu"
         }
       ],
       "glosses": [
         "rest"
       ],
       "examples": [
+        {
+          "text": "쉬다",
+          "reading": "swida",
+          "translation": "rest",
+          "speechText": "쉬다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "휴식",
           "reading": "hyusik",
@@ -323,6 +490,18 @@
           ]
         },
         {
+          "text": "휴가",
+          "reading": "hyuga",
+          "translation": "vacation",
+          "speechText": "휴가",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "오늘은 쉬어요.",
           "reading": "oneureun swieoyo.",
           "translation": "I rest today.",
@@ -337,7 +516,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "휴 — hyu",
+          "audioAssetRef": null,
+          "speechText": "휴",
+          "speechLanguage": "korean",
+          "nativeReading": "휴",
+          "romanization": "hyu"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "쉬다 — swida",
+          "audioAssetRef": null,
+          "speechText": "쉬다",
+          "speechLanguage": "korean",
+          "nativeReading": "쉬다",
+          "romanization": "swida",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "rest",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "휴",
+        "romanization": "hyu",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +564,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person resting with their back against a tree; the person and tree are also shown separately before being combined.",
+    "originAnchor": "A person and a tree combine to show resting against a tree; this led to 'rest.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/rest/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle places a thin human figure directly beside a clear tree with branches and roots, so both components are still easy to identify.",
+        "changeNoteFromPrevious": "Places a thin human figure directly beside a clear tree with branches and roots, so both components are still easy to identify.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-休"
@@ -379,8 +597,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle places a thin human figure directly beside a clear tree with branches and roots, so both components are still easy to identify.",
-        "transitionNote": "Oracle places a thin human figure directly beside a clear tree with branches and roots, so both components are still easy to identify.",
+        "stageExplanation": "Places a thin human figure directly beside a clear tree with branches and roots, so both components are still easy to identify.",
+        "transitionNote": "Places a thin human figure directly beside a clear tree with branches and roots, so both components are still easy to identify.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +608,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/rest/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze pulls the two parts closer and simplifies them, with the person becoming a curved left stroke beside a compact tree.",
+        "changeNoteFromPrevious": "Pulls the two parts closer and simplifies them, with the person becoming a curved left stroke beside a compact tree.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-休"
@@ -416,8 +634,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze pulls the two parts closer and simplifies them, with the person becoming a curved left stroke beside a compact tree.",
-        "transitionNote": "Bronze pulls the two parts closer and simplifies them, with the person becoming a curved left stroke beside a compact tree.",
+        "stageExplanation": "Pulls the two parts closer and simplifies them, with the person becoming a curved left stroke beside a compact tree.",
+        "transitionNote": "Pulls the two parts closer and simplifies them, with the person becoming a curved left stroke beside a compact tree.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +645,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/rest/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal stretches both components vertically: a long person stroke stands on the left while a formal tree fills the right.",
+        "changeNoteFromPrevious": "Stretches both components vertically: a long person stroke stands on the left while a formal tree fills the right.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-休"
@@ -453,8 +671,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal stretches both components vertically: a long person stroke stands on the left while a formal tree fills the right.",
-        "transitionNote": "Small Seal stretches both components vertically: a long person stroke stands on the left while a formal tree fills the right.",
+        "stageExplanation": "Stretches both components vertically: a long person stroke stands on the left while a formal tree fills the right.",
+        "transitionNote": "Stretches both components vertically: a long person stroke stands on the left while a formal tree fills the right.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +682,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/rest/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical converts the person into a short 亻-like shape and the tree into broad crossing strokes, making the modern component structure unmistakable.",
+        "changeNoteFromPrevious": "The person element compresses into a short left-side form while the tree becomes broad crossing strokes, bringing the graph close to the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-休"
@@ -490,8 +708,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical converts the person into a short 亻-like shape and the tree into broad crossing strokes, making the modern component structure unmistakable.",
-        "transitionNote": "Clerical converts the person into a short 亻-like shape and the tree into broad crossing strokes, making the modern component structure unmistakable.",
+        "stageExplanation": "The person element compresses into a short left-side form while the tree becomes broad crossing strokes, bringing the graph close to the later standard structure.",
+        "transitionNote": "The person element compresses into a short left-side form while the tree becomes broad crossing strokes, bringing the graph close to the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +719,7 @@
         "label": "Regular Script",
         "form": "休",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 休 stabilizes that same 亻 + 木 arrangement; the original scene of a person beside a tree remains unusually easy to recover.",
+        "changeNoteFromPrevious": "Stabilizes that same 亻 + 木 arrangement; the original scene of a person beside a tree remains unusually easy to recover.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +745,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 休 stabilizes that same 亻 + 木 arrangement; the original scene of a person beside a tree remains unusually easy to recover.",
-        "transitionNote": "Regular 休 stabilizes that same 亻 + 木 arrangement; the original scene of a person beside a tree remains unusually easy to recover.",
+        "stageExplanation": "Stabilizes that same 亻 + 木 arrangement; the original scene of a person beside a tree remains unusually easy to recover.",
+        "transitionNote": "Stabilizes that same 亻 + 木 arrangement; the original scene of a person beside a tree remains unusually easy to recover.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +754,7 @@
     ],
     "origin": {
       "concept": "rest",
-      "explanation": "A person resting with their back against a tree; the person and tree are also shown separately before being combined.",
+      "explanation": "A person beside/leaning against a tree.",
       "asset": {
         "characterID": "rest",
         "historicalStage": null,
@@ -641,13 +859,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -2,8 +2,8 @@
   "id": "direction",
   "version": 1,
   "coreCharacter": "向",
-  "coreSharedMeaning": "direction",
-  "recognitionTakeaway": "Regular 向 regularizes the outer enclosure and inner 口, keeping the image of an opening or voice directed outward.",
+  "coreSharedMeaning": "toward / direction (earlier echo/sound graph)",
+  "recognitionTakeaway": "The graph regularizes as 向 for “toward/direction”; the early sound/echo connection belongs to its prehistory and later differentiation.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5411",
   "simplifiedForm": "向",
@@ -15,9 +15,9 @@
     "Oracle has a pointed house-like enclosure surrounding a small mouth-shaped box near the bottom.",
     "Regular 向 regularizes the outer enclosure and inner 口, keeping the image of an opening or voice directed outward."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-120-向-u5411",
+  "contentFolder": "content/release/symbols/direction",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-120-向-u5411/research.md",
+  "researchNotesPath": "content/release/symbols/direction/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "direction"
       ],
       "examples": [
+        {
+          "text": "向",
+          "reading": "xiàng",
+          "translation": "direction",
+          "speechText": "向",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "xiàng"
+          ]
+        },
         {
           "text": "方向",
           "reading": "fāngxiàng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "向上",
+          "reading": "xiàngshàng",
+          "translation": "upward",
+          "speechText": "向上",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我们向前走。",
           "reading": "Wǒmen xiàng qián zǒu.",
           "translation": "We walk forward.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "向",
@@ -98,6 +127,18 @@
         "direction"
       ],
       "taiwanExamples": [
+        {
+          "text": "向",
+          "reading": "xiàng",
+          "translation": "direction",
+          "speechText": "向",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "方向",
           "reading": "fāngxiàng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "向",
+          "reading": "hoeng3",
+          "translation": "direction",
+          "speechText": "向",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "方向",
           "reading": "fong1 hoeng3",
@@ -203,31 +256,62 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "向",
       "readings": [
         {
-          "system": "on",
-          "value": "コウ (kō)",
+          "system": "onyomi",
+          "value": "コウ — kō",
           "audioAssetRef": null,
           "speechText": "こう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コウ",
+          "romanization": "kō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "むく (muku)",
+          "system": "kunyomi",
+          "value": "むく — muku",
           "audioAssetRef": null,
           "speechText": "むく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "むく",
+          "romanization": "muku",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "むかう (mukau)",
+          "system": "kunyomi",
+          "value": "むかう — mukau",
           "audioAssetRef": null,
           "speechText": "むかう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "むかう",
+          "romanization": "mukau",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "むける — mukeru",
+          "audioAssetRef": null,
+          "speechText": "むける",
+          "speechLanguage": "japanese",
+          "nativeReading": "むける",
+          "romanization": "mukeru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "むこう — mukō",
+          "audioAssetRef": null,
+          "speechText": "むこう",
+          "speechLanguage": "japanese",
+          "nativeReading": "むこう",
+          "romanization": "mukō",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +330,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "向"
-          ]
+          ],
+          "kanaReading": "むく",
+          "coversReadings": [
+            "むく"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "向",
+              "reading": "む"
+            },
+            {
+              "text": "く"
+            }
+          ],
+          "furiganaHtml": "<ruby>向<rt>む</rt></ruby>く"
         },
         {
           "text": "方向",
@@ -260,7 +358,64 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "向"
-          ]
+          ],
+          "kanaReading": "ほうこう",
+          "coversReadings": [
+            "コウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "方向",
+              "reading": "ほうこう"
+            }
+          ],
+          "furiganaHtml": "<ruby>方向<rt>ほうこう</rt></ruby>"
+        },
+        {
+          "text": "向上",
+          "reading": "kōjō",
+          "translation": "improvement",
+          "speechText": "向上",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうじょう",
+          "furiganaSegments": [
+            {
+              "text": "向上",
+              "reading": "こうじょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>向上<rt>こうじょう</rt></ruby>"
+        },
+        {
+          "text": "向かう",
+          "reading": "mukau",
+          "translation": "head toward",
+          "speechText": "向かう",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "むかう",
+          "coversReadings": [
+            "むかう"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "向",
+              "reading": "む"
+            },
+            {
+              "text": "かう"
+            }
+          ],
+          "furiganaHtml": "<ruby>向<rt>む</rt></ruby>かう"
         },
         {
           "text": "北を向きます。",
@@ -274,33 +429,128 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "向"
-          ]
+          ],
+          "kanaReading": "きたをむきます。",
+          "furiganaSegments": [
+            {
+              "text": "北",
+              "reading": "きた"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "向",
+              "reading": "む"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>北<rt>きた</rt></ruby>を<ruby>向<rt>む</rt></ruby>きます。"
+        },
+        {
+          "text": "向ける",
+          "reading": "mukeru",
+          "translation": "turn/direct toward",
+          "speechText": "向ける",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "むける",
+          "coversReadings": [
+            "むける"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "向",
+              "reading": "む"
+            },
+            {
+              "text": "ける"
+            }
+          ],
+          "furiganaHtml": "<ruby>向<rt>む</rt></ruby>ける"
+        },
+        {
+          "text": "向こう",
+          "reading": "mukō",
+          "translation": "over there; the other side",
+          "speechText": "向こう",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "むこう",
+          "coversReadings": [
+            "むこう"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "向",
+              "reading": "む"
+            },
+            {
+              "text": "こう"
+            }
+          ],
+          "furiganaHtml": "<ruby>向<rt>む</rt></ruby>こう"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "むく",
+        "romanization": "muku",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "向",
       "readings": [
         {
           "system": "hanja",
-          "value": "향 / hyang",
+          "value": "향 — hyang",
           "audioAssetRef": null,
           "speechText": "향",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "향하다 / hyanghada",
-          "audioAssetRef": null,
-          "speechText": "향하다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "향",
+          "romanization": "hyang"
         }
       ],
       "glosses": [
         "direction"
       ],
       "examples": [
+        {
+          "text": "향하다",
+          "reading": "hyanghada",
+          "translation": "face; head toward",
+          "speechText": "향하다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "방향",
           "reading": "banghyang",
@@ -316,18 +566,28 @@
           ]
         },
         {
-          "text": "향하다",
-          "reading": "hyanghada",
-          "translation": "face; head toward",
-          "speechText": "향하다",
+          "text": "향상",
+          "reading": "hyangsang",
+          "translation": "improvement",
+          "speechText": "향상",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "向"
-          ]
+          "introducedSymbols": []
+        },
+        {
+          "text": "향후",
+          "reading": "hyanghu",
+          "translation": "from now on / future",
+          "speechText": "향후",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "북쪽을 향해요.",
@@ -344,7 +604,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "향 — hyang",
+          "audioAssetRef": null,
+          "speechText": "향",
+          "speechLanguage": "korean",
+          "nativeReading": "향",
+          "romanization": "hyang"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "향하다 — hyanghada",
+          "audioAssetRef": null,
+          "speechText": "향하다",
+          "speechLanguage": "korean",
+          "nativeReading": "향하다",
+          "romanization": "hyanghada",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "head toward",
+          "displayTier": "secondary",
+          "lexicalOrigin": "mixed",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "향",
+        "romanization": "hyang",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +652,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person calling from inside a house or doorway, with sound shown traveling outward.",
+    "originAnchor": "A roofed house and a sound opening suggest an echo; sound borrowing later gave the meaning 'direction.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/direction/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle has a pointed house-like enclosure surrounding a small mouth-shaped box near the bottom.",
+        "changeNoteFromPrevious": "A roofed/house element is combined with a sound/opening element in an early graph connected with echo/resonance.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-向"
@@ -386,8 +685,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle has a pointed house-like enclosure surrounding a small mouth-shaped box near the bottom.",
-        "transitionNote": "Oracle has a pointed house-like enclosure surrounding a small mouth-shaped box near the bottom.",
+        "stageExplanation": "A roofed/house element is combined with a sound/opening element in an early graph connected with echo/resonance.",
+        "transitionNote": "A roofed/house element is combined with a sound/opening element in an early graph connected with echo/resonance.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +696,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/direction/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the roof broad and curved while the mouth becomes a clear bowl-like form inside.",
+        "changeNoteFromPrevious": "Makes the roof broad and curved while the mouth becomes a clear bowl-like form inside.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-向"
@@ -423,8 +722,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the roof broad and curved while the mouth becomes a clear bowl-like form inside.",
-        "transitionNote": "Bronze makes the roof broad and curved while the mouth becomes a clear bowl-like form inside.",
+        "stageExplanation": "Makes the roof broad and curved while the mouth becomes a clear bowl-like form inside.",
+        "transitionNote": "Makes the roof broad and curved while the mouth becomes a clear bowl-like form inside.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +733,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/direction/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal straightens the roof into a tall enclosure and centers a rectangular 口-like element within it.",
+        "changeNoteFromPrevious": "Straightens the roof into a tall enclosure and centers a rectangular mouth/opening sign-like element within it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-向"
@@ -460,8 +759,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal straightens the roof into a tall enclosure and centers a rectangular 口-like element within it.",
-        "transitionNote": "Small Seal straightens the roof into a tall enclosure and centers a rectangular 口-like element within it.",
+        "stageExplanation": "Straightens the roof into a tall enclosure and centers a rectangular mouth/opening sign-like element within it.",
+        "transitionNote": "Straightens the roof into a tall enclosure and centers a rectangular mouth/opening sign-like element within it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +770,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/direction/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical shortens and widens the enclosure, with the mouth now a compact box under the top stroke.",
+        "changeNoteFromPrevious": "Shortens and widens the enclosure, with the mouth now a compact box under the top stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-向"
@@ -497,8 +796,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical shortens and widens the enclosure, with the mouth now a compact box under the top stroke.",
-        "transitionNote": "Clerical shortens and widens the enclosure, with the mouth now a compact box under the top stroke.",
+        "stageExplanation": "Shortens and widens the enclosure, with the mouth now a compact box under the top stroke.",
+        "transitionNote": "Shortens and widens the enclosure, with the mouth now a compact box under the top stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +807,7 @@
         "label": "Regular Script",
         "form": "向",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 向 regularizes the outer enclosure and inner 口, keeping the image of an opening or voice directed outward.",
+        "changeNoteFromPrevious": "The graph regularizes as 向 for “toward/direction”; the early sound/echo connection belongs to its prehistory and later differentiation.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +833,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 向 regularizes the outer enclosure and inner 口, keeping the image of an opening or voice directed outward.",
-        "transitionNote": "Regular 向 regularizes the outer enclosure and inner 口, keeping the image of an opening or voice directed outward.",
+        "stageExplanation": "The graph regularizes as 向 for “toward/direction”; the early sound/echo connection belongs to its prehistory and later differentiation.",
+        "transitionNote": "The graph regularizes as 向 for “toward/direction”; the early sound/echo connection belongs to its prehistory and later differentiation.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +842,7 @@
     ],
     "origin": {
       "concept": "direction",
-      "explanation": "A person calling from inside a house or doorway, with sound shown traveling outward.",
+      "explanation": "The early graph shows sound produced inside a building, creating an echo.",
       "asset": {
         "characterID": "direction",
         "historicalStage": null,
@@ -560,7 +859,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of direction",
+        "accessibilityDescription": "Illustration of toward / direction (earlier echo/sound graph)",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +877,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'direction', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'toward / direction (earlier echo/sound graph)', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +947,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

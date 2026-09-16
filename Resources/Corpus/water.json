@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "水",
   "coreSharedMeaning": "water",
-  "recognitionTakeaway": "Regular 水 adds the strong cross-stroke and turns the side currents into the familiar diagonal strokes around the central vertical.",
+  "recognitionTakeaway": "The ancient flowing picture has become four distinct strokes; only the central-current layout still echoes the original form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6C34",
   "simplifiedForm": "水",
@@ -15,9 +15,9 @@
     "A wavy central current is flanked by detached droplets or side currents; the shape is recognizable as moving water once the meaning is known.",
     "Regular 水 adds the strong cross-stroke and turns the side currents into the familiar diagonal strokes around the central vertical."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-020-水-u6C34",
+  "contentFolder": "content/release/symbols/water",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-020-水-u6C34/research.md",
+  "researchNotesPath": null,
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -34,22 +34,18 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "glosses": [
-        "water"
-      ],
+      "glosses": [],
       "examples": [
         {
-          "text": "水杯",
-          "reading": "shuǐbēi",
-          "translation": "water cup",
-          "speechText": "水杯",
+          "text": "水",
+          "reading": "shuǐ",
+          "translation": "water",
+          "speechText": "水",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
+          "coversReadings": [
+            "shuǐ"
           ]
         },
         {
@@ -59,12 +55,28 @@
           "speechText": "海水",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "水杯",
+          "reading": "shuǐbēi",
+          "translation": "water glass",
+          "speechText": "水杯",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "水面",
+          "reading": "shuǐmiàn",
+          "translation": "water surface",
+          "speechText": "水面",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "introducedSymbols": []
         },
         {
           "text": "我喝水。",
@@ -73,15 +85,12 @@
           "speechText": "我喝水。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "exampleLevel": "sentence"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "水",
@@ -94,23 +103,16 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "glosses": [
-        "water"
-      ],
+      "glosses": [],
       "taiwanExamples": [
         {
-          "text": "水杯",
-          "reading": "shuǐbēi",
-          "translation": "water cup",
-          "speechText": "水杯",
+          "text": "水",
+          "reading": "shuǐ",
+          "translation": "water",
+          "speechText": "水",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "exampleLevel": "word"
         },
         {
           "text": "海水",
@@ -119,12 +121,16 @@
           "speechText": "海水",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "exampleLevel": "word"
+        },
+        {
+          "text": "水杯",
+          "reading": "shuǐbēi",
+          "translation": "water glass",
+          "speechText": "水杯",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
         },
         {
           "text": "我喝水。",
@@ -133,28 +139,18 @@
           "speechText": "我喝水。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "exampleLevel": "sentence"
         }
       ],
       "hongKongExamples": [
         {
-          "text": "水杯",
-          "reading": "seoi2 bui1",
-          "translation": "water cup",
-          "speechText": "水杯",
+          "text": "水",
+          "reading": "seoi2",
+          "translation": "water",
+          "speechText": "水",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "exampleLevel": "word"
         },
         {
           "text": "海水",
@@ -163,26 +159,25 @@
           "speechText": "海水",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "exampleLevel": "word"
+        },
+        {
+          "text": "水杯",
+          "reading": "seoi2 bui1",
+          "translation": "water glass",
+          "speechText": "水杯",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
         },
         {
           "text": "我飲水。",
-          "reading": "ngo5 jam2 seoi2",
+          "reading": "ngo5 jam2 seoi2.",
           "translation": "I drink water.",
           "speechText": "我飲水。",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "exampleLevel": "sentence"
         }
       ],
       "taiwanReadings": [
@@ -203,29 +198,35 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "水",
       "readings": [
         {
-          "system": "on",
-          "value": "スイ (sui)",
+          "system": "onyomi",
+          "value": "スイ — sui",
           "audioAssetRef": null,
           "speechText": "すい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "スイ",
+          "romanization": "sui",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "みず (mizu)",
+          "system": "kunyomi",
+          "value": "みず — mizu",
           "audioAssetRef": null,
           "speechText": "みず",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "みず",
+          "romanization": "mizu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
-      "glosses": [
-        "water"
-      ],
+      "glosses": [],
       "examples": [
         {
           "text": "水",
@@ -235,25 +236,74 @@
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "kanaReading": "みず",
+          "coversReadings": [
+            "みず"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "水",
+              "reading": "みず"
+            }
+          ],
+          "furiganaHtml": "<ruby>水<rt>みず</rt></ruby>"
+        },
+        {
+          "text": "海水",
+          "reading": "kaisui",
+          "translation": "seawater",
+          "speechText": "海水",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "かいすい",
+          "coversReadings": [
+            "スイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "海水",
+              "reading": "かいすい"
+            }
+          ],
+          "furiganaHtml": "<ruby>海水<rt>かいすい</rt></ruby>"
         },
         {
           "text": "水道",
           "reading": "suidō",
-          "translation": "water supply; tap water",
+          "translation": "water supply",
           "speechText": "水道",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "すいどう",
+          "furiganaSegments": [
+            {
+              "text": "水道",
+              "reading": "すいどう"
+            }
+          ],
+          "furiganaHtml": "<ruby>水道<rt>すいどう</rt></ruby>"
+        },
+        {
+          "text": "水分",
+          "reading": "suibun",
+          "translation": "moisture",
+          "speechText": "水分",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "introducedSymbols": [],
+          "kanaReading": "すいぶん",
+          "furiganaSegments": [
+            {
+              "text": "水分",
+              "reading": "すいぶん"
+            }
+          ],
+          "furiganaHtml": "<ruby>水分<rt>すいぶん</rt></ruby>"
         },
         {
           "text": "水を飲みます。",
@@ -263,50 +313,67 @@
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "kanaReading": "みずをのみます。",
+          "furiganaSegments": [
+            {
+              "text": "水",
+              "reading": "みず"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "飲",
+              "reading": "の"
+            },
+            {
+              "text": "みます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>水<rt>みず</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "みず",
+        "romanization": "mizu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "水",
       "readings": [
         {
           "system": "hanja",
-          "value": "수 / su",
+          "value": "수 — su",
           "audioAssetRef": null,
           "speechText": "수",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "물 / mul",
-          "audioAssetRef": null,
-          "speechText": "물",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "수",
+          "romanization": "su"
         }
       ],
-      "glosses": [
-        "water"
-      ],
+      "glosses": [],
       "examples": [
         {
-          "text": "수분",
-          "reading": "subun",
-          "translation": "moisture; water content",
-          "speechText": "수분",
+          "text": "물",
+          "reading": "mul",
+          "translation": "water",
+          "speechText": "물",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "exampleRole": "semanticEquivalent"
         },
         {
           "text": "수영",
@@ -315,12 +382,28 @@
           "speechText": "수영",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "수위",
+          "reading": "suwi",
+          "translation": "water level",
+          "speechText": "수위",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "식수",
+          "reading": "siksu",
+          "translation": "drinking water",
+          "speechText": "식수",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "introducedSymbols": []
         },
         {
           "text": "물을 마셔요.",
@@ -329,15 +412,49 @@
           "speechText": "물을 마셔요.",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "水"
-          ]
+          "exampleLevel": "sentence"
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "수 — su",
+          "audioAssetRef": null,
+          "speechText": "수",
+          "speechLanguage": "korean",
+          "nativeReading": "수",
+          "romanization": "su"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "물 — mul",
+          "audioAssetRef": null,
+          "speechText": "물",
+          "speechLanguage": "korean",
+          "nativeReading": "물",
+          "romanization": "mul",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "water",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "수",
+        "romanization": "su",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +463,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A flowing stream winding between stones.",
+    "originAnchor": "Flowing water with small splashes.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/water/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A wavy central current is flanked by detached droplets or side currents; the shape is recognizable as moving water once the meaning is known.",
+        "changeNoteFromPrevious": "A winding central current with detached side marks depicts flowing and splashing water.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-水"
@@ -379,8 +496,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A wavy central current is flanked by detached droplets or side currents; the shape is recognizable as moving water once the meaning is known.",
-        "transitionNote": "A wavy central current is flanked by detached droplets or side currents; the shape is recognizable as moving water once the meaning is known.",
+        "stageExplanation": "A winding central current with detached side marks depicts flowing and splashing water.",
+        "transitionNote": "A winding central current with detached side marks depicts flowing and splashing water.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +507,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/water/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The central stream straightens slightly and the side marks become larger, more evenly paired strokes.",
+        "changeNoteFromPrevious": "The structure remains intact; the side marks become more evenly arranged around the central current.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-水"
@@ -416,8 +533,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The central stream straightens slightly and the side marks become larger, more evenly paired strokes.",
-        "transitionNote": "The central stream straightens slightly and the side marks become larger, more evenly paired strokes.",
+        "stageExplanation": "The structure remains intact; the side marks become more evenly arranged around the central current.",
+        "transitionNote": "The structure remains intact; the side marks become more evenly arranged around the central current.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +544,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/water/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The water is reorganized into three long, parallel flowing curves, losing the earlier detached droplets.",
+        "changeNoteFromPrevious": "The detached side marks are stretched into continuous curves, turning the pictograph into long parallel flowing lines.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-水"
@@ -453,8 +570,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The water is reorganized into three long, parallel flowing curves, losing the earlier detached droplets.",
-        "transitionNote": "The water is reorganized into three long, parallel flowing curves, losing the earlier detached droplets.",
+        "stageExplanation": "The detached side marks are stretched into continuous curves, turning the pictograph into long parallel flowing lines.",
+        "transitionNote": "The detached side marks are stretched into continuous curves, turning the pictograph into long parallel flowing lines.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +581,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/water/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The central line remains dominant while the side currents break apart into shorter brush strokes around it.",
+        "changeNoteFromPrevious": "The long curves break into separate strokes around the center, recasting the picture as a stroke-based character.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-水"
@@ -490,8 +607,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The central line remains dominant while the side currents break apart into shorter brush strokes around it.",
-        "transitionNote": "The central line remains dominant while the side currents break apart into shorter brush strokes around it.",
+        "stageExplanation": "The long curves break into separate strokes around the center, recasting the picture as a stroke-based character.",
+        "transitionNote": "The long curves break into separate strokes around the center, recasting the picture as a stroke-based character.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +618,7 @@
         "label": "Regular Script",
         "form": "水",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 水 adds the strong cross-stroke and turns the side currents into the familiar diagonal strokes around the central vertical.",
+        "changeNoteFromPrevious": "The ancient flowing picture has become four distinct strokes; only the central-current layout still echoes the original form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +644,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 水 adds the strong cross-stroke and turns the side currents into the familiar diagonal strokes around the central vertical.",
-        "transitionNote": "Regular 水 adds the strong cross-stroke and turns the side currents into the familiar diagonal strokes around the central vertical.",
+        "stageExplanation": "The ancient flowing picture has become four distinct strokes; only the central-current layout still echoes the original form.",
+        "transitionNote": "The ancient flowing picture has become four distinct strokes; only the central-current layout still echoes the original form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +653,7 @@
     ],
     "origin": {
       "concept": "water",
-      "explanation": "A flowing stream winding between stones.",
+      "explanation": "A central flowing current with smaller side marks for water/splashing.",
       "asset": {
         "characterID": "water",
         "historicalStage": null,
@@ -613,13 +730,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

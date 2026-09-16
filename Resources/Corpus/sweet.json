@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "甘",
   "coreSharedMeaning": "sweet",
-  "recognitionTakeaway": "Regular 甘 squares the outer frame and extends the upper horizontals, preserving the defining single line inside the mouth-like enclosure.",
+  "recognitionTakeaway": "The marked-mouth graph stabilizes as 甘 and carries the developed “sweet/pleasant” sense.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+7518",
   "simplifiedForm": "甘",
@@ -15,9 +15,9 @@
     "Oracle is a rounded mouth-like enclosure containing one small central mark, with two tall side projections above.",
     "Regular 甘 squares the outer frame and extends the upper horizontals, preserving the defining single line inside the mouth-like enclosure."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-130-甘-u7518",
+  "contentFolder": "content/release/symbols/sweet",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-130-甘-u7518/research.md",
+  "researchNotesPath": "content/release/symbols/sweet/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "sweet"
       ],
       "examples": [
+        {
+          "text": "甘",
+          "reading": "gān",
+          "translation": "sweet",
+          "speechText": "甘",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "gān"
+          ]
+        },
         {
           "text": "甘甜",
           "reading": "gāntián",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "甘心",
+          "reading": "gānxīn",
+          "translation": "be willing; willingly",
+          "speechText": "甘心",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这个水果很甘甜。",
           "reading": "Zhège shuǐguǒ hěn gāntián.",
           "translation": "This fruit is sweet.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "甘",
@@ -98,6 +127,18 @@
         "sweet"
       ],
       "taiwanExamples": [
+        {
+          "text": "甘",
+          "reading": "gān",
+          "translation": "sweet",
+          "speechText": "甘",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "甘甜",
           "reading": "gāntián",
@@ -171,6 +212,18 @@
           ]
         },
         {
+          "text": "甘甜",
+          "reading": "gam1 tim4",
+          "translation": "sweet",
+          "speechText": "甘甜",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "呢杯茶有甘味。",
           "reading": "ni1 bui1 caa4 jau5 gam1 mei6",
           "translation": "This tea has a sweet aftertaste.",
@@ -203,24 +256,52 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "甘",
       "readings": [
         {
-          "system": "on",
-          "value": "カン (kan)",
+          "system": "onyomi",
+          "value": "カン — kan",
           "audioAssetRef": null,
           "speechText": "かん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "カン",
+          "romanization": "kan",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "あまい (amai)",
+          "system": "kunyomi",
+          "value": "あまい — amai",
           "audioAssetRef": null,
           "speechText": "あまい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "あまい",
+          "romanization": "amai",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "あまえる — amaeru",
+          "audioAssetRef": null,
+          "speechText": "あまえる",
+          "speechLanguage": "japanese",
+          "nativeReading": "あまえる",
+          "romanization": "amaeru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "あまやかす — amayakasu",
+          "audioAssetRef": null,
+          "speechText": "あまやかす",
+          "speechLanguage": "japanese",
+          "nativeReading": "あまやかす",
+          "romanization": "amayakasu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +320,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "甘"
-          ]
+          ],
+          "kanaReading": "あまい",
+          "coversReadings": [
+            "あまい"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "甘",
+              "reading": "あま"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "furiganaHtml": "<ruby>甘<rt>あま</rt></ruby>い"
         },
         {
           "text": "甘口",
@@ -253,7 +348,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "甘"
-          ]
+          ],
+          "kanaReading": "あまくち",
+          "furiganaSegments": [
+            {
+              "text": "甘口",
+              "reading": "あまくち"
+            }
+          ],
+          "furiganaHtml": "<ruby>甘口<rt>あまくち</rt></ruby>"
+        },
+        {
+          "text": "甘味",
+          "reading": "kanmi",
+          "translation": "sweetness",
+          "speechText": "甘味",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "かんみ",
+          "coversReadings": [
+            "カン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "甘味",
+              "reading": "かんみ"
+            }
+          ],
+          "furiganaHtml": "<ruby>甘味<rt>かんみ</rt></ruby>"
+        },
+        {
+          "text": "甘さ",
+          "reading": "amasa",
+          "translation": "sweetness",
+          "speechText": "甘さ",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あまさ",
+          "furiganaSegments": [
+            {
+              "text": "甘",
+              "reading": "あま"
+            },
+            {
+              "text": "さ"
+            }
+          ],
+          "furiganaHtml": "<ruby>甘<rt>あま</rt></ruby>さ"
         },
         {
           "text": "この果物は甘いです。",
@@ -267,33 +416,129 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "甘"
-          ]
+          ],
+          "kanaReading": "このくだものはあまいです。",
+          "furiganaSegments": [
+            {
+              "text": "この"
+            },
+            {
+              "text": "果物",
+              "reading": "くだもの"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "甘",
+              "reading": "あま"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "この<ruby>果物<rt>くだもの</rt></ruby>は<ruby>甘<rt>あま</rt></ruby>いです。"
+        },
+        {
+          "text": "甘える",
+          "reading": "amaeru",
+          "translation": "depend on someone; act spoiled",
+          "speechText": "甘える",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あまえる",
+          "coversReadings": [
+            "あまえる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "甘",
+              "reading": "あま"
+            },
+            {
+              "text": "える"
+            }
+          ],
+          "furiganaHtml": "<ruby>甘<rt>あま</rt></ruby>える"
+        },
+        {
+          "text": "甘やかす",
+          "reading": "amayakasu",
+          "translation": "spoil; indulge",
+          "speechText": "甘やかす",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あまやかす",
+          "coversReadings": [
+            "あまやかす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "甘",
+              "reading": "あま"
+            },
+            {
+              "text": "やかす"
+            }
+          ],
+          "furiganaHtml": "<ruby>甘<rt>あま</rt></ruby>やかす"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "あまい",
+        "romanization": "amai",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "甘",
       "readings": [
         {
           "system": "hanja",
-          "value": "감 / gam",
+          "value": "감 — gam",
           "audioAssetRef": null,
           "speechText": "감",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "달다 / dalda",
-          "audioAssetRef": null,
-          "speechText": "달다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "감",
+          "romanization": "gam"
         }
       ],
       "glosses": [
         "sweet"
       ],
       "examples": [
+        {
+          "text": "달다",
+          "reading": "dalda",
+          "translation": "sweet",
+          "speechText": "달다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "감미",
           "reading": "gammi",
@@ -323,6 +568,18 @@
           ]
         },
         {
+          "text": "감미료",
+          "reading": "gammiryo",
+          "translation": "sweetener",
+          "speechText": "감미료",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "과일이 달아요.",
           "reading": "gwairi darayo.",
           "translation": "The fruit is sweet.",
@@ -337,7 +594,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "감 — gam",
+          "audioAssetRef": null,
+          "speechText": "감",
+          "speechLanguage": "korean",
+          "nativeReading": "감",
+          "romanization": "gam"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "달다 — dalda",
+          "audioAssetRef": null,
+          "speechText": "달다",
+          "speechLanguage": "korean",
+          "nativeReading": "달다",
+          "romanization": "dalda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "sweet",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "감",
+        "romanization": "gam",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +642,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "An open tongue tasting a sweet cube or honey-like food.",
+    "originAnchor": "A mouth and a morsel combine to represent a morsel inside the mouth; the pleasant taste led to the meaning “sweet.”",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/sweet/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a rounded mouth-like enclosure containing one small central mark, with two tall side projections above.",
+        "changeNoteFromPrevious": "A mouth contains a single internal mark/object, indicating something held in the mouth; there is no encoded candy, honey, or separate tongue.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-甘"
@@ -379,8 +675,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a rounded mouth-like enclosure containing one small central mark, with two tall side projections above.",
-        "transitionNote": "Oracle is a rounded mouth-like enclosure containing one small central mark, with two tall side projections above.",
+        "stageExplanation": "A mouth contains a single internal mark/object, indicating something held in the mouth; there is no encoded candy, honey, or separate tongue.",
+        "transitionNote": "A mouth contains a single internal mark/object, indicating something held in the mouth; there is no encoded candy, honey, or separate tongue.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +686,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/sweet/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze in the selected rubbing preserves a box-like mouth around one central mark while the outer border becomes heavy and irregular.",
+        "changeNoteFromPrevious": "In the selected rubbing preserves a box-like mouth around one central mark while the outer border becomes heavy and irregular.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-甘"
@@ -416,8 +712,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze in the selected rubbing preserves a box-like mouth around one central mark while the outer border becomes heavy and irregular.",
-        "transitionNote": "Bronze in the selected rubbing preserves a box-like mouth around one central mark while the outer border becomes heavy and irregular.",
+        "stageExplanation": "In the selected rubbing preserves a box-like mouth around one central mark while the outer border becomes heavy and irregular.",
+        "transitionNote": "In the selected rubbing preserves a box-like mouth around one central mark while the outer border becomes heavy and irregular.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +723,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/sweet/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal simplifies the form to a tall U-shaped enclosure with a single horizontal mark inside.",
+        "changeNoteFromPrevious": "Simplifies the form to a tall U-shaped enclosure with a single horizontal mark inside.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-甘"
@@ -453,8 +749,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal simplifies the form to a tall U-shaped enclosure with a single horizontal mark inside.",
-        "transitionNote": "Small Seal simplifies the form to a tall U-shaped enclosure with a single horizontal mark inside.",
+        "stageExplanation": "Simplifies the form to a tall U-shaped enclosure with a single horizontal mark inside.",
+        "transitionNote": "Simplifies the form to a tall U-shaped enclosure with a single horizontal mark inside.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +760,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/sweet/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical shortens and thickens the enclosure while keeping the one inner stroke unmistakable.",
+        "changeNoteFromPrevious": "Shortens and thickens the enclosure while keeping the one inner stroke unmistakable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-甘"
@@ -490,8 +786,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical shortens and thickens the enclosure while keeping the one inner stroke unmistakable.",
-        "transitionNote": "Clerical shortens and thickens the enclosure while keeping the one inner stroke unmistakable.",
+        "stageExplanation": "Shortens and thickens the enclosure while keeping the one inner stroke unmistakable.",
+        "transitionNote": "Shortens and thickens the enclosure while keeping the one inner stroke unmistakable.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +797,7 @@
         "label": "Regular Script",
         "form": "甘",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 甘 squares the outer frame and extends the upper horizontals, preserving the defining single line inside the mouth-like enclosure.",
+        "changeNoteFromPrevious": "The marked-mouth graph stabilizes as 甘 and carries the developed “sweet/pleasant” sense.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +823,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 甘 squares the outer frame and extends the upper horizontals, preserving the defining single line inside the mouth-like enclosure.",
-        "transitionNote": "Regular 甘 squares the outer frame and extends the upper horizontals, preserving the defining single line inside the mouth-like enclosure.",
+        "stageExplanation": "The marked-mouth graph stabilizes as 甘 and carries the developed “sweet/pleasant” sense.",
+        "transitionNote": "The marked-mouth graph stabilizes as 甘 and carries the developed “sweet/pleasant” sense.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +832,7 @@
     ],
     "origin": {
       "concept": "sweet",
-      "explanation": "An open tongue tasting a sweet cube or honey-like food.",
+      "explanation": "A mouth contains an internal mark indicating something held or sensed inside it.",
       "asset": {
         "characterID": "sweet",
         "historicalStage": null,
@@ -641,13 +937,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

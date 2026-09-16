@@ -2,8 +2,8 @@
   "id": "fragrance",
   "version": 1,
   "coreCharacter": "香",
-  "coreSharedMeaning": "fragrance",
-  "recognitionTakeaway": "Regular 香 fixes 禾 over 日, preserving the stacked plant-over-container structure while removing the surrounding fragrance marks.",
+  "coreSharedMeaning": "fragrance / fragrant",
+  "recognitionTakeaway": "香 standardizes the compact form for fragrance/fragrant; the food/grain origin survives only in the character’s history.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+9999",
   "simplifiedForm": "香",
@@ -15,9 +15,9 @@
     "Oracle stacks a plant- or tree-like upper form over a mouth or vessel shape, with several detached dots around the sides suggesting emanation.",
     "Regular 香 fixes 禾 over 日, preserving the stacked plant-over-container structure while removing the surrounding fragrance marks."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-145-香-u9999",
+  "contentFolder": "content/release/symbols/fragrance",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-145-香-u9999/research.md",
+  "researchNotesPath": "content/release/symbols/fragrance/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -39,6 +39,21 @@
       ],
       "examples": [
         {
+          "text": "香",
+          "reading": "xiāng",
+          "translation": "fragrance",
+          "speechText": "香",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "xiāng"
+          ]
+        },
+        {
           "text": "香味",
           "reading": "xiāngwèi",
           "translation": "aroma",
@@ -67,9 +82,21 @@
           ]
         },
         {
+          "text": "香气",
+          "reading": "xiāngqì",
+          "translation": "fragrance; aroma",
+          "speechText": "香气",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "花很香。",
           "reading": "Huā hěn xiāng.",
-          "translation": "The flowers smell fragrant.",
+          "translation": "The flowers are very fragrant.",
           "speechText": "花很香。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "香",
@@ -99,6 +128,18 @@
       ],
       "taiwanExamples": [
         {
+          "text": "香",
+          "reading": "xiāng",
+          "translation": "fragrance",
+          "speechText": "香",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "香味",
           "reading": "xiāngwèi",
           "translation": "aroma",
@@ -129,7 +170,7 @@
         {
           "text": "花很香。",
           "reading": "Huā hěn xiāng.",
-          "translation": "The flowers smell fragrant.",
+          "translation": "The flowers are very fragrant.",
           "speechText": "花很香。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "香",
+          "reading": "hoeng1",
+          "translation": "fragrance",
+          "speechText": "香",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "香味",
           "reading": "hoeng1 mei6",
@@ -173,7 +226,7 @@
         {
           "text": "啲花好香。",
           "reading": "di1 faa1 hou2 hoeng1",
-          "translation": "The flowers smell fragrant.",
+          "translation": "The flowers are very fragrant.",
           "speechText": "啲花好香。",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "香",
       "readings": [
         {
-          "system": "on",
-          "value": "コウ (kō)",
+          "system": "onyomi",
+          "value": "コウ — kō",
           "audioAssetRef": null,
           "speechText": "こう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コウ",
+          "romanization": "kō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "かおり (kaori)",
+          "system": "kunyomi",
+          "value": "かおり — kaori",
           "audioAssetRef": null,
           "speechText": "かおり",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "かおり",
+          "romanization": "kaori",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "かおる (kaoru)",
+          "system": "kunyomi",
+          "value": "かおる — kaoru",
           "audioAssetRef": null,
           "speechText": "かおる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "かおる",
+          "romanization": "kaoru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "香"
-          ]
+          ],
+          "kanaReading": "かおり",
+          "coversReadings": [
+            "かおり"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "香",
+              "reading": "かお"
+            },
+            {
+              "text": "り"
+            }
+          ],
+          "furiganaHtml": "<ruby>香<rt>かお</rt></ruby>り"
         },
         {
           "text": "香水",
@@ -260,7 +338,64 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "香"
-          ]
+          ],
+          "kanaReading": "こうすい",
+          "coversReadings": [
+            "コウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "香水",
+              "reading": "こうすい"
+            }
+          ],
+          "furiganaHtml": "<ruby>香水<rt>こうすい</rt></ruby>"
+        },
+        {
+          "text": "香る",
+          "reading": "kaoru",
+          "translation": "to smell fragrant",
+          "speechText": "香る",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "かおる",
+          "coversReadings": [
+            "かおる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "香",
+              "reading": "かお"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>香<rt>かお</rt></ruby>る"
+        },
+        {
+          "text": "香料",
+          "reading": "kōryō",
+          "translation": "fragrance / flavoring",
+          "speechText": "香料",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうりょう",
+          "furiganaSegments": [
+            {
+              "text": "香料",
+              "reading": "こうりょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>香料<rt>こうりょう</rt></ruby>"
         },
         {
           "text": "花の香りがします。",
@@ -274,33 +409,76 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "香"
-          ]
+          ],
+          "kanaReading": "はなのかおりがします。",
+          "furiganaSegments": [
+            {
+              "text": "花",
+              "reading": "はな"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "香",
+              "reading": "かお"
+            },
+            {
+              "text": "りがします"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>花<rt>はな</rt></ruby>の<ruby>香<rt>かお</rt></ruby>りがします。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "かおり",
+        "romanization": "kaori",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "香",
       "readings": [
         {
           "system": "hanja",
-          "value": "향 / hyang",
+          "value": "향 — hyang",
           "audioAssetRef": null,
           "speechText": "향",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "향기 / hyanggi",
-          "audioAssetRef": null,
-          "speechText": "향기",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "향",
+          "romanization": "hyang"
         }
       ],
       "glosses": [
         "fragrance"
       ],
       "examples": [
+        {
+          "text": "향기",
+          "reading": "hyanggi",
+          "translation": "fragrance",
+          "speechText": "향기",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "香"
+          ],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "향수",
           "reading": "hyangsu",
@@ -316,18 +494,28 @@
           ]
         },
         {
-          "text": "향기",
-          "reading": "hyanggi",
-          "translation": "fragrance",
-          "speechText": "향기",
+          "text": "향료",
+          "reading": "hyangnyo",
+          "translation": "fragrance / flavoring",
+          "speechText": "향료",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "香"
-          ]
+          "introducedSymbols": []
+        },
+        {
+          "text": "방향제",
+          "reading": "banghyangje",
+          "translation": "air freshener",
+          "speechText": "방향제",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "꽃 향기가 좋아요.",
@@ -344,7 +532,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "향 — hyang",
+          "audioAssetRef": null,
+          "speechText": "향",
+          "speechLanguage": "korean",
+          "nativeReading": "향",
+          "romanization": "hyang"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "향기 — hyanggi",
+          "audioAssetRef": null,
+          "speechText": "향기",
+          "speechLanguage": "korean",
+          "nativeReading": "향기",
+          "romanization": "hyanggi",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "fragrance",
+          "displayTier": "secondary",
+          "lexicalOrigin": "sinoKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "향",
+        "romanization": "hyang",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +580,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A grain plant, the sun, and a steaming vessel shown together as sources of a pleasant fragrance.",
+    "originAnchor": "Millet and a sweet taste combine to suggest the pleasant smell of ripe grain; this led to the meaning “fragrance.”",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/fragrance/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle stacks a plant- or tree-like upper form over a mouth or vessel shape, with several detached dots around the sides suggesting emanation.",
+        "changeNoteFromPrevious": "No secure Oracle-bone form is used for this museum sequence. V2 does not invent one.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-香"
@@ -386,8 +613,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle stacks a plant- or tree-like upper form over a mouth or vessel shape, with several detached dots around the sides suggesting emanation.",
-        "transitionNote": "Oracle stacks a plant- or tree-like upper form over a mouth or vessel shape, with several detached dots around the sides suggesting emanation.",
+        "stageExplanation": "No secure Oracle-bone form is used for this museum sequence. V2 does not invent one.",
+        "transitionNote": "No secure Oracle-bone form is used for this museum sequence. V2 does not invent one.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +624,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/fragrance/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze in the selected rubbing makes the upper plant highly visible and keeps a small rounded enclosure at the bottom.",
+        "changeNoteFromPrevious": "No secure Bronze form is used for this museum sequence. V2 does not invent one.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-香"
@@ -423,8 +650,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze in the selected rubbing makes the upper plant highly visible and keeps a small rounded enclosure at the bottom.",
-        "transitionNote": "Bronze in the selected rubbing makes the upper plant highly visible and keeps a small rounded enclosure at the bottom.",
+        "stageExplanation": "No secure Bronze form is used for this museum sequence. V2 does not invent one.",
+        "transitionNote": "No secure Bronze form is used for this museum sequence. V2 does not invent one.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +661,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/fragrance/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the plant into a 禾-like top and the lower vessel/sun into a boxed 日-like component.",
+        "changeNoteFromPrevious": "The secure early written form combines grain/millet with a pleasant-taste element, linking cooked or ripe grain with a pleasing smell.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-香"
@@ -460,8 +687,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the plant into a 禾-like top and the lower vessel/sun into a boxed 日-like component.",
-        "transitionNote": "Small Seal regularizes the plant into a 禾-like top and the lower vessel/sun into a boxed 日-like component.",
+        "stageExplanation": "The secure early written form combines grain/millet with a pleasant-taste element, linking cooked or ripe grain with a pleasing smell.",
+        "transitionNote": "The secure early written form combines grain/millet with a pleasant-taste element, linking cooked or ripe grain with a pleasing smell.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +698,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/fragrance/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical compresses the upper grain strokes and widens the lower box, already reading clearly as 香.",
+        "changeNoteFromPrevious": "The stacked Seal components flatten and simplify, making the smell-of-grain picture less literal.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-香"
@@ -497,8 +724,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical compresses the upper grain strokes and widens the lower box, already reading clearly as 香.",
-        "transitionNote": "Clerical compresses the upper grain strokes and widens the lower box, already reading clearly as 香.",
+        "stageExplanation": "The stacked Seal components flatten and simplify, making the smell-of-grain picture less literal.",
+        "transitionNote": "The stacked Seal components flatten and simplify, making the smell-of-grain picture less literal.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +735,7 @@
         "label": "Regular Script",
         "form": "香",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 香 fixes 禾 over 日, preserving the stacked plant-over-container structure while removing the surrounding fragrance marks.",
+        "changeNoteFromPrevious": "香 standardizes the compact form for fragrance/fragrant; the food/grain origin survives only in the character’s history.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +761,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 香 fixes 禾 over 日, preserving the stacked plant-over-container structure while removing the surrounding fragrance marks.",
-        "transitionNote": "Regular 香 fixes 禾 over 日, preserving the stacked plant-over-container structure while removing the surrounding fragrance marks.",
+        "stageExplanation": "香 standardizes the compact form for fragrance/fragrant; the food/grain origin survives only in the character’s history.",
+        "transitionNote": "香 standardizes the compact form for fragrance/fragrant; the food/grain origin survives only in the character’s history.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +770,7 @@
     ],
     "origin": {
       "concept": "fragrance",
-      "explanation": "A grain plant, the sun, and a steaming vessel shown together as sources of a pleasant fragrance.",
+      "explanation": "Millet or grain combines with a taste-related element; the original sense is tied to the aroma of cooked or ripe grain.",
       "asset": {
         "characterID": "fragrance",
         "historicalStage": null,
@@ -560,7 +787,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of fragrance",
+        "accessibilityDescription": "Illustration of fragrance / fragrant",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +805,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'fragrance', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'fragrance / fragrant', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +875,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

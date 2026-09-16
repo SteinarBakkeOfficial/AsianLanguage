@@ -2,8 +2,8 @@
   "id": "light",
   "version": 1,
   "coreCharacter": "光",
-  "coreSharedMeaning": "light",
-  "recognitionTakeaway": "Regular 光 regularizes the flame-derived top into three short strokes over a compact 儿-like lower body, retaining the light-over-person structure.",
+  "coreSharedMeaning": "light / brightness",
+  "recognitionTakeaway": "Regularizes the flame-derived top into three short strokes over a compact 儿-like lower body, retaining the light-over-person structure.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5149",
   "simplifiedForm": "光",
@@ -15,9 +15,9 @@
     "Oracle still resembles a person with a flame-like crown above the head and a long body below.",
     "Regular 光 regularizes the flame-derived top into three short strokes over a compact 儿-like lower body, retaining the light-over-person structure."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-096-光-u5149",
+  "contentFolder": "content/release/symbols/light",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-096-光-u5149/research.md",
+  "researchNotesPath": "content/release/symbols/light/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -50,6 +50,9 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "光"
+          ],
+          "coversReadings": [
+            "guāng"
           ]
         },
         {
@@ -67,6 +70,30 @@
           ]
         },
         {
+          "text": "光线",
+          "reading": "guāngxiàn",
+          "translation": "light ray; light",
+          "speechText": "光线",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "灯光",
+          "reading": "dēngguāng",
+          "translation": "lamplight; lighting",
+          "speechText": "灯光",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "阳光很暖。",
           "reading": "Yángguāng hěn nuǎn.",
           "translation": "The sunlight is warm.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "光",
@@ -125,6 +154,18 @@
           "introducedSymbols": [
             "光"
           ]
+        },
+        {
+          "text": "光線",
+          "reading": "guāngxiàn",
+          "translation": "light ray; light",
+          "speechText": "光線",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "陽光很暖。",
@@ -183,6 +224,18 @@
           "introducedSymbols": [
             "光"
           ]
+        },
+        {
+          "text": "呢個係陽光。",
+          "reading": "ni1 go3 hai6 joeng4 gwong1",
+          "translation": "This is sunlight.",
+          "speechText": "呢個係陽光。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "光",
       "readings": [
         {
-          "system": "on",
-          "value": "コウ (kō)",
+          "system": "onyomi",
+          "value": "コウ — kō",
           "audioAssetRef": null,
           "speechText": "こう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コウ",
+          "romanization": "kō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "ひかり (hikari)",
+          "system": "kunyomi",
+          "value": "ひかり — hikari",
           "audioAssetRef": null,
           "speechText": "ひかり",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ひかり",
+          "romanization": "hikari",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "ひかる (hikaru)",
+          "system": "kunyomi",
+          "value": "ひかる — hikaru",
           "audioAssetRef": null,
           "speechText": "ひかる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ひかる",
+          "romanization": "hikaru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "光"
-          ]
+          ],
+          "kanaReading": "ひかり",
+          "coversReadings": [
+            "ひかり"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "光",
+              "reading": "ひかり"
+            }
+          ],
+          "furiganaHtml": "<ruby>光<rt>ひかり</rt></ruby>"
         },
         {
           "text": "日光",
@@ -260,7 +335,64 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "光"
-          ]
+          ],
+          "kanaReading": "にっこう",
+          "coversReadings": [
+            "コウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "日光",
+              "reading": "にっこう"
+            }
+          ],
+          "furiganaHtml": "<ruby>日光<rt>にっこう</rt></ruby>"
+        },
+        {
+          "text": "光線",
+          "reading": "kōsen",
+          "translation": "light ray",
+          "speechText": "光線",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうせん",
+          "furiganaSegments": [
+            {
+              "text": "光線",
+              "reading": "こうせん"
+            }
+          ],
+          "furiganaHtml": "<ruby>光線<rt>こうせん</rt></ruby>"
+        },
+        {
+          "text": "光る",
+          "reading": "hikaru",
+          "translation": "shine",
+          "speechText": "光る",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ひかる",
+          "coversReadings": [
+            "ひかる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "光",
+              "reading": "ひか"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>光<rt>ひか</rt></ruby>る"
         },
         {
           "text": "光が見えます。",
@@ -274,33 +406,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "光"
-          ]
+          ],
+          "kanaReading": "ひかりがみえます。",
+          "furiganaSegments": [
+            {
+              "text": "光",
+              "reading": "ひかり"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "見",
+              "reading": "み"
+            },
+            {
+              "text": "えます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>光<rt>ひかり</rt></ruby>が<ruby>見<rt>み</rt></ruby>えます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ひかり",
+        "romanization": "hikari",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "光",
       "readings": [
         {
           "system": "hanja",
-          "value": "광 / gwang",
+          "value": "광 — gwang",
           "audioAssetRef": null,
           "speechText": "광",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "빛 / bit",
-          "audioAssetRef": null,
-          "speechText": "빛",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "광",
+          "romanization": "gwang"
         }
       ],
       "glosses": [
         "light"
       ],
       "examples": [
+        {
+          "text": "빛",
+          "reading": "bit",
+          "translation": "light",
+          "speechText": "빛",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "광선",
           "reading": "gwangseon",
@@ -330,6 +503,18 @@
           ]
         },
         {
+          "text": "광명",
+          "reading": "gwangmyeong",
+          "translation": "brightness / light",
+          "speechText": "광명",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "빛이 보여요.",
           "reading": "bichi boyeoyo.",
           "translation": "I can see the light.",
@@ -344,7 +529,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "광 — gwang",
+          "audioAssetRef": null,
+          "speechText": "광",
+          "speechLanguage": "korean",
+          "nativeReading": "광",
+          "romanization": "gwang"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "빛 — bit",
+          "audioAssetRef": null,
+          "speechText": "빛",
+          "speechLanguage": "korean",
+          "nativeReading": "빛",
+          "romanization": "bit",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "light",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "광",
+        "romanization": "gwang",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +577,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person holding or standing beneath flame, with fire shown glowing above the body.",
+    "originAnchor": "A separate flame appears above a kneeling person; together, they express light.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/light/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle still resembles a person with a flame-like crown above the head and a long body below.",
+        "changeNoteFromPrevious": "Fire/light appears above a kneeling human figure; the person is not necessarily holding the flame.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-光"
@@ -386,8 +610,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle still resembles a person with a flame-like crown above the head and a long body below.",
-        "transitionNote": "Oracle still resembles a person with a flame-like crown above the head and a long body below.",
+        "stageExplanation": "Fire/light appears above a kneeling human figure; the person is not necessarily holding the flame.",
+        "transitionNote": "Fire/light appears above a kneeling human figure; the person is not necessarily holding the flame.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +621,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/light/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze simplifies the flame into branching upper strokes while the lower body becomes a single long curved leg.",
+        "changeNoteFromPrevious": "Simplifies the flame into branching upper strokes while the lower body becomes a single long curved leg.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-光"
@@ -423,8 +647,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze simplifies the flame into branching upper strokes while the lower body becomes a single long curved leg.",
-        "transitionNote": "Bronze simplifies the flame into branching upper strokes while the lower body becomes a single long curved leg.",
+        "stageExplanation": "Simplifies the flame into branching upper strokes while the lower body becomes a single long curved leg.",
+        "transitionNote": "Simplifies the flame into branching upper strokes while the lower body becomes a single long curved leg.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +658,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/light/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal turns the flame into a symmetric three-pronged top and the person into two long sweeping lower strokes.",
+        "changeNoteFromPrevious": "Turns the flame into a symmetric three-pronged top and the person into two long sweeping lower strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-光"
@@ -460,8 +684,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal turns the flame into a symmetric three-pronged top and the person into two long sweeping lower strokes.",
-        "transitionNote": "Small Seal turns the flame into a symmetric three-pronged top and the person into two long sweeping lower strokes.",
+        "stageExplanation": "Turns the flame into a symmetric three-pronged top and the person into two long sweeping lower strokes.",
+        "transitionNote": "Turns the flame into a symmetric three-pronged top and the person into two long sweeping lower strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +695,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/light/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical breaks the top into short flame-like marks and curves the lower body strongly to one side.",
+        "changeNoteFromPrevious": "Breaks the top into short flame-like marks and curves the lower body strongly to one side.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-光"
@@ -497,8 +721,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical breaks the top into short flame-like marks and curves the lower body strongly to one side.",
-        "transitionNote": "Clerical breaks the top into short flame-like marks and curves the lower body strongly to one side.",
+        "stageExplanation": "Breaks the top into short flame-like marks and curves the lower body strongly to one side.",
+        "transitionNote": "Breaks the top into short flame-like marks and curves the lower body strongly to one side.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +732,7 @@
         "label": "Regular Script",
         "form": "光",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 光 regularizes the flame-derived top into three short strokes over a compact 儿-like lower body, retaining the light-over-person structure.",
+        "changeNoteFromPrevious": "Regularizes the flame-derived top into three short strokes over a compact 儿-like lower body, retaining the light-over-person structure.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +758,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 光 regularizes the flame-derived top into three short strokes over a compact 儿-like lower body, retaining the light-over-person structure.",
-        "transitionNote": "Regular 光 regularizes the flame-derived top into three short strokes over a compact 儿-like lower body, retaining the light-over-person structure.",
+        "stageExplanation": "Regularizes the flame-derived top into three short strokes over a compact 儿-like lower body, retaining the light-over-person structure.",
+        "transitionNote": "Regularizes the flame-derived top into three short strokes over a compact 儿-like lower body, retaining the light-over-person structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +767,7 @@
     ],
     "origin": {
       "concept": "light",
-      "explanation": "A person holding or standing beneath flame, with fire shown glowing above the body.",
+      "explanation": "Fire or light appears above a kneeling human figure.",
       "asset": {
         "characterID": "light",
         "historicalStage": null,
@@ -560,7 +784,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of light",
+        "accessibilityDescription": "Illustration of light / brightness",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +802,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'light', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'light / brightness', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +872,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

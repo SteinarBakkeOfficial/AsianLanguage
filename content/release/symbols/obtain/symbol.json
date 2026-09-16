@@ -1,0 +1,909 @@
+{
+  "id": "obtain",
+  "version": 1,
+  "coreCharacter": "得",
+  "coreSharedMeaning": "obtain / get",
+  "recognitionTakeaway": "Later path/movement material is integrated into 得; the hand-taking-value core explains the old obtain sense.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+5F97",
+  "simplifiedForm": "得",
+  "traditionalForm": "得",
+  "additionalMeanings": [],
+  "formationType": "simpleIdeograph",
+  "visualTeachingNotes": [
+    "A traveler noticing and picking up a small valuable object from the ground.",
+    "Oracle is a dense multi-part scene: a walking-side element stands at the left while a complex hand-and-object cluster fills the right.",
+    "Regular 得 fixes 彳 on the left and the tightly stacked right component, preserving the idea of action or acquisition through a compound that is no longer pictorial."
+  ],
+  "contentFolder": "content/release/symbols/obtain",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/obtain/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 93,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "得",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "dé",
+          "audioAssetRef": null,
+          "speechText": "得",
+          "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "děi",
+          "audioAssetRef": null,
+          "speechText": "得",
+          "speechLanguage": "mandarin",
+          "usageNote": "very common modal reading: must; have to"
+        },
+        {
+          "system": "pinyin",
+          "value": "de",
+          "audioAssetRef": null,
+          "speechText": "得",
+          "speechLanguage": "mandarin",
+          "usageNote": "neutral-tone reading in grammatical/lexical uses"
+        }
+      ],
+      "glosses": [
+        "obtain"
+      ],
+      "examples": [
+        {
+          "text": "得",
+          "reading": "dé",
+          "translation": "obtain",
+          "speechText": "得",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "dé"
+          ]
+        },
+        {
+          "text": "得到",
+          "reading": "dédào",
+          "translation": "obtain; get",
+          "speechText": "得到",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ]
+        },
+        {
+          "text": "获得",
+          "reading": "huòdé",
+          "translation": "obtain; gain",
+          "speechText": "获得",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ]
+        },
+        {
+          "text": "觉得",
+          "reading": "juéde",
+          "translation": "feel; think",
+          "speechText": "觉得",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "de"
+          ]
+        },
+        {
+          "text": "我得走了。",
+          "reading": "Wǒ děi zǒu le.",
+          "translation": "I have to go.",
+          "speechText": "我得走了。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "děi"
+          ]
+        },
+        {
+          "text": "我得到一本书。",
+          "reading": "Wǒ dédào yì běn shū.",
+          "translation": "I received a book.",
+          "speechText": "我得到一本书。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "得",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "dé",
+          "audioAssetRef": null,
+          "speechText": "得",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "obtain"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "得",
+          "reading": "dé",
+          "translation": "obtain",
+          "speechText": "得",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "得到",
+          "reading": "dédào",
+          "translation": "obtain; get",
+          "speechText": "得到",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ]
+        },
+        {
+          "text": "獲得",
+          "reading": "huòdé",
+          "translation": "obtain; gain",
+          "speechText": "獲得",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ]
+        },
+        {
+          "text": "我得到一本書。",
+          "reading": "Wǒ dédào yì běn shū.",
+          "translation": "I received a book.",
+          "speechText": "我得到一本書。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "得",
+          "reading": "dak1",
+          "translation": "obtain",
+          "speechText": "得",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "得到",
+          "reading": "dak1 dou3",
+          "translation": "obtain; get",
+          "speechText": "得到",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ]
+        },
+        {
+          "text": "獲得",
+          "reading": "wok6 dak1",
+          "translation": "obtain; gain",
+          "speechText": "獲得",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ]
+        },
+        {
+          "text": "我得到一本書。",
+          "reading": "ngo5 dak1 dou3 jat1 bun2 syu1",
+          "translation": "I received a book.",
+          "speechText": "我得到一本書。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "dé",
+          "audioAssetRef": null,
+          "speechText": "得",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "dak1",
+          "audioAssetRef": null,
+          "speechText": "得",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "得",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "トク — toku",
+          "audioAssetRef": null,
+          "speechText": "とく",
+          "speechLanguage": "japanese",
+          "nativeReading": "トク",
+          "romanization": "toku",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "える — eru",
+          "audioAssetRef": null,
+          "speechText": "える",
+          "speechLanguage": "japanese",
+          "nativeReading": "える",
+          "romanization": "eru",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "obtain"
+      ],
+      "examples": [
+        {
+          "text": "得る",
+          "reading": "eru",
+          "translation": "obtain; gain",
+          "speechText": "得る",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ],
+          "kanaReading": "える",
+          "coversReadings": [
+            "える"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "得",
+              "reading": "え"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>得<rt>え</rt></ruby>る"
+        },
+        {
+          "text": "得意",
+          "reading": "tokui",
+          "translation": "strong point; good at",
+          "speechText": "得意",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ],
+          "kanaReading": "とくい",
+          "coversReadings": [
+            "トク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "得意",
+              "reading": "とくい"
+            }
+          ],
+          "furiganaHtml": "<ruby>得意<rt>とくい</rt></ruby>"
+        },
+        {
+          "text": "得点",
+          "reading": "tokuten",
+          "translation": "score; points",
+          "speechText": "得点",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "とくてん",
+          "furiganaSegments": [
+            {
+              "text": "得点",
+              "reading": "とくてん"
+            }
+          ],
+          "furiganaHtml": "<ruby>得点<rt>とくてん</rt></ruby>"
+        },
+        {
+          "text": "お得",
+          "reading": "otoku",
+          "translation": "good value / bargain",
+          "speechText": "お得",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おとく",
+          "furiganaSegments": [
+            {
+              "text": "お"
+            },
+            {
+              "text": "得",
+              "reading": "とく"
+            }
+          ],
+          "furiganaHtml": "お<ruby>得<rt>とく</rt></ruby>"
+        },
+        {
+          "text": "情報を得ます。",
+          "reading": "jōhō o emasu.",
+          "translation": "I obtain information.",
+          "speechText": "情報を得ます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ],
+          "kanaReading": "じょうほうをえます。",
+          "furiganaSegments": [
+            {
+              "text": "情報",
+              "reading": "じょうほう"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "得",
+              "reading": "え"
+            },
+            {
+              "text": "ます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>得<rt>え</rt></ruby>ます。"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "える",
+        "romanization": "eru",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "得",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "득 — deuk",
+          "audioAssetRef": null,
+          "speechText": "득",
+          "speechLanguage": "korean",
+          "nativeReading": "득",
+          "romanization": "deuk"
+        }
+      ],
+      "glosses": [
+        "obtain"
+      ],
+      "examples": [
+        {
+          "text": "얻다",
+          "reading": "eotda",
+          "translation": "obtain / get",
+          "speechText": "얻다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "획득",
+          "reading": "hoekdeuk",
+          "translation": "acquisition; gain",
+          "speechText": "획득",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ]
+        },
+        {
+          "text": "득점",
+          "reading": "deukjeom",
+          "translation": "score; point",
+          "speechText": "득점",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ]
+        },
+        {
+          "text": "득표",
+          "reading": "deukpyo",
+          "translation": "votes obtained",
+          "speechText": "득표",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "기회를 얻어요.",
+          "reading": "gihoereul eodeoyo.",
+          "translation": "I get an opportunity.",
+          "speechText": "기회를 얻어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "得"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "득 — deuk",
+          "audioAssetRef": null,
+          "speechText": "득",
+          "speechLanguage": "korean",
+          "nativeReading": "득",
+          "romanization": "deuk"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "얻다 — eotda",
+          "audioAssetRef": null,
+          "speechText": "얻다",
+          "speechLanguage": "korean",
+          "nativeReading": "얻다",
+          "romanization": "eotda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "obtain / get",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "득",
+        "romanization": "deuk",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A hand and a cowry shell combine to show taking something valuable; this led to 'obtain.'",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/obtain/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "A hand takes a cowry shell/valuable object, directly expressing obtaining.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-得"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "得",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%BE%97/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/41_E9C5.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/obtain/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/obtain/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "得 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A hand takes a cowry shell/valuable object, directly expressing obtaining.",
+        "transitionNote": "A hand takes a cowry shell/valuable object, directly expressing obtaining.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/obtain/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "Simplifies some of the right-hand detail but keeps the left walking stroke and a clearly separate action cluster.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-得"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "得",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%BE%97/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/31_E96C.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/obtain/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/obtain/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "得 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Simplifies some of the right-hand detail but keeps the left walking stroke and a clearly separate action cluster.",
+        "transitionNote": "Simplifies some of the right-hand detail but keeps the left walking stroke and a clearly separate action cluster.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/obtain/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "The older taking/obtaining scene is regularized together with a formal walking or path element.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-得"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "得",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%BE%97/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_5F97.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/obtain/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/obtain/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "得 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The older taking/obtaining scene is regularized together with a formal walking or path element.",
+        "transitionNote": "The older taking/obtaining scene is regularized together with a formal walking or path element.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/obtain/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The movement and acquisition elements compress into the familiar left-right structure of later writing.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-得"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "得",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%BE%97/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/91_EB01.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/obtain/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/obtain/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "得 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The movement and acquisition elements compress into the familiar left-right structure of later writing.",
+        "transitionNote": "The movement and acquisition elements compress into the familiar left-right structure of later writing.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "得",
+        "assetRef": null,
+        "changeNoteFromPrevious": "Later path/movement material is integrated into 得; the hand-taking-value core explains the old obtain sense.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "得",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "得 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Later path/movement material is integrated into 得; the hand-taking-value core explains the old obtain sense.",
+        "transitionNote": "Later path/movement material is integrated into 得; the hand-taking-value core explains the old obtain sense.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "obtain",
+      "explanation": "A hand takes a cowry shell or other valued object; a path/movement element is added in later forms.",
+      "asset": {
+        "characterID": "obtain",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/obtain/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of obtain",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-得"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿰彳㝵.",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-得"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'obtain / get', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E5%BE%97"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-得",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%BE%97"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-得",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

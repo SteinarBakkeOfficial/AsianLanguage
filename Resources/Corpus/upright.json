@@ -2,8 +2,8 @@
   "id": "upright",
   "version": 1,
   "coreCharacter": "正",
-  "coreSharedMeaning": "upright",
-  "recognitionTakeaway": "Regular 正 regularizes the top 一 over 止, making the historical “foot reaching a line” relationship visibly clear in the modern component structure.",
+  "coreSharedMeaning": "correct / upright (earlier journey/campaign graph)",
+  "recognitionTakeaway": "The structure regularizes as 正, whose familiar correct/upright senses are later than the earliest movement/campaign use.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6B63",
   "simplifiedForm": "正",
@@ -15,9 +15,9 @@
     "Oracle sets a strong upper marker above a separate foot-like lower form.",
     "Regular 正 regularizes the top 一 over 止, making the historical “foot reaching a line” relationship visibly clear in the modern component structure."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-077-正-u6B63",
+  "contentFolder": "content/release/symbols/upright",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-077-正-u6B63/research.md",
+  "researchNotesPath": "content/release/symbols/upright/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -32,12 +32,35 @@
           "audioAssetRef": null,
           "speechText": "正",
           "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "zhēng",
+          "audioAssetRef": null,
+          "speechText": "正",
+          "speechLanguage": "mandarin",
+          "usageNote": "current restricted reading, notably 正月"
         }
       ],
       "glosses": [
         "upright"
       ],
       "examples": [
+        {
+          "text": "正",
+          "reading": "zhèng",
+          "translation": "upright",
+          "speechText": "正",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zhèng"
+          ]
+        },
         {
           "text": "正确",
           "reading": "zhèngquè",
@@ -67,6 +90,33 @@
           ]
         },
         {
+          "text": "正常",
+          "reading": "zhèngcháng",
+          "translation": "normal",
+          "speechText": "正常",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "正月",
+          "reading": "zhēngyuè",
+          "translation": "first lunar month",
+          "speechText": "正月",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zhēng"
+          ]
+        },
+        {
           "text": "这个答案正确。",
           "reading": "Zhège dá’àn zhèngquè.",
           "translation": "This answer is correct.",
@@ -81,7 +131,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "正",
@@ -98,6 +150,18 @@
         "upright"
       ],
       "taiwanExamples": [
+        {
+          "text": "正",
+          "reading": "zhèng",
+          "translation": "upright",
+          "speechText": "正",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "正確",
           "reading": "zhèngquè",
@@ -142,6 +206,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "正",
+          "reading": "zing3",
+          "translation": "upright",
+          "speechText": "正",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "正確",
           "reading": "zing3 kok3",
@@ -203,31 +279,52 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "正",
       "readings": [
         {
-          "system": "on",
-          "value": "セイ (sei)",
+          "system": "onyomi",
+          "value": "セイ — sei",
           "audioAssetRef": null,
           "speechText": "せい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "セイ",
+          "romanization": "sei",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ショウ (shō)",
+          "system": "onyomi",
+          "value": "ショウ — shō",
           "audioAssetRef": null,
           "speechText": "しょう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ショウ",
+          "romanization": "shō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "ただしい (tadashii)",
+          "system": "kunyomi",
+          "value": "ただしい — tadashii",
           "audioAssetRef": null,
           "speechText": "ただしい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ただしい",
+          "romanization": "tadashii",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "ただす — tadasu",
+          "audioAssetRef": null,
+          "speechText": "ただす",
+          "speechLanguage": "japanese",
+          "nativeReading": "ただす",
+          "romanization": "tadasu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +343,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "正"
-          ]
+          ],
+          "kanaReading": "ただしい",
+          "coversReadings": [
+            "ただしい"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "正",
+              "reading": "ただ"
+            },
+            {
+              "text": "しい"
+            }
+          ],
+          "furiganaHtml": "<ruby>正<rt>ただ</rt></ruby>しい"
         },
         {
           "text": "正解",
@@ -260,7 +371,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "正"
-          ]
+          ],
+          "kanaReading": "せいかい",
+          "coversReadings": [
+            "セイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "正解",
+              "reading": "せいかい"
+            }
+          ],
+          "furiganaHtml": "<ruby>正解<rt>せいかい</rt></ruby>"
+        },
+        {
+          "text": "正月",
+          "reading": "shōgatsu",
+          "translation": "New Year",
+          "speechText": "正月",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しょうがつ",
+          "coversReadings": [
+            "ショウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "正月",
+              "reading": "しょうがつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>正月<rt>しょうがつ</rt></ruby>"
+        },
+        {
+          "text": "正常",
+          "reading": "seijō",
+          "translation": "normal",
+          "speechText": "正常",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "せいじょう",
+          "furiganaSegments": [
+            {
+              "text": "正常",
+              "reading": "せいじょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>正常<rt>せいじょう</rt></ruby>"
         },
         {
           "text": "答えは正しいです。",
@@ -274,33 +439,100 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "正"
-          ]
+          ],
+          "kanaReading": "こたえはただしいです。",
+          "furiganaSegments": [
+            {
+              "text": "答",
+              "reading": "こた"
+            },
+            {
+              "text": "えは"
+            },
+            {
+              "text": "正",
+              "reading": "ただ"
+            },
+            {
+              "text": "しいです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>答<rt>こた</rt></ruby>えは<ruby>正<rt>ただ</rt></ruby>しいです。"
+        },
+        {
+          "text": "正す",
+          "reading": "tadasu",
+          "translation": "correct; set right",
+          "speechText": "正す",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ただす",
+          "coversReadings": [
+            "ただす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "正",
+              "reading": "ただ"
+            },
+            {
+              "text": "す"
+            }
+          ],
+          "furiganaHtml": "<ruby>正<rt>ただ</rt></ruby>す"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ただしい",
+        "romanization": "tadashii",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "正",
       "readings": [
         {
           "system": "hanja",
-          "value": "정 / jeong",
+          "value": "정 — jeong",
           "audioAssetRef": null,
           "speechText": "정",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "바르다 / bareuda",
-          "audioAssetRef": null,
-          "speechText": "바르다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "정",
+          "romanization": "jeong"
         }
       ],
       "glosses": [
         "upright"
       ],
       "examples": [
+        {
+          "text": "바르다",
+          "reading": "bareuda",
+          "translation": "correct / upright",
+          "speechText": "바르다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "정답",
           "reading": "jeongdap",
@@ -330,6 +562,18 @@
           ]
         },
         {
+          "text": "정확",
+          "reading": "jeonghwak",
+          "translation": "accurate / correct",
+          "speechText": "정확",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "답이 맞아요.",
           "reading": "dabi majayo.",
           "translation": "The answer is correct.",
@@ -344,7 +588,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "정 — jeong",
+          "audioAssetRef": null,
+          "speechText": "정",
+          "speechLanguage": "korean",
+          "nativeReading": "정",
+          "romanization": "jeong"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "바르다 — bareuda",
+          "audioAssetRef": null,
+          "speechText": "바르다",
+          "speechLanguage": "korean",
+          "nativeReading": "바르다",
+          "romanization": "bareuda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "correct / upright",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "정",
+        "romanization": "jeong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +636,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A foot placed beneath a straight reference line, shown moving into correct alignment.",
+    "originAnchor": "A foot advances toward a marked destination. The earliest idea was movement toward a target; the later meanings ‘correct’ and ‘upright’ developed afterward.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/upright/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle sets a strong upper marker above a separate foot-like lower form.",
+        "changeNoteFromPrevious": "A foot points toward a marked destination, expressing long-distance travel rather than ‘correct.’",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-正"
@@ -386,8 +669,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle sets a strong upper marker above a separate foot-like lower form.",
-        "transitionNote": "Oracle sets a strong upper marker above a separate foot-like lower form.",
+        "stageExplanation": "A foot moves toward a destination/settlement element; this early movement/campaign graph is closely related to the word later written later campaign character.",
+        "transitionNote": "A foot points toward a marked destination, expressing long-distance travel rather than ‘correct.’",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +680,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/upright/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps the top marker detached while the lower foot becomes a compact branching shape.",
+        "changeNoteFromPrevious": "Keeps the top marker detached while the lower foot becomes a compact branching shape.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-正"
@@ -423,8 +706,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps the top marker detached while the lower foot becomes a compact branching shape.",
-        "transitionNote": "Bronze keeps the top marker detached while the lower foot becomes a compact branching shape.",
+        "stageExplanation": "Keeps the top marker detached while the lower foot becomes a compact branching shape.",
+        "transitionNote": "Keeps the top marker detached while the lower foot becomes a compact branching shape.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +717,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/upright/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal joins the upper horizontal directly to a tall 止-like lower structure.",
+        "changeNoteFromPrevious": "Joins the upper horizontal directly to a tall foot sign-like lower structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-正"
@@ -460,8 +743,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal joins the upper horizontal directly to a tall 止-like lower structure.",
-        "transitionNote": "Small Seal joins the upper horizontal directly to a tall 止-like lower structure.",
+        "stageExplanation": "Joins the upper horizontal directly to a tall foot sign-like lower structure.",
+        "transitionNote": "Joins the upper horizontal directly to a tall foot sign-like lower structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +754,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/upright/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the top line and thickens the lower foot into a compact rectangular bend.",
+        "changeNoteFromPrevious": "Flattens the top line and thickens the lower foot into a compact rectangular bend.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-正"
@@ -497,8 +780,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the top line and thickens the lower foot into a compact rectangular bend.",
-        "transitionNote": "Clerical flattens the top line and thickens the lower foot into a compact rectangular bend.",
+        "stageExplanation": "Flattens the top line and thickens the lower foot into a compact rectangular bend.",
+        "transitionNote": "Flattens the top line and thickens the lower foot into a compact rectangular bend.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +791,7 @@
         "label": "Regular Script",
         "form": "正",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 正 regularizes the top 一 over 止, making the historical “foot reaching a line” relationship visibly clear in the modern component structure.",
+        "changeNoteFromPrevious": "The travel sense became distinct, while the regular form came to carry the later meanings ‘correct’ and ‘upright.’",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +817,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 正 regularizes the top 一 over 止, making the historical “foot reaching a line” relationship visibly clear in the modern component structure.",
-        "transitionNote": "Regular 正 regularizes the top 一 over 止, making the historical “foot reaching a line” relationship visibly clear in the modern component structure.",
+        "stageExplanation": "The structure regularizes as 正, whose familiar correct/upright senses are later than the earliest movement/campaign use.",
+        "transitionNote": "The travel sense became distinct, while the regular form came to carry the later meanings ‘correct’ and ‘upright.’",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +826,7 @@
     ],
     "origin": {
       "concept": "upright",
-      "explanation": "A foot placed beneath a straight reference line, shown moving into correct alignment.",
+      "explanation": "A foot moves toward a destination or settlement marker; the early graph is connected with movement toward a target before the later “correct/upright” senses.",
       "asset": {
         "characterID": "upright",
         "historicalStage": null,
@@ -560,7 +843,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of upright",
+        "accessibilityDescription": "Illustration of correct / upright (earlier journey/campaign graph)",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +861,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'upright', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'correct / upright (earlier journey/campaign graph)', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +931,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

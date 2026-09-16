@@ -2,8 +2,8 @@
   "id": "sacrifice",
   "version": 1,
   "coreCharacter": "祭",
-  "coreSharedMeaning": "sacrifice",
-  "recognitionTakeaway": "Regular 祭 standardizes the hand-and-offering cluster over 示, preserving the ritual action as a multi-component character rather than a single pictograph.",
+  "coreSharedMeaning": "sacrifice / ritual offering",
+  "recognitionTakeaway": "The hand/offering graph is standardized with the ritual 示-derived lower element in 祭; incense is never an encoded component.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+796D",
   "simplifiedForm": "祭",
@@ -15,9 +15,9 @@
     "Oracle is a dense compound of an offering/hand cluster above and a clear altar-like 示 component below.",
     "Regular 祭 standardizes the hand-and-offering cluster over 示, preserving the ritual action as a multi-component character rather than a single pictograph."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-132-祭-u796D",
+  "contentFolder": "content/release/symbols/sacrifice",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-132-祭-u796D/research.md",
+  "researchNotesPath": "content/release/symbols/sacrifice/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "ritual worship; sacrifice"
       ],
       "examples": [
+        {
+          "text": "祭",
+          "reading": "jì",
+          "translation": "ritual worship; sacrifice",
+          "speechText": "祭",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "jì"
+          ]
+        },
         {
           "text": "祭祀",
           "reading": "jìsì",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "祭品",
+          "reading": "jìpǐn",
+          "translation": "ritual offering",
+          "speechText": "祭品",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他们在祭祖。",
           "reading": "Tāmen zài jìzǔ.",
           "translation": "They are honoring their ancestors.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "祭",
@@ -98,6 +127,18 @@
         "ritual worship; sacrifice"
       ],
       "taiwanExamples": [
+        {
+          "text": "祭",
+          "reading": "jì",
+          "translation": "ritual worship; sacrifice",
+          "speechText": "祭",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "祭祀",
           "reading": "jìsì",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "祭",
+          "reading": "zai3",
+          "translation": "ritual worship; sacrifice",
+          "speechText": "祭",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "祭祀",
           "reading": "zai3 zi6",
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "祭",
       "readings": [
         {
-          "system": "on",
-          "value": "サイ (sai)",
+          "system": "onyomi",
+          "value": "サイ — sai",
           "audioAssetRef": null,
           "speechText": "さい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "サイ",
+          "romanization": "sai",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "まつり (matsuri)",
+          "system": "kunyomi",
+          "value": "まつり — matsuri",
           "audioAssetRef": null,
           "speechText": "まつり",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "まつり",
+          "romanization": "matsuri",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "まつる (matsuru)",
+          "system": "kunyomi",
+          "value": "まつる — matsuru",
           "audioAssetRef": null,
           "speechText": "まつる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "まつる",
+          "romanization": "matsuru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "祭"
-          ]
+          ],
+          "kanaReading": "まつり",
+          "coversReadings": [
+            "まつり"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "祭",
+              "reading": "まつ"
+            },
+            {
+              "text": "り"
+            }
+          ],
+          "furiganaHtml": "<ruby>祭<rt>まつ</rt></ruby>り"
         },
         {
           "text": "文化祭",
@@ -260,7 +338,64 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "祭"
-          ]
+          ],
+          "kanaReading": "ぶんかさい",
+          "coversReadings": [
+            "サイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "文化祭",
+              "reading": "ぶんかさい"
+            }
+          ],
+          "furiganaHtml": "<ruby>文化祭<rt>ぶんかさい</rt></ruby>"
+        },
+        {
+          "text": "祭日",
+          "reading": "saijitsu",
+          "translation": "festival day; holiday",
+          "speechText": "祭日",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "さいじつ",
+          "furiganaSegments": [
+            {
+              "text": "祭日",
+              "reading": "さいじつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>祭日<rt>さいじつ</rt></ruby>"
+        },
+        {
+          "text": "祭る",
+          "reading": "matsuru",
+          "translation": "enshrine / worship",
+          "speechText": "祭る",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "まつる",
+          "coversReadings": [
+            "まつる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "祭",
+              "reading": "まつ"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>祭<rt>まつ</rt></ruby>る"
         },
         {
           "text": "夏祭りに行きます。",
@@ -274,20 +409,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "祭"
-          ]
+          ],
+          "kanaReading": "なつまつりにいきます。",
+          "furiganaSegments": [
+            {
+              "text": "夏祭",
+              "reading": "なつまつ"
+            },
+            {
+              "text": "りに"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>夏祭<rt>なつまつ</rt></ruby>りに<ruby>行<rt>い</rt></ruby>きます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "まつり",
+        "romanization": "matsuri",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "祭",
       "readings": [
         {
           "system": "hanja",
-          "value": "제 / je",
+          "value": "제 — je",
           "audioAssetRef": null,
           "speechText": "제",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "제",
+          "romanization": "je"
         }
       ],
       "glosses": [
@@ -323,6 +493,30 @@
           ]
         },
         {
+          "text": "축제",
+          "reading": "chukje",
+          "translation": "festival",
+          "speechText": "축제",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "제물",
+          "reading": "jemul",
+          "translation": "ritual offering",
+          "speechText": "제물",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "제사를 지내요.",
           "reading": "jesareul jinaeyo.",
           "translation": "We hold an ancestral rite.",
@@ -337,7 +531,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "제 — je",
+          "audioAssetRef": null,
+          "speechText": "제",
+          "speechLanguage": "korean",
+          "nativeReading": "제",
+          "romanization": "je"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "제",
+        "romanization": "je",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +559,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A piece of meat or offering carried by hand and presented on an altar with rising incense.",
+    "originAnchor": "A hand and a piece of meat combine to show a ritual offering; presenting it in worship led to the meaning “sacrifice.”",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/sacrifice/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a dense compound of an offering/hand cluster above and a clear altar-like 示 component below.",
+        "changeNoteFromPrevious": "The earliest core is a hand with a meat offering, often with liquid/blood/juice marks; ritual-tablet sign is not required in every early form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-祭"
@@ -379,8 +592,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a dense compound of an offering/hand cluster above and a clear altar-like 示 component below.",
-        "transitionNote": "Oracle is a dense compound of an offering/hand cluster above and a clear altar-like 示 component below.",
+        "stageExplanation": "The earliest core is a hand with a meat offering, often with liquid/blood/juice marks; ritual-tablet sign is not required in every early form.",
+        "transitionNote": "The earliest core is a hand with a meat offering, often with liquid/blood/juice marks; ritual-tablet sign is not required in every early form.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +603,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/sacrifice/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze is fragmentary in this selected form: the separate upper offering strokes and lower altar supports are visible, but the full composition is less complete than in Oracle.",
+        "changeNoteFromPrevious": "Later forms may add or clarify ritual material including ritual-tablet sign; describe the selected exemplar rather than assuming an altar was always present.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-祭"
@@ -416,8 +629,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze is fragmentary in this selected form: the separate upper offering strokes and lower altar supports are visible, but the full composition is less complete than in Oracle.",
-        "transitionNote": "Bronze is fragmentary in this selected form: the separate upper offering strokes and lower altar supports are visible, but the full composition is less complete than in Oracle.",
+        "stageExplanation": "Later forms may add or clarify ritual material including ritual-tablet sign; describe the selected exemplar rather than assuming an altar was always present.",
+        "transitionNote": "Later forms may add or clarify ritual material including ritual-tablet sign; describe the selected exemplar rather than assuming an altar was always present.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +640,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/sacrifice/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal reorganizes the offering and hand into smooth upper curves above a tall, symmetric altar base.",
+        "changeNoteFromPrevious": "Reorganizes the offering and hand into smooth upper curves above a tall, symmetric altar base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-祭"
@@ -453,8 +666,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal reorganizes the offering and hand into smooth upper curves above a tall, symmetric altar base.",
-        "transitionNote": "Small Seal reorganizes the offering and hand into smooth upper curves above a tall, symmetric altar base.",
+        "stageExplanation": "Reorganizes the offering and hand into smooth upper curves above a tall, symmetric altar base.",
+        "transitionNote": "Reorganizes the offering and hand into smooth upper curves above a tall, symmetric altar base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +677,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/sacrifice/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the upper hand/offering into angular strokes and turns the altar into the familiar 示-like lower section.",
+        "changeNoteFromPrevious": "Flattens the upper hand/offering into angular strokes and turns the altar into the familiar ritual-tablet sign-like lower section.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-祭"
@@ -490,8 +703,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the upper hand/offering into angular strokes and turns the altar into the familiar 示-like lower section.",
-        "transitionNote": "Clerical flattens the upper hand/offering into angular strokes and turns the altar into the familiar 示-like lower section.",
+        "stageExplanation": "Flattens the upper hand/offering into angular strokes and turns the altar into the familiar ritual-tablet sign-like lower section.",
+        "transitionNote": "Flattens the upper hand/offering into angular strokes and turns the altar into the familiar ritual-tablet sign-like lower section.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +714,7 @@
         "label": "Regular Script",
         "form": "祭",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 祭 standardizes the hand-and-offering cluster over 示, preserving the ritual action as a multi-component character rather than a single pictograph.",
+        "changeNoteFromPrevious": "The hand/offering graph is standardized with the ritual 示-derived lower element in 祭; incense is never an encoded component.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +740,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 祭 standardizes the hand-and-offering cluster over 示, preserving the ritual action as a multi-component character rather than a single pictograph.",
-        "transitionNote": "Regular 祭 standardizes the hand-and-offering cluster over 示, preserving the ritual action as a multi-component character rather than a single pictograph.",
+        "stageExplanation": "The hand/offering graph is standardized with the ritual 示-derived lower element in 祭; incense is never an encoded component.",
+        "transitionNote": "The hand/offering graph is standardized with the ritual 示-derived lower element in 祭; incense is never an encoded component.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +749,7 @@
     ],
     "origin": {
       "concept": "sacrifice",
-      "explanation": "A piece of meat or offering carried by hand and presented on an altar with rising incense.",
+      "explanation": "A hand presents a piece of meat, sometimes with droplets interpreted as blood or juice; a ritual/spirit-tablet component is added later.",
       "asset": {
         "characterID": "sacrifice",
         "historicalStage": null,
@@ -553,7 +766,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of sacrifice",
+        "accessibilityDescription": "Illustration of sacrifice / ritual offering",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +784,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'sacrifice', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'sacrifice / ritual offering', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +854,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

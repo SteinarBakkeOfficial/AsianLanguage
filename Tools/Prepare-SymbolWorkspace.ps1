@@ -1,8 +1,8 @@
 param(
-  [string]$SourcePath = "content/shared-characters",
-  [string]$SymbolsPath = "content/symbols",
+  [string]$SourcePath = "docs/archive/legacy-pilot/shared-characters",
+  [string]$SymbolsPath = "docs/archive/legacy-pilot/symbols",
   [string]$ComponentsPath = "content/components",
-  [string]$ManifestPath = "content/manifests",
+  [string]$ManifestPath = "docs/archive/legacy-pilot/manifests",
   [string]$AssetRoot = "Resources"
 )
 

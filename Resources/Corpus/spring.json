@@ -2,8 +2,8 @@
   "id": "spring",
   "version": 1,
   "coreCharacter": "泉",
-  "coreSharedMeaning": "spring",
-  "recognitionTakeaway": "Regular 泉 separates the idea into a 白-like source at the top and 水 below, making the flowing-water component explicit in the modern character.",
+  "coreSharedMeaning": "spring / source",
+  "recognitionTakeaway": "The water-source picture has become the regular graph 泉, with the original spring scene only partly visible.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6CC9",
   "simplifiedForm": "泉",
@@ -15,9 +15,9 @@
     "A broad upper enclosure sits above several long descending lines, making the water seem to emerge from beneath an opening.",
     "Regular 泉 separates the idea into a 白-like source at the top and 水 below, making the flowing-water component explicit in the modern character."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-032-泉-u6CC9",
+  "contentFolder": "content/release/symbols/spring",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-032-泉-u6CC9/research.md",
+  "researchNotesPath": "content/release/symbols/spring/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "spring"
       ],
       "examples": [
+        {
+          "text": "泉",
+          "reading": "quán",
+          "translation": "spring",
+          "speechText": "泉",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "quán"
+          ]
+        },
         {
           "text": "泉水",
           "reading": "quánshuǐ",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "山泉",
+          "reading": "shānquán",
+          "translation": "mountain spring",
+          "speechText": "山泉",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这里有温泉。",
           "reading": "Zhèlǐ yǒu wēnquán.",
           "translation": "There is a hot spring here.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "泉",
@@ -98,6 +127,18 @@
         "spring"
       ],
       "taiwanExamples": [
+        {
+          "text": "泉",
+          "reading": "quán",
+          "translation": "spring",
+          "speechText": "泉",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "泉水",
           "reading": "quánshuǐ",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "泉",
+          "reading": "cyun4",
+          "translation": "spring",
+          "speechText": "泉",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "泉水",
           "reading": "cyun4 seoi2",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "泉",
       "readings": [
         {
-          "system": "on",
-          "value": "セン (sen)",
+          "system": "onyomi",
+          "value": "セン — sen",
           "audioAssetRef": null,
           "speechText": "せん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "セン",
+          "romanization": "sen",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "いずみ (izumi)",
+          "system": "kunyomi",
+          "value": "いずみ — izumi",
           "audioAssetRef": null,
           "speechText": "いずみ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "いずみ",
+          "romanization": "izumi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "泉"
-          ]
+          ],
+          "kanaReading": "いずみ",
+          "coversReadings": [
+            "いずみ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "泉",
+              "reading": "いずみ"
+            }
+          ],
+          "furiganaHtml": "<ruby>泉<rt>いずみ</rt></ruby>"
         },
         {
           "text": "温泉",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "泉"
-          ]
+          ],
+          "kanaReading": "おんせん",
+          "coversReadings": [
+            "セン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "温泉",
+              "reading": "おんせん"
+            }
+          ],
+          "furiganaHtml": "<ruby>温泉<rt>おんせん</rt></ruby>"
+        },
+        {
+          "text": "源泉",
+          "reading": "gensen",
+          "translation": "source; hot-spring source",
+          "speechText": "源泉",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "げんせん",
+          "furiganaSegments": [
+            {
+              "text": "源泉",
+              "reading": "げんせん"
+            }
+          ],
+          "furiganaHtml": "<ruby>源泉<rt>げんせん</rt></ruby>"
+        },
+        {
+          "text": "温泉地",
+          "reading": "onsenchi",
+          "translation": "hot-spring resort",
+          "speechText": "温泉地",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おんせんち",
+          "furiganaSegments": [
+            {
+              "text": "温泉地",
+              "reading": "おんせんち"
+            }
+          ],
+          "furiganaHtml": "<ruby>温泉地<rt>おんせんち</rt></ruby>"
         },
         {
           "text": "温泉に入ります。",
@@ -267,33 +390,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "泉"
-          ]
+          ],
+          "kanaReading": "おんせんにはいります。",
+          "furiganaSegments": [
+            {
+              "text": "温泉",
+              "reading": "おんせん"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "入",
+              "reading": "はい"
+            },
+            {
+              "text": "ります"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>温泉<rt>おんせん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ります。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "いずみ",
+        "romanization": "izumi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "泉",
       "readings": [
         {
           "system": "hanja",
-          "value": "천 / cheon",
+          "value": "천 — cheon",
           "audioAssetRef": null,
           "speechText": "천",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "샘 / saem",
-          "audioAssetRef": null,
-          "speechText": "샘",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "천",
+          "romanization": "cheon"
         }
       ],
       "glosses": [
         "spring"
       ],
       "examples": [
+        {
+          "text": "샘",
+          "reading": "saem",
+          "translation": "spring / source",
+          "speechText": "샘",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "온천",
           "reading": "oncheon",
@@ -323,6 +487,18 @@
           ]
         },
         {
+          "text": "원천",
+          "reading": "woncheon",
+          "translation": "source / origin",
+          "speechText": "원천",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "온천에 가요.",
           "reading": "oncheone gayo.",
           "translation": "I go to a hot spring.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "천 — cheon",
+          "audioAssetRef": null,
+          "speechText": "천",
+          "speechLanguage": "korean",
+          "nativeReading": "천",
+          "romanization": "cheon"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "샘 — saem",
+          "audioAssetRef": null,
+          "speechText": "샘",
+          "speechLanguage": "korean",
+          "nativeReading": "샘",
+          "romanization": "saem",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "spring / source",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "천",
+        "romanization": "cheon",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +561,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Spring water pouring out of a rocky opening and flowing away as a stream.",
+    "originAnchor": "A rock opening and water combine to show a spring or source.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/spring/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A broad upper enclosure sits above several long descending lines, making the water seem to emerge from beneath an opening.",
+        "changeNoteFromPrevious": "Water emerges from a rock/cave fissure; the source-and-flow relation is still pictorial.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-泉"
@@ -379,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A broad upper enclosure sits above several long descending lines, making the water seem to emerge from beneath an opening.",
-        "transitionNote": "A broad upper enclosure sits above several long descending lines, making the water seem to emerge from beneath an opening.",
+        "stageExplanation": "Water emerges from a rock/cave fissure; the source-and-flow relation is still pictorial.",
+        "transitionNote": "Water emerges from a rock/cave fissure; the source-and-flow relation is still pictorial.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "泉",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 泉 separates the idea into a 白-like source at the top and 水 below, making the flowing-water component explicit in the modern character.",
+        "changeNoteFromPrevious": "The water-source picture has become the regular graph 泉, with the original spring scene only partly visible.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 泉 separates the idea into a 白-like source at the top and 水 below, making the flowing-water component explicit in the modern character.",
-        "transitionNote": "Regular 泉 separates the idea into a 白-like source at the top and 水 below, making the flowing-water component explicit in the modern character.",
+        "stageExplanation": "The water-source picture has become the regular graph 泉, with the original spring scene only partly visible.",
+        "transitionNote": "The water-source picture has become the regular graph 泉, with the original spring scene only partly visible.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "spring",
-      "explanation": "Spring water pouring out of a rocky opening and flowing away as a stream.",
+      "explanation": "Water flowing out from a rock fissure/cave opening.",
       "asset": {
         "characterID": "spring",
         "historicalStage": null,
@@ -553,7 +768,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of spring",
+        "accessibilityDescription": "Illustration of spring / source",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +786,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'spring', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'spring / source', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

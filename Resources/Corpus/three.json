@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "三",
   "coreSharedMeaning": "three",
-  "recognitionTakeaway": "Regular 三 standardizes the pattern with a short top line, medium middle line, and long bottom line.",
+  "recognitionTakeaway": "Standardizes the pattern with a short top line, medium middle line, and long bottom line.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+4E09",
   "simplifiedForm": "三",
@@ -15,9 +15,9 @@
     "Oracle has three thick floating strokes, each slightly different in width and angle.",
     "Regular 三 standardizes the pattern with a short top line, medium middle line, and long bottom line."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-084-三-u4E09",
+  "contentFolder": "content/release/symbols/three",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-084-三-u4E09/research.md",
+  "researchNotesPath": "content/release/symbols/three/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "three"
       ],
       "examples": [
+        {
+          "text": "三",
+          "reading": "sān",
+          "translation": "three",
+          "speechText": "三",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "sān"
+          ]
+        },
         {
           "text": "三月",
           "reading": "sānyuè",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "三个",
+          "reading": "sān ge",
+          "translation": "three items",
+          "speechText": "三个",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我有三本书。",
           "reading": "Wǒ yǒu sān běn shū.",
           "translation": "I have three books.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "三",
@@ -98,6 +127,18 @@
         "three"
       ],
       "taiwanExamples": [
+        {
+          "text": "三",
+          "reading": "sān",
+          "translation": "three",
+          "speechText": "三",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "三月",
           "reading": "sānyuè",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "三",
+          "reading": "saam1",
+          "translation": "three",
+          "speechText": "三",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "三月",
           "reading": "saam1 jyut6",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "三",
       "readings": [
         {
-          "system": "on",
-          "value": "サン (san)",
+          "system": "onyomi",
+          "value": "サン — san",
           "audioAssetRef": null,
           "speechText": "さん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "サン",
+          "romanization": "san",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "みっつ (mittsu)",
+          "system": "kunyomi",
+          "value": "みっつ — mittsu",
           "audioAssetRef": null,
           "speechText": "みっつ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "みっつ",
+          "romanization": "mittsu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "三"
-          ]
+          ],
+          "kanaReading": "みっつ",
+          "coversReadings": [
+            "みっつ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "三",
+              "reading": "みっ"
+            },
+            {
+              "text": "つ"
+            }
+          ],
+          "furiganaHtml": "<ruby>三<rt>みっ</rt></ruby>つ"
         },
         {
           "text": "三人",
@@ -253,7 +328,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "三"
-          ]
+          ],
+          "kanaReading": "さんにん",
+          "coversReadings": [
+            "サン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "三人",
+              "reading": "さんにん"
+            }
+          ],
+          "furiganaHtml": "<ruby>三人<rt>さんにん</rt></ruby>"
+        },
+        {
+          "text": "三月",
+          "reading": "sangatsu",
+          "translation": "March",
+          "speechText": "三月",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "さんがつ",
+          "furiganaSegments": [
+            {
+              "text": "三月",
+              "reading": "さんがつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>三月<rt>さんがつ</rt></ruby>"
+        },
+        {
+          "text": "三角",
+          "reading": "sankaku",
+          "translation": "triangle",
+          "speechText": "三角",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "さんかく",
+          "furiganaSegments": [
+            {
+              "text": "三角",
+              "reading": "さんかく"
+            }
+          ],
+          "furiganaHtml": "<ruby>三角<rt>さんかく</rt></ruby>"
         },
         {
           "text": "りんごを三つください。",
@@ -267,33 +393,70 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "三"
-          ]
+          ],
+          "kanaReading": "りんごをみっつください。",
+          "furiganaSegments": [
+            {
+              "text": "りんごを"
+            },
+            {
+              "text": "三",
+              "reading": "みっ"
+            },
+            {
+              "text": "つください"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "りんごを<ruby>三<rt>みっ</rt></ruby>つください。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "サン",
+        "romanization": "san",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "三",
       "readings": [
         {
           "system": "hanja",
-          "value": "삼 / sam",
+          "value": "삼 — sam",
           "audioAssetRef": null,
           "speechText": "삼",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "셋 / set",
-          "audioAssetRef": null,
-          "speechText": "셋",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "삼",
+          "romanization": "sam"
         }
       ],
       "glosses": [
         "three"
       ],
       "examples": [
+        {
+          "text": "셋",
+          "reading": "set",
+          "translation": "three",
+          "speechText": "셋",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "삼월",
           "reading": "samwol",
@@ -323,6 +486,18 @@
           ]
         },
         {
+          "text": "삼각",
+          "reading": "samgak",
+          "translation": "triangle",
+          "speechText": "삼각",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "셋이 가요.",
           "reading": "sesi gayo.",
           "translation": "Three of us are going.",
@@ -337,7 +512,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "삼 — sam",
+          "audioAssetRef": null,
+          "speechText": "삼",
+          "speechLanguage": "korean",
+          "nativeReading": "삼",
+          "romanization": "sam"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "셋 — set",
+          "audioAssetRef": null,
+          "speechText": "셋",
+          "speechLanguage": "korean",
+          "nativeReading": "셋",
+          "romanization": "set",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "three",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "삼",
+        "romanization": "sam",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +560,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Three separate marks, demonstrated with three stones or horizontal pieces stacked in order.",
+    "originAnchor": "Three horizontal marks represent three.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/three/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle has three thick floating strokes, each slightly different in width and angle.",
+        "changeNoteFromPrevious": "Has three thick floating strokes, each slightly different in width and angle.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-三"
@@ -379,8 +593,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle has three thick floating strokes, each slightly different in width and angle.",
-        "transitionNote": "Oracle has three thick floating strokes, each slightly different in width and angle.",
+        "stageExplanation": "Has three thick floating strokes, each slightly different in width and angle.",
+        "transitionNote": "Has three thick floating strokes, each slightly different in width and angle.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +604,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/three/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze stretches the three marks into longer, diagonally rising lines.",
+        "changeNoteFromPrevious": "Stretches the three marks into longer, diagonally rising lines.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-三"
@@ -416,8 +630,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze stretches the three marks into longer, diagonally rising lines.",
-        "transitionNote": "Bronze stretches the three marks into longer, diagonally rising lines.",
+        "stageExplanation": "Stretches the three marks into longer, diagonally rising lines.",
+        "transitionNote": "Stretches the three marks into longer, diagonally rising lines.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +641,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/three/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal makes all three short, level, and evenly spaced.",
+        "changeNoteFromPrevious": "Makes all three short, level, and evenly spaced.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-三"
@@ -453,8 +667,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal makes all three short, level, and evenly spaced.",
-        "transitionNote": "Small Seal makes all three short, level, and evenly spaced.",
+        "stageExplanation": "Makes all three short, level, and evenly spaced.",
+        "transitionNote": "Makes all three short, level, and evenly spaced.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +678,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/three/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical broadens the strokes and begins differentiating their lengths.",
+        "changeNoteFromPrevious": "Broadens the strokes and begins differentiating their lengths.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-三"
@@ -490,8 +704,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical broadens the strokes and begins differentiating their lengths.",
-        "transitionNote": "Clerical broadens the strokes and begins differentiating their lengths.",
+        "stageExplanation": "Broadens the strokes and begins differentiating their lengths.",
+        "transitionNote": "Broadens the strokes and begins differentiating their lengths.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +715,7 @@
         "label": "Regular Script",
         "form": "三",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 三 standardizes the pattern with a short top line, medium middle line, and long bottom line.",
+        "changeNoteFromPrevious": "Standardizes the pattern with a short top line, medium middle line, and long bottom line.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +741,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 三 standardizes the pattern with a short top line, medium middle line, and long bottom line.",
-        "transitionNote": "Regular 三 standardizes the pattern with a short top line, medium middle line, and long bottom line.",
+        "stageExplanation": "Standardizes the pattern with a short top line, medium middle line, and long bottom line.",
+        "transitionNote": "Standardizes the pattern with a short top line, medium middle line, and long bottom line.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +750,7 @@
     ],
     "origin": {
       "concept": "three",
-      "explanation": "Three separate marks, demonstrated with three stones or horizontal pieces stacked in order.",
+      "explanation": "Three horizontal marks directly represent the number three.",
       "asset": {
         "characterID": "three",
         "historicalStage": null,
@@ -641,13 +855,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

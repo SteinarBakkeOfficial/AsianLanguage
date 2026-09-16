@@ -1,0 +1,944 @@
+{
+  "id": "upright",
+  "version": 1,
+  "coreCharacter": "正",
+  "coreSharedMeaning": "correct / upright (earlier journey/campaign graph)",
+  "recognitionTakeaway": "The structure regularizes as 正, whose familiar correct/upright senses are later than the earliest movement/campaign use.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+6B63",
+  "simplifiedForm": "正",
+  "traditionalForm": "正",
+  "additionalMeanings": [],
+  "formationType": "simpleIdeograph",
+  "visualTeachingNotes": [
+    "A foot placed beneath a straight reference line, shown moving into correct alignment.",
+    "Oracle sets a strong upper marker above a separate foot-like lower form.",
+    "Regular 正 regularizes the top 一 over 止, making the historical “foot reaching a line” relationship visibly clear in the modern component structure."
+  ],
+  "contentFolder": "content/release/symbols/upright",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/upright/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 83,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "正",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "zhèng",
+          "audioAssetRef": null,
+          "speechText": "正",
+          "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "zhēng",
+          "audioAssetRef": null,
+          "speechText": "正",
+          "speechLanguage": "mandarin",
+          "usageNote": "current restricted reading, notably 正月"
+        }
+      ],
+      "glosses": [
+        "upright"
+      ],
+      "examples": [
+        {
+          "text": "正",
+          "reading": "zhèng",
+          "translation": "upright",
+          "speechText": "正",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zhèng"
+          ]
+        },
+        {
+          "text": "正确",
+          "reading": "zhèngquè",
+          "translation": "correct",
+          "speechText": "正确",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        },
+        {
+          "text": "正中",
+          "reading": "zhèngzhōng",
+          "translation": "exact center",
+          "speechText": "正中",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        },
+        {
+          "text": "正常",
+          "reading": "zhèngcháng",
+          "translation": "normal",
+          "speechText": "正常",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "正月",
+          "reading": "zhēngyuè",
+          "translation": "first lunar month",
+          "speechText": "正月",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "zhēng"
+          ]
+        },
+        {
+          "text": "这个答案正确。",
+          "reading": "Zhège dá’àn zhèngquè.",
+          "translation": "This answer is correct.",
+          "speechText": "这个答案正确。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "正",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "zhèng",
+          "audioAssetRef": null,
+          "speechText": "正",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "upright"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "正",
+          "reading": "zhèng",
+          "translation": "upright",
+          "speechText": "正",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "正確",
+          "reading": "zhèngquè",
+          "translation": "correct",
+          "speechText": "正確",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        },
+        {
+          "text": "正中",
+          "reading": "zhèngzhōng",
+          "translation": "exact center",
+          "speechText": "正中",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        },
+        {
+          "text": "這個答案正確。",
+          "reading": "Zhège dá’àn zhèngquè.",
+          "translation": "This answer is correct.",
+          "speechText": "這個答案正確。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "正",
+          "reading": "zing3",
+          "translation": "upright",
+          "speechText": "正",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "正確",
+          "reading": "zing3 kok3",
+          "translation": "correct",
+          "speechText": "正確",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        },
+        {
+          "text": "正中",
+          "reading": "zing3 zung1",
+          "translation": "exact center",
+          "speechText": "正中",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        },
+        {
+          "text": "答案正確。",
+          "reading": "daap3 on3 zing3 kok3",
+          "translation": "The answer is correct.",
+          "speechText": "答案正確。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "zhèng",
+          "audioAssetRef": null,
+          "speechText": "正",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "zing3",
+          "audioAssetRef": null,
+          "speechText": "正",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "正",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "セイ — sei",
+          "audioAssetRef": null,
+          "speechText": "せい",
+          "speechLanguage": "japanese",
+          "nativeReading": "セイ",
+          "romanization": "sei",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "onyomi",
+          "value": "ショウ — shō",
+          "audioAssetRef": null,
+          "speechText": "しょう",
+          "speechLanguage": "japanese",
+          "nativeReading": "ショウ",
+          "romanization": "shō",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "ただしい — tadashii",
+          "audioAssetRef": null,
+          "speechText": "ただしい",
+          "speechLanguage": "japanese",
+          "nativeReading": "ただしい",
+          "romanization": "tadashii",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "ただす — tadasu",
+          "audioAssetRef": null,
+          "speechText": "ただす",
+          "speechLanguage": "japanese",
+          "nativeReading": "ただす",
+          "romanization": "tadasu",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "upright"
+      ],
+      "examples": [
+        {
+          "text": "正しい",
+          "reading": "tadashii",
+          "translation": "correct; right",
+          "speechText": "正しい",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ],
+          "kanaReading": "ただしい",
+          "coversReadings": [
+            "ただしい"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "正",
+              "reading": "ただ"
+            },
+            {
+              "text": "しい"
+            }
+          ],
+          "furiganaHtml": "<ruby>正<rt>ただ</rt></ruby>しい"
+        },
+        {
+          "text": "正解",
+          "reading": "seikai",
+          "translation": "correct answer",
+          "speechText": "正解",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ],
+          "kanaReading": "せいかい",
+          "coversReadings": [
+            "セイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "正解",
+              "reading": "せいかい"
+            }
+          ],
+          "furiganaHtml": "<ruby>正解<rt>せいかい</rt></ruby>"
+        },
+        {
+          "text": "正月",
+          "reading": "shōgatsu",
+          "translation": "New Year",
+          "speechText": "正月",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しょうがつ",
+          "coversReadings": [
+            "ショウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "正月",
+              "reading": "しょうがつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>正月<rt>しょうがつ</rt></ruby>"
+        },
+        {
+          "text": "正常",
+          "reading": "seijō",
+          "translation": "normal",
+          "speechText": "正常",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "せいじょう",
+          "furiganaSegments": [
+            {
+              "text": "正常",
+              "reading": "せいじょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>正常<rt>せいじょう</rt></ruby>"
+        },
+        {
+          "text": "答えは正しいです。",
+          "reading": "kotae wa tadashii desu.",
+          "translation": "The answer is correct.",
+          "speechText": "答えは正しいです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ],
+          "kanaReading": "こたえはただしいです。",
+          "furiganaSegments": [
+            {
+              "text": "答",
+              "reading": "こた"
+            },
+            {
+              "text": "えは"
+            },
+            {
+              "text": "正",
+              "reading": "ただ"
+            },
+            {
+              "text": "しいです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>答<rt>こた</rt></ruby>えは<ruby>正<rt>ただ</rt></ruby>しいです。"
+        },
+        {
+          "text": "正す",
+          "reading": "tadasu",
+          "translation": "correct; set right",
+          "speechText": "正す",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ただす",
+          "coversReadings": [
+            "ただす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "正",
+              "reading": "ただ"
+            },
+            {
+              "text": "す"
+            }
+          ],
+          "furiganaHtml": "<ruby>正<rt>ただ</rt></ruby>す"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ただしい",
+        "romanization": "tadashii",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "正",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "정 — jeong",
+          "audioAssetRef": null,
+          "speechText": "정",
+          "speechLanguage": "korean",
+          "nativeReading": "정",
+          "romanization": "jeong"
+        }
+      ],
+      "glosses": [
+        "upright"
+      ],
+      "examples": [
+        {
+          "text": "바르다",
+          "reading": "bareuda",
+          "translation": "correct / upright",
+          "speechText": "바르다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "정답",
+          "reading": "jeongdap",
+          "translation": "correct answer",
+          "speechText": "정답",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        },
+        {
+          "text": "정면",
+          "reading": "jeongmyeon",
+          "translation": "front; straight ahead",
+          "speechText": "정면",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        },
+        {
+          "text": "정확",
+          "reading": "jeonghwak",
+          "translation": "accurate / correct",
+          "speechText": "정확",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "답이 맞아요.",
+          "reading": "dabi majayo.",
+          "translation": "The answer is correct.",
+          "speechText": "답이 맞아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "正"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "정 — jeong",
+          "audioAssetRef": null,
+          "speechText": "정",
+          "speechLanguage": "korean",
+          "nativeReading": "정",
+          "romanization": "jeong"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "바르다 — bareuda",
+          "audioAssetRef": null,
+          "speechText": "바르다",
+          "speechLanguage": "korean",
+          "nativeReading": "바르다",
+          "romanization": "bareuda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "correct / upright",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "정",
+        "romanization": "jeong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+  "originAnchor": "A foot advances toward a marked destination. The earliest idea was movement toward a target; the later meanings ‘correct’ and ‘upright’ developed afterward.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/upright/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "A foot points toward a marked destination, expressing long-distance travel rather than ‘correct.’",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-正"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "正",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%AD%A3/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/41_E84A.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/upright/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/upright/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "正 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A foot moves toward a destination/settlement element; this early movement/campaign graph is closely related to the word later written later campaign character.",
+        "transitionNote": "A foot points toward a marked destination, expressing long-distance travel rather than ‘correct.’",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/upright/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "Keeps the top marker detached while the lower foot becomes a compact branching shape.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-正"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "正",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%AD%A3/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/31_E758.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/upright/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/upright/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "正 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Keeps the top marker detached while the lower foot becomes a compact branching shape.",
+        "transitionNote": "Keeps the top marker detached while the lower foot becomes a compact branching shape.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/upright/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Joins the upper horizontal directly to a tall foot sign-like lower structure.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-正"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "正",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%AD%A3/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_6B63.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/upright/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/upright/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "正 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Joins the upper horizontal directly to a tall foot sign-like lower structure.",
+        "transitionNote": "Joins the upper horizontal directly to a tall foot sign-like lower structure.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/upright/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "Flattens the top line and thickens the lower foot into a compact rectangular bend.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-正"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "正",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%AD%A3/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_E134.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/upright/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/upright/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "正 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Flattens the top line and thickens the lower foot into a compact rectangular bend.",
+        "transitionNote": "Flattens the top line and thickens the lower foot into a compact rectangular bend.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "正",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The travel sense became distinct, while the regular form came to carry the later meanings ‘correct’ and ‘upright.’",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "正",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "正 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The structure regularizes as 正, whose familiar correct/upright senses are later than the earliest movement/campaign use.",
+        "transitionNote": "The travel sense became distinct, while the regular form came to carry the later meanings ‘correct’ and ‘upright.’",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "upright",
+      "explanation": "A foot moves toward a destination or settlement marker; the early graph is connected with movement toward a target before the later “correct/upright” senses.",
+      "asset": {
+        "characterID": "upright",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/upright/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of upright",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-正"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿱一止.",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-正"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'correct / upright (earlier journey/campaign graph)', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E6%AD%A3"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-正",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E6%AD%A3"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-正",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

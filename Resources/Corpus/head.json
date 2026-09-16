@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "首",
   "coreSharedMeaning": "head",
-  "recognitionTakeaway": "Regular 首 reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
+  "recognitionTakeaway": "Reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+9996",
   "simplifiedForm": "首",
@@ -15,9 +15,9 @@
     "A head-like enclosure contains angled facial lines, with several loose strokes rising above it like hair.",
     "Regular 首 reduces the hair to the two top strokes and regularizes the head into the 自-like lower component."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-012-首-u9996",
+  "contentFolder": "content/release/symbols/head",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-012-首-u9996/research.md",
+  "researchNotesPath": "content/release/symbols/head/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "head; first; classifier for songs/poems"
       ],
       "examples": [
+        {
+          "text": "首",
+          "reading": "shǒu",
+          "translation": "head; first; classifier for songs/poems",
+          "speechText": "首",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shǒu"
+          ]
+        },
         {
           "text": "首都",
           "reading": "shǒudū",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "首要",
+          "reading": "shǒuyào",
+          "translation": "primary; most important",
+          "speechText": "首要",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这首歌很好听。",
           "reading": "Zhè shǒu gē hěn hǎotīng.",
           "translation": "This song sounds very good.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "首",
@@ -98,6 +127,18 @@
         "head; first; classifier for songs/poems"
       ],
       "taiwanExamples": [
+        {
+          "text": "首",
+          "reading": "shǒu",
+          "translation": "head; first; classifier for songs/poems",
+          "speechText": "首",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "首都",
           "reading": "shǒudū",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "首",
+          "reading": "sau2",
+          "translation": "head; first; classifier for songs/poems",
+          "speechText": "首",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "首都",
           "reading": "sau2 dou1",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "首",
       "readings": [
         {
-          "system": "on",
-          "value": "シュ (shu)",
+          "system": "onyomi",
+          "value": "シュ — shu",
           "audioAssetRef": null,
           "speechText": "しゅ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "シュ",
+          "romanization": "shu",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "くび (kubi)",
+          "system": "kunyomi",
+          "value": "くび — kubi",
           "audioAssetRef": null,
           "speechText": "くび",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "くび",
+          "romanization": "kubi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "首"
-          ]
+          ],
+          "kanaReading": "くび",
+          "coversReadings": [
+            "くび"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "首",
+              "reading": "くび"
+            }
+          ],
+          "furiganaHtml": "<ruby>首<rt>くび</rt></ruby>"
         },
         {
           "text": "首都",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "首"
-          ]
+          ],
+          "kanaReading": "しゅと",
+          "coversReadings": [
+            "シュ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "首都",
+              "reading": "しゅと"
+            }
+          ],
+          "furiganaHtml": "<ruby>首都<rt>しゅと</rt></ruby>"
+        },
+        {
+          "text": "首相",
+          "reading": "shushō",
+          "translation": "prime minister",
+          "speechText": "首相",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しゅしょう",
+          "furiganaSegments": [
+            {
+              "text": "首相",
+              "reading": "しゅしょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>首相<rt>しゅしょう</rt></ruby>"
+        },
+        {
+          "text": "手首",
+          "reading": "tekubi",
+          "translation": "wrist",
+          "speechText": "手首",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "てくび",
+          "furiganaSegments": [
+            {
+              "text": "手首",
+              "reading": "てくび"
+            }
+          ],
+          "furiganaHtml": "<ruby>手首<rt>てくび</rt></ruby>"
         },
         {
           "text": "首が痛いです。",
@@ -267,33 +390,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "首"
-          ]
+          ],
+          "kanaReading": "くびがいたいです。",
+          "furiganaSegments": [
+            {
+              "text": "首",
+              "reading": "くび"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "痛",
+              "reading": "いた"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>首<rt>くび</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "くび",
+        "romanization": "kubi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "首",
       "readings": [
         {
           "system": "hanja",
-          "value": "수 / su",
+          "value": "수 — su",
           "audioAssetRef": null,
           "speechText": "수",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "머리 / meori",
-          "audioAssetRef": null,
-          "speechText": "머리",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "수",
+          "romanization": "su"
         }
       ],
       "glosses": [
         "head; first (in compounds)"
       ],
       "examples": [
+        {
+          "text": "머리",
+          "reading": "meori",
+          "translation": "head",
+          "speechText": "머리",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "수도",
           "reading": "sudo",
@@ -323,6 +487,18 @@
           ]
         },
         {
+          "text": "수장",
+          "reading": "sujang",
+          "translation": "leader / head",
+          "speechText": "수장",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "머리가 아파요.",
           "reading": "meoriga apayo.",
           "translation": "My head hurts.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "수 — su",
+          "audioAssetRef": null,
+          "speechText": "수",
+          "speechLanguage": "korean",
+          "nativeReading": "수",
+          "romanization": "su"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "머리 — meori",
+          "audioAssetRef": null,
+          "speechText": "머리",
+          "speechLanguage": "korean",
+          "nativeReading": "머리",
+          "romanization": "meori",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "head",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "수",
+        "romanization": "su",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,7 +561,7 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A human head and neck shown in side profile.",
+    "originAnchor": "A human head in profile.",
     "stages": [
       {
         "stage": "oracleBone",
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "首",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 首 reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
+        "changeNoteFromPrevious": "Reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 首 reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
-        "transitionNote": "Regular 首 reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
+        "stageExplanation": "Reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
+        "transitionNote": "Reduces the hair to the two top strokes and regularizes the head into the 自-like lower component.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "head",
-      "explanation": "A human head and neck shown in side profile.",
+      "explanation": "A human head in profile, with hair and facial/eye detail in ancient forms.",
       "asset": {
         "characterID": "head",
         "historicalStage": null,
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

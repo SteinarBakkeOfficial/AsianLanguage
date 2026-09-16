@@ -1,0 +1,889 @@
+{
+  "id": "black",
+  "version": 1,
+  "coreCharacter": "黑",
+  "coreSharedMeaning": "black",
+  "recognitionTakeaway": "The graph stabilizes as 黑 for black/dark; later soot/chimney analyses should not be projected backward as certain.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+9ED1",
+  "simplifiedForm": "黑",
+  "traditionalForm": "黑",
+  "additionalMeanings": [],
+  "formationType": "simpleIdeograph",
+  "visualTeachingNotes": [
+    "A soot-darkened person beside a fire, smoke rising around the blackened figure.",
+    "Oracle shows a human-like body with a dark enclosed head or top and branching limbs below.",
+    "Regular 黑 regularizes the boxed upper section and four lower dots; the literal soot-darkened person is no longer visible, but the dark/fire association remains in the lower marks."
+  ],
+  "contentFolder": "content/release/symbols/black",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/black/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 114,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "黑",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "hēi",
+          "audioAssetRef": null,
+          "speechText": "黑",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "black"
+      ],
+      "examples": [
+        {
+          "text": "黑",
+          "reading": "hēi",
+          "translation": "black",
+          "speechText": "黑",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "hēi"
+          ]
+        },
+        {
+          "text": "黑色",
+          "reading": "hēisè",
+          "translation": "black",
+          "speechText": "黑色",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ]
+        },
+        {
+          "text": "黑夜",
+          "reading": "hēiyè",
+          "translation": "dark night",
+          "speechText": "黑夜",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ]
+        },
+        {
+          "text": "黑板",
+          "reading": "hēibǎn",
+          "translation": "blackboard",
+          "speechText": "黑板",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "这只猫是黑色的。",
+          "reading": "Zhè zhī māo shì hēisè de.",
+          "translation": "This cat is black.",
+          "speechText": "这只猫是黑色的。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "黑",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "hēi",
+          "audioAssetRef": null,
+          "speechText": "黑",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "black"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "黑",
+          "reading": "hēi",
+          "translation": "black",
+          "speechText": "黑",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "黑色",
+          "reading": "hēisè",
+          "translation": "black",
+          "speechText": "黑色",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ]
+        },
+        {
+          "text": "黑夜",
+          "reading": "hēiyè",
+          "translation": "dark night",
+          "speechText": "黑夜",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ]
+        },
+        {
+          "text": "這隻貓是黑色的。",
+          "reading": "Zhè zhī māo shì hēisè de.",
+          "translation": "This cat is black.",
+          "speechText": "這隻貓是黑色的。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "黑",
+          "reading": "hak1",
+          "translation": "black",
+          "speechText": "黑",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "黑色",
+          "reading": "hak1 sik1",
+          "translation": "black",
+          "speechText": "黑色",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ]
+        },
+        {
+          "text": "黑夜",
+          "reading": "hak1 je6",
+          "translation": "dark night",
+          "speechText": "黑夜",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ]
+        },
+        {
+          "text": "呢隻貓係黑色。",
+          "reading": "ni1 zek3 maau1 hai6 hak1 sik1",
+          "translation": "This cat is black.",
+          "speechText": "呢隻貓係黑色。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "hēi",
+          "audioAssetRef": null,
+          "speechText": "黑",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "hak1",
+          "audioAssetRef": null,
+          "speechText": "黑",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "黒",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "コク — koku",
+          "audioAssetRef": null,
+          "speechText": "こく",
+          "speechLanguage": "japanese",
+          "nativeReading": "コク",
+          "romanization": "koku",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "くろ — kuro",
+          "audioAssetRef": null,
+          "speechText": "くろ",
+          "speechLanguage": "japanese",
+          "nativeReading": "くろ",
+          "romanization": "kuro",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "くろい — kuroi",
+          "audioAssetRef": null,
+          "speechText": "くろい",
+          "speechLanguage": "japanese",
+          "nativeReading": "くろい",
+          "romanization": "kuroi",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "black"
+      ],
+      "examples": [
+        {
+          "text": "黒い",
+          "reading": "kuroi",
+          "translation": "black",
+          "speechText": "黒い",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ],
+          "kanaReading": "くろい",
+          "coversReadings": [
+            "くろ",
+            "くろい"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "黒",
+              "reading": "くろ"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "furiganaHtml": "<ruby>黒<rt>くろ</rt></ruby>い"
+        },
+        {
+          "text": "黒板",
+          "reading": "kokuban",
+          "translation": "blackboard",
+          "speechText": "黒板",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ],
+          "kanaReading": "こくばん",
+          "coversReadings": [
+            "コク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "黒板",
+              "reading": "こくばん"
+            }
+          ],
+          "furiganaHtml": "<ruby>黒板<rt>こくばん</rt></ruby>"
+        },
+        {
+          "text": "黒字",
+          "reading": "kuroji",
+          "translation": "black ink; profit",
+          "speechText": "黒字",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "くろじ",
+          "furiganaSegments": [
+            {
+              "text": "黒字",
+              "reading": "くろじ"
+            }
+          ],
+          "furiganaHtml": "<ruby>黒字<rt>くろじ</rt></ruby>"
+        },
+        {
+          "text": "黒猫",
+          "reading": "kuroneko",
+          "translation": "black cat",
+          "speechText": "黒猫",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "くろねこ",
+          "furiganaSegments": [
+            {
+              "text": "黒猫",
+              "reading": "くろねこ"
+            }
+          ],
+          "furiganaHtml": "<ruby>黒猫<rt>くろねこ</rt></ruby>"
+        },
+        {
+          "text": "猫は黒いです。",
+          "reading": "neko wa kuroi desu.",
+          "translation": "The cat is black.",
+          "speechText": "猫は黒いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ],
+          "kanaReading": "ねこはくろいです。",
+          "furiganaSegments": [
+            {
+              "text": "猫",
+              "reading": "ねこ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "黒",
+              "reading": "くろ"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>猫<rt>ねこ</rt></ruby>は<ruby>黒<rt>くろ</rt></ruby>いです。"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [
+        {
+          "form": "黑",
+          "label": "historical/traditional glyph form",
+          "usage": "Older graph form; modern standard Japanese uses 黒."
+        }
+      ],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "くろ",
+        "romanization": "kuro",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "黑",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "흑 — heuk",
+          "audioAssetRef": null,
+          "speechText": "흑",
+          "speechLanguage": "korean",
+          "nativeReading": "흑",
+          "romanization": "heuk"
+        }
+      ],
+      "glosses": [
+        "black"
+      ],
+      "examples": [
+        {
+          "text": "검다",
+          "reading": "geomda",
+          "translation": "black",
+          "speechText": "검다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "흑색",
+          "reading": "heuksaek",
+          "translation": "black",
+          "speechText": "흑색",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ]
+        },
+        {
+          "text": "흑백",
+          "reading": "heukbaek",
+          "translation": "black and white",
+          "speechText": "흑백",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ]
+        },
+        {
+          "text": "흑자",
+          "reading": "heukja",
+          "translation": "black ink / profit",
+          "speechText": "흑자",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "고양이가 검어요.",
+          "reading": "goyangiga geomeoyo.",
+          "translation": "The cat is black.",
+          "speechText": "고양이가 검어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "黑"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "흑 — heuk",
+          "audioAssetRef": null,
+          "speechText": "흑",
+          "speechLanguage": "korean",
+          "nativeReading": "흑",
+          "romanization": "heuk"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "검다 — geomda",
+          "audioAssetRef": null,
+          "speechText": "검다",
+          "speechLanguage": "korean",
+          "nativeReading": "검다",
+          "romanization": "geomda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "black",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "흑",
+        "romanization": "heuk",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "Leading theory: a person receiving facial tattooing and dark pigment as punishment; the sign later meant 'black,' inspiring a fire-and-chimney explanation.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/black/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "A leading account reads the early form as a human/head with a dark facial mark; this interpretation is disputed and should be illustrated non-graphically.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-黑"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "黑",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E9%BB%91/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/43_F2F2.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/black/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/black/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "黑 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A leading account reads the early form as a human/head with a dark facial mark; this interpretation is disputed and should be illustrated non-graphically.",
+        "transitionNote": "A leading account reads the early form as a human/head with a dark facial mark; this interpretation is disputed and should be illustrated non-graphically.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/black/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "Keeps the upright person silhouette but makes the head a pointed dark enclosure with paired internal marks.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-黑"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "黑",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E9%BB%91/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/33_E9A2.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/black/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/black/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "黑 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Keeps the upright person silhouette but makes the head a pointed dark enclosure with paired internal marks.",
+        "transitionNote": "Keeps the upright person silhouette but makes the head a pointed dark enclosure with paired internal marks.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/black/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Expands the head into a broad barred top and adds several long downward strokes beneath, producing a much more complex figure.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-黑"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "黑",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E9%BB%91/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_9ED1.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/black/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/black/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "黑 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Expands the head into a broad barred top and adds several long downward strokes beneath, producing a much more complex figure.",
+        "transitionNote": "Expands the head into a broad barred top and adds several long downward strokes beneath, producing a much more complex figure.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/black/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The broad upper section flattens and the lower strokes condense into a dense spread, closely anticipating the later standard structure.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-黑"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "黑",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E9%BB%91/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_EB07.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/black/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/black/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "黑 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The broad upper section flattens and the lower strokes condense into a dense spread, closely anticipating the later standard structure.",
+        "transitionNote": "The broad upper section flattens and the lower strokes condense into a dense spread, closely anticipating the later standard structure.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "黑",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The penal-tattoo graph came to write ‘black’ and displaced an older color term; the later soot-and-chimney explanation is a reinterpretation, not the original picture.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "黑",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "黑 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The graph stabilizes as 黑 for black/dark; later soot/chimney analyses should not be projected backward as certain.",
+        "transitionNote": "The penal-tattoo graph came to write ‘black’ and displaced an older color term; the later soot-and-chimney explanation is a reinterpretation, not the original picture.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "black",
+      "explanation": "A human/facial-mark graph in a leading palaeographic analysis, possibly connected with dark marking/ink punishment.",
+      "asset": {
+        "characterID": "black",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/black/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of black",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-黑"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿱⑧灬.",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-黑"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'black', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E9%BB%91"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-黑",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E9%BB%91"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-黑",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

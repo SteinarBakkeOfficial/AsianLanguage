@@ -71,7 +71,7 @@ try {
 
   $invalidStatusCorpus = Join-Path $tempRoot "invalid-status"
   New-Item -ItemType Directory -Path $invalidStatusCorpus | Out-Null
-  $record = Get-Content -Raw (Join-Path $repoRoot "content/shared-characters/tree.json") | ConvertFrom-Json
+  $record = Get-Content -Raw (Join-Path $repoRoot "docs/archive/legacy-pilot/shared-characters/tree.json") | ConvertFrom-Json
   $record.publicationStatus = "published-ish"
   $record | ConvertTo-Json -Depth 20 | Set-Content -Path (Join-Path $invalidStatusCorpus "tree.json") -Encoding utf8
 
@@ -81,7 +81,7 @@ try {
 
   $missingCaveatCorpus = Join-Path $tempRoot "missing-caveat"
   New-Item -ItemType Directory -Path $missingCaveatCorpus | Out-Null
-  $record = Get-Content -Raw (Join-Path $repoRoot "content/shared-characters/tree.json") | ConvertFrom-Json
+  $record = Get-Content -Raw (Join-Path $repoRoot "docs/archive/legacy-pilot/shared-characters/tree.json") | ConvertFrom-Json
   $record.structure.certainty = "limited"
   $record.structure.caveat = $null
   $record | ConvertTo-Json -Depth 20 | Set-Content -Path (Join-Path $missingCaveatCorpus "tree.json") -Encoding utf8

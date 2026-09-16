@@ -2,8 +2,8 @@
   "id": "official",
   "version": 1,
   "coreCharacter": "官",
-  "coreSharedMeaning": "official",
-  "recognitionTakeaway": "Regular 官 standardizes 宀 over the stacked inner element, preserving the strong image of something or someone housed under an official roof.",
+  "coreSharedMeaning": "official / government office",
+  "recognitionTakeaway": "The office/building graph stabilizes as 官 and extends to the officials associated with it.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5B98",
   "simplifiedForm": "官",
@@ -15,9 +15,9 @@
     "Oracle has a peaked roof enclosing a large central vertical form with two rounded internal lobes.",
     "Regular 官 standardizes 宀 over the stacked inner element, preserving the strong image of something or someone housed under an official roof."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-141-官-u5B98",
+  "contentFolder": "content/release/symbols/official",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-141-官-u5B98/research.md",
+  "researchNotesPath": "content/release/symbols/official/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "official"
       ],
       "examples": [
+        {
+          "text": "官",
+          "reading": "guān",
+          "translation": "official",
+          "speechText": "官",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "guān"
+          ]
+        },
         {
           "text": "官员",
           "reading": "guānyuán",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "法官",
+          "reading": "fǎguān",
+          "translation": "judge",
+          "speechText": "法官",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他是政府官员。",
           "reading": "Tā shì zhèngfǔ guānyuán.",
           "translation": "He is a government official.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "官",
@@ -98,6 +127,18 @@
         "official"
       ],
       "taiwanExamples": [
+        {
+          "text": "官",
+          "reading": "guān",
+          "translation": "official",
+          "speechText": "官",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "官員",
           "reading": "guānyuán",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "官",
+          "reading": "gun1",
+          "translation": "official",
+          "speechText": "官",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "官員",
           "reading": "gun1 jyun4",
@@ -203,17 +256,22 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "官",
       "readings": [
         {
-          "system": "on",
-          "value": "カン (kan)",
+          "system": "onyomi",
+          "value": "カン — kan",
           "audioAssetRef": null,
           "speechText": "かん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "カン",
+          "romanization": "kan",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -232,7 +290,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "官"
-          ]
+          ],
+          "kanaReading": "かんちょう",
+          "coversReadings": [
+            "カン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "官庁",
+              "reading": "かんちょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>官庁<rt>かんちょう</rt></ruby>"
         },
         {
           "text": "長官",
@@ -246,7 +315,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "官"
-          ]
+          ],
+          "kanaReading": "ちょうかん",
+          "furiganaSegments": [
+            {
+              "text": "長官",
+              "reading": "ちょうかん"
+            }
+          ],
+          "furiganaHtml": "<ruby>長官<rt>ちょうかん</rt></ruby>"
+        },
+        {
+          "text": "官僚",
+          "reading": "kanryō",
+          "translation": "bureaucrat",
+          "speechText": "官僚",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "かんりょう",
+          "furiganaSegments": [
+            {
+              "text": "官僚",
+              "reading": "かんりょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>官僚<rt>かんりょう</rt></ruby>"
+        },
+        {
+          "text": "官邸",
+          "reading": "kantei",
+          "translation": "official residence",
+          "speechText": "官邸",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "かんてい",
+          "furiganaSegments": [
+            {
+              "text": "官邸",
+              "reading": "かんてい"
+            }
+          ],
+          "furiganaHtml": "<ruby>官邸<rt>かんてい</rt></ruby>"
         },
         {
           "text": "長官が話します。",
@@ -260,20 +377,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "官"
-          ]
+          ],
+          "kanaReading": "ちょうかんがはなします。",
+          "furiganaSegments": [
+            {
+              "text": "長官",
+              "reading": "ちょうかん"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "話",
+              "reading": "はな"
+            },
+            {
+              "text": "します"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>長官<rt>ちょうかん</rt></ruby>が<ruby>話<rt>はな</rt></ruby>します。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "カン",
+        "romanization": "kan",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "官",
       "readings": [
         {
           "system": "hanja",
-          "value": "관 / gwan",
+          "value": "관 — gwan",
           "audioAssetRef": null,
           "speechText": "관",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "관",
+          "romanization": "gwan"
         }
       ],
       "glosses": [
@@ -309,6 +461,30 @@
           ]
         },
         {
+          "text": "관료",
+          "reading": "gwallyo",
+          "translation": "bureaucrat",
+          "speechText": "관료",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "관직",
+          "reading": "gwanjik",
+          "translation": "official post",
+          "speechText": "관직",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "장관이 말해요.",
           "reading": "janggwan-i malhaeyo.",
           "translation": "The minister speaks.",
@@ -323,7 +499,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "관 — gwan",
+          "audioAssetRef": null,
+          "speechText": "관",
+          "speechLanguage": "korean",
+          "nativeReading": "관",
+          "romanization": "gwan"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "관",
+        "romanization": "gwan",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -332,14 +527,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "An official seated beneath a roof, with a small official figure and larger administrative building shown below.",
+    "originAnchor": "A roofed building and a group of people combine to show a government office; this later led to 'official.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/official/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle has a peaked roof enclosing a large central vertical form with two rounded internal lobes.",
+        "changeNoteFromPrevious": "A roof/building encloses an old administrative/group element in the leading analysis, pointing first to an official office/building.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-官"
@@ -365,8 +560,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle has a peaked roof enclosing a large central vertical form with two rounded internal lobes.",
-        "transitionNote": "Oracle has a peaked roof enclosing a large central vertical form with two rounded internal lobes.",
+        "stageExplanation": "A roof/building encloses an old administrative/group element in the leading analysis, pointing first to an official office/building.",
+        "transitionNote": "A roof/building encloses an old administrative/group element in the leading analysis, pointing first to an official office/building.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -376,7 +571,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/official/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the roof broad and symmetrical while simplifying the interior into two stacked oval shapes.",
+        "changeNoteFromPrevious": "Makes the roof broad and symmetrical while simplifying the interior into two stacked oval shapes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-官"
@@ -402,8 +597,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the roof broad and symmetrical while simplifying the interior into two stacked oval shapes.",
-        "transitionNote": "Bronze makes the roof broad and symmetrical while simplifying the interior into two stacked oval shapes.",
+        "stageExplanation": "Makes the roof broad and symmetrical while simplifying the interior into two stacked oval shapes.",
+        "transitionNote": "Makes the roof broad and symmetrical while simplifying the interior into two stacked oval shapes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -413,7 +608,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/official/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the enclosure into 宀 around a tall inner shape divided by short horizontals.",
+        "changeNoteFromPrevious": "Regularizes the enclosure into roof/house sign around a tall inner shape divided by short horizontals.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-官"
@@ -439,8 +634,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the enclosure into 宀 around a tall inner shape divided by short horizontals.",
-        "transitionNote": "Small Seal regularizes the enclosure into 宀 around a tall inner shape divided by short horizontals.",
+        "stageExplanation": "Regularizes the enclosure into roof/house sign around a tall inner shape divided by short horizontals.",
+        "transitionNote": "Regularizes the enclosure into roof/house sign around a tall inner shape divided by short horizontals.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -450,7 +645,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/official/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the roof and compacts the interior into a block-like 官 form.",
+        "changeNoteFromPrevious": "Flattens the roof and compacts the interior into a block-like form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-官"
@@ -476,8 +671,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the roof and compacts the interior into a block-like 官 form.",
-        "transitionNote": "Clerical flattens the roof and compacts the interior into a block-like 官 form.",
+        "stageExplanation": "Flattens the roof and compacts the interior into a block-like form.",
+        "transitionNote": "Flattens the roof and compacts the interior into a block-like form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -487,7 +682,7 @@
         "label": "Regular Script",
         "form": "官",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 官 standardizes 宀 over the stacked inner element, preserving the strong image of something or someone housed under an official roof.",
+        "changeNoteFromPrevious": "The office/building graph stabilizes as 官 and extends to the officials associated with it.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -513,8 +708,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 官 standardizes 宀 over the stacked inner element, preserving the strong image of something or someone housed under an official roof.",
-        "transitionNote": "Regular 官 standardizes 宀 over the stacked inner element, preserving the strong image of something or someone housed under an official roof.",
+        "stageExplanation": "The office/building graph stabilizes as 官 and extends to the officials associated with it.",
+        "transitionNote": "The office/building graph stabilizes as 官 and extends to the officials associated with it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -522,7 +717,7 @@
     ],
     "origin": {
       "concept": "official",
-      "explanation": "An official seated beneath a roof, with a small official figure and larger administrative building shown below.",
+      "explanation": "A roofed building contains an old administrative or grouped-person element in a leading analysis.",
       "asset": {
         "characterID": "official",
         "historicalStage": null,
@@ -539,7 +734,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of official",
+        "accessibilityDescription": "Illustration of official / government office",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -557,7 +752,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'official', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'official / government office', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -627,13 +822,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -2,8 +2,8 @@
   "id": "take",
   "version": 1,
   "coreCharacter": "取",
-  "coreSharedMeaning": "take",
-  "recognitionTakeaway": "Regular 取 fixes 耳 on the left and 又 on the right, making the historical “hand at an ear” composition structurally explicit.",
+  "coreSharedMeaning": "take / obtain",
+  "recognitionTakeaway": "Ear + hand are compressed into 取, preserving the old taking/capturing action structurally.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+53D6",
   "simplifiedForm": "取",
@@ -15,9 +15,9 @@
     "Oracle shows a long hand or arm reaching toward a large ear-like shape; the two components are still pictorial and widely separated.",
     "Regular 取 fixes 耳 on the left and 又 on the right, making the historical “hand at an ear” composition structurally explicit."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-112-取-u53D6",
+  "contentFolder": "content/release/symbols/take",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-112-取-u53D6/research.md",
+  "researchNotesPath": "content/release/symbols/take/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "take"
       ],
       "examples": [
+        {
+          "text": "取",
+          "reading": "qǔ",
+          "translation": "take",
+          "speechText": "取",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "qǔ"
+          ]
+        },
         {
           "text": "取得",
           "reading": "qǔdé",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "取钱",
+          "reading": "qǔqián",
+          "translation": "withdraw money",
+          "speechText": "取钱",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "请取一张票。",
           "reading": "Qǐng qǔ yì zhāng piào.",
           "translation": "Please take a ticket.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "取",
@@ -98,6 +127,18 @@
         "take"
       ],
       "taiwanExamples": [
+        {
+          "text": "取",
+          "reading": "qǔ",
+          "translation": "take",
+          "speechText": "取",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "取得",
           "reading": "qǔdé",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "取",
+          "reading": "ceoi2",
+          "translation": "take",
+          "speechText": "取",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "取得",
           "reading": "ceoi2 dak1",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "取",
       "readings": [
         {
-          "system": "on",
-          "value": "シュ (shu)",
+          "system": "onyomi",
+          "value": "シュ — shu",
           "audioAssetRef": null,
           "speechText": "しゅ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "シュ",
+          "romanization": "shu",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "とる (toru)",
+          "system": "kunyomi",
+          "value": "とる — toru",
           "audioAssetRef": null,
           "speechText": "とる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "とる",
+          "romanization": "toru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "取"
-          ]
+          ],
+          "kanaReading": "とる",
+          "coversReadings": [
+            "とる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "取",
+              "reading": "と"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>取<rt>と</rt></ruby>る"
         },
         {
           "text": "取得",
@@ -253,7 +328,68 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "取"
-          ]
+          ],
+          "kanaReading": "しゅとく",
+          "coversReadings": [
+            "シュ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "取得",
+              "reading": "しゅとく"
+            }
+          ],
+          "furiganaHtml": "<ruby>取得<rt>しゅとく</rt></ruby>"
+        },
+        {
+          "text": "取材",
+          "reading": "shuzai",
+          "translation": "reporting; interview research",
+          "speechText": "取材",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しゅざい",
+          "furiganaSegments": [
+            {
+              "text": "取材",
+              "reading": "しゅざい"
+            }
+          ],
+          "furiganaHtml": "<ruby>取材<rt>しゅざい</rt></ruby>"
+        },
+        {
+          "text": "取り出す",
+          "reading": "toridasu",
+          "translation": "take out",
+          "speechText": "取り出す",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "とりだす",
+          "furiganaSegments": [
+            {
+              "text": "取",
+              "reading": "と"
+            },
+            {
+              "text": "り"
+            },
+            {
+              "text": "出",
+              "reading": "だ"
+            },
+            {
+              "text": "す"
+            }
+          ],
+          "furiganaHtml": "<ruby>取<rt>と</rt></ruby>り<ruby>出<rt>だ</rt></ruby>す"
         },
         {
           "text": "本を取ります。",
@@ -267,33 +403,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "取"
-          ]
+          ],
+          "kanaReading": "ほんをとります。",
+          "furiganaSegments": [
+            {
+              "text": "本",
+              "reading": "ほん"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "取",
+              "reading": "と"
+            },
+            {
+              "text": "ります"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>本<rt>ほん</rt></ruby>を<ruby>取<rt>と</rt></ruby>ります。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "とる",
+        "romanization": "toru",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "取",
       "readings": [
         {
           "system": "hanja",
-          "value": "취 / chwi",
+          "value": "취 — chwi",
           "audioAssetRef": null,
           "speechText": "취",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "가져가다 / gajyeogada",
-          "audioAssetRef": null,
-          "speechText": "가져가다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "취",
+          "romanization": "chwi"
         }
       ],
       "glosses": [
         "take"
       ],
       "examples": [
+        {
+          "text": "가져가다",
+          "reading": "gajyeogada",
+          "translation": "take / carry away",
+          "speechText": "가져가다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "취득",
           "reading": "chwideuk",
@@ -323,6 +500,18 @@
           ]
         },
         {
+          "text": "취재",
+          "reading": "chwijae",
+          "translation": "reporting / interview research",
+          "speechText": "취재",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "책을 가져가요.",
           "reading": "chaegeul gajyeogayo.",
           "translation": "I take the book with me.",
@@ -337,7 +526,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "취 — chwi",
+          "audioAssetRef": null,
+          "speechText": "취",
+          "speechLanguage": "korean",
+          "nativeReading": "취",
+          "romanization": "chwi"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "가져가다 — gajyeogada",
+          "audioAssetRef": null,
+          "speechText": "가져가다",
+          "speechLanguage": "korean",
+          "nativeReading": "가져가다",
+          "romanization": "gajyeogada",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "take / carry away",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "취",
+        "romanization": "chwi",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +574,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A hand grasping an ear from a reclining person, with the act of taking emphasized.",
+    "originAnchor": "A hand and an ear combine to express seizing or taking.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/take/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows a long hand or arm reaching toward a large ear-like shape; the two components are still pictorial and widely separated.",
+        "changeNoteFromPrevious": "The encoded components are an ear and a hand taking/grasping it; historical trophy-taking gives context without adding a whole body to the graph.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-取"
@@ -379,8 +607,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows a long hand or arm reaching toward a large ear-like shape; the two components are still pictorial and widely separated.",
-        "transitionNote": "Oracle shows a long hand or arm reaching toward a large ear-like shape; the two components are still pictorial and widely separated.",
+        "stageExplanation": "The encoded components are an ear and a hand taking/grasping it; historical trophy-taking gives context without adding a whole body to the graph.",
+        "transitionNote": "The encoded components are an ear and a hand taking/grasping it; historical trophy-taking gives context without adding a whole body to the graph.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +618,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/take/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze rounds the hand into a compact left element while the ear becomes a thick right enclosure with a long trailing stroke.",
+        "changeNoteFromPrevious": "Rounds the hand into a compact left element while the ear becomes a thick right enclosure with a long trailing stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-取"
@@ -416,8 +644,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze rounds the hand into a compact left element while the ear becomes a thick right enclosure with a long trailing stroke.",
-        "transitionNote": "Bronze rounds the hand into a compact left element while the ear becomes a thick right enclosure with a long trailing stroke.",
+        "stageExplanation": "Rounds the hand into a compact left element while the ear becomes a thick right enclosure with a long trailing stroke.",
+        "transitionNote": "Rounds the hand into a compact left element while the ear becomes a thick right enclosure with a long trailing stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +655,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/take/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal makes the ear into a clear rectangular component and the hand into a distinct curved stroke beside it.",
+        "changeNoteFromPrevious": "Makes the ear into a clear rectangular component and the hand into a distinct curved stroke beside it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-取"
@@ -453,8 +681,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal makes the ear into a clear rectangular component and the hand into a distinct curved stroke beside it.",
-        "transitionNote": "Small Seal makes the ear into a clear rectangular component and the hand into a distinct curved stroke beside it.",
+        "stageExplanation": "Makes the ear into a clear rectangular component and the hand into a distinct curved stroke beside it.",
+        "transitionNote": "Makes the ear into a clear rectangular component and the hand into a distinct curved stroke beside it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +692,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/take/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical squares the ear further and turns the hand into the angular 又-like right side, closely approaching 取.",
+        "changeNoteFromPrevious": "The hand-and-ear structure becomes angular and compact, closely approaching the later standard arrangement.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-取"
@@ -490,8 +718,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical squares the ear further and turns the hand into the angular 又-like right side, closely approaching 取.",
-        "transitionNote": "Clerical squares the ear further and turns the hand into the angular 又-like right side, closely approaching 取.",
+        "stageExplanation": "The hand-and-ear structure becomes angular and compact, closely approaching the later standard arrangement.",
+        "transitionNote": "The hand-and-ear structure becomes angular and compact, closely approaching the later standard arrangement.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +729,7 @@
         "label": "Regular Script",
         "form": "取",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 取 fixes 耳 on the left and 又 on the right, making the historical “hand at an ear” composition structurally explicit.",
+        "changeNoteFromPrevious": "Ear + hand are compressed into 取, preserving the old taking/capturing action structurally.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +755,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 取 fixes 耳 on the left and 又 on the right, making the historical “hand at an ear” composition structurally explicit.",
-        "transitionNote": "Regular 取 fixes 耳 on the left and 又 on the right, making the historical “hand at an ear” composition structurally explicit.",
+        "stageExplanation": "Ear + hand are compressed into 取, preserving the old taking/capturing action structurally.",
+        "transitionNote": "Ear + hand are compressed into 取, preserving the old taking/capturing action structurally.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +764,7 @@
     ],
     "origin": {
       "concept": "take",
-      "explanation": "A hand grasping an ear from a reclining person, with the act of taking emphasized.",
+      "explanation": "A hand grasping/taking an ear.",
       "asset": {
         "characterID": "take",
         "historicalStage": null,
@@ -553,7 +781,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of take",
+        "accessibilityDescription": "Illustration of take / obtain",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +799,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'take', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'take / obtain', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +869,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

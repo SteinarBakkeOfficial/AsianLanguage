@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "从",
   "coreSharedMeaning": "follow",
-  "recognitionTakeaway": "Regular simplified 从 reduces the idea to two 人 forms in sequence; Traditional 從 later adds the walking 彳 component around this older core.",
+  "recognitionTakeaway": "The historical endpoint is 從, with the older two-person core combined with the walking element.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+4ECE",
   "simplifiedForm": "从",
@@ -15,9 +15,9 @@
     "Oracle shows two narrow human profiles side by side, both leaning in the same direction.",
     "Regular simplified 从 reduces the idea to two 人 forms in sequence; Traditional 從 later adds the walking 彳 component around this older core."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-111-从-u4ECE",
+  "contentFolder": "content/release/symbols/follow",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-111-从-u4ECE/research.md",
+  "researchNotesPath": "content/release/symbols/follow/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "follow"
       ],
       "examples": [
+        {
+          "text": "从",
+          "reading": "cóng",
+          "translation": "follow",
+          "speechText": "从",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "cóng"
+          ]
+        },
         {
           "text": "从前",
           "reading": "cóngqián",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "从来",
+          "reading": "cónglái",
+          "translation": "always; ever",
+          "speechText": "从来",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我从家里来。",
           "reading": "Wǒ cóng jiālǐ lái.",
           "translation": "I come from home.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "從",
@@ -98,6 +127,18 @@
         "follow"
       ],
       "taiwanExamples": [
+        {
+          "text": "從",
+          "reading": "cóng",
+          "translation": "follow",
+          "speechText": "從",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "從前",
           "reading": "cóngqián",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "從",
+          "reading": "cung4",
+          "translation": "follow",
+          "speechText": "從",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "從前",
           "reading": "cung4 cin4",
@@ -203,24 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "従",
       "readings": [
         {
-          "system": "on",
-          "value": "ジュウ (jū)",
+          "system": "onyomi",
+          "value": "ジュウ — jū",
           "audioAssetRef": null,
           "speechText": "じゅう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ジュウ",
+          "romanization": "jū",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "したがう (shitagau)",
+          "system": "kunyomi",
+          "value": "したがう — shitagau",
           "audioAssetRef": null,
           "speechText": "したがう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "したがう",
+          "romanization": "shitagau",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "したがえる — shitagaeru",
+          "audioAssetRef": null,
+          "speechText": "したがえる",
+          "speechLanguage": "japanese",
+          "nativeReading": "したがえる",
+          "romanization": "shitagaeru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +310,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "从"
-          ]
+          ],
+          "kanaReading": "したがう",
+          "coversReadings": [
+            "したがう"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "従",
+              "reading": "したが"
+            },
+            {
+              "text": "う"
+            }
+          ],
+          "furiganaHtml": "<ruby>従<rt>したが</rt></ruby>う"
         },
         {
           "text": "従業員",
@@ -253,7 +338,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "从"
-          ]
+          ],
+          "kanaReading": "じゅうぎょういん",
+          "coversReadings": [
+            "ジュウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "従業員",
+              "reading": "じゅうぎょういん"
+            }
+          ],
+          "furiganaHtml": "<ruby>従業員<rt>じゅうぎょういん</rt></ruby>"
+        },
+        {
+          "text": "従来",
+          "reading": "jūrai",
+          "translation": "traditionally; up to now",
+          "speechText": "従来",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "じゅうらい",
+          "furiganaSegments": [
+            {
+              "text": "従来",
+              "reading": "じゅうらい"
+            }
+          ],
+          "furiganaHtml": "<ruby>従来<rt>じゅうらい</rt></ruby>"
+        },
+        {
+          "text": "従順",
+          "reading": "jūjun",
+          "translation": "obedient",
+          "speechText": "従順",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "じゅうじゅん",
+          "furiganaSegments": [
+            {
+              "text": "従順",
+              "reading": "じゅうじゅん"
+            }
+          ],
+          "furiganaHtml": "<ruby>従順<rt>じゅうじゅん</rt></ruby>"
         },
         {
           "text": "指示に従います。",
@@ -267,33 +403,106 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "从"
-          ]
+          ],
+          "kanaReading": "しじにしたがいます。",
+          "furiganaSegments": [
+            {
+              "text": "指示",
+              "reading": "しじ"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "従",
+              "reading": "したが"
+            },
+            {
+              "text": "います"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>指示<rt>しじ</rt></ruby>に<ruby>従<rt>したが</rt></ruby>います。"
+        },
+        {
+          "text": "従える",
+          "reading": "shitagaeru",
+          "translation": "make follow; lead/command",
+          "speechText": "従える",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "したがえる",
+          "coversReadings": [
+            "したがえる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "従",
+              "reading": "したが"
+            },
+            {
+              "text": "える"
+            }
+          ],
+          "furiganaHtml": "<ruby>従<rt>したが</rt></ruby>える"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [
+        {
+          "form": "從",
+          "label": "historical Japanese form",
+          "usage": "Older/traditional form; modern standard Japanese uses 従."
+        }
+      ],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "したがう",
+        "romanization": "shitagau",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "從",
       "readings": [
         {
           "system": "hanja",
-          "value": "종 / jong",
+          "value": "종 — jong",
           "audioAssetRef": null,
           "speechText": "종",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "따르다 / ttareuda",
-          "audioAssetRef": null,
-          "speechText": "따르다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "종",
+          "romanization": "jong"
         }
       ],
       "glosses": [
         "follow"
       ],
       "examples": [
+        {
+          "text": "따르다",
+          "reading": "ttareuda",
+          "translation": "follow",
+          "speechText": "따르다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "복종",
           "reading": "bokjong",
@@ -323,6 +532,18 @@
           ]
         },
         {
+          "text": "종속",
+          "reading": "jongsok",
+          "translation": "subordination",
+          "speechText": "종속",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "규칙을 따라요.",
           "reading": "gyuchigeul ttarayo.",
           "translation": "I follow the rules.",
@@ -337,7 +558,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "종 — jong",
+          "audioAssetRef": null,
+          "speechText": "종",
+          "speechLanguage": "korean",
+          "nativeReading": "종",
+          "romanization": "jong"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "따르다 — ttareuda",
+          "audioAssetRef": null,
+          "speechText": "따르다",
+          "speechLanguage": "korean",
+          "nativeReading": "따르다",
+          "romanization": "ttareuda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "follow",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "종",
+        "romanization": "jong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +606,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Two people walking in the same direction, one following behind the other.",
+    "originAnchor": "Two separate people, one behind the other, combine to express following.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/follow/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows two narrow human profiles side by side, both leaning in the same direction.",
+        "changeNoteFromPrevious": "Shows two narrow human profiles side by side, both leaning in the same direction.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-从"
@@ -379,8 +639,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows two narrow human profiles side by side, both leaning in the same direction.",
-        "transitionNote": "Oracle shows two narrow human profiles side by side, both leaning in the same direction.",
+        "stageExplanation": "Shows two narrow human profiles side by side, both leaning in the same direction.",
+        "transitionNote": "Shows two narrow human profiles side by side, both leaning in the same direction.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +650,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/follow/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze thickens the figures and gives each a bent leg or projecting limb, still keeping the pair clearly separate.",
+        "changeNoteFromPrevious": "Thickens the figures and gives each a bent leg or projecting limb, still keeping the pair clearly separate.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-从"
@@ -416,8 +676,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze thickens the figures and gives each a bent leg or projecting limb, still keeping the pair clearly separate.",
-        "transitionNote": "Bronze thickens the figures and gives each a bent leg or projecting limb, still keeping the pair clearly separate.",
+        "stageExplanation": "Thickens the figures and gives each a bent leg or projecting limb, still keeping the pair clearly separate.",
+        "transitionNote": "Thickens the figures and gives each a bent leg or projecting limb, still keeping the pair clearly separate.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +687,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/follow/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal smooths them into two tall, nearly parallel human curves.",
+        "changeNoteFromPrevious": "Smooths them into two tall, nearly parallel human curves.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-从"
@@ -453,8 +713,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal smooths them into two tall, nearly parallel human curves.",
-        "transitionNote": "Small Seal smooths them into two tall, nearly parallel human curves.",
+        "stageExplanation": "Smooths them into two tall, nearly parallel human curves.",
+        "transitionNote": "Smooths them into two tall, nearly parallel human curves.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +724,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/follow/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical squares the pair into two blocky, mirrored person-like forms standing close together.",
+        "changeNoteFromPrevious": "Squares the pair into two blocky, mirrored person-like forms standing close together.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-从"
@@ -490,8 +750,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical squares the pair into two blocky, mirrored person-like forms standing close together.",
-        "transitionNote": "Clerical squares the pair into two blocky, mirrored person-like forms standing close together.",
+        "stageExplanation": "Squares the pair into two blocky, mirrored person-like forms standing close together.",
+        "transitionNote": "Squares the pair into two blocky, mirrored person-like forms standing close together.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +761,7 @@
         "label": "Regular Script",
         "form": "从",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular simplified 从 reduces the idea to two 人 forms in sequence; Traditional 從 later adds the walking 彳 component around this older core.",
+        "changeNoteFromPrevious": "The historical endpoint is 從, with the older two-person core combined with the walking element.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +787,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular simplified 从 reduces the idea to two 人 forms in sequence; Traditional 從 later adds the walking 彳 component around this older core.",
-        "transitionNote": "Regular simplified 从 reduces the idea to two 人 forms in sequence; Traditional 從 later adds the walking 彳 component around this older core.",
+        "stageExplanation": "The historical endpoint is 從, with the older two-person core combined with the walking element.",
+        "transitionNote": "The historical endpoint is 從, with the older two-person core combined with the walking element.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +796,7 @@
     ],
     "origin": {
       "concept": "follow",
-      "explanation": "Two people walking in the same direction, one following behind the other.",
+      "explanation": "Two people moving in the same direction, one following the other.",
       "asset": {
         "characterID": "follow",
         "historicalStage": null,
@@ -641,13 +901,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

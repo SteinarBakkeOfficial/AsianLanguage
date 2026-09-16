@@ -2,8 +2,8 @@
   "id": "mouth",
   "version": 1,
   "coreCharacter": "口",
-  "coreSharedMeaning": "mouth; opening",
-  "recognitionTakeaway": "Regular 口 regularizes the outline into a compact square box, the simplest modern version of the original opening.",
+  "coreSharedMeaning": "mouth / opening",
+  "recognitionTakeaway": "Regularizes the outline into a compact square box, the simplest modern version of the original opening.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+53E3",
   "simplifiedForm": "口",
@@ -15,9 +15,9 @@
     "A thick rounded enclosure surrounds an empty center, already functioning as a simple pictograph of an opening.",
     "Regular 口 regularizes the outline into a compact square box, the simplest modern version of the original opening."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-006-口-u53E3",
+  "contentFolder": "content/release/symbols/mouth",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-006-口-u53E3/research.md",
+  "researchNotesPath": null,
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -50,6 +50,9 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "口"
+          ],
+          "coversReadings": [
+            "kǒu"
           ]
         },
         {
@@ -67,6 +70,30 @@
           ]
         },
         {
+          "text": "入口",
+          "reading": "rùkǒu",
+          "translation": "entrance",
+          "speechText": "入口",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "口水",
+          "reading": "kǒushuǐ",
+          "translation": "saliva",
+          "speechText": "口水",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "请张口。",
           "reading": "Qǐng zhāngkǒu.",
           "translation": "Please open your mouth.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "口",
@@ -125,6 +154,18 @@
           "introducedSymbols": [
             "口"
           ]
+        },
+        {
+          "text": "入口",
+          "reading": "rùkǒu",
+          "translation": "entrance",
+          "speechText": "入口",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "請張口。",
@@ -183,6 +224,18 @@
           "introducedSymbols": [
             "口"
           ]
+        },
+        {
+          "text": "呢個係門口。",
+          "reading": "ni1 go3 hai6 mun4 hau2",
+          "translation": "This is a doorway.",
+          "speechText": "呢個係門口。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "口",
       "readings": [
         {
-          "system": "on",
-          "value": "コウ (kō)",
+          "system": "onyomi",
+          "value": "コウ — kō",
           "audioAssetRef": null,
           "speechText": "こう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コウ",
+          "romanization": "kō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ク (ku)",
+          "system": "onyomi",
+          "value": "ク — ku",
           "audioAssetRef": null,
           "speechText": "く",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ク",
+          "romanization": "ku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "くち (kuchi)",
+          "system": "kunyomi",
+          "value": "くち — kuchi",
           "audioAssetRef": null,
           "speechText": "くち",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "くち",
+          "romanization": "kuchi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,19 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "口"
-          ]
+          ],
+          "kanaReading": "くち",
+          "coversReadings": [
+            "ク",
+            "くち"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "口",
+              "reading": "くち"
+            }
+          ],
+          "furiganaHtml": "<ruby>口<rt>くち</rt></ruby>"
         },
         {
           "text": "入口",
@@ -260,7 +336,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "口"
-          ]
+          ],
+          "kanaReading": "いりぐち",
+          "furiganaSegments": [
+            {
+              "text": "入口",
+              "reading": "いりぐち"
+            }
+          ],
+          "furiganaHtml": "<ruby>入口<rt>いりぐち</rt></ruby>"
+        },
+        {
+          "text": "人口",
+          "reading": "jinkō",
+          "translation": "population",
+          "speechText": "人口",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "じんこう",
+          "coversReadings": [
+            "コウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "人口",
+              "reading": "じんこう"
+            }
+          ],
+          "furiganaHtml": "<ruby>人口<rt>じんこう</rt></ruby>"
+        },
+        {
+          "text": "出口",
+          "reading": "deguchi",
+          "translation": "exit",
+          "speechText": "出口",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "でぐち",
+          "furiganaSegments": [
+            {
+              "text": "出口",
+              "reading": "でぐち"
+            }
+          ],
+          "furiganaHtml": "<ruby>出口<rt>でぐち</rt></ruby>"
         },
         {
           "text": "口を開けてください。",
@@ -274,33 +401,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "口"
-          ]
+          ],
+          "kanaReading": "くちをあけてください。",
+          "furiganaSegments": [
+            {
+              "text": "口",
+              "reading": "くち"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "開",
+              "reading": "あ"
+            },
+            {
+              "text": "けてください"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>口<rt>くち</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けてください。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "くち",
+        "romanization": "kuchi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "口",
       "readings": [
         {
           "system": "hanja",
-          "value": "구 / gu",
+          "value": "구 — gu",
           "audioAssetRef": null,
           "speechText": "구",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "입 / ip",
-          "audioAssetRef": null,
-          "speechText": "입",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "구",
+          "romanization": "gu"
         }
       ],
       "glosses": [
         "mouth; opening"
       ],
       "examples": [
+        {
+          "text": "입",
+          "reading": "ip",
+          "translation": "mouth",
+          "speechText": "입",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "입구",
           "reading": "ipgu",
@@ -330,6 +498,18 @@
           ]
         },
         {
+          "text": "인구",
+          "reading": "ingu",
+          "translation": "population",
+          "speechText": "인구",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "입을 벌려요.",
           "reading": "ibeul beollyeoyo.",
           "translation": "I open my mouth.",
@@ -344,7 +524,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "구 — gu",
+          "audioAssetRef": null,
+          "speechText": "구",
+          "speechLanguage": "korean",
+          "nativeReading": "구",
+          "romanization": "gu"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "입 — ip",
+          "audioAssetRef": null,
+          "speechText": "입",
+          "speechLanguage": "korean",
+          "nativeReading": "입",
+          "romanization": "ip",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "mouth",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "구",
+        "romanization": "gu",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +572,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A human mouth shown as a pair of open lips.",
+    "originAnchor": "An open mouth.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/mouth/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A thick rounded enclosure surrounds an empty center, already functioning as a simple pictograph of an opening.",
+        "changeNoteFromPrevious": "A simple open enclosure represents the mouth/opening; it is schematic rather than a detailed pair of lips.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-口"
@@ -386,8 +605,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A thick rounded enclosure surrounds an empty center, already functioning as a simple pictograph of an opening.",
-        "transitionNote": "A thick rounded enclosure surrounds an empty center, already functioning as a simple pictograph of an opening.",
+        "stageExplanation": "A simple open enclosure represents the mouth/opening; it is schematic rather than a detailed pair of lips.",
+        "transitionNote": "A simple open enclosure represents the mouth/opening; it is schematic rather than a detailed pair of lips.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -508,7 +727,7 @@
         "label": "Regular Script",
         "form": "口",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 口 regularizes the outline into a compact square box, the simplest modern version of the original opening.",
+        "changeNoteFromPrevious": "Regularizes the outline into a compact square box, the simplest modern version of the original opening.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +753,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 口 regularizes the outline into a compact square box, the simplest modern version of the original opening.",
-        "transitionNote": "Regular 口 regularizes the outline into a compact square box, the simplest modern version of the original opening.",
+        "stageExplanation": "Regularizes the outline into a compact square box, the simplest modern version of the original opening.",
+        "transitionNote": "Regularizes the outline into a compact square box, the simplest modern version of the original opening.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +762,7 @@
     ],
     "origin": {
       "concept": "mouth; opening",
-      "explanation": "A human mouth shown as a pair of open lips.",
+      "explanation": "An open mouth/opening represented schematically.",
       "asset": {
         "characterID": "mouth",
         "historicalStage": null,
@@ -560,7 +779,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of mouth; opening",
+        "accessibilityDescription": "Illustration of mouth / opening",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +797,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'mouth; opening', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'mouth / opening', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -620,13 +839,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "耳",
   "coreSharedMeaning": "ear",
-  "recognitionTakeaway": "Regular 耳 squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form.",
+  "recognitionTakeaway": "Squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+8033",
   "simplifiedForm": "耳",
@@ -15,9 +15,9 @@
     "The outline closely follows the folds of a real ear, with several inward notches along one side.",
     "Regular 耳 squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-008-耳-u8033",
+  "contentFolder": "content/release/symbols/ear",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-008-耳-u8033/research.md",
+  "researchNotesPath": "content/release/symbols/ear/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "ear"
       ],
       "examples": [
+        {
+          "text": "耳",
+          "reading": "ěr",
+          "translation": "ear",
+          "speechText": "耳",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "ěr"
+          ]
+        },
         {
           "text": "耳朵",
           "reading": "ěrduo",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "耳环",
+          "reading": "ěrhuán",
+          "translation": "earring",
+          "speechText": "耳环",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我的耳朵很冷。",
           "reading": "Wǒ de ěrduo hěn lěng.",
           "translation": "My ears are cold.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "耳",
@@ -98,6 +127,18 @@
         "ear"
       ],
       "taiwanExamples": [
+        {
+          "text": "耳",
+          "reading": "ěr",
+          "translation": "ear",
+          "speechText": "耳",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "耳朵",
           "reading": "ěrduo",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "耳",
+          "reading": "ji5",
+          "translation": "ear",
+          "speechText": "耳",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "耳仔",
           "reading": "ji5 zai2",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "耳",
       "readings": [
         {
-          "system": "on",
-          "value": "ジ (ji)",
+          "system": "onyomi",
+          "value": "ジ — ji",
           "audioAssetRef": null,
           "speechText": "じ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ジ",
+          "romanization": "ji",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "みみ (mimi)",
+          "system": "kunyomi",
+          "value": "みみ — mimi",
           "audioAssetRef": null,
           "speechText": "みみ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "みみ",
+          "romanization": "mimi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "耳"
-          ]
+          ],
+          "kanaReading": "みみ",
+          "coversReadings": [
+            "みみ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "耳",
+              "reading": "みみ"
+            }
+          ],
+          "furiganaHtml": "<ruby>耳<rt>みみ</rt></ruby>"
         },
         {
           "text": "耳元",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "耳"
-          ]
+          ],
+          "kanaReading": "みみもと",
+          "furiganaSegments": [
+            {
+              "text": "耳元",
+              "reading": "みみもと"
+            }
+          ],
+          "furiganaHtml": "<ruby>耳元<rt>みみもと</rt></ruby>"
+        },
+        {
+          "text": "耳鼻科",
+          "reading": "jibika",
+          "translation": "ear, nose and throat clinic",
+          "speechText": "耳鼻科",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "じびか",
+          "coversReadings": [
+            "ジ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "耳鼻科",
+              "reading": "じびか"
+            }
+          ],
+          "furiganaHtml": "<ruby>耳鼻科<rt>じびか</rt></ruby>"
+        },
+        {
+          "text": "耳栓",
+          "reading": "mimisen",
+          "translation": "earplugs",
+          "speechText": "耳栓",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "みみせん",
+          "furiganaSegments": [
+            {
+              "text": "耳栓",
+              "reading": "みみせん"
+            }
+          ],
+          "furiganaHtml": "<ruby>耳栓<rt>みみせん</rt></ruby>"
         },
         {
           "text": "耳が痛いです。",
@@ -267,27 +390,55 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "耳"
-          ]
+          ],
+          "kanaReading": "みみがいたいです。",
+          "furiganaSegments": [
+            {
+              "text": "耳",
+              "reading": "みみ"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "痛",
+              "reading": "いた"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>耳<rt>みみ</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "みみ",
+        "romanization": "mimi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "耳",
       "readings": [
         {
           "system": "hanja",
-          "value": "이 / i",
+          "value": "이 — i",
           "audioAssetRef": null,
           "speechText": "이",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "귀 / gwi",
-          "audioAssetRef": null,
-          "speechText": "귀",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "이",
+          "romanization": "i"
         }
       ],
       "glosses": [
@@ -306,7 +457,8 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "耳"
-          ]
+          ],
+          "exampleRole": "semanticEquivalent"
         },
         {
           "text": "귀걸이",
@@ -323,6 +475,30 @@
           ]
         },
         {
+          "text": "귓속",
+          "reading": "gwitsok",
+          "translation": "inside the ear",
+          "speechText": "귓속",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "이명",
+          "reading": "imyeong",
+          "translation": "tinnitus",
+          "speechText": "이명",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "귀가 아파요.",
           "reading": "gwiga apayo.",
           "translation": "My ear hurts.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "이 — i",
+          "audioAssetRef": null,
+          "speechText": "이",
+          "speechLanguage": "korean",
+          "nativeReading": "이",
+          "romanization": "i"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "귀 — gwi",
+          "audioAssetRef": null,
+          "speechText": "귀",
+          "speechLanguage": "korean",
+          "nativeReading": "귀",
+          "romanization": "gwi",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "ear",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "이",
+        "romanization": "i",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,7 +561,7 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A human ear viewed from the side.",
+    "originAnchor": "A single human ear, echoing the ancient pictograph.",
     "stages": [
       {
         "stage": "oracleBone",
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "耳",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 耳 squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form.",
+        "changeNoteFromPrevious": "Squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 耳 squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form.",
-        "transitionNote": "Regular 耳 squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form.",
+        "stageExplanation": "Squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form.",
+        "transitionNote": "Squares the ear into stacked horizontals and verticals, retaining the long lower stroke as the last trace of the earlier hanging form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "ear",
-      "explanation": "A human ear viewed from the side.",
+      "explanation": "A human ear.",
       "asset": {
         "characterID": "ear",
         "historicalStage": null,
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -17,28 +17,30 @@ struct ModernFormsComparisonView: View {
                 .foregroundStyle(AppColors.textPrimary)
                 .multilineTextAlignment(.center)
             ArtifactField {
-                ZStack {
-                    SymbolStageBackgroundView(stageID: "regular")
-                    Text(record.coreCharacter)
-                        // Match the Regular Script visual weight to the historical exhibits above it.
-                        .font(CJKFontRole.museumRegular.font(size: 196))
-                        .foregroundStyle(AppColors.artifactInk)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                        .minimumScaleFactor(0.55)
-                        .lineLimit(1)
-                        .accessibilityLabel("Regular Script \(record.coreCharacter)")
+                // Match the museum-stage caption spacing while preserving the established frame size.
+                VStack(spacing: 16) {
+                    ZStack {
+                        SymbolStageBackgroundView(stageID: "regular")
+                        Text(record.coreCharacter)
+                            // Keep the Regular Script glyph dark against the light paper background in Dark mode too.
+                            .font(CJKFontRole.museumRegular.font(size: 196))
+                            .foregroundStyle(AppColors.artifactInk)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                            .minimumScaleFactor(0.55)
+                            .lineLimit(1)
+                            .accessibilityLabel("Regular Script \(record.coreCharacter)")
+                    }
+                    .frame(maxWidth: .infinity, height: 248)
 
-                }
-                .frame(maxWidth: .infinity, minHeight: 280, maxHeight: 280)
-                .overlay(alignment: .bottom) {
+                    // Keep the material cue in its own quiet band instead of over the paper artwork.
                     Text("Paper · brush")
                         .font(AppTypography.metadata)
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity, height: 20)
                         .padding(.horizontal, AppSpacing.spaceSm)
-                        .padding(.bottom, AppSpacing.spaceSm)
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .frame(maxWidth: .infinity, height: 284)
             }
             .frame(height: 304)
             Text("A modern standardized Kai reference rendering.")

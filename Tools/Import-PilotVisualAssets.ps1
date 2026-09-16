@@ -1,6 +1,6 @@
 param(
-  [string]$SharedCharactersPath = "content/shared-characters",
-  [string]$SymbolsPath = "content/symbols"
+  [string]$SharedCharactersPath = "docs/archive/legacy-pilot/shared-characters",
+  [string]$SymbolsPath = "docs/archive/legacy-pilot/symbols"
 )
 
 $ErrorActionPreference = "Stop"
@@ -124,8 +124,8 @@ function Update-Record {
   $educationalMetadataPath = Join-Path (Split-Path -Parent $Path) "educational/metadata.json"
   if (Test-Path -LiteralPath $educationalMetadataPath) {
     $educationalMetadata = Read-Json $educationalMetadataPath
-    Set-JsonProperty $educationalMetadata "originalAsset" "content/symbols/$($Definition.folder)/educational/original/origin.png"
-    Set-JsonProperty $educationalMetadata "appAsset" "content/symbols/$($Definition.folder)/educational/app/origin.png"
+    Set-JsonProperty $educationalMetadata "originalAsset" "docs/archive/legacy-pilot/symbols/$($Definition.folder)/educational/original/origin.png"
+    Set-JsonProperty $educationalMetadata "appAsset" "docs/archive/legacy-pilot/symbols/$($Definition.folder)/educational/app/origin.png"
     Set-JsonProperty $educationalMetadata "assetKind" "illustrated-concept"
     Set-JsonProperty $educationalMetadata "contentClass" "educationalReconstruction"
     Set-JsonProperty $educationalMetadata "provenance" "OpenAI image generation; Script Roots editorial treatment"

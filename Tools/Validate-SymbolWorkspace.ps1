@@ -1,11 +1,13 @@
 param(
-  [string]$SymbolsPath = "content/symbols",
-  [switch]$RequireApprovedOfflineAssets
+  [string]$SymbolsPath = "content/release/symbols",
+  [switch]$RequireApprovedOfflineAssets,
+  [string]$V1ManifestPath = "Resources/V1CorpusManifest.json"
 )
 
 $ErrorActionPreference = "Stop"
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
 $symbolsRoot = Join-Path $repoRoot $SymbolsPath
+$v1ManifestFile = Join-Path $repoRoot $V1ManifestPath
 $issues = New-Object System.Collections.Generic.List[string]
 $warnings = New-Object System.Collections.Generic.List[string]
 
@@ -18,10 +20,27 @@ if (-not (Test-Path $symbolsRoot)) {
   exit 2
 }
 
-$symbolFiles = @(Get-ChildItem -LiteralPath $symbolsRoot -Recurse -Filter "symbol.json" -File)
+$activeIDs = @()
+if (Test-Path -LiteralPath $v1ManifestFile) {
+  $activeIDs = @(Get-Content -LiteralPath $v1ManifestFile -Raw | ConvertFrom-Json | ForEach-Object id)
+}
+
+$allSymbolFiles = @(Get-ChildItem -LiteralPath $symbolsRoot -Recurse -Filter "symbol.json" -File)
+$symbolFiles = if ($activeIDs.Count -gt 0) {
+  @($allSymbolFiles | Where-Object { $activeIDs -contains $_.Directory.Name })
+} else {
+  $allSymbolFiles
+}
 if ($symbolFiles.Count -eq 0) {
   Write-Error "No symbol.json files found below $symbolsRoot"
   exit 2
+}
+if ($activeIDs.Count -gt 0) {
+  foreach ($id in $activeIDs) {
+    if (-not (Test-Path (Join-Path $symbolsRoot "$id/symbol.json"))) {
+      Add-Issue "Active V1 Symbol folder is missing: $SymbolsPath/$id"
+    }
+  }
 }
 
 $allowedStatuses = @("draft", "needsReview", "approved", "rejected", "needsSources", "needsArtwork", "needsCopyEdit")
@@ -43,9 +62,21 @@ foreach ($symbolFile in $symbolFiles) {
   if (-not (Has-Text $record.unicodeCodePoint)) { Add-Issue "$relativeFolder/symbol.json: missing unicodeCodePoint." }
   if ($allowedStatuses -notcontains $record.editorialStatus) { Add-Issue "$relativeFolder/symbol.json: invalid editorialStatus '$($record.editorialStatus)'." }
 
-  foreach ($requiredFile in @("lesson.md", "research.md", "review.md", "sources.json", "educational/visual-notes.md", "educational/prompt.md", "educational/metadata.json", "historical/manifest.json", "components/references.json")) {
+  $isActiveV1 = $activeIDs.Count -gt 0 -and ($activeIDs -contains [string]$record.id)
+  $requiredFiles = if ($isActiveV1) {
+    @("research.md", "sources.json")
+  } else {
+    @("lesson.md", "research.md", "review.md", "sources.json", "educational/visual-notes.md", "educational/prompt.md", "educational/metadata.json", "historical/manifest.json", "components/references.json")
+  }
+  foreach ($requiredFile in $requiredFiles) {
     if (-not (Test-Path (Join-Path $symbolFolder $requiredFile))) {
       Add-Issue "${relativeFolder}/${requiredFile}: required editorial file is missing."
+    }
+  }
+  if ($isActiveV1) {
+    $originFiles = @(Get-ChildItem (Join-Path $symbolFolder "educational/original") -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -match '^origin-locked-style-v[23]\.png$' })
+    if ($originFiles.Count -eq 0) {
+      Add-Issue "${relativeFolder}/educational/original: a locked v2/v3 Origin illustration is missing."
     }
   }
 
@@ -73,9 +104,19 @@ foreach ($symbolFile in $symbolFiles) {
       Add-Issue "$relativeFolder/symbol.json: stage '$($stage.stage)' uses a remote runtime asset reference."
     }
 
-    $stageFolder = Join-Path $symbolFolder ("historical/" + $(if ($stage.stage -eq "oracleBone") { "oracle" } else { $stage.stage }))
-    if (-not (Test-Path (Join-Path $stageFolder "source.json"))) {
-      Add-Issue "$relativeFolder/historical/$($stage.stage)/source.json: stage provenance file is missing."
+    if ($isActiveV1 -and @("oracleBone", "bronze", "seal", "clerical") -contains [string]$stage.stage) {
+      $sourceStage = if ($stage.stage -eq "seal") { "smallSeal" } else { [string]$stage.stage }
+      $stageFolder = Join-Path $symbolFolder "historical/zdic-selected/$sourceStage"
+      foreach ($assetName in @("museum-canvas.svg", "original.svg")) {
+        if (-not (Test-Path (Join-Path $stageFolder $assetName))) {
+          Add-Issue "$relativeFolder/historical/zdic-selected/$sourceStage/${assetName}: source asset is missing."
+        }
+      }
+    } elseif (-not $isActiveV1) {
+      $stageFolder = Join-Path $symbolFolder ("historical/" + $(if ($stage.stage -eq "oracleBone") { "oracle" } else { $stage.stage }))
+      if (-not (Test-Path (Join-Path $stageFolder "source.json"))) {
+        Add-Issue "$relativeFolder/historical/$($stage.stage)/source.json: stage provenance file is missing."
+      }
     }
   }
 

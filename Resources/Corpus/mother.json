@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "母",
   "coreSharedMeaning": "mother",
-  "recognitionTakeaway": "Regular 母 squares the body and preserves the two internal marks as the characteristic dots or short strokes inside the modern form.",
+  "recognitionTakeaway": "The woman-derived body is squared and the two distinguishing marks survive inside 母.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+6BCD",
   "simplifiedForm": "母",
@@ -11,13 +11,13 @@
   "additionalMeanings": [],
   "formationType": "simpleIdeograph",
   "visualTeachingNotes": [
-    "A mother shown holding, carrying, and tending a small child.",
-    "The figure resembles the early 女 form but includes extra internal marks, distinguishing the body from the simpler woman pictograph.",
+    "A mature mother figure in the 女-type kneeling/side-view posture, with arms folded or crossed in front.",
+    "The figure resembles the early 女 form but includes two added chest-area marks in the ancient graph, distinguishing motherhood; those graph marks are explained separately and are not painted as floating dots.",
     "Regular 母 squares the body and preserves the two internal marks as the characteristic dots or short strokes inside the modern form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-101-母-u6BCD",
+  "contentFolder": "content/release/symbols/mother",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-101-母-u6BCD/research.md",
+  "researchNotesPath": "content/release/symbols/mother/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "mother"
       ],
       "examples": [
+        {
+          "text": "母",
+          "reading": "mǔ",
+          "translation": "mother",
+          "speechText": "母",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "mǔ"
+          ]
+        },
         {
           "text": "母亲",
           "reading": "mǔqīn",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "母语",
+          "reading": "mǔyǔ",
+          "translation": "mother tongue",
+          "speechText": "母语",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这是我的母亲。",
           "reading": "Zhè shì wǒ de mǔqīn.",
           "translation": "This is my mother.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "母",
@@ -98,6 +127,18 @@
         "mother"
       ],
       "taiwanExamples": [
+        {
+          "text": "母",
+          "reading": "mǔ",
+          "translation": "mother",
+          "speechText": "母",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "母親",
           "reading": "mǔqīn",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "母",
+          "reading": "mou5",
+          "translation": "mother",
+          "speechText": "母",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "母親",
           "reading": "mou5 can1",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "母",
       "readings": [
         {
-          "system": "on",
-          "value": "ボ (bo)",
+          "system": "onyomi",
+          "value": "ボ — bo",
           "audioAssetRef": null,
           "speechText": "ぼ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ボ",
+          "romanization": "bo",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "はは (haha)",
+          "system": "kunyomi",
+          "value": "はは — haha",
           "audioAssetRef": null,
           "speechText": "はは",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "はは",
+          "romanization": "haha",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "母"
-          ]
+          ],
+          "kanaReading": "はは",
+          "coversReadings": [
+            "はは"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "母",
+              "reading": "はは"
+            }
+          ],
+          "furiganaHtml": "<ruby>母<rt>はは</rt></ruby>"
         },
         {
           "text": "母親",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "母"
-          ]
+          ],
+          "kanaReading": "ははおや",
+          "furiganaSegments": [
+            {
+              "text": "母親",
+              "reading": "ははおや"
+            }
+          ],
+          "furiganaHtml": "<ruby>母親<rt>ははおや</rt></ruby>"
+        },
+        {
+          "text": "母国",
+          "reading": "bokoku",
+          "translation": "home country",
+          "speechText": "母国",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ぼこく",
+          "coversReadings": [
+            "ボ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "母国",
+              "reading": "ぼこく"
+            }
+          ],
+          "furiganaHtml": "<ruby>母国<rt>ぼこく</rt></ruby>"
+        },
+        {
+          "text": "母校",
+          "reading": "bokō",
+          "translation": "alma mater",
+          "speechText": "母校",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ぼこう",
+          "furiganaSegments": [
+            {
+              "text": "母校",
+              "reading": "ぼこう"
+            }
+          ],
+          "furiganaHtml": "<ruby>母校<rt>ぼこう</rt></ruby>"
         },
         {
           "text": "母は家にいます。",
@@ -267,33 +390,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "母"
-          ]
+          ],
+          "kanaReading": "はははいえにいます。",
+          "furiganaSegments": [
+            {
+              "text": "母",
+              "reading": "は"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "家",
+              "reading": "はいえ"
+            },
+            {
+              "text": "にいます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>母<rt>は</rt></ruby>は<ruby>家<rt>はいえ</rt></ruby>にいます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "はは",
+        "romanization": "haha",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "母",
       "readings": [
         {
           "system": "hanja",
-          "value": "모 / mo",
+          "value": "모 — mo",
           "audioAssetRef": null,
           "speechText": "모",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "어머니 / eomeoni",
-          "audioAssetRef": null,
-          "speechText": "어머니",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "모",
+          "romanization": "mo"
         }
       ],
       "glosses": [
         "mother"
       ],
       "examples": [
+        {
+          "text": "어머니",
+          "reading": "eomeoni",
+          "translation": "mother",
+          "speechText": "어머니",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "모녀",
           "reading": "monyeo",
@@ -323,6 +487,18 @@
           ]
         },
         {
+          "text": "모국",
+          "reading": "moguk",
+          "translation": "mother country",
+          "speechText": "모국",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "어머니가 집에 계세요.",
           "reading": "eomeoniga jibe gyeseyo.",
           "translation": "Mother is at home.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "모 — mo",
+          "audioAssetRef": null,
+          "speechText": "모",
+          "speechLanguage": "korean",
+          "nativeReading": "모",
+          "romanization": "mo"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "어머니 — eomeoni",
+          "audioAssetRef": null,
+          "speechText": "어머니",
+          "speechLanguage": "korean",
+          "nativeReading": "어머니",
+          "romanization": "eomeoni",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "mother",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "모",
+        "romanization": "mo",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +561,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A mother shown holding, carrying, and tending a small child.",
+    "originAnchor": "A kneeling mother figure with added marks for motherhood and breastfeeding.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/mother/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The figure resembles the early 女 form but includes extra internal marks, distinguishing the body from the simpler woman pictograph.",
+        "changeNoteFromPrevious": "A woman sign-derived female figure carries two added body marks that distinguish the mother graph.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-母"
@@ -379,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The figure resembles the early 女 form but includes extra internal marks, distinguishing the body from the simpler woman pictograph.",
-        "transitionNote": "The figure resembles the early 女 form but includes extra internal marks, distinguishing the body from the simpler woman pictograph.",
+        "stageExplanation": "A woman sign-derived female figure carries two added body marks that distinguish the mother graph.",
+        "transitionNote": "A woman sign-derived female figure carries two added body marks that distinguish the mother graph.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -464,7 +679,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/mother/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The form becomes a heavy enclosed shape with two clear inner marks, now much closer to the visual logic of 母.",
+        "changeNoteFromPrevious": "The form becomes a heavy enclosed shape with two clear inner marks, now much closer to the visual logic of.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-母"
@@ -490,8 +705,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The form becomes a heavy enclosed shape with two clear inner marks, now much closer to the visual logic of 母.",
-        "transitionNote": "The form becomes a heavy enclosed shape with two clear inner marks, now much closer to the visual logic of 母.",
+        "stageExplanation": "The form becomes a heavy enclosed shape with two clear inner marks, now much closer to the visual logic of.",
+        "transitionNote": "The form becomes a heavy enclosed shape with two clear inner marks, now much closer to the visual logic of.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "母",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 母 squares the body and preserves the two internal marks as the characteristic dots or short strokes inside the modern form.",
+        "changeNoteFromPrevious": "The woman-derived body is squared and the two distinguishing marks survive inside 母.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 母 squares the body and preserves the two internal marks as the characteristic dots or short strokes inside the modern form.",
-        "transitionNote": "Regular 母 squares the body and preserves the two internal marks as the characteristic dots or short strokes inside the modern form.",
+        "stageExplanation": "The woman-derived body is squared and the two distinguishing marks survive inside 母.",
+        "transitionNote": "The woman-derived body is squared and the two distinguishing marks survive inside 母.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "mother",
-      "explanation": "A mother shown holding, carrying, and tending a small child.",
+      "explanation": "A kneeling or side-view woman figure with added marks emphasizing the breasts, identifying motherhood.",
       "asset": {
         "characterID": "mother",
         "historicalStage": null,
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

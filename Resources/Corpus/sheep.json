@@ -2,8 +2,8 @@
   "id": "sheep",
   "version": 1,
   "coreCharacter": "羊",
-  "coreSharedMeaning": "sheep",
-  "recognitionTakeaway": "Regular 羊 regularizes the paired top strokes, three horizontals, and central vertical into the familiar modern form.",
+  "coreSharedMeaning": "sheep / goat",
+  "recognitionTakeaway": "Regularizes the paired top strokes, three horizontals, and central vertical into the familiar modern form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+7F8A",
   "simplifiedForm": "羊",
@@ -15,9 +15,9 @@
     "Two pointed horn shapes rise from a central vertical and the lower end forks sharply, giving the form a strong animal-head symmetry.",
     "Regular 羊 regularizes the paired top strokes, three horizontals, and central vertical into the familiar modern form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-035-羊-u7F8A",
+  "contentFolder": "content/release/symbols/sheep",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-035-羊-u7F8A/research.md",
+  "researchNotesPath": "content/release/symbols/sheep/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -50,6 +50,9 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "羊"
+          ],
+          "coversReadings": [
+            "yáng"
           ]
         },
         {
@@ -67,6 +70,30 @@
           ]
         },
         {
+          "text": "羊肉",
+          "reading": "yángròu",
+          "translation": "mutton",
+          "speechText": "羊肉",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "羊群",
+          "reading": "yángqún",
+          "translation": "flock of sheep",
+          "speechText": "羊群",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "草地上有羊。",
           "reading": "Cǎodì shang yǒu yáng.",
           "translation": "There are sheep on the grass.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "羊",
@@ -125,6 +154,18 @@
           "introducedSymbols": [
             "羊"
           ]
+        },
+        {
+          "text": "羊肉",
+          "reading": "yángròu",
+          "translation": "mutton",
+          "speechText": "羊肉",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "草地上有羊。",
@@ -171,6 +212,18 @@
           ]
         },
         {
+          "text": "羊肉",
+          "reading": "joeng4 juk6",
+          "translation": "mutton",
+          "speechText": "羊肉",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "草地有羊。",
           "reading": "cou2 dei6 jau5 joeng4",
           "translation": "There are sheep on the grass.",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "羊",
       "readings": [
         {
-          "system": "on",
-          "value": "ヨウ (yō)",
+          "system": "onyomi",
+          "value": "ヨウ — yō",
           "audioAssetRef": null,
           "speechText": "よう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ヨウ",
+          "romanization": "yō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "ひつじ (hitsuji)",
+          "system": "kunyomi",
+          "value": "ひつじ — hitsuji",
           "audioAssetRef": null,
           "speechText": "ひつじ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ひつじ",
+          "romanization": "hitsuji",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "羊"
-          ]
+          ],
+          "kanaReading": "ひつじ",
+          "coversReadings": [
+            "ひつじ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "羊",
+              "reading": "ひつじ"
+            }
+          ],
+          "furiganaHtml": "<ruby>羊<rt>ひつじ</rt></ruby>"
         },
         {
           "text": "羊毛",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "羊"
-          ]
+          ],
+          "kanaReading": "ようもう",
+          "coversReadings": [
+            "ヨウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "羊毛",
+              "reading": "ようもう"
+            }
+          ],
+          "furiganaHtml": "<ruby>羊毛<rt>ようもう</rt></ruby>"
+        },
+        {
+          "text": "羊肉",
+          "reading": "yōniku",
+          "translation": "mutton",
+          "speechText": "羊肉",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ようにく",
+          "furiganaSegments": [
+            {
+              "text": "羊肉",
+              "reading": "ようにく"
+            }
+          ],
+          "furiganaHtml": "<ruby>羊肉<rt>ようにく</rt></ruby>"
+        },
+        {
+          "text": "子羊",
+          "reading": "kohitsuji",
+          "translation": "lamb",
+          "speechText": "子羊",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こひつじ",
+          "furiganaSegments": [
+            {
+              "text": "子羊",
+              "reading": "こひつじ"
+            }
+          ],
+          "furiganaHtml": "<ruby>子羊<rt>こひつじ</rt></ruby>"
         },
         {
           "text": "羊が草を食べます。",
@@ -267,20 +390,62 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "羊"
-          ]
+          ],
+          "kanaReading": "ひつじがくさをたべます。",
+          "furiganaSegments": [
+            {
+              "text": "羊",
+              "reading": "ひつじ"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "草",
+              "reading": "くさ"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "食",
+              "reading": "た"
+            },
+            {
+              "text": "べます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>羊<rt>ひつじ</rt></ruby>が<ruby>草<rt>くさ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ひつじ",
+        "romanization": "hitsuji",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "羊",
       "readings": [
         {
           "system": "hanja",
-          "value": "양 / yang",
+          "value": "양 — yang",
           "audioAssetRef": null,
           "speechText": "양",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "양",
+          "romanization": "yang"
         }
       ],
       "glosses": [
@@ -316,6 +481,30 @@
           ]
         },
         {
+          "text": "산양",
+          "reading": "sanyang",
+          "translation": "goat",
+          "speechText": "산양",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "양떼",
+          "reading": "yangtte",
+          "translation": "flock of sheep",
+          "speechText": "양떼",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "양이 풀을 먹어요.",
           "reading": "yangi pureul meogeoyo.",
           "translation": "The sheep eats grass.",
@@ -330,7 +519,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "양 — yang",
+          "audioAssetRef": null,
+          "speechText": "양",
+          "speechLanguage": "korean",
+          "nativeReading": "양",
+          "romanization": "yang"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "양",
+        "romanization": "yang",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -339,7 +547,7 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A sheep or ram head with curved horns, shown with separate horn studies.",
+    "originAnchor": "A sheep or ram head with curved horns.",
     "stages": [
       {
         "stage": "oracleBone",
@@ -420,7 +628,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/sheep/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Several horizontal lines are added across the central stem, producing a form already recognizably close to 羊.",
+        "changeNoteFromPrevious": "Several horizontal lines are added across the central stem, producing a form already recognizably close to sheep sign.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-羊"
@@ -446,8 +654,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Several horizontal lines are added across the central stem, producing a form already recognizably close to 羊.",
-        "transitionNote": "Several horizontal lines are added across the central stem, producing a form already recognizably close to 羊.",
+        "stageExplanation": "Several horizontal lines are added across the central stem, producing a form already recognizably close to sheep sign.",
+        "transitionNote": "Several horizontal lines are added across the central stem, producing a form already recognizably close to sheep sign.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -494,7 +702,7 @@
         "label": "Regular Script",
         "form": "羊",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 羊 regularizes the paired top strokes, three horizontals, and central vertical into the familiar modern form.",
+        "changeNoteFromPrevious": "Regularizes the paired top strokes, three horizontals, and central vertical into the familiar modern form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -520,8 +728,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 羊 regularizes the paired top strokes, three horizontals, and central vertical into the familiar modern form.",
-        "transitionNote": "Regular 羊 regularizes the paired top strokes, three horizontals, and central vertical into the familiar modern form.",
+        "stageExplanation": "Regularizes the paired top strokes, three horizontals, and central vertical into the familiar modern form.",
+        "transitionNote": "Regularizes the paired top strokes, three horizontals, and central vertical into the familiar modern form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -529,7 +737,7 @@
     ],
     "origin": {
       "concept": "sheep",
-      "explanation": "A sheep or ram head with curved horns, shown with separate horn studies.",
+      "explanation": "The head of a sheep/ram with curved horns.",
       "asset": {
         "characterID": "sheep",
         "historicalStage": null,
@@ -546,7 +754,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of sheep",
+        "accessibilityDescription": "Illustration of sheep / goat",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -564,7 +772,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'sheep', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'sheep / goat', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -634,13 +842,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

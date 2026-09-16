@@ -3,7 +3,7 @@ $ErrorActionPreference = "Stop"
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
 $validator = Join-Path $repoRoot "Tools/Validate-Corpus.ps1"
 $syncScript = Join-Path $repoRoot "Tools/Sync-Corpus.ps1"
-$fixtureCorpus = Join-Path $repoRoot "content/shared-characters"
+$fixtureCorpus = Join-Path $repoRoot "docs/archive/legacy-pilot/shared-characters"
 
 function Invoke-Validator {
   param(

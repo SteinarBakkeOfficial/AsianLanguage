@@ -1,0 +1,869 @@
+{
+  "id": "wife",
+  "version": 1,
+  "coreCharacter": "妻",
+  "coreSharedMeaning": "wife",
+  "recognitionTakeaway": "The compound stabilizes as 妻; V2 avoids presenting bride capture as an established pictorial fact.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+59BB",
+  "simplifiedForm": "妻",
+  "traditionalForm": "妻",
+  "additionalMeanings": [],
+  "formationType": "simpleIdeograph",
+  "visualTeachingNotes": [
+    "A woman having her long hair gathered or arranged by a hand, with a broom-like object shown nearby.",
+    "Oracle is a dense human figure with branching hair or hand strokes at the top and a long woman-like body below.",
+    "Regular 妻 fixes the stacked upper strokes over 女, preserving the two-level figure while removing the literal hair-arranging scene."
+  ],
+  "contentFolder": "content/release/symbols/wife",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/wife/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 104,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "妻",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "qī",
+          "audioAssetRef": null,
+          "speechText": "妻",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "wife"
+      ],
+      "examples": [
+        {
+          "text": "妻",
+          "reading": "qī",
+          "translation": "wife",
+          "speechText": "妻",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "qī"
+          ]
+        },
+        {
+          "text": "妻子",
+          "reading": "qīzi",
+          "translation": "wife",
+          "speechText": "妻子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        },
+        {
+          "text": "夫妻",
+          "reading": "fūqī",
+          "translation": "married couple",
+          "speechText": "夫妻",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        },
+        {
+          "text": "前妻",
+          "reading": "qiánqī",
+          "translation": "former wife",
+          "speechText": "前妻",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "他的妻子在家。",
+          "reading": "Tā de qīzi zài jiā.",
+          "translation": "His wife is at home.",
+          "speechText": "他的妻子在家。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "妻",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "qī",
+          "audioAssetRef": null,
+          "speechText": "妻",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "wife"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "妻",
+          "reading": "qī",
+          "translation": "wife",
+          "speechText": "妻",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "妻子",
+          "reading": "qīzi",
+          "translation": "wife",
+          "speechText": "妻子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        },
+        {
+          "text": "夫妻",
+          "reading": "fūqī",
+          "translation": "married couple",
+          "speechText": "夫妻",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        },
+        {
+          "text": "他的妻子在家。",
+          "reading": "Tā de qīzi zài jiā.",
+          "translation": "His wife is at home.",
+          "speechText": "他的妻子在家。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "妻",
+          "reading": "cai1",
+          "translation": "wife",
+          "speechText": "妻",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "妻子",
+          "reading": "cai1 zi2",
+          "translation": "wife",
+          "speechText": "妻子",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        },
+        {
+          "text": "夫妻",
+          "reading": "fu1 cai1",
+          "translation": "married couple",
+          "speechText": "夫妻",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        },
+        {
+          "text": "佢妻子喺屋企。",
+          "reading": "keoi5 cai1 zi2 hai2 uk1 kei2",
+          "translation": "His wife is at home.",
+          "speechText": "佢妻子喺屋企。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "qī",
+          "audioAssetRef": null,
+          "speechText": "妻",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "cai1",
+          "audioAssetRef": null,
+          "speechText": "妻",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "妻",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "サイ — sai",
+          "audioAssetRef": null,
+          "speechText": "さい",
+          "speechLanguage": "japanese",
+          "nativeReading": "サイ",
+          "romanization": "sai",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "つま — tsuma",
+          "audioAssetRef": null,
+          "speechText": "つま",
+          "speechLanguage": "japanese",
+          "nativeReading": "つま",
+          "romanization": "tsuma",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "wife"
+      ],
+      "examples": [
+        {
+          "text": "妻",
+          "reading": "tsuma",
+          "translation": "wife",
+          "speechText": "妻",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ],
+          "kanaReading": "つま",
+          "coversReadings": [
+            "つま"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "妻",
+              "reading": "つま"
+            }
+          ],
+          "furiganaHtml": "<ruby>妻<rt>つま</rt></ruby>"
+        },
+        {
+          "text": "夫妻",
+          "reading": "fūfu",
+          "translation": "married couple",
+          "speechText": "夫妻",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ],
+          "kanaReading": "ふうふ",
+          "furiganaSegments": [
+            {
+              "text": "夫妻",
+              "reading": "ふうふ"
+            }
+          ],
+          "furiganaHtml": "<ruby>夫妻<rt>ふうふ</rt></ruby>"
+        },
+        {
+          "text": "妻子",
+          "reading": "saishi",
+          "translation": "wife and children",
+          "speechText": "妻子",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "さいし",
+          "coversReadings": [
+            "サイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "妻子",
+              "reading": "さいし"
+            }
+          ],
+          "furiganaHtml": "<ruby>妻子<rt>さいし</rt></ruby>"
+        },
+        {
+          "text": "愛妻",
+          "reading": "aisai",
+          "translation": "beloved wife",
+          "speechText": "愛妻",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あいさい",
+          "furiganaSegments": [
+            {
+              "text": "愛妻",
+              "reading": "あいさい"
+            }
+          ],
+          "furiganaHtml": "<ruby>愛妻<rt>あいさい</rt></ruby>"
+        },
+        {
+          "text": "妻は家にいます。",
+          "reading": "tsuma wa ie ni imasu.",
+          "translation": "My wife is at home.",
+          "speechText": "妻は家にいます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ],
+          "kanaReading": "つまはいえにいます。",
+          "furiganaSegments": [
+            {
+              "text": "妻",
+              "reading": "つま"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "家",
+              "reading": "いえ"
+            },
+            {
+              "text": "にいます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>妻<rt>つま</rt></ruby>は<ruby>家<rt>いえ</rt></ruby>にいます。"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "つま",
+        "romanization": "tsuma",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "妻",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "처 — cheo",
+          "audioAssetRef": null,
+          "speechText": "처",
+          "speechLanguage": "korean",
+          "nativeReading": "처",
+          "romanization": "cheo"
+        }
+      ],
+      "glosses": [
+        "wife"
+      ],
+      "examples": [
+        {
+          "text": "아내",
+          "reading": "anae",
+          "translation": "wife",
+          "speechText": "아내",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "처가",
+          "reading": "cheoga",
+          "translation": "wife’s family",
+          "speechText": "처가",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        },
+        {
+          "text": "부부",
+          "reading": "bubu",
+          "translation": "married couple",
+          "speechText": "부부",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        },
+        {
+          "text": "처자",
+          "reading": "cheoja",
+          "translation": "wife and children",
+          "speechText": "처자",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "아내가 집에 있어요.",
+          "reading": "anaega jibe isseoyo.",
+          "translation": "My wife is at home.",
+          "speechText": "아내가 집에 있어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "처 — cheo",
+          "audioAssetRef": null,
+          "speechText": "처",
+          "speechLanguage": "korean",
+          "nativeReading": "처",
+          "romanization": "cheo"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "아내 — anae",
+          "audioAssetRef": null,
+          "speechText": "아내",
+          "speechLanguage": "korean",
+          "nativeReading": "아내",
+          "romanization": "anae",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "wife",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "처",
+        "romanization": "cheo",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A woman and a hand combine in disputed interpretations: seizing or arranging her hair; together, they came to mean 'wife.'",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/wife/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "A woman is shown with a hand acting at the hair/head; the exact action and marriage context are debated.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-妻"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "妻",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%A6%BB/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/41_F1DC.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/wife/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/wife/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "妻 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A woman is shown with a hand acting at the hair/head; the exact action and marriage context are debated.",
+        "transitionNote": "A woman is shown with a hand acting at the hair/head; the exact action and marriage context are debated.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/wife/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "Makes the upper hair or hand area into a woven grid while keeping a slender lower female figure.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-妻"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "妻",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%A6%BB/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/33_F11B.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/wife/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/wife/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "妻 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Makes the upper hair or hand area into a woven grid while keeping a slender lower female figure.",
+        "transitionNote": "Makes the upper hair or hand area into a woven grid while keeping a slender lower female figure.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/wife/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Regularizes the upper crossings into several horizontal and vertical strokes above a flowing woman sign-like lower body.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-妻"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "妻",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%A6%BB/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_59BB.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/wife/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/wife/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "妻 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Regularizes the upper crossings into several horizontal and vertical strokes above a flowing woman sign-like lower body.",
+        "transitionNote": "Regularizes the upper crossings into several horizontal and vertical strokes above a flowing woman sign-like lower body.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/wife/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The woman and hand-at-head elements become angular and compact, bringing the graph close to the later standard structure.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-妻"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "妻",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%A6%BB/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_EC8E.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/wife/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/wife/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "妻 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The woman and hand-at-head elements become angular and compact, bringing the graph close to the later standard structure.",
+        "transitionNote": "The woman and hand-at-head elements become angular and compact, bringing the graph close to the later standard structure.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "妻",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The compound stabilizes as 妻; V2 avoids presenting bride capture as an established pictorial fact.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "妻",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "妻 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The compound stabilizes as 妻; V2 avoids presenting bride capture as an established pictorial fact.",
+        "transitionNote": "The compound stabilizes as 妻; V2 avoids presenting bride capture as an established pictorial fact.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "wife",
+      "explanation": "A woman is shown with a hand acting at the hair or head.",
+      "asset": {
+        "characterID": "wife",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/wife/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of wife",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-妻"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿱⿻十⿻コ一女.",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-妻"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'wife', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E5%A6%BB"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-妻",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%A6%BB"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-妻",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

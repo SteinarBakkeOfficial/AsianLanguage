@@ -2,8 +2,8 @@
   "id": "earth",
   "version": 1,
   "coreCharacter": "土",
-  "coreSharedMeaning": "earth",
-  "recognitionTakeaway": "Regular 土 adds a short upper horizontal to the central stem while keeping the long lower ground line, producing the familiar three-stroke form.",
+  "coreSharedMeaning": "earth / soil",
+  "recognitionTakeaway": "The old raised-earth/marker form is regularized as 土; the pictorial source is no longer literal.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+571F",
   "simplifiedForm": "土",
@@ -15,9 +15,9 @@
     "A large irregular mound sits directly on a horizontal ground line; it looks more like a heap than the modern character.",
     "Regular 土 adds a short upper horizontal to the central stem while keeping the long lower ground line, producing the familiar three-stroke form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-023-土-u571F",
+  "contentFolder": "content/release/symbols/earth",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-023-土-u571F/research.md",
+  "researchNotesPath": "content/release/symbols/earth/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "earth"
       ],
       "examples": [
+        {
+          "text": "土",
+          "reading": "tǔ",
+          "translation": "earth",
+          "speechText": "土",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "tǔ"
+          ]
+        },
         {
           "text": "土地",
           "reading": "tǔdì",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "土壤",
+          "reading": "tǔrǎng",
+          "translation": "soil",
+          "speechText": "土壤",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "泥土很干。",
           "reading": "Nítǔ hěn gān.",
           "translation": "The soil is dry.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "土",
@@ -98,6 +127,18 @@
         "earth"
       ],
       "taiwanExamples": [
+        {
+          "text": "土",
+          "reading": "tǔ",
+          "translation": "earth",
+          "speechText": "土",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "土地",
           "reading": "tǔdì",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "土",
+          "reading": "tou2",
+          "translation": "earth",
+          "speechText": "土",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "土地",
           "reading": "tou2 dei6",
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "土",
       "readings": [
         {
-          "system": "on",
-          "value": "ド (do)",
+          "system": "onyomi",
+          "value": "ド — do",
           "audioAssetRef": null,
           "speechText": "ど",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ド",
+          "romanization": "do",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ト (to)",
+          "system": "onyomi",
+          "value": "ト — to",
           "audioAssetRef": null,
           "speechText": "と",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ト",
+          "romanization": "to",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "つち (tsuchi)",
+          "system": "kunyomi",
+          "value": "つち — tsuchi",
           "audioAssetRef": null,
           "speechText": "つち",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "つち",
+          "romanization": "tsuchi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "土"
-          ]
+          ],
+          "kanaReading": "つち",
+          "coversReadings": [
+            "つち"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "土",
+              "reading": "つち"
+            }
+          ],
+          "furiganaHtml": "<ruby>土<rt>つち</rt></ruby>"
         },
         {
           "text": "土地",
@@ -260,7 +335,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "土"
-          ]
+          ],
+          "kanaReading": "とち",
+          "coversReadings": [
+            "ト"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "土地",
+              "reading": "とち"
+            }
+          ],
+          "furiganaHtml": "<ruby>土地<rt>とち</rt></ruby>"
+        },
+        {
+          "text": "土曜日",
+          "reading": "doyōbi",
+          "translation": "Saturday",
+          "speechText": "土曜日",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "どようび",
+          "coversReadings": [
+            "ド"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "土曜日",
+              "reading": "どようび"
+            }
+          ],
+          "furiganaHtml": "<ruby>土曜日<rt>どようび</rt></ruby>"
+        },
+        {
+          "text": "土壌",
+          "reading": "dojō",
+          "translation": "soil",
+          "speechText": "土壌",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "どじょう",
+          "furiganaSegments": [
+            {
+              "text": "土壌",
+              "reading": "どじょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>土壌<rt>どじょう</rt></ruby>"
         },
         {
           "text": "土を掘ります。",
@@ -274,33 +403,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "土"
-          ]
+          ],
+          "kanaReading": "つちをほります。",
+          "furiganaSegments": [
+            {
+              "text": "土",
+              "reading": "つち"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "掘",
+              "reading": "ほ"
+            },
+            {
+              "text": "ります"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>土<rt>つち</rt></ruby>を<ruby>掘<rt>ほ</rt></ruby>ります。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "つち",
+        "romanization": "tsuchi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "土",
       "readings": [
         {
           "system": "hanja",
-          "value": "토 / to",
+          "value": "토 — to",
           "audioAssetRef": null,
           "speechText": "토",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "흙 / heuk",
-          "audioAssetRef": null,
-          "speechText": "흙",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "토",
+          "romanization": "to"
         }
       ],
       "glosses": [
         "earth"
       ],
       "examples": [
+        {
+          "text": "흙",
+          "reading": "heuk",
+          "translation": "soil",
+          "speechText": "흙",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "토지",
           "reading": "toji",
@@ -330,6 +500,18 @@
           ]
         },
         {
+          "text": "토양",
+          "reading": "toyang",
+          "translation": "soil",
+          "speechText": "토양",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "흙을 만져요.",
           "reading": "heulgeul manjyeoyo.",
           "translation": "I touch the soil.",
@@ -344,7 +526,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "토 — to",
+          "audioAssetRef": null,
+          "speechText": "토",
+          "speechLanguage": "korean",
+          "nativeReading": "토",
+          "romanization": "to"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "흙 — heuk",
+          "audioAssetRef": null,
+          "speechText": "흙",
+          "speechLanguage": "korean",
+          "nativeReading": "흙",
+          "romanization": "heuk",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "soil",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "토",
+        "romanization": "to",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +574,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A mound of earth rising from a flat ground surface.",
+    "originAnchor": "A mound of earth or soil.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/earth/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A large irregular mound sits directly on a horizontal ground line; it looks more like a heap than the modern character.",
+        "changeNoteFromPrevious": "A raised earth/clod form stands on a base line in the leading interpretation; the exact early referent remains debated.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-土"
@@ -386,8 +607,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A large irregular mound sits directly on a horizontal ground line; it looks more like a heap than the modern character.",
-        "transitionNote": "A large irregular mound sits directly on a horizontal ground line; it looks more like a heap than the modern character.",
+        "stageExplanation": "A raised earth/clod form stands on a base line in the leading interpretation; the exact early referent remains debated.",
+        "transitionNote": "A raised earth/clod form stands on a base line in the leading interpretation; the exact early referent remains debated.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +618,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/earth/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The mound narrows into a vertical post with a swollen center standing on a broad base.",
+        "changeNoteFromPrevious": "The mound narrows into an upright form with a thickened or swollen center over the same base line.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-土"
@@ -423,8 +644,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The mound narrows into a vertical post with a swollen center standing on a broad base.",
-        "transitionNote": "The mound narrows into a vertical post with a swollen center standing on a broad base.",
+        "stageExplanation": "The mound narrows into an upright form with a thickened or swollen center over the same base line.",
+        "transitionNote": "The mound narrows into an upright form with a thickened or swollen center over the same base line.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +655,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/earth/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The swollen center disappears, leaving a simple cross planted on a long ground line.",
+        "changeNoteFromPrevious": "The thickened center is conventionalized into a short crossbar, producing a vertical stem crossed above a long base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-土"
@@ -460,8 +681,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The swollen center disappears, leaving a simple cross planted on a long ground line.",
-        "transitionNote": "The swollen center disappears, leaving a simple cross planted on a long ground line.",
+        "stageExplanation": "The thickened center is conventionalized into a short crossbar, producing a vertical stem crossed above a long base.",
+        "transitionNote": "The thickened center is conventionalized into a short crossbar, producing a vertical stem crossed above a long base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +692,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/earth/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The cross-and-ground arrangement is retained with thicker, flatter brush strokes.",
+        "changeNoteFromPrevious": "The cross-and-base structure is flattened into clearly separated strokes, already close to the later form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-土"
@@ -497,8 +718,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The cross-and-ground arrangement is retained with thicker, flatter brush strokes.",
-        "transitionNote": "The cross-and-ground arrangement is retained with thicker, flatter brush strokes.",
+        "stageExplanation": "The cross-and-base structure is flattened into clearly separated strokes, already close to the later form.",
+        "transitionNote": "The cross-and-base structure is flattened into clearly separated strokes, already close to the later form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +729,7 @@
         "label": "Regular Script",
         "form": "土",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 土 adds a short upper horizontal to the central stem while keeping the long lower ground line, producing the familiar three-stroke form.",
+        "changeNoteFromPrevious": "The old raised-earth/marker form is regularized as 土; the pictorial source is no longer literal.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +755,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 土 adds a short upper horizontal to the central stem while keeping the long lower ground line, producing the familiar three-stroke form.",
-        "transitionNote": "Regular 土 adds a short upper horizontal to the central stem while keeping the long lower ground line, producing the familiar three-stroke form.",
+        "stageExplanation": "The old raised-earth/marker form is regularized as 土; the pictorial source is no longer literal.",
+        "transitionNote": "The old raised-earth/marker form is regularized as 土; the pictorial source is no longer literal.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +764,7 @@
     ],
     "origin": {
       "concept": "earth",
-      "explanation": "A mound of earth rising from a flat ground surface.",
+      "explanation": "A raised clod/mound of earth on a ground line in a leading analysis.",
       "asset": {
         "characterID": "earth",
         "historicalStage": null,
@@ -560,7 +781,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of earth",
+        "accessibilityDescription": "Illustration of earth / soil",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +799,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'earth', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'earth / soil', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +869,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

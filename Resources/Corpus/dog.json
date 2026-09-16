@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "犬",
   "coreSharedMeaning": "dog",
-  "recognitionTakeaway": "Regular 犬 settles into four strokes, with only the diagonal body and small dot faintly recalling the earlier animal figure.",
+  "recognitionTakeaway": "Settles into four strokes, with only the diagonal body and small dot faintly recalling the earlier animal figure.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+72AC",
   "simplifiedForm": "犬",
@@ -15,9 +15,9 @@
     "The selected Oracle form is a thin side profile with a long body line and small projecting legs and head.",
     "Regular 犬 settles into four strokes, with only the diagonal body and small dot faintly recalling the earlier animal figure."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-034-犬-u72AC",
+  "contentFolder": "content/release/symbols/dog",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-034-犬-u72AC/research.md",
+  "researchNotesPath": "content/release/symbols/dog/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "dog; canine (formal/compound use)"
       ],
       "examples": [
+        {
+          "text": "犬",
+          "reading": "quǎn",
+          "translation": "dog; canine (formal/compound use)",
+          "speechText": "犬",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "quǎn"
+          ]
+        },
         {
           "text": "犬类",
           "reading": "quǎnlèi",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "猎犬",
+          "reading": "lièquǎn",
+          "translation": "hunting dog",
+          "speechText": "猎犬",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这是一只警犬。",
           "reading": "Zhè shì yì zhī jǐngquǎn.",
           "translation": "This is a police dog.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "犬",
@@ -98,6 +127,18 @@
         "dog; canine (formal/compound use)"
       ],
       "taiwanExamples": [
+        {
+          "text": "犬",
+          "reading": "quǎn",
+          "translation": "dog; canine (formal/compound use)",
+          "speechText": "犬",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "犬類",
           "reading": "quǎnlèi",
@@ -171,6 +212,15 @@
           ]
         },
         {
+          "text": "獵犬",
+          "reading": "lip6 hyun2",
+          "translation": "hunting dog",
+          "speechText": "獵犬",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
           "text": "呢隻係警犬。",
           "reading": "ni1 zek3 hai6 ging2 hyun2",
           "translation": "This is a police dog.",
@@ -203,24 +253,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "犬",
       "readings": [
         {
-          "system": "on",
-          "value": "ケン (ken)",
+          "system": "onyomi",
+          "value": "ケン — ken",
           "audioAssetRef": null,
           "speechText": "けん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ケン",
+          "romanization": "ken",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "いぬ (inu)",
+          "system": "kunyomi",
+          "value": "いぬ — inu",
           "audioAssetRef": null,
           "speechText": "いぬ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "いぬ",
+          "romanization": "inu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +297,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "犬"
-          ]
+          ],
+          "kanaReading": "いぬ",
+          "coversReadings": [
+            "いぬ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "犬",
+              "reading": "いぬ"
+            }
+          ],
+          "furiganaHtml": "<ruby>犬<rt>いぬ</rt></ruby>"
         },
         {
           "text": "子犬",
@@ -253,7 +322,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "犬"
-          ]
+          ],
+          "kanaReading": "こいぬ",
+          "furiganaSegments": [
+            {
+              "text": "子犬",
+              "reading": "こいぬ"
+            }
+          ],
+          "furiganaHtml": "<ruby>子犬<rt>こいぬ</rt></ruby>"
+        },
+        {
+          "text": "番犬",
+          "reading": "banken",
+          "translation": "watchdog",
+          "speechText": "番犬",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ばんけん",
+          "coversReadings": [
+            "ケン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "番犬",
+              "reading": "ばんけん"
+            }
+          ],
+          "furiganaHtml": "<ruby>番犬<rt>ばんけん</rt></ruby>"
+        },
+        {
+          "text": "愛犬",
+          "reading": "aiken",
+          "translation": "pet dog",
+          "speechText": "愛犬",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あいけん",
+          "furiganaSegments": [
+            {
+              "text": "愛犬",
+              "reading": "あいけん"
+            }
+          ],
+          "furiganaHtml": "<ruby>愛犬<rt>あいけん</rt></ruby>"
         },
         {
           "text": "犬が走っています。",
@@ -267,33 +387,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "犬"
-          ]
+          ],
+          "kanaReading": "いぬがはしっています。",
+          "furiganaSegments": [
+            {
+              "text": "犬",
+              "reading": "いぬ"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "走",
+              "reading": "はし"
+            },
+            {
+              "text": "っています"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>犬<rt>いぬ</rt></ruby>が<ruby>走<rt>はし</rt></ruby>っています。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "いぬ",
+        "romanization": "inu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "犬",
       "readings": [
         {
           "system": "hanja",
-          "value": "견 / gyeon",
+          "value": "견 — gyeon",
           "audioAssetRef": null,
           "speechText": "견",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "개 / gae",
-          "audioAssetRef": null,
-          "speechText": "개",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "견",
+          "romanization": "gyeon"
         }
       ],
       "glosses": [
         "dog"
       ],
       "examples": [
+        {
+          "text": "개",
+          "reading": "gae",
+          "translation": "dog",
+          "speechText": "개",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "애견",
           "reading": "aegyeon",
@@ -323,6 +484,18 @@
           ]
         },
         {
+          "text": "견종",
+          "reading": "gyeonjong",
+          "translation": "dog breed",
+          "speechText": "견종",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "개가 뛰어요.",
           "reading": "gaega ttwieoyo.",
           "translation": "The dog is running.",
@@ -337,7 +510,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "견 — gyeon",
+          "audioAssetRef": null,
+          "speechText": "견",
+          "speechLanguage": "korean",
+          "nativeReading": "견",
+          "romanization": "gyeon"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "개 — gae",
+          "audioAssetRef": null,
+          "speechText": "개",
+          "speechLanguage": "korean",
+          "nativeReading": "개",
+          "romanization": "gae",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "dog",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "견",
+        "romanization": "gyeon",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +558,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A dog standing in side view.",
+    "originAnchor": "A dog in side view.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/dog/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The selected Oracle form is a thin side profile with a long body line and small projecting legs and head.",
+        "changeNoteFromPrevious": "Is a thin side profile with a long body line and small projecting legs and head.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-犬"
@@ -379,8 +591,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The selected Oracle form is a thin side profile with a long body line and small projecting legs and head.",
-        "transitionNote": "The selected Oracle form is a thin side profile with a long body line and small projecting legs and head.",
+        "stageExplanation": "Is a thin side profile with a long body line and small projecting legs and head.",
+        "transitionNote": "Is a thin side profile with a long body line and small projecting legs and head.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +602,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/dog/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The Bronze form is strikingly pictorial: a four-legged dog with body, head, ears, and tail can be seen directly.",
+        "changeNoteFromPrevious": "Is strikingly pictorial: a four-legged dog with body, head, ears, and tail can be seen directly.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-犬"
@@ -416,8 +628,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The Bronze form is strikingly pictorial: a four-legged dog with body, head, ears, and tail can be seen directly.",
-        "transitionNote": "The Bronze form is strikingly pictorial: a four-legged dog with body, head, ears, and tail can be seen directly.",
+        "stageExplanation": "Is strikingly pictorial: a four-legged dog with body, head, ears, and tail can be seen directly.",
+        "transitionNote": "Is strikingly pictorial: a four-legged dog with body, head, ears, and tail can be seen directly.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -501,7 +713,7 @@
         "label": "Regular Script",
         "form": "犬",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 犬 settles into four strokes, with only the diagonal body and small dot faintly recalling the earlier animal figure.",
+        "changeNoteFromPrevious": "Settles into four strokes, with only the diagonal body and small dot faintly recalling the earlier animal figure.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +739,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 犬 settles into four strokes, with only the diagonal body and small dot faintly recalling the earlier animal figure.",
-        "transitionNote": "Regular 犬 settles into four strokes, with only the diagonal body and small dot faintly recalling the earlier animal figure.",
+        "stageExplanation": "Settles into four strokes, with only the diagonal body and small dot faintly recalling the earlier animal figure.",
+        "transitionNote": "Settles into four strokes, with only the diagonal body and small dot faintly recalling the earlier animal figure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +748,7 @@
     ],
     "origin": {
       "concept": "dog",
-      "explanation": "A dog standing in side view.",
+      "explanation": "A dog shown in side view, with body/legs/tail in early forms.",
       "asset": {
         "characterID": "dog",
         "historicalStage": null,
@@ -641,13 +853,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

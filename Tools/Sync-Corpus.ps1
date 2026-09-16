@@ -2,7 +2,8 @@ param(
   [Parameter(Mandatory = $true)]
   [string]$SourcePath,
   [Parameter(Mandatory = $true)]
-  [string]$DestinationPath
+  [string]$DestinationPath,
+  [string]$ManifestPath = ""
 )
 
 $ErrorActionPreference = "Stop"
@@ -12,7 +13,20 @@ if (-not (Test-Path $SourcePath)) {
   exit 2
 }
 
+$activeIDs = @()
+if (-not [string]::IsNullOrWhiteSpace($ManifestPath)) {
+  $manifestFile = if ([IO.Path]::IsPathRooted($ManifestPath)) { $ManifestPath } else { Join-Path (Resolve-Path (Join-Path $PSScriptRoot "..")) $ManifestPath }
+  if (-not (Test-Path -LiteralPath $manifestFile)) {
+    Write-Error "Active Symbol manifest not found: $manifestFile"
+    exit 2
+  }
+  $activeIDs = @(Get-Content -LiteralPath $manifestFile -Raw | ConvertFrom-Json | ForEach-Object id)
+}
+
 $symbolFiles = @(Get-ChildItem -Path $SourcePath -Recurse -Filter "symbol.json" -File)
+if ($activeIDs.Count -gt 0) {
+  $symbolFiles = @($symbolFiles | Where-Object { $activeIDs -contains $_.Directory.Name })
+}
 $copyItems = New-Object System.Collections.Generic.List[object]
 if ($symbolFiles.Count -gt 0) {
   foreach ($symbolFile in $symbolFiles) {

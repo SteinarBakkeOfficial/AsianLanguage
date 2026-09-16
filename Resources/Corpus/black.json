@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "黑",
   "coreSharedMeaning": "black",
-  "recognitionTakeaway": "Regular 黑 regularizes the boxed upper section and four lower dots; the literal soot-darkened person is no longer visible, but the dark/fire association remains in the lower marks.",
+  "recognitionTakeaway": "The graph stabilizes as 黑 for black/dark; later soot/chimney analyses should not be projected backward as certain.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+9ED1",
   "simplifiedForm": "黑",
@@ -15,9 +15,9 @@
     "Oracle shows a human-like body with a dark enclosed head or top and branching limbs below.",
     "Regular 黑 regularizes the boxed upper section and four lower dots; the literal soot-darkened person is no longer visible, but the dark/fire association remains in the lower marks."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-070-黑-u9ED1",
+  "contentFolder": "content/release/symbols/black",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-070-黑-u9ED1/research.md",
+  "researchNotesPath": "content/release/symbols/black/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "black"
       ],
       "examples": [
+        {
+          "text": "黑",
+          "reading": "hēi",
+          "translation": "black",
+          "speechText": "黑",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "hēi"
+          ]
+        },
         {
           "text": "黑色",
           "reading": "hēisè",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "黑板",
+          "reading": "hēibǎn",
+          "translation": "blackboard",
+          "speechText": "黑板",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这只猫是黑色的。",
           "reading": "Zhè zhī māo shì hēisè de.",
           "translation": "This cat is black.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "黑",
@@ -98,6 +127,18 @@
         "black"
       ],
       "taiwanExamples": [
+        {
+          "text": "黑",
+          "reading": "hēi",
+          "translation": "black",
+          "speechText": "黑",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "黑色",
           "reading": "hēisè",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "黑",
+          "reading": "hak1",
+          "translation": "black",
+          "speechText": "黑",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "黑色",
           "reading": "hak1 sik1",
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "黒",
       "readings": [
         {
-          "system": "on",
-          "value": "コク (koku)",
+          "system": "onyomi",
+          "value": "コク — koku",
           "audioAssetRef": null,
           "speechText": "こく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "コク",
+          "romanization": "koku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "くろ (kuro)",
+          "system": "kunyomi",
+          "value": "くろ — kuro",
           "audioAssetRef": null,
           "speechText": "くろ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "くろ",
+          "romanization": "kuro",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "くろい (kuroi)",
+          "system": "kunyomi",
+          "value": "くろい — kuroi",
           "audioAssetRef": null,
           "speechText": "くろい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "くろい",
+          "romanization": "kuroi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,22 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "黑"
-          ]
+          ],
+          "kanaReading": "くろい",
+          "coversReadings": [
+            "くろ",
+            "くろい"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "黒",
+              "reading": "くろ"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "furiganaHtml": "<ruby>黒<rt>くろ</rt></ruby>い"
         },
         {
           "text": "黒板",
@@ -260,7 +339,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "黑"
-          ]
+          ],
+          "kanaReading": "こくばん",
+          "coversReadings": [
+            "コク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "黒板",
+              "reading": "こくばん"
+            }
+          ],
+          "furiganaHtml": "<ruby>黒板<rt>こくばん</rt></ruby>"
+        },
+        {
+          "text": "黒字",
+          "reading": "kuroji",
+          "translation": "black ink; profit",
+          "speechText": "黒字",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "くろじ",
+          "furiganaSegments": [
+            {
+              "text": "黒字",
+              "reading": "くろじ"
+            }
+          ],
+          "furiganaHtml": "<ruby>黒字<rt>くろじ</rt></ruby>"
+        },
+        {
+          "text": "黒猫",
+          "reading": "kuroneko",
+          "translation": "black cat",
+          "speechText": "黒猫",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "くろねこ",
+          "furiganaSegments": [
+            {
+              "text": "黒猫",
+              "reading": "くろねこ"
+            }
+          ],
+          "furiganaHtml": "<ruby>黒猫<rt>くろねこ</rt></ruby>"
         },
         {
           "text": "猫は黒いです。",
@@ -274,33 +404,80 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "黑"
-          ]
+          ],
+          "kanaReading": "ねこはくろいです。",
+          "furiganaSegments": [
+            {
+              "text": "猫",
+              "reading": "ねこ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "黒",
+              "reading": "くろ"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>猫<rt>ねこ</rt></ruby>は<ruby>黒<rt>くろ</rt></ruby>いです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [
+        {
+          "form": "黑",
+          "label": "historical/traditional glyph form",
+          "usage": "Older graph form; modern standard Japanese uses 黒."
+        }
+      ],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "くろ",
+        "romanization": "kuro",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "黑",
       "readings": [
         {
           "system": "hanja",
-          "value": "흑 / heuk",
+          "value": "흑 — heuk",
           "audioAssetRef": null,
           "speechText": "흑",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "검다 / geomda",
-          "audioAssetRef": null,
-          "speechText": "검다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "흑",
+          "romanization": "heuk"
         }
       ],
       "glosses": [
         "black"
       ],
       "examples": [
+        {
+          "text": "검다",
+          "reading": "geomda",
+          "translation": "black",
+          "speechText": "검다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "흑색",
           "reading": "heuksaek",
@@ -330,6 +507,18 @@
           ]
         },
         {
+          "text": "흑자",
+          "reading": "heukja",
+          "translation": "black ink / profit",
+          "speechText": "흑자",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "고양이가 검어요.",
           "reading": "goyangiga geomeoyo.",
           "translation": "The cat is black.",
@@ -344,7 +533,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "흑 — heuk",
+          "audioAssetRef": null,
+          "speechText": "흑",
+          "speechLanguage": "korean",
+          "nativeReading": "흑",
+          "romanization": "heuk"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "검다 — geomda",
+          "audioAssetRef": null,
+          "speechText": "검다",
+          "speechLanguage": "korean",
+          "nativeReading": "검다",
+          "romanization": "geomda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "black",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "흑",
+        "romanization": "heuk",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +581,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A soot-darkened person beside a fire, smoke rising around the blackened figure.",
+    "originAnchor": "Leading theory: a person receiving facial tattooing and dark pigment as punishment; the sign later meant 'black,' inspiring a fire-and-chimney explanation.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/black/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows a human-like body with a dark enclosed head or top and branching limbs below.",
+        "changeNoteFromPrevious": "A leading account reads the early form as a human/head with a dark facial mark; this interpretation is disputed and should be illustrated non-graphically.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-黑"
@@ -386,8 +614,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows a human-like body with a dark enclosed head or top and branching limbs below.",
-        "transitionNote": "Oracle shows a human-like body with a dark enclosed head or top and branching limbs below.",
+        "stageExplanation": "A leading account reads the early form as a human/head with a dark facial mark; this interpretation is disputed and should be illustrated non-graphically.",
+        "transitionNote": "A leading account reads the early form as a human/head with a dark facial mark; this interpretation is disputed and should be illustrated non-graphically.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +625,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/black/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps the upright person silhouette but makes the head a pointed dark enclosure with paired internal marks.",
+        "changeNoteFromPrevious": "Keeps the upright person silhouette but makes the head a pointed dark enclosure with paired internal marks.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-黑"
@@ -423,8 +651,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps the upright person silhouette but makes the head a pointed dark enclosure with paired internal marks.",
-        "transitionNote": "Bronze keeps the upright person silhouette but makes the head a pointed dark enclosure with paired internal marks.",
+        "stageExplanation": "Keeps the upright person silhouette but makes the head a pointed dark enclosure with paired internal marks.",
+        "transitionNote": "Keeps the upright person silhouette but makes the head a pointed dark enclosure with paired internal marks.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +662,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/black/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal expands the head into a broad barred top and adds several long downward strokes beneath, producing a much more complex figure.",
+        "changeNoteFromPrevious": "Expands the head into a broad barred top and adds several long downward strokes beneath, producing a much more complex figure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-黑"
@@ -460,8 +688,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal expands the head into a broad barred top and adds several long downward strokes beneath, producing a much more complex figure.",
-        "transitionNote": "Small Seal expands the head into a broad barred top and adds several long downward strokes beneath, producing a much more complex figure.",
+        "stageExplanation": "Expands the head into a broad barred top and adds several long downward strokes beneath, producing a much more complex figure.",
+        "transitionNote": "Expands the head into a broad barred top and adds several long downward strokes beneath, producing a much more complex figure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +699,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/black/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the top and turns the lower strokes into a dense 灬-like spread, closely anticipating 黑.",
+        "changeNoteFromPrevious": "The broad upper section flattens and the lower strokes condense into a dense spread, closely anticipating the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-黑"
@@ -497,8 +725,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the top and turns the lower strokes into a dense 灬-like spread, closely anticipating 黑.",
-        "transitionNote": "Clerical flattens the top and turns the lower strokes into a dense 灬-like spread, closely anticipating 黑.",
+        "stageExplanation": "The broad upper section flattens and the lower strokes condense into a dense spread, closely anticipating the later standard structure.",
+        "transitionNote": "The broad upper section flattens and the lower strokes condense into a dense spread, closely anticipating the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +736,7 @@
         "label": "Regular Script",
         "form": "黑",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 黑 regularizes the boxed upper section and four lower dots; the literal soot-darkened person is no longer visible, but the dark/fire association remains in the lower marks.",
+        "changeNoteFromPrevious": "The penal-tattoo graph came to write ‘black’ and displaced an older color term; the later soot-and-chimney explanation is a reinterpretation, not the original picture.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +762,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 黑 regularizes the boxed upper section and four lower dots; the literal soot-darkened person is no longer visible, but the dark/fire association remains in the lower marks.",
-        "transitionNote": "Regular 黑 regularizes the boxed upper section and four lower dots; the literal soot-darkened person is no longer visible, but the dark/fire association remains in the lower marks.",
+        "stageExplanation": "The graph stabilizes as 黑 for black/dark; later soot/chimney analyses should not be projected backward as certain.",
+        "transitionNote": "The penal-tattoo graph came to write ‘black’ and displaced an older color term; the later soot-and-chimney explanation is a reinterpretation, not the original picture.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +771,7 @@
     ],
     "origin": {
       "concept": "black",
-      "explanation": "A soot-darkened person beside a fire, smoke rising around the blackened figure.",
+      "explanation": "A human/facial-mark graph in a leading palaeographic analysis, possibly connected with dark marking/ink punishment.",
       "asset": {
         "characterID": "black",
         "historicalStage": null,
@@ -648,13 +876,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

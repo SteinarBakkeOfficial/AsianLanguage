@@ -2,8 +2,8 @@
   "id": "stretch",
   "version": 1,
   "coreCharacter": "申",
-  "coreSharedMeaning": "stretch",
-  "recognitionTakeaway": "Regular 申 encloses the central vertical inside a rectangular 日-like frame, a major final restructuring from the open Seal and Clerical forms.",
+  "coreSharedMeaning": "state / apply; historical lightning/extend",
+  "recognitionTakeaway": "申 survives with later state/apply/extend-related uses, while 電 adds 雨 for lightning/electricity and 伸 adds 人 for stretching.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+7533",
   "simplifiedForm": "申",
@@ -15,9 +15,9 @@
     "Oracle is a loose S-shaped sequence of two opposing curls, with no enclosing frame and no obvious modern rectangle.",
     "Regular 申 encloses the central vertical inside a rectangular 日-like frame, a major final restructuring from the open Seal and Clerical forms."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-061-申-u7533",
+  "contentFolder": "content/release/symbols/stretch",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-061-申-u7533/research.md",
+  "researchNotesPath": "content/release/symbols/stretch/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "apply; state; declare"
       ],
       "examples": [
+        {
+          "text": "申",
+          "reading": "shēn",
+          "translation": "apply; state; declare",
+          "speechText": "申",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shēn"
+          ]
+        },
         {
           "text": "申请",
           "reading": "shēnqǐng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "申诉",
+          "reading": "shēnsù",
+          "translation": "appeal; make a complaint",
+          "speechText": "申诉",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我想申请。",
           "reading": "Wǒ xiǎng shēnqǐng.",
           "translation": "I want to apply.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "申",
@@ -98,6 +127,18 @@
         "apply; state; declare"
       ],
       "taiwanExamples": [
+        {
+          "text": "申",
+          "reading": "shēn",
+          "translation": "apply; state; declare",
+          "speechText": "申",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "申請",
           "reading": "shēnqǐng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "申",
+          "reading": "san1",
+          "translation": "apply; state; declare",
+          "speechText": "申",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "申請",
           "reading": "san1 cing2",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "申",
       "readings": [
         {
-          "system": "on",
-          "value": "シン (shin)",
+          "system": "onyomi",
+          "value": "シン — shin",
           "audioAssetRef": null,
           "speechText": "しん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "シン",
+          "romanization": "shin",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "もうす (mōsu)",
+          "system": "kunyomi",
+          "value": "もうす — mōsu",
           "audioAssetRef": null,
           "speechText": "もうす",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "もうす",
+          "romanization": "mōsu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "申"
-          ]
+          ],
+          "kanaReading": "もうす",
+          "coversReadings": [
+            "もうす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "申",
+              "reading": "もう"
+            },
+            {
+              "text": "す"
+            }
+          ],
+          "furiganaHtml": "<ruby>申<rt>もう</rt></ruby>す"
         },
         {
           "text": "申し込む",
@@ -253,7 +328,78 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "申"
-          ]
+          ],
+          "kanaReading": "もうしこむ",
+          "furiganaSegments": [
+            {
+              "text": "申",
+              "reading": "もう"
+            },
+            {
+              "text": "し"
+            },
+            {
+              "text": "込",
+              "reading": "こ"
+            },
+            {
+              "text": "む"
+            }
+          ],
+          "furiganaHtml": "<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>む"
+        },
+        {
+          "text": "申請",
+          "reading": "shinsei",
+          "translation": "application",
+          "speechText": "申請",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しんせい",
+          "coversReadings": [
+            "シン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "申請",
+              "reading": "しんせい"
+            }
+          ],
+          "furiganaHtml": "<ruby>申請<rt>しんせい</rt></ruby>"
+        },
+        {
+          "text": "申し出る",
+          "reading": "mōshideru",
+          "translation": "offer / state",
+          "speechText": "申し出る",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "もうしでる",
+          "furiganaSegments": [
+            {
+              "text": "申",
+              "reading": "もう"
+            },
+            {
+              "text": "し"
+            },
+            {
+              "text": "出",
+              "reading": "で"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>申<rt>もう</rt></ruby>し<ruby>出<rt>で</rt></ruby>る"
         },
         {
           "text": "ここで申し込みます。",
@@ -267,20 +413,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "申"
-          ]
+          ],
+          "kanaReading": "ここでもうしこみます。",
+          "furiganaSegments": [
+            {
+              "text": "ここで"
+            },
+            {
+              "text": "申",
+              "reading": "もう"
+            },
+            {
+              "text": "し"
+            },
+            {
+              "text": "込",
+              "reading": "こ"
+            },
+            {
+              "text": "みます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "ここで<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "もうす",
+        "romanization": "mōsu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "申",
       "readings": [
         {
           "system": "hanja",
-          "value": "신 / sin",
+          "value": "신 — sin",
           "audioAssetRef": null,
           "speechText": "신",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "신",
+          "romanization": "sin"
         }
       ],
       "glosses": [
@@ -316,6 +500,30 @@
           ]
         },
         {
+          "text": "신청서",
+          "reading": "sincheongseo",
+          "translation": "application form",
+          "speechText": "신청서",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "신고서",
+          "reading": "singoseo",
+          "translation": "report / declaration form",
+          "speechText": "신고서",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "신청해요.",
           "reading": "sincheonghaeyo.",
           "translation": "I apply.",
@@ -330,7 +538,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "신 — sin",
+          "audioAssetRef": null,
+          "speechText": "신",
+          "speechLanguage": "korean",
+          "nativeReading": "신",
+          "romanization": "sin"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "신",
+        "romanization": "sin",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -339,14 +566,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A twisting, lightning-like line stretched out beside a person pulling on a long cord.",
+    "originAnchor": "A lightning flash suggested stretching through its spreading form; sound borrowing later led to 'state' and 'apply.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/stretch/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a loose S-shaped sequence of two opposing curls, with no enclosing frame and no obvious modern rectangle.",
+        "changeNoteFromPrevious": "The earliest graph is a branching lightning form; a person stretching is not the ancient picture.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-申"
@@ -372,8 +599,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a loose S-shaped sequence of two opposing curls, with no enclosing frame and no obvious modern rectangle.",
-        "transitionNote": "Oracle is a loose S-shaped sequence of two opposing curls, with no enclosing frame and no obvious modern rectangle.",
+        "stageExplanation": "The earliest graph is a branching lightning form; a person stretching is not the ancient picture.",
+        "transitionNote": "The earliest graph is a branching lightning form; a person stretching is not the ancient picture.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -383,7 +610,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/stretch/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps the doubled curl but makes the upper hook heavier and the lower sweep longer.",
+        "changeNoteFromPrevious": "Keeps the doubled curl but makes the upper hook heavier and the lower sweep longer.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-申"
@@ -409,8 +636,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps the doubled curl but makes the upper hook heavier and the lower sweep longer.",
-        "transitionNote": "Bronze keeps the doubled curl but makes the upper hook heavier and the lower sweep longer.",
+        "stageExplanation": "Keeps the doubled curl but makes the upper hook heavier and the lower sweep longer.",
+        "transitionNote": "Keeps the doubled curl but makes the upper hook heavier and the lower sweep longer.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -420,7 +647,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/stretch/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal radically reorganizes the form into a central vertical line flanked by short paired strokes, like two mirrored combs.",
+        "changeNoteFromPrevious": "Radically reorganizes the form into a central vertical line flanked by short paired strokes, like two mirrored combs.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-申"
@@ -446,8 +673,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal radically reorganizes the form into a central vertical line flanked by short paired strokes, like two mirrored combs.",
-        "transitionNote": "Small Seal radically reorganizes the form into a central vertical line flanked by short paired strokes, like two mirrored combs.",
+        "stageExplanation": "Radically reorganizes the form into a central vertical line flanked by short paired strokes, like two mirrored combs.",
+        "transitionNote": "Radically reorganizes the form into a central vertical line flanked by short paired strokes, like two mirrored combs.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -457,7 +684,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/stretch/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical thickens those side strokes and spreads them outward from the central vertical.",
+        "changeNoteFromPrevious": "Thickens those side strokes and spreads them outward from the central vertical.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-申"
@@ -483,8 +710,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical thickens those side strokes and spreads them outward from the central vertical.",
-        "transitionNote": "Clerical thickens those side strokes and spreads them outward from the central vertical.",
+        "stageExplanation": "Thickens those side strokes and spreads them outward from the central vertical.",
+        "transitionNote": "Thickens those side strokes and spreads them outward from the central vertical.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -494,7 +721,7 @@
         "label": "Regular Script",
         "form": "申",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 申 encloses the central vertical inside a rectangular 日-like frame, a major final restructuring from the open Seal and Clerical forms.",
+        "changeNoteFromPrevious": "申 survives with later state/apply/extend-related uses, while 電 adds 雨 for lightning/electricity and 伸 adds 人 for stretching.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -520,8 +747,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 申 encloses the central vertical inside a rectangular 日-like frame, a major final restructuring from the open Seal and Clerical forms.",
-        "transitionNote": "Regular 申 encloses the central vertical inside a rectangular 日-like frame, a major final restructuring from the open Seal and Clerical forms.",
+        "stageExplanation": "申 survives with later state/apply/extend-related uses, while 電 adds 雨 for lightning/electricity and 伸 adds 人 for stretching.",
+        "transitionNote": "申 survives with later state/apply/extend-related uses, while 電 adds 雨 for lightning/electricity and 伸 adds 人 for stretching.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -529,7 +756,7 @@
     ],
     "origin": {
       "concept": "stretch",
-      "explanation": "A twisting, lightning-like line stretched out beside a person pulling on a long cord.",
+      "explanation": "A lightning-flash graph.",
       "asset": {
         "characterID": "stretch",
         "historicalStage": null,
@@ -546,7 +773,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of stretch",
+        "accessibilityDescription": "Illustration of state / apply; historical lightning/extend",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -564,7 +791,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'stretch', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'state / apply; historical lightning/extend', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -634,13 +861,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

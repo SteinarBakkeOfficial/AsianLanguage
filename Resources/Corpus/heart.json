@@ -2,8 +2,8 @@
   "id": "heart",
   "version": 1,
   "coreCharacter": "心",
-  "coreSharedMeaning": "heart",
-  "recognitionTakeaway": "Regular 心 keeps that broken-stroke arrangement as four distinct marks, an abstract endpoint far removed from the anatomical illustration.",
+  "coreSharedMeaning": "heart / mind",
+  "recognitionTakeaway": "Keeps that broken-stroke arrangement as four distinct marks, an abstract endpoint far removed from the anatomical illustration.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5FC3",
   "simplifiedForm": "心",
@@ -15,9 +15,9 @@
     "The outline is unmistakably heart-like, with two upper lobes and a pointed lower body split by an inner opening.",
     "Regular 心 keeps that broken-stroke arrangement as four distinct marks, an abstract endpoint far removed from the anatomical illustration."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-016-心-u5FC3",
+  "contentFolder": "content/release/symbols/heart",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-016-心-u5FC3/research.md",
+  "researchNotesPath": "content/release/symbols/heart/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -50,6 +50,9 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "心"
+          ],
+          "coversReadings": [
+            "xīn"
           ]
         },
         {
@@ -67,6 +70,30 @@
           ]
         },
         {
+          "text": "心里",
+          "reading": "xīnlǐ",
+          "translation": "in one’s heart/mind",
+          "speechText": "心里",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "小心",
+          "reading": "xiǎoxīn",
+          "translation": "be careful",
+          "speechText": "小心",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我很开心。",
           "reading": "Wǒ hěn kāixīn.",
           "translation": "I am very happy.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "心",
@@ -125,6 +154,18 @@
           "introducedSymbols": [
             "心"
           ]
+        },
+        {
+          "text": "心裡",
+          "reading": "xīnlǐ",
+          "translation": "in one’s heart/mind",
+          "speechText": "心裡",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "我很開心。",
@@ -171,6 +212,18 @@
           ]
         },
         {
+          "text": "心裡",
+          "reading": "sam1 leoi5",
+          "translation": "in the heart/mind",
+          "speechText": "心裡",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我好開心。",
           "reading": "ngo5 hou2 hoi1 sam1",
           "translation": "I am very happy.",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "心",
       "readings": [
         {
-          "system": "on",
-          "value": "シン (shin)",
+          "system": "onyomi",
+          "value": "シン — shin",
           "audioAssetRef": null,
           "speechText": "しん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "シン",
+          "romanization": "shin",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "こころ (kokoro)",
+          "system": "kunyomi",
+          "value": "こころ — kokoro",
           "audioAssetRef": null,
           "speechText": "こころ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "こころ",
+          "romanization": "kokoro",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "心"
-          ]
+          ],
+          "kanaReading": "こころ",
+          "coversReadings": [
+            "こころ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "心",
+              "reading": "こころ"
+            }
+          ],
+          "furiganaHtml": "<ruby>心<rt>こころ</rt></ruby>"
         },
         {
           "text": "安心",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "心"
-          ]
+          ],
+          "kanaReading": "あんしん",
+          "coversReadings": [
+            "シン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "安心",
+              "reading": "あんしん"
+            }
+          ],
+          "furiganaHtml": "<ruby>安心<rt>あんしん</rt></ruby>"
+        },
+        {
+          "text": "心理",
+          "reading": "shinri",
+          "translation": "mind; psychology",
+          "speechText": "心理",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しんり",
+          "furiganaSegments": [
+            {
+              "text": "心理",
+              "reading": "しんり"
+            }
+          ],
+          "furiganaHtml": "<ruby>心理<rt>しんり</rt></ruby>"
+        },
+        {
+          "text": "心配",
+          "reading": "shinpai",
+          "translation": "worry",
+          "speechText": "心配",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しんぱい",
+          "furiganaSegments": [
+            {
+              "text": "心配",
+              "reading": "しんぱい"
+            }
+          ],
+          "furiganaHtml": "<ruby>心配<rt>しんぱい</rt></ruby>"
         },
         {
           "text": "心が落ち着きます。",
@@ -267,33 +390,81 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "心"
-          ]
+          ],
+          "kanaReading": "こころがおちつきます。",
+          "furiganaSegments": [
+            {
+              "text": "心",
+              "reading": "こころ"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "落",
+              "reading": "お"
+            },
+            {
+              "text": "ち"
+            },
+            {
+              "text": "着",
+              "reading": "つ"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>心<rt>こころ</rt></ruby>が<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>きます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "こころ",
+        "romanization": "kokoro",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "心",
       "readings": [
         {
           "system": "hanja",
-          "value": "심 / sim",
+          "value": "심 — sim",
           "audioAssetRef": null,
           "speechText": "심",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "마음 / maeum",
-          "audioAssetRef": null,
-          "speechText": "마음",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "심",
+          "romanization": "sim"
         }
       ],
       "glosses": [
         "heart"
       ],
       "examples": [
+        {
+          "text": "마음",
+          "reading": "maeum",
+          "translation": "heart / mind",
+          "speechText": "마음",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "중심",
           "reading": "jungsim",
@@ -323,6 +494,18 @@
           ]
         },
         {
+          "text": "심리",
+          "reading": "simni",
+          "translation": "psychology / mind",
+          "speechText": "심리",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "마음이 편해요.",
           "reading": "maeumi pyeonhaeyo.",
           "translation": "I feel at ease.",
@@ -337,7 +520,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "심 — sim",
+          "audioAssetRef": null,
+          "speechText": "심",
+          "speechLanguage": "korean",
+          "nativeReading": "심",
+          "romanization": "sim"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "마음 — maeum",
+          "audioAssetRef": null,
+          "speechText": "마음",
+          "speechLanguage": "korean",
+          "nativeReading": "마음",
+          "romanization": "maeum",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "heart / mind",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "심",
+        "romanization": "sim",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,7 +568,7 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "An anatomical human heart.",
+    "originAnchor": "The physical heart.",
     "stages": [
       {
         "stage": "oracleBone",
@@ -501,7 +723,7 @@
         "label": "Regular Script",
         "form": "心",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 心 keeps that broken-stroke arrangement as four distinct marks, an abstract endpoint far removed from the anatomical illustration.",
+        "changeNoteFromPrevious": "Keeps that broken-stroke arrangement as four distinct marks, an abstract endpoint far removed from the anatomical illustration.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +749,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 心 keeps that broken-stroke arrangement as four distinct marks, an abstract endpoint far removed from the anatomical illustration.",
-        "transitionNote": "Regular 心 keeps that broken-stroke arrangement as four distinct marks, an abstract endpoint far removed from the anatomical illustration.",
+        "stageExplanation": "Keeps that broken-stroke arrangement as four distinct marks, an abstract endpoint far removed from the anatomical illustration.",
+        "transitionNote": "Keeps that broken-stroke arrangement as four distinct marks, an abstract endpoint far removed from the anatomical illustration.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +758,7 @@
     ],
     "origin": {
       "concept": "heart",
-      "explanation": "An anatomical human heart.",
+      "explanation": "The physical heart, drawn as an internal organ.",
       "asset": {
         "characterID": "heart",
         "historicalStage": null,
@@ -553,7 +775,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of heart",
+        "accessibilityDescription": "Illustration of heart / mind",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +793,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'heart', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'heart / mind', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +863,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

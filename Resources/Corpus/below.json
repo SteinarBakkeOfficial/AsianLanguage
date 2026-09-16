@@ -2,8 +2,8 @@
   "id": "below",
   "version": 1,
   "coreCharacter": "下",
-  "coreSharedMeaning": "below",
-  "recognitionTakeaway": "Regular 下 stabilizes the top horizontal, central descending stroke, and short diagonal side mark into the modern form.",
+  "coreSharedMeaning": "below / under",
+  "recognitionTakeaway": "Stabilizes the top horizontal, central descending stroke, and short diagonal side mark into the modern form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+4E0B",
   "simplifiedForm": "下",
@@ -15,9 +15,9 @@
     "Oracle uses a long upper line with a shorter mark clearly placed underneath it.",
     "Regular 下 stabilizes the top horizontal, central descending stroke, and short diagonal side mark into the modern form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-079-下-u4E0B",
+  "contentFolder": "content/release/symbols/below",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-079-下-u4E0B/research.md",
+  "researchNotesPath": "content/release/symbols/below/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "below"
       ],
       "examples": [
+        {
+          "text": "下",
+          "reading": "xià",
+          "translation": "below",
+          "speechText": "下",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "xià"
+          ]
+        },
         {
           "text": "下面",
           "reading": "xiàmiàn",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "下雨",
+          "reading": "xiàyǔ",
+          "translation": "to rain",
+          "speechText": "下雨",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "猫在桌子下面。",
           "reading": "Māo zài zhuōzi xiàmiàn.",
           "translation": "The cat is under the table.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "下",
@@ -98,6 +127,18 @@
         "below"
       ],
       "taiwanExamples": [
+        {
+          "text": "下",
+          "reading": "xià",
+          "translation": "below",
+          "speechText": "下",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "下面",
           "reading": "xiàmiàn",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "下",
+          "reading": "haa6",
+          "translation": "below",
+          "speechText": "下",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "下面",
           "reading": "haa6 min6",
@@ -203,38 +256,92 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "下",
       "readings": [
         {
-          "system": "on",
-          "value": "カ (ka)",
+          "system": "onyomi",
+          "value": "カ — ka",
           "audioAssetRef": null,
           "speechText": "か",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "カ",
+          "romanization": "ka",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ゲ (ge)",
+          "system": "onyomi",
+          "value": "ゲ — ge",
           "audioAssetRef": null,
           "speechText": "げ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ゲ",
+          "romanization": "ge",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "した (shita)",
+          "system": "kunyomi",
+          "value": "した — shita",
           "audioAssetRef": null,
           "speechText": "した",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "した",
+          "romanization": "shita",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "さがる (sagaru)",
+          "system": "kunyomi",
+          "value": "さがる — sagaru",
           "audioAssetRef": null,
           "speechText": "さがる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "さがる",
+          "romanization": "sagaru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "さげる — sageru",
+          "audioAssetRef": null,
+          "speechText": "さげる",
+          "speechLanguage": "japanese",
+          "nativeReading": "さげる",
+          "romanization": "sageru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "くだる — kudaru",
+          "audioAssetRef": null,
+          "speechText": "くだる",
+          "speechLanguage": "japanese",
+          "nativeReading": "くだる",
+          "romanization": "kudaru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "おろす — orosu",
+          "audioAssetRef": null,
+          "speechText": "おろす",
+          "speechLanguage": "japanese",
+          "nativeReading": "おろす",
+          "romanization": "orosu",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "おりる — oriru",
+          "audioAssetRef": null,
+          "speechText": "おりる",
+          "speechLanguage": "japanese",
+          "nativeReading": "おりる",
+          "romanization": "oriru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -253,7 +360,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "下"
-          ]
+          ],
+          "kanaReading": "した",
+          "coversReadings": [
+            "した"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "下",
+              "reading": "した"
+            }
+          ],
+          "furiganaHtml": "<ruby>下<rt>した</rt></ruby>"
         },
         {
           "text": "地下",
@@ -267,7 +385,67 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "下"
-          ]
+          ],
+          "kanaReading": "ちか",
+          "coversReadings": [
+            "カ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "地下",
+              "reading": "ちか"
+            }
+          ],
+          "furiganaHtml": "<ruby>地下<rt>ちか</rt></ruby>"
+        },
+        {
+          "text": "下車",
+          "reading": "gesha",
+          "translation": "get off a vehicle",
+          "speechText": "下車",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "げしゃ",
+          "coversReadings": [
+            "ゲ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "下車",
+              "reading": "げしゃ"
+            }
+          ],
+          "furiganaHtml": "<ruby>下車<rt>げしゃ</rt></ruby>"
+        },
+        {
+          "text": "下がる",
+          "reading": "sagaru",
+          "translation": "go down",
+          "speechText": "下がる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "さがる",
+          "coversReadings": [
+            "さがる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "下",
+              "reading": "さ"
+            },
+            {
+              "text": "がる"
+            }
+          ],
+          "furiganaHtml": "<ruby>下<rt>さ</rt></ruby>がる"
         },
         {
           "text": "猫は机の下です。",
@@ -281,33 +459,185 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "下"
-          ]
+          ],
+          "kanaReading": "ねこはつくえのしたです。",
+          "furiganaSegments": [
+            {
+              "text": "猫",
+              "reading": "ねこ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "机",
+              "reading": "つくえ"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "下",
+              "reading": "した"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>猫<rt>ねこ</rt></ruby>は<ruby>机<rt>つくえ</rt></ruby>の<ruby>下<rt>した</rt></ruby>です。"
+        },
+        {
+          "text": "下げる",
+          "reading": "sageru",
+          "translation": "lower",
+          "speechText": "下げる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "さげる",
+          "coversReadings": [
+            "さげる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "下",
+              "reading": "さ"
+            },
+            {
+              "text": "げる"
+            }
+          ],
+          "furiganaHtml": "<ruby>下<rt>さ</rt></ruby>げる"
+        },
+        {
+          "text": "下る",
+          "reading": "kudaru",
+          "translation": "go down; descend",
+          "speechText": "下る",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "くだる",
+          "coversReadings": [
+            "くだる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "下",
+              "reading": "くだ"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>下<rt>くだ</rt></ruby>る"
+        },
+        {
+          "text": "下ろす",
+          "reading": "orosu",
+          "translation": "lower; take down",
+          "speechText": "下ろす",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おろす",
+          "coversReadings": [
+            "おろす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "下",
+              "reading": "お"
+            },
+            {
+              "text": "ろす"
+            }
+          ],
+          "furiganaHtml": "<ruby>下<rt>お</rt></ruby>ろす"
+        },
+        {
+          "text": "下りる",
+          "reading": "oriru",
+          "translation": "go/get down",
+          "speechText": "下りる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おりる",
+          "coversReadings": [
+            "おりる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "下",
+              "reading": "お"
+            },
+            {
+              "text": "りる"
+            }
+          ],
+          "furiganaHtml": "<ruby>下<rt>お</rt></ruby>りる"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "した",
+        "romanization": "shita",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "下",
       "readings": [
         {
           "system": "hanja",
-          "value": "하 / ha",
+          "value": "하 — ha",
           "audioAssetRef": null,
           "speechText": "하",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "아래 / arae",
-          "audioAssetRef": null,
-          "speechText": "아래",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "하",
+          "romanization": "ha"
         }
       ],
       "glosses": [
         "below"
       ],
       "examples": [
+        {
+          "text": "아래",
+          "reading": "arae",
+          "translation": "below / under",
+          "speechText": "아래",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "하단",
           "reading": "hadan",
@@ -337,6 +667,18 @@
           ]
         },
         {
+          "text": "하강",
+          "reading": "hagang",
+          "translation": "descent",
+          "speechText": "하강",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "고양이가 책상 아래에 있어요.",
           "reading": "goyangiga chaeksang araee isseoyo.",
           "translation": "The cat is under the desk.",
@@ -351,7 +693,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "하 — ha",
+          "audioAssetRef": null,
+          "speechText": "하",
+          "speechLanguage": "korean",
+          "nativeReading": "하",
+          "romanization": "ha"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "아래 — arae",
+          "audioAssetRef": null,
+          "speechText": "아래",
+          "speechLanguage": "korean",
+          "nativeReading": "아래",
+          "romanization": "arae",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "below / under",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "하",
+        "romanization": "ha",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -360,14 +741,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A short mark positioned below a longer reference line to show “below.”",
+    "originAnchor": "The longer line marks a boundary or reference level; the short mark below points to the space below. This abstract sign came to mean 'below'.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/below/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle uses a long upper line with a shorter mark clearly placed underneath it.",
+        "changeNoteFromPrevious": "Uses a long upper line with a shorter mark clearly placed underneath it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-下"
@@ -393,8 +774,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle uses a long upper line with a shorter mark clearly placed underneath it.",
-        "transitionNote": "Oracle uses a long upper line with a shorter mark clearly placed underneath it.",
+        "stageExplanation": "Uses a long upper line with a shorter mark clearly placed underneath it.",
+        "transitionNote": "Uses a long upper line with a shorter mark clearly placed underneath it.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -404,7 +785,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/below/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze repeats the same two-level relation with straighter, heavier strokes.",
+        "changeNoteFromPrevious": "Repeats the same two-level relation with straighter, heavier strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-下"
@@ -430,8 +811,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze repeats the same two-level relation with straighter, heavier strokes.",
-        "transitionNote": "Bronze repeats the same two-level relation with straighter, heavier strokes.",
+        "stageExplanation": "Repeats the same two-level relation with straighter, heavier strokes.",
+        "transitionNote": "Repeats the same two-level relation with straighter, heavier strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -441,7 +822,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/below/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal joins the idea into one form by dropping a vertical line down from the long top horizontal.",
+        "changeNoteFromPrevious": "Joins the idea into one form by dropping a vertical line down from the long top horizontal.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-下"
@@ -467,8 +848,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal joins the idea into one form by dropping a vertical line down from the long top horizontal.",
-        "transitionNote": "Small Seal joins the idea into one form by dropping a vertical line down from the long top horizontal.",
+        "stageExplanation": "Joins the idea into one form by dropping a vertical line down from the long top horizontal.",
+        "transitionNote": "Joins the idea into one form by dropping a vertical line down from the long top horizontal.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -478,7 +859,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/below/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical retains the top bar and hanging vertical, adding a small separated side stroke.",
+        "changeNoteFromPrevious": "Retains the top bar and hanging vertical, adding a small separated side stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-下"
@@ -504,8 +885,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical retains the top bar and hanging vertical, adding a small separated side stroke.",
-        "transitionNote": "Clerical retains the top bar and hanging vertical, adding a small separated side stroke.",
+        "stageExplanation": "Retains the top bar and hanging vertical, adding a small separated side stroke.",
+        "transitionNote": "Retains the top bar and hanging vertical, adding a small separated side stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -515,7 +896,7 @@
         "label": "Regular Script",
         "form": "下",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 下 stabilizes the top horizontal, central descending stroke, and short diagonal side mark into the modern form.",
+        "changeNoteFromPrevious": "The original mark below a line was later reshaped with a vertical stroke to distinguish it from the numeral for two; the meaning ‘below’ remained.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -541,8 +922,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 下 stabilizes the top horizontal, central descending stroke, and short diagonal side mark into the modern form.",
-        "transitionNote": "Regular 下 stabilizes the top horizontal, central descending stroke, and short diagonal side mark into the modern form.",
+        "stageExplanation": "Stabilizes the top horizontal, central descending stroke, and short diagonal side mark into the modern form.",
+        "transitionNote": "The original mark below a line was later reshaped with a vertical stroke to distinguish it from the numeral for two; the meaning ‘below’ remained.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -550,7 +931,7 @@
     ],
     "origin": {
       "concept": "below",
-      "explanation": "A short mark positioned below a longer reference line to show “below.”",
+      "explanation": "A short mark placed below a longer reference line.",
       "asset": {
         "characterID": "below",
         "historicalStage": null,
@@ -567,7 +948,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of below",
+        "accessibilityDescription": "Illustration of below / under",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -585,7 +966,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'below', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'below / under', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -655,13 +1036,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

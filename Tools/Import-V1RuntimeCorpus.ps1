@@ -1,7 +1,6 @@
 param(
   [string]$ManifestPath = "content/research/zdic-v1-complete-manifest.json",
-  [string]$GenerationInputPath = "C:\Users\Stein\AppData\Local\Temp\asianlanguage-origin-generation\origin-generation-inputs.json",
-  [string]$LegacyCorpusPath = "content/shared-characters",
+  [string]$SymbolsPath = "content/release/symbols",
   [string]$CorpusDestination = "Resources/Corpus",
   [string]$AssetDestination = "Resources/Assets/Symbols",
   [string]$TransitionNotesPath = "content/research/v1-symbols/transition-notes-v1.json"
@@ -246,8 +245,58 @@ function New-KaiMetadata([string]$Character, [string]$AssetRef) {
   }
 }
 
+function Merge-CanonicalEditorialContent($Generated, $Canonical, [string]$SymbolID) {
+  # Runtime generation owns bundle paths and freshly selected asset metadata;
+  # the canonical Symbol record owns all editable lesson/editorial content.
+  foreach ($name in @(
+    "version", "coreSharedMeaning", "recognitionTakeaway", "publicationStatus",
+    "simplifiedForm", "traditionalForm", "additionalMeanings", "formationType",
+    "visualTeachingNotes", "learnerCopyPath", "reviewPath", "sourceConflicts",
+    "editorialStatus", "focusCoverage", "visuals", "structure", "usage", "sources", "notes"
+  )) {
+    if ($Canonical.PSObject.Properties.Name -contains $name) {
+      $Generated[$name] = $Canonical.$name
+    }
+  }
+
+  $Generated["contentFolder"] = "content/release/symbols/$SymbolID"
+  $Generated["researchNotesPath"] = if ($Canonical.researchNotesPath) { "content/release/symbols/$SymbolID/research.md" } else { $null }
+
+  if ($null -ne $Canonical.history) {
+    if ($Canonical.history.originAnchor) {
+      $Generated.history.originAnchor = $Canonical.history.originAnchor
+    }
+    if ($null -ne $Canonical.history.origin -and $null -ne $Generated.history.origin) {
+      foreach ($name in @("concept", "explanation", "sourceIds")) {
+        if ($Canonical.history.origin.PSObject.Properties.Name -contains $name) {
+          $Generated.history.origin[$name] = $Canonical.history.origin.$name
+        }
+      }
+    }
+
+    foreach ($generatedStage in @($Generated.history.stages)) {
+      $canonicalStage = @($Canonical.history.stages | Where-Object { $_.stage -eq $generatedStage.stage } | Select-Object -First 1)
+      if ($canonicalStage.Count -eq 0 -and $generatedStage.stage -eq "seal") {
+        $canonicalStage = @($Canonical.history.stages | Where-Object { $_.stage -eq "smallSeal" } | Select-Object -First 1)
+      }
+      if ($canonicalStage.Count -eq 0) { continue }
+      $canonicalStage = $canonicalStage[0]
+      foreach ($name in @("form", "changeNoteFromPrevious", "stageExplanation", "transitionNote", "transitionNoteNeedsReview", "certainty", "sourceIds", "historicalSound", "introducedComponentIds", "materialProcessCaption")) {
+        if ($canonicalStage.PSObject.Properties.Name -contains $name) {
+          $generatedStage[$name] = $canonicalStage.$name
+        }
+      }
+      if ($null -ne $canonicalStage.assetMetadata -and $null -ne $generatedStage.assetMetadata -and $canonicalStage.assetMetadata.accessibilityDescription) {
+        $generatedStage.assetMetadata.accessibilityDescription = $canonicalStage.assetMetadata.accessibilityDescription
+      }
+    }
+  }
+
+  return $Generated
+}
+
 $manifest = Read-Json $ManifestPath
-$generationInputs = @(Read-Json $GenerationInputPath)
+$canonicalRoot = Resolve-RepoPath $SymbolsPath
 $transitionNotes = @{}
 $transitionNotesFile = Resolve-RepoPath $TransitionNotesPath
 if (Test-Path -LiteralPath $transitionNotesFile) {
@@ -256,12 +305,6 @@ if (Test-Path -LiteralPath $transitionNotesFile) {
     $transitionNotes["$($entry.character)|$($entry.stage)"] = $entry
   }
 }
-$legacyByCharacter = @{}
-foreach ($file in Get-ChildItem -LiteralPath (Resolve-RepoPath $LegacyCorpusPath) -Filter "*.json" -File) {
-  $legacy = Get-Content -LiteralPath $file.FullName -Raw | ConvertFrom-Json
-  $legacyByCharacter[$legacy.coreCharacter] = $legacy
-}
-
 $outputCorpus = Resolve-RepoPath $CorpusDestination
 $outputAssets = Resolve-RepoPath $AssetDestination
 New-Item -ItemType Directory -Path $outputCorpus -Force | Out-Null
@@ -274,24 +317,22 @@ $records = [System.Collections.Generic.List[object]]::new()
 
 foreach ($manifestRecord in @($manifest.records | Sort-Object rank)) {
   $character = [string]$manifestRecord.character
-  $input = $generationInputs | Where-Object character -eq $character | Select-Object -First 1
-  if ($null -eq $input) { throw "No origin illustration input for $character" }
-  $folder = [string]$input.folder
+  $id = if ($idByCharacter.ContainsKey($character)) { $idByCharacter[$character] } else { "symbol-$($manifestRecord.unicode.Replace('U+', 'u'))" }
+  $folder = Join-Path $canonicalRoot $id
+  $canonicalFile = Join-Path $folder "symbol.json"
+  if (-not (Test-Path -LiteralPath $canonicalFile)) { throw "Canonical Symbol JSON not found for $character`: $canonicalFile" }
+  $canonicalRecord = Read-Json $canonicalFile
   $researchPath = Join-Path $folder "historical-references.json"
   $research = if (Test-Path -LiteralPath $researchPath) { Get-Content -LiteralPath $researchPath -Raw | ConvertFrom-Json } else { $null }
-  $indexRow = $null
-  $indexPath = Join-Path (Resolve-RepoPath "content/research/v1-symbols") "index.json"
-  if (Test-Path -LiteralPath $indexPath) {
-    $indexRows = Get-Content -LiteralPath $indexPath -Raw | ConvertFrom-Json
-    $indexRow = @($indexRows | Where-Object character -eq $character | Sort-Object rank | Select-Object -First 1)
-  }
-  $legacy = $legacyByCharacter[$character]
-  $id = if ($idByCharacter.ContainsKey($character)) { $idByCharacter[$character] } else { "symbol-$($manifestRecord.unicode.Replace('U+', 'u'))" }
-  $meaning = if ($legacy) { $legacy.coreSharedMeaning } elseif ($research) { Get-Meaning $character $research } else { "shared character" }
-  $traditional = if ($research -and $research.traditionalVariant) { [string]$research.traditionalVariant } elseif ($legacy -and $legacy.traditionalForm) { [string]$legacy.traditionalForm } else { $character }
-  $mandarin = if ($research) { Get-ReadingValue $research.readings.mandarin } elseif ($legacy) { $legacy.focusCoverage.simplifiedChinese.readings[0].value } else { $null }
-  $japanese = if ($research) { Get-ReadingValue $research.readings.japanese } elseif ($legacy) { (@($legacy.focusCoverage.japanese.readings | ForEach-Object value) -join "; ") } else { $null }
-  $korean = if ($research) { Get-ReadingValue $research.readings.korean } elseif ($legacy) { $legacy.focusCoverage.korean.readings[0].value } else { $null }
+  # The per-Symbol record is now the editable source for content. Research
+  # metadata still supplies the historical asset selection, while this record
+  # supplies reviewed copy, readings, examples, structure, and notes.
+  $legacy = $canonicalRecord
+  $meaning = if ($canonicalRecord.coreSharedMeaning) { [string]$canonicalRecord.coreSharedMeaning } elseif ($research) { Get-Meaning $character $research } else { "shared character" }
+  $traditional = if ($canonicalRecord.traditionalForm) { [string]$canonicalRecord.traditionalForm } elseif ($research -and $research.traditionalVariant) { [string]$research.traditionalVariant } else { $character }
+  $mandarin = if ($canonicalRecord.focusCoverage.simplifiedChinese.readings) { Get-ReadingValue $canonicalRecord.focusCoverage.simplifiedChinese.readings[0].value } elseif ($research) { Get-ReadingValue $research.readings.mandarin } else { $null }
+  $japanese = if ($canonicalRecord.focusCoverage.japanese.readings) { (@($canonicalRecord.focusCoverage.japanese.readings | ForEach-Object value) -join "; ") } elseif ($research) { Get-ReadingValue $research.readings.japanese } else { $null }
+  $korean = if ($canonicalRecord.focusCoverage.korean.readings) { Get-ReadingValue $canonicalRecord.focusCoverage.korean.readings[0].value } elseif ($research) { Get-ReadingValue $research.readings.korean } else { $null }
   $originPath = Join-Path $folder "educational/original/origin-locked-style-v2.png"
   $v3Path = Join-Path $folder "educational/original/origin-locked-style-v3.png"
   if (Test-Path -LiteralPath $v3Path) { $originPath = $v3Path }
@@ -406,8 +447,7 @@ foreach ($manifestRecord in @($manifest.records | Sort-Object rank)) {
   $record = [ordered]@{
     id = $id; version = 1; coreCharacter = $character; coreSharedMeaning = $meaning; recognitionTakeaway = "$character connects the idea of $meaning to a complete visual journey from origin through historical forms and into modern language use."; publicationStatus = "draft"; unicodeCodePoint = [string]$manifestRecord.unicode; simplifiedForm = $character; traditionalForm = $traditional; additionalMeanings = @(); formationType = Normalize-FormationType $(if ($research -and $research.formationType) { [string]$research.formationType } else { "uncertain" }); visualTeachingNotes = @("Compare the friendly origin illustration with the selected Oracle Bone form.", "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."); contentFolder = "content/research/v1-symbols/$([IO.Path]::GetFileName($folder))"; learnerCopyPath = $null; researchNotesPath = "content/research/v1-symbols/$([IO.Path]::GetFileName($folder))/research.md"; reviewPath = $null; sourceConflicts = @(); editorialStatus = "needsReview"; teachingSequence = [int]$manifestRecord.rank; focusCoverage = $focus; visuals = [ordered]@{ evolutionAssetRefs = $null; assetStatus = "local-source-backed-draft"; note = "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate." }; history = [ordered]@{ originAnchor = "Begin with the real-world idea of $meaning, then compare the selected forms without treating the illustration as a historical glyph."; stages = @($stages.ToArray()); origin = $origin }; structure = [ordered]@{ summary = if ($research -and $research.ideographicDescription) { "The research record describes this structure as $($research.ideographicDescription)." } else { "$character is presented first as a complete shared character." }; components = @(); certainty = if ($research -and $research.confidence -ge 85) { "high" } else { "medium" }; caveat = "Formation and component explanations remain subject to editorial review."; sourceIds = @("source-zdic-$character") }; usage = [ordered]@{ coreMeaningFirst = "Start with '$meaning', then compare the modern forms and readings across the four focus tracks."; notes = @("Modern examples are installed as initial content and should receive language-editor review before publication.", "Japanese and Korean regional forms are rendered through their intentional locale font roles.") }; sources = $sourceRows; notes = @("V1 runtime import from the 126-character complete-evolution manifest.", "ZDIC historical visual reuse remains review-required before commercial release.", "Origin artwork is an educational reconstruction, not historical evidence.", "Examples are shown in the Today section; generated fallback examples require language-editor review.")
   }
-  # Keep the runtime note aligned with the starter-example policy above.
-  $record.notes[3] = "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  $record = Merge-CanonicalEditorialContent -Generated $record -Canonical $canonicalRecord -SymbolID $id
   $record | ConvertTo-Json -Depth 60 | Set-Content -LiteralPath (Join-Path $outputCorpus "$id.json") -Encoding utf8
   $records.Add($record) | Out-Null
 }

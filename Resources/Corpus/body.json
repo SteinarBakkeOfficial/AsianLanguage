@@ -2,8 +2,8 @@
   "id": "body",
   "version": 1,
   "coreCharacter": "身",
-  "coreSharedMeaning": "body",
-  "recognitionTakeaway": "Regular 身 tightens the stacked body strokes and preserves the long final sweep, completing the modern abstract body form.",
+  "coreSharedMeaning": "body / self",
+  "recognitionTakeaway": "The body outline is regularized as 身; the emphasized central torso is only indirectly visible.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+8EAB",
   "simplifiedForm": "身",
@@ -15,9 +15,9 @@
     "A narrow, slanted body profile is drawn as a compact enclosed torso with one long descending stroke.",
     "Regular 身 tightens the stacked body strokes and preserves the long final sweep, completing the modern abstract body form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-011-身-u8EAB",
+  "contentFolder": "content/release/symbols/body",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-011-身-u8EAB/research.md",
+  "researchNotesPath": "content/release/symbols/body/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "body"
       ],
       "examples": [
+        {
+          "text": "身",
+          "reading": "shēn",
+          "translation": "body",
+          "speechText": "身",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shēn"
+          ]
+        },
         {
           "text": "身体",
           "reading": "shēntǐ",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "身高",
+          "reading": "shēngāo",
+          "translation": "height",
+          "speechText": "身高",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我的身体很好。",
           "reading": "Wǒ de shēntǐ hěn hǎo.",
           "translation": "I am in good health.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "身",
@@ -98,6 +127,18 @@
         "body"
       ],
       "taiwanExamples": [
+        {
+          "text": "身",
+          "reading": "shēn",
+          "translation": "body",
+          "speechText": "身",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "身體",
           "reading": "shēntǐ",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "身",
+          "reading": "san1",
+          "translation": "body",
+          "speechText": "身",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "身體",
           "reading": "san1 tai2",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "身",
       "readings": [
         {
-          "system": "on",
-          "value": "シン (shin)",
+          "system": "onyomi",
+          "value": "シン — shin",
           "audioAssetRef": null,
           "speechText": "しん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "シン",
+          "romanization": "shin",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "み (mi)",
+          "system": "kunyomi",
+          "value": "み — mi",
           "audioAssetRef": null,
           "speechText": "み",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "み",
+          "romanization": "mi",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "身"
-          ]
+          ],
+          "kanaReading": "み",
+          "coversReadings": [
+            "み"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "身",
+              "reading": "み"
+            }
+          ],
+          "furiganaHtml": "<ruby>身<rt>み</rt></ruby>"
         },
         {
           "text": "全身",
@@ -253,7 +325,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "身"
-          ]
+          ],
+          "kanaReading": "ぜんしん",
+          "coversReadings": [
+            "シン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "全身",
+              "reading": "ぜんしん"
+            }
+          ],
+          "furiganaHtml": "<ruby>全身<rt>ぜんしん</rt></ruby>"
+        },
+        {
+          "text": "身体",
+          "reading": "shintai",
+          "translation": "body",
+          "speechText": "身体",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しんたい",
+          "furiganaSegments": [
+            {
+              "text": "身体",
+              "reading": "しんたい"
+            }
+          ],
+          "furiganaHtml": "<ruby>身体<rt>しんたい</rt></ruby>"
+        },
+        {
+          "text": "身長",
+          "reading": "shinchō",
+          "translation": "height",
+          "speechText": "身長",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しんちょう",
+          "furiganaSegments": [
+            {
+              "text": "身長",
+              "reading": "しんちょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>身長<rt>しんちょう</rt></ruby>"
         },
         {
           "text": "身を守ります。",
@@ -267,33 +390,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "身"
-          ]
+          ],
+          "kanaReading": "みをまもります。",
+          "furiganaSegments": [
+            {
+              "text": "身",
+              "reading": "み"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "守",
+              "reading": "まも"
+            },
+            {
+              "text": "ります"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>身<rt>み</rt></ruby>を<ruby>守<rt>まも</rt></ruby>ります。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "み",
+        "romanization": "mi",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "身",
       "readings": [
         {
           "system": "hanja",
-          "value": "신 / sin",
+          "value": "신 — sin",
           "audioAssetRef": null,
           "speechText": "신",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "몸 / mom",
-          "audioAssetRef": null,
-          "speechText": "몸",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "신",
+          "romanization": "sin"
         }
       ],
       "glosses": [
         "body"
       ],
       "examples": [
+        {
+          "text": "몸",
+          "reading": "mom",
+          "translation": "body",
+          "speechText": "몸",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "신체",
           "reading": "sinche",
@@ -323,6 +487,18 @@
           ]
         },
         {
+          "text": "신분",
+          "reading": "sinbun",
+          "translation": "status / identity",
+          "speechText": "신분",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "몸을 움직여요.",
           "reading": "momeul umjigyeoyo.",
           "translation": "I move my body.",
@@ -337,7 +513,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "신 — sin",
+          "audioAssetRef": null,
+          "speechText": "신",
+          "speechLanguage": "korean",
+          "nativeReading": "신",
+          "romanization": "sin"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "몸 — mom",
+          "audioAssetRef": null,
+          "speechText": "몸",
+          "speechLanguage": "korean",
+          "nativeReading": "몸",
+          "romanization": "mom",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "body",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "신",
+        "romanization": "sin",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +561,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A full human body shown from head to feet.",
+    "originAnchor": "The rounded abdomen may show pregnancy or the body itself; its meaning later broadened to 'body' and 'self.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/body/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A narrow, slanted body profile is drawn as a compact enclosed torso with one long descending stroke.",
+        "changeNoteFromPrevious": "A human body/profile has the abdominal area emphasized; this is safer than treating the figure as certainly pregnant.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-身"
@@ -379,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "A narrow, slanted body profile is drawn as a compact enclosed torso with one long descending stroke.",
-        "transitionNote": "A narrow, slanted body profile is drawn as a compact enclosed torso with one long descending stroke.",
+        "stageExplanation": "A human body/profile has the abdominal area emphasized; this is safer than treating the figure as certainly pregnant.",
+        "transitionNote": "A human body/profile has the abdominal area emphasized; this is safer than treating the figure as certainly pregnant.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -464,7 +679,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/body/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The outline collapses into the recognizable clerical 身, including the strong rightward sweep.",
+        "changeNoteFromPrevious": "The outline collapses into the recognizable clerical, including the strong rightward sweep.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-身"
@@ -490,8 +705,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The outline collapses into the recognizable clerical 身, including the strong rightward sweep.",
-        "transitionNote": "The outline collapses into the recognizable clerical 身, including the strong rightward sweep.",
+        "stageExplanation": "The outline collapses into the recognizable clerical, including the strong rightward sweep.",
+        "transitionNote": "The outline collapses into the recognizable clerical, including the strong rightward sweep.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +716,7 @@
         "label": "Regular Script",
         "form": "身",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 身 tightens the stacked body strokes and preserves the long final sweep, completing the modern abstract body form.",
+        "changeNoteFromPrevious": "The body outline is regularized as 身; the emphasized central torso is only indirectly visible.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +742,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 身 tightens the stacked body strokes and preserves the long final sweep, completing the modern abstract body form.",
-        "transitionNote": "Regular 身 tightens the stacked body strokes and preserves the long final sweep, completing the modern abstract body form.",
+        "stageExplanation": "The body outline is regularized as 身; the emphasized central torso is only indirectly visible.",
+        "transitionNote": "The body outline is regularized as 身; the emphasized central torso is only indirectly visible.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +751,7 @@
     ],
     "origin": {
       "concept": "body",
-      "explanation": "A full human body shown from head to feet.",
+      "explanation": "The rounded abdomen may represent pregnancy—or simply the abdomen itself. The meaning later broadened to ‘body’ and ‘self,’ while pregnancy remains in some later expressions.",
       "asset": {
         "characterID": "body",
         "historicalStage": null,
@@ -553,7 +768,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of body",
+        "accessibilityDescription": "Illustration of body / self",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +786,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'body', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'body / self', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +856,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

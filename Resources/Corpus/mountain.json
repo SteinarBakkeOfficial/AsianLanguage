@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "山",
   "coreSharedMeaning": "mountain",
-  "recognitionTakeaway": "Regular 山 squares the three-peak structure: a tall center stroke stands between two shorter sides joined along the bottom.",
+  "recognitionTakeaway": "The original three-peak picture still survives clearly, now squared into the familiar modern form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5C71",
   "simplifiedForm": "山",
@@ -15,9 +15,9 @@
     "Three jagged peaks sit on a common base, making this one of the most literal pictographs in the set.",
     "Regular 山 squares the three-peak structure: a tall center stroke stands between two shorter sides joined along the bottom."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-021-山-u5C71",
+  "contentFolder": "content/release/symbols/mountain",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-021-山-u5C71/research.md",
+  "researchNotesPath": null,
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -34,10 +34,29 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "glosses": [
-        "mountain"
-      ],
+      "glosses": [],
       "examples": [
+        {
+          "text": "山",
+          "reading": "shān",
+          "translation": "mountain",
+          "speechText": "山",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "coversReadings": [
+            "shān"
+          ]
+        },
+        {
+          "text": "火山",
+          "reading": "huǒshān",
+          "translation": "volcano",
+          "speechText": "火山",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
         {
           "text": "高山",
           "reading": "gāoshān",
@@ -45,43 +64,33 @@
           "speechText": "高山",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "山水",
-          "reading": "shānshuǐ",
-          "translation": "mountains and water; landscape",
-          "speechText": "山水",
+          "text": "山顶",
+          "reading": "shāndǐng",
+          "translation": "mountain top",
+          "speechText": "山顶",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "introducedSymbols": []
         },
         {
-          "text": "山很高。",
-          "reading": "Shān hěn gāo.",
-          "translation": "The mountain is high.",
-          "speechText": "山很高。",
+          "text": "我去爬山。",
+          "reading": "Wǒ qù páshān.",
+          "translation": "I go hiking.",
+          "speechText": "我去爬山。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "exampleLevel": "sentence"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "山",
@@ -94,10 +103,26 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "glosses": [
-        "mountain"
-      ],
+      "glosses": [],
       "taiwanExamples": [
+        {
+          "text": "山",
+          "reading": "shān",
+          "translation": "mountain",
+          "speechText": "山",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "火山",
+          "reading": "huǒshān",
+          "translation": "volcano",
+          "speechText": "火山",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
         {
           "text": "高山",
           "reading": "gāoshān",
@@ -105,84 +130,54 @@
           "speechText": "高山",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "山水",
-          "reading": "shānshuǐ",
-          "translation": "mountains and water; landscape",
-          "speechText": "山水",
+          "text": "我去爬山。",
+          "reading": "Wǒ qù páshān.",
+          "translation": "I go hiking.",
+          "speechText": "我去爬山。",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
-        },
-        {
-          "text": "山很高。",
-          "reading": "Shān hěn gāo.",
-          "translation": "The mountain is high.",
-          "speechText": "山很高。",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "exampleLevel": "sentence"
         }
       ],
       "hongKongExamples": [
         {
-          "text": "高山",
-          "reading": "gou1 saan1",
-          "translation": "high mountain",
-          "speechText": "高山",
+          "text": "山",
+          "reading": "saan1",
+          "translation": "mountain",
+          "speechText": "山",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "山水",
-          "reading": "saan1 seoi2",
-          "translation": "mountains and water; landscape",
-          "speechText": "山水",
+          "text": "火山",
+          "reading": "fo2 saan1",
+          "translation": "volcano",
+          "speechText": "火山",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "座山好高。",
-          "reading": "zo6 saan1 hou2 gou1",
-          "translation": "The mountain is high.",
-          "speechText": "座山好高。",
+          "text": "山頂",
+          "reading": "saan1 deng2",
+          "translation": "mountain top",
+          "speechText": "山頂",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "exampleLevel": "word"
+        },
+        {
+          "text": "我去行山。",
+          "reading": "ngo5 heoi3 haang4 saan1.",
+          "translation": "I go hiking.",
+          "speechText": "我去行山。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
         }
       ],
       "taiwanReadings": [
@@ -203,29 +198,35 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "山",
       "readings": [
         {
-          "system": "on",
-          "value": "サン (san)",
+          "system": "onyomi",
+          "value": "サン — san",
           "audioAssetRef": null,
           "speechText": "さん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "サン",
+          "romanization": "san",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "やま (yama)",
+          "system": "kunyomi",
+          "value": "やま — yama",
           "audioAssetRef": null,
           "speechText": "やま",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "やま",
+          "romanization": "yama",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
-      "glosses": [
-        "mountain"
-      ],
+      "glosses": [],
       "examples": [
         {
           "text": "山",
@@ -235,11 +236,17 @@
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "kanaReading": "やま",
+          "coversReadings": [
+            "やま"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "山",
+              "reading": "やま"
+            }
+          ],
+          "furiganaHtml": "<ruby>山<rt>やま</rt></ruby>"
         },
         {
           "text": "火山",
@@ -249,88 +256,184 @@
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "kanaReading": "かざん",
+          "furiganaSegments": [
+            {
+              "text": "火山",
+              "reading": "かざん"
+            }
+          ],
+          "furiganaHtml": "<ruby>火山<rt>かざん</rt></ruby>"
         },
         {
-          "text": "山に登ります。",
-          "reading": "yama ni noborimasu.",
-          "translation": "I climb the mountain.",
-          "speechText": "山に登ります。",
+          "text": "登山",
+          "reading": "tozan",
+          "translation": "mountain climbing",
+          "speechText": "登山",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "とざん",
+          "furiganaSegments": [
+            {
+              "text": "登山",
+              "reading": "とざん"
+            }
+          ],
+          "furiganaHtml": "<ruby>登山<rt>とざん</rt></ruby>"
+        },
+        {
+          "text": "山脈",
+          "reading": "sanmyaku",
+          "translation": "mountain range",
+          "speechText": "山脈",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "さんみゃく",
+          "coversReadings": [
+            "サン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "山脈",
+              "reading": "さんみゃく"
+            }
+          ],
+          "furiganaHtml": "<ruby>山脈<rt>さんみゃく</rt></ruby>"
+        },
+        {
+          "text": "山に行きます。",
+          "reading": "yama ni ikimasu.",
+          "translation": "I go to the mountains.",
+          "speechText": "山に行きます。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "kanaReading": "やまにいきます。",
+          "furiganaSegments": [
+            {
+              "text": "山",
+              "reading": "やま"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>山<rt>やま</rt></ruby>に<ruby>行<rt>い</rt></ruby>きます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "やま",
+        "romanization": "yama",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "山",
       "readings": [
         {
           "system": "hanja",
-          "value": "산 / san",
+          "value": "산 — san",
           "audioAssetRef": null,
           "speechText": "산",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "산",
+          "romanization": "san"
         }
       ],
-      "glosses": [
-        "mountain"
-      ],
+      "glosses": [],
       "examples": [
+        {
+          "text": "산",
+          "reading": "san",
+          "translation": "mountain",
+          "speechText": "산",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "화산",
+          "reading": "hwasan",
+          "translation": "volcano",
+          "speechText": "화산",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
         {
           "text": "등산",
           "reading": "deungsan",
-          "translation": "hiking; mountain climbing",
+          "translation": "hiking",
           "speechText": "등산",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "산길",
-          "reading": "sangil",
-          "translation": "mountain path",
-          "speechText": "산길",
+          "text": "산맥",
+          "reading": "sanmaek",
+          "translation": "mountain range",
+          "speechText": "산맥",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "introducedSymbols": []
         },
         {
-          "text": "산이 높아요.",
-          "reading": "sani nopayo.",
-          "translation": "The mountain is high.",
-          "speechText": "산이 높아요.",
+          "text": "산에 가요.",
+          "reading": "sane gayo.",
+          "translation": "I go to the mountains.",
+          "speechText": "산에 가요.",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "山"
-          ]
+          "exampleLevel": "sentence"
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "산 — san",
+          "audioAssetRef": null,
+          "speechText": "산",
+          "speechLanguage": "korean",
+          "nativeReading": "산",
+          "romanization": "san"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "산",
+        "romanization": "san",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -339,14 +442,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Three mountain peaks rising side by side.",
+    "originAnchor": "A group of mountain peaks.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/mountain/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Three jagged peaks sit on a common base, making this one of the most literal pictographs in the set.",
+        "changeNoteFromPrevious": "Three connected peaks form a direct picture of a mountain range.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-山"
@@ -372,8 +475,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Three jagged peaks sit on a common base, making this one of the most literal pictographs in the set.",
-        "transitionNote": "Three jagged peaks sit on a common base, making this one of the most literal pictographs in the set.",
+        "stageExplanation": "Three connected peaks form a direct picture of a mountain range.",
+        "transitionNote": "Three connected peaks form a direct picture of a mountain range.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -383,7 +486,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/mountain/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The mountain is reduced to three tall prongs meeting at a curved bottom; the rocky outline disappears.",
+        "changeNoteFromPrevious": "The detailed outline is reduced to three rising peaks joined on a single base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-山"
@@ -409,8 +512,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The mountain is reduced to three tall prongs meeting at a curved bottom; the rocky outline disappears.",
-        "transitionNote": "The mountain is reduced to three tall prongs meeting at a curved bottom; the rocky outline disappears.",
+        "stageExplanation": "The detailed outline is reduced to three rising peaks joined on a single base.",
+        "transitionNote": "The detailed outline is reduced to three rising peaks joined on a single base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -420,7 +523,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/mountain/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The three peaks become evenly spaced verticals joined by a rounded lower frame.",
+        "changeNoteFromPrevious": "The three peaks are regularized into upright strokes joined by a rounded base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-山"
@@ -446,8 +549,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The three peaks become evenly spaced verticals joined by a rounded lower frame.",
-        "transitionNote": "The three peaks become evenly spaced verticals joined by a rounded lower frame.",
+        "stageExplanation": "The three peaks are regularized into upright strokes joined by a rounded base.",
+        "transitionNote": "The three peaks are regularized into upright strokes joined by a rounded base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -457,7 +560,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/mountain/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The form becomes short and wide, with three blunt rises emerging from a heavy base.",
+        "changeNoteFromPrevious": "The rounded base becomes broad and flat, bringing the structure close to the modern form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-山"
@@ -483,8 +586,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The form becomes short and wide, with three blunt rises emerging from a heavy base.",
-        "transitionNote": "The form becomes short and wide, with three blunt rises emerging from a heavy base.",
+        "stageExplanation": "The rounded base becomes broad and flat, bringing the structure close to the modern form.",
+        "transitionNote": "The rounded base becomes broad and flat, bringing the structure close to the modern form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -494,7 +597,7 @@
         "label": "Regular Script",
         "form": "山",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 山 squares the three-peak structure: a tall center stroke stands between two shorter sides joined along the bottom.",
+        "changeNoteFromPrevious": "The original three-peak picture still survives clearly, now squared into the familiar modern form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -520,8 +623,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 山 squares the three-peak structure: a tall center stroke stands between two shorter sides joined along the bottom.",
-        "transitionNote": "Regular 山 squares the three-peak structure: a tall center stroke stands between two shorter sides joined along the bottom.",
+        "stageExplanation": "The original three-peak picture still survives clearly, now squared into the familiar modern form.",
+        "transitionNote": "The original three-peak picture still survives clearly, now squared into the familiar modern form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -529,7 +632,7 @@
     ],
     "origin": {
       "concept": "mountain",
-      "explanation": "Three mountain peaks rising side by side.",
+      "explanation": "A group of mountain peaks.",
       "asset": {
         "characterID": "mountain",
         "historicalStage": null,
@@ -606,13 +709,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

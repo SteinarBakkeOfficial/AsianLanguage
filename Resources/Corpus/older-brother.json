@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "兄",
   "coreSharedMeaning": "older brother",
-  "recognitionTakeaway": "Regular 兄 regularizes the upper 口 and the lower 儿-like legs, preserving the old “mouth over person” silhouette.",
+  "recognitionTakeaway": "Regularizes the upper 口 and the lower 儿-like legs, preserving the old “mouth over person” silhouette.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5144",
   "simplifiedForm": "兄",
@@ -15,9 +15,9 @@
     "Oracle places a large open box or mouth above a thin standing body, giving the figure an oversized speaking head.",
     "Regular 兄 regularizes the upper 口 and the lower 儿-like legs, preserving the old “mouth over person” silhouette."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-102-兄-u5144",
+  "contentFolder": "content/release/symbols/older-brother",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-102-兄-u5144/research.md",
+  "researchNotesPath": "content/release/symbols/older-brother/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -39,9 +39,24 @@
       ],
       "examples": [
         {
+          "text": "兄",
+          "reading": "xiōng",
+          "translation": "older brother",
+          "speechText": "兄",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "xiōng"
+          ]
+        },
+        {
           "text": "兄弟",
           "reading": "xiōngdì",
-          "translation": "brothers; siblings",
+          "translation": "brothers",
           "speechText": "兄弟",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "兄长",
+          "reading": "xiōngzhǎng",
+          "translation": "elder brother",
+          "speechText": "兄长",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他有两个兄弟。",
           "reading": "Tā yǒu liǎng ge xiōngdì.",
           "translation": "He has two brothers.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "兄",
@@ -98,6 +127,18 @@
         "older brother"
       ],
       "taiwanExamples": [
+        {
+          "text": "兄",
+          "reading": "xiōng",
+          "translation": "older brother",
+          "speechText": "兄",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "兄弟",
           "reading": "xiōngdì",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "兄",
+          "reading": "hing1",
+          "translation": "older brother",
+          "speechText": "兄",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "兄弟",
           "reading": "hing1 dai6",
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "兄",
       "readings": [
         {
-          "system": "on",
-          "value": "ケイ (kei)",
+          "system": "onyomi",
+          "value": "ケイ — kei",
           "audioAssetRef": null,
           "speechText": "けい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ケイ",
+          "romanization": "kei",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "キョウ (kyō)",
+          "system": "onyomi",
+          "value": "キョウ — kyō",
           "audioAssetRef": null,
           "speechText": "きょう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "キョウ",
+          "romanization": "kyō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "あに (ani)",
+          "system": "kunyomi",
+          "value": "あに — ani",
           "audioAssetRef": null,
           "speechText": "あに",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "あに",
+          "romanization": "ani",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "兄"
-          ]
+          ],
+          "kanaReading": "あに",
+          "coversReadings": [
+            "あに"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "兄",
+              "reading": "あに"
+            }
+          ],
+          "furiganaHtml": "<ruby>兄<rt>あに</rt></ruby>"
         },
         {
           "text": "兄弟",
@@ -260,7 +335,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "兄"
-          ]
+          ],
+          "kanaReading": "きょうだい",
+          "coversReadings": [
+            "キョウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "兄弟",
+              "reading": "きょうだい"
+            }
+          ],
+          "furiganaHtml": "<ruby>兄弟<rt>きょうだい</rt></ruby>"
+        },
+        {
+          "text": "父兄",
+          "reading": "fukei",
+          "translation": "parents; guardians",
+          "speechText": "父兄",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ふけい",
+          "coversReadings": [
+            "ケイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "父兄",
+              "reading": "ふけい"
+            }
+          ],
+          "furiganaHtml": "<ruby>父兄<rt>ふけい</rt></ruby>"
+        },
+        {
+          "text": "長兄",
+          "reading": "chōkei",
+          "translation": "eldest brother",
+          "speechText": "長兄",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ちょうけい",
+          "furiganaSegments": [
+            {
+              "text": "長兄",
+              "reading": "ちょうけい"
+            }
+          ],
+          "furiganaHtml": "<ruby>長兄<rt>ちょうけい</rt></ruby>"
         },
         {
           "text": "兄は学生です。",
@@ -274,40 +403,87 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "兄"
-          ]
+          ],
+          "kanaReading": "あにはがくせいです。",
+          "furiganaSegments": [
+            {
+              "text": "兄",
+              "reading": "あに"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "学生",
+              "reading": "がくせい"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>兄<rt>あに</rt></ruby>は<ruby>学生<rt>がくせい</rt></ruby>です。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "あに",
+        "romanization": "ani",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "兄",
       "readings": [
         {
           "system": "hanja",
-          "value": "형 / hyeong",
+          "value": "형 — hyeong",
           "audioAssetRef": null,
           "speechText": "형",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "형 / hyeong",
-          "audioAssetRef": null,
-          "speechText": "형",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "오빠 / oppa",
-          "audioAssetRef": null,
-          "speechText": "오빠",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "형",
+          "romanization": "hyeong"
         }
       ],
       "glosses": [
         "older brother"
       ],
       "examples": [
+        {
+          "text": "형",
+          "reading": "hyeong",
+          "translation": "older brother (male speaker)",
+          "speechText": "형",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "오빠",
+          "reading": "oppa",
+          "translation": "older brother (female speaker)",
+          "speechText": "오빠",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "형제",
           "reading": "hyeongje",
@@ -351,7 +527,65 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "형 — hyeong",
+          "audioAssetRef": null,
+          "speechText": "형",
+          "speechLanguage": "korean",
+          "nativeReading": "형",
+          "romanization": "hyeong"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "형 — hyeong",
+          "audioAssetRef": null,
+          "speechText": "형",
+          "speechLanguage": "korean",
+          "nativeReading": "형",
+          "romanization": "hyeong",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "older brother (male speaker)",
+          "displayTier": "secondary",
+          "lexicalOrigin": "sinoKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        },
+        {
+          "system": "semanticEquivalent",
+          "value": "오빠 — oppa",
+          "audioAssetRef": null,
+          "speechText": "오빠",
+          "speechLanguage": "korean",
+          "nativeReading": "오빠",
+          "romanization": "oppa",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "older brother (female speaker)",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "형",
+        "romanization": "hyeong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -360,14 +594,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "An older child or brother speaking to younger children, with a mouth and moving person shown as visual components.",
+    "originAnchor": "A person and a mouth element combine to express an older brother with authority.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/older-brother/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle places a large open box or mouth above a thin standing body, giving the figure an oversized speaking head.",
+        "changeNoteFromPrevious": "A human figure is paired with a prominent mouth/speech element; the exact semantic motivation for “older brother” is not fully secure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-兄"
@@ -393,8 +627,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle places a large open box or mouth above a thin standing body, giving the figure an oversized speaking head.",
-        "transitionNote": "Oracle places a large open box or mouth above a thin standing body, giving the figure an oversized speaking head.",
+        "stageExplanation": "A human figure is paired with a prominent mouth/speech element; the exact semantic motivation for “older brother” is not fully secure.",
+        "transitionNote": "A human figure is paired with a prominent mouth/speech element; the exact semantic motivation for “older brother” is not fully secure.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -404,7 +638,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/older-brother/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps the box-like upper part but turns the lower body into a compact pair of bent legs.",
+        "changeNoteFromPrevious": "Keeps the box-like upper part but turns the lower body into a compact pair of bent legs.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-兄"
@@ -430,8 +664,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps the box-like upper part but turns the lower body into a compact pair of bent legs.",
-        "transitionNote": "Bronze keeps the box-like upper part but turns the lower body into a compact pair of bent legs.",
+        "stageExplanation": "Keeps the box-like upper part but turns the lower body into a compact pair of bent legs.",
+        "transitionNote": "Keeps the box-like upper part but turns the lower body into a compact pair of bent legs.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -441,7 +675,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/older-brother/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal smooths the same two-part figure into a square mouth above a long flowing human body.",
+        "changeNoteFromPrevious": "Smooths the same two-part figure into a square mouth above a long flowing human body.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-兄"
@@ -467,8 +701,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal smooths the same two-part figure into a square mouth above a long flowing human body.",
-        "transitionNote": "Small Seal smooths the same two-part figure into a square mouth above a long flowing human body.",
+        "stageExplanation": "Smooths the same two-part figure into a square mouth above a long flowing human body.",
+        "transitionNote": "Smooths the same two-part figure into a square mouth above a long flowing human body.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -478,7 +712,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/older-brother/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical shrinks the upper box and exaggerates one long sweeping leg, bringing the form close to 兄.",
+        "changeNoteFromPrevious": "The person-and-mouth structure flattens and compacts, bringing the form close to the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-兄"
@@ -504,8 +738,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical shrinks the upper box and exaggerates one long sweeping leg, bringing the form close to 兄.",
-        "transitionNote": "Clerical shrinks the upper box and exaggerates one long sweeping leg, bringing the form close to 兄.",
+        "stageExplanation": "The person-and-mouth structure flattens and compacts, bringing the form close to the later standard structure.",
+        "transitionNote": "The person-and-mouth structure flattens and compacts, bringing the form close to the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -515,7 +749,7 @@
         "label": "Regular Script",
         "form": "兄",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 兄 regularizes the upper 口 and the lower 儿-like legs, preserving the old “mouth over person” silhouette.",
+        "changeNoteFromPrevious": "Regularizes the upper 口 and the lower 儿-like legs, preserving the old “mouth over person” silhouette.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -541,8 +775,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 兄 regularizes the upper 口 and the lower 儿-like legs, preserving the old “mouth over person” silhouette.",
-        "transitionNote": "Regular 兄 regularizes the upper 口 and the lower 儿-like legs, preserving the old “mouth over person” silhouette.",
+        "stageExplanation": "Regularizes the upper 口 and the lower 儿-like legs, preserving the old “mouth over person” silhouette.",
+        "transitionNote": "Regularizes the upper 口 and the lower 儿-like legs, preserving the old “mouth over person” silhouette.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -550,7 +784,7 @@
     ],
     "origin": {
       "concept": "older brother",
-      "explanation": "An older child or brother speaking to younger children, with a mouth and moving person shown as visual components.",
+      "explanation": "A person/human figure associated with a prominent mouth/speech element.",
       "asset": {
         "characterID": "older-brother",
         "historicalStage": null,
@@ -655,13 +889,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

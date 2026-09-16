@@ -1,0 +1,743 @@
+{
+  "id": "water",
+  "version": 1,
+  "coreCharacter": "水",
+  "coreSharedMeaning": "water",
+  "recognitionTakeaway": "The ancient flowing picture has become four distinct strokes; only the central-current layout still echoes the original form.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+6C34",
+  "simplifiedForm": "水",
+  "traditionalForm": "水",
+  "additionalMeanings": [],
+  "formationType": "uncertain",
+  "visualTeachingNotes": [
+    "A flowing stream winding between stones.",
+    "A wavy central current is flanked by detached droplets or side currents; the shape is recognizable as moving water once the meaning is known.",
+    "Regular 水 adds the strong cross-stroke and turns the side currents into the familiar diagonal strokes around the central vertical."
+  ],
+  "contentFolder": "content/release/symbols/water",
+  "learnerCopyPath": null,
+  "researchNotesPath": null,
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 6,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "水",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "shuǐ",
+          "audioAssetRef": null,
+          "speechText": "水",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [],
+      "examples": [
+        {
+          "text": "水",
+          "reading": "shuǐ",
+          "translation": "water",
+          "speechText": "水",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "coversReadings": [
+            "shuǐ"
+          ]
+        },
+        {
+          "text": "海水",
+          "reading": "hǎishuǐ",
+          "translation": "seawater",
+          "speechText": "海水",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "水杯",
+          "reading": "shuǐbēi",
+          "translation": "water glass",
+          "speechText": "水杯",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "水面",
+          "reading": "shuǐmiàn",
+          "translation": "water surface",
+          "speechText": "水面",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "我喝水。",
+          "reading": "Wǒ hē shuǐ.",
+          "translation": "I drink water.",
+          "speechText": "我喝水。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "水",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "shuǐ",
+          "audioAssetRef": null,
+          "speechText": "水",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [],
+      "taiwanExamples": [
+        {
+          "text": "水",
+          "reading": "shuǐ",
+          "translation": "water",
+          "speechText": "水",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "海水",
+          "reading": "hǎishuǐ",
+          "translation": "seawater",
+          "speechText": "海水",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "水杯",
+          "reading": "shuǐbēi",
+          "translation": "water glass",
+          "speechText": "水杯",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "我喝水。",
+          "reading": "Wǒ hē shuǐ.",
+          "translation": "I drink water.",
+          "speechText": "我喝水。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "水",
+          "reading": "seoi2",
+          "translation": "water",
+          "speechText": "水",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "海水",
+          "reading": "hoi2 seoi2",
+          "translation": "seawater",
+          "speechText": "海水",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "水杯",
+          "reading": "seoi2 bui1",
+          "translation": "water glass",
+          "speechText": "水杯",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "我飲水。",
+          "reading": "ngo5 jam2 seoi2.",
+          "translation": "I drink water.",
+          "speechText": "我飲水。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "shuǐ",
+          "audioAssetRef": null,
+          "speechText": "水",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "seoi2",
+          "audioAssetRef": null,
+          "speechText": "水",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "水",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "スイ — sui",
+          "audioAssetRef": null,
+          "speechText": "すい",
+          "speechLanguage": "japanese",
+          "nativeReading": "スイ",
+          "romanization": "sui",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "みず — mizu",
+          "audioAssetRef": null,
+          "speechText": "みず",
+          "speechLanguage": "japanese",
+          "nativeReading": "みず",
+          "romanization": "mizu",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [],
+      "examples": [
+        {
+          "text": "水",
+          "reading": "mizu",
+          "translation": "water",
+          "speechText": "水",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "みず",
+          "coversReadings": [
+            "みず"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "水",
+              "reading": "みず"
+            }
+          ],
+          "furiganaHtml": "<ruby>水<rt>みず</rt></ruby>"
+        },
+        {
+          "text": "海水",
+          "reading": "kaisui",
+          "translation": "seawater",
+          "speechText": "海水",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "かいすい",
+          "coversReadings": [
+            "スイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "海水",
+              "reading": "かいすい"
+            }
+          ],
+          "furiganaHtml": "<ruby>海水<rt>かいすい</rt></ruby>"
+        },
+        {
+          "text": "水道",
+          "reading": "suidō",
+          "translation": "water supply",
+          "speechText": "水道",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "すいどう",
+          "furiganaSegments": [
+            {
+              "text": "水道",
+              "reading": "すいどう"
+            }
+          ],
+          "furiganaHtml": "<ruby>水道<rt>すいどう</rt></ruby>"
+        },
+        {
+          "text": "水分",
+          "reading": "suibun",
+          "translation": "moisture",
+          "speechText": "水分",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "すいぶん",
+          "furiganaSegments": [
+            {
+              "text": "水分",
+              "reading": "すいぶん"
+            }
+          ],
+          "furiganaHtml": "<ruby>水分<rt>すいぶん</rt></ruby>"
+        },
+        {
+          "text": "水を飲みます。",
+          "reading": "mizu o nomimasu.",
+          "translation": "I drink water.",
+          "speechText": "水を飲みます。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "kanaReading": "みずをのみます。",
+          "furiganaSegments": [
+            {
+              "text": "水",
+              "reading": "みず"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "飲",
+              "reading": "の"
+            },
+            {
+              "text": "みます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>水<rt>みず</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みます。"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "みず",
+        "romanization": "mizu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "水",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "수 — su",
+          "audioAssetRef": null,
+          "speechText": "수",
+          "speechLanguage": "korean",
+          "nativeReading": "수",
+          "romanization": "su"
+        }
+      ],
+      "glosses": [],
+      "examples": [
+        {
+          "text": "물",
+          "reading": "mul",
+          "translation": "water",
+          "speechText": "물",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "수영",
+          "reading": "suyeong",
+          "translation": "swimming",
+          "speechText": "수영",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "수위",
+          "reading": "suwi",
+          "translation": "water level",
+          "speechText": "수위",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "식수",
+          "reading": "siksu",
+          "translation": "drinking water",
+          "speechText": "식수",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "물을 마셔요.",
+          "reading": "mureul masyeoyo.",
+          "translation": "I drink water.",
+          "speechText": "물을 마셔요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "수 — su",
+          "audioAssetRef": null,
+          "speechText": "수",
+          "speechLanguage": "korean",
+          "nativeReading": "수",
+          "romanization": "su"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "물 — mul",
+          "audioAssetRef": null,
+          "speechText": "물",
+          "speechLanguage": "korean",
+          "nativeReading": "물",
+          "romanization": "mul",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "water",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "수",
+        "romanization": "su",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "Flowing water with small splashes.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/water/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "A winding central current with detached side marks depicts flowing and splashing water.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-水"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "水",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%B0%B4/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/43_E7BE.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/water/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/water/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "水 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A winding central current with detached side marks depicts flowing and splashing water.",
+        "transitionNote": "A winding central current with detached side marks depicts flowing and splashing water.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/water/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "The structure remains intact; the side marks become more evenly arranged around the central current.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-水"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "水",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%B0%B4/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/33_EBE9.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/water/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/water/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "水 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The structure remains intact; the side marks become more evenly arranged around the central current.",
+        "transitionNote": "The structure remains intact; the side marks become more evenly arranged around the central current.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/water/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "The detached side marks are stretched into continuous curves, turning the pictograph into long parallel flowing lines.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-水"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "水",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%B0%B4/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_6C34.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/water/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/water/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "水 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The detached side marks are stretched into continuous curves, turning the pictograph into long parallel flowing lines.",
+        "transitionNote": "The detached side marks are stretched into continuous curves, turning the pictograph into long parallel flowing lines.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/water/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The long curves break into separate strokes around the center, recasting the picture as a stroke-based character.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-水"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "水",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E6%B0%B4/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_EB9D.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/water/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/water/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "水 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The long curves break into separate strokes around the center, recasting the picture as a stroke-based character.",
+        "transitionNote": "The long curves break into separate strokes around the center, recasting the picture as a stroke-based character.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "水",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The ancient flowing picture has become four distinct strokes; only the central-current layout still echoes the original form.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "水",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "水 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The ancient flowing picture has become four distinct strokes; only the central-current layout still echoes the original form.",
+        "transitionNote": "The ancient flowing picture has become four distinct strokes; only the central-current layout still echoes the original form.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "water",
+      "explanation": "A central flowing current with smaller side marks for water/splashing.",
+      "asset": {
+        "characterID": "water",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/water/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of water",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-水"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "水 is presented first as a complete shared character.",
+    "components": [],
+    "certainty": "medium",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-水"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'water', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "source-zdic-水",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E6%B0%B4"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-水",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

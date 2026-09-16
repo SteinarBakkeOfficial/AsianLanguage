@@ -2,8 +2,8 @@
   "id": "exit",
   "version": 1,
   "coreCharacter": "出",
-  "coreSharedMeaning": "exit",
-  "recognitionTakeaway": "Regular 出 squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both.",
+  "coreSharedMeaning": "exit / go out",
+  "recognitionTakeaway": "Squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+51FA",
   "simplifiedForm": "出",
@@ -15,9 +15,9 @@
     "Oracle shows a U-shaped enclosure with a central form rising out of it and branching at the top.",
     "Regular 出 squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-085-出-u51FA",
+  "contentFolder": "content/release/symbols/exit",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-085-出-u51FA/research.md",
+  "researchNotesPath": "content/release/symbols/exit/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "exit"
       ],
       "examples": [
+        {
+          "text": "出",
+          "reading": "chū",
+          "translation": "exit",
+          "speechText": "出",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "chū"
+          ]
+        },
         {
           "text": "出口",
           "reading": "chūkǒu",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "出去",
+          "reading": "chūqù",
+          "translation": "go out",
+          "speechText": "出去",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我现在出门。",
           "reading": "Wǒ xiànzài chūmén.",
           "translation": "I am going out now.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "出",
@@ -98,6 +127,18 @@
         "exit"
       ],
       "taiwanExamples": [
+        {
+          "text": "出",
+          "reading": "chū",
+          "translation": "exit",
+          "speechText": "出",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "出口",
           "reading": "chūkǒu",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "出",
+          "reading": "ceot1",
+          "translation": "exit",
+          "speechText": "出",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "出口",
           "reading": "ceot1 hau2",
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "出",
       "readings": [
         {
-          "system": "on",
-          "value": "シュツ (shutsu)",
+          "system": "onyomi",
+          "value": "シュツ — shutsu",
           "audioAssetRef": null,
           "speechText": "しゅつ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "シュツ",
+          "romanization": "shutsu",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "でる (deru)",
+          "system": "kunyomi",
+          "value": "でる — deru",
           "audioAssetRef": null,
           "speechText": "でる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "でる",
+          "romanization": "deru",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "だす (dasu)",
+          "system": "kunyomi",
+          "value": "だす — dasu",
           "audioAssetRef": null,
           "speechText": "だす",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "だす",
+          "romanization": "dasu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "出"
-          ]
+          ],
+          "kanaReading": "でる",
+          "coversReadings": [
+            "でる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "出",
+              "reading": "で"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>出<rt>で</rt></ruby>る"
         },
         {
           "text": "出口",
@@ -260,7 +338,87 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "出"
-          ]
+          ],
+          "kanaReading": "でぐち",
+          "furiganaSegments": [
+            {
+              "text": "出口",
+              "reading": "でぐち"
+            }
+          ],
+          "furiganaHtml": "<ruby>出口<rt>でぐち</rt></ruby>"
+        },
+        {
+          "text": "出現",
+          "reading": "shutsugen",
+          "translation": "appearance; emergence",
+          "speechText": "出現",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "出"
+          ],
+          "verificationRole": "readingCoverage",
+          "kanaReading": "しゅつげん",
+          "coversReadings": [
+            "シュツ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "出現",
+              "reading": "しゅつげん"
+            }
+          ],
+          "furiganaHtml": "<ruby>出現<rt>しゅつげん</rt></ruby>"
+        },
+        {
+          "text": "出発",
+          "reading": "shuppatsu",
+          "translation": "departure",
+          "speechText": "出発",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しゅっぱつ",
+          "furiganaSegments": [
+            {
+              "text": "出発",
+              "reading": "しゅっぱつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>出発<rt>しゅっぱつ</rt></ruby>"
+        },
+        {
+          "text": "出す",
+          "reading": "dasu",
+          "translation": "take out; put out",
+          "speechText": "出す",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "だす",
+          "coversReadings": [
+            "だす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "出",
+              "reading": "だ"
+            },
+            {
+              "text": "す"
+            }
+          ],
+          "furiganaHtml": "<ruby>出<rt>だ</rt></ruby>す"
         },
         {
           "text": "家を出ます。",
@@ -274,33 +432,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "出"
-          ]
+          ],
+          "kanaReading": "いえをでます。",
+          "furiganaSegments": [
+            {
+              "text": "家",
+              "reading": "いえ"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "出",
+              "reading": "で"
+            },
+            {
+              "text": "ます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "でる",
+        "romanization": "deru",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "出",
       "readings": [
         {
           "system": "hanja",
-          "value": "출 / chul",
+          "value": "출 — chul",
           "audioAssetRef": null,
           "speechText": "출",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "나가다 / nagada",
-          "audioAssetRef": null,
-          "speechText": "나가다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "출",
+          "romanization": "chul"
         }
       ],
       "glosses": [
         "exit"
       ],
       "examples": [
+        {
+          "text": "나가다",
+          "reading": "nagada",
+          "translation": "go out",
+          "speechText": "나가다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "출구",
           "reading": "chulgu",
@@ -330,6 +529,18 @@
           ]
         },
         {
+          "text": "출발",
+          "reading": "chulbal",
+          "translation": "departure",
+          "speechText": "출발",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "집에서 나가요.",
           "reading": "jibeseo nagayo.",
           "translation": "I leave the house.",
@@ -344,7 +555,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "출 — chul",
+          "audioAssetRef": null,
+          "speechText": "출",
+          "speechLanguage": "korean",
+          "nativeReading": "출",
+          "romanization": "chul"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "나가다 — nagada",
+          "audioAssetRef": null,
+          "speechText": "나가다",
+          "speechLanguage": "korean",
+          "nativeReading": "나가다",
+          "romanization": "nagada",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "go out",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "출",
+        "romanization": "chul",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +603,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A foot or figure emerging outward from an enclosed opening.",
+    "originAnchor": "A foot points away from a cave opening; together, they express going out or exiting.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/exit/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows a U-shaped enclosure with a central form rising out of it and branching at the top.",
+        "changeNoteFromPrevious": "A foot/footprint moves out from a cave/opening; the encoded mover is the foot, not a generic person.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-出"
@@ -386,8 +636,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows a U-shaped enclosure with a central form rising out of it and branching at the top.",
-        "transitionNote": "Oracle shows a U-shaped enclosure with a central form rising out of it and branching at the top.",
+        "stageExplanation": "A foot/footprint moves out from a cave/opening; the encoded mover is the foot, not a generic person.",
+        "transitionNote": "A foot/footprint moves out from a cave/opening; the encoded mover is the foot, not a generic person.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +647,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/exit/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze separates the image into two stacked open enclosures with an upward stem passing through them.",
+        "changeNoteFromPrevious": "Separates the image into two stacked open enclosures with an upward stem passing through them.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-出"
@@ -423,8 +673,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze separates the image into two stacked open enclosures with an upward stem passing through them.",
-        "transitionNote": "Bronze separates the image into two stacked open enclosures with an upward stem passing through them.",
+        "stageExplanation": "Separates the image into two stacked open enclosures with an upward stem passing through them.",
+        "transitionNote": "Separates the image into two stacked open enclosures with an upward stem passing through them.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +684,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/exit/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal elongates the stacked open shapes into several nested vertical curves, emphasizing emergence through layers.",
+        "changeNoteFromPrevious": "Elongates the stacked open shapes into several nested vertical curves, emphasizing emergence through layers.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-出"
@@ -460,8 +710,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal elongates the stacked open shapes into several nested vertical curves, emphasizing emergence through layers.",
-        "transitionNote": "Small Seal elongates the stacked open shapes into several nested vertical curves, emphasizing emergence through layers.",
+        "stageExplanation": "Elongates the stacked open shapes into several nested vertical curves, emphasizing emergence through layers.",
+        "transitionNote": "Elongates the stacked open shapes into several nested vertical curves, emphasizing emergence through layers.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +721,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/exit/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical compresses the nested curves into two heavy box-like rises connected at the base.",
+        "changeNoteFromPrevious": "Compresses the nested curves into two heavy box-like rises connected at the base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-出"
@@ -497,8 +747,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical compresses the nested curves into two heavy box-like rises connected at the base.",
-        "transitionNote": "Clerical compresses the nested curves into two heavy box-like rises connected at the base.",
+        "stageExplanation": "Compresses the nested curves into two heavy box-like rises connected at the base.",
+        "transitionNote": "Compresses the nested curves into two heavy box-like rises connected at the base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +758,7 @@
         "label": "Regular Script",
         "form": "出",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 出 squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both.",
+        "changeNoteFromPrevious": "Squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +784,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 出 squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both.",
-        "transitionNote": "Regular 出 squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both.",
+        "stageExplanation": "Squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both.",
+        "transitionNote": "Squares those two rising enclosures into the familiar stacked 凵-like structure, with the central vertical passing through both.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +793,7 @@
     ],
     "origin": {
       "concept": "exit",
-      "explanation": "A foot or figure emerging outward from an enclosed opening.",
+      "explanation": "A foot/footprint moving out from a cave or opening.",
       "asset": {
         "characterID": "exit",
         "historicalStage": null,
@@ -560,7 +810,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of exit",
+        "accessibilityDescription": "Illustration of exit / go out",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +828,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'exit', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'exit / go out', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +898,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

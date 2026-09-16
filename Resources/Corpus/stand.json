@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "立",
   "coreSharedMeaning": "stand",
-  "recognitionTakeaway": "Regular 立 breaks the old standing figure into a top dot, central horizontals, and a long base, preserving the idea of an upright form planted on the ground.",
+  "recognitionTakeaway": "Breaks the old standing figure into a top dot, central horizontals, and a long base, preserving the idea of an upright form planted on the ground.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+7ACB",
   "simplifiedForm": "立",
@@ -15,9 +15,9 @@
     "The Oracle form still looks like a standing person: a head and torso rise above spread arms and legs planted on a base.",
     "Regular 立 breaks the old standing figure into a top dot, central horizontals, and a long base, preserving the idea of an upright form planted on the ground."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-091-立-u7ACB",
+  "contentFolder": "content/release/symbols/stand",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-091-立-u7ACB/research.md",
+  "researchNotesPath": "content/release/symbols/stand/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "stand"
       ],
       "examples": [
+        {
+          "text": "立",
+          "reading": "lì",
+          "translation": "stand",
+          "speechText": "立",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "lì"
+          ]
+        },
         {
           "text": "站立",
           "reading": "zhànlì",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "成立",
+          "reading": "chénglì",
+          "translation": "establish; be founded",
+          "speechText": "成立",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "请立正。",
           "reading": "Qǐng lìzhèng.",
           "translation": "Please stand at attention.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "立",
@@ -98,6 +127,18 @@
         "stand"
       ],
       "taiwanExamples": [
+        {
+          "text": "立",
+          "reading": "lì",
+          "translation": "stand",
+          "speechText": "立",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "站立",
           "reading": "zhànlì",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "立",
+          "reading": "lap6",
+          "translation": "stand",
+          "speechText": "立",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "立正",
           "reading": "lap6 zing3",
@@ -203,24 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "立",
       "readings": [
         {
-          "system": "on",
-          "value": "リツ (ritsu)",
+          "system": "onyomi",
+          "value": "リツ — ritsu",
           "audioAssetRef": null,
           "speechText": "りつ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "リツ",
+          "romanization": "ritsu",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "たつ (tatsu)",
+          "system": "kunyomi",
+          "value": "たつ — tatsu",
           "audioAssetRef": null,
           "speechText": "たつ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "たつ",
+          "romanization": "tatsu",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "たてる — tateru",
+          "audioAssetRef": null,
+          "speechText": "たてる",
+          "speechLanguage": "japanese",
+          "nativeReading": "たてる",
+          "romanization": "tateru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +310,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "立"
-          ]
+          ],
+          "kanaReading": "たつ",
+          "coversReadings": [
+            "たつ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "立",
+              "reading": "た"
+            },
+            {
+              "text": "つ"
+            }
+          ],
+          "furiganaHtml": "<ruby>立<rt>た</rt></ruby>つ"
         },
         {
           "text": "起立",
@@ -253,7 +338,58 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "立"
-          ]
+          ],
+          "kanaReading": "きりつ",
+          "coversReadings": [
+            "リツ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "起立",
+              "reading": "きりつ"
+            }
+          ],
+          "furiganaHtml": "<ruby>起立<rt>きりつ</rt></ruby>"
+        },
+        {
+          "text": "立場",
+          "reading": "tachiba",
+          "translation": "position; standpoint",
+          "speechText": "立場",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たちば",
+          "furiganaSegments": [
+            {
+              "text": "立場",
+              "reading": "たちば"
+            }
+          ],
+          "furiganaHtml": "<ruby>立場<rt>たちば</rt></ruby>"
+        },
+        {
+          "text": "立地",
+          "reading": "ricchi",
+          "translation": "location / site",
+          "speechText": "立地",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "りっち",
+          "furiganaSegments": [
+            {
+              "text": "立地",
+              "reading": "りっち"
+            }
+          ],
+          "furiganaHtml": "<ruby>立地<rt>りっち</rt></ruby>"
         },
         {
           "text": "ここに立ってください。",
@@ -267,40 +403,105 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "立"
-          ]
+          ],
+          "kanaReading": "ここにたってください。",
+          "furiganaSegments": [
+            {
+              "text": "ここに"
+            },
+            {
+              "text": "立",
+              "reading": "た"
+            },
+            {
+              "text": "ってください"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "ここに<ruby>立<rt>た</rt></ruby>ってください。"
+        },
+        {
+          "text": "立てる",
+          "reading": "tateru",
+          "translation": "stand; set upright",
+          "speechText": "立てる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "たてる",
+          "coversReadings": [
+            "たてる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "立",
+              "reading": "た"
+            },
+            {
+              "text": "てる"
+            }
+          ],
+          "furiganaHtml": "<ruby>立<rt>た</rt></ruby>てる"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "たつ",
+        "romanization": "tatsu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "立",
       "readings": [
         {
           "system": "hanja",
-          "value": "립 / rip",
+          "value": "립 — rip",
           "audioAssetRef": null,
           "speechText": "립",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "립",
+          "romanization": "rip"
         },
         {
           "system": "hanja · word-initial form",
-          "value": "입 / ip",
+          "value": "입 — ip",
           "audioAssetRef": null,
           "speechText": "입",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "서다 / seoda",
-          "audioAssetRef": null,
-          "speechText": "서다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "입",
+          "romanization": "ip"
         }
       ],
       "glosses": [
         "stand"
       ],
       "examples": [
+        {
+          "text": "서다",
+          "reading": "seoda",
+          "translation": "stand",
+          "speechText": "서다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "독립",
           "reading": "dongnip",
@@ -330,6 +531,18 @@
           ]
         },
         {
+          "text": "설립",
+          "reading": "seollip",
+          "translation": "establishment",
+          "speechText": "설립",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "여기 서 주세요.",
           "reading": "yeogi seo juseyo.",
           "translation": "Please stand here.",
@@ -344,7 +557,55 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "립 — rip",
+          "audioAssetRef": null,
+          "speechText": "립",
+          "speechLanguage": "korean",
+          "nativeReading": "립",
+          "romanization": "rip"
+        },
+        {
+          "system": "hanja · word-initial form",
+          "value": "입 — ip",
+          "audioAssetRef": null,
+          "speechText": "입",
+          "speechLanguage": "korean",
+          "nativeReading": "입",
+          "romanization": "ip"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "서다 — seoda",
+          "audioAssetRef": null,
+          "speechText": "서다",
+          "speechLanguage": "korean",
+          "nativeReading": "서다",
+          "romanization": "seoda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "stand",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "립",
+        "romanization": "rip",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +614,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person standing upright on a clear ground line, with the body parts simplified beside the figure.",
+    "originAnchor": "A person and a ground line; together, they show standing.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/stand/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The Oracle form still looks like a standing person: a head and torso rise above spread arms and legs planted on a base.",
+        "changeNoteFromPrevious": "Still looks like a standing person: a head and torso rise above spread arms and legs planted on a base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-立"
@@ -386,8 +647,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The Oracle form still looks like a standing person: a head and torso rise above spread arms and legs planted on a base.",
-        "transitionNote": "The Oracle form still looks like a standing person: a head and torso rise above spread arms and legs planted on a base.",
+        "stageExplanation": "Still looks like a standing person: a head and torso rise above spread arms and legs planted on a base.",
+        "transitionNote": "Still looks like a standing person: a head and torso rise above spread arms and legs planted on a base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +658,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/stand/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze makes the body more geometric, with a round head, long central trunk, outstretched arms, and a rounded mound-like base.",
+        "changeNoteFromPrevious": "Makes the body more geometric, with a round head, long central trunk, outstretched arms, and a rounded mound-like base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-立"
@@ -423,8 +684,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze makes the body more geometric, with a round head, long central trunk, outstretched arms, and a rounded mound-like base.",
-        "transitionNote": "Bronze makes the body more geometric, with a round head, long central trunk, outstretched arms, and a rounded mound-like base.",
+        "stageExplanation": "Makes the body more geometric, with a round head, long central trunk, outstretched arms, and a rounded mound-like base.",
+        "transitionNote": "Makes the body more geometric, with a round head, long central trunk, outstretched arms, and a rounded mound-like base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +695,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/stand/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal removes the head and reduces the figure to a 大-like body standing directly on a long horizontal ground line.",
+        "changeNoteFromPrevious": "Removes the head and reduces the figure to a human figure-like body standing directly on a long horizontal ground line.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-立"
@@ -460,8 +721,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal removes the head and reduces the figure to a 大-like body standing directly on a long horizontal ground line.",
-        "transitionNote": "Small Seal removes the head and reduces the figure to a 大-like body standing directly on a long horizontal ground line.",
+        "stageExplanation": "Removes the head and reduces the figure to a human figure-like body standing directly on a long horizontal ground line.",
+        "transitionNote": "Removes the head and reduces the figure to a human figure-like body standing directly on a long horizontal ground line.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +732,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/stand/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical briefly restores an outlined body with arcing arms above the base, though the figure is already highly stylized.",
+        "changeNoteFromPrevious": "Briefly restores an outlined body with arcing arms above the base, though the figure is already highly stylized.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-立"
@@ -497,8 +758,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical briefly restores an outlined body with arcing arms above the base, though the figure is already highly stylized.",
-        "transitionNote": "Clerical briefly restores an outlined body with arcing arms above the base, though the figure is already highly stylized.",
+        "stageExplanation": "Briefly restores an outlined body with arcing arms above the base, though the figure is already highly stylized.",
+        "transitionNote": "Briefly restores an outlined body with arcing arms above the base, though the figure is already highly stylized.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +769,7 @@
         "label": "Regular Script",
         "form": "立",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 立 breaks the old standing figure into a top dot, central horizontals, and a long base, preserving the idea of an upright form planted on the ground.",
+        "changeNoteFromPrevious": "Breaks the old standing figure into a top dot, central horizontals, and a long base, preserving the idea of an upright form planted on the ground.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +795,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 立 breaks the old standing figure into a top dot, central horizontals, and a long base, preserving the idea of an upright form planted on the ground.",
-        "transitionNote": "Regular 立 breaks the old standing figure into a top dot, central horizontals, and a long base, preserving the idea of an upright form planted on the ground.",
+        "stageExplanation": "Breaks the old standing figure into a top dot, central horizontals, and a long base, preserving the idea of an upright form planted on the ground.",
+        "transitionNote": "Breaks the old standing figure into a top dot, central horizontals, and a long base, preserving the idea of an upright form planted on the ground.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +804,7 @@
     ],
     "origin": {
       "concept": "stand",
-      "explanation": "A person standing upright on a clear ground line, with the body parts simplified beside the figure.",
+      "explanation": "A human figure standing on a ground/reference line.",
       "asset": {
         "characterID": "stand",
         "historicalStage": null,
@@ -648,13 +909,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

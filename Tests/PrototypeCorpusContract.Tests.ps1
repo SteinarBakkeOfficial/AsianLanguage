@@ -1,6 +1,7 @@
 $ErrorActionPreference = "Stop"
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
-$corpusPath = Join-Path $repoRoot "content/shared-characters"
+$corpusPath = Join-Path $repoRoot "docs/archive/legacy-pilot/shared-characters"
+$legacyAssetRoot = Join-Path $repoRoot "docs/archive/legacy-pilot/bundled-assets"
 function Assert-True { param([bool]$Condition,[string]$Message); if (-not $Condition) { throw $Message } }
 
 $records = Get-ChildItem $corpusPath -Filter "*.json" -File | ForEach-Object { Get-Content -Raw $_.FullName | ConvertFrom-Json }
@@ -17,7 +18,8 @@ foreach ($record in $records) {
   foreach ($stage in @($record.history.stages)) {
     Assert-True (@("oracleBone","bronze","seal","clerical","regular") -contains $stage.stage) "Record '$($record.id)' has a non-canonical stage id."
     if ($null -ne $stage.assetRef) {
-      Assert-True (Test-Path (Join-Path $repoRoot "Resources/$($stage.assetRef)")) "Stage asset must exist for '$($record.id)/$($stage.stage)'."
+      $assetPath = Join-Path $legacyAssetRoot ($stage.assetRef -replace '^Assets/', '')
+      Assert-True (Test-Path $assetPath) "Archived pilot stage asset must exist for '$($record.id)/$($stage.stage)'."
     }
   }
 }

@@ -110,18 +110,18 @@ The separate [Pronunciation Audio handoff](docs/architecture/pronunciation-audio
 
 #### Testing08_09 follow-up notes — next implementation
 
-- Deferred: reduce the current exhibit transition modestly from `0.64s`; the new timing is much more visible than before but is slightly too slow.
+- Resolved locally: the exhibit crossfade is now `0.36s`; native simulator/device verification remains.
 - Deferred: move in-square material/process captions down by approximately 1 mm while keeping them inside the exhibit square and unclipped.
-- Deferred: repair and verify full-row History navigation for all remaining script and modern-language entries. Oracle and Bronze are the currently known working rows.
+- Resolved locally: full-row History navigation is wired for script and modern-language entries; native tap verification remains.
 
 #### Testing09_09 follow-up notes — next implementation only
 
-- Deferred: repair History navigation so every historical stage row and all four modern-language branch rows open their own detail destination across the full row. Preserve the current History composition and use the smallest reliable hit-testing/navigation change.
-- Deferred: verify History scrolling against the safe areas; content must not sit beneath the status/navigation area or the fixed root tab bar on supported simulator/device sizes.
-- Deferred: correct the existing History detail and footer crop rectangles so bundled reference artwork does not expose clipped infographic labels or unrelated source-image text fragments.
-- Deferred: replace the Sources / Licenses record-level `flatMap` presentation with one canonical, deduplicated entry per reference. Keep per-character provenance IDs internally, but show the ZDIC historical-image source once and avoid repeated font/research/origin entries. Preserve the Apple Speech Synthesis attribution.
-- Deferred: remove source links and source-attribution content from About / Method. Keep About focused on the teaching method, Shared Character, offline behavior, and corpus scope; Sources / Licenses owns external references and licensing information.
-- Deferred: correct Home's learned-count grammar so singular and plural forms read naturally (for example, `1 symbol learned`).
+- Resolved locally: every historical stage row and modern-language branch row has a full-row detail destination; native tap verification remains.
+- Verification remains: check History scrolling against the safe areas; content must not sit beneath the status/navigation area or the fixed root tab bar on supported simulator/device sizes.
+- Resolved locally: History detail and footer crop rectangles were corrected; native screenshot verification remains.
+- Resolved locally: Sources / Licenses now presents canonical, deduplicated references; legal/content review remains.
+- Resolved locally: About / Method is separated from source attribution, with Sources / Licenses owning references and licensing information.
+- Resolved locally: Home learned-count grammar was corrected; native copy verification remains.
 - Future feature, separate from surgical polish: add an offline Browse entry point for taking/importing a picture or scan of a present-day symbol, recognize it on-device, match it against the bundled dictionary/corpus, and open the existing Symbol route only for an exact match. Historical-glyph recognition, cloud processing, and automatic photo storage are out of scope unless separately approved.
 - These notes were held for discussion and were approved for the current implementation on 2026-09-08. New History artwork and monetization remain excluded.
 
@@ -238,6 +238,90 @@ Windows layout, contract, corpus, and release-readiness checks pass. SwiftUI com
 - Made the “Modern writing traditions” heading and introduction a full navigation target to the existing modern-traditions bridge page. The four individual language rows remain separate destinations.
 - This was a surgical navigation/rendering correction only; Symbol copy, History copy, artwork crops, sources, and unrelated screens were not changed.
 - Windows contract and release-readiness checks pass. SwiftUI compilation, simulator screenshots, and device interaction still require macOS/Xcode verification.
+
+### Latest Symbol testing notes — discussion record — 2026-09-09
+
+These latest-release observations are recorded for the next implementation only. They do not authorize implementation in this turn.
+
+- Symbol page identity: replace the large top-of-page finished Regular Script glyph with the English shared meaning, so each Symbol page continually reminds the user what the character means in English. Examples are `Moon: month` and `Person`; preserve the historical/Regular glyph elsewhere in the page.
+- Regular Script copy mapping: audit the user-facing Regular Script explanation. It should use the stage’s `changeNoteFromPrevious`, `transitionNote`, or `stageExplanation` content, not `SourceDescription`/source-provenance text. This issue is limited to the Regular Script stage presentation.
+- Formation classification: add a concise, source-backed note in Origin or the Oracle Bone Script Symbol section identifying whether the character is a pictograph or another appropriate formation category. Do not infer or fabricate classifications; use the corpus’ verified formation information.
+- Symbol vertical spacing: use the Origin illustration-to-text gap as the reference and apply that same spacing consistently from Oracle Bone through Regular, without redesigning the Symbol page.
+- Origin title capitalization: capitalize the English Origin display name across all Symbol pages (`Field` instead of `field`). This is a display-copy change; preserve underlying semantic values and language data unless explicitly included in the implementation plan.
+- Scope boundary: keep this as a surgical Symbol-page/content/layout change. Preserve navigation, artwork/assets, sources, language data, and unrelated pages. The broader Symbol text review is being handled separately by the user and is not authorized by this note.
+
+### Additional Symbol testing notes — discussion record — 2026-09-10
+
+These observations are saved for the next Symbol implementation/editorial pass only. They do not authorize changes in this turn. Additional symbols may be added to this list after further review.
+
+#### Korean usage-example completeness
+
+- Woman: Korean has three ways of using/saying the symbol, but the current examples show only two. Add a distinct example for each verified Korean usage so all three are represented.
+- Ear: Korean has two verified ways of saying/using the symbol, but the current examples show only one. Add the missing example.
+- Tongue: Korean has two verified ways of saying/using the symbol, but the current examples show only one. Add the missing example.
+- Self: add the one missing Korean version/usage so the complete verified set is shown.
+- General rule: when a symbol has multiple verified Korean readings/usages, the Symbol page should show one meaningful example for each, without inventing variants or changing unrelated language data.
+
+#### Illustration and direction corrections
+
+- Old: replace/rework the poor illustration.
+- Long: replace/rework the poor illustration.
+- Ox: replace/rework the poor illustration.
+- Sheep: replace/rework the poor illustration.
+- Dog: correct the direction/orientation of the symbol pictures.
+- Tiger: replace/rework the poor illustration.
+- King: replace/rework the poor illustration.
+
+#### Symbol-specific copy corrections
+
+- Long: rewrite the poor explanatory text.
+- Sheep: rewrite the poor explanatory text.
+- Knife: rewrite the poor explanatory text.
+- Bow: rewrite the poor explanatory text.
+- Jade: rewrite the poor explanatory text.
+- King: rewrite the poor explanatory text.
+
+#### Bean historical explanation to verify
+
+- Bean needs a character-specific explanation. The current pictograph appears to depict an ancient pedestal or stand rather than a bean. The proposed historical interpretation is that the spoken word for that object was close to the word for the bean plant, helping the character retain its later meaning. Verify this etymology and terminology against reliable sources before publishing it, then explain the pictograph, the original object, and the sound/meaning connection clearly for the learner.
+
+Scope remains surgical: preserve navigation, page structure, unrelated Symbols, approved assets that are not listed here, and all non-Symbol screens. These are QA/content/assets notes, not permission to redesign the Symbol experience or make broad corpus changes.
+
+### Further Symbol testing notes — discussion record — 2026-09-10
+
+These additional observations are saved for the next Symbol implementation/editorial pass only. They do not authorize changes in this turn. The user expects to provide replacement handouts for many symbols; those handouts should become the content authority when supplied.
+
+#### Target-language examples
+
+- Strength: review and replace the poor target-language examples.
+- Two: review and replace the poor target-language examples.
+
+#### Illustration and historical-form corrections
+
+- Ten: the Oracle Bone form appears to have been a single line running upward and later changed into a cross. Add a clear explanation of that development, and replace/correct the illustration so it accurately reflects the initial Oracle Bone form and the subsequent change.
+- Middle: replace/rework the poor illustration.
+- Few: replace/rework the poor illustration.
+- High: replace/rework the poor illustration.
+- Exit: replace/rework the poor illustration and add the missing character-specific explanation.
+- Stand: replace/rework the poor illustration and rewrite the poor text.
+- Center: replace/rework the poor illustration.
+- West: either replace/rework the illustration or add the historical explanation needed to make the existing form understandable; determine which is appropriate after source and artwork review.
+
+#### Historical structure and composition explanations
+
+- South: add the missing character-specific historical explanation.
+- North: add the missing character-specific historical explanation.
+- Rest: verify whether the character is formed from two components and whether it is a compound/combination. Explain the verified structure and meaning relationship instead of guessing.
+- Good: verify whether the character combines two components/pictographs whose relationship carries the meaning. The illustration appears to show a combination, so add a clear source-backed explanation of the verified composition.
+- Man: verify whether the character combines two individual pictographs and explain the composition if confirmed.
+- Bright: verify and explain the apparent combination of two pictographs and clarify how the combined meaning is formed.
+- Beautiful: rewrite the poor text and verify whether the character is a combination/compound before adding a source-backed explanation.
+
+#### Script-form correction
+
+- Follow: review the Regular Script form. It may currently show the Simplified Chinese character rather than the correct Regular Script form; verify the script lane and replace it if necessary. Do not assume the simplified form is the correct Regular Script endpoint.
+
+All uncertain composition, pictograph, etymological, and script-form claims must be checked against reliable source material and the approved corpus data before publication. Preserve unrelated Symbol content, navigation, layout, and all non-Symbol screens; these remain surgical QA/content/artwork corrections, not permission for a broad redesign.
 
 ## V1 to VNext Carryover Register
 

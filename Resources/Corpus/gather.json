@@ -2,8 +2,8 @@
   "id": "gather",
   "version": 1,
   "coreCharacter": "采",
-  "coreSharedMeaning": "gather",
-  "recognitionTakeaway": "Regular 采 keeps the hand-above-tree arrangement, with 爫-like upper strokes over 木, even though the whole scene is now highly stylized.",
+  "coreSharedMeaning": "pick / gather",
+  "recognitionTakeaway": "Traditional usage often distinguishes the picking verb as 採, while 采 remains in other senses; Simplified Chinese commonly uses 采.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+91C7",
   "simplifiedForm": "采",
@@ -15,9 +15,9 @@
     "Oracle clearly places a hand-like form above a tree trunk and branches, with the hand reaching downward.",
     "Regular 采 keeps the hand-above-tree arrangement, with 爫-like upper strokes over 木, even though the whole scene is now highly stylized."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-113-采-u91C7",
+  "contentFolder": "content/release/symbols/gather",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-113-采-u91C7/research.md",
+  "researchNotesPath": "content/release/symbols/gather/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "pick; gather; collect"
       ],
       "examples": [
+        {
+          "text": "采",
+          "reading": "cǎi",
+          "translation": "pick; gather; collect",
+          "speechText": "采",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "cǎi"
+          ]
+        },
         {
           "text": "采摘",
           "reading": "cǎizhāi",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "采集",
+          "reading": "cǎijí",
+          "translation": "collect; gather",
+          "speechText": "采集",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我们采苹果。",
           "reading": "Wǒmen cǎi píngguǒ.",
           "translation": "We pick apples.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "採",
@@ -98,6 +127,18 @@
         "pick; gather; collect"
       ],
       "taiwanExamples": [
+        {
+          "text": "採",
+          "reading": "cǎi",
+          "translation": "pick; gather; collect",
+          "speechText": "採",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "採摘",
           "reading": "cǎizhāi",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "採",
+          "reading": "coi2",
+          "translation": "pick; gather; collect",
+          "speechText": "採",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "採摘",
           "reading": "coi2 zaak6",
@@ -203,24 +256,22 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
-      "form": "採",
+      "form": "采",
       "readings": [
         {
-          "system": "on",
-          "value": "サイ (sai)",
+          "system": "onyomi",
+          "value": "サイ — sai",
           "audioAssetRef": null,
           "speechText": "さい",
-          "speechLanguage": "japanese"
-        },
-        {
-          "system": "kun",
-          "value": "とる (toru)",
-          "audioAssetRef": null,
-          "speechText": "とる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "サイ",
+          "romanization": "sai",
+          "historicalOrigin": "sinoJapanese"
         }
       ],
       "glosses": [
@@ -228,72 +279,98 @@
       ],
       "examples": [
         {
-          "text": "採る",
-          "reading": "toru",
-          "translation": "pick; gather; select",
-          "speechText": "採る",
+          "text": "采配",
+          "reading": "saihai",
+          "translation": "command; direction",
+          "speechText": "采配",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "采"
-          ]
+          "introducedSymbols": [],
+          "kanaReading": "さいはい",
+          "coversReadings": [
+            "サイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "采配",
+              "reading": "さいはい"
+            }
+          ],
+          "furiganaHtml": "<ruby>采配<rt>さいはい</rt></ruby>"
         },
         {
-          "text": "採用",
-          "reading": "saiyō",
-          "translation": "adopt; hire",
-          "speechText": "採用",
+          "text": "喝采",
+          "reading": "kassai",
+          "translation": "applause; acclaim",
+          "speechText": "喝采",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "采"
-          ]
-        },
-        {
-          "text": "りんごを採ります。",
-          "reading": "ringo o torimasu.",
-          "translation": "I pick apples.",
-          "speechText": "りんごを採ります。",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "采"
-          ]
+          "introducedSymbols": [],
+          "kanaReading": "かっさい",
+          "furiganaSegments": [
+            {
+              "text": "喝采",
+              "reading": "かっさい"
+            }
+          ],
+          "furiganaHtml": "<ruby>喝采<rt>かっさい</rt></ruby>"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [
+        {
+          "form": "採",
+          "relationship": "Related modern Japanese graph used for the everyday verb 採る “pick/gather”; it is not a Jōyō reading of 采."
+        }
+      ],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "サイ",
+        "romanization": "sai",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "採",
       "readings": [
         {
           "system": "hanja",
-          "value": "채 / chae",
+          "value": "채 — chae",
           "audioAssetRef": null,
           "speechText": "채",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean · pick",
-          "value": "따다 / ttada",
-          "audioAssetRef": null,
-          "speechText": "따다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "채",
+          "romanization": "chae"
         }
       ],
       "glosses": [
         "pick; gather; select (in compounds)"
       ],
       "examples": [
+        {
+          "text": "따다",
+          "reading": "ttada",
+          "translation": "pick / gather",
+          "speechText": "따다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "채택",
           "reading": "chaetaek",
@@ -323,6 +400,18 @@
           ]
         },
         {
+          "text": "채용",
+          "reading": "chaeyong",
+          "translation": "hiring / adoption",
+          "speechText": "채용",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "사과를 따요.",
           "reading": "sagwareul ttayo.",
           "translation": "I pick apples.",
@@ -337,7 +426,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "채 — chae",
+          "audioAssetRef": null,
+          "speechText": "채",
+          "speechLanguage": "korean",
+          "nativeReading": "채",
+          "romanization": "chae"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "따다 — ttada",
+          "audioAssetRef": null,
+          "speechText": "따다",
+          "speechLanguage": "korean",
+          "nativeReading": "따다",
+          "romanization": "ttada",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "pick / gather",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "채",
+        "romanization": "chae",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +474,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A hand reaching down to pluck fruit from a tree.",
+    "originAnchor": "An early form shows a hand reaching into a plant to pick; another early form shows fruit instead of the tree. The exact early form varies.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/gather/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle clearly places a hand-like form above a tree trunk and branches, with the hand reaching downward.",
+        "changeNoteFromPrevious": "A hand reaches into a plant to pick; another early form shows fruit instead of the tree, so the exact original structure varies.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-采"
@@ -379,8 +507,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle clearly places a hand-like form above a tree trunk and branches, with the hand reaching downward.",
-        "transitionNote": "Oracle clearly places a hand-like form above a tree trunk and branches, with the hand reaching downward.",
+        "stageExplanation": "A hand/claw reaches to a tree/plant to pick; the original graph itself carries the picking action.",
+        "transitionNote": "A hand reaches into a plant to pick; another early form shows fruit instead of the tree, so the exact original structure varies.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +518,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/gather/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze enlarges the upper hand and keeps the tree below, but the fingers become short hanging marks rather than a natural hand.",
+        "changeNoteFromPrevious": "Enlarges the upper hand and keeps the tree below, but the fingers become short hanging marks rather than a natural hand.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-采"
@@ -416,8 +544,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze enlarges the upper hand and keeps the tree below, but the fingers become short hanging marks rather than a natural hand.",
-        "transitionNote": "Bronze enlarges the upper hand and keeps the tree below, but the fingers become short hanging marks rather than a natural hand.",
+        "stageExplanation": "Enlarges the upper hand and keeps the tree below, but the fingers become short hanging marks rather than a natural hand.",
+        "transitionNote": "Enlarges the upper hand and keeps the tree below, but the fingers become short hanging marks rather than a natural hand.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +555,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/gather/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the upper hand into several curved finger strokes over a symmetrical tree.",
+        "changeNoteFromPrevious": "Regularizes the upper hand into several curved finger strokes over a symmetrical tree.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-采"
@@ -453,8 +581,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the upper hand into several curved finger strokes over a symmetrical tree.",
-        "transitionNote": "Small Seal regularizes the upper hand into several curved finger strokes over a symmetrical tree.",
+        "stageExplanation": "Regularizes the upper hand into several curved finger strokes over a symmetrical tree.",
+        "transitionNote": "Regularizes the upper hand into several curved finger strokes over a symmetrical tree.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +592,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/gather/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical compresses the fingers into a small claw-like top while the tree becomes a dense 木-like lower component.",
+        "changeNoteFromPrevious": "Compresses the fingers into a small claw-like top while the tree becomes a dense tree sign-like lower component.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-采"
@@ -490,8 +618,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical compresses the fingers into a small claw-like top while the tree becomes a dense 木-like lower component.",
-        "transitionNote": "Clerical compresses the fingers into a small claw-like top while the tree becomes a dense 木-like lower component.",
+        "stageExplanation": "Compresses the fingers into a small claw-like top while the tree becomes a dense tree sign-like lower component.",
+        "transitionNote": "Compresses the fingers into a small claw-like top while the tree becomes a dense tree sign-like lower component.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +629,7 @@
         "label": "Regular Script",
         "form": "采",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 采 keeps the hand-above-tree arrangement, with 爫-like upper strokes over 木, even though the whole scene is now highly stylized.",
+        "changeNoteFromPrevious": "Traditional usage often distinguishes the picking verb as 採, while 采 remains in other senses; Simplified Chinese commonly uses 采.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +655,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 采 keeps the hand-above-tree arrangement, with 爫-like upper strokes over 木, even though the whole scene is now highly stylized.",
-        "transitionNote": "Regular 采 keeps the hand-above-tree arrangement, with 爫-like upper strokes over 木, even though the whole scene is now highly stylized.",
+        "stageExplanation": "Traditional usage often distinguishes the picking verb as 採, while 采 remains in other senses; Simplified Chinese commonly uses 采.",
+        "transitionNote": "Traditional usage often distinguishes the picking verb as 採, while 采 remains in other senses; Simplified Chinese commonly uses 采.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +664,7 @@
     ],
     "origin": {
       "concept": "gather",
-      "explanation": "A hand reaching down to pluck fruit from a tree.",
+      "explanation": "A hand/claw reaching to a tree/fruit-bearing plant to pick something.",
       "asset": {
         "characterID": "gather",
         "historicalStage": null,
@@ -553,7 +681,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of gather",
+        "accessibilityDescription": "Illustration of pick / gather",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +699,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'gather', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'pick / gather', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +769,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

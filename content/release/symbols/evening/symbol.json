@@ -1,0 +1,798 @@
+{
+  "id": "evening",
+  "version": 1,
+  "coreCharacter": "夕",
+  "coreSharedMeaning": "evening",
+  "recognitionTakeaway": "The original moon picture is now largely lost; its descendant survives as the familiar three-stroke sign for evening.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+5915",
+  "simplifiedForm": "夕",
+  "traditionalForm": "夕",
+  "additionalMeanings": [],
+  "formationType": "pictograph",
+  "visualTeachingNotes": [
+    "A crescent moon hanging in an evening sky, with a small sequence showing the crescent simplified.",
+    "A compact crescent-shaped form encloses one short interior mark.",
+    "Regular 夕 keeps the slanting outer stroke and turns the inner detail into the short diagonal stroke of the modern character."
+  ],
+  "contentFolder": "content/release/symbols/evening",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/evening/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 4,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "夕",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "xī",
+          "audioAssetRef": null,
+          "speechText": "夕",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [],
+      "examples": [
+        {
+          "text": "夕",
+          "reading": "xī",
+          "translation": "evening",
+          "speechText": "夕",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "xī"
+          ]
+        },
+        {
+          "text": "夕阳",
+          "reading": "xīyáng",
+          "translation": "sunset",
+          "speechText": "夕阳",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "朝夕",
+          "reading": "zhāoxī",
+          "translation": "morning and evening",
+          "speechText": "朝夕",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "除夕",
+          "reading": "chúxī",
+          "translation": "New Year's Eve",
+          "speechText": "除夕",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "夕阳很美。",
+          "reading": "Xīyáng hěn měi.",
+          "translation": "The sunset is beautiful.",
+          "speechText": "夕阳很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "夕",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "xī",
+          "audioAssetRef": null,
+          "speechText": "夕",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [],
+      "taiwanExamples": [
+        {
+          "text": "夕",
+          "reading": "xī",
+          "translation": "evening",
+          "speechText": "夕",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "夕陽",
+          "reading": "xīyáng",
+          "translation": "sunset",
+          "speechText": "夕陽",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "朝夕",
+          "reading": "zhāoxī",
+          "translation": "morning and evening",
+          "speechText": "朝夕",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "除夕",
+          "reading": "chúxī",
+          "translation": "New Year's Eve",
+          "speechText": "除夕",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "夕陽很美。",
+          "reading": "Xīyáng hěn měi.",
+          "translation": "The sunset is beautiful.",
+          "speechText": "夕陽很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "夕",
+          "reading": "zik6",
+          "translation": "evening",
+          "speechText": "夕",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "夕陽",
+          "reading": "zik6 joeng4",
+          "translation": "sunset",
+          "speechText": "夕陽",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "朝夕",
+          "reading": "ziu1 zik6",
+          "translation": "morning and evening",
+          "speechText": "朝夕",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "除夕",
+          "reading": "ceoi4 zik6",
+          "translation": "New Year's Eve",
+          "speechText": "除夕",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "夕陽好靚。",
+          "reading": "zik6 joeng4 hou2 leng3.",
+          "translation": "The sunset is beautiful.",
+          "speechText": "夕陽好靚。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "xī",
+          "audioAssetRef": null,
+          "speechText": "夕",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "zik6",
+          "audioAssetRef": null,
+          "speechText": "夕",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "夕",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "セキ — seki",
+          "audioAssetRef": null,
+          "speechText": "せき",
+          "speechLanguage": "japanese",
+          "nativeReading": "セキ",
+          "romanization": "seki",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "ゆう — yū",
+          "audioAssetRef": null,
+          "speechText": "ゆう",
+          "speechLanguage": "japanese",
+          "nativeReading": "ゆう",
+          "romanization": "yū",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [],
+      "examples": [
+        {
+          "text": "夕方",
+          "reading": "yūgata",
+          "translation": "evening",
+          "speechText": "夕方",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "ゆうがた",
+          "coversReadings": [
+            "ゆう"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "夕方",
+              "reading": "ゆうがた"
+            }
+          ],
+          "furiganaHtml": "<ruby>夕方<rt>ゆうがた</rt></ruby>"
+        },
+        {
+          "text": "夕日",
+          "reading": "yūhi",
+          "translation": "evening sun",
+          "speechText": "夕日",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "ゆうひ",
+          "furiganaSegments": [
+            {
+              "text": "夕日",
+              "reading": "ゆうひ"
+            }
+          ],
+          "furiganaHtml": "<ruby>夕日<rt>ゆうひ</rt></ruby>"
+        },
+        {
+          "text": "朝夕",
+          "reading": "chōseki",
+          "translation": "morning and evening",
+          "speechText": "朝夕",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "ちょうせき",
+          "coversReadings": [
+            "セキ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "朝夕",
+              "reading": "ちょうせき"
+            }
+          ],
+          "furiganaHtml": "<ruby>朝夕<rt>ちょうせき</rt></ruby>"
+        },
+        {
+          "text": "夕焼け",
+          "reading": "yūyake",
+          "translation": "sunset glow",
+          "speechText": "夕焼け",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ゆうやけ",
+          "furiganaSegments": [
+            {
+              "text": "夕焼",
+              "reading": "ゆうや"
+            },
+            {
+              "text": "け"
+            }
+          ],
+          "furiganaHtml": "<ruby>夕焼<rt>ゆうや</rt></ruby>け"
+        },
+        {
+          "text": "夕食を食べる。",
+          "reading": "yūshoku o taberu.",
+          "translation": "Eat dinner.",
+          "speechText": "夕食を食べる。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "kanaReading": "ゆうしょくをたべる。",
+          "furiganaSegments": [
+            {
+              "text": "夕食",
+              "reading": "ゆうしょく"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "食",
+              "reading": "た"
+            },
+            {
+              "text": "べる"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>夕食<rt>ゆうしょく</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる。"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ゆう",
+        "romanization": "yū",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "夕",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "석 — seok",
+          "audioAssetRef": null,
+          "speechText": "석",
+          "speechLanguage": "korean",
+          "nativeReading": "석",
+          "romanization": "seok"
+        }
+      ],
+      "glosses": [],
+      "examples": [
+        {
+          "text": "저녁",
+          "reading": "jeonyeok",
+          "translation": "evening",
+          "speechText": "저녁",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "석양",
+          "reading": "seogyang",
+          "translation": "sunset",
+          "speechText": "석양",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "석식",
+          "reading": "seoksik",
+          "translation": "dinner",
+          "speechText": "석식",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "석간",
+          "reading": "seokgan",
+          "translation": "evening edition",
+          "speechText": "석간",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "저녁을 먹어요.",
+          "reading": "jeonyeogeul meogeoyo.",
+          "translation": "I eat dinner.",
+          "speechText": "저녁을 먹어요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "석 — seok",
+          "audioAssetRef": null,
+          "speechText": "석",
+          "speechLanguage": "korean",
+          "nativeReading": "석",
+          "romanization": "seok"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "저녁 — jeonyeok",
+          "audioAssetRef": null,
+          "speechText": "저녁",
+          "speechLanguage": "korean",
+          "nativeReading": "저녁",
+          "romanization": "jeonyeok",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "evening",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "석",
+        "romanization": "seok",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A crescent moon in a quiet evening sky.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/evening/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "The moon shape marks the time around dusk; early forms were not yet consistently separated from the graph for moon.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-夕"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "夕",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%A4%95/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/42_EF2A.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/evening/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/evening/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "夕 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The moon shape marks the time around dusk; early forms were not yet consistently separated from the graph for moon.",
+        "transitionNote": "The moon shape marks the time around dusk; early forms were not yet consistently separated from the graph for moon.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/evening/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "The lunar structure remains intact.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-夕"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "夕",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%A4%95/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/32_F0D6.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/evening/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/evening/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "夕 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The lunar structure remains intact.",
+        "transitionNote": "The lunar structure remains intact.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/evening/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "The enclosed outline opens into long sweeping curves around a single inner stroke.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-夕"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "夕",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%A4%95/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_5915.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/evening/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/evening/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "夕 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The enclosed outline opens into long sweeping curves around a single inner stroke.",
+        "transitionNote": "The enclosed outline opens into long sweeping curves around a single inner stroke.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/evening/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The long curves collapse into a compact angular form, close to the structure used today.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-夕"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "夕",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%A4%95/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/92_EF08.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/evening/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/evening/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "夕 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The long curves collapse into a compact angular form, close to the structure used today.",
+        "transitionNote": "The long curves collapse into a compact angular form, close to the structure used today.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "夕",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The original moon picture is now largely lost; its descendant survives as the familiar three-stroke sign for evening.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "夕",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "夕 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The original moon picture is now largely lost; its descendant survives as the familiar three-stroke sign for evening.",
+        "transitionNote": "The original moon picture is now largely lost; its descendant survives as the familiar three-stroke sign for evening.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "evening",
+      "explanation": "A moon-derived sign associated with dusk/evening.",
+      "asset": {
+        "characterID": "evening",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/evening/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of evening",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-夕"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿴𠂊丶.",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-夕"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'evening', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E5%A4%95"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-夕",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%A4%95"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-夕",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

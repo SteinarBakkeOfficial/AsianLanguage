@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "川",
   "coreSharedMeaning": "river",
-  "recognitionTakeaway": "Regular 川 condenses the three channels into three clean descending strokes, retaining the parallel-river layout even after the curves are mostly gone.",
+  "recognitionTakeaway": "The three vertical strokes remain, but the original picture of flowing water is largely lost; only the three-part river layout survives.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5DDD",
   "simplifiedForm": "川",
@@ -15,9 +15,9 @@
     "Three long currents run vertically, with small detached marks between them suggesting turbulence or water inside the channel.",
     "Regular 川 condenses the three channels into three clean descending strokes, retaining the parallel-river layout even after the curves are mostly gone."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-025-川-u5DDD",
+  "contentFolder": "content/release/symbols/river",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-025-川-u5DDD/research.md",
+  "researchNotesPath": "content/release/symbols/river/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -34,23 +34,31 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "glosses": [
-        "river"
-      ],
+      "glosses": [],
       "examples": [
+        {
+          "text": "川",
+          "reading": "chuān",
+          "translation": "river",
+          "speechText": "川",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "chuān"
+          ]
+        },
         {
           "text": "河川",
           "reading": "héchuān",
-          "translation": "rivers; waterways",
+          "translation": "rivers / waterways",
           "speechText": "河川",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "exampleLevel": "word"
         },
         {
           "text": "山川",
@@ -59,29 +67,30 @@
           "speechText": "山川",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "这里河川很多。",
-          "reading": "Zhèlǐ héchuān hěn duō.",
-          "translation": "There are many rivers here.",
-          "speechText": "这里河川很多。",
+          "text": "四川",
+          "reading": "Sìchuān",
+          "translation": "Sichuan",
+          "speechText": "四川",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "exampleLevel": "word"
+        },
+        {
+          "text": "山川很美。",
+          "reading": "Shānchuān hěn měi.",
+          "translation": "The mountains and rivers are beautiful.",
+          "speechText": "山川很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "川",
@@ -94,23 +103,28 @@
           "speechLanguage": "mandarin"
         }
       ],
-      "glosses": [
-        "river"
-      ],
+      "glosses": [],
       "taiwanExamples": [
+        {
+          "text": "川",
+          "reading": "chuān",
+          "translation": "river",
+          "speechText": "川",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "河川",
           "reading": "héchuān",
-          "translation": "rivers; waterways",
+          "translation": "rivers / waterways",
           "speechText": "河川",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "exampleLevel": "word"
         },
         {
           "text": "山川",
@@ -119,42 +133,48 @@
           "speechText": "山川",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "這裡河川很多。",
-          "reading": "Zhèlǐ héchuān hěn duō.",
-          "translation": "There are many rivers here.",
-          "speechText": "這裡河川很多。",
+          "text": "四川",
+          "reading": "Sìchuān",
+          "translation": "Sichuan",
+          "speechText": "四川",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "exampleLevel": "word"
+        },
+        {
+          "text": "山川很美。",
+          "reading": "Shānchuān hěn měi.",
+          "translation": "The mountains and rivers are beautiful.",
+          "speechText": "山川很美。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
         }
       ],
       "hongKongExamples": [
         {
+          "text": "川",
+          "reading": "cyun1",
+          "translation": "river",
+          "speechText": "川",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "河川",
           "reading": "ho4 cyun1",
-          "translation": "rivers; waterways",
+          "translation": "rivers / waterways",
           "speechText": "河川",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "exampleLevel": "word"
         },
         {
           "text": "山川",
@@ -163,26 +183,25 @@
           "speechText": "山川",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "exampleLevel": "word"
         },
         {
-          "text": "呢度河川好多。",
-          "reading": "ni1 dou6 ho4 cyun1 hou2 do1",
-          "translation": "There are many rivers here.",
-          "speechText": "呢度河川好多。",
+          "text": "四川",
+          "reading": "sei3 cyun1",
+          "translation": "Sichuan",
+          "speechText": "四川",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "exampleLevel": "word"
+        },
+        {
+          "text": "山川好靚。",
+          "reading": "saan1 cyun1 hou2 leng3.",
+          "translation": "The mountains and rivers are beautiful.",
+          "speechText": "山川好靚。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence"
         }
       ],
       "taiwanReadings": [
@@ -203,29 +222,35 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "川",
       "readings": [
         {
-          "system": "on",
-          "value": "セン (sen)",
+          "system": "onyomi",
+          "value": "セン — sen",
           "audioAssetRef": null,
           "speechText": "せん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "セン",
+          "romanization": "sen",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "かわ (kawa)",
+          "system": "kunyomi",
+          "value": "かわ — kawa",
           "audioAssetRef": null,
           "speechText": "かわ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "かわ",
+          "romanization": "kawa",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
-      "glosses": [
-        "river"
-      ],
+      "glosses": [],
       "examples": [
         {
           "text": "川",
@@ -235,109 +260,225 @@
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "kanaReading": "かわ",
+          "coversReadings": [
+            "かわ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "川",
+              "reading": "かわ"
+            }
+          ],
+          "furiganaHtml": "<ruby>川<rt>かわ</rt></ruby>"
         },
         {
           "text": "河川",
           "reading": "kasen",
-          "translation": "rivers; waterways",
+          "translation": "rivers / waterways",
           "speechText": "河川",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "かせん",
+          "coversReadings": [
+            "セン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "河川",
+              "reading": "かせん"
+            }
+          ],
+          "furiganaHtml": "<ruby>河川<rt>かせん</rt></ruby>"
+        },
+        {
+          "text": "小川",
+          "reading": "ogawa",
+          "translation": "stream",
+          "speechText": "小川",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "kanaReading": "おがわ",
+          "furiganaSegments": [
+            {
+              "text": "小川",
+              "reading": "おがわ"
+            }
+          ],
+          "furiganaHtml": "<ruby>小川<rt>おがわ</rt></ruby>"
+        },
+        {
+          "text": "川岸",
+          "reading": "kawagishi",
+          "translation": "riverbank",
+          "speechText": "川岸",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "introducedSymbols": [],
+          "kanaReading": "かわぎし",
+          "furiganaSegments": [
+            {
+              "text": "川岸",
+              "reading": "かわぎし"
+            }
+          ],
+          "furiganaHtml": "<ruby>川岸<rt>かわぎし</rt></ruby>"
         },
         {
-          "text": "川の水は冷たいです。",
-          "reading": "kawa no mizu wa tsumetai desu.",
-          "translation": "The river water is cold.",
-          "speechText": "川の水は冷たいです。",
+          "text": "川を渡ります。",
+          "reading": "kawa o watarimasu.",
+          "translation": "I cross the river.",
+          "speechText": "川を渡ります。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "kanaReading": "かわをわたります。",
+          "furiganaSegments": [
+            {
+              "text": "川",
+              "reading": "かわ"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "渡",
+              "reading": "わた"
+            },
+            {
+              "text": "ります"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>川<rt>かわ</rt></ruby>を<ruby>渡<rt>わた</rt></ruby>ります。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "かわ",
+        "romanization": "kawa",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "川",
       "readings": [
         {
           "system": "hanja",
-          "value": "천 / cheon",
+          "value": "천 — cheon",
           "audioAssetRef": null,
           "speechText": "천",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean · stream",
-          "value": "내 / nae",
-          "audioAssetRef": null,
-          "speechText": "내",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "천",
+          "romanization": "cheon"
         }
       ],
-      "glosses": [
-        "river; stream (mainly in compounds)"
-      ],
+      "glosses": [],
       "examples": [
         {
-          "text": "하천",
-          "reading": "hacheon",
-          "translation": "river; stream",
-          "speechText": "하천",
+          "text": "내",
+          "reading": "nae",
+          "translation": "creek / stream",
+          "speechText": "내",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "하천",
+          "reading": "hacheon",
+          "translation": "river / stream",
+          "speechText": "하천",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
         },
         {
           "text": "산천",
           "reading": "sancheon",
-          "translation": "mountains and rivers",
+          "translation": "mountains and streams",
           "speechText": "산천",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word"
+        },
+        {
+          "text": "천변",
+          "reading": "cheonbyeon",
+          "translation": "riverside",
+          "speechText": "천변",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "introducedSymbols": []
         },
         {
-          "text": "냇물이 맑아요.",
-          "reading": "naenmuri malgayo.",
-          "translation": "The stream water is clear.",
-          "speechText": "냇물이 맑아요.",
+          "text": "내를 건너요.",
+          "reading": "naereul geonneoyo.",
+          "translation": "I cross the stream.",
+          "speechText": "내를 건너요.",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "川"
-          ]
+          "exampleLevel": "sentence"
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "천 — cheon",
+          "audioAssetRef": null,
+          "speechText": "천",
+          "speechLanguage": "korean",
+          "nativeReading": "천",
+          "romanization": "cheon"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "내 — nae",
+          "audioAssetRef": null,
+          "speechText": "내",
+          "speechLanguage": "korean",
+          "nativeReading": "내",
+          "romanization": "nae",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "stream",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "천",
+        "romanization": "cheon",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +487,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A river shown first as a winding channel and then as several parallel flowing currents.",
+    "originAnchor": "A flowing river.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/river/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Three long currents run vertically, with small detached marks between them suggesting turbulence or water inside the channel.",
+        "changeNoteFromPrevious": "A winding channel is shown with separate interior marks for moving water.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-川"
@@ -379,8 +520,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Three long currents run vertically, with small detached marks between them suggesting turbulence or water inside the channel.",
-        "transitionNote": "Three long currents run vertically, with small detached marks between them suggesting turbulence or water inside the channel.",
+        "stageExplanation": "A winding channel is shown with separate interior marks for moving water.",
+        "transitionNote": "A winding channel is shown with separate interior marks for moving water.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +531,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/river/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "The small interior marks disappear, leaving three broad, wavy streams side by side.",
+        "changeNoteFromPrevious": "The separate interior water marks merge into one continuous middle line, creating three parallel currents.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-川"
@@ -416,8 +557,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The small interior marks disappear, leaving three broad, wavy streams side by side.",
-        "transitionNote": "The small interior marks disappear, leaving three broad, wavy streams side by side.",
+        "stageExplanation": "The separate interior water marks merge into one continuous middle line, creating three parallel currents.",
+        "transitionNote": "The separate interior water marks merge into one continuous middle line, creating three parallel currents.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +568,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/river/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The three currents become slimmer and more uniform, almost like evenly drawn parallel waves.",
+        "changeNoteFromPrevious": "The three-line structure remains intact.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-川"
@@ -453,8 +594,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The three currents become slimmer and more uniform, almost like evenly drawn parallel waves.",
-        "transitionNote": "The three currents become slimmer and more uniform, almost like evenly drawn parallel waves.",
+        "stageExplanation": "The three-line structure remains intact.",
+        "transitionNote": "The three-line structure remains intact.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +605,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/river/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The currents separate into heavy vertical strokes; the right side is especially straight and no longer looks naturally flowing.",
+        "changeNoteFromPrevious": "The flowing curves are straightened into three vertical strokes, replacing the pictorial river with a stroke-based sign.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-川"
@@ -490,8 +631,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The currents separate into heavy vertical strokes; the right side is especially straight and no longer looks naturally flowing.",
-        "transitionNote": "The currents separate into heavy vertical strokes; the right side is especially straight and no longer looks naturally flowing.",
+        "stageExplanation": "The flowing curves are straightened into three vertical strokes, replacing the pictorial river with a stroke-based sign.",
+        "transitionNote": "The flowing curves are straightened into three vertical strokes, replacing the pictorial river with a stroke-based sign.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +642,7 @@
         "label": "Regular Script",
         "form": "川",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 川 condenses the three channels into three clean descending strokes, retaining the parallel-river layout even after the curves are mostly gone.",
+        "changeNoteFromPrevious": "The three vertical strokes remain, but the original picture of flowing water is largely lost; only the three-part river layout survives.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +668,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 川 condenses the three channels into three clean descending strokes, retaining the parallel-river layout even after the curves are mostly gone.",
-        "transitionNote": "Regular 川 condenses the three channels into three clean descending strokes, retaining the parallel-river layout even after the curves are mostly gone.",
+        "stageExplanation": "The three vertical strokes remain, but the original picture of flowing water is largely lost; only the three-part river layout survives.",
+        "transitionNote": "The three vertical strokes remain, but the original picture of flowing water is largely lost; only the three-part river layout survives.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +677,7 @@
     ],
     "origin": {
       "concept": "river",
-      "explanation": "A river shown first as a winding channel and then as several parallel flowing currents.",
+      "explanation": "Parallel/winding current lines representing a river channel.",
       "asset": {
         "characterID": "river",
         "historicalStage": null,
@@ -641,13 +782,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

@@ -2,8 +2,8 @@
   "id": "join",
   "version": 1,
   "coreCharacter": "合",
-  "coreSharedMeaning": "join",
-  "recognitionTakeaway": "Regular 合 tightens the roof, central line, and 口 into the familiar compact stack.",
+  "coreSharedMeaning": "join / combine",
+  "recognitionTakeaway": "The fitted cover-and-vessel structure is conventionalized as 合.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5408",
   "simplifiedForm": "合",
@@ -15,9 +15,9 @@
     "Oracle uses a peaked cover over a narrow lower shape and a small enclosed mouth-like element, already suggesting things gathered under one top.",
     "Regular 合 tightens the roof, central line, and 口 into the familiar compact stack."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-117-合-u5408",
+  "contentFolder": "content/release/symbols/join",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-117-合-u5408/research.md",
+  "researchNotesPath": "content/release/symbols/join/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "join"
       ],
       "examples": [
+        {
+          "text": "合",
+          "reading": "hé",
+          "translation": "join",
+          "speechText": "合",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "hé"
+          ]
+        },
         {
           "text": "合作",
           "reading": "hézuò",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "合同",
+          "reading": "hétong",
+          "translation": "contract",
+          "speechText": "合同",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我们一起合作。",
           "reading": "Wǒmen yìqǐ hézuò.",
           "translation": "Let’s work together.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "合",
@@ -98,6 +127,18 @@
         "join"
       ],
       "taiwanExamples": [
+        {
+          "text": "合",
+          "reading": "hé",
+          "translation": "join",
+          "speechText": "合",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "合作",
           "reading": "hézuò",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "合",
+          "reading": "hap6",
+          "translation": "join",
+          "speechText": "合",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "合作",
           "reading": "hap6 zok3",
@@ -203,31 +256,52 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "合",
       "readings": [
         {
-          "system": "on",
-          "value": "ゴウ (gō)",
+          "system": "onyomi",
+          "value": "ゴウ — gō",
           "audioAssetRef": null,
           "speechText": "ごう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ゴウ",
+          "romanization": "gō",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "あう (au)",
+          "system": "kunyomi",
+          "value": "あう — au",
           "audioAssetRef": null,
           "speechText": "あう",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "あう",
+          "romanization": "au",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "あわせる (awaseru)",
+          "system": "kunyomi",
+          "value": "あわせる — awaseru",
           "audioAssetRef": null,
           "speechText": "あわせる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "あわせる",
+          "romanization": "awaseru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "あわす — awasu",
+          "audioAssetRef": null,
+          "speechText": "あわす",
+          "speechLanguage": "japanese",
+          "nativeReading": "あわす",
+          "romanization": "awasu",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +320,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "合"
-          ]
+          ],
+          "kanaReading": "あう",
+          "coversReadings": [
+            "あう"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "合",
+              "reading": "あ"
+            },
+            {
+              "text": "う"
+            }
+          ],
+          "furiganaHtml": "<ruby>合<rt>あ</rt></ruby>う"
         },
         {
           "text": "合計",
@@ -260,7 +348,64 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "合"
-          ]
+          ],
+          "kanaReading": "ごうけい",
+          "coversReadings": [
+            "ゴウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "合計",
+              "reading": "ごうけい"
+            }
+          ],
+          "furiganaHtml": "<ruby>合計<rt>ごうけい</rt></ruby>"
+        },
+        {
+          "text": "合格",
+          "reading": "gōkaku",
+          "translation": "pass; qualify",
+          "speechText": "合格",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "ごうかく",
+          "furiganaSegments": [
+            {
+              "text": "合格",
+              "reading": "ごうかく"
+            }
+          ],
+          "furiganaHtml": "<ruby>合格<rt>ごうかく</rt></ruby>"
+        },
+        {
+          "text": "合わせる",
+          "reading": "awaseru",
+          "translation": "put together / combine",
+          "speechText": "合わせる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あわせる",
+          "coversReadings": [
+            "あわせる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "合",
+              "reading": "あ"
+            },
+            {
+              "text": "わせる"
+            }
+          ],
+          "furiganaHtml": "<ruby>合<rt>あ</rt></ruby>わせる"
         },
         {
           "text": "二つを合わせます。",
@@ -274,33 +419,100 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "合"
-          ]
+          ],
+          "kanaReading": "ふたつをあわせます。",
+          "furiganaSegments": [
+            {
+              "text": "二",
+              "reading": "ふた"
+            },
+            {
+              "text": "つを"
+            },
+            {
+              "text": "合",
+              "reading": "あ"
+            },
+            {
+              "text": "わせます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>二<rt>ふた</rt></ruby>つを<ruby>合<rt>あ</rt></ruby>わせます。"
+        },
+        {
+          "text": "合わす",
+          "reading": "awasu",
+          "translation": "join; put together",
+          "speechText": "合わす",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あわす",
+          "coversReadings": [
+            "あわす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "合",
+              "reading": "あ"
+            },
+            {
+              "text": "わす"
+            }
+          ],
+          "furiganaHtml": "<ruby>合<rt>あ</rt></ruby>わす"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "あう",
+        "romanization": "au",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "合",
       "readings": [
         {
           "system": "hanja",
-          "value": "합 / hap",
+          "value": "합 — hap",
           "audioAssetRef": null,
           "speechText": "합",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "everyday Korean",
-          "value": "합치다 / hapchida",
-          "audioAssetRef": null,
-          "speechText": "합치다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "합",
+          "romanization": "hap"
         }
       ],
       "glosses": [
         "join"
       ],
       "examples": [
+        {
+          "text": "합치다",
+          "reading": "hapchida",
+          "translation": "combine",
+          "speechText": "합치다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "합계",
           "reading": "hapgye",
@@ -330,6 +542,18 @@
           ]
         },
         {
+          "text": "합격",
+          "reading": "hapgyeok",
+          "translation": "pass / qualification",
+          "speechText": "합격",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "두 개를 합쳐요.",
           "reading": "du gaereul hapchyeoyo.",
           "translation": "I put the two together.",
@@ -344,7 +568,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "합 — hap",
+          "audioAssetRef": null,
+          "speechText": "합",
+          "speechLanguage": "korean",
+          "nativeReading": "합",
+          "romanization": "hap"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "합치다 — hapchida",
+          "audioAssetRef": null,
+          "speechText": "합치다",
+          "speechLanguage": "korean",
+          "nativeReading": "합치다",
+          "romanization": "hapchida",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "combine",
+          "displayTier": "secondary",
+          "lexicalOrigin": "mixed",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "합",
+        "romanization": "hap",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +616,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Two people facing one another and bringing their voices or mouths together.",
+    "originAnchor": "A lid and a vessel fit together; their joining led to 'join.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/join/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle uses a peaked cover over a narrow lower shape and a small enclosed mouth-like element, already suggesting things gathered under one top.",
+        "changeNoteFromPrevious": "A cover/lid fits onto a vessel, providing the concrete joining/fitting image.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-合"
@@ -386,8 +649,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle uses a peaked cover over a narrow lower shape and a small enclosed mouth-like element, already suggesting things gathered under one top.",
-        "transitionNote": "Oracle uses a peaked cover over a narrow lower shape and a small enclosed mouth-like element, already suggesting things gathered under one top.",
+        "stageExplanation": "A cover/lid fits onto a vessel, providing the concrete joining/fitting image.",
+        "transitionNote": "A cover/lid fits onto a vessel, providing the concrete joining/fitting image.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +660,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/join/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps the peaked roof and separates the small lower enclosure more clearly from the upper body.",
+        "changeNoteFromPrevious": "Keeps the peaked roof and separates the small lower enclosure more clearly from the upper body.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-合"
@@ -423,8 +686,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps the peaked roof and separates the small lower enclosure more clearly from the upper body.",
-        "transitionNote": "Bronze keeps the peaked roof and separates the small lower enclosure more clearly from the upper body.",
+        "stageExplanation": "Keeps the peaked roof and separates the small lower enclosure more clearly from the upper body.",
+        "transitionNote": "Keeps the peaked roof and separates the small lower enclosure more clearly from the upper body.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +697,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/join/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal makes the structure highly geometric: a large triangular cover sits above a short line and a rounded mouth below.",
+        "changeNoteFromPrevious": "Makes the structure highly geometric: a large triangular cover sits above a short line and a rounded mouth below.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-合"
@@ -460,8 +723,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal makes the structure highly geometric: a large triangular cover sits above a short line and a rounded mouth below.",
-        "transitionNote": "Small Seal makes the structure highly geometric: a large triangular cover sits above a short line and a rounded mouth below.",
+        "stageExplanation": "Makes the structure highly geometric: a large triangular cover sits above a short line and a rounded mouth below.",
+        "transitionNote": "Makes the structure highly geometric: a large triangular cover sits above a short line and a rounded mouth below.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +734,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/join/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical widens the roof and turns the lower mouth into a broad rectangle, producing a form almost identical in layout to 合.",
+        "changeNoteFromPrevious": "The upper and lower joining elements become compact and regular, almost identical in layout to the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-合"
@@ -497,8 +760,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical widens the roof and turns the lower mouth into a broad rectangle, producing a form almost identical in layout to 合.",
-        "transitionNote": "Clerical widens the roof and turns the lower mouth into a broad rectangle, producing a form almost identical in layout to 合.",
+        "stageExplanation": "The upper and lower joining elements become compact and regular, almost identical in layout to the later standard structure.",
+        "transitionNote": "The upper and lower joining elements become compact and regular, almost identical in layout to the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +771,7 @@
         "label": "Regular Script",
         "form": "合",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 合 tightens the roof, central line, and 口 into the familiar compact stack.",
+        "changeNoteFromPrevious": "The fitted cover-and-vessel structure is conventionalized as 合.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +797,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 合 tightens the roof, central line, and 口 into the familiar compact stack.",
-        "transitionNote": "Regular 合 tightens the roof, central line, and 口 into the familiar compact stack.",
+        "stageExplanation": "The fitted cover-and-vessel structure is conventionalized as 合.",
+        "transitionNote": "The fitted cover-and-vessel structure is conventionalized as 合.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +806,7 @@
     ],
     "origin": {
       "concept": "join",
-      "explanation": "Two people facing one another and bringing their voices or mouths together.",
+      "explanation": "A lid/cover fitting onto a vessel.",
       "asset": {
         "characterID": "join",
         "historicalStage": null,
@@ -560,7 +823,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of join",
+        "accessibilityDescription": "Illustration of join / combine",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +841,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'join', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'join / combine', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +911,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

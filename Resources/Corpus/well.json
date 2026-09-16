@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "井",
   "coreSharedMeaning": "well",
-  "recognitionTakeaway": "Regular 井 balances the four main rails into the familiar open grid, with two verticals crossing two horizontals.",
+  "recognitionTakeaway": "The intersecting frame is regularized as 井, preserving the old well-mouth geometry.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+4E95",
   "simplifiedForm": "井",
@@ -15,9 +15,9 @@
     "Curved rails cross one another in a loose four-sided lattice; the form already resembles a well frame seen from above.",
     "Regular 井 balances the four main rails into the familiar open grid, with two verticals crossing two horizontals."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-031-井-u4E95",
+  "contentFolder": "content/release/symbols/well",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-031-井-u4E95/research.md",
+  "researchNotesPath": "content/release/symbols/well/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "well"
       ],
       "examples": [
+        {
+          "text": "井",
+          "reading": "jǐng",
+          "translation": "well",
+          "speechText": "井",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "jǐng"
+          ]
+        },
         {
           "text": "水井",
           "reading": "shuǐjǐng",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "井口",
+          "reading": "jǐngkǒu",
+          "translation": "well opening",
+          "speechText": "井口",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "这口井很深。",
           "reading": "Zhè kǒu jǐng hěn shēn.",
           "translation": "This well is deep.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "井",
@@ -98,6 +127,18 @@
         "well"
       ],
       "taiwanExamples": [
+        {
+          "text": "井",
+          "reading": "jǐng",
+          "translation": "well",
+          "speechText": "井",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "水井",
           "reading": "shuǐjǐng",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "井",
+          "reading": "zeng2",
+          "translation": "well",
+          "speechText": "井",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "水井",
           "reading": "seoi2 zeng2",
@@ -203,24 +256,43 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "井",
       "readings": [
         {
-          "system": "on",
-          "value": "セイ (sei)",
+          "system": "onyomi",
+          "value": "セイ — sei",
           "audioAssetRef": null,
           "speechText": "せい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "セイ",
+          "romanization": "sei",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "い (i)",
+          "system": "kunyomi",
+          "value": "い — i",
           "audioAssetRef": null,
           "speechText": "い",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "い",
+          "romanization": "i",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "onyomi",
+          "value": "ショウ — shō",
+          "audioAssetRef": null,
+          "speechText": "ショウ",
+          "speechLanguage": "japanese",
+          "nativeReading": "ショウ",
+          "romanization": "shō",
+          "historicalOrigin": "sinoJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
         }
       ],
       "glosses": [
@@ -239,7 +311,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "井"
-          ]
+          ],
+          "kanaReading": "いど",
+          "coversReadings": [
+            "い"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "井戸",
+              "reading": "いど"
+            }
+          ],
+          "furiganaHtml": "<ruby>井戸<rt>いど</rt></ruby>"
         },
         {
           "text": "油井",
@@ -253,7 +336,79 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "井"
-          ]
+          ],
+          "kanaReading": "ゆせい",
+          "coversReadings": [
+            "セイ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "油井",
+              "reading": "ゆせい"
+            }
+          ],
+          "furiganaHtml": "<ruby>油井<rt>ゆせい</rt></ruby>"
+        },
+        {
+          "text": "井戸水",
+          "reading": "idomizu",
+          "translation": "well water",
+          "speechText": "井戸水",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "いどみず",
+          "furiganaSegments": [
+            {
+              "text": "井戸水",
+              "reading": "いどみず"
+            }
+          ],
+          "furiganaHtml": "<ruby>井戸水<rt>いどみず</rt></ruby>"
+        },
+        {
+          "text": "井戸端",
+          "reading": "idobata",
+          "translation": "beside the well",
+          "speechText": "井戸端",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "いどばた",
+          "furiganaSegments": [
+            {
+              "text": "井戸端",
+              "reading": "いどばた"
+            }
+          ],
+          "furiganaHtml": "<ruby>井戸端<rt>いどばた</rt></ruby>"
+        },
+        {
+          "text": "天井",
+          "reading": "tenjō",
+          "translation": "ceiling",
+          "speechText": "天井",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "てんじょう",
+          "coversReadings": [
+            "ショウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "天井",
+              "reading": "てんじょう"
+            }
+          ],
+          "furiganaHtml": "<ruby>天井<rt>てんじょう</rt></ruby>"
         },
         {
           "text": "井戸の水は冷たいです。",
@@ -267,33 +422,83 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "井"
-          ]
+          ],
+          "kanaReading": "いどのみずはつめたいです。",
+          "furiganaSegments": [
+            {
+              "text": "井戸",
+              "reading": "いど"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "水",
+              "reading": "みず"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "冷",
+              "reading": "つめ"
+            },
+            {
+              "text": "たいです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>井戸<rt>いど</rt></ruby>の<ruby>水<rt>みず</rt></ruby>は<ruby>冷<rt>つめ</rt></ruby>たいです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "い",
+        "romanization": "i",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "井",
       "readings": [
         {
           "system": "hanja",
-          "value": "정 / jeong",
+          "value": "정 — jeong",
           "audioAssetRef": null,
           "speechText": "정",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "우물 / umul",
-          "audioAssetRef": null,
-          "speechText": "우물",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "정",
+          "romanization": "jeong"
         }
       ],
       "glosses": [
         "well"
       ],
       "examples": [
+        {
+          "text": "우물",
+          "reading": "umul",
+          "translation": "well",
+          "speechText": "우물",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "井"
+          ],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "유정",
           "reading": "yujeong",
@@ -309,18 +514,28 @@
           ]
         },
         {
-          "text": "우물",
-          "reading": "umul",
-          "translation": "well",
-          "speechText": "우물",
+          "text": "우물가",
+          "reading": "umulga",
+          "translation": "beside the well",
+          "speechText": "우물가",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "井"
-          ]
+          "introducedSymbols": []
+        },
+        {
+          "text": "우물물",
+          "reading": "umulmul",
+          "translation": "well water",
+          "speechText": "우물물",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "우물물이 차가워요.",
@@ -337,7 +552,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "정 — jeong",
+          "audioAssetRef": null,
+          "speechText": "정",
+          "speechLanguage": "korean",
+          "nativeReading": "정",
+          "romanization": "jeong"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "우물 — umul",
+          "audioAssetRef": null,
+          "speechText": "우물",
+          "speechLanguage": "korean",
+          "nativeReading": "우물",
+          "romanization": "umul",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "well",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "정",
+        "romanization": "jeong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +600,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A wooden well with a square frame of crossing rails.",
+    "originAnchor": "A framed well opening, showing a protected source of water.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/well/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Curved rails cross one another in a loose four-sided lattice; the form already resembles a well frame seen from above.",
+        "changeNoteFromPrevious": "A square well mouth/framework is crossed by wooden rails; small central details vary by exemplar.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-井"
@@ -379,8 +633,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Curved rails cross one another in a loose four-sided lattice; the form already resembles a well frame seen from above.",
-        "transitionNote": "Curved rails cross one another in a loose four-sided lattice; the form already resembles a well frame seen from above.",
+        "stageExplanation": "A square well mouth/framework is crossed by wooden rails; small central details vary by exemplar.",
+        "transitionNote": "A square well mouth/framework is crossed by wooden rails; small central details vary by exemplar.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -501,7 +755,7 @@
         "label": "Regular Script",
         "form": "井",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 井 balances the four main rails into the familiar open grid, with two verticals crossing two horizontals.",
+        "changeNoteFromPrevious": "The intersecting frame is regularized as 井, preserving the old well-mouth geometry.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +781,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 井 balances the four main rails into the familiar open grid, with two verticals crossing two horizontals.",
-        "transitionNote": "Regular 井 balances the four main rails into the familiar open grid, with two verticals crossing two horizontals.",
+        "stageExplanation": "The intersecting frame is regularized as 井, preserving the old well-mouth geometry.",
+        "transitionNote": "The intersecting frame is regularized as 井, preserving the old well-mouth geometry.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +790,7 @@
     ],
     "origin": {
       "concept": "well",
-      "explanation": "A wooden well with a square frame of crossing rails.",
+      "explanation": "The framed mouth/opening of a well, with crossed wooden rails or a square framework.",
       "asset": {
         "characterID": "well",
         "historicalStage": null,
@@ -641,13 +895,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

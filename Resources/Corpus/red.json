@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "赤",
   "coreSharedMeaning": "red",
-  "recognitionTakeaway": "Regular 赤 standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form.",
+  "recognitionTakeaway": "Standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+8D64",
   "simplifiedForm": "赤",
@@ -15,9 +15,9 @@
     "Oracle is a tall person-like figure planted directly over a distinct flame-shaped lower component.",
     "Regular 赤 standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-071-赤-u8D64",
+  "contentFolder": "content/release/symbols/red",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-071-赤-u8D64/research.md",
+  "researchNotesPath": "content/release/symbols/red/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "red"
       ],
       "examples": [
+        {
+          "text": "赤",
+          "reading": "chì",
+          "translation": "red",
+          "speechText": "赤",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "chì"
+          ]
+        },
         {
           "text": "赤道",
           "reading": "chìdào",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "赤色",
+          "reading": "chìsè",
+          "translation": "red; scarlet",
+          "speechText": "赤色",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他赤脚走路。",
           "reading": "Tā chìjiǎo zǒulù.",
           "translation": "He walks barefoot.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "赤",
@@ -98,6 +127,18 @@
         "red"
       ],
       "taiwanExamples": [
+        {
+          "text": "赤",
+          "reading": "chì",
+          "translation": "red",
+          "speechText": "赤",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "赤道",
           "reading": "chìdào",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "赤",
+          "reading": "cek3",
+          "translation": "red",
+          "speechText": "赤",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "赤道",
           "reading": "cek3 dou6",
@@ -203,31 +256,42 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "赤",
       "readings": [
         {
-          "system": "on",
-          "value": "セキ (seki)",
+          "system": "onyomi",
+          "value": "セキ — seki",
           "audioAssetRef": null,
           "speechText": "せき",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "セキ",
+          "romanization": "seki",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "あか (aka)",
+          "system": "kunyomi",
+          "value": "あか — aka",
           "audioAssetRef": null,
           "speechText": "あか",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "あか",
+          "romanization": "aka",
+          "historicalOrigin": "nativeJapanese"
         },
         {
-          "system": "kun",
-          "value": "あかい (akai)",
+          "system": "kunyomi",
+          "value": "あかい — akai",
           "audioAssetRef": null,
           "speechText": "あかい",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "あかい",
+          "romanization": "akai",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +310,22 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "赤"
-          ]
+          ],
+          "kanaReading": "あかい",
+          "coversReadings": [
+            "あか",
+            "あかい"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "赤",
+              "reading": "あか"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "furiganaHtml": "<ruby>赤<rt>あか</rt></ruby>い"
         },
         {
           "text": "赤道",
@@ -260,7 +339,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "赤"
-          ]
+          ],
+          "kanaReading": "せきどう",
+          "coversReadings": [
+            "セキ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "赤道",
+              "reading": "せきどう"
+            }
+          ],
+          "furiganaHtml": "<ruby>赤道<rt>せきどう</rt></ruby>"
+        },
+        {
+          "text": "赤ちゃん",
+          "reading": "akachan",
+          "translation": "baby",
+          "speechText": "赤ちゃん",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あかちゃん",
+          "furiganaSegments": [
+            {
+              "text": "赤",
+              "reading": "あか"
+            },
+            {
+              "text": "ちゃん"
+            }
+          ],
+          "furiganaHtml": "<ruby>赤<rt>あか</rt></ruby>ちゃん"
+        },
+        {
+          "text": "赤色",
+          "reading": "akairo",
+          "translation": "red color",
+          "speechText": "赤色",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "あかいろ",
+          "furiganaSegments": [
+            {
+              "text": "赤色",
+              "reading": "あかいろ"
+            }
+          ],
+          "furiganaHtml": "<ruby>赤色<rt>あかいろ</rt></ruby>"
         },
         {
           "text": "りんごは赤いです。",
@@ -274,33 +407,70 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "赤"
-          ]
+          ],
+          "kanaReading": "りんごはあかいです。",
+          "furiganaSegments": [
+            {
+              "text": "りんごは"
+            },
+            {
+              "text": "赤",
+              "reading": "あか"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "りんごは<ruby>赤<rt>あか</rt></ruby>いです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "あか",
+        "romanization": "aka",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "赤",
       "readings": [
         {
           "system": "hanja",
-          "value": "적 / jeok",
+          "value": "적 — jeok",
           "audioAssetRef": null,
           "speechText": "적",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "빨갛다 / ppalghata",
-          "audioAssetRef": null,
-          "speechText": "빨갛다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "적",
+          "romanization": "jeok"
         }
       ],
       "glosses": [
         "red"
       ],
       "examples": [
+        {
+          "text": "빨갛다",
+          "reading": "ppalghata",
+          "translation": "red",
+          "speechText": "빨갛다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "적색",
           "reading": "jeoksaek",
@@ -330,6 +500,18 @@
           ]
         },
         {
+          "text": "적외선",
+          "reading": "jeogoeseon",
+          "translation": "infrared",
+          "speechText": "적외선",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "사과가 빨개요.",
           "reading": "sagwaga ppalgaeyo.",
           "translation": "The apple is red.",
@@ -344,7 +526,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "적 — jeok",
+          "audioAssetRef": null,
+          "speechText": "적",
+          "speechLanguage": "korean",
+          "nativeReading": "적",
+          "romanization": "jeok"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "빨갛다 — ppalghata",
+          "audioAssetRef": null,
+          "speechText": "빨갛다",
+          "speechLanguage": "korean",
+          "nativeReading": "빨갛다",
+          "romanization": "ppalghata",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "red",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "적",
+        "romanization": "jeok",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +574,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A person standing beside and above red-orange flames.",
+    "originAnchor": "A standing person is reddened by the heat and light of a separate flame; together, they express fiery red.",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/red/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a tall person-like figure planted directly over a distinct flame-shaped lower component.",
+        "changeNoteFromPrevious": "Is a tall person-like figure planted directly over a distinct flame-shaped lower component.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-赤"
@@ -386,8 +607,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a tall person-like figure planted directly over a distinct flame-shaped lower component.",
-        "transitionNote": "Oracle is a tall person-like figure planted directly over a distinct flame-shaped lower component.",
+        "stageExplanation": "Is a tall person-like figure planted directly over a distinct flame-shaped lower component.",
+        "transitionNote": "Is a tall person-like figure planted directly over a distinct flame-shaped lower component.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +618,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/red/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze broadens the human body and makes the fire beneath it into a clear bowl of upward strokes.",
+        "changeNoteFromPrevious": "Broadens the human body and makes the fire beneath it into a clear bowl of upward strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-赤"
@@ -423,8 +644,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze broadens the human body and makes the fire beneath it into a clear bowl of upward strokes.",
-        "transitionNote": "Bronze broadens the human body and makes the fire beneath it into a clear bowl of upward strokes.",
+        "stageExplanation": "Broadens the human body and makes the fire beneath it into a clear bowl of upward strokes.",
+        "transitionNote": "Broadens the human body and makes the fire beneath it into a clear bowl of upward strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +655,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/red/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal regularizes the person into a symmetric 大-like upper body over a rounded fire form.",
+        "changeNoteFromPrevious": "Regularizes the person into a symmetric human figure-like upper body over a rounded fire form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-赤"
@@ -460,8 +681,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal regularizes the person into a symmetric 大-like upper body over a rounded fire form.",
-        "transitionNote": "Small Seal regularizes the person into a symmetric 大-like upper body over a rounded fire form.",
+        "stageExplanation": "Regularizes the person into a symmetric human figure-like upper body over a rounded fire form.",
+        "transitionNote": "Regularizes the person into a symmetric human figure-like upper body over a rounded fire form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +692,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/red/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the upper body and spreads the lower flame strokes sideways, creating a form close to 赤.",
+        "changeNoteFromPrevious": "The person-and-fire configuration flattens and condenses, creating a form close to the later standard structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-赤"
@@ -497,8 +718,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the upper body and spreads the lower flame strokes sideways, creating a form close to 赤.",
-        "transitionNote": "Clerical flattens the upper body and spreads the lower flame strokes sideways, creating a form close to 赤.",
+        "stageExplanation": "The person-and-fire configuration flattens and condenses, creating a form close to the later standard structure.",
+        "transitionNote": "The person-and-fire configuration flattens and condenses, creating a form close to the later standard structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +729,7 @@
         "label": "Regular Script",
         "form": "赤",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 赤 standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form.",
+        "changeNoteFromPrevious": "Standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +755,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 赤 standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form.",
-        "transitionNote": "Regular 赤 standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form.",
+        "stageExplanation": "Standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form.",
+        "transitionNote": "Standardizes the upper 土/大-like structure and lower fire-derived strokes, preserving the person-over-flame composition in an abstract form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +764,7 @@
     ],
     "origin": {
       "concept": "red",
-      "explanation": "A person standing beside and above red-orange flames.",
+      "explanation": "A standing human figure is associated with fire beneath it in early forms.",
       "asset": {
         "characterID": "red",
         "historicalStage": null,
@@ -648,13 +869,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

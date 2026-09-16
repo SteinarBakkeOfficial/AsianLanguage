@@ -2,8 +2,8 @@
   "id": "obtain",
   "version": 1,
   "coreCharacter": "得",
-  "coreSharedMeaning": "obtain",
-  "recognitionTakeaway": "Regular 得 fixes 彳 on the left and the tightly stacked right component, preserving the idea of action or acquisition through a compound that is no longer pictorial.",
+  "coreSharedMeaning": "obtain / get",
+  "recognitionTakeaway": "Later path/movement material is integrated into 得; the hand-taking-value core explains the old obtain sense.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5F97",
   "simplifiedForm": "得",
@@ -15,9 +15,9 @@
     "Oracle is a dense multi-part scene: a walking-side element stands at the left while a complex hand-and-object cluster fills the right.",
     "Regular 得 fixes 彳 on the left and the tightly stacked right component, preserving the idea of action or acquisition through a compound that is no longer pictorial."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-128-得-u5F97",
+  "contentFolder": "content/release/symbols/obtain",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-128-得-u5F97/research.md",
+  "researchNotesPath": "content/release/symbols/obtain/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -32,12 +32,43 @@
           "audioAssetRef": null,
           "speechText": "得",
           "speechLanguage": "mandarin"
+        },
+        {
+          "system": "pinyin",
+          "value": "děi",
+          "audioAssetRef": null,
+          "speechText": "得",
+          "speechLanguage": "mandarin",
+          "usageNote": "very common modal reading: must; have to"
+        },
+        {
+          "system": "pinyin",
+          "value": "de",
+          "audioAssetRef": null,
+          "speechText": "得",
+          "speechLanguage": "mandarin",
+          "usageNote": "neutral-tone reading in grammatical/lexical uses"
         }
       ],
       "glosses": [
         "obtain"
       ],
       "examples": [
+        {
+          "text": "得",
+          "reading": "dé",
+          "translation": "obtain",
+          "speechText": "得",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "dé"
+          ]
+        },
         {
           "text": "得到",
           "reading": "dédào",
@@ -67,6 +98,36 @@
           ]
         },
         {
+          "text": "觉得",
+          "reading": "juéde",
+          "translation": "feel; think",
+          "speechText": "觉得",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "de"
+          ]
+        },
+        {
+          "text": "我得走了。",
+          "reading": "Wǒ děi zǒu le.",
+          "translation": "I have to go.",
+          "speechText": "我得走了。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "děi"
+          ]
+        },
+        {
           "text": "我得到一本书。",
           "reading": "Wǒ dédào yì běn shū.",
           "translation": "I received a book.",
@@ -81,7 +142,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "得",
@@ -98,6 +161,18 @@
         "obtain"
       ],
       "taiwanExamples": [
+        {
+          "text": "得",
+          "reading": "dé",
+          "translation": "obtain",
+          "speechText": "得",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "得到",
           "reading": "dédào",
@@ -142,6 +217,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "得",
+          "reading": "dak1",
+          "translation": "obtain",
+          "speechText": "得",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "得到",
           "reading": "dak1 dou3",
@@ -203,24 +290,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "得",
       "readings": [
         {
-          "system": "on",
-          "value": "トク (toku)",
+          "system": "onyomi",
+          "value": "トク — toku",
           "audioAssetRef": null,
           "speechText": "とく",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "トク",
+          "romanization": "toku",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "える (eru)",
+          "system": "kunyomi",
+          "value": "える — eru",
           "audioAssetRef": null,
           "speechText": "える",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "える",
+          "romanization": "eru",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +334,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "得"
-          ]
+          ],
+          "kanaReading": "える",
+          "coversReadings": [
+            "える"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "得",
+              "reading": "え"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>得<rt>え</rt></ruby>る"
         },
         {
           "text": "得意",
@@ -253,7 +362,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "得"
-          ]
+          ],
+          "kanaReading": "とくい",
+          "coversReadings": [
+            "トク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "得意",
+              "reading": "とくい"
+            }
+          ],
+          "furiganaHtml": "<ruby>得意<rt>とくい</rt></ruby>"
+        },
+        {
+          "text": "得点",
+          "reading": "tokuten",
+          "translation": "score; points",
+          "speechText": "得点",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "とくてん",
+          "furiganaSegments": [
+            {
+              "text": "得点",
+              "reading": "とくてん"
+            }
+          ],
+          "furiganaHtml": "<ruby>得点<rt>とくてん</rt></ruby>"
+        },
+        {
+          "text": "お得",
+          "reading": "otoku",
+          "translation": "good value / bargain",
+          "speechText": "お得",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "おとく",
+          "furiganaSegments": [
+            {
+              "text": "お"
+            },
+            {
+              "text": "得",
+              "reading": "とく"
+            }
+          ],
+          "furiganaHtml": "お<ruby>得<rt>とく</rt></ruby>"
         },
         {
           "text": "情報を得ます。",
@@ -267,33 +430,74 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "得"
-          ]
+          ],
+          "kanaReading": "じょうほうをえます。",
+          "furiganaSegments": [
+            {
+              "text": "情報",
+              "reading": "じょうほう"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "得",
+              "reading": "え"
+            },
+            {
+              "text": "ます"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>得<rt>え</rt></ruby>ます。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "える",
+        "romanization": "eru",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "得",
       "readings": [
         {
           "system": "hanja",
-          "value": "득 / deuk",
+          "value": "득 — deuk",
           "audioAssetRef": null,
           "speechText": "득",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "얻다 / eotda",
-          "audioAssetRef": null,
-          "speechText": "얻다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "득",
+          "romanization": "deuk"
         }
       ],
       "glosses": [
         "obtain"
       ],
       "examples": [
+        {
+          "text": "얻다",
+          "reading": "eotda",
+          "translation": "obtain / get",
+          "speechText": "얻다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "획득",
           "reading": "hoekdeuk",
@@ -323,6 +527,18 @@
           ]
         },
         {
+          "text": "득표",
+          "reading": "deukpyo",
+          "translation": "votes obtained",
+          "speechText": "득표",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "기회를 얻어요.",
           "reading": "gihoereul eodeoyo.",
           "translation": "I get an opportunity.",
@@ -337,7 +553,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "득 — deuk",
+          "audioAssetRef": null,
+          "speechText": "득",
+          "speechLanguage": "korean",
+          "nativeReading": "득",
+          "romanization": "deuk"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "얻다 — eotda",
+          "audioAssetRef": null,
+          "speechText": "얻다",
+          "speechLanguage": "korean",
+          "nativeReading": "얻다",
+          "romanization": "eotda",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "obtain / get",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "득",
+        "romanization": "deuk",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,14 +601,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A traveler noticing and picking up a small valuable object from the ground.",
+    "originAnchor": "A hand and a cowry shell combine to show taking something valuable; this led to 'obtain.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/obtain/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle is a dense multi-part scene: a walking-side element stands at the left while a complex hand-and-object cluster fills the right.",
+        "changeNoteFromPrevious": "A hand takes a cowry shell/valuable object, directly expressing obtaining.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-得"
@@ -379,8 +634,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle is a dense multi-part scene: a walking-side element stands at the left while a complex hand-and-object cluster fills the right.",
-        "transitionNote": "Oracle is a dense multi-part scene: a walking-side element stands at the left while a complex hand-and-object cluster fills the right.",
+        "stageExplanation": "A hand takes a cowry shell/valuable object, directly expressing obtaining.",
+        "transitionNote": "A hand takes a cowry shell/valuable object, directly expressing obtaining.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -390,7 +645,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/obtain/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze simplifies some of the right-hand detail but keeps the left walking stroke and a clearly separate action cluster.",
+        "changeNoteFromPrevious": "Simplifies some of the right-hand detail but keeps the left walking stroke and a clearly separate action cluster.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-得"
@@ -416,8 +671,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze simplifies some of the right-hand detail but keeps the left walking stroke and a clearly separate action cluster.",
-        "transitionNote": "Bronze simplifies some of the right-hand detail but keeps the left walking stroke and a clearly separate action cluster.",
+        "stageExplanation": "Simplifies some of the right-hand detail but keeps the left walking stroke and a clearly separate action cluster.",
+        "transitionNote": "Simplifies some of the right-hand detail but keeps the left walking stroke and a clearly separate action cluster.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -427,7 +682,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/obtain/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal turns the left side into a formal 彳-like walking component and stacks several compact elements on the right.",
+        "changeNoteFromPrevious": "The older taking/obtaining scene is regularized together with a formal walking or path element.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-得"
@@ -453,8 +708,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal turns the left side into a formal 彳-like walking component and stacks several compact elements on the right.",
-        "transitionNote": "Small Seal turns the left side into a formal 彳-like walking component and stacks several compact elements on the right.",
+        "stageExplanation": "The older taking/obtaining scene is regularized together with a formal walking or path element.",
+        "transitionNote": "The older taking/obtaining scene is regularized together with a formal walking or path element.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -464,7 +719,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/obtain/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical compresses the right side into a recognizable 日/寸-like structure while the left remains a short walking radical.",
+        "changeNoteFromPrevious": "The movement and acquisition elements compress into the familiar left-right structure of later writing.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-得"
@@ -490,8 +745,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical compresses the right side into a recognizable 日/寸-like structure while the left remains a short walking radical.",
-        "transitionNote": "Clerical compresses the right side into a recognizable 日/寸-like structure while the left remains a short walking radical.",
+        "stageExplanation": "The movement and acquisition elements compress into the familiar left-right structure of later writing.",
+        "transitionNote": "The movement and acquisition elements compress into the familiar left-right structure of later writing.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -501,7 +756,7 @@
         "label": "Regular Script",
         "form": "得",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 得 fixes 彳 on the left and the tightly stacked right component, preserving the idea of action or acquisition through a compound that is no longer pictorial.",
+        "changeNoteFromPrevious": "Later path/movement material is integrated into 得; the hand-taking-value core explains the old obtain sense.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +782,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 得 fixes 彳 on the left and the tightly stacked right component, preserving the idea of action or acquisition through a compound that is no longer pictorial.",
-        "transitionNote": "Regular 得 fixes 彳 on the left and the tightly stacked right component, preserving the idea of action or acquisition through a compound that is no longer pictorial.",
+        "stageExplanation": "Later path/movement material is integrated into 得; the hand-taking-value core explains the old obtain sense.",
+        "transitionNote": "Later path/movement material is integrated into 得; the hand-taking-value core explains the old obtain sense.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +791,7 @@
     ],
     "origin": {
       "concept": "obtain",
-      "explanation": "A traveler noticing and picking up a small valuable object from the ground.",
+      "explanation": "A hand takes a cowry shell or other valued object; a path/movement element is added in later forms.",
       "asset": {
         "characterID": "obtain",
         "historicalStage": null,
@@ -553,7 +808,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of obtain",
+        "accessibilityDescription": "Illustration of obtain / get",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -571,7 +826,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'obtain', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'obtain / get', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -641,13 +896,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

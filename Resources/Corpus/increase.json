@@ -2,8 +2,8 @@
   "id": "increase",
   "version": 1,
   "coreCharacter": "益",
-  "coreSharedMeaning": "increase",
-  "recognitionTakeaway": "Regular 益 turns the upper liquid marks into compact dots and horizontals over 皿, retaining the visual idea of something added above a container.",
+  "coreSharedMeaning": "benefit / increase",
+  "recognitionTakeaway": "The overflow graph stabilizes as 益 and develops increase/benefit senses; 溢 later carries the literal overflow verb.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+76CA",
   "simplifiedForm": "益",
@@ -15,9 +15,9 @@
     "Oracle shows a bowl or stand at the bottom with several separate droplets rising or falling above it.",
     "Regular 益 turns the upper liquid marks into compact dots and horizontals over 皿, retaining the visual idea of something added above a container."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-129-益-u76CA",
+  "contentFolder": "content/release/symbols/increase",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-129-益-u76CA/research.md",
+  "researchNotesPath": "content/release/symbols/increase/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "benefit; beneficial; increase"
       ],
       "examples": [
+        {
+          "text": "益",
+          "reading": "yì",
+          "translation": "benefit; beneficial; increase",
+          "speechText": "益",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "yì"
+          ]
+        },
         {
           "text": "利益",
           "reading": "lìyì",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "益处",
+          "reading": "yìchù",
+          "translation": "benefit; advantage",
+          "speechText": "益处",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "运动有益健康。",
           "reading": "Yùndòng yǒuyì jiànkāng.",
           "translation": "Exercise is good for health.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "益",
@@ -98,6 +127,18 @@
         "benefit; beneficial; increase"
       ],
       "taiwanExamples": [
+        {
+          "text": "益",
+          "reading": "yì",
+          "translation": "benefit; beneficial; increase",
+          "speechText": "益",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "利益",
           "reading": "lìyì",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "益",
+          "reading": "jik1",
+          "translation": "benefit; beneficial; increase",
+          "speechText": "益",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "利益",
           "reading": "lei6 jik1",
@@ -203,17 +256,33 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "益",
       "readings": [
         {
-          "system": "on",
-          "value": "エキ (eki)",
+          "system": "onyomi",
+          "value": "エキ — eki",
           "audioAssetRef": null,
           "speechText": "えき",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "エキ",
+          "romanization": "eki",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "onyomi",
+          "value": "ヤク — yaku",
+          "audioAssetRef": null,
+          "speechText": "ヤク",
+          "speechLanguage": "japanese",
+          "nativeReading": "ヤク",
+          "romanization": "yaku",
+          "historicalOrigin": "sinoJapanese",
+          "verification": "Agency for Cultural Affairs Jōyō table"
         }
       ],
       "glosses": [
@@ -232,7 +301,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "益"
-          ]
+          ],
+          "kanaReading": "りえき",
+          "coversReadings": [
+            "エキ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "利益",
+              "reading": "りえき"
+            }
+          ],
+          "furiganaHtml": "<ruby>利益<rt>りえき</rt></ruby>"
         },
         {
           "text": "有益",
@@ -246,7 +326,79 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "益"
-          ]
+          ],
+          "kanaReading": "ゆうえき",
+          "furiganaSegments": [
+            {
+              "text": "有益",
+              "reading": "ゆうえき"
+            }
+          ],
+          "furiganaHtml": "<ruby>有益<rt>ゆうえき</rt></ruby>"
+        },
+        {
+          "text": "公益",
+          "reading": "kōeki",
+          "translation": "public benefit",
+          "speechText": "公益",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こうえき",
+          "furiganaSegments": [
+            {
+              "text": "公益",
+              "reading": "こうえき"
+            }
+          ],
+          "furiganaHtml": "<ruby>公益<rt>こうえき</rt></ruby>"
+        },
+        {
+          "text": "実益",
+          "reading": "jitsueki",
+          "translation": "practical benefit",
+          "speechText": "実益",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "じつえき",
+          "furiganaSegments": [
+            {
+              "text": "実益",
+              "reading": "じつえき"
+            }
+          ],
+          "furiganaHtml": "<ruby>実益<rt>じつえき</rt></ruby>"
+        },
+        {
+          "text": "ご利益",
+          "reading": "goriyaku",
+          "translation": "divine favor; benefit",
+          "speechText": "ご利益",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "verificationRole": "readingCoverage",
+          "kanaReading": "ごりやく",
+          "coversReadings": [
+            "ヤク"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "ご"
+            },
+            {
+              "text": "利益",
+              "reading": "りやく"
+            }
+          ],
+          "furiganaHtml": "ご<ruby>利益<rt>りやく</rt></ruby>"
         },
         {
           "text": "これは有益です。",
@@ -260,20 +412,51 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "益"
-          ]
+          ],
+          "kanaReading": "これはゆうえきです。",
+          "furiganaSegments": [
+            {
+              "text": "これは"
+            },
+            {
+              "text": "有益",
+              "reading": "ゆうえき"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "これは<ruby>有益<rt>ゆうえき</rt></ruby>です。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "エキ",
+        "romanization": "eki",
+        "system": "onyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "益",
       "readings": [
         {
           "system": "hanja",
-          "value": "익 / ik",
+          "value": "익 — ik",
           "audioAssetRef": null,
           "speechText": "익",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "익",
+          "romanization": "ik"
         }
       ],
       "glosses": [
@@ -309,6 +492,30 @@
           ]
         },
         {
+          "text": "공익",
+          "reading": "gongik",
+          "translation": "public interest",
+          "speechText": "공익",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "수익",
+          "reading": "suik",
+          "translation": "profit / revenue",
+          "speechText": "수익",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "이건 유익해요.",
           "reading": "igeon yuikhaeyo.",
           "translation": "This is useful.",
@@ -323,7 +530,26 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "익 — ik",
+          "audioAssetRef": null,
+          "speechText": "익",
+          "speechLanguage": "korean",
+          "nativeReading": "익",
+          "romanization": "ik"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "익",
+        "romanization": "ik",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -332,14 +558,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "Drops falling into a shallow bowl until the water level rises and overflows.",
+    "originAnchor": "Water and a vessel combine to show liquid overflowing; this idea of abundance led to the meanings “increase” and “benefit.”",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/increase/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle shows a bowl or stand at the bottom with several separate droplets rising or falling above it.",
+        "changeNoteFromPrevious": "Liquid/water marks rise above or overflow a vessel, providing the concrete overflow image.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-益"
@@ -365,8 +591,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle shows a bowl or stand at the bottom with several separate droplets rising or falling above it.",
-        "transitionNote": "Oracle shows a bowl or stand at the bottom with several separate droplets rising or falling above it.",
+        "stageExplanation": "Liquid/water marks rise above or overflow a vessel, providing the concrete overflow image.",
+        "transitionNote": "Liquid/water marks rise above or overflow a vessel, providing the concrete overflow image.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -376,7 +602,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/increase/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze keeps the basin and reduces the upper marks to two strong droplet-like strokes around a central dot.",
+        "changeNoteFromPrevious": "Keeps the basin and reduces the upper marks to two strong droplet-like strokes around a central dot.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-益"
@@ -402,8 +628,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze keeps the basin and reduces the upper marks to two strong droplet-like strokes around a central dot.",
-        "transitionNote": "Bronze keeps the basin and reduces the upper marks to two strong droplet-like strokes around a central dot.",
+        "stageExplanation": "Keeps the basin and reduces the upper marks to two strong droplet-like strokes around a central dot.",
+        "transitionNote": "Keeps the basin and reduces the upper marks to two strong droplet-like strokes around a central dot.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -413,7 +639,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/increase/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal replaces individual drops with several long wave-like lines above a formal pedestal vessel.",
+        "changeNoteFromPrevious": "Replaces individual drops with several long wave-like lines above a formal pedestal vessel.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-益"
@@ -439,8 +665,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal replaces individual drops with several long wave-like lines above a formal pedestal vessel.",
-        "transitionNote": "Small Seal replaces individual drops with several long wave-like lines above a formal pedestal vessel.",
+        "stageExplanation": "Replaces individual drops with several long wave-like lines above a formal pedestal vessel.",
+        "transitionNote": "Replaces individual drops with several long wave-like lines above a formal pedestal vessel.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -450,7 +676,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/increase/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical flattens the waves into short horizontal marks and compresses the vessel into a broad 皿-like base.",
+        "changeNoteFromPrevious": "Flattens the waves into short horizontal marks and compresses the vessel into a broad vessel sign-like base.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-益"
@@ -476,8 +702,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical flattens the waves into short horizontal marks and compresses the vessel into a broad 皿-like base.",
-        "transitionNote": "Clerical flattens the waves into short horizontal marks and compresses the vessel into a broad 皿-like base.",
+        "stageExplanation": "Flattens the waves into short horizontal marks and compresses the vessel into a broad vessel sign-like base.",
+        "transitionNote": "Flattens the waves into short horizontal marks and compresses the vessel into a broad vessel sign-like base.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -487,7 +713,7 @@
         "label": "Regular Script",
         "form": "益",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 益 turns the upper liquid marks into compact dots and horizontals over 皿, retaining the visual idea of something added above a container.",
+        "changeNoteFromPrevious": "The overflow graph stabilizes as 益 and develops increase/benefit senses; 溢 later carries the literal overflow verb.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -513,8 +739,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 益 turns the upper liquid marks into compact dots and horizontals over 皿, retaining the visual idea of something added above a container.",
-        "transitionNote": "Regular 益 turns the upper liquid marks into compact dots and horizontals over 皿, retaining the visual idea of something added above a container.",
+        "stageExplanation": "The overflow graph stabilizes as 益 and develops increase/benefit senses; 溢 later carries the literal overflow verb.",
+        "transitionNote": "The overflow graph stabilizes as 益 and develops increase/benefit senses; 溢 later carries the literal overflow verb.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -522,7 +748,7 @@
     ],
     "origin": {
       "concept": "increase",
-      "explanation": "Drops falling into a shallow bowl until the water level rises and overflows.",
+      "explanation": "Water or liquid rises and overflows from a vessel.",
       "asset": {
         "characterID": "increase",
         "historicalStage": null,
@@ -539,7 +765,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of increase",
+        "accessibilityDescription": "Illustration of benefit / increase",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -557,7 +783,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'increase', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'benefit / increase', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -627,13 +853,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

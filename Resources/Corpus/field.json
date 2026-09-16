@@ -3,7 +3,7 @@
   "version": 1,
   "coreCharacter": "田",
   "coreSharedMeaning": "field",
-  "recognitionTakeaway": "Regular 田 tightens the enclosure back toward a square and keeps the central cross, preserving the four-plot field pattern almost unchanged.",
+  "recognitionTakeaway": "Tightens the enclosure back toward a square and keeps the central cross, preserving the four-plot field pattern almost unchanged.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+7530",
   "simplifiedForm": "田",
@@ -15,9 +15,9 @@
     "An irregular outer boundary is crossed by several internal lines, creating a grid of many field sections.",
     "Regular 田 tightens the enclosure back toward a square and keeps the central cross, preserving the four-plot field pattern almost unchanged."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-030-田-u7530",
+  "contentFolder": "content/release/symbols/field",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-030-田-u7530/research.md",
+  "researchNotesPath": "content/release/symbols/field/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "field"
       ],
       "examples": [
+        {
+          "text": "田",
+          "reading": "tián",
+          "translation": "field",
+          "speechText": "田",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "tián"
+          ]
+        },
         {
           "text": "田地",
           "reading": "tiándì",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "田野",
+          "reading": "tiányě",
+          "translation": "fields; countryside",
+          "speechText": "田野",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "田里有水。",
           "reading": "Tián lǐ yǒu shuǐ.",
           "translation": "There is water in the field.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "田",
@@ -98,6 +127,18 @@
         "field"
       ],
       "taiwanExamples": [
+        {
+          "text": "田",
+          "reading": "tián",
+          "translation": "field",
+          "speechText": "田",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "田地",
           "reading": "tiándì",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "田",
+          "reading": "tin4",
+          "translation": "field",
+          "speechText": "田",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "田地",
           "reading": "tin4 dei6",
@@ -203,24 +256,32 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "田",
       "readings": [
         {
-          "system": "on",
-          "value": "デン (den)",
+          "system": "onyomi",
+          "value": "デン — den",
           "audioAssetRef": null,
           "speechText": "でん",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "デン",
+          "romanization": "den",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "た (ta)",
+          "system": "kunyomi",
+          "value": "た — ta",
           "audioAssetRef": null,
           "speechText": "た",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "た",
+          "romanization": "ta",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -239,7 +300,18 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "田"
-          ]
+          ],
+          "kanaReading": "た",
+          "coversReadings": [
+            "た"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "田",
+              "reading": "た"
+            }
+          ],
+          "furiganaHtml": "<ruby>田<rt>た</rt></ruby>"
         },
         {
           "text": "田んぼ",
@@ -253,47 +325,140 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "田"
-          ]
+          ],
+          "kanaReading": "たんぼ",
+          "furiganaSegments": [
+            {
+              "text": "田",
+              "reading": "た"
+            },
+            {
+              "text": "んぼ"
+            }
+          ],
+          "furiganaHtml": "<ruby>田<rt>た</rt></ruby>んぼ"
         },
         {
-          "text": "田んぼに水があります。",
-          "reading": "tanbo ni mizu ga arimasu.",
-          "translation": "There is water in the rice field.",
-          "speechText": "田んぼに水があります。",
+          "text": "田園",
+          "reading": "denen",
+          "translation": "countryside; fields",
+          "speechText": "田園",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "でねん",
+          "furiganaSegments": [
+            {
+              "text": "田園",
+              "reading": "でねん"
+            }
+          ],
+          "furiganaHtml": "<ruby>田園<rt>でねん</rt></ruby>"
+        },
+        {
+          "text": "水田",
+          "reading": "suiden",
+          "translation": "rice paddy",
+          "speechText": "水田",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "すいでん",
+          "coversReadings": [
+            "デン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "水田",
+              "reading": "すいでん"
+            }
+          ],
+          "furiganaHtml": "<ruby>水田<rt>すいでん</rt></ruby>"
+        },
+        {
+          "text": "田んぼは広いです。",
+          "reading": "tanbo wa hiroi desu.",
+          "translation": "The rice field is wide.",
+          "speechText": "田んぼは広いです。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "田"
-          ]
+          "introducedSymbols": [],
+          "kanaReading": "たんぼはひろいです。",
+          "furiganaSegments": [
+            {
+              "text": "田",
+              "reading": "た"
+            },
+            {
+              "text": "んぼは"
+            },
+            {
+              "text": "広",
+              "reading": "ひろ"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>田<rt>た</rt></ruby>んぼは<ruby>広<rt>ひろ</rt></ruby>いです。"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "た",
+        "romanization": "ta",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "田",
       "readings": [
         {
           "system": "hanja",
-          "value": "전 / jeon",
+          "value": "전 — jeon",
           "audioAssetRef": null,
           "speechText": "전",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "밭 / bat",
-          "audioAssetRef": null,
-          "speechText": "밭",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "전",
+          "romanization": "jeon"
         }
       ],
       "glosses": [
         "field"
       ],
       "examples": [
+        {
+          "text": "밭",
+          "reading": "bat",
+          "translation": "field",
+          "speechText": "밭",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "전답",
           "reading": "jeondap",
@@ -323,6 +488,18 @@
           ]
         },
         {
+          "text": "전원",
+          "reading": "jeonwon",
+          "translation": "countryside",
+          "speechText": "전원",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "밭에 물을 줘요.",
           "reading": "bate mureul jwoyo.",
           "translation": "I water the field.",
@@ -337,7 +514,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "전 — jeon",
+          "audioAssetRef": null,
+          "speechText": "전",
+          "speechLanguage": "korean",
+          "nativeReading": "전",
+          "romanization": "jeon"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "밭 — bat",
+          "audioAssetRef": null,
+          "speechText": "밭",
+          "speechLanguage": "korean",
+          "nativeReading": "밭",
+          "romanization": "bat",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "field",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "전",
+        "romanization": "jeon",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -346,7 +562,7 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A cultivated field divided into four rectangular plots.",
+    "originAnchor": "A cultivated field divided into plots.",
     "stages": [
       {
         "stage": "oracleBone",
@@ -501,7 +717,7 @@
         "label": "Regular Script",
         "form": "田",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 田 tightens the enclosure back toward a square and keeps the central cross, preserving the four-plot field pattern almost unchanged.",
+        "changeNoteFromPrevious": "Tightens the enclosure back toward a square and keeps the central cross, preserving the four-plot field pattern almost unchanged.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -527,8 +743,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 田 tightens the enclosure back toward a square and keeps the central cross, preserving the four-plot field pattern almost unchanged.",
-        "transitionNote": "Regular 田 tightens the enclosure back toward a square and keeps the central cross, preserving the four-plot field pattern almost unchanged.",
+        "stageExplanation": "Tightens the enclosure back toward a square and keeps the central cross, preserving the four-plot field pattern almost unchanged.",
+        "transitionNote": "Tightens the enclosure back toward a square and keeps the central cross, preserving the four-plot field pattern almost unchanged.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -536,7 +752,7 @@
     ],
     "origin": {
       "concept": "field",
-      "explanation": "A cultivated field divided into four rectangular plots.",
+      "explanation": "A cultivated field divided into plots/paths.",
       "asset": {
         "characterID": "field",
         "historicalStage": null,
@@ -641,13 +857,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }

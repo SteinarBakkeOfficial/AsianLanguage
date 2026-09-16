@@ -1,0 +1,872 @@
+{
+  "id": "winter",
+  "version": 1,
+  "coreCharacter": "冬",
+  "coreSharedMeaning": "winter (earlier “end”)",
+  "recognitionTakeaway": "The graph specializes as 冬 for winter, while 終 later preserves the general “end” sense with an added silk component.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+51AC",
+  "simplifiedForm": "冬",
+  "traditionalForm": "冬",
+  "additionalMeanings": [],
+  "formationType": "simpleIdeograph",
+  "visualTeachingNotes": [
+    "A person moving across ice, with a weak winter sun and frozen blocks shown below.",
+    "Oracle is simply a broad arch with hooked ends; it does not resemble snow, ice, or the modern character in any obvious way.",
+    "Regular 冬 reduces the old complexity to the descending 夂-like top and two small lower dots, a very compact endpoint compared with the intermediate forms."
+  ],
+  "contentFolder": "content/release/symbols/winter",
+  "learnerCopyPath": null,
+  "researchNotesPath": "content/release/symbols/winter/research.md",
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 118,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "冬",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "dōng",
+          "audioAssetRef": null,
+          "speechText": "冬",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "winter"
+      ],
+      "examples": [
+        {
+          "text": "冬",
+          "reading": "dōng",
+          "translation": "winter",
+          "speechText": "冬",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "dōng"
+          ]
+        },
+        {
+          "text": "冬天",
+          "reading": "dōngtiān",
+          "translation": "winter",
+          "speechText": "冬天",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        },
+        {
+          "text": "冬季",
+          "reading": "dōngjì",
+          "translation": "winter season",
+          "speechText": "冬季",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        },
+        {
+          "text": "冬日",
+          "reading": "dōngrì",
+          "translation": "winter day",
+          "speechText": "冬日",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "冬天很冷。",
+          "reading": "Dōngtiān hěn lěng.",
+          "translation": "Winter is cold.",
+          "speechText": "冬天很冷。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "冬",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "dōng",
+          "audioAssetRef": null,
+          "speechText": "冬",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "winter"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "冬",
+          "reading": "dōng",
+          "translation": "winter",
+          "speechText": "冬",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "冬天",
+          "reading": "dōngtiān",
+          "translation": "winter",
+          "speechText": "冬天",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        },
+        {
+          "text": "冬季",
+          "reading": "dōngjì",
+          "translation": "winter season",
+          "speechText": "冬季",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        },
+        {
+          "text": "冬天很冷。",
+          "reading": "Dōngtiān hěn lěng.",
+          "translation": "Winter is cold.",
+          "speechText": "冬天很冷。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "冬",
+          "reading": "dung1",
+          "translation": "winter",
+          "speechText": "冬",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "冬天",
+          "reading": "dung1 tin1",
+          "translation": "winter",
+          "speechText": "冬天",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        },
+        {
+          "text": "冬季",
+          "reading": "dung1 gwai3",
+          "translation": "winter season",
+          "speechText": "冬季",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        },
+        {
+          "text": "冬天好凍。",
+          "reading": "dung1 tin1 hou2 dung3",
+          "translation": "Winter is cold.",
+          "speechText": "冬天好凍。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "dōng",
+          "audioAssetRef": null,
+          "speechText": "冬",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "dung1",
+          "audioAssetRef": null,
+          "speechText": "冬",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "冬",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "トウ — tō",
+          "audioAssetRef": null,
+          "speechText": "とう",
+          "speechLanguage": "japanese",
+          "nativeReading": "トウ",
+          "romanization": "tō",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "ふゆ — fuyu",
+          "audioAssetRef": null,
+          "speechText": "ふゆ",
+          "speechLanguage": "japanese",
+          "nativeReading": "ふゆ",
+          "romanization": "fuyu",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "winter"
+      ],
+      "examples": [
+        {
+          "text": "冬",
+          "reading": "fuyu",
+          "translation": "winter",
+          "speechText": "冬",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ],
+          "kanaReading": "ふゆ",
+          "coversReadings": [
+            "ふゆ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "冬",
+              "reading": "ふゆ"
+            }
+          ],
+          "furiganaHtml": "<ruby>冬<rt>ふゆ</rt></ruby>"
+        },
+        {
+          "text": "冬休み",
+          "reading": "fuyuyasumi",
+          "translation": "winter vacation",
+          "speechText": "冬休み",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ],
+          "kanaReading": "ふゆやすみ",
+          "furiganaSegments": [
+            {
+              "text": "冬休",
+              "reading": "ふゆやす"
+            },
+            {
+              "text": "み"
+            }
+          ],
+          "furiganaHtml": "<ruby>冬休<rt>ふゆやす</rt></ruby>み"
+        },
+        {
+          "text": "冬季",
+          "reading": "tōki",
+          "translation": "winter season",
+          "speechText": "冬季",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "とうき",
+          "coversReadings": [
+            "トウ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "冬季",
+              "reading": "とうき"
+            }
+          ],
+          "furiganaHtml": "<ruby>冬季<rt>とうき</rt></ruby>"
+        },
+        {
+          "text": "真冬",
+          "reading": "mafuyu",
+          "translation": "midwinter",
+          "speechText": "真冬",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "まふゆ",
+          "furiganaSegments": [
+            {
+              "text": "真冬",
+              "reading": "まふゆ"
+            }
+          ],
+          "furiganaHtml": "<ruby>真冬<rt>まふゆ</rt></ruby>"
+        },
+        {
+          "text": "冬は寒いです。",
+          "reading": "fuyu wa samui desu.",
+          "translation": "Winter is cold.",
+          "speechText": "冬は寒いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ],
+          "kanaReading": "ふゆはさむいです。",
+          "furiganaSegments": [
+            {
+              "text": "冬",
+              "reading": "ふゆ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "寒",
+              "reading": "さむ"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>寒<rt>さむ</rt></ruby>いです。"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ふゆ",
+        "romanization": "fuyu",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "冬",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "동 — dong",
+          "audioAssetRef": null,
+          "speechText": "동",
+          "speechLanguage": "korean",
+          "nativeReading": "동",
+          "romanization": "dong"
+        }
+      ],
+      "glosses": [
+        "winter"
+      ],
+      "examples": [
+        {
+          "text": "겨울",
+          "reading": "gyeoul",
+          "translation": "winter",
+          "speechText": "겨울",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "동계",
+          "reading": "donggye",
+          "translation": "winter season",
+          "speechText": "동계",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        },
+        {
+          "text": "동절기",
+          "reading": "dongjeolgi",
+          "translation": "winter season",
+          "speechText": "동절기",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "겨울방학",
+          "reading": "gyeoulbanghak",
+          "translation": "winter vacation",
+          "speechText": "겨울방학",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "겨울은 추워요.",
+          "reading": "gyeoureun chuwoyo.",
+          "translation": "Winter is cold.",
+          "speechText": "겨울은 추워요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "冬"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "동 — dong",
+          "audioAssetRef": null,
+          "speechText": "동",
+          "speechLanguage": "korean",
+          "nativeReading": "동",
+          "romanization": "dong"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "겨울 — gyeoul",
+          "audioAssetRef": null,
+          "speechText": "겨울",
+          "speechLanguage": "korean",
+          "nativeReading": "겨울",
+          "romanization": "gyeoul",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "winter",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "동",
+        "romanization": "dong",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+  "originAnchor": "A cord tied at both ends suggests an ending. The winter sense developed later from the end of the yearly cycle, not by a simple sound borrowing.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/winter/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "The early cord-like form represents an ending in the leading analysis; the lower marks are not yet secure ice signs.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-冬"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "冬",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%86%AC/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/43_F0F5.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/winter/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/winter/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "冬 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A cord/string with tied ends represents an ending in the leading analysis; the later lower dots are not primordial ice marks.",
+        "transitionNote": "The early cord-like form represents an ending in the leading analysis; the lower marks are not yet secure ice signs.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/winter/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "Adds a small roofed or enclosed shape above a long vertical and horizontal line, creating a much more structured sign.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-冬"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "冬",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%86%AC/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/33_ED60.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/winter/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/winter/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "冬 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Adds a small roofed or enclosed shape above a long vertical and horizontal line, creating a much more structured sign.",
+        "transitionNote": "Adds a small roofed or enclosed shape above a long vertical and horizontal line, creating a much more structured sign.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/winter/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Replaces that arrangement with a capped upper enclosure over two pairs of downward strokes.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-冬"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "冬",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%86%AC/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_51AC.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/winter/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/winter/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "冬 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Replaces that arrangement with a capped upper enclosure over two pairs of downward strokes.",
+        "transitionNote": "Replaces that arrangement with a capped upper enclosure over two pairs of downward strokes.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/winter/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "Compresses the lower marks into two sweeping diagonals and a short center, bringing the form close to winter form.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-冬"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "冬",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E5%86%AC/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_EBE6.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/winter/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/winter/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "冬 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Compresses the lower marks into two sweeping diagonals and a short center, bringing the form close to winter form.",
+        "transitionNote": "Compresses the lower marks into two sweeping diagonals and a short center, bringing the form close to winter form.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "冬",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The graph became the dedicated sign for winter, while the general ending sense was written separately with a silk-related addition.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "冬",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "冬 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The graph specializes as 冬 for winter, while 終 later preserves the general “end” sense with an added silk component.",
+        "transitionNote": "The graph became the dedicated sign for winter, while the general ending sense was written separately with a silk-related addition.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "winter",
+      "explanation": "A cord/string with tied ends, representing an ending/termination in a leading account.",
+      "asset": {
+        "characterID": "winter",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/winter/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of winter",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-冬"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "The research record describes this structure as ⿱夂⺀[GTJV].",
+    "components": [],
+    "certainty": "high",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-冬"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'winter (earlier “end”)', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "evobc",
+      "label": "EVOBC historical stage metadata and image index",
+      "type": "research",
+      "citation": "Oracle Bone/Bronze/Seal/Spring-Autumn/Warring-States/Clerical stage inventory. License/rights note: CC BY-NC-SA 4.0.",
+      "url": "https://huggingface.co/datasets/HaisuGuan/EVOBC"
+    },
+    {
+      "id": "hanzi-etymology",
+      "label": "Hanzi/Kanji Etymology Dictionary",
+      "type": "research",
+      "citation": "Formation, IDS, etymology notes, readings, confidence, and historical-glyph metadata. License/rights note: Mixed upstream licenses; review per field.",
+      "url": "https://github.com/lbm364dl/hanzi-etymology-dict"
+    },
+    {
+      "id": "dong-chinese",
+      "label": "Dong Chinese historical glyphs",
+      "type": "research",
+      "citation": "Locally copied open Oracle/Bronze/Seal SVGs where available. License/rights note: CC BY-SA 4.0.",
+      "url": "https://www.dong-chinese.com/wiki/%E5%86%AC"
+    },
+    {
+      "id": "academia-sinica",
+      "label": "Academia Sinica Xiaoxuetang",
+      "type": "research",
+      "citation": "Independent historical evolution confirmation target. License/rights note: Source consultation required.",
+      "url": "https://xiaoxue.iis.sinica.edu.tw/guide/"
+    },
+    {
+      "id": "source-zdic-冬",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E5%86%AC"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-冬",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

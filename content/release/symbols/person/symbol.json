@@ -1,0 +1,854 @@
+{
+  "id": "person",
+  "version": 1,
+  "coreCharacter": "人",
+  "coreSharedMeaning": "person",
+  "recognitionTakeaway": "The standing human profile is abstracted into the familiar two-stroke 人.",
+  "publicationStatus": "draft",
+  "unicodeCodePoint": "U+4EBA",
+  "simplifiedForm": "人",
+  "traditionalForm": "人",
+  "additionalMeanings": [],
+  "formationType": "uncertain",
+  "visualTeachingNotes": [
+    "A person walking in side view.",
+    "The human figure is reduced to a very narrow profile: a small upper bend and one long body-leg stroke.",
+    "Regular 人 stabilizes those two strokes into the familiar left-falling and right-falling pair."
+  ],
+  "contentFolder": "content/release/symbols/person",
+  "learnerCopyPath": null,
+  "researchNotesPath": null,
+  "reviewPath": null,
+  "sourceConflicts": [],
+  "editorialStatus": "needsReview",
+  "teachingSequence": 18,
+  "focusCoverage": {
+    "simplifiedChinese": {
+      "form": "人",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "rén",
+          "audioAssetRef": null,
+          "speechText": "人",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "person"
+      ],
+      "examples": [
+        {
+          "text": "人",
+          "reading": "rén",
+          "translation": "person",
+          "speechText": "人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ],
+          "coversReadings": [
+            "rén"
+          ]
+        },
+        {
+          "text": "大人",
+          "reading": "dàrén",
+          "translation": "adult",
+          "speechText": "大人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        },
+        {
+          "text": "人们",
+          "reading": "rénmen",
+          "translation": "people",
+          "speechText": "人们",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "人口",
+          "reading": "rénkǒu",
+          "translation": "population",
+          "speechText": "人口",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "那里有很多人。",
+          "reading": "Nàli yǒu hěn duō rén.",
+          "translation": "There are many people there.",
+          "speechText": "那里有很多人。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "traditionalChinese": {
+      "form": "人",
+      "readings": [
+        {
+          "system": "pinyin",
+          "value": "rén",
+          "audioAssetRef": null,
+          "speechText": "人",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "glosses": [
+        "person"
+      ],
+      "taiwanExamples": [
+        {
+          "text": "人",
+          "reading": "rén",
+          "translation": "person",
+          "speechText": "人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        },
+        {
+          "text": "大人",
+          "reading": "dàrén",
+          "translation": "adult",
+          "speechText": "大人",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        },
+        {
+          "text": "人們",
+          "reading": "rénmen",
+          "translation": "people",
+          "speechText": "人們",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "那裡有很多人。",
+          "reading": "Nàli yǒu hěn duō rén.",
+          "translation": "There are many people there.",
+          "speechText": "那裡有很多人。",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        }
+      ],
+      "hongKongExamples": [
+        {
+          "text": "人",
+          "reading": "jan4",
+          "translation": "person",
+          "speechText": "人",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        },
+        {
+          "text": "大人",
+          "reading": "daai6 jan4",
+          "translation": "adult",
+          "speechText": "大人",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        },
+        {
+          "text": "人口",
+          "reading": "jan4 hau2",
+          "translation": "population",
+          "speechText": "人口",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "呢度好多人。",
+          "reading": "ni1 dou6 hou2 do1 jan4",
+          "translation": "There are many people here.",
+          "speechText": "呢度好多人。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        }
+      ],
+      "taiwanReadings": [
+        {
+          "system": "pinyin",
+          "value": "rén",
+          "audioAssetRef": null,
+          "speechText": "人",
+          "speechLanguage": "mandarin"
+        }
+      ],
+      "hongKongReadings": [
+        {
+          "system": "jyutping",
+          "value": "jan4",
+          "audioAssetRef": null,
+          "speechText": "人",
+          "speechLanguage": "cantonese"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+    },
+    "japanese": {
+      "form": "人",
+      "readings": [
+        {
+          "system": "onyomi",
+          "value": "ジン — jin",
+          "audioAssetRef": null,
+          "speechText": "じん",
+          "speechLanguage": "japanese",
+          "nativeReading": "ジン",
+          "romanization": "jin",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "onyomi",
+          "value": "ニン — nin",
+          "audioAssetRef": null,
+          "speechText": "にん",
+          "speechLanguage": "japanese",
+          "nativeReading": "ニン",
+          "romanization": "nin",
+          "historicalOrigin": "sinoJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "ひと — hito",
+          "audioAssetRef": null,
+          "speechText": "ひと",
+          "speechLanguage": "japanese",
+          "nativeReading": "ひと",
+          "romanization": "hito",
+          "historicalOrigin": "nativeJapanese"
+        }
+      ],
+      "glosses": [
+        "person"
+      ],
+      "examples": [
+        {
+          "text": "人",
+          "reading": "hito",
+          "translation": "person",
+          "speechText": "人",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ],
+          "kanaReading": "ひと",
+          "coversReadings": [
+            "ひと"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "人",
+              "reading": "ひと"
+            }
+          ],
+          "furiganaHtml": "<ruby>人<rt>ひと</rt></ruby>"
+        },
+        {
+          "text": "日本人",
+          "reading": "nihonjin",
+          "translation": "Japanese person",
+          "speechText": "日本人",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ],
+          "kanaReading": "にほんじん",
+          "coversReadings": [
+            "ジン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "日本人",
+              "reading": "にほんじん"
+            }
+          ],
+          "furiganaHtml": "<ruby>日本人<rt>にほんじん</rt></ruby>"
+        },
+        {
+          "text": "人間",
+          "reading": "ningen",
+          "translation": "human being",
+          "speechText": "人間",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "にんげん",
+          "coversReadings": [
+            "ニン"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "人間",
+              "reading": "にんげん"
+            }
+          ],
+          "furiganaHtml": "<ruby>人間<rt>にんげん</rt></ruby>"
+        },
+        {
+          "text": "人口",
+          "reading": "jinkō",
+          "translation": "population",
+          "speechText": "人口",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "じんこう",
+          "furiganaSegments": [
+            {
+              "text": "人口",
+              "reading": "じんこう"
+            }
+          ],
+          "furiganaHtml": "<ruby>人口<rt>じんこう</rt></ruby>"
+        },
+        {
+          "text": "人が多いです。",
+          "reading": "hito ga ōi desu.",
+          "translation": "There are many people.",
+          "speechText": "人が多いです。",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ],
+          "kanaReading": "ひとがおおいです。",
+          "furiganaSegments": [
+            {
+              "text": "人",
+              "reading": "ひと"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "多",
+              "reading": "おお"
+            },
+            {
+              "text": "いです"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いです。"
+        }
+      ],
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "ひと",
+        "romanization": "hito",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
+    },
+    "korean": {
+      "form": "人",
+      "readings": [
+        {
+          "system": "hanja",
+          "value": "인 — in",
+          "audioAssetRef": null,
+          "speechText": "인",
+          "speechLanguage": "korean",
+          "nativeReading": "인",
+          "romanization": "in"
+        }
+      ],
+      "glosses": [
+        "person"
+      ],
+      "examples": [
+        {
+          "text": "사람",
+          "reading": "saram",
+          "translation": "person",
+          "speechText": "사람",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
+        {
+          "text": "인구",
+          "reading": "ingu",
+          "translation": "population",
+          "speechText": "인구",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        },
+        {
+          "text": "외국인",
+          "reading": "oegugin",
+          "translation": "foreigner",
+          "speechText": "외국인",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        },
+        {
+          "text": "인간",
+          "reading": "ingan",
+          "translation": "human being",
+          "speechText": "인간",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "사람이 많아요.",
+          "reading": "sarami manayo.",
+          "translation": "There are many people.",
+          "speechText": "사람이 많아요.",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "人"
+          ]
+        }
+      ],
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "인 — in",
+          "audioAssetRef": null,
+          "speechText": "인",
+          "speechLanguage": "korean",
+          "nativeReading": "인",
+          "romanization": "in"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "사람 — saram",
+          "audioAssetRef": null,
+          "speechText": "사람",
+          "speechLanguage": "korean",
+          "nativeReading": "사람",
+          "romanization": "saram",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "person",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "인",
+        "romanization": "in",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
+    }
+  },
+  "visuals": {
+    "evolutionAssetRefs": null,
+    "assetStatus": "local-source-backed-draft",
+    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+  },
+  "history": {
+    "originAnchor": "A person shown in side profile.",
+    "stages": [
+      {
+        "stage": "oracleBone",
+        "label": "Oracle Bone / 甲骨文",
+        "form": null,
+        "assetRef": "Assets/Symbols/person/historical/oracleBone/glyph.svg",
+        "changeNoteFromPrevious": "A side-profile standing person is reduced to a few strokes, with the arm hanging from the body.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-人"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "人",
+          "historicalStage": "oracleBone",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%BA/jiaguwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jiaguwen/42_F481.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/person/historical/oracleBone/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/person/historical/oracleBone/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "人 in Oracle Bone / 甲骨文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "A side-profile standing person is reduced to a few strokes, with the arm hanging from the body.",
+        "transitionNote": "A side-profile standing person is reduced to a few strokes, with the arm hanging from the body.",
+        "transitionNoteNeedsReview": true,
+        "materialProcessCaption": "Bone / shell · carved",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "bronze",
+        "label": "Bronze / 金文",
+        "form": null,
+        "assetRef": "Assets/Symbols/person/historical/bronze/glyph.svg",
+        "changeNoteFromPrevious": "The profile becomes a broader bent figure with a curved back and a short projecting limb.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-人"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "人",
+          "historicalStage": "bronze",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%BA/jinwen",
+          "sourceAssetURL": "https://img.zdic.net/zy/jinwen/32_F71B.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/person/historical/bronze/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/person/historical/bronze/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "人 in Bronze / 金文",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The profile becomes a broader bent figure with a curved back and a short projecting limb.",
+        "transitionNote": "The profile becomes a broader bent figure with a curved back and a short projecting limb.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bronze vessel · cast / inscribed",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "seal",
+        "label": "Small Seal / 小篆",
+        "form": null,
+        "assetRef": "Assets/Symbols/person/historical/seal/glyph.svg",
+        "changeNoteFromPrevious": "Two smooth sweeping strokes create a tall, open human silhouette with a clear split at the bottom.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-人"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "人",
+          "historicalStage": "seal",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%BA/xiaozhuan",
+          "sourceAssetURL": "https://img.zdic.net/zy/xiaozhuan/27_4EBA.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/person/historical/seal/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/person/historical/seal/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "人 in Small Seal / 小篆",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "Two smooth sweeping strokes create a tall, open human silhouette with a clear split at the bottom.",
+        "transitionNote": "Two smooth sweeping strokes create a tall, open human silhouette with a clear split at the bottom.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Bamboo / manuscript · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "clerical",
+        "label": "Clerical / 隶书",
+        "form": null,
+        "assetRef": "Assets/Symbols/person/historical/clerical/glyph.svg",
+        "changeNoteFromPrevious": "The figure is dramatically flattened into two broad, sloping brush strokes; the body is no longer pictorial.",
+        "certainty": "supported",
+        "sourceIds": [
+          "source-zdic-人"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "人",
+          "historicalStage": "clerical",
+          "approximatePeriod": null,
+          "sourceInstitution": "漢典 / ZDIC",
+          "sourcePageURL": "https://zdic.net/hans/%E4%BA%BA/lishu",
+          "sourceAssetURL": "https://img.zdic.net/zy/lishu/71_E895.svg",
+          "catalogueReference": "ZDIC selected variant 1",
+          "sourceDescription": "Selected and normalized ZDIC historical glyph; the historical glyph itself is preserved.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Symbols/person/historical/clerical/glyph.svg",
+          "artifactAssetRef": "Assets/Symbols/person/historical/clerical/source-original.svg",
+          "assetKind": "historical-glyph",
+          "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
+          "licenseStatus": "zdic-reuse-review-required",
+          "accessibilityDescription": "人 in Clerical / 隶书",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The figure is dramatically flattened into two broad, sloping brush strokes; the body is no longer pictorial.",
+        "transitionNote": "The figure is dramatically flattened into two broad, sloping brush strokes; the body is no longer pictorial.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      },
+      {
+        "stage": "regular",
+        "label": "Regular Script",
+        "form": "人",
+        "assetRef": null,
+        "changeNoteFromPrevious": "The standing human profile is abstracted into the familiar two-stroke 人.",
+        "certainty": "high",
+        "sourceIds": [
+          "source-kai-font"
+        ],
+        "historicalSound": null,
+        "assetMetadata": {
+          "characterID": "人",
+          "historicalStage": "regular",
+          "approximatePeriod": "modern reference endpoint",
+          "sourceInstitution": "CNS11643",
+          "sourcePageURL": "https://www.cns11643.gov.tw",
+          "sourceAssetURL": null,
+          "catalogueReference": "TW-Kai-98_1.ttf",
+          "sourceDescription": "Modern standardized Kai reference rendering used as the consistent Regular Script endpoint.",
+          "retrievedAt": "2026-09-03",
+          "contentClass": "historicalEvidence",
+          "assetRef": "Assets/Fonts/TW-Kai-98_1.ttf",
+          "artifactAssetRef": null,
+          "assetKind": "font-glyph-rendering",
+          "provenance": "Bundled CNS11643 正楷體 font renderer",
+          "licenseStatus": "see bundled CNS11643 notice",
+          "accessibilityDescription": "人 in Regular Script",
+          "readiness": "needsReview"
+        },
+        "introducedComponentIds": [],
+        "stageExplanation": "The standing human profile is abstracted into the familiar two-stroke 人.",
+        "transitionNote": "The standing human profile is abstracted into the familiar two-stroke 人.",
+        "transitionNoteNeedsReview": false,
+        "materialProcessCaption": "Paper · brush",
+        "availabilityState": "available"
+      }
+    ],
+    "origin": {
+      "concept": "person",
+      "explanation": "A human figure in side profile, standing with the arm hanging.",
+      "asset": {
+        "characterID": "person",
+        "historicalStage": null,
+        "approximatePeriod": null,
+        "sourceInstitution": "Script Roots",
+        "sourcePageURL": null,
+        "sourceAssetURL": null,
+        "catalogueReference": null,
+        "sourceDescription": "Internal educational reconstruction; not historical evidence.",
+        "retrievedAt": "2026-09-03",
+        "contentClass": "educationalReconstruction",
+        "assetRef": "Assets/Symbols/person/educational/origin.png",
+        "artifactAssetRef": null,
+        "assetKind": "illustrated-concept",
+        "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
+        "licenseStatus": "internal-authored",
+        "accessibilityDescription": "Illustration of person",
+        "readiness": "needsReview"
+      },
+      "sourceIds": [
+        "source-generated-origin-人"
+      ]
+    }
+  },
+  "structure": {
+    "summary": "人 is presented first as a complete shared character.",
+    "components": [],
+    "certainty": "medium",
+    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "sourceIds": [
+      "source-zdic-人"
+    ]
+  },
+  "usage": {
+    "coreMeaningFirst": "Start with 'person', then compare the modern forms and readings across the four focus tracks.",
+    "notes": [
+      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Japanese and Korean regional forms are rendered through their intentional locale font roles."
+    ],
+    "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
+  },
+  "sources": [
+    {
+      "id": "source-zdic-人",
+      "label": "漢典 / ZDIC selected historical glyphs",
+      "type": "historical-asset",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "url": "https://zdic.net/hans/%E4%BA%BA"
+    },
+    {
+      "id": "source-kai-font",
+      "label": "CNS11643 Full Character Set — 正楷體",
+      "type": "font",
+      "citation": "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile.",
+      "url": "https://www.cns11643.gov.tw"
+    },
+    {
+      "id": "source-source-han-serif",
+      "label": "Adobe Source Han Serif",
+      "type": "font",
+      "citation": "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1.",
+      "url": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    {
+      "id": "source-generated-origin-人",
+      "label": "Script Roots origin illustration",
+      "type": "educational-asset",
+      "citation": "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence.",
+      "url": "https://openai.com/index/image-generation-api/"
+    }
+  ],
+  "notes": [
+    "V1 runtime import from the 126-character complete-evolution manifest.",
+    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Origin artwork is an educational reconstruction, not historical evidence.",
+    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+  ],
+  "targetLanguageEditorialStatus": "curated-2026-09-05",
+  "targetLanguageEditorialPrinciples": [
+    "TTS speechText is native-script text for the selected language; romanization is display-only.",
+    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
+    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
+    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
+    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
+  ]
+}
+

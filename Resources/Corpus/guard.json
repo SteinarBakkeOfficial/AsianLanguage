@@ -2,8 +2,8 @@
   "id": "guard",
   "version": 1,
   "coreCharacter": "守",
-  "coreSharedMeaning": "guard",
-  "recognitionTakeaway": "Regular 守 fixes 宀 over 寸, making the “hand/action under a roof” structure clear even though the guard scene itself has disappeared.",
+  "coreSharedMeaning": "guard / protect",
+  "recognitionTakeaway": "Fixes 宀 over 寸, making the “hand/action under a roof” structure clear even though the guard scene itself has disappeared.",
   "publicationStatus": "draft",
   "unicodeCodePoint": "U+5B88",
   "simplifiedForm": "守",
@@ -15,9 +15,9 @@
     "Oracle draws a roof-like enclosure around a long curved inner hand or body, with the shelter still visually prominent.",
     "Regular 守 fixes 宀 over 寸, making the “hand/action under a roof” structure clear even though the guard scene itself has disappeared."
   ],
-  "contentFolder": "content/research/v1-symbols/rank-140-守-u5B88",
+  "contentFolder": "content/release/symbols/guard",
   "learnerCopyPath": null,
-  "researchNotesPath": "content/research/v1-symbols/rank-140-守-u5B88/research.md",
+  "researchNotesPath": "content/release/symbols/guard/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
   "editorialStatus": "needsReview",
@@ -38,6 +38,21 @@
         "guard"
       ],
       "examples": [
+        {
+          "text": "守",
+          "reading": "shǒu",
+          "translation": "guard",
+          "speechText": "守",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "coversReadings": [
+            "shǒu"
+          ]
+        },
         {
           "text": "守护",
           "reading": "shǒuhù",
@@ -67,6 +82,18 @@
           ]
         },
         {
+          "text": "守门",
+          "reading": "shǒumén",
+          "translation": "guard the door",
+          "speechText": "守门",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "请遵守规则。",
           "reading": "Qǐng zūnshǒu guīzé.",
           "translation": "Please follow the rules.",
@@ -81,7 +108,9 @@
           ]
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "traditionalChinese": {
       "form": "守",
@@ -98,6 +127,18 @@
         "guard"
       ],
       "taiwanExamples": [
+        {
+          "text": "守",
+          "reading": "shǒu",
+          "translation": "guard",
+          "speechText": "守",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "守護",
           "reading": "shǒuhù",
@@ -142,6 +183,18 @@
         }
       ],
       "hongKongExamples": [
+        {
+          "text": "守",
+          "reading": "sau2",
+          "translation": "guard",
+          "speechText": "守",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "coreForm",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
         {
           "text": "守護",
           "reading": "sau2 wu6",
@@ -203,31 +256,52 @@
           "speechLanguage": "cantonese"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
     "japanese": {
       "form": "守",
       "readings": [
         {
-          "system": "on",
-          "value": "シュ (shu)",
+          "system": "onyomi",
+          "value": "シュ — shu",
           "audioAssetRef": null,
           "speechText": "しゅ",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "シュ",
+          "romanization": "shu",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "on",
-          "value": "ス (su)",
+          "system": "onyomi",
+          "value": "ス — su",
           "audioAssetRef": null,
           "speechText": "す",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "ス",
+          "romanization": "su",
+          "historicalOrigin": "sinoJapanese"
         },
         {
-          "system": "kun",
-          "value": "まもる (mamoru)",
+          "system": "kunyomi",
+          "value": "まもる — mamoru",
           "audioAssetRef": null,
           "speechText": "まもる",
-          "speechLanguage": "japanese"
+          "speechLanguage": "japanese",
+          "nativeReading": "まもる",
+          "romanization": "mamoru",
+          "historicalOrigin": "nativeJapanese"
+        },
+        {
+          "system": "kunyomi",
+          "value": "もり — mori",
+          "audioAssetRef": null,
+          "speechText": "もり",
+          "speechLanguage": "japanese",
+          "nativeReading": "もり",
+          "romanization": "mori",
+          "historicalOrigin": "nativeJapanese"
         }
       ],
       "glosses": [
@@ -246,7 +320,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "守"
-          ]
+          ],
+          "kanaReading": "まもる",
+          "coversReadings": [
+            "まもる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "守",
+              "reading": "まも"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "furiganaHtml": "<ruby>守<rt>まも</rt></ruby>る"
         },
         {
           "text": "守備",
@@ -260,7 +348,61 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "守"
-          ]
+          ],
+          "kanaReading": "しゅび",
+          "coversReadings": [
+            "シュ"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "守備",
+              "reading": "しゅび"
+            }
+          ],
+          "furiganaHtml": "<ruby>守備<rt>しゅび</rt></ruby>"
+        },
+        {
+          "text": "留守",
+          "reading": "rusu",
+          "translation": "absence; not at home",
+          "speechText": "留守",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "るす",
+          "coversReadings": [
+            "ス"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "留守",
+              "reading": "るす"
+            }
+          ],
+          "furiganaHtml": "<ruby>留守<rt>るす</rt></ruby>"
+        },
+        {
+          "text": "守護",
+          "reading": "shugo",
+          "translation": "protection / guardian",
+          "speechText": "守護",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "しゅご",
+          "furiganaSegments": [
+            {
+              "text": "守護",
+              "reading": "しゅご"
+            }
+          ],
+          "furiganaHtml": "<ruby>守護<rt>しゅご</rt></ruby>"
         },
         {
           "text": "ルールを守ります。",
@@ -274,33 +416,93 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "守"
-          ]
+          ],
+          "kanaReading": "ルールをまもります。",
+          "furiganaSegments": [
+            {
+              "text": "ルールを"
+            },
+            {
+              "text": "守",
+              "reading": "まも"
+            },
+            {
+              "text": "ります"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "furiganaHtml": "ルールを<ruby>守<rt>まも</rt></ruby>ります。"
+        },
+        {
+          "text": "子守",
+          "reading": "komori",
+          "translation": "child-minding; babysitting",
+          "speechText": "子守",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "こもり",
+          "coversReadings": [
+            "もり"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "子守",
+              "reading": "こもり"
+            }
+          ],
+          "furiganaHtml": "<ruby>子守<rt>こもり</rt></ruby>"
         }
       ],
-      "variants": []
+      "semanticEquivalents": [],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "internalReadingAudit": {
+        "policy": "Display common/useful readings with real examples; retain rare or specialized official readings internally for V3 closeout."
+      },
+      "primaryDisplayReading": {
+        "nativeReading": "まもる",
+        "romanization": "mamoru",
+        "system": "kunyomi",
+        "rule": "Primary useful current reading shown on Kanji line; all other learner-facing V3 readings remain below."
+      },
+      "exampleDisplayRule": "Natural Japanese orthography is primary. Kana is rendered only as subordinate furigana/ruby attached to the kanji it reads; romaji and English remain separate learner aids."
     },
     "korean": {
       "form": "守",
       "readings": [
         {
           "system": "hanja",
-          "value": "수 / su",
+          "value": "수 — su",
           "audioAssetRef": null,
           "speechText": "수",
-          "speechLanguage": "korean"
-        },
-        {
-          "system": "native Korean",
-          "value": "지키다 / jikida",
-          "audioAssetRef": null,
-          "speechText": "지키다",
-          "speechLanguage": "korean"
+          "speechLanguage": "korean",
+          "nativeReading": "수",
+          "romanization": "su"
         }
       ],
       "glosses": [
         "guard"
       ],
       "examples": [
+        {
+          "text": "지키다",
+          "reading": "jikida",
+          "translation": "guard / protect",
+          "speechText": "지키다",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "exampleRole": "semanticEquivalent"
+        },
         {
           "text": "수비",
           "reading": "subi",
@@ -330,6 +532,18 @@
           ]
         },
         {
+          "text": "수호",
+          "reading": "suho",
+          "translation": "protection / guardianship",
+          "speechText": "수호",
+          "speechLanguage": "korean",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "규칙을 지켜요.",
           "reading": "gyuchigeul jikyeoyo.",
           "translation": "I follow the rules.",
@@ -344,7 +558,46 @@
           ]
         }
       ],
-      "variants": []
+      "hanjaReadings": [
+        {
+          "system": "hanja",
+          "value": "수 — su",
+          "audioAssetRef": null,
+          "speechText": "수",
+          "speechLanguage": "korean",
+          "nativeReading": "수",
+          "romanization": "su"
+        }
+      ],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "지키다 — jikida",
+          "audioAssetRef": null,
+          "speechText": "지키다",
+          "speechLanguage": "korean",
+          "nativeReading": "지키다",
+          "romanization": "jikida",
+          "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
+          "gloss": "guard / protect",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/mainAction",
+            "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
+          }
+        }
+      ],
+      "orthographicVariants": [],
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "primaryDisplayReading": {
+        "nativeReading": "수",
+        "romanization": "su",
+        "system": "hanja",
+        "rule": "Hanja pronunciation is primary; Korean semantic equivalents are secondary and never substitute for it."
+      }
     }
   },
   "visuals": {
@@ -353,14 +606,14 @@
     "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
   },
   "history": {
-    "originAnchor": "A guard standing inside a small roofed house, with a raised hand signaling protection or stopping entry.",
+    "originAnchor": "A roof and a hand combine to show guarding what lies beneath; this led to 'protect.'",
     "stages": [
       {
         "stage": "oracleBone",
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/guard/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Oracle draws a roof-like enclosure around a long curved inner hand or body, with the shelter still visually prominent.",
+        "changeNoteFromPrevious": "A roofed dwelling combines with a hand/action element, forming the concrete guarding/keeping relation.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-守"
@@ -386,8 +639,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Oracle draws a roof-like enclosure around a long curved inner hand or body, with the shelter still visually prominent.",
-        "transitionNote": "Oracle draws a roof-like enclosure around a long curved inner hand or body, with the shelter still visually prominent.",
+        "stageExplanation": "A roofed dwelling combines with a hand/action element, forming the concrete guarding/keeping relation.",
+        "transitionNote": "A roofed dwelling combines with a hand/action element, forming the concrete guarding/keeping relation.",
         "transitionNoteNeedsReview": true,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -397,7 +650,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/guard/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Bronze lowers the roof into a rounded arch and makes the inner guarding form a broad curled stroke.",
+        "changeNoteFromPrevious": "Lowers the roof into a rounded arch and makes the inner guarding form a broad curled stroke.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-守"
@@ -423,8 +676,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Bronze lowers the roof into a rounded arch and makes the inner guarding form a broad curled stroke.",
-        "transitionNote": "Bronze lowers the roof into a rounded arch and makes the inner guarding form a broad curled stroke.",
+        "stageExplanation": "Lowers the roof into a rounded arch and makes the inner guarding form a broad curled stroke.",
+        "transitionNote": "Lowers the roof into a rounded arch and makes the inner guarding form a broad curled stroke.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -434,7 +687,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/guard/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Small Seal restores a tall house-like enclosure and centers several short hand-like strokes inside it.",
+        "changeNoteFromPrevious": "Restores a tall house-like enclosure and centers several short hand-like strokes inside it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-守"
@@ -460,8 +713,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Small Seal restores a tall house-like enclosure and centers several short hand-like strokes inside it.",
-        "transitionNote": "Small Seal restores a tall house-like enclosure and centers several short hand-like strokes inside it.",
+        "stageExplanation": "Restores a tall house-like enclosure and centers several short hand-like strokes inside it.",
+        "transitionNote": "Restores a tall house-like enclosure and centers several short hand-like strokes inside it.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -471,7 +724,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/guard/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "Clerical shortens the roof and turns the interior into a compact 寸-like hand component.",
+        "changeNoteFromPrevious": "The roof is flattened and the enclosed hand/action element becomes compact and angular, approaching the later standard arrangement.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-守"
@@ -497,8 +750,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Clerical shortens the roof and turns the interior into a compact 寸-like hand component.",
-        "transitionNote": "Clerical shortens the roof and turns the interior into a compact 寸-like hand component.",
+        "stageExplanation": "The roof is flattened and the enclosed hand/action element becomes compact and angular, approaching the later standard arrangement.",
+        "transitionNote": "The roof is flattened and the enclosed hand/action element becomes compact and angular, approaching the later standard arrangement.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -508,7 +761,7 @@
         "label": "Regular Script",
         "form": "守",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular 守 fixes 宀 over 寸, making the “hand/action under a roof” structure clear even though the guard scene itself has disappeared.",
+        "changeNoteFromPrevious": "Fixes 宀 over 寸, making the “hand/action under a roof” structure clear even though the guard scene itself has disappeared.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -534,8 +787,8 @@
           "readiness": "needsReview"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular 守 fixes 宀 over 寸, making the “hand/action under a roof” structure clear even though the guard scene itself has disappeared.",
-        "transitionNote": "Regular 守 fixes 宀 over 寸, making the “hand/action under a roof” structure clear even though the guard scene itself has disappeared.",
+        "stageExplanation": "Fixes 宀 over 寸, making the “hand/action under a roof” structure clear even though the guard scene itself has disappeared.",
+        "transitionNote": "Fixes 宀 over 寸, making the “hand/action under a roof” structure clear even though the guard scene itself has disappeared.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -543,7 +796,7 @@
     ],
     "origin": {
       "concept": "guard",
-      "explanation": "A guard standing inside a small roofed house, with a raised hand signaling protection or stopping entry.",
+      "explanation": "A roofed dwelling encloses a hand/action element; the hand shape changes in later writing.",
       "asset": {
         "characterID": "guard",
         "historicalStage": null,
@@ -560,7 +813,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of guard",
+        "accessibilityDescription": "Illustration of guard / protect",
         "readiness": "needsReview"
       },
       "sourceIds": [
@@ -578,7 +831,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'guard', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'guard / protect', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are installed as initial content and should receive language-editor review before publication.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -648,13 +901,5 @@
     "ZDIC historical visual reuse remains review-required before commercial release.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
     "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
-  ],
-  "targetLanguageEditorialStatus": "curated-2026-09-05",
-  "targetLanguageEditorialPrinciples": [
-    "TTS speechText is native-script text for the selected language; romanization is display-only.",
-    "Japanese readings are curated modern On/Kun readings rather than an exhaustive dictionary dump.",
-    "Korean shows the Hanja reading and, where pedagogically useful, a native/everyday Korean equivalent.",
-    "Examples prioritize short modern words and beginner-friendly sentences over meta-sentences about learning the character.",
-    "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
