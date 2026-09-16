@@ -1,3 +1,5 @@
+import SwiftUI
+
 /// Learner-facing explanation of how each modern writing tradition is read in the app.
 /// History-only: Symbol/Today data remains authoritative and unchanged.
 private struct HistoryModernReadingGuide: Identifiable {
