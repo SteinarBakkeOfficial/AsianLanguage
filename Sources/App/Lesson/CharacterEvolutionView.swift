@@ -262,7 +262,8 @@ struct CharacterEvolutionView: View {
                     }
                 }
                 // Reserve a quiet caption band below the square so material/process metadata never overlays the artwork.
-                .frame(maxWidth: .infinity, height: 248)
+                .frame(maxWidth: .infinity)
+                .frame(height: 248)
 
                 if let materialCaption {
                     Text(materialCaption)
@@ -270,11 +271,13 @@ struct CharacterEvolutionView: View {
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
                         .lineLimit(1)
-                        .frame(maxWidth: .infinity, height: 20)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 20)
                         .padding(.horizontal, AppSpacing.spaceSm)
                 }
             }
-            .frame(maxWidth: .infinity, height: 284)
+            .frame(maxWidth: .infinity)
+            .frame(height: 284)
         }
         .frame(height: 304)
     }
