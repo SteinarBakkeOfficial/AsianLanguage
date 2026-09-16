@@ -30,17 +30,20 @@ struct ModernFormsComparisonView: View {
                             .lineLimit(1)
                             .accessibilityLabel("Regular Script \(record.coreCharacter)")
                     }
-                    .frame(maxWidth: .infinity, height: 248)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 248)
 
                     // Keep the material cue in its own quiet band instead of over the paper artwork.
                     Text("Paper · brush")
                         .font(AppTypography.metadata)
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
-                        .frame(maxWidth: .infinity, height: 20)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 20)
                         .padding(.horizontal, AppSpacing.spaceSm)
                 }
-                .frame(maxWidth: .infinity, height: 284)
+                .frame(maxWidth: .infinity)
+                .frame(height: 284)
             }
             .frame(height: 304)
             Text("A modern standardized Kai reference rendering.")
