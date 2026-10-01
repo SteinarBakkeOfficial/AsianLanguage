@@ -4,7 +4,7 @@
   "coreCharacter": "民",
   "coreSharedMeaning": "people / common people",
   "recognitionTakeaway": "民 now means people/common people; the original marked-eye image is no longer visible in the regular form.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+6C11",
   "simplifiedForm": "民",
   "traditionalForm": "民",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/people/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 98,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -539,8 +539,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "An eye and a pointed tool combine in a disputed image; later usage broadened to 'people.'",
@@ -550,7 +550,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/people/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The selected form centers on an eye with a sharp marking element. In the leading account this is connected with an early subordinated population.",
+        "changeNoteFromPrevious": "A broad eye- or lid-like top is crossed by angular marks and a long descending stroke; the identity remains disputed.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-民"
@@ -571,14 +571,14 @@
           "artifactAssetRef": "Assets/Symbols/people/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "民 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected form centers on an eye with a sharp marking element. In the leading account this is connected with an early subordinated population.",
-        "transitionNote": "The selected form centers on an eye with a sharp marking element. In the leading account this is connected with an early subordinated population.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "A broad eye- or lid-like top is crossed by angular marks and a long descending stroke; the identity remains disputed.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -608,14 +608,14 @@
           "artifactAssetRef": "Assets/Symbols/people/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "民 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The eye and marking element become more compact; inscriptions already broaden the word toward ordinary people/the populace.",
         "transitionNote": "The eye and marking element become more compact; inscriptions already broaden the word toward ordinary people/the populace.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -645,14 +645,14 @@
           "artifactAssetRef": "Assets/Symbols/people/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "民 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The original eye scene is strongly conventionalized and ceases to look anatomical.",
         "transitionNote": "The original eye scene is strongly conventionalized and ceases to look anatomical.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -682,14 +682,14 @@
           "artifactAssetRef": "Assets/Symbols/people/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "民 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The curved Seal structure flattens into the angular skeleton of the standard form.",
         "transitionNote": "The curved Seal structure flattens into the angular skeleton of the standard form.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -698,7 +698,7 @@
         "label": "Regular Script",
         "form": "民",
         "assetRef": null,
-        "changeNoteFromPrevious": "民 now means people/common people; the original marked-eye image is no longer visible in the regular form.",
+        "changeNoteFromPrevious": "Regular Script settles the eye-like upper enclosure and long lower stroke in 民; the marked-eye scene is no longer distinct.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -721,12 +721,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "民 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "民 now means people/common people; the original marked-eye image is no longer visible in the regular form.",
-        "transitionNote": "民 now means people/common people; the original marked-eye image is no longer visible in the regular form.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Regular Script settles the eye-like upper enclosure and long lower stroke in 民; the marked-eye scene is no longer distinct.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -751,7 +751,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of people",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-民"
@@ -762,7 +762,7 @@
     "summary": "The research record describes this structure as 民.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-民"
     ]
@@ -770,7 +770,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'people / common people', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -808,7 +808,7 @@
       "id": "source-zdic-民",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E6%B0%91"
     },
     {
@@ -835,9 +835,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -848,4 +848,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

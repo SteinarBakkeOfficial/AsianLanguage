@@ -194,7 +194,7 @@ native Korean vocabulary
 meanings
 which reading is appropriate for a Symbol
 
-Those values must come from the Script Roots content model. The current V1 values are draft and remain open to later user/native-speaker review.
+Those values must come from the Script Roots content model. The current V1 values are approved and explicit; later user feedback may produce Patch 0.1 corrections without replacing the data model or asking TTS to infer readings.
 
 The direction is:
 

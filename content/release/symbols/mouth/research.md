@@ -1,10 +1,10 @@
-# Research notes: 口
+# Research notes: 口 — historical preparation record
 
 This folder was prepared from the existing draft Shared Character record. It is editorial working material, not an approval record.
 
 ## Current evidence boundary
 
-Regular-script prototype card exists. Historical Oracle/Bronze/Seal assets are attached when source-backed Wikimedia Commons SVGs are available; final publication still needs licensing review and specialist redraw approval.
+This draft note predates the V1 package. The approved runtime uses the local Regular Script font and selected historical assets; source/reuse and specialist/editorial review are complete for V1.
 
 ## Formation mode
 

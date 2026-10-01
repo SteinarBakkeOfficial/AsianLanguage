@@ -4,7 +4,7 @@
   "coreCharacter": "长",
   "coreSharedMeaning": "long / grow; elder/chief",
   "recognitionTakeaway": "Traditional 長 regularizes the old elder figure; Simplified Chinese later uses 长.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+957F",
   "simplifiedForm": "长",
   "traditionalForm": "長",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/long/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 32,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -589,8 +589,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A long-haired elderly person leaning on a staff.",
@@ -600,7 +600,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/long/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A long-haired elder with a staff is the pictorial source in the leading analysis.",
+        "changeNoteFromPrevious": "A side-facing figure carries a large upper mass with long trailing strokes below.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-长"
@@ -621,14 +621,14 @@
           "artifactAssetRef": "Assets/Symbols/long/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "长 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A long-haired elder with a staff is the pictorial source in the leading analysis.",
-        "transitionNote": "A long-haired elder with a staff is the pictorial source in the leading analysis.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "A side-facing figure carries a large upper mass with long trailing strokes below.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -658,14 +658,14 @@
           "artifactAssetRef": "Assets/Symbols/long/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "长 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The figure is reduced to a compact crossing form with one long diagonal lower stroke.",
         "transitionNote": "The figure is reduced to a compact crossing form with one long diagonal lower stroke.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -695,14 +695,14 @@
           "artifactAssetRef": "Assets/Symbols/long/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "长 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The Seal form expands again into a tall, enclosed structure with a crossed upper section and long internal strokes.",
         "transitionNote": "The Seal form expands again into a tall, enclosed structure with a crossed upper section and long internal strokes.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -732,14 +732,14 @@
           "artifactAssetRef": "Assets/Symbols/long/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "长 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The character becomes the densely stacked traditional, with several clear horizontal bands and a long lower sweep.",
         "transitionNote": "The character becomes the densely stacked traditional, with several clear horizontal bands and a long lower sweep.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -748,7 +748,7 @@
         "label": "Regular Script",
         "form": "长",
         "assetRef": null,
-        "changeNoteFromPrevious": "Traditional 長 regularizes the old elder figure; Simplified Chinese later uses 长.",
+        "changeNoteFromPrevious": "Regular Script compresses the elder-like figure into the dense 長 structure; the long lower sweep remains dominant.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -771,12 +771,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "长 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Traditional 長 regularizes the old elder figure; Simplified Chinese later uses 长.",
-        "transitionNote": "Traditional 長 regularizes the old elder figure; Simplified Chinese later uses 长.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Regular Script compresses the elder-like figure into the dense 長 structure; the long lower sweep remains dominant.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -801,7 +801,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of long",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-长"
@@ -812,7 +812,7 @@
     "summary": "The research record describes this structure as 长.",
     "components": [],
     "certainty": "medium",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-长"
     ]
@@ -820,7 +820,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'long / grow; elder/chief', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -858,7 +858,7 @@
       "id": "source-zdic-长",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E9%95%BF"
     },
     {
@@ -885,9 +885,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -898,4 +898,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

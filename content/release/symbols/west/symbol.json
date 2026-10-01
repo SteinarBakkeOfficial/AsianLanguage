@@ -4,7 +4,7 @@
   "coreCharacter": "西",
   "coreSharedMeaning": "west",
   "recognitionTakeaway": "The old nest-like graph is regularized as 西 for “west”; the exact semantic path remains interpretive.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+897F",
   "simplifiedForm": "西",
   "traditionalForm": "西",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/west/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 65,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -570,8 +570,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
   "originAnchor": "The earliest object is uncertain: leading interpretations see a bird’s nest or a bag/basket.",
@@ -581,7 +581,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/west/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "One early form resembles a nest or container; another may be a different borrowed form. The sunset explanation is traditional but disputed.",
+        "changeNoteFromPrevious": "A dense enclosure divided by inner strokes no longer clearly identifies the original nest-like object.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-西"
@@ -602,14 +602,14 @@
           "artifactAssetRef": "Assets/Symbols/west/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "西 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A nest/container-like object is the pictorial source in a leading analysis; it should not be expanded into a sunset scene.",
-        "transitionNote": "One early form resembles a nest or container; another may be a different borrowed form. The sunset explanation is traditional but disputed.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "A dense enclosure divided by inner strokes no longer clearly identifies the original nest-like object.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -639,14 +639,14 @@
           "artifactAssetRef": "Assets/Symbols/west/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "西 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Simplifies the enclosure into a pointed oval or pouch with a strong X-like crossing inside.",
         "transitionNote": "Simplifies the enclosure into a pointed oval or pouch with a strong X-like crossing inside.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -676,14 +676,14 @@
           "artifactAssetRef": "Assets/Symbols/west/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "西 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Adds a long curved top and places the crossed enclosure below it, creating a more organized two-part structure.",
         "transitionNote": "Adds a long curved top and places the crossed enclosure below it, creating a more organized two-part structure.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -713,14 +713,14 @@
           "artifactAssetRef": "Assets/Symbols/west/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "西 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Flattens the outer shape into a wide box with four small inner compartments and a long top stroke.",
         "transitionNote": "Flattens the outer shape into a wide box with four small inner compartments and a long top stroke.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -729,7 +729,7 @@
         "label": "Regular Script",
         "form": "西",
         "assetRef": null,
-        "changeNoteFromPrevious": "The object graph was later used for ‘west,’ either through a sound borrowing or through an association with birds returning at sunset; the exact path remains disputed.",
+        "changeNoteFromPrevious": "Regular Script settles the pointed enclosure and internal divisions into 西; the earlier oval and crossing are flattened.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -752,12 +752,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "西 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The old nest-like graph is regularized as 西 for “west”; the exact semantic path remains interpretive.",
-        "transitionNote": "The object graph was later used for ‘west,’ either through a sound borrowing or through an association with birds returning at sunset; the exact path remains disputed.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Regular Script settles the pointed enclosure and internal divisions into 西; the earlier oval and crossing are flattened.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -782,7 +782,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of west",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-西"
@@ -793,7 +793,7 @@
     "summary": "The research record describes this structure as ⿱一𠁤.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-西"
     ]
@@ -801,7 +801,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'west', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -839,7 +839,7 @@
       "id": "source-zdic-西",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E8%A5%BF"
     },
     {
@@ -866,9 +866,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -879,4 +879,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

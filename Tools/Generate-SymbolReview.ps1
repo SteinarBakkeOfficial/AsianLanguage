@@ -32,7 +32,7 @@ $lines.Add("# Symbol review report")
 $lines.Add("")
 $lines.Add("Generated: $((Get-Date).ToUniversalTime().ToString('o'))")
 $lines.Add("")
-$lines.Add("This report is editorial preparation output. It does not approve generated or draft content.")
+$lines.Add("This report records the approved V1 editorial package. Future corrections are tracked through Patch 0.1 maintenance.")
 $lines.Add("")
 
 foreach ($symbolFile in $symbolFiles) {

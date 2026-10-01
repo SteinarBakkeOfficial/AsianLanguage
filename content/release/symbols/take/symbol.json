@@ -4,7 +4,7 @@
   "coreCharacter": "取",
   "coreSharedMeaning": "take / obtain",
   "recognitionTakeaway": "Ear + hand are compressed into 取, preserving the old taking/capturing action structurally.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+53D6",
   "simplifiedForm": "取",
   "traditionalForm": "取",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/take/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 77,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -570,8 +570,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A hand and an ear combine to express seizing or taking.",
@@ -581,7 +581,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/take/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The encoded components are an ear and a hand taking/grasping it; historical trophy-taking gives context without adding a whole body to the graph.",
+        "changeNoteFromPrevious": "A long reaching stroke meets a large enclosed form; the hand, ear, and act of taking are not individually recognizable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-取"
@@ -602,14 +602,14 @@
           "artifactAssetRef": "Assets/Symbols/take/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "取 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The encoded components are an ear and a hand taking/grasping it; historical trophy-taking gives context without adding a whole body to the graph.",
-        "transitionNote": "The encoded components are an ear and a hand taking/grasping it; historical trophy-taking gives context without adding a whole body to the graph.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "A long reaching stroke meets a large enclosed form; the hand, ear, and act of taking are not individually recognizable.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -639,14 +639,14 @@
           "artifactAssetRef": "Assets/Symbols/take/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "取 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Rounds the hand into a compact left element while the ear becomes a thick right enclosure with a long trailing stroke.",
         "transitionNote": "Rounds the hand into a compact left element while the ear becomes a thick right enclosure with a long trailing stroke.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -676,14 +676,14 @@
           "artifactAssetRef": "Assets/Symbols/take/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "取 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Makes the ear into a clear rectangular component and the hand into a distinct curved stroke beside it.",
         "transitionNote": "Makes the ear into a clear rectangular component and the hand into a distinct curved stroke beside it.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -713,14 +713,14 @@
           "artifactAssetRef": "Assets/Symbols/take/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "取 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The hand-and-ear structure becomes angular and compact, closely approaching the later standard arrangement.",
         "transitionNote": "The hand-and-ear structure becomes angular and compact, closely approaching the later standard arrangement.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -752,12 +752,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "取 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Ear + hand are compressed into 取, preserving the old taking/capturing action structurally.",
         "transitionNote": "Ear + hand are compressed into 取, preserving the old taking/capturing action structurally.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -782,7 +782,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of take",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-取"
@@ -793,7 +793,7 @@
     "summary": "The research record describes this structure as ⿰耳又[GV].",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-取"
     ]
@@ -801,7 +801,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'take / obtain', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -839,7 +839,7 @@
       "id": "source-zdic-取",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%8F%96"
     },
     {
@@ -866,9 +866,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -879,4 +879,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

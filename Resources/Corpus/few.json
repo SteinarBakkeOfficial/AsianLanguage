@@ -4,7 +4,7 @@
   "coreCharacter": "少",
   "coreSharedMeaning": "few / little",
   "recognitionTakeaway": "An extra/differentiating stroke helps establish 少 as the form for “few/little.”",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+5C11",
   "simplifiedForm": "少",
   "traditionalForm": "少",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/few/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 56,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -587,8 +587,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "Four small marks first overlapped with the graph for ‘small’; later forms distinguished ‘few’ from ‘small.’",
@@ -598,7 +598,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/few/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The early few and small forms overlap; their meanings are not yet fully separated.",
+        "changeNoteFromPrevious": "",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-少"
@@ -619,13 +619,13 @@
           "artifactAssetRef": "Assets/Symbols/few/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "少 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Early few form is closely related to the small-mark graph also behind small form; differentiation is not yet fully fixed.",
-        "transitionNote": "The early few and small forms overlap; their meanings are not yet fully separated.",
+        "transitionNote": "",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -656,9 +656,9 @@
           "artifactAssetRef": "Assets/Symbols/few/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "少 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Connects the idea into a more organized shape: three upright strokes sit above a long sweeping lower line.",
@@ -693,9 +693,9 @@
           "artifactAssetRef": "Assets/Symbols/few/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "少 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Keeps the three upper strokes but bends the lower stroke into a strong curved tail.",
@@ -730,9 +730,9 @@
           "artifactAssetRef": "Assets/Symbols/few/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "少 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Turns the upper strokes into three compact dots and broadens the lower sweep.",
@@ -769,7 +769,7 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "少 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "An extra/differentiating stroke helps establish 少 as the form for “few/little.”",
@@ -799,7 +799,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of few / little",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-少"
@@ -810,7 +810,7 @@
     "summary": "The research record describes this structure as ⿱小丿.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-少"
     ]
@@ -818,7 +818,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'few / little', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -856,7 +856,7 @@
       "id": "source-zdic-少",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%B0%91"
     },
     {
@@ -883,8 +883,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

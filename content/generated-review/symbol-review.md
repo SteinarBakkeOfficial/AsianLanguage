@@ -1,8 +1,8 @@
 # Symbol review report
 
-Generated: 2026-09-16T09:35:22.5329914Z
+Generated: 2026-10-01T03:15:45.5965200Z
 
-This report is editorial preparation output. It does not approve generated or draft content.
+This report records the approved V1 editorial package. Future corrections are tracked through Patch 0.1 maintenance.
 
 ## 上 — above / on
 
@@ -10,8 +10,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/above
 - Unicode: U+4E0A
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -35,8 +35,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/after
 - Unicode: U+5F8C
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -60,8 +60,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/altar
 - Unicode: U+793A
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -85,8 +85,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/ancestor
 - Unicode: U+5B97
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -110,8 +110,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/auspicious
 - Unicode: U+5409
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -135,8 +135,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/bamboo
 - Unicode: U+7AF9
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -160,8 +160,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/bean
 - Unicode: U+8C46
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -185,8 +185,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/beautiful
 - Unicode: U+7F8E
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -210,8 +210,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/before
 - Unicode: U+5148
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -235,8 +235,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/below
 - Unicode: U+4E0B
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -260,8 +260,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/benefit
 - Unicode: U+5229
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -285,8 +285,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/big
 - Unicode: U+5927
 - Formation: uncertain
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -310,8 +310,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/black
 - Unicode: U+9ED1
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -335,8 +335,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/blessing
 - Unicode: U+795D
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -360,8 +360,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/body
 - Unicode: U+8EAB
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -385,8 +385,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/book
 - Unicode: U+518C
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -410,8 +410,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/bow
 - Unicode: U+5F13
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -435,8 +435,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/bright
 - Unicode: U+660E
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -460,8 +460,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/center
 - Unicode: U+592E
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -485,8 +485,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/child
 - Unicode: U+5B50
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -510,8 +510,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/classic
 - Unicode: U+5178
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -535,8 +535,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/clothing
 - Unicode: U+8863
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -560,8 +560,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/cloud
 - Unicode: U+4E91
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -585,8 +585,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/command
 - Unicode: U+4EE4
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -610,8 +610,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/day
 - Unicode: U+65E5
 - Formation: uncertain
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -635,8 +635,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/direction
 - Unicode: U+5411
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -660,8 +660,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/divide
 - Unicode: U+5206
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -685,8 +685,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/dog
 - Unicode: U+72AC
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -710,8 +710,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/each
 - Unicode: U+5404
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -735,8 +735,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/ear
 - Unicode: U+8033
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -760,8 +760,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/earth
 - Unicode: U+571F
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -785,8 +785,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/enter
 - Unicode: U+5165
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -810,8 +810,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/evening
 - Unicode: U+5915
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -835,8 +835,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/exit
 - Unicode: U+51FA
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -860,8 +860,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/eye
 - Unicode: U+76EE
 - Formation: uncertain
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -885,8 +885,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/few
 - Unicode: U+5C11
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -910,8 +910,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/field
 - Unicode: U+7530
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -935,8 +935,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/follow
 - Unicode: U+4ECE
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -960,8 +960,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/forest
 - Unicode: U+6797
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -985,8 +985,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/fragrance
 - Unicode: U+9999
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1010,8 +1010,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/friend
 - Unicode: U+53CB
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1035,8 +1035,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/gather-u96c6
 - Unicode: U+96C6
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1060,8 +1060,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/gather
 - Unicode: U+91C7
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1085,8 +1085,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/go
 - Unicode: U+884C
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1110,8 +1110,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/good
 - Unicode: U+597D
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1135,8 +1135,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/group
 - Unicode: U+65CF
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1160,8 +1160,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/guard
 - Unicode: U+5B88
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1185,8 +1185,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/head
 - Unicode: U+9996
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1210,8 +1210,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/heart
 - Unicode: U+5FC3
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1235,8 +1235,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/high
 - Unicode: U+9AD8
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1260,8 +1260,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/horn
 - Unicode: U+89D2
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1285,8 +1285,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/increase
 - Unicode: U+76CA
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1310,8 +1310,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/jade
 - Unicode: U+7389
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1335,8 +1335,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/join
 - Unicode: U+5408
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1360,8 +1360,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/journey
 - Unicode: U+65C5
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1385,8 +1385,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/king
 - Unicode: U+738B
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1410,8 +1410,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/knife
 - Unicode: U+5200
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1435,8 +1435,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/life
 - Unicode: U+751F
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1460,8 +1460,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/light
 - Unicode: U+5149
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1485,8 +1485,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/lodging
 - Unicode: U+5BBF
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1510,8 +1510,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/long
 - Unicode: U+957F
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1535,8 +1535,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/look-toward
 - Unicode: U+671B
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1560,8 +1560,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/man
 - Unicode: U+7537
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1585,8 +1585,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/many
 - Unicode: U+591A
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1610,8 +1610,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/martial
 - Unicode: U+6B66
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1635,8 +1635,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/meet
 - Unicode: U+4EA4
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1660,8 +1660,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/middle
 - Unicode: U+4E2D
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1685,8 +1685,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/moon
 - Unicode: U+6708
 - Formation: uncertain
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1710,8 +1710,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/mother
 - Unicode: U+6BCD
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1735,8 +1735,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/mountain
 - Unicode: U+5C71
 - Formation: uncertain
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1760,8 +1760,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/mouth
 - Unicode: U+53E3
 - Formation: uncertain
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1785,8 +1785,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/north
 - Unicode: U+5317
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1810,8 +1810,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/obtain
 - Unicode: U+5F97
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1835,8 +1835,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/official
 - Unicode: U+5B98
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1860,8 +1860,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/old-u53e4
 - Unicode: U+53E4
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1885,8 +1885,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/old
 - Unicode: U+8001
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1910,8 +1910,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/older-brother
 - Unicode: U+5144
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1935,8 +1935,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/one
 - Unicode: U+4E00
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1960,8 +1960,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/ox
 - Unicode: U+725B
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -1985,8 +1985,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/people
 - Unicode: U+6C11
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2010,8 +2010,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/person
 - Unicode: U+4EBA
 - Formation: uncertain
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2035,8 +2035,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/public
 - Unicode: U+516C
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2060,8 +2060,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/rain
 - Unicode: U+96E8
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2085,8 +2085,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/reach
 - Unicode: U+53CA
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2110,8 +2110,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/red
 - Unicode: U+8D64
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2135,8 +2135,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/rest
 - Unicode: U+4F11
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2160,8 +2160,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/river
 - Unicode: U+5DDD
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2185,8 +2185,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/sacrifice
 - Unicode: U+796D
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2210,8 +2210,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/same
 - Unicode: U+540C
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2235,8 +2235,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/self
 - Unicode: U+81EA
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2260,8 +2260,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/sheep
 - Unicode: U+7F8A
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2285,8 +2285,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/sky
 - Unicode: U+5929
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2310,8 +2310,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/small
 - Unicode: U+5C0F
 - Formation: uncertain
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2335,8 +2335,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/soldier
 - Unicode: U+5175
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2360,8 +2360,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/south
 - Unicode: U+5357
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2385,8 +2385,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/speech
 - Unicode: U+8A00
 - Formation: phonoSemantic
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2410,8 +2410,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/spring
 - Unicode: U+6CC9
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2435,8 +2435,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/stand
 - Unicode: U+7ACB
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2460,8 +2460,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/step
 - Unicode: U+6B65
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2485,8 +2485,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/stone
 - Unicode: U+77F3
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2510,8 +2510,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/stop
 - Unicode: U+6B62
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2535,8 +2535,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/strength
 - Unicode: U+529B
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2560,8 +2560,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/stretch
 - Unicode: U+7533
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2585,8 +2585,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/summer
 - Unicode: U+590F
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2610,8 +2610,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/sweet
 - Unicode: U+7518
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2635,8 +2635,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/take
 - Unicode: U+53D6
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2660,8 +2660,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/tell
 - Unicode: U+544A
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2685,8 +2685,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/ten
 - Unicode: U+5341
 - Formation: uncertain
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2710,8 +2710,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/things-goods
 - Unicode: U+54C1
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2735,8 +2735,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/three
 - Unicode: U+4E09
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2760,8 +2760,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/tiger
 - Unicode: U+864E
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2785,8 +2785,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/tongue
 - Unicode: U+820C
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2810,8 +2810,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/tree
 - Unicode: U+6728
 - Formation: uncertain
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2835,8 +2835,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/turn-back
 - Unicode: U+53CD
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2860,8 +2860,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/two
 - Unicode: U+4E8C
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2885,8 +2885,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/upright
 - Unicode: U+6B63
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2910,8 +2910,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/walk
 - Unicode: U+8D70
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2935,8 +2935,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/water
 - Unicode: U+6C34
 - Formation: uncertain
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2960,8 +2960,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/well
 - Unicode: U+4E95
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -2985,8 +2985,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/west
 - Unicode: U+897F
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -3010,8 +3010,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/white
 - Unicode: U+767D
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -3035,8 +3035,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/wife
 - Unicode: U+59BB
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -3060,8 +3060,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/winter
 - Unicode: U+51AC
 - Formation: simpleIdeograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -3085,8 +3085,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/woman
 - Unicode: U+5973
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -3110,8 +3110,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/work
 - Unicode: U+5DE5
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages
@@ -3135,8 +3135,8 @@ This report is editorial preparation output. It does not approve generated or dr
 - Folder: content/release/symbols/year
 - Unicode: U+5E74
 - Formation: pictograph
-- Editorial status: needsReview
-- Publication status: draft
+- Editorial status: approved
+- Publication status: published
 - Visual teaching notes: 3
 
 ### Historical stages

@@ -4,7 +4,7 @@
   "coreCharacter": "各",
   "coreSharedMeaning": "each",
   "recognitionTakeaway": "The old arrival graph stabilizes as 各 for the distributive meaning “each/every.”",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+5404",
   "simplifiedForm": "各",
   "traditionalForm": "各",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/each/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 102,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -550,8 +550,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A foot and a cave opening combine to show arrival; sound borrowing later gave the meaning 'each.'",
@@ -561,7 +561,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/each/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A foot moves into/approaches an opening, expressing arrival/coming before the later “each” use.",
+        "changeNoteFromPrevious": "",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-各"
@@ -582,14 +582,14 @@
           "artifactAssetRef": "Assets/Symbols/each/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "各 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A foot moves into/approaches an opening, expressing arrival/coming before the later “each” use.",
-        "transitionNote": "A foot moves into/approaches an opening, expressing arrival/coming before the later “each” use.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -619,14 +619,14 @@
           "artifactAssetRef": "Assets/Symbols/each/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "各 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Makes the foot more angular and sets it directly above a small mouth- or doorway-like box.",
         "transitionNote": "Makes the foot more angular and sets it directly above a small mouth- or doorway-like box.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -656,14 +656,14 @@
           "artifactAssetRef": "Assets/Symbols/each/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "各 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Reduces the top to a long bent descending stroke and keeps a clean rectangular mouth/opening sign below.",
         "transitionNote": "Reduces the top to a long bent descending stroke and keeps a clean rectangular mouth/opening sign below.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -693,14 +693,14 @@
           "artifactAssetRef": "Assets/Symbols/each/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "各 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Widens the top stroke and turns the lower box into a compact slanted enclosure.",
         "transitionNote": "Widens the top stroke and turns the lower box into a compact slanted enclosure.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -709,7 +709,7 @@
         "label": "Regular Script",
         "form": "各",
         "assetRef": null,
-        "changeNoteFromPrevious": "The old arrival graph stabilizes as 各 for the distributive meaning “each/every.”",
+        "changeNoteFromPrevious": "Regular Script keeps the upper foot-like element over a compact lower box; the earlier open lower shape is squared.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -732,12 +732,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "各 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The old arrival graph stabilizes as 各 for the distributive meaning “each/every.”",
-        "transitionNote": "The old arrival graph stabilizes as 各 for the distributive meaning “each/every.”",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Regular Script keeps the upper foot-like element over a compact lower box; the earlier open lower shape is squared.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -762,7 +762,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of each",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-各"
@@ -773,7 +773,7 @@
     "summary": "The research record describes this structure as ⿱夂口.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-各"
     ]
@@ -781,7 +781,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'each', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -819,7 +819,7 @@
       "id": "source-zdic-各",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%90%84"
     },
     {
@@ -846,9 +846,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -859,4 +859,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

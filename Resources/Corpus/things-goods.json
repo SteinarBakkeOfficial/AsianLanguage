@@ -4,7 +4,7 @@
   "coreCharacter": "品",
   "coreSharedMeaning": "goods / items / grade",
   "recognitionTakeaway": "The triplicated forms regularize as 品 and support later senses such as items, products, grades, and quality.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+54C1",
   "simplifiedForm": "品",
   "traditionalForm": "品",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/things-goods/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 74,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -560,8 +560,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "Three separate vessel-like forms combine to suggest goods, things, and a range of items.",
@@ -571,7 +571,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/things-goods/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Three repeated enclosed object/vessel-like forms appear; they should not automatically be read as three mouths.",
+        "changeNoteFromPrevious": "",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-品"
@@ -592,14 +592,14 @@
           "artifactAssetRef": "Assets/Symbols/things-goods/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "品 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Three repeated enclosed object/vessel-like forms appear; they should not automatically be read as three mouths.",
-        "transitionNote": "Three repeated enclosed object/vessel-like forms appear; they should not automatically be read as three mouths.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -629,9 +629,9 @@
           "artifactAssetRef": "Assets/Symbols/things-goods/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "品 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Makes all three units more rounded and nearly identical while keeping the one-over-two arrangement.",
@@ -666,9 +666,9 @@
           "artifactAssetRef": "Assets/Symbols/things-goods/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "品 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Regularizes the three boxes into a clean triangular stack of one above two.",
@@ -703,9 +703,9 @@
           "artifactAssetRef": "Assets/Symbols/things-goods/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "品 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Flattens the boxes into broad rectangles, with the top one especially wide.",
@@ -719,7 +719,7 @@
         "label": "Regular Script",
         "form": "品",
         "assetRef": null,
-        "changeNoteFromPrevious": "The triplicated forms regularize as 品 and support later senses such as items, products, grades, and quality.",
+        "changeNoteFromPrevious": "Regular Script consolidates the three repeated units into 品; the separate objects are no longer individually drawn.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -742,11 +742,11 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "品 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The triplicated forms regularize as 品 and support later senses such as items, products, grades, and quality.",
-        "transitionNote": "The triplicated forms regularize as 品 and support later senses such as items, products, grades, and quality.",
+        "transitionNote": "Regular Script consolidates the three repeated units into 品; the separate objects are no longer individually drawn.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -772,7 +772,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of goods / items / grade",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-品"
@@ -783,7 +783,7 @@
     "summary": "The research record describes this structure as ⿱口吅.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-品"
     ]
@@ -791,7 +791,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'goods / items / grade', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -829,7 +829,7 @@
       "id": "source-zdic-品",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%93%81"
     },
     {
@@ -856,8 +856,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

@@ -4,7 +4,7 @@
   "coreCharacter": "明",
   "coreSharedMeaning": "bright / light",
   "recognitionTakeaway": "明 standardizes the sun-and-moon form for bright/light, even though ancient writing also used other component variants.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+660E",
   "simplifiedForm": "明",
   "traditionalForm": "明",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/bright/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 71,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -734,8 +734,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A window and a crescent moon combine to show moonlight; this led to 'bright.'",
@@ -745,7 +745,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/bright/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The selected ancient form combines light-bearing elements—here the sun and moon—to evoke dawn or brightness. Other Oracle variants use a window or eye with the moon.",
+        "changeNoteFromPrevious": "",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-明"
@@ -766,14 +766,14 @@
           "artifactAssetRef": "Assets/Symbols/bright/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "明 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected ancient form combines light-bearing elements—here the sun and moon—to evoke dawn or brightness. Other Oracle variants use a window or eye with the moon.",
-        "transitionNote": "The selected ancient form combines light-bearing elements—here the sun and moon—to evoke dawn or brightness. Other Oracle variants use a window or eye with the moon.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -803,9 +803,9 @@
           "artifactAssetRef": "Assets/Symbols/bright/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "明 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The paired elements become more regular while the two-part light structure remains clear.",
@@ -840,9 +840,9 @@
           "artifactAssetRef": "Assets/Symbols/bright/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "明 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The two components are standardized into a vertically balanced written form.",
@@ -877,9 +877,9 @@
           "artifactAssetRef": "Assets/Symbols/bright/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "明 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The rounded forms flatten and separate into the familiar left-and-right structure.",
@@ -916,7 +916,7 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "明 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "明 standardizes the sun-and-moon form for bright/light, even though ancient writing also used other component variants.",
@@ -946,7 +946,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of bright / light",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-明"
@@ -957,7 +957,7 @@
     "summary": "The research record describes this structure as ⿰日月.",
     "components": [],
     "certainty": "medium",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-明"
     ]
@@ -965,7 +965,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'bright / light', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -1003,7 +1003,7 @@
       "id": "source-zdic-明",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E6%98%8E"
     },
     {
@@ -1030,8 +1030,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

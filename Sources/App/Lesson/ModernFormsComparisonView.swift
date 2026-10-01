@@ -18,7 +18,7 @@ struct ModernFormsComparisonView: View {
                 .multilineTextAlignment(.center)
             ArtifactField {
                 // Match the museum-stage caption spacing while preserving the established frame size.
-                VStack(spacing: 16) {
+                VStack(spacing: SymbolExhibitMetrics.captionGap) {
                     ZStack {
                         SymbolStageBackgroundView(stageID: "regular")
                         Text(record.coreCharacter)
@@ -30,26 +30,29 @@ struct ModernFormsComparisonView: View {
                             .lineLimit(1)
                             .accessibilityLabel("Regular Script \(record.coreCharacter)")
                     }
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 248)
+                    .frame(width: SymbolExhibitMetrics.squareSize, height: SymbolExhibitMetrics.squareSize)
 
-                    // Keep the material cue in its own quiet band instead of over the paper artwork.
-                    Text("Paper · brush")
-                        .font(AppTypography.metadata)
-                        .foregroundStyle(AppColors.textSecondary)
-                        .multilineTextAlignment(.center)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 20)
-                        .padding(.horizontal, AppSpacing.spaceSm)
+                    // Regular is the Museum endpoint; reserve the shared band without assigning it a historical method.
+                    Color.clear
+                        .frame(width: SymbolExhibitMetrics.squareSize, height: SymbolExhibitMetrics.captionHeight)
+                        .accessibilityHidden(true)
                 }
                 .frame(maxWidth: .infinity)
-                .frame(height: 284)
+                .frame(height: SymbolExhibitMetrics.contentHeight)
             }
-            .frame(height: 304)
-            Text("A modern standardized Kai reference rendering.")
+            .frame(height: SymbolExhibitMetrics.fieldHeight)
+            Text(regularConclusion)
                 .font(AppTypography.body)
-                .foregroundStyle(AppColors.textSecondary)
+                .foregroundStyle(AppColors.textPrimary)
                 .multilineTextAlignment(.center)
         }
+    }
+
+    /// Uses the record's approved Regular-stage conclusion instead of repeating a generic font description.
+    private var regularConclusion: String {
+        let regularStage = record.history.stages.first(where: { $0.stage == "regular" })
+        return regularStage?.transitionNote
+            ?? regularStage?.stageExplanation
+            ?? "The character settles into its balanced Regular Script form."
     }
 }

@@ -4,7 +4,7 @@
   "coreCharacter": "得",
   "coreSharedMeaning": "obtain / get",
   "recognitionTakeaway": "Later path/movement material is integrated into 得; the hand-taking-value core explains the old obtain sense.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+5F97",
   "simplifiedForm": "得",
   "traditionalForm": "得",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/obtain/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 93,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -597,8 +597,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A hand and a cowry shell combine to show taking something valuable; this led to 'obtain.'",
@@ -608,7 +608,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/obtain/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A hand takes a cowry shell/valuable object, directly expressing obtaining.",
+        "changeNoteFromPrevious": "A walking-like stroke and dense hand/object cluster remain, but the hand taking an object is not clearly separable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-得"
@@ -629,14 +629,14 @@
           "artifactAssetRef": "Assets/Symbols/obtain/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "得 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A hand takes a cowry shell/valuable object, directly expressing obtaining.",
-        "transitionNote": "A hand takes a cowry shell/valuable object, directly expressing obtaining.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "A walking-like stroke and dense hand/object cluster remain, but the hand taking an object is not clearly separable.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -666,9 +666,9 @@
           "artifactAssetRef": "Assets/Symbols/obtain/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "得 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Simplifies some of the right-hand detail but keeps the left walking stroke and a clearly separate action cluster.",
@@ -682,7 +682,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/obtain/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "The older taking/obtaining scene is regularized together with a formal walking or path element.",
+        "changeNoteFromPrevious": "The hand-taking and path elements settle into a more formal, compact structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-得"
@@ -703,13 +703,13 @@
           "artifactAssetRef": "Assets/Symbols/obtain/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "得 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The older taking/obtaining scene is regularized together with a formal walking or path element.",
-        "transitionNote": "The older taking/obtaining scene is regularized together with a formal walking or path element.",
+        "transitionNote": "The hand-taking and path elements settle into a more formal, compact structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -740,9 +740,9 @@
           "artifactAssetRef": "Assets/Symbols/obtain/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "得 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The movement and acquisition elements compress into the familiar left-right structure of later writing.",
@@ -779,7 +779,7 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "得 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Later path/movement material is integrated into 得; the hand-taking-value core explains the old obtain sense.",
@@ -809,7 +809,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of obtain / get",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-得"
@@ -820,7 +820,7 @@
     "summary": "The research record describes this structure as ⿰彳㝵.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-得"
     ]
@@ -828,7 +828,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'obtain / get', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -866,7 +866,7 @@
       "id": "source-zdic-得",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%BE%97"
     },
     {
@@ -893,8 +893,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

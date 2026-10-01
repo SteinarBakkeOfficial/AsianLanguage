@@ -4,7 +4,7 @@
   "coreCharacter": "豆",
   "coreSharedMeaning": "bean (originally a vessel)",
   "recognitionTakeaway": "This picture shows a high-footed lidded vessel, not a bean. The vessel’s name sounded like the word for beans, so its picture was borrowed to write that word; this sound-based meaning became dominant, while the vessel meaning survived mainly in historical contexts.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+8C46",
   "simplifiedForm": "豆",
   "traditionalForm": "豆",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/bean/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 42,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -570,8 +570,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A high-footed lidded vessel was borrowed by sound to write 'bean'; the vessel meaning survives mainly in historical contexts.",
@@ -581,7 +581,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/bean/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The early graph depicts a high-footed food/ritual vessel, not a bean.",
+        "changeNoteFromPrevious": "",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-豆"
@@ -602,13 +602,13 @@
           "artifactAssetRef": "Assets/Symbols/bean/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "豆 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The early graph depicts a high-footed food/ritual vessel, not a bean.",
-        "transitionNote": "The early graph depicts a high-footed food/ritual vessel, not a bean.",
+        "transitionNote": "",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -639,9 +639,9 @@
           "artifactAssetRef": "Assets/Symbols/bean/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "豆 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Makes the vessel taller and more symmetrical, with a distinct rim, bowl, stem, and base.",
@@ -676,9 +676,9 @@
           "artifactAssetRef": "Assets/Symbols/bean/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "豆 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Regularizes the object into an oval bowl above two straight supports and a long horizontal foot.",
@@ -713,9 +713,9 @@
           "artifactAssetRef": "Assets/Symbols/bean/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "豆 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Flattens the bowl and stand into wide horizontal brush strokes, reducing the vessel-like roundness.",
@@ -729,7 +729,7 @@
         "label": "Regular Script",
         "form": "豆",
         "assetRef": null,
-        "changeNoteFromPrevious": "The vessel picture was borrowed for the similarly sounding word for beans; the sound-based meaning later became dominant, while the vessel meaning remained mainly historical.",
+        "changeNoteFromPrevious": "Regular Script preserves the roofed vessel structure as 豆; the separate lid, bowl, and foot merge into standard strokes.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -752,11 +752,11 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "豆 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The vessel picture was borrowed for the similarly sounding word for beans; the sound-based meaning later became dominant, while the vessel meaning remained mainly historical.",
-        "transitionNote": "The vessel picture was borrowed for the similarly sounding word for beans; the sound-based meaning later became dominant, while the vessel meaning remained mainly historical.",
+        "transitionNote": "Regular Script preserves the roofed vessel structure as 豆; the separate lid, bowl, and foot merge into standard strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -782,7 +782,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of bean (originally a vessel)",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-豆"
@@ -793,7 +793,7 @@
     "summary": "The research record describes this structure as 豆.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-豆"
     ]
@@ -801,7 +801,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'bean (originally a vessel)', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -839,7 +839,7 @@
       "id": "source-zdic-豆",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E8%B1%86"
     },
     {
@@ -866,8 +866,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

@@ -71,8 +71,8 @@ foreach ($sourceFile in ($sourceFiles | Sort-Object Name)) {
   $merged.traditionalForm = $incoming.traditionalForm
   $merged.usage = $incoming.usage
 
-  # Keep corrected target-language provenance without changing the existing
-  # draft/needsReview publication gate.
+  # Keep corrected target-language provenance while preserving the approved
+  # V1 publication state and stable runtime identity.
   $merged | Add-Member -MemberType NoteProperty -Name targetLanguageEditorialStatus -Value $incoming.targetLanguageEditorialStatus -Force
   $merged | Add-Member -MemberType NoteProperty -Name targetLanguageEditorialPrinciples -Value $incoming.targetLanguageEditorialPrinciples -Force
 

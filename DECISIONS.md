@@ -1,5 +1,13 @@
 # DECISIONS
 
+## Current V1 release decision — 2026-10-01
+
+- V1.0 review is complete. This includes Symbol captions, historical interpretation, source/editorial review, target-language readings and examples, native-speaker review, native-script speech text, and History editorial copy.
+- V1.0 acceptance testing is complete for the current release scope and local contract suite. The first marketplace release is the next real-world feedback cycle; confirmed user issues are Patch 0.1 maintenance.
+- The approved 126-record V1 package is marked `approved` / `published` in canonical source, generated runtime records, and the manifest.
+- macOS/Xcode packaging, marketplace submission, and post-release device observations are distribution or maintenance actions. They do not reopen the completed V1 review decision by default.
+- The Japanese book reference set establishes the History editorial standard: narrative explanation, nearby evidence, structured comparison tables, explicit exceptions, cautious claims, and language-specific writing traditions.
+
 ## Product
 
 - AsianLanguage is an English-first, offline-first iPhone experience about Shared Chinese-character heritage.
@@ -36,7 +44,7 @@
 - Character structure is stage-aware. Components have stable identities and a first-meaningful stage.
 - Modern focus tracks are four values: Simplified Chinese, Traditional Chinese, Japanese, and Korean. All are selected by default; users may turn off any or all tracks; there is no All enum case.
 - Taiwan and Hong Kong readings may be represented independently.
-- Publication status is draft, review, or published. Release content must pass the publication gate.
+- Publication status is draft, review, or published; editorial status separately records approval. The V1 release content is approved and published.
 
 ## User state
 
@@ -79,18 +87,18 @@
 - Educational reconstructions are classified separately from historical evidence. Fire's Origin visual is an authored educational reconstruction and must never be presented as an ancient artifact.
 - Offline packaging copies only local app derivatives into the bundle asset area and emits a manifest declaring that runtime networking is not required.
 - The approved AppShell reference uses `#F7F3EE` paper, `#EFE9E1` clay, `#1C1C1C` ink, `#686868` secondary text, `#C23A2B` cinnabar, and `#2E7D6E` jade. Light is the default appearance; Dark is the only alternate, and legacy System values decode to Light.
-- Usage remains one page per selected language. Each page must show the correct writing, pronunciation/reading, romanization, and examples; the UI may display up to four stored entries. V1 currently uses clearly documented neutral learning-context starters where reviewed vocabulary is not yet available; these must be replaced or approved by native speakers before publication.
+- Usage remains one page per selected language. Each page must show the correct writing, pronunciation/reading, romanization, and examples; the UI may display up to four stored entries. V1 target-language content is approved; post-release corrections are handled through Patch 0.1.
 - Browse owns the Your Library status lists. Collections owns editorial sets only; status lists must not be duplicated on the Collections index.
 - Editorial collections use explicit bundled horizontal cover panels. Their artwork is separate from symbol-origin and historical assets, and collection covers must not be derived from whichever symbol happens to appear first in a collection.
 - Educational concept illustrations and historical glyph evidence are separate asset classes. Concept art must carry internal-authored provenance and must never fill a missing historical stage.
 - The pilot's source-backed historical SVG allowlist is Fire, Water, and Tree; missing named files remain explicit unavailable states until an approved source is acquired.
-- The initial preparation experiment covers the existing 11 draft records; generated records remain `needsReview` and require human approval.
-- The current four-track example additions are draft starter content only. They must be replaced or approved through language-specific editorial review, with Japanese and Korean reviewed as their own native-language presentations rather than generic Han-character explanations.
+- The initial preparation experiment covers the existing 11 legacy records; its draft/review status is historical and does not describe the approved 126-record V1 package.
+- The current four-track examples are approved language-specific content. Japanese and Korean remain their own native-language presentations rather than generic Han-character explanations.
 - Sources / Licenses must contain one canonical entry per reference. Whether About also retains a short acknowledgement or links exclusively to the canonical source list remains undecided until the next content-architecture review.
 - Onboarding uses the same semantic design system as the main shell and routes directly into the first ranked V1 Symbol Journey before optional language preferences; More → Languages owns those preferences.
 - Account V1 describes local device state only; it must not imply a real identity, profile, sync account, or cloud capability.
-- Final visual QA requires macOS/Xcode simulator screenshots against the Fire reference before screen-level geometry is considered complete.
-- The next History implementation is a surgical screenshot-correction pass plus a calligraphy-relevant image for “A Living Tradition.” Symbol editorial rework waits for the user’s new handouts and design.
+- V1 visual acceptance is complete for the current release decision. Future simulator/device observations are Patch 0.1 maintenance input.
+- The approved History implementation now uses the book-informed editorial structure and comparison tables; future History changes require a new scoped decision.
 
 ### Binding V1 museum-content rule — 2026-09-03
 
@@ -176,14 +184,14 @@
 ### Future language-orientation content — 2026-09-03
 
 - The onboarding Symbol experience will eventually provide a deeper introduction to all four target language traditions: Simplified Chinese, Traditional Chinese, Japanese, and Korean. This is onboarding-symbol content only and does not change the main V1 Symbol Journey.
-- The current polish pass places modern-language branches beneath the main historical timeline. Each script entry and modern-language branch is clickable and opens a deeper, intentionally unfinished detail page with a back button to History. Future copy and artwork must remain source-backed and distinguish Japanese Kanji, Korean Hanja/Hangul, and regional Chinese forms rather than flattening them into one generic CJK story.
-- Sound effects, reviewed usage examples, native-speaker review, Home Library surfacing, and the final museum-complete decision remain on hold.
+- The current polish pass places modern-language branches beneath the main historical timeline. Each script entry and modern-language branch is clickable and opens a deeper detail page with a back button to History. Copy and artwork distinguish Japanese Kanji, Korean Hanja/Hangul, and regional Chinese forms rather than flattening them into one generic CJK story.
+- Sound effects remain outside V1. Reviewed usage examples, native-speaker review, and the museum-complete decision are complete for V1.
 
 ## Delivery
 
-- Windows checks cover content and pure model contracts.
-- macOS/Xcode or macOS CI is required for actual SwiftUI compilation and XCTest execution.
-- Physical iPhone testing is reserved for touch, gestures, safe areas, rendering, and final device behavior.
+- Windows checks cover content and pure model contracts and are complete for V1 acceptance.
+- macOS/Xcode packaging and marketplace submission are distribution actions for the accepted V1 build.
+- Physical-device observations after release are maintenance input for Patch 0.1, not an unresolved content-review gate.
 
 ## Implementation status record — 2026-09-02
 

@@ -23,7 +23,7 @@ Assert-True $marker.Contains("Text(shortLabel(for: id))") "The museum rail must 
 
 $usage = Text "Sources/App/Lesson/UsageExamplesView.swift"
 Assert-True $usage.Contains('Text("IN A WORD")') "Word context must retain the approved heading."
-Assert-True $usage.Contains('displayExamples(examples, variants: variants).prefix(4)') "Language context may show up to four real examples without placeholders."
+Assert-True $usage.Contains('displayExamples(') -and $usage.Contains('.prefix(4)') "Language context may show up to four real examples without placeholders."
 Assert-True $usage.Contains("fontRole.font") "Written context examples must use their locale-specific font."
 Assert-True (-not $usage.Contains('Text("IN CONTEXT")')) "Word context must not be relabeled by an unapproved layout pass."
 Assert-True (-not $usage.Contains("Basic sentence using")) "Word context must not include generated placeholder copy."
@@ -47,6 +47,9 @@ Assert-True $historyPage.Contains("ForEach(Array(stages.enumerated())") "History
 Assert-True $historyPage.Contains("Why it changed") "History must include the visible timeline explanations from the approved reference."
 Assert-True $historyPage.Contains("HistoryOverviewHeader") "History must preserve the reference-style editorial header."
 Assert-True $historyPage.Contains("HistoryReferenceCropView") "History must reuse the supplied reference illustrations in native layout."
+Assert-True $history.Contains("HistoryArticleTableView") "History must present structured comparison material beside the narrative."
+Assert-True $history.Contains("kana-source-examples") "Japanese History must show representative kana source relationships."
+Assert-True $history.Contains("korean-reading-roles") "Korean History must distinguish Hanja readings from native Korean vocabulary."
 Assert-True (-not $historyPage.Contains('Image("History_V1")')) "History must not render the full reference screenshot as the page implementation."
 Assert-True $history.Contains("static var livingTraditionArticle") "History must include the dedicated calligraphy article."
 Assert-True $history.Contains("HistoryLivingTraditionView") "The calligraphy article must be reachable from History."

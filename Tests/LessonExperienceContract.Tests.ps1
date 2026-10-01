@@ -18,6 +18,8 @@ Assert-True $evolution.Contains("DragGesture(minimumDistance: 24)") "Evolution m
 Assert-True $evolution.Contains("selectedStageID = allJourneyIDs[nextIndex]") "Evolution swipe paging must select the adjacent stage."
 Assert-True $evolution.Contains("PrimaryActionButton(completionTitle, action: onComplete)") "Today must offer a completion action that advances the Symbol Journey."
 Assert-True $evolution.Contains("stageNavigator") "Evolution must expose stage navigation."
+Assert-True $evolution.Contains("ScrollViewReader") "The stage rail must reveal the currently selected destination."
+Assert-True $evolution.Contains("proxy.scrollTo(newID, anchor: .center)") "The stage rail must follow the selected language destination."
 Assert-True $evolution.Contains("HistoricalAssetView") "Evolution must use the asset renderer."
 Assert-True $evolution.Contains("Historical visual unavailable") "Evolution must expose missing-asset state."
 Assert-True (-not $lesson.Contains("summaryContent")) "Summary must not interrupt the primary Symbol Journey."

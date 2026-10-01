@@ -4,7 +4,7 @@
   "coreCharacter": "申",
   "coreSharedMeaning": "state / apply; historical lightning/extend",
   "recognitionTakeaway": "申 survives with later state/apply/extend-related uses, while 電 adds 雨 for lightning/electricity and 伸 adds 人 for stretching.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+7533",
   "simplifiedForm": "申",
   "traditionalForm": "申",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/stretch/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 111,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -562,8 +562,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A lightning flash suggested stretching through its spreading form; sound borrowing later led to 'state' and 'apply.'",
@@ -573,7 +573,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/stretch/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The earliest graph is a branching lightning form; a person stretching is not the ancient picture.",
+        "changeNoteFromPrevious": "Two opposing curls form a loose S-shaped line, with no obvious lightning or modern enclosure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-申"
@@ -594,14 +594,14 @@
           "artifactAssetRef": "Assets/Symbols/stretch/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "申 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The earliest graph is a branching lightning form; a person stretching is not the ancient picture.",
-        "transitionNote": "The earliest graph is a branching lightning form; a person stretching is not the ancient picture.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Two opposing curls form a loose S-shaped line, with no obvious lightning or modern enclosure.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -631,14 +631,14 @@
           "artifactAssetRef": "Assets/Symbols/stretch/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "申 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Keeps the doubled curl but makes the upper hook heavier and the lower sweep longer.",
         "transitionNote": "Keeps the doubled curl but makes the upper hook heavier and the lower sweep longer.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -668,14 +668,14 @@
           "artifactAssetRef": "Assets/Symbols/stretch/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "申 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Radically reorganizes the form into a central vertical line flanked by short paired strokes, like two mirrored combs.",
         "transitionNote": "Radically reorganizes the form into a central vertical line flanked by short paired strokes, like two mirrored combs.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -705,14 +705,14 @@
           "artifactAssetRef": "Assets/Symbols/stretch/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "申 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Thickens those side strokes and spreads them outward from the central vertical.",
         "transitionNote": "Thickens those side strokes and spreads them outward from the central vertical.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -721,7 +721,7 @@
         "label": "Regular Script",
         "form": "申",
         "assetRef": null,
-        "changeNoteFromPrevious": "申 survives with later state/apply/extend-related uses, while 電 adds 雨 for lightning/electricity and 伸 adds 人 for stretching.",
+        "changeNoteFromPrevious": "Regular Script preserves the central lightning-like frame while standardizing its side strokes; the earlier paired curls are no longer visible.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -744,12 +744,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "申 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "申 survives with later state/apply/extend-related uses, while 電 adds 雨 for lightning/electricity and 伸 adds 人 for stretching.",
-        "transitionNote": "申 survives with later state/apply/extend-related uses, while 電 adds 雨 for lightning/electricity and 伸 adds 人 for stretching.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Regular Script preserves the central lightning-like frame while standardizing its side strokes; the earlier paired curls are no longer visible.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -774,7 +774,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of stretch",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-申"
@@ -785,7 +785,7 @@
     "summary": "The research record describes this structure as 申.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-申"
     ]
@@ -793,7 +793,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'state / apply; historical lightning/extend', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -831,7 +831,7 @@
       "id": "source-zdic-申",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E7%94%B3"
     },
     {
@@ -858,9 +858,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -871,4 +871,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

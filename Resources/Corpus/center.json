@@ -4,7 +4,7 @@
   "coreCharacter": "央",
   "coreSharedMeaning": "center / central",
   "recognitionTakeaway": "央 is now an abstract written form meaning center/central; the early human-and-center scene is no longer pictorially obvious.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+592E",
   "simplifiedForm": "央",
   "traditionalForm": "央",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/center/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 62,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -544,8 +544,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "The early picture is disputed: a person in a neck restraint is one leading interpretation. The graph was later borrowed by sound for ‘center.’",
@@ -555,7 +555,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/center/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A front-facing person carries an element centered around the neck or shoulders. A neck restraint is one leading interpretation, but the ancient scene remains disputed.",
+        "changeNoteFromPrevious": "",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-央"
@@ -576,13 +576,13 @@
           "artifactAssetRef": "Assets/Symbols/center/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "央 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A front-facing person carries an element centered around the neck or shoulders. The exact ancient scene is debated internally, but the central placement is visually clear.",
-        "transitionNote": "A front-facing person carries an element centered around the neck or shoulders. A neck restraint is one leading interpretation, but the ancient scene remains disputed.",
+        "transitionNote": "",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -613,9 +613,9 @@
           "artifactAssetRef": "Assets/Symbols/center/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "央 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The human body and centered crosspiece become more compact and integrated.",
@@ -650,9 +650,9 @@
           "artifactAssetRef": "Assets/Symbols/center/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "央 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The earlier human scene is heavily regularized into a balanced written structure; much of the original anatomy is no longer obvious.",
@@ -687,9 +687,9 @@
           "artifactAssetRef": "Assets/Symbols/center/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "央 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The Seal curves flatten into the angular skeleton that leads directly to the standard form.",
@@ -703,7 +703,7 @@
         "label": "Regular Script",
         "form": "央",
         "assetRef": null,
-        "changeNoteFromPrevious": "The graph was later used for ‘center’; the original scene, if it was a restraint, is no longer visible.",
+        "changeNoteFromPrevious": "Regular Script retains the enclosing frame and central vertical while flattening the earlier figure-like form into 中.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -726,11 +726,11 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "央 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "央 is now an abstract written form meaning center/central; the early human-and-center scene is no longer pictorially obvious.",
-        "transitionNote": "The graph was later used for ‘center’; the original scene, if it was a restraint, is no longer visible.",
+        "transitionNote": "Regular Script retains the enclosing frame and central vertical while flattening the earlier figure-like form into 中.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -756,7 +756,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of center / central",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-央"
@@ -767,7 +767,7 @@
     "summary": "The research record describes this structure as 央.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-央"
     ]
@@ -775,7 +775,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'center / central', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -813,7 +813,7 @@
       "id": "source-zdic-央",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%A4%AE"
     },
     {
@@ -840,8 +840,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

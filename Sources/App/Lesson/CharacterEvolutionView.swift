@@ -222,7 +222,8 @@ struct CharacterEvolutionView: View {
                     .font(AppTypography.exhibitHeading)
                     .foregroundStyle(AppColors.textPrimary)
                     .padding(.top, AppSpacing.spaceMd)
-                Text(record.history.originAnchor)
+                // Show the full component/interpretation explanation; retain the legacy anchor only as a fallback.
+                Text(record.history.origin?.explanation ?? record.history.originAnchor)
                     .font(AppTypography.body)
                     .foregroundStyle(AppColors.textPrimary)
                     .multilineTextAlignment(.center)
@@ -236,12 +237,12 @@ struct CharacterEvolutionView: View {
     private func exhibitSquare(stageID: String, materialCaption: String?) -> some View {
         ArtifactField {
             // Leave a small breathing gap so the material caption sits below, rather than against, the artwork.
-            VStack(spacing: 16) {
+            VStack(spacing: SymbolExhibitMetrics.captionGap) {
                 ZStack {
                     SymbolStageBackgroundView(stageID: stageID)
                     if stageID == "origin" {
                         if let originAsset = record.history.origin?.asset {
-                            HistoricalAssetView(metadata: originAsset, displayHeight: 248)
+                            HistoricalAssetView(metadata: originAsset, displayHeight: SymbolExhibitMetrics.squareSize)
                         } else {
                             HistoricalMissingState(
                                 title: "Origin visual not yet included",
@@ -252,9 +253,9 @@ struct CharacterEvolutionView: View {
                         if stage.availabilityState == .unavailableAsset {
                             HistoricalMissingState()
                         } else if let metadata = stage.assetMetadata {
-                            HistoricalAssetView(metadata: metadata, displayHeight: 248)
+                            HistoricalAssetView(metadata: metadata, displayHeight: SymbolExhibitMetrics.squareSize)
                         } else if let assetRef = stage.assetRef {
-                            HistoricalAssetView(assetRef: assetRef, displayHeight: 248)
+                            HistoricalAssetView(assetRef: assetRef, displayHeight: SymbolExhibitMetrics.squareSize)
                         } else {
                             // Historical visual unavailable is an intentional editorial state, never a modern fallback.
                             HistoricalMissingState()
@@ -262,8 +263,7 @@ struct CharacterEvolutionView: View {
                     }
                 }
                 // Reserve a quiet caption band below the square so material/process metadata never overlays the artwork.
-                .frame(maxWidth: .infinity)
-                .frame(height: 248)
+                .frame(width: SymbolExhibitMetrics.squareSize, height: SymbolExhibitMetrics.squareSize)
 
                 if let materialCaption {
                     Text(materialCaption)
@@ -271,15 +271,20 @@ struct CharacterEvolutionView: View {
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
                         .lineLimit(1)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 20)
+                        .frame(width: SymbolExhibitMetrics.squareSize)
+                        .frame(height: SymbolExhibitMetrics.captionHeight)
                         .padding(.horizontal, AppSpacing.spaceSm)
+                } else {
+                    // Keep Origin and Regular physically aligned with historical stages without inventing a method label.
+                    Color.clear
+                        .frame(width: SymbolExhibitMetrics.squareSize, height: SymbolExhibitMetrics.captionHeight)
+                        .accessibilityHidden(true)
                 }
             }
             .frame(maxWidth: .infinity)
-            .frame(height: 284)
+            .frame(height: SymbolExhibitMetrics.contentHeight)
         }
-        .frame(height: 304)
+        .frame(height: SymbolExhibitMetrics.fieldHeight)
     }
 
     /// Converts a horizontal swipe into the same ordered stage selection as the museum rail.
@@ -370,20 +375,31 @@ struct CharacterEvolutionView: View {
     /// The rail exposes position and direct access while the exhibit remains horizontally swipeable.
     private var stageNavigator: some View {
         VStack(spacing: 0) {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: AppSpacing.spaceXs) {
-                    ForEach(Array(navigatorIDs.enumerated()), id: \.element) { index, id in
-                        stageMarker(index: index, id: id)
+            ScrollViewReader { proxy in
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: AppSpacing.spaceXs) {
+                        ForEach(Array(navigatorIDs.enumerated()), id: \.element) { index, id in
+                            stageMarker(index: index, id: id)
+                                .id(id)
 
-                        if index < navigatorIDs.count - 1 {
-                            Rectangle()
-                                .fill(index < navigatorIndex ? AppColors.accentPrimary : AppColors.separator)
-                                .frame(minWidth: 10, maxWidth: 28, minHeight: 1, maxHeight: 1)
-                                .accessibilityHidden(true)
+                            if index < navigatorIDs.count - 1 {
+                                Rectangle()
+                                    .fill(index < navigatorIndex ? AppColors.accentPrimary : AppColors.separator)
+                                    .frame(minWidth: 10, maxWidth: 28, minHeight: 1, maxHeight: 1)
+                                    .accessibilityHidden(true)
+                            }
                         }
                     }
+                    .padding(.vertical, AppSpacing.space2xs)
                 }
-                .padding(.vertical, AppSpacing.space2xs)
+                .onAppear {
+                    proxy.scrollTo(selectedNavigatorID, anchor: .center)
+                }
+                .onChange(of: selectedNavigatorID) { _, newID in
+                    withAnimation(.easeInOut(duration: AppMotion.exhibit)) {
+                        proxy.scrollTo(newID, anchor: .center)
+                    }
+                }
             }
         }
         .padding(.horizontal, AppSpacing.spacePage)
@@ -476,6 +492,15 @@ struct CharacterEvolutionView: View {
     }
 }
 
+/// Shared geometry for Origin, historical stages, and the Regular endpoint exhibit.
+enum SymbolExhibitMetrics {
+    static let squareSize: CGFloat = 248
+    static let captionGap: CGFloat = 16
+    static let captionHeight: CGFloat = 20
+    static let contentHeight: CGFloat = 284
+    static let fieldHeight: CGFloat = 304
+}
+
 /// Renders one exact panel from the approved Symbol_Background_v1 asset set as the exhibit environment.
 struct SymbolStageBackgroundView: View {
     let stageID: String
@@ -489,7 +514,7 @@ struct SymbolStageBackgroundView: View {
                     .scaledToFit()
                     // Every approved stage panel is square; this prevents content from changing the background dimensions.
                     .aspectRatio(1, contentMode: .fit)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .frame(width: SymbolExhibitMetrics.squareSize, height: SymbolExhibitMetrics.squareSize)
                     .opacity(0.84)
                     .accessibilityHidden(true)
             } else {

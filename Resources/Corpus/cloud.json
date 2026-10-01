@@ -4,7 +4,7 @@
   "coreCharacter": "云",
   "coreSharedMeaning": "cloud; literary “say” in 云",
   "recognitionTakeaway": "Traditional 雲 preserves the added weather element over the older 云 graph for “cloud.” Literary 云 continues the borrowed “say” use; modern Simplified Chinese later also writes “cloud” as 云.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+4E91",
   "simplifiedForm": "云",
   "traditionalForm": "雲",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/cloud/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 13,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -557,8 +557,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "Three clouds grouped together: one large curling cloud below and two smaller clouds above; together, they show a cloudy sky.",
@@ -568,7 +568,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/cloud/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "An upper mark associated with the sky sits above a curling lower element. The lower element mainly carries the sound in the leading analysis, while the complete graph is used for “cloud.”",
+        "changeNoteFromPrevious": "Two upper bands and a curling lower form create an abstract outline, but no rounded cloud mass remains.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-云"
@@ -589,13 +589,13 @@
           "artifactAssetRef": "Assets/Symbols/cloud/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "云 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "An upper mark associated with the sky sits above a curling lower element. The lower element mainly carries the sound in the leading analysis, while the complete graph is used for “cloud.”",
-        "transitionNote": "An upper mark associated with the sky sits above a curling lower element. The lower element mainly carries the sound in the leading analysis, while the complete graph is used for “cloud.”",
+        "transitionNote": "Two upper bands and a curling lower form create an abstract outline, but no rounded cloud mass remains.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -626,9 +626,9 @@
           "artifactAssetRef": "Assets/Symbols/cloud/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "云 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The upper and curling lower elements become more compact and regular, while the cloud word continues to use the same basic graph.",
@@ -642,7 +642,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/cloud/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "A rain-and-weather element is added above the older graph, making the cloud meaning explicit after the older form had also been borrowed for “say.”",
+        "changeNoteFromPrevious": "Adds the rain-and-weather element above the older graph, making the cloud form more explicit.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-云"
@@ -663,13 +663,13 @@
           "artifactAssetRef": "Assets/Symbols/cloud/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "云 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A rain-and-weather element is added above the older graph, making the cloud meaning explicit after the older form had also been borrowed for “say.”",
-        "transitionNote": "A rain-and-weather element is added above the older graph, making the cloud meaning explicit after the older form had also been borrowed for “say.”",
+        "transitionNote": "Adds the rain-and-weather element above the older graph, making the cloud form more explicit.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
@@ -700,9 +700,9 @@
           "artifactAssetRef": "Assets/Symbols/cloud/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "云 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The added weather element and the older lower graph are flattened into a clear top-and-bottom structure.",
@@ -716,7 +716,7 @@
         "label": "Regular Script",
         "form": "云",
         "assetRef": null,
-        "changeNoteFromPrevious": "Traditional 雲 preserves the added weather element over the older 云 graph for “cloud.” Literary 云 continues the borrowed “say” use; modern Simplified Chinese later also writes “cloud” as 云.",
+        "changeNoteFromPrevious": "Regular Script retains the weather element above the compact lower graph; the earlier separate curls reduce to standard strokes.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -739,11 +739,11 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "云 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Traditional 雲 preserves the added weather element over the older 云 graph for “cloud.” Literary 云 continues the borrowed “say” use; modern Simplified Chinese later also writes “cloud” as 云.",
-        "transitionNote": "Traditional 雲 preserves the added weather element over the older 云 graph for “cloud.” Literary 云 continues the borrowed “say” use; modern Simplified Chinese later also writes “cloud” as 云.",
+        "transitionNote": "Regular Script retains the weather element above the compact lower graph; the earlier separate curls reduce to standard strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -769,7 +769,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of cloud; literary “say” in 云",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-云"
@@ -780,7 +780,7 @@
     "summary": "The research record describes this structure as ⿱二厶.",
     "components": [],
     "certainty": "medium",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-云"
     ]
@@ -788,7 +788,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'cloud; literary “say” in 云', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -826,7 +826,7 @@
       "id": "source-zdic-云",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E4%BA%91"
     },
     {
@@ -853,8 +853,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

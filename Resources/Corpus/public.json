@@ -4,7 +4,7 @@
   "coreCharacter": "公",
   "coreSharedMeaning": "public",
   "recognitionTakeaway": "公 now writes “public/common” and related senses, but those meanings came through borrowing; the ancient picture was most likely a vessel.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+516C",
   "simplifiedForm": "公",
   "traditionalForm": "公",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/public/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 97,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -536,8 +536,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A deep rounded vessel.",
@@ -547,7 +547,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/public/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The selected early graph is best understood as a deep rounded vessel with a wide opening.",
+        "changeNoteFromPrevious": "Two long strokes diverge above a small enclosure; the original vessel interpretation is not obvious.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-公"
@@ -568,14 +568,14 @@
           "artifactAssetRef": "Assets/Symbols/public/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "公 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected early graph is best understood as a deep rounded vessel with a wide opening.",
-        "transitionNote": "The selected early graph is best understood as a deep rounded vessel with a wide opening.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "Two long strokes diverge above a small enclosure; the original vessel interpretation is not obvious.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -605,9 +605,9 @@
           "artifactAssetRef": "Assets/Symbols/public/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "公 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The vessel outline becomes more compact and regular while retaining the container-like silhouette.",
@@ -642,9 +642,9 @@
           "artifactAssetRef": "Assets/Symbols/public/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "公 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The old vessel picture is reorganized into a highly abstract written structure; its original object is no longer obvious.",
@@ -679,9 +679,9 @@
           "artifactAssetRef": "Assets/Symbols/public/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "公 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The Seal curves flatten into the compact strokes that lead to the standard graph.",
@@ -695,7 +695,7 @@
         "label": "Regular Script",
         "form": "公",
         "assetRef": null,
-        "changeNoteFromPrevious": "公 now writes “public/common” and related senses, but those meanings came through borrowing; the ancient picture was most likely a vessel.",
+        "changeNoteFromPrevious": "Regular Script preserves separated upper strokes over a compact lower enclosure; the earlier vessel-like outline is no longer visible.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -718,11 +718,11 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "公 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "公 now writes “public/common” and related senses, but those meanings came through borrowing; the ancient picture was most likely a vessel.",
-        "transitionNote": "公 now writes “public/common” and related senses, but those meanings came through borrowing; the ancient picture was most likely a vessel.",
+        "transitionNote": "Regular Script preserves separated upper strokes over a compact lower enclosure; the earlier vessel-like outline is no longer visible.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -748,7 +748,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of public",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-公"
@@ -759,7 +759,7 @@
     "summary": "The research record describes this structure as ⿱八厶.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-公"
     ]
@@ -767,7 +767,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'public', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -805,7 +805,7 @@
       "id": "source-zdic-公",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%85%AC"
     },
     {
@@ -832,8 +832,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

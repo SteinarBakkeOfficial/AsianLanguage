@@ -4,7 +4,7 @@
   "coreCharacter": "采",
   "coreSharedMeaning": "pick / gather",
   "recognitionTakeaway": "Traditional usage often distinguishes the picking verb as 採, while 采 remains in other senses; Simplified Chinese commonly uses 采.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+91C7",
   "simplifiedForm": "采",
   "traditionalForm": "採",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/gather/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 78,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -470,8 +470,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "An early form shows a hand reaching into a plant to pick; another early form shows fruit instead of the tree. The exact early form varies.",
@@ -481,7 +481,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/gather/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A hand reaches into a plant to pick; another early form shows fruit instead of the tree, so the exact original structure varies.",
+        "changeNoteFromPrevious": "",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-采"
@@ -502,14 +502,14 @@
           "artifactAssetRef": "Assets/Symbols/gather/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "采 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A hand/claw reaches to a tree/plant to pick; the original graph itself carries the picking action.",
-        "transitionNote": "A hand reaches into a plant to pick; another early form shows fruit instead of the tree, so the exact original structure varies.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -539,9 +539,9 @@
           "artifactAssetRef": "Assets/Symbols/gather/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "采 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Enlarges the upper hand and keeps the tree below, but the fingers become short hanging marks rather than a natural hand.",
@@ -576,9 +576,9 @@
           "artifactAssetRef": "Assets/Symbols/gather/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "采 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Regularizes the upper hand into several curved finger strokes over a symmetrical tree.",
@@ -613,9 +613,9 @@
           "artifactAssetRef": "Assets/Symbols/gather/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "采 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Compresses the fingers into a small claw-like top while the tree becomes a dense tree sign-like lower component.",
@@ -629,7 +629,7 @@
         "label": "Regular Script",
         "form": "采",
         "assetRef": null,
-        "changeNoteFromPrevious": "Traditional usage often distinguishes the picking verb as 採, while 采 remains in other senses; Simplified Chinese commonly uses 采.",
+        "changeNoteFromPrevious": "Regular Script preserves the hand-over-tree arrangement in 采; the upper hand and lower tree compress into compact strokes.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -652,11 +652,11 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "采 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Traditional usage often distinguishes the picking verb as 採, while 采 remains in other senses; Simplified Chinese commonly uses 采.",
-        "transitionNote": "Traditional usage often distinguishes the picking verb as 採, while 采 remains in other senses; Simplified Chinese commonly uses 采.",
+        "transitionNote": "Regular Script preserves the hand-over-tree arrangement in 采; the upper hand and lower tree compress into compact strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -682,7 +682,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of pick / gather",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-采"
@@ -693,7 +693,7 @@
     "summary": "The research record describes this structure as ⿱爫木.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-采"
     ]
@@ -701,7 +701,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'pick / gather', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -739,7 +739,7 @@
       "id": "source-zdic-采",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E9%87%87"
     },
     {
@@ -766,8 +766,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

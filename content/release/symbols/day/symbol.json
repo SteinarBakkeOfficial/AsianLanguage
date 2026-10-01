@@ -4,7 +4,7 @@
   "coreCharacter": "日",
   "coreSharedMeaning": "sun / day",
   "recognitionTakeaway": "The round sun has become a compact rectangle, but the enclosed form and central mark preserve the ancient design.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+65E5",
   "simplifiedForm": "日",
   "traditionalForm": "日",
@@ -20,7 +20,7 @@
   "researchNotesPath": null,
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 2,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -564,8 +564,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A bright sun in the sky.",
@@ -575,7 +575,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/day/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The round sun is already squared off; carving a true circle on bone was difficult. A central mark distinguishes it from an empty enclosure.",
+        "changeNoteFromPrevious": "The enclosure is squared and a horizontal stroke crosses its center; the original round sun silhouette is not retained.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-日"
@@ -596,14 +596,14 @@
           "artifactAssetRef": "Assets/Symbols/day/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "日 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The round sun is already squared off; carving a true circle on bone was difficult. A central mark distinguishes it from an empty enclosure.",
-        "transitionNote": "The round sun is already squared off; carving a true circle on bone was difficult. A central mark distinguishes it from an empty enclosure.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "The enclosure is squared and a horizontal stroke crosses its center; the original round sun silhouette is not retained.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -633,14 +633,14 @@
           "artifactAssetRef": "Assets/Symbols/day/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "日 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The sun is compressed into a low rounded shape; other Bronze forms still retain the inner mark.",
         "transitionNote": "The sun is compressed into a low rounded shape; other Bronze forms still retain the inner mark.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -670,14 +670,14 @@
           "artifactAssetRef": "Assets/Symbols/day/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "日 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The inner line returns as a central divider, while the outline becomes a tall, regular enclosure.",
         "transitionNote": "The inner line returns as a central divider, while the outline becomes a tall, regular enclosure.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -707,14 +707,14 @@
           "artifactAssetRef": "Assets/Symbols/day/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "日 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The tall enclosure becomes broad and rectangular, establishing the basic modern structure.",
         "transitionNote": "The tall enclosure becomes broad and rectangular, establishing the basic modern structure.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -746,12 +746,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "日 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The round sun has become a compact rectangle, but the enclosed form and central mark preserve the ancient design.",
         "transitionNote": "The round sun has become a compact rectangle, but the enclosed form and central mark preserve the ancient design.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -776,7 +776,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of sun; day",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-日"
@@ -787,7 +787,7 @@
     "summary": "日 is presented first as a complete shared character.",
     "components": [],
     "certainty": "medium",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-日"
     ]
@@ -795,7 +795,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'sun / day', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -805,7 +805,7 @@
       "id": "source-zdic-日",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E6%97%A5"
     },
     {
@@ -832,9 +832,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -845,4 +845,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

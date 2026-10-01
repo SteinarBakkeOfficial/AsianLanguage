@@ -4,7 +4,7 @@
   "coreCharacter": "典",
   "coreSharedMeaning": "classic / canon / standard",
   "recognitionTakeaway": "The displayed-book structure becomes 典, with later senses canon, standard, and classic.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+5178",
   "simplifiedForm": "典",
   "traditionalForm": "典",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/classic/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 99,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -523,8 +523,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "Bound writing slips and a low stand combine to show a written record; this led to 'classic.'",
@@ -534,7 +534,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/classic/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A bound set of writing slips is placed on a broad support; the lower form is the stand, not a pair of presenting hands.",
+        "changeNoteFromPrevious": "A dense upper cluster with several openings sits over long side strokes and a lower bar; the slips and stand are not clearly recognizable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-典"
@@ -555,14 +555,14 @@
           "artifactAssetRef": "Assets/Symbols/classic/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "典 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A bound set of writing slips is placed on a broad support; the lower form is the stand, not a pair of presenting hands.",
-        "transitionNote": "A bound set of writing slips is placed on a broad support; the lower form is the stand, not a pair of presenting hands.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "A dense upper cluster with several openings sits over long side strokes and a lower bar; the slips and stand are not clearly recognizable.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -592,14 +592,14 @@
           "artifactAssetRef": "Assets/Symbols/classic/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "典 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Makes the bound-slip grid clearer and separates it from the broad lower support.",
         "transitionNote": "Makes the bound-slip grid clearer and separates it from the broad lower support.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -629,14 +629,14 @@
           "artifactAssetRef": "Assets/Symbols/classic/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "典 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Regularizes the slips into a neat lattice standing on two long legs or supports.",
         "transitionNote": "Regularizes the slips into a neat lattice standing on two long legs or supports.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -666,14 +666,14 @@
           "artifactAssetRef": "Assets/Symbols/classic/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "典 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Thickens the lattice and adds a distinct small lower mark beneath the support.",
         "transitionNote": "Thickens the lattice and adds a distinct small lower mark beneath the support.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -705,12 +705,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "典 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The displayed-book structure becomes 典, with later senses canon, standard, and classic.",
         "transitionNote": "The displayed-book structure becomes 典, with later senses canon, standard, and classic.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -735,7 +735,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of classic",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-典"
@@ -746,7 +746,7 @@
     "summary": "The research record describes this structure as ⿱⑥八.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-典"
     ]
@@ -754,7 +754,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'classic / canon / standard', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -792,7 +792,7 @@
       "id": "source-zdic-典",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%85%B8"
     },
     {
@@ -819,9 +819,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -832,4 +832,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

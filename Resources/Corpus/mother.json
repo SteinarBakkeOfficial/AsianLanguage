@@ -4,7 +4,7 @@
   "coreCharacter": "母",
   "coreSharedMeaning": "mother",
   "recognitionTakeaway": "The woman-derived body is squared and the two distinguishing marks survive inside 母.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+6BCD",
   "simplifiedForm": "母",
   "traditionalForm": "母",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/mother/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 22,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -557,8 +557,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A kneeling mother figure with added marks for motherhood and breastfeeding.",
@@ -568,7 +568,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/mother/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A woman sign-derived female figure carries two added body marks that distinguish the mother graph.",
+        "changeNoteFromPrevious": "The female figure retains two added chest-area marks that distinguish it from the related woman form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-母"
@@ -589,14 +589,14 @@
           "artifactAssetRef": "Assets/Symbols/mother/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "母 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A woman sign-derived female figure carries two added body marks that distinguish the mother graph.",
-        "transitionNote": "A woman sign-derived female figure carries two added body marks that distinguish the mother graph.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "The female figure retains two added chest-area marks that distinguish it from the related woman form.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -626,9 +626,9 @@
           "artifactAssetRef": "Assets/Symbols/mother/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "母 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The body becomes denser and more looped, with additional strokes crossing the central figure.",
@@ -663,9 +663,9 @@
           "artifactAssetRef": "Assets/Symbols/mother/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "母 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The Seal form regularizes the crossed female-like outline and keeps two distinct interior marks.",
@@ -679,7 +679,7 @@
         "label": "Clerical / 隶书",
         "form": null,
         "assetRef": "Assets/Symbols/mother/historical/clerical/glyph.svg",
-        "changeNoteFromPrevious": "The form becomes a heavy enclosed shape with two clear inner marks, now much closer to the visual logic of.",
+        "changeNoteFromPrevious": "The crossed Seal outline flattens into a heavy enclosure; the two interior marks remain.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-母"
@@ -700,13 +700,13 @@
           "artifactAssetRef": "Assets/Symbols/mother/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "母 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The form becomes a heavy enclosed shape with two clear inner marks, now much closer to the visual logic of.",
-        "transitionNote": "The form becomes a heavy enclosed shape with two clear inner marks, now much closer to the visual logic of.",
+        "transitionNote": "The crossed Seal outline flattens into a heavy enclosure; the two interior marks remain.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -739,7 +739,7 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "母 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The woman-derived body is squared and the two distinguishing marks survive inside 母.",
@@ -769,7 +769,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of mother",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-母"
@@ -780,7 +780,7 @@
     "summary": "The research record describes this structure as 母.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-母"
     ]
@@ -788,7 +788,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'mother', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -826,7 +826,7 @@
       "id": "source-zdic-母",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E6%AF%8D"
     },
     {
@@ -853,8 +853,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

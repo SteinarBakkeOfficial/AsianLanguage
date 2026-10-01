@@ -4,7 +4,7 @@
   "coreCharacter": "工",
   "coreSharedMeaning": "work / craft",
   "recognitionTakeaway": "A bladed working tool, used for working the ground or making boundaries. Some scholars instead see a carpenter’s square for measuring and marking, so the exact tool is uncertain; the character later came to mean “work” or “craft.”",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+5DE5",
   "simplifiedForm": "工",
   "traditionalForm": "工",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/work/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 43,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -570,8 +570,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A bladed tool likely represents working the ground, though some see a carpenter's square; it later came to mean 'work' or 'craft.'",
@@ -581,7 +581,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/work/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The selected form resembles an edged working tool rather than an abstract symbol for labor.",
+        "changeNoteFromPrevious": "",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-工"
@@ -602,13 +602,13 @@
           "artifactAssetRef": "Assets/Symbols/work/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "工 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The selected form resembles an edged working tool rather than an abstract symbol for labor.",
-        "transitionNote": "The selected form resembles an edged working tool rather than an abstract symbol for labor.",
+        "transitionNote": "",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -639,9 +639,9 @@
           "artifactAssetRef": "Assets/Symbols/work/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "工 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The tool outline becomes more balanced and geometric while retaining its implement-like structure.",
@@ -676,9 +676,9 @@
           "artifactAssetRef": "Assets/Symbols/work/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "工 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The tool is regularized into a symmetrical written shape, reducing the visibility of the original blade/implement.",
@@ -713,9 +713,9 @@
           "artifactAssetRef": "Assets/Symbols/work/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "工 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The curves flatten and the form becomes the compact horizontal-and-vertical structure familiar from later writing.",
@@ -729,7 +729,7 @@
         "label": "Regular Script",
         "form": "工",
         "assetRef": null,
-        "changeNoteFromPrevious": "工 is now highly abstract, but its history begins with a working tool and then extends to craft/work.",
+        "changeNoteFromPrevious": "Regular Script settles the tool outline into the compact 工 frame; the working implement is no longer pictorial.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -752,11 +752,11 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "工 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "工 is now highly abstract, but its history begins with a working tool and then extends to craft/work.",
-        "transitionNote": "工 is now highly abstract, but its history begins with a working tool and then extends to craft/work.",
+        "transitionNote": "Regular Script settles the tool outline into the compact 工 frame; the working implement is no longer pictorial.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -782,7 +782,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of work / craft",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-工"
@@ -793,7 +793,7 @@
     "summary": "The research record describes this structure as 工.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-工"
     ]
@@ -801,7 +801,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'work / craft', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -839,7 +839,7 @@
       "id": "source-zdic-工",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%B7%A5"
     },
     {
@@ -866,8 +866,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

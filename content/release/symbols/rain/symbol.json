@@ -4,7 +4,7 @@
   "coreCharacter": "雨",
   "coreSharedMeaning": "rain",
   "recognitionTakeaway": "Restores a clear top line and turns the four interior marks into diagonal dots, making them look more like falling drops again than in several intermediate stages.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+96E8",
   "simplifiedForm": "雨",
   "traditionalForm": "雨",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/rain/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 12,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -589,8 +589,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "Rain falling from the sky.",
@@ -600,7 +600,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/rain/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A long upper line and several hanging strokes suggest rain beneath a sky or cloud, but without the meaning it is not immediately recognizable as rain.",
+        "changeNoteFromPrevious": "A straight upper line and hanging strokes remain, but no clear cloud or individual raindrops make rain immediately recognizable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-雨"
@@ -621,14 +621,14 @@
           "artifactAssetRef": "Assets/Symbols/rain/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "雨 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A long upper line and several hanging strokes suggest rain beneath a sky or cloud, but without the meaning it is not immediately recognizable as rain.",
-        "transitionNote": "A long upper line and several hanging strokes suggest rain beneath a sky or cloud, but without the meaning it is not immediately recognizable as rain.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "A straight upper line and hanging strokes remain, but no clear cloud or individual raindrops make rain immediately recognizable.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -658,14 +658,14 @@
           "artifactAssetRef": "Assets/Symbols/rain/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "雨 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The form becomes a heavy rectangular frame with paired vertical openings, keeping the hanging-stroke idea but looking more architectural than meteorological.",
         "transitionNote": "The form becomes a heavy rectangular frame with paired vertical openings, keeping the hanging-stroke idea but looking more architectural than meteorological.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -695,14 +695,14 @@
           "artifactAssetRef": "Assets/Symbols/rain/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "雨 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A complete outer frame and central divider appear, with four small interior marks arranged in pairs; standardization makes the form more complex, not more pictorial.",
         "transitionNote": "A complete outer frame and central divider appear, with four small interior marks arranged in pairs; standardization makes the form more complex, not more pictorial.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -732,14 +732,14 @@
           "artifactAssetRef": "Assets/Symbols/rain/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "雨 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The Seal frame is flattened and opened into broad clerical strokes; some interior lines merge while the four small marks remain as short horizontal elements.",
         "transitionNote": "The Seal frame is flattened and opened into broad clerical strokes; some interior lines merge while the four small marks remain as short horizontal elements.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -771,12 +771,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "雨 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Restores a clear top line and turns the four interior marks into diagonal dots, making them look more like falling drops again than in several intermediate stages.",
         "transitionNote": "A top line was added after the earliest forms; later regularization keeps it above four drop marks.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -801,7 +801,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of rain",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-雨"
@@ -812,7 +812,7 @@
     "summary": "The research record describes this structure as ⿱一𠕒.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-雨"
     ]
@@ -820,7 +820,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'rain', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -858,7 +858,7 @@
       "id": "source-zdic-雨",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E9%9B%A8"
     },
     {
@@ -885,9 +885,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -898,4 +898,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

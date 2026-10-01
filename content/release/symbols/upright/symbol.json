@@ -4,7 +4,7 @@
   "coreCharacter": "正",
   "coreSharedMeaning": "correct / upright (earlier journey/campaign graph)",
   "recognitionTakeaway": "The structure regularizes as 正, whose familiar correct/upright senses are later than the earliest movement/campaign use.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+6B63",
   "simplifiedForm": "正",
   "traditionalForm": "正",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/upright/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 83,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -632,8 +632,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
   "originAnchor": "A foot advances toward a marked destination. The earliest idea was movement toward a target; the later meanings ‘correct’ and ‘upright’ developed afterward.",
@@ -643,7 +643,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/upright/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A foot points toward a marked destination, expressing long-distance travel rather than ‘correct.’",
+        "changeNoteFromPrevious": "A strong upper marker sits above a separate foot-like lower form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-正"
@@ -664,14 +664,14 @@
           "artifactAssetRef": "Assets/Symbols/upright/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "正 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A foot moves toward a destination/settlement element; this early movement/campaign graph is closely related to the word later written later campaign character.",
-        "transitionNote": "A foot points toward a marked destination, expressing long-distance travel rather than ‘correct.’",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "A strong upper marker sits above a separate foot-like lower form.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -701,14 +701,14 @@
           "artifactAssetRef": "Assets/Symbols/upright/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "正 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Keeps the top marker detached while the lower foot becomes a compact branching shape.",
         "transitionNote": "Keeps the top marker detached while the lower foot becomes a compact branching shape.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -738,14 +738,14 @@
           "artifactAssetRef": "Assets/Symbols/upright/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "正 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Joins the upper horizontal directly to a tall foot sign-like lower structure.",
         "transitionNote": "Joins the upper horizontal directly to a tall foot sign-like lower structure.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -775,14 +775,14 @@
           "artifactAssetRef": "Assets/Symbols/upright/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "正 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Flattens the top line and thickens the lower foot into a compact rectangular bend.",
         "transitionNote": "Flattens the top line and thickens the lower foot into a compact rectangular bend.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -791,7 +791,7 @@
         "label": "Regular Script",
         "form": "正",
         "assetRef": null,
-        "changeNoteFromPrevious": "The travel sense became distinct, while the regular form came to carry the later meanings ‘correct’ and ‘upright.’",
+        "changeNoteFromPrevious": "Regular Script keeps the upper horizontal over the compact foot-like lower element; the earlier travel scene is no longer visible.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -814,12 +814,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "正 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The structure regularizes as 正, whose familiar correct/upright senses are later than the earliest movement/campaign use.",
-        "transitionNote": "The travel sense became distinct, while the regular form came to carry the later meanings ‘correct’ and ‘upright.’",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Regular Script keeps the upper horizontal over the compact foot-like lower element; the earlier travel scene is no longer visible.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -844,7 +844,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of upright",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-正"
@@ -855,7 +855,7 @@
     "summary": "The research record describes this structure as ⿱一止.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-正"
     ]
@@ -863,7 +863,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'correct / upright (earlier journey/campaign graph)', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -901,7 +901,7 @@
       "id": "source-zdic-正",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E6%AD%A3"
     },
     {
@@ -928,9 +928,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -941,4 +941,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

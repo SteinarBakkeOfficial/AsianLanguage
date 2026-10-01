@@ -4,7 +4,7 @@
   "coreCharacter": "石",
   "coreSharedMeaning": "stone",
   "recognitionTakeaway": "The standardized form 石 preserves the later cliff-and-stone structure rather than the earliest object-like picture.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+77F3",
   "simplifiedForm": "石",
   "traditionalForm": "石",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/stone/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 11,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -557,8 +557,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A rocky cliff with a separate stone beneath it; together, they express stone or rock.",
@@ -568,7 +568,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/stone/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The earliest selected form is angular and object-like, preserving the outline of a resonant stone or stone-chime form rather than a simple loose rock.",
+        "changeNoteFromPrevious": "A slanted outer edge encloses an irregular opening; the compact angular form does not clearly read as a separate stone.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-石"
@@ -589,13 +589,13 @@
           "artifactAssetRef": "Assets/Symbols/stone/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "石 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The earliest selected form is angular and object-like, preserving the outline of a resonant stone or stone-chime form rather than a simple loose rock.",
-        "transitionNote": "The earliest selected form is angular and object-like, preserving the outline of a resonant stone or stone-chime form rather than a simple loose rock.",
+        "transitionNote": "A slanted outer edge encloses an irregular opening; the compact angular form does not clearly read as a separate stone.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -626,9 +626,9 @@
           "artifactAssetRef": "Assets/Symbols/stone/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "石 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The angular stone-object outline becomes more regular while retaining the same basic pictorial identity.",
@@ -663,9 +663,9 @@
           "artifactAssetRef": "Assets/Symbols/stone/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "石 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The graph is reorganized into the later cliff-and-stone arrangement, a major structural reinterpretation of the older picture.",
@@ -700,9 +700,9 @@
           "artifactAssetRef": "Assets/Symbols/stone/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "石 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The Seal structure flattens into the familiar written components, making the original object picture much less visible.",
@@ -739,7 +739,7 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "石 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The standardized form 石 preserves the later cliff-and-stone structure rather than the earliest object-like picture.",
@@ -769,7 +769,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of stone",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-石"
@@ -780,7 +780,7 @@
     "summary": "The research record describes this structure as ⿸丆口.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-石"
     ]
@@ -788,7 +788,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'stone', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -826,7 +826,7 @@
       "id": "source-zdic-石",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E7%9F%B3"
     },
     {
@@ -853,8 +853,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

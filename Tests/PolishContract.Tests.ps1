@@ -61,12 +61,20 @@ Assert-Contains -Text $evolutionText -ExpectedSubstring "AppMotion.exhibit" -Mes
 Assert-True (-not $evolutionText.Contains("stageDateLabel")) "Symbol pages must not show period/date metadata."
 
 $onboardingText = Get-Text "Sources/App/Navigation/RootTabView.swift"
-Assert-Contains -Text $onboardingText -ExpectedSubstring 'PrimaryActionButton("Explore \(firstSymbolRecord?.coreSharedMeaning.capitalized ?? "One")")' -Message "Onboarding should enter the first ranked symbol from one primary page."
+Assert-Contains -Text $onboardingText -ExpectedSubstring 'private let onboardingSymbolID = "mountain"' -Message "Onboarding should use the curated Mountain exhibit."
+Assert-Contains -Text $onboardingText -ExpectedSubstring 'openSymbol(onboardingSymbolID, intent: .start)' -Message "Onboarding should enter the curated exhibit from one primary page."
+Assert-Contains -Text $onboardingText -ExpectedSubstring '.background(AppColors.artifactField)' -Message "Onboarding Today should use the same artifact tile surface as the historical stages."
 Assert-True (-not $onboardingText.Contains("private enum Step")) "Onboarding should not retain the duplicate two-step flow."
 Assert-Contains -Text $onboardingText -ExpectedSubstring "HistoryScriptDetailView" -Message "History script entries should open detail destinations."
 Assert-Contains -Text $onboardingText -ExpectedSubstring "HistoryModernLanguageDetailView" -Message "History modern-language branches should open detail destinations."
 Assert-Contains -Text $onboardingText -ExpectedSubstring "Historical and research references" -Message "Sources should show the concise historical and research reference list."
 Assert-True (-not $onboardingText.Contains("Apple Speech Synthesis")) "Sources should not present technical speech attribution as a historical source."
+
+$lessonText = Get-Text "Sources/App/Lesson/LessonView.swift"
+Assert-Contains -Text $lessonText -ExpectedSubstring 'navigationMeaning(for: $0)' -Message "Symbol navigation titles should use a concise primary meaning."
+Assert-Contains -Text $lessonText -ExpectedSubstring '.split(separator: ";", maxSplits: 1' -Message "Symbol navigation titles should keep editorial qualifiers out of the title."
+Assert-Contains -Text $lessonText -ExpectedSubstring '.split(separator: "(", maxSplits: 1' -Message "Symbol navigation titles should keep historical parentheticals out of the title."
+Assert-Contains -Text $lessonText -ExpectedSubstring '.split(separator: "/", maxSplits: 1' -Message "Symbol navigation titles should use one concise primary meaning."
 
 $recordText = Get-Text "Sources/App/Corpus/SharedCharacterRecord.swift"
 Assert-Contains -Text $recordText -ExpectedSubstring "let speechText: String?" -Message "Readings should support explicit speech text."

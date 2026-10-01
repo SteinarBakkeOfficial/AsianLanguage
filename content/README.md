@@ -30,4 +30,4 @@ The runtime copies are generated separately under `Resources/Corpus` and `Resour
 
 Only the currently selected Origin image and ZDIC stage source files remain in each active Symbol folder. Earlier or alternate asset files are retained separately under `docs/archive/superseded-symbol-assets/`.
 
-Generated preparation keeps every record in `draft` or `needsReview`. Human approval is required before publication.
+Legacy/generated preparation may keep records in `draft` or `needsReview` while they are being prepared. The active V1 package under `release/symbols/` is approved/published; its canonical `symbol.json`, generated runtime record, and manifest are authoritative.

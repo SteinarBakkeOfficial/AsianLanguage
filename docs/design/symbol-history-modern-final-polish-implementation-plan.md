@@ -1,12 +1,18 @@
 # Symbol / History / Modern Language Final Polish — Implementation Plan
 
-**Status:** Approved scope; the Testing07_09 correction slice is implemented locally. Structural Symbol, History, modern-language, and audio slices are wired; macOS/device visual verification and remaining editorial data review are still outstanding.
+**Status:** V1.0 implementation and acceptance complete. The book-informed History editorial upgrade, approved language content, and local contract verification are complete; post-release findings are Patch 0.1 maintenance.
 
 **Approved:** 2026-09-04
 
 ## Superseding final V1 pass — 2026-09-08
 
 The user-approved final pass extends this plan for release testing. It includes the complete native-text History article/content slice, full-row History navigation, safe-area/crop corrections, Account/Settings/About/Sources/Home/Search/Browse polish, accessibility and Reduce Motion handling, restrained sharing/completion feedback, Quick Review expansion, user-initiated review reminders, and system feedback sharing. New History artwork, monetization, analytics, picture/scan recognition, cloud sync, and gamification remain excluded.
+
+## Current V1 disposition — 2026-10-01
+
+- Review is complete for Symbol captions, historical interpretation, target-language readings/examples, native-speaker content, source/editorial content, and History copy.
+- V1 acceptance testing is complete for the approved release scope and local contract suite.
+- Marketplace release is followed by real-world feedback collection. Confirmed issues are handled as Patch 0.1; this plan does not reopen completed V1 review by default.
 
 ## Goal
 
@@ -20,9 +26,9 @@ Make the Symbol Journey feel like one continuous historical exhibit, clarify mod
 2. Keep Oracle through Regular glyphs centered and visually primary. Add one quiet, data-driven material/process caption below the exhibit area where appropriate.
 3. Remove date/period text from individual Symbol evolution pages. Keep the six stage names.
 4. Add a restrained crossfade between successive Symbol stages, including Origin to Oracle. Do not morph glyph shapes or add a comparison screen.
-5. Consolidate Symbol onboarding to one page with the approved concept, progression, and dynamic `Explore [first symbol]` CTA, entering the first-ranked Symbol exhibit directly.
+5. Consolidate Symbol onboarding to one page with the approved concept, progression, and dynamic `Explore Mountain` CTA, entering the curated Mountain Symbol exhibit directly.
 6. Refine the existing Simplified Chinese, Traditional Chinese, Japanese, and Korean modern-language pages according to their distinct linguistic hierarchies. Preserve verified content and do not fabricate missing readings or examples.
-7. Add one small iOS pronunciation service around `AVSpeechSynthesizer`, explicit draft speech text from the current content workflow, and restrained speaker controls on modern-language readings. Stop current speech before starting a new item; do not use cloud TTS, API keys, or bundled MP3 files. Keep linguistic data platform-independent, add Apple Speech Synthesis to Sources / Licenses as technical attribution, and document the future Android `TextToSpeech` replacement boundary.
+7. Add one small iOS pronunciation service around `AVSpeechSynthesizer`, explicit approved speech text from the current content workflow, and restrained speaker controls on modern-language readings. Stop current speech before starting a new item; do not use cloud TTS, API keys, or bundled MP3 files. Keep linguistic data platform-independent, add Apple Speech Synthesis to Sources / Licenses as technical attribution, and document the future Android `TextToSpeech` replacement boundary.
 8. Correct the existing History layout defects surgically: crop/aspect behavior, header overlap, text collisions/truncation, vertical spacing, and safe-area/navigation clearance. Keep `History_V1.png` as the artwork/reference source and preserve the existing History composition.
 9. Extend History after Regular Script with branching modern-language contexts for Traditional Chinese, Simplified Chinese, Japanese, and Korean. These are branches, not four additional sequential script stages.
 10. Make each existing historical script entry clickable: Oracle Bone, Bronze, Small Seal, Clerical, and Regular. Make each modern-language branch clickable as well. Each destination is a deeper detail page with source-backed detail where available, an explicit unfinished state where content is not yet complete, and a normal back button returning to History. Do not add a new root tab or separate comparison flow.
@@ -31,11 +37,11 @@ Make the Symbol Journey feel like one continuous historical exhibit, clarify mod
 
 This paragraph recorded the former hold before the 2026-09-08 approval. The current pass now adds the supplied History editorial articles and reusable native-text article layout while preserving the existing shell and available artwork. Replacement History artwork remains excluded.
 
-### Deferred follow-ups from Testing08_09 — next implementation only
+### Historical follow-ups from Testing08_09 — superseded by V1 acceptance
 
-- Resolved locally: the exhibit crossfade is now `0.36s`; native simulator/device verification remains.
-- Resolved locally: material captions now have a small additional gap while remaining inside the exhibit square; native visual verification remains.
-- Resolved locally: History script rows and modern-language branch cards use full-row navigation; native tap verification remains.
+- Resolved locally: the exhibit crossfade is now `0.36s`; future device observations are Patch 0.1 input.
+- Resolved locally: material captions now have a small additional gap while remaining inside the exhibit square.
+- Resolved locally: History script rows and modern-language branch cards use full-row navigation.
 - These are deferred notes only; no implementation is authorized by this section.
 
 ## Data and source boundaries
@@ -73,9 +79,9 @@ Keep Home, Browse, More, and Collections changes focused on the approved copy/st
 ## Implementation checkpoint — 2026-09-04
 
 - The six exact stage backgrounds, Symbol period removal, one-page onboarding, stage crossfade, material captions, modern-language hierarchy, History branches/detail destinations, iOS pronunciation service, speaker controls, and Apple technical attribution are implemented in the agreed areas.
-- Explicit draft speech data is now generated for all current V1 reading rows from the existing content workflow. It remains editorially unapproved by design; later native-speaker and multi-user review will correct readings where needed.
+- Explicit approved speech data is generated for all current V1 reading rows from the existing content workflow. Later user feedback may still produce Patch 0.1 corrections.
 - Missing Hong Kong/Cantonese data remains missing; the importer and Traditional Chinese presentation do not substitute Mandarin readings or starter examples under a Cantonese label.
-- The unfinished History detail pages are structural destinations by design. Their broader content and the planned History overview rework remain deferred to the next implementation.
+- The History detail pages now contain the approved book-informed narrative and comparison-table treatment. Further expansion is post-release maintenance or a separately approved V2 scope.
 
 ## Related records
 
@@ -115,9 +121,9 @@ The 2026-09-05 Testing07_09 review identified focused corrections to the current
 
 ### 4. One-page onboarding composition
 
-- Preserve the approved single onboarding page, concept wording, four-item progression, and dynamic action for the first-ranked symbol (`Explore One` for the current order).
-- Modestly enlarge the main first-symbol illustration and adjust vertical placement/spacing to reduce the unused lower area.
-- Use the first-ranked symbol's existing origin illustration and historical stages; do not add fallback artwork.
+- Preserve the approved single onboarding page, concept wording, four-item progression, and dynamic action for the curated Mountain symbol (`Explore Mountain`).
+- Modestly enlarge the main onboarding-symbol illustration and adjust vertical placement/spacing to reduce the unused lower area.
+- Use Mountain's existing origin illustration and historical stages; do not add fallback artwork.
 - Do not restore a second onboarding page or alter the 126-symbol corpus eligibility rule as part of this correction slice.
 
 ### 5. History crop, typography, and whole-row navigation
@@ -128,13 +134,13 @@ The 2026-09-05 Testing07_09 review identified focused corrections to the current
 - Make the full area of every historical script row tappable, not only its visible text or edge affordance.
 - Make the full area of every modern-language branch row tappable, not only the chevron.
 - Preserve the existing detail destinations, native back navigation, unfinished-state treatment, and current History composition.
-- The broader History-page rework remains explicitly deferred to the implementation after this correction slice.
+- The broader History-page rework is now implemented for V1 through the book-informed narrative and comparison-table modules.
 
 ### Explicit non-changes for this correction slice
 
 - Do not change the 126-symbol corpus or its complete-evolution selection rule.
-- Fire remains a separate pilot/reference record; onboarding now follows the first ID in the ranked runtime manifest, currently 一.
-- Do not rewrite or silently approve the current draft translations, readings, or examples; those remain editorial review work.
+- Fire remains a separate pilot/reference record; onboarding uses the curated Mountain record while the ranked runtime manifest remains unchanged.
+- V1 translations, readings, and examples are approved. Future wording changes require an explicit Patch 0.1 or later scope.
 - Do not redesign unrelated screens, navigation, typography tokens, colors, spacing tokens, cards, or the modern-language information architecture.
 
 ### Next implementation order

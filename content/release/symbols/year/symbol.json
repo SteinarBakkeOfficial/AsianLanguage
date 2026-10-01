@@ -4,7 +4,7 @@
   "coreCharacter": "年",
   "coreSharedMeaning": "year",
   "recognitionTakeaway": "The harvest graph regularizes as 年; the annual harvest cycle supplies the “year” sense.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+5E74",
   "simplifiedForm": "年",
   "traditionalForm": "年",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/year/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 116,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -575,8 +575,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
   "originAnchor": "A person carrying ripe grain depicts a harvest—the earlier meaning of the graph.",
@@ -586,7 +586,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/year/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The person-and-grain scene shows harvest, not yet an abstract calendar year.",
+        "changeNoteFromPrevious": "",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-年"
@@ -607,14 +607,14 @@
           "artifactAssetRef": "Assets/Symbols/year/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "年 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A person carries ripe grain, giving a harvest scene rather than an abstract calendar symbol.",
-        "transitionNote": "The person-and-grain scene shows harvest, not yet an abstract calendar year.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -644,14 +644,14 @@
           "artifactAssetRef": "Assets/Symbols/year/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "年 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Keeps the grain head visible but simplifies the human body into a long bent lower stroke.",
         "transitionNote": "Keeps the grain head visible but simplifies the human body into a long bent lower stroke.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -681,14 +681,14 @@
           "artifactAssetRef": "Assets/Symbols/year/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "年 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Regularizes the grain-like upper crossings and the lower figure into a compact vertical composition.",
         "transitionNote": "Regularizes the grain-like upper crossings and the lower figure into a compact vertical composition.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -718,14 +718,14 @@
           "artifactAssetRef": "Assets/Symbols/year/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "年 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The grain/person-like early structure becomes more angular and compact, nearly recognizable as the later standard structure.",
         "transitionNote": "The grain/person-like early structure becomes more angular and compact, nearly recognizable as the later standard structure.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -734,7 +734,7 @@
         "label": "Regular Script",
         "form": "年",
         "assetRef": null,
-        "changeNoteFromPrevious": "Because the harvest returned each year, the harvest word extended to mean ‘year’; the modern form no longer shows the scene clearly.",
+        "changeNoteFromPrevious": "Regular Script compresses the grain-and-person arrangement into 年; the separate stalk and body are no longer distinct.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -757,12 +757,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "年 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The harvest graph regularizes as 年; the annual harvest cycle supplies the “year” sense.",
-        "transitionNote": "Because the harvest returned each year, the harvest word extended to mean ‘year’; the modern form no longer shows the scene clearly.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Regular Script compresses the grain-and-person arrangement into 年; the separate stalk and body are no longer distinct.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -787,7 +787,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of year",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-年"
@@ -798,7 +798,7 @@
     "summary": "The research record describes this structure as 年.",
     "components": [],
     "certainty": "medium",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-年"
     ]
@@ -806,7 +806,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'year', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -844,7 +844,7 @@
       "id": "source-zdic-年",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%B9%B4"
     },
     {
@@ -871,9 +871,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -884,4 +884,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

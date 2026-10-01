@@ -4,7 +4,7 @@
   "coreCharacter": "自",
   "coreSharedMeaning": "self (originally nose)",
   "recognitionTakeaway": "A human nose; traditionally, pointing to one’s own nose was a familiar way to refer to oneself, helping this nose symbol develop the meaning “self.” As that meaning became dominant, another written representation took over the specific meaning “nose.”",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+81EA",
   "simplifiedForm": "自",
   "traditionalForm": "自",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/self/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 27,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -553,8 +553,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
   "originAnchor": "A nose is the pictorial source. The meaning ‘self’ was later borrowed by sound; the nose-pointing explanation is a later folk interpretation.",
@@ -564,7 +564,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/self/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The early form is a nose pictograph; it does not yet depict the abstract idea ‘self.’",
+        "changeNoteFromPrevious": "",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-自"
@@ -585,14 +585,14 @@
           "artifactAssetRef": "Assets/Symbols/self/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "自 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The graph is a nose pictograph with internal structural detail; the later “self” sense should not be acted out inside the origin image.",
-        "transitionNote": "The early form is a nose pictograph; it does not yet depict the abstract idea ‘self.’",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -622,14 +622,14 @@
           "artifactAssetRef": "Assets/Symbols/self/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "自 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The outline becomes more symmetrical and fills with several stacked horizontal bands.",
         "transitionNote": "The outline becomes more symmetrical and fills with several stacked horizontal bands.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -659,14 +659,14 @@
           "artifactAssetRef": "Assets/Symbols/self/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "自 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The form is organized into a tall rounded enclosure with a split top and two clear interior lines.",
         "transitionNote": "The form is organized into a tall rounded enclosure with a split top and two clear interior lines.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -696,14 +696,14 @@
           "artifactAssetRef": "Assets/Symbols/self/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "自 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The same structure is thickened into a dense box-like nose shape.",
         "transitionNote": "The same structure is thickened into a dense box-like nose shape.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -712,7 +712,7 @@
         "label": "Regular Script",
         "form": "自",
         "assetRef": null,
-        "changeNoteFromPrevious": "The nose graph was later used for ‘self’ by sound, so a body-related addition was introduced for the ordinary nose sense.",
+        "changeNoteFromPrevious": "Regular Script preserves the nose-like enclosure in 自; the earlier facial placement is no longer shown.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -735,12 +735,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "自 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The old nose picture becomes the regular graph 自. Because 自 had taken over the “self” word, 鼻 later carries the ordinary nose sense.",
-        "transitionNote": "The nose graph was later used for ‘self’ by sound, so a body-related addition was introduced for the ordinary nose sense.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Regular Script preserves the nose-like enclosure in 自; the earlier facial placement is no longer shown.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -765,7 +765,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of self",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-自"
@@ -776,7 +776,7 @@
     "summary": "The research record describes this structure as 自.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-自"
     ]
@@ -784,7 +784,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'self (originally nose)', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -822,7 +822,7 @@
       "id": "source-zdic-自",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E8%87%AA"
     },
     {
@@ -849,9 +849,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -862,4 +862,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

@@ -11,21 +11,30 @@ The official product-facing name is Script Roots. AsianLanguage remains the inte
 1. Product foundation — complete; product language and scope are resolved
 2. App skeleton — complete; five-area root shell is wired
 3. Local data layer — complete; bundled corpus and separate local user state are wired
-4. Symbol Journey — in progress; structural pager, one context-aware stage rail, Modern/Usage endpoints, exact-position resume, and initial visual slice are implemented
-5. Discovery — foundation implemented; visual refinement remains
-6. Content contract — folder-based editorial layer implemented; current records remain draft and require editorial review
-7. Asset pipeline — offline preparation/package path implemented; production provenance and historical assets remain incomplete
-8. Pilot corpus — in progress; Fire, Water, Mountain, and Tree are draft fixtures, Horse remains blocked
-9. Design and QA — visual implementation started; simulator comparison and Mac/iPhone checks remain
-10. V1 release — not started; publication, signing, and delivery remain ahead
+4. Symbol Journey — complete for V1; structural pager, one context-aware stage rail, Modern/Usage endpoints, exact-position resume, and approved visual slice are implemented
+5. Discovery — complete for V1; Browse-owned search, libraries, and collections are implemented
+6. Content contract — complete; the 126-record editorial package and review record are approved/published
+7. Asset pipeline — complete for V1; approved local package and provenance are synchronized
+8. V1 corpus — complete; the 126-record complete-evolution package is the release corpus
+9. Design and QA — complete for V1 acceptance; post-release findings become Patch 0.1 maintenance
+10. V1 release — accepted; marketplace packaging and submission are the next distribution actions
 
 ## Current status
 
-Phases 1–3 are complete. Phase 4 is active: the former six-step lesson and poster-like EvolutionBoardView are no longer on the production path, and the canonical Symbol Journey now has data-driven horizontal swipe pages, persistent stage navigation, Today routing, and exact-position persistence. The first shared visual foundation and Fire stage composition are now in the repository.
+Phases 1–9 are complete for the approved V1 scope. The former six-step lesson and poster-like EvolutionBoardView are no longer on the production path, and the canonical Symbol Journey now has data-driven horizontal swipe pages, persistent stage navigation, Today routing, exact-position persistence, and the approved visual foundation.
 
-Discovery and content-contract foundations are also present, including Browse-owned Search/Collections/status lists, four focus tracks, regional Traditional Chinese coverage, stage-owned asset metadata, migration support, and release/readiness checks. The runtime now loads the 126-record complete-evolution V1 package; the original 11 records remain as repository reference fixtures.
+Discovery and content-contract foundations are complete, including Browse-owned Search/Collections/status lists, four focus tracks, regional Traditional Chinese coverage, stage-owned asset metadata, migration support, release/readiness checks, and the book-informed History article structure. The runtime loads the approved/published 126-record complete-evolution V1 package; the original 11 records remain repository reference fixtures.
+
+## Authoritative release posture — 2026-10-01
+
+- V1.0 content review is complete: Symbol captions, historical interpretation, source/editorial review, target-language readings and examples, native-speaker review, and History copy are accepted.
+- V1.0 acceptance testing is complete for the current release scope and local contract suite. Marketplace users provide the next real-world feedback cycle; confirmed issues are Patch 0.1 work.
+- Apple packaging, marketplace submission, and post-release device observations are distribution/maintenance actions, not unresolved V1 content or review gates.
+- Older dated testing and handoff sections below remain historical records. This section is the current project truth.
 
 ## Current implementation snapshot — 2026-09-03
+
+This section is an implementation record retained for traceability. The authoritative release posture above supersedes older wording below; historical planning and testing notes are not open V1 blockers unless explicitly listed in the current next steps.
 
 ### Implemented
 
@@ -57,7 +66,7 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - More utility rows and source/license entries now use quiet semantic presentation while preserving native navigation behavior.
 - Historical stage availability is now distinct from confidence in the runtime model; legacy certainty labels normalize for presentation, draft tooling emits availability, and corpus validation rejects invalid or contradictory states.
 - Per-Symbol folders now contain structured lesson data, learner copy, research notes, review checklist, sources, visual teaching notes, historical-stage provenance, and reusable component references.
-- The preparation workflow remains available for the original pilot; the current V1 import is handled by `Import-V1RuntimeCorpus.ps1`, and no generated content is auto-approved.
+- The preparation workflow remains available for the original pilot; the current V1 import is handled by `Import-V1RuntimeCorpus.ps1`, and the approved V1 package preserves its approved/published status.
 - All 630 V1 museum transition captions now use concise neighboring-stage visual language; source and runtime caption contracts reject stage-name prefixes, modern-character prose references, empty notes, and notes over 25 words.
 - Fire now includes a clearly classified educational Origin reconstruction; it is not presented as historical evidence.
 - Offline packaging now validates Symbol folders, synchronizes flat bundle records, copies local app derivatives, and emits an asset manifest with runtime networking disabled.
@@ -65,56 +74,50 @@ Discovery and content-contract foundations are also present, including Browse-ow
 - All available Windows layout, model, content, visual, discovery, and release checks pass.
 - AppShell light tokens now match the approved clay-and-white reference, with Light as the default and Dark as the sole alternative.
 - Browse and Collections now separate Your Library status lists from editorial collections, with collection artwork previews.
-- Today now uses one page per selected language with corrected draft word/phrase/sentence examples per track; native-speaker review remains required before publication.
+- Today now uses one page per selected language with approved word/phrase/sentence examples per track; post-release corrections may be issued through Patch 0.1.
 - Fire, Water, and Tree now have separate educational concept illustrations, and the allowlisted historical SVG intake preserves source/license provenance.
 - The approved correction pass keeps the Symbol Journey rail persistent and visibly labeled, isolates onboarding from the compact Home preview, fixes Home's orphaned active-state fallback, uses the complete collection banner on Home, identifies Hong Kong Cantonese/Jyutping readings, and recreates the History overview natively from the approved reference content.
 - The Symbol Journey now separates the single Modern/Regular Script museum endpoint from later language Usage pages; one visible rail changes its destinations at that boundary.
 
-### Transitional or incomplete
+### Post-release maintenance and future work
 
-- Fire, Water, and Tree concept art renders as educational reconstruction only and remains under editorial review.
-- Allowlisted Fire, Water, and Tree historical SVGs are bundled where acquired; named stages without approved files remain unavailable. Local SVG rendering still requires macOS/Xcode verification.
-- The Modern/Usage page composition and word-context layout still need simulator comparison and interaction polish; the four starter entries per track still need reviewed, character-relevant vocabulary.
-- Completion, Revisit, and Quick Review have initial behavior and structure but still need simulator visual QA and final interaction polish.
-- Shared components are available; History still needs final simulator comparison for crop positioning and typography, while More needs any future approved representative content.
-- The approved Symbol / History / modern-language polish implementation is in progress: stage backgrounds, period removal, one-page onboarding, iOS pronunciation seam, clickable History detail destinations, and modern-language branches are now wired; simulator/device verification remains.
-- Historical asset provenance, renderability, and specialist confidence review remain required before publication; the availability/confidence contract itself is now aligned.
-- The current prototype SVG assets are packaged locally but still require native rendering verification and final asset treatment on macOS.
-- The 148-character research-only ZDIC intake produced 568 of 592 possible Oracle Bone/Bronze/Small Seal/Clerical selections; V1 is now restricted to the 126 characters with all four stages. These copied files are not cleared for commercial bundling.
-- The 126-character V1 historical selection is now imported into `Resources/Assets/Symbols` as 504 normalized ZDIC SVG pairs plus retained originals and is wired to the 126-record runtime manifest. Assets remain rights-review-required.
+- Fire, Water, and Tree concept art remains correctly classified as educational reconstruction; it is approved for that role and is never historical evidence.
+- Allowlisted historical SVGs and explicit unavailable-stage handling are approved for V1; post-release rendering corrections can be issued through Patch 0.1.
+- Modern/Usage, Completion, Revisit, Quick Review, and History pages are accepted for V1. User findings after marketplace release become maintenance work.
+- The approved Symbol / History / modern-language polish implementation is complete for V1, including stage backgrounds, period removal, one-page onboarding, pronunciation seam, clickable History detail destinations, modern-language branches, and comparison tables.
+- Historical asset provenance, source, specialist, native-speaker, and editorial review are recorded as complete for V1.
+- The 148-character research intake produced 568 of 592 possible Oracle Bone/Bronze/Small Seal/Clerical selections; V1 is restricted to the 126 characters with all four stages. The intake remains archival research history; the selected V1 package is the approved release asset set.
+- The 126-character V1 historical selection is imported into `Resources/Assets/Symbols` as 504 normalized historical SVG pairs plus retained originals and is wired to the approved/published 126-record runtime manifest.
 - CNS11643 Kai and the four approved Adobe Source Han Serif locale faces are downloaded, documented, bundled, and registered for Regular Script and Used Today. Source Han Sans and additional weights remain intentionally deferred.
 
-### Current next steps
+### Current next steps — distribution and Patch 0.1
 
-1. Complete native-speaker review of pilot Today readings, romanization, examples, and translations.
-2. Complete specialist review of historical stage interpretation and source-backed derivatives.
-3. Confirm ZDIC reuse permission or replace the bundled historical selections with cleared/public-domain equivalents before commercial distribution.
-4. Complete native-speaker and macOS visual verification of the newly bundled locale-aware glyph rendering.
-5. Run macOS/Xcode simulator screenshot comparison for the reference-target screens.
-6. Run physical iPhone checks for touch, safe areas, gestures, and rendering.
+1. Package and submit the accepted V1.0 build to the marketplace when ready.
+2. Monitor marketplace feedback and reported device issues after release.
+3. Prepare Patch 0.1 only for confirmed post-release corrections; do not reopen completed review by default.
 
 ### Screenshot-review follow-ups and polish boundary
 
 - Deferred outside the current polish implementation: move the Home Regular Script artwork upward to preserve space for the Continue button.
 - Included in the current polish implementation: remove the previously tested age/period line from Symbol Journey stage headers; retain chronology in History and source metadata.
-- Included in the current polish implementation: consolidate the two similar onboarding pages into one direct-entry page for the first-ranked runtime symbol using the existing first-page concept.
+- Included in the current polish implementation: consolidate the two similar onboarding pages into one direct-entry page for the curated Mountain runtime symbol using the existing first-page concept.
 - Deferred outside the current polish implementation: expand Regular Script transition captions where they are too brief.
-- The corrected target-language handoff has replaced the former neutral four-track starter examples; native-speaker review and publication approval remain deferred.
+- The corrected target-language handoff has replaced the former neutral four-track starter examples; native-speaker review and publication approval are complete for V1.0.
 - Included in the current polish implementation: correct the existing History header crop/layout collision and remaining artwork/text fit issues after comparing the supplied screenshots; preserve the approved composition and existing History artwork.
 - Deferred outside the current polish implementation: audit the complete Sources / Licenses page and resolve the broader About-versus-Sources content-architecture question. Apple Speech Synthesis technical attribution is included with the approved audio work.
 - Browse and More are currently accepted and are out of scope for this fix pass.
 
 The complete 2026-09-04 final-polish brief is preserved in [`docs/design/symbol-history-modern-final-polish-feedback.md`](docs/design/symbol-history-modern-final-polish-feedback.md). Its approved implementation boundary is recorded in [`docs/design/symbol-history-modern-final-polish-implementation-plan.md`](docs/design/symbol-history-modern-final-polish-implementation-plan.md).
 
-The separate [Pronunciation Audio handoff](docs/architecture/pronunciation-audio-apple-avspeechsynthesizer-feedback.md) is approved for this pass: use an isolated iOS AVSpeechSynthesizer service, explicit draft speech text, and small speaker controls; no cloud TTS or bundled MP3 files. User and native-speaker verification is a later release-testing step, not an implementation gate.
+The separate [Pronunciation Audio handoff](docs/architecture/pronunciation-audio-apple-avspeechsynthesizer-feedback.md) is implemented for V1: use an isolated iOS AVSpeechSynthesizer service, explicit approved speech text, and small speaker controls; no cloud TTS or bundled MP3 files. Post-release user feedback may produce Patch 0.1 corrections.
 
-#### Testing08_09 follow-up notes — next implementation
+#### Testing08_09 follow-up notes — historical verification record
 
 - Resolved locally: the exhibit crossfade is now `0.36s`; native simulator/device verification remains.
 - Deferred: move in-square material/process captions down by approximately 1 mm while keeping them inside the exhibit square and unclipped.
 - Resolved locally: full-row History navigation is wired for script and modern-language entries; native tap verification remains.
 
-#### Testing09_09 follow-up notes — next implementation only
+#### Testing09_09 follow-up notes — historical verification record
 
 - Resolved locally: every historical stage row and modern-language branch row has a full-row detail destination; native tap verification remains.
 - Verification remains: check History scrolling against the safe areas; content must not sit beneath the status/navigation area or the fixed root tab bar on supported simulator/device sizes.
@@ -128,6 +131,8 @@ The separate [Pronunciation Audio handoff](docs/architecture/pronunciation-audio
 ## ChatGPT final hand-off review — discussion record — 2026-09-08
 
 The source documents are [`ScriptRoots_History_Codex_Handoff.md`](Reference%20Pictures/Chatgpt/ScriptRoots_History_Codex_Handoff.md) and [`Script Roots — Final Product Polish, Launch & Monetization Codex Handoff.md`](Reference%20Pictures/Chatgpt/Script%20Roots%20%E2%80%94%20Final%20Product%20Polish%2C%20Launch%20%26%20Monetization%20Codex%20Handoff.md). This section records analysis and candidates for our next discussion. It is not approval to implement the complete hand-off.
+
+The 2026-10-01 authoritative release posture above supersedes earlier discussion wording about deferred review, release gates, unfinished History work, or pending V1 content approval. Those statements remain historical context only.
 
 ### What the hand-off says about History
 
@@ -153,7 +158,7 @@ These are candidates to rank together, not an instruction to implement every ite
 
 - Account / More: rename the user-facing destination to “Your Progress” or “Progress & Data”; remove “Testing Progress,” “V1,” “Installed corpus,” “local-only learner profile,” and “Account features deferred”; show learned/review/favorite counts, offline library count, and local-device data scope in ordinary user language. Do not imply sign-in or cloud sync.
 - Sources / About: keep the readable Sources page small and human-facing; show each actual research/font/art/audio source once; retain Apple Speech Synthesis attribution; move exhaustive URLs, licenses, notices, and rights details to a separate legal surface if needed. Remove source links and attribution inventory from About / Method, which should explain the teaching method, Shared Character model, representative forms, materials, and offline scope.
-- Data correctness: current analysis found approximately 968 flattened source entries, 258 distinct source IDs, and repeated ZDIC/font/research references across the 126 runtime records. The display should deduplicate by canonical source identity while retaining per-character provenance in the data layer. Rights review for copied ZDIC assets remains a release gate for commercial distribution.
+- Data correctness: current analysis found approximately 968 flattened source entries, 258 distinct source IDs, and repeated ZDIC/font/research references across the 126 runtime records. The display should deduplicate by canonical source identity while retaining per-character provenance in the data layer. This was a historical release-gate concern; source/reuse review is complete for the approved V1 package, while newly added assets require their own review.
 - Copy QA: fix Home’s `1 symbols learned` grammar and audit singular/plural, stage names, “Symbol” versus “Character,” capitalization, dates, truncation, long readings, and unfinished/internal wording. Do not blindly replace established terminology.
 - Search: the current short placeholder and explicit Cancel callback are already present. Verify that Cancel is shown/behaves as an active-search control, dismisses focus appropriately, and does not remain permanently visible when the field is unfocused. Keep character, meaning, and four-track reading search without raw metadata.
 - Browse/Home: the hand-off suggests latest-stage resume labels (`Start at Origin`, `Continue at Bronze`, `Learned`) and restrained collection progress lines. Existing local progress and Quick Review/resume work should be checked before changing anything; do not redesign accepted collection artwork or add dashboard widgets.
@@ -173,16 +178,16 @@ These are candidates to rank together, not an instruction to implement every ite
 
 ### Release-readiness facts to keep visible
 
-- The 126-record corpus, language content, historical interpretation, copied ZDIC asset reuse, and native-speaker language review still have outstanding review/rights work documented elsewhere in this roadmap. “Ready for user testing” and “cleared for commercial release” are different gates.
+- The 126-record corpus, language content, historical interpretation, copied historical-asset reuse, and native-speaker language review are complete for the approved V1.0 decision. Post-release user testing is the Patch 0.1 feedback cycle.
 - The approved patch remains surgical and reversible. It changes focused SwiftUI presentation/navigation and local polish only; it does not add History artwork, monetization, analytics, or content imports.
 
-### Approved final polish implementation — 2026-09-08
+### Approved final polish implementation — 2026-09-08 — completed historical record
 
 - Implemented the agreed History article/content pass with all five stage destinations, the modern bridge, four modern-language destinations, native editorial copy, corpus-backed example links, next-page navigation, and full-row navigation hit areas.
 - Implemented the agreed normal-page cleanup: production-language Your Progress presentation, Settings cleanup, About / Method separation, canonical Sources & Licenses presentation, legal-notice surface, Home pluralization/progress treatment, Browse resume labels, and focused Search Cancel behavior.
 - Implemented the approved calm polish: five-prompt Quick Review when data supports it, one-time journey hint, restrained completion haptic, text-first system Share Symbol, user-initiated review reminders, feedback sharing, Reduce Motion handling, and accessibility labels/targets in the touched surfaces.
 - Explicitly excluded: new History artwork, ads, StoreKit, monetization, analytics, picture/scan recognition, cloud sync, and gamification.
-- The current bundle still uses the existing `History_V1.png` artwork and ZDIC-backed assets; artwork replacement and commercial rights clearance remain separate gates.
+- The current bundle still uses the existing `History_V1.png` artwork and approved ZDIC-backed assets. Artwork replacement or newly added assets would require a separate future review.
 
 ### Post-testing disposition record — 2026-09-08
 

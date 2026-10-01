@@ -4,7 +4,7 @@
   "coreCharacter": "示",
   "coreSharedMeaning": "show / indicate",
   "recognitionTakeaway": "The ritual sign becomes 示. Its common modern “show/indicate” use is later and is not a literal picture of displaying an object.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+793A",
   "simplifiedForm": "示",
   "traditionalForm": "示",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/altar/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 47,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -560,8 +560,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "An ancient spirit tablet or ritual marker used in worship. The sacred sign was later borrowed for “show” or “indicate.”",
@@ -571,7 +571,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/altar/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The early sign is interpreted as a sacred/spirit tablet or ritual marker in a leading account; the exact origin remains debated.",
+        "changeNoteFromPrevious": "",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-示"
@@ -592,13 +592,13 @@
           "artifactAssetRef": "Assets/Symbols/altar/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "示 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The early sign is interpreted as a sacred/spirit tablet or ritual marker in a leading account; the exact origin remains debated.",
-        "transitionNote": "The early sign is interpreted as a sacred/spirit tablet or ritual marker in a leading account; the exact origin remains debated.",
+        "transitionNote": "",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -629,9 +629,9 @@
           "artifactAssetRef": "Assets/Symbols/altar/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "示 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Enlarges the top into a massive cap over a tapered central support.",
@@ -666,9 +666,9 @@
           "artifactAssetRef": "Assets/Symbols/altar/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "示 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Separates the top into two clear horizontals and splits the lower support into two curved legs.",
@@ -703,9 +703,9 @@
           "artifactAssetRef": "Assets/Symbols/altar/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "示 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Flattens the top bars and turns the lower legs into short diagonal brush strokes.",
@@ -719,7 +719,7 @@
         "label": "Regular Script",
         "form": "示",
         "assetRef": null,
-        "changeNoteFromPrevious": "The ritual sign becomes 示. Its common modern “show/indicate” use is later and is not a literal picture of displaying an object.",
+        "changeNoteFromPrevious": "Regular Script preserves the compact 示 form with a short upper mark and split lower strokes; the ritual object is no longer pictorial.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -742,11 +742,11 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "示 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The ritual sign becomes 示. Its common modern “show/indicate” use is later and is not a literal picture of displaying an object.",
-        "transitionNote": "The ritual sign becomes 示. Its common modern “show/indicate” use is later and is not a literal picture of displaying an object.",
+        "transitionNote": "Regular Script preserves the compact 示 form with a short upper mark and split lower strokes; the ritual object is no longer pictorial.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -772,7 +772,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of show / indicate",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-示"
@@ -783,7 +783,7 @@
     "summary": "The research record describes this structure as 示.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-示"
     ]
@@ -791,7 +791,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'show / indicate', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -829,7 +829,7 @@
       "id": "source-zdic-示",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E7%A4%BA"
     },
     {
@@ -856,8 +856,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

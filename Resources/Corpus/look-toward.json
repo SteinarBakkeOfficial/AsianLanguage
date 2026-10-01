@@ -4,7 +4,7 @@
   "coreCharacter": "望",
   "coreSharedMeaning": "look afar / look toward; hope/expect",
   "recognitionTakeaway": "The regular 望 structure reflects later phonetic/component history; the original act of looking afar is no longer directly pictorial.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+671B",
   "simplifiedForm": "望",
   "traditionalForm": "望",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/look-toward/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 119,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -567,8 +567,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A person and a separate eye show looking into the distance; this led to waiting and hope, while later forms added the moon.",
@@ -578,7 +578,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/look-toward/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A standing person with an emphasized eye looks into the distance. This precedes the later reorganization of the graph and the addition or replacement of sound-bearing and lunar elements.",
+        "changeNoteFromPrevious": "A thin standing profile has a small eye-like projection near the top; the act of looking toward something is not visible.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-望"
@@ -599,14 +599,14 @@
           "artifactAssetRef": "Assets/Symbols/look-toward/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "望 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A standing person with an emphasized eye looks into the distance. This precedes the later reorganization of the graph and the addition or replacement of sound-bearing and lunar elements.",
-        "transitionNote": "A standing person with an emphasized eye looks into the distance. This precedes the later reorganization of the graph and the addition or replacement of sound-bearing and lunar elements.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "A thin standing profile has a small eye-like projection near the top; the act of looking toward something is not visible.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -615,7 +615,7 @@
         "label": "Bronze / 金文",
         "form": null,
         "assetRef": "Assets/Symbols/look-toward/historical/bronze/glyph.svg",
-        "changeNoteFromPrevious": "Later forms reorganize the looking graph; sound-bearing element functions phonetically in the developing lineage, while moon sign belongs to moon/lunar-phase-related variants rather than a simple “moon-gazing” origin.",
+        "changeNoteFromPrevious": "Bronze reorganizes the earlier figure-and-eye arrangement into a tighter, more compact component structure.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-望"
@@ -636,13 +636,13 @@
           "artifactAssetRef": "Assets/Symbols/look-toward/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "望 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Later forms reorganize the looking graph; sound-bearing element functions phonetically in the developing lineage, while moon sign belongs to moon/lunar-phase-related variants rather than a simple “moon-gazing” origin.",
-        "transitionNote": "Later forms reorganize the looking graph; sound-bearing element functions phonetically in the developing lineage, while moon sign belongs to moon/lunar-phase-related variants rather than a simple “moon-gazing” origin.",
+        "transitionNote": "Bronze reorganizes the earlier figure-and-eye arrangement into a tighter, more compact component structure.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
@@ -673,9 +673,9 @@
           "artifactAssetRef": "Assets/Symbols/look-toward/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "望 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Integrates the left standing figure and right eye/moon into a tall, tightly interlocked structure.",
@@ -710,9 +710,9 @@
           "artifactAssetRef": "Assets/Symbols/look-toward/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "望 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Flattens the upper parts and creates the recognizable stacked moon sign/king form-like right side over a long base.",
@@ -749,7 +749,7 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "望 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The regular 望 structure reflects later phonetic/component history; the original act of looking afar is no longer directly pictorial.",
@@ -779,7 +779,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of look afar / look toward; hope/expect",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-望"
@@ -790,7 +790,7 @@
     "summary": "The research record describes this structure as ⿱⿰亡月王[GJK].",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-望"
     ]
@@ -798,7 +798,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'look afar / look toward; hope/expect', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -836,7 +836,7 @@
       "id": "source-zdic-望",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E6%9C%9B"
     },
     {
@@ -863,8 +863,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

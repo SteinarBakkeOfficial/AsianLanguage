@@ -695,7 +695,7 @@ That distinction — historical evolution first, modern linguistic reality secon
 
 - `Symbol_Background_v1.png` exists as a six-panel reference sheet under `Reference Pictures/Chatgpt/`; it is approved for exact panel extraction/integration and has not yet been integrated.
 - The existing `History_V1.png` remains adequate artwork/reference material. The most definite current defect is the native History header composition: a right-side crop is being expanded across the full header, while the fixed header height also clips the copy. Timeline row text width and crop positioning still require simulator comparison.
-- Removing Symbol-page period lines and consolidating onboarding to one direct Fire entry are approved.
+- Removing Symbol-page period lines and consolidating onboarding to one direct Mountain entry are approved.
 - History language branches are approved for this implementation as branches after Regular Script, not additional sequential stages.
 - Every historical script entry and modern-language branch is approved to become clickable, opening a deeper detail destination with a back button. Those destinations are intentionally unfinished in this pass and must use verified content or explicit unfinished states.
 - Audio and speaker controls are approved for this implementation; the separate handoff defines the iOS-only service boundary and platform-independent linguistic data requirements.
@@ -707,6 +707,26 @@ See the approved [implementation plan](symbol-history-modern-final-polish-implem
 
 ## Subsequent approved teaching-order update — 2026-09-05
 
-The exact 126-symbol teaching order was subsequently changed by direct user instruction. The authoritative order is now stored in `content/research/zdic-v1-complete-manifest.json` and mirrored by `Sources/App/Corpus/SeedCorpusManifest.swift` and `Resources/V1CorpusManifest.json`. It begins with 一 and then follows the eight supplied gallery groups through position 126.
+The exact 126-symbol teaching order was subsequently changed by direct user instruction. The authoritative order is now stored in `content/research/zdic-v1-complete-manifest.json` and mirrored by `Sources/App/Corpus/SeedCorpusManifest.swift` and `Resources/V1CorpusManifest.json`. It begins with 一 and then follows the eight supplied gallery groups through position 126. Onboarding is now intentionally curated to Mountain rather than using the first teaching-order record.
 
-Onboarding now opens the first-ranked runtime symbol dynamically, so the current onboarding symbol is 一. This does not change the complete-evolution corpus membership, Fire's separate pilot/reference status, draft language content, or the approved visual polish scope.
+Onboarding now opens the curated Mountain runtime symbol. This does not change the complete-evolution corpus membership, Fire's separate pilot/reference status, draft language content, or the approved visual polish scope.
+
+## QA feedback from the running build — 2026-09-16
+
+The following issues were observed while testing the current build. These are acceptance requirements for the next focused correction pass. Keep the changes within the existing Symbol Journey and modern-language page structure.
+
+1. **Japanese examples must show the complete reading hierarchy.** Use `Reference Pictures/Chatgpt/NewFinal3.3_symbol/Japanese_Text_Visal.png` as the visual reference. Japanese examples must show the natural Kanji spelling as the primary text, kana visibly attached to or positioned above the Kanji it reads, romaji as a secondary aid, and English last. The existing corpus already contains `kanaReading` and structured furigana data; the UI must render it rather than showing only Kanji plus romaji.
+
+2. **Korean equivalents must be positioned as a language equivalent, not as an ordinary example row.** The Korean equivalent belongs in the same upper explanatory hierarchy as the Japanese equivalent/native reading treatment. It must remain visibly separate from the contextual example list and must not be presented as another reading of the Hanja. Keep this data-driven: do not invent an equivalent when the record does not contain a natural one.
+
+3. **Regular Script typography needs visual consistency.** The Regular Script character currently appears in a different font treatment from the corresponding character on the other Symbol pages. Compare the complete Origin-to-Regular exhibit in the simulator and correct the presentation while preserving the intentional Regular Script/Kai endpoint and the approved locale-specific modern fonts.
+
+4. **Stage artwork squares must share one aligned position.** On every Symbol stage except the Origin illustration, the square containing the stage background and character artwork must be centered and aligned to exactly the same exhibit position as the Origin illustration square. Preserve the existing square geometry across Origin, Oracle Bone, Bronze, Small Seal, Clerical, and Regular; do not let the individual source artwork dimensions move the square.
+
+5. **Move the material/process caption slightly lower.** Keep the small `Paper · brush` / material-process cue below the artwork, but add the requested tiny amount of downward spacing so it does not sit too close to the square.
+
+6. **Regular Script copy must be a record-specific conclusion.** Do not use the generic sentence `A modern standardized Kai reference rendering.` for every symbol. The Regular Script text should summarize the character's visible endpoint and the conclusion of that symbol's evolution, using the approved record-specific transition/caption content where available. It should read as a concise conclusion, not as a repeated technical font label.
+
+7. **The final visible example must be a simple sentence.** Simplified Chinese, Japanese, and Korean need sufficient examples, with the last displayed example being a short, basic sentence showing ordinary use. Review the display selection and the underlying records together so the sentence is actually visible; do not hide it behind a four-item limit or replace it with a fabricated placeholder.
+
+8. **Historical transition copy must match the visual complexity.** Simple pictographs whose forms remain immediately recognizable should use concise Origin-to-Regular explanations. Do not spend three or four lines describing every minor change when the learner can already see the continuity. Reserve fuller explanations for meaningful structural changes, compounds, disputed interpretations, or cases where the visual transition is not self-evident. This is an editorial rule for the stage copy, not permission to remove necessary historical distinctions.

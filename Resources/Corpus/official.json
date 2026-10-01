@@ -4,7 +4,7 @@
   "coreCharacter": "官",
   "coreSharedMeaning": "official / government office",
   "recognitionTakeaway": "The office/building graph stabilizes as 官 and extends to the officials associated with it.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+5B98",
   "simplifiedForm": "官",
   "traditionalForm": "官",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/official/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 110,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -523,8 +523,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A roofed building and a group of people combine to show a government office; this later led to 'official.'",
@@ -534,7 +534,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/official/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A roof/building encloses an old administrative/group element in the leading analysis, pointing first to an official office/building.",
+        "changeNoteFromPrevious": "A peaked enclosure surrounds a central elongated form; the building and officials shown in the illustration are not clearly recognizable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-官"
@@ -555,14 +555,14 @@
           "artifactAssetRef": "Assets/Symbols/official/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "官 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A roof/building encloses an old administrative/group element in the leading analysis, pointing first to an official office/building.",
-        "transitionNote": "A roof/building encloses an old administrative/group element in the leading analysis, pointing first to an official office/building.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "A peaked enclosure surrounds a central elongated form; the building and officials shown in the illustration are not clearly recognizable.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -592,9 +592,9 @@
           "artifactAssetRef": "Assets/Symbols/official/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "官 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Makes the roof broad and symmetrical while simplifying the interior into two stacked oval shapes.",
@@ -629,9 +629,9 @@
           "artifactAssetRef": "Assets/Symbols/official/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "官 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Regularizes the enclosure into roof/house sign around a tall inner shape divided by short horizontals.",
@@ -666,9 +666,9 @@
           "artifactAssetRef": "Assets/Symbols/official/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "官 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Flattens the roof and compacts the interior into a block-like form.",
@@ -682,7 +682,7 @@
         "label": "Regular Script",
         "form": "官",
         "assetRef": null,
-        "changeNoteFromPrevious": "The office/building graph stabilizes as 官 and extends to the officials associated with it.",
+        "changeNoteFromPrevious": "Regular Script retains the roof over the enclosed lower element; the inner lobes and side contours compress into 官.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -705,11 +705,11 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "官 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The office/building graph stabilizes as 官 and extends to the officials associated with it.",
-        "transitionNote": "The office/building graph stabilizes as 官 and extends to the officials associated with it.",
+        "transitionNote": "Regular Script retains the roof over the enclosed lower element; the inner lobes and side contours compress into 官.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -735,7 +735,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of official / government office",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-官"
@@ -746,7 +746,7 @@
     "summary": "The research record describes this structure as ⿱宀㠯.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-官"
     ]
@@ -754,7 +754,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'official / government office', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -792,7 +792,7 @@
       "id": "source-zdic-官",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%AE%98"
     },
     {
@@ -819,8 +819,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

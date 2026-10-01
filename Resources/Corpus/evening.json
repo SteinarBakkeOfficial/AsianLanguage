@@ -4,7 +4,7 @@
   "coreCharacter": "夕",
   "coreSharedMeaning": "evening",
   "recognitionTakeaway": "The original moon picture is now largely lost; its descendant survives as the familiar three-stroke sign for evening.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+5915",
   "simplifiedForm": "夕",
   "traditionalForm": "夕",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/evening/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 4,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -486,8 +486,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A crescent moon in a quiet evening sky.",
@@ -497,7 +497,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/evening/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "The moon shape marks the time around dusk; early forms were not yet consistently separated from the graph for moon.",
+        "changeNoteFromPrevious": "A short interior mark appears inside the crescent-like enclosure, making evening less distinct from the related moon form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-夕"
@@ -518,13 +518,13 @@
           "artifactAssetRef": "Assets/Symbols/evening/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "夕 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The moon shape marks the time around dusk; early forms were not yet consistently separated from the graph for moon.",
-        "transitionNote": "The moon shape marks the time around dusk; early forms were not yet consistently separated from the graph for moon.",
+        "transitionNote": "A short interior mark appears inside the crescent-like enclosure, making evening less distinct from the related moon form.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -555,9 +555,9 @@
           "artifactAssetRef": "Assets/Symbols/evening/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "夕 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The lunar structure remains intact.",
@@ -592,9 +592,9 @@
           "artifactAssetRef": "Assets/Symbols/evening/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "夕 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The enclosed outline opens into long sweeping curves around a single inner stroke.",
@@ -629,9 +629,9 @@
           "artifactAssetRef": "Assets/Symbols/evening/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "夕 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The long curves collapse into a compact angular form, close to the structure used today.",
@@ -668,7 +668,7 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "夕 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The original moon picture is now largely lost; its descendant survives as the familiar three-stroke sign for evening.",
@@ -698,7 +698,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of evening",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-夕"
@@ -709,7 +709,7 @@
     "summary": "The research record describes this structure as ⿴𠂊丶.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-夕"
     ]
@@ -717,7 +717,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'evening', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -755,7 +755,7 @@
       "id": "source-zdic-夕",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%A4%95"
     },
     {
@@ -782,8 +782,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

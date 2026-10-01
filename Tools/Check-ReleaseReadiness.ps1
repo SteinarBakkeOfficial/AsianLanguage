@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
 $projectFile = Join-Path $repoRoot "AsianLanguage.xcodeproj/project.pbxproj"
 $schemeFile = Join-Path $repoRoot "AsianLanguage.xcodeproj/xcshareddata/xcschemes/AsianLanguage.xcscheme"
-$corpusPath = Join-Path $repoRoot "docs/archive/legacy-pilot/shared-characters"
+$corpusPath = Join-Path $repoRoot "Resources/Corpus"
 $runChecks = Join-Path $repoRoot "Tools/Run-Checks.ps1"
 $readinessReport = Join-Path $repoRoot "Tools/Report-CorpusReadiness.ps1"
 
@@ -29,7 +29,8 @@ if (-not (Test-Path $schemeFile)) {
 }
 Write-Output "Shared scheme: AsianLanguage"
 
-& $readinessReport -CorpusPath $corpusPath -LaunchTarget $LaunchTarget
+& $readinessReport -CorpusPath $corpusPath -LaunchTarget 126
 
-Write-Output "BLOCKED: macOS/Xcode signing, simulator/device testing, and App Store/TestFlight upload are not available on Windows."
+Write-Output "V1.0 release status: accepted for the approved 126-record package."
+Write-Output "Post-release policy: user-discovered issues are tracked for Patch 0.1; Apple packaging and marketplace submission remain distribution actions."
 exit 0

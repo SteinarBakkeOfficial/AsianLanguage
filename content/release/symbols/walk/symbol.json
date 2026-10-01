@@ -4,7 +4,7 @@
   "coreCharacter": "走",
   "coreSharedMeaning": "walk/go (Mandarin); run (historical/Japanese)",
   "recognitionTakeaway": "The running graph stabilizes as 走. Japanese retains the “run” sense directly, while Mandarin later shifts strongly toward walk/go/leave.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+8D70",
   "simplifiedForm": "走",
   "traditionalForm": "走",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/walk/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 81,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -560,8 +560,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A running person.",
@@ -571,7 +571,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/walk/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A running human figure expresses the old core meaning “run,” not a casual walking pose.",
+        "changeNoteFromPrevious": "A person-like upper body and spread legs rise over a lower crossing or foot form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-走"
@@ -592,14 +592,14 @@
           "artifactAssetRef": "Assets/Symbols/walk/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "走 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A running human figure expresses the old core meaning “run,” not a casual walking pose.",
-        "transitionNote": "A running human figure expresses the old core meaning “run,” not a casual walking pose.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "A person-like upper body and spread legs rise over a lower crossing or foot form.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -629,14 +629,14 @@
           "artifactAssetRef": "Assets/Symbols/walk/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "走 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Makes the upper figure more human figure-like and adds a distinct downward foot-shaped mark beneath it.",
         "transitionNote": "Makes the upper figure more human figure-like and adds a distinct downward foot-shaped mark beneath it.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -645,7 +645,7 @@
         "label": "Small Seal / 小篆",
         "form": null,
         "assetRef": "Assets/Symbols/walk/historical/seal/glyph.svg",
-        "changeNoteFromPrevious": "Stacks a broad upper body over a rounded foot sign-like lower element, creating the basic architecture of.",
+        "changeNoteFromPrevious": "Stacks a broad upper body over a rounded foot-like lower element, establishing the basic structure of the later form.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-走"
@@ -666,14 +666,14 @@
           "artifactAssetRef": "Assets/Symbols/walk/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "走 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Stacks a broad upper body over a rounded foot sign-like lower element, creating the basic architecture of.",
-        "transitionNote": "Stacks a broad upper body over a rounded foot sign-like lower element, creating the basic architecture of.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Stacks a broad upper body over a rounded foot-like lower element, establishing the basic structure of the later form.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -703,14 +703,14 @@
           "artifactAssetRef": "Assets/Symbols/walk/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "走 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Compresses the upper and lower parts into a dense brush form but keeps the lower foot sweep prominent.",
         "transitionNote": "Compresses the upper and lower parts into a dense brush form but keeps the lower foot sweep prominent.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -719,7 +719,7 @@
         "label": "Regular Script",
         "form": "走",
         "assetRef": null,
-        "changeNoteFromPrevious": "The running graph stabilizes as 走. Japanese retains the “run” sense directly, while Mandarin later shifts strongly toward walk/go/leave.",
+        "changeNoteFromPrevious": "Regular Script settles the upper body over the compact foot-like lower element in 走; the running figure is no longer pictorial.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -742,12 +742,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "走 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The running graph stabilizes as 走. Japanese retains the “run” sense directly, while Mandarin later shifts strongly toward walk/go/leave.",
-        "transitionNote": "The running graph stabilizes as 走. Japanese retains the “run” sense directly, while Mandarin later shifts strongly toward walk/go/leave.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Regular Script settles the upper body over the compact foot-like lower element in 走; the running figure is no longer pictorial.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -772,7 +772,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of walk",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-走"
@@ -783,7 +783,7 @@
     "summary": "The research record describes this structure as ⿱土龰.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-走"
     ]
@@ -791,7 +791,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'walk/go (Mandarin); run (historical/Japanese)', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -829,7 +829,7 @@
       "id": "source-zdic-走",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E8%B5%B0"
     },
     {
@@ -856,9 +856,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -869,4 +869,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

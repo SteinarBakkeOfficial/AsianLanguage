@@ -56,7 +56,8 @@ struct UsageExamplesView: View {
                 readings: record.focusCoverage.simplifiedChinese.readings,
                 examples: record.focusCoverage.simplifiedChinese.examples,
                 variants: record.focusCoverage.simplifiedChinese.variants,
-                fontRole: .simplifiedChinese
+                fontRole: .simplifiedChinese,
+                ensureBasicSentenceAtEnd: true
             )
         case .traditionalChinese:
             traditionalWordCard(record.focusCoverage.traditionalChinese)
@@ -67,7 +68,9 @@ struct UsageExamplesView: View {
                 readings: record.focusCoverage.japanese.readings,
                 examples: record.focusCoverage.japanese.examples,
                 variants: record.focusCoverage.japanese.variants,
-                fontRole: .japanese
+                fontRole: .japanese,
+                ensureBasicSentenceAtEnd: true,
+                showsJapaneseFurigana: true
             )
         case .korean:
             koreanWordCard(record.focusCoverage.korean)
@@ -81,15 +84,25 @@ struct UsageExamplesView: View {
         readings: [CharacterReading],
         examples: [UsageExample],
         variants: [ModernFormVariant],
-        fontRole: CJKFontRole
+        fontRole: CJKFontRole,
+        ensureBasicSentenceAtEnd: Bool = false,
+        showsJapaneseFurigana: Bool = false
     ) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
             Text(title)
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
             languageFormHeader(form: form, readings: readings, fontRole: fontRole)
-            ForEach(displayExamples(examples, variants: variants).prefix(4), id: \.text) { example in
-                exampleRow(example, fontRole: fontRole)
+            ForEach(displayExamples(
+                examples,
+                variants: variants,
+                ensureBasicSentenceAtEnd: ensureBasicSentenceAtEnd
+            ).prefix(4), id: \.text) { example in
+                exampleRow(
+                    example,
+                    fontRole: fontRole,
+                    showsJapaneseFurigana: showsJapaneseFurigana
+                )
             }
         }
         .padding(.vertical, AppSpacing.spaceSm)
@@ -141,6 +154,23 @@ struct UsageExamplesView: View {
                 }
             }
             PronunciationButton(reading: reading)
+        }
+    }
+
+    /// Shows a Korean native equivalent as its own semantic relationship, not as another Hanja reading.
+    private func koreanEquivalentRow(_ equivalent: CharacterReading) -> some View {
+        let parts = displayReadingParts(equivalent)
+        return HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
+            Text(parts.script)
+                .font(CJKFontRole.korean.font(size: 22).weight(.medium))
+                .foregroundStyle(AppColors.textPrimary)
+            if let romanization = parts.romanization {
+                Text(romanization)
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
+            Spacer(minLength: 0)
+            PronunciationButton(reading: equivalent)
         }
     }
 
@@ -208,17 +238,7 @@ struct UsageExamplesView: View {
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
                     ForEach(Array(coverage.semanticEquivalents.enumerated()), id: \.offset) { _, equivalent in
-                        let parts = displayReadingParts(equivalent)
-                        HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
-                            Text(parts.script)
-                                .font(CJKFontRole.korean.font(size: 22).weight(.semibold))
-                                .foregroundStyle(AppColors.textPrimary)
-                            if let romanization = parts.romanization {
-                                Text(romanization)
-                                    .font(AppTypography.metadata)
-                                    .foregroundStyle(AppColors.textSecondary)
-                            }
-                        }
+                        koreanEquivalentRow(equivalent)
                     }
                 }
             }
@@ -230,12 +250,17 @@ struct UsageExamplesView: View {
                     Text(variant.form)
                         .font(CJKFontRole.korean.font(size: 22).weight(.semibold))
                         .foregroundStyle(AppColors.textPrimary)
-                ForEach(Array(variant.readings.enumerated()), id: \.offset) { _, reading in
-                    readingRow(reading, fontRole: .korean)
-                }
+                    ForEach(Array(variant.readings.enumerated()), id: \.offset) { _, reading in
+                        readingRow(reading, fontRole: .korean)
+                    }
                 }
             }
-            ForEach(displayExamples(coverage.examples, variants: coverage.variants).prefix(4), id: \.text) { example in
+            ForEach(displayExamples(
+                coverage.examples,
+                variants: coverage.variants,
+                excludedExampleRoles: ["semanticEquivalent"],
+                ensureBasicSentenceAtEnd: true
+            ).prefix(4), id: \.text) { example in
                 exampleRow(example, fontRole: .korean)
             }
         }
@@ -250,21 +275,87 @@ struct UsageExamplesView: View {
     }
 
     /// Keeps the existing row geometry while using the selected locale's modern font for the written example.
-    private func exampleRow(_ example: UsageExample, fontRole: CJKFontRole) -> some View {
-        HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
-            Text(example.text)
-                .font(fontRole.font(size: 16).weight(.semibold))
-                .foregroundStyle(AppColors.textPrimary)
-            if let reading = example.reading {
-                Text(reading)
-                    .font(AppTypography.metadata)
+    @ViewBuilder
+    private func exampleRow(
+        _ example: UsageExample,
+        fontRole: CJKFontRole,
+        showsJapaneseFurigana: Bool = false
+    ) -> some View {
+        if showsJapaneseFurigana {
+            japaneseExampleRow(example)
+        } else {
+            HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceXs) {
+                Text(example.text)
+                    .font(fontRole.font(size: 16).weight(.semibold))
+                    .foregroundStyle(AppColors.textPrimary)
+                if let reading = example.reading {
+                    Text(reading)
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+                Spacer(minLength: 0)
+                Text(example.translation)
+                    .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textSecondary)
+                    .multilineTextAlignment(.trailing)
             }
-            Spacer(minLength: 0)
+        }
+    }
+
+    /// Matches the approved Japanese hierarchy: natural Kanji, attached kana, romaji, then English.
+    private func japaneseExampleRow(_ example: UsageExample) -> some View {
+        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+            HStack(alignment: .bottom, spacing: AppSpacing.spaceXs) {
+                japaneseWrittenExample(example)
+                if let reading = example.reading, !reading.isEmpty {
+                    Text("— \(reading)")
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+                Spacer(minLength: 0)
+            }
             Text(example.translation)
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
-                .multilineTextAlignment(.trailing)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    /// Renders structured furigana above the natural Japanese spelling without replacing the Kanji.
+    @ViewBuilder
+    private func japaneseWrittenExample(_ example: UsageExample) -> some View {
+        if !example.furiganaSegments.isEmpty {
+            HStack(alignment: .bottom, spacing: 0) {
+                ForEach(Array(example.furiganaSegments.enumerated()), id: \.offset) { _, segment in
+                    VStack(spacing: 0) {
+                        if let reading = segment.reading, !reading.isEmpty {
+                            Text(reading)
+                                .font(CJKFontRole.japanese.font(size: 10))
+                                .foregroundStyle(AppColors.textSecondary)
+                                .frame(minHeight: 14, alignment: .bottom)
+                        } else {
+                            Color.clear
+                                .frame(height: 14)
+                        }
+                        Text(segment.text)
+                            .font(CJKFontRole.japanese.font(size: 17).weight(.semibold))
+                            .foregroundStyle(AppColors.textPrimary)
+                    }
+                }
+            }
+        } else if let kanaReading = example.kanaReading, !kanaReading.isEmpty {
+            VStack(spacing: 0) {
+                Text(kanaReading)
+                    .font(CJKFontRole.japanese.font(size: 10))
+                    .foregroundStyle(AppColors.textSecondary)
+                Text(example.text)
+                    .font(CJKFontRole.japanese.font(size: 17).weight(.semibold))
+                    .foregroundStyle(AppColors.textPrimary)
+            }
+        } else {
+            Text(example.text)
+                .font(CJKFontRole.japanese.font(size: 17).weight(.semibold))
+                .foregroundStyle(AppColors.textPrimary)
         }
     }
 
@@ -308,7 +399,12 @@ struct UsageExamplesView: View {
     }
 
     /// Keeps learner-facing examples real while allowing future reviewed entries to expand to four naturally.
-    private func displayExamples(_ examples: [UsageExample], variants: [ModernFormVariant] = []) -> [UsageExample] {
+    private func displayExamples(
+        _ examples: [UsageExample],
+        variants: [ModernFormVariant] = [],
+        excludedExampleRoles: [String] = [],
+        ensureBasicSentenceAtEnd: Bool = false
+    ) -> [UsageExample] {
         var result: [UsageExample] = []
         for example in examples + variants.flatMap(\.examples) {
             let translation = example.translation.lowercased()
@@ -316,9 +412,16 @@ struct UsageExamplesView: View {
                 || translation.contains("core character reference")
                 || example.text.contains("·")
                 || example.text.contains("…")
-            guard !isPlaceholder, !result.contains(where: { $0.text == example.text }) else { continue }
+            guard !isPlaceholder,
+                  !(example.exampleRole.map { excludedExampleRoles.contains($0) } ?? false),
+                  !result.contains(where: { $0.text == example.text }) else { continue }
             result.append(example)
         }
-        return result
+        guard ensureBasicSentenceAtEnd,
+              let sentenceIndex = result.firstIndex(where: { $0.exampleLevel == .sentence }) else {
+            return result
+        }
+        let sentence = result.remove(at: sentenceIndex)
+        return Array(result.prefix(3)) + [sentence]
     }
 }

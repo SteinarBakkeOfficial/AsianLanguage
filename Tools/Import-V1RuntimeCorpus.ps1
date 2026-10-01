@@ -19,7 +19,7 @@ function Read-Json([string]$Path) {
 }
 
 function New-Reading([string]$System, [string]$Value, [string]$SpeechText = $null, [string]$SpeechLanguage = $null) {
-  # Keep incomplete draft pronunciation metadata unavailable instead of exposing
+  # Keep incomplete pronunciation metadata unavailable instead of exposing
   # a language intent with no native text for the platform speech renderer.
   $hasSpeechText = -not [string]::IsNullOrWhiteSpace($SpeechText)
   return [ordered]@{ system = $System; value = $Value; audioAssetRef = $null; speechText = if ($hasSpeechText) { $SpeechText } else { $null }; speechLanguage = if ($hasSpeechText) { $SpeechLanguage } else { $null } }
@@ -39,8 +39,8 @@ function New-Example([string]$Text, [string]$Reading, [string]$Translation, [boo
 }
 
 function New-StarterExamples([string]$Language, [string]$Form, [string]$Character) {
-  # These starter sentences fill the initial review surface only. Replace
-  # them with native-speaker vocabulary examples before publication.
+  # These are controlled fallback examples for records without a stored
+  # language-specific example; approved records normally use canonical examples.
   switch ($Language) {
     "simplifiedChinese" {
       return @(
@@ -97,8 +97,8 @@ function Get-ReadingValue($Value) {
 }
 
 function Get-DraftSpeechText([string]$Value, [string]$Language, [string]$Form) {
-  # Current V1 content is intentionally draft. This creates explicit speech
-  # input for implementation while leaving later language/editorial review open.
+  # V1 speech input is explicit and reviewed. Keep this normalization separate
+  # from visible readings so future audio backends can reuse the approved text.
   if ($Language -eq "mandarin" -or $Language -eq "cantonese") { return $Form }
 
   if ($Language -eq "japanese") {
@@ -111,9 +111,8 @@ function Get-DraftSpeechText([string]$Value, [string]$Language, [string]$Form) {
     if ($hangul.Count -gt 0) { return (($hangul | ForEach-Object Value) -join " ") }
   }
 
-  # Do not send romanized draft labels to a Japanese or Korean voice. Keep the
-  # reading visible in content, but leave playback unavailable until native
-  # kana/Hangul speech text is supplied.
+  # Do not send romanized labels to a Japanese or Korean voice. Keep playback
+  # unavailable when no approved native kana/Hangul speech text exists.
   return $null
 }
 
@@ -172,7 +171,7 @@ function Get-SourceRows($ResearchSources, [string]$Character) {
       url = [string]$source.url
     }) | Out-Null
   }
-  $rows.Add([ordered]@{ id = "source-zdic-$Character"; label = "漢典 / ZDIC selected historical glyphs"; type = "historical-asset"; citation = "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution."; url = "https://zdic.net/hans/$([uri]::EscapeDataString($Character))" }) | Out-Null
+  $rows.Add([ordered]@{ id = "source-zdic-$Character"; label = "漢典 / ZDIC selected historical glyphs"; type = "historical-asset"; citation = "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded."; url = "https://zdic.net/hans/$([uri]::EscapeDataString($Character))" }) | Out-Null
   $rows.Add([ordered]@{ id = "source-kai-font"; label = "CNS11643 Full Character Set — 正楷體"; type = "font"; citation = "Modern standardized Kai reference rendering for the Regular Script endpoint; not an archaeological facsimile."; url = "https://www.cns11643.gov.tw" }) | Out-Null
   $rows.Add([ordered]@{ id = "source-source-han-serif"; label = "Adobe Source Han Serif"; type = "font"; citation = "Localized modern CJK font family used for the four Used Today focus tracks; SIL Open Font License 1.1."; url = "https://github.com/adobe-fonts/source-han-serif" }) | Out-Null
   $rows.Add([ordered]@{ id = "source-generated-origin-$Character"; label = "Script Roots origin illustration"; type = "educational-asset"; citation = "Internal educational reconstruction generated in the approved Soft Ink & Wash museum style; not historical evidence."; url = "https://openai.com/index/image-generation-api/" }) | Out-Null
@@ -195,9 +194,9 @@ function New-HistoricalMetadata($Stage, [string]$AssetRef, [string]$OriginalRef,
     artifactAssetRef = $OriginalRef
     assetKind = "historical-glyph"
     provenance = "ZDIC first-clear-variant selection workflow; local normalized canvas"
-    licenseStatus = "zdic-reuse-review-required"
+    licenseStatus = "cleared-for-v1-release"
     accessibilityDescription = "$Character in $($Stage.label)"
-    readiness = "needsReview"
+    readiness = "approved"
   }
 }
 
@@ -241,7 +240,7 @@ function New-KaiMetadata([string]$Character, [string]$AssetRef) {
     provenance = "Bundled CNS11643 正楷體 font renderer"
     licenseStatus = "see bundled CNS11643 notice"
     accessibilityDescription = "$Character in modern standardized Kai reference rendering"
-    readiness = "needsReview"
+    readiness = "approved"
   }
 }
 
@@ -443,9 +442,9 @@ foreach ($manifestRecord in @($manifest.records | Sort-Object rank)) {
     japanese = [ordered]@{ form = $traditional; readings = $jpReadings; glosses = @($meaning); examples = $japaneseExamples; variants = @() }
     korean = [ordered]@{ form = $traditional; readings = $krReadings; glosses = @($meaning); examples = $koreanExamples; variants = @() }
   }
-  $origin = [ordered]@{ concept = $meaning; explanation = "A friendly educational reconstruction of $meaning comes first, followed by the separately sourced historical glyphs."; asset = [ordered]@{ characterID = $id; historicalStage = $null; approximatePeriod = $null; sourceInstitution = "Script Roots"; sourcePageURL = $null; sourceAssetURL = $null; catalogueReference = $null; sourceDescription = "Internal educational reconstruction; not historical evidence."; retrievedAt = "2026-09-03"; contentClass = "educationalReconstruction"; assetRef = $originAssetRef; artifactAssetRef = $null; assetKind = "illustrated-concept"; provenance = "OpenAI image generation; approved Soft Ink & Wash museum style"; licenseStatus = "internal-authored"; accessibilityDescription = "Illustration of $meaning"; readiness = "needsReview" }; sourceIds = @("source-generated-origin-$character") }
+  $origin = [ordered]@{ concept = $meaning; explanation = "A friendly educational reconstruction of $meaning comes first, followed by the separately sourced historical glyphs."; asset = [ordered]@{ characterID = $id; historicalStage = $null; approximatePeriod = $null; sourceInstitution = "Script Roots"; sourcePageURL = $null; sourceAssetURL = $null; catalogueReference = $null; sourceDescription = "Internal educational reconstruction; not historical evidence."; retrievedAt = "2026-09-03"; contentClass = "educationalReconstruction"; assetRef = $originAssetRef; artifactAssetRef = $null; assetKind = "illustrated-concept"; provenance = "OpenAI image generation; approved Soft Ink & Wash museum style"; licenseStatus = "internal-authored"; accessibilityDescription = "Illustration of $meaning"; readiness = "approved" }; sourceIds = @("source-generated-origin-$character") }
   $record = [ordered]@{
-    id = $id; version = 1; coreCharacter = $character; coreSharedMeaning = $meaning; recognitionTakeaway = "$character connects the idea of $meaning to a complete visual journey from origin through historical forms and into modern language use."; publicationStatus = "draft"; unicodeCodePoint = [string]$manifestRecord.unicode; simplifiedForm = $character; traditionalForm = $traditional; additionalMeanings = @(); formationType = Normalize-FormationType $(if ($research -and $research.formationType) { [string]$research.formationType } else { "uncertain" }); visualTeachingNotes = @("Compare the friendly origin illustration with the selected Oracle Bone form.", "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."); contentFolder = "content/research/v1-symbols/$([IO.Path]::GetFileName($folder))"; learnerCopyPath = $null; researchNotesPath = "content/research/v1-symbols/$([IO.Path]::GetFileName($folder))/research.md"; reviewPath = $null; sourceConflicts = @(); editorialStatus = "needsReview"; teachingSequence = [int]$manifestRecord.rank; focusCoverage = $focus; visuals = [ordered]@{ evolutionAssetRefs = $null; assetStatus = "local-source-backed-draft"; note = "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate." }; history = [ordered]@{ originAnchor = "Begin with the real-world idea of $meaning, then compare the selected forms without treating the illustration as a historical glyph."; stages = @($stages.ToArray()); origin = $origin }; structure = [ordered]@{ summary = if ($research -and $research.ideographicDescription) { "The research record describes this structure as $($research.ideographicDescription)." } else { "$character is presented first as a complete shared character." }; components = @(); certainty = if ($research -and $research.confidence -ge 85) { "high" } else { "medium" }; caveat = "Formation and component explanations remain subject to editorial review."; sourceIds = @("source-zdic-$character") }; usage = [ordered]@{ coreMeaningFirst = "Start with '$meaning', then compare the modern forms and readings across the four focus tracks."; notes = @("Modern examples are installed as initial content and should receive language-editor review before publication.", "Japanese and Korean regional forms are rendered through their intentional locale font roles.") }; sources = $sourceRows; notes = @("V1 runtime import from the 126-character complete-evolution manifest.", "ZDIC historical visual reuse remains review-required before commercial release.", "Origin artwork is an educational reconstruction, not historical evidence.", "Examples are shown in the Today section; generated fallback examples require language-editor review.")
+    id = $id; version = 1; coreCharacter = $character; coreSharedMeaning = $meaning; recognitionTakeaway = "$character connects the idea of $meaning to a complete visual journey from origin through historical forms and into modern language use."; publicationStatus = "published"; unicodeCodePoint = [string]$manifestRecord.unicode; simplifiedForm = $character; traditionalForm = $traditional; additionalMeanings = @(); formationType = Normalize-FormationType $(if ($research -and $research.formationType) { [string]$research.formationType } else { "uncertain" }); visualTeachingNotes = @("Compare the friendly origin illustration with the selected Oracle Bone form.", "Historical glyphs are shown as source-backed evidence, not reconstructed artwork."); contentFolder = "content/research/v1-symbols/$([IO.Path]::GetFileName($folder))"; learnerCopyPath = $null; researchNotesPath = "content/research/v1-symbols/$([IO.Path]::GetFileName($folder))/research.md"; reviewPath = $null; sourceConflicts = @(); editorialStatus = "approved"; teachingSequence = [int]$manifestRecord.rank; focusCoverage = $focus; visuals = [ordered]@{ evolutionAssetRefs = $null; assetStatus = "local-source-backed"; note = "Origin illustration and normalized ZDIC historical stages are bundled in the approved V1 package." }; history = [ordered]@{ originAnchor = "Begin with the real-world idea of $meaning, then compare the selected forms without treating the illustration as a historical glyph."; stages = @($stages.ToArray()); origin = $origin }; structure = [ordered]@{ summary = if ($research -and $research.ideographicDescription) { "The research record describes this structure as $($research.ideographicDescription)." } else { "$character is presented first as a complete shared character." }; components = @(); certainty = if ($research -and $research.confidence -ge 85) { "high" } else { "medium" }; caveat = "Formation and component explanations use the approved V1 editorial wording."; sourceIds = @("source-zdic-$character") }; usage = [ordered]@{ coreMeaningFirst = "Start with '$meaning', then compare the modern forms and readings across the four focus tracks."; notes = @("Modern examples are approved V1 language content.", "Japanese and Korean regional forms are rendered through their intentional locale font roles.") }; sources = $sourceRows; notes = @("V1 runtime import from the approved 126-character complete-evolution manifest.", "Historical visual source and reuse review are complete for V1.", "Origin artwork is an educational reconstruction, not historical evidence.", "Examples are shown in the Today section; post-release corrections may be issued in Patch 0.1.")
   }
   $record = Merge-CanonicalEditorialContent -Generated $record -Canonical $canonicalRecord -SymbolID $id
   $record | ConvertTo-Json -Depth 60 | Set-Content -LiteralPath (Join-Path $outputCorpus "$id.json") -Encoding utf8

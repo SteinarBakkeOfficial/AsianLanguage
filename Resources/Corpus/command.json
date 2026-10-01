@@ -4,7 +4,7 @@
   "coreCharacter": "令",
   "coreSharedMeaning": "command / order",
   "recognitionTakeaway": "Tightens the roof, central short stroke, and lower bend into the familiar five-stroke character.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+4EE4",
   "simplifiedForm": "令",
   "traditionalForm": "令",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/command/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 101,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -553,8 +553,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A speech element and a kneeling person combine to show authority issuing a command.",
@@ -564,7 +564,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/command/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "An open mouth appears above a kneeling person, representing an order being issued to someone below.",
+        "changeNoteFromPrevious": "A pointed upper enclosure sits above a bent lower form; neither mouth nor kneeling person is clearly recognizable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-令"
@@ -585,14 +585,14 @@
           "artifactAssetRef": "Assets/Symbols/command/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "令 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "An open mouth appears above a kneeling person, representing an order being issued to someone below.",
-        "transitionNote": "An open mouth appears above a kneeling person, representing an order being issued to someone below.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "A pointed upper enclosure sits above a bent lower form; neither mouth nor kneeling person is clearly recognizable.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -622,9 +622,9 @@
           "artifactAssetRef": "Assets/Symbols/command/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "令 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The upper speech/command element and kneeling person remain recognizable while their outlines become more compact.",
@@ -659,9 +659,9 @@
           "artifactAssetRef": "Assets/Symbols/command/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "令 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The two-part scene is regularized into a roof-like upper shape and a more abstract lower person form.",
@@ -696,9 +696,9 @@
           "artifactAssetRef": "Assets/Symbols/command/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "令 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The graph flattens and simplifies, leaving a compact structure close to the later standard character.",
@@ -735,7 +735,7 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "令 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Tightens the roof, central short stroke, and lower bend into the familiar five-stroke character.",
@@ -765,7 +765,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of command / order",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-令"
@@ -776,7 +776,7 @@
     "summary": "The research record describes this structure as ⿱亽龴[G].",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-令"
     ]
@@ -784,7 +784,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'command / order', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -822,7 +822,7 @@
       "id": "source-zdic-令",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E4%BB%A4"
     },
     {
@@ -849,8 +849,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

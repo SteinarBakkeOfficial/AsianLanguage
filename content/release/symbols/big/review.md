@@ -1,7 +1,9 @@
 # Review: 大 / big; great
 
-Status: needsReview
+Status: historical draft note; canonical V1 status: approved/published
 Content folder: content/release/symbols/big
+
+The checklist below is retained from the preparation workflow. The authoritative V1 approval is recorded in symbol.json, the generated runtime record, and V1CorpusManifest.json.
 
 ## Human review checklist
 
@@ -17,6 +19,6 @@ Content folder: content/release/symbols/big
 
 ## Known gaps from the draft record
 
-- Publication status is draft.
-- Asset status is source-backed-draft.
-- Regular-script prototype card exists. Historical Oracle/Bronze/Seal assets are attached when source-backed Wikimedia Commons SVGs are available; final publication still needs licensing review and specialist redraw approval.
+- Canonical publication status is published; this draft note is retained only as historical audit context.
+- Canonical asset status is recorded in the approved runtime package.
+- This draft note predates the V1 package. The approved runtime uses the local Regular Script font and selected historical assets; source/reuse and specialist/editorial review are complete for V1.

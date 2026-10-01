@@ -107,7 +107,7 @@ struct LessonView: View {
                 ContentUnavailableView("Symbol Unavailable", systemImage: "exclamationmark.triangle")
             }
         }
-        .navigationTitle(sharedCharacter.map { "\($0.coreSharedMeaning.capitalized) · \($0.coreCharacter)" } ?? "Symbol")
+        .navigationTitle(sharedCharacter.map { "\(navigationMeaning(for: $0)) · \($0.coreCharacter)" } ?? "Symbol")
         .navigationBarTitleDisplayMode(.inline)
         .background(AppColors.appBackground.ignoresSafeArea())
         .tint(AppColors.accentPrimary)
@@ -157,6 +157,23 @@ struct LessonView: View {
                 persistPositionIfNeeded()
             }
         }
+    }
+
+    /// Keeps concise navigation labels separate from fuller editorial meanings used in lesson content.
+    private func navigationMeaning(for record: SharedCharacterRecord) -> String {
+        let primaryMeaning = record.coreSharedMeaning
+            .split(separator: ";", maxSplits: 1, omittingEmptySubsequences: true)
+            .first
+            .map(String.init) ?? record.coreSharedMeaning
+        let historicalQualifierRemoved = primaryMeaning
+            .split(separator: "(", maxSplits: 1, omittingEmptySubsequences: true)
+            .first
+            .map(String.init) ?? primaryMeaning
+        return historicalQualifierRemoved
+            .split(separator: "/", maxSplits: 1, omittingEmptySubsequences: true)
+            .first
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines).capitalized }
+            ?? primaryMeaning.capitalized
     }
 
     /// The historical spine and Modern/Usage endpoints share one horizontally swipeable museum pager.

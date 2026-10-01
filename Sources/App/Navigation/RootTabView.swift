@@ -42,15 +42,17 @@ struct RootTabView: View {
     }
 }
 
-/// First-launch introduction: explain the exhibit once, then enter the canonical first-symbol journey.
+/// First-launch introduction: explain the exhibit once, then enter the curated onboarding journey.
 struct OnboardingView: View {
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
 
-    /// The first ranked runtime symbol is the onboarding exhibit and remains data-backed.
-    private var firstSymbolRecord: SharedCharacterRecord? {
-        guard let firstSymbolID = SeedCorpusManifest.recordIDs.first else { return nil }
-        return try? dependencies.corpusRepository.sharedCharacter(id: firstSymbolID)
+    /// Mountain gives first-time learners a legible pictograph and a meaningful historical arc without changing corpus order.
+    private let onboardingSymbolID = "mountain"
+
+    /// The onboarding exhibit remains loaded from the bundled corpus rather than duplicated in UI copy.
+    private var onboardingRecord: SharedCharacterRecord? {
+        try? dependencies.corpusRepository.sharedCharacter(id: onboardingSymbolID)
     }
 
     init(dependencies: AppDependencies) {
@@ -69,19 +71,17 @@ struct OnboardingView: View {
                     .font(AppTypography.exhibitHeading)
                     .foregroundStyle(AppColors.textPrimary)
                     .multilineTextAlignment(.center)
-                Text("Follow \(firstSymbolRecord?.coreSharedMeaning.capitalized ?? "One") from a recognizable origin through historical writing and into modern languages.")
+                Text("Follow \(onboardingRecord?.coreSharedMeaning.capitalized ?? "Mountain") from a recognizable origin through historical writing and into modern languages.")
                     .font(AppTypography.body)
                     .foregroundStyle(AppColors.textSecondary)
                     .multilineTextAlignment(.center)
-                if let firstSymbolRecord {
-                    SymbolOnboardingLineage(record: firstSymbolRecord)
+                if let onboardingRecord {
+                    SymbolOnboardingLineage(record: onboardingRecord)
                 }
                 OnboardingOrientationGuide()
-                PrimaryActionButton("Explore \(firstSymbolRecord?.coreSharedMeaning.capitalized ?? "One")") {
+                PrimaryActionButton("Explore \(onboardingRecord?.coreSharedMeaning.capitalized ?? "Mountain")") {
                     userStateStore.markFirstSymbolStarted()
-                    if let firstSymbolID = SeedCorpusManifest.recordIDs.first {
-                        dependencies.navigationState.openSymbol(firstSymbolID, intent: .start)
-                    }
+                    dependencies.navigationState.openSymbol(onboardingSymbolID, intent: .start)
                 }
             }
             .frame(maxWidth: 390)
@@ -133,7 +133,7 @@ private struct OnboardingOrientationGuide: View {
     }
 }
 
-/// The first symbol's launch preview is intentionally separate from Home's compact lineage preview.
+/// The onboarding symbol's launch preview is intentionally separate from Home's compact lineage preview.
 /// It shows the real concept first, then the available historical forms, without inventing a missing stage.
 private struct SymbolOnboardingLineage: View {
     let record: SharedCharacterRecord
@@ -177,6 +177,9 @@ private struct SymbolOnboardingLineage: View {
                         .frame(height: 54)
                 }
                 .frame(maxWidth: .infinity)
+                .padding(.vertical, AppSpacing.space2xs)
+                .background(AppColors.artifactField)
+                .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
                 .accessibilityLabel("Today \(record.coreCharacter)")
             }
         }
@@ -457,6 +460,7 @@ private struct HistoryArticle {
     let date: String
     let intro: [String]
     let sections: [HistoryArticleSection]
+    let tables: [HistoryArticleTable]
     let examples: [HistoryArticleExample]
     let nextID: String?
     let showsCalligraphyHero: Bool
@@ -469,6 +473,7 @@ private struct HistoryArticle {
         date: String,
         intro: [String],
         sections: [HistoryArticleSection],
+        tables: [HistoryArticleTable] = [],
         examples: [HistoryArticleExample],
         nextID: String?,
         showsCalligraphyHero: Bool = false,
@@ -480,10 +485,28 @@ private struct HistoryArticle {
         self.date = date
         self.intro = intro
         self.sections = sections
+        self.tables = tables
         self.examples = examples
         self.nextID = nextID
         self.showsCalligraphyHero = showsCalligraphyHero
         self.footerNote = footerNote
+    }
+}
+
+/// Keeps compact reference material beside the explanation instead of hiding it in prose.
+private struct HistoryArticleTable: Identifiable {
+    let id: String
+    let title: String
+    let columns: [String]
+    let rows: [[String]]
+    let note: String?
+
+    init(id: String, title: String, columns: [String], rows: [[String]], note: String? = nil) {
+        self.id = id
+        self.title = title
+        self.columns = columns
+        self.rows = rows
+        self.note = note
     }
 }
 
@@ -745,6 +768,20 @@ private extension HistoryArticle {
                     "Traditional and Simplified describe character standards used to write Chinese. Japanese kanji and Korean Hanja are Chinese characters adapted within different languages. The same historical character can therefore preserve a related shape while carrying different readings and patterns of use."
                 ])
             ],
+            tables: [
+                HistoryArticleTable(
+                    id: "modern-relationships",
+                    title: "The modern paths are related, but not interchangeable",
+                    columns: ["Context", "Written forms", "What changed"],
+                    rows: [
+                        ["Mainland China", "简体中文", "Modern simplification standard"],
+                        ["Taiwan / Hong Kong", "繁體中文 / 正體字", "Inherited forms with regional standards"],
+                        ["Japan", "漢字 + かな", "Chinese characters adapted to Japanese"],
+                        ["Korea", "한글 + 漢字", "Hangul became the everyday script beside Hanja tradition"]
+                    ],
+                    note: "These are four modern contexts, not four equal branches from one historical date."
+                )
+            ],
             examples: modernExamples(),
             nextID: nil
         )
@@ -760,6 +797,18 @@ private extension HistoryArticle {
                 HistoryArticleSection(id: "label", title: "Why “traditional” is a modern label", paragraphs: ["For most of history, writers did not need this label; these were simply the forms in ordinary literary and printed use. It became useful when simplified standards spread in the 20th century and a contrast was needed."]),
                 HistoryArticleSection(id: "regional", title: "One tradition, regional standards", paragraphs: ["Taiwan and Hong Kong both use Traditional Chinese, but they do not always select exactly the same variant or display every component in exactly the same glyph form. These are regional standards within a broader tradition."]),
                 HistoryArticleSection(id: "sound", title: "The same character can sound very different", paragraphs: ["A Traditional Chinese character does not belong to only one spoken variety. The same written form may be read in Mandarin, Cantonese, or another Chinese language with different pronunciation."])
+            ], tables: [
+                HistoryArticleTable(
+                    id: "traditional-contexts",
+                    title: "One written tradition, different language environments",
+                    columns: ["Context", "Written standard", "Reading context"],
+                    rows: [
+                        ["Taiwan", "Traditional Chinese", "Mandarin; Pinyin and Zhuyin may appear"],
+                        ["Hong Kong", "Traditional Chinese", "Cantonese; Jyutping may appear"],
+                        ["Both", "Related inherited forms", "Regional variants and vocabulary still differ"]
+                    ],
+                    note: "Traditional characters identify a written standard; they do not determine one spoken language."
+                )
             ], examples: modernExamples(track: .traditionalChinese), nextID: "simplifiedChinese")
         case "simplifiedChinese":
             return HistoryArticle(title: "A modern standard with older roots", eyebrow: "SIMPLIFIED CHINESE", era: "Mainland China", date: "National simplification adopted from 1956 · 简体中文", intro: [
@@ -769,6 +818,18 @@ private extension HistoryArticle {
                 HistoryArticleSection(id: "methods", title: "Several methods, not one rule", paragraphs: ["Some characters lost strokes. Some complex components were replaced by shorter forms. Some handwritten shapes were regularized into print, and some older characters were consolidated under one modern form."]),
                 HistoryArticleSection(id: "different", title: "Similar does not mean identical", paragraphs: ["China and Japan simplified characters independently. Some results happen to match, while others differ. Modern standards therefore differ while remaining part of the same long character tradition."]),
                 HistoryArticleSection(id: "shared", title: "Most of the writing system remained shared", paragraphs: ["Many characters were never simplified, and many components remain recognizable across Traditional Chinese, Simplified Chinese, and Japanese kanji."])
+            ], tables: [
+                HistoryArticleTable(
+                    id: "simplification-examples",
+                    title: "Simplification used more than one method",
+                    columns: ["Inherited form", "Modern form", "Visible result"],
+                    rows: [
+                        ["國", "国", "Complex enclosure becomes a shorter form"],
+                        ["學", "学", "The upper structure is reduced"],
+                        ["山", "山", "Some characters remain unchanged"]
+                    ],
+                    note: "These examples illustrate the kinds of change; they are not a rule for predicting every character."
+                )
             ], examples: modernExamples(track: .simplifiedChinese), nextID: "japanese")
         case "japanese":
             return HistoryArticle(title: "Chinese characters adapted to Japanese", eyebrow: "JAPANESE", era: "Adopted by the 5th–6th centuries", date: "漢字 + かな", intro: [
@@ -779,6 +840,32 @@ private extension HistoryArticle {
                 HistoryArticleSection(id: "kana", title: "Japanese needed a way to write grammar and sound", paragraphs: ["Early writers sometimes used characters for their sound rather than their meaning. These practices developed into kana: hiragana emerged from flowing cursive forms, while katakana developed from abbreviated parts. Modern Japanese combines kanji, hiragana, and katakana."]),
                 HistoryArticleSection(id: "reform", title: "A separate 20th-century reform", paragraphs: ["Japan later standardized many commonly used kanji forms. The 1946 Tōyō Kanji list and 1949 character-form table established many shinjitai forms independently of mainland Chinese reform."]),
                 HistoryArticleSection(id: "divergence", title: "The divergence happened in layers", paragraphs: ["Japanese writing began diverging through pronunciation, grammar, local vocabulary, and kana many centuries ago. Visible divergence of some kanji shapes became more systematic much later."])
+            ], tables: [
+                HistoryArticleTable(
+                    id: "japanese-writing-roles",
+                    title: "Japanese writing uses several systems together",
+                    columns: ["System", "Primary role", "Example"],
+                    rows: [
+                        ["Kanji", "Meaning-bearing words and roots", "木 · tree / wood"],
+                        ["Hiragana", "Grammar, native words, reading help", "木の机です。"],
+                        ["Katakana", "Loanwords, emphasis, specialist use", "A separate angular syllabary"],
+                        ["Furigana", "Pronunciation attached to kanji", "Small kana above or beside kanji"]
+                    ],
+                    note: "The systems have different jobs; they are not competing spellings of the same sentence."
+                ),
+                HistoryArticleTable(
+                    id: "kana-source-examples",
+                    title: "Kana preserves a visible history of abbreviation",
+                    columns: ["Sound", "Hiragana", "Source", "Katakana", "Source"],
+                    rows: [
+                        ["A", "あ", "安", "ア", "阿"],
+                        ["I", "い", "以", "イ", "伊"],
+                        ["U", "う", "宇", "ウ", "宇"],
+                        ["KA", "か", "加", "カ", "加"],
+                        ["SHI", "し", "之", "シ", "之"]
+                    ],
+                    note: "These are representative rows from the larger syllabary. Hiragana developed through cursive forms; katakana through selected parts of characters."
+                )
             ], examples: modernExamples(track: .japanese), nextID: "korean")
         default:
             return HistoryArticle(title: "Hanja remained. Hangul changed the system.", eyebrow: "KOREAN", era: "Chinese characters used for centuries", date: "한글 + 漢字 · Hangul created 1443, promulgated 1446", intro: [
@@ -788,6 +875,18 @@ private extension HistoryArticle {
                 HistoryArticleSection(id: "hangul", title: "A writing system designed for Korean", paragraphs: ["In 1443, King Sejong created Hunminjeongeum, the ancestor of modern Hangul. In 1446, the system was publicly explained and promulgated. Its letters were designed to represent Korean sounds systematically."]),
                 HistoryArticleSection(id: "coexist", title: "Centuries of coexistence", paragraphs: ["Hangul did not immediately replace Chinese characters. Hanja remained important in official, scholarly, and elite writing while Hangul expanded through literature, correspondence, education, and everyday communication. Modern Korean is primarily written in Hangul, while Hanja remains part of its historical and lexical background."]),
                 HistoryArticleSection(id: "different", title: "A different relationship", paragraphs: ["A Korean reading is not the next graphical stage of a Hanja character. It is the Korean pronunciation written in a different script. The major change was functional: Hanja tradition alongside a newly designed Korean alphabet."])
+            ], tables: [
+                HistoryArticleTable(
+                    id: "korean-reading-roles",
+                    title: "A Hanja reading is not the same as a native Korean word",
+                    columns: ["Character", "Hanja reading", "Native Korean", "Modern example"],
+                    rows: [
+                        ["月", "월 · wol", "달 · dal", "월요일 · Monday"],
+                        ["山", "산 · san", "—", "등산 · hiking"],
+                        ["水", "수 · su", "물 · mul", "수요일 · Wednesday"]
+                    ],
+                    note: "Modern Korean normally writes these words in Hangul. Hanja keeps the historical and lexical relationship visible."
+                )
             ], examples: koreanExamples(), nextID: nil)
         }
     }
@@ -1368,6 +1467,10 @@ private struct HistoryArticlePage<NextDestination: View>: View {
                         .fixedSize(horizontal: false, vertical: true)
                 }
 
+                ForEach(article.tables) { table in
+                    HistoryArticleTableView(table: table)
+                }
+
                 ForEach(Array(article.sections.enumerated()), id: \.element.id) { index, section in
                     VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
                         Text(section.title)
@@ -1437,6 +1540,59 @@ private struct HistoryArticlePage<NextDestination: View>: View {
             .padding(.bottom, AppSpacing.spaceSection)
         }
         .scrollIndicators(.hidden)
+    }
+}
+
+/// Presents the book-inspired comparison grammar as a responsive, learner-readable table.
+private struct HistoryArticleTableView: View {
+    let table: HistoryArticleTable
+
+    var body: some View {
+        GroupedSurface {
+            VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                Text(table.title)
+                    .font(AppTypography.sectionHeading)
+                    .foregroundStyle(AppColors.textPrimary)
+
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyVGrid(
+                        columns: Array(repeating: GridItem(.flexible(minimum: 94), alignment: .leading), count: table.columns.count),
+                        alignment: .leading,
+                        spacing: 0
+                    ) {
+                        ForEach(Array(table.columns.enumerated()), id: \.offset) { index, column in
+                            Text(column)
+                                .font(AppTypography.caption.weight(.semibold))
+                                .foregroundStyle(AppColors.textPrimary)
+                                .frame(maxWidth: .infinity, minHeight: 36, alignment: .leading)
+                                .padding(.horizontal, AppSpacing.spaceXs)
+                                .background(AppColors.artifactField)
+                        }
+
+                        ForEach(Array(table.rows.enumerated()), id: \.offset) { rowIndex, row in
+                            ForEach(Array(table.columns.indices.enumerated()), id: \.offset) { columnIndex, _ in
+                                Text(columnIndex < row.count ? row[columnIndex] : "—")
+                                    .font(AppTypography.caption)
+                                    .foregroundStyle(AppColors.textSecondary)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .frame(maxWidth: .infinity, minHeight: 42, alignment: .leading)
+                                    .padding(.horizontal, AppSpacing.spaceXs)
+                                    .padding(.vertical, AppSpacing.space2xs)
+                                    .background(rowIndex.isMultiple(of: 2) ? AppColors.surfaceElevated : AppColors.appBackground)
+                            }
+                        }
+                    }
+                    .frame(minWidth: CGFloat(table.columns.count) * 94)
+                }
+
+                if let note = table.note {
+                    Text(note)
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textTertiary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+        }
     }
 }
 

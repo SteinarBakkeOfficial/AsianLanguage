@@ -4,7 +4,7 @@
   "coreCharacter": "反",
   "coreSharedMeaning": "reverse / turn back / oppose",
   "recognitionTakeaway": "The hand-and-cliff graph becomes 反, while reverse/return/opposition senses develop beyond the original action.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+53CD",
   "simplifiedForm": "反",
   "traditionalForm": "反",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/turn-back/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 87,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -595,8 +595,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "A hand and a cliff face combine to suggest climbing; this later came to mean 'turn back.'",
@@ -606,7 +606,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/turn-back/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A hand is associated with a cliff/rock-face element; climbing/clambering is a leading early interpretation.",
+        "changeNoteFromPrevious": "A cliff-like frame surrounds a small hand or bent stroke, with a long arm descending outside it.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-反"
@@ -627,14 +627,14 @@
           "artifactAssetRef": "Assets/Symbols/turn-back/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "反 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A hand is associated with a cliff/rock-face element; climbing/clambering is a leading early interpretation.",
-        "transitionNote": "A hand is associated with a cliff/rock-face element; climbing/clambering is a leading early interpretation.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "A cliff-like frame surrounds a small hand or bent stroke, with a long arm descending outside it.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -664,14 +664,14 @@
           "artifactAssetRef": "Assets/Symbols/turn-back/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "反 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Keeps the cliff corner but enlarges the diagonal hand or arm sweeping out from beneath it.",
         "transitionNote": "Keeps the cliff corner but enlarges the diagonal hand or arm sweeping out from beneath it.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -701,14 +701,14 @@
           "artifactAssetRef": "Assets/Symbols/turn-back/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "反 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Squares the cliff and organizes the inner hand into two clean bends.",
         "transitionNote": "Squares the cliff and organizes the inner hand into two clean bends.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -738,14 +738,14 @@
           "artifactAssetRef": "Assets/Symbols/turn-back/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "反 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Thickens the enclosure and extends the hand into a strong diagonal lower-right stroke.",
         "transitionNote": "Thickens the enclosure and extends the hand into a strong diagonal lower-right stroke.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -754,7 +754,7 @@
         "label": "Regular Script",
         "form": "反",
         "assetRef": null,
-        "changeNoteFromPrevious": "The hand-and-cliff graph becomes 反, while reverse/return/opposition senses develop beyond the original action.",
+        "changeNoteFromPrevious": "Regular Script compresses the hand-and-cliff arrangement into 反; the cliff frame and returning hand are no longer separate.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -777,12 +777,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "反 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The hand-and-cliff graph becomes 反, while reverse/return/opposition senses develop beyond the original action.",
-        "transitionNote": "The hand-and-cliff graph becomes 反, while reverse/return/opposition senses develop beyond the original action.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Regular Script compresses the hand-and-cliff arrangement into 反; the cliff frame and returning hand are no longer separate.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -807,7 +807,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of turn back",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-反"
@@ -818,7 +818,7 @@
     "summary": "The research record describes this structure as ⿸𠂆又[G].",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-反"
     ]
@@ -826,7 +826,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'reverse / turn back / oppose', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -864,7 +864,7 @@
       "id": "source-zdic-反",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%8F%8D"
     },
     {
@@ -891,9 +891,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -904,4 +904,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

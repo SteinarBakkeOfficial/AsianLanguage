@@ -4,7 +4,7 @@
   "coreCharacter": "天",
   "coreSharedMeaning": "sky / heaven",
   "recognitionTakeaway": "Ancient forms vary in whether they emphasize a great person, the head, or what is above; the shared idea of height leads to the sky/heaven meaning.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+5929",
   "simplifiedForm": "天",
   "traditionalForm": "天",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/sky/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 33,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -579,8 +579,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "The ancient picture is disputed: scholars see a great person, enlarged head, or sign above a person; all suggest what is highest—'sky' or 'heaven.'",
@@ -590,7 +590,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/sky/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "A front-facing human figure has the head specially marked/enlarged; the original head/top sense precedes the sky/heaven use.",
+        "changeNoteFromPrevious": "Early forms vary between an enlarged person, marked head, and sign above a figure; the reference remains interpretive.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-天"
@@ -611,14 +611,14 @@
           "artifactAssetRef": "Assets/Symbols/sky/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "天 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "A front-facing human figure has the head specially marked/enlarged; the original head/top sense precedes the sky/heaven use.",
-        "transitionNote": "A front-facing human figure has the head specially marked/enlarged; the original head/top sense precedes the sky/heaven use.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Early forms vary between an enlarged person, marked head, and sign above a figure; the reference remains interpretive.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -648,14 +648,14 @@
           "artifactAssetRef": "Assets/Symbols/sky/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "天 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The head becomes a heavy cap atop a simplified standing body, while the limbs remain visible.",
         "transitionNote": "The head becomes a heavy cap atop a simplified standing body, while the limbs remain visible.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -685,14 +685,14 @@
           "artifactAssetRef": "Assets/Symbols/sky/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "天 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The person is reduced to a human figure-like body with a long horizontal line clearly placed above it.",
         "transitionNote": "The person is reduced to a human figure-like body with a long horizontal line clearly placed above it.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -722,14 +722,14 @@
           "artifactAssetRef": "Assets/Symbols/sky/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "天 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The top line remains broad while the body below becomes angular and brush-like, closely anticipating head-emphasized human figure.",
         "transitionNote": "The top line remains broad while the body below becomes angular and brush-like, closely anticipating head-emphasized human figure.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -761,12 +761,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "天 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The emphasized-head human graph is regularized as 天; its pictorial human origin is mostly lost.",
         "transitionNote": "The emphasized-head human graph is regularized as 天; its pictorial human origin is mostly lost.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -791,7 +791,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of sky",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-天"
@@ -802,7 +802,7 @@
     "summary": "The research record describes this structure as ⿱一大.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-天"
     ]
@@ -810,7 +810,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'sky / heaven', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -848,7 +848,7 @@
       "id": "source-zdic-天",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E5%A4%A9"
     },
     {
@@ -875,9 +875,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -888,4 +888,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

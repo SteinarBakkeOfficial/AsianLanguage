@@ -4,7 +4,7 @@
   "coreCharacter": "从",
   "coreSharedMeaning": "follow",
   "recognitionTakeaway": "The historical endpoint is 從, with the older two-person core combined with the walking element.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+4ECE",
   "simplifiedForm": "从",
   "traditionalForm": "從",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/follow/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 68,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -602,8 +602,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "Two separate people, one behind the other, combine to express following.",
@@ -613,7 +613,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/follow/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "Shows two narrow human profiles side by side, both leaning in the same direction.",
+        "changeNoteFromPrevious": "Two narrow figure-like forms lean together, but separate bodies and the act of following are not clearly distinguishable.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-从"
@@ -634,14 +634,14 @@
           "artifactAssetRef": "Assets/Symbols/follow/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "从 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Shows two narrow human profiles side by side, both leaning in the same direction.",
-        "transitionNote": "Shows two narrow human profiles side by side, both leaning in the same direction.",
-        "transitionNoteNeedsReview": true,
+        "transitionNote": "Two narrow figure-like forms lean together, but separate bodies and the act of following are not clearly distinguishable.",
+        "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
       },
@@ -671,14 +671,14 @@
           "artifactAssetRef": "Assets/Symbols/follow/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "从 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Thickens the figures and gives each a bent leg or projecting limb, still keeping the pair clearly separate.",
         "transitionNote": "Thickens the figures and gives each a bent leg or projecting limb, still keeping the pair clearly separate.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bronze vessel · cast / inscribed",
         "availabilityState": "available"
       },
@@ -708,14 +708,14 @@
           "artifactAssetRef": "Assets/Symbols/follow/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "从 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Smooths them into two tall, nearly parallel human curves.",
         "transitionNote": "Smooths them into two tall, nearly parallel human curves.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bamboo / manuscript · brush",
         "availabilityState": "available"
       },
@@ -745,14 +745,14 @@
           "artifactAssetRef": "Assets/Symbols/follow/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "从 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "Squares the pair into two blocky, mirrored person-like forms standing close together.",
         "transitionNote": "Squares the pair into two blocky, mirrored person-like forms standing close together.",
-        "transitionNoteNeedsReview": false,
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       },
@@ -761,7 +761,7 @@
         "label": "Regular Script",
         "form": "从",
         "assetRef": null,
-        "changeNoteFromPrevious": "The historical endpoint is 從, with the older two-person core combined with the walking element.",
+        "changeNoteFromPrevious": "Regular Script compresses the paired figure component beside the walking element into 從; the two-person arrangement remains visible.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -784,12 +784,12 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "从 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The historical endpoint is 從, with the older two-person core combined with the walking element.",
-        "transitionNote": "The historical endpoint is 從, with the older two-person core combined with the walking element.",
-        "transitionNoteNeedsReview": false,
+        "transitionNote": "Regular Script compresses the paired figure component beside the walking element into 從; the two-person arrangement remains visible.",
+"transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
       }
@@ -814,7 +814,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of follow",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-从"
@@ -825,7 +825,7 @@
     "summary": "The research record describes this structure as ⿰人人.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-从"
     ]
@@ -833,7 +833,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'follow', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -871,7 +871,7 @@
       "id": "source-zdic-从",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E4%BB%8E"
     },
     {
@@ -898,9 +898,9 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [
@@ -911,4 +911,3 @@
     "Meaning drift across Chinese, Japanese, and Korean is preserved instead of forcing one gloss onto every language."
   ]
 }
-

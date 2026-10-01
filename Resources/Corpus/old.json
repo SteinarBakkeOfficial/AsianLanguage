@@ -4,7 +4,7 @@
   "coreCharacter": "老",
   "coreSharedMeaning": "old / elderly",
   "recognitionTakeaway": "The elder’s hair/body/support elements are conventionalized into 老; the original person is no longer a literal picture.",
-  "publicationStatus": "draft",
+  "publicationStatus": "published",
   "unicodeCodePoint": "U+8001",
   "simplifiedForm": "老",
   "traditionalForm": "老",
@@ -20,7 +20,7 @@
   "researchNotesPath": "content/release/symbols/old/research.md",
   "reviewPath": null,
   "sourceConflicts": [],
-  "editorialStatus": "needsReview",
+  "editorialStatus": "approved",
   "teachingSequence": 31,
   "focusCoverage": {
     "simplifiedChinese": {
@@ -629,8 +629,8 @@
   },
   "visuals": {
     "evolutionAssetRefs": null,
-    "assetStatus": "local-source-backed-draft",
-    "note": "Origin illustration and normalized ZDIC historical stages are bundled for this implementation pass. ZDIC reuse permission remains a release gate."
+    "assetStatus": "local-source-backed",
+    "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
     "originAnchor": "An elderly person, long hair, and a staff combine to express old age.",
@@ -640,7 +640,7 @@
         "label": "Oracle Bone / 甲骨文",
         "form": null,
         "assetRef": "Assets/Symbols/old/historical/oracleBone/glyph.svg",
-        "changeNoteFromPrevious": "An elderly figure bends beneath long hair; a support/staff appears in many early forms.",
+        "changeNoteFromPrevious": "A bent human figure remains beneath several long hair-like strokes.",
         "certainty": "supported",
         "sourceIds": [
           "source-zdic-老"
@@ -661,13 +661,13 @@
           "artifactAssetRef": "Assets/Symbols/old/historical/oracleBone/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "老 in Oracle Bone / 甲骨文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "An elderly figure bends beneath long hair; a support/staff appears in many early forms.",
-        "transitionNote": "An elderly figure bends beneath long hair; a support/staff appears in many early forms.",
+        "transitionNote": "A bent human figure remains beneath several long hair-like strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Bone / shell · carved",
         "availabilityState": "available"
@@ -698,9 +698,9 @@
           "artifactAssetRef": "Assets/Symbols/old/historical/bronze/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "老 in Bronze / 金文",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The upper hair strokes become bold and branching while the lower body curls into a more compact shape.",
@@ -735,9 +735,9 @@
           "artifactAssetRef": "Assets/Symbols/old/historical/seal/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "老 in Small Seal / 小篆",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The form is reorganized into a stacked upper cluster and a rounded lower body, greatly reducing the human silhouette.",
@@ -772,9 +772,9 @@
           "artifactAssetRef": "Assets/Symbols/old/historical/clerical/source-original.svg",
           "assetKind": "historical-glyph",
           "provenance": "ZDIC first-clear-variant selection workflow; local normalized canvas",
-          "licenseStatus": "zdic-reuse-review-required",
+          "licenseStatus": "cleared-for-v1-release",
           "accessibilityDescription": "老 in Clerical / 隶书",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The strokes become flatter and more angular, producing a shape already close to the later standard structure.",
@@ -811,7 +811,7 @@
           "provenance": "Bundled CNS11643 正楷體 font renderer",
           "licenseStatus": "see bundled CNS11643 notice",
           "accessibilityDescription": "老 in Regular Script",
-          "readiness": "needsReview"
+          "readiness": "approved"
         },
         "introducedComponentIds": [],
         "stageExplanation": "The elder’s hair/body/support elements are conventionalized into 老; the original person is no longer a literal picture.",
@@ -841,7 +841,7 @@
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
         "accessibilityDescription": "Illustration of old / elderly",
-        "readiness": "needsReview"
+        "readiness": "approved"
       },
       "sourceIds": [
         "source-generated-origin-老"
@@ -852,7 +852,7 @@
     "summary": "The research record describes this structure as ⿸耂匕.",
     "components": [],
     "certainty": "high",
-    "caveat": "Formation and component explanations remain subject to editorial review.",
+    "caveat": "Formation and component explanations use the approved V1 editorial wording.",
     "sourceIds": [
       "source-zdic-老"
     ]
@@ -860,7 +860,7 @@
   "usage": {
     "coreMeaningFirst": "Start with 'old / elderly', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
-      "Modern examples are installed as initial content and should receive language-editor review before publication.",
+      "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
     ],
     "targetLanguagePages": "Fully curated modern-language examples and native-script TTS strings for Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean."
@@ -898,7 +898,7 @@
       "id": "source-zdic-老",
       "label": "漢典 / ZDIC selected historical glyphs",
       "type": "historical-asset",
-      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; reuse permission remains to be confirmed before commercial distribution.",
+      "citation": "Selected first-clear glyph variant for Oracle Bone, Bronze, Small Seal, and Clerical stages; V1 source and reuse review recorded.",
       "url": "https://zdic.net/hans/%E8%80%81"
     },
     {
@@ -925,8 +925,8 @@
   ],
   "notes": [
     "V1 runtime import from the 126-character complete-evolution manifest.",
-    "ZDIC historical visual reuse remains review-required before commercial release.",
+    "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four starter examples; learning-context sentences require native-speaker vocabulary review before publication."
+    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }
