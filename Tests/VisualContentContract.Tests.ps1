@@ -56,7 +56,8 @@ Assert-True (-not $modern.Contains("Paper · brush")) "Regular Script must not s
 Assert-True $modern.Contains("AppTypography.body") "Regular Script conclusion must use the Museum body-text treatment."
 
 $usage = Text "Sources/App/Lesson/UsageExamplesView.swift"
-Assert-True $usage.Contains("Korean · Hanja / Hangul") "Korean Usage must distinguish Hanja and Hangul."
+Assert-True $usage.Contains('Text("Korean")') "Korean Usage must use the plain Korean header."
+Assert-True (-not $usage.Contains("Korean · Hanja / Hangul")) "Korean Usage must not repeat Hanja / Hangul in the page header."
 Assert-True $usage.Contains("languageFormHeader") "Usage pages must show their locale-specific modern form before examples."
 Assert-True $usage.Contains("showsJapaneseFurigana") "Japanese examples must opt into their native kana/furigana presentation."
 Assert-True $usage.Contains("furiganaSegments") "Japanese examples must render structured furigana data."

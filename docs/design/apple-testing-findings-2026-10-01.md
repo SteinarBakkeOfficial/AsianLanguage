@@ -538,7 +538,7 @@ The final product decision separates Quick Review from Review Later:
 - Home shows Quick Review as soon as at least one Symbol is fully learned.
 - A Quick Review session randomizes all learned Symbols and presents one three-choice recognition card per Symbol, with progress shown as `n of x`.
 - The cards rotate among showing a Symbol and asking for its meaning, showing a meaning and asking for the Symbol, and asking how the meaning is written in one active target language. The session does not repeat the same four-language recognition question for one Symbol.
-- A correct choice advances directly to the next Symbol. An incorrect choice reveals the correct answer and offers `Check this Symbol`, which opens the full Journey and ends the temporary session.
+- A correct choice advances directly to the next Symbol. An incorrect choice reveals the correct answer and offers `Check this Symbol`, which opens the full Journey for the exact card just answered and ends the temporary session.
 - Quick Review changes no Learned, Favorite, or Review Later state. Leaving Home, Symbol, or the session ends it and it must not be restored automatically.
 - Browse → Review Later remains a plain saved list. Selecting an item opens the full Symbol Journey; it does not start Quick Review or any other game.
 - Browse → Learned also opens the full Symbol Journey. Quick Review has one clear Home entry point.

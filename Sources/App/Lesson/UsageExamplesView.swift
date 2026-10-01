@@ -254,7 +254,7 @@ struct UsageExamplesView: View {
     /// Korean keeps the Hanja form and an explicit native-script variant together on the Usage page.
     private func koreanWordCard(_ coverage: StandardFocusCoverage) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
-            Text("Korean · Hanja / Hangul")
+            Text("Korean")
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
             languageFormHeader(

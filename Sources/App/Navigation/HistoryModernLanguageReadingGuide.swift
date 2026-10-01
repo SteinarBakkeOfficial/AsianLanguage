@@ -673,7 +673,7 @@ private struct KanaReadingGuide: View {
 
     private func soundTable(_ rows: [KanaRow]) -> some View {
         VStack(spacing: 0) {
-            HStack(alignment: .top, spacing: AppSpacing.space2xs) {
+            LazyVGrid(columns: kanaChartColumns, alignment: .leading, spacing: 0) {
                 tableCell("Row", width: 64)
                 ForEach(["a", "i", "u", "e", "o"], id: \.self) { vowel in
                     tableCell(vowel)
@@ -682,18 +682,24 @@ private struct KanaReadingGuide: View {
             .font(AppTypography.metadata.weight(.semibold))
             .foregroundStyle(AppColors.textSecondary)
             ForEach(rows) { row in
-                HStack(alignment: .top, spacing: AppSpacing.space2xs) {
+                LazyVGrid(columns: kanaChartColumns, alignment: .leading, spacing: 0) {
                     tableCell(row.label, width: 64)
                     ForEach(row.cells.indices, id: \.self) { index in
                         kanaCell(row.cells[index])
                     }
                 }
+                .padding(.vertical, AppSpacing.space2xs)
                 .font(AppTypography.metadata)
                 .foregroundStyle(AppColors.textPrimary)
-                .padding(.vertical, AppSpacing.space2xs)
                 Divider()
             }
         }
+    }
+
+    /// The header and every data row share these six columns so vowel labels stay over their cells.
+    private var kanaChartColumns: [GridItem] {
+        [GridItem(.fixed(64), spacing: AppSpacing.space2xs)]
+            + Array(repeating: GridItem(.flexible(), spacing: AppSpacing.space2xs), count: 5)
     }
 
     private func kanaCell(_ cell: KanaCell) -> some View {

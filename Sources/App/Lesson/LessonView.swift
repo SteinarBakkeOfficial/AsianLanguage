@@ -92,9 +92,8 @@ struct LessonView: View {
                         records: learnedRecords,
                         distractorRecords: dependencies.sharedCharacters,
                         focusSelection: userStateStore.state.focusSelection,
-                        onOpenJourney: {
-                            position = .origin
-                            entryMode = .journey
+                        onOpenJourney: { symbolID in
+                            dependencies.navigationState.openSymbol(symbolID, intent: .view)
                         },
                         onFinish: {
                             dependencies.navigationState.selectedTab = openingIntent == .reviewFromBrowse ? .browse : .home
@@ -410,7 +409,7 @@ private struct RevisitEntryView: View {
 
 /// Recognition-oriented review tests one learned Symbol at a time without changing learner state.
 private struct QuickReviewView: View {
-    let onOpenJourney: () -> Void
+    let onOpenJourney: (String) -> Void
     let onFinish: () -> Void
     @State private var cards: [QuickReviewCard]
     @State private var cardIndex = 0
@@ -420,7 +419,7 @@ private struct QuickReviewView: View {
         records: [SharedCharacterRecord],
         distractorRecords: [SharedCharacterRecord],
         focusSelection: FocusTrackSelection,
-        onOpenJourney: @escaping () -> Void,
+        onOpenJourney: @escaping (String) -> Void,
         onFinish: @escaping () -> Void
     ) {
         self.onOpenJourney = onOpenJourney
@@ -506,7 +505,9 @@ private struct QuickReviewView: View {
                     }
                     if hasAnswered {
                         if selectedOptionID != currentCard.correctOptionID {
-                            SecondaryActionButton("Check this Symbol", action: onOpenJourney)
+                            SecondaryActionButton("Check this Symbol") {
+                                onOpenJourney(currentCard.id)
+                            }
                         }
                         PrimaryActionButton(cardIndex + 1 < cards.count ? "Next Symbol" : "Finish Review", action: advance)
                     }

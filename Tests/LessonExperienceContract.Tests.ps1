@@ -37,6 +37,8 @@ Assert-True $lesson.Contains("Choose the symbol for this meaning:") "Meaning-to-
 Assert-True $lesson.Contains("promptIsSymbol") "Quick Review must distinguish symbol prompts from meaning prompts."
 Assert-True $lesson.Contains("optionsAreSymbols") "Quick Review must size symbol choices as answer cards."
 Assert-True $lesson.Contains("Check this Symbol") "Quick Review must offer the full Symbol only after an incorrect choice."
+Assert-True $lesson.Contains("onOpenJourney: { symbolID in") "Quick Review must open the exact Symbol answered incorrectly."
+Assert-True $lesson.Contains("openSymbol(symbolID, intent: .view)") "Quick Review must route Check this Symbol through shared Symbol navigation."
 Assert-True $lesson.Contains("Next Symbol") "Quick Review must advance one completed Symbol at a time."
 Assert-True $lesson.Contains("Finish Review") "Quick Review must finish without forcing a journey replay."
 
