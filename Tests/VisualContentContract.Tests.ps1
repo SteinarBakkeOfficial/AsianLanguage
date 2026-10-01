@@ -63,10 +63,10 @@ Assert-True $usage.Contains("showsJapaneseFurigana") "Japanese examples must opt
 Assert-True $usage.Contains("furiganaSegments") "Japanese examples must render structured furigana data."
 Assert-True $usage.Contains("ensureBasicSentenceAtEnd: true") "Modern language pages must keep a basic sentence visible."
 Assert-True $usage.Contains("koreanEquivalentRow") "Korean equivalents must have a distinct semantic-equivalent row."
-Assert-True $usage.Contains("visibleKoreanEquivalents") "Korean Usage must suppress exact duplicates of the top reading."
+Assert-True $usage.Contains("visibleKoreanEquivalents") "Korean Usage must keep the language alternatives distinct from the top reading."
 Assert-True $usage.Contains("equivalent.gloss") "Korean equivalents must show their own English gloss."
 Assert-True $usage.Contains("japaneseReadingGloss") "Japanese readings must show reading-specific English context when reviewed examples provide it."
-Assert-True $usage.Contains("distinctEnglishGloss") "Equivalent meanings must omit exact top-level repeats while retaining distinct meanings."
+Assert-True (-not $usage.Contains('Text("Korean equivalent")')) "Korean Usage must not add a redundant equivalent heading."
 Assert-True $usage.Contains('excludedExampleRoles: ["semanticEquivalent"]') "Korean semantic equivalents must not repeat as ordinary examples."
 
 $tile = Text "Sources/App/SharedUI/DesignSystem.swift"

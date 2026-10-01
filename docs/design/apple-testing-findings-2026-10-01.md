@@ -528,7 +528,7 @@ Implementation status: complete locally. This correction supersedes the over-cen
 
 ### Reading-specific language context correction — 2026-10-02
 
-Korean native equivalents now use their own reviewed English gloss instead of repeating the full Shared Character meaning. Exact duplicates of the top Hanja form or reading are suppressed; distinct native vocabulary remains visible with its English gloss aligned on the right. Japanese readings now use the English translations of their reviewed examples where available, aligned like the other language examples, so multiple readings such as `いきる`, `うまれる`, `うむ`, and `はえる` are explained by their actual meanings rather than being presented as interchangeable translations.
+Korean native equivalents no longer use a redundant section heading. Each row carries its own English gloss on the right, including the top Shared Character meaning when that is the correct match. Japanese readings use the English translations of their reviewed examples where available, aligned like the other language examples, so multiple readings such as `いきる`, `うまれる`, `うむ`, and `はえる` are explained by their actual meanings rather than being presented as interchangeable translations.
 
 Implementation status: complete locally. This preserves distinct language relationships without repeating the top header.
 

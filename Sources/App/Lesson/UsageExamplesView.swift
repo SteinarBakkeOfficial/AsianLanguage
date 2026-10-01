@@ -204,12 +204,10 @@ struct UsageExamplesView: View {
                         .font(CJKFontRole.korean.font(size: 22).weight(.medium))
                         .foregroundStyle(AppColors.textPrimary)
                     Spacer(minLength: AppSpacing.spaceSm)
-                    if let gloss = distinctEnglishGloss(equivalent.gloss), !gloss.isEmpty {
-                        Text(gloss)
-                            .font(AppTypography.caption)
-                            .foregroundStyle(AppColors.textSecondary)
-                            .multilineTextAlignment(.trailing)
-                    }
+                    Text(equivalent.gloss ?? record.primarySharedMeaning.capitalized)
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                        .multilineTextAlignment(.trailing)
                 }
                 if let romanization = parts.romanization {
                     Text(romanization)
@@ -279,18 +277,10 @@ struct UsageExamplesView: View {
         let script = displayReadingParts(reading).script
         var translations: [String] = []
         for example in record.focusCoverage.japanese.examples where example.coversReadings.contains(script) {
-            guard let translation = distinctEnglishGloss(example.translation), !translations.contains(translation) else { continue }
-            translations.append(translation)
+            guard !example.translation.isEmpty, !translations.contains(example.translation) else { continue }
+            translations.append(example.translation)
         }
         return translations.isEmpty ? nil : translations.joined(separator: "; ")
-    }
-
-    /// Omits only an exact repeat of the Shared Character meaning; narrower or expanded meanings remain visible.
-    private func distinctEnglishGloss(_ gloss: String?) -> String? {
-        guard let gloss, !gloss.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { return nil }
-        let normalizedGloss = gloss.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        let normalizedMeaning = record.primarySharedMeaning.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        return normalizedGloss == normalizedMeaning ? nil : gloss
     }
 
     /// Removes only exact Korean duplicates of the top form or Hanja reading; distinct native vocabulary remains visible.
@@ -318,9 +308,6 @@ struct UsageExamplesView: View {
             let equivalents = visibleKoreanEquivalents(coverage)
             if !equivalents.isEmpty {
                 VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                    Text("Korean equivalent")
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
                     ForEach(Array(equivalents.enumerated()), id: \.offset) { _, equivalent in
                         koreanEquivalentRow(equivalent)
                     }
