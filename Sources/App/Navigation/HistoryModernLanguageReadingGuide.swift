@@ -515,10 +515,10 @@ private struct KanaReadingGuide: View {
         let cells: [KanaCell]
     }
 
-    private struct CombinationRow: Identifiable {
+    private struct CombinationExample: Identifiable {
         let id: String
-        let label: String
-        let kana: String
+        let hiragana: String
+        let katakana: String
         let romaji: String
     }
 
@@ -603,18 +603,12 @@ private struct KanaReadingGuide: View {
         ])
     ]
 
-    private let combinationRows = [
-        CombinationRow(id: "k", label: "K", kana: "きゃ きゅ きょ / キャ キュ キョ", romaji: "kya · kyu · kyo"),
-        CombinationRow(id: "s", label: "S", kana: "しゃ しゅ しょ / シャ シュ ショ", romaji: "sha · shu · sho"),
-        CombinationRow(id: "t", label: "T", kana: "ちゃ ちゅ ちょ / チャ チュ チョ", romaji: "cha · chu · cho"),
-        CombinationRow(id: "n", label: "N", kana: "にゃ にゅ にょ / ニャ ニュ ニョ", romaji: "nya · nyu · nyo"),
-        CombinationRow(id: "h", label: "H", kana: "ひゃ ひゅ ひょ / ヒャ ヒュ ヒョ", romaji: "hya · hyu · hyo"),
-        CombinationRow(id: "m", label: "M", kana: "みゃ みゅ みょ / ミャ ミュ ミョ", romaji: "mya · myu · myo"),
-        CombinationRow(id: "r", label: "R", kana: "りゃ りゅ りょ / リャ リュ リョ", romaji: "rya · ryu · ryo"),
-        CombinationRow(id: "g", label: "G", kana: "ぎゃ ぎゅ ぎょ / ギャ ギュ ギョ", romaji: "gya · gyu · gyo"),
-        CombinationRow(id: "j", label: "J", kana: "じゃ じゅ じょ / ジャ ジュ ジョ", romaji: "ja · ju · jo"),
-        CombinationRow(id: "b", label: "B", kana: "びゃ びゅ びょ / ビャ ビュ ビョ", romaji: "bya · byu · byo"),
-        CombinationRow(id: "p", label: "P", kana: "ぴゃ ぴゅ ぴょ / ピャ ピュ ピョ", romaji: "pya · pyu · pyo")
+    private let combinationExamples = [
+        CombinationExample(id: "kya", hiragana: "き + ゃ → きゃ", katakana: "キ + ャ → キャ", romaji: "kya"),
+        CombinationExample(id: "shu", hiragana: "し + ゅ → しゅ", katakana: "シ + ュ → シュ", romaji: "shu"),
+        CombinationExample(id: "cho", hiragana: "ち + ょ → ちょ", katakana: "チ + ョ → チョ", romaji: "cho"),
+        CombinationExample(id: "nya", hiragana: "に + ゃ → にゃ", katakana: "ニ + ャ → ニャ", romaji: "nya"),
+        CombinationExample(id: "ryo", hiragana: "り + ょ → りょ", katakana: "リ + ョ → リョ", romaji: "ryo")
     ]
 
     var body: some View {
@@ -629,38 +623,33 @@ private struct KanaReadingGuide: View {
             Text("Basic sound chart")
                 .font(AppTypography.metadata.weight(.semibold))
                 .foregroundStyle(AppColors.textPrimary)
-            Text("Each cell shows Hiragana, Katakana, then Romaji. The five columns follow the vowel order a · i · u · e · o.")
+            Text("The Vowels row shows the five standalone vowel sounds. Each later row combines a consonant family with those vowels; every cell shows Hiragana, Katakana, then Romaji in the order a · i · u · e · o.")
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
                 .fixedSize(horizontal: false, vertical: true)
             soundTable(soundRows)
-            Text("Combined sounds")
-                .font(AppTypography.metadata.weight(.semibold))
-                .foregroundStyle(AppColors.textPrimary)
-            Text("Small ゃ・ゅ・ょ combine with an i-row kana. The table shows the common combinations; the same pattern works in both scripts.")
-                .font(AppTypography.caption)
-                .foregroundStyle(AppColors.textSecondary)
-                .fixedSize(horizontal: false, vertical: true)
-            combinationTable(combinationRows)
             Text("How sounds are built")
                 .font(AppTypography.metadata.weight(.semibold))
                 .foregroundStyle(AppColors.textPrimary)
-            Text("A small ゃ・ゅ・ょ blends with the preceding sound. Dakuten ゛ voices a sound, handakuten ゜ changes the は-row to a p-sound, small っ doubles the next consonant, and ー lengthens a katakana vowel.")
+            Text("Each basic kana in the chart has its own sound. A small ゃ・ゅ・ょ then combines with the preceding i-row kana to make one contracted sound. Dakuten ゛ voices a sound, handakuten ゜ changes the は-row to a p-sound, small っ doubles the next consonant, and ー lengthens a katakana vowel.")
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
                 .fixedSize(horizontal: false, vertical: true)
-            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                Text("き + ゃ → きゃ → kya")
-                Text("か + ゛ → が → ga")
-                Text("っ + て → って → tte")
-                Text("ケーキ → kēki")
+            VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+                ForEach(combinationExamples) { example in
+                    VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                        Text(example.hiragana)
+                            .font(CJKFontRole.japanese.font(size: 16))
+                        Text(example.katakana)
+                            .font(CJKFontRole.japanese.font(size: 16))
+                            .foregroundStyle(AppColors.textSecondary)
+                        Text(example.romaji)
+                            .font(AppTypography.metadata)
+                            .foregroundStyle(AppColors.accentPrimary)
+                    }
+                }
             }
-            .font(AppTypography.caption)
-            .foregroundStyle(AppColors.textPrimary)
-            .padding(AppSpacing.spaceXs)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(AppColors.artifactField)
-            .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
             Text("Common notes: し is shi, ち is chi, つ is tsu, ふ is fu, and を is usually pronounced o as a particle. Katakana also has extra spellings for imported words; those are combinations, not a second sound system.")
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textTertiary)
@@ -676,7 +665,7 @@ private struct KanaReadingGuide: View {
             LazyVGrid(columns: kanaChartColumns, alignment: .leading, spacing: 0) {
                 tableCell("Row", width: 64)
                 ForEach(["a", "i", "u", "e", "o"], id: \.self) { vowel in
-                    tableCell(vowel)
+                    centeredTableCell(vowel)
                 }
             }
             .font(AppTypography.metadata.weight(.semibold))
@@ -716,33 +705,6 @@ private struct KanaReadingGuide: View {
         .frame(maxWidth: .infinity, minHeight: 52, alignment: .top)
     }
 
-    private func combinationTable(_ rows: [CombinationRow]) -> some View {
-        VStack(spacing: 0) {
-            HStack(alignment: .top, spacing: AppSpacing.space2xs) {
-                tableCell("Row", width: 44)
-                tableCell("Hiragana / Katakana")
-                tableCell("Romaji")
-            }
-            .font(AppTypography.metadata.weight(.semibold))
-            .foregroundStyle(AppColors.textSecondary)
-            ForEach(rows) { row in
-                HStack(alignment: .top, spacing: AppSpacing.space2xs) {
-                    tableCell(row.label, width: 44)
-                    Text(row.kana)
-                        .font(CJKFontRole.japanese.font(size: 15))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .fixedSize(horizontal: false, vertical: true)
-                    Text(row.romaji)
-                        .font(AppTypography.metadata)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-                .padding(.vertical, AppSpacing.space2xs)
-                Divider()
-            }
-        }
-    }
-
     @ViewBuilder
     private func tableCell(_ text: String, width: CGFloat? = nil) -> some View {
         if let width {
@@ -754,6 +716,13 @@ private struct KanaReadingGuide: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .fixedSize(horizontal: false, vertical: true)
         }
+    }
+
+    /// Centers vowel labels over the centered kana in each sound-table column.
+    private func centeredTableCell(_ text: String) -> some View {
+        Text(text)
+            .frame(maxWidth: .infinity, alignment: .center)
+            .fixedSize(horizontal: false, vertical: true)
     }
 }
 

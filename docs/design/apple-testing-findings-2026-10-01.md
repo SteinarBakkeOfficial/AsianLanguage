@@ -515,9 +515,10 @@ The finished guide should include:
 - a compact row-based table showing the shared Hiragana/Katakana sound pattern with Romaji;
 - a small set of clear construction examples for dakuten, contracted sounds, small `っ`, and long-vowel `ー`;
 - the important reading exceptions/particle readings;
-- a clear statement that Hiragana and Katakana represent the same basic sounds in different writing systems.
+- a clear statement that Hiragana and Katakana represent the same basic sounds in different writing systems;
+- five plain construction examples showing a base kana plus small ゃ・ゅ・ょ becoming one sound in both scripts, rather than a second full combinations table.
 
-Implementation status: complete locally. The History guide now uses a conventional five-column vowel chart, with Hiragana, Katakana, and Romaji stacked inside each cell, followed by a separate combinations chart for small ゃ・ゅ・ょ. Quick Review is resolved separately below under AT-20.
+Implementation status: complete locally. The History guide now uses a conventional five-column vowel chart, with Hiragana, Katakana, and Romaji stacked inside each cell, followed by a small set of plain construction examples for small ゃ・ゅ・ょ. Quick Review is resolved separately below under AT-20.
 
 ### Final target-language alignment correction — 2026-10-02
 

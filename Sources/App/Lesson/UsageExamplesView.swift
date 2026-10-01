@@ -98,6 +98,8 @@ struct UsageExamplesView: View {
                 readings: readings,
                 fontRole: fontRole
             )
+            Divider()
+                .padding(.vertical, AppSpacing.spaceXs)
             ForEach(displayExamples(
                 examples,
                 variants: variants,
@@ -142,6 +144,8 @@ struct UsageExamplesView: View {
                     .multilineTextAlignment(.trailing)
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
+            Divider()
+                .padding(.vertical, AppSpacing.spaceXs)
             // Reading systems are not unique: Japanese may have several On/Kun readings,
             // and Korean may expose ordinary and sound-law variants.
             ForEach(Array(readings.enumerated()), id: \.offset) { _, reading in
@@ -294,6 +298,8 @@ struct UsageExamplesView: View {
                     }
                 }
             }
+            Divider()
+                .padding(.vertical, AppSpacing.spaceXs)
             ForEach(displayExamples(
                 coverage.examples,
                 variants: coverage.variants,
@@ -419,6 +425,9 @@ struct UsageExamplesView: View {
 
     /// Keeps Taiwan and Hong Kong usage visibly distinct while retaining one Traditional page.
     private func traditionalWordCard(_ coverage: TraditionalChineseCoverage) -> some View {
+        let hasTaiwanContent = !coverage.taiwanReadings.isEmpty || !coverage.taiwanExamples.isEmpty
+        let hasHongKongContent = !coverage.hongKongReadings.isEmpty || !coverage.hongKongExamples.isEmpty
+
         VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
             Text("Traditional Chinese")
                 .font(AppTypography.stageTitle)
@@ -429,11 +438,11 @@ struct UsageExamplesView: View {
                 readings: [],
                 fontRole: .traditionalChinese
             )
-            if !coverage.taiwanReadings.isEmpty || !coverage.taiwanExamples.isEmpty {
-                regionalExamples(title: "Taiwan · Mandarin / Pinyin", readings: coverage.taiwanReadings, examples: coverage.taiwanExamples)
+            if hasTaiwanContent {
+                regionalExamples(title: "Taiwan · Mandarin / Pinyin", readings: coverage.taiwanReadings, examples: coverage.taiwanExamples, showTopDivider: false)
             }
-            if !coverage.hongKongReadings.isEmpty || !coverage.hongKongExamples.isEmpty {
-                regionalExamples(title: "Hong Kong · Cantonese / Jyutping", readings: coverage.hongKongReadings, examples: coverage.hongKongExamples)
+            if hasHongKongContent {
+                regionalExamples(title: "Hong Kong · Cantonese / Jyutping", readings: coverage.hongKongReadings, examples: coverage.hongKongExamples, showTopDivider: hasTaiwanContent)
             }
         }
         .padding(.vertical, AppSpacing.spaceSm)
@@ -447,10 +456,17 @@ struct UsageExamplesView: View {
     }
 
     /// Renders up to four useful context entries for one Traditional Chinese region.
-    private func regionalExamples(title: String, readings: [CharacterReading], examples: [UsageExample]) -> some View {
+    private func regionalExamples(
+        title: String,
+        readings: [CharacterReading],
+        examples: [UsageExample],
+        showTopDivider: Bool
+    ) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-            Divider()
-                .padding(.vertical, AppSpacing.spaceXs)
+            if showTopDivider {
+                Divider()
+                    .padding(.vertical, AppSpacing.spaceXs)
+            }
             Text(title)
                 .font(AppTypography.body.weight(.semibold))
                 .foregroundStyle(AppColors.textPrimary)
