@@ -92,7 +92,12 @@ struct UsageExamplesView: View {
             Text(title)
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
-            languageFormHeader(form: form, readings: readings, fontRole: fontRole)
+            languageFormHeader(
+                form: form,
+                translation: record.coreSharedMeaning.capitalized,
+                readings: readings,
+                fontRole: fontRole
+            )
             ForEach(displayExamples(
                 examples,
                 variants: variants,
@@ -115,17 +120,28 @@ struct UsageExamplesView: View {
         }
     }
 
-    /// Presents the selected language's modern form before its contextual examples.
-    /// Centers only the primary form and its direct reading block; contextual examples remain left-aligned below.
-    private func languageFormHeader(form: String, readings: [CharacterReading], fontRole: CJKFontRole) -> some View {
-        VStack(alignment: .center, spacing: AppSpacing.spaceXs) {
-            Text(form)
-                .font(fontRole.font(size: 48))
-                .foregroundStyle(AppColors.accentPrimary)
-                .frame(minHeight: 58, alignment: .center)
-                .minimumScaleFactor(0.55)
-                .lineLimit(1)
-                .clipped()
+    /// Presents the modern form with its English meaning before the contextual examples.
+    private func languageFormHeader(
+        form: String,
+        translation: String,
+        readings: [CharacterReading],
+        fontRole: CJKFontRole
+    ) -> some View {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
+            HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
+                Text(form)
+                    .font(fontRole.font(size: 48))
+                    .foregroundStyle(AppColors.accentPrimary)
+                    .frame(maxWidth: .infinity, minHeight: 58, alignment: .leading)
+                    .minimumScaleFactor(0.55)
+                    .lineLimit(1)
+                    .clipped()
+                Text(translation)
+                    .font(AppTypography.body.weight(.medium))
+                    .foregroundStyle(AppColors.textPrimary)
+                    .multilineTextAlignment(.trailing)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+            }
             // Reading systems are not unique: Japanese may have several On/Kun readings,
             // and Korean may expose ordinary and sound-law variants.
             ForEach(Array(readings.enumerated()), id: \.offset) { _, reading in
@@ -134,44 +150,54 @@ struct UsageExamplesView: View {
         }
     }
 
-    /// Keeps the learner's script prominent while placing the reading aid beside it.
+    /// Keeps each reading together, with romanization beneath its native reading where available.
     private func readingRow(_ reading: CharacterReading, fontRole: CJKFontRole) -> some View {
-        HStack(alignment: .center, spacing: AppSpacing.spaceSm) {
-            Text(readingLabel(reading))
-                .font(AppTypography.metadata)
-                .foregroundStyle(AppColors.textSecondary)
-            let parts = displayReadingParts(reading)
-            Text(parts.script)
-                .font(fontRole.font(size: 22).weight(.medium))
-                .foregroundStyle(AppColors.textPrimary)
-            if let romanization = parts.romanization {
-                Text(romanization)
+        HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
+            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                Text(readingLabel(reading))
                     .font(AppTypography.metadata)
                     .foregroundStyle(AppColors.textSecondary)
+                let parts = displayReadingParts(reading)
+                Text(parts.script)
+                    .font(fontRole.font(size: 22).weight(.medium))
+                    .foregroundStyle(AppColors.textPrimary)
+                if let romanization = parts.romanization {
+                    Text(romanization)
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
             PronunciationButton(reading: reading)
         }
-        .frame(maxWidth: .infinity, alignment: .center)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     /// Shows a Korean native equivalent as its own semantic relationship, not as another Hanja reading.
-    private func koreanEquivalentRow(_ equivalent: CharacterReading) -> some View {
+    private func koreanEquivalentRow(_ equivalent: CharacterReading, translation: String) -> some View {
         let parts = displayReadingParts(equivalent)
-        return HStack(alignment: .center, spacing: AppSpacing.spaceSm) {
-            Text("Everyday Korean")
-                .font(AppTypography.metadata)
-                .foregroundStyle(AppColors.textSecondary)
-            Text(parts.script)
-                .font(CJKFontRole.korean.font(size: 22).weight(.medium))
-                .foregroundStyle(AppColors.textPrimary)
-            if let romanization = parts.romanization {
-                Text(romanization)
-                    .font(AppTypography.metadata)
-                    .foregroundStyle(AppColors.textSecondary)
+        return HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
+            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
+                    Text(parts.script)
+                        .font(CJKFontRole.korean.font(size: 22).weight(.medium))
+                        .foregroundStyle(AppColors.textPrimary)
+                    Spacer(minLength: AppSpacing.spaceSm)
+                    Text(translation)
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                        .multilineTextAlignment(.trailing)
+                }
+                if let romanization = parts.romanization {
+                    Text(romanization)
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
             PronunciationButton(reading: equivalent)
         }
-        .frame(maxWidth: .infinity, alignment: .center)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     /// Uses established linguistic labels instead of flattening distinct reading systems into one caption.
@@ -231,14 +257,19 @@ struct UsageExamplesView: View {
             Text("Korean · Hanja / Hangul")
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
-            languageFormHeader(form: coverage.form, readings: coverage.readings, fontRole: .korean)
+            languageFormHeader(
+                form: coverage.form,
+                translation: record.coreSharedMeaning.capitalized,
+                readings: coverage.readings,
+                fontRole: .korean
+            )
             if !coverage.semanticEquivalents.isEmpty {
-                VStack(alignment: .center, spacing: AppSpacing.space2xs) {
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                     Text("Korean equivalent")
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
                     ForEach(Array(coverage.semanticEquivalents.enumerated()), id: \.offset) { _, equivalent in
-                        koreanEquivalentRow(equivalent)
+                        koreanEquivalentRow(equivalent, translation: record.coreSharedMeaning.capitalized)
                     }
                 }
             }
@@ -247,9 +278,17 @@ struct UsageExamplesView: View {
                     Text(variant.writingSystem ?? "Native Korean")
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
-                    Text(variant.form)
-                        .font(CJKFontRole.korean.font(size: 22).weight(.semibold))
-                        .foregroundStyle(AppColors.textPrimary)
+                    HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
+                        Text(variant.form)
+                            .font(CJKFontRole.korean.font(size: 22).weight(.semibold))
+                            .foregroundStyle(AppColors.textPrimary)
+                        Spacer(minLength: AppSpacing.spaceSm)
+                        Text(record.coreSharedMeaning.capitalized)
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                            .multilineTextAlignment(.trailing)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                    }
                     ForEach(Array(variant.readings.enumerated()), id: \.offset) { _, reading in
                         readingRow(reading, fontRole: .korean)
                     }
@@ -274,7 +313,7 @@ struct UsageExamplesView: View {
         }
     }
 
-    /// Places the native example first, its reading on the same line, and English below.
+    /// Places the native word and English meaning on one line, with romanization underneath.
     @ViewBuilder
     private func exampleRow(
         _ example: UsageExample,
@@ -285,20 +324,22 @@ struct UsageExamplesView: View {
             japaneseExampleRow(example)
         } else {
             VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                HStack(alignment: .center, spacing: AppSpacing.spaceSm) {
+                HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
                     Text(example.text)
                         .font(fontRole.font(size: 19).weight(.semibold))
                         .foregroundStyle(AppColors.textPrimary)
-                    if let reading = example.reading, !reading.isEmpty {
-                        Text(reading)
-                            .font(AppTypography.metadata)
-                            .foregroundStyle(AppColors.textSecondary)
-                    }
+                    Spacer(minLength: AppSpacing.spaceSm)
+                    Text(example.translation)
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                        .multilineTextAlignment(.trailing)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
                 }
-                Text(example.translation)
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textSecondary)
-                    .multilineTextAlignment(.leading)
+                if let reading = example.reading, !reading.isEmpty {
+                    Text(reading)
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
@@ -307,18 +348,20 @@ struct UsageExamplesView: View {
     /// Matches the approved Japanese hierarchy: natural Kanji, attached kana, romaji, then English.
     private func japaneseExampleRow(_ example: UsageExample) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-            HStack(alignment: .bottom, spacing: AppSpacing.spaceSm) {
+            HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
                 japaneseWrittenExample(example)
-                if let reading = example.reading, !reading.isEmpty {
-                    Text("— \(reading)")
-                        .font(AppTypography.metadata)
-                        .foregroundStyle(AppColors.textSecondary)
-                }
+                Spacer(minLength: AppSpacing.spaceSm)
+                Text(example.translation)
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+                    .multilineTextAlignment(.trailing)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
             }
-            Text(example.translation)
-                .font(AppTypography.caption)
-                .foregroundStyle(AppColors.textSecondary)
-                .multilineTextAlignment(.leading)
+            if let reading = example.reading, !reading.isEmpty {
+                Text(reading)
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
@@ -367,9 +410,14 @@ struct UsageExamplesView: View {
             Text("Traditional Chinese")
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
-            languageFormHeader(form: coverage.form, readings: coverage.readings, fontRole: .traditionalChinese)
+            languageFormHeader(
+                form: coverage.form,
+                translation: record.coreSharedMeaning.capitalized,
+                readings: [],
+                fontRole: .traditionalChinese
+            )
             if !coverage.taiwanReadings.isEmpty || !coverage.taiwanExamples.isEmpty {
-                regionalExamples(title: "Taiwan", readings: coverage.taiwanReadings, examples: coverage.taiwanExamples)
+                regionalExamples(title: "Taiwan · Mandarin / Pinyin", readings: coverage.taiwanReadings, examples: coverage.taiwanExamples)
             }
             if !coverage.hongKongReadings.isEmpty || !coverage.hongKongExamples.isEmpty {
                 regionalExamples(title: "Hong Kong · Cantonese / Jyutping", readings: coverage.hongKongReadings, examples: coverage.hongKongExamples)
@@ -388,11 +436,17 @@ struct UsageExamplesView: View {
     /// Renders up to four useful context entries for one Traditional Chinese region.
     private func regionalExamples(title: String, readings: [CharacterReading], examples: [UsageExample]) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+            Divider()
+                .padding(.vertical, AppSpacing.spaceXs)
             Text(title)
-                .font(AppTypography.caption)
-                .foregroundStyle(AppColors.textSecondary)
+                .font(AppTypography.body.weight(.semibold))
+                .foregroundStyle(AppColors.textPrimary)
             ForEach(Array(readings.enumerated()), id: \.offset) { _, reading in
                 readingRow(reading, fontRole: .traditionalChinese)
+            }
+            if !readings.isEmpty && !examples.isEmpty {
+                Divider()
+                    .padding(.vertical, AppSpacing.space2xs)
             }
             ForEach(displayExamples(examples).prefix(4), id: \.text) { example in
                 exampleRow(example, fontRole: .traditionalChinese)

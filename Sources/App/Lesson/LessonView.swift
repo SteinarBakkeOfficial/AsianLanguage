@@ -91,6 +91,7 @@ struct LessonView: View {
                     QuickReviewView(
                         records: learnedRecords,
                         distractorRecords: dependencies.sharedCharacters,
+                        focusSelection: userStateStore.state.focusSelection,
                         onOpenJourney: {
                             position = .origin
                             entryMode = .journey
@@ -421,12 +422,17 @@ private struct QuickReviewView: View {
     init(
         records: [SharedCharacterRecord],
         distractorRecords: [SharedCharacterRecord],
+        focusSelection: FocusTrackSelection,
         onOpenJourney: @escaping () -> Void,
         onFinish: @escaping () -> Void
     ) {
         self.onOpenJourney = onOpenJourney
         self.onFinish = onFinish
-        _cards = State(initialValue: QuickReviewCard.makeSession(records: records, distractorRecords: distractorRecords))
+        _cards = State(initialValue: QuickReviewCard.makeSession(
+            records: records,
+            distractorRecords: distractorRecords,
+            focusSelection: focusSelection
+        ))
     }
 
     private var currentCard: QuickReviewCard? {
@@ -534,25 +540,114 @@ private struct QuickReviewCard: Identifiable {
     let options: [QuickReviewOption]
     let correctOptionID: String
 
+    private enum QuestionKind {
+        case meaningFromSymbol
+        case symbolFromMeaning
+        case targetLanguageForm
+    }
+
     static func makeSession(
         records: [SharedCharacterRecord],
-        distractorRecords: [SharedCharacterRecord]
+        distractorRecords: [SharedCharacterRecord],
+        focusSelection: FocusTrackSelection
     ) -> [QuickReviewCard] {
-        records.shuffled().map { record in
-            let correctAnswer = record.coreSharedMeaning.capitalized
-            let distractors = distractorRecords
-                .filter { $0.id != record.id && $0.coreSharedMeaning != record.coreSharedMeaning }
-                .shuffled()
-                .prefix(2)
-                .map { QuickReviewOption(id: "\(record.id)-\($0.id)", text: $0.coreSharedMeaning.capitalized) }
-            let correctOption = QuickReviewOption(id: record.id, text: correctAnswer)
-            return QuickReviewCard(
-                id: record.id,
-                prompt: record.coreCharacter,
-                question: "What does this symbol mean?",
-                options: ([correctOption] + distractors).shuffled(),
-                correctOptionID: correctOption.id
-            )
+        let activeTracks = focusSelection.selectedTracks
+        var questionKinds: [QuestionKind] = [.meaningFromSymbol, .symbolFromMeaning]
+        if !activeTracks.isEmpty {
+            questionKinds.append(.targetLanguageForm)
+        }
+        questionKinds = questionKinds.shuffled()
+
+        return records.shuffled().enumerated().map { index, record in
+            let kind = questionKinds[index % questionKinds.count]
+            switch kind {
+            case .meaningFromSymbol:
+                return meaningCard(record: record, distractorRecords: distractorRecords)
+            case .symbolFromMeaning:
+                return symbolCard(record: record, distractorRecords: distractorRecords)
+            case .targetLanguageForm:
+                let track = activeTracks[index % activeTracks.count]
+                return targetLanguageCard(record: record, distractorRecords: distractorRecords, track: track)
+            }
+        }
+    }
+
+    private static func meaningCard(
+        record: SharedCharacterRecord,
+        distractorRecords: [SharedCharacterRecord]
+    ) -> QuickReviewCard {
+        let correctOption = QuickReviewOption(id: record.id, text: record.coreSharedMeaning.capitalized)
+        let distractors = distractorRecords
+            .filter { $0.id != record.id && $0.coreSharedMeaning != record.coreSharedMeaning }
+            .shuffled()
+            .prefix(2)
+            .map { QuickReviewOption(id: "\(record.id)-\($0.id)", text: $0.coreSharedMeaning.capitalized) }
+        return QuickReviewCard(
+            id: record.id,
+            prompt: record.coreCharacter,
+            question: "What does this symbol mean?",
+            options: ([correctOption] + distractors).shuffled(),
+            correctOptionID: correctOption.id
+        )
+    }
+
+    private static func symbolCard(
+        record: SharedCharacterRecord,
+        distractorRecords: [SharedCharacterRecord]
+    ) -> QuickReviewCard {
+        let correctOption = QuickReviewOption(id: record.id, text: record.coreCharacter)
+        let distractors = distractorRecords
+            .filter { $0.id != record.id && $0.coreSharedMeaning != record.coreSharedMeaning }
+            .shuffled()
+            .prefix(2)
+            .map { QuickReviewOption(id: "\(record.id)-\($0.id)", text: $0.coreCharacter) }
+        return QuickReviewCard(
+            id: record.id,
+            prompt: record.coreSharedMeaning.capitalized,
+            question: "Which symbol means this?",
+            options: ([correctOption] + distractors).shuffled(),
+            correctOptionID: correctOption.id
+        )
+    }
+
+    private static func targetLanguageCard(
+        record: SharedCharacterRecord,
+        distractorRecords: [SharedCharacterRecord],
+        track: FocusTrack
+    ) -> QuickReviewCard {
+        let correctAnswer = targetForm(for: record, track: track)
+        let correctOption = QuickReviewOption(id: record.id, text: correctAnswer)
+        let distractors = distractorRecords
+            .filter { $0.id != record.id && targetForm(for: $0, track: track) != correctAnswer }
+            .shuffled()
+            .prefix(2)
+            .map {
+                QuickReviewOption(
+                    id: "\(record.id)-\($0.id)",
+                    text: targetForm(for: $0, track: track)
+                )
+            }
+        return QuickReviewCard(
+            id: record.id,
+            prompt: record.coreSharedMeaning.capitalized,
+            question: "How is this written in \(track.title)?",
+            options: ([correctOption] + distractors).shuffled(),
+            correctOptionID: correctOption.id
+        )
+    }
+
+    private static func targetForm(for record: SharedCharacterRecord, track: FocusTrack) -> String {
+        switch track {
+        case .simplifiedChinese:
+            return record.focusCoverage.simplifiedChinese.form
+        case .traditionalChinese:
+            return record.focusCoverage.traditionalChinese.form
+        case .japanese:
+            return record.focusCoverage.japanese.form
+        case .korean:
+            return record.focusCoverage.korean.semanticEquivalents.first?.nativeReading
+                ?? record.focusCoverage.korean.variants.first?.form
+                ?? record.focusCoverage.korean.form
         }
     }
 }

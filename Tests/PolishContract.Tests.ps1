@@ -98,8 +98,9 @@ Assert-Contains -Text $importText -ExpectedSubstring "Missing Cantonese data rem
 Assert-Contains -Text $importText -ExpectedSubstring "Mandarin starter content must never appear under a Cantonese heading." -Message "Cantonese examples must not use Mandarin starter content."
 $usageText = Get-Text "Sources/App/Lesson/UsageExamplesView.swift"
 Assert-Contains -Text $usageText -ExpectedSubstring "hongKongReadings.isEmpty" -Message "Traditional Chinese should hide an unavailable Cantonese region."
-Assert-Contains -Text $usageText -ExpectedSubstring "Centers only the primary form and its direct reading block" -Message "Usage cards should center only the primary form block."
-Assert-Contains -Text $usageText -ExpectedSubstring "contextual examples remain left-aligned below" -Message "Usage examples should remain left-aligned below the primary form."
+Assert-Contains -Text $usageText -ExpectedSubstring "translation: record.coreSharedMeaning.capitalized" -Message "Usage cards should place the English meaning beside the native form."
+Assert-Contains -Text $usageText -ExpectedSubstring "native word and English meaning on one line" -Message "Usage examples should keep English beside the native word."
+Assert-Contains -Text $usageText -ExpectedSubstring "Taiwan · Mandarin / Pinyin" -Message "Traditional Chinese should label the Taiwan reading section clearly."
 
 $historyGuideText = Get-Text "Sources/App/Navigation/HistoryModernLanguageReadingGuide.swift"
 Assert-Contains -Text $historyGuideText -ExpectedSubstring "Mandarin tone marks" -Message "History should explain Mandarin tone notation."

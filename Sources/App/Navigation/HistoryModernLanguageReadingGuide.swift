@@ -560,19 +560,25 @@ private struct KanaReadingGuide: View {
     private func soundTable(_ rows: [(String, String, String, String)]) -> some View {
         VStack(spacing: 0) {
             HStack(alignment: .top, spacing: AppSpacing.space2xs) {
-                tableCell("Row", width: 46)
+                tableCell("Row", width: 54)
                 tableCell("Hiragana")
                 tableCell("Katakana")
-                tableCell("Romaji")
             }
             .font(AppTypography.metadata.weight(.semibold))
             .foregroundStyle(AppColors.textSecondary)
             ForEach(Array(rows.enumerated()), id: \.offset) { _, row in
-                HStack(alignment: .top, spacing: AppSpacing.space2xs) {
-                    tableCell(row.0, width: 46)
-                    tableCell(row.1)
-                    tableCell(row.2)
-                    tableCell(row.3)
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    HStack(alignment: .top, spacing: AppSpacing.space2xs) {
+                        tableCell(row.0, width: 54)
+                        tableCell(row.1)
+                        tableCell(row.2)
+                    }
+                    HStack(alignment: .top, spacing: AppSpacing.space2xs) {
+                        tableCell("Romaji", width: 54)
+                        Text(row.3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                 }
                 .font(AppTypography.metadata)
                 .foregroundStyle(AppColors.textPrimary)

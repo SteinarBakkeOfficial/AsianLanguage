@@ -7,9 +7,9 @@ Maintain the approved V1 package: 126 complete-evolution symbols, local origin a
 ## Current release status — 2026-10-01
 
 - V1 editorial review and the previous screenshot-driven implementation pass are complete for the approved content boundaries. The latest Apple review identified a focused follow-up pass.
-- The Symbol toolbar action hierarchy, corrected primary-form/reading Usage layout, compact Japanese kana teaching, and final Quick Review behavior are implemented locally. Quick Review is now a Home-surfaced randomized review of all learned Symbols; Review Later remains a separate Browse bookmark for full-journey revisits.
+- The Symbol toolbar action hierarchy, restored two-column Usage layout, compact Japanese kana teaching, and varied Quick Review behavior are implemented locally. Quick Review is now a Home-surfaced randomized review of all learned Symbols; Review Later remains a separate Browse bookmark for full-journey revisits.
 - Onboarding, most Symbol text, Chinese History guidance, Korean History guidance, and the compact Japanese Hiragana/Katakana sound-pattern guide are confirmed complete.
-- Quick Review uses one three-choice card per learned Symbol, reveals `Check this Symbol` only after an incorrect choice, and ends when the user leaves or completes the session. It does not read from or modify Review Later.
+- Quick Review uses one three-choice card per learned Symbol, rotates between symbol-to-meaning, meaning-to-symbol, and selected-language prompts, reveals `Check this Symbol` only after an incorrect choice, and ends when the user leaves or completes the session. It does not read from or modify Review Later.
 - All local Windows checks pass; Apple/Xcode screenshot verification remains required before marketplace release.
 - The approved corpus remains exactly 126 records. No new symbols, historical assets, or unrelated features are in scope.
 - Keep the manual-review and screenshot findings documents as the audit trail for this final pass and later Patch 0.1 corrections.

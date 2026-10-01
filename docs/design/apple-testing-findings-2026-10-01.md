@@ -517,11 +517,11 @@ The finished guide should include:
 - the important reading exceptions/particle readings;
 - a clear statement that Hiragana and Katakana represent the same basic sounds in different writing systems.
 
-Implementation status: complete locally. The History guide now uses a compact Gojūon-style row table and a short construction table instead of a full vertical inventory. Quick Review is resolved separately below under AT-20.
+Implementation status: complete locally. The History guide now uses readable paired-script rows, with Romaji beneath each row instead of a cramped four-column grid. Quick Review is resolved separately below under AT-20.
 
 ### Final target-language alignment correction — 2026-10-02
 
-The target-language Usage pages now center only the primary modern form and its direct reading block. The contextual examples remain left-aligned: the native example and its reading share one line, with the English meaning below. Japanese furigana, Chinese readings, Korean equivalents, and regional Traditional Chinese sections retain their language-specific content without centering the entire example list.
+The target-language Usage pages now use the approved two-column hierarchy: the native form is left-aligned, the English meaning is right-aligned on the same line, and romanization sits beneath the native form. Japanese furigana remains attached above the written form. Traditional Chinese now separates the neutral form from clearly labeled Taiwan Mandarin/Pinyin and Hong Kong Cantonese/Jyutping sections.
 
 Implementation status: complete locally. This correction supersedes the over-centered intermediate layout identified during testing.
 
@@ -531,6 +531,7 @@ The final product decision separates Quick Review from Review Later:
 
 - Home shows Quick Review as soon as at least one Symbol is fully learned.
 - A Quick Review session randomizes all learned Symbols and presents one three-choice recognition card per Symbol, with progress shown as `n of x`.
+- The cards rotate among showing a Symbol and asking for its meaning, showing a meaning and asking for the Symbol, and asking how the meaning is written in one active target language. The session does not repeat the same four-language recognition question for one Symbol.
 - A correct choice advances directly to the next Symbol. An incorrect choice reveals the correct answer and offers `Check this Symbol`, which opens the full Journey and ends the temporary session.
 - Quick Review changes no Learned, Favorite, or Review Later state. Leaving Home, Symbol, or the session ends it and it must not be restored automatically.
 - Browse → Review Later remains a plain saved list. Selecting an item opens the full Symbol Journey; it does not start Quick Review or any other game.
