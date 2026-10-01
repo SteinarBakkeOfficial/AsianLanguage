@@ -182,10 +182,7 @@ struct LessonView: View {
 
     /// Keeps concise navigation labels separate from fuller editorial meanings used in lesson content.
     private func navigationMeaning(for record: SharedCharacterRecord) -> String {
-        let primaryMeaning = record.coreSharedMeaning
-            .split(separator: ";", maxSplits: 1, omittingEmptySubsequences: true)
-            .first
-            .map(String.init) ?? record.coreSharedMeaning
+        let primaryMeaning = record.primarySharedMeaning
         let historicalQualifierRemoved = primaryMeaning
             .split(separator: "(", maxSplits: 1, omittingEmptySubsequences: true)
             .first
@@ -281,7 +278,7 @@ struct LessonView: View {
         }
         return ([
             "Script Roots",
-            "\(record.coreCharacter) · \(record.coreSharedMeaning.capitalized)",
+            "\(record.coreCharacter) · \(record.primarySharedMeaning.capitalized)",
             record.recognitionTakeaway,
             stages.joined(separator: " → ")
         ] as [String]).filter { !$0.isEmpty }.joined(separator: "\n")
@@ -323,7 +320,7 @@ private struct CompletionView: View {
                 Text("Well done")
                     .font(AppTypography.exhibitHeading)
                     .foregroundStyle(AppColors.textPrimary)
-                Text("You have completed the journey of \(record.coreSharedMeaning.capitalized).")
+                Text("You have completed the journey of \(record.primarySharedMeaning.capitalized).")
                     .font(AppTypography.body)
                     .foregroundStyle(AppColors.textSecondary)
                     .multilineTextAlignment(.center)
@@ -334,7 +331,7 @@ private struct CompletionView: View {
                 }
                 VStack(spacing: AppSpacing.spaceSm) {
                     PrimaryActionButton("Return Home", action: onReturnHome)
-                    SecondaryActionButton("Revisit \(record.coreSharedMeaning.capitalized)", action: onRevisit)
+                    SecondaryActionButton("Revisit \(record.primarySharedMeaning.capitalized)", action: onRevisit)
                 }
             }
             .frame(maxWidth: .infinity)
@@ -378,13 +375,13 @@ private struct RevisitEntryView: View {
                     .font(AppTypography.conceptLabel)
                     .tracking(1.4)
                     .foregroundStyle(AppColors.learned)
-                Text(record.coreSharedMeaning.uppercased())
+                Text(record.primarySharedMeaning.uppercased())
                     .font(AppTypography.stageTitle)
                     .foregroundStyle(AppColors.textPrimary)
                 Text(record.coreCharacter)
                     .font(.system(size: 112, design: .serif))
                     .foregroundStyle(AppColors.textPrimary)
-                    .accessibilityLabel("Modern form \(record.coreCharacter) of \(record.coreSharedMeaning)")
+                    .accessibilityLabel("Modern form \(record.coreCharacter) of \(record.primarySharedMeaning)")
                 Text("This Shared Character is part of what you know. Explore it again whenever you like.")
                     .font(AppTypography.body)
                     .foregroundStyle(AppColors.textSecondary)
@@ -458,11 +455,21 @@ private struct QuickReviewView: View {
                         .font(AppTypography.stageTitle)
                         .foregroundStyle(AppColors.textPrimary)
                         .multilineTextAlignment(.center)
-                    ArtifactField {
-                        Text(currentCard.prompt)
-                            .font(.system(size: 112, design: .serif))
-                            .foregroundStyle(AppColors.artifactInk)
-                            .frame(maxWidth: .infinity, minHeight: 190)
+                    if currentCard.promptIsSymbol {
+                        ArtifactField {
+                            Text(currentCard.prompt)
+                                .font(.system(size: 112, design: .serif))
+                                .foregroundStyle(AppColors.artifactInk)
+                                .frame(maxWidth: .infinity, minHeight: 190)
+                        }
+                    } else {
+                        GroupedSurface {
+                            Text(currentCard.prompt)
+                                .font(AppTypography.exhibitHeading)
+                                .foregroundStyle(AppColors.textPrimary)
+                                .multilineTextAlignment(.center)
+                                .frame(maxWidth: .infinity, minHeight: 96)
+                        }
                     }
                     VStack(spacing: AppSpacing.spaceXs) {
                         ForEach(currentCard.options) { option in
@@ -471,10 +478,7 @@ private struct QuickReviewView: View {
                                 selectedOptionID = option.id
                             } label: {
                                 HStack {
-                                    Text(option.text)
-                                        .font(AppTypography.body.weight(.semibold))
-                                        .foregroundStyle(AppColors.textPrimary)
-                                        .multilineTextAlignment(.leading)
+                                    optionText(option, for: currentCard)
                                     Spacer()
                                     if hasAnswered && option.id == currentCard.correctOptionID {
                                         Image(systemName: "checkmark.circle.fill")
@@ -484,7 +488,11 @@ private struct QuickReviewView: View {
                                             .foregroundStyle(AppColors.accentPrimary)
                                     }
                                 }
-                                .frame(maxWidth: .infinity, minHeight: 52, alignment: .leading)
+                                .frame(
+                                    maxWidth: .infinity,
+                                    minHeight: currentCard.optionsAreSymbols ? 76 : 52,
+                                    alignment: .leading
+                                )
                                 .padding(.horizontal, AppSpacing.spaceSm)
                                 .background(optionBackground(option, for: currentCard))
                                 .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
@@ -523,6 +531,21 @@ private struct QuickReviewView: View {
         return AppColors.surfaceElevated
     }
 
+    @ViewBuilder
+    private func optionText(_ option: QuickReviewOption, for card: QuickReviewCard) -> some View {
+        if card.optionsAreSymbols {
+            Text(option.text)
+                .font(.system(size: 42, design: .serif))
+                .foregroundStyle(AppColors.textPrimary)
+                .multilineTextAlignment(.leading)
+        } else {
+            Text(option.text)
+                .font(AppTypography.body.weight(.semibold))
+                .foregroundStyle(AppColors.textPrimary)
+                .multilineTextAlignment(.leading)
+        }
+    }
+
     private func advance() {
         guard cardIndex + 1 < cards.count else {
             onFinish()
@@ -539,6 +562,8 @@ private struct QuickReviewCard: Identifiable {
     let question: String
     let options: [QuickReviewOption]
     let correctOptionID: String
+    let promptIsSymbol: Bool
+    let optionsAreSymbols: Bool
 
     private enum QuestionKind {
         case meaningFromSymbol
@@ -576,18 +601,20 @@ private struct QuickReviewCard: Identifiable {
         record: SharedCharacterRecord,
         distractorRecords: [SharedCharacterRecord]
     ) -> QuickReviewCard {
-        let correctOption = QuickReviewOption(id: record.id, text: record.coreSharedMeaning.capitalized)
+        let correctOption = QuickReviewOption(id: record.id, text: record.primarySharedMeaning.capitalized)
         let distractors = distractorRecords
-            .filter { $0.id != record.id && $0.coreSharedMeaning != record.coreSharedMeaning }
+            .filter { $0.id != record.id && $0.primarySharedMeaning != record.primarySharedMeaning }
             .shuffled()
             .prefix(2)
-            .map { QuickReviewOption(id: "\(record.id)-\($0.id)", text: $0.coreSharedMeaning.capitalized) }
+            .map { QuickReviewOption(id: "\(record.id)-\($0.id)", text: $0.primarySharedMeaning.capitalized) }
         return QuickReviewCard(
             id: record.id,
             prompt: record.coreCharacter,
             question: "What does this symbol mean?",
             options: ([correctOption] + distractors).shuffled(),
-            correctOptionID: correctOption.id
+            correctOptionID: correctOption.id,
+            promptIsSymbol: true,
+            optionsAreSymbols: false
         )
     }
 
@@ -597,16 +624,18 @@ private struct QuickReviewCard: Identifiable {
     ) -> QuickReviewCard {
         let correctOption = QuickReviewOption(id: record.id, text: record.coreCharacter)
         let distractors = distractorRecords
-            .filter { $0.id != record.id && $0.coreSharedMeaning != record.coreSharedMeaning }
+            .filter { $0.id != record.id && $0.primarySharedMeaning != record.primarySharedMeaning }
             .shuffled()
             .prefix(2)
             .map { QuickReviewOption(id: "\(record.id)-\($0.id)", text: $0.coreCharacter) }
         return QuickReviewCard(
             id: record.id,
-            prompt: record.coreSharedMeaning.capitalized,
-            question: "Which symbol means this?",
+            prompt: record.primarySharedMeaning.capitalized,
+            question: "Choose the symbol for this meaning:",
             options: ([correctOption] + distractors).shuffled(),
-            correctOptionID: correctOption.id
+            correctOptionID: correctOption.id,
+            promptIsSymbol: false,
+            optionsAreSymbols: true
         )
     }
 
@@ -629,10 +658,12 @@ private struct QuickReviewCard: Identifiable {
             }
         return QuickReviewCard(
             id: record.id,
-            prompt: record.coreSharedMeaning.capitalized,
+            prompt: record.primarySharedMeaning.capitalized,
             question: "How is this written in \(track.title)?",
             options: ([correctOption] + distractors).shuffled(),
-            correctOptionID: correctOption.id
+            correctOptionID: correctOption.id,
+            promptIsSymbol: false,
+            optionsAreSymbols: true
         )
     }
 

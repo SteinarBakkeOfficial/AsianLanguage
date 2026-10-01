@@ -56,10 +56,10 @@ struct HomeView: View {
         let isResuming = userStateStore.state.activeJourneySymbolID == record.id
         let isLearned = userStateStore.state.lessonStates[record.id]?.progressStatus == .learned
         let actionTitle = isResuming
-            ? "Continue \(record.coreSharedMeaning.capitalized)"
-            : (isLearned ? "Revisit \(record.coreSharedMeaning.capitalized)" : "Start with \(record.coreSharedMeaning.capitalized)")
+            ? "Continue \(record.primarySharedMeaning.capitalized)"
+            : (isLearned ? "Revisit \(record.primarySharedMeaning.capitalized)" : "Start with \(record.primarySharedMeaning.capitalized)")
         return VStack(alignment: .center, spacing: AppSpacing.spaceSm) {
-            Text(record.coreSharedMeaning.capitalized)
+            Text(record.primarySharedMeaning.capitalized)
                 .font(AppTypography.heroConcept)
                 .tracking(1.2)
                 .foregroundStyle(AppColors.accentPrimary)
@@ -233,7 +233,7 @@ struct HeroLineagePreview: View {
                             .padding(.horizontal, AppSpacing.spaceSm)
                             .background(historicalPreviewPaper)
                             .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
-                            .accessibilityLabel("\(item.id) lineage visual for \(record.coreSharedMeaning)")
+                            .accessibilityLabel("\(item.id) lineage visual for \(record.primarySharedMeaning)")
                     } else if let assetRef = item.assetRef {
                         HistoricalAssetView(assetRef: assetRef, displayHeight: 92)
                             .frame(width: 112, height: 96)
@@ -241,14 +241,14 @@ struct HeroLineagePreview: View {
                             .padding(.horizontal, AppSpacing.spaceSm)
                             .background(historicalPreviewPaper)
                             .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
-                            .accessibilityLabel("\(item.id) lineage visual for \(record.coreSharedMeaning)")
+                            .accessibilityLabel("\(item.id) lineage visual for \(record.primarySharedMeaning)")
                     } else if let form = item.form {
                         Text(form)
                             .font(.system(size: 80, design: .serif))
                             .foregroundStyle(AppColors.textPrimary)
                             .frame(width: 112, height: 96)
                             .clipped()
-                            .accessibilityLabel("Modern form of \(record.coreSharedMeaning)")
+                            .accessibilityLabel("Modern form of \(record.primarySharedMeaning)")
                     }
                     // Keep the final modern form visually connected to the lineage;
                     // the extra divider made the symbol sit unnecessarily low on Home.
@@ -262,7 +262,7 @@ struct HeroLineagePreview: View {
             }
             .frame(maxWidth: .infinity, minHeight: 300, maxHeight: 360)
             .accessibilityElement(children: .contain)
-            .accessibilityLabel("Available lineage visuals for \(record.coreSharedMeaning)")
+            .accessibilityLabel("Available lineage visuals for \(record.primarySharedMeaning)")
         } else {
             LineagePreview(record: record, variant: .hero)
         }

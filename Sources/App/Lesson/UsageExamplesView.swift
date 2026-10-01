@@ -94,7 +94,7 @@ struct UsageExamplesView: View {
                 .foregroundStyle(AppColors.textPrimary)
             languageFormHeader(
                 form: form,
-                translation: record.coreSharedMeaning.capitalized,
+                translation: record.primarySharedMeaning.capitalized,
                 readings: readings,
                 fontRole: fontRole
             )
@@ -259,7 +259,7 @@ struct UsageExamplesView: View {
                 .foregroundStyle(AppColors.textPrimary)
             languageFormHeader(
                 form: coverage.form,
-                translation: record.coreSharedMeaning.capitalized,
+                translation: record.primarySharedMeaning.capitalized,
                 readings: coverage.readings,
                 fontRole: .korean
             )
@@ -269,7 +269,7 @@ struct UsageExamplesView: View {
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
                     ForEach(Array(coverage.semanticEquivalents.enumerated()), id: \.offset) { _, equivalent in
-                        koreanEquivalentRow(equivalent, translation: record.coreSharedMeaning.capitalized)
+                        koreanEquivalentRow(equivalent, translation: record.primarySharedMeaning.capitalized)
                     }
                 }
             }
@@ -283,7 +283,7 @@ struct UsageExamplesView: View {
                             .font(CJKFontRole.korean.font(size: 22).weight(.semibold))
                             .foregroundStyle(AppColors.textPrimary)
                         Spacer(minLength: AppSpacing.spaceSm)
-                        Text(record.coreSharedMeaning.capitalized)
+                        Text(record.primarySharedMeaning.capitalized)
                             .font(AppTypography.caption)
                             .foregroundStyle(AppColors.textSecondary)
                             .multilineTextAlignment(.trailing)
@@ -369,7 +369,20 @@ struct UsageExamplesView: View {
     /// Renders structured furigana above the natural Japanese spelling without replacing the Kanji.
     @ViewBuilder
     private func japaneseWrittenExample(_ example: UsageExample) -> some View {
-        if !example.furiganaSegments.isEmpty {
+        if example.exampleLevel == .sentence {
+            VStack(alignment: .leading, spacing: 0) {
+                if let kanaReading = example.kanaReading, !kanaReading.isEmpty {
+                    Text(kanaReading)
+                        .font(CJKFontRole.japanese.font(size: 10))
+                        .foregroundStyle(AppColors.textSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Text(example.text)
+                    .font(CJKFontRole.japanese.font(size: 17).weight(.semibold))
+                    .foregroundStyle(AppColors.textPrimary)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        } else if !example.furiganaSegments.isEmpty {
             HStack(alignment: .bottom, spacing: 0) {
                 ForEach(Array(example.furiganaSegments.enumerated()), id: \.offset) { _, segment in
                     VStack(spacing: 0) {
@@ -412,7 +425,7 @@ struct UsageExamplesView: View {
                 .foregroundStyle(AppColors.textPrimary)
             languageFormHeader(
                 form: coverage.form,
-                translation: record.coreSharedMeaning.capitalized,
+                translation: record.primarySharedMeaning.capitalized,
                 readings: [],
                 fontRole: .traditionalChinese
             )

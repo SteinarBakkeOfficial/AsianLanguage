@@ -119,7 +119,7 @@ struct CharacterEvolutionView: View {
         .background(AppColors.appBackground)
         .tint(AppColors.accentPrimary)
         .accessibilityElement(children: .contain)
-        .accessibilityLabel("Historical journey for \(record.coreSharedMeaning)")
+        .accessibilityLabel("Historical journey for \(record.primarySharedMeaning)")
         .onChange(of: selectedStageID) { _, newStageID in
             animateExhibitChangeIfNeeded(to: newStageID)
         }
@@ -218,7 +218,7 @@ struct CharacterEvolutionView: View {
                         .foregroundStyle(AppColors.textSecondary)
                 }
             } else {
-                Text(record.history.origin?.concept ?? record.coreSharedMeaning.capitalized)
+                Text(record.history.origin?.concept ?? record.primarySharedMeaning.capitalized)
                     .font(AppTypography.exhibitHeading)
                     .foregroundStyle(AppColors.textPrimary)
                     .padding(.top, AppSpacing.spaceMd)

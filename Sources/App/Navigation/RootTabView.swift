@@ -93,7 +93,7 @@ struct OnboardingView: View {
                 .font(AppTypography.exhibitHeading)
                 .foregroundStyle(AppColors.textPrimary)
                 .multilineTextAlignment(.center)
-            Text("Follow \(onboardingRecord?.coreSharedMeaning.capitalized ?? "Mountain") from a recognizable origin through historical writing and into modern languages.")
+            Text("Follow \(onboardingRecord?.primarySharedMeaning.capitalized ?? "Mountain") from a recognizable origin through historical writing and into modern languages.")
                 .font(AppTypography.body)
                 .foregroundStyle(AppColors.textSecondary)
                 .multilineTextAlignment(.center)
@@ -133,7 +133,7 @@ struct OnboardingView: View {
             .foregroundStyle(AppColors.textSecondary)
             .frame(maxWidth: .infinity, minHeight: 44)
 
-            PrimaryActionButton("Begin with \(onboardingRecord?.coreSharedMeaning.capitalized ?? "Mountain")") {
+            PrimaryActionButton("Begin with \(onboardingRecord?.primarySharedMeaning.capitalized ?? "Mountain")") {
                 userStateStore.markFocusLanguagesChosen()
                 userStateStore.markFirstSymbolStarted()
                 dependencies.navigationState.openSymbol(onboardingSymbolID, intent: .start)
@@ -265,7 +265,7 @@ private struct SymbolOnboardingLineage: View {
         }
         .frame(maxWidth: 390)
         .accessibilityElement(children: .contain)
-        .accessibilityLabel("\(record.coreSharedMeaning.capitalized) from origin through the available historical forms to today")
+        .accessibilityLabel("\(record.primarySharedMeaning.capitalized) from origin through the available historical forms to today")
     }
 }
 
@@ -1892,7 +1892,7 @@ private struct HistoryArticleExampleRow: View {
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
-            .accessibilityLabel("\(displayLabel(for: record)), open \(record.coreSharedMeaning) Symbol")
+            .accessibilityLabel("\(displayLabel(for: record)), open \(record.primarySharedMeaning) Symbol")
         }
     }
 

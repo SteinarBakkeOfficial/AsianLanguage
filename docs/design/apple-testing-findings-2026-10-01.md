@@ -517,13 +517,19 @@ The finished guide should include:
 - the important reading exceptions/particle readings;
 - a clear statement that Hiragana and Katakana represent the same basic sounds in different writing systems.
 
-Implementation status: complete locally. The History guide now uses readable paired-script rows, with Romaji beneath each row instead of a cramped four-column grid. Quick Review is resolved separately below under AT-20.
+Implementation status: complete locally. The History guide now uses a conventional five-column vowel chart, with Hiragana, Katakana, and Romaji stacked inside each cell, followed by a separate combinations chart for small ゃ・ゅ・ょ. Quick Review is resolved separately below under AT-20.
 
 ### Final target-language alignment correction — 2026-10-02
 
 The target-language Usage pages now use the approved two-column hierarchy: the native form is left-aligned, the English meaning is right-aligned on the same line, and romanization sits beneath the native form. Japanese furigana remains attached above the written form. Traditional Chinese now separates the neutral form from clearly labeled Taiwan Mandarin/Pinyin and Hong Kong Cantonese/Jyutping sections.
 
 Implementation status: complete locally. This correction supersedes the over-centered intermediate layout identified during testing.
+
+### Hotfix corrections — 2026-10-02
+
+- Quick Review meaning-to-symbol cards use clear English and reserve the large artifact field for a displayed symbol. Meaning prompts use a compact prompt surface, while Regular Script answer choices are the large selectable cards.
+- Japanese sentence examples use a wrapping written-text layout instead of a non-wrapping furigana segment row, so the final example remains readable on narrow screens.
+- Learner-facing titles and controls use the primary meaning before any semicolon-separated editorial qualifier. Historical nuance remains available in the editorial takeaway and source-backed content.
 
 ### Final Quick Review resolution — 2026-10-02
 

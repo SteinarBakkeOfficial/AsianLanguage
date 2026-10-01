@@ -503,19 +503,118 @@ private struct JyutpingToneGuide: View {
 }
 
 private struct KanaReadingGuide: View {
-    // Grouping the sounds by row follows the compact table format used in beginner kana references.
+    private struct KanaCell {
+        let hiragana: String
+        let katakana: String
+        let romaji: String
+    }
+
+    private struct KanaRow: Identifiable {
+        let id: String
+        let label: String
+        let cells: [KanaCell]
+    }
+
+    private struct CombinationRow: Identifiable {
+        let id: String
+        let label: String
+        let kana: String
+        let romaji: String
+    }
+
+    // Five vowel columns make the basic Gojūon pattern recognizable at a glance.
     private let soundRows = [
-        ("Vowels", "あ い う え お", "ア イ ウ エ オ", "a · i · u · e · o"),
-        ("K", "か き く け こ", "カ キ ク ケ コ", "ka · ki · ku · ke · ko"),
-        ("S", "さ し す せ そ", "サ シ ス セ ソ", "sa · shi · su · se · so"),
-        ("T", "た ち つ て と", "タ チ ツ テ ト", "ta · chi · tsu · te · to"),
-        ("N", "な に ぬ ね の", "ナ ニ ヌ ネ ノ", "na · ni · nu · ne · no"),
-        ("H", "は ひ ふ へ ほ", "ハ ヒ フ ヘ ホ", "ha · hi · fu · he · ho"),
-        ("M", "ま み む め も", "マ ミ ム メ モ", "ma · mi · mu · me · mo"),
-        ("Y", "や · ゆ · よ", "ヤ · ユ · ヨ", "ya · yu · yo"),
-        ("R", "ら り る れ ろ", "ラ リ ル レ ロ", "ra · ri · ru · re · ro"),
-        ("W", "わ · を", "ワ · ヲ", "wa · wo"),
-        ("N", "ん", "ン", "n")
+        KanaRow(id: "vowels", label: "Vowels", cells: [
+            KanaCell(hiragana: "あ", katakana: "ア", romaji: "a"),
+            KanaCell(hiragana: "い", katakana: "イ", romaji: "i"),
+            KanaCell(hiragana: "う", katakana: "ウ", romaji: "u"),
+            KanaCell(hiragana: "え", katakana: "エ", romaji: "e"),
+            KanaCell(hiragana: "お", katakana: "オ", romaji: "o")
+        ]),
+        KanaRow(id: "k", label: "K", cells: [
+            KanaCell(hiragana: "か", katakana: "カ", romaji: "ka"),
+            KanaCell(hiragana: "き", katakana: "キ", romaji: "ki"),
+            KanaCell(hiragana: "く", katakana: "ク", romaji: "ku"),
+            KanaCell(hiragana: "け", katakana: "ケ", romaji: "ke"),
+            KanaCell(hiragana: "こ", katakana: "コ", romaji: "ko")
+        ]),
+        KanaRow(id: "s", label: "S", cells: [
+            KanaCell(hiragana: "さ", katakana: "サ", romaji: "sa"),
+            KanaCell(hiragana: "し", katakana: "シ", romaji: "shi"),
+            KanaCell(hiragana: "す", katakana: "ス", romaji: "su"),
+            KanaCell(hiragana: "せ", katakana: "セ", romaji: "se"),
+            KanaCell(hiragana: "そ", katakana: "ソ", romaji: "so")
+        ]),
+        KanaRow(id: "t", label: "T", cells: [
+            KanaCell(hiragana: "た", katakana: "タ", romaji: "ta"),
+            KanaCell(hiragana: "ち", katakana: "チ", romaji: "chi"),
+            KanaCell(hiragana: "つ", katakana: "ツ", romaji: "tsu"),
+            KanaCell(hiragana: "て", katakana: "テ", romaji: "te"),
+            KanaCell(hiragana: "と", katakana: "ト", romaji: "to")
+        ]),
+        KanaRow(id: "n", label: "N", cells: [
+            KanaCell(hiragana: "な", katakana: "ナ", romaji: "na"),
+            KanaCell(hiragana: "に", katakana: "ニ", romaji: "ni"),
+            KanaCell(hiragana: "ぬ", katakana: "ヌ", romaji: "nu"),
+            KanaCell(hiragana: "ね", katakana: "ネ", romaji: "ne"),
+            KanaCell(hiragana: "の", katakana: "ノ", romaji: "no")
+        ]),
+        KanaRow(id: "h", label: "H", cells: [
+            KanaCell(hiragana: "は", katakana: "ハ", romaji: "ha"),
+            KanaCell(hiragana: "ひ", katakana: "ヒ", romaji: "hi"),
+            KanaCell(hiragana: "ふ", katakana: "フ", romaji: "fu"),
+            KanaCell(hiragana: "へ", katakana: "ヘ", romaji: "he"),
+            KanaCell(hiragana: "ほ", katakana: "ホ", romaji: "ho")
+        ]),
+        KanaRow(id: "m", label: "M", cells: [
+            KanaCell(hiragana: "ま", katakana: "マ", romaji: "ma"),
+            KanaCell(hiragana: "み", katakana: "ミ", romaji: "mi"),
+            KanaCell(hiragana: "む", katakana: "ム", romaji: "mu"),
+            KanaCell(hiragana: "め", katakana: "メ", romaji: "me"),
+            KanaCell(hiragana: "も", katakana: "モ", romaji: "mo")
+        ]),
+        KanaRow(id: "y", label: "Y", cells: [
+            KanaCell(hiragana: "や", katakana: "ヤ", romaji: "ya"),
+            KanaCell(hiragana: "·", katakana: "·", romaji: ""),
+            KanaCell(hiragana: "ゆ", katakana: "ユ", romaji: "yu"),
+            KanaCell(hiragana: "·", katakana: "·", romaji: ""),
+            KanaCell(hiragana: "よ", katakana: "ヨ", romaji: "yo")
+        ]),
+        KanaRow(id: "r", label: "R", cells: [
+            KanaCell(hiragana: "ら", katakana: "ラ", romaji: "ra"),
+            KanaCell(hiragana: "り", katakana: "リ", romaji: "ri"),
+            KanaCell(hiragana: "る", katakana: "ル", romaji: "ru"),
+            KanaCell(hiragana: "れ", katakana: "レ", romaji: "re"),
+            KanaCell(hiragana: "ろ", katakana: "ロ", romaji: "ro")
+        ]),
+        KanaRow(id: "w", label: "W", cells: [
+            KanaCell(hiragana: "わ", katakana: "ワ", romaji: "wa"),
+            KanaCell(hiragana: "·", katakana: "·", romaji: ""),
+            KanaCell(hiragana: "·", katakana: "·", romaji: ""),
+            KanaCell(hiragana: "·", katakana: "·", romaji: ""),
+            KanaCell(hiragana: "を", katakana: "ヲ", romaji: "wo")
+        ]),
+        KanaRow(id: "n-final", label: "Nasal", cells: [
+            KanaCell(hiragana: "ん", katakana: "ン", romaji: "n"),
+            KanaCell(hiragana: "·", katakana: "·", romaji: ""),
+            KanaCell(hiragana: "·", katakana: "·", romaji: ""),
+            KanaCell(hiragana: "·", katakana: "·", romaji: ""),
+            KanaCell(hiragana: "·", katakana: "·", romaji: "")
+        ])
+    ]
+
+    private let combinationRows = [
+        CombinationRow(id: "k", label: "K", kana: "きゃ きゅ きょ / キャ キュ キョ", romaji: "kya · kyu · kyo"),
+        CombinationRow(id: "s", label: "S", kana: "しゃ しゅ しょ / シャ シュ ショ", romaji: "sha · shu · sho"),
+        CombinationRow(id: "t", label: "T", kana: "ちゃ ちゅ ちょ / チャ チュ チョ", romaji: "cha · chu · cho"),
+        CombinationRow(id: "n", label: "N", kana: "にゃ にゅ にょ / ニャ ニュ ニョ", romaji: "nya · nyu · nyo"),
+        CombinationRow(id: "h", label: "H", kana: "ひゃ ひゅ ひょ / ヒャ ヒュ ヒョ", romaji: "hya · hyu · hyo"),
+        CombinationRow(id: "m", label: "M", kana: "みゃ みゅ みょ / ミャ ミュ ミョ", romaji: "mya · myu · myo"),
+        CombinationRow(id: "r", label: "R", kana: "りゃ りゅ りょ / リャ リュ リョ", romaji: "rya · ryu · ryo"),
+        CombinationRow(id: "g", label: "G", kana: "ぎゃ ぎゅ ぎょ / ギャ ギュ ギョ", romaji: "gya · gyu · gyo"),
+        CombinationRow(id: "j", label: "J", kana: "じゃ じゅ じょ / ジャ ジュ ジョ", romaji: "ja · ju · jo"),
+        CombinationRow(id: "b", label: "B", kana: "びゃ びゅ びょ / ビャ ビュ ビョ", romaji: "bya · byu · byo"),
+        CombinationRow(id: "p", label: "P", kana: "ぴゃ ぴゅ ぴょ / ピャ ピュ ピョ", romaji: "pya · pyu · pyo")
     ]
 
     var body: some View {
@@ -527,7 +626,22 @@ private struct KanaReadingGuide: View {
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
                 .fixedSize(horizontal: false, vertical: true)
+            Text("Basic sound chart")
+                .font(AppTypography.metadata.weight(.semibold))
+                .foregroundStyle(AppColors.textPrimary)
+            Text("Each cell shows Hiragana, Katakana, then Romaji. The five columns follow the vowel order a · i · u · e · o.")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textSecondary)
+                .fixedSize(horizontal: false, vertical: true)
             soundTable(soundRows)
+            Text("Combined sounds")
+                .font(AppTypography.metadata.weight(.semibold))
+                .foregroundStyle(AppColors.textPrimary)
+            Text("Small ゃ・ゅ・ょ combine with an i-row kana. The table shows the common combinations; the same pattern works in both scripts.")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+            combinationTable(combinationRows)
             Text("How sounds are built")
                 .font(AppTypography.metadata.weight(.semibold))
                 .foregroundStyle(AppColors.textPrimary)
@@ -557,31 +671,66 @@ private struct KanaReadingGuide: View {
         .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
     }
 
-    private func soundTable(_ rows: [(String, String, String, String)]) -> some View {
+    private func soundTable(_ rows: [KanaRow]) -> some View {
         VStack(spacing: 0) {
             HStack(alignment: .top, spacing: AppSpacing.space2xs) {
-                tableCell("Row", width: 54)
-                tableCell("Hiragana")
-                tableCell("Katakana")
+                tableCell("Row", width: 64)
+                ForEach(["a", "i", "u", "e", "o"], id: \.self) { vowel in
+                    tableCell(vowel)
+                }
             }
             .font(AppTypography.metadata.weight(.semibold))
             .foregroundStyle(AppColors.textSecondary)
-            ForEach(Array(rows.enumerated()), id: \.offset) { _, row in
-                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                    HStack(alignment: .top, spacing: AppSpacing.space2xs) {
-                        tableCell(row.0, width: 54)
-                        tableCell(row.1)
-                        tableCell(row.2)
-                    }
-                    HStack(alignment: .top, spacing: AppSpacing.space2xs) {
-                        tableCell("Romaji", width: 54)
-                        Text(row.3)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .fixedSize(horizontal: false, vertical: true)
+            ForEach(rows) { row in
+                HStack(alignment: .top, spacing: AppSpacing.space2xs) {
+                    tableCell(row.label, width: 64)
+                    ForEach(row.cells.indices, id: \.self) { index in
+                        kanaCell(row.cells[index])
                     }
                 }
                 .font(AppTypography.metadata)
                 .foregroundStyle(AppColors.textPrimary)
+                .padding(.vertical, AppSpacing.space2xs)
+                Divider()
+            }
+        }
+    }
+
+    private func kanaCell(_ cell: KanaCell) -> some View {
+        VStack(spacing: 0) {
+            Text(cell.hiragana)
+                .font(CJKFontRole.japanese.font(size: 17))
+            Text(cell.katakana)
+                .font(CJKFontRole.japanese.font(size: 17))
+                .foregroundStyle(AppColors.textSecondary)
+            Text(cell.romaji.isEmpty ? " " : cell.romaji)
+                .font(AppTypography.metadata)
+                .foregroundStyle(AppColors.textSecondary)
+        }
+        .frame(maxWidth: .infinity, minHeight: 52, alignment: .top)
+    }
+
+    private func combinationTable(_ rows: [CombinationRow]) -> some View {
+        VStack(spacing: 0) {
+            HStack(alignment: .top, spacing: AppSpacing.space2xs) {
+                tableCell("Row", width: 44)
+                tableCell("Hiragana / Katakana")
+                tableCell("Romaji")
+            }
+            .font(AppTypography.metadata.weight(.semibold))
+            .foregroundStyle(AppColors.textSecondary)
+            ForEach(rows) { row in
+                HStack(alignment: .top, spacing: AppSpacing.space2xs) {
+                    tableCell(row.label, width: 44)
+                    Text(row.kana)
+                        .font(CJKFontRole.japanese.font(size: 15))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .fixedSize(horizontal: false, vertical: true)
+                    Text(row.romaji)
+                        .font(AppTypography.metadata)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
                 .padding(.vertical, AppSpacing.space2xs)
                 Divider()
             }

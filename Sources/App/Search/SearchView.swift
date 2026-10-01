@@ -76,7 +76,7 @@ struct SearchView: View {
                 Text(record.coreCharacter)
                     .font(.system(size: 44, weight: .regular, design: .serif))
                     .foregroundStyle(AppColors.textPrimary)
-                Text(record.coreSharedMeaning.capitalized)
+                Text(record.primarySharedMeaning.capitalized)
                     .font(AppTypography.body.weight(.semibold))
                     .foregroundStyle(AppColors.textPrimary)
                 Spacer(minLength: 0)
@@ -99,7 +99,7 @@ struct SearchView: View {
             Divider().overlay(AppColors.separator)
         }
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(record.coreCharacter), \(record.coreSharedMeaning), \(matchDescription(for: record) ?? ""), \(statusTitle(for: record))")
+        .accessibilityLabel("\(record.coreCharacter), \(record.primarySharedMeaning), \(matchDescription(for: record) ?? ""), \(statusTitle(for: record))")
     }
 
     /// Compact reading summary for quick recognition while browsing results.

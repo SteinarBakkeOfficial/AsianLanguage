@@ -70,12 +70,21 @@ struct SharedCharacterRecord: Decodable, Identifiable, Hashable {
     /// Editorial caveats that remain available to source/notes UI.
     let notes: [String]
 
+    /// Learner-facing meaning used in titles and controls; semicolon-separated historical qualifiers stay in editorial copy.
+    var primarySharedMeaning: String {
+        coreSharedMeaning
+            .split(separator: ";", maxSplits: 1, omittingEmptySubsequences: true)
+            .first
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            ?? coreSharedMeaning
+    }
+
     /// Small Home-card adapter for the next featured Shared Character.
     var featuredSummary: FeaturedSharedCharacterSummary {
         FeaturedSharedCharacterSummary(
             id: id,
             displayForm: coreCharacter,
-            primaryGloss: coreSharedMeaning.capitalized,
+            primaryGloss: primarySharedMeaning.capitalized,
             actionTitle: "New Symbol"
         )
     }

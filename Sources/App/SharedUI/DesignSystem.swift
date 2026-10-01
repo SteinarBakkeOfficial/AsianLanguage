@@ -338,7 +338,7 @@ struct LineagePreview: View {
                             .font(.system(size: variant.glyphSize, design: .serif))
                             .foregroundStyle(item.historical ? AppColors.artifactInk : AppColors.textPrimary)
                             .frame(minWidth: 72, minHeight: 64)
-                            .accessibilityLabel("\(item.label) form of \(record.coreSharedMeaning)")
+                            .accessibilityLabel("\(item.label) form of \(record.primarySharedMeaning)")
                         if index < availableForms.count - 1 {
                             Image(systemName: "arrow.down")
                                 .font(.system(size: 12, weight: .medium))
@@ -356,7 +356,7 @@ struct LineagePreview: View {
                                 .font(.system(size: variant.glyphSize, design: .serif))
                                 .foregroundStyle(item.historical ? AppColors.artifactInk : AppColors.textPrimary)
                                 .frame(minWidth: variant == .compact ? 48 : 72, minHeight: variant == .compact ? 48 : 80)
-                                .accessibilityLabel("\(item.label) form of \(record.coreSharedMeaning)")
+                            .accessibilityLabel("\(item.label) form of \(record.primarySharedMeaning)")
                             if variant != .compact {
                                 Text(item.label)
                                     .font(AppTypography.caption)
@@ -377,7 +377,7 @@ struct LineagePreview: View {
         }
         .frame(maxWidth: .infinity)
         .accessibilityElement(children: .contain)
-        .accessibilityLabel("Historical lineage preview for \(record.coreSharedMeaning), \(availableForms.count) available forms")
+        .accessibilityLabel("Historical lineage preview for \(record.primarySharedMeaning), \(availableForms.count) available forms")
     }
 }
 
@@ -395,7 +395,7 @@ struct CharacterTile: View {
                     .foregroundStyle(AppColors.textPrimary)
                     .frame(width: 44)
                 VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                    Text(record.coreSharedMeaning.capitalized)
+                    Text(record.primarySharedMeaning.capitalized)
                         .font(AppTypography.body.weight(.semibold))
                         .foregroundStyle(AppColors.textPrimary)
                     HStack(spacing: AppSpacing.spaceSm) {
@@ -441,9 +441,9 @@ struct CharacterTile: View {
 
     private var accessibilityDescription: String {
         guard let progressLabel else {
-            return "\(record.coreCharacter), \(record.coreSharedMeaning)"
+            return "\(record.coreCharacter), \(record.primarySharedMeaning)"
         }
-        return "\(record.coreCharacter), \(record.coreSharedMeaning), \(progressLabel)"
+        return "\(record.coreCharacter), \(record.primarySharedMeaning), \(progressLabel)"
     }
 }
 
