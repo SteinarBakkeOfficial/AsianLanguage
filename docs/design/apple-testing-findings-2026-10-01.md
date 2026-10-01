@@ -526,6 +526,12 @@ The target-language Usage pages now use the approved two-column hierarchy: the n
 
 Implementation status: complete locally. This correction supersedes the over-centered intermediate layout identified during testing.
 
+### Reading-specific language context correction — 2026-10-02
+
+Korean native equivalents now use their own reviewed English gloss instead of repeating the full Shared Character meaning. Exact duplicates of the top Hanja form or reading are suppressed; distinct native vocabulary remains visible with its English gloss aligned on the right. Japanese readings now use the English translations of their reviewed examples where available, aligned like the other language examples, so multiple readings such as `いきる`, `うまれる`, `うむ`, and `はえる` are explained by their actual meanings rather than being presented as interchangeable translations.
+
+Implementation status: complete locally. This preserves distinct language relationships without repeating the top header.
+
 ### Hotfix corrections — 2026-10-02
 
 - Quick Review meaning-to-symbol cards use clear English and reserve the large artifact field for a displayed symbol. Meaning prompts use a compact prompt surface, while Regular Script answer choices are the large selectable cards.

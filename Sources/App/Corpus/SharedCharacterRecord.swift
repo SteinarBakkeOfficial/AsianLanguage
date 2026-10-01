@@ -290,8 +290,11 @@ struct CharacterReading: Decodable, Hashable {
     /// Separate romanization supplied by the final language payload.
     let romanization: String?
 
+    /// Optional English gloss used for semantic equivalents and reading-specific teaching context.
+    let gloss: String?
+
     private enum CodingKeys: String, CodingKey {
-        case system, value, audioAssetRef, speechText, speechLanguage, nativeReading, romanization
+        case system, value, audioAssetRef, speechText, speechLanguage, nativeReading, romanization, gloss
     }
 
     init(from decoder: Decoder) throws {
@@ -303,6 +306,7 @@ struct CharacterReading: Decodable, Hashable {
         speechLanguage = try container.decodeIfPresent(PronunciationLanguage.self, forKey: .speechLanguage)
         nativeReading = try container.decodeIfPresent(String.self, forKey: .nativeReading)
         romanization = try container.decodeIfPresent(String.self, forKey: .romanization)
+        gloss = try container.decodeIfPresent(String.self, forKey: .gloss)
     }
 }
 

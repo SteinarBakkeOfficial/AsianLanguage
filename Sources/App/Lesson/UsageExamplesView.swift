@@ -96,7 +96,8 @@ struct UsageExamplesView: View {
                 form: form,
                 translation: record.primarySharedMeaning.capitalized,
                 readings: readings,
-                fontRole: fontRole
+                fontRole: fontRole,
+                readingGlosses: showsJapaneseFurigana ? readings.map { japaneseReadingGloss(for: $0) } : []
             )
             Divider()
                 .padding(.vertical, AppSpacing.spaceXs)
@@ -127,7 +128,8 @@ struct UsageExamplesView: View {
         form: String,
         translation: String,
         readings: [CharacterReading],
-        fontRole: CJKFontRole
+        fontRole: CJKFontRole,
+        readingGlosses: [String?] = []
     ) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
             HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
@@ -148,14 +150,22 @@ struct UsageExamplesView: View {
                 .padding(.vertical, AppSpacing.spaceXs)
             // Reading systems are not unique: Japanese may have several On/Kun readings,
             // and Korean may expose ordinary and sound-law variants.
-            ForEach(Array(readings.enumerated()), id: \.offset) { _, reading in
-                readingRow(reading, fontRole: fontRole)
+            ForEach(Array(readings.enumerated()), id: \.offset) { index, reading in
+                readingRow(
+                    reading,
+                    fontRole: fontRole,
+                    englishGloss: readingGlosses.indices.contains(index) ? readingGlosses[index] : nil
+                )
             }
         }
     }
 
     /// Keeps each reading together, with romanization beneath its native reading where available.
-    private func readingRow(_ reading: CharacterReading, fontRole: CJKFontRole) -> some View {
+    private func readingRow(
+        _ reading: CharacterReading,
+        fontRole: CJKFontRole,
+        englishGloss: String? = nil
+    ) -> some View {
         HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
             VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                 Text(readingLabel(reading))
@@ -171,14 +181,21 @@ struct UsageExamplesView: View {
                         .foregroundStyle(AppColors.textSecondary)
                 }
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
+            Spacer(minLength: AppSpacing.spaceSm)
+            if let englishGloss, !englishGloss.isEmpty {
+                Text(englishGloss)
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+                    .multilineTextAlignment(.trailing)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+            }
             PronunciationButton(reading: reading)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     /// Shows a Korean native equivalent as its own semantic relationship, not as another Hanja reading.
-    private func koreanEquivalentRow(_ equivalent: CharacterReading, translation: String) -> some View {
+    private func koreanEquivalentRow(_ equivalent: CharacterReading) -> some View {
         let parts = displayReadingParts(equivalent)
         return HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
             VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
@@ -187,10 +204,12 @@ struct UsageExamplesView: View {
                         .font(CJKFontRole.korean.font(size: 22).weight(.medium))
                         .foregroundStyle(AppColors.textPrimary)
                     Spacer(minLength: AppSpacing.spaceSm)
-                    Text(translation)
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
-                        .multilineTextAlignment(.trailing)
+                    if let gloss = distinctEnglishGloss(equivalent.gloss), !gloss.isEmpty {
+                        Text(gloss)
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                            .multilineTextAlignment(.trailing)
+                    }
                 }
                 if let romanization = parts.romanization {
                     Text(romanization)
@@ -255,6 +274,35 @@ struct UsageExamplesView: View {
         return displayReadingParts(reading.value)
     }
 
+    /// Uses reviewed Japanese example translations to explain why one Kanji has several readings.
+    private func japaneseReadingGloss(for reading: CharacterReading) -> String? {
+        let script = displayReadingParts(reading).script
+        var translations: [String] = []
+        for example in record.focusCoverage.japanese.examples where example.coversReadings.contains(script) {
+            guard let translation = distinctEnglishGloss(example.translation), !translations.contains(translation) else { continue }
+            translations.append(translation)
+        }
+        return translations.isEmpty ? nil : translations.joined(separator: "; ")
+    }
+
+    /// Omits only an exact repeat of the Shared Character meaning; narrower or expanded meanings remain visible.
+    private func distinctEnglishGloss(_ gloss: String?) -> String? {
+        guard let gloss, !gloss.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { return nil }
+        let normalizedGloss = gloss.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        let normalizedMeaning = record.primarySharedMeaning.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        return normalizedGloss == normalizedMeaning ? nil : gloss
+    }
+
+    /// Removes only exact Korean duplicates of the top form or Hanja reading; distinct native vocabulary remains visible.
+    private func visibleKoreanEquivalents(_ coverage: StandardFocusCoverage) -> [CharacterReading] {
+        let primaryForms = Set(
+            [coverage.form] + coverage.readings.map { displayReadingParts($0).script }
+        )
+        return coverage.semanticEquivalents.filter {
+            !primaryForms.contains(displayReadingParts($0).script)
+        }
+    }
+
     /// Korean keeps the Hanja form and an explicit native-script variant together on the Usage page.
     private func koreanWordCard(_ coverage: StandardFocusCoverage) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
@@ -267,13 +315,14 @@ struct UsageExamplesView: View {
                 readings: coverage.readings,
                 fontRole: .korean
             )
-            if !coverage.semanticEquivalents.isEmpty {
+            let equivalents = visibleKoreanEquivalents(coverage)
+            if !equivalents.isEmpty {
                 VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                     Text("Korean equivalent")
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
-                    ForEach(Array(coverage.semanticEquivalents.enumerated()), id: \.offset) { _, equivalent in
-                        koreanEquivalentRow(equivalent, translation: record.primarySharedMeaning.capitalized)
+                    ForEach(Array(equivalents.enumerated()), id: \.offset) { _, equivalent in
+                        koreanEquivalentRow(equivalent)
                     }
                 }
             }
