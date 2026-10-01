@@ -582,6 +582,7 @@ private struct KanaReadingGuide: View {
         }
     }
 
+    @ViewBuilder
     private func tableCell(_ text: String, width: CGFloat? = nil) -> some View {
         if let width {
             Text(text)
