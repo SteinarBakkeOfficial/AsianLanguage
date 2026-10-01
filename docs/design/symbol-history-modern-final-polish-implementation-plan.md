@@ -1,6 +1,6 @@
 # Symbol / History / Modern Language Final Polish — Implementation Plan
 
-**Status:** V1.0 implementation and acceptance complete. The book-informed History editorial upgrade, approved language content, and local contract verification are complete; post-release findings are Patch 0.1 maintenance.
+**Status:** Final screenshot-driven implementation pass active. The book-informed History editorial upgrade and approved language content remain the baseline, but the supplied Testing1_10 screenshots identified release blockers that must be corrected before marketplace packaging.
 
 **Approved:** 2026-09-04
 
@@ -10,9 +10,9 @@ The user-approved final pass extends this plan for release testing. It includes 
 
 ## Current V1 disposition — 2026-10-01
 
-- Review is complete for Symbol captions, historical interpretation, target-language readings/examples, native-speaker content, source/editorial content, and History copy.
-- V1 acceptance testing is complete for the approved release scope and local contract suite.
-- Marketplace release is followed by real-world feedback collection. Confirmed issues are handled as Patch 0.1; this plan does not reopen completed V1 review by default.
+- Editorial review remains complete for the approved content boundaries, but implementation acceptance is reopened for the screenshot-driven final pass.
+- The final pass includes the History table renderer, the 126 Oracle Bone and Regular Script caption audit, the four-track Usage hierarchy, pronunciation/orientation guides, direct Symbol actions, and source/about navigation ownership.
+- Marketplace release and Patch 0.1 planning begin only after local checks and macOS/Xcode visual verification confirm these corrections.
 
 ## Goal
 

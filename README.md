@@ -20,7 +20,7 @@ Onboarding opens the curated Mountain symbol directly from the bundled corpus. T
 
 Historical Assets must be source-backed or licensed, explicitly unavailable, or editorially omitted. Fabricated historical glyphs and modern-form fallbacks are prohibited.
 
-The current V1 runtime is the approved 126-character complete-evolution selection with 504 selected/normalized historical stage assets, local origin illustrations, and a Regular Script Kai endpoint. The app also bundles the History reference artwork and uses its illustrations inside a native editorial timeline and article layout. V1 content, language, historical, source, and editorial review is complete; post-release corrections are tracked for Patch 0.1.
+The current V1 runtime is the approved 126-character complete-evolution selection with 504 selected/normalized historical stage assets, local origin illustrations, and a Regular Script Kai endpoint. The app also bundles the History reference artwork and uses its illustrations inside a native editorial timeline and article layout. V1 content review and the screenshot-driven implementation pass are complete; Apple/Xcode simulator and device verification remains the final release gate before marketplace submission.
 
 The approved modern-form plan uses locale-specific Chinese, Japanese, and Korean rendering. The selected Regular faces from CNS11643 Kai and Adobe Source Han Serif are bundled and registered locally; Source Han Sans and additional weights remain intentionally excluded.
 

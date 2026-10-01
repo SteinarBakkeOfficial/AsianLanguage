@@ -46,6 +46,7 @@ struct RootTabView: View {
 struct OnboardingView: View {
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
+    @State private var page: Int
 
     /// Mountain gives first-time learners a legible pictograph and a meaningful historical arc without changing corpus order.
     private let onboardingSymbolID = "mountain"
@@ -58,30 +59,16 @@ struct OnboardingView: View {
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
         _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
+        _page = State(initialValue: dependencies.userStateStore.state.hasSeenIntro ? 1 : 0)
     }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .center, spacing: AppSpacing.spaceSm) {
-                Text("SCRIPT ROOTS")
-                    .font(AppTypography.conceptLabel)
-                    .tracking(1.4)
-                    .foregroundStyle(AppColors.textSecondary)
-                Text("One idea. One symbol. Thousands of years.")
-                    .font(AppTypography.exhibitHeading)
-                    .foregroundStyle(AppColors.textPrimary)
-                    .multilineTextAlignment(.center)
-                Text("Follow \(onboardingRecord?.coreSharedMeaning.capitalized ?? "Mountain") from a recognizable origin through historical writing and into modern languages.")
-                    .font(AppTypography.body)
-                    .foregroundStyle(AppColors.textSecondary)
-                    .multilineTextAlignment(.center)
-                if let onboardingRecord {
-                    SymbolOnboardingLineage(record: onboardingRecord)
-                }
-                OnboardingOrientationGuide()
-                PrimaryActionButton("Explore \(onboardingRecord?.coreSharedMeaning.capitalized ?? "Mountain")") {
-                    userStateStore.markFirstSymbolStarted()
-                    dependencies.navigationState.openSymbol(onboardingSymbolID, intent: .start)
+                if page == 0 {
+                    introPage
+                } else {
+                    languageSetupPage
                 }
             }
             .frame(maxWidth: 390)
@@ -90,6 +77,99 @@ struct OnboardingView: View {
         }
         .background(AppColors.appBackground.ignoresSafeArea())
         .tint(AppColors.accentPrimary)
+        .onAppear {
+            // Interrupted first launch resumes at language setup instead of repeating the introduction.
+            if userStateStore.state.hasSeenIntro { page = 1 }
+        }
+    }
+
+    private var introPage: some View {
+        VStack(alignment: .center, spacing: AppSpacing.spaceSm) {
+            Text("SCRIPT ROOTS")
+                .font(AppTypography.conceptLabel)
+                .tracking(1.4)
+                .foregroundStyle(AppColors.textSecondary)
+            Text("One idea. One symbol. Thousands of years.")
+                .font(AppTypography.exhibitHeading)
+                .foregroundStyle(AppColors.textPrimary)
+                .multilineTextAlignment(.center)
+            Text("Follow \(onboardingRecord?.coreSharedMeaning.capitalized ?? "Mountain") from a recognizable origin through historical writing and into modern languages.")
+                .font(AppTypography.body)
+                .foregroundStyle(AppColors.textSecondary)
+                .multilineTextAlignment(.center)
+            if let onboardingRecord {
+                SymbolOnboardingLineage(record: onboardingRecord)
+            }
+            OnboardingOrientationGuide()
+            PrimaryActionButton("Continue") {
+                userStateStore.markIntroSeen()
+                page = 1
+            }
+        }
+    }
+
+    private var languageSetupPage: some View {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceMd) {
+            Text("SCRIPT ROOTS")
+                .font(AppTypography.conceptLabel)
+                .tracking(1.4)
+                .foregroundStyle(AppColors.textSecondary)
+            Text("Choose your language paths")
+                .font(AppTypography.exhibitHeading)
+                .foregroundStyle(AppColors.textPrimary)
+            Text("All four paths are selected by default. History explains how each writing tradition works and how its pronunciation aids are read. You can change these choices later in More → Languages.")
+                .font(AppTypography.body)
+                .foregroundStyle(AppColors.textSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+
+            ForEach(FocusTrack.allCases) { track in
+                onboardingLanguageCard(for: track)
+            }
+
+            Button("Back") {
+                page = 0
+            }
+            .font(AppTypography.body)
+            .foregroundStyle(AppColors.textSecondary)
+            .frame(maxWidth: .infinity, minHeight: 44)
+
+            PrimaryActionButton("Begin with \(onboardingRecord?.coreSharedMeaning.capitalized ?? "Mountain")") {
+                userStateStore.markFocusLanguagesChosen()
+                userStateStore.markFirstSymbolStarted()
+                dependencies.navigationState.openSymbol(onboardingSymbolID, intent: .start)
+            }
+        }
+    }
+
+    /// Reuses the persisted multi-select focus state without introducing an onboarding-only preference model.
+    private func onboardingLanguageCard(for track: FocusTrack) -> some View {
+        GroupedSurface {
+            Toggle(isOn: Binding(
+                get: { userStateStore.state.focusSelection.contains(track) },
+                set: { userStateStore.setFocusTrack(track, isSelected: $0) }
+            )) {
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text(track.title)
+                        .font(AppTypography.body.weight(.semibold))
+                        .foregroundStyle(AppColors.textPrimary)
+                    Text(onboardingLanguageDescription(for: track))
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            .toggleStyle(.switch)
+            .frame(minHeight: 52)
+        }
+    }
+
+    private func onboardingLanguageDescription(for track: FocusTrack) -> String {
+        switch track {
+        case .simplifiedChinese: return "Simplified characters · Mandarin · Pinyin tones"
+        case .traditionalChinese: return "Traditional characters · Taiwan Mandarin and Hong Kong Cantonese"
+        case .japanese: return "Kanji · hiragana · katakana · furigana and romaji"
+        case .korean: return "Hanja context · Hangul readings · Korean romanization"
+        }
     }
 
 }
@@ -98,8 +178,8 @@ struct OnboardingView: View {
 private struct OnboardingOrientationGuide: View {
     private let hints: [(icon: String, title: String, detail: String)] = [
         ("hand.draw", "Move through the journey", "Swipe between stages or use the rail below the exhibit."),
-        ("building.columns", "Read more history", "Open History for when and why writing traditions changed."),
-        ("slider.horizontal.3", "Choose target languages", "Turn language tracks on or off in More → Languages.")
+        ("building.columns", "Read more history", "Open History for when writing traditions changed and how each script is pronounced."),
+        ("slider.horizontal.3", "Choose target languages", "Choose language tracks before you begin, or change them later in More → Languages.")
     ]
 
     var body: some View {
@@ -508,6 +588,26 @@ private struct HistoryArticleTable: Identifiable {
         self.rows = rows
         self.note = note
     }
+
+    /// Flattens the grid into uniquely identified cells so repeated column positions
+    /// cannot collide across rows in SwiftUI's LazyVGrid identity space.
+    var cells: [HistoryArticleTableCell] {
+        rows.enumerated().flatMap { rowIndex, row in
+            columns.indices.map { columnIndex in
+                HistoryArticleTableCell(
+                    id: "row-\(rowIndex)-column-\(columnIndex)",
+                    text: columnIndex < row.count ? row[columnIndex] : "—",
+                    rowIndex: rowIndex
+                )
+            }
+        }
+    }
+}
+
+private struct HistoryArticleTableCell: Identifiable {
+    let id: String
+    let text: String
+    let rowIndex: Int
 }
 
 private struct HistoryArticleSection: Identifiable {
@@ -1569,17 +1669,15 @@ private struct HistoryArticleTableView: View {
                                 .background(AppColors.artifactField)
                         }
 
-                        ForEach(Array(table.rows.enumerated()), id: \.offset) { rowIndex, row in
-                            ForEach(Array(table.columns.indices.enumerated()), id: \.offset) { columnIndex, _ in
-                                Text(columnIndex < row.count ? row[columnIndex] : "—")
-                                    .font(AppTypography.caption)
-                                    .foregroundStyle(AppColors.textSecondary)
-                                    .fixedSize(horizontal: false, vertical: true)
-                                    .frame(maxWidth: .infinity, minHeight: 42, alignment: .leading)
-                                    .padding(.horizontal, AppSpacing.spaceXs)
-                                    .padding(.vertical, AppSpacing.space2xs)
-                                    .background(rowIndex.isMultiple(of: 2) ? AppColors.surfaceElevated : AppColors.appBackground)
-                            }
+                        ForEach(table.cells) { cell in
+                            Text(cell.text)
+                                .font(AppTypography.caption)
+                                .foregroundStyle(AppColors.textSecondary)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .frame(maxWidth: .infinity, minHeight: 42, alignment: .leading)
+                                .padding(.horizontal, AppSpacing.spaceXs)
+                                .padding(.vertical, AppSpacing.space2xs)
+                                .background(cell.rowIndex.isMultiple(of: 2) ? AppColors.surfaceElevated : AppColors.appBackground)
                         }
                     }
                     .frame(minWidth: CGFloat(table.columns.count) * 94)
@@ -2113,8 +2211,8 @@ private struct MoreRootView: View {
 struct SourcesLicensesView: View {
     let dependencies: AppDependencies
 
-    /// Filters technical and generated provenance out of the readable source list.
-    /// Record-level IDs remain untouched in the corpus and Symbol detail sheets.
+    /// Filters technical and generated provenance out of the one canonical readable source list.
+    /// Record-level IDs remain untouched in the corpus for editorial and licensing audit.
     private var visibleSources: [VisibleSource] {
         var unique: [String: CorpusSource] = [:]
         for source in dependencies.sharedCharacters.flatMap(\.sources) {

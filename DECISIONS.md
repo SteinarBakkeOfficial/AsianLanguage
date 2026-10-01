@@ -1,5 +1,16 @@
 # DECISIONS
 
+## Screenshot-driven final implementation pass — 2026-10-01
+
+- The user's `Reference Pictures/Testing1_10` review supersedes the earlier “acceptance complete” release posture for implementation purposes. The app is not called marketplace-ready until the confirmed screenshot blockers are corrected and rechecked.
+- Oracle Bone is the first learner-facing glyph stage. Its caption normally explains why the selected carved form is or is not immediately recognizable against the approved Origin illustration. Empty Oracle captions are permitted only when the selected image is genuinely self-explanatory; the final 126-record pass is expected to use a concise caption for every record.
+- Regular Script is the endpoint summary. Its caption must explain the visible features retained, added, removed, merged, or regularized into the final form; a generic statement that the form is standardized is insufficient.
+- Usage examples use one shared mobile reading order across all four tracks: native written form, reading/pronunciation aid, then English meaning. Furigana, Pinyin/Jyutping, Hanja, and Hangul remain language-specific within that shared hierarchy.
+- History owns the full beginner pronunciation/orientation teaching: Mandarin tone marks, Jyutping tone numbers, kana decoding, and Hangul letter/block decoding. Symbol pages show the relevant reading aid but do not become full script textbooks.
+- Common Symbol actions (Favorite, Review Later, Share) remain directly accessible from the Symbol toolbar. About/structure stays available separately; repeated per-symbol sources and technical provenance do not appear in the learner sheet.
+- More is the canonical owner of About Script Roots and Sources & Licenses. Settings contains preferences and local controls, not duplicate about/source destinations.
+- The release gate for this pass is: populated History tables, validated 126-record captions, clear four-track Usage cards, complete History pronunciation/orientation guides, corrected navigation/actions, passing local checks, and Apple/Xcode visual verification.
+
 ## Current V1 release decision — 2026-10-01
 
 - V1.0 review is complete. This includes Symbol captions, historical interpretation, source/editorial review, target-language readings and examples, native-speaker review, native-script speech text, and History editorial copy.

@@ -12,7 +12,7 @@ The learner-facing Origin caption should use the full `origin.explanation` field
 
 ## Oracle Bone Script
 
-The Origin illustration is the explanatory support for the Oracle form. In most cases, no additional Oracle caption is needed. Do not mention that the form “matches” or “looks different from” the illustration, and do not repeat the components, their combined meaning, or a sound-borrowing explanation. Add a short Oracle note only when the actual form contains a detail that is not obvious from the illustration, such as a circular sun carved as a square, a small mark placed inside a mouth, or a genuinely disputed/uncertain historical form. If no such detail needs explanation, leave the Oracle caption empty.
+The Origin illustration explains why the intended meaning was chosen. Oracle Bone is the first historical drawing, so its caption explains only what the selected carved form visibly preserves, obscures, adds, or removes relative to that starting point. Do not repeat the complete Origin lesson, claim that the glyph “matches” the illustration, or invent an unseen historical reason. Because carved pictographs are often difficult for a modern learner to recognize, use a short visible-form bridge by default; leave the caption empty only when the selected image is genuinely self-explanatory after Origin.
 
 ## Bronze, Seal, and Clerical Script
 

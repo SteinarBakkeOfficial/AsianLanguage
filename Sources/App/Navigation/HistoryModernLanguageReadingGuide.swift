@@ -353,6 +353,8 @@ private struct HistoryModernReadingGuideCard: View {
                     }
                 }
 
+                HistoryScriptGuideView(guideID: guide.id)
+
                 Divider()
                     .overlay(AppColors.separator)
 
@@ -384,6 +386,210 @@ private struct HistoryModernReadingGuideCard: View {
                 }
             }
         }
+    }
+}
+
+/// Native, offline pronunciation references keep the notation used in the lesson
+/// understandable without bundling copied third-party chart images.
+private struct HistoryScriptGuideView: View {
+    let guideID: String
+
+    @ViewBuilder
+    var body: some View {
+        switch guideID {
+        case "mainland-mandarin", "taiwan-mandarin":
+            MandarinToneGuide()
+        case "hong-kong-cantonese":
+            JyutpingToneGuide()
+        case "japanese-reading":
+            KanaReadingGuide()
+        case "korean-reading":
+            HangulReadingGuide()
+        default:
+            EmptyView()
+        }
+    }
+}
+
+private struct MandarinToneGuide: View {
+    private let tones = [
+        ("mā", "1 · high and level"),
+        ("má", "2 · rising"),
+        ("mǎ", "3 · low, then rising"),
+        ("mà", "4 · falling sharply"),
+        ("ma", "neutral · short and light")
+    ]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+            Text("Mandarin tone marks")
+                .font(AppTypography.body.weight(.semibold))
+                .foregroundStyle(AppColors.textPrimary)
+            Text("The tone belongs to each spoken syllable. In Pinyin, the mark sits above the main vowel; it is pronunciation information, not an added mark on the Hanzi character.")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: AppSpacing.spaceXs) {
+                ForEach(Array(tones.enumerated()), id: \.offset) { _, tone in
+                    VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                        Text(tone.0)
+                            .font(AppTypography.body.weight(.semibold))
+                            .foregroundStyle(AppColors.accentPrimary)
+                        Text(tone.1)
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(AppSpacing.spaceXs)
+                    .background(AppColors.artifactField)
+                    .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
+                }
+            }
+            Text("For a word, read one Pinyin syllable for each character. For example, 月 is yuè: the accent marks the falling fourth tone on that syllable.")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textTertiary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(AppSpacing.spaceSm)
+        .background(AppColors.surfaceElevated)
+        .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
+    }
+}
+
+private struct JyutpingToneGuide: View {
+    private let tones = [
+        ("1", "high and level"),
+        ("2", "high rising"),
+        ("3", "mid and level"),
+        ("4", "low falling"),
+        ("5", "low rising"),
+        ("6", "low and level")
+    ]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+            Text("Jyutping tone numbers")
+                .font(AppTypography.body.weight(.semibold))
+                .foregroundStyle(AppColors.textPrimary)
+            Text("The number is written after each Cantonese syllable. Keep it when reading the lesson, but do not pronounce the number as a word. The descriptions below are a learner-friendly pitch guide.")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: AppSpacing.spaceXs) {
+                ForEach(Array(tones.enumerated()), id: \.offset) { _, tone in
+                    VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                        Text(tone.0)
+                            .font(AppTypography.body.weight(.semibold))
+                            .foregroundStyle(AppColors.accentPrimary)
+                        Text(tone.1)
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(AppSpacing.spaceXs)
+                    .background(AppColors.artifactField)
+                    .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
+                }
+            }
+            Text("For example, jyut6 means the syllable jyut with tone 6. The number belongs to that syllable, not to the written character as a separate symbol.")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textTertiary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(AppSpacing.spaceSm)
+        .background(AppColors.surfaceElevated)
+        .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
+    }
+}
+
+private struct KanaReadingGuide: View {
+    private let rows = [
+        ("あ", "ア", "a"), ("か", "カ", "ka"), ("さ", "サ", "sa"),
+        ("た", "タ", "ta"), ("な", "ナ", "na"), ("は", "ハ", "ha"),
+        ("ま", "マ", "ma"), ("や", "ヤ", "ya"), ("ら", "ラ", "ra"),
+        ("わ", "ワ", "wa"), ("ん", "ン", "n")
+    ]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+            Text("Basic kana reading key")
+                .font(AppTypography.body.weight(.semibold))
+                .foregroundStyle(AppColors.textPrimary)
+            Text("Hiragana and katakana represent the same basic sounds in two different scripts. The Latin spelling is a reading aid; it is not English pronunciation.")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+            HStack {
+                Text("Hiragana").frame(maxWidth: .infinity, alignment: .leading)
+                Text("Katakana").frame(maxWidth: .infinity, alignment: .leading)
+                Text("Romaji").frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .font(AppTypography.metadata.weight(.semibold))
+            .foregroundStyle(AppColors.textSecondary)
+            ForEach(Array(rows.enumerated()), id: \.offset) { _, row in
+                HStack {
+                    Text(row.0).frame(maxWidth: .infinity, alignment: .leading)
+                    Text(row.1).frame(maxWidth: .infinity, alignment: .leading)
+                    Text(row.2).frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .font(AppTypography.body)
+                .foregroundStyle(AppColors.textPrimary)
+            }
+            Text("Common exceptions include し shi, ち chi, つ tsu, ふ fu, and を o. Small ゃ・ゅ・ょ combine with the preceding sound, small っ doubles the next consonant, and dakuten changes sounds such as か ka → が ga.")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textTertiary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(AppSpacing.spaceSm)
+        .background(AppColors.surfaceElevated)
+        .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
+    }
+}
+
+private struct HangulReadingGuide: View {
+    private let consonants = [("ㄱ", "g/k"), ("ㄴ", "n"), ("ㄷ", "d/t"), ("ㄹ", "r/l"), ("ㅁ", "m"), ("ㅂ", "b/p"), ("ㅅ", "s"), ("ㅇ", "silent/ng"), ("ㅈ", "j"), ("ㅎ", "h")]
+    private let vowels = [("ㅏ", "a"), ("ㅓ", "eo"), ("ㅗ", "o"), ("ㅜ", "u"), ("ㅡ", "eu"), ("ㅣ", "i")]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
+            Text("Hangul letters become syllable blocks")
+                .font(AppTypography.body.weight(.semibold))
+                .foregroundStyle(AppColors.textPrimary)
+            Text("Hangul is an alphabet, not a one-symbol-per-syllable system. Letters combine into blocks: an initial consonant, a vowel, and sometimes a final consonant.")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+            HStack(alignment: .top, spacing: AppSpacing.spaceMd) {
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text("Consonants").font(AppTypography.metadata.weight(.semibold))
+                    ForEach(Array(consonants.enumerated()), id: \.offset) { _, item in
+                        Text("\(item.0)  \(item.1)").font(AppTypography.caption)
+                    }
+                }
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text("Vowels").font(AppTypography.metadata.weight(.semibold))
+                    ForEach(Array(vowels.enumerated()), id: \.offset) { _, item in
+                        Text("\(item.0)  \(item.1)").font(AppTypography.caption)
+                    }
+                }
+            }
+            .foregroundStyle(AppColors.textPrimary)
+            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                Text("Block examples").font(AppTypography.metadata.weight(.semibold))
+                Text("가 = ㄱ + ㅏ = ga")
+                Text("산 = ㅅ + ㅏ + ㄴ = san")
+                Text("한글 = 한 + 글")
+            }
+            .font(AppTypography.caption)
+            .foregroundStyle(AppColors.textPrimary)
+            Text("The romanization is an aid: ㅇ is silent at the start but ng at the end, ㄹ is shown as r/l, and ㅓ eo and ㅡ eu are not ordinary English vowel spellings.")
+                .font(AppTypography.caption)
+                .foregroundStyle(AppColors.textTertiary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(AppSpacing.spaceSm)
+        .background(AppColors.surfaceElevated)
+        .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
     }
 }
 

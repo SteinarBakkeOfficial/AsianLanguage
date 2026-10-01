@@ -10,6 +10,7 @@ struct LessonView: View {
     @State private var position: SymbolJourneyPosition
     @State private var entryMode: SymbolEntryMode
     @State private var showingAbout = false
+    @State private var showingShareSheet = false
     @State private var showingCorpusComplete = false
 
     init(route: LessonRoute, dependencies: AppDependencies) {
@@ -131,7 +132,28 @@ struct LessonView: View {
                     .accessibilityLabel("Back to Home")
                 }
             }
-            ToolbarItem(placement: .topBarTrailing) {
+            ToolbarItemGroup(placement: .topBarTrailing) {
+                Button {
+                    toggleFavorite()
+                } label: {
+                    Image(systemName: isFavorite ? "star.fill" : "star")
+                }
+                .accessibilityLabel(isFavorite ? "Remove from Favorites" : "Add to Favorites")
+
+                Button {
+                    toggleReviewLater()
+                } label: {
+                    Image(systemName: isReviewLater ? "note.text" : "note")
+                }
+                .accessibilityLabel(isReviewLater ? "Remove from Review Later" : "Save for Review Later")
+
+                Button {
+                    showingShareSheet = true
+                } label: {
+                    Image(systemName: "square.and.arrow.up")
+                }
+                .accessibilityLabel("Share Symbol")
+
                 IconActionButton(systemName: "ellipsis", accessibilityLabel: "About this character") {
                     showingAbout = true
                 }
@@ -141,10 +163,12 @@ struct LessonView: View {
             if let record = sharedCharacter {
                 CharacterAboutSheet(
                     record: record,
-                    userStateStore: userStateStore,
                     onMarkLearned: markLearnedAndOpenNext
                 )
             }
+        }
+        .sheet(isPresented: $showingShareSheet) {
+            ActivityShareSheet(items: [shareText])
         }
         .alert("Journey complete", isPresented: $showingCorpusComplete) {
             Button("Done", role: .cancel) {}
@@ -230,6 +254,40 @@ struct LessonView: View {
         userStateStore.updateLessonState(sharedCharacterID: route.sharedCharacterID) { state in
             state.markInProgress(at: position)
         }
+    }
+
+    private var isFavorite: Bool {
+        userStateStore.state.lessonStates[route.sharedCharacterID]?.isStarred == true
+    }
+
+    private var isReviewLater: Bool {
+        userStateStore.state.lessonStates[route.sharedCharacterID]?.isReviewLater == true
+    }
+
+    private func toggleFavorite() {
+        userStateStore.updateLessonState(sharedCharacterID: route.sharedCharacterID) { state in
+            state.setStarred(!isFavorite)
+        }
+    }
+
+    private func toggleReviewLater() {
+        userStateStore.updateLessonState(sharedCharacterID: route.sharedCharacterID) { state in
+            state.setReviewLater(!isReviewLater)
+        }
+    }
+
+    /// Keeps sharing text-first and offline; no generated image or network dependency is introduced.
+    private var shareText: String {
+        guard let record = sharedCharacter else { return "Script Roots" }
+        let stages = record.history.stages.compactMap { stage in
+            stage.form.map { "\(stage.stage): \($0)" }
+        }
+        return ([
+            "Script Roots",
+            "\(record.coreCharacter) · \(record.coreSharedMeaning.capitalized)",
+            record.recognitionTakeaway,
+            stages.joined(separator: " → ")
+        ] as [String]).filter { !$0.isEmpty }.joined(separator: "\n")
     }
 
     /// Completion remains explicit and preserves independent Favorite and Review Later state.
@@ -484,10 +542,8 @@ private struct QuickReviewQuestion: Identifiable {
 /// Secondary information sheet keeps sources, provenance, and quiet actions out of the exhibit chrome.
 private struct CharacterAboutSheet: View {
     let record: SharedCharacterRecord
-    @ObservedObject var userStateStore: LocalUserStateStore
     let onMarkLearned: () -> Void
     @Environment(\.dismiss) private var dismiss
-    @State private var isShowingShareSheet = false
 
     var body: some View {
         NavigationStack {
@@ -505,31 +561,6 @@ private struct CharacterAboutSheet: View {
                             .foregroundStyle(AppColors.textSecondary)
                     }
                 }
-                Section("Sources") {
-                    ForEach(record.sources, id: \.id) { source in
-                        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                            Text(source.label)
-                            Text(source.citation).font(AppTypography.caption).foregroundStyle(AppColors.textSecondary)
-                        }
-                    }
-                }
-                Section("Library") {
-                    Button(isFavorite ? "Remove from Favorites" : "Add to Favorites") {
-                        userStateStore.updateLessonState(sharedCharacterID: record.id) { state in
-                            state.setStarred(!isFavorite)
-                        }
-                    }
-                    Button(isReviewLater ? "Remove from Review Later" : "Save for Review Later") {
-                        userStateStore.updateLessonState(sharedCharacterID: record.id) { state in
-                            state.setReviewLater(!isReviewLater)
-                        }
-                    }
-                    Button {
-                        isShowingShareSheet = true
-                    } label: {
-                        Label("Share Symbol", systemImage: "square.and.arrow.up")
-                    }
-                }
                 Section("Learning") {
                     Button("Mark as Learned", action: onMarkLearned)
                         .foregroundStyle(AppColors.learned)
@@ -543,30 +574,6 @@ private struct CharacterAboutSheet: View {
             }
         }
         .tint(AppColors.accentPrimary)
-        .sheet(isPresented: $isShowingShareSheet) {
-            ActivityShareSheet(items: [shareText])
-        }
-    }
-
-    private var isFavorite: Bool {
-        userStateStore.state.lessonStates[record.id]?.isStarred == true
-    }
-
-    private var isReviewLater: Bool {
-        userStateStore.state.lessonStates[record.id]?.isReviewLater == true
-    }
-
-    /// A useful text-first share payload keeps sharing available without generating new image assets.
-    private var shareText: String {
-        let stages = record.history.stages.compactMap { stage in
-            stage.form.map { "\(stage.stage): \($0)" }
-        }
-        return ([
-            "Script Roots",
-            "\(record.coreCharacter) · \(record.coreSharedMeaning.capitalized)",
-            record.recognitionTakeaway,
-            stages.joined(separator: " → ")
-        ] as [String]).filter { !$0.isEmpty }.joined(separator: "\n")
     }
 }
 

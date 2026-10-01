@@ -54,14 +54,6 @@ struct SettingsView: View {
                 }
             }
 
-            Section("About") {
-                NavigationLink("About Script Roots") {
-                    AboutMethodView(corpusCount: dependencies.installedSharedCharacterCount)
-                }
-                NavigationLink("Sources & Licenses") {
-                    SourcesLicensesView(dependencies: dependencies)
-                }
-            }
         }
         .navigationTitle("Settings")
         .scrollContentBackground(.hidden)

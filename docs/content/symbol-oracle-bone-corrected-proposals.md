@@ -1,14 +1,20 @@
 # Corrected Oracle Bone Caption Proposals
 
+> Superseded by the 2026-10-01 final implementation pass. The earlier empty-by-default proposal is retained as review history only. The canonical final captions are applied by `Tools/Apply-FinalEditorialCaptionPass.ps1` and stored in `content/release/symbols/*/symbol.json`.
+
 This is the retained Oracle Bone proposal record for the approved V1 caption set. All earlier Oracle proposals are superseded and must not be used as current content.
 
 ## Method being applied
 
 The Origin illustration is deliberately made to show what the Oracle Bone form depicts. Origin is where we explain the components, how they combine to express the meaning, and any sound borrowing or uncertainty.
 
-Oracle Bone does not repeat that explanation and does not talk about “matching” or “looking different from” the illustration. In most cases, the illustration already makes the Oracle form understandable, so the Oracle caption should be empty. A caption is retained only when the historical form contains a detail that still needs pointing out, or when there is no secure form to show.
+Oracle Bone does not repeat that explanation and does not talk about “matching” or “looking different from” the illustration. Because many selected carved forms are difficult for a modern learner to recognize, the final pass uses a concise visible-form bridge by default. A caption may be empty only when the selected image is genuinely self-explanatory after Origin.
 
 These proposals were approved and applied to the canonical V1 source and generated runtime corpus. Future changes require an explicit Patch 0.1 or later editorial scope.
+
+## Historical proposal boundary
+
+The detailed proposal table below is retained as superseded review history. Its empty-by-default recommendations must not be restored. The current release caption set is the 126-record map in `Tools/Apply-FinalEditorialCaptionPass.ps1`, which is applied to the canonical records and regenerated runtime corpus.
 
 ## Proposed Oracle captions to retain or add
 

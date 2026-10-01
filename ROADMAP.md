@@ -17,7 +17,7 @@ The official product-facing name is Script Roots. AsianLanguage remains the inte
 7. Asset pipeline — complete for V1; approved local package and provenance are synchronized
 8. V1 corpus — complete; the 126-record complete-evolution package is the release corpus
 9. Design and QA — complete for V1 acceptance; post-release findings become Patch 0.1 maintenance
-10. V1 release — accepted; marketplace packaging and submission are the next distribution actions
+10. V1 release — implementation complete; Apple/Xcode verification, packaging, and submission are the next distribution actions
 
 ## Current status
 
@@ -27,9 +27,10 @@ Discovery and content-contract foundations are complete, including Browse-owned 
 
 ## Authoritative release posture — 2026-10-01
 
-- V1.0 content review is complete: Symbol captions, historical interpretation, source/editorial review, target-language readings and examples, native-speaker review, and History copy are accepted.
-- V1.0 acceptance testing is complete for the current release scope and local contract suite. Marketplace users provide the next real-world feedback cycle; confirmed issues are Patch 0.1 work.
-- Apple packaging, marketplace submission, and post-release device observations are distribution/maintenance actions, not unresolved V1 content or review gates.
+- V1 editorial review and the screenshot-driven final implementation pass are complete for the approved content boundaries.
+- The pass corrected the blank History table bodies, completed all 126 Oracle Bone and Regular Script learner captions, aligned the four Usage layouts, added pronunciation/orientation guidance, exposed Symbol actions directly, and consolidated source/about navigation.
+- All local contract and release-readiness checks pass; the corrected SwiftUI surfaces still require macOS/Xcode screenshot verification before the build is called marketplace-ready.
+- Marketplace packaging follows Apple verification; post-release Patch 0.1 remains the maintenance path for issues discovered after release.
 - Older dated testing and handoff sections below remain historical records. This section is the current project truth.
 
 ## Current implementation snapshot — 2026-09-03

@@ -1,5 +1,7 @@
 # Full Symbol Caption Manual Review
 
+> Final implementation update — 2026-10-01: the individual Origin/Oracle image audit is complete for all 126 records. The current release records now contain a concise Oracle visible-form caption for every selected image, and the final Regular Script endpoint corrections are applied. The historical proposal tables below remain an audit trail; use the canonical release records and `Tools/Apply-FinalEditorialCaptionPass.ps1` for current runtime content.
+
 Review ID: `AL-ORACLE-126-MANUAL-REVIEW`
 
 Status: approved caption set applied to canonical source and runtime corpus. Artwork is unchanged; this document is retained as the review record for future minor adjustments.
@@ -281,18 +283,20 @@ The following additional Regular Script rows were also changed in the strict pas
 
 ## Final proposal boundary
 
+The following boundary describes the earlier proposal state and is retained for audit only. It is superseded by the final 2026-10-01 implementation pass described at the top of this document.
+
 For the 446 later-stage rows marked retained above, the proposed text is the current detailed value in `Resources/Corpus/<symbol>.json`, unchanged. For the 58 listed rows, the table text supersedes the current detailed value. For Oracle Bone, the complete 126-row table above is authoritative for this proposal: `Remove` means an empty destination caption, and `Replace` means the exact proposed text shown.
 
-The final proposed set therefore contains 630 destination captions: 74 empty Oracle captions, 52 replacement Oracle captions, 446 retained later-stage captions, and 58 replacement later-stage captions. Every non-empty proposed caption is at or below the 25-word museum-caption limit.
+The historical proposed set therefore contained 630 destination captions: 74 empty Oracle captions, 52 replacement Oracle captions, 446 retained later-stage captions, and 58 replacement later-stage captions. It is no longer the release set.
 
 ## Editorial cautions recorded during approval
 
 - These were visual/editorial proposals and have now received the approved V1 source and interpretation review.
 - King, Sky, West, People, White, Black, Summer, Winter, and Fragrance are included in the approved V1 review decision.
 - Fragrance should not be described as unavailable merely because the selected form is difficult to interpret; the local asset exists and the caption should describe its visible structure cautiously.
-- Tiger is intentionally empty because the selected form is unusually pictorial: jaws, stripes, legs, and a coiled tail remain visible.
+- Tiger's earlier empty recommendation is superseded; the final pass explains why the selected animal-like carving is still difficult to recognize as tiger.
 - Stone and Sweet received the Origin-artwork consistency check as part of final V1 approval.
 
 ## Approval state
 
-The complete 630-row caption set is approved and applied to the canonical Symbol records, `Resources/Corpus`, and `Resources/V1CorpusManifest.json`. The illustration and illustration text remain unchanged. Future minor wording adjustments should update this document first, then be synchronized through the same source-to-runtime validation path.
+The historical 630-row proposal was applied before the final screenshot-driven pass. The current release set is the 126-record caption map in `Tools/Apply-FinalEditorialCaptionPass.ps1`, applied to the canonical Symbol records and regenerated `Resources/Corpus`. The illustration and illustration text remain unchanged.
