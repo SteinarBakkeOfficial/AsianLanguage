@@ -40,14 +40,6 @@ struct AppDependencies {
         }
     }
 
-    /// Returns the next locally saved review item without making the corpus depend on user state.
-    func nextReviewLater(after sharedCharacterID: String) -> SharedCharacterRecord? {
-        sharedCharacters.first { record in
-            record.id != sharedCharacterID
-                && userStateStore.state.lessonStates[record.id]?.isReviewLater == true
-        }
-    }
-
     /// Runtime dependency set used by the app shell.
     static let live: AppDependencies = {
         let repository = BundleCorpusRepository()
@@ -102,7 +94,17 @@ struct AppDependencies {
 
 /// Shared root navigation state used by Home, Browse, Search, and Collections.
 final class AppNavigationState: ObservableObject {
-    @Published var selectedTab: AppTab = .home
+    @Published var selectedTab: AppTab = .home {
+        didSet {
+            // Quick Review is deliberately transient; leaving the Symbol tab must not restore it later.
+            guard selectedTab != .symbol else { return }
+            if symbolOpenIntent == .review || symbolOpenIntent == .reviewFromBrowse {
+                selectedSymbolID = nil
+                symbolOpenIntent = nil
+                symbolRoute = nil
+            }
+        }
+    }
     /// The Symbol currently selected by the learner, which may differ from Home's active journey.
     @Published var selectedSymbolID: String?
     /// Explicit opening intent consumed by the canonical Symbol root.

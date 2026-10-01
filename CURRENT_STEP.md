@@ -6,9 +6,11 @@ Maintain the approved V1 package: 126 complete-evolution symbols, local origin a
 
 ## Current release status — 2026-10-01
 
-- V1 editorial review and the screenshot-driven final implementation pass are complete for the approved content boundaries.
-- The final pass corrected the History table rendering defect, all 126 Oracle Bone captions, the Regular Script endpoint summaries, the four-track Usage hierarchy, pronunciation/orientation guidance, direct Symbol actions, and source/about navigation.
-- All local Windows checks pass; every changed SwiftUI surface still requires macOS/Xcode screenshot verification before marketplace release.
+- V1 editorial review and the previous screenshot-driven implementation pass are complete for the approved content boundaries. The latest Apple review identified a focused follow-up pass.
+- The Symbol toolbar action hierarchy, intended native-form/reading/English Usage layout, complete Japanese kana teaching, and final Quick Review behavior are implemented locally. Quick Review is now a Home-surfaced randomized review of all learned Symbols; Review Later remains a separate Browse bookmark for full-journey revisits.
+- Onboarding, most Symbol text, Chinese History guidance, Korean History guidance, and the complete modern Japanese Hiragana/Katakana sound overview are confirmed complete.
+- Quick Review uses one three-choice card per learned Symbol, reveals `Check this Symbol` only after an incorrect choice, and ends when the user leaves or completes the session. It does not read from or modify Review Later.
+- All local Windows checks pass; Apple/Xcode screenshot verification remains required before marketplace release.
 - The approved corpus remains exactly 126 records. No new symbols, historical assets, or unrelated features are in scope.
 - Keep the manual-review and screenshot findings documents as the audit trail for this final pass and later Patch 0.1 corrections.
 
@@ -335,7 +337,7 @@ Release boundary: the user approved this surgical implementation. New History ar
 ### Post-testing handoff disposition — 2026-09-08
 
 - Permanent product boundary: Script Roots remains a museum app. XP, points, streaks, lives, coins, gems, badges, leaderboards, competitive ranking, and comparable gamification will not be added.
-- Held for discussion after the next testing round: replacement History artwork and illustrated 2×2 modern-language cards; article-specific History sources; fuller legal/license presentation; visual Share Symbol cards; a fuller Quick Review session; richer feedback and reminder flows; broader haptics; dark-mode and performance work; and the complete accessibility, offline, safe-area, crop, and physical-device verification pass.
+- Held for discussion after the next testing round: replacement History artwork and illustrated 2×2 modern-language cards; article-specific History sources; fuller legal/license presentation; visual Share Symbol cards; richer feedback and reminder flows; broader haptics; dark-mode and performance work; and the complete accessibility, offline, safe-area, crop, and physical-device verification pass. The fuller Quick Review session is now implemented and is not part of this carryover list.
 - Also held for later editorial/release review: complete copy QA, native-speaker review, historical interpretation review, source-rights clearance, and App Store launch collateral.
 - Picture/scan recognition remains a separately scoped future Browse feature: present-day on-device exact matching only, with an explicit no-match state and no historical OCR, cloud upload, or automatic photo storage by assumption.
 - These are recorded candidates and carryover, not current implementation instructions. Reassess them together after the next tester feedback.

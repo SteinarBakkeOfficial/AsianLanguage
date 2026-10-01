@@ -28,8 +28,10 @@ Assert-True (-not $lesson.Contains("Continue to Structure")) "The primary journe
 Assert-True (-not $lesson.Contains("Link(")) "The primary journey must not open online source links."
 Assert-True $lesson.Contains("setStarred") "Character detail must expose independent Favorite state."
 Assert-True $lesson.Contains("setReviewLater") "Character detail must expose independent Review Later state."
-Assert-True $lesson.Contains("QuickReviewQuestion") "Quick Review must use small recognition prompts."
-Assert-True $lesson.Contains("Next Question") "Quick Review must support more than one prompt without reopening the journey."
+Assert-True $lesson.Contains("QuickReviewCard") "Quick Review must use one card per learned symbol."
+Assert-True $lesson.Contains("records.shuffled()") "Quick Review must randomize the learned-symbol session."
+Assert-True $lesson.Contains("Check this Symbol") "Quick Review must offer the full Symbol only after an incorrect choice."
+Assert-True $lesson.Contains("Next Symbol") "Quick Review must advance one completed Symbol at a time."
 Assert-True $lesson.Contains("Finish Review") "Quick Review must finish without forcing a journey replay."
 
 Write-Output "OK: Symbol Journey lesson contract tests passed"

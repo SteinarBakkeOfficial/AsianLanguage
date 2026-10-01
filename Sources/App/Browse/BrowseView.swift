@@ -278,7 +278,7 @@ struct BrowseStatusView: View {
                         CharacterTile(
                             record: record,
                             userState: dependencies.userStateStore.state.lessonStates[record.id],
-                            action: { dependencies.navigationState.openSymbol(record.id, intent: symbolIntent) }
+                            action: { dependencies.navigationState.openSymbol(record.id, intent: .view) }
                         )
                     }
                 }
@@ -292,7 +292,4 @@ struct BrowseStatusView: View {
         .tint(ShellStyle.cinnabar)
     }
 
-    private var symbolIntent: SymbolOpenIntent {
-        title == "Learned" ? .reviewFromBrowse : .view
-    }
 }

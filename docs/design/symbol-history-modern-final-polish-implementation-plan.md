@@ -10,9 +10,9 @@ The user-approved final pass extends this plan for release testing. It includes 
 
 ## Current V1 disposition — 2026-10-01
 
-- Editorial review remains complete for the approved content boundaries, but implementation acceptance is reopened for the screenshot-driven final pass.
+- Editorial review remains complete for the approved content boundaries, and the screenshot-driven final implementation pass is complete locally.
 - The final pass includes the History table renderer, the 126 Oracle Bone and Regular Script caption audit, the four-track Usage hierarchy, pronunciation/orientation guides, direct Symbol actions, and source/about navigation ownership.
-- Marketplace release and Patch 0.1 planning begin only after local checks and macOS/Xcode visual verification confirm these corrections.
+- Marketplace release and Patch 0.1 planning begin after local checks and macOS/Xcode visual verification confirm these corrections.
 
 ## Goal
 

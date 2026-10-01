@@ -402,3 +402,133 @@ When the screenshots arrive, inspect:
 - Browse star/note behavior, which should remain unchanged unless the screenshots reveal a concrete problem.
 
 No implementation should begin from this record alone where the screenshot is needed to distinguish a missing asset, missing text, layout problem, or intentional language-specific treatment.
+
+## Latest testing findings — post-implementation review
+
+These findings supersede the corresponding action and Usage-layout requirements in the earlier final implementation contract above. They are recorded for the next focused correction pass; they do not reopen the completed corpus review or the approved historical-stage wording.
+
+### AT-17 — Keep only Favorite visible in the Symbol toolbar
+
+The Symbol page should show only:
+
+- the Favorite star;
+- the three-dot More action.
+
+Review Later and Share should not be quick toolbar marks. They should be grouped with Mark as Learned inside the character action area opened from More. The Favorite star remains the one direct quick action. Browse's existing star and Review Later indicators are not changed by this finding.
+
+### AT-18 — Restore the intended target-language example hierarchy
+
+The current vertical stack is incorrect for Simplified Chinese, Traditional Chinese, and Korean, and the resulting spacing also weakens all four target-language pages. The intended mobile example relationship is:
+
+1. the native word or phrase is prominent and visually separated from the surrounding Symbol content, with the example form normalized and centered within its card;
+2. the reading or romanization sits to the right of that native form on the same example line;
+3. the English meaning sits below that line.
+
+This is a visual hierarchy correction, not a request to remove language-specific details. Japanese furigana and other language-specific reading aids remain valid, but the native form must not collapse into an entirely left-aligned vertical stack beneath the main Symbol.
+
+### AT-19 — Japanese History must explain how kana combine into sounds
+
+The current Japanese guide identifies individual Hiragana, Katakana, and Romaji equivalents, but it does not yet teach a new learner how to combine kana into a spoken unit. The guide must add explicit composition examples, such as:
+
+- `か` / `カ` → `ka`;
+- `きゃ` = `き` + small `ゃ` / `キャ` → `kya`;
+- voiced changes such as `か` → `が` and `し` → `じ`;
+- small `っ` for a doubled consonant and `ー` for a long vowel in Katakana.
+
+The learner needs to see that kana are combined into mora-sized sound units; a one-symbol lookup table alone is insufficient. This explanation belongs in History, alongside the existing Chinese tone and Korean Hangul guidance.
+
+### Confirmed complete areas
+
+- Onboarding is complete for the current design.
+- Most Symbol text is complete.
+- Most History pages are complete.
+- Chinese History guidance is complete for Simplified and Traditional Chinese.
+- Korean History guidance is complete and sufficiently explains Hangul reading for the current scope.
+- Japanese History needs the kana-combination explanation above before it is considered complete.
+
+### AT-20 — Quick Review needs meaningful prompts and transient exit behavior
+
+Quick Review is a useful feature and its lightweight, no-score/no-timer format should be preserved. The current implementation does not yet serve that purpose well:
+
+- `What character connects to this form?` is vague and can show the same modern form that the answer repeats;
+- `What idea does this character carry?` is a generic flashcard prompt rather than a recognition question grounded in the Symbol Journey;
+- the reading questions expose isolated readings without enough context about which language or writing system the learner is recognizing;
+- the answer is often only a word or reading, without the short visual or historical reason that makes the review useful;
+- leaving Quick Review through Symbol, Journey, Usage, Browse, Home, or another page can leave the lesson in review mode and return the user to Quick Review instead of completing the transient session.
+
+Recommended Quick Review direction:
+
+1. Keep the session short, optional, and playful: three or four meaningful cards, no score, timer, streak, or penalty.
+2. Use prompts tied to visible content: show a historical glyph or Origin image and ask for the shared meaning; show the modern character and ask for its meaning; show a language reading and ask which language/system it belongs to; or show a before/after pair and ask what visible feature changed.
+3. Make every answer explanatory. Pair the answer with one concise reason, such as the visible frame, preserved body outline, added dot, removed stroke, or language-specific reading label.
+4. Show the language name and the native form beside the romanized reading. Do not ask a learner to interpret an unlabeled reading string.
+5. Keep `Open Symbol Journey` as an escape hatch, but make it a deliberate transition into the Journey rather than a continuation of the review session.
+
+Quick Review must be transient. The moment the user leaves it, opens the Symbol Journey, changes to Usage, returns to Browse/Home, or selects another page, the review session is finished and must not be restored automatically. The next-symbol action after finishing should also enter the next Symbol's intended destination, never the previous review state.
+
+### Confirmed current status after Testing1_11
+
+- Settings and the previously completed Settings/About/source changes are accepted and should remain unchanged.
+- The Quick Review shell and the idea of a lightweight recognition activity are accepted.
+- Quick Review copy/question design and exit-state handling are new focused corrections.
+
+### AT-21 — Testing1_11 visual confirmation
+
+The newly available `Reference Pictures/Testing1_11` set contains 16 screenshots. It confirms the following details:
+
+- Quick Review visibly shows five questions, but Questions 1 and 2 are nearly duplicates: both show the same modern `水` form and ask for its meaning in different words. The first question, `What character connects to this form?`, is especially unclear because the displayed form is already the modern character rather than a historical form or origin image.
+- The Mandarin, Japanese, and Korean questions are simple reveal cards, but the answers are isolated strings (`shuǐ`, `スイ — sui`, and `수 — su`) without enough explanation of the reading type or why that reading is useful for recognition.
+- The Quick Review toolbar still visibly exposes Favorite, Review Later, Share, and More. This confirms AT-17: only Favorite and More should remain in that toolbar.
+- The repeated `Open Water Journey` link is useful as an escape hatch, but the visual flow does not communicate that leaving the review ends the temporary session. The reported return-to-Quick-Review behavior therefore remains a functional correction, not merely a wording issue.
+- Traditional Chinese and Simplified Chinese examples are visibly stacked as native form, reading, and English below one another. They do not use the intended prominent native form with the reading to its right and English beneath the line.
+- Japanese is visually closer to the intended relationship in several examples because the kana/romaji relationship is shown beside the Kanji, but the overall card still needs a consistent example hierarchy. Korean is also currently stacked vertically and should be corrected with the other target-language cards.
+- The Japanese History page now says that small kana combine with the preceding sound, but the screenshot does not show a concrete composition example such as `き` + `ゃ` → `きゃ` → `kya`. The learner is told the rule without being shown how to apply it.
+
+Refined Quick Review recommendation:
+
+1. Replace the first two overlapping meaning cards with one modern-meaning card and one genuinely visual historical/origin card.
+2. Keep at most one or two language-reading cards per short session, each labeled with the language and reading type, and include a brief recognition explanation after reveal.
+3. Treat the review as a temporary layer: leaving it, opening the Journey, changing tabs, or navigating Home/Browse must end it and clear the review entry state.
+4. Preserve the current calm card, reveal, and no-score interaction model; the problem is the prompt/content design and lifecycle, not the basic presentation pattern.
+
+### User refinement — Quick Review guessing design
+
+The review must not reveal the answer through the prompt, the Symbol name, a character title, or an always-visible `Open Water Journey` identity link. That would defeat the recognition exercise.
+
+The preferred direction is a small three-option guessing card:
+
+- show a meaningful visual or contextual prompt without naming the Symbol;
+- present three possible meanings, identities, or readings;
+- let the learner choose one;
+- reveal the correct answer with a short explanation and optional Journey link only after the choice.
+
+Target-language content can be used for some cards, but Quick Review should not ask for the same character in Simplified Chinese, Traditional Chinese, Japanese, and Korean one after another. The session should test Shared Character recognition first, then use at most one selected target-language example as context. The language card should show a real word or sentence and ask a useful question about it, rather than simply asking for four isolated readings.
+
+Implementation status: AT-17 (toolbar action hierarchy), AT-18 (target-language Usage hierarchy), AT-19 (Japanese kana composition and decoding guidance), and AT-20 (Quick Review behavior) are implemented locally. AT-22 is also complete. Apple/Xcode visual verification remains.
+
+### AT-22 — Japanese History needs the complete kana sound overview
+
+The previous guide showed only representative rows such as `あ`, `か`, `さ`, `た`, and `ん`, plus composition examples. That was not sufficient for a learner who needs to decode the full sound set.
+
+The finished guide should include:
+
+- the full basic kana table in both Hiragana and Katakana with Romaji;
+- dakuten and handakuten sound changes such as `か → が`, `は → ば`, and `は → ぱ`;
+- contracted sounds/yōon such as `きゃ`, `しゅ`, and `ちょ`;
+- small `っ`, long-vowel `ー`, and the important reading exceptions/particle readings;
+- a clear statement that Hiragana and Katakana represent the same basic sounds in different writing systems.
+
+Implementation status: complete locally. The History guide now presents all 46 modern basic kana in both scripts, the voiced and semi-voiced rows, the standard contracted-sound rows, and the major small-`っ`, long-vowel, `ん`, and particle-reading rules. It also explains that extended Katakana spellings for imported words are combinations built from this inventory, not a missing second basic chart. Quick Review is resolved separately below under AT-20.
+
+### Final Quick Review resolution — 2026-10-02
+
+The final product decision separates Quick Review from Review Later:
+
+- Home shows Quick Review as soon as at least one Symbol is fully learned.
+- A Quick Review session randomizes all learned Symbols and presents one three-choice recognition card per Symbol, with progress shown as `n of x`.
+- A correct choice advances directly to the next Symbol. An incorrect choice reveals the correct answer and offers `Check this Symbol`, which opens the full Journey and ends the temporary session.
+- Quick Review changes no Learned, Favorite, or Review Later state. Leaving Home, Symbol, or the session ends it and it must not be restored automatically.
+- Browse → Review Later remains a plain saved list. Selecting an item opens the full Symbol Journey; it does not start Quick Review or any other game.
+- Browse → Learned also opens the full Symbol Journey. Quick Review has one clear Home entry point.
+
+Implementation status: complete locally. The remaining release verification is Apple/Xcode visual and interaction testing.

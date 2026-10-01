@@ -5,11 +5,12 @@
 - The user's `Reference Pictures/Testing1_10` review supersedes the earlier “acceptance complete” release posture for implementation purposes. The app is not called marketplace-ready until the confirmed screenshot blockers are corrected and rechecked.
 - Oracle Bone is the first learner-facing glyph stage. Its caption normally explains why the selected carved form is or is not immediately recognizable against the approved Origin illustration. Empty Oracle captions are permitted only when the selected image is genuinely self-explanatory; the final 126-record pass is expected to use a concise caption for every record.
 - Regular Script is the endpoint summary. Its caption must explain the visible features retained, added, removed, merged, or regularized into the final form; a generic statement that the form is standardized is insufficient.
-- Usage examples use one shared mobile reading order across all four tracks: native written form, reading/pronunciation aid, then English meaning. Furigana, Pinyin/Jyutping, Hanja, and Hangul remain language-specific within that shared hierarchy.
+- Usage examples use one shared mobile relationship across all four tracks: a prominent, normalized native word or phrase; its reading/pronunciation aid to the right on the same line; and the English meaning below. Furigana, Pinyin/Jyutping, Hanja, and Hangul remain language-specific within that hierarchy.
 - History owns the full beginner pronunciation/orientation teaching: Mandarin tone marks, Jyutping tone numbers, kana decoding, and Hangul letter/block decoding. Symbol pages show the relevant reading aid but do not become full script textbooks.
-- Common Symbol actions (Favorite, Review Later, Share) remain directly accessible from the Symbol toolbar. About/structure stays available separately; repeated per-symbol sources and technical provenance do not appear in the learner sheet.
+- Quick Review is a Home-surfaced, transient memory activity for all fully learned Symbols. Each session randomizes one three-choice card per learned Symbol, shows progress as `n of x`, uses no score/timer/penalty, and changes no Learned, Favorite, or Review Later state. The prompt must not reveal the answer through a title or identity link. If the learner chooses incorrectly, the result may offer `Check this Symbol`, which opens the full Journey and ends the session; correct answers simply advance. Review Later is independent: it is a Browse bookmark for returning to the full Symbol Journey, never a Quick Review source.
+- The Symbol toolbar exposes only the Favorite star and the three-dot More action. Review Later and Share are grouped with Mark as Learned inside the character action area opened from More. About/structure stays available separately; repeated per-symbol sources and technical provenance do not appear in the learner sheet.
 - More is the canonical owner of About Script Roots and Sources & Licenses. Settings contains preferences and local controls, not duplicate about/source destinations.
-- The release gate for this pass is: populated History tables, validated 126-record captions, clear four-track Usage cards, complete History pronunciation/orientation guides, corrected navigation/actions, passing local checks, and Apple/Xcode visual verification.
+- The release gate after the focused correction pass is passing local checks and Apple/Xcode visual verification of the corrected Symbol action hierarchy, four-track Usage layout, Japanese kana teaching, and transient Home Quick Review behavior.
 
 ## Current V1 release decision — 2026-10-01
 
@@ -64,8 +65,8 @@
 - Ordinary navigation through Learned content cannot downgrade it.
 - Restart explicitly clears Learned and resets the position while preserving Favorites and Review later.
 - Completing the final Modern/Usage page is an explicit Next Symbol / Complete Symbol action that marks the current Symbol learned, preserves Review later/Favorite, and opens the next non-Learned record. The final record shows corpus completion; the character menu remains available for independent library actions.
-- A learned Symbol opened through ordinary view entry uses a dedicated Revisit state with Revisit Journey, Quick Review, and View Usage actions; it does not restart or replay first-completion behavior.
-- Quick Review is recognition-oriented, contains no XP/score/timer mechanics, uses only approved available content, and can always open the complete Symbol Journey.
+- A learned Symbol opened through ordinary view entry uses a dedicated Revisit state with Revisit Journey, optional global Quick Review access, and View Usage actions; it does not restart or replay first-completion behavior.
+- Quick Review is recognition-oriented, contains no XP/score/timer mechanics, uses only approved available content, and can open the complete Symbol Journey only after an incorrect choice.
 - The final installed record presents a calm Completion state with Return Home and Revisit actions; it does not use confetti, XP, streaks, or scoring.
 - Legacy LessonStep and single-focus state decode through migration without deleting state.
 
@@ -208,5 +209,5 @@
 
 - Foundation architecture, local state, content tooling, root shell, discovery foundations, and the first Symbol visual slice are implemented.
 - Fire, Water, and Tree remain draft corpus records. Their acquired historical SVGs and educational concept illustrations are locally packaged with provenance, while unresolved stages intentionally expose missing-content states.
-- Completion, Today/Structure/Usage/Summary visual polish, History/utility-row migration, Revisit/Quick Review visual polish, and final historical asset provenance remain active work.
+- Completion, Today/Structure/Usage/Summary visual polish, History/utility-row migration, Revisit/Quick Review visual polish, and final historical asset provenance were active work in this historical implementation record; the current Quick Review behavior is defined in the 2026-10-02 decision above.
 - Windows verification is green; native SwiftUI compilation and visual QA remain external macOS work.

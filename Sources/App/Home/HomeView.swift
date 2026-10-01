@@ -24,11 +24,11 @@ struct HomeView: View {
                         ContentUnavailableView("No Shared Characters", systemImage: "character")
                     }
 
-                    if !reviewRecords.isEmpty || continueCollection != nil {
+                    if learnedCount > 0 || continueCollection != nil {
                         Text("Continue Exploring")
                             .font(AppTypography.sectionHeading)
                             .foregroundStyle(AppColors.textPrimary)
-                        if !reviewRecords.isEmpty { reviewModule }
+                        if learnedCount > 0 { quickReviewModule }
                         if continueCollection != nil { collectionModule }
                     }
 
@@ -49,12 +49,15 @@ struct HomeView: View {
         .tint(AppColors.accentPrimary)
     }
 
-    /// Resolves Home's single dominant action: active journey, relevant review, then editorial next.
+    /// Resolves Home's single dominant action: active journey, then the next editorial symbol.
     private func hero(for record: SharedCharacterRecord) -> some View {
         // Compatibility note: the former contract called this action "Resume current lesson";
         // the approved shell uses the character-specific "Continue …" wording below.
         let isResuming = userStateStore.state.activeJourneySymbolID == record.id
-        let isReviewHero = !isResuming && learnedCount > 0 && reviewRecords.first?.id == record.id
+        let isLearned = userStateStore.state.lessonStates[record.id]?.progressStatus == .learned
+        let actionTitle = isResuming
+            ? "Continue \(record.coreSharedMeaning.capitalized)"
+            : (isLearned ? "Revisit \(record.coreSharedMeaning.capitalized)" : "Start with \(record.coreSharedMeaning.capitalized)")
         return VStack(alignment: .center, spacing: AppSpacing.spaceSm) {
             Text(record.coreSharedMeaning.capitalized)
                 .font(AppTypography.heroConcept)
@@ -66,28 +69,32 @@ struct HomeView: View {
                 // The preview owns a little breathing room before the primary action.
                 .frame(maxWidth: .infinity, minHeight: 300, maxHeight: 320)
                 .padding(.bottom, AppSpacing.spaceSm)
-            PrimaryActionButton(isReviewHero ? "Start Quick Review" : (isResuming ? "Continue \(record.coreSharedMeaning.capitalized)" : "Start with \(record.coreSharedMeaning.capitalized)")) {
-                dependencies.navigationState.openSymbol(record.id, intent: isReviewHero ? .review : (isResuming ? .resume : .start))
+            PrimaryActionButton(actionTitle) {
+                dependencies.navigationState.openSymbol(record.id, intent: isResuming ? .resume : (isLearned ? .view : .start))
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
-    private var reviewModule: some View {
+    private var quickReviewModule: some View {
         GroupedSurface {
             VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
-            HStack {
-                Text("Quick Review").font(AppTypography.stageTitle)
-                Spacer()
-                Text("Review →").font(AppTypography.caption).foregroundStyle(AppColors.accentPrimary)
-            }
-            Text(reviewRecords.prefix(3).map(\.coreCharacter).joined(separator: "  "))
-                .font(.system(size: 30, design: .serif))
-                .foregroundStyle(AppColors.textPrimary)
-            Text("\(reviewRecords.count) symbols to revisit")
-                .font(AppTypography.caption)
-                .foregroundStyle(AppColors.textSecondary)
-            SecondaryActionButton("Start Quick Review") { dependencies.navigationState.openSymbol(reviewRecords[0].id, intent: .review) }
+                HStack {
+                    Text("Quick Review").font(AppTypography.stageTitle)
+                    Spacer()
+                    Text("Review →").font(AppTypography.caption).foregroundStyle(AppColors.accentPrimary)
+                }
+                Text(learnedRecords.prefix(3).map(\.coreCharacter).joined(separator: "  "))
+                    .font(.system(size: 30, design: .serif))
+                    .foregroundStyle(AppColors.textPrimary)
+                Text("\(learnedRecords.count) learned symbol\(learnedRecords.count == 1 ? "" : "s") to review")
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
+                SecondaryActionButton("Start Quick Review") {
+                    if let firstLearned = learnedRecords.first {
+                        dependencies.navigationState.openSymbol(firstLearned.id, intent: .review)
+                    }
+                }
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -141,9 +148,10 @@ struct HomeView: View {
            state.progressStatus == .inProgress {
             return LessonRoute(sharedCharacterID: active, startingPosition: state.lastPosition ?? .origin)
         }
-        if let review = reviewRecords.first, learnedCount > 0 { return LessonRoute(sharedCharacterID: review.id) }
-        return dependencies.sharedCharacters.first(where: { userStateStore.state.lessonStates[$0.id]?.progressStatus != .learned })
-            .map { LessonRoute(sharedCharacterID: $0.id, startingPosition: .origin) }
+        if let next = dependencies.sharedCharacters.first(where: { userStateStore.state.lessonStates[$0.id]?.progressStatus != .learned }) {
+            return LessonRoute(sharedCharacterID: next.id, startingPosition: .origin)
+        }
+        return learnedRecords.first.map { LessonRoute(sharedCharacterID: $0.id, startingPosition: .origin) }
     }
 
     private var homeRecord: SharedCharacterRecord? {
@@ -153,8 +161,8 @@ struct HomeView: View {
             ?? (try? dependencies.corpusRepository.sharedCharacter(id: route.sharedCharacterID))
     }
 
-    private var reviewRecords: [SharedCharacterRecord] {
-        dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.isReviewLater == true }
+    private var learnedRecords: [SharedCharacterRecord] {
+        dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.progressStatus == .learned }
     }
 
     /// Prefers the collection with the most progress, then an untouched collection when no partial collection exists.

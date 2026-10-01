@@ -16,8 +16,8 @@ The official product-facing name is Script Roots. AsianLanguage remains the inte
 6. Content contract — complete; the 126-record editorial package and review record are approved/published
 7. Asset pipeline — complete for V1; approved local package and provenance are synchronized
 8. V1 corpus — complete; the 126-record complete-evolution package is the release corpus
-9. Design and QA — complete for V1 acceptance; post-release findings become Patch 0.1 maintenance
-10. V1 release — implementation complete; Apple/Xcode verification, packaging, and submission are the next distribution actions
+9. Design and QA — previous V1 pass complete; focused Apple-review findings are active before release
+10. V1 release — pending focused UI/content corrections, Apple/Xcode verification, packaging, and submission
 
 ## Current status
 
@@ -27,10 +27,10 @@ Discovery and content-contract foundations are complete, including Browse-owned 
 
 ## Authoritative release posture — 2026-10-01
 
-- V1 editorial review and the screenshot-driven final implementation pass are complete for the approved content boundaries.
-- The pass corrected the blank History table bodies, completed all 126 Oracle Bone and Regular Script learner captions, aligned the four Usage layouts, added pronunciation/orientation guidance, exposed Symbol actions directly, and consolidated source/about navigation.
-- All local contract and release-readiness checks pass; the corrected SwiftUI surfaces still require macOS/Xcode screenshot verification before the build is called marketplace-ready.
-- Marketplace packaging follows Apple verification; post-release Patch 0.1 remains the maintenance path for issues discovered after release.
+- V1 editorial review and the previous screenshot-driven implementation pass are complete for the approved content boundaries.
+- The latest Apple review identified four focused follow-ups. The Symbol toolbar, target-language Usage hierarchy, complete Japanese kana guidance, and final Quick Review behavior are now implemented locally. Quick Review is a Home-surfaced randomized review of all learned Symbols; Review Later remains a separate Browse bookmark for full-journey revisits.
+- Onboarding, most Symbol text, Chinese History guidance, Korean History guidance, and the complete modern Japanese Hiragana/Katakana sound overview are complete.
+- All local contract and release-readiness checks pass; marketplace packaging still requires Apple/Xcode screenshot verification.
 - Older dated testing and handoff sections below remain historical records. This section is the current project truth.
 
 ## Current implementation snapshot — 2026-09-03
@@ -50,8 +50,8 @@ This section is an implementation record retained for traceability. The authorit
 - Home lineage preview now uses actual available corpus forms only.
 - Today now presents one horizontal exhibit page per selected language track, without language-specific color coding.
 - Ordinary Symbol viewing no longer records progress merely because a Browse/Search result was opened.
-- Learned Symbols now have a dedicated revisit entry with Revisit Journey, Quick Review, and View Usage actions.
-- Quick Review is a lightweight recognition surface with a complete-journey escape hatch and no scoring or gamification.
+- Learned Symbols now have a dedicated revisit entry with Revisit Journey, optional global Quick Review, and View Usage actions.
+- Quick Review is a lightweight randomized three-choice review of all learned Symbols; Review Later remains a plain Browse list for returning to full journeys.
 - The final installed record now has a calm Completion state with Return Home and Revisit actions.
 - Browse status and in-progress records now use the shared CharacterTile primitive.
 - Structure and source detail now live behind the character `…` menu rather than interrupting the museum flow.
@@ -84,7 +84,7 @@ This section is an implementation record retained for traceability. The authorit
 
 - Fire, Water, and Tree concept art remains correctly classified as educational reconstruction; it is approved for that role and is never historical evidence.
 - Allowlisted historical SVGs and explicit unavailable-stage handling are approved for V1; post-release rendering corrections can be issued through Patch 0.1.
-- Modern/Usage, Completion, Revisit, Quick Review, and History pages are accepted for V1. User findings after marketplace release become maintenance work.
+- Modern/Usage, Completion, Revisit, History, and Quick Review are accepted for the current V1 implementation pass. Apple/Xcode visual verification remains the release gate.
 - The approved Symbol / History / modern-language polish implementation is complete for V1, including stage backgrounds, period removal, one-page onboarding, pronunciation seam, clickable History detail destinations, modern-language branches, and comparison tables.
 - Historical asset provenance, source, specialist, native-speaker, and editorial review are recorded as complete for V1.
 - The 148-character research intake produced 568 of 592 possible Oracle Bone/Bronze/Small Seal/Clerical selections; V1 is restricted to the 126 characters with all four stages. The intake remains archival research history; the selected V1 package is the approved release asset set.
@@ -186,7 +186,7 @@ These are candidates to rank together, not an instruction to implement every ite
 
 - Implemented the agreed History article/content pass with all five stage destinations, the modern bridge, four modern-language destinations, native editorial copy, corpus-backed example links, next-page navigation, and full-row navigation hit areas.
 - Implemented the agreed normal-page cleanup: production-language Your Progress presentation, Settings cleanup, About / Method separation, canonical Sources & Licenses presentation, legal-notice surface, Home pluralization/progress treatment, Browse resume labels, and focused Search Cancel behavior.
-- Implemented the approved calm polish: five-prompt Quick Review when data supports it, one-time journey hint, restrained completion haptic, text-first system Share Symbol, user-initiated review reminders, feedback sharing, Reduce Motion handling, and accessibility labels/targets in the touched surfaces.
+- Implemented the approved calm polish: the initial five-prompt Quick Review, one-time journey hint, restrained completion haptic, text-first system Share Symbol, user-initiated review reminders, feedback sharing, Reduce Motion handling, and accessibility labels/targets in the touched surfaces. The initial Quick Review flow was superseded on 2026-10-02 by the Home-wide learned-Symbol session documented above.
 - Explicitly excluded: new History artwork, ads, StoreKit, monetization, analytics, picture/scan recognition, cloud sync, and gamification.
 - The current bundle still uses the existing `History_V1.png` artwork and approved ZDIC-backed assets. Artwork replacement or newly added assets would require a separate future review.
 
@@ -195,7 +195,7 @@ These are candidates to rank together, not an instruction to implement every ite
 This record preserves the remaining handoff suggestions without approving another implementation before the next testing round.
 
 - Permanently out of scope: XP, points, streaks, lives, coins, gems, badges, leaderboards, competitive ranking, and other game mechanics. Script Roots is a museum app; retention must remain calm, educational, and recognition-oriented.
-- Revisit after next testing: new History artwork and illustrated 2×2 modern-language cards, a compact article-specific History source surface, more complete legal/license/source presentation, a visual Share Symbol card, a fuller Quick Review session, richer feedback submission, notification-flow refinement, broader haptics, dark-mode polish, performance tuning, and a complete accessibility/offline/device QA pass.
+- Revisit after next testing: new History artwork and illustrated 2×2 modern-language cards, a compact article-specific History source surface, more complete legal/license/source presentation, a visual Share Symbol card, richer feedback submission, notification-flow refinement, broader haptics, dark-mode polish, performance tuning, and a complete accessibility/offline/device QA pass. The fuller Quick Review session is now implemented and is not an open item.
 - Revisit after next testing: full copy and editorial review across readings, translations, dates, terminology, truncation, native-speaker approval, historical interpretation, and source-rights clearance.
 - Separate future feature: offline present-day picture/scan recognition with exact matching into the existing dictionary/Symbol route and an explicit no-match state. Historical-glyph recognition, cloud processing, image upload, and automatic photo storage remain out of scope unless separately approved.
 - Launch collateral not yet produced: App Store screenshots, listing copy, positioning, and a later review-prompt decision.

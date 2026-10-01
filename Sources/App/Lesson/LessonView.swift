@@ -48,6 +48,12 @@ struct LessonView: View {
         try? dependencies.corpusRepository.sharedCharacter(id: route.sharedCharacterID)
     }
 
+    private var learnedRecords: [SharedCharacterRecord] {
+        dependencies.sharedCharacters.filter {
+            userStateStore.state.lessonStates[$0.id]?.progressStatus == .learned
+        }
+    }
+
     var body: some View {
         Group {
             if showingCorpusComplete, let record = sharedCharacter {
@@ -83,18 +89,14 @@ struct LessonView: View {
                     )
                 case .review:
                     QuickReviewView(
-                        record: record,
+                        records: learnedRecords,
+                        distractorRecords: dependencies.sharedCharacters,
                         onOpenJourney: {
                             position = .origin
                             entryMode = .journey
                         },
                         onFinish: {
-                            if let next = dependencies.nextReviewLater(after: route.sharedCharacterID) {
-                                let nextIntent: SymbolOpenIntent = openingIntent == .reviewFromBrowse ? .reviewFromBrowse : .review
-                                dependencies.navigationState.openSymbol(next.id, intent: nextIntent)
-                            } else {
-                                dependencies.navigationState.selectedTab = openingIntent == .reviewFromBrowse ? .browse : .home
-                            }
+                            dependencies.navigationState.selectedTab = openingIntent == .reviewFromBrowse ? .browse : .home
                         }
                     )
                 case .usage:
@@ -108,54 +110,42 @@ struct LessonView: View {
                 ContentUnavailableView("Symbol Unavailable", systemImage: "exclamationmark.triangle")
             }
         }
-        .navigationTitle(sharedCharacter.map { "\(navigationMeaning(for: $0)) · \($0.coreCharacter)" } ?? "Symbol")
+        .navigationTitle(entryMode == .review ? "Quick Review" : (sharedCharacter.map { "\(navigationMeaning(for: $0)) · \($0.coreCharacter)" } ?? "Symbol"))
         .navigationBarTitleDisplayMode(.inline)
         .background(AppColors.appBackground.ignoresSafeArea())
         .tint(AppColors.accentPrimary)
         .toolbar {
-            if openingIntent == .view || openingIntent == .reviewFromBrowse {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button {
-                        dependencies.navigationState.selectedTab = .browse
-                    } label: {
-                        Label("Browse", systemImage: "chevron.left")
+            if entryMode != .review {
+                if openingIntent == .view || openingIntent == .reviewFromBrowse {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button {
+                            dependencies.navigationState.selectedTab = .browse
+                        } label: {
+                            Label("Browse", systemImage: "chevron.left")
+                        }
+                        .accessibilityLabel("Back to Browse")
                     }
-                    .accessibilityLabel("Back to Browse")
-                }
-            } else {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button {
-                        dependencies.navigationState.selectedTab = .home
-                    } label: {
-                        Label("Home", systemImage: "chevron.left")
+                } else {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button {
+                            dependencies.navigationState.selectedTab = .home
+                        } label: {
+                            Label("Home", systemImage: "chevron.left")
+                        }
+                        .accessibilityLabel("Back to Home")
                     }
-                    .accessibilityLabel("Back to Home")
                 }
-            }
-            ToolbarItemGroup(placement: .topBarTrailing) {
-                Button {
-                    toggleFavorite()
-                } label: {
-                    Image(systemName: isFavorite ? "star.fill" : "star")
-                }
-                .accessibilityLabel(isFavorite ? "Remove from Favorites" : "Add to Favorites")
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    Button {
+                        toggleFavorite()
+                    } label: {
+                        Image(systemName: isFavorite ? "star.fill" : "star")
+                    }
+                    .accessibilityLabel(isFavorite ? "Remove from Favorites" : "Add to Favorites")
 
-                Button {
-                    toggleReviewLater()
-                } label: {
-                    Image(systemName: isReviewLater ? "note.text" : "note")
-                }
-                .accessibilityLabel(isReviewLater ? "Remove from Review Later" : "Save for Review Later")
-
-                Button {
-                    showingShareSheet = true
-                } label: {
-                    Image(systemName: "square.and.arrow.up")
-                }
-                .accessibilityLabel("Share Symbol")
-
-                IconActionButton(systemName: "ellipsis", accessibilityLabel: "About this character") {
-                    showingAbout = true
+                    IconActionButton(systemName: "ellipsis", accessibilityLabel: "About this character") {
+                        showingAbout = true
+                    }
                 }
             }
         }
@@ -163,6 +153,12 @@ struct LessonView: View {
             if let record = sharedCharacter {
                 CharacterAboutSheet(
                     record: record,
+                    isReviewLater: isReviewLater,
+                    onToggleReviewLater: toggleReviewLater,
+                    onShare: {
+                        showingAbout = false
+                        showingShareSheet = true
+                    },
                     onMarkLearned: markLearnedAndOpenNext
                 )
             }
@@ -414,134 +410,179 @@ private struct RevisitEntryView: View {
     }
 }
 
-/// Recognition-oriented review stays lightweight and always offers the complete journey as an escape hatch.
+/// Recognition-oriented review tests one learned Symbol at a time without changing learner state.
 private struct QuickReviewView: View {
-    let record: SharedCharacterRecord
     let onOpenJourney: () -> Void
     let onFinish: () -> Void
-    @State private var questionIndex = 0
-    @State private var isAnswerVisible = false
+    @State private var cards: [QuickReviewCard]
+    @State private var cardIndex = 0
+    @State private var selectedOptionID: String?
 
-    private var questions: [QuickReviewQuestion] {
-        var result: [QuickReviewQuestion] = []
-        if let reviewStage = record.history.stages.first(where: { $0.form?.isEmpty == false }), let form = reviewStage.form {
-            result.append(
-                QuickReviewQuestion(
-                    id: "historical-form",
-                    question: "What character connects to this form?",
-                    prompt: form,
-                    answer: "\(record.coreCharacter) · \(record.coreSharedMeaning.capitalized)"
-                )
-            )
-        }
-        result.append(
-            QuickReviewQuestion(
-                id: "meaning",
-                question: "What idea does this character carry?",
-                prompt: record.coreCharacter,
-                answer: record.coreSharedMeaning.capitalized
-            )
-        )
-        if let reading = record.focusCoverage.simplifiedChinese.readings.first?.value {
-            result.append(
-                QuickReviewQuestion(
-                    id: "mandarin-reading",
-                    question: "How is it read in Mandarin?",
-                    prompt: record.coreCharacter,
-                    answer: reading
-                )
-            )
-        }
-        if let reading = record.focusCoverage.japanese.readings.first?.value {
-            result.append(
-                QuickReviewQuestion(
-                    id: "japanese-reading",
-                    question: "How is it read in Japanese?",
-                    prompt: record.coreCharacter,
-                    answer: reading
-                )
-            )
-        }
-        if let reading = record.focusCoverage.korean.readings.first?.value {
-            result.append(
-                QuickReviewQuestion(
-                    id: "korean-reading",
-                    question: "How is it read in Korean?",
-                    prompt: record.coreCharacter,
-                    answer: reading
-                )
-            )
-        }
-        // Keep the review short while using up to five recognition prompts when the data supports them.
-        return Array(result.prefix(5))
+    init(
+        records: [SharedCharacterRecord],
+        distractorRecords: [SharedCharacterRecord],
+        onOpenJourney: @escaping () -> Void,
+        onFinish: @escaping () -> Void
+    ) {
+        self.onOpenJourney = onOpenJourney
+        self.onFinish = onFinish
+        _cards = State(initialValue: QuickReviewCard.makeSession(records: records, distractorRecords: distractorRecords))
     }
 
-    private var currentQuestion: QuickReviewQuestion {
-        questions[min(questionIndex, questions.count - 1)]
+    private var currentCard: QuickReviewCard? {
+        cards.indices.contains(cardIndex) ? cards[cardIndex] : nil
+    }
+
+    private var hasAnswered: Bool {
+        selectedOptionID != nil
     }
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: AppSpacing.spaceLg) {
-                Text("QUICK REVIEW")
-                    .font(AppTypography.conceptLabel)
-                    .tracking(1.4)
-                    .foregroundStyle(AppColors.textSecondary)
-                Text("QUESTION \(questionIndex + 1) OF \(questions.count)")
-                    .font(AppTypography.metadata)
-                    .foregroundStyle(AppColors.textSecondary)
-                Text(currentQuestion.question)
-                    .font(AppTypography.stageTitle)
-                    .foregroundStyle(AppColors.textPrimary)
-                    .multilineTextAlignment(.center)
-                ArtifactField {
-                    Text(currentQuestion.prompt)
-                        .font(.system(size: 112, design: .serif))
-                        .foregroundStyle(AppColors.artifactInk)
-                        .frame(maxWidth: .infinity, minHeight: 190)
-                }
-                if isAnswerVisible {
-                    GroupedSurface {
-                        Text(currentQuestion.answer)
-                            .font(AppTypography.body.weight(.semibold))
-                            .frame(maxWidth: .infinity)
+        if let currentCard {
+            ScrollView {
+                VStack(spacing: AppSpacing.spaceLg) {
+                    Text("QUICK REVIEW")
+                        .font(AppTypography.conceptLabel)
+                        .tracking(1.4)
+                        .foregroundStyle(AppColors.textSecondary)
+                    Text("SYMBOL \(cardIndex + 1) OF \(cards.count)")
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
+                    Text(currentCard.question)
+                        .font(AppTypography.stageTitle)
+                        .foregroundStyle(AppColors.textPrimary)
+                        .multilineTextAlignment(.center)
+                    ArtifactField {
+                        Text(currentCard.prompt)
+                            .font(.system(size: 112, design: .serif))
+                            .foregroundStyle(AppColors.artifactInk)
+                            .frame(maxWidth: .infinity, minHeight: 190)
                     }
-                    PrimaryActionButton(questionIndex + 1 < questions.count ? "Next Question" : "Finish Review") {
-                        if questionIndex + 1 < questions.count {
-                            questionIndex += 1
-                            isAnswerVisible = false
-                        } else {
-                            onFinish()
+                    VStack(spacing: AppSpacing.spaceXs) {
+                        ForEach(currentCard.options) { option in
+                            Button {
+                                guard !hasAnswered else { return }
+                                selectedOptionID = option.id
+                            } label: {
+                                HStack {
+                                    Text(option.text)
+                                        .font(AppTypography.body.weight(.semibold))
+                                        .foregroundStyle(AppColors.textPrimary)
+                                        .multilineTextAlignment(.leading)
+                                    Spacer()
+                                    if hasAnswered && option.id == currentCard.correctOptionID {
+                                        Image(systemName: "checkmark.circle.fill")
+                                            .foregroundStyle(AppColors.learned)
+                                    } else if hasAnswered && option.id == selectedOptionID {
+                                        Image(systemName: "xmark.circle.fill")
+                                            .foregroundStyle(AppColors.accentPrimary)
+                                    }
+                                }
+                                .frame(maxWidth: .infinity, minHeight: 52, alignment: .leading)
+                                .padding(.horizontal, AppSpacing.spaceSm)
+                                .background(optionBackground(option, for: currentCard))
+                                .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
+                                .overlay {
+                                    RoundedRectangle(cornerRadius: AppRadius.small)
+                                        .stroke(AppColors.separator, lineWidth: 1)
+                                }
+                            }
+                            .buttonStyle(.plain)
                         }
                     }
-                } else {
-                    SecondaryActionButton("Tap to Reveal") {
-                        isAnswerVisible = true
+                    if hasAnswered {
+                        GroupedSurface {
+                            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                                Text(selectedOptionID == currentCard.correctOptionID ? "Correct" : "Not quite")
+                                    .font(AppTypography.body.weight(.semibold))
+                                    .foregroundStyle(AppColors.textPrimary)
+                                if selectedOptionID != currentCard.correctOptionID {
+                                    Text("The answer is \(currentCard.correctAnswer).")
+                                        .font(AppTypography.caption)
+                                        .foregroundStyle(AppColors.textSecondary)
+                                }
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                        if selectedOptionID != currentCard.correctOptionID {
+                            SecondaryActionButton("Check this Symbol", action: onOpenJourney)
+                        }
+                        PrimaryActionButton(cardIndex + 1 < cards.count ? "Next Symbol" : "Finish Review", action: advance)
                     }
                 }
-                Button("Open \(record.coreSharedMeaning.capitalized) Journey", action: onOpenJourney)
-                    .font(AppTypography.body)
-                    .foregroundStyle(AppColors.accentPrimary)
-                    .frame(minHeight: 44)
+                .frame(maxWidth: .infinity)
+                .padding(AppSpacing.spacePage)
             }
-            .frame(maxWidth: .infinity)
-            .padding(AppSpacing.spacePage)
+            .scrollIndicators(.hidden)
+        } else {
+            ContentUnavailableView(
+                "No Learned Symbols",
+                systemImage: "checkmark.circle",
+                description: Text("Complete a Symbol Journey to begin Quick Review.")
+            )
         }
-        .scrollIndicators(.hidden)
+    }
+
+    private func optionBackground(_ option: QuickReviewOption, for card: QuickReviewCard) -> Color {
+        guard hasAnswered else { return AppColors.surfaceElevated }
+        if option.id == card.correctOptionID { return AppColors.learned.opacity(0.14) }
+        if option.id == selectedOptionID { return AppColors.accentPrimary.opacity(0.12) }
+        return AppColors.surfaceElevated
+    }
+
+    private func advance() {
+        guard cardIndex + 1 < cards.count else {
+            onFinish()
+            return
+        }
+        cardIndex += 1
+        selectedOptionID = nil
     }
 }
 
-/// One small recognition prompt keeps Quick Review useful without reopening the full museum journey.
-private struct QuickReviewQuestion: Identifiable {
+private struct QuickReviewCard: Identifiable {
     let id: String
-    let question: String
     let prompt: String
-    let answer: String
+    let question: String
+    let options: [QuickReviewOption]
+    let correctOptionID: String
+    let correctAnswer: String
+
+    static func makeSession(
+        records: [SharedCharacterRecord],
+        distractorRecords: [SharedCharacterRecord]
+    ) -> [QuickReviewCard] {
+        records.shuffled().map { record in
+            let correctAnswer = record.coreSharedMeaning.capitalized
+            let distractors = distractorRecords
+                .filter { $0.id != record.id && $0.coreSharedMeaning != record.coreSharedMeaning }
+                .shuffled()
+                .prefix(2)
+                .map { QuickReviewOption(id: "\(record.id)-\($0.id)", text: $0.coreSharedMeaning.capitalized) }
+            let correctOption = QuickReviewOption(id: record.id, text: correctAnswer)
+            return QuickReviewCard(
+                id: record.id,
+                prompt: record.coreCharacter,
+                question: "What does this symbol mean?",
+                options: ([correctOption] + distractors).shuffled(),
+                correctOptionID: correctOption.id,
+                correctAnswer: correctAnswer
+            )
+        }
+    }
+}
+
+private struct QuickReviewOption: Identifiable {
+    let id: String
+    let text: String
 }
 
 /// Secondary information sheet keeps sources, provenance, and quiet actions out of the exhibit chrome.
 private struct CharacterAboutSheet: View {
     let record: SharedCharacterRecord
+    let isReviewLater: Bool
+    let onToggleReviewLater: () -> Void
+    let onShare: () -> Void
     let onMarkLearned: () -> Void
     @Environment(\.dismiss) private var dismiss
 
@@ -561,7 +602,21 @@ private struct CharacterAboutSheet: View {
                             .foregroundStyle(AppColors.textSecondary)
                     }
                 }
-                Section("Learning") {
+                Section("Actions") {
+                    Button {
+                        onToggleReviewLater()
+                    } label: {
+                        Label(
+                            isReviewLater ? "Remove from Review Later" : "Review Later",
+                            systemImage: isReviewLater ? "note.text" : "note"
+                        )
+                    }
+                    Button {
+                        dismiss()
+                        onShare()
+                    } label: {
+                        Label("Share Symbol", systemImage: "square.and.arrow.up")
+                    }
                     Button("Mark as Learned", action: onMarkLearned)
                         .foregroundStyle(AppColors.learned)
                 }
