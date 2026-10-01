@@ -491,19 +491,6 @@ private struct QuickReviewView: View {
                         }
                     }
                     if hasAnswered {
-                        GroupedSurface {
-                            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                                Text(selectedOptionID == currentCard.correctOptionID ? "Correct" : "Not quite")
-                                    .font(AppTypography.body.weight(.semibold))
-                                    .foregroundStyle(AppColors.textPrimary)
-                                if selectedOptionID != currentCard.correctOptionID {
-                                    Text("The answer is \(currentCard.correctAnswer).")
-                                        .font(AppTypography.caption)
-                                        .foregroundStyle(AppColors.textSecondary)
-                                }
-                            }
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        }
                         if selectedOptionID != currentCard.correctOptionID {
                             SecondaryActionButton("Check this Symbol", action: onOpenJourney)
                         }
@@ -546,7 +533,6 @@ private struct QuickReviewCard: Identifiable {
     let question: String
     let options: [QuickReviewOption]
     let correctOptionID: String
-    let correctAnswer: String
 
     static func makeSession(
         records: [SharedCharacterRecord],
@@ -565,8 +551,7 @@ private struct QuickReviewCard: Identifiable {
                 prompt: record.coreCharacter,
                 question: "What does this symbol mean?",
                 options: ([correctOption] + distractors).shuffled(),
-                correctOptionID: correctOption.id,
-                correctAnswer: correctAnswer
+                correctOptionID: correctOption.id
             )
         }
     }

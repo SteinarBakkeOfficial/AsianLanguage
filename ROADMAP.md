@@ -28,8 +28,8 @@ Discovery and content-contract foundations are complete, including Browse-owned 
 ## Authoritative release posture — 2026-10-01
 
 - V1 editorial review and the previous screenshot-driven implementation pass are complete for the approved content boundaries.
-- The latest Apple review identified four focused follow-ups. The Symbol toolbar, target-language Usage hierarchy, complete Japanese kana guidance, and final Quick Review behavior are now implemented locally. Quick Review is a Home-surfaced randomized review of all learned Symbols; Review Later remains a separate Browse bookmark for full-journey revisits.
-- Onboarding, most Symbol text, Chinese History guidance, Korean History guidance, and the complete modern Japanese Hiragana/Katakana sound overview are complete.
+- The latest Apple review identified four focused follow-ups. The Symbol toolbar, corrected target-language Usage hierarchy, compact Japanese kana guidance, and final Quick Review behavior are now implemented locally. Quick Review is a Home-surfaced randomized review of all learned Symbols; Review Later remains a separate Browse bookmark for full-journey revisits.
+- Onboarding, most Symbol text, Chinese History guidance, Korean History guidance, and the compact modern Japanese Hiragana/Katakana sound-pattern guide are complete.
 - All local contract and release-readiness checks pass; marketplace packaging still requires Apple/Xcode screenshot verification.
 - Older dated testing and handoff sections below remain historical records. This section is the current project truth.
 

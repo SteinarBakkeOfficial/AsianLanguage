@@ -506,19 +506,24 @@ Target-language content can be used for some cards, but Quick Review should not 
 
 Implementation status: AT-17 (toolbar action hierarchy), AT-18 (target-language Usage hierarchy), AT-19 (Japanese kana composition and decoding guidance), and AT-20 (Quick Review behavior) are implemented locally. AT-22 is also complete. Apple/Xcode visual verification remains.
 
-### AT-22 — Japanese History needs the complete kana sound overview
+### AT-22 — Japanese History needs a compact kana sound guide
 
-The previous guide showed only representative rows such as `あ`, `か`, `さ`, `た`, and `ん`, plus composition examples. That was not sufficient for a learner who needs to decode the full sound set.
+The previous guide showed representative rows plus composition examples, then expanded into a long wall of every basic, voiced, and contracted kana. That was more than this History page needs and made the explanation harder to scan.
 
 The finished guide should include:
 
-- the full basic kana table in both Hiragana and Katakana with Romaji;
-- dakuten and handakuten sound changes such as `か → が`, `は → ば`, and `は → ぱ`;
-- contracted sounds/yōon such as `きゃ`, `しゅ`, and `ちょ`;
-- small `っ`, long-vowel `ー`, and the important reading exceptions/particle readings;
+- a compact row-based table showing the shared Hiragana/Katakana sound pattern with Romaji;
+- a small set of clear construction examples for dakuten, contracted sounds, small `っ`, and long-vowel `ー`;
+- the important reading exceptions/particle readings;
 - a clear statement that Hiragana and Katakana represent the same basic sounds in different writing systems.
 
-Implementation status: complete locally. The History guide now presents all 46 modern basic kana in both scripts, the voiced and semi-voiced rows, the standard contracted-sound rows, and the major small-`っ`, long-vowel, `ん`, and particle-reading rules. It also explains that extended Katakana spellings for imported words are combinations built from this inventory, not a missing second basic chart. Quick Review is resolved separately below under AT-20.
+Implementation status: complete locally. The History guide now uses a compact Gojūon-style row table and a short construction table instead of a full vertical inventory. Quick Review is resolved separately below under AT-20.
+
+### Final target-language alignment correction — 2026-10-02
+
+The target-language Usage pages now center only the primary modern form and its direct reading block. The contextual examples remain left-aligned: the native example and its reading share one line, with the English meaning below. Japanese furigana, Chinese readings, Korean equivalents, and regional Traditional Chinese sections retain their language-specific content without centering the entire example list.
+
+Implementation status: complete locally. This correction supersedes the over-centered intermediate layout identified during testing.
 
 ### Final Quick Review resolution — 2026-10-02
 

@@ -88,7 +88,7 @@ struct UsageExamplesView: View {
         ensureBasicSentenceAtEnd: Bool = false,
         showsJapaneseFurigana: Bool = false
     ) -> some View {
-        VStack(alignment: .center, spacing: AppSpacing.spaceXs) {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
             Text(title)
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
@@ -116,8 +116,7 @@ struct UsageExamplesView: View {
     }
 
     /// Presents the selected language's modern form before its contextual examples.
-    /// Every track uses the same centered form-and-reading relationship; only the script-specific
-    /// reading content changes beside the written form.
+    /// Centers only the primary form and its direct reading block; contextual examples remain left-aligned below.
     private func languageFormHeader(form: String, readings: [CharacterReading], fontRole: CJKFontRole) -> some View {
         VStack(alignment: .center, spacing: AppSpacing.spaceXs) {
             Text(form)
@@ -150,10 +149,9 @@ struct UsageExamplesView: View {
                     .font(AppTypography.metadata)
                     .foregroundStyle(AppColors.textSecondary)
             }
-            Spacer(minLength: 0)
             PronunciationButton(reading: reading)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(maxWidth: .infinity, alignment: .center)
     }
 
     /// Shows a Korean native equivalent as its own semantic relationship, not as another Hanja reading.
@@ -171,10 +169,9 @@ struct UsageExamplesView: View {
                     .font(AppTypography.metadata)
                     .foregroundStyle(AppColors.textSecondary)
             }
-            Spacer(minLength: 0)
             PronunciationButton(reading: equivalent)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(maxWidth: .infinity, alignment: .center)
     }
 
     /// Uses established linguistic labels instead of flattening distinct reading systems into one caption.
@@ -230,7 +227,7 @@ struct UsageExamplesView: View {
 
     /// Korean keeps the Hanja form and an explicit native-script variant together on the Usage page.
     private func koreanWordCard(_ coverage: StandardFocusCoverage) -> some View {
-        VStack(alignment: .center, spacing: AppSpacing.spaceXs) {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
             Text("Korean · Hanja / Hangul")
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
@@ -246,7 +243,7 @@ struct UsageExamplesView: View {
                 }
             }
             ForEach(coverage.variants, id: \.id) { variant in
-                VStack(alignment: .center, spacing: AppSpacing.space2xs) {
+                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                     Text(variant.writingSystem ?? "Native Korean")
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
@@ -287,7 +284,7 @@ struct UsageExamplesView: View {
         if showsJapaneseFurigana {
             japaneseExampleRow(example)
         } else {
-            VStack(alignment: .center, spacing: AppSpacing.space2xs) {
+            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
                 HStack(alignment: .center, spacing: AppSpacing.spaceSm) {
                     Text(example.text)
                         .font(fontRole.font(size: 19).weight(.semibold))
@@ -301,15 +298,15 @@ struct UsageExamplesView: View {
                 Text(example.translation)
                     .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textSecondary)
-                    .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.leading)
             }
-            .frame(maxWidth: .infinity, alignment: .center)
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 
     /// Matches the approved Japanese hierarchy: natural Kanji, attached kana, romaji, then English.
     private func japaneseExampleRow(_ example: UsageExample) -> some View {
-        VStack(alignment: .center, spacing: AppSpacing.space2xs) {
+        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
             HStack(alignment: .bottom, spacing: AppSpacing.spaceSm) {
                 japaneseWrittenExample(example)
                 if let reading = example.reading, !reading.isEmpty {
@@ -321,9 +318,9 @@ struct UsageExamplesView: View {
             Text(example.translation)
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
-                .multilineTextAlignment(.center)
+                .multilineTextAlignment(.leading)
         }
-        .frame(maxWidth: .infinity, alignment: .center)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     /// Renders structured furigana above the natural Japanese spelling without replacing the Kanji.
@@ -366,7 +363,7 @@ struct UsageExamplesView: View {
 
     /// Keeps Taiwan and Hong Kong usage visibly distinct while retaining one Traditional page.
     private func traditionalWordCard(_ coverage: TraditionalChineseCoverage) -> some View {
-        VStack(alignment: .center, spacing: AppSpacing.spaceXs) {
+        VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
             Text("Traditional Chinese")
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
@@ -390,7 +387,7 @@ struct UsageExamplesView: View {
 
     /// Renders up to four useful context entries for one Traditional Chinese region.
     private func regionalExamples(title: String, readings: [CharacterReading], examples: [UsageExample]) -> some View {
-        VStack(alignment: .center, spacing: AppSpacing.space2xs) {
+        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
             Text(title)
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)

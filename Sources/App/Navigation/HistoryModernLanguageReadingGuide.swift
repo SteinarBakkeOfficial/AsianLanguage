@@ -503,85 +503,43 @@ private struct JyutpingToneGuide: View {
 }
 
 private struct KanaReadingGuide: View {
-    // Keep the full modern kana inventory here so the History page is a usable reference, not a partial sample.
-    private let basicRows = [
-        ("あ", "ア", "a"), ("い", "イ", "i"), ("う", "ウ", "u"), ("え", "エ", "e"), ("お", "オ", "o"),
-        ("か", "カ", "ka"), ("き", "キ", "ki"), ("く", "ク", "ku"), ("け", "ケ", "ke"), ("こ", "コ", "ko"),
-        ("さ", "サ", "sa"), ("し", "シ", "shi"), ("す", "ス", "su"), ("せ", "セ", "se"), ("そ", "ソ", "so"),
-        ("た", "タ", "ta"), ("ち", "チ", "chi"), ("つ", "ツ", "tsu"), ("て", "テ", "te"), ("と", "ト", "to"),
-        ("な", "ナ", "na"), ("に", "ニ", "ni"), ("ぬ", "ヌ", "nu"), ("ね", "ネ", "ne"), ("の", "ノ", "no"),
-        ("は", "ハ", "ha"), ("ひ", "ヒ", "hi"), ("ふ", "フ", "fu"), ("へ", "ヘ", "he"), ("ほ", "ホ", "ho"),
-        ("ま", "マ", "ma"), ("み", "ミ", "mi"), ("む", "ム", "mu"), ("め", "メ", "me"), ("も", "モ", "mo"),
-        ("や", "ヤ", "ya"), ("ゆ", "ユ", "yu"), ("よ", "ヨ", "yo"),
-        ("ら", "ラ", "ra"), ("り", "リ", "ri"), ("る", "ル", "ru"), ("れ", "レ", "re"), ("ろ", "ロ", "ro"),
-        ("わ", "ワ", "wa"), ("を", "ヲ", "wo"), ("ん", "ン", "n")
-    ]
-
-    private let voicedRows = [
-        ("が", "ガ", "ga"), ("ぎ", "ギ", "gi"), ("ぐ", "グ", "gu"), ("げ", "ゲ", "ge"), ("ご", "ゴ", "go"),
-        ("ざ", "ザ", "za"), ("じ", "ジ", "ji"), ("ず", "ズ", "zu"), ("ぜ", "ゼ", "ze"), ("ぞ", "ゾ", "zo"),
-        ("だ", "ダ", "da"), ("ぢ", "ヂ", "ji"), ("づ", "ヅ", "zu"), ("で", "デ", "de"), ("ど", "ド", "do"),
-        ("ば", "バ", "ba"), ("び", "ビ", "bi"), ("ぶ", "ブ", "bu"), ("べ", "ベ", "be"), ("ぼ", "ボ", "bo"),
-        ("ぱ", "パ", "pa"), ("ぴ", "ピ", "pi"), ("ぷ", "プ", "pu"), ("ぺ", "ペ", "pe"), ("ぽ", "ポ", "po"),
-        ("ゔ", "ヴ", "vu")
-    ]
-
-    private let contractedRows = [
-        ("きゃ", "キャ", "kya"), ("きゅ", "キュ", "kyu"), ("きょ", "キョ", "kyo"),
-        ("しゃ", "シャ", "sha"), ("しゅ", "シュ", "shu"), ("しょ", "ショ", "sho"),
-        ("ちゃ", "チャ", "cha"), ("ちゅ", "チュ", "chu"), ("ちょ", "チョ", "cho"),
-        ("にゃ", "ニャ", "nya"), ("にゅ", "ニュ", "nyu"), ("にょ", "ニョ", "nyo"),
-        ("ひゃ", "ヒャ", "hya"), ("ひゅ", "ヒュ", "hyu"), ("ひょ", "ヒョ", "hyo"),
-        ("みゃ", "ミャ", "mya"), ("みゅ", "ミュ", "myu"), ("みょ", "ミョ", "myo"),
-        ("りゃ", "リャ", "rya"), ("りゅ", "リュ", "ryu"), ("りょ", "リョ", "ryo"),
-        ("ぎゃ", "ギャ", "gya"), ("ぎゅ", "ギュ", "gyu"), ("ぎょ", "ギョ", "gyo"),
-        ("じゃ", "ジャ", "ja"), ("じゅ", "ジュ", "ju"), ("じょ", "ジョ", "jo"),
-        ("ぢゃ", "ヂャ", "ja"), ("ぢゅ", "ヂュ", "ju"), ("ぢょ", "ヂョ", "jo"),
-        ("びゃ", "ビャ", "bya"), ("びゅ", "ビュ", "byu"), ("びょ", "ビョ", "byo"),
-        ("ぴゃ", "ピャ", "pya"), ("ぴゅ", "ピュ", "pyu"), ("ぴょ", "ピョ", "pyo")
+    // Grouping the sounds by row follows the compact table format used in beginner kana references.
+    private let soundRows = [
+        ("Vowels", "あ い う え お", "ア イ ウ エ オ", "a · i · u · e · o"),
+        ("K", "か き く け こ", "カ キ ク ケ コ", "ka · ki · ku · ke · ko"),
+        ("S", "さ し す せ そ", "サ シ ス セ ソ", "sa · shi · su · se · so"),
+        ("T", "た ち つ て と", "タ チ ツ テ ト", "ta · chi · tsu · te · to"),
+        ("N", "な に ぬ ね の", "ナ ニ ヌ ネ ノ", "na · ni · nu · ne · no"),
+        ("H", "は ひ ふ へ ほ", "ハ ヒ フ ヘ ホ", "ha · hi · fu · he · ho"),
+        ("M", "ま み む め も", "マ ミ ム メ モ", "ma · mi · mu · me · mo"),
+        ("Y", "や · ゆ · よ", "ヤ · ユ · ヨ", "ya · yu · yo"),
+        ("R", "ら り る れ ろ", "ラ リ ル レ ロ", "ra · ri · ru · re · ro"),
+        ("W", "わ · を", "ワ · ヲ", "wa · wo"),
+        ("N", "ん", "ン", "n")
     ]
 
     var body: some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
-            Text("Complete kana reading key")
+            Text("Kana sound pattern")
                 .font(AppTypography.body.weight(.semibold))
                 .foregroundStyle(AppColors.textPrimary)
-            Text("Hiragana and katakana represent the same modern Japanese sound set in two different scripts. The Latin spelling is a reading aid; it is not English pronunciation.")
+            Text("Hiragana and katakana use the same sound pattern in two scripts. This compact table shows how the rows work; Romaji is only a reading aid, not English pronunciation.")
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
                 .fixedSize(horizontal: false, vertical: true)
-            Text("Basic sounds (46 modern kana)")
+            soundTable(soundRows)
+            Text("How sounds are built")
                 .font(AppTypography.metadata.weight(.semibold))
                 .foregroundStyle(AppColors.textPrimary)
-            Text("Each cell shows Hiragana · Katakana, then Romaji.")
-                .font(AppTypography.metadata)
-                .foregroundStyle(AppColors.textSecondary)
-            kanaGrid(basicRows)
-            Text("Voiced and semi-voiced sounds")
-                .font(AppTypography.metadata.weight(.semibold))
-                .foregroundStyle(AppColors.textPrimary)
-            Text("Dakuten ゛ voices a sound, while handakuten ゜ changes the は-row to a p-sound.")
+            Text("A small ゃ・ゅ・ょ blends with the preceding sound. Dakuten ゛ voices a sound, handakuten ゜ changes the は-row to a p-sound, small っ doubles the next consonant, and ー lengthens a katakana vowel.")
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textSecondary)
                 .fixedSize(horizontal: false, vertical: true)
-            kanaGrid(voicedRows)
-            Text("Combined sounds")
-                .font(AppTypography.metadata.weight(.semibold))
-                .foregroundStyle(AppColors.textPrimary)
-            Text("A small ゃ・ゅ・ょ combines with the preceding i-row kana to form one contracted sound.")
-                .font(AppTypography.caption)
-                .foregroundStyle(AppColors.textSecondary)
-                .fixedSize(horizontal: false, vertical: true)
-            kanaGrid(contractedRows)
             VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                Text("Other reading rules")
-                    .font(AppTypography.metadata.weight(.semibold))
-                    .foregroundStyle(AppColors.textPrimary)
-                Text("Build a contracted sound: き + ゃ = きゃ → kya")
-                Text("Dakuten changes a sound: か + ゛ = が → ga")
-                Text("Small っ doubles the next consonant: っ + て = って → tte")
-                Text("ー lengthens the preceding vowel in katakana: ケーキ → kēki")
-                Text("ん is n in the basic table, but its sound adjusts to the following sound in speech.")
+                Text("き + ゃ → きゃ → kya")
+                Text("か + ゛ → が → ga")
+                Text("っ + て → って → tte")
+                Text("ケーキ → kēki")
             }
             .font(AppTypography.caption)
             .foregroundStyle(AppColors.textPrimary)
@@ -589,7 +547,7 @@ private struct KanaReadingGuide: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(AppColors.artifactField)
             .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
-            Text("Common reading notes: し is shi, ち is chi, つ is tsu, ふ is fu, and を is usually pronounced o in a particle. ぢゃ・ぢゅ・ぢょ are uncommon and usually sound like じゃ・じゅ・じょ. The historical ゐ・ヰ and ゑ・ヱ are not part of the modern basic table. Katakana also uses additional combinations for imported words; those are spelling conventions built from the kana above, not a second basic alphabet.")
+            Text("Common notes: し is shi, ち is chi, つ is tsu, ふ is fu, and を is usually pronounced o as a particle. Katakana also has extra spellings for imported words; those are combinations, not a second sound system.")
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColors.textTertiary)
                 .fixedSize(horizontal: false, vertical: true)
@@ -599,26 +557,40 @@ private struct KanaReadingGuide: View {
         .clipShape(RoundedRectangle(cornerRadius: AppRadius.small))
     }
 
-    private func kanaGrid(_ rows: [(String, String, String)]) -> some View {
-        LazyVGrid(
-            columns: Array(repeating: GridItem(.flexible(), alignment: .leading), count: 3),
-            alignment: .leading,
-            spacing: AppSpacing.spaceXs
-        ) {
-            ForEach(Array(rows.enumerated()), id: \.offset) { _, row in
-                VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                    HStack(spacing: AppSpacing.space2xs) {
-                        Text(row.0)
-                        Text(row.1)
-                            .foregroundStyle(AppColors.textSecondary)
-                    }
-                    .font(AppTypography.body)
-                    Text(row.2)
-                        .font(AppTypography.metadata)
-                        .foregroundStyle(AppColors.textSecondary)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
+    private func soundTable(_ rows: [(String, String, String, String)]) -> some View {
+        VStack(spacing: 0) {
+            HStack(alignment: .top, spacing: AppSpacing.space2xs) {
+                tableCell("Row", width: 46)
+                tableCell("Hiragana")
+                tableCell("Katakana")
+                tableCell("Romaji")
             }
+            .font(AppTypography.metadata.weight(.semibold))
+            .foregroundStyle(AppColors.textSecondary)
+            ForEach(Array(rows.enumerated()), id: \.offset) { _, row in
+                HStack(alignment: .top, spacing: AppSpacing.space2xs) {
+                    tableCell(row.0, width: 46)
+                    tableCell(row.1)
+                    tableCell(row.2)
+                    tableCell(row.3)
+                }
+                .font(AppTypography.metadata)
+                .foregroundStyle(AppColors.textPrimary)
+                .padding(.vertical, AppSpacing.space2xs)
+                Divider()
+            }
+        }
+    }
+
+    private func tableCell(_ text: String, width: CGFloat? = nil) -> some View {
+        if let width {
+            Text(text)
+                .frame(width: width, alignment: .leading)
+                .fixedSize(horizontal: false, vertical: true)
+        } else {
+            Text(text)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 }
