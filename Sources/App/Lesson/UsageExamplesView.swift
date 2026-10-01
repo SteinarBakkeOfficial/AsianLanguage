@@ -428,7 +428,7 @@ struct UsageExamplesView: View {
         let hasTaiwanContent = !coverage.taiwanReadings.isEmpty || !coverage.taiwanExamples.isEmpty
         let hasHongKongContent = !coverage.hongKongReadings.isEmpty || !coverage.hongKongExamples.isEmpty
 
-        VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
+        return VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
             Text("Traditional Chinese")
                 .font(AppTypography.stageTitle)
                 .foregroundStyle(AppColors.textPrimary)
