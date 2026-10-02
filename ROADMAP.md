@@ -16,8 +16,8 @@ The official product-facing name is Script Roots. AsianLanguage remains the inte
 6. Content contract — complete; the 126-record editorial package and review record are approved/published
 7. Asset pipeline — complete for V1; approved local package and provenance are synchronized
 8. V1 corpus — complete; the 126-record complete-evolution package is the release corpus
-9. Design and QA — previous V1 pass complete; focused Apple-review findings are active before release
-10. V1 release — pending focused UI/content corrections, Apple/Xcode verification, packaging, and submission
+9. Design and QA — complete for V1; focused Apple-review findings are implemented and locally verified
+10. V1 release — pending Apple/Xcode verification, packaging, and marketplace submission
 
 ## Current status
 
@@ -25,11 +25,12 @@ Phases 1–9 are complete for the approved V1 scope. The former six-step lesson 
 
 Discovery and content-contract foundations are complete, including Browse-owned Search/Collections/status lists, four focus tracks, regional Traditional Chinese coverage, stage-owned asset metadata, migration support, release/readiness checks, and the book-informed History article structure. The runtime loads the approved/published 126-record complete-evolution V1 package; the original 11 records remain repository reference fixtures.
 
-## Authoritative release posture — 2026-10-01
+## Authoritative release posture — 2026-10-02
 
 - V1 editorial review and the previous screenshot-driven implementation pass are complete for the approved content boundaries.
 - The latest Apple review identified four focused follow-ups. The Symbol toolbar, restored two-column target-language Usage layout, compact Japanese kana guidance, and varied Quick Review behavior are now implemented locally. Quick Review is a Home-surfaced randomized review of all learned Symbols; Review Later remains a separate Browse bookmark for full-journey revisits.
-- Onboarding, most Symbol text, Chinese History guidance, Korean History guidance, and the compact modern Japanese Hiragana/Katakana sound-pattern guide are complete.
+- Onboarding, approved Symbol text, Chinese History guidance, Korean History guidance, and the compact modern Japanese Hiragana/Katakana sound-pattern guide are complete.
+- The final modern-language content sweep is complete across all 126 records. Simplified Chinese was verified at four non-core examples per symbol; missing Taiwan Mandarin and Hong Kong Cantonese lanes were completed, with source and runtime corpus synchronized.
 - All local contract and release-readiness checks pass; marketplace packaging still requires Apple/Xcode screenshot verification.
 - Older dated testing and handoff sections below remain historical records. This section is the current project truth.
 

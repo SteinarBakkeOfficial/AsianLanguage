@@ -4,12 +4,14 @@
 
 Maintain the approved V1 package: 126 complete-evolution symbols, local origin artwork, reviewed historical stages, CNS11643 Kai Regular Script, approved locale-specific modern forms and examples, explicit native-script speech data, updated collections, search-first Browse, and the book-informed History editorial pages. V1 content and native-speaker review are complete; post-release corrections are tracked for Patch 0.1.
 
-## Current release status — 2026-10-01
+## Current release status — 2026-10-02
 
-- V1 editorial review and the previous screenshot-driven implementation pass are complete for the approved content boundaries. The latest Apple review identified a focused follow-up pass.
+- V1 editorial review and the previous screenshot-driven implementation pass are complete for the approved content boundaries. The focused Apple-review follow-up pass is complete locally.
 - The Symbol toolbar action hierarchy, restored two-column Usage layout, compact Japanese kana teaching, varied Quick Review behavior, and the current display-meaning/Japanese-sentence hotfixes are implemented locally. Quick Review is now a Home-surfaced randomized review of all learned Symbols; Review Later remains a separate Browse bookmark for full-journey revisits.
 - Onboarding, most Symbol text, Chinese History guidance, Korean History guidance, and the compact Japanese Hiragana/Katakana sound-pattern guide are confirmed complete.
-- Japanese reading rows now show reviewed example-specific English context where available, while Korean native equivalents use their own glosses and suppress exact duplicates of the top Hanja reading.
+- Japanese reading rows show English only when a reading has an explicit reviewed gloss; compound and sentence translations remain attached to their examples instead of being presented as the reading's standalone meaning. Korean Hanja rows always have a track gloss, while native equivalents use their own precise glosses and suppress exact duplicates of the top Hanja reading.
+- The final modern-language content sweep is complete: all 126 symbols have at least four non-core examples in Simplified Chinese, Taiwan Mandarin, and Hong Kong Cantonese. The new Traditional Chinese word examples use the appropriate written forms and pronunciation systems, preserve the advanced sentence as the final displayed example, and are synchronized into the bundled runtime corpus.
+- A runtime regression check now enforces the four-example minimum for all three Chinese tracks so a future corpus import cannot silently reintroduce the earlier short lanes.
 - Quick Review uses one three-choice card per learned Symbol, rotates between symbol-to-meaning, meaning-to-symbol, and selected-language prompts, reveals `Check this Symbol` only after an incorrect choice, and routes that action to the exact Symbol from the answered card before ending the temporary session. It does not read from or modify Review Later.
 - All local Windows checks pass; Apple/Xcode screenshot verification remains required before marketplace release.
 - The approved corpus remains exactly 126 records. No new symbols, historical assets, or unrelated features are in scope.

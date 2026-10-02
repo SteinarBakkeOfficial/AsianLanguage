@@ -41,5 +41,7 @@ Assert-True $lesson.Contains("onOpenJourney: { symbolID in") "Quick Review must 
 Assert-True $lesson.Contains("openSymbol(symbolID, intent: .view)") "Quick Review must route Check this Symbol through shared Symbol navigation."
 Assert-True $lesson.Contains("Next Symbol") "Quick Review must advance one completed Symbol at a time."
 Assert-True $lesson.Contains("Finish Review") "Quick Review must finish without forcing a journey replay."
+Assert-True (-not $lesson.Contains('Text("QUICK REVIEW")')) "Quick Review must keep its title in the navigation header only."
+Assert-True $lesson.Contains("ZStack(alignment: .trailing)") "Quick Review answer choices must center their text while reserving the trailing feedback icon."
 
 Write-Output "OK: Symbol Journey lesson contract tests passed"

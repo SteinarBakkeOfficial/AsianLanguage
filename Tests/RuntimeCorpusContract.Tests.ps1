@@ -27,6 +27,11 @@ foreach ($record in $records | Where-Object { $runtimeIDs -contains $_.id }) {
   foreach ($field in @("readings", "taiwanReadings", "hongKongReadings")) {
     Assert-True ($record.focusCoverage.traditionalChinese.$field -is [array]) "Runtime record '$($record.id)' traditional '$field' must be an array."
   }
+  foreach ($field in @("simplifiedChinese.examples", "traditionalChinese.taiwanExamples", "traditionalChinese.hongKongExamples")) {
+    $path = $field.Split('.')
+    $examples = @($record.focusCoverage.($path[0]).($path[1]) | Where-Object { $_.exampleLevel -ne "coreForm" })
+    Assert-True ($examples.Count -ge 4) "Runtime record '$($record.id)' track '$field' must retain at least four non-core examples."
+  }
 }
 
 $firstSymbol = Get-Content -Raw (Join-Path $repoRoot "Resources/Corpus/one.json") | ConvertFrom-Json

@@ -443,10 +443,6 @@ private struct QuickReviewView: View {
         if let currentCard {
             ScrollView {
                 VStack(spacing: AppSpacing.spaceLg) {
-                    Text("QUICK REVIEW")
-                        .font(AppTypography.conceptLabel)
-                        .tracking(1.4)
-                        .foregroundStyle(AppColors.textSecondary)
                     Text("SYMBOL \(cardIndex + 1) OF \(cards.count)")
                         .font(AppTypography.metadata)
                         .foregroundStyle(AppColors.textSecondary)
@@ -476,9 +472,9 @@ private struct QuickReviewView: View {
                                 guard !hasAnswered else { return }
                                 selectedOptionID = option.id
                             } label: {
-                                HStack {
+                                ZStack(alignment: .trailing) {
                                     optionText(option, for: currentCard)
-                                    Spacer()
+                                        .frame(maxWidth: .infinity, alignment: .center)
                                     if hasAnswered && option.id == currentCard.correctOptionID {
                                         Image(systemName: "checkmark.circle.fill")
                                             .foregroundStyle(AppColors.learned)
@@ -490,7 +486,7 @@ private struct QuickReviewView: View {
                                 .frame(
                                     maxWidth: .infinity,
                                     minHeight: currentCard.optionsAreSymbols ? 76 : 52,
-                                    alignment: .leading
+                                    alignment: .center
                                 )
                                 .padding(.horizontal, AppSpacing.spaceSm)
                                 .background(optionBackground(option, for: currentCard))
@@ -538,12 +534,12 @@ private struct QuickReviewView: View {
             Text(option.text)
                 .font(.system(size: 42, design: .serif))
                 .foregroundStyle(AppColors.textPrimary)
-                .multilineTextAlignment(.leading)
+                .multilineTextAlignment(.center)
         } else {
             Text(option.text)
                 .font(AppTypography.body.weight(.semibold))
                 .foregroundStyle(AppColors.textPrimary)
-                .multilineTextAlignment(.leading)
+                .multilineTextAlignment(.center)
         }
     }
 

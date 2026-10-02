@@ -57,6 +57,7 @@ struct UsageExamplesView: View {
                 examples: record.focusCoverage.simplifiedChinese.examples,
                 variants: record.focusCoverage.simplifiedChinese.variants,
                 fontRole: .simplifiedChinese,
+                writtenReadingForm: record.focusCoverage.simplifiedChinese.form,
                 ensureBasicSentenceAtEnd: true
             )
         case .traditionalChinese:
@@ -85,6 +86,7 @@ struct UsageExamplesView: View {
         examples: [UsageExample],
         variants: [ModernFormVariant],
         fontRole: CJKFontRole,
+        writtenReadingForm: String? = nil,
         ensureBasicSentenceAtEnd: Bool = false,
         showsJapaneseFurigana: Bool = false
     ) -> some View {
@@ -97,6 +99,7 @@ struct UsageExamplesView: View {
                 translation: record.primarySharedMeaning.capitalized,
                 readings: readings,
                 fontRole: fontRole,
+                writtenReadingForm: writtenReadingForm,
                 readingGlosses: showsJapaneseFurigana ? readings.map { japaneseReadingGloss(for: $0) } : []
             )
             Divider()
@@ -104,6 +107,7 @@ struct UsageExamplesView: View {
             ForEach(displayExamples(
                 examples,
                 variants: variants,
+                excludeCoreForm: true,
                 ensureBasicSentenceAtEnd: ensureBasicSentenceAtEnd
             ).prefix(4), id: \.text) { example in
                 exampleRow(
@@ -129,6 +133,7 @@ struct UsageExamplesView: View {
         translation: String,
         readings: [CharacterReading],
         fontRole: CJKFontRole,
+        writtenReadingForm: String? = nil,
         readingGlosses: [String?] = []
     ) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
@@ -154,6 +159,7 @@ struct UsageExamplesView: View {
                 readingRow(
                     reading,
                     fontRole: fontRole,
+                    writtenForm: writtenReadingForm,
                     englishGloss: readingGlosses.indices.contains(index) ? readingGlosses[index] : nil
                 )
             }
@@ -164,6 +170,7 @@ struct UsageExamplesView: View {
     private func readingRow(
         _ reading: CharacterReading,
         fontRole: CJKFontRole,
+        writtenForm: String? = nil,
         englishGloss: String? = nil
     ) -> some View {
         HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
@@ -171,7 +178,7 @@ struct UsageExamplesView: View {
                 Text(readingLabel(reading))
                     .font(AppTypography.metadata)
                     .foregroundStyle(AppColors.textSecondary)
-                let parts = displayReadingParts(reading)
+                let parts = displayReadingParts(reading, writtenForm: writtenForm)
                 Text(parts.script)
                     .font(fontRole.font(size: 22).weight(.medium))
                     .foregroundStyle(AppColors.textPrimary)
@@ -225,7 +232,7 @@ struct UsageExamplesView: View {
     private func readingLabel(_ reading: CharacterReading) -> String {
         let normalized = reading.system.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         if normalized == "on" || normalized == "onyomi" { return "On · Sino-Japanese" }
-        if normalized == "kun" || normalized == "kunyomi" { return "Kun · native Japanese" }
+        if normalized == "kun" || normalized == "kunyomi" { return "Kun · Native" }
         if normalized == "hanja" { return "Hanja · Sino-Korean" }
         if normalized.hasPrefix("hanja · ") {
             return "Hanja · " + String(reading.system.dropFirst("hanja · ".count))
@@ -272,15 +279,26 @@ struct UsageExamplesView: View {
         return displayReadingParts(reading.value)
     }
 
-    /// Uses reviewed Japanese example translations to explain why one Kanji has several readings.
-    private func japaneseReadingGloss(for reading: CharacterReading) -> String? {
-        let script = displayReadingParts(reading).script
-        var translations: [String] = []
-        for example in record.focusCoverage.japanese.examples where example.coversReadings.contains(script) {
-            guard !example.translation.isEmpty, !translations.contains(example.translation) else { continue }
-            translations.append(example.translation)
+    /// Chinese pronunciation rows must show the written Han character first;
+    /// the stored Pinyin or Jyutping remains the pronunciation beneath it.
+    private func displayReadingParts(
+        _ reading: CharacterReading,
+        writtenForm: String?
+    ) -> (script: String, romanization: String?) {
+        guard let writtenForm, !writtenForm.isEmpty else {
+            return displayReadingParts(reading)
         }
-        return translations.isEmpty ? nil : translations.joined(separator: "; ")
+        return (writtenForm, reading.romanization ?? reading.value)
+    }
+
+    /// Uses only an explicit reviewed gloss for a reading. A compound's English
+    /// translation belongs to its example row and must not be presented as the
+    /// standalone meaning of the reading itself.
+    private func japaneseReadingGloss(for reading: CharacterReading) -> String? {
+        if let gloss = reading.gloss, !gloss.isEmpty {
+            return gloss
+        }
+        return nil
     }
 
     /// Removes only exact Korean duplicates of the top form or Hanja reading; distinct native vocabulary remains visible.
@@ -303,11 +321,15 @@ struct UsageExamplesView: View {
                 form: coverage.form,
                 translation: record.primarySharedMeaning.capitalized,
                 readings: coverage.readings,
-                fontRole: .korean
+                fontRole: .korean,
+                readingGlosses: coverage.readings.map { $0.gloss ?? coverage.glosses.joined(separator: "; ") }
             )
             let equivalents = visibleKoreanEquivalents(coverage)
             if !equivalents.isEmpty {
                 VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                    Text("Native Korean")
+                        .font(AppTypography.metadata)
+                        .foregroundStyle(AppColors.textSecondary)
                     ForEach(Array(equivalents.enumerated()), id: \.offset) { _, equivalent in
                         koreanEquivalentRow(equivalent)
                     }
@@ -475,10 +497,10 @@ struct UsageExamplesView: View {
                 fontRole: .traditionalChinese
             )
             if hasTaiwanContent {
-                regionalExamples(title: "Taiwan · Mandarin / Pinyin", readings: coverage.taiwanReadings, examples: coverage.taiwanExamples, showTopDivider: false)
+                regionalExamples(title: "Taiwan · Mandarin / Pinyin", writtenForm: coverage.form, readings: coverage.taiwanReadings, examples: coverage.taiwanExamples, showTopDivider: false)
             }
             if hasHongKongContent {
-                regionalExamples(title: "Hong Kong · Cantonese / Jyutping", readings: coverage.hongKongReadings, examples: coverage.hongKongExamples, showTopDivider: hasTaiwanContent)
+                regionalExamples(title: "Hong Kong · Cantonese / Jyutping", writtenForm: coverage.form, readings: coverage.hongKongReadings, examples: coverage.hongKongExamples, showTopDivider: hasTaiwanContent)
             }
         }
         .padding(.vertical, AppSpacing.spaceSm)
@@ -494,6 +516,7 @@ struct UsageExamplesView: View {
     /// Renders up to four useful context entries for one Traditional Chinese region.
     private func regionalExamples(
         title: String,
+        writtenForm: String,
         readings: [CharacterReading],
         examples: [UsageExample],
         showTopDivider: Bool
@@ -507,13 +530,17 @@ struct UsageExamplesView: View {
                 .font(AppTypography.body.weight(.semibold))
                 .foregroundStyle(AppColors.textPrimary)
             ForEach(Array(readings.enumerated()), id: \.offset) { _, reading in
-                readingRow(reading, fontRole: .traditionalChinese)
+                readingRow(reading, fontRole: .traditionalChinese, writtenForm: writtenForm)
             }
             if !readings.isEmpty && !examples.isEmpty {
                 Divider()
                     .padding(.vertical, AppSpacing.space2xs)
             }
-            ForEach(displayExamples(examples).prefix(4), id: \.text) { example in
+            ForEach(displayExamples(
+                examples,
+                excludeCoreForm: true,
+                ensureBasicSentenceAtEnd: true
+            ).prefix(4), id: \.text) { example in
                 exampleRow(example, fontRole: .traditionalChinese)
             }
         }
@@ -524,6 +551,7 @@ struct UsageExamplesView: View {
         _ examples: [UsageExample],
         variants: [ModernFormVariant] = [],
         excludedExampleRoles: [String] = [],
+        excludeCoreForm: Bool = false,
         ensureBasicSentenceAtEnd: Bool = false
     ) -> [UsageExample] {
         var result: [UsageExample] = []
@@ -534,6 +562,7 @@ struct UsageExamplesView: View {
                 || example.text.contains("·")
                 || example.text.contains("…")
             guard !isPlaceholder,
+                  (!excludeCoreForm || example.exampleLevel != .coreForm),
                   !(example.exampleRole.map { excludedExampleRoles.contains($0) } ?? false),
                   !result.contains(where: { $0.text == example.text }) else { continue }
             result.append(example)
