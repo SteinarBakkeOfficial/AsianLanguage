@@ -154,7 +154,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/bamboo/sources.json
 - Historical references: content/release/symbols/bamboo/historical-references.json
 
-## 豆 — bean (originally a vessel)
+## 豆 — bean
 
 - ID: bean
 - Folder: content/release/symbols/bean
@@ -629,7 +629,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/day/sources.json
 - Historical references: content/release/symbols/day/historical-references.json
 
-## 向 — toward / direction (earlier echo/sound graph)
+## 向 — toward / direction
 
 - ID: direction
 - Folder: content/release/symbols/direction
@@ -1254,7 +1254,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/high/sources.json
 - Historical references: content/release/symbols/high/historical-references.json
 
-## 角 — horn / corner
+## 角 — horn / corner / angle
 
 - ID: horn
 - Folder: content/release/symbols/horn
@@ -1354,7 +1354,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/join/sources.json
 - Historical references: content/release/symbols/join/historical-references.json
 
-## 旅 — journey / travel (earlier troops under a banner)
+## 旅 — journey / travel
 
 - ID: journey
 - Folder: content/release/symbols/journey
@@ -1779,7 +1779,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/mouth/sources.json
 - Historical references: content/release/symbols/mouth/historical-references.json
 
-## 北 — north (originally back)
+## 北 — north
 
 - ID: north
 - Folder: content/release/symbols/north
@@ -2229,7 +2229,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/same/sources.json
 - Historical references: content/release/symbols/same/historical-references.json
 
-## 自 — self (originally nose)
+## 自 — self
 
 - ID: self
 - Folder: content/release/symbols/self
@@ -2504,7 +2504,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/stone/sources.json
 - Historical references: content/release/symbols/stone/historical-references.json
 
-## 止 — stop (originally foot)
+## 止 — stop
 
 - ID: stop
 - Folder: content/release/symbols/stop
@@ -2879,7 +2879,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/two/sources.json
 - Historical references: content/release/symbols/two/historical-references.json
 
-## 正 — correct / upright (earlier journey/campaign graph)
+## 正 — correct / upright
 
 - ID: upright
 - Folder: content/release/symbols/upright
@@ -2904,7 +2904,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/upright/sources.json
 - Historical references: content/release/symbols/upright/historical-references.json
 
-## 走 — walk/go (Mandarin); run (historical/Japanese)
+## 走 — walk / go / run
 
 - ID: walk
 - Folder: content/release/symbols/walk
@@ -3054,7 +3054,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/wife/sources.json
 - Historical references: content/release/symbols/wife/historical-references.json
 
-## 冬 — winter (earlier “end”)
+## 冬 — winter
 
 - ID: winter
 - Folder: content/release/symbols/winter

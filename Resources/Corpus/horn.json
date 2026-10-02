@@ -2,8 +2,8 @@
   "id": "horn",
   "version": 1,
   "coreCharacter": "角",
-  "coreSharedMeaning": "horn / corner",
-  "recognitionTakeaway": "Regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
+  "coreSharedMeaning": "horn / corner / angle",
+  "recognitionTakeaway": "Regularizes the curved horn picture into the modern top point, central box-like body, and two lower strokes. The original meaning is horn; in current Chinese and Japanese use, the same character also represents corner and angle through different contexts and readings.",
   "publicationStatus": "published",
   "unicodeCodePoint": "U+89D2",
   "simplifiedForm": "角",
@@ -43,14 +43,14 @@
         }
       ],
       "glosses": [
-        "horn"
+        "horn / corner / angle"
       ],
       "examples": [
         {
-          "text": "角",
-          "reading": "jiǎo",
-          "translation": "horn / corner",
-          "speechText": "角",
+          "text": "鹿角",
+          "reading": "lùjiǎo",
+          "translation": "antler",
+          "speechText": "鹿角",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -78,10 +78,10 @@
           ]
         },
         {
-          "text": "角落",
-          "reading": "jiǎoluò",
+          "text": "墙角",
+          "reading": "qiángjiǎo",
           "translation": "corner",
-          "speechText": "角落",
+          "speechText": "墙角",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -90,10 +90,10 @@
           "introducedSymbols": []
         },
         {
-          "text": "角度",
-          "reading": "jiǎodù",
-          "translation": "angle",
-          "speechText": "角度",
+          "text": "直角",
+          "reading": "zhíjiǎo",
+          "translation": "right angle",
+          "speechText": "直角",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -147,14 +147,14 @@
         }
       ],
       "glosses": [
-        "horn"
+        "horn / corner / angle"
       ],
       "taiwanExamples": [
         {
-          "text": "角",
-          "reading": "jiǎo",
-          "translation": "horn / corner",
-          "speechText": "角",
+          "text": "鹿角",
+          "reading": "lùjiǎo",
+          "translation": "antler",
+          "speechText": "鹿角",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -179,10 +179,10 @@
           ]
         },
         {
-          "text": "角落",
-          "reading": "jiǎoluò",
+          "text": "屋角",
+          "reading": "wūjiǎo",
           "translation": "corner",
-          "speechText": "角落",
+          "speechText": "屋角",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -207,10 +207,10 @@
       ],
       "hongKongExamples": [
         {
-          "text": "角",
-          "reading": "gok3",
-          "translation": "horn / corner",
-          "speechText": "角",
+          "text": "街角",
+          "reading": "gaai1 gok3",
+          "translation": "street corner",
+          "speechText": "街角",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -235,10 +235,10 @@
           ]
         },
         {
-          "text": "角落",
-          "reading": "gok3 lok6",
-          "translation": "corner",
-          "speechText": "角落",
+          "text": "直角",
+          "reading": "zik6 gok3",
+          "translation": "right angle",
+          "speechText": "直角",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -318,7 +318,7 @@
         }
       ],
       "glosses": [
-        "horn"
+        "horn / corner / angle"
       ],
       "examples": [
         {
@@ -485,7 +485,7 @@
         }
       ],
       "glosses": [
-        "horn"
+        "corner / angle"
       ],
       "examples": [
         {
@@ -532,7 +532,7 @@
         {
           "text": "각질",
           "reading": "gakjil",
-          "translation": "horny layer / keratin",
+          "translation": "keratin",
           "speechText": "각질",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
@@ -604,7 +604,7 @@
     "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
-    "originAnchor": "A curved animal horn.",
+    "originAnchor": "A curved animal horn. The original pictograph represents the horn; the same character later also came to be used for corners and angles.",
     "stages": [
       {
         "stage": "oracleBone",
@@ -785,7 +785,7 @@
           "readiness": "approved"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
+        "stageExplanation": "Regularizes the stacked horn graph into the modern top point, central box-like body, and two lower strokes. The horn meaning remains, while modern Chinese and Japanese also use 角 for corner and angle.",
         "transitionNote": "Regularizes that stacked structure into the modern top point, central box-like body, and two lower strokes.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
@@ -794,7 +794,7 @@
     ],
     "origin": {
       "concept": "horn",
-      "explanation": "A curved animal horn, often with internal texture marks.",
+      "explanation": "A curved animal horn, often with internal texture marks. This is the original illustrated meaning; later/current uses of the same character also cover corner and angle in modern languages.",
       "asset": {
         "characterID": "horn",
         "historicalStage": null,
@@ -811,7 +811,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of horn / corner",
+        "accessibilityDescription": "Illustration of horn / corner / angle",
         "readiness": "approved"
       },
       "sourceIds": [

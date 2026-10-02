@@ -1046,7 +1046,7 @@ private struct HistoryOverviewHeader: View {
                     .foregroundStyle(AppColors.historyHeaderInk)
                 Text("Chinese characters have changed for more than three thousand years. New tools, institutions, and communities reshaped how they were written—while many underlying structures endured.")
                     .font(AppTypography.body)
-                    .foregroundStyle(AppColors.textSecondary)
+                    .foregroundStyle(AppColors.historyHeaderBodyInk)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(AppSpacing.spaceMd)

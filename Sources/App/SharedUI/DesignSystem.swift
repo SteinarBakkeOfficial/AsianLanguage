@@ -25,12 +25,18 @@ enum AppColors {
     /// Quick Review keeps its prompt distinct from the selectable answer cards in both appearances.
     static let quickReviewPrompt = adaptive(light: (239, 233, 225), dark: (75, 66, 56))
 
+    /// The Quick Review symbol prompt remains dark on the light paper field and becomes white in Dark appearance.
+    static let quickReviewPromptSymbolInk = adaptive(light: (53, 43, 36), dark: (245, 245, 242))
+
     /// History examples sit on surfaces that may become dark; retain readable character ink there.
     static let historyCharacterInk = adaptive(light: (53, 43, 36), dark: (245, 245, 242))
 
     /// The History overview title sits over a deliberately light image crop, so its original ink
     /// color must remain stable when the rest of the app switches to Dark appearance.
     static let historyHeaderInk = Color(red: 28 / 255, green: 28 / 255, blue: 28 / 255)
+
+    /// The explanatory sentence shares the light artwork behind the title; keep it dark enough to remain readable.
+    static let historyHeaderBodyInk = Color(red: 53 / 255, green: 43 / 255, blue: 36 / 255)
 
     /// A visibly separate museum-navigation surface keeps the Origin-to-Today rail
     /// legible without introducing a new accent color family.

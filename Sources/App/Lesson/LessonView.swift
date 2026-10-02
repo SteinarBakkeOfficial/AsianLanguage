@@ -475,7 +475,7 @@ private struct QuickReviewView: View {
                         QuickReviewPromptField {
                             Text(currentCard.prompt)
                                 .font(.system(size: 112, design: .serif))
-                                .foregroundStyle(AppColors.artifactInk)
+                                .foregroundStyle(AppColors.quickReviewPromptSymbolInk)
                                 .frame(maxWidth: .infinity, minHeight: 190)
                         }
                     } else {

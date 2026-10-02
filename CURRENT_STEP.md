@@ -489,3 +489,77 @@ These additional observations are saved for the next Symbol implementation/edito
 - Follow: review the Regular Script form. It may currently show the Simplified Chinese character rather than the correct Regular Script form; verify the script lane and replace it if necessary. Do not assume the simplified form is the correct Regular Script endpoint.
 
 All uncertain composition, pictograph, etymological, and script-form claims must be checked against reliable source material and the approved corpus data before publication. Preserve unrelated Symbol content, navigation, layout, and all non-Symbol screens; these remain surgical QA/content/artwork corrections, not permission for a broad redesign.
+
+### Latest release-candidate issues — discussion required — 2026-10-02
+
+No implementation changes are authorized yet. The following issues are recorded for discussion before any fix:
+
+1. Quick Review, Dark appearance: the question card appears to use the same background as the three answer cards. The question card must be visibly lighter.
+2. Quick Review, Dark appearance: when the question shows a Symbol and asks for its meaning, the displayed Symbol uses a dark font. It must use the approved light/white character ink.
+3. History pages, Light and Dark appearance: the explanatory text inside the top “The History of Chinese Characters” panel has insufficient contrast against the beige artwork. The title itself is working; only the text inside that panel needs a more legible color, potentially white.
+4. Symbol Pages → target-language sections: many examples duplicate the page meaning instead of teaching a distinct usage. Horn / corner is the concrete example: the first Simplified Chinese, Taiwan, and Hong Kong examples repeat the top meaning.
+5. Symbol Pages → target-language sections: Japanese examples and equivalents can narrow a shared meaning without explaining the distinction. For Horn / corner, Japanese shows “corner” while the top meaning says “horn / corner”; the learner needs the correct form-to-meaning relationship made explicit.
+6. Symbol Pages → target-language sections: verify the Korean example “Gakmak” and its English gloss “cornea.” Determine whether it correctly means the eye’s cornea or is an incorrect translation/typing error; do not silently change it.
+7. Symbol Pages → target-language sections: equivalents and variants should represent native forms or language-specific forms that are actually present for the Hanja meaning. If “horn” and “corner” have become distinct words/characters in a target language, classify and display them separately with their correct English meanings.
+8. Symbol Pages → target-language sections: Japanese variants/examples were drastically reduced. Determine whether that reduction is linguistically correct, and restore or explain only the variants that are genuinely needed.
+9. Symbol Pages → Korean target-language examples: an English gloss appears as “horny layer.” Although that phrase can occur as specialized biological terminology, it is highly abnormal and confusing in this learner-facing context. Verify the Korean source word, intended meaning, and correct English gloss before changing it.
+
+### Clarifications and expanded complaints for the target-language audit
+
+- Do not treat duplicate English meanings as automatically wrong. If a target language genuinely preserves the same meaning as the shared Hanja/character, a repeated English gloss for its native equivalent is acceptable. The problem is when a form has diverged, carries a narrower meaning, or is a different word/character and that distinction is hidden.
+- For 角, determine whether “horn” is the original pictographic meaning and “corner” is a later established sense. The current record is internally inconsistent: `coreSharedMeaning` says “horn / corner,” while Origin says only “A curved animal horn,” the language glosses say only “horn,” and no Origin/Regular explanation accounts for “corner.” Do not retain “horn / corner” as the shared header without explaining and source-checking that relationship. “Horn” may be the safer shared journey meaning, with later senses shown in target-language usage, but this must be confirmed before editing.
+- If one character has both established meanings, the app must explain the relationship and not imply that the original drawing depicted both objects. If a target language uses distinct native forms/readings for “horn,” “corner,” or “angle,” classify and display those forms separately with accurate English meanings.
+- The current Chinese example lanes show substantial reuse: Taiwan and Hong Kong have identical English translation sequences for 95 of 126 records; their exact written-example sequences match for 17 records. Simplified and Taiwan have identical full translation sequences for 3 records, but share many individual/core examples. This must be treated as a corpus-design issue, not a linguistic requirement.
+- Rework only the target-language examples so each language has fitting, useful examples. Taiwan Mandarin and Hong Kong Cantonese should not be identical by default, and Simplified Chinese should not simply copy both Traditional lanes. Preserve genuine regional overlap when the same word/example is natural, but do not use shared templates where language-specific examples are appropriate.
+- Japanese and Korean already show more language-specific behavior; do not remove or restore their variants blindly. First establish whether each row is a same-meaning equivalent, a narrower/different meaning, a distinct native word, or an error.
+- The Horn record’s current examples must be checked together: Chinese uses “horn / corner,” Japanese uses “corner” for standalone 角 but “horn” in 牛の角, and Korean includes horn, angle, cornea, and keratin/horn-substance compounds. These cannot be presented as one undifferentiated meaning list.
+
+This discussion record is superseded by the approved implementation contract below; the contract is the active scope for this correction.
+
+### Multi-meaning decision rule — research clarification — 2026-10-02
+
+- A second meaning belongs in the shared Symbol header only when the same written character remains actively used for that meaning in at least one current target language. A historical dictionary listing alone is insufficient.
+- If the same character remains active for two meanings, retain both in the shared explanation, explain that the original illustration represents the starting meaning rather than every later sense, and describe the semantic development in Origin/Regular Script where appropriate.
+- If a target language has separated the meanings into different readings, native words, or distinct characters, show those as language-specific equivalents/variants. Do not flatten them into one duplicate English gloss.
+- If no target language still uses the character for the secondary meaning, retain only the relevant shared meaning in the Symbol Journey; do not promote the historical or obsolete sense into the current header.
+- This rule applies corpus-wide. The current release contains 74 of 126 multi-meaning candidates based on slash-separated core meanings or additional meanings; each candidate requires the same current-use audit before any content is changed.
+- For 角 specifically, current references support modern Chinese use for horn, corner, and angle; modern Japanese use distinguishes つの (horn), かど (corner), and かく (angle); modern Korean uses 각 primarily for corner/angle and native 뿔 for horn. Korean terms such as 각막 (cornea) and 각질 (keratinous material) must be explained as compounds, not presented as ordinary standalone horn equivalents.
+
+Research references: ZDIC 角 (`https://zdic.net/hans/%E8%A7%92`), Japanese Kanji reference (`https://dictionary.goo.ne.jp/word/kanji/%E8%A7%92/`), Korean Basic Dictionary entries for 각 (`https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=14650`), 각막 (`https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=14302`), and 각질 (`https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=15121`).
+
+This research rule is confirmed for the approved surgical correction below.
+
+### Approved implementation contract — multi-meaning target-language correction — 2026-10-02
+
+The user has confirmed that this correction should proceed, but it remains a surgical content pass rather than an app overhaul.
+
+#### Audit and change scope
+
+- Audit the 74 release records currently identified as multi-meaning candidates. For each, compare the original illustrated meaning with current Chinese, Japanese, and Korean usage.
+- Correct only records where the current page hides a current meaning, presents a later meaning as the original illustration, uses an incorrect or confusing gloss, repeats a meaning in place of a useful example, or incorrectly classifies an equivalent/variant.
+- If a secondary meaning is current in at least one target language, keep it in the shared meaning only when the page explains the relationship: original illustrated meaning, later/current meaning, and language-specific readings or forms.
+- If a target language separates the meanings, show its distinct native word, reading, or character as a language-specific equivalent/variant with its own English gloss.
+- If a secondary meaning is not current in the target languages, do not promote it into the shared learner-facing header.
+- Preserve the approved example count: approximately 4–5 useful examples per language lane. Replace redundant examples with natural, language-fitting examples rather than reducing the lane.
+- Traditional Chinese Taiwan and Hong Kong lanes may share an example only when it is natural for both; do not inherit identical examples by default. Simplified Chinese must also have its own fitting examples where appropriate.
+- Replace the Korean “horny layer” learner gloss with “keratin” or an equally clear learner-facing term when the underlying compound is confirmed as valid.
+
+#### Explicit no-change areas
+
+Do not redesign or alter navigation, Quick Review behavior, Home, Browse, History layout, historical assets, unrelated Symbol stages, approved example counts, or unrelated Symbols. The two explicitly approved appearance corrections are limited to the Quick Review Dark prompt surface/symbol ink and the History overview header body-text contrast. Origin and Regular Script text may change only when required to explain a verified current multi-meaning relationship.
+
+Before finalizing content, recheck the changed records against the same rule and verify canonical release JSON and generated runtime JSON match.
+
+#### Strict scope boundary
+
+Issues 4–8 may require a focused audit across the target-language sections of the affected Symbols, using Horn / corner as the starting case, but they do not authorize changes to historical stages, Origin or Regular Script copy, History language guides, Home, Browse, Quick Review behavior, approved example counts, or unrelated layouts. The two named appearance corrections for Quick Review and the History overview header are allowed only as surgical color changes. Do not rewrite approved translations merely to remove duplication; first determine whether each form is an equivalent, variant, distinct meaning, or error.
+
+The interpretation and handling are confirmed by the approved contract above. This record remains the audit trail; it does not authorize any work outside that contract.
+
+### Implementation result — multi-meaning content pass — 2026-10-02
+
+- The 74 candidates were audited against their existing Origin, Regular Script, and target-language data. Only records with a concrete hidden, conflated, confusing, or redundant meaning issue were changed.
+- 角 now uses the shared meaning `horn / corner / angle`. Horn remains the original illustrated meaning; Chinese and Japanese current uses show corner/angle, while Korean shows modern corner/angle usage and separate horn/compound examples. The Chinese lanes retain roughly 4–5 useful examples and no longer use the standalone character as a redundant first example.
+- The Korean 角質 gloss is now `keratin`, not the confusing learner-facing phrase `horny layer`.
+- The other changed records are `bean`, `day`, `direction`, `heart`, `journey`, `lodging`, `long`, `mouth`, `north`, `reach`, `self`, `sheep`, `speech`, `step`, `stop`, `upright`, `walk`, and `winter`. Their headers now keep current meanings clean while historical/original explanations remain in Origin or Regular Script.
+- The two small UI corrections are now applied: the Quick Review symbol prompt uses light ink in Dark appearance, and the History overview explanatory sentence uses stable dark ink against the light artwork. No layout, navigation, Home, Browse, Quick Review behavior, History structure, historical assets, or unrelated Symbol records were changed.
