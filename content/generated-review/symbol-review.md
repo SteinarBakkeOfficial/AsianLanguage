@@ -1,10 +1,10 @@
 # Symbol review report
 
-Generated: 2026-10-02T14:36:58.4648041Z
+Generated: 2026-10-02T17:27:46.5868095Z
 
 This report records the approved V1 editorial package. Future corrections are tracked through Patch 0.1 maintenance.
 
-## 上 — above / on
+## 上 — above
 
 - ID: above
 - Folder: content/release/symbols/above
@@ -54,7 +54,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/after/sources.json
 - Historical references: content/release/symbols/after/historical-references.json
 
-## 示 — show / indicate
+## 示 — show
 
 - ID: altar
 - Folder: content/release/symbols/altar
@@ -104,7 +104,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/ancestor/sources.json
 - Historical references: content/release/symbols/ancestor/historical-references.json
 
-## 吉 — auspicious / lucky
+## 吉 — auspicious
 
 - ID: auspicious
 - Folder: content/release/symbols/auspicious
@@ -229,7 +229,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/before/sources.json
 - Historical references: content/release/symbols/before/historical-references.json
 
-## 下 — below / under
+## 下 — below
 
 - ID: below
 - Folder: content/release/symbols/below
@@ -279,7 +279,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/benefit/sources.json
 - Historical references: content/release/symbols/benefit/historical-references.json
 
-## 大 — big / great
+## 大 — big
 
 - ID: big
 - Folder: content/release/symbols/big
@@ -379,7 +379,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/body/sources.json
 - Historical references: content/release/symbols/body/historical-references.json
 
-## 册 — book / bound slips
+## 册 — book
 
 - ID: book
 - Folder: content/release/symbols/book
@@ -429,7 +429,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/bow/sources.json
 - Historical references: content/release/symbols/bow/historical-references.json
 
-## 明 — bright / light
+## 明 — bright
 
 - ID: bright
 - Folder: content/release/symbols/bright
@@ -454,7 +454,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/bright/sources.json
 - Historical references: content/release/symbols/bright/historical-references.json
 
-## 央 — center / central
+## 央 — center
 
 - ID: center
 - Folder: content/release/symbols/center
@@ -579,7 +579,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/cloud/sources.json
 - Historical references: content/release/symbols/cloud/historical-references.json
 
-## 令 — command / order
+## 令 — command
 
 - ID: command
 - Folder: content/release/symbols/command
@@ -654,7 +654,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/direction/sources.json
 - Historical references: content/release/symbols/direction/historical-references.json
 
-## 分 — divide / separate
+## 分 — divide
 
 - ID: divide
 - Folder: content/release/symbols/divide
@@ -754,7 +754,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/ear/sources.json
 - Historical references: content/release/symbols/ear/historical-references.json
 
-## 土 — earth / soil
+## 土 — earth
 
 - ID: earth
 - Folder: content/release/symbols/earth
@@ -829,7 +829,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/evening/sources.json
 - Historical references: content/release/symbols/evening/historical-references.json
 
-## 出 — exit / go out
+## 出 — exit
 
 - ID: exit
 - Folder: content/release/symbols/exit
@@ -879,7 +879,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/eye/sources.json
 - Historical references: content/release/symbols/eye/historical-references.json
 
-## 少 — few / little
+## 少 — few
 
 - ID: few
 - Folder: content/release/symbols/few
@@ -954,7 +954,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/follow/sources.json
 - Historical references: content/release/symbols/follow/historical-references.json
 
-## 林 — forest / grove
+## 林 — forest
 
 - ID: forest
 - Folder: content/release/symbols/forest
@@ -979,7 +979,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/forest/sources.json
 - Historical references: content/release/symbols/forest/historical-references.json
 
-## 香 — fragrance / fragrant
+## 香 — fragrance
 
 - ID: fragrance
 - Folder: content/release/symbols/fragrance
@@ -1229,7 +1229,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/heart/sources.json
 - Historical references: content/release/symbols/heart/historical-references.json
 
-## 高 — high / tall
+## 高 — high
 
 - ID: high
 - Folder: content/release/symbols/high
@@ -1329,7 +1329,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/jade/sources.json
 - Historical references: content/release/symbols/jade/historical-references.json
 
-## 合 — join / combine
+## 合 — join
 
 - ID: join
 - Folder: content/release/symbols/join
@@ -1354,7 +1354,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/join/sources.json
 - Historical references: content/release/symbols/join/historical-references.json
 
-## 旅 — journey / travel
+## 旅 — journey
 
 - ID: journey
 - Folder: content/release/symbols/journey
@@ -1454,7 +1454,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/life/sources.json
 - Historical references: content/release/symbols/life/historical-references.json
 
-## 光 — light / brightness
+## 光 — light
 
 - ID: light
 - Folder: content/release/symbols/light
@@ -1479,7 +1479,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/light/sources.json
 - Historical references: content/release/symbols/light/historical-references.json
 
-## 宿 — lodging / stay overnight
+## 宿 — lodging
 
 - ID: lodging
 - Folder: content/release/symbols/lodging
@@ -1554,7 +1554,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/look-toward/sources.json
 - Historical references: content/release/symbols/look-toward/historical-references.json
 
-## 男 — man / male
+## 男 — man
 
 - ID: man
 - Folder: content/release/symbols/man
@@ -1604,7 +1604,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/many/sources.json
 - Historical references: content/release/symbols/many/historical-references.json
 
-## 武 — martial / military
+## 武 — martial
 
 - ID: martial
 - Folder: content/release/symbols/martial
@@ -1654,7 +1654,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/meet/sources.json
 - Historical references: content/release/symbols/meet/historical-references.json
 
-## 中 — middle / center
+## 中 — middle
 
 - ID: middle
 - Folder: content/release/symbols/middle
@@ -1854,7 +1854,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/official/sources.json
 - Historical references: content/release/symbols/official/historical-references.json
 
-## 古 — old / ancient
+## 古 — old
 
 - ID: old-u53e4
 - Folder: content/release/symbols/old-u53e4
@@ -1879,7 +1879,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/old-u53e4/sources.json
 - Historical references: content/release/symbols/old-u53e4/historical-references.json
 
-## 老 — old / elderly
+## 老 — old
 
 - ID: old
 - Folder: content/release/symbols/old
@@ -1954,7 +1954,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/one/sources.json
 - Historical references: content/release/symbols/one/historical-references.json
 
-## 牛 — ox / cattle
+## 牛 — ox
 
 - ID: ox
 - Folder: content/release/symbols/ox
@@ -1979,7 +1979,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/ox/sources.json
 - Historical references: content/release/symbols/ox/historical-references.json
 
-## 民 — people / common people
+## 民 — people
 
 - ID: people
 - Folder: content/release/symbols/people
@@ -2179,7 +2179,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/river/sources.json
 - Historical references: content/release/symbols/river/historical-references.json
 
-## 祭 — sacrifice / ritual offering
+## 祭 — sacrifice
 
 - ID: sacrifice
 - Folder: content/release/symbols/sacrifice
@@ -2529,7 +2529,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/stop/sources.json
 - Historical references: content/release/symbols/stop/historical-references.json
 
-## 力 — strength / force
+## 力 — strength
 
 - ID: strength
 - Folder: content/release/symbols/strength
@@ -2629,7 +2629,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/sweet/sources.json
 - Historical references: content/release/symbols/sweet/historical-references.json
 
-## 取 — take / obtain
+## 取 — take
 
 - ID: take
 - Folder: content/release/symbols/take
@@ -2654,7 +2654,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/take/sources.json
 - Historical references: content/release/symbols/take/historical-references.json
 
-## 告 — tell / announce
+## 告 — tell
 
 - ID: tell
 - Folder: content/release/symbols/tell
@@ -3079,7 +3079,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/winter/sources.json
 - Historical references: content/release/symbols/winter/historical-references.json
 
-## 女 — woman / female
+## 女 — woman
 
 - ID: woman
 - Folder: content/release/symbols/woman

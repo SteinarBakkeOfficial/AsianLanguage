@@ -31,7 +31,8 @@
           "value": "yún",
           "audioAssetRef": null,
           "speechText": "云",
-          "speechLanguage": "mandarin"
+          "speechLanguage": "mandarin",
+          "gloss": "cloud"
         }
       ],
       "glosses": [
@@ -105,7 +106,8 @@
           "value": "yún",
           "audioAssetRef": null,
           "speechText": "雲",
-          "speechLanguage": "mandarin"
+          "speechLanguage": "mandarin",
+          "gloss": "cloud"
         }
       ],
       "glosses": [
@@ -254,7 +256,8 @@
           "speechLanguage": "japanese",
           "nativeReading": "ウン",
           "romanization": "un",
-          "historicalOrigin": "sinoJapanese"
+          "historicalOrigin": "sinoJapanese",
+          "gloss": "sea of clouds"
         },
         {
           "system": "kunyomi",
@@ -264,7 +267,8 @@
           "speechLanguage": "japanese",
           "nativeReading": "くも",
           "romanization": "kumo",
-          "historicalOrigin": "nativeJapanese"
+          "historicalOrigin": "nativeJapanese",
+          "gloss": "cloud"
         }
       ],
       "glosses": [
@@ -396,7 +400,8 @@
           "speechText": "운",
           "speechLanguage": "korean",
           "nativeReading": "운",
-          "romanization": "un"
+          "romanization": "un",
+          "gloss": "cloud"
         }
       ],
       "glosses": [
@@ -661,7 +666,7 @@
         "label": "Regular Script",
         "form": "云",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular Script retains the weather element above the compact lower graph; modern Traditional Chinese writes cloud as 雲, while Simplified Chinese writes the same meaning as 云.",
+        "changeNoteFromPrevious": "Regular Script retains the weather element above the compact lower graph; Traditional uses 雲, while Simplified uses 云.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -687,8 +692,8 @@
           "readiness": "approved"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Regular Script retains the weather element above the compact lower graph; modern Traditional Chinese writes cloud as 雲, while Simplified Chinese writes the same meaning as 云.",
-        "transitionNote": "Regular Script retains the weather element above the compact lower graph; modern Traditional Chinese writes cloud as 雲, while Simplified Chinese writes the same meaning as 云.",
+        "stageExplanation": "Regular Script retains the weather element above the compact lower graph; Traditional uses 雲, while Simplified uses 云.",
+        "transitionNote": "Regular Script retains the weather element above the compact lower graph; Traditional uses 雲, while Simplified uses 云.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -696,7 +701,7 @@
     ],
     "origin": {
       "concept": "cloud",
-      "explanation": "The earliest form combines an upper sky marker with a curling cloud element and was used for “cloud.” The later weather element in 雨雲/雲 distinguishes the traditional form from the older 云 graph.",
+      "explanation": "The earliest form combines an upper sky/above marker with a curling lower element that mainly supplies the sound, and was used for “cloud.”",
       "asset": {
         "characterID": "cloud",
         "historicalStage": null,

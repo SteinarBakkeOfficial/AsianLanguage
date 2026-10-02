@@ -760,3 +760,21 @@ The approved Quick Review, History, appearance, and navigation implementation wa
 The current learner-facing Usage style is a shared four-language layout: native writing left, English meaning right on the same row, and romanization/pronunciation below the native writing. The language-specific additions are deliberate: actual Chinese forms with Pinyin/Jyutping, separate Taiwan/Hong Kong sections, Japanese On/Kun readings with furigana and romaji, and Korean Hanja plus distinct Native Korean equivalents.
 
 The separate standalone corpus-validator result is not a visual Usage-page failure. Missing example metadata existed before the latest content pass (154 rows in the previous committed package; 133 after redundant rows were removed). Four Regular Script transition notes are over the validator's 25-word limit because of the latest editorial copy pass. `Tools/Run-Checks.ps1` remains green; Apple/Xcode screenshot verification is still the visual release gate.
+
+### New Symbol-content audit complaints — 2026-10-03 — unresolved
+
+The latest manual inspection identified a semantic-content regression or incomplete pass, separate from the approved Usage layout:
+
+- Life currently has the shared header `life`, but target-language content appears to label many Japanese readings/equivalents with the full `life / be born / grow` set. Meanings must be assigned per reading, equivalent, variant, and example rather than copied across every entry.
+- Slash-separated labels must be reserved for genuinely distinct current senses. Unnecessary pairs such as `woman / female`, `old / elderly`, and `sheep / goat` must not be introduced. If the core meaning is ox and an example uses cattle, keep the header as ox and gloss the example according to its actual usage.
+- Origin must focus on what the illustration depicts and explain only what is visually unclear or semantically non-obvious, including cases such as Bean where the illustration is a vessel but the written meaning is bean.
+- Regular Script must describe the actual retained, added, removed, merged, reorganized, and regularized features across the historical stages. This requirement applies to all 126 records.
+- Origin and Regular Script should not duplicate the same semantic explanation. Each should serve its own stage-specific purpose; Life is a concrete example requiring review.
+
+No implementation is authorized by this note. The next permitted work is a full 126-record semantic audit limited to Symbol content, with unrelated layout, History, Quick Review, and other approved features preserved.
+
+### Symbol-only audit implementation — 2026-10-03
+
+The later Symbol-only implementation supersedes the unresolved status above for this scope. It corrected the per-reading meaning data across all 126 Symbols, restored approved Origin copy where it had been expanded unnecessarily, normalized clear synonym/padding headers, replaced three duplicate Taiwan/Hong Kong example rows, and removed the shared-meaning fallback from the Symbol-page renderer. The selected language lane now supplies the top English meaning, and romanization uses the same text size as the English gloss.
+
+The full per-Symbol evidence is in [`docs/content/symbol-final-audit-ledger-2026-10-03.md`](../content/symbol-final-audit-ledger-2026-10-03.md). No History, Quick Review, Home layout, Browse/Search, onboarding, More/Settings/About, navigation, toolbar, or unrelated SwiftUI view was changed. Automated content/parity checks pass; Apple/Xcode visual verification remains the next test step.

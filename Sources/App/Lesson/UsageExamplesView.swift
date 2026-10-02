@@ -53,6 +53,7 @@ struct UsageExamplesView: View {
             wordCard(
                 title: "Simplified Chinese",
                 form: record.focusCoverage.simplifiedChinese.form,
+                translation: laneMeaning(record.focusCoverage.simplifiedChinese.glosses),
                 readings: record.focusCoverage.simplifiedChinese.readings,
                 examples: record.focusCoverage.simplifiedChinese.examples,
                 variants: record.focusCoverage.simplifiedChinese.variants,
@@ -66,6 +67,7 @@ struct UsageExamplesView: View {
             wordCard(
                 title: "Japanese",
                 form: record.focusCoverage.japanese.form,
+                translation: laneMeaning(record.focusCoverage.japanese.glosses),
                 readings: record.focusCoverage.japanese.readings,
                 examples: record.focusCoverage.japanese.examples,
                 variants: record.focusCoverage.japanese.variants,
@@ -82,6 +84,7 @@ struct UsageExamplesView: View {
     private func wordCard(
         title: String,
         form: String,
+        translation: String,
         readings: [CharacterReading],
         examples: [UsageExample],
         variants: [ModernFormVariant],
@@ -96,14 +99,14 @@ struct UsageExamplesView: View {
                 .foregroundStyle(AppColors.textPrimary)
             languageFormHeader(
                 form: form,
-                translation: record.primarySharedMeaning.capitalized,
+                translation: translation.capitalized,
                 readings: readings,
                 fontRole: fontRole,
                 writtenReadingForm: writtenReadingForm,
                 readingGlosses: readings.map { reading in
                     showsJapaneseFurigana
                         ? japaneseReadingGloss(for: reading)
-                        : (reading.gloss ?? record.primarySharedMeaning.capitalized)
+                        : reading.gloss
                 }
             )
             Divider()
@@ -188,7 +191,7 @@ struct UsageExamplesView: View {
                     .foregroundStyle(AppColors.textPrimary)
                 if let romanization = parts.romanization {
                     Text(romanization)
-                        .font(AppTypography.metadata)
+                        .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
                 }
             }
@@ -215,14 +218,16 @@ struct UsageExamplesView: View {
                         .font(CJKFontRole.korean.font(size: 22).weight(.medium))
                         .foregroundStyle(AppColors.textPrimary)
                     Spacer(minLength: AppSpacing.spaceSm)
-                    Text(equivalent.gloss ?? record.primarySharedMeaning.capitalized)
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColors.textSecondary)
-                        .multilineTextAlignment(.trailing)
+                    if let gloss = equivalent.gloss, !gloss.isEmpty {
+                        Text(gloss)
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                            .multilineTextAlignment(.trailing)
+                    }
                 }
                 if let romanization = parts.romanization {
                     Text(romanization)
-                        .font(AppTypography.metadata)
+                        .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
                 }
             }
@@ -295,13 +300,19 @@ struct UsageExamplesView: View {
         return (writtenForm, reading.romanization ?? reading.value)
     }
 
-    /// Shows an explicit reading gloss when reviewed; otherwise the shared meaning remains
-    /// visible so every displayed reading has an English anchor, including exact duplicates.
+    /// Shows only the reviewed gloss for this specific reading; a shared Symbol meaning
+    /// must never be substituted for an unreviewed multi-sense reading.
     private func japaneseReadingGloss(for reading: CharacterReading) -> String? {
-        if let gloss = reading.gloss, !gloss.isEmpty {
-            return gloss
-        }
-        return record.primarySharedMeaning.capitalized
+        reading.gloss
+    }
+
+    /// Keeps the top row specific to the selected language lane instead of copying the
+    /// entire shared meaning set onto every target-language page.
+    private func laneMeaning(_ glosses: [String]) -> String {
+        glosses
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .filter { !$0.isEmpty }
+            .joined(separator: " / ")
     }
 
     /// Removes only exact Korean duplicates of the top form or Hanja reading; distinct native vocabulary remains visible.
@@ -322,10 +333,10 @@ struct UsageExamplesView: View {
                 .foregroundStyle(AppColors.textPrimary)
             languageFormHeader(
                 form: coverage.form,
-                translation: record.primarySharedMeaning.capitalized,
+                translation: laneMeaning(coverage.glosses).capitalized,
                 readings: coverage.readings,
                 fontRole: .korean,
-                readingGlosses: coverage.readings.map { $0.gloss ?? coverage.glosses.joined(separator: "; ") }
+                readingGlosses: coverage.readings.map { $0.gloss }
             )
             let equivalents = visibleKoreanEquivalents(coverage)
             if !equivalents.isEmpty {
@@ -348,17 +359,19 @@ struct UsageExamplesView: View {
                             .font(CJKFontRole.korean.font(size: 22).weight(.semibold))
                             .foregroundStyle(AppColors.textPrimary)
                         Spacer(minLength: AppSpacing.spaceSm)
-                        Text(record.primarySharedMeaning.capitalized)
-                            .font(AppTypography.caption)
-                            .foregroundStyle(AppColors.textSecondary)
-                            .multilineTextAlignment(.trailing)
-                            .frame(maxWidth: .infinity, alignment: .trailing)
+                        if let gloss = variant.readings.first?.gloss, !gloss.isEmpty {
+                            Text(gloss)
+                                .font(AppTypography.caption)
+                                .foregroundStyle(AppColors.textSecondary)
+                                .multilineTextAlignment(.trailing)
+                                .frame(maxWidth: .infinity, alignment: .trailing)
+                        }
                     }
                     ForEach(Array(variant.readings.enumerated()), id: \.offset) { _, reading in
                         readingRow(
                             reading,
                             fontRole: .korean,
-                            englishGloss: reading.gloss ?? record.primarySharedMeaning.capitalized
+                            englishGloss: reading.gloss
                         )
                     }
                 }
@@ -499,15 +512,15 @@ struct UsageExamplesView: View {
                 .foregroundStyle(AppColors.textPrimary)
             languageFormHeader(
                 form: coverage.form,
-                translation: record.primarySharedMeaning.capitalized,
+                translation: laneMeaning(coverage.glosses).capitalized,
                 readings: [],
                 fontRole: .traditionalChinese
             )
             if hasTaiwanContent {
-                regionalExamples(title: "Taiwan · Mandarin / Pinyin", writtenForm: coverage.form, readings: coverage.taiwanReadings, examples: coverage.taiwanExamples, englishGloss: record.primarySharedMeaning.capitalized, showTopDivider: false)
+                regionalExamples(title: "Taiwan · Mandarin / Pinyin", writtenForm: coverage.form, readings: coverage.taiwanReadings, examples: coverage.taiwanExamples, showTopDivider: false)
             }
             if hasHongKongContent {
-                regionalExamples(title: "Hong Kong · Cantonese / Jyutping", writtenForm: coverage.form, readings: coverage.hongKongReadings, examples: coverage.hongKongExamples, englishGloss: record.primarySharedMeaning.capitalized, showTopDivider: hasTaiwanContent)
+                regionalExamples(title: "Hong Kong · Cantonese / Jyutping", writtenForm: coverage.form, readings: coverage.hongKongReadings, examples: coverage.hongKongExamples, showTopDivider: hasTaiwanContent)
             }
         }
         .padding(.vertical, AppSpacing.spaceSm)
@@ -526,7 +539,6 @@ struct UsageExamplesView: View {
         writtenForm: String,
         readings: [CharacterReading],
         examples: [UsageExample],
-        englishGloss: String,
         showTopDivider: Bool
     ) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
@@ -542,7 +554,7 @@ struct UsageExamplesView: View {
                     reading,
                     fontRole: .traditionalChinese,
                     writtenForm: writtenForm,
-                    englishGloss: reading.gloss ?? englishGloss
+                    englishGloss: reading.gloss
                 )
             }
             if !readings.isEmpty && !examples.isEmpty {

@@ -694,3 +694,34 @@ The target-language changes refer specifically to the learner-facing Usage pages
 - Korean has Hanja readings plus a Native Korean section for distinct native equivalents; exact duplicates are filtered.
 
 The standalone `Tools/Validate-Corpus.ps1` output is a separate structural/content check. Its missing example metadata was pre-existing in the committed corpus (154 rows before the latest content pass; 133 remain after duplicate removal), so it does not mean the target-language layout failed. Four Regular Script notes—Cloud, Look-toward, Stretch, and Tree—exceed the validator's 25-word limit because of the latest editorial copy pass. The normal local check suite still passes, and no app-layout regression was found.
+
+### New Symbol-content audit complaints — 2026-10-03 — unresolved; no implementation authorized
+
+The latest manual inspection shows that the previous claim of a complete semantic and target-language pass was not reliable enough. The next review must address the following points without assuming that Life or any other named example is isolated:
+
+- **Life and repeated meanings:** The Symbol header says `life`, but the target-language sections currently promote `life / be born / grow` as though every Japanese native reading or equivalent carries all three meanings. Every reading, native equivalent, variant, and example must be checked individually and given only its actual English meaning. Distinct meanings must not be copied across ten Japanese entries merely because the shared character has several related senses.
+- **Slash discipline:** `/` must join only genuinely distinct current senses that belong together for the same written character or clearly need to be presented as alternatives. Do not add unnecessary synonym pairs such as `woman / female`, `old / elderly`, or `sheep / goat`. If a Symbol still means ox, its header should remain `ox`; a usage example may demonstrate cattle when that is the actual word meaning, but the example must not silently redefine the Symbol as `ox / cattle`.
+- **Header versus usage:** A target-language compound or example must not expand the canonical Symbol meaning merely because an English translation contains a related word. Keep the header anchored to the verified core meaning set; show narrower, extended, or contextual meanings in the reading/equivalent/example row where they actually occur.
+- **Origin purpose:** Origin should explain what the approved illustration depicts. Add explanation when the visual is not obvious, when the carved Oracle form does not resemble the illustration, or when the original picture was borrowed for a different sound/meaning, as with Bean. Do not add unnecessary explanations for obvious semantic development such as a sheep-related form being used in a sheep or goat context unless the meaning genuinely changed and the distinction matters to the learner.
+- **Regular Script purpose:** Regular Script must summarize the visible evolution through the stages: lines or components retained, added, removed, merged, reorganized, or regularized, and how the final form settles. A generic statement that the form became standardized is insufficient. This must be checked across all 126 Symbols, not only the examples named in this complaint.
+- **Avoid duplicated semantic copy:** Origin and Regular Script must not repeat the same later-meaning explanation without adding a different stage-specific purpose. Origin should explain the original visual and any necessary semantic borrowing; Regular Script should explain the final written form and only repeat a semantic development when it adds essential endpoint context. Life is a concrete case requiring this decision.
+
+Required next action: perform a fresh row-by-row audit of all 126 Symbols, all four target-language lanes, every reading/equivalent/variant, every example gloss, and every Origin/Regular caption. Do not make changes to unrelated app areas, layout, History, Quick Review, or approved features. This section records the complaint and scope only; no implementation has been authorized by this entry.
+
+The mandatory procedure for that future audit is [`docs/content/symbol-final-audit-rules.md`](docs/content/symbol-final-audit-rules.md). It requires per-reading gloss checks, explicit fallback checks, per-Symbol evidence, and separate reporting of content, runtime, UI, and Apple/Xcode verification. No future completion claim may rely on aggregate counts alone.
+
+### Approved Origin copy is the baseline — 2026-10-03
+
+The previously approved Origin/Illustration text is frozen as the baseline for the next audit. Recent target-language or multi-meaning reviews must not rewrite approved Origin copy by default. Origin should mention a second meaning only when omitting it would materially mislead the learner at the starting point. Otherwise, keep Origin focused on the illustration and explain later meanings in Regular Script, target-language rows, or examples. For example, Sun/Day may say only that the illustration is a sun in Origin; Regular Script can explain how the character also came to mean day. Bean remains an exception where the visual and written meaning differ enough that the borrowing must be explained at Origin.
+
+### Final implementation scope — 2026-10-03
+
+The next implementation pass is strictly Symbol-page work. It is predominantly a target-language audit and correction across Simplified Chinese, Traditional Chinese/Taiwan, Traditional Chinese/Hong Kong, Japanese, and Korean, with limited corrections to Symbol-page Origin/Illustration and Regular Script summaries. The corresponding canonical/runtime Symbol records and audit documentation may be updated for synchronization.
+
+No other page or feature may be changed: Home, History, Browse/Search, Quick Review, Onboarding, More, Settings, About, Sources/Licenses, navigation, toolbar behavior, unrelated SwiftUI views, and approved content outside the Symbol-page audit are explicitly out of scope. Any expansion beyond this boundary requires separate approval before implementation.
+
+### Symbol-only implementation completed — 2026-10-03
+
+The scoped audit is implemented. Canonical Symbol JSON and generated runtime JSON now carry reading-specific glosses for every displayed reading, approved Origin baselines, normalized clear synonym headers, and the three replaced duplicate regional examples. `UsageExamplesView.swift` no longer substitutes the shared meaning for missing reading glosses and now uses selected-lane meanings plus matching romanization typography. Evidence is recorded in `docs/content/symbol-final-audit-ledger-2026-10-03.md`.
+
+The change set does not include History, Quick Review, Home layout, Browse/Search, onboarding, More/Settings/About, navigation, toolbar behavior, or unrelated SwiftUI. Automated content/parity checks pass; Apple/Xcode simulator verification remains pending.

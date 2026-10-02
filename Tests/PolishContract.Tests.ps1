@@ -100,7 +100,7 @@ Assert-Contains -Text $importText -ExpectedSubstring "Mandarin starter content m
 $usageText = Get-Text "Sources/App/Lesson/UsageExamplesView.swift"
 Assert-Contains -Text $usageText -ExpectedSubstring "hongKongReadings.isEmpty" -Message "Traditional Chinese should hide an unavailable Cantonese region."
 Assert-Contains -Text $usageText -ExpectedSubstring "example.exampleLevel == .sentence" -Message "Japanese sentence examples must use the wrapping layout."
-Assert-Contains -Text $usageText -ExpectedSubstring "translation: record.primarySharedMeaning.capitalized" -Message "Usage cards should place the English meaning beside the native form."
+Assert-Contains -Text $usageText -ExpectedSubstring "translation: laneMeaning(" -Message "Usage cards should place the selected lane meaning beside the native form."
 Assert-Contains -Text $usageText -ExpectedSubstring "native word and English meaning on one line" -Message "Usage examples should keep English beside the native word."
 Assert-Contains -Text $usageText -ExpectedSubstring "Taiwan · Mandarin / Pinyin" -Message "Traditional Chinese should label the Taiwan reading section clearly."
 

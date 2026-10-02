@@ -2,7 +2,7 @@
   "id": "lodging",
   "version": 1,
   "coreCharacter": "宿",
-  "coreSharedMeaning": "lodging / stay overnight",
+  "coreSharedMeaning": "lodging",
   "recognitionTakeaway": "The lodging graph stabilizes as 宿, with roof + person/resting-material compressed into a conventional structure.",
   "publicationStatus": "published",
   "unicodeCodePoint": "U+5BBF",
@@ -31,7 +31,8 @@
           "value": "sù",
           "audioAssetRef": null,
           "speechText": "宿",
-          "speechLanguage": "mandarin"
+          "speechLanguage": "mandarin",
+          "gloss": "lodging"
         }
       ],
       "glosses": [
@@ -105,7 +106,8 @@
           "value": "sù",
           "audioAssetRef": null,
           "speechText": "宿",
-          "speechLanguage": "mandarin"
+          "speechLanguage": "mandarin",
+          "gloss": "lodging"
         }
       ],
       "glosses": [
@@ -256,7 +258,8 @@
           "speechLanguage": "japanese",
           "nativeReading": "シュク",
           "romanization": "shuku",
-          "historicalOrigin": "sinoJapanese"
+          "historicalOrigin": "sinoJapanese",
+          "gloss": "overnight stay"
         },
         {
           "system": "kunyomi",
@@ -266,7 +269,8 @@
           "speechLanguage": "japanese",
           "nativeReading": "やど",
           "romanization": "yado",
-          "historicalOrigin": "nativeJapanese"
+          "historicalOrigin": "nativeJapanese",
+          "gloss": "inn / lodging"
         },
         {
           "system": "kunyomi",
@@ -276,7 +280,8 @@
           "speechLanguage": "japanese",
           "nativeReading": "やどる",
           "romanization": "yadoru",
-          "historicalOrigin": "nativeJapanese"
+          "historicalOrigin": "nativeJapanese",
+          "gloss": "dwell / lodge"
         },
         {
           "system": "kunyomi",
@@ -286,7 +291,8 @@
           "speechLanguage": "japanese",
           "nativeReading": "やどす",
           "romanization": "yadosu",
-          "historicalOrigin": "nativeJapanese"
+          "historicalOrigin": "nativeJapanese",
+          "gloss": "harbor / contain / lodge"
         }
       ],
       "glosses": [
@@ -453,7 +459,8 @@
           "speechText": "숙",
           "speechLanguage": "korean",
           "nativeReading": "숙",
-          "romanization": "suk"
+          "romanization": "suk",
+          "gloss": "lodging"
         }
       ],
       "glosses": [
@@ -563,7 +570,7 @@
     "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
-    "originAnchor": "A person and a mat combine to show someone resting for the night; this led to lodging and the later use ‘stay overnight.’",
+    "originAnchor": "A person and a mat combine to show someone resting for the night; this led to the meaning “lodging.”",
     "stages": [
       {
         "stage": "oracleBone",
@@ -753,7 +760,7 @@
     ],
     "origin": {
       "concept": "lodging",
-      "explanation": "A person resting/sleeping on a mat; roof/shelter material appears in forms specifying indoor lodging. Modern use covers both lodging and staying overnight.",
+      "explanation": "A person resting/sleeping on a mat; roof/shelter material appears in forms specifying indoor lodging.",
       "asset": {
         "characterID": "lodging",
         "historicalStage": null,
