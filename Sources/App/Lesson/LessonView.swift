@@ -407,6 +407,27 @@ private struct RevisitEntryView: View {
     }
 }
 
+/// Keeps every Quick Review question visibly distinct from its answer choices in both appearances.
+private struct QuickReviewPromptField<Content: View>: View {
+    private let content: Content
+
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+
+    var body: some View {
+        content
+            .padding(AppSpacing.spaceSm)
+            .frame(maxWidth: .infinity)
+            .background(AppColors.quickReviewPrompt)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.card))
+            .overlay {
+                RoundedRectangle(cornerRadius: AppRadius.card)
+                    .stroke(AppColors.separator, lineWidth: 1)
+            }
+    }
+}
+
 /// Recognition-oriented review tests one learned Symbol at a time without changing learner state.
 private struct QuickReviewView: View {
     let onOpenJourney: (String) -> Void
@@ -451,14 +472,14 @@ private struct QuickReviewView: View {
                         .foregroundStyle(AppColors.textPrimary)
                         .multilineTextAlignment(.center)
                     if currentCard.promptIsSymbol {
-                        ArtifactField {
+                        QuickReviewPromptField {
                             Text(currentCard.prompt)
                                 .font(.system(size: 112, design: .serif))
                                 .foregroundStyle(AppColors.artifactInk)
                                 .frame(maxWidth: .infinity, minHeight: 190)
                         }
                     } else {
-                        GroupedSurface {
+                        QuickReviewPromptField {
                             Text(currentCard.prompt)
                                 .font(AppTypography.exhibitHeading)
                                 .foregroundStyle(AppColors.textPrimary)

@@ -100,7 +100,11 @@ struct UsageExamplesView: View {
                 readings: readings,
                 fontRole: fontRole,
                 writtenReadingForm: writtenReadingForm,
-                readingGlosses: showsJapaneseFurigana ? readings.map { japaneseReadingGloss(for: $0) } : []
+                readingGlosses: readings.map { reading in
+                    showsJapaneseFurigana
+                        ? japaneseReadingGloss(for: reading)
+                        : (reading.gloss ?? record.primarySharedMeaning.capitalized)
+                }
             )
             Divider()
                 .padding(.vertical, AppSpacing.spaceXs)
@@ -291,14 +295,13 @@ struct UsageExamplesView: View {
         return (writtenForm, reading.romanization ?? reading.value)
     }
 
-    /// Uses only an explicit reviewed gloss for a reading. A compound's English
-    /// translation belongs to its example row and must not be presented as the
-    /// standalone meaning of the reading itself.
+    /// Shows an explicit reading gloss when reviewed; otherwise the shared meaning remains
+    /// visible so every displayed reading has an English anchor, including exact duplicates.
     private func japaneseReadingGloss(for reading: CharacterReading) -> String? {
         if let gloss = reading.gloss, !gloss.isEmpty {
             return gloss
         }
-        return nil
+        return record.primarySharedMeaning.capitalized
     }
 
     /// Removes only exact Korean duplicates of the top form or Hanja reading; distinct native vocabulary remains visible.
@@ -352,7 +355,11 @@ struct UsageExamplesView: View {
                             .frame(maxWidth: .infinity, alignment: .trailing)
                     }
                     ForEach(Array(variant.readings.enumerated()), id: \.offset) { _, reading in
-                        readingRow(reading, fontRole: .korean)
+                        readingRow(
+                            reading,
+                            fontRole: .korean,
+                            englishGloss: reading.gloss ?? record.primarySharedMeaning.capitalized
+                        )
                     }
                 }
             }
@@ -497,10 +504,10 @@ struct UsageExamplesView: View {
                 fontRole: .traditionalChinese
             )
             if hasTaiwanContent {
-                regionalExamples(title: "Taiwan · Mandarin / Pinyin", writtenForm: coverage.form, readings: coverage.taiwanReadings, examples: coverage.taiwanExamples, showTopDivider: false)
+                regionalExamples(title: "Taiwan · Mandarin / Pinyin", writtenForm: coverage.form, readings: coverage.taiwanReadings, examples: coverage.taiwanExamples, englishGloss: record.primarySharedMeaning.capitalized, showTopDivider: false)
             }
             if hasHongKongContent {
-                regionalExamples(title: "Hong Kong · Cantonese / Jyutping", writtenForm: coverage.form, readings: coverage.hongKongReadings, examples: coverage.hongKongExamples, showTopDivider: hasTaiwanContent)
+                regionalExamples(title: "Hong Kong · Cantonese / Jyutping", writtenForm: coverage.form, readings: coverage.hongKongReadings, examples: coverage.hongKongExamples, englishGloss: record.primarySharedMeaning.capitalized, showTopDivider: hasTaiwanContent)
             }
         }
         .padding(.vertical, AppSpacing.spaceSm)
@@ -519,6 +526,7 @@ struct UsageExamplesView: View {
         writtenForm: String,
         readings: [CharacterReading],
         examples: [UsageExample],
+        englishGloss: String,
         showTopDivider: Bool
     ) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
@@ -530,7 +538,12 @@ struct UsageExamplesView: View {
                 .font(AppTypography.body.weight(.semibold))
                 .foregroundStyle(AppColors.textPrimary)
             ForEach(Array(readings.enumerated()), id: \.offset) { _, reading in
-                readingRow(reading, fontRole: .traditionalChinese, writtenForm: writtenForm)
+                readingRow(
+                    reading,
+                    fontRole: .traditionalChinese,
+                    writtenForm: writtenForm,
+                    englishGloss: reading.gloss ?? englishGloss
+                )
             }
             if !readings.isEmpty && !examples.isEmpty {
                 Divider()

@@ -366,7 +366,7 @@ private struct HistoryModernReadingGuideCard: View {
                     VStack(alignment: .leading, spacing: 3) {
                         Text(example.written)
                             .font(CJKFontRole.museumRegular.font(size: 28))
-                            .foregroundStyle(AppColors.artifactInk)
+                            .foregroundStyle(AppColors.historyCharacterInk)
 
                         Text(example.readingAid)
                             .font(AppTypography.metadata.weight(.semibold))

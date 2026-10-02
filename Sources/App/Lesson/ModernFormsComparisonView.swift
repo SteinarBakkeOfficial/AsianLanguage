@@ -51,8 +51,8 @@ struct ModernFormsComparisonView: View {
     /// Uses the record's approved Regular-stage conclusion instead of repeating a generic font description.
     private var regularConclusion: String {
         let regularStage = record.history.stages.first(where: { $0.stage == "regular" })
-        return regularStage?.transitionNote
-            ?? regularStage?.stageExplanation
+        return regularStage?.stageExplanation
+            ?? regularStage?.transitionNote
             ?? "The character settles into its balanced Regular Script form."
     }
 }

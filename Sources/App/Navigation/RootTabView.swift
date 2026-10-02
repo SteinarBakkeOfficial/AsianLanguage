@@ -1043,7 +1043,7 @@ private struct HistoryOverviewHeader: View {
             VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
                 Text("The History of Chinese Characters")
                     .font(AppTypography.exhibitHeading)
-                    .foregroundStyle(AppColors.textPrimary)
+                    .foregroundStyle(AppColors.historyHeaderInk)
                 Text("Chinese characters have changed for more than three thousand years. New tools, institutions, and communities reshaped how they were written—while many underlying structures endured.")
                     .font(AppTypography.body)
                     .foregroundStyle(AppColors.textSecondary)
@@ -1902,7 +1902,7 @@ private struct HistoryArticleExampleRow: View {
         if let form = displayForm(for: record) {
             Text(form)
                 .font(CJKFontRole.museumRegular.font(size: 34))
-                .foregroundStyle(AppColors.artifactInk)
+                .foregroundStyle(AppColors.historyCharacterInk)
                 .frame(width: 54, height: 48)
         } else if let stage = historicalStage(for: record), let metadata = stage.assetMetadata {
             HistoricalAssetView(metadata: metadata, displayHeight: 48)

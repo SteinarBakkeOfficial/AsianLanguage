@@ -222,8 +222,9 @@ struct CharacterEvolutionView: View {
                     .font(AppTypography.exhibitHeading)
                     .foregroundStyle(AppColors.textPrimary)
                     .padding(.top, AppSpacing.spaceMd)
-                // Show the full component/interpretation explanation; retain the legacy anchor only as a fallback.
-                Text(record.history.origin?.explanation ?? record.history.originAnchor)
+                // Show the source-backed origin anchor because it carries semantic shifts that a short
+                // illustration caption may omit, such as an original object acquiring a later meaning.
+                Text(record.history.originAnchor)
                     .font(AppTypography.body)
                     .foregroundStyle(AppColors.textPrimary)
                     .multilineTextAlignment(.center)

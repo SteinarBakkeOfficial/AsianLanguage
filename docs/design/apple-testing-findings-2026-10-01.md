@@ -528,7 +528,7 @@ Implementation status: complete locally. This correction supersedes the over-cen
 
 ### Reading-specific language context correction — 2026-10-02
 
-Korean native equivalents no longer use a redundant section heading. Each row carries its own English gloss on the right, including the top Shared Character meaning when that is the correct match. Japanese reading rows show an English gloss only when the reading has an explicit reviewed gloss. Example translations remain attached to their actual compound or sentence rows; they are never promoted into a standalone reading meaning.
+Korean native equivalents no longer use a redundant section heading. Each row carries its own English gloss on the right, including the top Shared Character meaning when that is the correct match. Every visible Chinese, Japanese, Korean, and regional reading row now carries an English gloss: a reviewed reading-specific gloss takes priority, and the shared meaning is shown when the row is an exact duplicate or has no narrower reviewed gloss. Example translations remain attached to their actual compound or sentence rows; they are never promoted into a standalone reading meaning.
 
 Implementation status: complete locally. This preserves distinct language relationships without repeating the top header.
 
@@ -551,3 +551,21 @@ The final product decision separates Quick Review from Review Later:
 - Browse → Learned also opens the full Symbol Journey. Quick Review has one clear Home entry point.
 
 Implementation status: complete locally. The remaining release verification is Apple/Xcode visual and interaction testing.
+
+### Confirmed final correction scope — 2026-10-02
+
+The approved Chinese example content and its four-to-five-example structure are complete and must not be rewritten during this correction pass. The implementation scope was limited to:
+
+- distinct Quick Review prompt surfaces in Light and Dark appearance;
+- a corpus-wide scan for learner-facing parenthetical qualifiers and a separate corpus-wide scan for missing explanations when an original meaning develops into a later meaning;
+- English meanings on every visible Chinese, Japanese, and Korean form, reading, variant, and equivalent, including duplicates where useful;
+- a corpus-wide audit of `/` versus `;` notation in example translations, preserving valid multiple meanings while applying one clear convention;
+- the confirmed History Dark-appearance title and character-ink corrections.
+
+“Self” / 自 is the example that exposed the broader content risk. It must not be treated as an isolated symbol. Questions about punctuation or translation clarity are not permission to rewrite approved example translations.
+
+Process requirement: before implementation, restate the requested tasks, explicit no-change areas, and whether each item is an explanation, audit, or code/content change.
+
+### Completion note — 2026-10-02
+
+The listed correction pass is implemented locally. All 3,186 language-example translations were audited; 644 semicolon separators were normalized to ` / ` in the canonical release records and generated runtime corpus. Approved meanings, non-example editorial fields, and unrelated screens were not rewritten. Local checks pass; native Apple/Xcode testing remains the release gate.

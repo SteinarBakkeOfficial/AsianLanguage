@@ -22,6 +22,16 @@ enum AppColors {
     static let artifactField = adaptive(light: (239, 233, 225), dark: (58, 51, 43))
     static let artifactInk = adaptive(light: (53, 43, 36), dark: (53, 43, 36))
 
+    /// Quick Review keeps its prompt distinct from the selectable answer cards in both appearances.
+    static let quickReviewPrompt = adaptive(light: (239, 233, 225), dark: (75, 66, 56))
+
+    /// History examples sit on surfaces that may become dark; retain readable character ink there.
+    static let historyCharacterInk = adaptive(light: (53, 43, 36), dark: (245, 245, 242))
+
+    /// The History overview title sits over a deliberately light image crop, so its original ink
+    /// color must remain stable when the rest of the app switches to Dark appearance.
+    static let historyHeaderInk = Color(red: 28 / 255, green: 28 / 255, blue: 28 / 255)
+
     /// A visibly separate museum-navigation surface keeps the Origin-to-Today rail
     /// legible without introducing a new accent color family.
     static let journeyRailBackground = adaptive(light: (229, 221, 211), dark: (67, 59, 50))

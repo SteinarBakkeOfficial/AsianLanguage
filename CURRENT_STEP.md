@@ -9,13 +9,33 @@ Maintain the approved V1 package: 126 complete-evolution symbols, local origin a
 - V1 editorial review and the previous screenshot-driven implementation pass are complete for the approved content boundaries. The focused Apple-review follow-up pass is complete locally.
 - The Symbol toolbar action hierarchy, restored two-column Usage layout, compact Japanese kana teaching, varied Quick Review behavior, and the current display-meaning/Japanese-sentence hotfixes are implemented locally. Quick Review is now a Home-surfaced randomized review of all learned Symbols; Review Later remains a separate Browse bookmark for full-journey revisits.
 - Onboarding, most Symbol text, Chinese History guidance, Korean History guidance, and the compact Japanese Hiragana/Katakana sound-pattern guide are confirmed complete.
-- Japanese reading rows show English only when a reading has an explicit reviewed gloss; compound and sentence translations remain attached to their examples instead of being presented as the reading's standalone meaning. Korean Hanja rows always have a track gloss, while native equivalents use their own precise glosses and suppress exact duplicates of the top Hanja reading.
+- Every visible modern-language form and reading row now carries an English gloss: reviewed reading-specific glosses take priority, while the shared meaning remains visible for exact duplicates or readings without a narrower reviewed gloss. Compound and sentence translations remain attached to their own example rows.
 - The final modern-language content sweep is complete: all 126 symbols have at least four non-core examples in Simplified Chinese, Taiwan Mandarin, and Hong Kong Cantonese. The new Traditional Chinese word examples use the appropriate written forms and pronunciation systems, preserve the advanced sentence as the final displayed example, and are synchronized into the bundled runtime corpus.
 - A runtime regression check now enforces the four-example minimum for all three Chinese tracks so a future corpus import cannot silently reintroduce the earlier short lanes.
 - Quick Review uses one three-choice card per learned Symbol, rotates between symbol-to-meaning, meaning-to-symbol, and selected-language prompts, reveals `Check this Symbol` only after an incorrect choice, and routes that action to the exact Symbol from the answered card before ending the temporary session. It does not read from or modify Review Later.
 - All local Windows checks pass; Apple/Xcode screenshot verification remains required before marketplace release.
 - The approved corpus remains exactly 126 records. No new symbols, historical assets, or unrelated features are in scope.
 - Keep the manual-review and screenshot findings documents as the audit trail for this final pass and later Patch 0.1 corrections.
+
+## Confirmed remaining corrections — 2026-10-02
+
+- The Chinese example lanes are already approved at roughly four to five examples per track. Do not remove, replace, or rewrite those example translations as part of this pass.
+- Quick Review must use a distinct grey prompt surface in Light appearance and a lighter, distinct prompt surface in Dark appearance. The three answer cards retain their existing appearance.
+- Scan all 126 symbols for learner-facing parenthetical qualifiers such as `self (originally nose)`. Show the concise learner meaning in the main form/meaning position, while preserving the historical explanation in the appropriate Origin or Regular Script copy.
+- Scan all 126 symbols for missing explanations where the original illustrated meaning and later meaning diverge. `自` / “self” is an example of this broader requirement, not an isolated correction.
+- Every visible Chinese, Japanese, and Korean main form, reading, variant, and equivalent must carry an English meaning, including exact duplicates where they help identify the row. Example translations remain separate and unchanged.
+- Completed: audited all 3,186 language-example translations and replaced 644 semicolon separators with the consistent user-facing ` / ` convention. Approved meanings and non-example text remain unchanged.
+- In Dark appearance, keep the History overview title dark over its light image and use light character ink wherever History example characters sit on dark surfaces.
+
+### Final example-translation audit — 2026-10-02
+
+- Canonical release records and generated runtime records now match exactly for all language-example translations.
+- Semicolons remain only in non-example fields such as editorial glosses or historical copy; they were intentionally outside this correction.
+- All local Windows checks pass. Native Apple/Xcode testing remains the final release gate.
+
+### Process rule
+
+Before implementing any requested correction, restate the exact tasks, the no-change boundaries, and whether the user is asking for explanation, audit, or implementation. Do not infer permission to rewrite approved content from a question about wording or punctuation.
 
 ## Branding update
 

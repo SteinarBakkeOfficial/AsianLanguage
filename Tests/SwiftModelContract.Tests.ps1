@@ -25,6 +25,7 @@ Assert-True $record.Contains("let gloss: String?") "Character readings must pres
 Assert-True $record.Contains("enum HistoricalAvailabilityState") "Historical availability must be modeled separately from confidence."
 Assert-True $record.Contains("let availabilityState: HistoricalAvailabilityState") "Historical stages must expose explicit availability."
 Assert-True $record.Contains("var editorialConfidence: EditorialConfidence") "Historical confidence must be normalized for presentation."
+Assert-True $record.Contains('split(separator: "(", maxSplits: 1') "Learner-facing meanings must hide editorial parenthetical qualifiers."
 
 $homeText = Text "Sources/App/Home/HomeView.swift"
 Assert-True $homeText.Contains("homeRecord") "Home must resolve its display record from its route."
