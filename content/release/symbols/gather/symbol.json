@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "采",
-          "reading": "cǎi",
-          "translation": "pick / gather / collect",
-          "speechText": "采",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "cǎi"
-          ]
-        },
-        {
           "text": "采摘",
           "reading": "cǎizhāi",
           "translation": "pick / gather",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "採",
-          "reading": "cǎi",
-          "translation": "pick / gather / collect",
-          "speechText": "採",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "採摘",
           "reading": "cǎizhāi",
           "translation": "pick / gather",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "採集",
+          "reading": "cǎijí",
+          "translation": "collect / gather",
+          "speechText": "採集",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我們採蘋果。",
           "reading": "Wǒmen cǎi píngguǒ.",
           "translation": "We pick apples.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "采"
           ]
-        },
-        {
-          "text": "採集",
-          "reading": "cǎijí",
-          "translation": "collect / gather",
-          "speechText": "採集",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "採",
-          "reading": "coi2",
-          "translation": "pick / gather / collect",
-          "speechText": "採",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "採摘",
           "reading": "coi2 zaak6",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "採集",
+          "reading": "coi2 zaap6",
+          "translation": "collect / gather",
+          "speechText": "採集",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我哋採蘋果。",
           "reading": "ngo5 dei6 coi2 ping4 gwo2",
           "translation": "We pick apples.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "采"
           ]
-        },
-        {
-          "text": "採集",
-          "reading": "coi2 zaap6",
-          "translation": "collect / gather",
-          "speechText": "採集",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -344,6 +305,38 @@
             }
           ],
           "furiganaHtml": "<ruby>喝采<rt>かっさい</rt></ruby>"
+        },
+        {
+          "text": "采配を振る",
+          "reading": "saihai o furu",
+          "translation": "to direct a team",
+          "speechText": "采配を振る",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "さいはいをふる",
+          "coversReadings": [],
+          "furiganaSegments": [],
+          "furiganaHtml": null
+        },
+        {
+          "text": "喝采を浴びる",
+          "reading": "kassai o abiru",
+          "translation": "to receive applause",
+          "speechText": "喝采を浴びる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "かっさいをあびる",
+          "coversReadings": [],
+          "furiganaSegments": [],
+          "furiganaHtml": null
         }
       ],
       "semanticEquivalents": [],
@@ -382,19 +375,6 @@
         "pick; gather; select (in compounds)"
       ],
       "examples": [
-        {
-          "text": "따다",
-          "reading": "ttada",
-          "translation": "pick / gather",
-          "speechText": "따다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "채택",
           "reading": "chaetaek",
@@ -792,7 +772,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

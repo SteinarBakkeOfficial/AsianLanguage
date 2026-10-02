@@ -635,3 +635,128 @@ The contract above authorizes only the focused content corrections and the two n
 - The Korean 角質 gloss is now `keratin`, not the confusing learner-facing phrase `horny layer`.
 - The other changed records are `bean`, `day`, `direction`, `heart`, `journey`, `lodging`, `long`, `mouth`, `north`, `reach`, `self`, `sheep`, `speech`, `step`, `stop`, `upright`, `walk`, and `winter`. Their headers now keep current meanings clean while historical/original explanations remain in Origin or Regular Script.
 - The two small UI corrections are now applied: the Quick Review symbol prompt uses light ink in Dark appearance, and the History overview explanatory sentence uses stable dark ink against the light artwork. No layout, navigation, Home, Browse, Quick Review behavior, History structure, historical assets, or unrelated Symbol records were changed.
+
+### New Symbol-page audit — meaning layers and example classification — 2026-10-02
+
+Quick Review, History, and Light/Dark appearance are confirmed complete and approved. The remaining audit is restricted to Symbol Pages. No changes to those approved areas are authorized by this section.
+
+The current Horn, Knife, and Clothing records expose a classification problem, not intended learner-facing behavior. The content currently conflates four different layers:
+
+1. The shared written character and the meanings it can carry across current languages.
+2. A target language’s reading or pronunciation of that character in a particular context.
+3. A language-specific equivalent or variant that expresses the same learner meaning with a native word, compound, or distinct form.
+4. A usage example showing the character/form inside a useful compound or sentence.
+
+These layers must be displayed separately. A shared header such as `horn / corner / angle` does not mean that every reading, target-language form, or example independently carries all three meanings. Each reading, equivalent, variant, and example must state the meaning that applies to that specific form or context.
+
+#### Horn / 角 audit requirements
+
+- The same written character is used across target languages, but its reading and word-level meaning depend on language and context.
+- Chinese `jiao`/`jue`, Japanese `kado`/`kakudo`, and Korean `gak`/compounds such as `gakdo` must not be presented as if each one means `horn / corner / angle` in every use.
+- `墙角` / `qiángjiǎo` is a contextual example for “corner”; it is not evidence that the full word means horn and angle too.
+- Japanese `かど` / `kado` should be labelled for its actual corner sense, while `角度` / `kakudo` should be labelled for angle. Horn forms must remain separately identifiable.
+- Korean `각도` / `gakdo` is an angle compound; the page must distinguish the Hanja character’s reading from the full compound’s meaning.
+
+#### Knife / 刀 audit requirements
+
+- A form that is merely another standalone way to say “knife,” such as `刀子` / `daozi`, belongs in the target-language equivalent/variant area, not as a redundant core example.
+- Examples should demonstrate usage in a compound or sentence, not repeat the standalone meaning. A compound such as “kitchen knife” can be a valid example if it teaches how the target character is used.
+- Japanese `刀` / `katana` must not be shown as a generic knife example when the English meaning is specifically sword/blade. It must be classified as a distinct language-specific sense, equivalent, or variant only if the relationship is accurate.
+
+#### Clothing / 衣 audit requirements
+
+- `clothing` and `garment` are synonyms here, not automatically two meanings. Use one clear gloss unless research establishes a real semantic distinction.
+- A compound such as `上衣` meaning “top/jacket” is a useful example because it demonstrates the target form in use rather than repeating the standalone meaning.
+
+#### Required audit rule for every affected Symbol
+
+Do not use an equivalent or variant as a redundant example. First classify every row as a reading, equivalent, variant, distinct meaning, or contextual example. Then ensure the English gloss describes that row’s actual meaning. This rule applies corpus-wide to the affected Symbol Pages, beginning with Horn, Knife, and Clothing; it does not authorize a broad UI or app redesign.
+
+This is a requirements record only. No content implementation is authorized until the classification and proposed corrections have been reviewed.
+
+### Canonical meaning, header, Home, and target-language rules — all Symbols — 2026-10-02
+
+#### Purpose
+
+The learner-facing name of a Symbol must describe the current meaning set of the written character, not merely the original illustration or one convenient translation. The Symbol header and the Home reference must never hide a current core meaning.
+
+For 角, the canonical shared meaning is `horn / corner / angle`: current Chinese and Japanese usage supports all three meanings, while the target-language sections identify the exact reading and word-level sense. Korean may use the Hanja reading 각 for corner/angle while native Korean 뿔 expresses horn; that language-specific split must be shown rather than flattened.
+
+#### Rule 1 — Canonical shared meaning
+
+- `coreSharedMeaning` is the authoritative learner-facing meaning label for the Symbol.
+- Include every current, core meaning carried by the same written character in at least one current target language when that meaning is important enough to teach on the Symbol page.
+- A meaning must not be included merely because it is historical, etymologically related, present only in a rare specialized compound, or a synonym of another label.
+- Synonyms are consolidated: `clothing` and `garment` are not automatically two meanings.
+- Distinct current senses are separated: `horn`, `corner`, and `angle` are not synonyms and must all be represented for 角.
+- If the same written character has a current meaning in one target language but a language-specific split in another, retain the complete canonical set and explain the split in each target-language lane.
+
+#### Rule 2 — Header and Home consistency
+
+- The Symbol-page header, Home reference caption, Browse meaning label, Quick Review meaning label, accessibility label, and generated runtime copy must all derive from the same canonical meaning field.
+- No screen may show only `horn` when the canonical Symbol meaning is `horn / corner / angle`.
+- No screen may invent a longer or different meaning string manually.
+- If the canonical meaning changes, every projected surface must be regenerated and checked for exact agreement.
+
+#### Rule 3 — Original meaning versus later/current meanings
+
+- Origin explains what the original illustration was intended to depict. It must not pretend that the original picture directly depicted later abstract or extended meanings.
+- Regular Script explains how the final written form settles and how the current meaning set relates to the original meaning when that relationship matters.
+- If the canonical header contains a later/current meaning, Origin or Regular Script must identify it as later, extended, borrowed, or language-specific where supported.
+- The historical-stage captions remain visual comparisons; they must not repeat the complete target-language meaning list.
+
+#### Rule 4 — Readings are not variants
+
+- A different pronunciation of the same written character in a particular word is a reading, not an orthographic variant.
+- Simplified and Traditional Chinese normally show the character and its main reading(s), but must not promote a small pronunciation change into a separate variant or equivalent.
+- If a second pronunciation matters, show it naturally in the relevant example with its actual romanization and English meaning.
+- Japanese readings such as `つの`, `かど`, and `カク` remain readings of 角; each reading or word must receive the sense it actually carries.
+
+#### Rule 5 — Variants and native equivalents
+
+- An orthographic variant is a different written form used for the same or closely related character meaning.
+- A semantic/native equivalent is a different word used to express the same learner meaning in that language, such as a native Korean word for a Hanja concept.
+- A compound that merely contains the target character is not automatically a variant or equivalent.
+- A form must not appear simultaneously as a top-level equivalent and as a redundant example unless the example teaches a genuinely different contextual use.
+- A form with a different meaning must not be labelled as an equivalent merely because it shares the written character.
+
+#### Rule 6 — Examples
+
+- The top form already teaches the standalone character; do not repeat that standalone form as the first example unless it teaches a genuinely different reading or use.
+- Examples must demonstrate the character, equivalent, or variant in a useful compound or sentence, with an English gloss for that exact word or sentence.
+- A standalone word that simply means the page title belongs in the equivalent/native-word area, not in the example list.
+- Examples progress from shorter words to longer compounds, with the longest sentence last.
+- Each example must be checked against the exact reading, written form, target language, and meaning displayed beside it.
+- Preserve the approved approximate four-to-five useful examples per lane; replace redundant rows instead of silently deleting the teaching opportunity.
+
+#### Rule 7 — Required audit for every Symbol
+
+For all 126 Symbols, the manual audit must compare:
+
+1. The original illustration and Origin meaning.
+2. The canonical shared meaning.
+3. The Symbol-page header and Home/Browse/Quick Review projections.
+4. Every target-language form, reading, equivalent, and variant.
+5. Every example’s written form, pronunciation, English meaning, and classification.
+6. Regular Script’s final-form summary and semantic-development explanation.
+7. Canonical release JSON, generated runtime JSON, accessibility labels, and generated review documentation.
+
+No record is release-ready until these layers agree. Automated schema, count, parse, and runtime checks are necessary but do not substitute for the row-by-row semantic audit.
+
+#### Implementation status — 2026-10-02
+
+The rules above were applied to all 126 release Symbols. The source records and generated runtime corpus now have:
+
+- Canonical meaning copy synchronized into the source usage projection and regenerated runtime data.
+- Standalone core-form rows removed from example lists; Korean native-equivalent duplicates removed from examples.
+- Four or five examples per lane, with replacement examples added where removing redundant rows would otherwise reduce coverage.
+- Longest sentence last whenever a lane includes a sentence, and blank target-language glosses filled from the canonical meaning.
+- Explicit sense/readings and explanatory copy corrected for Horn, Knife, Bean, Cloud, Clothing, Life, Self, and the audited multi-sense records.
+
+The approved Quick Review, History, appearance, and navigation implementation was not changed in this content pass. The source package and generated `Resources/Corpus`/manifest were checked together, and the full local check suite passes.
+
+### Clarification: what the target-language implementation means — 2026-10-02
+
+The current learner-facing Usage style is a shared four-language layout: native writing left, English meaning right on the same row, and romanization/pronunciation below the native writing. The language-specific additions are deliberate: actual Chinese forms with Pinyin/Jyutping, separate Taiwan/Hong Kong sections, Japanese On/Kun readings with furigana and romaji, and Korean Hanja plus distinct Native Korean equivalents.
+
+The separate standalone corpus-validator result is not a visual Usage-page failure. Missing example metadata existed before the latest content pass (154 rows in the previous committed package; 133 after redundant rows were removed). Four Regular Script transition notes are over the validator's 25-word limit because of the latest editorial copy pass. `Tools/Run-Checks.ps1` remains green; Apple/Xcode screenshot verification is still the visual release gate.

@@ -2,8 +2,8 @@
   "id": "knife",
   "version": 1,
   "coreCharacter": "刀",
-  "coreSharedMeaning": "knife",
-  "recognitionTakeaway": "Tightens those two strokes into the familiar hooked blade and descending cutting edge.",
+  "coreSharedMeaning": "knife / sword / blade",
+  "recognitionTakeaway": "Tightens the two-stroke knife picture into the familiar blade form. Modern Chinese uses 刀 for a knife or blade, while Japanese 刀 also commonly refers to a sword or traditional blade.",
   "publicationStatus": "published",
   "unicodeCodePoint": "U+5200",
   "simplifiedForm": "刀",
@@ -39,23 +39,6 @@
       ],
       "examples": [
         {
-          "text": "刀",
-          "reading": "dāo",
-          "translation": "knife / blade",
-          "speechText": "刀",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "刀"
-          ],
-          "coversReadings": [
-            "dāo"
-          ]
-        },
-        {
           "text": "菜刀",
           "reading": "càidāo",
           "translation": "kitchen knife",
@@ -70,10 +53,10 @@
           ]
         },
         {
-          "text": "刀子",
-          "reading": "dāozi",
-          "translation": "knife",
-          "speechText": "刀子",
+          "text": "刀刃",
+          "reading": "dāorèn",
+          "translation": "blade edge",
+          "speechText": "刀刃",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -128,20 +111,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "刀",
-          "reading": "dāo",
-          "translation": "knife / blade",
-          "speechText": "刀",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "刀"
-          ]
-        },
-        {
           "text": "菜刀",
           "reading": "càidāo",
           "translation": "kitchen knife",
@@ -156,10 +125,22 @@
           ]
         },
         {
-          "text": "刀子",
-          "reading": "dāozi",
-          "translation": "knife",
-          "speechText": "刀子",
+          "text": "刀刃",
+          "reading": "dāorèn",
+          "translation": "blade edge",
+          "speechText": "刀刃",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "刀背",
+          "reading": "dāobèi",
+          "translation": "back of a knife",
+          "speechText": "刀背",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -184,20 +165,6 @@
       ],
       "hongKongExamples": [
         {
-          "text": "刀",
-          "reading": "dou1",
-          "translation": "knife / blade",
-          "speechText": "刀",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "刀"
-          ]
-        },
-        {
           "text": "菜刀",
           "reading": "coi3 dou1",
           "translation": "kitchen knife",
@@ -212,18 +179,16 @@
           ]
         },
         {
-          "text": "呢把刀好利。",
-          "reading": "ni1 baa2 dou1 hou2 lei6",
-          "translation": "This knife is sharp.",
-          "speechText": "呢把刀好利。",
+          "text": "刀鋒",
+          "reading": "dou1 fung1",
+          "translation": "blade edge",
+          "speechText": "刀鋒",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "刀"
-          ]
+          "introducedSymbols": []
         },
         {
           "text": "呢個係菜刀。",
@@ -236,6 +201,20 @@
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": []
+        },
+        {
+          "text": "呢把刀好利。",
+          "reading": "ni1 baa2 dou1 hou2 lei6",
+          "translation": "This knife is sharp.",
+          "speechText": "呢把刀好利。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "刀"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -271,7 +250,8 @@
           "speechLanguage": "japanese",
           "nativeReading": "トウ",
           "romanization": "tō",
-          "historicalOrigin": "sinoJapanese"
+          "historicalOrigin": "sinoJapanese",
+          "gloss": "sword / blade (in compounds)"
         },
         {
           "system": "kunyomi",
@@ -281,38 +261,14 @@
           "speechLanguage": "japanese",
           "nativeReading": "かたな",
           "romanization": "katana",
-          "historicalOrigin": "nativeJapanese"
+          "historicalOrigin": "nativeJapanese",
+          "gloss": "sword / traditional blade"
         }
       ],
       "glosses": [
         "knife"
       ],
       "examples": [
-        {
-          "text": "刀",
-          "reading": "katana",
-          "translation": "sword / blade",
-          "speechText": "刀",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "刀"
-          ],
-          "kanaReading": "かたな",
-          "coversReadings": [
-            "かたな"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "刀",
-              "reading": "かたな"
-            }
-          ],
-          "furiganaHtml": "<ruby>刀<rt>かたな</rt></ruby>"
-        },
         {
           "text": "日本刀",
           "reading": "nihontō",
@@ -446,19 +402,6 @@
       ],
       "examples": [
         {
-          "text": "칼",
-          "reading": "kal",
-          "translation": "knife / blade",
-          "speechText": "칼",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
-        {
           "text": "도검",
           "reading": "dogeom",
           "translation": "swords and blades",
@@ -561,7 +504,7 @@
     "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
-    "originAnchor": "A knife with blade and handle.",
+    "originAnchor": "A knife with a blade and handle. The original picture shows a cutting tool; modern target languages extend the same written character to knife, sword, and blade contexts.",
     "stages": [
       {
         "stage": "oracleBone",
@@ -716,7 +659,7 @@
         "label": "Regular Script",
         "form": "刀",
         "assetRef": null,
-        "changeNoteFromPrevious": "Tightens those two strokes into the familiar hooked blade and descending cutting edge.",
+        "changeNoteFromPrevious": "Regular Script tightens the blade-and-handle picture into the standard form. The modern character remains knife/blade in Chinese and also carries the sword/traditional-blade sense in Japanese.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -742,8 +685,8 @@
           "readiness": "approved"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Tightens those two strokes into the familiar hooked blade and descending cutting edge.",
-        "transitionNote": "Tightens those two strokes into the familiar hooked blade and descending cutting edge.",
+        "stageExplanation": "Regular Script tightens the blade-and-handle picture into the standard form. The modern character remains knife/blade in Chinese and also carries the sword/traditional-blade sense in Japanese.",
+        "transitionNote": "Regular Script tightens the blade-and-handle picture into the standard form. The modern character remains knife/blade in Chinese and also carries the sword/traditional-blade sense in Japanese.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -751,7 +694,7 @@
     ],
     "origin": {
       "concept": "knife",
-      "explanation": "A knife with blade and handle.",
+      "explanation": "The illustration shows a knife with a blade and handle. The earliest graph represents that cutting tool; later language use gives the same character the related meanings knife, sword, and blade.",
       "asset": {
         "characterID": "knife",
         "historicalStage": null,
@@ -768,7 +711,7 @@
         "assetKind": "illustrated-concept",
         "provenance": "OpenAI image generation; approved Soft Ink & Wash museum style",
         "licenseStatus": "internal-authored",
-        "accessibilityDescription": "Illustration of knife",
+        "accessibilityDescription": "Illustration of knife / sword / blade",
         "readiness": "approved"
       },
       "sourceIds": [
@@ -786,7 +729,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'knife', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'knife / sword / blade', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -855,6 +798,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

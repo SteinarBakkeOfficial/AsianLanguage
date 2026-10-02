@@ -2,7 +2,7 @@
   "id": "long",
   "version": 1,
   "coreCharacter": "长",
-  "coreSharedMeaning": "long / grow; elder/chief",
+  "coreSharedMeaning": "long / grow / elder / chief",
   "recognitionTakeaway": "Traditional 長 regularizes the old elder figure; Simplified Chinese later uses 长.",
   "publicationStatus": "published",
   "unicodeCodePoint": "U+957F",
@@ -46,21 +46,6 @@
         "long"
       ],
       "examples": [
-        {
-          "text": "长",
-          "reading": "cháng",
-          "translation": "long",
-          "speechText": "长",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "cháng"
-          ]
-        },
         {
           "text": "很长",
           "reading": "hěn cháng",
@@ -151,18 +136,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "長",
-          "reading": "cháng",
-          "translation": "long",
-          "speechText": "長",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "很長",
           "reading": "hěn cháng",
           "translation": "very long",
@@ -191,6 +164,18 @@
           ]
         },
         {
+          "text": "長大",
+          "reading": "zhǎngdà",
+          "translation": "grow up",
+          "speechText": "長大",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這條路很長。",
           "reading": "Zhè tiáo lù hěn cháng.",
           "translation": "This road is long.",
@@ -203,35 +188,9 @@
           "introducedSymbols": [
             "长"
           ]
-        },
-        {
-          "text": "長大",
-          "reading": "zhǎngdà",
-          "translation": "grow up",
-          "speechText": "長大",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "長",
-          "reading": "coeng4",
-          "translation": "long",
-          "speechText": "長",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "长"
-          ]
-        },
         {
           "text": "長頭髮",
           "reading": "coeng4 tau4 faat3",
@@ -251,6 +210,18 @@
           "reading": "coeng4 dyun2",
           "translation": "length / long and short",
           "speechText": "長短",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "長大",
+          "reading": "zoeng2 daai6",
+          "translation": "grow up",
+          "speechText": "長大",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -489,19 +460,6 @@
         "long"
       ],
       "examples": [
-        {
-          "text": "길다",
-          "reading": "gilda",
-          "translation": "be long",
-          "speechText": "길다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "장거리",
           "reading": "janggeori",
@@ -830,7 +788,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'long / grow; elder/chief', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'long / grow / elder / chief', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -899,7 +857,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

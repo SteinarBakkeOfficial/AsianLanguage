@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "天",
-          "reading": "tiān",
-          "translation": "sky",
-          "speechText": "天",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "tiān"
-          ]
-        },
-        {
           "text": "天空",
           "reading": "tiānkōng",
           "translation": "sky",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "天",
-          "reading": "tiān",
-          "translation": "sky",
-          "speechText": "天",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "天空",
           "reading": "tiānkōng",
           "translation": "sky",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "天地",
+          "reading": "tiāndì",
+          "translation": "heaven and earth",
+          "speechText": "天地",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "今天是晴天。",
           "reading": "Jīntiān shì qíngtiān.",
           "translation": "Today is a sunny day.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "天"
           ]
-        },
-        {
-          "text": "天地",
-          "reading": "tiāndì",
-          "translation": "heaven and earth",
-          "speechText": "天地",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "天",
-          "reading": "tin1",
-          "translation": "sky",
-          "speechText": "天",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "天空",
           "reading": "tin1 hung1",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "天地",
+          "reading": "tin1 dei6",
+          "translation": "heaven and earth",
+          "speechText": "天地",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "今日係晴天。",
           "reading": "gam1 jat6 hai6 cing4 tin1",
           "translation": "Today is a sunny day.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "天"
           ]
-        },
-        {
-          "text": "天地",
-          "reading": "tin1 dei6",
-          "translation": "heaven and earth",
-          "speechText": "天地",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -313,31 +274,6 @@
         "sky"
       ],
       "examples": [
-        {
-          "text": "天",
-          "reading": "ten",
-          "translation": "heaven / sky",
-          "speechText": "天",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "天"
-          ],
-          "kanaReading": "てん",
-          "coversReadings": [
-            "テン"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "天",
-              "reading": "てん"
-            }
-          ],
-          "furiganaHtml": "<ruby>天<rt>てん</rt></ruby>"
-        },
         {
           "text": "天気",
           "reading": "tenki",
@@ -491,19 +427,6 @@
         "sky"
       ],
       "examples": [
-        {
-          "text": "하늘",
-          "reading": "haneul",
-          "translation": "sky",
-          "speechText": "하늘",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "천국",
           "reading": "cheonguk",
@@ -901,6 +824,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

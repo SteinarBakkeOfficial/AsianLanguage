@@ -1,6 +1,6 @@
 # Symbol review report
 
-Generated: 2026-10-01T13:53:30.2464819Z
+Generated: 2026-10-02T14:36:58.4648041Z
 
 This report records the approved V1 editorial package. Future corrections are tracked through Patch 0.1 maintenance.
 
@@ -254,7 +254,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/below/sources.json
 - Historical references: content/release/symbols/below/historical-references.json
 
-## 利 — benefit / advantage; sharp
+## 利 — benefit / advantage / sharp
 
 - ID: benefit
 - Folder: content/release/symbols/benefit
@@ -529,7 +529,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/classic/sources.json
 - Historical references: content/release/symbols/classic/historical-references.json
 
-## 衣 — clothing / garment
+## 衣 — clothing
 
 - ID: clothing
 - Folder: content/release/symbols/clothing
@@ -554,7 +554,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/clothing/sources.json
 - Historical references: content/release/symbols/clothing/historical-references.json
 
-## 云 — cloud; literary “say” in 云
+## 云 — cloud
 
 - ID: cloud
 - Folder: content/release/symbols/cloud
@@ -1079,7 +1079,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/gather/sources.json
 - Historical references: content/release/symbols/gather/historical-references.json
 
-## 行 — go / move; conduct
+## 行 — go / move / conduct
 
 - ID: go
 - Folder: content/release/symbols/go
@@ -1404,7 +1404,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/king/sources.json
 - Historical references: content/release/symbols/king/historical-references.json
 
-## 刀 — knife
+## 刀 — knife / sword / blade
 
 - ID: knife
 - Folder: content/release/symbols/knife
@@ -1504,7 +1504,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/lodging/sources.json
 - Historical references: content/release/symbols/lodging/historical-references.json
 
-## 长 — long / grow; elder/chief
+## 长 — long / grow / elder / chief
 
 - ID: long
 - Folder: content/release/symbols/long
@@ -1529,7 +1529,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/long/sources.json
 - Historical references: content/release/symbols/long/historical-references.json
 
-## 望 — look afar / look toward; hope/expect
+## 望 — look afar / look toward / hope / expect
 
 - ID: look-toward
 - Folder: content/release/symbols/look-toward
@@ -2379,7 +2379,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/south/sources.json
 - Historical references: content/release/symbols/south/historical-references.json
 
-## 言 — speech / words
+## 言 — speech / words / say
 
 - ID: speech
 - Folder: content/release/symbols/speech
@@ -2554,7 +2554,7 @@ This report records the approved V1 editorial package. Future corrections are tr
 - Sources: content/release/symbols/strength/sources.json
 - Historical references: content/release/symbols/strength/historical-references.json
 
-## 申 — state / apply; historical lightning/extend
+## 申 — state / apply / declare
 
 - ID: stretch
 - Folder: content/release/symbols/stretch

@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "集",
-          "reading": "jí",
-          "translation": "gather",
-          "speechText": "集",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "jí"
-          ]
-        },
-        {
           "text": "集合",
           "reading": "jíhé",
           "translation": "gather / assemble",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "集",
-          "reading": "jí",
-          "translation": "gather",
-          "speechText": "集",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "集合",
           "reading": "jíhé",
           "translation": "gather / assemble",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "集中",
+          "reading": "jízhōng",
+          "translation": "concentrate / gather",
+          "speechText": "集中",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我們在這裡集合。",
           "reading": "Wǒmen zài zhèlǐ jíhé.",
           "translation": "We gather here.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "集"
           ]
-        },
-        {
-          "text": "集中",
-          "reading": "jízhōng",
-          "translation": "concentrate / gather",
-          "speechText": "集中",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "集",
-          "reading": "zaap6",
-          "translation": "gather",
-          "speechText": "集",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "集合",
           "reading": "zaap6 hap6",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "集中",
+          "reading": "zaap6 zung1",
+          "translation": "concentrate / gather",
+          "speechText": "集中",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我哋喺呢度集合。",
           "reading": "ngo5 dei6 hai2 ni1 dou6 zaap6 hap6",
           "translation": "We gather here.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "集"
           ]
-        },
-        {
-          "text": "集中",
-          "reading": "zaap6 zung1",
-          "translation": "concentrate / gather",
-          "speechText": "集中",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -461,32 +422,6 @@
             }
           ],
           "furiganaHtml": "ここに<ruby>集<rt>あつ</rt></ruby>まります。"
-        },
-        {
-          "text": "集う",
-          "reading": "tsudou",
-          "translation": "gather / assemble",
-          "speechText": "集う",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "つどう",
-          "coversReadings": [
-            "つどう"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "集",
-              "reading": "つど"
-            },
-            {
-              "text": "う"
-            }
-          ],
-          "furiganaHtml": "<ruby>集<rt>つど</rt></ruby>う"
         }
       ],
       "semanticEquivalents": [],
@@ -520,19 +455,6 @@
         "gather"
       ],
       "examples": [
-        {
-          "text": "모이다",
-          "reading": "moida",
-          "translation": "gather",
-          "speechText": "모이다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "집합",
           "reading": "jiphap",
@@ -930,7 +852,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

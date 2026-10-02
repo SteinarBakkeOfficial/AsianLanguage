@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "身",
-          "reading": "shēn",
-          "translation": "body",
-          "speechText": "身",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "shēn"
-          ]
-        },
-        {
           "text": "身体",
           "reading": "shēntǐ",
           "translation": "body / health",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "身",
-          "reading": "shēn",
-          "translation": "body",
-          "speechText": "身",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "身體",
           "reading": "shēntǐ",
           "translation": "body / health",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "身高",
+          "reading": "shēngāo",
+          "translation": "height",
+          "speechText": "身高",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我的身體很好。",
           "reading": "Wǒ de shēntǐ hěn hǎo.",
           "translation": "I am in good health.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "身"
           ]
-        },
-        {
-          "text": "身高",
-          "reading": "shēngāo",
-          "translation": "height",
-          "speechText": "身高",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "身",
-          "reading": "san1",
-          "translation": "body",
-          "speechText": "身",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "身體",
           "reading": "san1 tai2",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "身高",
+          "reading": "san1 gou1",
+          "translation": "height",
+          "speechText": "身高",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我身體幾好。",
           "reading": "ngo5 san1 tai2 gei2 hou2",
           "translation": "I am in good health.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "身"
           ]
-        },
-        {
-          "text": "身高",
-          "reading": "san1 gou1",
-          "translation": "height",
-          "speechText": "身高",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "body"
       ],
       "examples": [
-        {
-          "text": "身",
-          "reading": "mi",
-          "translation": "body / oneself",
-          "speechText": "身",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "身"
-          ],
-          "kanaReading": "み",
-          "coversReadings": [
-            "み"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "身",
-              "reading": "み"
-            }
-          ],
-          "furiganaHtml": "<ruby>身<rt>み</rt></ruby>"
-        },
         {
           "text": "全身",
           "reading": "zenshin",
@@ -469,19 +405,6 @@
         "body"
       ],
       "examples": [
-        {
-          "text": "몸",
-          "reading": "mom",
-          "translation": "body",
-          "speechText": "몸",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "신체",
           "reading": "sinche",
@@ -879,6 +802,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

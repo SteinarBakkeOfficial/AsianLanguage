@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "林",
-          "reading": "lín",
-          "translation": "forest",
-          "speechText": "林",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "lín"
-          ]
-        },
-        {
           "text": "树林",
           "reading": "shùlín",
           "translation": "grove / woods",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "林",
-          "reading": "lín",
-          "translation": "forest",
-          "speechText": "林",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "樹林",
           "reading": "shùlín",
           "translation": "grove / woods",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "林業",
+          "reading": "línyè",
+          "translation": "forestry",
+          "speechText": "林業",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我們走進樹林。",
           "reading": "Wǒmen zǒu jìn shùlín.",
           "translation": "We walk into the woods.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "林"
           ]
-        },
-        {
-          "text": "林業",
-          "reading": "línyè",
-          "translation": "forestry",
-          "speechText": "林業",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "林",
-          "reading": "lam4",
-          "translation": "forest",
-          "speechText": "林",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "樹林",
           "reading": "syu6 lam4",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "林業",
+          "reading": "lam4 jip6",
+          "translation": "forestry",
+          "speechText": "林業",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我哋行入樹林。",
           "reading": "ngo5 dei6 haang4 jap6 syu6 lam4",
           "translation": "We walk into the woods.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "林"
           ]
-        },
-        {
-          "text": "林業",
-          "reading": "lam4 jip6",
-          "translation": "forestry",
-          "speechText": "林業",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "forest"
       ],
       "examples": [
-        {
-          "text": "林",
-          "reading": "hayashi",
-          "translation": "woods / grove",
-          "speechText": "林",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "林"
-          ],
-          "kanaReading": "はやし",
-          "coversReadings": [
-            "はやし"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "林",
-              "reading": "はやし"
-            }
-          ],
-          "furiganaHtml": "<ruby>林<rt>はやし</rt></ruby>"
-        },
         {
           "text": "森林",
           "reading": "shinrin",
@@ -478,19 +414,6 @@
         "forest"
       ],
       "examples": [
-        {
-          "text": "숲",
-          "reading": "sup",
-          "translation": "forest",
-          "speechText": "숲",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "산림",
           "reading": "sallim",
@@ -897,6 +820,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

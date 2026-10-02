@@ -39,23 +39,6 @@
       ],
       "examples": [
         {
-          "text": "牛",
-          "reading": "niú",
-          "translation": "cow / ox",
-          "speechText": "牛",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "牛"
-          ],
-          "coversReadings": [
-            "niú"
-          ]
-        },
-        {
           "text": "牛奶",
           "reading": "niúnǎi",
           "translation": "milk",
@@ -128,20 +111,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "牛",
-          "reading": "niú",
-          "translation": "cow / ox",
-          "speechText": "牛",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "牛"
-          ]
-        },
-        {
           "text": "牛奶",
           "reading": "niúnǎi",
           "translation": "milk",
@@ -168,6 +137,18 @@
           "introducedSymbols": []
         },
         {
+          "text": "牛車",
+          "reading": "niú chē",
+          "translation": "ox cart",
+          "speechText": "牛車",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "那邊有一頭牛。",
           "reading": "Nàbiān yǒu yì tóu niú.",
           "translation": "There is a cow over there.",
@@ -183,20 +164,6 @@
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "牛",
-          "reading": "ngau4",
-          "translation": "cow / ox",
-          "speechText": "牛",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "牛"
-          ]
-        },
         {
           "text": "牛奶",
           "reading": "ngau4 naai5",
@@ -216,6 +183,18 @@
           "reading": "ngau4 juk6",
           "translation": "beef",
           "speechText": "牛肉",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "牛車",
+          "reading": "ngau4 ce1",
+          "translation": "ox cart",
+          "speechText": "牛車",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -288,31 +267,6 @@
         "ox"
       ],
       "examples": [
-        {
-          "text": "牛",
-          "reading": "ushi",
-          "translation": "cow / ox",
-          "speechText": "牛",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "牛"
-          ],
-          "kanaReading": "うし",
-          "coversReadings": [
-            "うし"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "牛",
-              "reading": "うし"
-            }
-          ],
-          "furiganaHtml": "<ruby>牛<rt>うし</rt></ruby>"
-        },
         {
           "text": "牛乳",
           "reading": "gyūnyū",
@@ -438,19 +392,6 @@
         "ox"
       ],
       "examples": [
-        {
-          "text": "소",
-          "reading": "so",
-          "translation": "cow / ox",
-          "speechText": "소",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "우유",
           "reading": "uyu",
@@ -848,6 +789,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

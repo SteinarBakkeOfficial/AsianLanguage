@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "宿",
-          "reading": "sù",
-          "translation": "lodging",
-          "speechText": "宿",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "sù"
-          ]
-        },
-        {
           "text": "宿舍",
           "reading": "sùshè",
           "translation": "dormitory",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "宿",
-          "reading": "sù",
-          "translation": "lodging",
-          "speechText": "宿",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "宿舍",
           "reading": "sùshè",
           "translation": "dormitory",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "宿命",
+          "reading": "sùmìng",
+          "translation": "fate / destiny",
+          "speechText": "宿命",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我住在宿舍。",
           "reading": "Wǒ zhù zài sùshè.",
           "translation": "I live in a dormitory.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "宿"
           ]
-        },
-        {
-          "text": "宿命",
-          "reading": "sùmìng",
-          "translation": "fate / destiny",
-          "speechText": "宿命",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "宿",
-          "reading": "suk1",
-          "translation": "lodging",
-          "speechText": "宿",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "宿舍",
           "reading": "suk1 se3",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "宿命",
+          "reading": "suk1 ming6",
+          "translation": "fate / destiny",
+          "speechText": "宿命",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我住喺宿舍。",
           "reading": "ngo5 zyu6 hai2 suk1 se3",
           "translation": "I live in a dormitory.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "宿"
           ]
-        },
-        {
-          "text": "宿命",
-          "reading": "suk1 ming6",
-          "translation": "fate / destiny",
-          "speechText": "宿命",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -333,31 +294,6 @@
       ],
       "examples": [
         {
-          "text": "宿",
-          "reading": "yado",
-          "translation": "inn / lodging",
-          "speechText": "宿",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "宿"
-          ],
-          "kanaReading": "やど",
-          "coversReadings": [
-            "やど"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "宿",
-              "reading": "やど"
-            }
-          ],
-          "furiganaHtml": "<ruby>宿<rt>やど</rt></ruby>"
-        },
-        {
           "text": "宿泊",
           "reading": "shukuhaku",
           "translation": "overnight stay",
@@ -429,6 +365,32 @@
           "furiganaHtml": "<ruby>宿<rt>やど</rt></ruby>る"
         },
         {
+          "text": "宿す",
+          "reading": "yadosu",
+          "translation": "harbor / contain / lodge",
+          "speechText": "宿す",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "やどす",
+          "coversReadings": [
+            "やどす"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "宿",
+              "reading": "やど"
+            },
+            {
+              "text": "す"
+            }
+          ],
+          "furiganaHtml": "<ruby>宿<rt>やど</rt></ruby>す"
+        },
+        {
           "text": "この宿に泊まります。",
           "reading": "kono yado ni tomarimasu.",
           "translation": "I stay at this inn.",
@@ -465,32 +427,6 @@
             }
           ],
           "furiganaHtml": "この<ruby>宿<rt>やど</rt></ruby>に<ruby>泊<rt>と</rt></ruby>まります。"
-        },
-        {
-          "text": "宿す",
-          "reading": "yadosu",
-          "translation": "harbor / contain / lodge",
-          "speechText": "宿す",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "やどす",
-          "coversReadings": [
-            "やどす"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "宿",
-              "reading": "やど"
-            },
-            {
-              "text": "す"
-            }
-          ],
-          "furiganaHtml": "<ruby>宿<rt>やど</rt></ruby>す"
         }
       ],
       "semanticEquivalents": [],
@@ -524,19 +460,6 @@
         "lodging"
       ],
       "examples": [
-        {
-          "text": "묵다",
-          "reading": "mukda",
-          "translation": "stay overnight",
-          "speechText": "묵다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "숙소",
           "reading": "sukso",
@@ -934,7 +857,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

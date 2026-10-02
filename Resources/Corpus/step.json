@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "步",
-          "reading": "bù",
-          "translation": "step",
-          "speechText": "步",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "bù"
-          ]
-        },
-        {
           "text": "一步",
           "reading": "yí bù",
           "translation": "one step",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "步",
-          "reading": "bù",
-          "translation": "step",
-          "speechText": "步",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "一步",
           "reading": "yí bù",
           "translation": "one step",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "腳步",
+          "reading": "jiǎobù",
+          "translation": "footstep",
+          "speechText": "腳步",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我們去散步。",
           "reading": "Wǒmen qù sànbù.",
           "translation": "We are going for a walk.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "步"
           ]
-        },
-        {
-          "text": "腳步",
-          "reading": "jiǎobù",
-          "translation": "footstep",
-          "speechText": "腳步",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "步",
-          "reading": "bou6",
-          "translation": "step",
-          "speechText": "步",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "一步",
           "reading": "jat1 bou6",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "腳步",
+          "reading": "goek3 bou6",
+          "translation": "footstep",
+          "speechText": "腳步",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我哋去散步。",
           "reading": "ngo5 dei6 heoi3 saan3 bou6",
           "translation": "We are going for a walk.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "步"
           ]
-        },
-        {
-          "text": "腳步",
-          "reading": "goek3 bou6",
-          "translation": "footstep",
-          "speechText": "腳步",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -449,32 +410,6 @@
             }
           ],
           "furiganaHtml": "<ruby>公園<rt>こうえん</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>きます。"
-        },
-        {
-          "text": "歩む",
-          "reading": "ayumu",
-          "translation": "walk / proceed",
-          "speechText": "歩む",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "あゆむ",
-          "coversReadings": [
-            "あゆむ"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "歩",
-              "reading": "あゆ"
-            },
-            {
-              "text": "む"
-            }
-          ],
-          "furiganaHtml": "<ruby>歩<rt>あゆ</rt></ruby>む"
         }
       ],
       "semanticEquivalents": [],
@@ -514,19 +449,6 @@
         "step"
       ],
       "examples": [
-        {
-          "text": "걸음",
-          "reading": "georeum",
-          "translation": "step",
-          "speechText": "걸음",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "보행",
           "reading": "bohaeng",
@@ -924,6 +846,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

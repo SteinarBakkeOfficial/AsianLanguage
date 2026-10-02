@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "木",
-          "reading": "mù",
-          "translation": "tree / wood",
-          "speechText": "木",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "mù"
-          ]
-        },
-        {
           "text": "木头",
           "reading": "mùtou",
           "translation": "wood",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "木",
-          "reading": "mù",
-          "translation": "tree / wood",
-          "speechText": "木",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "木頭",
           "reading": "mùtou",
           "translation": "wood",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "木材",
+          "reading": "mùcái",
+          "translation": "timber",
+          "speechText": "木材",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這張桌子是木頭的。",
           "reading": "Zhè zhāng zhuōzi shì mùtou de.",
           "translation": "This table is made of wood.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "木"
           ]
-        },
-        {
-          "text": "木材",
-          "reading": "mùcái",
-          "translation": "timber",
-          "speechText": "木材",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "木",
-          "reading": "muk6",
-          "translation": "tree / wood",
-          "speechText": "木",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "木頭",
           "reading": "muk6 tau4",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "木材",
+          "reading": "muk6 coi4",
+          "translation": "timber",
+          "speechText": "木材",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "呢張枱係木做嘅。",
           "reading": "ni1 zoeng1 toi2 hai6 muk6 zou6 ge3",
           "translation": "This table is made of wood.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "木"
           ]
-        },
-        {
-          "text": "木材",
-          "reading": "muk6 coi4",
-          "translation": "timber",
-          "speechText": "木材",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -333,31 +294,6 @@
         "tree; wood"
       ],
       "examples": [
-        {
-          "text": "木",
-          "reading": "ki",
-          "translation": "tree / wood",
-          "speechText": "木",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "木"
-          ],
-          "kanaReading": "き",
-          "coversReadings": [
-            "き"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "木",
-              "reading": "き"
-            }
-          ],
-          "furiganaHtml": "<ruby>木<rt>き</rt></ruby>"
-        },
         {
           "text": "木曜日",
           "reading": "mokuyōbi",
@@ -514,19 +450,6 @@
         "tree; wood"
       ],
       "examples": [
-        {
-          "text": "나무",
-          "reading": "namu",
-          "translation": "tree / wood",
-          "speechText": "나무",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "목재",
           "reading": "mokjae",
@@ -785,7 +708,7 @@
         "label": "Regular Script",
         "form": "木",
         "assetRef": null,
-        "changeNoteFromPrevious": "The trunk-and-branch structure is regularized as the standard form, with the spreading diagonals preserving the old branches/root layout.",
+        "changeNoteFromPrevious": "The trunk-and-branch structure is regularized as 木, with the spreading diagonals preserving the old branches/root layout. Modern use covers both the tree and the wood it provides.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -811,8 +734,8 @@
           "readiness": "approved"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "The trunk-and-branch structure is regularized as 木, with the spreading diagonals preserving the old branches/root layout.",
-        "transitionNote": "The trunk-and-branch structure is regularized as the standard form, with the spreading diagonals preserving the old branches/root layout.",
+        "stageExplanation": "The trunk-and-branch structure is regularized as 木, with the spreading diagonals preserving the old branches/root layout. Modern use covers both the tree and the wood it provides.",
+        "transitionNote": "The trunk-and-branch structure is regularized as 木, with the spreading diagonals preserving the old branches/root layout. Modern use covers both the tree and the wood it provides.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -896,7 +819,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

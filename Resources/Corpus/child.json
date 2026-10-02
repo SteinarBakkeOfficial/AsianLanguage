@@ -47,21 +47,6 @@
       ],
       "examples": [
         {
-          "text": "子",
-          "reading": "zǐ",
-          "translation": "child",
-          "speechText": "子",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "zǐ"
-          ]
-        },
-        {
           "text": "孩子",
           "reading": "háizi",
           "translation": "child",
@@ -139,18 +124,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "子",
-          "reading": "zǐ",
-          "translation": "child",
-          "speechText": "子",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "孩子",
           "reading": "háizi",
           "translation": "child",
@@ -179,6 +152,18 @@
           ]
         },
         {
+          "text": "子孫",
+          "reading": "zǐsūn",
+          "translation": "descendants",
+          "speechText": "子孫",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這個孩子很小。",
           "reading": "Zhège háizi hěn xiǎo.",
           "translation": "This child is small.",
@@ -191,33 +176,9 @@
           "introducedSymbols": [
             "子"
           ]
-        },
-        {
-          "text": "子孫",
-          "reading": "zǐsūn",
-          "translation": "descendants",
-          "speechText": "子孫",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "子",
-          "reading": "zi2",
-          "translation": "child",
-          "speechText": "子",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "子女",
           "reading": "zi2 neoi5",
@@ -247,6 +208,18 @@
           ]
         },
         {
+          "text": "子孫",
+          "reading": "zi2 syun1",
+          "translation": "descendants",
+          "speechText": "子孫",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "佢有兩個仔。",
           "reading": "keoi5 jau5 loeng5 go3 zai2",
           "translation": "He has two children/sons.",
@@ -259,18 +232,6 @@
           "introducedSymbols": [
             "子"
           ]
-        },
-        {
-          "text": "子孫",
-          "reading": "zi2 syun1",
-          "translation": "descendants",
-          "speechText": "子孫",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -467,29 +428,6 @@
             }
           ],
           "furiganaHtml": "<ruby>子<rt>こ</rt></ruby>どもが<ruby>遊<rt>あそ</rt></ruby>んでいます。"
-        },
-        {
-          "text": "様子",
-          "reading": "yōsu",
-          "translation": "state / appearance",
-          "speechText": "様子",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "ようす",
-          "coversReadings": [
-            "ス"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "様子",
-              "reading": "ようす"
-            }
-          ],
-          "furiganaHtml": "<ruby>様子<rt>ようす</rt></ruby>"
         }
       ],
       "semanticEquivalents": [],
@@ -523,19 +461,6 @@
         "child"
       ],
       "examples": [
-        {
-          "text": "아이",
-          "reading": "ai",
-          "translation": "child",
-          "speechText": "아이",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "자녀",
           "reading": "janyeo",
@@ -933,6 +858,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

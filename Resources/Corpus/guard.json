@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "守",
-          "reading": "shǒu",
-          "translation": "guard",
-          "speechText": "守",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "shǒu"
-          ]
-        },
-        {
           "text": "守护",
           "reading": "shǒuhù",
           "translation": "protect / guard",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "守",
-          "reading": "shǒu",
-          "translation": "guard",
-          "speechText": "守",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "守護",
           "reading": "shǒuhù",
           "translation": "protect / guard",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "守門",
+          "reading": "shǒumén",
+          "translation": "guard the door",
+          "speechText": "守門",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "請遵守規則。",
           "reading": "Qǐng zūnshǒu guīzé.",
           "translation": "Please follow the rules.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "守"
           ]
-        },
-        {
-          "text": "守門",
-          "reading": "shǒumén",
-          "translation": "guard the door",
-          "speechText": "守門",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "守",
-          "reading": "sau2",
-          "translation": "guard",
-          "speechText": "守",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "守護",
           "reading": "sau2 wu6",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "守門",
+          "reading": "sau2 mun4",
+          "translation": "guard the door",
+          "speechText": "守門",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "請遵守規則。",
           "reading": "cing2 zeon1 sau2 kwai1 zak1",
           "translation": "Please follow the rules.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "守"
           ]
-        },
-        {
-          "text": "守門",
-          "reading": "sau2 mun4",
-          "translation": "guard the door",
-          "speechText": "守門",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -458,29 +419,6 @@
             }
           ],
           "furiganaHtml": "ルールを<ruby>守<rt>まも</rt></ruby>ります。"
-        },
-        {
-          "text": "子守",
-          "reading": "komori",
-          "translation": "child-minding / babysitting",
-          "speechText": "子守",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "こもり",
-          "coversReadings": [
-            "もり"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "子守",
-              "reading": "こもり"
-            }
-          ],
-          "furiganaHtml": "<ruby>子守<rt>こもり</rt></ruby>"
         }
       ],
       "semanticEquivalents": [],
@@ -514,19 +452,6 @@
         "guard"
       ],
       "examples": [
-        {
-          "text": "지키다",
-          "reading": "jikida",
-          "translation": "guard / protect",
-          "speechText": "지키다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "수비",
           "reading": "subi",
@@ -924,6 +849,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

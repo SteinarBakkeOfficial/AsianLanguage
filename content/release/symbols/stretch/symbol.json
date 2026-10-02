@@ -2,7 +2,7 @@
   "id": "stretch",
   "version": 1,
   "coreCharacter": "申",
-  "coreSharedMeaning": "state / apply; historical lightning/extend",
+  "coreSharedMeaning": "state / apply / declare",
   "recognitionTakeaway": "申 survives with later state/apply/extend-related uses, while 電 adds 雨 for lightning/electricity and 伸 adds 人 for stretching.",
   "publicationStatus": "published",
   "unicodeCodePoint": "U+7533",
@@ -38,21 +38,6 @@
         "apply; state; declare"
       ],
       "examples": [
-        {
-          "text": "申",
-          "reading": "shēn",
-          "translation": "apply / state / declare",
-          "speechText": "申",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "shēn"
-          ]
-        },
         {
           "text": "申请",
           "reading": "shēnqǐng",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "申",
-          "reading": "shēn",
-          "translation": "apply / state / declare",
-          "speechText": "申",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "申請",
           "reading": "shēnqǐng",
           "translation": "apply / application",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "申訴",
+          "reading": "shēnsù",
+          "translation": "appeal / make a complaint",
+          "speechText": "申訴",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我想申請。",
           "reading": "Wǒ xiǎng shēnqǐng.",
           "translation": "I want to apply.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "申"
           ]
-        },
-        {
-          "text": "申訴",
-          "reading": "shēnsù",
-          "translation": "appeal / make a complaint",
-          "speechText": "申訴",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "申",
-          "reading": "san1",
-          "translation": "apply / state / declare",
-          "speechText": "申",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "申請",
           "reading": "san1 cing2",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "申訴",
+          "reading": "san1 sou3",
+          "translation": "appeal / make a complaint",
+          "speechText": "申訴",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我想申請。",
           "reading": "ngo5 soeng2 san1 cing2",
           "translation": "I want to apply.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "申"
           ]
-        },
-        {
-          "text": "申訴",
-          "reading": "san1 sou3",
-          "translation": "appeal / make a complaint",
-          "speechText": "申訴",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -745,7 +706,7 @@
         "label": "Regular Script",
         "form": "申",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular Script preserves the central lightning-like frame while standardizing its side strokes; the earlier paired curls are no longer visible.",
+        "changeNoteFromPrevious": "申 preserves the central lightning-like frame while standardizing its side strokes. Modern uses include state, apply, and declare; the lightning origin is historical rather than a current header meaning.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -771,8 +732,8 @@
           "readiness": "approved"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "申 survives with later state/apply/extend-related uses, while 電 adds 雨 for lightning/electricity and 伸 adds 人 for stretching.",
-        "transitionNote": "Regular Script preserves the central lightning-like frame while standardizing its side strokes; the earlier paired curls are no longer visible.",
+        "stageExplanation": "申 preserves the central lightning-like frame while standardizing its side strokes. Modern uses include state, apply, and declare; the lightning origin is historical rather than a current header meaning.",
+        "transitionNote": "申 preserves the central lightning-like frame while standardizing its side strokes. Modern uses include state, apply, and declare; the lightning origin is historical rather than a current header meaning.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -780,7 +741,7 @@
     ],
     "origin": {
       "concept": "stretch",
-      "explanation": "A lightning-flash graph.",
+      "explanation": "A lightning-flash graph is the original pictorial source. Later sound-based usage developed the modern meanings state, apply, and declare; related characters use the graph in other extended forms.",
       "asset": {
         "characterID": "stretch",
         "historicalStage": null,
@@ -815,7 +776,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'state / apply; historical lightning/extend', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'state / apply / declare', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -884,7 +845,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

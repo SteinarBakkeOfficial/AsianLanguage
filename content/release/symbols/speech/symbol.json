@@ -2,7 +2,7 @@
   "id": "speech",
   "version": 1,
   "coreCharacter": "言",
-  "coreSharedMeaning": "speech / words",
+  "coreSharedMeaning": "speech / words / say",
   "recognitionTakeaway": "Tightens the entire stack into the familiar top mark, horizontal lines, and 口, with the original mouth still plainly preserved at the bottom.",
   "publicationStatus": "published",
   "unicodeCodePoint": "U+8A00",
@@ -38,21 +38,6 @@
         "speech; words; say"
       ],
       "examples": [
-        {
-          "text": "言",
-          "reading": "yán",
-          "translation": "speech / words / say",
-          "speechText": "言",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "yán"
-          ]
-        },
         {
           "text": "言语",
           "reading": "yányǔ",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "言",
-          "reading": "yán",
-          "translation": "speech / words / say",
-          "speechText": "言",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "言語",
           "reading": "yányǔ",
           "translation": "speech / words",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "語言",
+          "reading": "yǔyán",
+          "translation": "language",
+          "speechText": "語言",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他正在發言。",
           "reading": "Tā zhèngzài fāyán.",
           "translation": "He is speaking now.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "言"
           ]
-        },
-        {
-          "text": "語言",
-          "reading": "yǔyán",
-          "translation": "language",
-          "speechText": "語言",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "言",
-          "reading": "jin4",
-          "translation": "speech / words / say",
-          "speechText": "言",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "言語",
           "reading": "jin4 jyu5",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "語言",
+          "reading": "jyu5 jin4",
+          "translation": "language",
+          "speechText": "語言",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "佢而家發言。",
           "reading": "keoi5 ji4 gaa1 faat3 jin4",
           "translation": "He is speaking now.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "言"
           ]
-        },
-        {
-          "text": "語言",
-          "reading": "jyu5 jin4",
-          "translation": "language",
-          "speechText": "語言",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -498,19 +459,6 @@
         "language; speech; words"
       ],
       "examples": [
-        {
-          "text": "말",
-          "reading": "mal",
-          "translation": "speech / word",
-          "speechText": "말",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "언어",
           "reading": "eoneo",
@@ -839,7 +787,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'speech / words', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'speech / words / say', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -908,7 +856,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

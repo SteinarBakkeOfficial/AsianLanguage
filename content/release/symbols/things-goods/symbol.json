@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "品",
-          "reading": "pǐn",
-          "translation": "things / goods",
-          "speechText": "品",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "pǐn"
-          ]
-        },
-        {
           "text": "商品",
           "reading": "shāngpǐn",
           "translation": "product / goods",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "品",
-          "reading": "pǐn",
-          "translation": "things / goods",
-          "speechText": "品",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "商品",
           "reading": "shāngpǐn",
           "translation": "product / goods",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "產品",
+          "reading": "chǎnpǐn",
+          "translation": "product",
+          "speechText": "產品",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這個產品很好。",
           "reading": "Zhège chǎnpǐn hěn hǎo.",
           "translation": "This product is good.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "品"
           ]
-        },
-        {
-          "text": "產品",
-          "reading": "chǎnpǐn",
-          "translation": "product",
-          "speechText": "產品",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "品",
-          "reading": "ban2",
-          "translation": "things / goods",
-          "speechText": "品",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "商品",
           "reading": "soeng1 ban2",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "產品",
+          "reading": "caan2 ban2",
+          "translation": "product",
+          "speechText": "產品",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "呢件產品幾好。",
           "reading": "ni1 gin6 caan2 ban2 gei2 hou2",
           "translation": "This product is good.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "品"
           ]
-        },
-        {
-          "text": "產品",
-          "reading": "caan2 ban2",
-          "translation": "product",
-          "speechText": "產品",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "things / goods"
       ],
       "examples": [
-        {
-          "text": "品",
-          "reading": "shina",
-          "translation": "goods / item",
-          "speechText": "品",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "品"
-          ],
-          "kanaReading": "しな",
-          "coversReadings": [
-            "しな"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "品",
-              "reading": "しな"
-            }
-          ],
-          "furiganaHtml": "<ruby>品<rt>しな</rt></ruby>"
-        },
         {
           "text": "商品",
           "reading": "shōhin",
@@ -472,19 +408,6 @@
         "things / goods"
       ],
       "examples": [
-        {
-          "text": "물건",
-          "reading": "mulgeon",
-          "translation": "goods / item",
-          "speechText": "물건",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "상품",
           "reading": "sangpum",
@@ -882,7 +805,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

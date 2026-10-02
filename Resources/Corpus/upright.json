@@ -47,21 +47,6 @@
       ],
       "examples": [
         {
-          "text": "正",
-          "reading": "zhèng",
-          "translation": "upright",
-          "speechText": "正",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "zhèng"
-          ]
-        },
-        {
           "text": "正确",
           "reading": "zhèngquè",
           "translation": "correct",
@@ -151,18 +136,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "正",
-          "reading": "zhèng",
-          "translation": "upright",
-          "speechText": "正",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "正確",
           "reading": "zhèngquè",
           "translation": "correct",
@@ -191,6 +164,18 @@
           ]
         },
         {
+          "text": "正月",
+          "reading": "zhēngyuè",
+          "translation": "first lunar month",
+          "speechText": "正月",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這個答案正確。",
           "reading": "Zhège dá’àn zhèngquè.",
           "translation": "This answer is correct.",
@@ -203,33 +188,9 @@
           "introducedSymbols": [
             "正"
           ]
-        },
-        {
-          "text": "正月",
-          "reading": "zhēngyuè",
-          "translation": "first lunar month",
-          "speechText": "正月",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "正",
-          "reading": "zing3",
-          "translation": "upright",
-          "speechText": "正",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "正確",
           "reading": "zing3 kok3",
@@ -259,6 +220,18 @@
           ]
         },
         {
+          "text": "正月",
+          "reading": "zing1 jyut6",
+          "translation": "first lunar month",
+          "speechText": "正月",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "答案正確。",
           "reading": "daap3 on3 zing3 kok3",
           "translation": "The answer is correct.",
@@ -271,18 +244,6 @@
           "introducedSymbols": [
             "正"
           ]
-        },
-        {
-          "text": "正月",
-          "reading": "zing1 jyut6",
-          "translation": "first lunar month",
-          "speechText": "正月",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -485,32 +446,6 @@
             }
           ],
           "furiganaHtml": "<ruby>答<rt>こた</rt></ruby>えは<ruby>正<rt>ただ</rt></ruby>しいです。"
-        },
-        {
-          "text": "正す",
-          "reading": "tadasu",
-          "translation": "correct / set right",
-          "speechText": "正す",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "ただす",
-          "coversReadings": [
-            "ただす"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "正",
-              "reading": "ただ"
-            },
-            {
-              "text": "す"
-            }
-          ],
-          "furiganaHtml": "<ruby>正<rt>ただ</rt></ruby>す"
         }
       ],
       "semanticEquivalents": [],
@@ -544,19 +479,6 @@
         "upright"
       ],
       "examples": [
-        {
-          "text": "바르다",
-          "reading": "bareuda",
-          "translation": "correct / upright",
-          "speechText": "바르다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "정답",
           "reading": "jeongdap",
@@ -885,7 +807,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'correct / upright (earlier journey/campaign graph)', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'correct / upright', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -954,6 +876,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

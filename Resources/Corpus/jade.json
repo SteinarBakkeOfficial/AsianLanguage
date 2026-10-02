@@ -39,23 +39,6 @@
       ],
       "examples": [
         {
-          "text": "玉",
-          "reading": "yù",
-          "translation": "jade",
-          "speechText": "玉",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "玉"
-          ],
-          "coversReadings": [
-            "yù"
-          ]
-        },
-        {
           "text": "玉石",
           "reading": "yùshí",
           "translation": "jade / gemstone",
@@ -128,20 +111,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "玉",
-          "reading": "yù",
-          "translation": "jade",
-          "speechText": "玉",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "玉"
-          ]
-        },
-        {
           "text": "玉石",
           "reading": "yùshí",
           "translation": "jade / gemstone",
@@ -168,6 +137,20 @@
           "introducedSymbols": []
         },
         {
+          "text": "玉佩",
+          "reading": "yùpèi",
+          "translation": "jade pendant",
+          "speechText": "玉佩",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "玉"
+          ]
+        },
+        {
           "text": "這塊玉很美。",
           "reading": "Zhè kuài yù hěn měi.",
           "translation": "This piece of jade is beautiful.",
@@ -184,20 +167,6 @@
       ],
       "hongKongExamples": [
         {
-          "text": "玉",
-          "reading": "juk6",
-          "translation": "jade",
-          "speechText": "玉",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "玉"
-          ]
-        },
-        {
           "text": "玉石",
           "reading": "juk6 sek6",
           "translation": "jade / gemstone",
@@ -212,13 +181,13 @@
           ]
         },
         {
-          "text": "呢塊玉好靚。",
-          "reading": "ni1 faai3 juk6 hou2 leng3",
-          "translation": "This piece of jade is beautiful.",
-          "speechText": "呢塊玉好靚。",
+          "text": "玉佩",
+          "reading": "juk6 pui3",
+          "translation": "jade pendant",
+          "speechText": "玉佩",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
-          "exampleLevel": "sentence",
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -236,6 +205,20 @@
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": []
+        },
+        {
+          "text": "呢塊玉好靚。",
+          "reading": "ni1 faai3 juk6 hou2 leng3",
+          "translation": "This piece of jade is beautiful.",
+          "speechText": "呢塊玉好靚。",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "玉"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -288,31 +271,6 @@
         "jade"
       ],
       "examples": [
-        {
-          "text": "玉",
-          "reading": "tama",
-          "translation": "ball / jewel",
-          "speechText": "玉",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "玉"
-          ],
-          "kanaReading": "たま",
-          "coversReadings": [
-            "たま"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "玉",
-              "reading": "たま"
-            }
-          ],
-          "furiganaHtml": "<ruby>玉<rt>たま</rt></ruby>"
-        },
         {
           "text": "宝玉",
           "reading": "hōgyoku",
@@ -472,18 +430,6 @@
           "introducedSymbols": [
             "玉"
           ]
-        },
-        {
-          "text": "옥",
-          "reading": "ok",
-          "translation": "jade",
-          "speechText": "옥",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         },
         {
           "text": "옥반지",
@@ -834,6 +780,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "年",
-          "reading": "nián",
-          "translation": "year",
-          "speechText": "年",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "nián"
-          ]
-        },
-        {
           "text": "今年",
           "reading": "jīnnián",
           "translation": "this year",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "年",
-          "reading": "nián",
-          "translation": "year",
-          "speechText": "年",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "今年",
           "reading": "jīnnián",
           "translation": "this year",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "年齡",
+          "reading": "niánlíng",
+          "translation": "age",
+          "speechText": "年齡",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "明年見。",
           "reading": "Míngnián jiàn.",
           "translation": "See you next year.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "年"
           ]
-        },
-        {
-          "text": "年齡",
-          "reading": "niánlíng",
-          "translation": "age",
-          "speechText": "年齡",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "年",
-          "reading": "nin4",
-          "translation": "year",
-          "speechText": "年",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "今年",
           "reading": "gam1 nin4",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "年齡",
+          "reading": "nin4 ling4",
+          "translation": "age",
+          "speechText": "年齡",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "明年見。",
           "reading": "ming4 nin4 gin3",
           "translation": "See you next year.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "年"
           ]
-        },
-        {
-          "text": "年齡",
-          "reading": "nin4 ling4",
-          "translation": "age",
-          "speechText": "年齡",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "year"
       ],
       "examples": [
-        {
-          "text": "年",
-          "reading": "toshi",
-          "translation": "year",
-          "speechText": "年",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "年"
-          ],
-          "kanaReading": "とし",
-          "coversReadings": [
-            "とし"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "年",
-              "reading": "とし"
-            }
-          ],
-          "furiganaHtml": "<ruby>年<rt>とし</rt></ruby>"
-        },
         {
           "text": "今年",
           "reading": "kotoshi",
@@ -478,19 +414,6 @@
         "year"
       ],
       "examples": [
-        {
-          "text": "해",
-          "reading": "hae",
-          "translation": "year",
-          "speechText": "해",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "일 년",
           "reading": "il nyeon",
@@ -897,7 +820,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

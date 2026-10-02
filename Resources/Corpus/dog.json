@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "犬",
-          "reading": "quǎn",
-          "translation": "dog / canine (formal/compound use)",
-          "speechText": "犬",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "quǎn"
-          ]
-        },
-        {
           "text": "犬类",
           "reading": "quǎnlèi",
           "translation": "canines",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "犬",
-          "reading": "quǎn",
-          "translation": "dog / canine (formal/compound use)",
-          "speechText": "犬",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "犬類",
           "reading": "quǎnlèi",
           "translation": "canines",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "獵犬",
+          "reading": "lièquǎn",
+          "translation": "hunting dog",
+          "speechText": "獵犬",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這是一隻警犬。",
           "reading": "Zhè shì yì zhī jǐngquǎn.",
           "translation": "This is a police dog.",
@@ -180,35 +165,9 @@
           "introducedSymbols": [
             "犬"
           ]
-        },
-        {
-          "text": "獵犬",
-          "reading": "lièquǎn",
-          "translation": "hunting dog",
-          "speechText": "獵犬",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "犬",
-          "reading": "hyun2",
-          "translation": "dog / canine",
-          "speechText": "犬",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "犬"
-          ]
-        },
         {
           "text": "警犬",
           "reading": "ging2 hyun2",
@@ -231,6 +190,18 @@
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word"
+        },
+        {
+          "text": "牧羊犬",
+          "reading": "muk6 joeng4 hyun2",
+          "translation": "sheepdog",
+          "speechText": "牧羊犬",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "呢隻係警犬。",
@@ -297,31 +268,6 @@
         "dog"
       ],
       "examples": [
-        {
-          "text": "犬",
-          "reading": "inu",
-          "translation": "dog",
-          "speechText": "犬",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "犬"
-          ],
-          "kanaReading": "いぬ",
-          "coversReadings": [
-            "いぬ"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "犬",
-              "reading": "いぬ"
-            }
-          ],
-          "furiganaHtml": "<ruby>犬<rt>いぬ</rt></ruby>"
-        },
         {
           "text": "子犬",
           "reading": "koinu",
@@ -454,19 +400,6 @@
         "dog"
       ],
       "examples": [
-        {
-          "text": "개",
-          "reading": "gae",
-          "translation": "dog",
-          "speechText": "개",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "애견",
           "reading": "aegyeon",
@@ -864,6 +797,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

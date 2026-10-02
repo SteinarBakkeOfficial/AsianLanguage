@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "走",
-          "reading": "zǒu",
-          "translation": "walk / go / leave",
-          "speechText": "走",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "zǒu"
-          ]
-        },
-        {
           "text": "走路",
           "reading": "zǒulù",
           "translation": "walk",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "走",
-          "reading": "zǒu",
-          "translation": "walk/go (Mandarin) / leave/run (Cantonese)",
-          "speechText": "走",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "走路",
           "reading": "zǒulù",
           "translation": "walk",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "走進",
+          "reading": "zǒujìn",
+          "translation": "walk into",
+          "speechText": "走進",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我們走吧。",
           "reading": "Wǒmen zǒu ba.",
           "translation": "Let’s go.",
@@ -180,35 +165,9 @@
           "introducedSymbols": [
             "走"
           ]
-        },
-        {
-          "text": "走進",
-          "reading": "zǒujìn",
-          "translation": "walk into",
-          "speechText": "走進",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "走",
-          "reading": "zau2",
-          "translation": "leave / run",
-          "speechText": "走",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "走"
-          ]
-        },
         {
           "text": "走開",
           "reading": "zau2 hoi1",
@@ -228,6 +187,18 @@
           "reading": "zau2 lou6",
           "translation": "walk",
           "speechText": "走路",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "走廊",
+          "reading": "zau2 long4",
+          "translation": "corridor",
+          "speechText": "走廊",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -460,19 +431,6 @@
         "run; travel (in Sino-Korean compounds)"
       ],
       "examples": [
-        {
-          "text": "달리다",
-          "reading": "dallida",
-          "translation": "run",
-          "speechText": "달리다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "주행",
           "reading": "juhaeng",
@@ -801,7 +759,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'walk/go (Mandarin); run (historical/Japanese)', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'walk / go / run', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -870,7 +828,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

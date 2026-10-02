@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "后",
-          "reading": "hòu",
-          "translation": "after / behind",
-          "speechText": "后",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "hòu"
-          ]
-        },
-        {
           "text": "后面",
           "reading": "hòumiàn",
           "translation": "behind / back",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "後",
-          "reading": "hòu",
-          "translation": "after / behind",
-          "speechText": "後",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "後面",
           "reading": "hòumiàn",
           "translation": "behind / back",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "後來",
+          "reading": "hòulái",
+          "translation": "later / afterwards",
+          "speechText": "後來",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我們以後再見。",
           "reading": "Wǒmen yǐhòu zàijiàn.",
           "translation": "We will meet again later.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "後"
           ]
-        },
-        {
-          "text": "後來",
-          "reading": "hòulái",
-          "translation": "later / afterwards",
-          "speechText": "後來",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "後",
-          "reading": "hau6",
-          "translation": "after / behind",
-          "speechText": "後",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "後面",
           "reading": "hau6 min6",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "後來",
+          "reading": "hau6 loi4",
+          "translation": "later / afterwards",
+          "speechText": "後來",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我哋以後再見。",
           "reading": "ngo5 dei6 ji5 hau6 zoi3 gin3",
           "translation": "We will meet again later.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "後"
           ]
-        },
-        {
-          "text": "後來",
-          "reading": "hau6 loi4",
-          "translation": "later / afterwards",
-          "speechText": "後來",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -332,31 +293,6 @@
         "after; later; behind"
       ],
       "examples": [
-        {
-          "text": "後",
-          "reading": "ato",
-          "translation": "after / later",
-          "speechText": "後",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "後"
-          ],
-          "kanaReading": "あと",
-          "coversReadings": [
-            "あと"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "後",
-              "reading": "あと"
-            }
-          ],
-          "furiganaHtml": "<ruby>後<rt>あと</rt></ruby>"
-        },
         {
           "text": "後ろ",
           "reading": "ushiro",
@@ -498,19 +434,6 @@
         "after; later; behind"
       ],
       "examples": [
-        {
-          "text": "뒤",
-          "reading": "dwi",
-          "translation": "behind / after",
-          "speechText": "뒤",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "이후",
           "reading": "ihu",
@@ -908,6 +831,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

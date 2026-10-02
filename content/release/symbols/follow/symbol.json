@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "从",
-          "reading": "cóng",
-          "translation": "follow",
-          "speechText": "从",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "cóng"
-          ]
-        },
-        {
           "text": "从前",
           "reading": "cóngqián",
           "translation": "formerly / long ago",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "從",
-          "reading": "cóng",
-          "translation": "follow",
-          "speechText": "從",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "從前",
           "reading": "cóngqián",
           "translation": "formerly / long ago",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "从來",
+          "reading": "cónglái",
+          "translation": "always / ever",
+          "speechText": "从來",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我從家裡來。",
           "reading": "Wǒ cóng jiālǐ lái.",
           "translation": "I come from home.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "从"
           ]
-        },
-        {
-          "text": "从來",
-          "reading": "cónglái",
-          "translation": "always / ever",
-          "speechText": "从來",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "從",
-          "reading": "cung4",
-          "translation": "follow",
-          "speechText": "從",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "從前",
           "reading": "cung4 cin4",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "从來",
+          "reading": "cung4 loi4",
+          "translation": "always / ever",
+          "speechText": "从來",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我從屋企嚟。",
           "reading": "ngo5 cung4 uk1 kei2 lai4",
           "translation": "I come from home.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "从"
           ]
-        },
-        {
-          "text": "从來",
-          "reading": "cung4 loi4",
-          "translation": "always / ever",
-          "speechText": "从來",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -449,32 +410,6 @@
             }
           ],
           "furiganaHtml": "<ruby>指示<rt>しじ</rt></ruby>に<ruby>従<rt>したが</rt></ruby>います。"
-        },
-        {
-          "text": "従える",
-          "reading": "shitagaeru",
-          "translation": "make follow / lead/command",
-          "speechText": "従える",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "したがえる",
-          "coversReadings": [
-            "したがえる"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "従",
-              "reading": "したが"
-            },
-            {
-              "text": "える"
-            }
-          ],
-          "furiganaHtml": "<ruby>従<rt>したが</rt></ruby>える"
         }
       ],
       "semanticEquivalents": [],
@@ -514,19 +449,6 @@
         "follow"
       ],
       "examples": [
-        {
-          "text": "따르다",
-          "reading": "ttareuda",
-          "translation": "follow",
-          "speechText": "따르다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "복종",
           "reading": "bokjong",
@@ -924,7 +846,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

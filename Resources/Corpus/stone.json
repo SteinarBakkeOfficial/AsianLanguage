@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "石",
-          "reading": "shí",
-          "translation": "stone",
-          "speechText": "石",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "shí"
-          ]
-        },
-        {
           "text": "石头",
           "reading": "shítou",
           "translation": "stone",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "石",
-          "reading": "shí",
-          "translation": "stone",
-          "speechText": "石",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "石頭",
           "reading": "shítou",
           "translation": "stone",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "石塊",
+          "reading": "shíkuài",
+          "translation": "stone / stone block",
+          "speechText": "石塊",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "地上有一塊石頭。",
           "reading": "Dìshang yǒu yí kuài shítou.",
           "translation": "There is a stone on the ground.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "石"
           ]
-        },
-        {
-          "text": "石塊",
-          "reading": "shíkuài",
-          "translation": "stone / stone block",
-          "speechText": "石塊",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "石",
-          "reading": "sek6",
-          "translation": "stone",
-          "speechText": "石",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "石頭",
           "reading": "sek6 tau4",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "石塊",
+          "reading": "sek6 faai3",
+          "translation": "stone / stone block",
+          "speechText": "石塊",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "地下有嚿石頭。",
           "reading": "dei6 haa6 jau5 gau6 sek6 tau4",
           "translation": "There is a stone on the ground.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "石"
           ]
-        },
-        {
-          "text": "石塊",
-          "reading": "sek6 faai3",
-          "translation": "stone / stone block",
-          "speechText": "石塊",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "stone"
       ],
       "examples": [
-        {
-          "text": "石",
-          "reading": "ishi",
-          "translation": "stone",
-          "speechText": "石",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "石"
-          ],
-          "kanaReading": "いし",
-          "coversReadings": [
-            "いし"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "石",
-              "reading": "いし"
-            }
-          ],
-          "furiganaHtml": "<ruby>石<rt>いし</rt></ruby>"
-        },
         {
           "text": "宝石",
           "reading": "hōseki",
@@ -469,19 +405,6 @@
         "stone"
       ],
       "examples": [
-        {
-          "text": "돌",
-          "reading": "dol",
-          "translation": "stone",
-          "speechText": "돌",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "석재",
           "reading": "seokjae",
@@ -879,6 +802,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

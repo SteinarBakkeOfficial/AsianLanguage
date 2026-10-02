@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "夏",
-          "reading": "xià",
-          "translation": "summer",
-          "speechText": "夏",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "xià"
-          ]
-        },
-        {
           "text": "夏天",
           "reading": "xiàtiān",
           "translation": "summer",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "夏",
-          "reading": "xià",
-          "translation": "summer",
-          "speechText": "夏",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "夏天",
           "reading": "xiàtiān",
           "translation": "summer",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "夏日",
+          "reading": "xiàrì",
+          "translation": "summer day",
+          "speechText": "夏日",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "夏天很熱。",
           "reading": "Xiàtiān hěn rè.",
           "translation": "Summer is hot.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "夏"
           ]
-        },
-        {
-          "text": "夏日",
-          "reading": "xiàrì",
-          "translation": "summer day",
-          "speechText": "夏日",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "夏",
-          "reading": "haa6",
-          "translation": "summer",
-          "speechText": "夏",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "夏天",
           "reading": "haa6 tin1",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "夏日",
+          "reading": "haa6 jat6",
+          "translation": "summer day",
+          "speechText": "夏日",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "夏天好熱。",
           "reading": "haa6 tin1 hou2 jit6",
           "translation": "Summer is hot.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "夏"
           ]
-        },
-        {
-          "text": "夏日",
-          "reading": "haa6 jat6",
-          "translation": "summer day",
-          "speechText": "夏日",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "summer"
       ],
       "examples": [
-        {
-          "text": "夏",
-          "reading": "natsu",
-          "translation": "summer",
-          "speechText": "夏",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夏"
-          ],
-          "kanaReading": "なつ",
-          "coversReadings": [
-            "なつ"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "夏",
-              "reading": "なつ"
-            }
-          ],
-          "furiganaHtml": "<ruby>夏<rt>なつ</rt></ruby>"
-        },
         {
           "text": "夏休み",
           "reading": "natsuyasumi",
@@ -472,21 +408,6 @@
         "summer"
       ],
       "examples": [
-        {
-          "text": "여름",
-          "reading": "yeoreum",
-          "translation": "summer",
-          "speechText": "여름",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夏"
-          ],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "하계",
           "reading": "hagye",
@@ -882,7 +803,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

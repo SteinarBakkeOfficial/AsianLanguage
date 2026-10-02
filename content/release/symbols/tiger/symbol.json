@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "虎",
-          "reading": "hǔ",
-          "translation": "tiger",
-          "speechText": "虎",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "hǔ"
-          ]
-        },
-        {
           "text": "老虎",
           "reading": "lǎohǔ",
           "translation": "tiger",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "虎",
-          "reading": "hǔ",
-          "translation": "tiger",
-          "speechText": "虎",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "老虎",
           "reading": "lǎohǔ",
           "translation": "tiger",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "虎紋",
+          "reading": "hǔwén",
+          "translation": "tiger stripes",
+          "speechText": "虎紋",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "老虎很大。",
           "reading": "Lǎohǔ hěn dà.",
           "translation": "The tiger is big.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "虎"
           ]
-        },
-        {
-          "text": "虎紋",
-          "reading": "hǔwén",
-          "translation": "tiger stripes",
-          "speechText": "虎紋",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "虎",
-          "reading": "fu2",
-          "translation": "tiger",
-          "speechText": "虎",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "老虎",
           "reading": "lou5 fu2",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "虎紋",
+          "reading": "fu2 man4",
+          "translation": "tiger stripes",
+          "speechText": "虎紋",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "老虎好大隻。",
           "reading": "lou5 fu2 hou2 daai6 zek3",
           "translation": "The tiger is big.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "虎"
           ]
-        },
-        {
-          "text": "虎紋",
-          "reading": "fu2 man4",
-          "translation": "tiger stripes",
-          "speechText": "虎紋",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "tiger"
       ],
       "examples": [
-        {
-          "text": "虎",
-          "reading": "tora",
-          "translation": "tiger",
-          "speechText": "虎",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "虎"
-          ],
-          "kanaReading": "とら",
-          "coversReadings": [
-            "とら"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "虎",
-              "reading": "とら"
-            }
-          ],
-          "furiganaHtml": "<ruby>虎<rt>とら</rt></ruby>"
-        },
         {
           "text": "白虎",
           "reading": "byakko",
@@ -469,19 +405,6 @@
         "tiger"
       ],
       "examples": [
-        {
-          "text": "호랑이",
-          "reading": "horangi",
-          "translation": "tiger",
-          "speechText": "호랑이",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "호피",
           "reading": "hopi",
@@ -879,7 +802,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

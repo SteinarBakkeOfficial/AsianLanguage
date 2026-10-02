@@ -39,23 +39,6 @@
       ],
       "examples": [
         {
-          "text": "人",
-          "reading": "rén",
-          "translation": "person",
-          "speechText": "人",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "人"
-          ],
-          "coversReadings": [
-            "rén"
-          ]
-        },
-        {
           "text": "大人",
           "reading": "dàrén",
           "translation": "adult",
@@ -128,20 +111,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "人",
-          "reading": "rén",
-          "translation": "person",
-          "speechText": "人",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "人"
-          ]
-        },
-        {
           "text": "大人",
           "reading": "dàrén",
           "translation": "adult",
@@ -168,6 +137,18 @@
           "introducedSymbols": []
         },
         {
+          "text": "人物",
+          "reading": "rénwù",
+          "translation": "person / figure",
+          "speechText": "人物",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "那裡有很多人。",
           "reading": "Nàli yǒu hěn duō rén.",
           "translation": "There are many people there.",
@@ -183,20 +164,6 @@
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "人",
-          "reading": "jan4",
-          "translation": "person",
-          "speechText": "人",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "人"
-          ]
-        },
         {
           "text": "大人",
           "reading": "daai6 jan4",
@@ -216,6 +183,18 @@
           "reading": "jan4 hau2",
           "translation": "population",
           "speechText": "人口",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "人士",
+          "reading": "jan4 si6",
+          "translation": "person / public figure",
+          "speechText": "人士",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -301,31 +280,6 @@
         "person"
       ],
       "examples": [
-        {
-          "text": "人",
-          "reading": "hito",
-          "translation": "person",
-          "speechText": "人",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "人"
-          ],
-          "kanaReading": "ひと",
-          "coversReadings": [
-            "ひと"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "人",
-              "reading": "ひと"
-            }
-          ],
-          "furiganaHtml": "<ruby>人<rt>ひと</rt></ruby>"
-        },
         {
           "text": "日本人",
           "reading": "nihonjin",
@@ -462,19 +416,6 @@
         "person"
       ],
       "examples": [
-        {
-          "text": "사람",
-          "reading": "saram",
-          "translation": "person",
-          "speechText": "사람",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "인구",
           "reading": "ingu",
@@ -844,6 +785,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

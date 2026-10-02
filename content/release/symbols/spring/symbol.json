@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "泉",
-          "reading": "quán",
-          "translation": "spring",
-          "speechText": "泉",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "quán"
-          ]
-        },
-        {
           "text": "泉水",
           "reading": "quánshuǐ",
           "translation": "spring water",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "泉",
-          "reading": "quán",
-          "translation": "spring",
-          "speechText": "泉",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "泉水",
           "reading": "quánshuǐ",
           "translation": "spring water",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "山泉",
+          "reading": "shānquán",
+          "translation": "mountain spring",
+          "speechText": "山泉",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這裡有溫泉。",
           "reading": "Zhèlǐ yǒu wēnquán.",
           "translation": "There is a hot spring here.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "泉"
           ]
-        },
-        {
-          "text": "山泉",
-          "reading": "shānquán",
-          "translation": "mountain spring",
-          "speechText": "山泉",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "泉",
-          "reading": "cyun4",
-          "translation": "spring",
-          "speechText": "泉",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "泉水",
           "reading": "cyun4 seoi2",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "山泉",
+          "reading": "saan1 cyun4",
+          "translation": "mountain spring",
+          "speechText": "山泉",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "呢度有溫泉。",
           "reading": "ni1 dou6 jau5 wan1 cyun4",
           "translation": "There is a hot spring here.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "泉"
           ]
-        },
-        {
-          "text": "山泉",
-          "reading": "saan1 cyun4",
-          "translation": "mountain spring",
-          "speechText": "山泉",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "spring"
       ],
       "examples": [
-        {
-          "text": "泉",
-          "reading": "izumi",
-          "translation": "spring",
-          "speechText": "泉",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "泉"
-          ],
-          "kanaReading": "いずみ",
-          "coversReadings": [
-            "いずみ"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "泉",
-              "reading": "いずみ"
-            }
-          ],
-          "furiganaHtml": "<ruby>泉<rt>いずみ</rt></ruby>"
-        },
         {
           "text": "温泉",
           "reading": "onsen",
@@ -469,19 +405,6 @@
         "spring"
       ],
       "examples": [
-        {
-          "text": "샘",
-          "reading": "saem",
-          "translation": "spring / source",
-          "speechText": "샘",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "온천",
           "reading": "oncheon",
@@ -879,7 +802,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

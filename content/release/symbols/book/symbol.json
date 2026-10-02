@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "册",
-          "reading": "cè",
-          "translation": "book",
-          "speechText": "册",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "cè"
-          ]
-        },
-        {
           "text": "手册",
           "reading": "shǒucè",
           "translation": "handbook",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "冊",
-          "reading": "cè",
-          "translation": "book",
-          "speechText": "冊",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "手冊",
           "reading": "shǒucè",
           "translation": "handbook",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "冊子",
+          "reading": "cèzi",
+          "translation": "booklet",
+          "speechText": "冊子",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這是一本手冊。",
           "reading": "Zhè shì yì běn shǒucè.",
           "translation": "This is a handbook.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "册"
           ]
-        },
-        {
-          "text": "冊子",
-          "reading": "cèzi",
-          "translation": "booklet",
-          "speechText": "冊子",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "冊",
-          "reading": "caak3",
-          "translation": "book",
-          "speechText": "冊",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "手冊",
           "reading": "sau2 caak3",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "冊子",
+          "reading": "caak3 zi2",
+          "translation": "booklet",
+          "speechText": "冊子",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "呢本係手冊。",
           "reading": "ni1 bun2 hai6 sau2 caak3",
           "translation": "This is a handbook.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "册"
           ]
-        },
-        {
-          "text": "冊子",
-          "reading": "caak3 zi2",
-          "translation": "booklet",
-          "speechText": "冊子",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -433,29 +394,6 @@
             }
           ],
           "furiganaHtml": "<ruby>本<rt>ほん</rt></ruby>を<ruby>一冊買<rt>いっさつか</rt></ruby>いました。"
-        },
-        {
-          "text": "短冊",
-          "reading": "tanzaku",
-          "translation": "paper strip / tanzaku",
-          "speechText": "短冊",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "たんざく",
-          "coversReadings": [
-            "サク"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "短冊",
-              "reading": "たんざく"
-            }
-          ],
-          "furiganaHtml": "<ruby>短冊<rt>たんざく</rt></ruby>"
         }
       ],
       "semanticEquivalents": [],
@@ -489,20 +427,6 @@
         "book"
       ],
       "examples": [
-        {
-          "text": "책",
-          "reading": "chaek",
-          "translation": "book",
-          "speechText": "책",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "册"
-          ]
-        },
         {
           "text": "책자",
           "reading": "chaekja",
@@ -878,7 +802,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "母",
-          "reading": "mǔ",
-          "translation": "mother",
-          "speechText": "母",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "mǔ"
-          ]
-        },
-        {
           "text": "母亲",
           "reading": "mǔqīn",
           "translation": "mother",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "母",
-          "reading": "mǔ",
-          "translation": "mother",
-          "speechText": "母",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "母親",
           "reading": "mǔqīn",
           "translation": "mother",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "母語",
+          "reading": "mǔyǔ",
+          "translation": "mother tongue",
+          "speechText": "母語",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這是我的母親。",
           "reading": "Zhè shì wǒ de mǔqīn.",
           "translation": "This is my mother.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "母"
           ]
-        },
-        {
-          "text": "母語",
-          "reading": "mǔyǔ",
-          "translation": "mother tongue",
-          "speechText": "母語",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "母",
-          "reading": "mou5",
-          "translation": "mother",
-          "speechText": "母",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "母親",
           "reading": "mou5 can1",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "母語",
+          "reading": "mou5 jyu5",
+          "translation": "mother tongue",
+          "speechText": "母語",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "呢位係我母親。",
           "reading": "ni1 wai2 hai6 ngo5 mou5 can1",
           "translation": "This is my mother.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "母"
           ]
-        },
-        {
-          "text": "母語",
-          "reading": "mou5 jyu5",
-          "translation": "mother tongue",
-          "speechText": "母語",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "mother"
       ],
       "examples": [
-        {
-          "text": "母",
-          "reading": "haha",
-          "translation": "mother",
-          "speechText": "母",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "母"
-          ],
-          "kanaReading": "はは",
-          "coversReadings": [
-            "はは"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "母",
-              "reading": "はは"
-            }
-          ],
-          "furiganaHtml": "<ruby>母<rt>はは</rt></ruby>"
-        },
         {
           "text": "母親",
           "reading": "hahaoya",
@@ -469,19 +405,6 @@
         "mother"
       ],
       "examples": [
-        {
-          "text": "어머니",
-          "reading": "eomeoni",
-          "translation": "mother",
-          "speechText": "어머니",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "모녀",
           "reading": "monyeo",
@@ -879,7 +802,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

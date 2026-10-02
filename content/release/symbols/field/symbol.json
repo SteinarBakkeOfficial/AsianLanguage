@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "田",
-          "reading": "tián",
-          "translation": "field",
-          "speechText": "田",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "tián"
-          ]
-        },
-        {
           "text": "田地",
           "reading": "tiándì",
           "translation": "fields",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "田",
-          "reading": "tián",
-          "translation": "field",
-          "speechText": "田",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "田地",
           "reading": "tiándì",
           "translation": "fields",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "田野",
+          "reading": "tiányě",
+          "translation": "fields / countryside",
+          "speechText": "田野",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "田裡有水。",
           "reading": "Tián lǐ yǒu shuǐ.",
           "translation": "There is water in the field.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "田"
           ]
-        },
-        {
-          "text": "田野",
-          "reading": "tiányě",
-          "translation": "fields / countryside",
-          "speechText": "田野",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "田",
-          "reading": "tin4",
-          "translation": "field",
-          "speechText": "田",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "田地",
           "reading": "tin4 dei6",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "田野",
+          "reading": "tin4 je5",
+          "translation": "fields / countryside",
+          "speechText": "田野",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "田入面有水。",
           "reading": "tin4 jap6 min6 jau5 seoi2",
           "translation": "There is water in the field.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "田"
           ]
-        },
-        {
-          "text": "田野",
-          "reading": "tin4 je5",
-          "translation": "fields / countryside",
-          "speechText": "田野",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "field"
       ],
       "examples": [
-        {
-          "text": "田",
-          "reading": "ta",
-          "translation": "rice field / field",
-          "speechText": "田",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "田"
-          ],
-          "kanaReading": "た",
-          "coversReadings": [
-            "た"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "田",
-              "reading": "た"
-            }
-          ],
-          "furiganaHtml": "<ruby>田<rt>た</rt></ruby>"
-        },
         {
           "text": "田んぼ",
           "reading": "tanbo",
@@ -470,19 +406,6 @@
         "field"
       ],
       "examples": [
-        {
-          "text": "밭",
-          "reading": "bat",
-          "translation": "field",
-          "speechText": "밭",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "전답",
           "reading": "jeondap",
@@ -880,7 +803,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

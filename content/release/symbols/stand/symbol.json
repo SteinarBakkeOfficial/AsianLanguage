@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "立",
-          "reading": "lì",
-          "translation": "stand",
-          "speechText": "立",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "lì"
-          ]
-        },
-        {
           "text": "站立",
           "reading": "zhànlì",
           "translation": "stand",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "立",
-          "reading": "lì",
-          "translation": "stand",
-          "speechText": "立",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "站立",
           "reading": "zhànlì",
           "translation": "stand",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "成立",
+          "reading": "chénglì",
+          "translation": "establish / be founded",
+          "speechText": "成立",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "請立正。",
           "reading": "Qǐng lìzhèng.",
           "translation": "Please stand at attention.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "立"
           ]
-        },
-        {
-          "text": "成立",
-          "reading": "chénglì",
-          "translation": "establish / be founded",
-          "speechText": "成立",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "立",
-          "reading": "lap6",
-          "translation": "stand",
-          "speechText": "立",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "立正",
           "reading": "lap6 zing3",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "成立",
+          "reading": "sing4 lap6",
+          "translation": "establish / be founded",
+          "speechText": "成立",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "請立正。",
           "reading": "cing2 lap6 zing3",
           "translation": "Please stand at attention.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "立"
           ]
-        },
-        {
-          "text": "成立",
-          "reading": "sing4 lap6",
-          "translation": "establish / be founded",
-          "speechText": "成立",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -445,32 +406,6 @@
             }
           ],
           "furiganaHtml": "ここに<ruby>立<rt>た</rt></ruby>ってください。"
-        },
-        {
-          "text": "立てる",
-          "reading": "tateru",
-          "translation": "stand / set upright",
-          "speechText": "立てる",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "たてる",
-          "coversReadings": [
-            "たてる"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "立",
-              "reading": "た"
-            },
-            {
-              "text": "てる"
-            }
-          ],
-          "furiganaHtml": "<ruby>立<rt>た</rt></ruby>てる"
         }
       ],
       "semanticEquivalents": [],
@@ -513,19 +448,6 @@
         "stand"
       ],
       "examples": [
-        {
-          "text": "서다",
-          "reading": "seoda",
-          "translation": "stand",
-          "speechText": "서다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "독립",
           "reading": "dongnip",
@@ -932,7 +854,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

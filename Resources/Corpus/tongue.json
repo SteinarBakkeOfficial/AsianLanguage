@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "舌",
-          "reading": "shé",
-          "translation": "tongue",
-          "speechText": "舌",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "shé"
-          ]
-        },
-        {
           "text": "舌头",
           "reading": "shétou",
           "translation": "tongue",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "舌",
-          "reading": "shé",
-          "translation": "tongue",
-          "speechText": "舌",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "舌頭",
           "reading": "shétou",
           "translation": "tongue",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "舌根",
+          "reading": "shégēn",
+          "translation": "base of the tongue",
+          "speechText": "舌根",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "舌頭有點痛。",
           "reading": "Shétou yǒudiǎn tòng.",
           "translation": "My tongue hurts a little.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "舌"
           ]
-        },
-        {
-          "text": "舌根",
-          "reading": "shégēn",
-          "translation": "base of the tongue",
-          "speechText": "舌根",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "舌",
-          "reading": "sit6",
-          "translation": "tongue",
-          "speechText": "舌",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "舌頭",
           "reading": "sit6 tau4",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "舌根",
+          "reading": "sit3 gan1",
+          "translation": "base of the tongue",
+          "speechText": "舌根",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我條脷有啲痛。",
           "reading": "ngo5 tiu4 lei6 jau5 di1 tung3",
           "translation": "My tongue hurts a little.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "舌"
           ]
-        },
-        {
-          "text": "舌根",
-          "reading": "sit3 gan1",
-          "translation": "base of the tongue",
-          "speechText": "舌根",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "tongue"
       ],
       "examples": [
-        {
-          "text": "舌",
-          "reading": "shita",
-          "translation": "tongue",
-          "speechText": "舌",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "舌"
-          ],
-          "kanaReading": "した",
-          "coversReadings": [
-            "した"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "舌",
-              "reading": "した"
-            }
-          ],
-          "furiganaHtml": "<ruby>舌<rt>した</rt></ruby>"
-        },
         {
           "text": "舌先",
           "reading": "shitasaki",
@@ -472,21 +408,6 @@
         "tongue"
       ],
       "examples": [
-        {
-          "text": "혀",
-          "reading": "hyeo",
-          "translation": "tongue",
-          "speechText": "혀",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "舌"
-          ],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "혀끝",
           "reading": "hyeokkeut",
@@ -882,6 +803,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

@@ -39,23 +39,6 @@
       ],
       "examples": [
         {
-          "text": "光",
-          "reading": "guāng",
-          "translation": "light",
-          "speechText": "光",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "光"
-          ],
-          "coversReadings": [
-            "guāng"
-          ]
-        },
-        {
           "text": "阳光",
           "reading": "yángguāng",
           "translation": "sunlight",
@@ -128,20 +111,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "光",
-          "reading": "guāng",
-          "translation": "light",
-          "speechText": "光",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "光"
-          ]
-        },
-        {
           "text": "陽光",
           "reading": "yángguāng",
           "translation": "sunlight",
@@ -168,6 +137,18 @@
           "introducedSymbols": []
         },
         {
+          "text": "光明",
+          "reading": "guāngmíng",
+          "translation": "brightness",
+          "speechText": "光明",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "陽光很暖。",
           "reading": "Yángguāng hěn nuǎn.",
           "translation": "The sunlight is warm.",
@@ -184,20 +165,6 @@
       ],
       "hongKongExamples": [
         {
-          "text": "光",
-          "reading": "gwong1",
-          "translation": "light",
-          "speechText": "光",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "光"
-          ]
-        },
-        {
           "text": "陽光",
           "reading": "joeng4 gwong1",
           "translation": "sunlight",
@@ -210,6 +177,18 @@
           "introducedSymbols": [
             "光"
           ]
+        },
+        {
+          "text": "光明",
+          "reading": "gwong1 ming4",
+          "translation": "brightness",
+          "speechText": "光明",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
         },
         {
           "text": "陽光好暖。",
@@ -298,31 +277,6 @@
         "light"
       ],
       "examples": [
-        {
-          "text": "光",
-          "reading": "hikari",
-          "translation": "light",
-          "speechText": "光",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "光"
-          ],
-          "kanaReading": "ひかり",
-          "coversReadings": [
-            "ひかり"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "光",
-              "reading": "ひかり"
-            }
-          ],
-          "furiganaHtml": "<ruby>光<rt>ひかり</rt></ruby>"
-        },
         {
           "text": "日光",
           "reading": "nikkō",
@@ -461,19 +415,6 @@
         "light"
       ],
       "examples": [
-        {
-          "text": "빛",
-          "reading": "bit",
-          "translation": "light",
-          "speechText": "빛",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "광선",
           "reading": "gwangseon",
@@ -871,6 +812,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

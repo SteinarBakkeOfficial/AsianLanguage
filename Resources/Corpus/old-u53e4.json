@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "古",
-          "reading": "gǔ",
-          "translation": "old",
-          "speechText": "古",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "gǔ"
-          ]
-        },
-        {
           "text": "古代",
           "reading": "gǔdài",
           "translation": "ancient times",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "古",
-          "reading": "gǔ",
-          "translation": "old",
-          "speechText": "古",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "古代",
           "reading": "gǔdài",
           "translation": "ancient times",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "古老",
+          "reading": "gǔlǎo",
+          "translation": "ancient / very old",
+          "speechText": "古老",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這是一座古城。",
           "reading": "Zhè shì yí zuò gǔchéng.",
           "translation": "This is an ancient city.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "古"
           ]
-        },
-        {
-          "text": "古老",
-          "reading": "gǔlǎo",
-          "translation": "ancient / very old",
-          "speechText": "古老",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "古",
-          "reading": "gu2",
-          "translation": "old",
-          "speechText": "古",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "古代",
           "reading": "gu2 doi6",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "古老",
+          "reading": "gu2 lou5",
+          "translation": "ancient / very old",
+          "speechText": "古老",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "呢座係古城。",
           "reading": "ni1 zo6 hai6 gu2 sing4",
           "translation": "This is an ancient city.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "古"
           ]
-        },
-        {
-          "text": "古老",
-          "reading": "gu2 lou5",
-          "translation": "ancient / very old",
-          "speechText": "古老",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -452,39 +413,6 @@
             }
           ],
           "furiganaHtml": "この<ruby>本<rt>ほん</rt></ruby>は<ruby>古<rt>ふる</rt></ruby>いです。"
-        },
-        {
-          "text": "使い古す",
-          "reading": "tsukaifurusu",
-          "translation": "wear out through use",
-          "speechText": "使い古す",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "つかいふるす",
-          "coversReadings": [
-            "ふるす"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "使",
-              "reading": "つか"
-            },
-            {
-              "text": "い"
-            },
-            {
-              "text": "古",
-              "reading": "ふる"
-            },
-            {
-              "text": "す"
-            }
-          ],
-          "furiganaHtml": "<ruby>使<rt>つか</rt></ruby>い<ruby>古<rt>ふる</rt></ruby>す"
         }
       ],
       "semanticEquivalents": [],
@@ -518,19 +446,6 @@
         "old"
       ],
       "examples": [
-        {
-          "text": "옛",
-          "reading": "yet",
-          "translation": "old / ancient",
-          "speechText": "옛",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "고대",
           "reading": "godae",
@@ -928,6 +843,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

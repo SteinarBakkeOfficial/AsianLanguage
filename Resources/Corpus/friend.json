@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "友",
-          "reading": "yǒu",
-          "translation": "friend",
-          "speechText": "友",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "yǒu"
-          ]
-        },
-        {
           "text": "朋友",
           "reading": "péngyou",
           "translation": "friend",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "友",
-          "reading": "yǒu",
-          "translation": "friend",
-          "speechText": "友",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "朋友",
           "reading": "péngyou",
           "translation": "friend",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "友好",
+          "reading": "yǒuhǎo",
+          "translation": "friendly",
+          "speechText": "友好",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他是我的好友。",
           "reading": "Tā shì wǒ de hǎoyǒu.",
           "translation": "He is my good friend.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "友"
           ]
-        },
-        {
-          "text": "友好",
-          "reading": "yǒuhǎo",
-          "translation": "friendly",
-          "speechText": "友好",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "友",
-          "reading": "jau5",
-          "translation": "friend",
-          "speechText": "友",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "朋友",
           "reading": "pang4 jau5",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "友好",
+          "reading": "jau5 hou2",
+          "translation": "friendly",
+          "speechText": "友好",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "佢係我好友。",
           "reading": "keoi5 hai6 ngo5 hou2 jau5",
           "translation": "He is my good friend.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "友"
           ]
-        },
-        {
-          "text": "友好",
-          "reading": "jau5 hou2",
-          "translation": "friendly",
-          "speechText": "友好",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "friend"
       ],
       "examples": [
-        {
-          "text": "友",
-          "reading": "tomo",
-          "translation": "friend",
-          "speechText": "友",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "友"
-          ],
-          "kanaReading": "とも",
-          "coversReadings": [
-            "とも"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "友",
-              "reading": "とも"
-            }
-          ],
-          "furiganaHtml": "<ruby>友<rt>とも</rt></ruby>"
-        },
         {
           "text": "友達",
           "reading": "tomodachi",
@@ -469,19 +405,6 @@
         "friend"
       ],
       "examples": [
-        {
-          "text": "친구",
-          "reading": "chingu",
-          "translation": "friend",
-          "speechText": "친구",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "우정",
           "reading": "ujeong",
@@ -879,6 +802,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

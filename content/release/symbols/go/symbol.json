@@ -2,7 +2,7 @@
   "id": "go",
   "version": 1,
   "coreCharacter": "行",
-  "coreSharedMeaning": "go / move; conduct",
+  "coreSharedMeaning": "go / move / conduct",
   "recognitionTakeaway": "The crossroads graph regularizes as 行 and extends to going, movement, conduct, and other language-specific uses.",
   "publicationStatus": "published",
   "unicodeCodePoint": "U+884C",
@@ -47,21 +47,6 @@
         "line; profession (háng)"
       ],
       "examples": [
-        {
-          "text": "行",
-          "reading": "xíng",
-          "translation": "go / walk / act",
-          "speechText": "行",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "xíng"
-          ]
-        },
         {
           "text": "行走",
           "reading": "xíngzǒu",
@@ -152,18 +137,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "行",
-          "reading": "xíng",
-          "translation": "go / walk / act / line/occupation",
-          "speechText": "行",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "行走",
           "reading": "xíngzǒu",
           "translation": "walk / travel on foot",
@@ -220,18 +193,6 @@
       ],
       "hongKongExamples": [
         {
-          "text": "行",
-          "reading": "haang4",
-          "translation": "go / walk / act / line/occupation",
-          "speechText": "行",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "行路",
           "reading": "haang4 lou6",
           "translation": "walk",
@@ -260,6 +221,18 @@
           ]
         },
         {
+          "text": "行人",
+          "reading": "haang4 jan4",
+          "translation": "pedestrian",
+          "speechText": "行人",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我哋行去公園。",
           "reading": "ngo5 dei6 haang4 heoi3 gung1 jyun2",
           "translation": "We walk to the park.",
@@ -272,18 +245,6 @@
           "introducedSymbols": [
             "行"
           ]
-        },
-        {
-          "text": "行人",
-          "reading": "haang4 jan4",
-          "translation": "pedestrian",
-          "speechText": "行人",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -502,36 +463,6 @@
             }
           ],
           "furiganaHtml": "<ruby>学校<rt>がっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。"
-        },
-        {
-          "text": "行く末",
-          "reading": "yukusue",
-          "translation": "future / what lies ahead",
-          "speechText": "行く末",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "ゆくすえ",
-          "coversReadings": [
-            "ゆく"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "行",
-              "reading": "ゆ"
-            },
-            {
-              "text": "く"
-            },
-            {
-              "text": "末",
-              "reading": "すえ"
-            }
-          ],
-          "furiganaHtml": "<ruby>行<rt>ゆ</rt></ruby>く<ruby>末<rt>すえ</rt></ruby>"
         }
       ],
       "semanticEquivalents": [],
@@ -565,19 +496,6 @@
         "go; movement; bank/trade reading by compound"
       ],
       "examples": [
-        {
-          "text": "가다",
-          "reading": "gada",
-          "translation": "go",
-          "speechText": "가다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "여행",
           "reading": "yeohaeng",
@@ -906,7 +824,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'go / move; conduct', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'go / move / conduct', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -975,7 +893,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

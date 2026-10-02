@@ -2,7 +2,7 @@
   "id": "clothing",
   "version": 1,
   "coreCharacter": "衣",
-  "coreSharedMeaning": "clothing / garment",
+  "coreSharedMeaning": "clothing",
   "recognitionTakeaway": "The garment outline is compressed into 衣; collar/front and sleeve-derived strokes remain as structural echoes.",
   "publicationStatus": "published",
   "unicodeCodePoint": "U+8863",
@@ -39,25 +39,10 @@
       ],
       "examples": [
         {
-          "text": "衣",
-          "reading": "yī",
-          "translation": "clothing",
-          "speechText": "衣",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "yī"
-          ]
-        },
-        {
-          "text": "衣服",
-          "reading": "yīfu",
-          "translation": "clothes",
-          "speechText": "衣服",
+          "text": "衣料",
+          "reading": "yīliào",
+          "translation": "clothing material",
+          "speechText": "衣料",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -128,22 +113,10 @@
       ],
       "taiwanExamples": [
         {
-          "text": "衣",
-          "reading": "yī",
-          "translation": "clothing",
-          "speechText": "衣",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
-          "text": "衣服",
-          "reading": "yīfu",
-          "translation": "clothes",
-          "speechText": "衣服",
+          "text": "衣料",
+          "reading": "yīliào",
+          "translation": "clothing material",
+          "speechText": "衣料",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "衣櫃",
+          "reading": "yīguì",
+          "translation": "wardrobe",
+          "speechText": "衣櫃",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我穿了一件上衣。",
           "reading": "Wǒ chuān le yí jiàn shàngyī.",
           "translation": "I put on a top.",
@@ -180,38 +165,14 @@
           "introducedSymbols": [
             "衣"
           ]
-        },
-        {
-          "text": "衣櫃",
-          "reading": "yīguì",
-          "translation": "wardrobe",
-          "speechText": "衣櫃",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
         {
-          "text": "衣",
-          "reading": "ji1",
-          "translation": "clothing",
-          "speechText": "衣",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
-          "text": "衣服",
-          "reading": "ji1 fuk6",
-          "translation": "clothes",
-          "speechText": "衣服",
+          "text": "衣料",
+          "reading": "ji1 liu6",
+          "translation": "clothing material",
+          "speechText": "衣料",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "衣櫃",
+          "reading": "ji1 gwai6",
+          "translation": "wardrobe",
+          "speechText": "衣櫃",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我著件上衣。",
           "reading": "ngo5 zoek3 gin6 soeng6 ji1",
           "translation": "I put on a top.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "衣"
           ]
-        },
-        {
-          "text": "衣櫃",
-          "reading": "ji1 gwai6",
-          "translation": "wardrobe",
-          "speechText": "衣櫃",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -313,10 +274,10 @@
       ],
       "examples": [
         {
-          "text": "衣服",
-          "reading": "ifuku",
-          "translation": "clothing",
-          "speechText": "衣服",
+          "text": "衣替え",
+          "reading": "koromogae",
+          "translation": "changing clothes / seasonal wardrobe change",
+          "speechText": "衣替え",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -325,17 +286,10 @@
           "introducedSymbols": [
             "衣"
           ],
-          "kanaReading": "いふく",
-          "coversReadings": [
-            "イ"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "衣服",
-              "reading": "いふく"
-            }
-          ],
-          "furiganaHtml": "<ruby>衣服<rt>いふく</rt></ruby>"
+          "kanaReading": "ころもがえ",
+          "coversReadings": [],
+          "furiganaSegments": [],
+          "furiganaHtml": null
         },
         {
           "text": "衣類",
@@ -378,29 +332,6 @@
             }
           ],
           "furiganaHtml": "<ruby>衣装<rt>いしょう</rt></ruby>"
-        },
-        {
-          "text": "衣",
-          "reading": "koromo",
-          "translation": "robe / garment",
-          "speechText": "衣",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "ころも",
-          "coversReadings": [
-            "ころも"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "衣",
-              "reading": "ころも"
-            }
-          ],
-          "furiganaHtml": "<ruby>衣<rt>ころも</rt></ruby>"
         },
         {
           "text": "衣服を着ます。",
@@ -469,19 +400,6 @@
         "clothing"
       ],
       "examples": [
-        {
-          "text": "옷",
-          "reading": "ot",
-          "translation": "clothes",
-          "speechText": "옷",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "의류",
           "reading": "uiryu",
@@ -810,7 +728,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'clothing / garment', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'clothing', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -879,7 +797,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

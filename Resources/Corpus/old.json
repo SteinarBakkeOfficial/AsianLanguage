@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "老",
-          "reading": "lǎo",
-          "translation": "old / elderly",
-          "speechText": "老",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "lǎo"
-          ]
-        },
-        {
           "text": "老人",
           "reading": "lǎorén",
           "translation": "elderly person",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "老",
-          "reading": "lǎo",
-          "translation": "old / elderly",
-          "speechText": "老",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "老人",
           "reading": "lǎorén",
           "translation": "elderly person",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "老家",
+          "reading": "lǎojiā",
+          "translation": "hometown",
+          "speechText": "老家",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "爺爺老了。",
           "reading": "Yéye lǎo le.",
           "translation": "Grandpa has grown old.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "老"
           ]
-        },
-        {
-          "text": "老家",
-          "reading": "lǎojiā",
-          "translation": "hometown",
-          "speechText": "老家",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "老",
-          "reading": "lou5",
-          "translation": "old / elderly",
-          "speechText": "老",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "老人",
           "reading": "lou5 jan4",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "老家",
+          "reading": "lou5 gaa1",
+          "translation": "hometown",
+          "speechText": "老家",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "爺爺老咗。",
           "reading": "je4 je4 lou5 zo2",
           "translation": "Grandpa has grown old.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "老"
           ]
-        },
-        {
-          "text": "老家",
-          "reading": "lou5 gaa1",
-          "translation": "hometown",
-          "speechText": "老家",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -452,32 +413,6 @@
             }
           ],
           "furiganaHtml": "その<ruby>犬<rt>いぬ</rt></ruby>は<ruby>老犬<rt>ろうけん</rt></ruby>です。"
-        },
-        {
-          "text": "老ける",
-          "reading": "fukeru",
-          "translation": "look/grow older",
-          "speechText": "老ける",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "ふける",
-          "coversReadings": [
-            "ふける"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "老",
-              "reading": "ふ"
-            },
-            {
-              "text": "ける"
-            }
-          ],
-          "furiganaHtml": "<ruby>老<rt>ふ</rt></ruby>ける"
         }
       ],
       "semanticEquivalents": [],
@@ -520,19 +455,6 @@
         "old; elderly (in compounds)"
       ],
       "examples": [
-        {
-          "text": "늙다",
-          "reading": "neukda",
-          "translation": "grow old",
-          "speechText": "늙다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "노인",
           "reading": "noin",
@@ -951,6 +873,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

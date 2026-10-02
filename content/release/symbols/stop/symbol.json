@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "止",
-          "reading": "zhǐ",
-          "translation": "stop",
-          "speechText": "止",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "zhǐ"
-          ]
-        },
-        {
           "text": "停止",
           "reading": "tíngzhǐ",
           "translation": "stop",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "止",
-          "reading": "zhǐ",
-          "translation": "stop",
-          "speechText": "止",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "停止",
           "reading": "tíngzhǐ",
           "translation": "stop",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "止痛",
+          "reading": "zhǐtòng",
+          "translation": "relieve pain",
+          "speechText": "止痛",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "請停止。",
           "reading": "Qǐng tíngzhǐ.",
           "translation": "Please stop.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "止"
           ]
-        },
-        {
-          "text": "止痛",
-          "reading": "zhǐtòng",
-          "translation": "relieve pain",
-          "speechText": "止痛",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "止",
-          "reading": "zi2",
-          "translation": "stop",
-          "speechText": "止",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "停止",
           "reading": "ting4 zi2",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "止痛",
+          "reading": "zi2 tung3",
+          "translation": "relieve pain",
+          "speechText": "止痛",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "請停止。",
           "reading": "cing2 ting4 zi2",
           "translation": "Please stop.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "止"
           ]
-        },
-        {
-          "text": "止痛",
-          "reading": "zi2 tung3",
-          "translation": "relieve pain",
-          "speechText": "止痛",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -488,19 +449,6 @@
         "stop"
       ],
       "examples": [
-        {
-          "text": "멈추다",
-          "reading": "meomchuda",
-          "translation": "stop",
-          "speechText": "멈추다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "정지",
           "reading": "jeongji",
@@ -829,7 +777,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'stop (originally foot)', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'stop', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -898,7 +846,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

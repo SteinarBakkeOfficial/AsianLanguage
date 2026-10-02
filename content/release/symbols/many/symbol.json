@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "多",
-          "reading": "duō",
-          "translation": "many",
-          "speechText": "多",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "duō"
-          ]
-        },
-        {
           "text": "很多",
           "reading": "hěn duō",
           "translation": "many / a lot",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "多",
-          "reading": "duō",
-          "translation": "many",
-          "speechText": "多",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "很多",
           "reading": "hěn duō",
           "translation": "many / a lot",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "多少",
+          "reading": "duōshao",
+          "translation": "how many / how much",
+          "speechText": "多少",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這裡人很多。",
           "reading": "Zhèlǐ rén hěn duō.",
           "translation": "There are many people here.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "多"
           ]
-        },
-        {
-          "text": "多少",
-          "reading": "duōshao",
-          "translation": "how many / how much",
-          "speechText": "多少",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "多",
-          "reading": "do1",
-          "translation": "many",
-          "speechText": "多",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "好多",
           "reading": "hou2 do1",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "多少",
+          "reading": "do1 siu2",
+          "translation": "how many / how much",
+          "speechText": "多少",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "呢度好多人。",
           "reading": "ni1 dou6 hou2 do1 jan4",
           "translation": "There are many people here.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "多"
           ]
-        },
-        {
-          "text": "多少",
-          "reading": "do1 siu2",
-          "translation": "how many / how much",
-          "speechText": "多少",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -472,19 +433,6 @@
         "many"
       ],
       "examples": [
-        {
-          "text": "많다",
-          "reading": "manta",
-          "translation": "many / much",
-          "speechText": "많다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "다수",
           "reading": "dasu",
@@ -882,7 +830,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

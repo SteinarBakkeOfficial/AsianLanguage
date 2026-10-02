@@ -12,6 +12,14 @@
 - More is the canonical owner of About Script Roots and Sources & Licenses. Settings contains preferences and local controls, not duplicate about/source destinations.
 - The release gate after the focused correction pass is passing local checks and Apple/Xcode visual verification of the corrected Symbol action hierarchy, four-track Usage layout, Japanese kana teaching, and transient Home Quick Review behavior.
 
+### Target-language implementation versus corpus-validator findings — 2026-10-02
+
+- The approved Symbol Usage layout is implemented: native writing is left-aligned, the English meaning is right-aligned on the same row, and romanization/pronunciation appears underneath the native writing.
+- Simplified Chinese uses the actual simplified character with Pinyin below; Traditional Chinese separates Taiwan Mandarin/Pinyin and Hong Kong Cantonese/Jyutping; Japanese shows On/Kun readings with furigana and romaji; Korean shows Hanja plus a separate Native Korean section when a distinct native equivalent exists.
+- The standalone `Tools/Validate-Corpus.ps1` findings must not be described as a failure of the target-language layout. The missing example metadata was already present in the previous committed corpus (154 rows before the latest content pass; 133 remain after redundant rows were removed).
+- Four Regular Script transition notes currently exceed the validator's 25-word limit because of the latest editorial content pass: Cloud, Look-toward, Stretch, and Tree. This is a separate corpus-validation cleanup item, not a Usage-page layout regression.
+- The full `Tools/Run-Checks.ps1` suite passes. Apple/Xcode visual verification remains the visual release gate.
+
 ## Current V1 release decision — 2026-10-01
 
 - V1.0 review is complete. This includes Symbol captions, historical interpretation, source/editorial review, target-language readings and examples, native-speaker review, native-script speech text, and History editorial copy.

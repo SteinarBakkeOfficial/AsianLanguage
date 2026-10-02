@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "小",
-          "reading": "xiǎo",
-          "translation": "small",
-          "speechText": "小",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "xiǎo"
-          ]
-        },
-        {
           "text": "小狗",
           "reading": "xiǎogǒu",
           "translation": "small dog / puppy",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "小",
-          "reading": "xiǎo",
-          "translation": "small",
-          "speechText": "小",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "小狗",
           "reading": "xiǎogǒu",
           "translation": "small dog / puppy",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "小孩",
+          "reading": "xiǎohái",
+          "translation": "child",
+          "speechText": "小孩",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這隻貓很小。",
           "reading": "Zhè zhī māo hěn xiǎo.",
           "translation": "This cat is small.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "小"
           ]
-        },
-        {
-          "text": "小孩",
-          "reading": "xiǎohái",
-          "translation": "child",
-          "speechText": "小孩",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "小",
-          "reading": "siu2",
-          "translation": "small",
-          "speechText": "小",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "小狗",
           "reading": "siu2 gau2",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "小孩",
+          "reading": "siu2 haai4",
+          "translation": "child",
+          "speechText": "小孩",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "呢隻貓好細。",
           "reading": "ni1 zek3 maau1 hou2 sai3",
           "translation": "This cat is small.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "小"
           ]
-        },
-        {
-          "text": "小孩",
-          "reading": "siu2 haai4",
-          "translation": "child",
-          "speechText": "小孩",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -455,26 +416,6 @@
             }
           ],
           "furiganaHtml": "この<ruby>犬<rt>いぬ</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さいです。"
-        },
-        {
-          "text": "小鳥",
-          "reading": "kotori",
-          "translation": "small bird",
-          "speechText": "小鳥",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "ことり",
-          "furiganaSegments": [
-            {
-              "text": "小鳥",
-              "reading": "ことり"
-            }
-          ],
-          "furiganaHtml": "<ruby>小鳥<rt>ことり</rt></ruby>"
         }
       ],
       "semanticEquivalents": [],
@@ -508,19 +449,6 @@
         "small"
       ],
       "examples": [
-        {
-          "text": "작다",
-          "reading": "jakda",
-          "translation": "small",
-          "speechText": "작다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "소형",
           "reading": "sohyeong",
@@ -890,7 +818,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

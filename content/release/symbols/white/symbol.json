@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "白",
-          "reading": "bái",
-          "translation": "white",
-          "speechText": "白",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "bái"
-          ]
-        },
-        {
           "text": "白色",
           "reading": "báisè",
           "translation": "white",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "白",
-          "reading": "bái",
-          "translation": "white",
-          "speechText": "白",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "白色",
           "reading": "báisè",
           "translation": "white",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "白紙",
+          "reading": "báizhǐ",
+          "translation": "white paper",
+          "speechText": "白紙",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "這件衣服是白色的。",
           "reading": "Zhè jiàn yīfu shì báisè de.",
           "translation": "This piece of clothing is white.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "白"
           ]
-        },
-        {
-          "text": "白紙",
-          "reading": "báizhǐ",
-          "translation": "white paper",
-          "speechText": "白紙",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "白",
-          "reading": "baak6",
-          "translation": "white",
-          "speechText": "白",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "白色",
           "reading": "baak6 sik1",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "白紙",
+          "reading": "baak6 zi2",
+          "translation": "white paper",
+          "speechText": "白紙",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "呢件衫係白色。",
           "reading": "ni1 gin6 saam1 hai6 baak6 sik1",
           "translation": "This piece of clothing is white.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "白"
           ]
-        },
-        {
-          "text": "白紙",
-          "reading": "baak6 zi2",
-          "translation": "white paper",
-          "speechText": "白紙",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -460,29 +421,6 @@
             }
           ],
           "furiganaHtml": "<ruby>雪<rt>ゆき</rt></ruby>は<ruby>白<rt>しろ</rt></ruby>いです。"
-        },
-        {
-          "text": "白髪",
-          "reading": "shiraga",
-          "translation": "white/gray hair",
-          "speechText": "白髪",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "しらが",
-          "coversReadings": [
-            "しら"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "白髪",
-              "reading": "しらが"
-            }
-          ],
-          "furiganaHtml": "<ruby>白髪<rt>しらが</rt></ruby>"
         }
       ],
       "semanticEquivalents": [],
@@ -516,19 +454,6 @@
         "white"
       ],
       "examples": [
-        {
-          "text": "하얗다",
-          "reading": "hayata",
-          "translation": "white",
-          "speechText": "하얗다",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "백색",
           "reading": "baeksaek",
@@ -926,7 +851,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

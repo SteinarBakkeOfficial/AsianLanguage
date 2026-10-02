@@ -39,23 +39,6 @@
       ],
       "examples": [
         {
-          "text": "先",
-          "reading": "xiān",
-          "translation": "first / before",
-          "speechText": "先",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "先"
-          ],
-          "coversReadings": [
-            "xiān"
-          ]
-        },
-        {
           "text": "先生",
           "reading": "xiānsheng",
           "translation": "Mr. / teacher",
@@ -128,20 +111,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "先",
-          "reading": "xiān",
-          "translation": "first / before",
-          "speechText": "先",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "先"
-          ]
-        },
-        {
           "text": "先生",
           "reading": "xiānsheng",
           "translation": "Mr. / teacher",
@@ -168,6 +137,18 @@
           "introducedSymbols": []
         },
         {
+          "text": "先後",
+          "reading": "xiānhòu",
+          "translation": "before and after",
+          "speechText": "先後",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "你先吃。",
           "reading": "Nǐ xiān chī.",
           "translation": "You eat first.",
@@ -183,20 +164,6 @@
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "先",
-          "reading": "sin1",
-          "translation": "first / before",
-          "speechText": "先",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "先"
-          ]
-        },
         {
           "text": "先生",
           "reading": "sin1 saang1",
@@ -216,6 +183,18 @@
           "reading": "sau2 sin1",
           "translation": "first of all",
           "speechText": "首先",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "先後",
+          "reading": "sin1 hau6",
+          "translation": "before and after",
+          "speechText": "先後",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -288,31 +267,6 @@
         "before"
       ],
       "examples": [
-        {
-          "text": "先",
-          "reading": "saki",
-          "translation": "ahead / before",
-          "speechText": "先",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "先"
-          ],
-          "kanaReading": "さき",
-          "coversReadings": [
-            "さき"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "先",
-              "reading": "さき"
-            }
-          ],
-          "furiganaHtml": "<ruby>先<rt>さき</rt></ruby>"
-        },
         {
           "text": "先生",
           "reading": "sensei",
@@ -445,19 +399,6 @@
         "before"
       ],
       "examples": [
-        {
-          "text": "먼저",
-          "reading": "meonjeo",
-          "translation": "first / beforehand",
-          "speechText": "먼저",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "선생",
           "reading": "seonsaeng",
@@ -855,6 +796,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

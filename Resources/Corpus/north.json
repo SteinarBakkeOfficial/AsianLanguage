@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "北",
-          "reading": "běi",
-          "translation": "north",
-          "speechText": "北",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "běi"
-          ]
-        },
-        {
           "text": "北方",
           "reading": "běifāng",
           "translation": "north / northern region",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "北",
-          "reading": "běi",
-          "translation": "north",
-          "speechText": "北",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "北方",
           "reading": "běifāng",
           "translation": "north / northern region",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "北京",
+          "reading": "Běijīng",
+          "translation": "Beijing",
+          "speechText": "北京",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我們向北走。",
           "reading": "Wǒmen xiàng běi zǒu.",
           "translation": "We are walking north.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "北"
           ]
-        },
-        {
-          "text": "北京",
-          "reading": "Běijīng",
-          "translation": "Beijing",
-          "speechText": "北京",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "北",
-          "reading": "bak1",
-          "translation": "north",
-          "speechText": "北",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "北方",
           "reading": "bak1 fong1",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "北京",
+          "reading": "bak1 ging1",
+          "translation": "Beijing",
+          "speechText": "北京",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我哋向北行。",
           "reading": "ngo5 dei6 hoeng3 bak1 haang4",
           "translation": "We are walking north.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "北"
           ]
-        },
-        {
-          "text": "北京",
-          "reading": "bak1 ging1",
-          "translation": "Beijing",
-          "speechText": "北京",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "north"
       ],
       "examples": [
-        {
-          "text": "北",
-          "reading": "kita",
-          "translation": "north",
-          "speechText": "北",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "北"
-          ],
-          "kanaReading": "きた",
-          "coversReadings": [
-            "きた"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "北",
-              "reading": "きた"
-            }
-          ],
-          "furiganaHtml": "<ruby>北<rt>きた</rt></ruby>"
-        },
         {
           "text": "北口",
           "reading": "kitaguchi",
@@ -469,21 +405,6 @@
         "north"
       ],
       "examples": [
-        {
-          "text": "북쪽",
-          "reading": "bukjjok",
-          "translation": "north",
-          "speechText": "북쪽",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "北"
-          ],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "북부",
           "reading": "bukbu",
@@ -810,7 +731,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'north (originally back)', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'north', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -879,6 +800,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

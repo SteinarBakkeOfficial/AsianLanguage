@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "下",
-          "reading": "xià",
-          "translation": "below",
-          "speechText": "下",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "xià"
-          ]
-        },
-        {
           "text": "下面",
           "reading": "xiàmiàn",
           "translation": "below / underneath",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "下",
-          "reading": "xià",
-          "translation": "below",
-          "speechText": "下",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "下面",
           "reading": "xiàmiàn",
           "translation": "below / underneath",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "下雨",
+          "reading": "xiàyǔ",
+          "translation": "to rain",
+          "speechText": "下雨",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "貓在桌子下面。",
           "reading": "Māo zài zhuōzi xiàmiàn.",
           "translation": "The cat is under the table.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "下"
           ]
-        },
-        {
-          "text": "下雨",
-          "reading": "xiàyǔ",
-          "translation": "to rain",
-          "speechText": "下雨",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "下",
-          "reading": "haa6",
-          "translation": "below",
-          "speechText": "下",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "下面",
           "reading": "haa6 min6",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "下雨",
+          "reading": "haa6 jyu5",
+          "translation": "to rain",
+          "speechText": "下雨",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "隻貓喺枱下面。",
           "reading": "zek3 maau1 hai2 toi2 haa6 min6",
           "translation": "The cat is under the table.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "下"
           ]
-        },
-        {
-          "text": "下雨",
-          "reading": "haa6 jyu5",
-          "translation": "to rain",
-          "speechText": "下雨",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -373,31 +334,6 @@
       ],
       "examples": [
         {
-          "text": "下",
-          "reading": "shita",
-          "translation": "below / under",
-          "speechText": "下",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "下"
-          ],
-          "kanaReading": "した",
-          "coversReadings": [
-            "した"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "下",
-              "reading": "した"
-            }
-          ],
-          "furiganaHtml": "<ruby>下<rt>した</rt></ruby>"
-        },
-        {
           "text": "地下",
           "reading": "chika",
           "translation": "underground",
@@ -472,6 +408,32 @@
           "furiganaHtml": "<ruby>下<rt>さ</rt></ruby>がる"
         },
         {
+          "text": "下げる",
+          "reading": "sageru",
+          "translation": "lower",
+          "speechText": "下げる",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [],
+          "kanaReading": "さげる",
+          "coversReadings": [
+            "さげる"
+          ],
+          "furiganaSegments": [
+            {
+              "text": "下",
+              "reading": "さ"
+            },
+            {
+              "text": "げる"
+            }
+          ],
+          "furiganaHtml": "<ruby>下<rt>さ</rt></ruby>げる"
+        },
+        {
           "text": "猫は机の下です。",
           "reading": "neko wa tsukue no shita desu.",
           "translation": "The cat is under the desk.",
@@ -512,110 +474,6 @@
             }
           ],
           "furiganaHtml": "<ruby>猫<rt>ねこ</rt></ruby>は<ruby>机<rt>つくえ</rt></ruby>の<ruby>下<rt>した</rt></ruby>です。"
-        },
-        {
-          "text": "下げる",
-          "reading": "sageru",
-          "translation": "lower",
-          "speechText": "下げる",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "さげる",
-          "coversReadings": [
-            "さげる"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "下",
-              "reading": "さ"
-            },
-            {
-              "text": "げる"
-            }
-          ],
-          "furiganaHtml": "<ruby>下<rt>さ</rt></ruby>げる"
-        },
-        {
-          "text": "下る",
-          "reading": "kudaru",
-          "translation": "go down / descend",
-          "speechText": "下る",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "くだる",
-          "coversReadings": [
-            "くだる"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "下",
-              "reading": "くだ"
-            },
-            {
-              "text": "る"
-            }
-          ],
-          "furiganaHtml": "<ruby>下<rt>くだ</rt></ruby>る"
-        },
-        {
-          "text": "下ろす",
-          "reading": "orosu",
-          "translation": "lower / take down",
-          "speechText": "下ろす",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "おろす",
-          "coversReadings": [
-            "おろす"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "下",
-              "reading": "お"
-            },
-            {
-              "text": "ろす"
-            }
-          ],
-          "furiganaHtml": "<ruby>下<rt>お</rt></ruby>ろす"
-        },
-        {
-          "text": "下りる",
-          "reading": "oriru",
-          "translation": "go/get down",
-          "speechText": "下りる",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "おりる",
-          "coversReadings": [
-            "おりる"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "下",
-              "reading": "お"
-            },
-            {
-              "text": "りる"
-            }
-          ],
-          "furiganaHtml": "<ruby>下<rt>お</rt></ruby>りる"
         }
       ],
       "semanticEquivalents": [],
@@ -649,19 +507,6 @@
         "below"
       ],
       "examples": [
-        {
-          "text": "아래",
-          "reading": "arae",
-          "translation": "below / under",
-          "speechText": "아래",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "하단",
           "reading": "hadan",
@@ -1059,7 +904,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

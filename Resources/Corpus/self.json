@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "自",
-          "reading": "zì",
-          "translation": "self",
-          "speechText": "自",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "zì"
-          ]
-        },
-        {
           "text": "自己",
           "reading": "zìjǐ",
           "translation": "self / oneself",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "自",
-          "reading": "zì",
-          "translation": "self",
-          "speechText": "自",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "自己",
           "reading": "zìjǐ",
           "translation": "self / oneself",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "自由",
+          "reading": "zìyóu",
+          "translation": "freedom / free",
+          "speechText": "自由",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我自己來。",
           "reading": "Wǒ zìjǐ lái.",
           "translation": "I will do it myself.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "自"
           ]
-        },
-        {
-          "text": "自由",
-          "reading": "zìyóu",
-          "translation": "freedom / free",
-          "speechText": "自由",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "自",
-          "reading": "zi6",
-          "translation": "self",
-          "speechText": "自",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "自己",
           "reading": "zi6 gei2",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "自由",
+          "reading": "zi6 jau4",
+          "translation": "freedom / free",
+          "speechText": "自由",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我自己嚟。",
           "reading": "ngo5 zi6 gei2 lai4",
           "translation": "I will do it myself.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "自"
           ]
-        },
-        {
-          "text": "自由",
-          "reading": "zi6 jau4",
-          "translation": "freedom / free",
-          "speechText": "自由",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -466,19 +427,6 @@
       ],
       "examples": [
         {
-          "text": "스스로",
-          "reading": "seuseuro",
-          "translation": "oneself / by oneself",
-          "speechText": "스스로",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
-        {
           "text": "자기",
           "reading": "jagi",
           "translation": "self / oneself",
@@ -581,7 +529,7 @@
     "note": "Origin illustration and normalized historical stages are bundled in the approved V1 package."
   },
   "history": {
-    "originAnchor": "A nose is the pictorial source. The meaning ‘self’ was later borrowed by sound; the nose-pointing explanation is a later folk interpretation.",
+    "originAnchor": "A nose is the pictorial source. The graph was later borrowed by sound for the word self; pointing at the nose on ones own face made the association intuitive, but that gesture is a later explanation rather than the original drawing.",
     "stages": [
       {
         "stage": "oracleBone",
@@ -771,7 +719,7 @@
     ],
     "origin": {
       "concept": "self",
-      "explanation": "The graph originally depicted a nose.",
+      "explanation": "The graph originally depicted a nose. It was later borrowed by sound to write the word self, and the familiar act of pointing at the nose on ones own face helped make that connection understandable; the original illustration itself is still only a nose.",
       "asset": {
         "characterID": "self",
         "historicalStage": null,
@@ -806,7 +754,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'self (originally nose)', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'self', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -875,6 +823,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

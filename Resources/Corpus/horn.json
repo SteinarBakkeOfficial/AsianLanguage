@@ -102,21 +102,6 @@
           "introducedSymbols": []
         },
         {
-          "text": "角色",
-          "reading": "juésè",
-          "translation": "role",
-          "speechText": "角色",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "jué"
-          ]
-        },
-        {
           "text": "牛有两只角。",
           "reading": "Niú yǒu liǎng zhī jiǎo.",
           "translation": "A cow has two horns.",
@@ -294,7 +279,8 @@
           "speechLanguage": "japanese",
           "nativeReading": "カク",
           "romanization": "kaku",
-          "historicalOrigin": "sinoJapanese"
+          "historicalOrigin": "sinoJapanese",
+          "gloss": "angle"
         },
         {
           "system": "kunyomi",
@@ -304,7 +290,8 @@
           "speechLanguage": "japanese",
           "nativeReading": "つの",
           "romanization": "tsuno",
-          "historicalOrigin": "nativeJapanese"
+          "historicalOrigin": "nativeJapanese",
+          "gloss": "horn"
         },
         {
           "system": "kunyomi",
@@ -314,38 +301,14 @@
           "speechLanguage": "japanese",
           "nativeReading": "かど",
           "romanization": "kado",
-          "historicalOrigin": "nativeJapanese"
+          "historicalOrigin": "nativeJapanese",
+          "gloss": "corner"
         }
       ],
       "glosses": [
         "horn / corner / angle"
       ],
       "examples": [
-        {
-          "text": "角",
-          "reading": "kado",
-          "translation": "corner",
-          "speechText": "角",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "角"
-          ],
-          "kanaReading": "かど",
-          "coversReadings": [
-            "かど"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "角",
-              "reading": "かど"
-            }
-          ],
-          "furiganaHtml": "<ruby>角<rt>かど</rt></ruby>"
-        },
         {
           "text": "牛の角",
           "reading": "ushi no tsuno",
@@ -488,19 +451,6 @@
         "corner / angle"
       ],
       "examples": [
-        {
-          "text": "뿔",
-          "reading": "ppul",
-          "translation": "horn",
-          "speechText": "뿔",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "각도",
           "reading": "gakdo",
@@ -829,7 +779,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'horn / corner', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'horn / corner / angle', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -898,6 +848,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

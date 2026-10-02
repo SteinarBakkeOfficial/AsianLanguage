@@ -2,8 +2,8 @@
   "id": "cloud",
   "version": 1,
   "coreCharacter": "云",
-  "coreSharedMeaning": "cloud; literary “say” in 云",
-  "recognitionTakeaway": "Traditional 雲 preserves the added weather element over the older 云 graph for “cloud.” Literary 云 continues the borrowed “say” use; modern Simplified Chinese later also writes “cloud” as 云.",
+  "coreSharedMeaning": "cloud",
+  "recognitionTakeaway": "Traditional 雲 preserves the added weather element over the older 云 graph for “cloud”; modern Simplified Chinese also writes the same cloud meaning as 云.",
   "publicationStatus": "published",
   "unicodeCodePoint": "U+4E91",
   "simplifiedForm": "云",
@@ -38,21 +38,6 @@
         "cloud"
       ],
       "examples": [
-        {
-          "text": "云",
-          "reading": "yún",
-          "translation": "cloud",
-          "speechText": "云",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "yún"
-          ]
-        },
         {
           "text": "云彩",
           "reading": "yúncai",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "雲",
-          "reading": "yún",
-          "translation": "cloud",
-          "speechText": "雲",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "雲彩",
           "reading": "yúncai",
           "translation": "clouds",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "白雲",
+          "reading": "báiyún",
+          "translation": "white cloud",
+          "speechText": "白雲",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "天上有白雲。",
           "reading": "Tiānshang yǒu báiyún.",
           "translation": "There are white clouds in the sky.",
@@ -180,35 +165,9 @@
           "introducedSymbols": [
             "云"
           ]
-        },
-        {
-          "text": "白雲",
-          "reading": "báiyún",
-          "translation": "white cloud",
-          "speechText": "白雲",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "雲",
-          "reading": "wan4",
-          "translation": "cloud",
-          "speechText": "雲",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "云"
-          ]
-        },
         {
           "text": "烏雲",
           "reading": "wu1 wan4",
@@ -228,6 +187,18 @@
           "reading": "baak6 wan4",
           "translation": "white cloud",
           "speechText": "白雲",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "雲層",
+          "reading": "wan4 cang4",
+          "translation": "cloud layer",
+          "speechText": "雲層",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -300,31 +271,6 @@
         "cloud"
       ],
       "examples": [
-        {
-          "text": "雲",
-          "reading": "kumo",
-          "translation": "cloud",
-          "speechText": "雲",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "云"
-          ],
-          "kanaReading": "くも",
-          "coversReadings": [
-            "くも"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "雲",
-              "reading": "くも"
-            }
-          ],
-          "furiganaHtml": "<ruby>雲<rt>くも</rt></ruby>"
-        },
         {
           "text": "雲海",
           "reading": "unkai",
@@ -457,19 +403,6 @@
         "cloud"
       ],
       "examples": [
-        {
-          "text": "구름",
-          "reading": "gureum",
-          "translation": "cloud",
-          "speechText": "구름",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "운해",
           "reading": "unhae",
@@ -728,7 +661,7 @@
         "label": "Regular Script",
         "form": "云",
         "assetRef": null,
-        "changeNoteFromPrevious": "Regular Script retains the weather element above the compact lower graph; the earlier separate curls reduce to standard strokes.",
+        "changeNoteFromPrevious": "Regular Script retains the weather element above the compact lower graph; modern Traditional Chinese writes cloud as 雲, while Simplified Chinese writes the same meaning as 云.",
         "certainty": "high",
         "sourceIds": [
           "source-kai-font"
@@ -754,8 +687,8 @@
           "readiness": "approved"
         },
         "introducedComponentIds": [],
-        "stageExplanation": "Traditional 雲 preserves the added weather element over the older 云 graph for “cloud.” Literary 云 continues the borrowed “say” use; modern Simplified Chinese later also writes “cloud” as 云.",
-        "transitionNote": "Regular Script retains the weather element above the compact lower graph; the earlier separate curls reduce to standard strokes.",
+        "stageExplanation": "Regular Script retains the weather element above the compact lower graph; modern Traditional Chinese writes cloud as 雲, while Simplified Chinese writes the same meaning as 云.",
+        "transitionNote": "Regular Script retains the weather element above the compact lower graph; modern Traditional Chinese writes cloud as 雲, while Simplified Chinese writes the same meaning as 云.",
         "transitionNoteNeedsReview": false,
         "materialProcessCaption": "Paper · brush",
         "availabilityState": "available"
@@ -763,7 +696,7 @@
     ],
     "origin": {
       "concept": "cloud",
-      "explanation": "The earliest form combines an upper sky/above marker with a curling lower element that mainly supplies the sound, and was used for “cloud.”",
+      "explanation": "The earliest form combines an upper sky marker with a curling cloud element and was used for “cloud.” The later weather element in 雨雲/雲 distinguishes the traditional form from the older 云 graph.",
       "asset": {
         "characterID": "cloud",
         "historicalStage": null,
@@ -798,7 +731,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'cloud; literary “say” in 云', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'cloud', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -867,7 +800,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

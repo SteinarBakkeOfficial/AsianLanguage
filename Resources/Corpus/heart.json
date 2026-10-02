@@ -39,23 +39,6 @@
       ],
       "examples": [
         {
-          "text": "心",
-          "reading": "xīn",
-          "translation": "heart",
-          "speechText": "心",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "心"
-          ],
-          "coversReadings": [
-            "xīn"
-          ]
-        },
-        {
           "text": "开心",
           "reading": "kāixīn",
           "translation": "happy",
@@ -128,20 +111,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "心",
-          "reading": "xīn",
-          "translation": "heart",
-          "speechText": "心",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "心"
-          ]
-        },
-        {
           "text": "開心",
           "reading": "kāixīn",
           "translation": "happy",
@@ -168,6 +137,18 @@
           "introducedSymbols": []
         },
         {
+          "text": "心情",
+          "reading": "xīnqíng",
+          "translation": "mood",
+          "speechText": "心情",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我很開心。",
           "reading": "Wǒ hěn kāixīn.",
           "translation": "I am very happy.",
@@ -183,20 +164,6 @@
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "心",
-          "reading": "sam1",
-          "translation": "heart",
-          "speechText": "心",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "心"
-          ]
-        },
         {
           "text": "開心",
           "reading": "hoi1 sam1",
@@ -216,6 +183,18 @@
           "reading": "sam1 leoi5",
           "translation": "in the heart/mind",
           "speechText": "心裡",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
+          "text": "心情",
+          "reading": "sam1 cing4",
+          "translation": "mood",
+          "speechText": "心情",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -288,31 +267,6 @@
         "heart"
       ],
       "examples": [
-        {
-          "text": "心",
-          "reading": "kokoro",
-          "translation": "heart / mind",
-          "speechText": "心",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "心"
-          ],
-          "kanaReading": "こころ",
-          "coversReadings": [
-            "こころ"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "心",
-              "reading": "こころ"
-            }
-          ],
-          "furiganaHtml": "<ruby>心<rt>こころ</rt></ruby>"
-        },
         {
           "text": "安心",
           "reading": "anshin",
@@ -452,19 +406,6 @@
         "heart"
       ],
       "examples": [
-        {
-          "text": "마음",
-          "reading": "maeum",
-          "translation": "heart / mind",
-          "speechText": "마음",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "중심",
           "reading": "jungsim",
@@ -862,6 +803,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

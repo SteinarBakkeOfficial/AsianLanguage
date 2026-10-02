@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "冬",
-          "reading": "dōng",
-          "translation": "winter",
-          "speechText": "冬",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "dōng"
-          ]
-        },
-        {
           "text": "冬天",
           "reading": "dōngtiān",
           "translation": "winter",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "冬",
-          "reading": "dōng",
-          "translation": "winter",
-          "speechText": "冬",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "冬天",
           "reading": "dōngtiān",
           "translation": "winter",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "冬日",
+          "reading": "dōngrì",
+          "translation": "winter day",
+          "speechText": "冬日",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "冬天很冷。",
           "reading": "Dōngtiān hěn lěng.",
           "translation": "Winter is cold.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "冬"
           ]
-        },
-        {
-          "text": "冬日",
-          "reading": "dōngrì",
-          "translation": "winter day",
-          "speechText": "冬日",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "冬",
-          "reading": "dung1",
-          "translation": "winter",
-          "speechText": "冬",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "冬天",
           "reading": "dung1 tin1",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "冬日",
+          "reading": "dung1 jat6",
+          "translation": "winter day",
+          "speechText": "冬日",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "冬天好凍。",
           "reading": "dung1 tin1 hou2 dung3",
           "translation": "Winter is cold.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "冬"
           ]
-        },
-        {
-          "text": "冬日",
-          "reading": "dung1 jat6",
-          "translation": "winter day",
-          "speechText": "冬日",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "winter"
       ],
       "examples": [
-        {
-          "text": "冬",
-          "reading": "fuyu",
-          "translation": "winter",
-          "speechText": "冬",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "冬"
-          ],
-          "kanaReading": "ふゆ",
-          "coversReadings": [
-            "ふゆ"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "冬",
-              "reading": "ふゆ"
-            }
-          ],
-          "furiganaHtml": "<ruby>冬<rt>ふゆ</rt></ruby>"
-        },
         {
           "text": "冬休み",
           "reading": "fuyuyasumi",
@@ -472,21 +408,6 @@
         "winter"
       ],
       "examples": [
-        {
-          "text": "겨울",
-          "reading": "gyeoul",
-          "translation": "winter",
-          "speechText": "겨울",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "冬"
-          ],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "동계",
           "reading": "donggye",
@@ -813,7 +734,7 @@
     ]
   },
   "usage": {
-    "coreMeaningFirst": "Start with 'winter (earlier “end”)', then compare the modern forms and readings across the four focus tracks.",
+    "coreMeaningFirst": "Start with 'winter', then compare the modern forms and readings across the four focus tracks.",
     "notes": [
       "Modern examples are approved V1 language content.",
       "Japanese and Korean regional forms are rendered through their intentional locale font roles."
@@ -882,7 +803,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "目",
-          "reading": "mù",
-          "translation": "eye / gaze / item/purpose in compounds",
-          "speechText": "目",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "mù"
-          ]
-        },
-        {
           "text": "目光",
           "reading": "mùguāng",
           "translation": "gaze",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "目",
-          "reading": "mù",
-          "translation": "eye / gaze / item/purpose in compounds",
-          "speechText": "目",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "目光",
           "reading": "mùguāng",
           "translation": "gaze",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "目的",
+          "reading": "mùdì",
+          "translation": "purpose",
+          "speechText": "目的",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "他的目光很溫和。",
           "reading": "Tā de mùguāng hěn wēnhé.",
           "translation": "His gaze is gentle.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "目"
           ]
-        },
-        {
-          "text": "目的",
-          "reading": "mùdì",
-          "translation": "purpose",
-          "speechText": "目的",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "目",
-          "reading": "muk6",
-          "translation": "eye / gaze / item/purpose in compounds",
-          "speechText": "目",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "目光",
           "reading": "muk6 gwong1",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "目的",
+          "reading": "muk6 dik1",
+          "translation": "purpose",
+          "speechText": "目的",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "佢嘅目光好溫和。",
           "reading": "keoi5 ge3 muk6 gwong1 hou2 wan1 wo4",
           "translation": "His gaze is gentle.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "目"
           ]
-        },
-        {
-          "text": "目的",
-          "reading": "muk6 dik1",
-          "translation": "purpose",
-          "speechText": "目的",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -312,31 +273,6 @@
         "eye"
       ],
       "examples": [
-        {
-          "text": "目",
-          "reading": "me",
-          "translation": "eye",
-          "speechText": "目",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "目"
-          ],
-          "kanaReading": "め",
-          "coversReadings": [
-            "め"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "目",
-              "reading": "め"
-            }
-          ],
-          "furiganaHtml": "<ruby>目<rt>め</rt></ruby>"
-        },
         {
           "text": "目的",
           "reading": "mokuteki",
@@ -469,19 +405,6 @@
         "eye"
       ],
       "examples": [
-        {
-          "text": "눈",
-          "reading": "nun",
-          "translation": "eye",
-          "speechText": "눈",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "목적",
           "reading": "mokjeok",
@@ -851,6 +774,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }

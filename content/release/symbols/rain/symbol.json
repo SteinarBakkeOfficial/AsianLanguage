@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "雨",
-          "reading": "yǔ",
-          "translation": "rain",
-          "speechText": "雨",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "yǔ"
-          ]
-        },
-        {
           "text": "下雨",
           "reading": "xiàyǔ",
           "translation": "to rain",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "雨",
-          "reading": "yǔ",
-          "translation": "rain",
-          "speechText": "雨",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "下雨",
           "reading": "xiàyǔ",
           "translation": "to rain",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "雨傘",
+          "reading": "yǔsǎn",
+          "translation": "umbrella",
+          "speechText": "雨傘",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "今天下雨。",
           "reading": "Jīntiān xiàyǔ.",
           "translation": "It is raining today.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "雨"
           ]
-        },
-        {
-          "text": "雨傘",
-          "reading": "yǔsǎn",
-          "translation": "umbrella",
-          "speechText": "雨傘",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "雨",
-          "reading": "jyu5",
-          "translation": "rain",
-          "speechText": "雨",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "落雨",
           "reading": "lok6 jyu5",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "雨傘",
+          "reading": "jyu5 saan3",
+          "translation": "umbrella",
+          "speechText": "雨傘",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "今日落雨。",
           "reading": "gam1 jat6 lok6 jyu5",
           "translation": "It is raining today.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "雨"
           ]
-        },
-        {
-          "text": "雨傘",
-          "reading": "jyu5 saan3",
-          "translation": "umbrella",
-          "speechText": "雨傘",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -323,31 +284,6 @@
         "rain"
       ],
       "examples": [
-        {
-          "text": "雨",
-          "reading": "ame",
-          "translation": "rain",
-          "speechText": "雨",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "雨"
-          ],
-          "kanaReading": "あめ",
-          "coversReadings": [
-            "あめ"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "雨",
-              "reading": "あめ"
-            }
-          ],
-          "furiganaHtml": "<ruby>雨<rt>あめ</rt></ruby>"
-        },
         {
           "text": "大雨",
           "reading": "ōame",
@@ -501,19 +437,6 @@
         "rain"
       ],
       "examples": [
-        {
-          "text": "비",
-          "reading": "bi",
-          "translation": "rain",
-          "speechText": "비",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "우산",
           "reading": "usan",
@@ -911,7 +834,7 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ],
   "targetLanguageEditorialStatus": "curated-2026-09-05",
   "targetLanguageEditorialPrinciples": [

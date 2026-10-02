@@ -39,21 +39,6 @@
       ],
       "examples": [
         {
-          "text": "工",
-          "reading": "gōng",
-          "translation": "work",
-          "speechText": "工",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "coversReadings": [
-            "gōng"
-          ]
-        },
-        {
           "text": "工作",
           "reading": "gōngzuò",
           "translation": "work",
@@ -128,18 +113,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "工",
-          "reading": "gōng",
-          "translation": "work",
-          "speechText": "工",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "工作",
           "reading": "gōngzuò",
           "translation": "work",
@@ -168,6 +141,18 @@
           ]
         },
         {
+          "text": "工廠",
+          "reading": "gōngchǎng",
+          "translation": "factory",
+          "speechText": "工廠",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我在工作。",
           "reading": "Wǒ zài gōngzuò.",
           "translation": "I am working.",
@@ -180,33 +165,9 @@
           "introducedSymbols": [
             "工"
           ]
-        },
-        {
-          "text": "工廠",
-          "reading": "gōngchǎng",
-          "translation": "factory",
-          "speechText": "工廠",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "工",
-          "reading": "gung1",
-          "translation": "work",
-          "speechText": "工",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "coreForm",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "工作",
           "reading": "gung1 zok3",
@@ -236,6 +197,18 @@
           ]
         },
         {
+          "text": "工廠",
+          "reading": "gung1 cong2",
+          "translation": "factory",
+          "speechText": "工廠",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": []
+        },
+        {
           "text": "我返緊工。",
           "reading": "ngo5 faan1 gan2 gung1",
           "translation": "I am at work / working.",
@@ -248,18 +221,6 @@
           "introducedSymbols": [
             "工"
           ]
-        },
-        {
-          "text": "工廠",
-          "reading": "gung1 cong2",
-          "translation": "factory",
-          "speechText": "工廠",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         }
       ],
       "taiwanReadings": [
@@ -426,29 +387,6 @@
             }
           ],
           "furiganaHtml": "<ruby>工事中<rt>こうじちゅう</rt></ruby>です。"
-        },
-        {
-          "text": "工夫",
-          "reading": "kufū",
-          "translation": "device / ingenuity / creative effort",
-          "speechText": "工夫",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "くふう",
-          "coversReadings": [
-            "ク"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "工夫",
-              "reading": "くふう"
-            }
-          ],
-          "furiganaHtml": "<ruby>工夫<rt>くふう</rt></ruby>"
         }
       ],
       "semanticEquivalents": [],
@@ -482,19 +420,6 @@
         "work"
       ],
       "examples": [
-        {
-          "text": "일",
-          "reading": "il",
-          "translation": "work",
-          "speechText": "일",
-          "speechLanguage": "korean",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "exampleRole": "semanticEquivalent"
-        },
         {
           "text": "공장",
           "reading": "gongjang",
@@ -892,6 +817,6 @@
     "V1 runtime import from the 126-character complete-evolution manifest.",
     "Historical visual source and reuse review are complete for V1.",
     "Origin artwork is an educational reconstruction, not historical evidence.",
-    "Each focus track contains up to four approved examples; post-release wording corrections may be issued through Patch 0.1."
+    "Each focus track contains four or five approved examples; post-release wording corrections may be issued through Patch 0.1."
   ]
 }
