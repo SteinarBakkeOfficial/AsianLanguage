@@ -29,6 +29,17 @@
 - macOS/Xcode packaging, marketplace submission, and post-release device observations are distribution or maintenance actions. They do not reopen the completed V1 review decision by default.
 - The Japanese book reference set establishes the History editorial standard: narrative explanation, nearby evidence, structured comparison tables, explicit exceptions, cautious claims, and language-specific writing traditions.
 
+## V1.0 release-candidate freeze and Patch 0.1 boundary — 2026-10-04
+
+- **Current status: release candidate complete; preparing for marketplace submission.**
+- The current repository state is the V1.0 release candidate for the first marketplace submission.
+- No further code or approved release-content changes are authorized before submission. Apple/Xcode verification, archive/signing, packaging, and submission are release execution steps against this frozen candidate.
+- Apple device testing is complete on the iPhone 14 Pro and the candidate is working as intended.
+- All bundled historical/reference images and internal artwork are treated as cleared for V1.0. ZDIC is recorded as a reference/source; earlier pending-rights notes are superseded for this release decision.
+- Patch 0.1 is a separate post-release maintenance cycle. It begins only after marketplace feedback or confirmed device observations establish the work to do; it must not be mixed into the V1.0 release candidate.
+- The first recorded Patch 0.1 candidate is improved pronunciation playback: improve both speaking quality and pronunciation guidance, and evaluate adding playback for every approved usage example where the speech text and language voice are reliable.
+- The Patch 0.1 candidate is documented in [`docs/patches/patch-0.1-pronunciation-audio.md`](docs/patches/patch-0.1-pronunciation-audio.md). This decision records scope only; it does not authorize implementation now.
+
 ## Product
 
 - AsianLanguage is an English-first, offline-first iPhone experience about Shared Chinese-character heritage.

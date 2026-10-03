@@ -4,7 +4,12 @@
 
 Maintain the approved V1 package: 126 complete-evolution symbols, local origin artwork, reviewed historical stages, CNS11643 Kai Regular Script, approved locale-specific modern forms and examples, explicit native-script speech data, updated collections, search-first Browse, and the book-informed History editorial pages. V1 content and native-speaker review are complete; post-release corrections are tracked for Patch 0.1.
 
-## Current release status — 2026-10-03
+## Current release status — 2026-10-04
+
+- **Release candidate complete; preparing for marketplace submission.** The next actions are packaging, signing, and App Store submission of this unchanged V1.0 candidate.
+- This repository state is the V1.0 release candidate. The approved code/content boundary is frozen for marketplace preparation; do not make further code changes in this step.
+- The remaining V1.0 actions are Apple/Xcode simulator/device verification, archive/signing, packaging, and marketplace submission. These are release execution actions, not an invitation to reopen the completed review.
+- Patch 0.1 is intentionally separate from V1.0. It will be based on confirmed post-release feedback and may include the pronunciation/audio improvement documented in [`docs/patches/patch-0.1-pronunciation-audio.md`](docs/patches/patch-0.1-pronunciation-audio.md).
 
 - V1 editorial review and the previous screenshot-driven implementation pass are complete for the approved content boundaries. The focused Apple-review follow-up pass is complete locally.
 - The Symbol toolbar action hierarchy, restored two-column Usage layout, compact Japanese kana teaching, varied Quick Review behavior, and the current display-meaning/Japanese-sentence hotfixes are implemented locally. Quick Review is now a Home-surfaced randomized review of all learned Symbols; Review Later remains a separate Browse bookmark for full-journey revisits.
@@ -13,9 +18,10 @@ Maintain the approved V1 package: 126 complete-evolution symbols, local origin a
 - The final modern-language content sweep is complete: all 126 symbols have at least four non-core examples in Simplified Chinese, Taiwan Mandarin, and Hong Kong Cantonese. The new Traditional Chinese word examples use the appropriate written forms and pronunciation systems, preserve the advanced sentence as the final displayed example, and are synchronized into the bundled runtime corpus.
 - A runtime regression check now enforces the four-example minimum for all three Chinese tracks so a future corpus import cannot silently reintroduce the earlier short lanes.
 - Quick Review uses one three-choice card per learned Symbol, rotates between symbol-to-meaning, meaning-to-symbol, and selected-language prompts, reveals `Check this Symbol` only after an incorrect choice, and routes that action to the exact Symbol from the answered card before ending the temporary session. It does not read from or modify Review Later.
-- All local Windows checks pass; Apple/Xcode screenshot verification remains required before marketplace release.
+- All local Windows checks pass, and Apple device testing is complete on the iPhone 14 Pro. The remaining actions are archive/signing, marketplace packaging, and submission of this unchanged candidate.
+- All historical/reference images and internal artwork used by V1.0 are treated as cleared. ZDIC is recorded as the reference/source; earlier pending-rights notes are superseded by this release decision.
 - The approved corpus remains exactly 126 records. No new symbols, historical assets, or unrelated features are in scope.
-- Keep the manual-review and screenshot findings documents as the audit trail for this final pass and later Patch 0.1 corrections.
+- Keep the manual-review and screenshot findings documents as the audit trail for this final pass and later Patch 0.1 corrections. Do not use them as authorization for additional V1.0 changes.
 
 ## Confirmed remaining corrections — 2026-10-02
 
@@ -131,6 +137,8 @@ Before implementing any requested correction, restate the exact tasks, the no-ch
 Use `Reference Pictures/Chatgpt/AsianLanguage_AppShell_VisualReference_v1.png` as the primary visual reference. Do not introduce unrelated colors, typography, or decorative treatment; the clay-and-white shell and restrained editorial cards are the current target.
 
 ## V1 implementation snapshot — complete; VNext research remains separate
+
+The V1.0 release candidate is now the baseline for Apple verification and marketplace submission. The next implementation cycle is Patch 0.1, which is intentionally deferred until post-release feedback identifies the highest-value confirmed corrections.
 
 The approved correction pass is implemented: the museum and language rails are persistent and visibly labeled, onboarding has its own aligned lineage preview, Home no longer follows an orphaned pre-V1 state, Home uses the full collection banner, Hong Kong readings identify Cantonese/Jyutping, and History is recreated natively from the approved reference content.
 

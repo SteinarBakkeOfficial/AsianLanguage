@@ -17,7 +17,7 @@ The official product-facing name is Script Roots. AsianLanguage remains the inte
 7. Asset pipeline — complete for V1; approved local package and provenance are synchronized
 8. V1 corpus — complete; the 126-record complete-evolution package is the release corpus
 9. Design and QA — complete for V1; focused Apple-review findings are implemented and locally verified
-10. V1 release — pending Apple/Xcode verification, packaging, and marketplace submission
+10. V1 release — release candidate complete; pending Apple/Xcode verification, packaging, and marketplace submission
 
 ## Current status
 
@@ -25,7 +25,15 @@ Phases 1–9 are complete for the approved V1 scope. The former six-step lesson 
 
 Discovery and content-contract foundations are complete, including Browse-owned Search/Collections/status lists, four focus tracks, regional Traditional Chinese coverage, stage-owned asset metadata, migration support, release/readiness checks, and the book-informed History article structure. The runtime loads the approved/published 126-record complete-evolution V1 package; the original 11 records remain repository reference fixtures.
 
-## Authoritative release posture — 2026-10-03
+## Authoritative release posture — 2026-10-04
+
+- **Release candidate complete; preparing for marketplace submission.** The next actions are packaging, signing, and submission of the unchanged V1.0 candidate.
+- The current repository state is the V1.0 release candidate. Code and approved release content are frozen for marketplace preparation; no new implementation is authorized in this release-candidate step.
+- V1.0 includes the approved 126-record corpus, reviewed historical journey, target-language pages, History guidance, Quick Review, and the final focused content/layout corrections. The first marketplace release is the next real-world feedback cycle.
+- Apple device verification is complete on the iPhone 14 Pro. Archive/signing, packaging, and marketplace submission remain release execution steps against the unchanged candidate; they are not permission to change its code or content.
+- Historical/reference images and internal artwork used by the release candidate are treated as cleared for V1.0. ZDIC is recorded as the reference/source, and the earlier pending-rights notes are superseded.
+- Patch 0.1 is a separate post-release maintenance cycle. It will be planned from confirmed user/device feedback and may not reopen completed V1 review by default.
+- The first documented Patch 0.1 candidate is improved pronunciation playback, including clearer speaking/pronunciation and possible playback for all approved usage examples. It is not implemented or included in V1.0.
 
 - V1 editorial review and the previous screenshot-driven implementation pass are complete for the approved content boundaries.
 - The latest Apple review identified four focused follow-ups. The Symbol toolbar, restored two-column target-language Usage layout, compact Japanese kana guidance, and varied Quick Review behavior are now implemented locally. Quick Review is a Home-surfaced randomized review of all learned Symbols; Review Later remains a separate Browse bookmark for full-journey revisits.
@@ -33,7 +41,7 @@ Discovery and content-contract foundations are complete, including Browse-owned 
 - The final modern-language content sweep is complete across all 126 records. Simplified Chinese was verified at four non-core examples per symbol; missing Taiwan Mandarin and Hong Kong Cantonese lanes were completed, with source and runtime corpus synchronized.
 - The final semantic Symbol-page sweep is complete across all 126 records. Reading glosses, native equivalents, variants, and compound meanings were checked for semantic accuracy; approved overlap between related language lanes was preserved rather than removed mechanically.
 - The final Japanese Symbol-page polish is complete: furigana remains above the written Kanji while each English example gloss aligns with the actual written word. A subsequent Japanese-only semantic gloss audit checked all 126 Symbol pages and corrected reading glosses, equivalent classification, repeated filler examples, and Japanese reading metadata without touching other language lanes or app areas.
-- All local contract and release-readiness checks pass; marketplace packaging still requires Apple/Xcode screenshot verification.
+- All local contract and release-readiness checks pass, and Apple device testing is complete on the iPhone 14 Pro. Marketplace packaging and submission remain.
 - Older dated testing and handoff sections below remain historical records. This section is the current project truth.
 
 ## Current implementation snapshot — 2026-09-03
@@ -94,11 +102,16 @@ This section is an implementation record retained for traceability. The authorit
 - The 126-character V1 historical selection is imported into `Resources/Assets/Symbols` as 504 normalized historical SVG pairs plus retained originals and is wired to the approved/published 126-record runtime manifest.
 - CNS11643 Kai and the four approved Adobe Source Han Serif locale faces are downloaded, documented, bundled, and registered for Regular Script and Used Today. Source Han Sans and additional weights remain intentionally deferred.
 
-### Current next steps — distribution and Patch 0.1
+### Current next steps — release candidate and Patch 0.1
 
-1. Package and submit the accepted V1.0 build to the marketplace when ready.
-2. Monitor marketplace feedback and reported device issues after release.
-3. Prepare Patch 0.1 only for confirmed post-release corrections; do not reopen completed review by default.
+1. Run the final Apple/Xcode simulator and device verification against this release candidate.
+2. Archive, sign, package, and submit the unchanged V1.0 release candidate to the marketplace.
+3. Monitor marketplace feedback and reported device issues after release.
+4. Plan Patch 0.1 only after feedback is available. The first recorded candidate is pronunciation/audio improvement; see [`docs/patches/patch-0.1-pronunciation-audio.md`](docs/patches/patch-0.1-pronunciation-audio.md).
+
+### Patch boundary
+
+Patch 0.1 is not a second release candidate and is not part of the current V1.0 submission. It is a post-release maintenance release for confirmed issues and deliberately selected improvements. No Patch 0.1 implementation should begin until the release build has been submitted and the feedback scope is known.
 
 ### Screenshot-review follow-ups and polish boundary
 

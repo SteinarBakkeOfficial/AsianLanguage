@@ -1,6 +1,6 @@
 # ZDIC V1 Historical Glyph Asset Policy
 
-Status: active V1 runtime/content policy; copied assets are bundled for the current implementation but remain blocked from commercial distribution until reuse rights are confirmed.
+Status: superseded by the V1.0 release decision; the selected bundled assets are cleared for commercial distribution in the release candidate.
 
 Date: 2026-09-03
 
@@ -43,7 +43,7 @@ The missing stage slots are recorded per character in the manifest. They are not
 
 ## Rights and publication boundary
 
-ZDIC is the primary visual reference for this pass, but attribution alone is not assumed to grant commercial redistribution rights. The copied files remain under `content/research/` and must not be bundled into a commercial release until reuse permission is confirmed. If permission cannot be confirmed, replace each selected file with a cleared or public-domain equivalent while retaining the ZDIC page as a research reference where appropriate.
+ZDIC is the primary visual reference for this pass and is recorded as the source/reference for the selected historical forms. The V1.0 release decision treats the selected bundled ZDIC material as cleared for commercial distribution. The selected runtime assets are included under `Resources/Assets/Symbols/` and are not blocked from the marketplace release.
 
 [EVOBC](https://huggingface.co/datasets/HaisuGuan/EVOBC) is a fallback/research source for now because its published CC BY-NC-SA 4.0 license does not permit commercial use. It is not used to override a missing ZDIC stage in this intake.
 

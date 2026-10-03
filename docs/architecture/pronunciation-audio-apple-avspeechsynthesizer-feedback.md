@@ -4,7 +4,7 @@
 
 This document preserves the complete user-provided pronunciation-audio handoff received on 2026-09-04.
 
-It is approved for the current surgical polish implementation. The service and data seam are now implemented; native compilation, voice availability, and physical-device verification remain outstanding. The service remains iOS-specific, while the linguistic data remains platform-independent.
+The V1.0 release candidate is frozen for marketplace preparation. The current implementation is the approved baseline; this document does not authorize changes before release. A possible post-release improvement is recorded in [`docs/patches/patch-0.1-pronunciation-audio.md`](../patches/patch-0.1-pronunciation-audio.md): improve speaking/pronunciation and evaluate speech playback for all approved usage examples. The service remains iOS-specific, while the linguistic data remains platform-independent.
 
 ## User-provided handoff
 
