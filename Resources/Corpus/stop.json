@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "停止",
-          "reading": "tíngzhǐ",
-          "translation": "stop",
-          "speechText": "停止",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "止"
-          ]
-        },
-        {
           "text": "禁止",
           "reading": "jìnzhǐ",
           "translation": "prohibit",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "止"
           ]
+        },
+        {
+          "text": "止血",
+          "reading": "zhǐxuè",
+          "translation": "stop bleeding",
+          "speechText": "止血",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "止"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "停止 — tíngzhǐ",
+          "audioAssetRef": null,
+          "speechText": "停止",
+          "speechLanguage": "mandarin",
+          "nativeReading": "停止",
+          "romanization": "tíngzhǐ",
+          "gloss": "stop"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "stop"
       ],
       "taiwanExamples": [
-        {
-          "text": "停止",
-          "reading": "tíngzhǐ",
-          "translation": "stop",
-          "speechText": "停止",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "止"
-          ]
-        },
         {
           "text": "禁止",
           "reading": "jìnzhǐ",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "止"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "停止",
-          "reading": "ting4 zi2",
-          "translation": "stop",
-          "speechText": "停止",
-          "speechLanguage": "cantonese",
+          "text": "止血",
+          "reading": "zhǐxuè",
+          "translation": "stop bleeding",
+          "speechText": "止血",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "止"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "禁止",
           "reading": "gam3 zi2",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "止"
           ]
+        },
+        {
+          "text": "止血",
+          "reading": "zi2 hyut3",
+          "translation": "stop bleeding",
+          "speechText": "止血",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "止"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "停止 — tíngzhǐ",
+          "audioAssetRef": null,
+          "speechText": "停止",
+          "speechLanguage": "mandarin",
+          "nativeReading": "停止",
+          "romanization": "tíngzhǐ",
+          "gloss": "stop"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "停止 — ting4 zi2",
+          "audioAssetRef": null,
+          "speechText": "停止",
+          "speechLanguage": "cantonese",
+          "nativeReading": "停止",
+          "romanization": "ting4 zi2",
+          "gloss": "stop"
+        }
+      ]
     },
     "japanese": {
       "form": "止",

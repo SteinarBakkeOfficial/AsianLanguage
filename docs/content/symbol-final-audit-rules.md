@@ -276,3 +276,60 @@ The semantic pass and local checks are complete. Apple/Xcode simulator and devic
 - Add a separately glossed everyday Korean equivalent when it expresses the Symbol meaning but is not the Hanja reading. `利` therefore includes `이롭다 — iropda` (“be beneficial”).
 - Do not store a Hanja reading again as a semantic equivalent. For `兄`, `형 — hyeong` remains the Hanja reading and only the distinct `오빠 — oppa` equivalent remains in the equivalent list.
 - This correction is Symbol-content-only and does not authorize changes to other records, language lanes, examples, historical stages, or app screens.
+
+## 17. Resolved presentation decision: multi-sense target headers — `角` / horn — 2026-10-03
+
+- Do not move a distinct sense of the same written character into the equivalent/variant section merely to shorten a target-language header.
+- If one character genuinely means “horn,” “corner,” and “angle” in a target language, retain those senses in that lane’s header and clarify them with reading glosses and examples.
+- Reserve semantic/native equivalents for different lexical words expressing the concept, and orthographic variants for different written graphs.
+- This decision is approved for the Symbol target-language pages and does not authorize unrelated screen changes.
+
+## 18. Mechanical equivalent/example candidate scan — 2026-10-03 (not the semantic audit)
+
+The mechanical screening treats an English gloss that exactly repeats a lane header, or repeats only one part of a multi-sense header, as a review candidate. This is only a discovery aid. It is not a semantic audit and cannot establish that the translation is wrong, that an equivalent is missing, or that a row should move categories.
+
+- Direct same-meaning word: candidate semantic/native equivalent; do not retain it as a filler example.
+- Narrower compound or contextual phrase: retain as an example, but translate the complete meaning (`wall corner`, `house corner`, `right angle`, `Asian tiger`, and similar specificity where applicable).
+- Header component only: candidate for an oversimplified translation, not automatic proof of equivalence.
+- All 126 records were scanned across all five displayed language lanes. The scan found 156 exact-header word examples and 31 component-only word examples.
+- The previous Taiwan-divider audit is included: every record has Taiwan reading and example data, and `horn` and `knife` have identical 1-reading/4-example structural eligibility. A missing Taiwan divider under `horn` is therefore a rendering/build discrepancy, not a content exception.
+- No source data, runtime projection, UI, or examples were changed by this scan. A complete semantic audit must inspect every Symbol and every displayed reading, equivalent, variant, and example individually.
+
+## 19. Manual symbol-by-symbol inspection status — 2026-10-03
+
+The 126 Symbol records have been inspected individually across target-language headers, readings, equivalent/variant fields, and complete example rows. The earlier exact-match counts remain discovery flags only; they are not findings that every matching row is wrong.
+
+- Direct-meaning words may require semantic/native-equivalent treatment rather than ordinary-example treatment.
+- Narrower compounds must remain examples with complete translations, not reduced to one broad header word.
+- Legitimate examples such as “tiger stripes,” “ox horn,” and “right angle” must remain examples because their full meanings are narrower.
+- Equivalent/variant coverage must be checked per lane, independently of translation matching.
+- Regional examples must be judged for natural language and deliberate overlap, not mechanically deduplicated.
+
+At the time of this status note the inspection had not yet applied changes. The completed implementation is recorded in the ledger’s applied-pass section; it preserves the approved example count and replaces moved direct-meaning rows with specific compounds or sentences.
+
+## 20. Classification required before implementation — 2026-10-03
+
+Before changing a candidate row, record one of these decisions:
+
+1. **Direct lexical equivalent:** the complete word is an ordinary alternative expression of the Symbol meaning. Store/display it as an equivalent or native-language word and remove the duplicate example.
+2. **Same graph, distinct reading:** keep it in the reading system with its own gloss; do not create a duplicate equivalent row.
+3. **Narrower compound:** keep it as an example and expand the English translation to the complete meaning (`water well`, `house corner`, `angle / degree`, and similar cases).
+4. **Related but different meaning:** keep it as an example with its precise gloss (`tiger stripes`, `ox horn`, `right angle`, and similar cases).
+5. **Missing equivalent/variant:** add only after confirming the target-language word and its relationship; then remove any duplicate example and replace it with another useful example.
+
+The direct-meaning candidate lists in the audit ledger were used as discovery inputs for this classification. They were not treated as automatic bulk moves; each applied change is recorded in the ledger’s applied-pass section.
+
+## 21. Approved direct-meaning, equivalent, variant, and example rules — 2026-10-03
+
+This is the implementation ruleset approved for the full candidate-list pass:
+
+- Keep each Symbol header limited to its established core meaning(s). Do not add a related word merely because it appears in an example. If the same written character genuinely carries distinct current senses in a lane, those senses may remain in that lane's header and must be explained through its readings, examples, Origin, or Regular Script where necessary.
+- Treat a different pronunciation of the same written character as a reading. Give every displayed reading its own exact English gloss; do not create a duplicate equivalent row for a pronunciation difference alone.
+- Treat a different lexical word expressing the same concept as a semantic/native equivalent. Display it above the examples with its own exact English gloss.
+- Treat a different written graph representing the same concept as an orthographic variant. Display it above the examples with its own exact English gloss.
+- Do not keep a direct lexical equivalent as an ordinary example. When one is moved, replace it with another useful compound or sentence so the lane retains its approved four-to-five examples.
+- Keep compounds and sentences as examples when their full meaning is narrower, contextual, or extended. Translate the complete expression: `wall corner`, `house corner`, `right angle`, `tiger stripes`, and `ox horn`, not merely `corner`, `angle`, or `tiger`.
+- Similar regional examples are allowed when the overlap is natural or demonstrates a written/pronunciation difference. Do not mechanically deduplicate Taiwan, Hong Kong, and Simplified Chinese, but do not make all regional sets identical without a reason.
+- Never classify a row from an English-string match alone. Inspect the written word, reading, full compound meaning, existing equivalent/variant coverage, and the surrounding examples for every Symbol and every lane.
+
+The implementation pass must record a decision for each candidate as one of: direct lexical equivalent, same graph with a distinct reading, narrower compound, related-but-different meaning, or missing equivalent/variant. No Origin, Regular Script, History, Home, Quick Review, navigation, or unrelated UI content is in scope for this pass.

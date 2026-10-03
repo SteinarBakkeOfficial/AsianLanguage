@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "方向",
-          "reading": "fāngxiàng",
-          "translation": "direction",
-          "speechText": "方向",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "向"
-          ]
-        },
-        {
           "text": "向前",
           "reading": "xiàng qián",
           "translation": "forward",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "向"
           ]
+        },
+        {
+          "text": "方向感",
+          "reading": "fāngxiànggǎn",
+          "translation": "sense of direction",
+          "speechText": "方向感",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "方向 — fāngxiàng",
+          "audioAssetRef": null,
+          "speechText": "方向",
+          "speechLanguage": "mandarin",
+          "nativeReading": "方向",
+          "romanization": "fāngxiàng",
+          "gloss": "direction"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "direction"
       ],
       "taiwanExamples": [
-        {
-          "text": "方向",
-          "reading": "fāngxiàng",
-          "translation": "direction",
-          "speechText": "方向",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "向"
-          ]
-        },
         {
           "text": "向前",
           "reading": "xiàng qián",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "向"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "方向",
-          "reading": "fong1 hoeng3",
-          "translation": "direction",
-          "speechText": "方向",
-          "speechLanguage": "cantonese",
+          "text": "方向感",
+          "reading": "fāngxiànggǎn",
+          "translation": "sense of direction",
+          "speechText": "方向感",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "向"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "向前",
           "reading": "hoeng3 cin4",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "向"
           ]
+        },
+        {
+          "text": "方向感",
+          "reading": "fong1 hoeng3 gam2",
+          "translation": "sense of direction",
+          "speechText": "方向感",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "向"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "方向 — fāngxiàng",
+          "audioAssetRef": null,
+          "speechText": "方向",
+          "speechLanguage": "mandarin",
+          "nativeReading": "方向",
+          "romanization": "fāngxiàng",
+          "gloss": "direction"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "方向 — fong1 hoeng3",
+          "audioAssetRef": null,
+          "speechText": "方向",
+          "speechLanguage": "cantonese",
+          "nativeReading": "方向",
+          "romanization": "fong1 hoeng3",
+          "gloss": "direction"
+        }
+      ]
     },
     "japanese": {
       "form": "向",
@@ -341,31 +376,6 @@
           "furiganaHtml": "<ruby>向<rt>む</rt></ruby>く"
         },
         {
-          "text": "方向",
-          "reading": "hōkō",
-          "translation": "direction",
-          "speechText": "方向",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "向"
-          ],
-          "kanaReading": "ほうこう",
-          "coversReadings": [
-            "コウ"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "方向",
-              "reading": "ほうこう"
-            }
-          ],
-          "furiganaHtml": "<ruby>方向<rt>ほうこう</rt></ruby>"
-        },
-        {
           "text": "向上",
           "reading": "kōjō",
           "translation": "improvement",
@@ -447,7 +457,18 @@
           "furiganaHtml": "<ruby>北<rt>きた</rt></ruby>を<ruby>向<rt>む</rt></ruby>きます。"
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "方向 — hōkō",
+          "audioAssetRef": null,
+          "speechText": "方向",
+          "speechLanguage": "japanese",
+          "nativeReading": "方向",
+          "romanization": "hōkō",
+          "gloss": "direction"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
       "internalReadingAudit": {

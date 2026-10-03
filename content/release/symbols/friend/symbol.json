@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "朋友",
-          "reading": "péngyou",
-          "translation": "friend",
-          "speechText": "朋友",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "友"
-          ]
-        },
-        {
           "text": "好友",
           "reading": "hǎoyǒu",
           "translation": "good friend",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "友"
           ]
+        },
+        {
+          "text": "友谊",
+          "reading": "yǒuyì",
+          "translation": "friendship",
+          "speechText": "友谊",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "友"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "朋友 — péngyou",
+          "audioAssetRef": null,
+          "speechText": "朋友",
+          "speechLanguage": "mandarin",
+          "nativeReading": "朋友",
+          "romanization": "péngyou",
+          "gloss": "friend"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -115,20 +126,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "朋友",
-          "reading": "péngyou",
-          "translation": "friend",
-          "speechText": "朋友",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "友"
-          ]
-        },
-        {
           "text": "好友",
           "reading": "hǎoyǒu",
           "translation": "good friend",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "友"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "朋友",
-          "reading": "pang4 jau5",
-          "translation": "friend",
-          "speechText": "朋友",
-          "speechLanguage": "cantonese",
+          "text": "友誼",
+          "reading": "yǒuyì",
+          "translation": "friendship",
+          "speechText": "友誼",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "友"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "好友",
           "reading": "hou2 jau5",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "友"
           ]
+        },
+        {
+          "text": "友誼",
+          "reading": "jau5 ji5",
+          "translation": "friendship",
+          "speechText": "友誼",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "友"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "朋友 — péngyou",
+          "audioAssetRef": null,
+          "speechText": "朋友",
+          "speechLanguage": "mandarin",
+          "nativeReading": "朋友",
+          "romanization": "péngyou",
+          "gloss": "friend"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "朋友 — pang4 jau5",
+          "audioAssetRef": null,
+          "speechText": "朋友",
+          "speechLanguage": "cantonese",
+          "nativeReading": "朋友",
+          "romanization": "pang4 jau5",
+          "gloss": "friend"
+        }
+      ]
     },
     "japanese": {
       "form": "友",
@@ -279,51 +314,6 @@
         "friend"
       ],
       "examples": [
-        {
-          "text": "友達",
-          "reading": "tomodachi",
-          "translation": "friend",
-          "speechText": "友達",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "友"
-          ],
-          "kanaReading": "ともだち",
-          "furiganaSegments": [
-            {
-              "text": "友達",
-              "reading": "ともだち"
-            }
-          ],
-          "furiganaHtml": "<ruby>友達<rt>ともだち</rt></ruby>"
-        },
-        {
-          "text": "友人",
-          "reading": "yūjin",
-          "translation": "friend",
-          "speechText": "友人",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "ゆうじん",
-          "coversReadings": [
-            "ユウ"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "友人",
-              "reading": "ゆうじん"
-            }
-          ],
-          "furiganaHtml": "<ruby>友人<rt>ゆうじん</rt></ruby>"
-        },
         {
           "text": "友情",
           "reading": "yūjō",
@@ -378,9 +368,58 @@
             }
           ],
           "furiganaHtml": "<ruby>友達<rt>ともだち</rt></ruby>に<ruby>会<rt>あ</rt></ruby>います。"
+        },
+        {
+          "text": "友愛",
+          "reading": "yūai",
+          "translation": "friendship / brotherly love",
+          "speechText": "友愛",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "友"
+          ]
+        },
+        {
+          "text": "友好",
+          "reading": "yūkō",
+          "translation": "friendship / friendly relations",
+          "speechText": "友好",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "友"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "友達 — tomodachi",
+          "audioAssetRef": null,
+          "speechText": "友達",
+          "speechLanguage": "japanese",
+          "nativeReading": "友達",
+          "romanization": "tomodachi",
+          "gloss": "friend"
+        },
+        {
+          "system": "semanticEquivalent",
+          "value": "友人 — yūjin",
+          "audioAssetRef": null,
+          "speechText": "友人",
+          "speechLanguage": "japanese",
+          "nativeReading": "友人",
+          "romanization": "yūjin",
+          "gloss": "friend"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
       "internalReadingAudit": {

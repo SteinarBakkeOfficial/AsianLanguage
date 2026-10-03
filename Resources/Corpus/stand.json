@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "站立",
-          "reading": "zhànlì",
-          "translation": "stand",
-          "speechText": "站立",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "立"
-          ]
-        },
-        {
           "text": "立正",
           "reading": "lìzhèng",
           "translation": "stand at attention",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "立"
           ]
+        },
+        {
+          "text": "站台",
+          "reading": "zhàntái",
+          "translation": "platform",
+          "speechText": "站台",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "立"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "站立 — zhànlì",
+          "audioAssetRef": null,
+          "speechText": "站立",
+          "speechLanguage": "mandarin",
+          "nativeReading": "站立",
+          "romanization": "zhànlì",
+          "gloss": "stand"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "stand"
       ],
       "taiwanExamples": [
-        {
-          "text": "站立",
-          "reading": "zhànlì",
-          "translation": "stand",
-          "speechText": "站立",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "立"
-          ]
-        },
         {
           "text": "立正",
           "reading": "lìzhèng",
@@ -162,6 +159,20 @@
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "立"
+          ]
+        },
+        {
+          "text": "站臺",
+          "reading": "zhàntái",
+          "translation": "platform",
+          "speechText": "站臺",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -247,7 +258,19 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "站立 — zhànlì",
+          "audioAssetRef": null,
+          "speechText": "站立",
+          "speechLanguage": "mandarin",
+          "nativeReading": "站立",
+          "romanization": "zhànlì",
+          "gloss": "stand"
+        }
+      ]
     },
     "japanese": {
       "form": "立",

@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "舌头",
-          "reading": "shétou",
-          "translation": "tongue",
-          "speechText": "舌头",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "舌"
-          ]
-        },
-        {
           "text": "舌尖",
           "reading": "shéjiān",
           "translation": "tip of the tongue",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "舌"
           ]
+        },
+        {
+          "text": "舌苔",
+          "reading": "shétāi",
+          "translation": "tongue coating",
+          "speechText": "舌苔",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "舌"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "舌头 — shétou",
+          "audioAssetRef": null,
+          "speechText": "舌头",
+          "speechLanguage": "mandarin",
+          "nativeReading": "舌头",
+          "romanization": "shétou",
+          "gloss": "tongue"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "tongue"
       ],
       "taiwanExamples": [
-        {
-          "text": "舌頭",
-          "reading": "shétou",
-          "translation": "tongue",
-          "speechText": "舌頭",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "舌"
-          ]
-        },
         {
           "text": "舌尖",
           "reading": "shéjiān",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "舌"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "舌頭",
-          "reading": "sit6 tau4",
-          "translation": "tongue",
-          "speechText": "舌頭",
-          "speechLanguage": "cantonese",
+          "text": "舌苔",
+          "reading": "shétāi",
+          "translation": "tongue coating",
+          "speechText": "舌苔",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "舌"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "舌尖",
           "reading": "sit6 zim1",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "舌"
           ]
+        },
+        {
+          "text": "舌苔",
+          "reading": "sit6 toi1",
+          "translation": "tongue coating",
+          "speechText": "舌苔",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "舌"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "舌頭 — shétou",
+          "audioAssetRef": null,
+          "speechText": "舌頭",
+          "speechLanguage": "mandarin",
+          "nativeReading": "舌頭",
+          "romanization": "shétou",
+          "gloss": "tongue"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "舌頭 — sit6 tau4",
+          "audioAssetRef": null,
+          "speechText": "舌頭",
+          "speechLanguage": "cantonese",
+          "nativeReading": "舌頭",
+          "romanization": "sit6 tau4",
+          "gloss": "tongue"
+        }
+      ]
     },
     "japanese": {
       "form": "舌",

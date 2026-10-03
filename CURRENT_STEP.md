@@ -732,3 +732,15 @@ The change set does not include History, Quick Review, Home layout, Browse/Searc
 - Compound meanings were kept attached to compound examples instead of being copied onto the standalone character reading. This includes the Japanese `口` / “mouth” versus `人口` / “population” distinction.
 - Approved examples were preserved. Similar examples across Simplified Chinese, Taiwan Mandarin, and Hong Kong Cantonese remain acceptable when the written form, pronunciation, or language context makes the comparison useful; no blanket deduplication was performed.
 - Canonical source and generated runtime data remain synchronized, and the local corpus, workspace, parity, and project checks pass. Apple/Xcode simulator and device testing is the remaining release-candidate gate.
+
+### Candidate-list equivalent/example pass — 2026-10-03
+
+- The approved direct-meaning/equivalent/variant/example rules are recorded in [`docs/content/symbol-final-audit-rules.md`](docs/content/symbol-final-audit-rules.md) §21 and the applied decisions are recorded in the audit ledger.
+- The full candidate pass was applied only to Symbol-page target-language content. Direct lexical rows were moved above the examples where appropriate, narrower compounds received complete glosses, and every moved row was replaced so changed lanes retain four-to-five examples.
+- Traditional Chinese now carries separate Taiwan and Hong Kong equivalent rows so regional pronunciations are not conflated. The Symbol renderer displays these regional equivalents above their examples; Simplified Chinese and reviewed Japanese equivalents use the same focused Symbol-page path.
+- No Home, History, Quick Review, Browse, More, navigation, or unrelated Symbol-stage content was changed by this pass. The Taiwan divider remains a separate rendering/build issue; its source and runtime data are present.
+- Windows workspace, corpus, and runtime-import checks pass. SwiftUI compilation and Apple/Xcode simulator verification remain outstanding platform-specific release checks.
+
+### Taiwan divider clarification — 2026-10-03
+
+The suspected missing Taiwan divider was traced to presentation conditions, not missing content. The divider above the Taiwan subsection is intentionally suppressed; the divider below a Taiwan reading should render when readings and examples exist, and `horn` has both. No symbol-specific content or UI workaround was applied. If that lower divider is absent in an Apple build, verify the build/rendering result before changing the renderer.

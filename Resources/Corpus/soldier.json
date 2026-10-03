@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "士兵",
-          "reading": "shìbīng",
-          "translation": "soldier",
-          "speechText": "士兵",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "兵"
-          ]
-        },
-        {
           "text": "兵器",
           "reading": "bīngqì",
           "translation": "weapon",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "兵"
           ]
+        },
+        {
+          "text": "兵营",
+          "reading": "bīngyíng",
+          "translation": "military barracks",
+          "speechText": "兵营",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "士兵 — shìbīng",
+          "audioAssetRef": null,
+          "speechText": "士兵",
+          "speechLanguage": "mandarin",
+          "nativeReading": "士兵",
+          "romanization": "shìbīng",
+          "gloss": "soldier"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -115,20 +126,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "士兵",
-          "reading": "shìbīng",
-          "translation": "soldier",
-          "speechText": "士兵",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "兵"
-          ]
-        },
-        {
           "text": "兵器",
           "reading": "bīngqì",
           "translation": "weapon",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "兵"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "士兵",
-          "reading": "si6 bing1",
-          "translation": "soldier",
-          "speechText": "士兵",
-          "speechLanguage": "cantonese",
+          "text": "兵營",
+          "reading": "bīngyíng",
+          "translation": "military barracks",
+          "speechText": "兵營",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "兵"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "兵器",
           "reading": "bing1 hei3",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "兵"
           ]
+        },
+        {
+          "text": "兵營",
+          "reading": "bing1 jing4",
+          "translation": "military barracks",
+          "speechText": "兵營",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "士兵 — shìbīng",
+          "audioAssetRef": null,
+          "speechText": "士兵",
+          "speechLanguage": "mandarin",
+          "nativeReading": "士兵",
+          "romanization": "shìbīng",
+          "gloss": "soldier"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "士兵 — si6 bing1",
+          "audioAssetRef": null,
+          "speechText": "士兵",
+          "speechLanguage": "cantonese",
+          "nativeReading": "士兵",
+          "romanization": "si6 bing1",
+          "gloss": "soldier"
+        }
+      ]
     },
     "japanese": {
       "form": "兵",
@@ -268,31 +303,6 @@
         "soldier"
       ],
       "examples": [
-        {
-          "text": "兵士",
-          "reading": "heishi",
-          "translation": "soldier",
-          "speechText": "兵士",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "兵"
-          ],
-          "kanaReading": "へいし",
-          "coversReadings": [
-            "ヘイ"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "兵士",
-              "reading": "へいし"
-            }
-          ],
-          "furiganaHtml": "<ruby>兵士<rt>へいし</rt></ruby>"
-        },
         {
           "text": "兵器",
           "reading": "heiki",
@@ -336,26 +346,6 @@
           "furiganaHtml": "<ruby>徴兵<rt>ちょうへい</rt></ruby>"
         },
         {
-          "text": "兵隊",
-          "reading": "heitai",
-          "translation": "soldier",
-          "speechText": "兵隊",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "へいたい",
-          "furiganaSegments": [
-            {
-              "text": "兵隊",
-              "reading": "へいたい"
-            }
-          ],
-          "furiganaHtml": "<ruby>兵隊<rt>へいたい</rt></ruby>"
-        },
-        {
           "text": "兵士が立っています。",
           "reading": "heishi ga tatte imasu.",
           "translation": "A soldier is standing.",
@@ -389,9 +379,44 @@
             }
           ],
           "furiganaHtml": "<ruby>兵士<rt>へいし</rt></ruby>が<ruby>立<rt>た</rt></ruby>っています。"
+        },
+        {
+          "text": "兵営",
+          "reading": "heiei",
+          "translation": "military barracks",
+          "speechText": "兵営",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "兵"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "兵士 — heishi",
+          "audioAssetRef": null,
+          "speechText": "兵士",
+          "speechLanguage": "japanese",
+          "nativeReading": "兵士",
+          "romanization": "heishi",
+          "gloss": "soldier"
+        },
+        {
+          "system": "semanticEquivalent",
+          "value": "兵隊 — heitai",
+          "audioAssetRef": null,
+          "speechText": "兵隊",
+          "speechLanguage": "japanese",
+          "nativeReading": "兵隊",
+          "romanization": "heitai",
+          "gloss": "soldiers / troops"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
       "internalReadingAudit": {

@@ -54,20 +54,6 @@
           ]
         },
         {
-          "text": "跟从",
-          "reading": "gēncóng",
-          "translation": "follow",
-          "speechText": "跟从",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "从"
-          ]
-        },
-        {
           "text": "从来",
           "reading": "cónglái",
           "translation": "always / ever",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "从"
           ]
+        },
+        {
+          "text": "跟随",
+          "reading": "gēnsuí",
+          "translation": "follow along",
+          "speechText": "跟随",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "从"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "跟从 — gēncóng",
+          "audioAssetRef": null,
+          "speechText": "跟从",
+          "speechLanguage": "mandarin",
+          "nativeReading": "跟从",
+          "romanization": "gēncóng",
+          "gloss": "follow"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -129,20 +140,6 @@
           ]
         },
         {
-          "text": "跟從",
-          "reading": "gēncóng",
-          "translation": "follow",
-          "speechText": "跟從",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "从"
-          ]
-        },
-        {
           "text": "从來",
           "reading": "cónglái",
           "translation": "always / ever",
@@ -167,6 +164,20 @@
           "introducedSymbols": [
             "从"
           ]
+        },
+        {
+          "text": "跟隨",
+          "reading": "gēnsuí",
+          "translation": "follow along",
+          "speechText": "跟隨",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "从"
+          ]
         }
       ],
       "hongKongExamples": [
@@ -175,20 +186,6 @@
           "reading": "cung4 cin4",
           "translation": "formerly / long ago",
           "speechText": "從前",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "从"
-          ]
-        },
-        {
-          "text": "跟從",
-          "reading": "gan1 cung4",
-          "translation": "follow",
-          "speechText": "跟從",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "从"
           ]
+        },
+        {
+          "text": "跟隨",
+          "reading": "gan1 ceoi4",
+          "translation": "follow along",
+          "speechText": "跟隨",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "从"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "跟從 — gēncóng",
+          "audioAssetRef": null,
+          "speechText": "跟從",
+          "speechLanguage": "mandarin",
+          "nativeReading": "跟從",
+          "romanization": "gēncóng",
+          "gloss": "follow"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "跟從 — gan1 cung4",
+          "audioAssetRef": null,
+          "speechText": "跟從",
+          "speechLanguage": "cantonese",
+          "nativeReading": "跟從",
+          "romanization": "gan1 cung4",
+          "gloss": "follow"
+        }
+      ]
     },
     "japanese": {
       "form": "従",

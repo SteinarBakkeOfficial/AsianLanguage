@@ -40,17 +40,6 @@
       ],
       "examples": [
         {
-          "text": "月亮",
-          "reading": "yuèliang",
-          "translation": "moon",
-          "speechText": "月亮",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "月光",
           "reading": "yuèguāng",
           "translation": "moonlight",
@@ -82,9 +71,34 @@
           "exampleLevel": "sentence",
           "reusesKnownSymbols": [],
           "introducedSymbols": []
+        },
+        {
+          "text": "月食",
+          "reading": "yuèshí",
+          "translation": "lunar eclipse",
+          "speechText": "月食",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "月亮 — yuèliang",
+          "audioAssetRef": null,
+          "speechText": "月亮",
+          "speechLanguage": "mandarin",
+          "nativeReading": "月亮",
+          "romanization": "yuèliang",
+          "gloss": "moon"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -105,17 +119,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "月亮",
-          "reading": "yuèliang",
-          "translation": "moon",
-          "speechText": "月亮",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "月光",
           "reading": "yuèguāng",
           "translation": "moonlight",
@@ -147,20 +150,23 @@
           "exampleLevel": "sentence",
           "reusesKnownSymbols": [],
           "introducedSymbols": []
+        },
+        {
+          "text": "月食",
+          "reading": "yuèshí",
+          "translation": "lunar eclipse",
+          "speechText": "月食",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
         }
       ],
       "hongKongExamples": [
-        {
-          "text": "月亮",
-          "reading": "jyut6 loeng6",
-          "translation": "moon",
-          "speechText": "月亮",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
         {
           "text": "月光",
           "reading": "jyut6 gwong1",
@@ -193,6 +199,20 @@
           "exampleLevel": "sentence",
           "reusesKnownSymbols": [],
           "introducedSymbols": []
+        },
+        {
+          "text": "月食",
+          "reading": "jyut6 sik6",
+          "translation": "lunar eclipse",
+          "speechText": "月食",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "月"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -217,7 +237,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "月亮 — yuèliang",
+          "audioAssetRef": null,
+          "speechText": "月亮",
+          "speechLanguage": "mandarin",
+          "nativeReading": "月亮",
+          "romanization": "yuèliang",
+          "gloss": "moon"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "月亮 — jyut6 loeng6",
+          "audioAssetRef": null,
+          "speechText": "月亮",
+          "speechLanguage": "cantonese",
+          "nativeReading": "月亮",
+          "romanization": "jyut6 loeng6",
+          "gloss": "moon"
+        }
+      ]
     },
     "japanese": {
       "form": "月",

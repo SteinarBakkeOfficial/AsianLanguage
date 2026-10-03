@@ -54,20 +54,6 @@
           ]
         },
         {
-          "text": "森林",
-          "reading": "sēnlín",
-          "translation": "forest",
-          "speechText": "森林",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "林"
-          ]
-        },
-        {
           "text": "林业",
           "reading": "línyè",
           "translation": "forestry",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "林"
           ]
+        },
+        {
+          "text": "林地",
+          "reading": "líndì",
+          "translation": "woodland",
+          "speechText": "林地",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "林"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "森林 — sēnlín",
+          "audioAssetRef": null,
+          "speechText": "森林",
+          "speechLanguage": "mandarin",
+          "nativeReading": "森林",
+          "romanization": "sēnlín",
+          "gloss": "forest"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -129,20 +140,6 @@
           ]
         },
         {
-          "text": "森林",
-          "reading": "sēnlín",
-          "translation": "forest",
-          "speechText": "森林",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "林"
-          ]
-        },
-        {
           "text": "林業",
           "reading": "línyè",
           "translation": "forestry",
@@ -167,6 +164,20 @@
           "introducedSymbols": [
             "林"
           ]
+        },
+        {
+          "text": "林地",
+          "reading": "líndì",
+          "translation": "woodland",
+          "speechText": "林地",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "林"
+          ]
         }
       ],
       "hongKongExamples": [
@@ -175,20 +186,6 @@
           "reading": "syu6 lam4",
           "translation": "grove / woods",
           "speechText": "樹林",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "林"
-          ]
-        },
-        {
-          "text": "森林",
-          "reading": "sam1 lam4",
-          "translation": "forest",
-          "speechText": "森林",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "林"
           ]
+        },
+        {
+          "text": "林地",
+          "reading": "lam4 dei6",
+          "translation": "woodland",
+          "speechText": "林地",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "林"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "森林 — sēnlín",
+          "audioAssetRef": null,
+          "speechText": "森林",
+          "speechLanguage": "mandarin",
+          "nativeReading": "森林",
+          "romanization": "sēnlín",
+          "gloss": "forest"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "森林 — sam1 lam4",
+          "audioAssetRef": null,
+          "speechText": "森林",
+          "speechLanguage": "cantonese",
+          "nativeReading": "森林",
+          "romanization": "sam1 lam4",
+          "gloss": "forest"
+        }
+      ]
     },
     "japanese": {
       "form": "林",
@@ -279,31 +314,6 @@
         "forest"
       ],
       "examples": [
-        {
-          "text": "森林",
-          "reading": "shinrin",
-          "translation": "forest",
-          "speechText": "森林",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "林"
-          ],
-          "kanaReading": "しんりん",
-          "coversReadings": [
-            "リン"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "森林",
-              "reading": "しんりん"
-            }
-          ],
-          "furiganaHtml": "<ruby>森林<rt>しんりん</rt></ruby>"
-        },
         {
           "text": "林業",
           "reading": "ringyō",
@@ -378,9 +388,34 @@
             }
           ],
           "furiganaHtml": "<ruby>林<rt>はやし</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>きます。"
+        },
+        {
+          "text": "森林浴",
+          "reading": "shinrin-yoku",
+          "translation": "forest bathing",
+          "speechText": "森林浴",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "林"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "森林 — shinrin",
+          "audioAssetRef": null,
+          "speechText": "森林",
+          "speechLanguage": "japanese",
+          "nativeReading": "森林",
+          "romanization": "shinrin",
+          "gloss": "forest"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
       "internalReadingAudit": {

@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "夏天",
-          "reading": "xiàtiān",
-          "translation": "summer",
-          "speechText": "夏天",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夏"
-          ]
-        },
-        {
           "text": "夏季",
           "reading": "xiàjì",
           "translation": "summer season",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "夏"
           ]
+        },
+        {
+          "text": "夏令营",
+          "reading": "xiàlìngyíng",
+          "translation": "summer camp",
+          "speechText": "夏令营",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "夏"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "夏天 — xiàtiān",
+          "audioAssetRef": null,
+          "speechText": "夏天",
+          "speechLanguage": "mandarin",
+          "nativeReading": "夏天",
+          "romanization": "xiàtiān",
+          "gloss": "summer"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "summer"
       ],
       "taiwanExamples": [
-        {
-          "text": "夏天",
-          "reading": "xiàtiān",
-          "translation": "summer",
-          "speechText": "夏天",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "夏"
-          ]
-        },
         {
           "text": "夏季",
           "reading": "xiàjì",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "夏"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "夏天",
-          "reading": "haa6 tin1",
-          "translation": "summer",
-          "speechText": "夏天",
-          "speechLanguage": "cantonese",
+          "text": "夏令營",
+          "reading": "xiàlìngyíng",
+          "translation": "summer camp",
+          "speechText": "夏令營",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "夏"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "夏季",
           "reading": "haa6 gwai3",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "夏"
           ]
+        },
+        {
+          "text": "夏令營",
+          "reading": "haa6 ling6 jing4",
+          "translation": "summer camp",
+          "speechText": "夏令營",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "夏"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "夏天 — xiàtiān",
+          "audioAssetRef": null,
+          "speechText": "夏天",
+          "speechLanguage": "mandarin",
+          "nativeReading": "夏天",
+          "romanization": "xiàtiān",
+          "gloss": "summer"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "夏天 — haa6 tin1",
+          "audioAssetRef": null,
+          "speechText": "夏天",
+          "speechLanguage": "cantonese",
+          "nativeReading": "夏天",
+          "romanization": "haa6 tin1",
+          "gloss": "summer"
+        }
+      ]
     },
     "japanese": {
       "form": "夏",

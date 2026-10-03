@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "明亮",
-          "reading": "míngliàng",
-          "translation": "bright",
-          "speechText": "明亮",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "明"
-          ]
-        },
-        {
           "text": "明天",
           "reading": "míngtiān",
           "translation": "tomorrow",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "明"
           ]
+        },
+        {
+          "text": "明月",
+          "reading": "míngyuè",
+          "translation": "bright moon",
+          "speechText": "明月",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "明"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "明亮 — míngliàng",
+          "audioAssetRef": null,
+          "speechText": "明亮",
+          "speechLanguage": "mandarin",
+          "nativeReading": "明亮",
+          "romanization": "míngliàng",
+          "gloss": "bright"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "bright"
       ],
       "taiwanExamples": [
-        {
-          "text": "明亮",
-          "reading": "míngliàng",
-          "translation": "bright",
-          "speechText": "明亮",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "明"
-          ]
-        },
         {
           "text": "明天",
           "reading": "míngtiān",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "明"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "明亮",
-          "reading": "ming4 loeng6",
-          "translation": "bright",
-          "speechText": "明亮",
-          "speechLanguage": "cantonese",
+          "text": "明月",
+          "reading": "míngyuè",
+          "translation": "bright moon",
+          "speechText": "明月",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "明"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "明天",
           "reading": "ming4 tin1",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "明"
           ]
+        },
+        {
+          "text": "明月",
+          "reading": "ming4 jyut6",
+          "translation": "bright moon",
+          "speechText": "明月",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "明"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "明亮 — míngliàng",
+          "audioAssetRef": null,
+          "speechText": "明亮",
+          "speechLanguage": "mandarin",
+          "nativeReading": "明亮",
+          "romanization": "míngliàng",
+          "gloss": "bright"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "明亮 — ming4 loeng6",
+          "audioAssetRef": null,
+          "speechText": "明亮",
+          "speechLanguage": "cantonese",
+          "nativeReading": "明亮",
+          "romanization": "ming4 loeng6",
+          "gloss": "bright"
+        }
+      ]
     },
     "japanese": {
       "form": "明",

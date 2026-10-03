@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "公共",
-          "reading": "gōnggòng",
-          "translation": "public",
-          "speechText": "公共",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "公"
-          ]
-        },
-        {
           "text": "公园",
           "reading": "gōngyuán",
           "translation": "park",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "公"
           ]
+        },
+        {
+          "text": "公告",
+          "reading": "gōnggào",
+          "translation": "public announcement",
+          "speechText": "公告",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "公"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "公共 — gōnggòng",
+          "audioAssetRef": null,
+          "speechText": "公共",
+          "speechLanguage": "mandarin",
+          "nativeReading": "公共",
+          "romanization": "gōnggòng",
+          "gloss": "public"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "public"
       ],
       "taiwanExamples": [
-        {
-          "text": "公共",
-          "reading": "gōnggòng",
-          "translation": "public",
-          "speechText": "公共",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "公"
-          ]
-        },
         {
           "text": "公園",
           "reading": "gōngyuán",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "公"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "公共",
-          "reading": "gung1 gung6",
-          "translation": "public",
-          "speechText": "公共",
-          "speechLanguage": "cantonese",
+          "text": "公告",
+          "reading": "gōnggào",
+          "translation": "public announcement",
+          "speechText": "公告",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "公"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "公園",
           "reading": "gung1 jyun2",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "公"
           ]
+        },
+        {
+          "text": "公告",
+          "reading": "gung1 gou3",
+          "translation": "public announcement",
+          "speechText": "公告",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "公"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "公共 — gōnggòng",
+          "audioAssetRef": null,
+          "speechText": "公共",
+          "speechLanguage": "mandarin",
+          "nativeReading": "公共",
+          "romanization": "gōnggòng",
+          "gloss": "public"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "公共 — gung1 gung6",
+          "audioAssetRef": null,
+          "speechText": "公共",
+          "speechLanguage": "cantonese",
+          "nativeReading": "公共",
+          "romanization": "gung1 gung6",
+          "gloss": "public"
+        }
+      ]
     },
     "japanese": {
       "form": "公",
@@ -279,31 +314,6 @@
         "public"
       ],
       "examples": [
-        {
-          "text": "公共",
-          "reading": "kōkyō",
-          "translation": "public",
-          "speechText": "公共",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "公"
-          ],
-          "kanaReading": "こうきょう",
-          "coversReadings": [
-            "コウ"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "公共",
-              "reading": "こうきょう"
-            }
-          ],
-          "furiganaHtml": "<ruby>公共<rt>こうきょう</rt></ruby>"
-        },
         {
           "text": "公園",
           "reading": "kōen",
@@ -380,9 +390,34 @@
             }
           ],
           "furiganaHtml": "<ruby>公園<rt>こうえん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。"
+        },
+        {
+          "text": "公務",
+          "reading": "kōmu",
+          "translation": "public service",
+          "speechText": "公務",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "公"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "公共 — kōkyō",
+          "audioAssetRef": null,
+          "speechText": "公共",
+          "speechLanguage": "japanese",
+          "nativeReading": "公共",
+          "romanization": "kōkyō",
+          "gloss": "public"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
       "internalReadingAudit": {

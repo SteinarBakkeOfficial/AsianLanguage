@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "妻子",
-          "reading": "qīzi",
-          "translation": "wife",
-          "speechText": "妻子",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "妻"
-          ]
-        },
-        {
           "text": "夫妻",
           "reading": "fūqī",
           "translation": "married couple",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "妻"
           ]
+        },
+        {
+          "text": "妻儿",
+          "reading": "qī'ér",
+          "translation": "wife and children",
+          "speechText": "妻儿",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "妻子 — qīzi",
+          "audioAssetRef": null,
+          "speechText": "妻子",
+          "speechLanguage": "mandarin",
+          "nativeReading": "妻子",
+          "romanization": "qīzi",
+          "gloss": "wife"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -115,20 +126,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "妻子",
-          "reading": "qīzi",
-          "translation": "wife",
-          "speechText": "妻子",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "妻"
-          ]
-        },
-        {
           "text": "夫妻",
           "reading": "fūqī",
           "translation": "married couple",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "妻"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "妻子",
-          "reading": "cai1 zi2",
-          "translation": "wife",
-          "speechText": "妻子",
-          "speechLanguage": "cantonese",
+          "text": "妻兒",
+          "reading": "qī'ér",
+          "translation": "wife and children",
+          "speechText": "妻兒",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "妻"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "夫妻",
           "reading": "fu1 cai1",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "妻"
           ]
+        },
+        {
+          "text": "妻兒",
+          "reading": "cai1 ji4",
+          "translation": "wife and children",
+          "speechText": "妻兒",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "妻"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "妻子 — qīzi",
+          "audioAssetRef": null,
+          "speechText": "妻子",
+          "speechLanguage": "mandarin",
+          "nativeReading": "妻子",
+          "romanization": "qīzi",
+          "gloss": "wife"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "妻子 — cai1 zi2",
+          "audioAssetRef": null,
+          "speechText": "妻子",
+          "speechLanguage": "cantonese",
+          "nativeReading": "妻子",
+          "romanization": "cai1 zi2",
+          "gloss": "wife"
+        }
+      ]
     },
     "japanese": {
       "form": "妻",

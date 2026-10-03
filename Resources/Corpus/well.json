@@ -42,7 +42,7 @@
         {
           "text": "水井",
           "reading": "shuǐjǐng",
-          "translation": "well",
+          "translation": "water well",
           "speechText": "水井",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
@@ -117,7 +117,7 @@
         {
           "text": "水井",
           "reading": "shuǐjǐng",
-          "translation": "well",
+          "translation": "water well",
           "speechText": "水井",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
@@ -173,7 +173,7 @@
         {
           "text": "水井",
           "reading": "seoi2 zeng2",
-          "translation": "well",
+          "translation": "water well",
           "speechText": "水井",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
@@ -292,31 +292,6 @@
       ],
       "examples": [
         {
-          "text": "井戸",
-          "reading": "ido",
-          "translation": "well",
-          "speechText": "井戸",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "井"
-          ],
-          "kanaReading": "いど",
-          "coversReadings": [
-            "い"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "井戸",
-              "reading": "いど"
-            }
-          ],
-          "furiganaHtml": "<ruby>井戸<rt>いど</rt></ruby>"
-        },
-        {
           "text": "油井",
           "reading": "yusei",
           "translation": "oil well",
@@ -424,7 +399,18 @@
           "furiganaHtml": "<ruby>井戸<rt>いど</rt></ruby>の<ruby>水<rt>みず</rt></ruby>は<ruby>冷<rt>つめ</rt></ruby>たいです。"
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "井戸 — ido",
+          "audioAssetRef": null,
+          "speechText": "井戸",
+          "speechLanguage": "japanese",
+          "nativeReading": "井戸",
+          "romanization": "ido",
+          "gloss": "well"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
       "internalReadingAudit": {

@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "力量",
-          "reading": "lìliang",
-          "translation": "strength",
-          "speechText": "力量",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "力"
-          ]
-        },
-        {
           "text": "努力",
           "reading": "nǔlì",
           "translation": "make an effort",
@@ -70,7 +56,7 @@
         {
           "text": "力气",
           "reading": "lìqi",
-          "translation": "strength",
+          "translation": "physical strength",
           "speechText": "力气",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "力"
           ]
+        },
+        {
+          "text": "有力",
+          "reading": "yǒulì",
+          "translation": "powerful / strong",
+          "speechText": "有力",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "力"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "力量 — lìliang",
+          "audioAssetRef": null,
+          "speechText": "力量",
+          "speechLanguage": "mandarin",
+          "nativeReading": "力量",
+          "romanization": "lìliang",
+          "gloss": "strength"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -115,20 +126,6 @@
       ],
       "taiwanExamples": [
         {
-          "text": "力量",
-          "reading": "lìliang",
-          "translation": "strength",
-          "speechText": "力量",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "力"
-          ]
-        },
-        {
           "text": "努力",
           "reading": "nǔlì",
           "translation": "make an effort",
@@ -145,7 +142,7 @@
         {
           "text": "力氣",
           "reading": "lìqi",
-          "translation": "strength",
+          "translation": "physical strength",
           "speechText": "力氣",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "力"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "力量",
-          "reading": "lik6 loeng6",
-          "translation": "strength",
-          "speechText": "力量",
-          "speechLanguage": "cantonese",
+          "text": "有力",
+          "reading": "yǒulì",
+          "translation": "powerful / strong",
+          "speechText": "有力",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "力"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "努力",
           "reading": "nou5 lik6",
@@ -201,7 +198,7 @@
         {
           "text": "力氣",
           "reading": "lik6 hei3",
-          "translation": "strength",
+          "translation": "physical strength",
           "speechText": "力氣",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
@@ -218,6 +215,20 @@
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "力"
+          ]
+        },
+        {
+          "text": "有力",
+          "reading": "jau5 lik6",
+          "translation": "powerful / strong",
+          "speechText": "有力",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "力量 — lìliang",
+          "audioAssetRef": null,
+          "speechText": "力量",
+          "speechLanguage": "mandarin",
+          "nativeReading": "力量",
+          "romanization": "lìliang",
+          "gloss": "strength"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "力量 — lik6 loeng6",
+          "audioAssetRef": null,
+          "speechText": "力量",
+          "speechLanguage": "cantonese",
+          "nativeReading": "力量",
+          "romanization": "lik6 loeng6",
+          "gloss": "strength"
+        }
+      ]
     },
     "japanese": {
       "form": "力",

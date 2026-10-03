@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "休息",
-          "reading": "xiūxi",
-          "translation": "rest",
-          "speechText": "休息",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "休"
-          ]
-        },
-        {
           "text": "休假",
           "reading": "xiūjià",
           "translation": "take leave / vacation",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "休"
           ]
+        },
+        {
+          "text": "休息室",
+          "reading": "xiūxīshì",
+          "translation": "rest room",
+          "speechText": "休息室",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "休"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "休息 — xiūxi",
+          "audioAssetRef": null,
+          "speechText": "休息",
+          "speechLanguage": "mandarin",
+          "nativeReading": "休息",
+          "romanization": "xiūxi",
+          "gloss": "rest"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "rest"
       ],
       "taiwanExamples": [
-        {
-          "text": "休息",
-          "reading": "xiūxi",
-          "translation": "rest",
-          "speechText": "休息",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "休"
-          ]
-        },
         {
           "text": "休假",
           "reading": "xiūjià",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "休"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "休息",
-          "reading": "jau1 sik1",
-          "translation": "rest",
-          "speechText": "休息",
-          "speechLanguage": "cantonese",
+          "text": "休息室",
+          "reading": "xiūxīshì",
+          "translation": "rest room",
+          "speechText": "休息室",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "休"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "休假",
           "reading": "jau1 gaa3",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "休"
           ]
+        },
+        {
+          "text": "休息室",
+          "reading": "jau1 sik1 sat1",
+          "translation": "rest room",
+          "speechText": "休息室",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "休"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "休息 — xiūxi",
+          "audioAssetRef": null,
+          "speechText": "休息",
+          "speechLanguage": "mandarin",
+          "nativeReading": "休息",
+          "romanization": "xiūxi",
+          "gloss": "rest"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "休息 — jau1 sik1",
+          "audioAssetRef": null,
+          "speechText": "休息",
+          "speechLanguage": "cantonese",
+          "nativeReading": "休息",
+          "romanization": "jau1 sik1",
+          "gloss": "rest"
+        }
+      ]
     },
     "japanese": {
       "form": "休",

@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "天空",
-          "reading": "tiānkōng",
-          "translation": "sky",
-          "speechText": "天空",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "天"
-          ]
-        },
-        {
           "text": "天气",
           "reading": "tiānqì",
           "translation": "weather",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "天"
           ]
+        },
+        {
+          "text": "天际",
+          "reading": "tiānjì",
+          "translation": "horizon",
+          "speechText": "天际",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "天"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "天空 — tiānkōng",
+          "audioAssetRef": null,
+          "speechText": "天空",
+          "speechLanguage": "mandarin",
+          "nativeReading": "天空",
+          "romanization": "tiānkōng",
+          "gloss": "sky"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "sky"
       ],
       "taiwanExamples": [
-        {
-          "text": "天空",
-          "reading": "tiānkōng",
-          "translation": "sky",
-          "speechText": "天空",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "天"
-          ]
-        },
         {
           "text": "天氣",
           "reading": "tiānqì",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "天"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "天空",
-          "reading": "tin1 hung1",
-          "translation": "sky",
-          "speechText": "天空",
-          "speechLanguage": "cantonese",
+          "text": "天際",
+          "reading": "tiānjì",
+          "translation": "horizon",
+          "speechText": "天際",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "天"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "天氣",
           "reading": "tin1 hei3",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "天"
           ]
+        },
+        {
+          "text": "天際",
+          "reading": "tin1 zai3",
+          "translation": "horizon",
+          "speechText": "天際",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "天"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "天空 — tiānkōng",
+          "audioAssetRef": null,
+          "speechText": "天空",
+          "speechLanguage": "mandarin",
+          "nativeReading": "天空",
+          "romanization": "tiānkōng",
+          "gloss": "sky"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "天空 — tin1 hung1",
+          "audioAssetRef": null,
+          "speechText": "天空",
+          "speechLanguage": "cantonese",
+          "nativeReading": "天空",
+          "romanization": "tin1 hung1",
+          "gloss": "sky"
+        }
+      ]
     },
     "japanese": {
       "form": "天",
@@ -305,7 +340,7 @@
         {
           "text": "天空",
           "reading": "tenkū",
-          "translation": "sky",
+          "translation": "the heavens / sky",
           "speechText": "天空",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,

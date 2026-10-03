@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "母亲",
-          "reading": "mǔqīn",
-          "translation": "mother",
-          "speechText": "母亲",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "母"
-          ]
-        },
-        {
           "text": "父母",
           "reading": "fùmǔ",
           "translation": "parents",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "母"
           ]
+        },
+        {
+          "text": "母校",
+          "reading": "mǔxiào",
+          "translation": "alma mater",
+          "speechText": "母校",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "母"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "母亲 — mǔqīn",
+          "audioAssetRef": null,
+          "speechText": "母亲",
+          "speechLanguage": "mandarin",
+          "nativeReading": "母亲",
+          "romanization": "mǔqīn",
+          "gloss": "mother"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "mother"
       ],
       "taiwanExamples": [
-        {
-          "text": "母親",
-          "reading": "mǔqīn",
-          "translation": "mother",
-          "speechText": "母親",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "母"
-          ]
-        },
         {
           "text": "父母",
           "reading": "fùmǔ",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "母"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "母親",
-          "reading": "mou5 can1",
-          "translation": "mother",
-          "speechText": "母親",
-          "speechLanguage": "cantonese",
+          "text": "母校",
+          "reading": "mǔxiào",
+          "translation": "alma mater",
+          "speechText": "母校",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "母"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "父母",
           "reading": "fu6 mou5",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "母"
           ]
+        },
+        {
+          "text": "母校",
+          "reading": "mou5 haau6",
+          "translation": "alma mater",
+          "speechText": "母校",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "母"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "母親 — mǔqīn",
+          "audioAssetRef": null,
+          "speechText": "母親",
+          "speechLanguage": "mandarin",
+          "nativeReading": "母親",
+          "romanization": "mǔqīn",
+          "gloss": "mother"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "母親 — mou5 can1",
+          "audioAssetRef": null,
+          "speechText": "母親",
+          "speechLanguage": "cantonese",
+          "nativeReading": "母親",
+          "romanization": "mou5 can1",
+          "gloss": "mother"
+        }
+      ]
     },
     "japanese": {
       "form": "母",
@@ -279,28 +314,6 @@
         "mother"
       ],
       "examples": [
-        {
-          "text": "母親",
-          "reading": "hahaoya",
-          "translation": "mother",
-          "speechText": "母親",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "母"
-          ],
-          "kanaReading": "ははおや",
-          "furiganaSegments": [
-            {
-              "text": "母親",
-              "reading": "ははおや"
-            }
-          ],
-          "furiganaHtml": "<ruby>母親<rt>ははおや</rt></ruby>"
-        },
         {
           "text": "母国",
           "reading": "bokoku",
@@ -378,9 +391,34 @@
             }
           ],
           "furiganaHtml": "<ruby>母<rt>は</rt></ruby>は<ruby>家<rt>はいえ</rt></ruby>にいます。"
+        },
+        {
+          "text": "母語",
+          "reading": "bogo",
+          "translation": "mother tongue",
+          "speechText": "母語",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "母"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "母親 — hahaoya",
+          "audioAssetRef": null,
+          "speechText": "母親",
+          "speechLanguage": "japanese",
+          "nativeReading": "母親",
+          "romanization": "hahaoya",
+          "gloss": "mother"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
       "internalReadingAudit": {

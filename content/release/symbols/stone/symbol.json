@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "石头",
-          "reading": "shítou",
-          "translation": "stone",
-          "speechText": "石头",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "石"
-          ]
-        },
-        {
           "text": "石桥",
           "reading": "shíqiáo",
           "translation": "stone bridge",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "石"
           ]
+        },
+        {
+          "text": "石碑",
+          "reading": "shíbēi",
+          "translation": "stone stele",
+          "speechText": "石碑",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "石"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "石头 — shítou",
+          "audioAssetRef": null,
+          "speechText": "石头",
+          "speechLanguage": "mandarin",
+          "nativeReading": "石头",
+          "romanization": "shítou",
+          "gloss": "stone"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "stone"
       ],
       "taiwanExamples": [
-        {
-          "text": "石頭",
-          "reading": "shítou",
-          "translation": "stone",
-          "speechText": "石頭",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "石"
-          ]
-        },
         {
           "text": "石橋",
           "reading": "shíqiáo",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "石"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "石頭",
-          "reading": "sek6 tau4",
-          "translation": "stone",
-          "speechText": "石頭",
-          "speechLanguage": "cantonese",
+          "text": "石碑",
+          "reading": "shíbēi",
+          "translation": "stone stele",
+          "speechText": "石碑",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "石"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "石橋",
           "reading": "sek6 kiu4",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "石"
           ]
+        },
+        {
+          "text": "石碑",
+          "reading": "sek6 bei1",
+          "translation": "stone stele",
+          "speechText": "石碑",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "石"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "石頭 — shítou",
+          "audioAssetRef": null,
+          "speechText": "石頭",
+          "speechLanguage": "mandarin",
+          "nativeReading": "石頭",
+          "romanization": "shítou",
+          "gloss": "stone"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "石頭 — sek6 tau4",
+          "audioAssetRef": null,
+          "speechText": "石頭",
+          "speechLanguage": "cantonese",
+          "nativeReading": "石頭",
+          "romanization": "sek6 tau4",
+          "gloss": "stone"
+        }
+      ]
     },
     "japanese": {
       "form": "石",

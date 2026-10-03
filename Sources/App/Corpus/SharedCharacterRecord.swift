@@ -239,12 +239,19 @@ struct TraditionalChineseCoverage: Decodable, Hashable {
     /// Learner-facing lexical equivalents that are not readings of the Han character.
     let semanticEquivalents: [CharacterReading]
 
+    /// Taiwan-specific lexical equivalents; optional so older records remain readable.
+    let taiwanSemanticEquivalents: [CharacterReading]
+
+    /// Hong Kong-specific lexical equivalents; optional so older records remain readable.
+    let hongKongSemanticEquivalents: [CharacterReading]
+
     /// Genuine alternate graph forms within the regional written tradition.
     let orthographicVariants: [OrthographicVariant]
 
     private enum CodingKeys: String, CodingKey {
         case form, readings, glosses, taiwanExamples, hongKongExamples
-        case taiwanReadings, hongKongReadings, variants, semanticEquivalents, orthographicVariants
+        case taiwanReadings, hongKongReadings, variants, semanticEquivalents
+        case taiwanSemanticEquivalents, hongKongSemanticEquivalents, orthographicVariants
     }
 
     init(from decoder: Decoder) throws {
@@ -258,6 +265,8 @@ struct TraditionalChineseCoverage: Decodable, Hashable {
         hongKongReadings = try container.decodeIfPresent([CharacterReading].self, forKey: .hongKongReadings) ?? []
         variants = try container.decodeIfPresent([ModernFormVariant].self, forKey: .variants) ?? []
         semanticEquivalents = try container.decodeIfPresent([CharacterReading].self, forKey: .semanticEquivalents) ?? []
+        taiwanSemanticEquivalents = try container.decodeIfPresent([CharacterReading].self, forKey: .taiwanSemanticEquivalents) ?? []
+        hongKongSemanticEquivalents = try container.decodeIfPresent([CharacterReading].self, forKey: .hongKongSemanticEquivalents) ?? []
         orthographicVariants = try container.decodeIfPresent([OrthographicVariant].self, forKey: .orthographicVariants) ?? []
     }
 }

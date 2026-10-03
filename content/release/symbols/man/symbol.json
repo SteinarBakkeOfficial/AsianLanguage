@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "男人",
-          "reading": "nánrén",
-          "translation": "man",
-          "speechText": "男人",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "男"
-          ]
-        },
-        {
           "text": "男孩",
           "reading": "nánhái",
           "translation": "boy",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "男"
           ]
+        },
+        {
+          "text": "男性",
+          "reading": "nánxìng",
+          "translation": "male / man",
+          "speechText": "男性",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "男"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "男人 — nánrén",
+          "audioAssetRef": null,
+          "speechText": "男人",
+          "speechLanguage": "mandarin",
+          "nativeReading": "男人",
+          "romanization": "nánrén",
+          "gloss": "man"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "man"
       ],
       "taiwanExamples": [
-        {
-          "text": "男人",
-          "reading": "nánrén",
-          "translation": "man",
-          "speechText": "男人",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "男"
-          ]
-        },
         {
           "text": "男孩",
           "reading": "nánhái",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "男"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "男人",
-          "reading": "naam4 jan4",
-          "translation": "man",
-          "speechText": "男人",
-          "speechLanguage": "cantonese",
+          "text": "男性",
+          "reading": "nánxìng",
+          "translation": "male / man",
+          "speechText": "男性",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "男"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "男仔",
           "reading": "naam4 zai2",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "男"
           ]
+        },
+        {
+          "text": "男性",
+          "reading": "naam4 sing3",
+          "translation": "male / man",
+          "speechText": "男性",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "男"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "男人 — nánrén",
+          "audioAssetRef": null,
+          "speechText": "男人",
+          "speechLanguage": "mandarin",
+          "nativeReading": "男人",
+          "romanization": "nánrén",
+          "gloss": "man"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "男人 — naam4 jan4",
+          "audioAssetRef": null,
+          "speechText": "男人",
+          "speechLanguage": "cantonese",
+          "nativeReading": "男人",
+          "romanization": "naam4 jan4",
+          "gloss": "man"
+        }
+      ]
     },
     "japanese": {
       "form": "男",

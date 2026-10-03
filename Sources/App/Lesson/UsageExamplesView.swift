@@ -55,6 +55,7 @@ struct UsageExamplesView: View {
                 form: record.focusCoverage.simplifiedChinese.form,
                 translation: laneMeaning(record.focusCoverage.simplifiedChinese.glosses),
                 readings: record.focusCoverage.simplifiedChinese.readings,
+                semanticEquivalents: record.focusCoverage.simplifiedChinese.semanticEquivalents,
                 examples: record.focusCoverage.simplifiedChinese.examples,
                 variants: record.focusCoverage.simplifiedChinese.variants,
                 fontRole: .simplifiedChinese,
@@ -69,6 +70,7 @@ struct UsageExamplesView: View {
                 form: record.focusCoverage.japanese.form,
                 translation: laneMeaning(record.focusCoverage.japanese.glosses),
                 readings: record.focusCoverage.japanese.readings,
+                semanticEquivalents: record.focusCoverage.japanese.semanticEquivalents,
                 examples: record.focusCoverage.japanese.examples,
                 variants: record.focusCoverage.japanese.variants,
                 fontRole: .japanese,
@@ -86,6 +88,7 @@ struct UsageExamplesView: View {
         form: String,
         translation: String,
         readings: [CharacterReading],
+        semanticEquivalents: [CharacterReading] = [],
         examples: [UsageExample],
         variants: [ModernFormVariant],
         fontRole: CJKFontRole,
@@ -109,6 +112,9 @@ struct UsageExamplesView: View {
                         : reading.gloss
                 }
             )
+            if !semanticEquivalents.isEmpty {
+                semanticEquivalentSection(semanticEquivalents, fontRole: fontRole)
+            }
             Divider()
                 .padding(.vertical, AppSpacing.spaceXs)
             ForEach(displayExamples(
@@ -216,6 +222,53 @@ struct UsageExamplesView: View {
                 HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
                     Text(parts.script)
                         .font(CJKFontRole.korean.font(size: 22).weight(.medium))
+                        .foregroundStyle(AppColors.textPrimary)
+                    Spacer(minLength: AppSpacing.spaceSm)
+                    if let gloss = equivalent.gloss, !gloss.isEmpty {
+                        Text(gloss)
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                            .multilineTextAlignment(.trailing)
+                    }
+                }
+                if let romanization = parts.romanization {
+                    Text(romanization)
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            PronunciationButton(reading: equivalent)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    /// Shows a verified lexical equivalent above the context examples without presenting it as another reading.
+    private func semanticEquivalentSection(
+        _ equivalents: [CharacterReading],
+        fontRole: CJKFontRole
+    ) -> some View {
+        VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+            Text("Equivalent")
+                .font(AppTypography.metadata)
+                .foregroundStyle(AppColors.textSecondary)
+            ForEach(Array(equivalents.enumerated()), id: \.offset) { _, equivalent in
+                semanticEquivalentRow(equivalent, fontRole: fontRole)
+            }
+        }
+    }
+
+    /// Renders a language-specific lexical equivalent with its own English meaning and pronunciation.
+    private func semanticEquivalentRow(
+        _ equivalent: CharacterReading,
+        fontRole: CJKFontRole
+    ) -> some View {
+        let parts = displayReadingParts(equivalent)
+        return HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
+            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
+                    Text(parts.script)
+                        .font(fontRole.font(size: 22).weight(.medium))
                         .foregroundStyle(AppColors.textPrimary)
                     Spacer(minLength: AppSpacing.spaceSm)
                     if let gloss = equivalent.gloss, !gloss.isEmpty {
@@ -521,10 +574,10 @@ struct UsageExamplesView: View {
                 fontRole: .traditionalChinese
             )
             if hasTaiwanContent {
-                regionalExamples(title: "Taiwan · Mandarin / Pinyin", writtenForm: coverage.form, readings: coverage.taiwanReadings, examples: coverage.taiwanExamples, showTopDivider: false)
+                regionalExamples(title: "Taiwan · Mandarin / Pinyin", writtenForm: coverage.form, readings: coverage.taiwanReadings, equivalents: coverage.taiwanSemanticEquivalents, examples: coverage.taiwanExamples, showTopDivider: false)
             }
             if hasHongKongContent {
-                regionalExamples(title: "Hong Kong · Cantonese / Jyutping", writtenForm: coverage.form, readings: coverage.hongKongReadings, examples: coverage.hongKongExamples, showTopDivider: hasTaiwanContent)
+                regionalExamples(title: "Hong Kong · Cantonese / Jyutping", writtenForm: coverage.form, readings: coverage.hongKongReadings, equivalents: coverage.hongKongSemanticEquivalents, examples: coverage.hongKongExamples, showTopDivider: hasTaiwanContent)
             }
         }
         .padding(.vertical, AppSpacing.spaceSm)
@@ -542,6 +595,7 @@ struct UsageExamplesView: View {
         title: String,
         writtenForm: String,
         readings: [CharacterReading],
+        equivalents: [CharacterReading] = [],
         examples: [UsageExample],
         showTopDivider: Bool
     ) -> some View {
@@ -561,9 +615,16 @@ struct UsageExamplesView: View {
                     englishGloss: reading.gloss
                 )
             }
-            if !readings.isEmpty && !examples.isEmpty {
+            if (!readings.isEmpty || !equivalents.isEmpty) && !examples.isEmpty {
                 Divider()
                     .padding(.vertical, AppSpacing.space2xs)
+            }
+            if !equivalents.isEmpty {
+                semanticEquivalentSection(equivalents, fontRole: .traditionalChinese)
+                if !examples.isEmpty {
+                    Divider()
+                        .padding(.vertical, AppSpacing.space2xs)
+                }
             }
             ForEach(displayExamples(
                 examples,

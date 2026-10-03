@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "甘甜",
-          "reading": "gāntián",
-          "translation": "sweet",
-          "speechText": "甘甜",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "甘"
-          ]
-        },
-        {
           "text": "甘蔗",
           "reading": "gānzhè",
           "translation": "sugarcane",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "甘"
           ]
+        },
+        {
+          "text": "甘美",
+          "reading": "gānměi",
+          "translation": "sweet / delicious",
+          "speechText": "甘美",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "甘"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "甘甜 — gāntián",
+          "audioAssetRef": null,
+          "speechText": "甘甜",
+          "speechLanguage": "mandarin",
+          "nativeReading": "甘甜",
+          "romanization": "gāntián",
+          "gloss": "sweet"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "sweet"
       ],
       "taiwanExamples": [
-        {
-          "text": "甘甜",
-          "reading": "gāntián",
-          "translation": "sweet",
-          "speechText": "甘甜",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "甘"
-          ]
-        },
         {
           "text": "甘蔗",
           "reading": "gānzhè",
@@ -167,6 +164,20 @@
           "introducedSymbols": [
             "甘"
           ]
+        },
+        {
+          "text": "甘美",
+          "reading": "gānměi",
+          "translation": "sweet / delicious",
+          "speechText": "甘美",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "甘"
+          ]
         }
       ],
       "hongKongExamples": [
@@ -183,18 +194,6 @@
           "introducedSymbols": [
             "甘"
           ]
-        },
-        {
-          "text": "甘甜",
-          "reading": "gam1 tim4",
-          "translation": "sweet",
-          "speechText": "甘甜",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         },
         {
           "text": "甘草",
@@ -216,6 +215,20 @@
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "甘"
+          ]
+        },
+        {
+          "text": "甘美",
+          "reading": "gam1 mei5",
+          "translation": "sweet / delicious",
+          "speechText": "甘美",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -245,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "甘甜 — gāntián",
+          "audioAssetRef": null,
+          "speechText": "甘甜",
+          "speechLanguage": "mandarin",
+          "nativeReading": "甘甜",
+          "romanization": "gāntián",
+          "gloss": "sweet"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "甘甜 — gam1 tim4",
+          "audioAssetRef": null,
+          "speechText": "甘甜",
+          "speechLanguage": "cantonese",
+          "nativeReading": "甘甜",
+          "romanization": "gam1 tim4",
+          "gloss": "sweet"
+        }
+      ]
     },
     "japanese": {
       "form": "甘",

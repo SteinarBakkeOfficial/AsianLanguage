@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "女人",
-          "reading": "nǚrén",
-          "translation": "woman",
-          "speechText": "女人",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "女"
-          ]
-        },
-        {
           "text": "女儿",
           "reading": "nǚ’ér",
           "translation": "daughter",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "女"
           ]
+        },
+        {
+          "text": "女士",
+          "reading": "nǚshì",
+          "translation": "lady / Ms.",
+          "speechText": "女士",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "女"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "女人 — nǚrén",
+          "audioAssetRef": null,
+          "speechText": "女人",
+          "speechLanguage": "mandarin",
+          "nativeReading": "女人",
+          "romanization": "nǚrén",
+          "gloss": "woman"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "woman"
       ],
       "taiwanExamples": [
-        {
-          "text": "女人",
-          "reading": "nǚrén",
-          "translation": "woman",
-          "speechText": "女人",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "女"
-          ]
-        },
         {
           "text": "女兒",
           "reading": "nǚ’ér",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "女"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "女人",
-          "reading": "neoi5 jan4",
-          "translation": "woman",
-          "speechText": "女人",
-          "speechLanguage": "cantonese",
+          "text": "女士",
+          "reading": "nǚshì",
+          "translation": "lady / Ms.",
+          "speechText": "女士",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "女"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "女兒",
           "reading": "neoi5 ji4",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "女"
           ]
+        },
+        {
+          "text": "女士",
+          "reading": "neoi5 si6",
+          "translation": "lady / Ms.",
+          "speechText": "女士",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "女"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "女人 — nǚrén",
+          "audioAssetRef": null,
+          "speechText": "女人",
+          "speechLanguage": "mandarin",
+          "nativeReading": "女人",
+          "romanization": "nǚrén",
+          "gloss": "woman"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "女人 — neoi5 jan4",
+          "audioAssetRef": null,
+          "speechText": "女人",
+          "speechLanguage": "cantonese",
+          "nativeReading": "女人",
+          "romanization": "neoi5 jan4",
+          "gloss": "woman"
+        }
+      ]
     },
     "japanese": {
       "form": "女",

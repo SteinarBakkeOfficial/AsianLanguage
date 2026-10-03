@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "美丽",
-          "reading": "měilì",
-          "translation": "beautiful",
-          "speechText": "美丽",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "美"
-          ]
-        },
-        {
           "text": "美人",
           "reading": "měirén",
           "translation": "beautiful person / beauty",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "美"
           ]
+        },
+        {
+          "text": "美术",
+          "reading": "měishù",
+          "translation": "art",
+          "speechText": "美术",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "美"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "美丽 — měilì",
+          "audioAssetRef": null,
+          "speechText": "美丽",
+          "speechLanguage": "mandarin",
+          "nativeReading": "美丽",
+          "romanization": "měilì",
+          "gloss": "beautiful"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "beautiful"
       ],
       "taiwanExamples": [
-        {
-          "text": "美麗",
-          "reading": "měilì",
-          "translation": "beautiful",
-          "speechText": "美麗",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "美"
-          ]
-        },
         {
           "text": "美人",
           "reading": "měirén",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "美"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "美麗",
-          "reading": "mei5 lai6",
-          "translation": "beautiful",
-          "speechText": "美麗",
-          "speechLanguage": "cantonese",
+          "text": "美術",
+          "reading": "měishù",
+          "translation": "art",
+          "speechText": "美術",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "美"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "美人",
           "reading": "mei5 jan4",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "美"
           ]
+        },
+        {
+          "text": "美術",
+          "reading": "mei5 seot6",
+          "translation": "art",
+          "speechText": "美術",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "美"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "美麗 — měilì",
+          "audioAssetRef": null,
+          "speechText": "美麗",
+          "speechLanguage": "mandarin",
+          "nativeReading": "美麗",
+          "romanization": "měilì",
+          "gloss": "beautiful"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "美麗 — mei5 lai6",
+          "audioAssetRef": null,
+          "speechText": "美麗",
+          "speechLanguage": "cantonese",
+          "nativeReading": "美麗",
+          "romanization": "mei5 lai6",
+          "gloss": "beautiful"
+        }
+      ]
     },
     "japanese": {
       "form": "美",

@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "耳朵",
-          "reading": "ěrduo",
-          "translation": "ear",
-          "speechText": "耳朵",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "耳"
-          ]
-        },
-        {
           "text": "耳机",
           "reading": "ěrjī",
           "translation": "headphones",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "耳"
           ]
+        },
+        {
+          "text": "耳鸣",
+          "reading": "ěrmíng",
+          "translation": "ringing in the ears",
+          "speechText": "耳鸣",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "耳"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "耳朵 — ěrduo",
+          "audioAssetRef": null,
+          "speechText": "耳朵",
+          "speechLanguage": "mandarin",
+          "nativeReading": "耳朵",
+          "romanization": "ěrduo",
+          "gloss": "ear"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "ear"
       ],
       "taiwanExamples": [
-        {
-          "text": "耳朵",
-          "reading": "ěrduo",
-          "translation": "ear",
-          "speechText": "耳朵",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "耳"
-          ]
-        },
         {
           "text": "耳機",
           "reading": "ěrjī",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "耳"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "耳仔",
-          "reading": "ji5 zai2",
-          "translation": "ear",
-          "speechText": "耳仔",
-          "speechLanguage": "cantonese",
+          "text": "耳鳴",
+          "reading": "ěrmíng",
+          "translation": "ringing in the ears",
+          "speechText": "耳鳴",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "耳"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "耳機",
           "reading": "ji5 gei1",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "耳"
           ]
+        },
+        {
+          "text": "耳鳴",
+          "reading": "ji5 ming4",
+          "translation": "ringing in the ears",
+          "speechText": "耳鳴",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "耳"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "耳朵 — ěrduo",
+          "audioAssetRef": null,
+          "speechText": "耳朵",
+          "speechLanguage": "mandarin",
+          "nativeReading": "耳朵",
+          "romanization": "ěrduo",
+          "gloss": "ear"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "耳仔 — ji5 zai2",
+          "audioAssetRef": null,
+          "speechText": "耳仔",
+          "speechLanguage": "cantonese",
+          "nativeReading": "耳仔",
+          "romanization": "ji5 zai2",
+          "gloss": "ear"
+        }
+      ]
     },
     "japanese": {
       "form": "耳",

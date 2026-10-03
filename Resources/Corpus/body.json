@@ -305,26 +305,6 @@
           "furiganaHtml": "<ruby>全身<rt>ぜんしん</rt></ruby>"
         },
         {
-          "text": "身体",
-          "reading": "shintai",
-          "translation": "body",
-          "speechText": "身体",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "しんたい",
-          "furiganaSegments": [
-            {
-              "text": "身体",
-              "reading": "しんたい"
-            }
-          ],
-          "furiganaHtml": "<ruby>身体<rt>しんたい</rt></ruby>"
-        },
-        {
           "text": "身長",
           "reading": "shinchō",
           "translation": "height",
@@ -378,9 +358,34 @@
             }
           ],
           "furiganaHtml": "<ruby>身<rt>み</rt></ruby>を<ruby>守<rt>まも</rt></ruby>ります。"
+        },
+        {
+          "text": "身近",
+          "reading": "mijika",
+          "translation": "close / familiar",
+          "speechText": "身近",
+          "speechLanguage": "japanese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "身"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "身体 — shintai",
+          "audioAssetRef": null,
+          "speechText": "身体",
+          "speechLanguage": "japanese",
+          "nativeReading": "身体",
+          "romanization": "shintai",
+          "gloss": "body"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
       "internalReadingAudit": {

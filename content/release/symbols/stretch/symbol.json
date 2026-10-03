@@ -280,34 +280,6 @@
       ],
       "examples": [
         {
-          "text": "申す",
-          "reading": "mōsu",
-          "translation": "say (humble)",
-          "speechText": "申す",
-          "speechLanguage": "japanese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "申"
-          ],
-          "kanaReading": "もうす",
-          "coversReadings": [
-            "もうす"
-          ],
-          "furiganaSegments": [
-            {
-              "text": "申",
-              "reading": "もう"
-            },
-            {
-              "text": "す"
-            }
-          ],
-          "furiganaHtml": "<ruby>申<rt>もう</rt></ruby>す"
-        },
-        {
           "text": "申し込む",
           "reading": "mōshikomu",
           "translation": "apply / sign up",
@@ -431,7 +403,18 @@
           "furiganaHtml": "ここで<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みます。"
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "申す — mōsu",
+          "audioAssetRef": null,
+          "speechText": "申す",
+          "speechLanguage": "japanese",
+          "nativeReading": "申す",
+          "romanization": "mōsu",
+          "gloss": "say (humble)"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
       "internalReadingAudit": {

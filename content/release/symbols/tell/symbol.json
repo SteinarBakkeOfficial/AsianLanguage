@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "告诉",
-          "reading": "gàosu",
-          "translation": "tell",
-          "speechText": "告诉",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "告"
-          ]
-        },
-        {
           "text": "广告",
           "reading": "guǎnggào",
           "translation": "advertisement",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "告"
           ]
+        },
+        {
+          "text": "告知",
+          "reading": "gàozhī",
+          "translation": "inform",
+          "speechText": "告知",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "告"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "告诉 — gàosu",
+          "audioAssetRef": null,
+          "speechText": "告诉",
+          "speechLanguage": "mandarin",
+          "nativeReading": "告诉",
+          "romanization": "gàosu",
+          "gloss": "tell"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "tell"
       ],
       "taiwanExamples": [
-        {
-          "text": "告訴",
-          "reading": "gàosu",
-          "translation": "tell",
-          "speechText": "告訴",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "告"
-          ]
-        },
         {
           "text": "廣告",
           "reading": "guǎnggào",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "告"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "告訴",
-          "reading": "gou3 sou3",
-          "translation": "tell",
-          "speechText": "告訴",
-          "speechLanguage": "cantonese",
+          "text": "告知",
+          "reading": "gàozhī",
+          "translation": "inform",
+          "speechText": "告知",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "告"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "廣告",
           "reading": "gwong2 gou3",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "告"
           ]
+        },
+        {
+          "text": "告知",
+          "reading": "gou3 zi1",
+          "translation": "inform",
+          "speechText": "告知",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "告"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "告訴 — gàosu",
+          "audioAssetRef": null,
+          "speechText": "告訴",
+          "speechLanguage": "mandarin",
+          "nativeReading": "告訴",
+          "romanization": "gàosu",
+          "gloss": "tell"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "告訴 — gou3 sou3",
+          "audioAssetRef": null,
+          "speechText": "告訴",
+          "speechLanguage": "cantonese",
+          "nativeReading": "告訴",
+          "romanization": "gou3 sou3",
+          "gloss": "tell"
+        }
+      ]
     },
     "japanese": {
       "form": "告",

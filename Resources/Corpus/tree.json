@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "木头",
-          "reading": "mùtou",
-          "translation": "wood",
-          "speechText": "木头",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "木"
-          ]
-        },
-        {
           "text": "木门",
           "reading": "mùmén",
           "translation": "wooden door",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "木"
           ]
+        },
+        {
+          "text": "木板",
+          "reading": "mùbǎn",
+          "translation": "wooden board",
+          "speechText": "木板",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "木"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "木头 — mùtou",
+          "audioAssetRef": null,
+          "speechText": "木头",
+          "speechLanguage": "mandarin",
+          "nativeReading": "木头",
+          "romanization": "mùtou",
+          "gloss": "wood"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "tree / wood"
       ],
       "taiwanExamples": [
-        {
-          "text": "木頭",
-          "reading": "mùtou",
-          "translation": "wood",
-          "speechText": "木頭",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "木"
-          ]
-        },
         {
           "text": "木門",
           "reading": "mùmén",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "木"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "木頭",
-          "reading": "muk6 tau4",
-          "translation": "wood",
-          "speechText": "木頭",
-          "speechLanguage": "cantonese",
+          "text": "木板",
+          "reading": "mùbǎn",
+          "translation": "wooden board",
+          "speechText": "木板",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "木"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "木門",
           "reading": "muk6 mun4",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "木"
           ]
+        },
+        {
+          "text": "木板",
+          "reading": "muk6 baan2",
+          "translation": "wooden board",
+          "speechText": "木板",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "木"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "木頭 — mùtou",
+          "audioAssetRef": null,
+          "speechText": "木頭",
+          "speechLanguage": "mandarin",
+          "nativeReading": "木頭",
+          "romanization": "mùtou",
+          "gloss": "wood"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "木頭 — muk6 tau4",
+          "audioAssetRef": null,
+          "speechText": "木頭",
+          "speechLanguage": "cantonese",
+          "nativeReading": "木頭",
+          "romanization": "muk6 tau4",
+          "gloss": "wood"
+        }
+      ]
     },
     "japanese": {
       "form": "木",

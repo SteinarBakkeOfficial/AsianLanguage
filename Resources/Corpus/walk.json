@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "走路",
-          "reading": "zǒulù",
-          "translation": "walk",
-          "speechText": "走路",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "走"
-          ]
-        },
-        {
           "text": "走开",
           "reading": "zǒukāi",
           "translation": "go away",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "走"
           ]
+        },
+        {
+          "text": "走廊",
+          "reading": "zǒuláng",
+          "translation": "corridor",
+          "speechText": "走廊",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "走"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "走路 — zǒulù",
+          "audioAssetRef": null,
+          "speechText": "走路",
+          "speechLanguage": "mandarin",
+          "nativeReading": "走路",
+          "romanization": "zǒulù",
+          "gloss": "walk"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "walk / go (Mandarin) / leave (Cantonese)"
       ],
       "taiwanExamples": [
-        {
-          "text": "走路",
-          "reading": "zǒulù",
-          "translation": "walk",
-          "speechText": "走路",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "走"
-          ]
-        },
         {
           "text": "走開",
           "reading": "zǒukāi",
@@ -167,6 +164,20 @@
           "introducedSymbols": [
             "走"
           ]
+        },
+        {
+          "text": "走廊",
+          "reading": "zǒuláng",
+          "translation": "corridor",
+          "speechText": "走廊",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "走"
+          ]
         }
       ],
       "hongKongExamples": [
@@ -183,18 +194,6 @@
           "introducedSymbols": [
             "走"
           ]
-        },
-        {
-          "text": "走路",
-          "reading": "zau2 lou6",
-          "translation": "walk",
-          "speechText": "走路",
-          "speechLanguage": "cantonese",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
         },
         {
           "text": "走廊",
@@ -216,6 +215,20 @@
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "走"
+          ]
+        },
+        {
+          "text": "走廊",
+          "reading": "zau2 long4",
+          "translation": "corridor",
+          "speechText": "走廊",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -245,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "走路 — zǒulù",
+          "audioAssetRef": null,
+          "speechText": "走路",
+          "speechLanguage": "mandarin",
+          "nativeReading": "走路",
+          "romanization": "zǒulù",
+          "gloss": "walk"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "走路 — zau2 lou6",
+          "audioAssetRef": null,
+          "speechText": "走路",
+          "speechLanguage": "cantonese",
+          "nativeReading": "走路",
+          "romanization": "zau2 lou6",
+          "gloss": "walk"
+        }
+      ]
     },
     "japanese": {
       "form": "走",

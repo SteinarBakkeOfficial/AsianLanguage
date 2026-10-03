@@ -139,18 +139,6 @@
           "introducedSymbols": []
         },
         {
-          "text": "綿羊",
-          "reading": "miányáng",
-          "translation": "sheep",
-          "speechText": "綿羊",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": []
-        },
-        {
           "text": "草地上有羊。",
           "reading": "Cǎodì shang yǒu yáng.",
           "translation": "There are sheep on the grass.",
@@ -158,6 +146,20 @@
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "羊"
+          ]
+        },
+        {
+          "text": "羊群",
+          "reading": "yángqún",
+          "translation": "flock of sheep",
+          "speechText": "羊群",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -241,7 +243,19 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "綿羊 — miányáng",
+          "audioAssetRef": null,
+          "speechText": "綿羊",
+          "speechLanguage": "mandarin",
+          "nativeReading": "綿羊",
+          "romanization": "miányáng",
+          "gloss": "sheep"
+        }
+      ]
     },
     "japanese": {
       "form": "羊",

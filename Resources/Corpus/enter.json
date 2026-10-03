@@ -40,20 +40,6 @@
       ],
       "examples": [
         {
-          "text": "进入",
-          "reading": "jìnrù",
-          "translation": "enter",
-          "speechText": "进入",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "入"
-          ]
-        },
-        {
           "text": "入口",
           "reading": "rùkǒu",
           "translation": "entrance",
@@ -92,9 +78,34 @@
           "introducedSymbols": [
             "入"
           ]
+        },
+        {
+          "text": "入场",
+          "reading": "rùchǎng",
+          "translation": "enter the venue",
+          "speechText": "入场",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "入"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "进入 — jìnrù",
+          "audioAssetRef": null,
+          "speechText": "进入",
+          "speechLanguage": "mandarin",
+          "nativeReading": "进入",
+          "romanization": "jìnrù",
+          "gloss": "enter"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -114,20 +125,6 @@
         "enter"
       ],
       "taiwanExamples": [
-        {
-          "text": "進入",
-          "reading": "jìnrù",
-          "translation": "enter",
-          "speechText": "進入",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "入"
-          ]
-        },
         {
           "text": "入口",
           "reading": "rùkǒu",
@@ -167,15 +164,13 @@
           "introducedSymbols": [
             "入"
           ]
-        }
-      ],
-      "hongKongExamples": [
+        },
         {
-          "text": "進入",
-          "reading": "zeon3 jap6",
-          "translation": "enter",
-          "speechText": "進入",
-          "speechLanguage": "cantonese",
+          "text": "入場",
+          "reading": "rùchǎng",
+          "translation": "enter the venue",
+          "speechText": "入場",
+          "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
@@ -183,7 +178,9 @@
           "introducedSymbols": [
             "入"
           ]
-        },
+        }
+      ],
+      "hongKongExamples": [
         {
           "text": "入口",
           "reading": "jap6 hau2",
@@ -223,6 +220,20 @@
           "introducedSymbols": [
             "入"
           ]
+        },
+        {
+          "text": "入場",
+          "reading": "jap6 coeng4",
+          "translation": "enter the venue",
+          "speechText": "入場",
+          "speechLanguage": "cantonese",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "入"
+          ]
         }
       ],
       "taiwanReadings": [
@@ -247,7 +258,31 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "進入 — jìnrù",
+          "audioAssetRef": null,
+          "speechText": "進入",
+          "speechLanguage": "mandarin",
+          "nativeReading": "進入",
+          "romanization": "jìnrù",
+          "gloss": "enter"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "jyutping",
+          "value": "進入 — zeon3 jap6",
+          "audioAssetRef": null,
+          "speechText": "進入",
+          "speechLanguage": "cantonese",
+          "nativeReading": "進入",
+          "romanization": "zeon3 jap6",
+          "gloss": "enter"
+        }
+      ]
     },
     "japanese": {
       "form": "入",

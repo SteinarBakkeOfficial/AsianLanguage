@@ -49,23 +49,6 @@
       ],
       "examples": [
         {
-          "text": "孩子",
-          "reading": "háizi",
-          "translation": "child",
-          "speechText": "孩子",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "子"
-          ],
-          "coversReadings": [
-            "zi"
-          ]
-        },
-        {
           "text": "子女",
           "reading": "zǐnǚ",
           "translation": "children / sons and daughters",
@@ -104,9 +87,34 @@
           "introducedSymbols": [
             "子"
           ]
+        },
+        {
+          "text": "儿童",
+          "reading": "értóng",
+          "translation": "children",
+          "speechText": "儿童",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "孩子 — háizi",
+          "audioAssetRef": null,
+          "speechText": "孩子",
+          "speechLanguage": "mandarin",
+          "nativeReading": "孩子",
+          "romanization": "háizi",
+          "gloss": "child"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -126,20 +134,6 @@
         "child"
       ],
       "taiwanExamples": [
-        {
-          "text": "孩子",
-          "reading": "háizi",
-          "translation": "child",
-          "speechText": "孩子",
-          "speechLanguage": "mandarin",
-          "showsCoreMeaning": true,
-          "exampleLevel": "word",
-          "parallelExampleGroupID": null,
-          "reusesKnownSymbols": [],
-          "introducedSymbols": [
-            "子"
-          ]
-        },
         {
           "text": "子女",
           "reading": "zǐnǚ",
@@ -174,6 +168,20 @@
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "子"
+          ]
+        },
+        {
+          "text": "兒童",
+          "reading": "értóng",
+          "translation": "children",
+          "speechText": "兒童",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [
@@ -259,7 +267,19 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "pinyin",
+          "value": "孩子 — háizi",
+          "audioAssetRef": null,
+          "speechText": "孩子",
+          "speechLanguage": "mandarin",
+          "nativeReading": "孩子",
+          "romanization": "háizi",
+          "gloss": "child"
+        }
+      ]
     },
     "japanese": {
       "form": "子",
