@@ -281,3 +281,38 @@ The latest testing showed that the previous semantic pass was not sufficient: it
 - `Tests/ExampleQuality.Tests.ps1` passes and is included in `Tools/Run-Checks.ps1` so this failure mode cannot silently return.
 
 The quality checks are structural and editorial consistency guardrails; they do not claim independent native-speaker or Apple/Xcode visual verification. No History, Home, Quick Review, Browse, onboarding, More/Settings, navigation, or unrelated UI was changed in this pass.
+
+### Japanese example alignment follow-up — 2026-10-03
+
+Japanese example rows now bottom-align the English gloss with the actual written Kanji word. Furigana remains above the Kanji as a pronunciation aid and no Japanese readings, alternatives, or examples were changed.
+
+### Japanese written-form and speech correction — 2026-10-03
+
+- Scope is limited to Japanese Symbol-page readings, Japanese equivalents, Japanese examples, and their shared renderer/model fields. Chinese, Korean, History, Home, Quick Review, and other screens are unchanged.
+- Every Japanese reading now carries an actual `writtenForm` and `furigana`. For example, `さがる` is rendered as `下がる` with `さがる` above it and `sagaru` below it; kana is no longer used as the primary written form.
+- Japanese equivalents carry their actual written word and furigana as separate fields. Their English gloss remains specific to that complete word.
+- Japanese examples use their kana/furigana as speech text. Existing On/Kun labels remain reading metadata; a lexical reading is not automatically treated as a semantic equivalent.
+- The implementation covers all 126 release Symbols: 343 Japanese readings, 14 Japanese equivalents, and 573 Japanese examples.
+
+### Japanese semantic gloss audit — 2026-10-03
+
+The follow-up audit inspected every Japanese Symbol-page reading, equivalent, and example across all 126 release Symbols. It was a semantic review of the complete written Japanese word and its English gloss, not a blank-field or string-match check.
+
+Applied corrections were limited to Japanese Symbol-page content:
+
+- Corrected the reading-specific gloss for `耳` / `ジ` from the compound “ear, nose and throat clinic” to “ear.”
+- Clarified awkward or overly broad reading glosses: `下りる` → “go down / descend,” `従える` → “make someone follow / command,” `生ける` → “arrange flowers,” `老ける` → “look / grow older,” `反らす` → “bend backward / arch,” and `白` / `しら` → “white (in compounds).”
+- Removed `申す` from Japanese semantic equivalents for Stretch because it is already the displayed Japanese reading; it remains as the reading with its own gloss.
+- Replaced the exact filler example `大きい — big` with `大声 — loud voice`.
+- Replaced broad repeated reading-gloss examples with more informative words: `田んぼ` → `田舎 — countryside`, `中央` → `中身 — contents / substance`, `及び` → `及第 — pass / qualify`, and `品物` → `食品 — food products`.
+- Corrected the Japanese metadata for `田園` to `でんえん / den'en`.
+- Added missing actual written forms for retained okurigana readings such as `出る`, `行く`, `生む`, `得る`, `言う`, `立つ`, `取る`, and `反る`; kana remains the furigana and speech form.
+
+Verification after synchronization:
+
+- 126 Japanese Symbol records inspected; 343 readings, 13 retained semantic equivalents, and 573 examples present.
+- Japanese reading glosses missing: 0.
+- Duplicate normalized Japanese example meanings within a Symbol: 0.
+- Japanese equivalent rows duplicating a reading with the same written form and gloss: 0.
+- Canonical source and generated runtime corpus were re-imported and checked.
+- This is a corpus/editorial audit, not independent native-speaker sign-off or Apple/Xcode visual verification.

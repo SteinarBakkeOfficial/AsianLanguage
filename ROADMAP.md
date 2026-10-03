@@ -32,6 +32,7 @@ Discovery and content-contract foundations are complete, including Browse-owned 
 - Onboarding, approved Symbol text, Chinese History guidance, Korean History guidance, and the compact modern Japanese Hiragana/Katakana sound-pattern guide are complete.
 - The final modern-language content sweep is complete across all 126 records. Simplified Chinese was verified at four non-core examples per symbol; missing Taiwan Mandarin and Hong Kong Cantonese lanes were completed, with source and runtime corpus synchronized.
 - The final semantic Symbol-page sweep is complete across all 126 records. Reading glosses, native equivalents, variants, and compound meanings were checked for semantic accuracy; approved overlap between related language lanes was preserved rather than removed mechanically.
+- The final Japanese Symbol-page polish is complete: furigana remains above the written Kanji while each English example gloss aligns with the actual written word. A subsequent Japanese-only semantic gloss audit checked all 126 Symbol pages and corrected reading glosses, equivalent classification, repeated filler examples, and Japanese reading metadata without touching other language lanes or app areas.
 - All local contract and release-readiness checks pass; marketplace packaging still requires Apple/Xcode screenshot verification.
 - Older dated testing and handoff sections below remain historical records. This section is the current project truth.
 

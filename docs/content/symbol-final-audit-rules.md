@@ -174,6 +174,17 @@ Regular Script may mention a later semantic development only when it adds necess
 - **Traditional Chinese:** render the actual Traditional character; keep Taiwan Mandarin/Pinyin and Hong Kong Cantonese/Jyutping visibly separated.
 - **Japanese:** render the Kanji; show On/Kun or other retained readings with reading-specific glosses; render furigana and romaji correctly.
 - **Korean:** render Hanja; label the Hanja pronunciation separately from Native Korean equivalents; give every distinct native word its own English meaning.
+
+## 10. Japanese semantic gloss audit rules
+
+For a Japanese Symbol page, audit the complete Japanese word or reading—not just whether its English string resembles the shared header:
+
+- A reading gloss must describe the meaning of that Japanese reading in the written form shown. A compound-specific meaning must not be copied onto the standalone reading.
+- A Japanese lexical equivalent belongs above the examples only when the complete written word expresses the Symbol concept. A word that uses the character in a narrower, extended, or contextual meaning remains an example and must receive its full English translation.
+- A Japanese example must teach a distinct use of the character. Do not spend an example slot on a standalone word whose translation is exactly the same as the Symbol header or the reading gloss when a useful compound or sentence can replace it.
+- Similar meanings are not automatically errors: “below” and “go down / descend” are related but must remain separate rows when they describe different Japanese readings. The audit must distinguish a valid lexical use from a true same-meaning equivalent.
+- Check written form, furigana, romanization, speech text, and English gloss together. Speech uses kana/furigana; the visible Japanese word remains the actual written form.
+- If a row is removed from the Japanese equivalent list because it duplicates a displayed reading, preserve the reading and its examples; do not delete the learner-facing reading itself.
 - All four use the approved relationship: native writing left, English meaning right on the same row, pronunciation beneath.
 - Verify the actual rendered page, not just the data objects.
 
@@ -347,5 +358,9 @@ The example list is a teaching surface, not a dump of words containing the chara
 - Equivalent/native rows must also be unique within a lane. The cleanup/import workflow must be idempotent: rerunning it must not append the same equivalent again, and the legacy `focusCoverage` projection must remain consistent with the learner-facing runtime projection.
 - Every equivalent/native collection must remain a JSON array, including a collection with one row, because the Swift model decodes `[CharacterReading]` rather than a single object.
 - The Traditional Chinese renderer has one divider beneath the complete reading/equivalent block. It must not render a second divider immediately before the equivalent block.
+- In Japanese examples, furigana/kana is secondary text above the written Kanji. The English gloss must align with the bottom of the written-word block, not with the furigana line.
+- In Japanese reading rows, the actual written form is the primary learner-facing text, furigana is the pronunciation aid above it, and romaji is secondary text below it. A Kun reading such as `下がる` is a lexical use/reading, not automatically a semantic equivalent of `下`.
+- Japanese semantic equivalents remain separate only when the complete word expresses the Symbol meaning as a true equivalent. A narrower or context-dependent word that merely uses the character remains an example/lexical use; it must not be promoted solely because its English gloss resembles the header.
+- Japanese Symbol-page speech uses the kana/furigana form, never the Kanji spelling. This applies to readings, equivalents, and examples only; Chinese and Korean speech data are unchanged.
 
 This pass is verified by `Tests/ExampleQuality.Tests.ps1`, which checks all 126 records, all five displayed lanes, example counts and metadata, within-lane translation uniqueness, regional sequence cloning, Japanese reading/example duplication, equivalent metadata, and the divider branch shape. The test is a guardrail; it does not replace the row-by-row semantic review.

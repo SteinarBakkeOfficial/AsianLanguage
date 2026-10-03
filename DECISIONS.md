@@ -11,6 +11,7 @@
 - The Symbol toolbar exposes only the Favorite star and the three-dot More action. Review Later and Share are grouped with Mark as Learned inside the character action area opened from More. About/structure stays available separately; repeated per-symbol sources and technical provenance do not appear in the learner sheet.
 - More is the canonical owner of About Script Roots and Sources & Licenses. Settings contains preferences and local controls, not duplicate about/source destinations.
 - The release gate after the focused correction pass is passing local checks and Apple/Xcode visual verification of the corrected Symbol action hierarchy, four-track Usage layout, Japanese kana teaching, and transient Home Quick Review behavior.
+- Japanese example rows keep furigana above the written Kanji, but the English gloss aligns with the bottom of the written word rather than the furigana line. This is a Symbol-page presentation correction only; Japanese readings, alternatives, examples, and other pages remain unchanged.
 
 ### Target-language implementation versus corpus-validator findings — 2026-10-02
 

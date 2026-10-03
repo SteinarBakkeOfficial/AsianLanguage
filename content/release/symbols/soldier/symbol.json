@@ -296,7 +296,9 @@
           "nativeReading": "ヘイ",
           "romanization": "hei",
           "historicalOrigin": "sinoJapanese",
-          "gloss": "soldier"
+          "gloss": "soldier",
+          "writtenForm": "兵",
+          "furigana": "へい"
         }
       ],
       "glosses": [
@@ -307,7 +309,7 @@
           "text": "兵器",
           "reading": "heiki",
           "translation": "weapon",
-          "speechText": "兵器",
+          "speechText": "へいき",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -329,7 +331,7 @@
           "text": "徴兵",
           "reading": "chōhei",
           "translation": "conscription",
-          "speechText": "徴兵",
+          "speechText": "ちょうへい",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -349,7 +351,7 @@
           "text": "兵士が立っています。",
           "reading": "heishi ga tatte imasu.",
           "translation": "A soldier is standing.",
-          "speechText": "兵士が立っています。",
+          "speechText": "へいしがたっています。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -384,7 +386,7 @@
           "text": "兵営",
           "reading": "heiei",
           "translation": "military barracks",
-          "speechText": "兵営",
+          "speechText": "へいえい",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -392,7 +394,15 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "兵"
-          ]
+          ],
+          "kanaReading": "へいえい",
+          "furiganaSegments": [
+            {
+              "text": "兵営",
+              "reading": "へいえい"
+            }
+          ],
+          "furiganaHtml": "<ruby>兵営<rt>へいえい</rt></ruby>"
         }
       ],
       "semanticEquivalents": [
@@ -400,21 +410,25 @@
           "system": "semanticEquivalent",
           "value": "兵士 — heishi",
           "audioAssetRef": null,
-          "speechText": "兵士",
+          "speechText": "へいし",
           "speechLanguage": "japanese",
           "nativeReading": "兵士",
           "romanization": "heishi",
-          "gloss": "soldier"
+          "gloss": "soldier",
+          "writtenForm": "兵士",
+          "furigana": "へいし"
         },
         {
           "system": "semanticEquivalent",
           "value": "兵隊 — heitai",
           "audioAssetRef": null,
-          "speechText": "兵隊",
+          "speechText": "へいたい",
           "speechLanguage": "japanese",
           "nativeReading": "兵隊",
           "romanization": "heitai",
-          "gloss": "soldiers / troops"
+          "gloss": "soldiers / troops",
+          "writtenForm": "兵隊",
+          "furigana": "へいたい"
         }
       ],
       "orthographicVariants": [],

@@ -37,6 +37,12 @@ Maintain the approved V1 package: 126 complete-evolution symbols, local origin a
 
 Before implementing any requested correction, restate the exact tasks, the no-change boundaries, and whether the user is asking for explanation, audit, or implementation. Do not infer permission to rewrite approved content from a question about wording or punctuation.
 
+### Japanese written-form follow-up — 2026-10-03
+
+- Japanese Symbol-page reading rows now show actual written forms, furigana above, and romaji below. Kana is not used as a substitute for the written Japanese word.
+- Japanese speech text uses furigana/kana for readings, equivalents, and examples. On/Kun metadata remains intact.
+- This is limited to Japanese Symbol-page content/model/renderer/regression checks. No other language or app surface is in scope.
+
 ## Branding update
 
 - The product-facing name is now Script Roots.
@@ -756,3 +762,15 @@ The suspected missing Taiwan divider was traced to presentation conditions, not 
 - Added `Tests/ExampleQuality.Tests.ps1` to the standard check suite. Canonical/runtime usage parity and the full Windows check suite pass.
 - Scope remains Symbol-page content/runtime synchronization plus the focused Symbol usage renderer and its regression checks. Home, History, Quick Review, Browse, onboarding, More/Settings/About, navigation, and unrelated UI remain unchanged.
 - Apple/Xcode simulator/device verification remains outstanding and is required before describing the build as visually release-verified.
+
+### Japanese example gloss alignment follow-up — 2026-10-03
+
+- Fixed only the Japanese Symbol-page example-row alignment: furigana remains above the Kanji, while the English gloss now aligns with the bottom of the actual written Japanese word.
+- Japanese readings, alternatives, examples, and all other pages remain unchanged. The full local check suite passes; Apple/Xcode visual verification remains the final visual check.
+
+### Japanese semantic gloss audit — 2026-10-03
+
+- Completed a full semantic audit of all 126 Japanese Symbol pages: 343 readings, 13 retained Japanese equivalents, and 573 examples.
+- Corrected only Japanese Symbol-page data: inaccurate compound-derived glosses, awkward reading glosses, one duplicate equivalent/reading row, repeated filler examples, and one `田園` kana/romanization typo.
+- Re-imported the generated runtime corpus. Japanese missing glosses, duplicate example meanings, and equivalent/reading duplicates now report zero.
+- No Home, History, Quick Review, Browse, onboarding, More/Settings/About, navigation, or unrelated SwiftUI changes were made by this audit. Apple/Xcode visual verification remains separate.

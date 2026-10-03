@@ -275,7 +275,9 @@
           "nativeReading": "キュウ",
           "romanization": "kyū",
           "historicalOrigin": "sinoJapanese",
-          "gloss": "reach / extend"
+          "gloss": "reach / extend",
+          "writtenForm": "及",
+          "furigana": "きゅう"
         },
         {
           "system": "kunyomi",
@@ -286,7 +288,9 @@
           "nativeReading": "およぶ",
           "romanization": "oyobu",
           "historicalOrigin": "nativeJapanese",
-          "gloss": "reach / extend to"
+          "gloss": "reach / extend to",
+          "writtenForm": "及ぶ",
+          "furigana": "およぶ"
         },
         {
           "system": "kunyomi",
@@ -297,7 +301,9 @@
           "nativeReading": "および",
           "romanization": "oyobi",
           "historicalOrigin": "nativeJapanese",
-          "gloss": "and / as well as"
+          "gloss": "and / as well as",
+          "writtenForm": "及び",
+          "furigana": "および"
         },
         {
           "system": "kunyomi",
@@ -308,7 +314,9 @@
           "nativeReading": "およぼす",
           "romanization": "oyobosu",
           "historicalOrigin": "nativeJapanese",
-          "gloss": "extend / exert"
+          "gloss": "extend / exert",
+          "writtenForm": "及ぼす",
+          "furigana": "およぼす"
         }
       ],
       "glosses": [
@@ -316,10 +324,10 @@
       ],
       "examples": [
         {
-          "text": "及び",
-          "reading": "oyobi",
-          "translation": "and / as well as",
-          "speechText": "及び",
+          "text": "及第",
+          "reading": "kyūdai",
+          "translation": "pass / qualify",
+          "speechText": "きゅうだい",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -328,21 +336,23 @@
           "introducedSymbols": [
             "及"
           ],
-          "kanaReading": "および",
-          "coversReadings": [],
+          "kanaReading": "きゅうだい",
+          "coversReadings": [
+            "キュウ"
+          ],
           "furiganaSegments": [
             {
-              "text": "及び",
-              "reading": "および"
+              "text": "及第",
+              "reading": "きゅうだい"
             }
           ],
-          "furiganaHtml": "<ruby>及び<rt>および</rt></ruby>"
+          "furiganaHtml": "<ruby>及第<rt>きゅうだい</rt></ruby>"
         },
         {
           "text": "普及",
           "reading": "fukyū",
           "translation": "spread / become widespread",
-          "speechText": "普及",
+          "speechText": "ふきゅう",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -367,7 +377,7 @@
           "text": "波及",
           "reading": "hakyū",
           "translation": "spread / ripple effect",
-          "speechText": "波及",
+          "speechText": "はきゅう",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -387,7 +397,7 @@
           "text": "言及",
           "reading": "genkyū",
           "translation": "mention / refer to",
-          "speechText": "言及",
+          "speechText": "げんきゅう",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -410,7 +420,7 @@
           "text": "水は足元まで及びます。",
           "reading": "mizu wa ashimoto made oyobimasu.",
           "translation": "The water reaches my feet.",
-          "speechText": "水は足元まで及びます。",
+          "speechText": "みずはあしもとまでおよびます。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",

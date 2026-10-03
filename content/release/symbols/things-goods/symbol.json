@@ -267,7 +267,9 @@
           "nativeReading": "ヒン",
           "romanization": "hin",
           "historicalOrigin": "sinoJapanese",
-          "gloss": "product / goods"
+          "gloss": "product / goods",
+          "writtenForm": "品",
+          "furigana": "ひん"
         },
         {
           "system": "kunyomi",
@@ -278,7 +280,9 @@
           "nativeReading": "しな",
           "romanization": "shina",
           "historicalOrigin": "nativeJapanese",
-          "gloss": "goods / item"
+          "gloss": "goods / item",
+          "writtenForm": "品",
+          "furigana": "しな"
         }
       ],
       "glosses": [
@@ -289,7 +293,7 @@
           "text": "物語",
           "reading": "monogatari",
           "translation": "story / tale",
-          "speechText": "物語",
+          "speechText": "ものがたり",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -312,7 +316,7 @@
           "text": "品質",
           "reading": "hinshitsu",
           "translation": "quality",
-          "speechText": "品質",
+          "speechText": "ひんしつ",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -329,30 +333,35 @@
           "furiganaHtml": "<ruby>品質<rt>ひんしつ</rt></ruby>"
         },
         {
-          "text": "品物",
-          "reading": "shinamono",
-          "translation": "goods / item",
-          "speechText": "品物",
+          "text": "食品",
+          "reading": "shokuhin",
+          "translation": "food products",
+          "speechText": "しょくひん",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "しなもの",
+          "introducedSymbols": [
+            "品"
+          ],
+          "kanaReading": "しょくひん",
           "furiganaSegments": [
             {
-              "text": "品物",
-              "reading": "しなもの"
+              "text": "食品",
+              "reading": "しょくひん"
             }
           ],
-          "furiganaHtml": "<ruby>品物<rt>しなもの</rt></ruby>"
+          "furiganaHtml": "<ruby>食品<rt>しょくひん</rt></ruby>",
+          "coversReadings": [
+            "ヒン"
+          ]
         },
         {
           "text": "この商品は安いです。",
           "reading": "kono shōhin wa yasui desu.",
           "translation": "This product is inexpensive.",
-          "speechText": "この商品は安いです。",
+          "speechText": "このしょうひんはやすいです。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",

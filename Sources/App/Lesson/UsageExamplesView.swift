@@ -110,10 +110,15 @@ struct UsageExamplesView: View {
                     showsJapaneseFurigana
                         ? japaneseReadingGloss(for: reading)
                         : reading.gloss
-                }
+                },
+                showsJapaneseFurigana: showsJapaneseFurigana
             )
             if !semanticEquivalents.isEmpty {
-                semanticEquivalentSection(semanticEquivalents, fontRole: fontRole)
+                semanticEquivalentSection(
+                    semanticEquivalents,
+                    fontRole: fontRole,
+                    showsJapaneseFurigana: showsJapaneseFurigana
+                )
             }
             Divider()
                 .padding(.vertical, AppSpacing.spaceXs)
@@ -147,7 +152,8 @@ struct UsageExamplesView: View {
         readings: [CharacterReading],
         fontRole: CJKFontRole,
         writtenReadingForm: String? = nil,
-        readingGlosses: [String?] = []
+        readingGlosses: [String?] = [],
+        showsJapaneseFurigana: Bool = false
     ) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
             HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
@@ -173,28 +179,95 @@ struct UsageExamplesView: View {
                     reading,
                     fontRole: fontRole,
                     writtenForm: writtenReadingForm,
-                    englishGloss: readingGlosses.indices.contains(index) ? readingGlosses[index] : nil
+                    englishGloss: readingGlosses.indices.contains(index) ? readingGlosses[index] : nil,
+                    showsJapaneseFurigana: showsJapaneseFurigana,
+                    fallbackJapaneseWrittenForm: form
                 )
             }
         }
     }
 
     /// Keeps each reading together, with romanization beneath its native reading where available.
+    @ViewBuilder
     private func readingRow(
         _ reading: CharacterReading,
         fontRole: CJKFontRole,
         writtenForm: String? = nil,
-        englishGloss: String? = nil
+        englishGloss: String? = nil,
+        showsJapaneseFurigana: Bool = false,
+        fallbackJapaneseWrittenForm: String? = nil
     ) -> some View {
-        let parts = displayReadingParts(reading, writtenForm: writtenForm)
+        if showsJapaneseFurigana {
+            japaneseReadingRow(
+                reading,
+                fallbackWrittenForm: fallbackJapaneseWrittenForm,
+                englishGloss: englishGloss
+            )
+        } else {
+            let parts = displayReadingParts(reading, writtenForm: writtenForm)
+            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+                Text(readingLabel(reading))
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+                HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
+                    Text(parts.script)
+                        .font(fontRole.font(size: 22).weight(.medium))
+                        .foregroundStyle(AppColors.textPrimary)
+                    Spacer(minLength: AppSpacing.spaceSm)
+                    if let englishGloss, !englishGloss.isEmpty {
+                        Text(englishGloss)
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                            .multilineTextAlignment(.trailing)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                    }
+                    PronunciationButton(reading: reading)
+                }
+                if let romanization = parts.romanization {
+                    Text(romanization)
+                        .font(AppTypography.caption)
+                        .foregroundStyle(AppColors.textSecondary)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+    }
+
+    /// Shows the actual Japanese word, its furigana, and its romanization as separate layers.
+    /// A Kun reading such as 下がる is a lexical reading/use, not a semantic-equivalent label.
+    private func japaneseReadingRow(
+        _ reading: CharacterReading,
+        fallbackWrittenForm: String?,
+        englishGloss: String?,
+        showsLabel: Bool = true
+    ) -> some View {
+        let writtenForm = reading.writtenForm ?? fallbackWrittenForm ?? reading.nativeReading ?? reading.value
+        let furigana = reading.furigana ?? reading.nativeReading
         return VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-            Text(readingLabel(reading))
-                .font(AppTypography.metadata)
-                .foregroundStyle(AppColors.textSecondary)
-            HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
-                Text(parts.script)
-                    .font(fontRole.font(size: 22).weight(.medium))
-                    .foregroundStyle(AppColors.textPrimary)
+            if showsLabel {
+                Text(readingLabel(reading))
+                    .font(AppTypography.metadata)
+                    .foregroundStyle(AppColors.textSecondary)
+            }
+            HStack(alignment: .bottom, spacing: AppSpacing.spaceSm) {
+                VStack(alignment: .leading, spacing: 0) {
+                    if let furigana, !furigana.isEmpty {
+                        Text(furigana)
+                            .font(CJKFontRole.japanese.font(size: 10))
+                            .foregroundStyle(AppColors.textSecondary)
+                            .frame(minHeight: 14, alignment: .bottom)
+                    } else {
+                        Color.clear.frame(height: 14)
+                    }
+                    Text(writtenForm)
+                        .font(CJKFontRole.japanese.font(size: 22).weight(.medium))
+                        .foregroundStyle(AppColors.textPrimary)
+                    if let romanization = reading.romanization, !romanization.isEmpty {
+                        Text(romanization)
+                            .font(AppTypography.caption)
+                            .foregroundStyle(AppColors.textSecondary)
+                    }
+                }
                 Spacer(minLength: AppSpacing.spaceSm)
                 if let englishGloss, !englishGloss.isEmpty {
                     Text(englishGloss)
@@ -204,11 +277,6 @@ struct UsageExamplesView: View {
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 }
                 PronunciationButton(reading: reading)
-            }
-            if let romanization = parts.romanization {
-                Text(romanization)
-                    .font(AppTypography.caption)
-                    .foregroundStyle(AppColors.textSecondary)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -246,14 +314,24 @@ struct UsageExamplesView: View {
     /// Shows a verified lexical equivalent above the context examples without presenting it as another reading.
     private func semanticEquivalentSection(
         _ equivalents: [CharacterReading],
-        fontRole: CJKFontRole
+        fontRole: CJKFontRole,
+        showsJapaneseFurigana: Bool = false
     ) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
             Text("Equivalent")
                 .font(AppTypography.metadata)
                 .foregroundStyle(AppColors.textSecondary)
             ForEach(Array(equivalents.enumerated()), id: \.offset) { _, equivalent in
-                semanticEquivalentRow(equivalent, fontRole: fontRole)
+                if showsJapaneseFurigana {
+                    japaneseReadingRow(
+                        equivalent,
+                        fallbackWrittenForm: nil,
+                        englishGloss: equivalent.gloss,
+                        showsLabel: false
+                    )
+                } else {
+                    semanticEquivalentRow(equivalent, fontRole: fontRole)
+                }
             }
         }
     }
@@ -486,7 +564,9 @@ struct UsageExamplesView: View {
     /// Matches the approved Japanese hierarchy: natural Kanji, attached kana, romaji, then English.
     private func japaneseExampleRow(_ example: UsageExample) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-            HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
+            // Furigana sits above the Kanji; align the English gloss with the
+            // actual written word at the bottom of the Japanese word block.
+            HStack(alignment: .bottom, spacing: AppSpacing.spaceSm) {
                 japaneseWrittenExample(example)
                 Spacer(minLength: AppSpacing.spaceSm)
                 Text(example.translation)

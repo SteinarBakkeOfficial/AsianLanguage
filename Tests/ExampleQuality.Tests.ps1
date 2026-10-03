@@ -90,7 +90,27 @@ foreach ($sourceFile in $sourceFiles) {
     }
 
     if ($lane.name -eq "J") {
+      foreach ($reading in $lane.readings) {
+        foreach ($field in @("writtenForm", "furigana", "speechText")) {
+          Assert-NonEmpty ([string]$reading.$field) "$id [J] reading '$($reading.nativeReading)' is missing '$field'."
+        }
+        if ([string]$reading.speechText -ne [string]$reading.furigana) {
+          throw "$id [J] reading '$($reading.nativeReading)' speech text must use furigana, not the written form."
+        }
+      }
+      foreach ($equivalent in $lane.equivalents) {
+        foreach ($field in @("writtenForm", "furigana")) {
+          Assert-NonEmpty ([string]$equivalent.$field) "$id [J] equivalent '$($equivalent.nativeReading)' is missing '$field'."
+        }
+        if ([string]$equivalent.speechText -ne [string]$equivalent.furigana) {
+          throw "$id [J] equivalent '$($equivalent.nativeReading)' speech text must use furigana."
+        }
+      }
       foreach ($example in $lane.examples) {
+        Assert-NonEmpty ([string]$example.kanaReading) "$id [J] example '$($example.text)' is missing kanaReading."
+        if ([string]$example.speechText -ne [string]$example.kanaReading) {
+          throw "$id [J] example '$($example.text)' speech text must use kanaReading."
+        }
         foreach ($reading in $lane.readings) {
           if ((Get-Array $example.coversReadings) -contains [string]$reading.nativeReading -and (Normalize-Meaning $example.translation) -eq (Normalize-Meaning $reading.gloss)) {
             throw "$id [J] example '$($example.text)' repeats the gloss of reading '$($reading.nativeReading)'."
@@ -108,6 +128,47 @@ foreach ($sourceFile in $sourceFiles) {
   }
 }
 
+$semanticAuditExpectations = @{
+  "below|おりる" = "go down / descend"
+  "ear|ジ" = "ear"
+  "follow|したがえる" = "make someone follow / command"
+  "life|いける" = "arrange flowers"
+  "old|ふける" = "look / grow older"
+  "turn-back|そらす" = "bend backward / arch"
+  "white|しら" = "white (in compounds)"
+}
+$requiredJapaneseReplacementExamples = @{
+  "big" = "大声"
+  "field" = "田舎"
+  "middle" = "中身"
+  "reach" = "及第"
+  "things-goods" = "食品"
+}
+
+foreach ($sourceFile in $sourceFiles) {
+  $record = Get-Content -LiteralPath $sourceFile -Raw | ConvertFrom-Json -Depth 100
+  $japanese = $record.focusCoverage.japanese
+  foreach ($expectation in $semanticAuditExpectations.GetEnumerator()) {
+    $parts = $expectation.Key.Split('|', 2)
+    if ($parts[0] -ne [string]$record.id) { continue }
+    $reading = @($japanese.readings | Where-Object { [string]$_.nativeReading -eq $parts[1] }) | Select-Object -First 1
+    if ($null -eq $reading -or [string]$reading.gloss -ne [string]$expectation.Value) {
+      throw "$($record.id) [J] semantic gloss audit mismatch for '$($parts[1])'."
+    }
+  }
+
+  if ([string]$record.id -eq "stretch" -and @($japanese.semanticEquivalents | Where-Object { [string]$_.nativeReading -eq "申す" }).Count -gt 0) {
+    throw "stretch [J] must not duplicate 申す as both a reading and semantic equivalent."
+  }
+
+  if ($requiredJapaneseReplacementExamples.ContainsKey([string]$record.id)) {
+    $replacement = [string]$requiredJapaneseReplacementExamples[[string]$record.id]
+    if (@($japanese.examples | Where-Object { [string]$_.text -eq $replacement }).Count -eq 0) {
+      throw "$($record.id) [J] is missing the reviewed replacement example '$replacement'."
+    }
+  }
+}
+
 $usagePath = Join-Path $repoRoot "Sources/App/Lesson/UsageExamplesView.swift"
 $usageText = Get-Content -LiteralPath $usagePath -Raw
 if ($usageText.Contains("if (!readings.isEmpty || !equivalents.isEmpty) && !examples.isEmpty")) {
@@ -115,6 +176,15 @@ if ($usageText.Contains("if (!readings.isEmpty || !equivalents.isEmpty) && !exam
 }
 if (-not $usageText.Contains("} else if !readings.isEmpty && !examples.isEmpty {")) {
   throw "Traditional Chinese divider logic must have a single reading-only branch when no equivalents exist."
+}
+if (-not $usageText.Contains("private func japaneseExampleRow(_ example: UsageExample) -> some View") -or
+    -not $usageText.Contains("HStack(alignment: .bottom, spacing: AppSpacing.spaceSm)")) {
+  throw "Japanese example glosses must align with the bottom of the written-word block, below furigana."
+}
+if (-not $usageText.Contains("private func japaneseReadingRow(") -or
+    -not $usageText.Contains("reading.writtenForm") -or
+    -not $usageText.Contains("reading.furigana")) {
+  throw "Japanese reading rows must render actual written forms with furigana."
 }
 
 Write-Output "OK: example quality audit passed for 126 Symbols and the Traditional Chinese divider branch."

@@ -301,6 +301,13 @@ struct CharacterReading: Decodable, Hashable {
     /// Native-script reading and romanization supplied by the final language payload.
     let nativeReading: String?
 
+    /// Actual written Japanese form shown above the pronunciation aid.
+    /// This stays separate from kana so pronunciation cannot replace the written word.
+    let writtenForm: String?
+
+    /// Japanese furigana/kana pronunciation shown above the written form and used for speech.
+    let furigana: String?
+
     /// Separate romanization supplied by the final language payload.
     let romanization: String?
 
@@ -308,7 +315,8 @@ struct CharacterReading: Decodable, Hashable {
     let gloss: String?
 
     private enum CodingKeys: String, CodingKey {
-        case system, value, audioAssetRef, speechText, speechLanguage, nativeReading, romanization, gloss
+        case system, value, audioAssetRef, speechText, speechLanguage, nativeReading
+        case writtenForm, furigana, romanization, gloss
     }
 
     init(from decoder: Decoder) throws {
@@ -319,6 +327,8 @@ struct CharacterReading: Decodable, Hashable {
         speechText = try container.decodeIfPresent(String.self, forKey: .speechText)
         speechLanguage = try container.decodeIfPresent(PronunciationLanguage.self, forKey: .speechLanguage)
         nativeReading = try container.decodeIfPresent(String.self, forKey: .nativeReading)
+        writtenForm = try container.decodeIfPresent(String.self, forKey: .writtenForm)
+        furigana = try container.decodeIfPresent(String.self, forKey: .furigana)
         romanization = try container.decodeIfPresent(String.self, forKey: .romanization)
         gloss = try container.decodeIfPresent(String.self, forKey: .gloss)
     }

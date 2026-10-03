@@ -267,7 +267,9 @@
           "nativeReading": "シン",
           "romanization": "shin",
           "historicalOrigin": "sinoJapanese",
-          "gloss": "body"
+          "gloss": "body",
+          "writtenForm": "身",
+          "furigana": "しん"
         },
         {
           "system": "kunyomi",
@@ -278,7 +280,9 @@
           "nativeReading": "み",
           "romanization": "mi",
           "historicalOrigin": "nativeJapanese",
-          "gloss": "body / oneself"
+          "gloss": "body / oneself",
+          "writtenForm": "身",
+          "furigana": "み"
         }
       ],
       "glosses": [
@@ -289,7 +293,7 @@
           "text": "全身",
           "reading": "zenshin",
           "translation": "whole body",
-          "speechText": "全身",
+          "speechText": "ぜんしん",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -314,7 +318,7 @@
           "text": "身長",
           "reading": "shinchō",
           "translation": "height",
-          "speechText": "身長",
+          "speechText": "しんちょう",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -334,7 +338,7 @@
           "text": "身を守ります。",
           "reading": "mi o mamorimasu.",
           "translation": "I protect myself.",
-          "speechText": "身を守ります。",
+          "speechText": "みをまもります。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -369,7 +373,7 @@
           "text": "身近",
           "reading": "mijika",
           "translation": "close / familiar",
-          "speechText": "身近",
+          "speechText": "みぢか",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -377,7 +381,15 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "身"
-          ]
+          ],
+          "kanaReading": "みぢか",
+          "furiganaSegments": [
+            {
+              "text": "身近",
+              "reading": "みぢか"
+            }
+          ],
+          "furiganaHtml": "<ruby>身近<rt>みぢか</rt></ruby>"
         }
       ],
       "semanticEquivalents": [
@@ -385,11 +397,13 @@
           "system": "semanticEquivalent",
           "value": "身体 — shintai",
           "audioAssetRef": null,
-          "speechText": "身体",
+          "speechText": "しんたい",
           "speechLanguage": "japanese",
           "nativeReading": "身体",
           "romanization": "shintai",
-          "gloss": "body"
+          "gloss": "body",
+          "writtenForm": "身体",
+          "furigana": "しんたい"
         }
       ],
       "orthographicVariants": [],

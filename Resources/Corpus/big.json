@@ -272,7 +272,9 @@
           "nativeReading": "ダイ",
           "romanization": "dai",
           "gloss": "large / great (in compounds)",
-          "historicalOrigin": "sinoJapanese"
+          "historicalOrigin": "sinoJapanese",
+          "writtenForm": "大",
+          "furigana": "だい"
         },
         {
           "system": "onyomi",
@@ -283,7 +285,9 @@
           "nativeReading": "タイ",
           "romanization": "tai",
           "gloss": "great / important (in compounds)",
-          "historicalOrigin": "sinoJapanese"
+          "historicalOrigin": "sinoJapanese",
+          "writtenForm": "大",
+          "furigana": "たい"
         },
         {
           "system": "kunyomi",
@@ -294,7 +298,9 @@
           "nativeReading": "おおきい",
           "romanization": "ōkii",
           "gloss": "big / large",
-          "historicalOrigin": "nativeJapanese"
+          "historicalOrigin": "nativeJapanese",
+          "writtenForm": "大きい",
+          "furigana": "おおきい"
         },
         {
           "system": "kunyomi",
@@ -305,7 +311,9 @@
           "nativeReading": "おお",
           "romanization": "ō",
           "gloss": "big / large (in compounds)",
-          "historicalOrigin": "nativeJapanese"
+          "historicalOrigin": "nativeJapanese",
+          "writtenForm": "大",
+          "furigana": "おお"
         }
       ],
       "glosses": [
@@ -313,10 +321,10 @@
       ],
       "examples": [
         {
-          "text": "大きい",
-          "reading": "ōkii",
-          "translation": "big",
-          "speechText": "大きい",
+          "text": "大声",
+          "reading": "ōgoe",
+          "translation": "loud voice",
+          "speechText": "おおごえ",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -325,27 +333,23 @@
           "introducedSymbols": [
             "大"
           ],
-          "kanaReading": "おおきい",
+          "kanaReading": "おおごえ",
           "coversReadings": [
-            "おおきい",
             "おお"
           ],
           "furiganaSegments": [
             {
-              "text": "大",
-              "reading": "おお"
-            },
-            {
-              "text": "きい"
+              "text": "大声",
+              "reading": "おおごえ"
             }
           ],
-          "furiganaHtml": "<ruby>大<rt>おお</rt></ruby>きい"
+          "furiganaHtml": "<ruby>大声<rt>おおごえ</rt></ruby>"
         },
         {
           "text": "大学",
           "reading": "daigaku",
           "translation": "university",
-          "speechText": "大学",
+          "speechText": "だいがく",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -370,7 +374,7 @@
           "text": "大切",
           "reading": "taisetsu",
           "translation": "important / precious",
-          "speechText": "大切",
+          "speechText": "たいせつ",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -393,7 +397,7 @@
           "text": "大人",
           "reading": "otona",
           "translation": "adult",
-          "speechText": "大人",
+          "speechText": "おとな",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -413,7 +417,7 @@
           "text": "この犬は大きいです。",
           "reading": "kono inu wa ōkii desu.",
           "translation": "This dog is big.",
-          "speechText": "この犬は大きいです。",
+          "speechText": "このいぬはおおきいです。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",

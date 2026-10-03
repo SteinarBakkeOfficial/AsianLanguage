@@ -300,7 +300,9 @@
           "nativeReading": "ユウ",
           "romanization": "yū",
           "historicalOrigin": "sinoJapanese",
-          "gloss": "friend"
+          "gloss": "friend",
+          "writtenForm": "友",
+          "furigana": "ゆう"
         },
         {
           "system": "kunyomi",
@@ -311,7 +313,9 @@
           "nativeReading": "とも",
           "romanization": "tomo",
           "historicalOrigin": "nativeJapanese",
-          "gloss": "friend"
+          "gloss": "friend",
+          "writtenForm": "友",
+          "furigana": "とも"
         }
       ],
       "glosses": [
@@ -322,7 +326,7 @@
           "text": "友情",
           "reading": "yūjō",
           "translation": "friendship",
-          "speechText": "友情",
+          "speechText": "ゆうじょう",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -342,7 +346,7 @@
           "text": "友達に会います。",
           "reading": "tomodachi ni aimasu.",
           "translation": "I meet a friend.",
-          "speechText": "友達に会います。",
+          "speechText": "ともだちにあいます。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -377,7 +381,7 @@
           "text": "友愛",
           "reading": "yūai",
           "translation": "friendship / brotherly love",
-          "speechText": "友愛",
+          "speechText": "ゆうあい",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -385,13 +389,21 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "友"
-          ]
+          ],
+          "kanaReading": "ゆうあい",
+          "furiganaSegments": [
+            {
+              "text": "友愛",
+              "reading": "ゆうあい"
+            }
+          ],
+          "furiganaHtml": "<ruby>友愛<rt>ゆうあい</rt></ruby>"
         },
         {
           "text": "友好",
           "reading": "yūkō",
           "translation": "friendship / friendly relations",
-          "speechText": "友好",
+          "speechText": "ゆうこう",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -399,7 +411,15 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "友"
-          ]
+          ],
+          "kanaReading": "ゆうこう",
+          "furiganaSegments": [
+            {
+              "text": "友好",
+              "reading": "ゆうこう"
+            }
+          ],
+          "furiganaHtml": "<ruby>友好<rt>ゆうこう</rt></ruby>"
         }
       ],
       "semanticEquivalents": [
@@ -407,21 +427,25 @@
           "system": "semanticEquivalent",
           "value": "友達 — tomodachi",
           "audioAssetRef": null,
-          "speechText": "友達",
+          "speechText": "ともだち",
           "speechLanguage": "japanese",
           "nativeReading": "友達",
           "romanization": "tomodachi",
-          "gloss": "friend"
+          "gloss": "friend",
+          "writtenForm": "友達",
+          "furigana": "ともだち"
         },
         {
           "system": "semanticEquivalent",
           "value": "友人 — yūjin",
           "audioAssetRef": null,
-          "speechText": "友人",
+          "speechText": "ゆうじん",
           "speechLanguage": "japanese",
           "nativeReading": "友人",
           "romanization": "yūjin",
-          "gloss": "friend"
+          "gloss": "friend",
+          "writtenForm": "友人",
+          "furigana": "ゆうじん"
         }
       ],
       "orthographicVariants": [],

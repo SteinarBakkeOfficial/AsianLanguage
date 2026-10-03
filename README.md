@@ -20,7 +20,7 @@ Onboarding opens the curated Mountain symbol directly from the bundled corpus. T
 
 Historical Assets must be source-backed or licensed, explicitly unavailable, or editorially omitted. Fabricated historical glyphs and modern-form fallbacks are prohibited.
 
-The current V1 runtime is the approved 126-character complete-evolution selection with 504 selected/normalized historical stage assets, local origin illustrations, and a Regular Script Kai endpoint. The app also bundles the History reference artwork and uses its illustrations inside a native editorial timeline and article layout. V1 content review and the latest focused UI corrections are complete, including Home Quick Review; Apple/Xcode simulator and device verification remains the final release gate before marketplace submission.
+The current V1 runtime is the approved 126-character complete-evolution selection with 504 selected/normalized historical stage assets, local origin illustrations, and a Regular Script Kai endpoint. The app also bundles the History reference artwork and uses its illustrations inside a native editorial timeline and article layout. V1 content review and the latest focused UI corrections are complete, including Home Quick Review, the Japanese furigana/example-gloss alignment, and the full Japanese Symbol-page semantic gloss audit; Apple/Xcode simulator and device verification remains the final release gate before marketplace submission.
 
 Quick Review appears on Home after the learner completes at least one Symbol. It randomizes one three-choice recognition card for every learned Symbol and does not alter learning state. Review Later remains a separate Browse bookmark for reopening a full Symbol Journey.
 

@@ -267,7 +267,9 @@
           "nativeReading": "デン",
           "romanization": "den",
           "historicalOrigin": "sinoJapanese",
-          "gloss": "rice paddy"
+          "gloss": "rice paddy",
+          "writtenForm": "田",
+          "furigana": "でん"
         },
         {
           "system": "kunyomi",
@@ -278,7 +280,9 @@
           "nativeReading": "た",
           "romanization": "ta",
           "historicalOrigin": "nativeJapanese",
-          "gloss": "rice field / field"
+          "gloss": "rice field / field",
+          "writtenForm": "田",
+          "furigana": "た"
         }
       ],
       "glosses": [
@@ -286,10 +290,10 @@
       ],
       "examples": [
         {
-          "text": "田んぼ",
-          "reading": "tanbo",
-          "translation": "rice paddy",
-          "speechText": "田んぼ",
+          "text": "田舎",
+          "reading": "inaka",
+          "translation": "countryside",
+          "speechText": "いなか",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -298,43 +302,41 @@
           "introducedSymbols": [
             "田"
           ],
-          "kanaReading": "たんぼ",
+          "kanaReading": "いなか",
           "furiganaSegments": [
             {
-              "text": "田",
-              "reading": "た"
-            },
-            {
-              "text": "んぼ"
+              "text": "田舎",
+              "reading": "いなか"
             }
           ],
-          "furiganaHtml": "<ruby>田<rt>た</rt></ruby>んぼ"
+          "furiganaHtml": "<ruby>田舎<rt>いなか</rt></ruby>",
+          "coversReadings": []
         },
         {
           "text": "田園",
-          "reading": "denen",
+          "reading": "den'en",
           "translation": "countryside / fields",
-          "speechText": "田園",
+          "speechText": "でんえん",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
           "introducedSymbols": [],
-          "kanaReading": "でねん",
+          "kanaReading": "でんえん",
           "furiganaSegments": [
             {
               "text": "田園",
-              "reading": "でねん"
+              "reading": "でんえん"
             }
           ],
-          "furiganaHtml": "<ruby>田園<rt>でねん</rt></ruby>"
+          "furiganaHtml": "<ruby>田園<rt>でんえん</rt></ruby>"
         },
         {
           "text": "田植え",
           "reading": "taue",
           "translation": "rice planting",
-          "speechText": "田植え",
+          "speechText": "たうえ",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -357,7 +359,7 @@
           "text": "田んぼは広いです。",
           "reading": "tanbo wa hiroi desu.",
           "translation": "The rice field is wide.",
-          "speechText": "田んぼは広いです。",
+          "speechText": "たんぼはひろいです。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",

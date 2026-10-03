@@ -296,7 +296,9 @@
           "nativeReading": "リン",
           "romanization": "rin",
           "historicalOrigin": "sinoJapanese",
-          "gloss": "forest"
+          "gloss": "forest",
+          "writtenForm": "林",
+          "furigana": "りん"
         },
         {
           "system": "kunyomi",
@@ -307,7 +309,9 @@
           "nativeReading": "はやし",
           "romanization": "hayashi",
           "historicalOrigin": "nativeJapanese",
-          "gloss": "woods / grove"
+          "gloss": "woods / grove",
+          "writtenForm": "林",
+          "furigana": "はやし"
         }
       ],
       "glosses": [
@@ -318,7 +322,7 @@
           "text": "林業",
           "reading": "ringyō",
           "translation": "forestry",
-          "speechText": "林業",
+          "speechText": "りんぎょう",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -338,7 +342,7 @@
           "text": "林道",
           "reading": "rindō",
           "translation": "forest road",
-          "speechText": "林道",
+          "speechText": "りんどう",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -358,7 +362,7 @@
           "text": "林を歩きます。",
           "reading": "hayashi o arukimasu.",
           "translation": "I walk through the woods.",
-          "speechText": "林を歩きます。",
+          "speechText": "はやしをあるきます。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -393,7 +397,7 @@
           "text": "森林浴",
           "reading": "shinrin-yoku",
           "translation": "forest bathing",
-          "speechText": "森林浴",
+          "speechText": "しんりんよく",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -401,7 +405,15 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "林"
-          ]
+          ],
+          "kanaReading": "しんりんよく",
+          "furiganaSegments": [
+            {
+              "text": "森林浴",
+              "reading": "しんりんよく"
+            }
+          ],
+          "furiganaHtml": "<ruby>森林浴<rt>しんりんよく</rt></ruby>"
         }
       ],
       "semanticEquivalents": [
@@ -409,11 +421,13 @@
           "system": "semanticEquivalent",
           "value": "森林 — shinrin",
           "audioAssetRef": null,
-          "speechText": "森林",
+          "speechText": "しんりん",
           "speechLanguage": "japanese",
           "nativeReading": "森林",
           "romanization": "shinrin",
-          "gloss": "forest"
+          "gloss": "forest",
+          "writtenForm": "森林",
+          "furigana": "しんりん"
         }
       ],
       "orthographicVariants": [],

@@ -296,7 +296,9 @@
           "nativeReading": "コウ",
           "romanization": "kō",
           "historicalOrigin": "sinoJapanese",
-          "gloss": "public"
+          "gloss": "public",
+          "writtenForm": "公",
+          "furigana": "こう"
         },
         {
           "system": "kunyomi",
@@ -307,7 +309,9 @@
           "nativeReading": "おおやけ",
           "romanization": "ōyake",
           "historicalOrigin": "nativeJapanese",
-          "gloss": "public / official"
+          "gloss": "public / official",
+          "writtenForm": "公",
+          "furigana": "おおやけ"
         }
       ],
       "glosses": [
@@ -318,7 +322,7 @@
           "text": "公園",
           "reading": "kōen",
           "translation": "park",
-          "speechText": "公園",
+          "speechText": "こうえん",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -340,7 +344,7 @@
           "text": "公立",
           "reading": "kōritsu",
           "translation": "public (institution)",
-          "speechText": "公立",
+          "speechText": "こうりつ",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -360,7 +364,7 @@
           "text": "公園へ行きます。",
           "reading": "kōen e ikimasu.",
           "translation": "I go to the park.",
-          "speechText": "公園へ行きます。",
+          "speechText": "こうえんへいきます。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -395,7 +399,7 @@
           "text": "公務",
           "reading": "kōmu",
           "translation": "public service",
-          "speechText": "公務",
+          "speechText": "こうむ",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -403,7 +407,15 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "公"
-          ]
+          ],
+          "kanaReading": "こうむ",
+          "furiganaSegments": [
+            {
+              "text": "公務",
+              "reading": "こうむ"
+            }
+          ],
+          "furiganaHtml": "<ruby>公務<rt>こうむ</rt></ruby>"
         }
       ],
       "semanticEquivalents": [
@@ -411,11 +423,13 @@
           "system": "semanticEquivalent",
           "value": "公共 — kōkyō",
           "audioAssetRef": null,
-          "speechText": "公共",
+          "speechText": "こうきょう",
           "speechLanguage": "japanese",
           "nativeReading": "公共",
           "romanization": "kōkyō",
-          "gloss": "public"
+          "gloss": "public",
+          "writtenForm": "公共",
+          "furigana": "こうきょう"
         }
       ],
       "orthographicVariants": [],

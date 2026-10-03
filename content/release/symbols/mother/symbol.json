@@ -296,7 +296,9 @@
           "nativeReading": "ボ",
           "romanization": "bo",
           "historicalOrigin": "sinoJapanese",
-          "gloss": "mother"
+          "gloss": "mother",
+          "writtenForm": "母",
+          "furigana": "ぼ"
         },
         {
           "system": "kunyomi",
@@ -307,7 +309,9 @@
           "nativeReading": "はは",
           "romanization": "haha",
           "historicalOrigin": "nativeJapanese",
-          "gloss": "mother"
+          "gloss": "mother",
+          "writtenForm": "母",
+          "furigana": "はは"
         }
       ],
       "glosses": [
@@ -318,7 +322,7 @@
           "text": "母国",
           "reading": "bokoku",
           "translation": "home country",
-          "speechText": "母国",
+          "speechText": "ぼこく",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -341,7 +345,7 @@
           "text": "母校",
           "reading": "bokō",
           "translation": "alma mater",
-          "speechText": "母校",
+          "speechText": "ぼこう",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -361,7 +365,7 @@
           "text": "母は家にいます。",
           "reading": "haha wa ie ni imasu.",
           "translation": "My mother is at home.",
-          "speechText": "母は家にいます。",
+          "speechText": "はははいえにいます。",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "sentence",
@@ -396,7 +400,7 @@
           "text": "母語",
           "reading": "bogo",
           "translation": "mother tongue",
-          "speechText": "母語",
+          "speechText": "ぼご",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -404,7 +408,15 @@
           "reusesKnownSymbols": [],
           "introducedSymbols": [
             "母"
-          ]
+          ],
+          "kanaReading": "ぼご",
+          "furiganaSegments": [
+            {
+              "text": "母語",
+              "reading": "ぼご"
+            }
+          ],
+          "furiganaHtml": "<ruby>母語<rt>ぼご</rt></ruby>"
         }
       ],
       "semanticEquivalents": [
@@ -412,11 +424,13 @@
           "system": "semanticEquivalent",
           "value": "母親 — hahaoya",
           "audioAssetRef": null,
-          "speechText": "母親",
+          "speechText": "ははおや",
           "speechLanguage": "japanese",
           "nativeReading": "母親",
           "romanization": "hahaoya",
-          "gloss": "mother"
+          "gloss": "mother",
+          "writtenForm": "母親",
+          "furigana": "ははおや"
         }
       ],
       "orthographicVariants": [],
