@@ -137,7 +137,16 @@ The example-count column is Simplified / Taiwan / Hong Kong / Japanese / Korean.
 
 - 126 canonical Symbol records and 126 runtime records were checked.
 - Every displayed Simplified Chinese, Traditional Chinese, Japanese, and Korean reading has a non-empty, reading-specific gloss.
+- Reading glosses, native equivalents, variants, and compound/example meanings were checked semantically; the audit was not limited to detecting blank fields.
 - Every lane retains four or five examples; the longest sentence remains last where a sentence is present.
-- Duplicate example forms were checked within each lane; the three duplicate rows found in Taiwan/Hong Kong data were replaced with different compounds.
+- Duplicate forms were checked within each lane. Approved overlap across related language lanes was preserved when the written form, pronunciation, or regional context made it useful; the three previously identified regional filler rows were replaced with different compounds.
 - Canonical source and runtime focusCoverage, canonical meaning, and Origin anchor agree for all 126 records.
 - This ledger does not claim visual Apple/Xcode verification; that remains a separate platform test step.
+
+## Follow-up screenshot sweep
+
+- All 126 Regular Script endpoint captions were reviewed and rewritten where needed to conclude the visible evolution, remove awkward component shorthand, and explain important modern meaning extensions.
+- Lane-header gloss separators were normalized for learner readability; example translations were not rewritten by this pass.
+- Japanese `コウ` for Mouth now has the reading gloss “mouth”; `人口` remains the separate “population” example.
+- The Japanese furigana renderer now preserves intrinsic spacing, and the Korean word-initial Hanja label is shortened for one-line display.
+- The full Windows validation suite passed after the sweep. Apple/Xcode visual verification remains separate.

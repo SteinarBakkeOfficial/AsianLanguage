@@ -4,12 +4,12 @@
 
 Maintain the approved V1 package: 126 complete-evolution symbols, local origin artwork, reviewed historical stages, CNS11643 Kai Regular Script, approved locale-specific modern forms and examples, explicit native-script speech data, updated collections, search-first Browse, and the book-informed History editorial pages. V1 content and native-speaker review are complete; post-release corrections are tracked for Patch 0.1.
 
-## Current release status — 2026-10-02
+## Current release status — 2026-10-03
 
 - V1 editorial review and the previous screenshot-driven implementation pass are complete for the approved content boundaries. The focused Apple-review follow-up pass is complete locally.
 - The Symbol toolbar action hierarchy, restored two-column Usage layout, compact Japanese kana teaching, varied Quick Review behavior, and the current display-meaning/Japanese-sentence hotfixes are implemented locally. Quick Review is now a Home-surfaced randomized review of all learned Symbols; Review Later remains a separate Browse bookmark for full-journey revisits.
 - Onboarding, most Symbol text, Chinese History guidance, Korean History guidance, and the compact Japanese Hiragana/Katakana sound-pattern guide are confirmed complete.
-- Every visible modern-language form and reading row now carries an English gloss: reviewed reading-specific glosses take priority, while the shared meaning remains visible for exact duplicates or readings without a narrower reviewed gloss. Compound and sentence translations remain attached to their own example rows.
+- Every visible modern-language form and reading row now carries an English gloss that was checked against that specific reading or equivalent. Compound and sentence translations remain attached to their own example rows; the shared Symbol meaning is not used as a generic substitute for a missing reading gloss.
 - The final modern-language content sweep is complete: all 126 symbols have at least four non-core examples in Simplified Chinese, Taiwan Mandarin, and Hong Kong Cantonese. The new Traditional Chinese word examples use the appropriate written forms and pronunciation systems, preserve the advanced sentence as the final displayed example, and are synchronized into the bundled runtime corpus.
 - A runtime regression check now enforces the four-example minimum for all three Chinese tracks so a future corpus import cannot silently reintroduce the earlier short lanes.
 - Quick Review uses one three-choice card per learned Symbol, rotates between symbol-to-meaning, meaning-to-symbol, and selected-language prompts, reveals `Check this Symbol` only after an incorrect choice, and routes that action to the exact Symbol from the answered card before ending the temporary session. It does not read from or modify Review Later.
@@ -725,3 +725,10 @@ No other page or feature may be changed: Home, History, Browse/Search, Quick Rev
 The scoped audit is implemented. Canonical Symbol JSON and generated runtime JSON now carry reading-specific glosses for every displayed reading, approved Origin baselines, normalized clear synonym headers, and the three replaced duplicate regional examples. `UsageExamplesView.swift` no longer substitutes the shared meaning for missing reading glosses and now uses selected-lane meanings plus matching romanization typography. Evidence is recorded in `docs/content/symbol-final-audit-ledger-2026-10-03.md`.
 
 The change set does not include History, Quick Review, Home layout, Browse/Search, onboarding, More/Settings/About, navigation, toolbar behavior, or unrelated SwiftUI. Automated content/parity checks pass; Apple/Xcode simulator verification remains pending.
+
+### Final semantic reading/equivalent audit — 2026-10-03
+
+- All 126 Symbol records were checked for semantic correctness, not only for blank fields: each reading’s English gloss, each native equivalent or variant, and each example’s relationship to the character meaning were reviewed.
+- Compound meanings were kept attached to compound examples instead of being copied onto the standalone character reading. This includes the Japanese `口` / “mouth” versus `人口` / “population” distinction.
+- Approved examples were preserved. Similar examples across Simplified Chinese, Taiwan Mandarin, and Hong Kong Cantonese remain acceptable when the written form, pronunciation, or language context makes the comparison useful; no blanket deduplication was performed.
+- Canonical source and generated runtime data remain synchronized, and the local corpus, workspace, parity, and project checks pass. Apple/Xcode simulator and device testing is the remaining release-candidate gate.

@@ -451,5 +451,5 @@ foreach ($manifestRecord in @($manifest.records | Sort-Object rank)) {
   $records.Add($record) | Out-Null
 }
 
-$records | Sort-Object teachingSequence | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath (Resolve-RepoPath "Resources/V1CorpusManifest.json") -Encoding utf8
+$records | Sort-Object teachingSequence | ConvertTo-Json -Depth 60 | Set-Content -LiteralPath (Resolve-RepoPath "Resources/V1CorpusManifest.json") -Encoding utf8
 Write-Output "OK: imported $($records.Count) complete-evolution V1 records and local museum assets."

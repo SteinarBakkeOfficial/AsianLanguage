@@ -243,6 +243,7 @@ struct UsageExamplesView: View {
         if normalized == "on" || normalized == "onyomi" { return "On · Sino-Japanese" }
         if normalized == "kun" || normalized == "kunyomi" { return "Kun · Native" }
         if normalized == "hanja" { return "Hanja · Sino-Korean" }
+        if normalized == "hanja · word-initial form" { return "Hanja · Initial" }
         if normalized.hasPrefix("hanja · ") {
             return "Hanja · " + String(reading.system.dropFirst("hanja · ".count))
         }
@@ -485,6 +486,9 @@ struct UsageExamplesView: View {
                     }
                 }
             }
+            // Keep each Japanese word at its intrinsic character spacing; without this,
+            // a flexible parent can spread furigana segments across the whole row.
+            .fixedSize(horizontal: true, vertical: false)
         } else if let kanaReading = example.kanaReading, !kanaReading.isEmpty {
             VStack(spacing: 0) {
                 Text(kanaReading)

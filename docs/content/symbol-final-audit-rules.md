@@ -236,7 +236,7 @@ Never use “double-checked,” “triple-checked,” “all Symbols reviewed,�
 The approved Symbol-only implementation pass is complete and recorded in [`symbol-final-audit-ledger-2026-10-03.md`](symbol-final-audit-ledger-2026-10-03.md).
 
 - All 126 canonical Symbol records and all 126 generated runtime records were inspected.
-- 742 previously blank displayed-reading glosses were filled with reading-specific meanings. Japanese glosses were recovered from existing reviewed examples that explicitly covered each reading; Chinese alternate readings received sense-specific glosses; Korean Hanja rows received their lane meaning while native equivalents retained their own glosses.
+- The final semantic pass audited every displayed reading, native equivalent, variant, and example relationship across all 126 records. It corrected reading-specific glosses and compound-versus-character meaning leaks; it did not remove approved examples merely because related language lanes overlap.
 - The shared-meaning fallback was removed from the Symbol-page renderer. A blank reading can no longer display the full shared meaning as if it applied to that reading.
 - The Symbol-page header now uses the selected language lane’s meaning set. The native form remains left-aligned, the English meaning remains on the right, and romanization matches the English gloss typography.
 - Approved Origin copy was restored wherever later review had expanded it without a stage-specific need. The explicitly required self-origin explanation remains because the nose-to-self borrowing is essential to understanding that Symbol.
@@ -246,3 +246,27 @@ The approved Symbol-only implementation pass is complete and recorded in [`symbo
 - No History, Quick Review, Home layout, Browse/Search, onboarding, More/Settings/About, navigation, toolbar, or unrelated SwiftUI view was changed. The only Swift change is the Symbol-page `UsageExamplesView` rendering correction.
 
 Automated content checks pass for JSON parsing, zero missing displayed-reading glosses, four examples per lane, no within-lane duplicate forms, and canonical/runtime parity. Apple/Xcode simulator visual verification remains a separate test step and is not claimed here.
+
+## 14. Screenshot sweep — 2026-10-03
+
+The follow-up Symbol-page sweep applies these endpoint rules:
+
+- Regular Script is the conclusion of the journey. It must summarize how the visible form settles, avoid unnecessary component-character names, and state important current meaning extensions in plain English.
+- A lane header may show distinct current meanings, but its wording must use readable slash-separated meanings rather than unexplained semicolon lists. Synonyms or compound-only padding are not promoted into the lane header.
+- A compound translation must not be copied into the gloss of a standalone Japanese reading unless that gloss is genuinely the reading’s learner-facing sense. For example, `人口` means “population,” but `口` remains “mouth/opening.”
+- Japanese furigana segments must remain at intrinsic character spacing; a flexible parent must not spread them across the example row.
+- Korean Hanja labels such as “word-initial form” are shortened when necessary to remain one line; this is a presentation label change, not a change to the reading data.
+
+This sweep is Symbol-only. It does not authorize changes to Home, History, Browse, Quick Review, onboarding, More/Settings, navigation, or unrelated layouts.
+
+## 15. Final semantic correction pass — 2026-10-03
+
+This pass addressed the remaining issues identified during the Symbol-page review:
+
+- A reading’s English gloss must describe that reading, not the meaning of a longer compound in which the character appears.
+- A native equivalent or orthographic variant must state its own meaning; it must not inherit the shared Symbol meaning when the language-specific word is narrower or different.
+- Examples must be interpreted as complete words or phrases. A compound example may have a narrower meaning without changing the Symbol header.
+- Similar examples across Chinese lanes are allowed when the written form, pronunciation, or regional usage makes the comparison useful. The audit does not perform mechanical cross-language deduplication.
+- The source and generated runtime corpus were re-synchronized after the corrections. No History, Home, Quick Review, Browse, onboarding, More/Settings, navigation, or unrelated layout change was part of this pass.
+
+The semantic pass and local checks are complete. Apple/Xcode simulator and device verification remains the final platform-specific release gate.
