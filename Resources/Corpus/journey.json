@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "旅客",
-          "reading": "lǚkè",
-          "translation": "traveler / passenger",
-          "speechText": "旅客",
+          "text": "旅遊",
+          "reading": "lǚyóu",
+          "translation": "travel / tourism",
+          "speechText": "旅遊",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "旅"
+          ]
         },
         {
           "text": "我喜歡旅行。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "旅客",
-          "reading": "leoi5 haak3",
-          "translation": "traveler / passenger",
-          "speechText": "旅客",
+          "text": "旅館",
+          "reading": "lou5 gun2",
+          "translation": "hotel",
+          "speechText": "旅館",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "旅"
+          ]
         },
         {
           "text": "我鍾意旅行。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "旅",
@@ -280,10 +286,10 @@
       ],
       "examples": [
         {
-          "text": "旅行",
-          "reading": "ryokō",
-          "translation": "travel",
-          "speechText": "旅行",
+          "text": "旅費",
+          "reading": "ryohi",
+          "translation": "travel expenses",
+          "speechText": "旅費",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -292,17 +298,15 @@
           "introducedSymbols": [
             "旅"
           ],
-          "kanaReading": "りょこう",
-          "coversReadings": [
-            "リョ"
-          ],
+          "kanaReading": "りょひ",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "旅行",
-              "reading": "りょこう"
+              "text": "旅費",
+              "reading": "りょひ"
             }
           ],
-          "furiganaHtml": "<ruby>旅行<rt>りょこう</rt></ruby>"
+          "furiganaHtml": "<ruby>旅費<rt>りょひ</rt></ruby>"
         },
         {
           "text": "旅館",

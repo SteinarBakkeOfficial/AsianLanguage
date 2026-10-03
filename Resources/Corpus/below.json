@@ -247,7 +247,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "下",
@@ -394,56 +396,50 @@
           "furiganaHtml": "<ruby>下車<rt>げしゃ</rt></ruby>"
         },
         {
-          "text": "下がる",
-          "reading": "sagaru",
-          "translation": "go down",
-          "speechText": "下がる",
+          "text": "下宿",
+          "reading": "geshuku",
+          "translation": "lodging / boarding house",
+          "speechText": "下宿",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "さがる",
-          "coversReadings": [
-            "さがる"
+          "introducedSymbols": [
+            "下"
           ],
+          "kanaReading": "げしゅく",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "下",
-              "reading": "さ"
-            },
-            {
-              "text": "がる"
+              "text": "下宿",
+              "reading": "げしゅく"
             }
           ],
-          "furiganaHtml": "<ruby>下<rt>さ</rt></ruby>がる"
+          "furiganaHtml": "<ruby>下宿<rt>げしゅく</rt></ruby>"
         },
         {
-          "text": "下げる",
-          "reading": "sageru",
-          "translation": "lower",
-          "speechText": "下げる",
+          "text": "下書き",
+          "reading": "shitagaki",
+          "translation": "draft",
+          "speechText": "下書き",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "さげる",
-          "coversReadings": [
-            "さげる"
+          "introducedSymbols": [
+            "下"
           ],
+          "kanaReading": "したがき",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "下",
-              "reading": "さ"
-            },
-            {
-              "text": "げる"
+              "text": "下書き",
+              "reading": "したがき"
             }
           ],
-          "furiganaHtml": "<ruby>下<rt>さ</rt></ruby>げる"
+          "furiganaHtml": "<ruby>下書き<rt>したがき</rt></ruby>"
         },
         {
           "text": "猫は机の下です。",

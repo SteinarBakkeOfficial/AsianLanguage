@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "合同",
-          "reading": "hétong",
+          "text": "合約",
+          "reading": "héyuē",
           "translation": "contract",
-          "speechText": "合同",
+          "speechText": "合約",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "合"
+          ]
         },
         {
           "text": "我們一起合作。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "合同",
-          "reading": "hap6 tung4",
-          "translation": "contract",
-          "speechText": "合同",
+          "text": "合作",
+          "reading": "hap6 zok3",
+          "translation": "cooperation",
+          "speechText": "合作",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "合"
+          ]
         },
         {
           "text": "我哋一齊合作。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "合",
@@ -302,10 +308,10 @@
       ],
       "examples": [
         {
-          "text": "合う",
-          "reading": "au",
-          "translation": "fit / match",
-          "speechText": "合う",
+          "text": "合図",
+          "reading": "aizu",
+          "translation": "signal / sign",
+          "speechText": "合図",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -314,20 +320,15 @@
           "introducedSymbols": [
             "合"
           ],
-          "kanaReading": "あう",
-          "coversReadings": [
-            "あう"
-          ],
+          "kanaReading": "あいず",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "合",
-              "reading": "あ"
-            },
-            {
-              "text": "う"
+              "text": "合図",
+              "reading": "あいず"
             }
           ],
-          "furiganaHtml": "<ruby>合<rt>あ</rt></ruby>う"
+          "furiganaHtml": "<ruby>合図<rt>あいず</rt></ruby>"
         },
         {
           "text": "合計",
@@ -375,30 +376,27 @@
           "furiganaHtml": "<ruby>合格<rt>ごうかく</rt></ruby>"
         },
         {
-          "text": "合わせる",
-          "reading": "awaseru",
-          "translation": "put together / combine",
-          "speechText": "合わせる",
+          "text": "合唱",
+          "reading": "gasshō",
+          "translation": "chorus / singing together",
+          "speechText": "合唱",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "あわせる",
-          "coversReadings": [
-            "あわせる"
+          "introducedSymbols": [
+            "合"
           ],
+          "kanaReading": "がっしょう",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "合",
-              "reading": "あ"
-            },
-            {
-              "text": "わせる"
+              "text": "合唱",
+              "reading": "がっしょう"
             }
           ],
-          "furiganaHtml": "<ruby>合<rt>あ</rt></ruby>わせる"
+          "furiganaHtml": "<ruby>合唱<rt>がっしょう</rt></ruby>"
         },
         {
           "text": "二つを合わせます。",

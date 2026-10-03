@@ -271,7 +271,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "分",
@@ -348,10 +350,10 @@
       ],
       "examples": [
         {
-          "text": "分ける",
-          "reading": "wakeru",
-          "translation": "divide / separate",
-          "speechText": "分ける",
+          "text": "分野",
+          "reading": "bun'ya",
+          "translation": "field / area",
+          "speechText": "分野",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -360,20 +362,15 @@
           "introducedSymbols": [
             "分"
           ],
-          "kanaReading": "わける",
-          "coversReadings": [
-            "わける"
-          ],
+          "kanaReading": "ぶんや",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "分",
-              "reading": "わ"
-            },
-            {
-              "text": "ける"
+              "text": "分野",
+              "reading": "ぶんや"
             }
           ],
-          "furiganaHtml": "<ruby>分<rt>わ</rt></ruby>ける"
+          "furiganaHtml": "<ruby>分野<rt>ぶんや</rt></ruby>"
         },
         {
           "text": "五分",
@@ -424,30 +421,27 @@
           "furiganaHtml": "<ruby>分類<rt>ぶんるい</rt></ruby>"
         },
         {
-          "text": "分かる",
-          "reading": "wakaru",
-          "translation": "understand",
-          "speechText": "分かる",
+          "text": "分析",
+          "reading": "bunseki",
+          "translation": "analysis",
+          "speechText": "分析",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "わかる",
-          "coversReadings": [
-            "わかる"
+          "introducedSymbols": [
+            "分"
           ],
+          "kanaReading": "ぶんせき",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "分",
-              "reading": "わ"
-            },
-            {
-              "text": "かる"
+              "text": "分析",
+              "reading": "ぶんせき"
             }
           ],
-          "furiganaHtml": "<ruby>分<rt>わ</rt></ruby>かる"
+          "furiganaHtml": "<ruby>分析<rt>ぶんせき</rt></ruby>"
         },
         {
           "text": "二つに分けます。",

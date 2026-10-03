@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "失望",
-          "reading": "shīwàng",
-          "translation": "disappointed / lose hope",
-          "speechText": "失望",
+          "text": "願望",
+          "reading": "yuànwàng",
+          "translation": "wish",
+          "speechText": "願望",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "望"
+          ]
         },
         {
           "text": "我希望明天是晴天。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "失望",
-          "reading": "sat1 mong6",
-          "translation": "disappointed / lose hope",
-          "speechText": "失望",
+          "text": "望月",
+          "reading": "mong6 jyut6",
+          "translation": "moon viewing",
+          "speechText": "望月",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "望"
+          ]
         },
         {
           "text": "我希望聽日好天。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "望",
@@ -280,10 +286,10 @@
       ],
       "examples": [
         {
-          "text": "望む",
-          "reading": "nozomu",
-          "translation": "hope / desire",
-          "speechText": "望む",
+          "text": "望ましい",
+          "reading": "nozomashii",
+          "translation": "desirable",
+          "speechText": "望ましい",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -292,26 +298,21 @@
           "introducedSymbols": [
             "望"
           ],
-          "kanaReading": "のぞむ",
-          "coversReadings": [
-            "のぞむ"
-          ],
+          "kanaReading": "のぞましい",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "望",
-              "reading": "のぞ"
-            },
-            {
-              "text": "む"
+              "text": "望ましい",
+              "reading": "のぞましい"
             }
           ],
-          "furiganaHtml": "<ruby>望<rt>のぞ</rt></ruby>む"
+          "furiganaHtml": "<ruby>望ましい<rt>のぞましい</rt></ruby>"
         },
         {
-          "text": "希望",
-          "reading": "kibō",
-          "translation": "hope",
-          "speechText": "希望",
+          "text": "絶望",
+          "reading": "zetsubō",
+          "translation": "despair",
+          "speechText": "絶望",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -320,17 +321,15 @@
           "introducedSymbols": [
             "望"
           ],
-          "kanaReading": "きぼう",
-          "coversReadings": [
-            "ボウ"
-          ],
+          "kanaReading": "ぜつぼう",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "希望",
-              "reading": "きぼう"
+              "text": "絶望",
+              "reading": "ぜつぼう"
             }
           ],
-          "furiganaHtml": "<ruby>希望<rt>きぼう</rt></ruby>"
+          "furiganaHtml": "<ruby>絶望<rt>ぜつぼう</rt></ruby>"
         },
         {
           "text": "望遠鏡",

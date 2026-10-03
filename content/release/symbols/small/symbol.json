@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "小孩",
-          "reading": "xiǎohái",
-          "translation": "child",
-          "speechText": "小孩",
+          "text": "小學",
+          "reading": "xiǎoxué",
+          "translation": "primary school",
+          "speechText": "小學",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "小"
+          ]
         },
         {
           "text": "這隻貓很小。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "小孩",
-          "reading": "siu2 haai4",
-          "translation": "child",
-          "speechText": "小孩",
+          "text": "小心",
+          "reading": "siu2 sam1",
+          "translation": "careful",
+          "speechText": "小心",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "小"
+          ]
         },
         {
           "text": "呢隻貓好細。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "小",
@@ -291,10 +297,10 @@
       ],
       "examples": [
         {
-          "text": "小さい",
-          "reading": "chiisai",
-          "translation": "small",
-          "speechText": "小さい",
+          "text": "小鳥",
+          "reading": "kotori",
+          "translation": "small bird",
+          "speechText": "小鳥",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -303,20 +309,15 @@
           "introducedSymbols": [
             "小"
           ],
-          "kanaReading": "ちいさい",
-          "coversReadings": [
-            "ちいさい"
-          ],
+          "kanaReading": "ことり",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "小",
-              "reading": "ちい"
-            },
-            {
-              "text": "さい"
+              "text": "小鳥",
+              "reading": "ことり"
             }
           ],
-          "furiganaHtml": "<ruby>小<rt>ちい</rt></ruby>さい"
+          "furiganaHtml": "<ruby>小鳥<rt>ことり</rt></ruby>"
         },
         {
           "text": "小学校",
@@ -364,27 +365,27 @@
           "furiganaHtml": "<ruby>小説<rt>しょうせつ</rt></ruby>"
         },
         {
-          "text": "小型",
-          "reading": "kogata",
-          "translation": "small-sized",
-          "speechText": "小型",
+          "text": "小売",
+          "reading": "kōri",
+          "translation": "retail",
+          "speechText": "小売",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "こがた",
-          "coversReadings": [
-            "こ"
+          "introducedSymbols": [
+            "小"
           ],
+          "kanaReading": "こうり",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "小型",
-              "reading": "こがた"
+              "text": "小売",
+              "reading": "こうり"
             }
           ],
-          "furiganaHtml": "<ruby>小型<rt>こがた</rt></ruby>"
+          "furiganaHtml": "<ruby>小売<rt>こうり</rt></ruby>"
         },
         {
           "text": "この犬は小さいです。",

@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "腳步",
-          "reading": "jiǎobù",
-          "translation": "footstep",
-          "speechText": "腳步",
+          "text": "步驟",
+          "reading": "bùzhòu",
+          "translation": "steps / procedure",
+          "speechText": "步驟",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "步"
+          ]
         },
         {
           "text": "我們去散步。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "腳步",
-          "reading": "goek3 bou6",
-          "translation": "footstep",
-          "speechText": "腳步",
+          "text": "步行",
+          "reading": "bou6 haang4",
+          "translation": "walk",
+          "speechText": "步行",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "步"
+          ]
         },
         {
           "text": "我哋去散步。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "歩",
@@ -291,10 +297,10 @@
       ],
       "examples": [
         {
-          "text": "歩く",
-          "reading": "aruku",
-          "translation": "walk",
-          "speechText": "歩く",
+          "text": "歩行",
+          "reading": "hokō",
+          "translation": "walking",
+          "speechText": "歩行",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -303,20 +309,15 @@
           "introducedSymbols": [
             "步"
           ],
-          "kanaReading": "あるく",
-          "coversReadings": [
-            "あるく"
-          ],
+          "kanaReading": "ほこう",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "歩",
-              "reading": "ある"
-            },
-            {
-              "text": "く"
+              "text": "歩行",
+              "reading": "ほこう"
             }
           ],
-          "furiganaHtml": "<ruby>歩<rt>ある</rt></ruby>く"
+          "furiganaHtml": "<ruby>歩行<rt>ほこう</rt></ruby>"
         },
         {
           "text": "散歩",

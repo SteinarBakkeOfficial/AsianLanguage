@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "示意",
-          "reading": "shìyì",
-          "translation": "indicate / gesture",
-          "speechText": "示意",
+          "text": "示範",
+          "reading": "shìfàn",
+          "translation": "demonstration",
+          "speechText": "示範",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "示"
+          ]
         },
         {
           "text": "請出示車票。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "示意",
-          "reading": "si6 ji3",
-          "translation": "indicate / gesture",
-          "speechText": "示意",
+          "text": "示威",
+          "reading": "si6 wai1",
+          "translation": "protest",
+          "speechText": "示威",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "示"
+          ]
         },
         {
           "text": "請出示車票。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "示",
@@ -280,10 +286,10 @@
       ],
       "examples": [
         {
-          "text": "示す",
-          "reading": "shimesu",
-          "translation": "show / indicate",
-          "speechText": "示す",
+          "text": "展示",
+          "reading": "tenji",
+          "translation": "exhibition / display",
+          "speechText": "展示",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -292,20 +298,15 @@
           "introducedSymbols": [
             "示"
           ],
-          "kanaReading": "しめす",
-          "coversReadings": [
-            "しめす"
-          ],
+          "kanaReading": "てんじ",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "示",
-              "reading": "しめ"
-            },
-            {
-              "text": "す"
+              "text": "展示",
+              "reading": "てんじ"
             }
           ],
-          "furiganaHtml": "<ruby>示<rt>しめ</rt></ruby>す"
+          "furiganaHtml": "<ruby>展示<rt>てんじ</rt></ruby>"
         },
         {
           "text": "表示",

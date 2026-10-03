@@ -269,7 +269,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "長",
@@ -302,10 +304,10 @@
       ],
       "examples": [
         {
-          "text": "長い",
-          "reading": "nagai",
-          "translation": "long",
-          "speechText": "長い",
+          "text": "長期",
+          "reading": "chōki",
+          "translation": "long term",
+          "speechText": "長期",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -314,20 +316,15 @@
           "introducedSymbols": [
             "长"
           ],
-          "kanaReading": "ながい",
-          "coversReadings": [
-            "ながい"
-          ],
+          "kanaReading": "ちょうき",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "長",
-              "reading": "なが"
-            },
-            {
-              "text": "い"
+              "text": "長期",
+              "reading": "ちょうき"
             }
           ],
-          "furiganaHtml": "<ruby>長<rt>なが</rt></ruby>い"
+          "furiganaHtml": "<ruby>長期<rt>ちょうき</rt></ruby>"
         },
         {
           "text": "校長",

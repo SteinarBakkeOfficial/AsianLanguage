@@ -259,7 +259,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "及",
@@ -314,10 +316,10 @@
       ],
       "examples": [
         {
-          "text": "及ぶ",
-          "reading": "oyobu",
-          "translation": "reach / extend to",
-          "speechText": "及ぶ",
+          "text": "及び",
+          "reading": "oyobi",
+          "translation": "and / as well as",
+          "speechText": "及び",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -326,20 +328,15 @@
           "introducedSymbols": [
             "及"
           ],
-          "kanaReading": "およぶ",
-          "coversReadings": [
-            "およぶ"
-          ],
+          "kanaReading": "および",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "及",
-              "reading": "およ"
-            },
-            {
-              "text": "ぶ"
+              "text": "及び",
+              "reading": "および"
             }
           ],
-          "furiganaHtml": "<ruby>及<rt>およ</rt></ruby>ぶ"
+          "furiganaHtml": "<ruby>及び<rt>および</rt></ruby>"
         },
         {
           "text": "普及",
@@ -387,30 +384,27 @@
           "furiganaHtml": "<ruby>波及<rt>はきゅう</rt></ruby>"
         },
         {
-          "text": "及ぼす",
-          "reading": "oyobosu",
-          "translation": "extend / exert",
-          "speechText": "及ぼす",
+          "text": "言及",
+          "reading": "genkyū",
+          "translation": "mention / refer to",
+          "speechText": "言及",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "およぼす",
-          "coversReadings": [
-            "およぼす"
+          "introducedSymbols": [
+            "及"
           ],
+          "kanaReading": "げんきゅう",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "及",
-              "reading": "およ"
-            },
-            {
-              "text": "ぼす"
+              "text": "言及",
+              "reading": "げんきゅう"
             }
           ],
-          "furiganaHtml": "<ruby>及<rt>およ</rt></ruby>ぼす"
+          "furiganaHtml": "<ruby>言及<rt>げんきゅう</rt></ruby>"
         },
         {
           "text": "水は足元まで及びます。",

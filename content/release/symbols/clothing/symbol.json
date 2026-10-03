@@ -92,9 +92,37 @@
           "introducedSymbols": [
             "衣"
           ]
+        },
+        {
+          "text": "衣架",
+          "reading": "yījià",
+          "translation": "clothes hanger",
+          "speechText": "衣架",
+          "speechLanguage": "mandarin",
+          "showsCoreMeaning": true,
+          "exampleLevel": "word",
+          "parallelExampleGroupID": null,
+          "reusesKnownSymbols": [],
+          "introducedSymbols": [
+            "衣"
+          ]
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "衣服 — yīfu",
+          "audioAssetRef": null,
+          "speechText": "衣服",
+          "speechLanguage": "mandarin",
+          "nativeReading": "衣服",
+          "romanization": "yīfu",
+          "relationship": "modernChinese semantic equivalent; not a reading of the shared character.",
+          "gloss": "clothes / clothing",
+          "displayTier": "secondary",
+          "lexicalOrigin": "modernChinese"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
     },
@@ -143,16 +171,18 @@
           ]
         },
         {
-          "text": "衣櫃",
-          "reading": "yīguì",
-          "translation": "wardrobe",
-          "speechText": "衣櫃",
+          "text": "衣襬",
+          "reading": "yībǎi",
+          "translation": "clothing hem",
+          "speechText": "衣襬",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "衣"
+          ]
         },
         {
           "text": "我穿了一件上衣。",
@@ -199,16 +229,18 @@
           ]
         },
         {
-          "text": "衣櫃",
-          "reading": "ji1 gwai6",
-          "translation": "wardrobe",
-          "speechText": "衣櫃",
+          "text": "衣領",
+          "reading": "ji1 ling5",
+          "translation": "collar",
+          "speechText": "衣領",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "衣"
+          ]
         },
         {
           "text": "我著件上衣。",
@@ -247,7 +279,37 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "衣服 — yīfú",
+          "audioAssetRef": null,
+          "speechText": "衣服",
+          "speechLanguage": "mandarin",
+          "nativeReading": "衣服",
+          "romanization": "yīfú",
+          "relationship": "modernChinese semantic equivalent; not a reading of the shared character.",
+          "gloss": "clothes / clothing",
+          "displayTier": "secondary",
+          "lexicalOrigin": "modernChinese"
+        }
+      ],
+      "hongKongSemanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "衣服 — ji1 fuk6",
+          "audioAssetRef": null,
+          "speechText": "衣服",
+          "speechLanguage": "cantonese",
+          "nativeReading": "衣服",
+          "romanization": "ji1 fuk6",
+          "relationship": "modernChinese semantic equivalent; not a reading of the shared character.",
+          "gloss": "clothes / clothing",
+          "displayTier": "secondary",
+          "lexicalOrigin": "modernChinese"
+        }
+      ]
     },
     "japanese": {
       "form": "衣",
@@ -298,10 +360,10 @@
           "furiganaHtml": null
         },
         {
-          "text": "衣類",
-          "reading": "irui",
-          "translation": "clothes / garments",
-          "speechText": "衣類",
+          "text": "衣料品",
+          "reading": "iryōhin",
+          "translation": "clothing goods",
+          "speechText": "衣料品",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -310,14 +372,15 @@
           "introducedSymbols": [
             "衣"
           ],
-          "kanaReading": "いるい",
+          "kanaReading": "いりょうひん",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "衣類",
-              "reading": "いるい"
+              "text": "衣料品",
+              "reading": "いりょうひん"
             }
           ],
-          "furiganaHtml": "<ruby>衣類<rt>いるい</rt></ruby>"
+          "furiganaHtml": "<ruby>衣料品<rt>いりょうひん</rt></ruby>"
         },
         {
           "text": "衣装",
@@ -375,7 +438,21 @@
           "furiganaHtml": "<ruby>衣服<rt>いふく</rt></ruby>を<ruby>着<rt>き</rt></ruby>ます。"
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "衣類 — irui",
+          "audioAssetRef": null,
+          "speechText": "衣類",
+          "speechLanguage": "japanese",
+          "nativeReading": "衣類",
+          "romanization": "irui",
+          "relationship": "nativeJapanese semantic equivalent; not a reading of the shared character.",
+          "gloss": "clothes / garments",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeJapanese"
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
       "internalReadingAudit": {
@@ -408,10 +485,10 @@
       ],
       "examples": [
         {
-          "text": "의류",
-          "reading": "uiryu",
-          "translation": "clothing",
-          "speechText": "의류",
+          "text": "의류점",
+          "reading": "uiryujeom",
+          "translation": "clothing store",
+          "speechText": "의류점",
           "speechLanguage": "korean",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -492,6 +569,19 @@
             "source": "https://krdict.korean.go.kr/eng/mainAction",
             "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
           }
+        },
+        {
+          "system": "semanticEquivalent",
+          "value": "의류 — uiryu",
+          "audioAssetRef": null,
+          "speechText": "의류",
+          "speechLanguage": "korean",
+          "nativeReading": "의류",
+          "romanization": "uiryu",
+          "relationship": "nativeKorean semantic equivalent; not a reading of the shared character.",
+          "gloss": "clothing",
+          "displayTier": "secondary",
+          "lexicalOrigin": "nativeKorean"
         }
       ],
       "orthographicVariants": [],

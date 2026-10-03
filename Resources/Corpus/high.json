@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "高度",
-          "reading": "gāodù",
-          "translation": "height",
-          "speechText": "高度",
+          "text": "高原",
+          "reading": "gāoyuán",
+          "translation": "plateau",
+          "speechText": "高原",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "高"
+          ]
         },
         {
           "text": "這座山很高。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "高度",
-          "reading": "gou1 dou6",
-          "translation": "height",
-          "speechText": "高度",
+          "text": "高峰",
+          "reading": "gou1 fung1",
+          "translation": "peak",
+          "speechText": "高峰",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "高"
+          ]
         },
         {
           "text": "呢座山好高。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "高",
@@ -302,10 +308,10 @@
       ],
       "examples": [
         {
-          "text": "高い",
-          "reading": "takai",
-          "translation": "high / tall",
-          "speechText": "高い",
+          "text": "高温",
+          "reading": "kōon",
+          "translation": "high temperature",
+          "speechText": "高温",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -314,20 +320,15 @@
           "introducedSymbols": [
             "高"
           ],
-          "kanaReading": "たかい",
-          "coversReadings": [
-            "たかい"
-          ],
+          "kanaReading": "こうおん",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "高",
-              "reading": "たか"
-            },
-            {
-              "text": "い"
+              "text": "高温",
+              "reading": "こうおん"
             }
           ],
-          "furiganaHtml": "<ruby>高<rt>たか</rt></ruby>い"
+          "furiganaHtml": "<ruby>高温<rt>こうおん</rt></ruby>"
         },
         {
           "text": "高校",

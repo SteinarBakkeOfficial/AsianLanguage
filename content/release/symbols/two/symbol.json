@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "第二",
-          "reading": "dì-èr",
-          "translation": "second",
-          "speechText": "第二",
+          "text": "二手",
+          "reading": "èrshǒu",
+          "translation": "secondhand",
+          "speechText": "二手",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "二"
+          ]
         },
         {
           "text": "今天是二號。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "第二",
-          "reading": "dai6 ji6",
-          "translation": "second",
-          "speechText": "第二",
+          "text": "二手",
+          "reading": "ji6 sau2",
+          "translation": "secondhand",
+          "speechText": "二手",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "二"
+          ]
         },
         {
           "text": "今日係二號。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "二",
@@ -280,10 +286,10 @@
       ],
       "examples": [
         {
-          "text": "二つ",
-          "reading": "futatsu",
-          "translation": "two things",
-          "speechText": "二つ",
+          "text": "二重",
+          "reading": "nijū",
+          "translation": "double / twofold",
+          "speechText": "二重",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -292,20 +298,15 @@
           "introducedSymbols": [
             "二"
           ],
-          "kanaReading": "ふたつ",
-          "coversReadings": [
-            "ふたつ"
-          ],
+          "kanaReading": "にじゅう",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "二",
-              "reading": "ふた"
-            },
-            {
-              "text": "つ"
+              "text": "二重",
+              "reading": "にじゅう"
             }
           ],
-          "furiganaHtml": "<ruby>二<rt>ふた</rt></ruby>つ"
+          "furiganaHtml": "<ruby>二重<rt>にじゅう</rt></ruby>"
         },
         {
           "text": "二人",

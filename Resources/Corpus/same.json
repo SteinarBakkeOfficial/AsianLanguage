@@ -262,7 +262,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "同",
@@ -295,10 +297,10 @@
       ],
       "examples": [
         {
-          "text": "同じ",
-          "reading": "onaji",
-          "translation": "same",
-          "speechText": "同じ",
+          "text": "同僚",
+          "reading": "dōryō",
+          "translation": "colleague",
+          "speechText": "同僚",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -307,20 +309,15 @@
           "introducedSymbols": [
             "同"
           ],
-          "kanaReading": "おなじ",
-          "coversReadings": [
-            "おなじ"
-          ],
+          "kanaReading": "どうりょう",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "同",
-              "reading": "おな"
-            },
-            {
-              "text": "じ"
+              "text": "同僚",
+              "reading": "どうりょう"
             }
           ],
-          "furiganaHtml": "<ruby>同<rt>おな</rt></ruby>じ"
+          "furiganaHtml": "<ruby>同僚<rt>どうりょう</rt></ruby>"
         },
         {
           "text": "同時",

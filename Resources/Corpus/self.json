@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "自由",
-          "reading": "zìyóu",
-          "translation": "freedom / free",
-          "speechText": "自由",
+          "text": "自動",
+          "reading": "zìdòng",
+          "translation": "automatic",
+          "speechText": "自動",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "自"
+          ]
         },
         {
           "text": "我自己來。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "自由",
-          "reading": "zi6 jau4",
-          "translation": "freedom / free",
-          "speechText": "自由",
+          "text": "自從",
+          "reading": "zi6 cung4",
+          "translation": "since",
+          "speechText": "自從",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "自"
+          ]
         },
         {
           "text": "我自己嚟。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "自",
@@ -280,10 +286,10 @@
       ],
       "examples": [
         {
-          "text": "自分",
-          "reading": "jibun",
-          "translation": "oneself",
-          "speechText": "自分",
+          "text": "自転車",
+          "reading": "jitensha",
+          "translation": "bicycle",
+          "speechText": "自転車",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -292,17 +298,15 @@
           "introducedSymbols": [
             "自"
           ],
-          "kanaReading": "じぶん",
-          "coversReadings": [
-            "ジ"
-          ],
+          "kanaReading": "じてんしゃ",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "自分",
-              "reading": "じぶん"
+              "text": "自転車",
+              "reading": "じてんしゃ"
             }
           ],
-          "furiganaHtml": "<ruby>自分<rt>じぶん</rt></ruby>"
+          "furiganaHtml": "<ruby>自転車<rt>じてんしゃ</rt></ruby>"
         },
         {
           "text": "自然",
@@ -327,30 +331,27 @@
           "furiganaHtml": "<ruby>自然<rt>しぜん</rt></ruby>"
         },
         {
-          "text": "自ら",
-          "reading": "mizukara",
-          "translation": "oneself",
-          "speechText": "自ら",
+          "text": "自主",
+          "reading": "jishu",
+          "translation": "independence / self-directed",
+          "speechText": "自主",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "みずから",
-          "coversReadings": [
-            "みずから"
+          "introducedSymbols": [
+            "自"
           ],
+          "kanaReading": "じしゅ",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "自",
-              "reading": "みずか"
-            },
-            {
-              "text": "ら"
+              "text": "自主",
+              "reading": "じしゅ"
             }
           ],
-          "furiganaHtml": "<ruby>自<rt>みずか</rt></ruby>ら"
+          "furiganaHtml": "<ruby>自主<rt>じしゅ</rt></ruby>"
         },
         {
           "text": "自動",

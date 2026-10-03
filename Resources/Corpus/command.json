@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "口令",
-          "reading": "kǒulìng",
-          "translation": "password / verbal command",
-          "speechText": "口令",
+          "text": "令牌",
+          "reading": "lìngpái",
+          "translation": "token / pass",
+          "speechText": "令牌",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "令"
+          ]
         },
         {
           "text": "請聽從命令。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "口令",
-          "reading": "hau2 ling6",
-          "translation": "password / verbal command",
-          "speechText": "口令",
+          "text": "令牌",
+          "reading": "ling6 paai4",
+          "translation": "token / pass",
+          "speechText": "令牌",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "令"
+          ]
         },
         {
           "text": "請聽命令。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "令",
@@ -269,10 +275,10 @@
       ],
       "examples": [
         {
-          "text": "命令",
-          "reading": "meirei",
-          "translation": "command / order",
-          "speechText": "命令",
+          "text": "命日",
+          "reading": "meinichi",
+          "translation": "death anniversary",
+          "speechText": "命日",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -281,17 +287,15 @@
           "introducedSymbols": [
             "令"
           ],
-          "kanaReading": "めいれい",
-          "coversReadings": [
-            "レイ"
-          ],
+          "kanaReading": "めいにち",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "命令",
-              "reading": "めいれい"
+              "text": "命日",
+              "reading": "めいにち"
             }
           ],
-          "furiganaHtml": "<ruby>命令<rt>めいれい</rt></ruby>"
+          "furiganaHtml": "<ruby>命日<rt>めいにち</rt></ruby>"
         },
         {
           "text": "指令",

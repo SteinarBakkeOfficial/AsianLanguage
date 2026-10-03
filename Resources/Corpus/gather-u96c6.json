@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "集中",
-          "reading": "jízhōng",
-          "translation": "concentrate / gather",
-          "speechText": "集中",
+          "text": "集市",
+          "reading": "jíshì",
+          "translation": "market",
+          "speechText": "集市",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "集"
+          ]
         },
         {
           "text": "我們在這裡集合。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "集中",
-          "reading": "zaap6 zung1",
-          "translation": "concentrate / gather",
-          "speechText": "集中",
+          "text": "集郵",
+          "reading": "zaap6 jau4",
+          "translation": "stamp collecting",
+          "speechText": "集郵",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "集"
+          ]
         },
         {
           "text": "我哋喺呢度集合。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "集",
@@ -302,10 +308,10 @@
       ],
       "examples": [
         {
-          "text": "集まる",
-          "reading": "atsumaru",
-          "translation": "gather",
-          "speechText": "集まる",
+          "text": "集団",
+          "reading": "shūdan",
+          "translation": "group",
+          "speechText": "集団",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -314,20 +320,15 @@
           "introducedSymbols": [
             "集"
           ],
-          "kanaReading": "あつまる",
-          "coversReadings": [
-            "あつまる"
-          ],
+          "kanaReading": "しゅうだん",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "集",
-              "reading": "あつ"
-            },
-            {
-              "text": "まる"
+              "text": "集団",
+              "reading": "しゅうだん"
             }
           ],
-          "furiganaHtml": "<ruby>集<rt>あつ</rt></ruby>まる"
+          "furiganaHtml": "<ruby>集団<rt>しゅうだん</rt></ruby>"
         },
         {
           "text": "集合",
@@ -375,30 +376,27 @@
           "furiganaHtml": "<ruby>集中<rt>しゅうちゅう</rt></ruby>"
         },
         {
-          "text": "集める",
-          "reading": "atsumeru",
-          "translation": "collect / gather",
-          "speechText": "集める",
+          "text": "集計",
+          "reading": "shūkei",
+          "translation": "tabulation",
+          "speechText": "集計",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "あつめる",
-          "coversReadings": [
-            "あつめる"
+          "introducedSymbols": [
+            "集"
           ],
+          "kanaReading": "しゅうけい",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "集",
-              "reading": "あつ"
-            },
-            {
-              "text": "める"
+              "text": "集計",
+              "reading": "しゅうけい"
             }
           ],
-          "furiganaHtml": "<ruby>集<rt>あつ</rt></ruby>める"
+          "furiganaHtml": "<ruby>集計<rt>しゅうけい</rt></ruby>"
         },
         {
           "text": "ここに集まります。",

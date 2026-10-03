@@ -333,3 +333,19 @@ This is the implementation ruleset approved for the full candidate-list pass:
 - Never classify a row from an English-string match alone. Inspect the written word, reading, full compound meaning, existing equivalent/variant coverage, and the surrounding examples for every Symbol and every lane.
 
 The implementation pass must record a decision for each candidate as one of: direct lexical equivalent, same graph with a distinct reading, narrower compound, related-but-different meaning, or missing equivalent/variant. No Origin, Regular Script, History, Home, Quick Review, navigation, or unrelated UI content is in scope for this pass.
+
+## 22. Example-quality correction pass — 2026-10-03
+
+The example list is a teaching surface, not a dump of words containing the character. For every one of the 126 Symbols and every displayed language lane:
+
+- Keep four or five useful examples. If a direct lexical word is moved to the equivalent/native area, replace it with a meaningful compound, phrase, or sentence rather than reducing the lane.
+- Do not repeat the same normalized English meaning twice within one lane. A different written form or pronunciation is not enough to justify wasting another example slot when the two rows teach the same complete meaning.
+- Do not clone the entire four-example translation sequence across Simplified Chinese, Taiwan Mandarin, and Hong Kong Cantonese. Some overlap is correct when it demonstrates regional spelling, pronunciation, or usage, but each lane must still teach its own useful set.
+- Read each compound as a complete word or phrase. Preserve the specific meaning in English (`wall corner`, `house corner`, `right angle`, `water well`, `tiger stripes`, `ox horn`, and similar cases) instead of reducing it to a headline word that falsely makes it look like a direct equivalent.
+- Do not repeat a Japanese reading gloss as an example gloss when the example is only the standalone reading. Use a compound or sentence that demonstrates the reading in context, and give the complete expression its own meaning.
+- A direct lexical equivalent belongs above the examples with its own gloss. A different pronunciation of the same graph remains a reading, and a narrower compound remains an example. Never classify a row from English-string matching alone.
+- Equivalent/native rows must also be unique within a lane. The cleanup/import workflow must be idempotent: rerunning it must not append the same equivalent again, and the legacy `focusCoverage` projection must remain consistent with the learner-facing runtime projection.
+- Every equivalent/native collection must remain a JSON array, including a collection with one row, because the Swift model decodes `[CharacterReading]` rather than a single object.
+- The Traditional Chinese renderer has one divider beneath the complete reading/equivalent block. It must not render a second divider immediately before the equivalent block.
+
+This pass is verified by `Tests/ExampleQuality.Tests.ps1`, which checks all 126 records, all five displayed lanes, example counts and metadata, within-lane translation uniqueness, regional sequence cloning, Japanese reading/example duplication, equivalent metadata, and the divider branch shape. The test is a guardrail; it does not replace the row-by-row semantic review.

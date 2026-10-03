@@ -271,7 +271,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "正",
@@ -326,10 +328,10 @@
       ],
       "examples": [
         {
-          "text": "正しい",
-          "reading": "tadashii",
-          "translation": "correct / right",
-          "speechText": "正しい",
+          "text": "正門",
+          "reading": "seimon",
+          "translation": "main gate",
+          "speechText": "正門",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -338,20 +340,15 @@
           "introducedSymbols": [
             "正"
           ],
-          "kanaReading": "ただしい",
-          "coversReadings": [
-            "ただしい"
-          ],
+          "kanaReading": "せいもん",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "正",
-              "reading": "ただ"
-            },
-            {
-              "text": "しい"
+              "text": "正門",
+              "reading": "せいもん"
             }
           ],
-          "furiganaHtml": "<ruby>正<rt>ただ</rt></ruby>しい"
+          "furiganaHtml": "<ruby>正門<rt>せいもん</rt></ruby>"
         },
         {
           "text": "正解",

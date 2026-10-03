@@ -155,16 +155,18 @@
           ]
         },
         {
-          "text": "少年",
-          "reading": "shàonián",
-          "translation": "young person / youth",
-          "speechText": "少年",
+          "text": "少量",
+          "reading": "shǎoliàng",
+          "translation": "small quantity",
+          "speechText": "少量",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "少"
+          ]
         },
         {
           "text": "今天人很少。",
@@ -211,16 +213,18 @@
           ]
         },
         {
-          "text": "少年",
-          "reading": "siu3 nin4",
-          "translation": "young person / youth",
-          "speechText": "少年",
+          "text": "少少",
+          "reading": "siu2 siu2",
+          "translation": "a little",
+          "speechText": "少少",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "少"
+          ]
         },
         {
           "text": "今日好少人。",
@@ -259,7 +263,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "少",
@@ -303,10 +309,10 @@
       ],
       "examples": [
         {
-          "text": "少ない",
-          "reading": "sukunai",
-          "translation": "few / little",
-          "speechText": "少ない",
+          "text": "少量",
+          "reading": "shōryō",
+          "translation": "small quantity",
+          "speechText": "少量",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -315,26 +321,21 @@
           "introducedSymbols": [
             "少"
           ],
-          "kanaReading": "すくない",
-          "coversReadings": [
-            "すくない"
-          ],
+          "kanaReading": "しょうりょう",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "少",
-              "reading": "すく"
-            },
-            {
-              "text": "ない"
+              "text": "少量",
+              "reading": "しょうりょう"
             }
           ],
-          "furiganaHtml": "<ruby>少<rt>すく</rt></ruby>ない"
+          "furiganaHtml": "<ruby>少量<rt>しょうりょう</rt></ruby>"
         },
         {
-          "text": "少し",
-          "reading": "sukoshi",
-          "translation": "a little",
-          "speechText": "少し",
+          "text": "少女",
+          "reading": "shōjo",
+          "translation": "girl",
+          "speechText": "少女",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -343,43 +344,38 @@
           "introducedSymbols": [
             "少"
           ],
-          "kanaReading": "すこし",
-          "coversReadings": [
-            "すこし"
-          ],
+          "kanaReading": "しょうじょ",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "少",
-              "reading": "すこ"
-            },
-            {
-              "text": "し"
+              "text": "少女",
+              "reading": "しょうじょ"
             }
           ],
-          "furiganaHtml": "<ruby>少<rt>すこ</rt></ruby>し"
+          "furiganaHtml": "<ruby>少女<rt>しょうじょ</rt></ruby>"
         },
         {
-          "text": "少数",
-          "reading": "shōsū",
-          "translation": "small number / minority",
-          "speechText": "少数",
+          "text": "少額",
+          "reading": "shōgaku",
+          "translation": "small amount of money",
+          "speechText": "少額",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "しょうすう",
-          "coversReadings": [
-            "ショウ"
+          "introducedSymbols": [
+            "少"
           ],
+          "kanaReading": "しょうがく",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "少数",
-              "reading": "しょうすう"
+              "text": "少額",
+              "reading": "しょうがく"
             }
           ],
-          "furiganaHtml": "<ruby>少数<rt>しょうすう</rt></ruby>"
+          "furiganaHtml": "<ruby>少額<rt>しょうがく</rt></ruby>"
         },
         {
           "text": "少年",

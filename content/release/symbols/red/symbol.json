@@ -247,7 +247,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "赤",
@@ -291,10 +293,10 @@
       ],
       "examples": [
         {
-          "text": "赤い",
-          "reading": "akai",
-          "translation": "red",
-          "speechText": "赤い",
+          "text": "赤面",
+          "reading": "sekimen",
+          "translation": "blushing / embarrassment",
+          "speechText": "赤面",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -303,21 +305,15 @@
           "introducedSymbols": [
             "赤"
           ],
-          "kanaReading": "あかい",
-          "coversReadings": [
-            "あか",
-            "あかい"
-          ],
+          "kanaReading": "せきめん",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "赤",
-              "reading": "あか"
-            },
-            {
-              "text": "い"
+              "text": "赤面",
+              "reading": "せきめん"
             }
           ],
-          "furiganaHtml": "<ruby>赤<rt>あか</rt></ruby>い"
+          "furiganaHtml": "<ruby>赤面<rt>せきめん</rt></ruby>"
         },
         {
           "text": "赤道",

@@ -272,7 +272,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "行",
@@ -338,10 +340,10 @@
       ],
       "examples": [
         {
-          "text": "行く",
-          "reading": "iku",
-          "translation": "go",
-          "speechText": "行く",
+          "text": "行先",
+          "reading": "ikisaki",
+          "translation": "destination",
+          "speechText": "行先",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -350,20 +352,15 @@
           "introducedSymbols": [
             "行"
           ],
-          "kanaReading": "いく",
-          "coversReadings": [
-            "いく"
-          ],
+          "kanaReading": "いきさき",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "行",
-              "reading": "い"
-            },
-            {
-              "text": "く"
+              "text": "行先",
+              "reading": "いきさき"
             }
           ],
-          "furiganaHtml": "<ruby>行<rt>い</rt></ruby>く"
+          "furiganaHtml": "<ruby>行先<rt>いきさき</rt></ruby>"
         },
         {
           "text": "銀行",
@@ -391,53 +388,50 @@
           "furiganaHtml": "<ruby>銀行<rt>ぎんこう</rt></ruby>"
         },
         {
-          "text": "行列",
-          "reading": "gyōretsu",
-          "translation": "line / queue",
-          "speechText": "行列",
+          "text": "行程",
+          "reading": "kōtei",
+          "translation": "itinerary / route",
+          "speechText": "行程",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "ぎょうれつ",
-          "coversReadings": [
-            "ギョウ"
+          "introducedSymbols": [
+            "行"
           ],
+          "kanaReading": "こうてい",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "行列",
-              "reading": "ぎょうれつ"
+              "text": "行程",
+              "reading": "こうてい"
             }
           ],
-          "furiganaHtml": "<ruby>行列<rt>ぎょうれつ</rt></ruby>"
+          "furiganaHtml": "<ruby>行程<rt>こうてい</rt></ruby>"
         },
         {
-          "text": "行う",
-          "reading": "okonau",
-          "translation": "carry out",
-          "speechText": "行う",
+          "text": "行政",
+          "reading": "gyōsei",
+          "translation": "administration",
+          "speechText": "行政",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "おこなう",
-          "coversReadings": [
-            "おこなう"
+          "introducedSymbols": [
+            "行"
           ],
+          "kanaReading": "ぎょうせい",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "行",
-              "reading": "おこな"
-            },
-            {
-              "text": "う"
+              "text": "行政",
+              "reading": "ぎょうせい"
             }
           ],
-          "furiganaHtml": "<ruby>行<rt>おこな</rt></ruby>う"
+          "furiganaHtml": "<ruby>行政<rt>ぎょうせい</rt></ruby>"
         },
         {
           "text": "学校へ行きます。",

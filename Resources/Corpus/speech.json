@@ -247,7 +247,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "言",
@@ -302,10 +304,10 @@
       ],
       "examples": [
         {
-          "text": "言う",
-          "reading": "iu",
-          "translation": "say",
-          "speechText": "言う",
+          "text": "言明",
+          "reading": "genmei",
+          "translation": "statement / declaration",
+          "speechText": "言明",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -314,26 +316,21 @@
           "introducedSymbols": [
             "言"
           ],
-          "kanaReading": "いう",
-          "coversReadings": [
-            "いう"
-          ],
+          "kanaReading": "げんめい",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "言",
-              "reading": "い"
-            },
-            {
-              "text": "う"
+              "text": "言明",
+              "reading": "げんめい"
             }
           ],
-          "furiganaHtml": "<ruby>言<rt>い</rt></ruby>う"
+          "furiganaHtml": "<ruby>言明<rt>げんめい</rt></ruby>"
         },
         {
-          "text": "言葉",
-          "reading": "kotoba",
-          "translation": "word / language",
-          "speechText": "言葉",
+          "text": "言動",
+          "reading": "gendō",
+          "translation": "words and actions",
+          "speechText": "言動",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -342,17 +339,15 @@
           "introducedSymbols": [
             "言"
           ],
-          "kanaReading": "ことば",
-          "coversReadings": [
-            "こと"
-          ],
+          "kanaReading": "げんどう",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "言葉",
-              "reading": "ことば"
+              "text": "言動",
+              "reading": "げんどう"
             }
           ],
-          "furiganaHtml": "<ruby>言葉<rt>ことば</rt></ruby>"
+          "furiganaHtml": "<ruby>言動<rt>げんどう</rt></ruby>"
         },
         {
           "text": "言語",

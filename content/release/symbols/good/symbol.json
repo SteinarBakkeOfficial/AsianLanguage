@@ -265,7 +265,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "好",
@@ -310,10 +312,10 @@
       ],
       "examples": [
         {
-          "text": "好き",
-          "reading": "suki",
-          "translation": "like / favorite",
-          "speechText": "好き",
+          "text": "好調",
+          "reading": "kōchō",
+          "translation": "in good condition",
+          "speechText": "好調",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -322,20 +324,15 @@
           "introducedSymbols": [
             "好"
           ],
-          "kanaReading": "すき",
-          "coversReadings": [
-            "すく"
-          ],
+          "kanaReading": "こうちょう",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "好",
-              "reading": "す"
-            },
-            {
-              "text": "き"
+              "text": "好調",
+              "reading": "こうちょう"
             }
           ],
-          "furiganaHtml": "<ruby>好<rt>す</rt></ruby>き"
+          "furiganaHtml": "<ruby>好調<rt>こうちょう</rt></ruby>"
         },
         {
           "text": "好み",
@@ -386,30 +383,27 @@
           "furiganaHtml": "<ruby>好意<rt>こうい</rt></ruby>"
         },
         {
-          "text": "好む",
-          "reading": "konomu",
-          "translation": "prefer",
-          "speechText": "好む",
+          "text": "好景気",
+          "reading": "kōkeiki",
+          "translation": "prosperity / boom",
+          "speechText": "好景気",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "このむ",
-          "coversReadings": [
-            "このむ"
+          "introducedSymbols": [
+            "好"
           ],
+          "kanaReading": "こうけいき",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "好",
-              "reading": "この"
-            },
-            {
-              "text": "む"
+              "text": "好景気",
+              "reading": "こうけいき"
             }
           ],
-          "furiganaHtml": "<ruby>好<rt>この</rt></ruby>む"
+          "furiganaHtml": "<ruby>好景気<rt>こうけいき</rt></ruby>"
         },
         {
           "text": "私は水が好きです。",

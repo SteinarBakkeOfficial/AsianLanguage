@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "取錢",
-          "reading": "qǔqián",
-          "translation": "withdraw money",
-          "speechText": "取錢",
+          "text": "取票",
+          "reading": "qǔpiào",
+          "translation": "take a ticket",
+          "speechText": "取票",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "取"
+          ]
         },
         {
           "text": "請取一張票。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "取錢",
-          "reading": "ceoi2 cin4",
-          "translation": "withdraw money",
-          "speechText": "取錢",
+          "text": "取笑",
+          "reading": "ceoi2 siu3",
+          "translation": "make fun of",
+          "speechText": "取笑",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "取"
+          ]
         },
         {
           "text": "請取一張票。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "取",
@@ -280,10 +286,10 @@
       ],
       "examples": [
         {
-          "text": "取る",
-          "reading": "toru",
-          "translation": "take",
-          "speechText": "取る",
+          "text": "取り消す",
+          "reading": "torikesu",
+          "translation": "cancel / revoke",
+          "speechText": "取り消す",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -292,20 +298,15 @@
           "introducedSymbols": [
             "取"
           ],
-          "kanaReading": "とる",
-          "coversReadings": [
-            "とる"
-          ],
+          "kanaReading": "とりけす",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "取",
-              "reading": "と"
-            },
-            {
-              "text": "る"
+              "text": "取り消す",
+              "reading": "とりけす"
             }
           ],
-          "furiganaHtml": "<ruby>取<rt>と</rt></ruby>る"
+          "furiganaHtml": "<ruby>取り消す<rt>とりけす</rt></ruby>"
         },
         {
           "text": "取得",

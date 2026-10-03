@@ -241,7 +241,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "光",
@@ -330,30 +332,27 @@
           "furiganaHtml": "<ruby>光線<rt>こうせん</rt></ruby>"
         },
         {
-          "text": "光る",
-          "reading": "hikaru",
-          "translation": "shine",
-          "speechText": "光る",
+          "text": "光景",
+          "reading": "kōkei",
+          "translation": "scene / sight",
+          "speechText": "光景",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "ひかる",
-          "coversReadings": [
-            "ひかる"
+          "introducedSymbols": [
+            "光"
           ],
+          "kanaReading": "こうけい",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "光",
-              "reading": "ひか"
-            },
-            {
-              "text": "る"
+              "text": "光景",
+              "reading": "こうけい"
             }
           ],
-          "furiganaHtml": "<ruby>光<rt>ひか</rt></ruby>る"
+          "furiganaHtml": "<ruby>光景<rt>こうけい</rt></ruby>"
         },
         {
           "text": "光が見えます。",

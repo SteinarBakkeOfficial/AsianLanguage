@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "產品",
-          "reading": "chǎnpǐn",
-          "translation": "product",
-          "speechText": "產品",
+          "text": "物價",
+          "reading": "wùjià",
+          "translation": "commodity prices",
+          "speechText": "物價",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "品"
+          ]
         },
         {
           "text": "這個產品很好。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "產品",
-          "reading": "caan2 ban2",
-          "translation": "product",
-          "speechText": "產品",
+          "text": "物業",
+          "reading": "mat6 jip6",
+          "translation": "property",
+          "speechText": "物業",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "品"
+          ]
         },
         {
           "text": "呢件產品幾好。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "品",
@@ -280,10 +286,10 @@
       ],
       "examples": [
         {
-          "text": "商品",
-          "reading": "shōhin",
-          "translation": "product / goods",
-          "speechText": "商品",
+          "text": "物語",
+          "reading": "monogatari",
+          "translation": "story / tale",
+          "speechText": "物語",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -292,17 +298,15 @@
           "introducedSymbols": [
             "品"
           ],
-          "kanaReading": "しょうひん",
-          "coversReadings": [
-            "ヒン"
-          ],
+          "kanaReading": "ものがたり",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "商品",
-              "reading": "しょうひん"
+              "text": "物語",
+              "reading": "ものがたり"
             }
           ],
-          "furiganaHtml": "<ruby>商品<rt>しょうひん</rt></ruby>"
+          "furiganaHtml": "<ruby>物語<rt>ものがたり</rt></ruby>"
         },
         {
           "text": "品質",

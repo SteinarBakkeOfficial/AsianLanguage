@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "多少",
-          "reading": "duōshao",
-          "translation": "how many / how much",
-          "speechText": "多少",
+          "text": "多數",
+          "reading": "duōshù",
+          "translation": "majority",
+          "speechText": "多數",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "多"
+          ]
         },
         {
           "text": "這裡人很多。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "多少",
-          "reading": "do1 siu2",
-          "translation": "how many / how much",
-          "speechText": "多少",
+          "text": "多謝",
+          "reading": "do1 ze6",
+          "translation": "thank you",
+          "speechText": "多謝",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "多"
+          ]
         },
         {
           "text": "呢度好多人。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "多",
@@ -280,10 +286,10 @@
       ],
       "examples": [
         {
-          "text": "多い",
-          "reading": "ōi",
-          "translation": "many / much",
-          "speechText": "多い",
+          "text": "多額",
+          "reading": "tagaku",
+          "translation": "large sum",
+          "speechText": "多額",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -292,20 +298,15 @@
           "introducedSymbols": [
             "多"
           ],
-          "kanaReading": "おおい",
-          "coversReadings": [
-            "おおい"
-          ],
+          "kanaReading": "たがく",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "多",
-              "reading": "おお"
-            },
-            {
-              "text": "い"
+              "text": "多額",
+              "reading": "たがく"
             }
           ],
-          "furiganaHtml": "<ruby>多<rt>おお</rt></ruby>い"
+          "furiganaHtml": "<ruby>多額<rt>たがく</rt></ruby>"
         },
         {
           "text": "多数",

@@ -744,3 +744,15 @@ The change set does not include History, Quick Review, Home layout, Browse/Searc
 ### Taiwan divider clarification — 2026-10-03
 
 The suspected missing Taiwan divider was traced to presentation conditions, not missing content. The divider above the Taiwan subsection is intentionally suppressed; the divider below a Taiwan reading should render when readings and examples exist, and `horn` has both. No symbol-specific content or UI workaround was applied. If that lower divider is absent in an Apple build, verify the build/rendering result before changing the renderer.
+
+### Current corrective pass — example quality across all 126 Symbols — 2026-10-03
+
+- Implemented a full symbol-by-symbol example-quality correction, not only an audit of the reported Clothing, Bow, and Show examples.
+- Replaced repeated or cloned example meanings across all five target-language lanes while retaining four or five useful examples per lane. Direct lexical words remain in equivalent/native sections; narrower compounds remain examples with complete glosses.
+- Removed all complete Simplified/Taiwan/Hong Kong example-sequence clones and all within-lane duplicate normalized English meanings. Japanese standalone-reading examples that merely repeated their reading glosses were replaced with contextual compounds or sentences.
+- Removed duplicate equivalent/native rows from the legacy source projection, corrected the cleanup utility’s Clothing idempotence guard, and verified a second run changes zero files.
+- Normalized every single-row equivalent/native collection to a JSON array so runtime decoding cannot confuse one `CharacterReading` with the collection itself.
+- Fixed the Traditional Chinese divider branch so the divider appears beneath the complete reading/equivalent block exactly once.
+- Added `Tests/ExampleQuality.Tests.ps1` to the standard check suite. Canonical/runtime usage parity and the full Windows check suite pass.
+- Scope remains Symbol-page content/runtime synchronization plus the focused Symbol usage renderer and its regression checks. Home, History, Quick Review, Browse, onboarding, More/Settings/About, navigation, and unrelated UI remain unchanged.
+- Apple/Xcode simulator/device verification remains outstanding and is required before describing the build as visually release-verified.

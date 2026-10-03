@@ -143,16 +143,18 @@
           ]
         },
         {
-          "text": "上衣",
-          "reading": "shàngyī",
-          "translation": "top / jacket",
-          "speechText": "上衣",
+          "text": "上旬",
+          "reading": "shàngxún",
+          "translation": "first ten days of the month",
+          "speechText": "上旬",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "上"
+          ]
         },
         {
           "text": "書在桌子上。",
@@ -199,16 +201,18 @@
           ]
         },
         {
-          "text": "上衣",
-          "reading": "soeng6 ji1",
-          "translation": "top / jacket",
-          "speechText": "上衣",
+          "text": "上班",
+          "reading": "soeng6 baan1",
+          "translation": "go to work",
+          "speechText": "上班",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "上"
+          ]
         },
         {
           "text": "本書喺枱上面。",
@@ -247,7 +251,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "上",
@@ -335,10 +341,10 @@
       ],
       "examples": [
         {
-          "text": "上る",
-          "reading": "noboru",
-          "translation": "go up / climb",
-          "speechText": "上る",
+          "text": "上記",
+          "reading": "jōki",
+          "translation": "above-mentioned",
+          "speechText": "上記",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -347,20 +353,15 @@
           "introducedSymbols": [
             "上"
           ],
-          "kanaReading": "のぼる",
-          "coversReadings": [
-            "のぼる"
-          ],
+          "kanaReading": "じょうき",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "上",
-              "reading": "のぼ"
-            },
-            {
-              "text": "る"
+              "text": "上記",
+              "reading": "じょうき"
             }
           ],
-          "furiganaHtml": "<ruby>上<rt>のぼ</rt></ruby>る"
+          "furiganaHtml": "<ruby>上記<rt>じょうき</rt></ruby>"
         },
         {
           "text": "上司",
@@ -386,30 +387,27 @@
           "furiganaHtml": "<ruby>上司<rt>じょうし</rt></ruby>"
         },
         {
-          "text": "上がる",
-          "reading": "agaru",
-          "translation": "rise / go up",
-          "speechText": "上がる",
+          "text": "上空",
+          "reading": "jōkū",
+          "translation": "sky above",
+          "speechText": "上空",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "あがる",
-          "coversReadings": [
-            "あがる"
+          "introducedSymbols": [
+            "上"
           ],
+          "kanaReading": "じょうくう",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "上",
-              "reading": "あ"
-            },
-            {
-              "text": "がる"
+              "text": "上空",
+              "reading": "じょうくう"
             }
           ],
-          "furiganaHtml": "<ruby>上<rt>あ</rt></ruby>がる"
+          "furiganaHtml": "<ruby>上空<rt>じょうくう</rt></ruby>"
         },
         {
           "text": "上着",

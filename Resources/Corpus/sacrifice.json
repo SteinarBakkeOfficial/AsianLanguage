@@ -115,10 +115,10 @@
       ],
       "taiwanExamples": [
         {
-          "text": "祭祀",
-          "reading": "jìsì",
-          "translation": "ritual worship / sacrifice",
-          "speechText": "祭祀",
+          "text": "祭典",
+          "reading": "jìdiǎn",
+          "translation": "ritual ceremony",
+          "speechText": "祭典",
           "speechLanguage": "mandarin",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -171,10 +171,10 @@
       ],
       "hongKongExamples": [
         {
-          "text": "祭祀",
-          "reading": "zai3 zi6",
-          "translation": "ritual worship / sacrifice",
-          "speechText": "祭祀",
+          "text": "祭品",
+          "reading": "zai3 ban2",
+          "translation": "ritual offering",
+          "speechText": "祭品",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -199,16 +199,18 @@
           ]
         },
         {
-          "text": "祭品",
-          "reading": "zai3 ban2",
-          "translation": "ritual offering",
-          "speechText": "祭品",
+          "text": "祭典",
+          "reading": "zai3 din2",
+          "translation": "ritual ceremony",
+          "speechText": "祭典",
           "speechLanguage": "cantonese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": []
+          "introducedSymbols": [
+            "祭"
+          ]
         },
         {
           "text": "佢哋拜祭祖先。",
@@ -247,7 +249,9 @@
       ],
       "semanticEquivalents": [],
       "orthographicVariants": [],
-      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL"
+      "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
+      "taiwanSemanticEquivalents": [],
+      "hongKongSemanticEquivalents": []
     },
     "japanese": {
       "form": "祭",
@@ -291,10 +295,10 @@
       ],
       "examples": [
         {
-          "text": "祭り",
-          "reading": "matsuri",
-          "translation": "festival",
-          "speechText": "祭り",
+          "text": "祭壇",
+          "reading": "saidan",
+          "translation": "altar",
+          "speechText": "祭壇",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
@@ -303,20 +307,15 @@
           "introducedSymbols": [
             "祭"
           ],
-          "kanaReading": "まつり",
-          "coversReadings": [
-            "まつり"
-          ],
+          "kanaReading": "さいだん",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "祭",
-              "reading": "まつ"
-            },
-            {
-              "text": "り"
+              "text": "祭壇",
+              "reading": "さいだん"
             }
           ],
-          "furiganaHtml": "<ruby>祭<rt>まつ</rt></ruby>り"
+          "furiganaHtml": "<ruby>祭壇<rt>さいだん</rt></ruby>"
         },
         {
           "text": "文化祭",
@@ -364,30 +363,27 @@
           "furiganaHtml": "<ruby>祭日<rt>さいじつ</rt></ruby>"
         },
         {
-          "text": "祭る",
-          "reading": "matsuru",
-          "translation": "enshrine / worship",
-          "speechText": "祭る",
+          "text": "祭礼",
+          "reading": "sairei",
+          "translation": "ritual ceremony",
+          "speechText": "祭礼",
           "speechLanguage": "japanese",
           "showsCoreMeaning": true,
           "exampleLevel": "word",
           "parallelExampleGroupID": null,
           "reusesKnownSymbols": [],
-          "introducedSymbols": [],
-          "kanaReading": "まつる",
-          "coversReadings": [
-            "まつる"
+          "introducedSymbols": [
+            "祭"
           ],
+          "kanaReading": "さいれい",
+          "coversReadings": [],
           "furiganaSegments": [
             {
-              "text": "祭",
-              "reading": "まつ"
-            },
-            {
-              "text": "る"
+              "text": "祭礼",
+              "reading": "さいれい"
             }
           ],
-          "furiganaHtml": "<ruby>祭<rt>まつ</rt></ruby>る"
+          "furiganaHtml": "<ruby>祭礼<rt>さいれい</rt></ruby>"
         },
         {
           "text": "夏祭りに行きます。",

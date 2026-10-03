@@ -251,3 +251,33 @@ The focused model/view addition is limited to Symbol target-language pages: Simp
 - The Symbol renderer intentionally suppresses the divider above the Taiwan subsection (`showTopDivider: false`); Hong Kong receives the inter-region divider when Taiwan is present.
 - The divider directly below the Taiwan reading is conditional on a non-empty reading/equivalent list and non-empty examples. `horn` satisfies that condition, so it should render there.
 - No content workaround or symbol-specific exception was added. If the divider below the Pinyin row is absent in a device build, the remaining issue is a build/rendering discrepancy and must be verified in the Apple/Xcode build before changing the UI.
+
+## Example-quality correction pass — 2026-10-03
+
+The latest testing showed that the previous semantic pass was not sufficient: it had corrected several direct-meaning rows but had not enforced the quality of the complete example sets. This corrective pass was implemented across every Symbol and every displayed lane, rather than treating Clothing, Bow, Show, or any other reported example as isolated.
+
+### Applied changes
+
+- Replaced cloned and repeated example meanings in Simplified Chinese, Taiwan Mandarin, Hong Kong Cantonese, Japanese, and Korean while preserving four or five examples per lane.
+- Replaced every complete cloned Simplified/Taiwan/Hong Kong translation sequence. Regional overlap remains where it teaches a real written-form, pronunciation, or usage relationship, but no lane is now a copy of the other two.
+- Replaced within-lane duplicate translations so a second example contributes a different word, phrase, or sentence rather than repeating the first example’s meaning.
+- Reclassified direct lexical words where appropriate as semantic/native equivalents and supplied replacement context examples. Narrower compounds remain examples and now retain their complete English meaning instead of being shortened to the same word as the Symbol header.
+- Replaced Japanese standalone-reading examples that merely repeated the On/Kun reading gloss with useful compounds or sentences. The same written graph with a different pronunciation remains a reading; it was not incorrectly turned into an equivalent.
+- Kept the longest sentence last where a lane contains one.
+- Changed the Traditional Chinese Symbol-page divider branch so the full reading/equivalent block receives one divider beneath it, with no second divider between readings and equivalents.
+
+### Full-corpus verification results
+
+- 126 canonical Symbols checked; 126 runtime records synchronized.
+- Simplified/Taiwan/Hong Kong complete-sequence clones: **0**.
+- Within-lane duplicate normalized English meanings: **0**.
+- Duplicate equivalent/native rows: **0**; the cleanup script was rerun and changed zero files on its idempotence check.
+- Non-array equivalent/native collections: **0** in both canonical and runtime JSON; single-row collections were explicitly checked against the Swift `[CharacterReading]` contract.
+- Japanese examples duplicating the exact gloss of a reading: **0**.
+- Every lane contains four or five examples with written text, reading, translation, speech text, and expected language metadata.
+- Equivalent rows contain required writing, reading, translation, and speech metadata.
+- Canonical and generated runtime usage projections match for every record.
+- Canonical `focusCoverage` and generated runtime `focusCoverage` match for all 126 records after the final import.
+- `Tests/ExampleQuality.Tests.ps1` passes and is included in `Tools/Run-Checks.ps1` so this failure mode cannot silently return.
+
+The quality checks are structural and editorial consistency guardrails; they do not claim independent native-speaker or Apple/Xcode visual verification. No History, Home, Quick Review, Browse, onboarding, More/Settings, navigation, or unrelated UI was changed in this pass.

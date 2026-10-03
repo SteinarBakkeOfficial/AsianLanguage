@@ -615,16 +615,15 @@ struct UsageExamplesView: View {
                     englishGloss: reading.gloss
                 )
             }
-            if (!readings.isEmpty || !equivalents.isEmpty) && !examples.isEmpty {
-                Divider()
-                    .padding(.vertical, AppSpacing.space2xs)
-            }
             if !equivalents.isEmpty {
                 semanticEquivalentSection(equivalents, fontRole: .traditionalChinese)
                 if !examples.isEmpty {
                     Divider()
                         .padding(.vertical, AppSpacing.space2xs)
                 }
+            } else if !readings.isEmpty && !examples.isEmpty {
+                Divider()
+                    .padding(.vertical, AppSpacing.space2xs)
             }
             ForEach(displayExamples(
                 examples,
