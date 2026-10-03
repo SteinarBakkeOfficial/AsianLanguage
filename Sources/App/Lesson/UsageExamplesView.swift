@@ -250,24 +250,20 @@ struct UsageExamplesView: View {
                     .foregroundStyle(AppColors.textSecondary)
             }
             HStack(alignment: .bottom, spacing: AppSpacing.spaceSm) {
-                VStack(alignment: .leading, spacing: 0) {
-                    if let furigana, !furigana.isEmpty {
-                        Text(furigana)
-                            .font(CJKFontRole.japanese.font(size: 10))
-                            .foregroundStyle(AppColors.textSecondary)
-                            .frame(minHeight: 14, alignment: .bottom)
-                    } else {
-                        Color.clear.frame(height: 14)
-                    }
-                    Text(writtenForm)
-                        .font(CJKFontRole.japanese.font(size: 22).weight(.medium))
-                        .foregroundStyle(AppColors.textPrimary)
-                    if let romanization = reading.romanization, !romanization.isEmpty {
-                        Text(romanization)
-                            .font(AppTypography.caption)
-                            .foregroundStyle(AppColors.textSecondary)
-                    }
+                if let furigana, !furigana.isEmpty {
+                    Text(furigana)
+                        .font(CJKFontRole.japanese.font(size: 10))
+                        .foregroundStyle(AppColors.textSecondary)
+                        .frame(minHeight: 14, alignment: .bottom)
+                } else {
+                    Color.clear.frame(height: 14)
                 }
+                Spacer(minLength: AppSpacing.spaceSm)
+            }
+            HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
+                Text(writtenForm)
+                    .font(CJKFontRole.japanese.font(size: 22).weight(.medium))
+                    .foregroundStyle(AppColors.textPrimary)
                 Spacer(minLength: AppSpacing.spaceSm)
                 if let englishGloss, !englishGloss.isEmpty {
                     Text(englishGloss)
@@ -277,6 +273,11 @@ struct UsageExamplesView: View {
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 }
                 PronunciationButton(reading: reading)
+            }
+            if let romanization = reading.romanization, !romanization.isEmpty {
+                Text(romanization)
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColors.textSecondary)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)

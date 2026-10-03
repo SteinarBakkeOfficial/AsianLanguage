@@ -774,3 +774,22 @@ The suspected missing Taiwan divider was traced to presentation conditions, not 
 - Corrected only Japanese Symbol-page data: inaccurate compound-derived glosses, awkward reading glosses, one duplicate equivalent/reading row, repeated filler examples, and one `田園` kana/romanization typo.
 - Re-imported the generated runtime corpus. Japanese missing glosses, duplicate example meanings, and equivalent/reading duplicates now report zero.
 - No Home, History, Quick Review, Browse, onboarding, More/Settings/About, navigation, or unrelated SwiftUI changes were made by this audit. Apple/Xcode visual verification remains separate.
+
+### Final Japanese header and Follow examples correction — 2026-10-04
+
+- Japanese header glosses now align with the written Kanji row; furigana remains above and romanization below.
+- Follow’s Simplified Chinese, Taiwan Mandarin, and Hong Kong Cantonese lanes now use distinct example sets instead of repeating the same complete sequence.
+- Runtime data and focused regression checks were updated. Scope remains limited to Symbol pages; Apple/Xcode visual verification remains separate.
+
+### Chinese regional example diversity follow-up — 2026-10-04
+
+- Re-audited all 126 Symbols across only the three Chinese Symbol-page example lanes: Simplified Chinese, Traditional Chinese Taiwan Mandarin, and Traditional Chinese Hong Kong Cantonese.
+- The earlier overlap check was insufficient because it only rejected one complete three-lane sequence. The new audit compared every Chinese lane pair and found 53 Symbols with at least one four-meaning clone; 58 Taiwan/Hong Kong example rows were replaced with reviewed regional words or sentences.
+- Two shared examples remain acceptable where they teach a useful relationship, and occasional three-way overlap remains acceptable. No Chinese lane pair now shares all four example meanings, and no pair retains a complete translation sequence clone.
+- Re-imported canonical source into the generated runtime corpus and added a regression assertion for the four-meaning limit. Japanese, Korean, readings, equivalents, headers, and all non-Symbol pages were not changed by this follow-up.
+
+### Chinese regional example overlap reduction — 2026-10-04
+
+- The follow-up was extended to the user-approved “two is fine, three is occasional” threshold. Across the two scoped correction maps, 191 explicit Taiwan/Hong Kong row replacements were applied across 121 of the 126 Symbols; five Symbols already met the overlap target.
+- Final normalized-meaning audit: three-shared overlaps remain in 42 Simplified/Taiwan pairs, 42 Simplified/Hong Kong pairs, and 31 Taiwan/Hong Kong pairs; no Chinese lane pair shares four or more meanings. Complete translation-sequence clones remain at zero.
+- All replacements remain inside the three Chinese Symbol-page example arrays. Japanese, Korean, readings, equivalents, headers, historical stages, and every non-Symbol page remain outside this pass.

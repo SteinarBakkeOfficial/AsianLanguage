@@ -126,6 +126,23 @@ foreach ($sourceFile in $sourceFiles) {
   if ($sMeanings -eq $twMeanings -and $sMeanings -eq $hkMeanings) {
     throw "$id clones the complete Simplified/Taiwan/Hong Kong example-meaning sequence."
   }
+
+  # Chinese lanes may share useful meanings, but no pair may reuse four
+  # meanings in one Symbol. This keeps the fourth teaching slot regional
+  # without forcing artificial differences into otherwise natural examples.
+  $chineseLanes = @(
+    [pscustomobject]@{ name = "S"; meanings = @($coverage.simplifiedChinese.examples | ForEach-Object { Normalize-Meaning $_.translation }) },
+    [pscustomobject]@{ name = "TW"; meanings = @($coverage.traditionalChinese.taiwanExamples | ForEach-Object { Normalize-Meaning $_.translation }) },
+    [pscustomobject]@{ name = "HK"; meanings = @($coverage.traditionalChinese.hongKongExamples | ForEach-Object { Normalize-Meaning $_.translation }) }
+  )
+  for ($leftIndex = 0; $leftIndex -lt $chineseLanes.Count; $leftIndex++) {
+    for ($rightIndex = $leftIndex + 1; $rightIndex -lt $chineseLanes.Count; $rightIndex++) {
+      $sharedMeanings = @($chineseLanes[$leftIndex].meanings | Where-Object { $chineseLanes[$rightIndex].meanings -contains $_ } | Sort-Object -Unique)
+      if ($sharedMeanings.Count -ge 4) {
+        throw "$id [$($chineseLanes[$leftIndex].name)/$($chineseLanes[$rightIndex].name)] reuses four or more Chinese example meanings: $($sharedMeanings -join ', ')."
+      }
+    }
+  }
 }
 
 $semanticAuditExpectations = @{
@@ -143,6 +160,12 @@ $requiredJapaneseReplacementExamples = @{
   "middle" = "中身"
   "reach" = "及第"
   "things-goods" = "食品"
+}
+
+$followExpectedExamples = @{
+  "simplifiedChinese" = @("从前", "从属", "我从家里来。", "跟随")
+  "taiwanExamples" = @("從前", "從事", "我從家裡來。", "從不")
+  "hongKongExamples" = @("從前", "從來", "我從屋企嚟。", "從未")
 }
 
 foreach ($sourceFile in $sourceFiles) {
@@ -167,6 +190,20 @@ foreach ($sourceFile in $sourceFiles) {
       throw "$($record.id) [J] is missing the reviewed replacement example '$replacement'."
     }
   }
+
+  if ([string]$record.id -eq "follow") {
+    foreach ($laneName in $followExpectedExamples.Keys) {
+      $laneExamples = switch ($laneName) {
+        "simplifiedChinese" { @($record.focusCoverage.simplifiedChinese.examples) }
+        "taiwanExamples" { @($record.focusCoverage.traditionalChinese.taiwanExamples) }
+        "hongKongExamples" { @($record.focusCoverage.traditionalChinese.hongKongExamples) }
+      }
+      $expected = $followExpectedExamples[$laneName]
+      if ((@($laneExamples | ForEach-Object { [string]$_.text }) -join "|") -ne ($expected -join "|")) {
+        throw "follow [$laneName] does not contain the approved distinct regional example set."
+      }
+    }
+  }
 }
 
 $usagePath = Join-Path $repoRoot "Sources/App/Lesson/UsageExamplesView.swift"
@@ -185,6 +222,9 @@ if (-not $usageText.Contains("private func japaneseReadingRow(") -or
     -not $usageText.Contains("reading.writtenForm") -or
     -not $usageText.Contains("reading.furigana")) {
   throw "Japanese reading rows must render actual written forms with furigana."
+}
+if (-not $usageText.Contains("HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm)")) {
+  throw "Japanese header glosses must share the written-form baseline rather than the romanization line."
 }
 
 Write-Output "OK: example quality audit passed for 126 Symbols and the Traditional Chinese divider branch."

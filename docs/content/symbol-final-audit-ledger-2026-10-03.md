@@ -316,3 +316,38 @@ Verification after synchronization:
 - Japanese equivalent rows duplicating a reading with the same written form and gloss: 0.
 - Canonical source and generated runtime corpus were re-imported and checked.
 - This is a corpus/editorial audit, not independent native-speaker sign-off or Apple/Xcode visual verification.
+
+### Final Japanese header alignment and Follow example correction — 2026-10-04
+
+- Japanese Symbol-page header glosses now align with the actual written Kanji line. Furigana remains above the Kanji, and romanization remains below it; the gloss no longer aligns with the romanization line.
+- Follow’s Simplified Chinese, Taiwan Mandarin, and Hong Kong Cantonese example lanes no longer reuse the same complete sequence. Two natural overlaps remain, while the remaining entries now teach distinct regional compounds or usage:
+  - Simplified: `从前`, `从属`, `我从家里来。`, `跟随`.
+  - Taiwan: `從前`, `從事`, `我從家裡來。`, `從不`.
+  - Hong Kong: `從前`, `从來`, `我從屋企嚟。`, `從未`.
+- Scope was limited to the Japanese Symbol-page renderer, Follow’s canonical Symbol content, generated runtime data, and focused regression checks. No other Symbol, language lane, or app page was changed by this correction.
+
+### Chinese regional example diversity follow-up — 2026-10-04
+
+The next test exposed that the prior “complete sequence clone” check was too narrow: it compared only the one sequence shared by all three Chinese lanes and did not reject pairwise four-meaning reuse. This follow-up audited every one of the 126 Symbols in the three requested Chinese example lanes only:
+
+- Simplified Chinese / Mandarin
+- Traditional Chinese / Taiwan Mandarin
+- Traditional Chinese / Hong Kong Cantonese
+
+The audit identified 53 Symbols with at least one pair sharing all four example meanings and applied 58 row-level replacements in the Taiwan or Hong Kong lane. The replacements are regional words or sentences with their own readings and complete English glosses; they are not cosmetic script substitutions. Useful overlap remains where two examples teach a real shared usage, and three-way overlap is not mechanically removed, but no Chinese lane pair now shares four example meanings or a complete translation sequence.
+
+Canonical source and generated runtime usage data were re-imported. A regression assertion now rejects four-or-more shared normalized meanings in any Simplified/Taiwan/Hong Kong pair. This follow-up did not change Japanese, Korean, readings, equivalents, headers, historical stages, or any non-Symbol page.
+
+### Chinese regional overlap reduction — 2026-10-04
+
+The first regional pass correctly removed four-meaning clones but still left three shared meanings as the normal case. Because the approved rule allows two shared examples and only occasional three-way overlap, a second symbol-by-symbol pass was applied to the same three Chinese example lanes. It added 191 explicit row-level replacements across 121 Symbols; five Symbols already met the requested threshold.
+
+Final audit results for all 126 Symbols:
+
+- Three shared normalized meanings: 42 Simplified/Taiwan pairs, 42 Simplified/Hong Kong pairs, and 31 Taiwan/Hong Kong pairs.
+- Four or more shared normalized meanings: 0 pairs.
+- Complete Chinese translation-sequence clones: 0 pairs.
+- Within-lane duplicate normalized English meanings: 0.
+- Every lane still contains four or five examples with complete reading, English gloss, speech text, and language metadata.
+
+The added examples were selected as regional words or sentences, including Taiwan Mandarin compounds and Hong Kong Cantonese vocabulary/usage, not by changing glosses alone. Canonical source and runtime data were re-imported. This remains strictly a Symbol-page Chinese-example change; Japanese, Korean, readings, equivalents, headers, historical stages, and all other pages are unchanged.
