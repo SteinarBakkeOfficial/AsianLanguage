@@ -231,7 +231,8 @@
           "value": "lì",
           "audioAssetRef": null,
           "speechText": "利",
-          "speechLanguage": "mandarin"
+          "speechLanguage": "mandarin",
+          "gloss": "benefit"
         }
       ],
       "hongKongReadings": [
@@ -240,7 +241,8 @@
           "value": "lei6",
           "audioAssetRef": null,
           "speechText": "利",
-          "speechLanguage": "cantonese"
+          "speechLanguage": "cantonese",
+          "gloss": "benefit"
         }
       ],
       "semanticEquivalents": [],
@@ -514,7 +516,27 @@
           "romanization": "i"
         }
       ],
-      "semanticEquivalents": [],
+      "semanticEquivalents": [
+        {
+          "system": "semanticEquivalent",
+          "value": "이롭다 — iropda",
+          "audioAssetRef": null,
+          "speechText": "이롭다",
+          "speechLanguage": "korean",
+          "nativeReading": "이롭다",
+          "romanization": "iropda",
+          "relationship": "Korean everyday equivalent; not a reading of the Hanja character.",
+          "gloss": "be beneficial",
+          "displayTier": "secondary",
+          "lexicalOrigin": "sinoKorean",
+          "lexicalOriginVerification": {
+            "status": "V3 RECONCILED",
+            "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+            "source": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=24822",
+            "note": "The dictionary identifies 이롭다 as meaning beneficial/helpful and derives it from 利; it is shown as an everyday Korean equivalent, not as the Hanja pronunciation."
+          }
+        }
+      ],
       "orthographicVariants": [],
       "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
       "primaryDisplayReading": {

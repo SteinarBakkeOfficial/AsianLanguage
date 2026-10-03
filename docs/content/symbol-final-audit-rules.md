@@ -270,3 +270,9 @@ This pass addressed the remaining issues identified during the Symbol-page revie
 - The source and generated runtime corpus were re-synchronized after the corrections. No History, Home, Quick Review, Browse, onboarding, More/Settings, navigation, or unrelated layout change was part of this pass.
 
 The semantic pass and local checks are complete. Apple/Xcode simulator and device verification remains the final platform-specific release gate.
+
+## 16. Targeted Korean equivalent correction — 2026-10-03
+
+- Add a separately glossed everyday Korean equivalent when it expresses the Symbol meaning but is not the Hanja reading. `利` therefore includes `이롭다 — iropda` (“be beneficial”).
+- Do not store a Hanja reading again as a semantic equivalent. For `兄`, `형 — hyeong` remains the Hanja reading and only the distinct `오빠 — oppa` equivalent remains in the equivalent list.
+- This correction is Symbol-content-only and does not authorize changes to other records, language lanes, examples, historical stages, or app screens.

@@ -150,3 +150,12 @@ The example-count column is Simplified / Taiwan / Hong Kong / Japanese / Korean.
 - Japanese `コウ` for Mouth now has the reading gloss “mouth”; `人口` remains the separate “population” example.
 - The Japanese furigana renderer now preserves intrinsic spacing, and the Korean word-initial Hanja label is shortened for one-line display.
 - The full Windows validation suite passed after the sweep. Apple/Xcode visual verification remains separate.
+
+## Targeted Korean equivalent correction — 2026-10-03
+
+Two narrowly scoped corrections were approved after the semantic audit:
+
+- Korean `利` now includes `이롭다 — iropda`, glossed as “be beneficial.” It is stored as an everyday Korean semantic equivalent, not as a Hanja reading.
+- Korean `兄` no longer stores `형 — hyeong` as a separate semantic equivalent because it duplicates the Hanja reading. The distinct female-speaker equivalent `오빠 — oppa` remains.
+
+No other Symbol record, language lane, example set, historical stage, or app screen was changed by this correction pass.

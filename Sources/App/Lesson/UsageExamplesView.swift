@@ -180,30 +180,30 @@ struct UsageExamplesView: View {
         writtenForm: String? = nil,
         englishGloss: String? = nil
     ) -> some View {
-        HStack(alignment: .top, spacing: AppSpacing.spaceSm) {
-            VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
-                Text(readingLabel(reading))
-                    .font(AppTypography.metadata)
-                    .foregroundStyle(AppColors.textSecondary)
-                let parts = displayReadingParts(reading, writtenForm: writtenForm)
+        let parts = displayReadingParts(reading, writtenForm: writtenForm)
+        return VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
+            Text(readingLabel(reading))
+                .font(AppTypography.metadata)
+                .foregroundStyle(AppColors.textSecondary)
+            HStack(alignment: .firstTextBaseline, spacing: AppSpacing.spaceSm) {
                 Text(parts.script)
                     .font(fontRole.font(size: 22).weight(.medium))
                     .foregroundStyle(AppColors.textPrimary)
-                if let romanization = parts.romanization {
-                    Text(romanization)
+                Spacer(minLength: AppSpacing.spaceSm)
+                if let englishGloss, !englishGloss.isEmpty {
+                    Text(englishGloss)
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColors.textSecondary)
+                        .multilineTextAlignment(.trailing)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
                 }
+                PronunciationButton(reading: reading)
             }
-            Spacer(minLength: AppSpacing.spaceSm)
-            if let englishGloss, !englishGloss.isEmpty {
-                Text(englishGloss)
+            if let romanization = parts.romanization {
+                Text(romanization)
                     .font(AppTypography.caption)
                     .foregroundStyle(AppColors.textSecondary)
-                    .multilineTextAlignment(.trailing)
-                    .frame(maxWidth: .infinity, alignment: .trailing)
             }
-            PronunciationButton(reading: reading)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }

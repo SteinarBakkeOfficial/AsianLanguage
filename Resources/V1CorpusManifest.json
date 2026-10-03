@@ -214,7 +214,8 @@
             "value": "yī",
             "audioAssetRef": null,
             "speechText": "一",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "one"
           }
         ],
         "hongKongReadings": [
@@ -223,7 +224,8 @@
             "value": "jat1",
             "audioAssetRef": null,
             "speechText": "一",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "one"
           }
         ],
         "semanticEquivalents": [],
@@ -1052,7 +1054,8 @@
             "value": "wǔ",
             "audioAssetRef": null,
             "speechText": "武",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "martial"
           }
         ],
         "hongKongReadings": [
@@ -1061,7 +1064,8 @@
             "value": "mou5",
             "audioAssetRef": null,
             "speechText": "武",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "martial"
           }
         ],
         "semanticEquivalents": [],
@@ -1881,7 +1885,8 @@
             "value": "lì",
             "audioAssetRef": null,
             "speechText": "利",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "benefit"
           }
         ],
         "hongKongReadings": [
@@ -1890,7 +1895,8 @@
             "value": "lei6",
             "audioAssetRef": null,
             "speechText": "利",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "benefit"
           }
         ],
         "semanticEquivalents": [],
@@ -2164,7 +2170,27 @@
             "romanization": "i"
           }
         ],
-        "semanticEquivalents": [],
+        "semanticEquivalents": [
+          {
+            "system": "semanticEquivalent",
+            "value": "이롭다 — iropda",
+            "audioAssetRef": null,
+            "speechText": "이롭다",
+            "speechLanguage": "korean",
+            "nativeReading": "이롭다",
+            "romanization": "iropda",
+            "relationship": "Korean everyday equivalent; not a reading of the Hanja character.",
+            "gloss": "be beneficial",
+            "displayTier": "secondary",
+            "lexicalOrigin": "sinoKorean",
+            "lexicalOriginVerification": {
+              "status": "V3 RECONCILED",
+              "authority": "National Institute of Korean Language / Korean Basic Dictionary",
+              "source": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=24822",
+              "note": "The dictionary identifies 이롭다 as meaning beneficial/helpful and derives it from 利; it is shown as an everyday Korean equivalent, not as the Hanja pronunciation."
+            }
+          }
+        ],
         "orthographicVariants": [],
         "languageDisplaySchemaVersion": "V2-REMAKE-FINAL",
         "primaryDisplayReading": {
@@ -2735,7 +2761,8 @@
             "value": "fēn",
             "audioAssetRef": null,
             "speechText": "分",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "divide"
           }
         ],
         "hongKongReadings": [
@@ -2744,7 +2771,8 @@
             "value": "fan1",
             "audioAssetRef": null,
             "speechText": "分",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "divide"
           }
         ],
         "semanticEquivalents": [],
@@ -3628,7 +3656,8 @@
             "value": "xiàng",
             "audioAssetRef": null,
             "speechText": "向",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "direction"
           }
         ],
         "hongKongReadings": [
@@ -3637,7 +3666,8 @@
             "value": "hoeng3",
             "audioAssetRef": null,
             "speechText": "向",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "direction"
           }
         ],
         "semanticEquivalents": [],
@@ -4505,7 +4535,8 @@
             "value": "yǒu",
             "audioAssetRef": null,
             "speechText": "友",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "friend"
           }
         ],
         "hongKongReadings": [
@@ -4514,7 +4545,8 @@
             "value": "jau5",
             "audioAssetRef": null,
             "speechText": "友",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "friend"
           }
         ],
         "semanticEquivalents": [],
@@ -5317,7 +5349,8 @@
             "value": "fǎn",
             "audioAssetRef": null,
             "speechText": "反",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "turn back"
           }
         ],
         "hongKongReadings": [
@@ -5326,7 +5359,8 @@
             "value": "faan2",
             "audioAssetRef": null,
             "speechText": "反",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "turn back"
           }
         ],
         "semanticEquivalents": [],
@@ -6154,7 +6188,8 @@
             "value": "jiāo",
             "audioAssetRef": null,
             "speechText": "交",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "交 / meet"
           }
         ],
         "hongKongReadings": [
@@ -6163,7 +6198,8 @@
             "value": "gaau1",
             "audioAssetRef": null,
             "speechText": "交",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "交 / meet"
           }
         ],
         "semanticEquivalents": [],
@@ -7028,7 +7064,8 @@
             "value": "jí",
             "audioAssetRef": null,
             "speechText": "及",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "reach"
           }
         ],
         "hongKongReadings": [
@@ -7037,7 +7074,8 @@
             "value": "kap6",
             "audioAssetRef": null,
             "speechText": "及",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "reach"
           }
         ],
         "semanticEquivalents": [],
@@ -7897,7 +7935,8 @@
             "value": "xiān",
             "audioAssetRef": null,
             "speechText": "先",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "before"
           }
         ],
         "hongKongReadings": [
@@ -7906,7 +7945,8 @@
             "value": "sin1",
             "audioAssetRef": null,
             "speechText": "先",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "before"
           }
         ],
         "semanticEquivalents": [],
@@ -8733,7 +8773,8 @@
             "value": "zhèng",
             "audioAssetRef": null,
             "speechText": "正",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "upright"
           }
         ],
         "hongKongReadings": [
@@ -8742,7 +8783,8 @@
             "value": "zing3",
             "audioAssetRef": null,
             "speechText": "正",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "upright"
           }
         ],
         "semanticEquivalents": [],
@@ -9623,7 +9665,8 @@
             "value": "xíng",
             "audioAssetRef": null,
             "speechText": "行",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "go"
           }
         ],
         "hongKongReadings": [
@@ -9632,7 +9675,8 @@
             "value": "haang4",
             "audioAssetRef": null,
             "speechText": "行",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "go"
           }
         ],
         "semanticEquivalents": [],
@@ -10503,7 +10547,8 @@
             "value": "zǒu",
             "audioAssetRef": null,
             "speechText": "走",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "walk/go (Mandarin)"
           }
         ],
         "hongKongReadings": [
@@ -10512,7 +10557,8 @@
             "value": "zau2",
             "audioAssetRef": null,
             "speechText": "走",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "walk/go (Mandarin)"
           }
         ],
         "semanticEquivalents": [],
@@ -11343,7 +11389,8 @@
             "value": "bù",
             "audioAssetRef": null,
             "speechText": "步",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "step"
           }
         ],
         "hongKongReadings": [
@@ -11352,7 +11399,8 @@
             "value": "bou6",
             "audioAssetRef": null,
             "speechText": "步",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "step"
           }
         ],
         "semanticEquivalents": [],
@@ -12200,7 +12248,8 @@
             "value": "zhǐ",
             "audioAssetRef": null,
             "speechText": "止",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "stop"
           }
         ],
         "hongKongReadings": [
@@ -12209,7 +12258,8 @@
             "value": "zi2",
             "audioAssetRef": null,
             "speechText": "止",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "stop"
           }
         ],
         "semanticEquivalents": [],
@@ -13057,7 +13107,8 @@
             "value": "cǎi",
             "audioAssetRef": null,
             "speechText": "採",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "pick"
           }
         ],
         "hongKongReadings": [
@@ -13066,7 +13117,8 @@
             "value": "coi2",
             "audioAssetRef": null,
             "speechText": "採",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "pick"
           }
         ],
         "semanticEquivalents": [],
@@ -13838,7 +13890,8 @@
             "value": "qǔ",
             "audioAssetRef": null,
             "speechText": "取",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "take"
           }
         ],
         "hongKongReadings": [
@@ -13847,7 +13900,8 @@
             "value": "ceoi2",
             "audioAssetRef": null,
             "speechText": "取",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "take"
           }
         ],
         "semanticEquivalents": [],
@@ -14688,7 +14742,8 @@
             "value": "hé",
             "audioAssetRef": null,
             "speechText": "合",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "join"
           }
         ],
         "hongKongReadings": [
@@ -14697,7 +14752,8 @@
             "value": "hap6",
             "audioAssetRef": null,
             "speechText": "合",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "join"
           }
         ],
         "semanticEquivalents": [],
@@ -15556,7 +15612,8 @@
             "value": "gào",
             "audioAssetRef": null,
             "speechText": "告",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "tell"
           }
         ],
         "hongKongReadings": [
@@ -15565,7 +15622,8 @@
             "value": "gou3",
             "audioAssetRef": null,
             "speechText": "告",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "tell"
           }
         ],
         "semanticEquivalents": [],
@@ -16396,7 +16454,8 @@
             "value": "pǐn",
             "audioAssetRef": null,
             "speechText": "品",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "things / goods"
           }
         ],
         "hongKongReadings": [
@@ -16405,7 +16464,8 @@
             "value": "ban2",
             "audioAssetRef": null,
             "speechText": "品",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "things / goods"
           }
         ],
         "semanticEquivalents": [],
@@ -17211,7 +17271,8 @@
             "value": "xiōng",
             "audioAssetRef": null,
             "speechText": "兄",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "older brother"
           }
         ],
         "hongKongReadings": [
@@ -17220,7 +17281,8 @@
             "value": "hing1",
             "audioAssetRef": null,
             "speechText": "兄",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "older brother"
           }
         ],
         "semanticEquivalents": [],
@@ -17471,25 +17533,6 @@
           }
         ],
         "semanticEquivalents": [
-          {
-            "system": "semanticEquivalent",
-            "value": "형 — hyeong",
-            "audioAssetRef": null,
-            "speechText": "형",
-            "speechLanguage": "korean",
-            "nativeReading": "형",
-            "romanization": "hyeong",
-            "relationship": "Korean semantic equivalent; not a reading of the Hanja character.",
-            "gloss": "older brother (male speaker)",
-            "displayTier": "secondary",
-            "lexicalOrigin": "sinoKorean",
-            "lexicalOriginVerification": {
-              "status": "V3 RECONCILED",
-              "authority": "National Institute of Korean Language / Korean Basic Dictionary",
-              "source": "https://krdict.korean.go.kr/eng/mainAction",
-              "note": "Classification checked as lexical-origin metadata; blank is never interpreted as unknown."
-            }
-          },
           {
             "system": "semanticEquivalent",
             "value": "오빠 — oppa",
@@ -18056,7 +18099,8 @@
             "value": "měi",
             "audioAssetRef": null,
             "speechText": "美",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "beautiful"
           }
         ],
         "hongKongReadings": [
@@ -18065,7 +18109,8 @@
             "value": "mei5",
             "audioAssetRef": null,
             "speechText": "美",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "beautiful"
           }
         ],
         "semanticEquivalents": [],
@@ -18896,7 +18941,8 @@
             "value": "míng",
             "audioAssetRef": null,
             "speechText": "明",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "bright"
           }
         ],
         "hongKongReadings": [
@@ -18905,7 +18951,8 @@
             "value": "ming4",
             "audioAssetRef": null,
             "speechText": "明",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "bright"
           }
         ],
         "semanticEquivalents": [],
@@ -19805,7 +19852,8 @@
             "value": "nán",
             "audioAssetRef": null,
             "speechText": "男",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "man"
           }
         ],
         "hongKongReadings": [
@@ -19814,7 +19862,8 @@
             "value": "naam4",
             "audioAssetRef": null,
             "speechText": "男",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "man"
           }
         ],
         "semanticEquivalents": [],
@@ -20657,7 +20706,8 @@
             "value": "hǎo",
             "audioAssetRef": null,
             "speechText": "好",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "good"
           }
         ],
         "hongKongReadings": [
@@ -20666,7 +20716,8 @@
             "value": "hou2",
             "audioAssetRef": null,
             "speechText": "好",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "good"
           }
         ],
         "semanticEquivalents": [],
@@ -21526,7 +21577,8 @@
             "value": "cóng",
             "audioAssetRef": null,
             "speechText": "從",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "follow"
           }
         ],
         "hongKongReadings": [
@@ -21535,7 +21587,8 @@
             "value": "cung4",
             "audioAssetRef": null,
             "speechText": "從",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "follow"
           }
         ],
         "semanticEquivalents": [],
@@ -22383,7 +22436,8 @@
             "value": "xiū",
             "audioAssetRef": null,
             "speechText": "休",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "rest"
           }
         ],
         "hongKongReadings": [
@@ -22392,7 +22446,8 @@
             "value": "jau1",
             "audioAssetRef": null,
             "speechText": "休",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "rest"
           }
         ],
         "semanticEquivalents": [],
@@ -23223,7 +23278,8 @@
             "value": "lín",
             "audioAssetRef": null,
             "speechText": "林",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "forest"
           }
         ],
         "hongKongReadings": [
@@ -23232,7 +23288,8 @@
             "value": "lam4",
             "audioAssetRef": null,
             "speechText": "林",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "forest"
           }
         ],
         "semanticEquivalents": [],
@@ -24075,7 +24132,8 @@
             "value": "dé",
             "audioAssetRef": null,
             "speechText": "得",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "obtain"
           }
         ],
         "hongKongReadings": [
@@ -24084,7 +24142,8 @@
             "value": "dak1",
             "audioAssetRef": null,
             "speechText": "得",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "obtain"
           }
         ],
         "semanticEquivalents": [],
@@ -24918,7 +24977,8 @@
             "value": "hòu",
             "audioAssetRef": null,
             "speechText": "後",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "after"
           }
         ],
         "hongKongReadings": [
@@ -24927,7 +24987,8 @@
             "value": "hau6",
             "audioAssetRef": null,
             "speechText": "後",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "after"
           }
         ],
         "semanticEquivalents": [],
@@ -25761,7 +25822,8 @@
             "value": "jí",
             "audioAssetRef": null,
             "speechText": "集",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "gather"
           }
         ],
         "hongKongReadings": [
@@ -25770,7 +25832,8 @@
             "value": "zaap6",
             "audioAssetRef": null,
             "speechText": "集",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "gather"
           }
         ],
         "semanticEquivalents": [],
@@ -26625,7 +26688,8 @@
             "value": "yán",
             "audioAssetRef": null,
             "speechText": "言",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "speech"
           }
         ],
         "hongKongReadings": [
@@ -26634,7 +26698,8 @@
             "value": "jin4",
             "audioAssetRef": null,
             "speechText": "言",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "speech"
           }
         ],
         "semanticEquivalents": [],
@@ -27493,7 +27558,8 @@
             "value": "zōng",
             "audioAssetRef": null,
             "speechText": "宗",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "lineage"
           }
         ],
         "hongKongReadings": [
@@ -27502,7 +27568,8 @@
             "value": "zung1",
             "audioAssetRef": null,
             "speechText": "宗",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "lineage"
           }
         ],
         "semanticEquivalents": [],
@@ -28322,7 +28389,8 @@
             "value": "jì",
             "audioAssetRef": null,
             "speechText": "祭",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "ritual worship"
           }
         ],
         "hongKongReadings": [
@@ -28331,7 +28399,8 @@
             "value": "zai3",
             "audioAssetRef": null,
             "speechText": "祭",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "ritual worship"
           }
         ],
         "semanticEquivalents": [],
@@ -29171,7 +29240,8 @@
             "value": "yì",
             "audioAssetRef": null,
             "speechText": "益",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "benefit"
           }
         ],
         "hongKongReadings": [
@@ -29180,7 +29250,8 @@
             "value": "jik1",
             "audioAssetRef": null,
             "speechText": "益",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "benefit"
           }
         ],
         "semanticEquivalents": [],
@@ -29994,7 +30065,8 @@
             "value": "xiāng",
             "audioAssetRef": null,
             "speechText": "香",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "fragrance"
           }
         ],
         "hongKongReadings": [
@@ -30003,7 +30075,8 @@
             "value": "hoeng1",
             "audioAssetRef": null,
             "speechText": "香",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "fragrance"
           }
         ],
         "semanticEquivalents": [],
@@ -30847,7 +30920,8 @@
             "value": "gān",
             "audioAssetRef": null,
             "speechText": "甘",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "sweet"
           }
         ],
         "hongKongReadings": [
@@ -30856,7 +30930,8 @@
             "value": "gam1",
             "audioAssetRef": null,
             "speechText": "甘",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "sweet"
           }
         ],
         "semanticEquivalents": [],
@@ -31715,7 +31790,8 @@
             "value": "wàng",
             "audioAssetRef": null,
             "speechText": "望",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "look toward"
           }
         ],
         "hongKongReadings": [
@@ -31724,7 +31800,8 @@
             "value": "mong6",
             "audioAssetRef": null,
             "speechText": "望",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "look toward"
           }
         ],
         "semanticEquivalents": [],
@@ -32562,7 +32639,8 @@
             "value": "dōng",
             "audioAssetRef": null,
             "speechText": "冬",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "winter"
           }
         ],
         "hongKongReadings": [
@@ -32571,7 +32649,8 @@
             "value": "dung1",
             "audioAssetRef": null,
             "speechText": "冬",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "winter"
           }
         ],
         "semanticEquivalents": [],
@@ -33375,7 +33454,8 @@
             "value": "xià",
             "audioAssetRef": null,
             "speechText": "夏",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "summer"
           }
         ],
         "hongKongReadings": [
@@ -33384,7 +33464,8 @@
             "value": "haa6",
             "audioAssetRef": null,
             "speechText": "夏",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "summer"
           }
         ],
         "semanticEquivalents": [],
@@ -34188,7 +34269,8 @@
             "value": "nián",
             "audioAssetRef": null,
             "speechText": "年",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "year"
           }
         ],
         "hongKongReadings": [
@@ -34197,7 +34279,8 @@
             "value": "nin4",
             "audioAssetRef": null,
             "speechText": "年",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "year"
           }
         ],
         "semanticEquivalents": [],
@@ -35019,7 +35102,8 @@
             "value": "chì",
             "audioAssetRef": null,
             "speechText": "赤",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "red"
           }
         ],
         "hongKongReadings": [
@@ -35028,7 +35112,8 @@
             "value": "cek3",
             "audioAssetRef": null,
             "speechText": "赤",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "red"
           }
         ],
         "semanticEquivalents": [],
@@ -35870,7 +35955,8 @@
             "value": "hēi",
             "audioAssetRef": null,
             "speechText": "黑",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "black"
           }
         ],
         "hongKongReadings": [
@@ -35879,7 +35965,8 @@
             "value": "hak1",
             "audioAssetRef": null,
             "speechText": "黑",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "black"
           }
         ],
         "semanticEquivalents": [],
@@ -36728,7 +36815,8 @@
             "value": "bái",
             "audioAssetRef": null,
             "speechText": "白",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "white"
           }
         ],
         "hongKongReadings": [
@@ -36737,7 +36825,8 @@
             "value": "baak6",
             "audioAssetRef": null,
             "speechText": "白",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "white"
           }
         ],
         "semanticEquivalents": [],
@@ -37585,7 +37674,8 @@
             "value": "guāng",
             "audioAssetRef": null,
             "speechText": "光",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "light"
           }
         ],
         "hongKongReadings": [
@@ -37594,7 +37684,8 @@
             "value": "gwong1",
             "audioAssetRef": null,
             "speechText": "光",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "light"
           }
         ],
         "semanticEquivalents": [],
@@ -38414,7 +38505,8 @@
             "value": "xī",
             "audioAssetRef": null,
             "speechText": "西",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "west"
           }
         ],
         "hongKongReadings": [
@@ -38423,7 +38515,8 @@
             "value": "sai1",
             "audioAssetRef": null,
             "speechText": "西",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "west"
           }
         ],
         "semanticEquivalents": [],
@@ -39238,7 +39331,8 @@
             "value": "shēn",
             "audioAssetRef": null,
             "speechText": "申",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "apply"
           }
         ],
         "hongKongReadings": [
@@ -39247,7 +39341,8 @@
             "value": "san1",
             "audioAssetRef": null,
             "speechText": "申",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "apply"
           }
         ],
         "semanticEquivalents": [],
@@ -40093,7 +40188,8 @@
             "value": "shǒu",
             "audioAssetRef": null,
             "speechText": "守",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "guard"
           }
         ],
         "hongKongReadings": [
@@ -40102,7 +40198,8 @@
             "value": "sau2",
             "audioAssetRef": null,
             "speechText": "守",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "guard"
           }
         ],
         "semanticEquivalents": [],
@@ -40954,7 +41051,8 @@
             "value": "zú",
             "audioAssetRef": null,
             "speechText": "族",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "group"
           }
         ],
         "hongKongReadings": [
@@ -40963,7 +41061,8 @@
             "value": "zuk6",
             "audioAssetRef": null,
             "speechText": "族",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "group"
           }
         ],
         "semanticEquivalents": [],
@@ -41769,7 +41868,8 @@
             "value": "lǚ",
             "audioAssetRef": null,
             "speechText": "旅",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "journey"
           }
         ],
         "hongKongReadings": [
@@ -41778,7 +41878,8 @@
             "value": "leoi5",
             "audioAssetRef": null,
             "speechText": "旅",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "journey"
           }
         ],
         "semanticEquivalents": [],
@@ -42579,7 +42680,8 @@
             "value": "jí",
             "audioAssetRef": null,
             "speechText": "吉",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "auspicious"
           }
         ],
         "hongKongReadings": [
@@ -42588,7 +42690,8 @@
             "value": "gat1",
             "audioAssetRef": null,
             "speechText": "吉",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "auspicious"
           }
         ],
         "semanticEquivalents": [],
@@ -43407,7 +43510,8 @@
             "value": "gǔ",
             "audioAssetRef": null,
             "speechText": "古",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "old"
           }
         ],
         "hongKongReadings": [
@@ -43416,7 +43520,8 @@
             "value": "gu2",
             "audioAssetRef": null,
             "speechText": "古",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "old"
           }
         ],
         "semanticEquivalents": [],
@@ -44261,7 +44366,8 @@
             "value": "qī",
             "audioAssetRef": null,
             "speechText": "妻",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "wife"
           }
         ],
         "hongKongReadings": [
@@ -44270,7 +44376,8 @@
             "value": "cai1",
             "audioAssetRef": null,
             "speechText": "妻",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "wife"
           }
         ],
         "semanticEquivalents": [],
@@ -45088,7 +45195,8 @@
             "value": "tóng",
             "audioAssetRef": null,
             "speechText": "同",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "same"
           }
         ],
         "hongKongReadings": [
@@ -45097,7 +45205,8 @@
             "value": "tung4",
             "audioAssetRef": null,
             "speechText": "同",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "same"
           }
         ],
         "semanticEquivalents": [],
@@ -45913,7 +46022,8 @@
             "value": "gè",
             "audioAssetRef": null,
             "speechText": "各",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "each"
           }
         ],
         "hongKongReadings": [
@@ -45922,7 +46032,8 @@
             "value": "gok3",
             "audioAssetRef": null,
             "speechText": "各",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "each"
           }
         ],
         "semanticEquivalents": [],
@@ -46743,7 +46854,8 @@
             "value": "lìng",
             "audioAssetRef": null,
             "speechText": "令",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "command"
           }
         ],
         "hongKongReadings": [
@@ -46752,7 +46864,8 @@
             "value": "ling6",
             "audioAssetRef": null,
             "speechText": "令",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "command"
           }
         ],
         "semanticEquivalents": [],
@@ -47577,7 +47690,8 @@
             "value": "bīng",
             "audioAssetRef": null,
             "speechText": "兵",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "soldier"
           }
         ],
         "hongKongReadings": [
@@ -47586,7 +47700,8 @@
             "value": "bing1",
             "audioAssetRef": null,
             "speechText": "兵",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "soldier"
           }
         ],
         "semanticEquivalents": [],
@@ -48392,7 +48507,8 @@
             "value": "diǎn",
             "audioAssetRef": null,
             "speechText": "典",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "classic"
           }
         ],
         "hongKongReadings": [
@@ -48401,7 +48517,8 @@
             "value": "din2",
             "audioAssetRef": null,
             "speechText": "典",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "classic"
           }
         ],
         "semanticEquivalents": [],
@@ -49207,7 +49324,8 @@
             "value": "mín",
             "audioAssetRef": null,
             "speechText": "民",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "people"
           }
         ],
         "hongKongReadings": [
@@ -49216,7 +49334,8 @@
             "value": "man4",
             "audioAssetRef": null,
             "speechText": "民",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "people"
           }
         ],
         "semanticEquivalents": [],
@@ -50016,7 +50135,8 @@
             "value": "gōng",
             "audioAssetRef": null,
             "speechText": "公",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "public"
           }
         ],
         "hongKongReadings": [
@@ -50025,7 +50145,8 @@
             "value": "gung1",
             "audioAssetRef": null,
             "speechText": "公",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "public"
           }
         ],
         "semanticEquivalents": [],
@@ -50822,7 +50943,8 @@
             "value": "guān",
             "audioAssetRef": null,
             "speechText": "官",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "official"
           }
         ],
         "hongKongReadings": [
@@ -50831,7 +50953,8 @@
             "value": "gun1",
             "audioAssetRef": null,
             "speechText": "官",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "official"
           }
         ],
         "semanticEquivalents": [],
@@ -51637,7 +51760,8 @@
             "value": "běi",
             "audioAssetRef": null,
             "speechText": "北",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "north"
           }
         ],
         "hongKongReadings": [
@@ -51646,7 +51770,8 @@
             "value": "bak1",
             "audioAssetRef": null,
             "speechText": "北",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "north"
           }
         ],
         "semanticEquivalents": [],
@@ -52447,7 +52572,8 @@
             "value": "nán",
             "audioAssetRef": null,
             "speechText": "南",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "south"
           }
         ],
         "hongKongReadings": [
@@ -52456,7 +52582,8 @@
             "value": "naam4",
             "audioAssetRef": null,
             "speechText": "南",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "south"
           }
         ],
         "semanticEquivalents": [],
@@ -53257,7 +53384,8 @@
             "value": "yāng",
             "audioAssetRef": null,
             "speechText": "央",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "center"
           }
         ],
         "hongKongReadings": [
@@ -53266,7 +53394,8 @@
             "value": "joeng1",
             "audioAssetRef": null,
             "speechText": "央",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "center"
           }
         ],
         "semanticEquivalents": [],
@@ -54080,7 +54209,8 @@
             "value": "shēn",
             "audioAssetRef": null,
             "speechText": "身",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "body"
           }
         ],
         "hongKongReadings": [
@@ -54089,7 +54219,8 @@
             "value": "san1",
             "audioAssetRef": null,
             "speechText": "身",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "body"
           }
         ],
         "semanticEquivalents": [],
@@ -54892,7 +55023,8 @@
             "value": "shǒu",
             "audioAssetRef": null,
             "speechText": "首",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "head"
           }
         ],
         "hongKongReadings": [
@@ -54901,7 +55033,8 @@
             "value": "sau2",
             "audioAssetRef": null,
             "speechText": "首",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "head"
           }
         ],
         "semanticEquivalents": [],
@@ -55704,7 +55837,8 @@
             "value": "zì",
             "audioAssetRef": null,
             "speechText": "自",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "self"
           }
         ],
         "hongKongReadings": [
@@ -55713,7 +55847,8 @@
             "value": "zi6",
             "audioAssetRef": null,
             "speechText": "自",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "self"
           }
         ],
         "semanticEquivalents": [],
@@ -56537,7 +56672,8 @@
             "value": "shé",
             "audioAssetRef": null,
             "speechText": "舌",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "tongue"
           }
         ],
         "hongKongReadings": [
@@ -56546,7 +56682,8 @@
             "value": "sit6",
             "audioAssetRef": null,
             "speechText": "舌",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "tongue"
           }
         ],
         "semanticEquivalents": [],
@@ -57344,7 +57481,8 @@
             "value": "kǒu",
             "audioAssetRef": null,
             "speechText": "口",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "mouth"
           }
         ],
         "hongKongReadings": [
@@ -57353,7 +57491,8 @@
             "value": "hau2",
             "audioAssetRef": null,
             "speechText": "口",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "mouth"
           }
         ],
         "semanticEquivalents": [],
@@ -58139,7 +58278,8 @@
             "value": "ěr",
             "audioAssetRef": null,
             "speechText": "耳",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "ear"
           }
         ],
         "hongKongReadings": [
@@ -58148,7 +58288,8 @@
             "value": "ji5",
             "audioAssetRef": null,
             "speechText": "耳",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "ear"
           }
         ],
         "semanticEquivalents": [],
@@ -58949,7 +59090,8 @@
             "value": "mù",
             "audioAssetRef": null,
             "speechText": "目",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "eye"
           }
         ],
         "hongKongReadings": [
@@ -58958,7 +59100,8 @@
             "value": "muk6",
             "audioAssetRef": null,
             "speechText": "目",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "eye"
           }
         ],
         "semanticEquivalents": [],
@@ -59733,7 +59876,8 @@
             "value": "mǔ",
             "audioAssetRef": null,
             "speechText": "母",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "mother"
           }
         ],
         "hongKongReadings": [
@@ -59742,7 +59886,8 @@
             "value": "mou5",
             "audioAssetRef": null,
             "speechText": "母",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "mother"
           }
         ],
         "semanticEquivalents": [],
@@ -60557,7 +60702,8 @@
             "value": "zǐ",
             "audioAssetRef": null,
             "speechText": "子",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "child"
           }
         ],
         "hongKongReadings": [
@@ -60566,7 +60712,8 @@
             "value": "zi2",
             "audioAssetRef": null,
             "speechText": "子",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "child"
           }
         ],
         "semanticEquivalents": [],
@@ -61415,7 +61562,8 @@
             "value": "nǚ",
             "audioAssetRef": null,
             "speechText": "女",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "woman"
           }
         ],
         "hongKongReadings": [
@@ -61424,7 +61572,8 @@
             "value": "neoi5",
             "audioAssetRef": null,
             "speechText": "女",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "woman"
           }
         ],
         "semanticEquivalents": [],
@@ -62316,7 +62465,8 @@
             "value": "dà",
             "audioAssetRef": null,
             "speechText": "大",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "big"
           }
         ],
         "hongKongReadings": [
@@ -62325,7 +62475,8 @@
             "value": "daai6",
             "audioAssetRef": null,
             "speechText": "大",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "big"
           }
         ],
         "semanticEquivalents": [],
@@ -63151,7 +63302,8 @@
             "value": "rén",
             "audioAssetRef": null,
             "speechText": "人",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "person"
           }
         ],
         "hongKongReadings": [
@@ -63160,7 +63312,8 @@
             "value": "jan4",
             "audioAssetRef": null,
             "speechText": "人",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "person"
           }
         ],
         "semanticEquivalents": [],
@@ -63949,7 +64102,8 @@
             "value": "shēng",
             "audioAssetRef": null,
             "speechText": "生",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "life"
           }
         ],
         "hongKongReadings": [
@@ -63958,14 +64112,16 @@
             "value": "sang1",
             "audioAssetRef": null,
             "speechText": "生",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "life"
           },
           {
             "system": "jyutping",
             "value": "saang1",
             "audioAssetRef": null,
             "speechText": "生",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "life"
           }
         ],
         "semanticEquivalents": [],
@@ -64911,7 +65067,8 @@
             "value": "xīn",
             "audioAssetRef": null,
             "speechText": "心",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "heart"
           }
         ],
         "hongKongReadings": [
@@ -64920,7 +65077,8 @@
             "value": "sam1",
             "audioAssetRef": null,
             "speechText": "心",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "heart"
           }
         ],
         "semanticEquivalents": [],
@@ -65730,7 +65888,8 @@
             "value": "quán",
             "audioAssetRef": null,
             "speechText": "泉",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "spring"
           }
         ],
         "hongKongReadings": [
@@ -65739,7 +65898,8 @@
             "value": "cyun4",
             "audioAssetRef": null,
             "speechText": "泉",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "spring"
           }
         ],
         "semanticEquivalents": [],
@@ -66542,7 +66702,8 @@
             "value": "tián",
             "audioAssetRef": null,
             "speechText": "田",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "field"
           }
         ],
         "hongKongReadings": [
@@ -66551,7 +66712,8 @@
             "value": "tin4",
             "audioAssetRef": null,
             "speechText": "田",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "field"
           }
         ],
         "semanticEquivalents": [],
@@ -67353,7 +67515,8 @@
             "value": "yún",
             "audioAssetRef": null,
             "speechText": "雲",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "cloud"
           }
         ],
         "hongKongReadings": [
@@ -67362,7 +67525,8 @@
             "value": "wan4",
             "audioAssetRef": null,
             "speechText": "雲",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "cloud"
           }
         ],
         "semanticEquivalents": [],
@@ -68165,7 +68329,8 @@
             "value": "yǔ",
             "audioAssetRef": null,
             "speechText": "雨",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "rain"
           }
         ],
         "hongKongReadings": [
@@ -68174,7 +68339,8 @@
             "value": "jyu5",
             "audioAssetRef": null,
             "speechText": "雨",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "rain"
           }
         ],
         "semanticEquivalents": [],
@@ -69012,7 +69178,8 @@
             "value": "shí",
             "audioAssetRef": null,
             "speechText": "石",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "stone"
           }
         ],
         "hongKongReadings": [
@@ -69021,7 +69188,8 @@
             "value": "sek6",
             "audioAssetRef": null,
             "speechText": "石",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "stone"
           }
         ],
         "semanticEquivalents": [],
@@ -69824,7 +69992,8 @@
             "value": "tǔ",
             "audioAssetRef": null,
             "speechText": "土",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "earth"
           }
         ],
         "hongKongReadings": [
@@ -69833,7 +70002,8 @@
             "value": "tou2",
             "audioAssetRef": null,
             "speechText": "土",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "earth"
           }
         ],
         "semanticEquivalents": [],
@@ -70648,7 +70818,8 @@
             "value": "zhú",
             "audioAssetRef": null,
             "speechText": "竹",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "bamboo"
           }
         ],
         "hongKongReadings": [
@@ -70657,7 +70828,8 @@
             "value": "zuk1",
             "audioAssetRef": null,
             "speechText": "竹",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "bamboo"
           }
         ],
         "semanticEquivalents": [],
@@ -71471,7 +71643,8 @@
             "value": "mù",
             "audioAssetRef": null,
             "speechText": "木",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "tree"
           }
         ],
         "hongKongReadings": [
@@ -71480,7 +71653,8 @@
             "value": "muk6",
             "audioAssetRef": null,
             "speechText": "木",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "tree"
           }
         ],
         "semanticEquivalents": [],
@@ -72274,7 +72448,8 @@
             "value": "chuān",
             "audioAssetRef": null,
             "speechText": "川",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "river"
           }
         ],
         "hongKongReadings": [
@@ -72283,7 +72458,8 @@
             "value": "cyun1",
             "audioAssetRef": null,
             "speechText": "川",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "river"
           }
         ],
         "semanticEquivalents": [],
@@ -73041,7 +73217,8 @@
             "value": "shuǐ",
             "audioAssetRef": null,
             "speechText": "水",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "water"
           }
         ],
         "hongKongReadings": [
@@ -73050,7 +73227,8 @@
             "value": "seoi2",
             "audioAssetRef": null,
             "speechText": "水",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "water"
           }
         ],
         "semanticEquivalents": [],
@@ -73780,7 +73958,8 @@
             "value": "shān",
             "audioAssetRef": null,
             "speechText": "山",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "mountain"
           }
         ],
         "hongKongReadings": [
@@ -73789,7 +73968,8 @@
             "value": "saan1",
             "audioAssetRef": null,
             "speechText": "山",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "mountain"
           }
         ],
         "semanticEquivalents": [],
@@ -74498,7 +74678,8 @@
             "value": "xī",
             "audioAssetRef": null,
             "speechText": "夕",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "evening"
           }
         ],
         "hongKongReadings": [
@@ -74507,7 +74688,8 @@
             "value": "zik6",
             "audioAssetRef": null,
             "speechText": "夕",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "evening"
           }
         ],
         "semanticEquivalents": [],
@@ -75289,7 +75471,8 @@
             "value": "yuè",
             "audioAssetRef": null,
             "speechText": "月",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "moon / month"
           }
         ],
         "hongKongReadings": [
@@ -75298,7 +75481,8 @@
             "value": "jyut6",
             "audioAssetRef": null,
             "speechText": "月",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "moon / month"
           }
         ],
         "semanticEquivalents": [],
@@ -76052,7 +76236,8 @@
             "value": "rì",
             "audioAssetRef": null,
             "speechText": "日",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "sun / day"
           }
         ],
         "hongKongReadings": [
@@ -76061,7 +76246,8 @@
             "value": "jat6",
             "audioAssetRef": null,
             "speechText": "日",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "sun / day"
           }
         ],
         "semanticEquivalents": [],
@@ -76889,7 +77075,8 @@
             "value": "jǐng",
             "audioAssetRef": null,
             "speechText": "井",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "well"
           }
         ],
         "hongKongReadings": [
@@ -76898,7 +77085,8 @@
             "value": "zeng2",
             "audioAssetRef": null,
             "speechText": "井",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "well"
           }
         ],
         "semanticEquivalents": [],
@@ -77743,7 +77931,8 @@
             "value": "sù",
             "audioAssetRef": null,
             "speechText": "宿",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "lodging"
           }
         ],
         "hongKongReadings": [
@@ -77752,7 +77941,8 @@
             "value": "suk1",
             "audioAssetRef": null,
             "speechText": "宿",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "lodging"
           }
         ],
         "semanticEquivalents": [],
@@ -78612,7 +78802,8 @@
             "value": "lǎo",
             "audioAssetRef": null,
             "speechText": "老",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "old"
           }
         ],
         "hongKongReadings": [
@@ -78621,7 +78812,8 @@
             "value": "lou5",
             "audioAssetRef": null,
             "speechText": "老",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "old"
           }
         ],
         "semanticEquivalents": [],
@@ -79497,7 +79689,8 @@
             "value": "tiān",
             "audioAssetRef": null,
             "speechText": "天",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "sky"
           }
         ],
         "hongKongReadings": [
@@ -79506,7 +79699,8 @@
             "value": "tin1",
             "audioAssetRef": null,
             "speechText": "天",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "sky"
           }
         ],
         "semanticEquivalents": [],
@@ -80333,7 +80527,8 @@
             "value": "lì",
             "audioAssetRef": null,
             "speechText": "立",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "stand"
           }
         ],
         "hongKongReadings": [
@@ -80342,7 +80537,8 @@
             "value": "lap6",
             "audioAssetRef": null,
             "speechText": "立",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "stand"
           }
         ],
         "semanticEquivalents": [],
@@ -81199,7 +81395,8 @@
             "value": "chū",
             "audioAssetRef": null,
             "speechText": "出",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "exit"
           }
         ],
         "hongKongReadings": [
@@ -81208,7 +81405,8 @@
             "value": "ceot1",
             "audioAssetRef": null,
             "speechText": "出",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "exit"
           }
         ],
         "semanticEquivalents": [],
@@ -82053,7 +82251,8 @@
             "value": "rù",
             "audioAssetRef": null,
             "speechText": "入",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "enter"
           }
         ],
         "hongKongReadings": [
@@ -82062,7 +82261,8 @@
             "value": "jap6",
             "audioAssetRef": null,
             "speechText": "入",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "enter"
           }
         ],
         "semanticEquivalents": [],
@@ -82904,7 +83104,8 @@
             "value": "gāo",
             "audioAssetRef": null,
             "speechText": "高",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "high"
           }
         ],
         "hongKongReadings": [
@@ -82913,7 +83114,8 @@
             "value": "gou1",
             "audioAssetRef": null,
             "speechText": "高",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "high"
           }
         ],
         "semanticEquivalents": [],
@@ -83769,7 +83971,8 @@
             "value": "duō",
             "audioAssetRef": null,
             "speechText": "多",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "many"
           }
         ],
         "hongKongReadings": [
@@ -83778,7 +83981,8 @@
             "value": "do1",
             "audioAssetRef": null,
             "speechText": "多",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "many"
           }
         ],
         "semanticEquivalents": [],
@@ -84621,7 +84825,8 @@
             "value": "shǎo",
             "audioAssetRef": null,
             "speechText": "少",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "few"
           }
         ],
         "hongKongReadings": [
@@ -84630,7 +84835,8 @@
             "value": "siu2",
             "audioAssetRef": null,
             "speechText": "少",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "few"
           }
         ],
         "semanticEquivalents": [],
@@ -85478,7 +85684,8 @@
             "value": "xiǎo",
             "audioAssetRef": null,
             "speechText": "小",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "small"
           }
         ],
         "hongKongReadings": [
@@ -85487,7 +85694,8 @@
             "value": "siu2",
             "audioAssetRef": null,
             "speechText": "小",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "small"
           }
         ],
         "semanticEquivalents": [],
@@ -86331,7 +86539,8 @@
             "value": "zhōng",
             "audioAssetRef": null,
             "speechText": "中",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "middle"
           }
         ],
         "hongKongReadings": [
@@ -86340,7 +86549,8 @@
             "value": "zung1",
             "audioAssetRef": null,
             "speechText": "中",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "middle"
           }
         ],
         "semanticEquivalents": [],
@@ -87143,7 +87353,8 @@
             "value": "xià",
             "audioAssetRef": null,
             "speechText": "下",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "below"
           }
         ],
         "hongKongReadings": [
@@ -87152,7 +87363,8 @@
             "value": "haa6",
             "audioAssetRef": null,
             "speechText": "下",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "below"
           }
         ],
         "semanticEquivalents": [],
@@ -88063,7 +88275,8 @@
             "value": "shàng",
             "audioAssetRef": null,
             "speechText": "上",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "above"
           }
         ],
         "hongKongReadings": [
@@ -88072,7 +88285,8 @@
             "value": "soeng6",
             "audioAssetRef": null,
             "speechText": "上",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "above"
           }
         ],
         "semanticEquivalents": [],
@@ -88972,7 +89186,8 @@
             "value": "shí",
             "audioAssetRef": null,
             "speechText": "十",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "ten"
           }
         ],
         "hongKongReadings": [
@@ -88981,7 +89196,8 @@
             "value": "sap6",
             "audioAssetRef": null,
             "speechText": "十",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "ten"
           }
         ],
         "semanticEquivalents": [],
@@ -89832,7 +90048,8 @@
             "value": "sān",
             "audioAssetRef": null,
             "speechText": "三",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "three"
           }
         ],
         "hongKongReadings": [
@@ -89841,7 +90058,8 @@
             "value": "saam1",
             "audioAssetRef": null,
             "speechText": "三",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "three"
           }
         ],
         "semanticEquivalents": [],
@@ -90668,7 +90886,8 @@
             "value": "èr",
             "audioAssetRef": null,
             "speechText": "二",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "two"
           }
         ],
         "hongKongReadings": [
@@ -90677,7 +90896,8 @@
             "value": "ji6",
             "audioAssetRef": null,
             "speechText": "二",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "two"
           }
         ],
         "semanticEquivalents": [],
@@ -91526,7 +91746,8 @@
             "value": "cháng",
             "audioAssetRef": null,
             "speechText": "長",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "long"
           }
         ],
         "hongKongReadings": [
@@ -91535,7 +91756,8 @@
             "value": "coeng4",
             "audioAssetRef": null,
             "speechText": "長",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "long"
           }
         ],
         "semanticEquivalents": [],
@@ -92372,7 +92594,8 @@
             "value": "lì",
             "audioAssetRef": null,
             "speechText": "力",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "strength"
           }
         ],
         "hongKongReadings": [
@@ -92381,7 +92604,8 @@
             "value": "lik6",
             "audioAssetRef": null,
             "speechText": "力",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "strength"
           }
         ],
         "semanticEquivalents": [],
@@ -93227,7 +93451,8 @@
             "value": "wáng",
             "audioAssetRef": null,
             "speechText": "王",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "king"
           }
         ],
         "hongKongReadings": [
@@ -93236,7 +93461,8 @@
             "value": "wong4",
             "audioAssetRef": null,
             "speechText": "王",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "king"
           }
         ],
         "semanticEquivalents": [],
@@ -94001,7 +94227,8 @@
             "value": "yù",
             "audioAssetRef": null,
             "speechText": "玉",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "jade"
           }
         ],
         "hongKongReadings": [
@@ -94010,7 +94237,8 @@
             "value": "juk6",
             "audioAssetRef": null,
             "speechText": "玉",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "jade"
           }
         ],
         "semanticEquivalents": [],
@@ -94793,7 +95021,8 @@
             "value": "cè",
             "audioAssetRef": null,
             "speechText": "冊",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "book"
           }
         ],
         "hongKongReadings": [
@@ -94802,7 +95031,8 @@
             "value": "caak3",
             "audioAssetRef": null,
             "speechText": "冊",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "book"
           }
         ],
         "semanticEquivalents": [],
@@ -95605,7 +95835,8 @@
             "value": "gōng",
             "audioAssetRef": null,
             "speechText": "工",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "work"
           }
         ],
         "hongKongReadings": [
@@ -95614,7 +95845,8 @@
             "value": "gung1",
             "audioAssetRef": null,
             "speechText": "工",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "work"
           }
         ],
         "semanticEquivalents": [],
@@ -96426,7 +96658,8 @@
             "value": "dòu",
             "audioAssetRef": null,
             "speechText": "豆",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "bean"
           }
         ],
         "hongKongReadings": [
@@ -96435,7 +96668,8 @@
             "value": "dau6",
             "audioAssetRef": null,
             "speechText": "豆",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "bean"
           }
         ],
         "semanticEquivalents": [],
@@ -97252,7 +97486,8 @@
             "value": "yī",
             "audioAssetRef": null,
             "speechText": "衣",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "clothing"
           }
         ],
         "hongKongReadings": [
@@ -97261,7 +97496,8 @@
             "value": "ji1",
             "audioAssetRef": null,
             "speechText": "衣",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "clothing"
           }
         ],
         "semanticEquivalents": [],
@@ -98053,7 +98289,8 @@
             "value": "gōng",
             "audioAssetRef": null,
             "speechText": "弓",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "bow"
           }
         ],
         "hongKongReadings": [
@@ -98062,7 +98299,8 @@
             "value": "gung1",
             "audioAssetRef": null,
             "speechText": "弓",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "bow"
           }
         ],
         "semanticEquivalents": [],
@@ -98859,7 +99097,8 @@
             "value": "dāo",
             "audioAssetRef": null,
             "speechText": "刀",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "knife"
           }
         ],
         "hongKongReadings": [
@@ -98868,7 +99107,8 @@
             "value": "dou1",
             "audioAssetRef": null,
             "speechText": "刀",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "knife"
           }
         ],
         "semanticEquivalents": [],
@@ -99686,7 +99926,8 @@
             "value": "jiǎo",
             "audioAssetRef": null,
             "speechText": "角",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "horn / corner / angle"
           }
         ],
         "hongKongReadings": [
@@ -99695,7 +99936,8 @@
             "value": "gok3",
             "audioAssetRef": null,
             "speechText": "角",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "horn / corner / angle"
           }
         ],
         "semanticEquivalents": [],
@@ -100519,7 +100761,8 @@
             "value": "hǔ",
             "audioAssetRef": null,
             "speechText": "虎",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "tiger"
           }
         ],
         "hongKongReadings": [
@@ -100528,7 +100771,8 @@
             "value": "fu2",
             "audioAssetRef": null,
             "speechText": "虎",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "tiger"
           }
         ],
         "semanticEquivalents": [],
@@ -101328,7 +101572,8 @@
             "value": "quǎn",
             "audioAssetRef": null,
             "speechText": "犬",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "dog"
           }
         ],
         "hongKongReadings": [
@@ -101337,7 +101582,8 @@
             "value": "hyun2",
             "audioAssetRef": null,
             "speechText": "犬",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "dog"
           }
         ],
         "semanticEquivalents": [],
@@ -102134,7 +102380,8 @@
             "value": "yáng",
             "audioAssetRef": null,
             "speechText": "羊",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "sheep"
           }
         ],
         "hongKongReadings": [
@@ -102143,7 +102390,8 @@
             "value": "joeng4",
             "audioAssetRef": null,
             "speechText": "羊",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "sheep"
           }
         ],
         "semanticEquivalents": [],
@@ -102939,7 +103187,8 @@
             "value": "niú",
             "audioAssetRef": null,
             "speechText": "牛",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "ox"
           }
         ],
         "hongKongReadings": [
@@ -102948,7 +103197,8 @@
             "value": "ngau4",
             "audioAssetRef": null,
             "speechText": "牛",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "ox"
           }
         ],
         "semanticEquivalents": [],
@@ -103744,7 +103994,8 @@
             "value": "shì",
             "audioAssetRef": null,
             "speechText": "示",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "show"
           }
         ],
         "hongKongReadings": [
@@ -103753,7 +104004,8 @@
             "value": "si6",
             "audioAssetRef": null,
             "speechText": "示",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "show"
           }
         ],
         "semanticEquivalents": [],
@@ -104584,7 +104836,8 @@
             "value": "zhù",
             "audioAssetRef": null,
             "speechText": "祝",
-            "speechLanguage": "mandarin"
+            "speechLanguage": "mandarin",
+            "gloss": "blessing"
           }
         ],
         "hongKongReadings": [
@@ -104593,7 +104846,8 @@
             "value": "zuk1",
             "audioAssetRef": null,
             "speechText": "祝",
-            "speechLanguage": "cantonese"
+            "speechLanguage": "cantonese",
+            "gloss": "blessing"
           }
         ],
         "semanticEquivalents": [],
