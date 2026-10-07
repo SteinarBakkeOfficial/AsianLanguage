@@ -18,4 +18,23 @@ final class LessonRouteTests: XCTestCase {
 
         XCTAssertEqual(route.startingPosition?.section, .usage)
     }
+
+    func testSequenceReturnsNextItemWithoutApplyingGlobalLearnedFiltering() {
+        let sequence = SymbolSequence(
+            id: "favorites",
+            title: "Favorites",
+            recordIDs: ["water", "tree", "mountain"]
+        )
+
+        XCTAssertEqual(sequence.nextRecordID(after: "water"), "tree")
+        XCTAssertEqual(sequence.nextRecordID(after: "tree"), "mountain")
+        XCTAssertNil(sequence.nextRecordID(after: "mountain"))
+    }
+
+    func testRoutePreservesSequenceContext() {
+        let sequence = SymbolSequence(id: "collection", title: "Nature", recordIDs: ["water", "tree"])
+        let route = LessonRoute(sharedCharacterID: "water", sequence: sequence)
+
+        XCTAssertEqual(route.sequence, sequence)
+    }
 }

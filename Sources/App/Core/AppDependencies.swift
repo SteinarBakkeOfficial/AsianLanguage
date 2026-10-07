@@ -27,8 +27,19 @@ struct AppDependencies {
     /// First featured Shared Character shown on Home until editorial sequencing is implemented.
     let nextFeaturedSharedCharacter: FeaturedSharedCharacterSummary
 
-    /// Returns the next Shared Character after the current lesson in editorial teaching order.
-    func nextSharedCharacter(after sharedCharacterID: String) -> SharedCharacterRecord? {
+    /// Returns the next Shared Character in either an originating list or the global teaching order.
+    /// List membership wins so Favorites, Learned, and collection journeys do not skip their own items.
+    func nextSharedCharacter(
+        after sharedCharacterID: String,
+        sequence: SymbolSequence? = nil
+    ) -> SharedCharacterRecord? {
+        if let sequence {
+            guard let nextID = sequence.nextRecordID(after: sharedCharacterID) else {
+                return nil
+            }
+            return sharedCharacters.first { $0.id == nextID }
+        }
+
         guard let currentIndex = sharedCharacters.firstIndex(where: { $0.id == sharedCharacterID }) else {
             return sharedCharacters.first {
                 userStateStore.state.lessonStates[$0.id]?.progressStatus != .learned
@@ -112,10 +123,18 @@ final class AppNavigationState: ObservableObject {
     @Published var symbolRoute: LessonRoute?
 
     /// Opens every Shared Character through the one canonical Symbol root.
-    func openSymbol(_ symbolID: String, intent: SymbolOpenIntent = .view) {
+    func openSymbol(
+        _ symbolID: String,
+        intent: SymbolOpenIntent = .view,
+        sequence: SymbolSequence? = nil
+    ) {
         selectedSymbolID = symbolID
         symbolOpenIntent = intent
-        symbolRoute = LessonRoute(sharedCharacterID: symbolID, startingPosition: intent.startingPosition)
+        symbolRoute = LessonRoute(
+            sharedCharacterID: symbolID,
+            startingPosition: intent.startingPosition,
+            sequence: sequence
+        )
         selectedTab = .symbol
     }
 

@@ -1613,7 +1613,15 @@ private struct HistoryArticlePage<NextDestination: View>: View {
                                 .font(AppTypography.caption)
                                 .foregroundStyle(AppColors.textSecondary)
                             ForEach(article.examples) { example in
-                                HistoryArticleExampleRow(example: example, dependencies: dependencies)
+                                HistoryArticleExampleRow(
+                                    example: example,
+                                    sequence: SymbolSequence(
+                                        id: "history-\(article.title.lowercased().replacingOccurrences(of: " ", with: "-"))",
+                                        title: article.title,
+                                        recordIDs: article.examples.map(\.recordID)
+                                    ),
+                                    dependencies: dependencies
+                                )
                             }
                         }
                     }
@@ -1866,12 +1874,20 @@ private struct HistoryCalligraphyDetailView: View {
 
 private struct HistoryArticleExampleRow: View {
     let example: HistoryArticleExample
+    let sequence: SymbolSequence
     let dependencies: AppDependencies
 
     var body: some View {
         if let record = dependencies.sharedCharacters.first(where: { $0.id == example.recordID }) {
             NavigationLink {
-                LessonView(route: LessonRoute(sharedCharacterID: record.id, startingPosition: example.position), dependencies: dependencies)
+                LessonView(
+                    route: LessonRoute(
+                        sharedCharacterID: record.id,
+                        startingPosition: example.position,
+                        sequence: sequence
+                    ),
+                    dependencies: dependencies
+                )
             } label: {
                 HStack(spacing: AppSpacing.spaceSm) {
                     historicalThumbnail(for: record)

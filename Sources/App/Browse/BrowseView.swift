@@ -33,7 +33,11 @@ struct BrowseView: View {
                         if !inProgressRecords.isEmpty {
                             browseSection("In Progress") {
                                 ForEach(inProgressRecords) { record in
-                                    characterRow(record, position: true)
+                                    characterRow(
+                                        record,
+                                        position: true,
+                                        sequence: sequence(id: "in-progress", title: "In Progress", records: inProgressRecords)
+                                    )
                                 }
                             }
                         }
@@ -86,7 +90,10 @@ struct BrowseView: View {
                                 .frame(maxWidth: .infinity, minHeight: 220)
                             } else {
                                 ForEach(browseSearchResults) { record in
-                                    characterRow(record)
+                                    characterRow(
+                                        record,
+                                        sequence: sequence(id: "browse-search", title: "Search Results", records: browseSearchResults)
+                                    )
                                 }
                             }
                         }
@@ -163,13 +170,17 @@ struct BrowseView: View {
 
     /// Character selections always switch to the canonical Symbol root.
     @ViewBuilder
-    private func characterRow(_ record: SharedCharacterRecord, position: Bool = false) -> some View {
+    private func characterRow(
+        _ record: SharedCharacterRecord,
+        position: Bool = false,
+        sequence: SymbolSequence? = nil
+    ) -> some View {
         VStack(alignment: .leading, spacing: AppSpacing.space2xs) {
             CharacterTile(
                 record: record,
                 userState: userStateStore.state.lessonStates[record.id],
                 action: {
-                    dependencies.navigationState.openSymbol(record.id, intent: .view)
+                    dependencies.navigationState.openSymbol(record.id, intent: .view, sequence: sequence)
                 }
             )
             if position {
@@ -187,6 +198,11 @@ struct BrowseView: View {
     private var reviewLaterRecords: [SharedCharacterRecord] { dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.isReviewLater == true } }
     private var browseSearchResults: [SharedCharacterRecord] {
         SharedCharacterSearchIndex(records: dependencies.sharedCharacters).search(browseQuery)
+    }
+
+    /// Builds the exact order currently visible on a Browse surface.
+    private func sequence(id: String, title: String, records: [SharedCharacterRecord]) -> SymbolSequence {
+        SymbolSequence(id: id, title: title, recordIDs: records.map(\.id))
     }
 
     private func records(with status: LessonProgressStatus) -> [SharedCharacterRecord] {
@@ -229,6 +245,13 @@ struct AllSymbolsLibraryView: View {
         return SharedCharacterSearchIndex(records: dependencies.sharedCharacters).search(normalized)
     }
 
+    /// Search filtering changes the sequence, so each visible result opens with its current order.
+    private var sequence: SymbolSequence {
+        let normalized = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        let suffix = normalized.isEmpty ? "all" : "search-\(normalized.lowercased())"
+        return SymbolSequence(id: "all-symbols-\(suffix)", title: "All Symbols", recordIDs: records.map(\.id))
+    }
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
@@ -244,7 +267,7 @@ struct AllSymbolsLibraryView: View {
                         CharacterTile(
                             record: record,
                             userState: userStateStore.state.lessonStates[record.id],
-                            action: { dependencies.navigationState.openSymbol(record.id, intent: .view) }
+                            action: { dependencies.navigationState.openSymbol(record.id, intent: .view, sequence: sequence) }
                         )
                     }
                 }
@@ -267,6 +290,11 @@ struct BrowseStatusView: View {
     let records: [SharedCharacterRecord]
     let dependencies: AppDependencies
 
+    private var sequence: SymbolSequence {
+        let sequenceID = title.lowercased().replacingOccurrences(of: " ", with: "-")
+        return SymbolSequence(id: "status-\(sequenceID)", title: title, recordIDs: records.map(\.id))
+    }
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: AppSpacing.spaceSm) {
@@ -278,7 +306,7 @@ struct BrowseStatusView: View {
                         CharacterTile(
                             record: record,
                             userState: dependencies.userStateStore.state.lessonStates[record.id],
-                            action: { dependencies.navigationState.openSymbol(record.id, intent: .view) }
+                            action: { dependencies.navigationState.openSymbol(record.id, intent: .view, sequence: sequence) }
                         )
                     }
                 }

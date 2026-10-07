@@ -27,6 +27,12 @@ struct SearchView: View {
         searchIndex.search(query)
     }
 
+    /// Keeps Next Symbol inside the current offline search-result order.
+    private var sequence: SymbolSequence {
+        let normalized = query.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        return SymbolSequence(id: "search-\(normalized)", title: "Search Results", recordIDs: searchResults.map(\.id))
+    }
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
@@ -50,9 +56,7 @@ struct SearchView: View {
                 } else {
                     ForEach(searchResults) { record in
                         Button {
-                            dependencies.navigationState.openSymbol(
-                                LessonRoute(sharedCharacterID: record.id, startingPosition: nil)
-                            )
+                            dependencies.navigationState.openSymbol(record.id, intent: .view, sequence: sequence)
                         } label: {
                             resultRow(record)
                         }

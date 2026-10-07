@@ -19,7 +19,7 @@ Assert-True $browse.Contains("CollectionsView.catalog(for: dependencies)") "Brow
 Assert-True $browse.Contains("EditorialCollectionDetailView") "Browse collection panels must open their matching collection."
 Assert-True $search.Contains("SharedCharacterSearchIndex") "Search must use the offline index."
 Assert-True $search.Contains("openSymbol") "Search must open the canonical Symbol destination."
-Assert-True $browse.Contains("openSymbol(record.id, intent: .view)") "Every Browse symbol entry must open at Origin."
+Assert-True $browse.Contains("openSymbol(record.id, intent: .view, sequence:") "Every Browse symbol entry must preserve its originating list order."
 Assert-True $browse.Contains('NavigationStack(path: $navigationPath)') "Browse must own a resettable navigation path."
 Assert-True $browse.Contains("selectedTab != .browse") "Browse must reset its navigation path after leaving the tab."
 Assert-True (-not $browse.Contains(".reviewFromBrowse")) "Browse status entries must open the full Symbol Journey rather than Quick Review."

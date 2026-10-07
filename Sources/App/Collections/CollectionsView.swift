@@ -122,6 +122,11 @@ struct EditorialCollectionDetailView: View {
         }
     }
 
+    /// Preserves the authored editorial order when the learner advances within this collection.
+    private var sequence: SymbolSequence {
+        SymbolSequence(id: "collection-\(collection.id)", title: collection.title, recordIDs: records.map(\.id))
+    }
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: AppSpacing.spaceMd) {
@@ -142,7 +147,7 @@ struct EditorialCollectionDetailView: View {
                         CharacterTile(
                             record: record,
                             userState: userStateStore.state.lessonStates[record.id],
-                            action: { dependencies.navigationState.openSymbol(record.id, intent: .view) }
+                            action: { dependencies.navigationState.openSymbol(record.id, intent: .view, sequence: sequence) }
                         )
                     }
                 }

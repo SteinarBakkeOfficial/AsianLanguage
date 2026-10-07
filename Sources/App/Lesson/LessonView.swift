@@ -54,6 +54,15 @@ struct LessonView: View {
         }
     }
 
+    /// Resolves the next item from the originating list before falling back to teaching order.
+    /// This keeps a collection/status/search journey coherent without changing the global corpus.
+    private var nextRecord: SharedCharacterRecord? {
+        dependencies.nextSharedCharacter(
+            after: route.sharedCharacterID,
+            sequence: route.sequence
+        )
+    }
+
     var body: some View {
         Group {
             if showingCorpusComplete, let record = sharedCharacter {
@@ -198,7 +207,7 @@ struct LessonView: View {
         CharacterEvolutionView(
             record: record,
             focusSelection: userStateStore.state.focusSelection,
-            completionTitle: dependencies.nextSharedCharacter(after: record.id) == nil ? "Complete Symbol" : "Next Symbol",
+            completionTitle: nextRecord == nil ? "Complete Symbol" : "Next Symbol",
             onComplete: markLearnedAndOpenNext,
             selectedStageID: Binding(
                 get: { position.section == .today ? normalizedModernStageID(position.stageID) : (position.stageID ?? "origin") },
@@ -291,11 +300,11 @@ struct LessonView: View {
         }
         // A single restrained success cue acknowledges completion without gamifying the journey.
         UINotificationFeedbackGenerator().notificationOccurred(.success)
-        guard let next = dependencies.nextSharedCharacter(after: route.sharedCharacterID) else {
+        guard let next = nextRecord else {
             showingCorpusComplete = true
             return
         }
-        dependencies.navigationState.openSymbol(next.id, intent: .start)
+        dependencies.navigationState.openSymbol(next.id, intent: .start, sequence: route.sequence)
     }
 }
 
