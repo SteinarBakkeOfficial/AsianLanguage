@@ -65,11 +65,7 @@ struct LessonView: View {
 
     var body: some View {
         Group {
-            if showingCorpusComplete, let sequence = route.sequence {
-                SequenceCompletionView {
-                    returnFromSequence(sequence)
-                }
-            } else if showingCorpusComplete, let record = sharedCharacter {
+            if showingCorpusComplete, let record = sharedCharacter {
                 CompletionView(
                     record: record,
                     onReturnHome: {
@@ -206,7 +202,7 @@ struct LessonView: View {
         CharacterEvolutionView(
             record: record,
             focusSelection: userStateStore.state.focusSelection,
-            completionTitle: nextRecord == nil ? "Complete Symbol" : "Next Symbol",
+            completionTitle: completionTitle,
             onComplete: markLearnedAndOpenNext,
             selectedStageID: Binding(
                 get: { position.section == .today ? normalizedModernStageID(position.stageID) : (position.stageID ?? "origin") },
@@ -222,6 +218,12 @@ struct LessonView: View {
                 }
             )
         )
+    }
+
+    /// A finite group returns immediately; only the full corpus gets a separate completion screen.
+    private var completionTitle: String {
+        guard nextRecord == nil else { return "Next Symbol" }
+        return route.sequence == nil ? "Complete Symbol" : "Return"
     }
 
     private func selectStage(_ stageID: String) {
@@ -300,7 +302,11 @@ struct LessonView: View {
         // A single restrained success cue acknowledges completion without gamifying the journey.
         UINotificationFeedbackGenerator().notificationOccurred(.success)
         guard let next = nextRecord else {
-            showingCorpusComplete = true
+            if let sequence = route.sequence {
+                returnFromSequence(sequence)
+            } else {
+                showingCorpusComplete = true
+            }
             return
         }
         dependencies.navigationState.openSymbol(next.id, intent: .start, sequence: route.sequence)
@@ -315,20 +321,6 @@ struct LessonView: View {
         case .history:
             dependencies.navigationState.selectedTab = .history
         }
-    }
-}
-
-/// Minimal end state for a finite discovery group; the group itself is not the full teaching corpus.
-private struct SequenceCompletionView: View {
-    let onReturn: () -> Void
-
-    var body: some View {
-        VStack(spacing: AppSpacing.spaceLg) {
-            PrimaryActionButton("Return", action: onReturn)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding(AppSpacing.spacePage)
-        .background(AppColors.appBackground.ignoresSafeArea())
     }
 }
 
