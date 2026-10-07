@@ -65,7 +65,11 @@ struct LessonView: View {
 
     var body: some View {
         Group {
-            if showingCorpusComplete, let record = sharedCharacter {
+            if showingCorpusComplete, let sequence = route.sequence {
+                SequenceCompletionView {
+                    returnFromSequence(sequence)
+                }
+            } else if showingCorpusComplete, let record = sharedCharacter {
                 CompletionView(
                     record: record,
                     onReturnHome: {
@@ -174,11 +178,6 @@ struct LessonView: View {
         }
         .sheet(isPresented: $showingShareSheet) {
             ActivityShareSheet(items: [shareText])
-        }
-        .alert("Journey complete", isPresented: $showingCorpusComplete) {
-            Button("Done", role: .cancel) {}
-        } message: {
-            Text("You have completed the installed editorial sequence.")
         }
         .onAppear {
             // Direct viewing and stage context must not create progress; start/resume are meaningful entry actions.
@@ -305,6 +304,31 @@ struct LessonView: View {
             return
         }
         dependencies.navigationState.openSymbol(next.id, intent: .start, sequence: route.sequence)
+    }
+
+    /// Returns a finite group to its originating surface without showing the full-corpus completion state.
+    private func returnFromSequence(_ sequence: SymbolSequence) {
+        showingCorpusComplete = false
+        switch sequence.returnDestination {
+        case .browse:
+            dependencies.navigationState.selectedTab = .browse
+        case .history:
+            dependencies.navigationState.selectedTab = .history
+        }
+    }
+}
+
+/// Minimal end state for a finite discovery group; the group itself is not the full teaching corpus.
+private struct SequenceCompletionView: View {
+    let onReturn: () -> Void
+
+    var body: some View {
+        VStack(spacing: AppSpacing.spaceLg) {
+            PrimaryActionButton("Return", action: onReturn)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .padding(AppSpacing.spacePage)
+        .background(AppColors.appBackground.ignoresSafeArea())
     }
 }
 

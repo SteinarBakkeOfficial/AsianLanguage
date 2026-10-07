@@ -1,5 +1,6 @@
 import Combine
 import Foundation
+import SwiftUI
 
 /// Container for app-wide services that need to be shared across SwiftUI screens.
 struct AppDependencies {
@@ -121,6 +122,8 @@ final class AppNavigationState: ObservableObject {
     /// Explicit opening intent consumed by the canonical Symbol root.
     @Published var symbolOpenIntent: SymbolOpenIntent?
     @Published var symbolRoute: LessonRoute?
+    /// Browse keeps its nested collection/status path while a symbol is open in the Symbol tab.
+    @Published var browseNavigationPath = NavigationPath()
 
     /// Opens every Shared Character through the one canonical Symbol root.
     func openSymbol(

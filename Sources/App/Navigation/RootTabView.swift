@@ -1618,7 +1618,8 @@ private struct HistoryArticlePage<NextDestination: View>: View {
                                     sequence: SymbolSequence(
                                         id: "history-\(article.title.lowercased().replacingOccurrences(of: " ", with: "-"))",
                                         title: article.title,
-                                        recordIDs: article.examples.map(\.recordID)
+                                        recordIDs: article.examples.map(\.recordID),
+                                        returnDestination: .history
                                     ),
                                     dependencies: dependencies
                                 )

@@ -37,4 +37,15 @@ final class LessonRouteTests: XCTestCase {
 
         XCTAssertEqual(route.sequence, sequence)
     }
+
+    func testHistorySequenceReturnsToHistoryTab() {
+        let sequence = SymbolSequence(
+            id: "history",
+            title: "History",
+            recordIDs: ["water", "tree"],
+            returnDestination: .history
+        )
+
+        XCTAssertEqual(sequence.returnDestination, .history)
+    }
 }

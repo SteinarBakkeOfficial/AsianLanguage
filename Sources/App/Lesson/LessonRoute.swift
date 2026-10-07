@@ -1,16 +1,29 @@
 import Foundation
 
+/// Describes how a finite symbol group returns to the surface that opened it.
+enum SymbolSequenceReturn: String, Hashable, Codable {
+    case browse
+    case history
+}
+
 /// Ordered source context used to keep Next Symbol inside the list the learner opened.
 /// Change this model here when a new ordered discovery surface needs its own sequence.
 struct SymbolSequence: Hashable, Codable, Identifiable {
     let id: String
     let title: String
     let recordIDs: [String]
+    let returnDestination: SymbolSequenceReturn
 
-    init(id: String, title: String, recordIDs: [String]) {
+    init(
+        id: String,
+        title: String,
+        recordIDs: [String],
+        returnDestination: SymbolSequenceReturn = .browse
+    ) {
         self.id = id
         self.title = title
         self.recordIDs = recordIDs
+        self.returnDestination = returnDestination
     }
 
     /// Returns the next item in this exact sequence, including learned items that remain

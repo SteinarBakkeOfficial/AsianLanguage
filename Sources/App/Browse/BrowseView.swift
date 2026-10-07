@@ -5,7 +5,6 @@ struct BrowseView: View {
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
     @ObservedObject private var navigationState: AppNavigationState
-    @State private var navigationPath = NavigationPath()
     @State private var browseQuery = ""
 
     init(dependencies: AppDependencies) {
@@ -15,7 +14,7 @@ struct BrowseView: View {
     }
 
     var body: some View {
-        NavigationStack(path: $navigationPath) {
+        NavigationStack(path: $navigationState.browseNavigationPath) {
             ScrollView {
                 VStack(alignment: .leading, spacing: AppSpacing.spaceLg) {
                     Text("Browse")
@@ -105,12 +104,6 @@ struct BrowseView: View {
                 .padding(.bottom, AppSpacing.spaceSection)
             }
             .navigationBarTitleDisplayMode(.inline)
-        }
-        .onChange(of: navigationState.selectedTab) { _, selectedTab in
-            if selectedTab != .browse {
-                // Browse is a fresh discovery surface each time it is revisited.
-                navigationPath = NavigationPath()
-            }
         }
         .scrollContentBackground(.hidden)
         .background(ShellStyle.paper.ignoresSafeArea())
