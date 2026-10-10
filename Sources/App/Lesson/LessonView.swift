@@ -24,11 +24,12 @@ struct LessonView: View {
         self.dependencies = dependencies
         _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
         // Nested journeys must be able to override the root tab's stale review intent.
-        self.openingIntent = openingIntent ?? dependencies.navigationState.symbolOpenIntent ?? .view
+        let resolvedOpeningIntent = openingIntent ?? dependencies.navigationState.symbolOpenIntent ?? .view
+        self.openingIntent = resolvedOpeningIntent
         let savedState = dependencies.userStateStore.state.lessonStates[route.sharedCharacterID]
         let savedPosition = savedState?.lastPosition
         // Browse/search entries are fresh museum visits; only an explicit resume may use saved progress.
-        let requestedPosition: SymbolJourneyPosition = openingIntent == .view
+        let requestedPosition: SymbolJourneyPosition = resolvedOpeningIntent == .view
             ? .origin
             : (route.startingPosition ?? savedPosition ?? .origin)
         // Legacy supporting sections are no longer part of the primary flow; resume them at Modern.
@@ -45,7 +46,7 @@ struct LessonView: View {
         let mode: SymbolEntryMode
         // A nested inspection route explicitly passes `.view`; use that local intent
         // so the parent Quick Review session does not re-render inside the pushed route.
-        if openingIntent == .review || openingIntent == .reviewFromBrowse {
+        if resolvedOpeningIntent == .review || resolvedOpeningIntent == .reviewFromBrowse {
             mode = .review
         } else {
             mode = .journey
@@ -144,7 +145,18 @@ struct LessonView: View {
         .background(reviewJourneyLink)
         .toolbar {
             if entryMode != .review {
-                if openingIntent == .view || openingIntent == .reviewFromBrowse {
+                if let sequence = route.sequence {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button {
+                            // Respect the source sequence when leaving a nested journey,
+                            // especially Quick Review, instead of inferring from `.view`.
+                            returnFromSequence(sequence)
+                        } label: {
+                            Label(sequenceReturnTitle(sequence.returnDestination), systemImage: "chevron.left")
+                        }
+                        .accessibilityLabel("Back to \(sequenceReturnTitle(sequence.returnDestination))")
+                    }
+                } else if openingIntent == .view || openingIntent == .reviewFromBrowse {
                     ToolbarItem(placement: .topBarLeading) {
                         Button {
                             dependencies.navigationState.selectedTab = .browse
@@ -344,6 +356,15 @@ struct LessonView: View {
         case .quickReview:
             // Quick Review owns the parent session; dismiss the inspected Symbol back to its current card.
             dismiss()
+        }
+    }
+
+    /// Gives nested journeys a truthful back label for their originating surface.
+    private func sequenceReturnTitle(_ destination: SymbolSequenceReturn) -> String {
+        switch destination {
+        case .browse: return "Browse"
+        case .history: return "History"
+        case .quickReview: return "Quick Review"
         }
     }
 
