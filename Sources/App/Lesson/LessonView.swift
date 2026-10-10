@@ -139,9 +139,7 @@ struct LessonView: View {
         .navigationBarTitleDisplayMode(.inline)
         .background(AppColors.appBackground.ignoresSafeArea())
         .tint(AppColors.accentPrimary)
-        .navigationDestination(item: $reviewJourneyRoute) { route in
-            LessonView(route: route, dependencies: dependencies, openingIntent: .view)
-        }
+        .background(reviewJourneyLink)
         .toolbar {
             if entryMode != .review {
                 if openingIntent == .view || openingIntent == .reviewFromBrowse {
@@ -338,11 +336,40 @@ struct LessonView: View {
         case .browse:
             dependencies.navigationState.selectedTab = .browse
         case .history:
-            // History examples are pushed destinations; dismiss to preserve the exact article and scroll position.
+            // A History sequence may remain pushed in History or move into the canonical Symbol tab.
             dismiss()
+            dependencies.navigationState.selectedTab = .history
         case .quickReview:
             // Quick Review owns the parent session; dismiss the inspected Symbol back to its current card.
             dismiss()
+        }
+    }
+
+    /// Uses an explicit push link because the Symbol tab's root route is state-driven rather than path-driven.
+    @ViewBuilder
+    private var reviewJourneyLink: some View {
+        NavigationLink(
+            destination: reviewJourneyDestination,
+            isActive: Binding(
+                get: { reviewJourneyRoute != nil },
+                set: { isActive in
+                    if !isActive {
+                        reviewJourneyRoute = nil
+                    }
+                }
+            )
+        ) {
+            EmptyView()
+        }
+        .hidden()
+    }
+
+    @ViewBuilder
+    private var reviewJourneyDestination: some View {
+        if let reviewJourneyRoute {
+            LessonView(route: reviewJourneyRoute, dependencies: dependencies, openingIntent: .view)
+        } else {
+            EmptyView()
         }
     }
 }
