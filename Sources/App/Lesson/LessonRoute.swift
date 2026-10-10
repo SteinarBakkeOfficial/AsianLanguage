@@ -4,6 +4,7 @@ import Foundation
 enum SymbolSequenceReturn: String, Hashable, Codable {
     case browse
     case history
+    case quickReview
 }
 
 /// Ordered source context used to keep Next Symbol inside the list the learner opened.

@@ -48,4 +48,16 @@ final class LessonRouteTests: XCTestCase {
 
         XCTAssertEqual(sequence.returnDestination, .history)
     }
+
+    func testQuickReviewSequenceReturnsToReviewSession() {
+        let sequence = SymbolSequence(
+            id: "quick-review-water",
+            title: "Quick Review",
+            recordIDs: ["water"],
+            returnDestination: .quickReview
+        )
+
+        XCTAssertNil(sequence.nextRecordID(after: "water"))
+        XCTAssertEqual(sequence.returnDestination, .quickReview)
+    }
 }

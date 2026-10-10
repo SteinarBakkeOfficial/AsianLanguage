@@ -6,18 +6,25 @@ struct LessonView: View {
     let route: LessonRoute
     let dependencies: AppDependencies
     @ObservedObject private var userStateStore: LocalUserStateStore
+    @Environment(\.dismiss) private var dismiss
     private let openingIntent: SymbolOpenIntent
     @State private var position: SymbolJourneyPosition
     @State private var entryMode: SymbolEntryMode
     @State private var showingAbout = false
     @State private var showingShareSheet = false
     @State private var showingCorpusComplete = false
+    @State private var reviewJourneyRoute: LessonRoute?
 
-    init(route: LessonRoute, dependencies: AppDependencies) {
+    init(
+        route: LessonRoute,
+        dependencies: AppDependencies,
+        openingIntent: SymbolOpenIntent? = nil
+    ) {
         self.route = route
         self.dependencies = dependencies
         _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
-        openingIntent = dependencies.navigationState.symbolOpenIntent ?? .view
+        // Nested journeys must be able to override the root tab's stale review intent.
+        self.openingIntent = openingIntent ?? dependencies.navigationState.symbolOpenIntent ?? .view
         let savedState = dependencies.userStateStore.state.lessonStates[route.sharedCharacterID]
         let savedPosition = savedState?.lastPosition
         // Browse/search entries are fresh museum visits; only an explicit resume may use saved progress.
@@ -102,7 +109,16 @@ struct LessonView: View {
                         distractorRecords: dependencies.sharedCharacters,
                         focusSelection: userStateStore.state.focusSelection,
                         onOpenJourney: { symbolID in
-                            dependencies.navigationState.openSymbol(symbolID, intent: .view)
+                            // Push one inspection journey over Quick Review so its session and current card remain intact.
+                            reviewJourneyRoute = LessonRoute(
+                                sharedCharacterID: symbolID,
+                                sequence: SymbolSequence(
+                                    id: "quick-review-\(symbolID)",
+                                    title: "Quick Review",
+                                    recordIDs: [symbolID],
+                                    returnDestination: .quickReview
+                                )
+                            )
                         },
                         onFinish: {
                             dependencies.navigationState.selectedTab = openingIntent == .reviewFromBrowse ? .browse : .home
@@ -123,6 +139,9 @@ struct LessonView: View {
         .navigationBarTitleDisplayMode(.inline)
         .background(AppColors.appBackground.ignoresSafeArea())
         .tint(AppColors.accentPrimary)
+        .navigationDestination(item: $reviewJourneyRoute) { route in
+            LessonView(route: route, dependencies: dependencies, openingIntent: .view)
+        }
         .toolbar {
             if entryMode != .review {
                 if openingIntent == .view || openingIntent == .reviewFromBrowse {
@@ -319,7 +338,11 @@ struct LessonView: View {
         case .browse:
             dependencies.navigationState.selectedTab = .browse
         case .history:
-            dependencies.navigationState.selectedTab = .history
+            // History examples are pushed destinations; dismiss to preserve the exact article and scroll position.
+            dismiss()
+        case .quickReview:
+            // Quick Review owns the parent session; dismiss the inspected Symbol back to its current card.
+            dismiss()
         }
     }
 }
