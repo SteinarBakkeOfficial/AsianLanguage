@@ -103,8 +103,8 @@ struct HomeView: View {
     @ViewBuilder
     private var collectionModule: some View {
         if let collection = continueCollection {
-            NavigationLink {
-                EditorialCollectionDetailView(collection: collection, dependencies: dependencies)
+            Button {
+                continueCollection(collection)
             } label: {
                 GroupedSurface {
                     VStack(alignment: .leading, spacing: AppSpacing.spaceXs) {
@@ -139,6 +139,28 @@ struct HomeView: View {
         } else {
             EmptyView()
         }
+    }
+
+    /// Opens the first unfinished Symbol directly while preserving the authored collection order.
+    private func continueCollection(_ collection: SharedCharacterCollection) {
+        let sequence = collectionSequence(for: collection)
+        guard let nextID = sequence.recordIDs.first(where: {
+            userStateStore.state.lessonStates[$0]?.progressStatus != .learned
+        }) else {
+            return
+        }
+        dependencies.navigationState.openSymbol(nextID, intent: .start, sequence: sequence)
+    }
+
+    /// Keeps Home continuation aligned with the same collection sequence used by Browse.
+    private func collectionSequence(for collection: SharedCharacterCollection) -> SymbolSequence {
+        SymbolSequence(
+            id: "collection-\(collection.id)",
+            title: collection.title,
+            recordIDs: collection.sharedCharacterIDs.filter { id in
+                dependencies.sharedCharacters.contains(where: { $0.id == id })
+            }
+        )
     }
 
     /// Home always displays the same record its primary action opens.

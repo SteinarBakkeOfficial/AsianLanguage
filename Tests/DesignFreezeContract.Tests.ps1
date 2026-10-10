@@ -34,11 +34,11 @@ Assert-True (-not $browse.Contains("Explore all collections")) "Browse must not 
 
 $homeSource = Text "Sources/App/Home/HomeView.swift"
 Assert-True $homeSource.Contains("EditorialCollectionArtwork") "Home collection continuation must show the approved collection artwork."
-Assert-True $homeSource.Contains("EditorialCollectionDetailView") "Home collection continuation must open the collection, not a guessed next symbol."
+Assert-True $homeSource.Contains("openSymbol(nextID, intent: .start, sequence: sequence)") "Home collection continuation must open the next unfinished Symbol directly."
 $hero = Section $homeSource "private var previewItems" "var body: some View"
 Assert-True $hero.Contains('stage != "regular"') "Home lineage preview must include the next available historical stage, not only Origin and Today."
 $collectionModule = Section $homeSource "private var collectionModule" "/// Home always displays"
-Assert-True (-not $collectionModule.Contains("openSymbol")) "Home collection continuation must not skip directly into a guessed symbol."
+Assert-True $collectionModule.Contains("continueCollection(collection)") "Home collection continuation must preserve the collection sequence."
 
 $history = Text "Sources/App/Navigation/RootTabView.swift"
 $historyPage = Section $history "private struct HistoryRootView" "/// Stable structural model"
