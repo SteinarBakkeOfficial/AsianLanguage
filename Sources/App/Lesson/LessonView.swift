@@ -43,7 +43,9 @@ struct LessonView: View {
         }
         _position = State(initialValue: normalizedPosition)
         let mode: SymbolEntryMode
-        if dependencies.navigationState.symbolOpenIntent == .review || dependencies.navigationState.symbolOpenIntent == .reviewFromBrowse {
+        // A nested inspection route explicitly passes `.view`; use that local intent
+        // so the parent Quick Review session does not re-render inside the pushed route.
+        if openingIntent == .review || openingIntent == .reviewFromBrowse {
             mode = .review
         } else {
             mode = .journey

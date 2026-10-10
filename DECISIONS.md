@@ -29,6 +29,13 @@
 - macOS/Xcode packaging, marketplace submission, and post-release device observations are distribution or maintenance actions. They do not reopen the completed V1 review decision by default.
 - The Japanese book reference set establishes the History editorial standard: narrative explanation, nearby evidence, structured comparison tables, explicit exceptions, cautious claims, and language-specific writing traditions.
 
+## Confirmed device-maintenance corrections — 2026-10-10
+
+- Quick Review's `Check this Symbol` action opens the exact answered Symbol Journey as a nested inspection route. The nested route must use its explicit local view intent rather than inheriting the parent's review intent, and returning from it must preserve the active Quick Review card/session.
+- Browse's top-level `In Progress` section represents only the single active main 1–126 journey identified by `activeJourneySymbolID`. Individual unfinished lesson states remain local resume data, but collection/status exploration must not make every unfinished record appear as the main progress list.
+- These are navigation and progress-presentation corrections only. They do not change the read-only corpus, content, collection membership, monetization scope, or user-state schema.
+- The Windows contract suite passes after these corrections; macOS/Xcode device verification remains the final runtime check.
+
 ## V1.0 release-candidate freeze and Patch 0.1 boundary — 2026-10-04
 
 - **Current status: release candidate complete; preparing for marketplace submission.**

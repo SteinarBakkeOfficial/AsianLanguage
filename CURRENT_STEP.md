@@ -4,10 +4,10 @@
 
 Maintain the approved V1 package: 126 complete-evolution symbols, local origin artwork, reviewed historical stages, CNS11643 Kai Regular Script, approved locale-specific modern forms and examples, explicit native-script speech data, updated collections, search-first Browse, and the book-informed History editorial pages. V1 content and native-speaker review are complete; post-release corrections are tracked for Patch 0.1.
 
-## Current release status — 2026-10-04
+## Current release status — 2026-10-10
 
-- **Release candidate complete; preparing for marketplace submission.** The next actions are packaging, signing, and App Store submission of this unchanged V1.0 candidate.
-- This repository state is the V1.0 release candidate. The approved code/content boundary is frozen for marketplace preparation; do not make further code changes in this step.
+- **Release candidate complete with scoped maintenance corrections; preparing for marketplace submission.** The next actions are packaging, signing, and App Store submission of this corrected V1.0 candidate.
+- This repository state is the V1.0 release candidate plus confirmed navigation/progress corrections from device testing. The approved corpus and product scope remain frozen; no unrelated code or content changes are authorized in this step.
 - The remaining V1.0 actions are Apple/Xcode simulator/device verification, archive/signing, packaging, and marketplace submission. These are release execution actions, not an invitation to reopen the completed review.
 - Patch 0.1 is intentionally separate from V1.0. It will be based on confirmed post-release feedback and may include the pronunciation/audio improvement documented in [`docs/patches/patch-0.1-pronunciation-audio.md`](docs/patches/patch-0.1-pronunciation-audio.md).
 
@@ -18,10 +18,17 @@ Maintain the approved V1 package: 126 complete-evolution symbols, local origin a
 - The final modern-language content sweep is complete: all 126 symbols have at least four non-core examples in Simplified Chinese, Taiwan Mandarin, and Hong Kong Cantonese. The new Traditional Chinese word examples use the appropriate written forms and pronunciation systems, preserve the advanced sentence as the final displayed example, and are synchronized into the bundled runtime corpus.
 - A runtime regression check now enforces the four-example minimum for all three Chinese tracks so a future corpus import cannot silently reintroduce the earlier short lanes.
 - Quick Review uses one three-choice card per learned Symbol, rotates between symbol-to-meaning, meaning-to-symbol, and selected-language prompts, reveals `Check this Symbol` only after an incorrect choice, and routes that action to the exact Symbol from the answered card before ending the temporary session. It does not read from or modify Review Later.
+- Quick Review inspection now uses its explicit local view route, so `Check this Symbol` opens the Symbol Journey instead of recreating the parent review screen. Browse `In Progress` now shows only the active main-corpus journey; unfinished collection/status records remain stored for resume semantics but are not presented as additional main progress items.
 - All local Windows checks pass, and Apple device testing is complete on the iPhone 14 Pro. The remaining actions are archive/signing, marketplace packaging, and submission of this unchanged candidate.
 - All historical/reference images and internal artwork used by V1.0 are treated as cleared. ZDIC is recorded as the reference/source; earlier pending-rights notes are superseded by this release decision.
 - The approved corpus remains exactly 126 records. No new symbols, historical assets, or unrelated features are in scope.
 - Keep the manual-review and screenshot findings documents as the audit trail for this final pass and later Patch 0.1 corrections. Do not use them as authorization for additional V1.0 changes.
+
+## Confirmed device-maintenance corrections — 2026-10-10
+
+- Fixed the Quick Review nested-route intent bug: the inspected Symbol now renders as a full Journey and returns to the preserved review session.
+- Fixed Browse's In Progress scope: it now follows `activeJourneySymbolID`, representing the learner's one active main 1–126 journey rather than every unfinished symbol opened during collection or status exploration.
+- `Tools/Run-Checks.ps1` and `git diff --check` pass. macOS/Xcode device verification is still required before describing the runtime behavior as device-verified.
 
 ## Confirmed remaining corrections — 2026-10-02
 

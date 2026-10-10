@@ -40,6 +40,7 @@ Assert-True $lesson.Contains("Check this Symbol") "Quick Review must offer the f
 Assert-True $lesson.Contains("onOpenJourney: { symbolID in") "Quick Review must open the exact Symbol answered incorrectly."
 Assert-True $lesson.Contains("returnDestination: .quickReview") "Quick Review inspection must return to its preserved review session."
 Assert-True $lesson.Contains("isActive: Binding(") "Quick Review inspection must use an explicit navigation push."
+Assert-True $lesson.Contains("if openingIntent == .review || openingIntent == .reviewFromBrowse") "Nested Quick Review inspection must use its explicit local journey intent."
 Assert-True $lesson.Contains("Next Symbol") "Quick Review must advance one completed Symbol at a time."
 Assert-True $lesson.Contains("Finish Review") "Quick Review must finish without forcing a journey replay."
 Assert-True (-not $lesson.Contains('Text("QUICK REVIEW")')) "Quick Review must keep its title in the navigation header only."

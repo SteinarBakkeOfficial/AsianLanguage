@@ -185,7 +185,17 @@ struct BrowseView: View {
         }
     }
 
-    private var inProgressRecords: [SharedCharacterRecord] { records(with: .inProgress) }
+    /// Browse shows the one active main-corpus journey, not every unfinished record
+    /// accumulated while the learner sampled collections or status lists.
+    private var inProgressRecords: [SharedCharacterRecord] {
+        guard let activeID = userStateStore.state.activeJourneySymbolID,
+              let state = userStateStore.state.lessonStates[activeID],
+              state.progressStatus == .inProgress,
+              let record = dependencies.sharedCharacters.first(where: { $0.id == activeID }) else {
+            return []
+        }
+        return [record]
+    }
     private var learnedRecords: [SharedCharacterRecord] { records(with: .learned) }
     private var favoriteRecords: [SharedCharacterRecord] { dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.isStarred == true } }
     private var reviewLaterRecords: [SharedCharacterRecord] { dependencies.sharedCharacters.filter { userStateStore.state.lessonStates[$0.id]?.isReviewLater == true } }
