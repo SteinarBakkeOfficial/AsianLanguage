@@ -32,7 +32,7 @@ final class MonetizationManager: NSObject, ObservableObject, FullScreenContentDe
     private var pendingEligibility = false
     private var pendingContinuation: (() -> Void)?
 
-    init(defaults: UserDefaults = .standard, sessionStartedAt: Date = Date()) {
+    nonisolated init(defaults: UserDefaults = .standard, sessionStartedAt: Date = Date()) {
         self.defaults = defaults
         self.sessionStartedAt = sessionStartedAt
         super.init()
