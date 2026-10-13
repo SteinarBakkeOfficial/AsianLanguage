@@ -10,7 +10,7 @@ The app has five root areas: Home, Symbol, History, Browse, and More. Search and
 
 ## V1
 
-**Current status: V1.0 release candidate complete with scoped maintenance corrections; preparing for marketplace submission.**
+**Current status: V1.0 release candidate complete with scoped maintenance corrections and standard AdMob interstitial monetization; final device testing is underway while Apple Developer enrollment is pending.**
 
 V1 is local and offline. The bundled corpus is read-only; progress, Favorites, Review later, and focus-track selection are local user state. All four focus tracks are enabled by default, but users may disable every track for a museum-only Symbol Journey; there is no separate All enum value. Language controls live in More rather than blocking the first exhibit.
 
@@ -22,7 +22,7 @@ Onboarding opens the curated Mountain symbol directly from the bundled corpus. T
 
 Historical Assets must be source-backed or licensed, explicitly unavailable, or editorially omitted. Fabricated historical glyphs and modern-form fallbacks are prohibited.
 
-The current V1.0 release candidate is the approved 126-character complete-evolution selection with 504 selected/normalized historical stage assets, cleared historical/reference material, local origin illustrations, and a Regular Script Kai endpoint. The app also bundles the History reference artwork and uses its illustrations inside a native editorial timeline and article layout. V1 content review, native-speaker review, Apple device testing on an iPhone 14 Pro, and the latest focused UI corrections are complete, including Home Quick Review, the Japanese furigana/example-gloss alignment, the full Japanese Symbol-page semantic gloss audit, the final Chinese example audit, and the confirmed Quick Review/Browse maintenance corrections documented in `DECISIONS.md`. The corpus and product scope remain frozen; this scoped correction is included in the candidate for marketplace packaging and submission.
+The current V1.0 release candidate is the approved 126-character complete-evolution selection with 504 selected/normalized historical stage assets, cleared historical/reference material, local origin illustrations, and a Regular Script Kai endpoint. The app also bundles the History reference artwork and uses its illustrations inside a native editorial timeline and article layout. V1 content review, native-speaker review, Apple device testing on an iPhone 14 Pro, and the latest focused UI corrections are complete, including Home Quick Review, the Japanese furigana/example-gloss alignment, the full Japanese Symbol-page semantic gloss audit, the final Chinese example audit, the confirmed Quick Review/Browse maintenance corrections, and the centralized UMP/AdMob standard-interstitial implementation documented in `DECISIONS.md`. The corpus and product scope remain frozen; only confirmed release-blocking bugs found during final testing should reopen the candidate.
 
 Quick Review appears on Home after the learner completes at least one Symbol. It randomizes one three-choice recognition card for every learned Symbol and does not alter learning state. Review Later remains a separate Browse bookmark for reopening a full Symbol Journey.
 
@@ -38,7 +38,7 @@ The import source is `Tools/Import-V1RuntimeCorpus.ps1`; it keeps the human-read
 
 ## Development
 
-Windows checks validate content, state contracts, project wiring, and static product contracts. V1.0 review and local acceptance checks are complete. The repository is now documenting the release candidate, not authorizing further code changes before marketplace submission. macOS/Xcode packaging and marketplace submission are distribution actions; issues discovered after release are tracked for Patch 0.1. The first planned Patch 0.1 topic is improved pronunciation playback and optional speech for usage examples; see [`docs/patches/patch-0.1-pronunciation-audio.md`](docs/patches/patch-0.1-pronunciation-audio.md).
+Windows checks validate content, state contracts, project wiring, and static product contracts. V1.0 review and local acceptance checks are complete; final phone testing is underway. Apple Developer enrollment is pending before archive/signing and marketplace submission. The repository is now documenting the release candidate and authorizes only confirmed release-blocking bug fixes before submission. Issues discovered after release are tracked for Patch 0.1. The first planned Patch 0.1 topic is improved pronunciation playback and optional speech for usage examples; see [`docs/patches/patch-0.1-pronunciation-audio.md`](docs/patches/patch-0.1-pronunciation-audio.md).
 
 Run available checks:
 

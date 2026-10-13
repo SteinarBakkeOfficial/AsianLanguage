@@ -4,11 +4,12 @@
 
 Maintain the approved V1 package: 126 complete-evolution symbols, local origin artwork, reviewed historical stages, CNS11643 Kai Regular Script, approved locale-specific modern forms and examples, explicit native-script speech data, updated collections, search-first Browse, and the book-informed History editorial pages. V1 content and native-speaker review are complete; post-release corrections are tracked for Patch 0.1.
 
-## Current release status — 2026-10-10
+## Current release status — 2026-10-13
 
-- **Release candidate complete with scoped maintenance corrections; preparing for marketplace submission.** The next actions are packaging, signing, and App Store submission of this corrected V1.0 candidate.
-- This repository state is the V1.0 release candidate plus confirmed navigation/progress corrections from device testing. The approved corpus and product scope remain frozen; no unrelated code or content changes are authorized in this step.
-- The remaining V1.0 actions are Apple/Xcode simulator/device verification, archive/signing, packaging, and marketplace submission. These are release execution actions, not an invitation to reopen the completed review.
+- **Release candidate complete with scoped maintenance corrections and standard AdMob interstitial monetization; final testing is underway.** The next actions are complete device testing, Apple Developer enrollment, then archive/signing, packaging, and App Store submission.
+- This repository state is the V1.0 release candidate plus confirmed navigation/progress, monetization, and font-registration corrections. The approved corpus and product scope remain frozen; only confirmed release-blocking bugs found during final testing may reopen implementation.
+- The remaining V1.0 actions are final Apple device verification, Apple Developer enrollment, archive/signing, packaging, and marketplace submission. These are release execution actions, not an invitation to reopen the completed review.
+- Monetization is V1 scope: standard interstitials only, with three distinct meaningful Symbol views for the main journey, every fifth non-final Quick Review card as a Quick Review trigger, no launch-only ad, and a five-minute cooldown after successful presentation. Debug uses the Google test unit; Release uses the production unit. UMP gates requests, and ATT is not included.
 - Patch 0.1 is intentionally separate from V1.0. It will be based on confirmed post-release feedback and may include the pronunciation/audio improvement documented in [`docs/patches/patch-0.1-pronunciation-audio.md`](docs/patches/patch-0.1-pronunciation-audio.md).
 
 - V1 editorial review and the previous screenshot-driven implementation pass are complete for the approved content boundaries. The focused Apple-review follow-up pass is complete locally.
@@ -19,7 +20,7 @@ Maintain the approved V1 package: 126 complete-evolution symbols, local origin a
 - A runtime regression check now enforces the four-example minimum for all three Chinese tracks so a future corpus import cannot silently reintroduce the earlier short lanes.
 - Quick Review uses one three-choice card per learned Symbol, rotates between symbol-to-meaning, meaning-to-symbol, and selected-language prompts, reveals `Check this Symbol` only after an incorrect choice, and routes that action to the exact Symbol from the answered card before ending the temporary session. It does not read from or modify Review Later.
 - Quick Review inspection now uses its explicit local view route, so `Check this Symbol` opens the Symbol Journey instead of recreating the parent review screen. Browse `In Progress` now shows only the active main-corpus journey; unfinished collection/status records remain stored for resume semantics but are not presented as additional main progress items.
-- All local Windows checks pass, and Apple device testing is complete on the iPhone 14 Pro. The remaining actions are archive/signing, marketplace packaging, and submission of this unchanged candidate.
+- All local Windows checks pass. Final Apple device testing is underway on the iPhone 14 Pro; Apple Developer enrollment is pending before archive/signing, marketplace packaging, and submission.
 - All historical/reference images and internal artwork used by V1.0 are treated as cleared. ZDIC is recorded as the reference/source; earlier pending-rights notes are superseded by this release decision.
 - The approved corpus remains exactly 126 records. No new symbols, historical assets, or unrelated features are in scope.
 - Keep the manual-review and screenshot findings documents as the audit trail for this final pass and later Patch 0.1 corrections. Do not use them as authorization for additional V1.0 changes.
@@ -341,7 +342,7 @@ The current pass stays within V1: it improves the pilot's visual fidelity, sourc
 - Resolved locally: About / Method is focused on teaching method, Shared Character, offline behavior, and corpus scope; Sources / Licenses owns references and licenses.
 - Resolved locally: learned-symbol count grammar handles singular and plural forms; native copy verification remains.
 - Picture/scan discovery: this is a separately scoped future feature. Add it under Browse, process present-day symbol photos/scans on-device, map recognized text to the bundled dictionary/corpus, and route exact matches through the existing Symbol navigation. Show an explicit no-match state; do not recognize historical glyphs by assumption, upload images, or store photos without separate approval.
-- V1 to VNext tracking: the items above were intentional carryover and are now approved for this implementation. New History artwork and monetization remain excluded.
+- V1 to VNext tracking: the items above are intentional carryover. New History artwork remains deferred; V1 monetization is implemented and is no longer a carryover item.
 
 ### Additional post-review carryover — 2026-09-10
 

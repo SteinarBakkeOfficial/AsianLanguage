@@ -17,7 +17,7 @@ The official product-facing name is Script Roots. AsianLanguage remains the inte
 7. Asset pipeline — complete for V1; approved local package and provenance are synchronized
 8. V1 corpus — complete; the 126-record complete-evolution package is the release corpus
 9. Design and QA — complete for V1; focused Apple-review findings are implemented and locally verified
-10. V1 release — release candidate complete; pending Apple/Xcode verification, packaging, and marketplace submission
+10. V1 release — release candidate complete; final phone testing underway, Apple Developer enrollment pending, then packaging and marketplace submission
 
 ## Current status
 
@@ -25,12 +25,13 @@ Phases 1–9 are complete for the approved V1 scope. The former six-step lesson 
 
 Discovery and content-contract foundations are complete, including Browse-owned Search/Collections/status lists, four focus tracks, regional Traditional Chinese coverage, stage-owned asset metadata, migration support, release/readiness checks, and the book-informed History article structure. The runtime loads the approved/published 126-record complete-evolution V1 package; the original 11 records remain repository reference fixtures.
 
-## Authoritative release posture — 2026-10-04
+## Authoritative release posture — 2026-10-13
 
-- **Release candidate complete; preparing for marketplace submission.** The next actions are packaging, signing, and submission of the unchanged V1.0 candidate.
-- The current repository state is the V1.0 release candidate. Code and approved release content are frozen for marketplace preparation; no new implementation is authorized in this release-candidate step.
+- **Release candidate complete; final testing and Apple enrollment are the remaining gates.** The next actions are finish device testing, complete Apple Developer enrollment, then archive, sign, package, and submit the V1.0 candidate.
+- The current repository state is the V1.0 release candidate with the approved standard AdMob interstitial monetization. Code and approved release content are frozen except for confirmed release-blocking bugs found during final testing.
 - V1.0 includes the approved 126-record corpus, reviewed historical journey, target-language pages, History guidance, Quick Review, and the final focused content/layout corrections. The first marketplace release is the next real-world feedback cycle.
-- Apple device verification is complete on the iPhone 14 Pro. Archive/signing, packaging, and marketplace submission remain release execution steps against the unchanged candidate; they are not permission to change its code or content.
+- Apple device verification is in final testing on the iPhone 14 Pro. Apple Developer enrollment is pending; archive/signing, packaging, and marketplace submission remain release execution steps against the candidate.
+- Monetization uses standard interstitials only: three distinct meaningful Symbol views trigger main-journey eligibility, every fifth non-final Quick Review card is an explicit Quick Review trigger, and a five-minute cooldown begins only after a successful ad presentation. Debug uses Google's test unit; Release uses the production unit. UMP consent gates ad requests and ATT is not included.
 - Historical/reference images and internal artwork used by the release candidate are treated as cleared for V1.0. ZDIC is recorded as the reference/source, and the earlier pending-rights notes are superseded.
 - Patch 0.1 is a separate post-release maintenance cycle. It will be planned from confirmed user/device feedback and may not reopen completed V1 review by default.
 - The first documented Patch 0.1 candidate is improved pronunciation playback, including clearer speaking/pronunciation and possible playback for all approved usage examples. It is not implemented or included in V1.0.
@@ -41,7 +42,7 @@ Discovery and content-contract foundations are complete, including Browse-owned 
 - The final modern-language content sweep is complete across all 126 records. Simplified Chinese was verified at four non-core examples per symbol; missing Taiwan Mandarin and Hong Kong Cantonese lanes were completed, with source and runtime corpus synchronized.
 - The final semantic Symbol-page sweep is complete across all 126 records. Reading glosses, native equivalents, variants, and compound meanings were checked for semantic accuracy; approved overlap between related language lanes was preserved rather than removed mechanically.
 - The final Japanese Symbol-page polish is complete: furigana remains above the written Kanji while each English example gloss aligns with the actual written word. A subsequent Japanese-only semantic gloss audit checked all 126 Symbol pages and corrected reading glosses, equivalent classification, repeated filler examples, and Japanese reading metadata without touching other language lanes or app areas.
-- All local contract and release-readiness checks pass, and Apple device testing is complete on the iPhone 14 Pro. Marketplace packaging and submission remain.
+- All local contract and release-readiness checks pass. Final Apple device testing and marketplace packaging/submission remain; Apple Developer enrollment is the current external dependency.
 - Older dated testing and handoff sections below remain historical records. This section is the current project truth.
 
 ## Current implementation snapshot — 2026-09-03
@@ -104,10 +105,11 @@ This section is an implementation record retained for traceability. The authorit
 
 ### Current next steps — release candidate and Patch 0.1
 
-1. Run the final Apple/Xcode simulator and device verification against this release candidate.
-2. Archive, sign, package, and submit the unchanged V1.0 release candidate to the marketplace.
-3. Monitor marketplace feedback and reported device issues after release.
-4. Plan Patch 0.1 only after feedback is available. The first recorded candidate is pronunciation/audio improvement; see [`docs/patches/patch-0.1-pronunciation-audio.md`](docs/patches/patch-0.1-pronunciation-audio.md).
+1. Finish final Apple/Xcode simulator and device verification against this release candidate.
+2. Complete Apple Developer enrollment.
+3. Archive, sign, package, and submit the unchanged V1.0 release candidate to the marketplace.
+4. Monitor marketplace feedback and reported device issues after release.
+5. Plan Patch 0.1 only after feedback is available. The first recorded candidate is pronunciation/audio improvement; see [`docs/patches/patch-0.1-pronunciation-audio.md`](docs/patches/patch-0.1-pronunciation-audio.md).
 
 ### Patch boundary
 
@@ -352,7 +354,6 @@ All uncertain composition, pictograph, etymological, and script-form claims must
 - Tracing/handwriting
 - Android
 - Sync and deep account systems
-- Ads/monetization
 - User-created collection folders
 - richer historical animation
 - Deeper onboarding language orientation covering all four target writing traditions; this applies only to the onboarding symbol experience.

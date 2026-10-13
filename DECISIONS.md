@@ -1,5 +1,15 @@
 # DECISIONS
 
+## V1.0 release monetization and final handoff — 2026-10-13
+
+- Standard interstitial AdMob monetization is included in the V1.0 release candidate. Rewarded, rewarded-interstitial, banner, native, app-open, and mediation formats remain excluded.
+- Main Symbol navigation reaches pending eligibility after three distinct meaningful Symbol views. Quick Review has an explicit trigger on every fifth non-final card and may create pending eligibility without a preceding Symbol-view threshold.
+- Ads appear only at approved natural transitions. Launching, foregrounding, tab switching, active reading, and arbitrary SwiftUI appearance events do not present ads.
+- There is no launch-only cooldown. A five-minute app-side cooldown begins after a successful interstitial presentation and is persisted across app launches; unavailable ads fail open and retain pending eligibility for a later approved transition.
+- Debug builds use Google's official test interstitial unit; Release builds use the production unit. UMP consent controls ad requests. ATT and `NSUserTrackingUsageDescription` are not included.
+- The app's own `Resources/PrivacyInfo.xcprivacy` declares UserDefaults access with reason `CA92.1`; Google Mobile Ads and UMP supply their own SDK privacy manifests. `Resources/AdMobInfo.plist` supplies the App ID and current SKAdNetwork list.
+- The V1.0 release candidate is the intended submission version unless final device testing finds a confirmed release-blocking bug. Apple Developer enrollment is pending; archive/signing and marketplace submission follow enrollment.
+
 ## Screenshot-driven final implementation pass — 2026-10-01
 
 - The user's `Reference Pictures/Testing1_10` review supersedes the earlier “acceptance complete” release posture for implementation purposes. The app is not called marketplace-ready until the confirmed screenshot blockers are corrected and rechecked.
