@@ -20,7 +20,6 @@ final class MonetizationManager: NSObject, ObservableObject, FullScreenContentDe
     @Published private(set) var isPrivacyOptionsRequired = false
 
     private let defaults: UserDefaults
-    private let sessionStartedAt: Date
     private var interstitial: InterstitialAd?
     private var isLoading = false
     private var hasStarted = false
@@ -32,9 +31,8 @@ final class MonetizationManager: NSObject, ObservableObject, FullScreenContentDe
     private var pendingEligibility = false
     private var pendingContinuation: (() -> Void)?
 
-    nonisolated init(defaults: UserDefaults = .standard, sessionStartedAt: Date = Date()) {
+    nonisolated init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
-        self.sessionStartedAt = sessionStartedAt
         super.init()
     }
 
@@ -80,14 +78,15 @@ final class MonetizationManager: NSObject, ObservableObject, FullScreenContentDe
         interstitial.present(from: presentingViewController)
     }
 
-    /// Allows every fifth non-final Quick Review card advance to consume pending eligibility.
-    /// Quick Review itself does not create eligibility; the three-symbol activity threshold remains primary.
+    /// Allows every fifth non-final Quick Review card advance to create and consume pending eligibility.
+    /// Quick Review is an explicit activity trigger; it does not depend on symbol-view counting.
     func advanceQuickReview(then continuation: @escaping () -> Void) {
         quickReviewAdvances += 1
         guard quickReviewAdvances.isMultiple(of: 5) else {
             continuation()
             return
         }
+        pendingEligibility = true
         presentIfEligible(then: continuation)
     }
 
@@ -108,8 +107,8 @@ final class MonetizationManager: NSObject, ObservableObject, FullScreenContentDe
     private var canPresentNow: Bool {
         guard ConsentInformation.shared.canRequestAds else { return false }
         let lastPresentation = defaults.object(forKey: Self.lastPresentationKey) as? Date
-        let cooldownAnchor = max(sessionStartedAt, lastPresentation ?? .distantPast)
-        return Date().timeIntervalSince(cooldownAnchor) >= Self.cooldown
+        guard let lastPresentation else { return true }
+        return Date().timeIntervalSince(lastPresentation) >= Self.cooldown
     }
 
     private func finishConsentUpdate(error: Error?) async {
@@ -180,6 +179,7 @@ final class MonetizationManager: NSObject, ObservableObject, FullScreenContentDe
         // A successful presentation consumes the current three-symbol activity cycle.
         viewedSymbolIDs.removeAll()
         meaningfulSymbolCount = 0
+        quickReviewAdvances = 0
         pendingEligibility = false
         defaults.set(Date(), forKey: Self.lastPresentationKey)
     }

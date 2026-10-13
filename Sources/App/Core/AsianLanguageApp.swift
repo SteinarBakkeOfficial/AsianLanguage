@@ -63,6 +63,9 @@ final class ScriptRootsNotificationDelegate: NSObject, UNUserNotificationCenterD
 /// Registers the local font files before SwiftUI resolves the shared typography tokens.
 /// Keep this list in sync with Resources/Fonts when adding or removing app typefaces.
 enum BundledFontRegistrar {
+    /// Prevents repeated SwiftUI view construction from registering the same font file again.
+    private static var registeredFontURLs = Set<URL>()
+
     private static let coreFontFiles = [
         ("PlayfairDisplay-Regular", "ttf"),
         ("PlayfairDisplay-Bold", "ttf"),
@@ -100,6 +103,9 @@ enum BundledFontRegistrar {
     private static func register(_ fontFiles: [(String, String)]) {
         for (fontName, fileExtension) in fontFiles {
             guard let fontURL = Bundle.main.url(forResource: fontName, withExtension: fileExtension, subdirectory: "Fonts") else {
+                continue
+            }
+            guard registeredFontURLs.insert(fontURL).inserted else {
                 continue
             }
             CTFontManagerRegisterFontsForURL(fontURL as CFURL, .process, nil)
