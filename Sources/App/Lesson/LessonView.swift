@@ -80,7 +80,9 @@ struct LessonView: View {
                     record: record,
                     onReturnHome: {
                         showingCorpusComplete = false
-                        dependencies.navigationState.selectedTab = .home
+                        dependencies.monetizationManager.presentIfEligible {
+                            dependencies.navigationState.selectedTab = .home
+                        }
                     },
                     onRevisit: {
                         showingCorpusComplete = false
@@ -98,6 +100,7 @@ struct LessonView: View {
                         onRevisit: {
                             position = .origin
                             entryMode = .journey
+                            recordMeaningfulVisitIfNeeded()
                         },
                         onReview: {
                             entryMode = .review
@@ -125,6 +128,9 @@ struct LessonView: View {
                         },
                         onFinish: {
                             dependencies.navigationState.selectedTab = openingIntent == .reviewFromBrowse ? .browse : .home
+                        },
+                        onAdvance: { advanceCard in
+                            dependencies.monetizationManager.advanceQuickReview(then: advanceCard)
                         }
                     )
                 case .usage:
@@ -211,7 +217,14 @@ struct LessonView: View {
             if openingIntent == .start || openingIntent == .resume {
                 persistPositionIfNeeded()
             }
+            recordMeaningfulVisitIfNeeded()
         }
+    }
+
+    /// Counts only the canonical journey surface; the manager deduplicates repeated SwiftUI appearances.
+    private func recordMeaningfulVisitIfNeeded() {
+        guard entryMode == .journey else { return }
+        dependencies.monetizationManager.recordMeaningfulSymbolView(route.sharedCharacterID)
     }
 
     /// Keeps concise navigation labels separate from fuller editorial meanings used in lesson content.
@@ -334,13 +347,17 @@ struct LessonView: View {
         UINotificationFeedbackGenerator().notificationOccurred(.success)
         guard let next = nextRecord else {
             if let sequence = route.sequence {
-                returnFromSequence(sequence)
+                dependencies.monetizationManager.presentIfEligible {
+                    returnFromSequence(sequence)
+                }
             } else {
                 showingCorpusComplete = true
             }
             return
         }
-        dependencies.navigationState.openSymbol(next.id, intent: .start, sequence: route.sequence)
+        dependencies.monetizationManager.presentIfEligible {
+            dependencies.navigationState.openSymbol(next.id, intent: .start, sequence: route.sequence)
+        }
     }
 
     /// Returns a finite group to its originating surface without showing the full-corpus completion state.
@@ -530,6 +547,7 @@ private struct QuickReviewPromptField<Content: View>: View {
 private struct QuickReviewView: View {
     let onOpenJourney: (String) -> Void
     let onFinish: () -> Void
+    let onAdvance: (@escaping () -> Void) -> Void
     @State private var cards: [QuickReviewCard]
     @State private var cardIndex = 0
     @State private var selectedOptionID: String?
@@ -539,10 +557,12 @@ private struct QuickReviewView: View {
         distractorRecords: [SharedCharacterRecord],
         focusSelection: FocusTrackSelection,
         onOpenJourney: @escaping (String) -> Void,
-        onFinish: @escaping () -> Void
+        onFinish: @escaping () -> Void,
+        onAdvance: @escaping (@escaping () -> Void) -> Void
     ) {
         self.onOpenJourney = onOpenJourney
         self.onFinish = onFinish
+        self.onAdvance = onAdvance
         _cards = State(initialValue: QuickReviewCard.makeSession(
             records: records,
             distractorRecords: distractorRecords,
@@ -667,8 +687,10 @@ private struct QuickReviewView: View {
             onFinish()
             return
         }
-        cardIndex += 1
-        selectedOptionID = nil
+        onAdvance {
+            cardIndex += 1
+            selectedOptionID = nil
+        }
     }
 }
 

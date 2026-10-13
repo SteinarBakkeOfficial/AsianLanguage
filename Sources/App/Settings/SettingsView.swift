@@ -8,6 +8,8 @@ struct SettingsView: View {
 
     /// Local state store used for focus language and reset controls.
     @ObservedObject private var userStateStore: LocalUserStateStore
+    /// UMP updates this object asynchronously after launch to reveal Privacy Choices when required.
+    @ObservedObject private var monetizationManager: MonetizationManager
 
     /// Controls the destructive learning-progress reset confirmation.
     @State private var isShowingResetConfirmation = false
@@ -20,6 +22,7 @@ struct SettingsView: View {
     init(dependencies: AppDependencies) {
         self.dependencies = dependencies
         _userStateStore = ObservedObject(wrappedValue: dependencies.userStateStore)
+        _monetizationManager = ObservedObject(wrappedValue: dependencies.monetizationManager)
     }
 
     var body: some View {
@@ -42,6 +45,14 @@ struct SettingsView: View {
             Section("Learning") {
                 Button(reviewReminderEnabled ? "Turn off review reminder" : "Remind me to review") {
                     setReviewReminder(enabled: !reviewReminderEnabled)
+                }
+            }
+
+            if dependencies.monetizationManager.isPrivacyOptionsRequired {
+                Section("Privacy") {
+                    Button("Privacy Choices") {
+                        dependencies.monetizationManager.presentPrivacyChoices()
+                    }
                 }
             }
 

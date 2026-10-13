@@ -51,6 +51,9 @@
 		8B0000010000000000000035 /* PronunciationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000035 /* PronunciationService.swift */; };
 		8B0000010000000000000036 /* HistoryModernLanguageReadingGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0001010000000000000036 /* HistoryModernLanguageReadingGuide.swift */; };
 		D123DF22307DE2E900DE2DF4 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = D123DF21307DE2E900DE2DF4 /* GoogleMobileAds */; };
+		D123DF24307DE2E900DE2DF4 /* GoogleUserMessagingPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = D123DF23307DE2E900DE2DF4 /* GoogleUserMessagingPlatform */; };
+		D123DF25307DE2E900DE2DF4 /* MonetizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D123DF26307DE2E900DE2DF4 /* MonetizationManager.swift */; };
+		D123DF28307DE2E900DE2DF4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D123DF29307DE2E900DE2DF4 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,9 @@
 		8B0001010000000000000032 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		8B0001010000000000000033 /* Assets/Collections */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets/Collections; sourceTree = "<group>"; };
 		8B0001010000000000000034 /* History */ = {isa = PBXFileReference; lastKnownFileType = folder; path = History; sourceTree = "<group>"; };
+		D123DF26307DE2E900DE2DF4 /* MonetizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetizationManager.swift; sourceTree = "<group>"; };
+		D123DF29307DE2E900DE2DF4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		D123DF2A307DE2E900DE2DF4 /* AdMobInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AdMobInfo.plist; sourceTree = "<group>"; };
 		8B0001010000000000000035 /* PronunciationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationService.swift; sourceTree = "<group>"; };
 		8B0001010000000000000036 /* HistoryModernLanguageReadingGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModernLanguageReadingGuide.swift; sourceTree = "<group>"; };
 		8B0002010000000000000001 /* AsianLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsianLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D123DF22307DE2E900DE2DF4 /* GoogleMobileAds in Frameworks */,
+				D123DF24307DE2E900DE2DF4 /* GoogleUserMessagingPlatform in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +180,7 @@
 				8B0001010000000000000002 /* AppDependencies.swift */,
 				8B0001010000000000000003 /* FocusTrack.swift */,
 				8B0001010000000000000035 /* PronunciationService.swift */,
+				D123DF26307DE2E900DE2DF4 /* MonetizationManager.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -267,6 +275,8 @@
 				8B0001010000000000000026 /* Assets/Symbols */,
 				8B0001010000000000000033 /* Assets/Collections */,
 				8B0001010000000000000034 /* History */,
+				D123DF29307DE2E900DE2DF4 /* PrivacyInfo.xcprivacy */,
+				D123DF2A307DE2E900DE2DF4 /* AdMobInfo.plist */,
 				8B0001010000000000000031 /* Assets.xcassets */,
 				8B0001010000000000000032 /* Fonts */,
 			);
@@ -430,6 +440,7 @@
 				8B0000010000000000000032 /* Fonts in Resources */,
 				8B0000010000000000000033 /* Assets/Collections in Resources */,
 				8B0000010000000000000034 /* History in Resources */,
+				D123DF28307DE2E900DE2DF4 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +490,7 @@
 				8B0000010000000000000030 /* DesignSystem.swift in Sources */,
 				8B0000010000000000000035 /* PronunciationService.swift in Sources */,
 				8B0000010000000000000036 /* HistoryModernLanguageReadingGuide.swift in Sources */,
+				D123DF25307DE2E900DE2DF4 /* MonetizationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +640,8 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4Y8V79G486;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Resources/AdMobInfo.plist;
+				INFOPLIST_KEY_GADApplicationIdentifier = "ca-app-pub-4409095790258698~4776931870";
 				INFOPLIST_KEY_CFBundleDisplayName = "Script Roots";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -656,6 +670,8 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4Y8V79G486;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Resources/AdMobInfo.plist;
+				INFOPLIST_KEY_GADApplicationIdentifier = "ca-app-pub-4409095790258698~4776931870";
 				INFOPLIST_KEY_CFBundleDisplayName = "Script Roots";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -767,6 +783,14 @@
 				minimumVersion = 13.11.0;
 			};
 		};
+		D123DF27307DE2E900DE2DF4 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -774,6 +798,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D123DF20307DE2E900DE2DF4 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
 			productName = GoogleMobileAds;
+		};
+		D123DF23307DE2E900DE2DF4 /* GoogleUserMessagingPlatform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D123DF27307DE2E900DE2DF4 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */;
+			productName = GoogleUserMessagingPlatform;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

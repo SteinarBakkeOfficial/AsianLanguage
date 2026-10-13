@@ -10,6 +10,9 @@ struct AppDependencies {
     /// Local writable store for progress and preferences.
     let userStateStore: LocalUserStateStore
 
+    /// Shared monetization/privacy service; views send semantic events through this one owner.
+    let monetizationManager: MonetizationManager
+
     /// Shared root navigation state so every entry point opens the canonical Symbol destination.
     let navigationState: AppNavigationState
 
@@ -77,6 +80,7 @@ struct AppDependencies {
         return AppDependencies(
             corpusRepository: repository,
             userStateStore: LocalUserStateStore.live(),
+            monetizationManager: MonetizationManager(),
             navigationState: AppNavigationState(),
             sharedCharacters: sharedCharacters,
             corpusLoadError: corpusLoadError,
@@ -90,6 +94,7 @@ struct AppDependencies {
     static let preview = AppDependencies(
         corpusRepository: BundleCorpusRepository(),
         userStateStore: LocalUserStateStore.preview(),
+        monetizationManager: MonetizationManager(),
         navigationState: AppNavigationState(),
         sharedCharacters: [],
         corpusLoadError: nil,

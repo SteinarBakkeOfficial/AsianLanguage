@@ -21,6 +21,8 @@ struct AsianLanguageApp: App {
         let liveDependencies = AppDependencies.live
         dependencies = liveDependencies
         _userStateStore = StateObject(wrappedValue: liveDependencies.userStateStore)
+        // Consent and ad initialization begin once per app process; failures never block launch.
+        liveDependencies.monetizationManager.start()
     }
 
     var body: some Scene {
